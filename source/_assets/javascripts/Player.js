@@ -1,6 +1,7 @@
 (function() {
+  var Player;
 
-  this.Player = function() {};
+  Player = function() {};
 
   Player.prototype.play = function(song) {
     this.currentlyPlayingSong = song;

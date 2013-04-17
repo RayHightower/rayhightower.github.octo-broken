@@ -1,4 +1,4 @@
-@Player = ->
+Player = ->
 Player::play = (song) ->
   @currentlyPlayingSong = song
   @isPlaying = true
