@@ -26,30 +26,25 @@
       @index = @createIndex()
       @template = @compileTemplate($(options.template))
       @initialize()
+			
     LunrSearch::initialize = ->
       self = this
       @loadIndexData (data) ->
         self.populateIndex data
         self.populateSearchFromQuery()
         self.bindKeypress()
-
-
     
     # create lunr.js search index specifying that we want to index the title and body fields of documents.
     LunrSearch::createIndex = ->
       lunr ->
         @field "title",
           boost: 10
-
         @field "body"
         @ref "id"
-
-
     
     # compile search results template
     LunrSearch::compileTemplate = ($template) ->
       Mustache.compile $template.text()
-
     
     # load the search index data
     LunrSearch::loadIndexData = (callback) ->
@@ -62,7 +57,6 @@
       @entries = $.map(data.entries, @createEntry)
       $.each @entries, (idx, entry) ->
         index.add entry
-
 
     LunrSearch::createEntry = (raw, index) ->
       entry = $.extend(
