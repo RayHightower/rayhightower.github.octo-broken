@@ -1,3 +1,5 @@
+#= require jquery.min
+
 (($) ->
   debounce = (fn) ->
     timeout = undefined
@@ -26,7 +28,7 @@
       @index = @createIndex()
       @template = @compileTemplate($(options.template))
       @initialize()
-			
+      
     LunrSearch::initialize = ->
       self = this
       @loadIndexData (data) ->

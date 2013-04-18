@@ -11,7 +11,9 @@
 #   - dist/**/*.js
 #
 src_files:
-    - source/_assets/javascripts/**/*.js
+    - source/_assets/javascripts/lib/*.js
+    - source/_assets/javascripts/**/*.{coffee, js}
+    #- source "**/*.*"
 
 # stylesheets
 #
@@ -49,7 +51,7 @@ helpers:
 #   - **/*[sS]pec.js
 #
 spec_files:
-  - '**/*[sS]pec.js'
+  - '**/*[sS]pec.{coffee, js}'
 
 # src_dir
 #
@@ -60,7 +62,12 @@ spec_files:
 #
 # src_dir: public
 #
-src_dir:
+src_dir: 
+  #- public/assets/javascripts
+  #- source/_assets/javascripts/**/*.js
+
+asset_paths:
+  - source/_assets/javascripts/lib
 
 # spec_dir
 #

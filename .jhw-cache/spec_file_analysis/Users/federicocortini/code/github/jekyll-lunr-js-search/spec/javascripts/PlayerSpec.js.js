@@ -1,0 +1,1 @@
+{"Player":[3],"should be able to play a Song":[11],"when song has been paused":[16],"should indicate that the song is currently paused":[21],"should be possible to resume":[25],"tells the current song if the user has made it a favorite":[31],"#resume":[37],"should throw an exception if song is already playing":[38]}
