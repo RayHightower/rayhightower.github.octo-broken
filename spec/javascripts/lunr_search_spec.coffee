@@ -1,7 +1,6 @@
 describe "LunrSearch", ->
   
   beforeEach ->
-     loadFixtures "_includes/custom/lunr-search/search-results-template.html" 
      @search = new LunrSearch '#search-query',
                               indexUrl: "/search.json",
                               results: "#search-results",
@@ -10,4 +9,3 @@ describe "LunrSearch", ->
 
   it "should be defined", ->
     expect(@search.$elem).toEqual "#search-query"
-    console.log jasmine.getFixtures().fixturesPath

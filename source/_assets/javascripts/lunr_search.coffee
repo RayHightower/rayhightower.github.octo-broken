@@ -16,5 +16,5 @@ class @LunrSearch
       @ref "id"
 
   compileTemplate: (template) =>
-    console.log $(template).text()
+    #console.log $(template).text()
     Mustache.compile $(template).text()
