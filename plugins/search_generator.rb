@@ -26,8 +26,9 @@ module Jekyll
     end
 
     def search_posts(site)
-      site.posts.each do |post|
+      site.posts.each_with_index do |post, i|
         @search_array << {
+        id: i,
         title: post.data["title"],
         category: post.categories.first,
         tags: post.tags,
@@ -43,10 +44,11 @@ module Jekyll
     end
 
     def search_pages(site)
-      site.pages.each do |page|
+      site.pages.each_with_index do |page|
         if page.data["title"]
           unless EXCLUDE.include? page.data["title"]
             @search_array << {
+            id: i,
             title: page.data["title"],
             url: page.url,
             content: page.content
