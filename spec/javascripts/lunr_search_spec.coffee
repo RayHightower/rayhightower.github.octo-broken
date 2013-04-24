@@ -1,25 +1,19 @@
 describe "LunrSearch", ->
-  server = null
   
   beforeEach ->
-    response = readFixtures("search.json")
-    server = sinon.fakeServer.create()
-    server.autoRespond = true
-    server.respondWith "GET", "search.json",
-      [200, {"Content-Type": "application/json"},
-      JSON.stringify(response) ]
-
-    console.log  server
-
     loadFixtures "index.html"
-
+    response = readFixtures("search.json")
+    sinon.stub($, 'getJSON').yields JSON.stringify(response)
     @search = new LunrSearch '#search-query',
                               indexUrl: "/search.json",
                               results: "#search-results",
                               entries: ".entries",
                               template: "#search-results-template"
 
-  afterEach -> server.restore()
+  afterEach -> $.getJSON.restore()
 
   it "should be defined", ->
     expect(@search.$elem).toEqual "#search-query"
+
+  it "gets the json for the search", ->
+    @search._init()

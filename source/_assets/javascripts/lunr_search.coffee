@@ -6,7 +6,9 @@ class @LunrSearch
     @$indexDataUrl = options.indexUrl
 
     @index = @createIndex()
-    @template = @compileTemplate $(options.template)
+    @template = @_compileTemplate $(options.template)
+
+    #@_init()
 
   createIndex: =>
     lunr ->
@@ -15,6 +17,21 @@ class @LunrSearch
       @field "body"
       @ref "id"
 
-  compileTemplate: (template) =>
+  _init: =>
+    $.getJSON @indexDataUrl, (data) =>
+      console.log "the data is" + data
+    #@_loadIndex (data) =>
+      #@_populateIndex data
+
+  _compileTemplate: (template) =>
     #console.log $(template).text()
     Mustache.compile $(template).text()
+
+  _loadIndex: (callback) =>
+    $.getJSON @indexDataUrl, (callback) =>
+      console.log callback
+
+  _populateIndex: (data) =>
+    index = @index
+
+    console.log data
