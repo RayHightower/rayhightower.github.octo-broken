@@ -3,7 +3,7 @@ describe "LunrSearch", ->
   beforeEach ->
     loadFixtures "index.html"
     response = readFixtures("search.json")
-    sinon.stub($, 'getJSON').yields JSON.stringify(response)
+    fakeResponse = sinon.stub($, 'getJSON').yields JSON.parse(response) #JSON.stringify(response)
     @search = new LunrSearch '#search-query',
                               indexUrl: "/search.json",
                               results: "#search-results",
@@ -13,7 +13,11 @@ describe "LunrSearch", ->
   afterEach -> $.getJSON.restore()
 
   it "should be defined", ->
-    expect(@search.$elem).toEqual "#search-query"
+    (expect @search).toBeLunrSearch()
 
-  it "gets the json for the search", ->
-    @search._init()
+  it "returns an empty div on load", ->
+   (expect @search.$results).toBeHidden()
+
+  it "populates results", ->
+    @search.search("post")
+    (expect @search.$results).toBeVisible()
