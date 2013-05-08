@@ -36,8 +36,10 @@ class @LunrSearch
     @entries = data.map((raw) ->
       id: raw.id + 1
       title: raw.title
+      url: raw.url
       body: raw.content
-      tags: raw.tags.join("")
+      date: "#{raw.date.month}/#{raw.date.day}/#{raw.date.year}"
+      tags: raw.tags.join(",")
       category: raw.category
     )
 
