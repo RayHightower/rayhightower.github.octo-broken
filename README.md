@@ -24,7 +24,7 @@ The "source" folder contains the partials and libraries needed to run the plugin
 
 ### 3. Install dependencies.
 
-Add dependencies to your app.js.coffee file (used to instantiate other libraries) via sprockets and instantiate a new LunrSearch search object when dom ready.
+Add dependencies to your app.js.coffee file (used to instantiate other libraries) via sprockets and instantiate a new LunrSearch search object when dom is ready.
 
 	# source/_assets/javascripts/app.js.coffee
 	
@@ -41,7 +41,7 @@ Add dependencies to your app.js.coffee file (used to instantiate other libraries
 	#= require modernizr-2.0
 	#= require octopress
 	
-	# Instantiate a new search when dom ready.
+	# Instantiate a new search when dom is ready.
 	$(document).ready ->
 		new LunrSearch '#search-query',
 	               		indexUrl: "/search.json",
@@ -74,7 +74,7 @@ Amend the form's action URL as necessary for the search page on your own site.
 
 This may be initially hidden as the plugin will show the element when searching.
 
-### 6. search results Handlebars template (source/_includes/lunr-search/search-results-template.html).
+### 3. search results Handlebars template (source/_includes/lunr-search/search-results-template.html).
 
     {% raw %}
     <script id="search-results-template" type="text/x-handlebars-template">
