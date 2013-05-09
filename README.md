@@ -12,7 +12,7 @@ This octopress plugin creates a search.json file and populates it with entries r
 
 You can decide to untrack unneeded pages by adding those to the EXCLUDED array:
 
-EXCLUDE = ["Not found", "Internal Server Error", "Blog Archive", "store_bak", "Contact", "Search"]
+	EXCLUDE = ["Not found", "Internal Server Error", "Blog Archive", "store_bak", "Contact", "Search"]
 
 ### 2. Install octopress source files
 
