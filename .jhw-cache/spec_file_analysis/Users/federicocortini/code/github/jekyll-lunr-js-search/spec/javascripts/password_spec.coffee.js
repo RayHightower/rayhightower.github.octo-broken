@@ -1,1 +1,0 @@
-{"Password":[1],"should report bad passwords":[3],"should report average passwords":[8],"should report good passwords":[13]}
