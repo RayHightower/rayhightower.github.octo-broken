@@ -102,6 +102,8 @@ Testing is possible thanks to [jasmine](http://pivotal.github.io/jasmine/), [jas
 	$: bundle install
 	$: guard
 
+A bogus octopress install lives in spec/javascripts/fixtures/app and jasmine fixtures are instantiated as reference to the dummy octopress website (feel free to edit or use them as a reference for further customization); sinon is used to spy/stub out jQuery's getJSON without triggering any real request (due to the fact that I am running my tests not in the browser but in the terminal).
+
 ## References
 
-Credits go to [slashdot's jekyll-lunr-search](https://github.com/slashdotdash/jekyll-lunr-js-search)
+Credits go to [slashdot's jekyll-lunr-search](https://github.com/slashdotdash/jekyll-lunr-js-search).
