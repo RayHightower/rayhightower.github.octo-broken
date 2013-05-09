@@ -13,7 +13,7 @@ module Jekyll
 
   class SearchGenerator < Generator
 
-    EXCLUDE = ["Not found", "Internal Server Error", "Blog Archive", "store_bak", "Contact"]
+    EXCLUDE = ["Not found", "Internal Server Error", "Blog Archive", "store_bak", "Contact", "Search"]
     
     def generate(site)
       @search_array = []
