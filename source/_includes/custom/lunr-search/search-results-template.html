@@ -1,10 +1,11 @@
 {% raw %}
-<script id="search-results-template" type="text/mustache">
+<script id="search-results-template" type="text/x-handlebars-template">
   {{#entries}}
     <article>
       <h3>
-        {{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
-        <a href="{{url}}">{{title}}</a>
+         <small><time datetime="{{date}}" pubdate>{{date}}</time></small>
+         <a href="{{url}}">{{title}}</a>
+         <p>tagged: {{tags}} | category: {{category}} </p>
       </h3>
     </article>
   {{/entries}}
