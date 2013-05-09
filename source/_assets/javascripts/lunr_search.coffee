@@ -24,7 +24,6 @@ class @LunrSearch
       @ref "id"
 
   compileTemplate: (template) =>
-    #console.log $(template).text()
     Handlebars.compile $(template).text()
 
   loadIndex: (callback) ->
@@ -43,12 +42,8 @@ class @LunrSearch
       category: raw.category
     )
 
-    #console.log entries
-
     for entry in @entries
       index.add entry
-
-    #console.log index
 
   populateSearchFromQuery: =>
     uri = new URI(window.location.search.toString())
