@@ -1,0 +1,14 @@
+---
+layout: post
+title: post two
+date: 2013-04-19 18:20
+comments: true
+categories: third_category
+tags:
+- tag_two
+- tag_three
+- tag_six
+- tag_seven
+---
+
+even more content for my post number three.
