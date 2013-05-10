@@ -95,14 +95,45 @@ Note the use of `{% raw %}` and `{% endraw %}` to ensure the HandleBars tags are
 
 ## Test
 
-Testing is possible thanks to [jasmine](http://pivotal.github.io/jasmine/), [jasmine-jquery](https://github.com/velesin/jasmine-jquery) and [jasmine-headless-webkit](https://github.com/johnbintz/jasmine-headless-webkit); to run tests 
+Testing is possible thanks to [jasmine](http://pivotal.github.io/jasmine/), [jasmine-jquery](https://github.com/velesin/jasmine-jquery) and [jasmine-headless-webkit](https://github.com/johnbintz/jasmine-headless-webkit)
+
+To setup the bogus app and run the tests follow these steps:
+
+* Init and add octopress submodule
 
 	$: git clone git://github.com/yortz/jekyll-lunr-js-search.git
 	$: cd jekyll-lunr-search
+	$: git submodule init
+	$: git submodule update
+	
+* Bootstrapp app
+
+	$: cd jekyll-lunr-search/spec/javascripts/fixtures/app
 	$: bundle install
+	$: rake generate
+	
+* Copy files and directories
+
+	$: cp ../../../../_config.yml _config.yml 
+	$: cp ../../../../plugins/search_generator.rb plugins/search_generator.rb
+	$: cp ../../../../plugins/ext.rb plugins/ext.rb
+	
+* Sync app/source folder and populate it with some posts
+
+	$: rsync -a ../../support/source .
+	
+* Update site
+
+	$: rake generate
+	
+You can now simply go back to your jekyll-lunr-search dir and start guard; it will automatically watch and compile changes in your source and spec coffeescript files.
+
+* Guard
+
+	$: cd jekyll-lunr-search
 	$: guard
 
-A bogus octopress install lives in spec/javascripts/fixtures/app and jasmine fixtures are instantiated as reference to the dummy octopress website (feel free to edit or use them as a reference for further customization); sinon is used to spy/stub out jQuery's getJSON without triggering any real request (due to the fact that I am running my tests not in the browser but in the terminal).
+A bogus octopress install lives in spec/javascripts/fixtures/app and jasmine fixtures are referenced via the dummy octopress website (feel free to edit or use them as a reference for further customization); sinon is used to spy/stub out jQuery's getJSON without triggering any real request (due to the fact that I am running my tests not in the browser but in the terminal).
 
 ## References
 
