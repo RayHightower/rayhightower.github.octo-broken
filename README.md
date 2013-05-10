@@ -105,6 +105,13 @@ To setup the bogus app and run the tests follow these steps:
 		$: cd jekyll-lunr-search
 		$: git submodule init
 		$: git submodule update
+		
+* Edit Gemfile
+
+		#add following dependencies
+		gem 'jekyll-assets'
+		gem 'yui-compressor', :git => 'git://github.com/betterdoctor/ruby-yui-compressor.git'
+		gem 'coffee-script'
 	
 * Bootstrapp app
 
