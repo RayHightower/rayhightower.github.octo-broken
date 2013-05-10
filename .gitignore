@@ -17,3 +17,4 @@ tmp
 _yardoc
 doc/
 .jhw-cache
+spec/javascripts/fixtures/app
