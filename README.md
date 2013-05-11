@@ -113,11 +113,11 @@ To setup the bogus app and run the tests follow these steps:
 		gem 'yui-compressor', :git => 'git://github.com/betterdoctor/ruby-yui-compressor.git'
 		gem 'coffee-script'
 
-PLEASE NOTE! Since official mantained
+PLEASE NOTE! Since the officially-maintained
 [jekyll-assets](https://github.com/ixti/jekyll-assets) repo is way "beyond"
 octopress master development (e.g.: in the Gemfile jekyll-assets is
 tested to work with jekyll ~> '1.0' while octopress master requires
-jekyll ~ '0.12') I suggest you to stick with the [following
+jekyll ~> '0.12') I suggest you to stick with the [following
 ](https://github.com/yortz/jekyll-assets) or freeze to v0.3.5 of
 jekyll-assets instead.
 	
