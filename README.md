@@ -114,12 +114,8 @@ To setup the bogus app and run the tests follow these steps:
 		gem 'coffee-script'
 
 PLEASE NOTE! Since the officially-maintained
-[jekyll-assets](https://github.com/ixti/jekyll-assets) repo is way "beyond"
-octopress master development (e.g.: in the Gemfile jekyll-assets is
-tested to work with jekyll ~> '1.0' while octopress master requires
-jekyll ~> '0.12') I suggest you to stick to the [following
-](https://github.com/yortz/jekyll-assets) or freeze to v0.3.5 of
-jekyll-assets instead.
+[jekyll-assets](https://github.com/ixti/jekyll-assets) repo dropped liquid-preprocessing support (read more [here](https://github.com/ixti/jekyll-assets/issues/25))
+you have to freeze to v0.3.5 or to another version [prior](https://github.com/ixti/jekyll-assets/commit/517c5fbabc36d8f95f335e05c33ee40c7801feb1) to dropped liquid-preprocessing support.
 	
 * Bootstrapp app
 

@@ -104,7 +104,7 @@ assets:
     - _assets/jwplayer
     - _assets/stylesheets
   compress:
-    js:   'none'
+    js:   'yui'
     css:  'yui'
   cachebust: hard
   gzip: [ text/css, application/javascript ]
