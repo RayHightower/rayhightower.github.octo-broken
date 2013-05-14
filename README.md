@@ -6,7 +6,9 @@ Heavily inspired by [jekyll-lunr-search](https://github.com/slashdotdash/jekyll-
 
 ## How to use
 
-### 1. Install search-generator plugin
+Move files into place in your octopress install directory while maintaining directory folder structure
+
+### 1. plugins/search-generator.rb
 
 This octopress plugin creates a search.json file and populates it with entries results collected from your website posts & pages.
 
@@ -16,11 +18,47 @@ You can decide to untrack unneeded pages by adding those to the EXCLUDED array:
 
 ### 2. Install octopress source files
 
-The "source" folder contains the partials and libraries needed to run the plugin (feel free to edit those accordingly to your needs), each coffeescript file is compiled to js and compressed thanks to the [jekyll assets plugin](https://github.com/ixti/jekyll-assets). [Here](http://matt.coneybeare.me/how-to-setup-a-rails-like-asset-pipeline-with-octopress/) is a blog post with some useful instructions if you need some assitance on how to integrate it with your octopress install.
+The "source" folder contains the partials and libraries needed to run the plugin (feel free to edit those accordingly to your needs), each coffeescript file is compiled to js and compressed via [yui](http://yui.github.io/yuicompressor/) thanks to the [jekyll assets plugin](https://github.com/ixti/jekyll-assets). [Here](http://matt.coneybeare.me/how-to-setup-a-rails-like-asset-pipeline-with-octopress/) is a blog post with some useful instructions if you need some assitance on how to integrate it with your octopress install.
 
 * source/_assets: contains needed js libs & main search class. 
 
 * source/_includes/custom/lunr-search: contains needed partials and handlebars template used to display your search results.
+
+* edit your _config.yml to enable lunr-search and disable simple-search
+
+		#_config.yml
+		lunr-search: true
+		simple_search: #http://google.com/search
+		
+* edit template layout (this could vary depending on your own level of customization)
+
+		#source/_includes/navigation.html
+		
+		<ul class="subscription" data-subscription="rss{% if site.subscribe_email %} email{% endif %}">
+		<li><a href="{{ site.subscribe_rss }}" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+		{% if site.subscribe_email %}
+			<li><a href="{{ site.subscribe_email }}" rel="subscribe-email" title="subscribe via email">Email</a></li>
+		{% endif %}
+		</ul>
+
+		{% if site.simple_search %}
+		<form action="{{ site.simple_search }}" method="get">
+		  <fieldset role="search">
+		    <input type="hidden" name="q" value="site:{{ site.url | shorthand_url }}" />
+		    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+		  </fieldset>
+		</form>
+		{% endif %}
+
+		{% if site.lunr-search == true %}
+		  {% include custom/lunr-search/search-form.html %}
+		{% endif %}
+
+		{% include custom/navigation.html %}
+		
+* add /search page
+
+Default search path for the form post action is "/search", be sure to create this page or change it together with the value passed to the constructor for the search object in case you want to use another value.
 
 ### 3. Install dependencies.
 
