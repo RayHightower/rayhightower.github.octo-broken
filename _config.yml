@@ -109,5 +109,5 @@ assets:
   gzip: [ text/css, application/javascript ]
 	
 #lunr-search
-lunr-search: true
+lunr_search: true
 simple_search: #http://google.com/search
