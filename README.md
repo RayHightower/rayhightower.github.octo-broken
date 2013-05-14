@@ -60,6 +60,12 @@ The "source" folder contains the partials and libraries needed to run the plugin
 
 Default search path for the form post action is "/search", be sure to create this page or change it together with the value passed to the constructor for the search object in case you want to use another value.
 
+* add search-results handlebars partial via liquid into the head section of your page 
+
+		# source/_includes/head.html
+		{% include custom/lunr-search/search-results-template.html %}
+		
+
 ### 3. Install dependencies.
 
 Add dependencies to your app.js.coffee file (used to instantiate other libraries) via sprockets and instantiate a new LunrSearch search object when dom is ready.
