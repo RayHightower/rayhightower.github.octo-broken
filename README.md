@@ -176,6 +176,10 @@ you have to freeze to v0.3.5 or to another version [prior](https://github.com/ix
 * Sync app/source folder and populate it with some posts
 
 		$: rsync -a ../../support/source .
+		
+* Sync app/sass folder to include path to images via jekyll-assets liquid {% asset_path %} tag
+
+		$: rsync -a ../../support/sass .
 	
 * Update site
 
