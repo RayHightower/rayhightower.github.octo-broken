@@ -97,11 +97,12 @@ Add dependencies to your app.js.coffee file (used to instantiate other libraries
 
 ### 1. search form (source/_includes/custom/lunr-search/search-form.html)
 
-    <div id="search">
-      <form action="/search" method="get">
-        <input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off">
-      </form>
-    </div>
+	<form action="/search" method="get">
+	  <fieldset role ="search">
+	    <input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off" class="search" />
+	  </fieldset>
+	</form>
+
 
 Search happens as you type, once at least three characters have been entered. 
 
@@ -120,20 +121,19 @@ This may be initially hidden as the plugin will show the element when searching.
 
 ### 3. search results Handlebars template (source/_includes/lunr-search/search-results-template.html).
 
-    {% raw %}
-    <script id="search-results-template" type="text/x-handlebars-template">
-      {{#entries}}
-        <article>
-          <h3>
-             <small><time datetime="{{date}}" pubdate>{{date}}</time></small>
-             <a href="{{url}}">{{title}}</a>
-             <p>tagged: {{tags}} | category: {{category}} </p>
-          </h3>
-        </article>
-      {{/entries}}
-    </script>
-    {% endraw %}
-
+	{% raw %}
+	<script id="search-results-template" type="text/x-handlebars-template">
+	  {{#entries}}
+	    <article>
+	      <h3>
+	         <small><time datetime="{{date}}" pubdate>{{date}}</time></small>
+	         <a href="{{url}}">{{title}}</a>
+	         <p>tagged: {{ tags }} | category: <a href="/categories/{{category }}">{{category}}</a></p>
+	      </h3>
+	    </article>
+	  {{/entries}}
+	</script>
+	{% endraw %}
 
 Note the use of `{% raw %}` and `{% endraw %}` to ensure the HandleBars tags are not stripped out by Octopress.
 
