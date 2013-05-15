@@ -11,10 +11,10 @@ class @LunrSearch
     @init()
 
   init: ->
-   @loadIndex (data) =>
-     @populateIndex data
-     @populateSearchFromQuery()
-     @bindKeypress()
+    @loadIndex (data) =>
+      @populateIndex data
+      @populateSearchFromQuery()
+      @bindKeypress()
 
   createIndex: =>
     lunr ->
@@ -37,8 +37,8 @@ class @LunrSearch
       title: raw.title
       url: raw.url
       body: raw.content
-      date: "#{raw.date.month}/#{raw.date.day}/#{raw.date.year}"
-      tags: raw.tags.join(",")
+      date: "#{raw.date.month}/#{raw.date.day}/#{raw.date.year}" if raw.date
+      tags: raw.tags.join(",") if raw.tags
       category: raw.category
     )
 
@@ -58,14 +58,13 @@ class @LunrSearch
       @$results.hide()
       @$entries.empty()
     else
-      #console.log @index.search(query)
       results = $.map(@index.search(query), (result) =>
         reference = parseInt(result.ref, 10)
         $.grep(entries, (entry) ->
           entry.id is parseInt(result.ref, 10)
         )[0]
       )
-    @displayResults results
+    @displayResults results if results
 
   displayResults: (entries) =>
     $entries = @$entries
@@ -78,8 +77,9 @@ class @LunrSearch
     $results.show()
 
   bindKeypress: =>
-   $(@$elem).bind "keyup", debounce(=>
-      @search $(@).val()
+    input = $(@$elem)
+    input.bind "keyup", debounce(=>
+      @search input.val()
     )
 
   debounce = (fn) ->
@@ -92,3 +92,4 @@ class @LunrSearch
       timeout = setTimeout(=>
         fn.apply ctx, args
       , 100)
+

@@ -52,7 +52,7 @@ module Jekyll
             title: page.data["title"],
             url: page.url,
             content: page.content
-            }
+            } unless page.url == "/index.html"
           end
         end
       end
