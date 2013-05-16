@@ -24,10 +24,10 @@ The "source" folder contains the partials and libraries needed to run the plugin
 
 * source/_includes/custom/lunr-search: contains needed partials and handlebars template used to display your search results.
 
-* edit your _config.yml to enable lunr-search and disable simple-search
+* edit your _config.yml to enable lunr_search and disable simple_search
 
 		#_config.yml
-		lunr-search: true
+		lunr_search: true
 		simple_search: #http://google.com/search
 		
 * edit template layout (this could vary depending on your own level of customization)
@@ -50,8 +50,8 @@ The "source" folder contains the partials and libraries needed to run the plugin
 		</form>
 		{% endif %}
 
-		{% if site.lunr-search == true %}
-		  {% include custom/lunr-search/search-form.html %}
+		{% if site.lunr_search == true %}
+		  {% include custom/lunr_search/search-form.html %}
 		{% endif %}
 
 		{% include custom/navigation.html %}
