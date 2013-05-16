@@ -58,7 +58,16 @@ The "source" folder contains the partials and libraries needed to run the plugin
 		
 * add /search page
 
-Default search path for the form post action is "/search", be sure to create this page or change it together with the value passed to the constructor for the search object in case you want to use another value.
+Default search path for the form post action is "/search", be sure to create this page or change it together with the value passed to the constructor for the search object in case you want to use another value. Be sure to include entries.html
+
+		#source/search/index.markdown
+		---
+		layout: page
+		title: Search Results
+		footer: false
+		---
+
+		{% include custom/lunr-search/entries.html %}
 
 * add search-results handlebars partial via liquid into the head section of your page 
 
