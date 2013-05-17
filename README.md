@@ -161,6 +161,7 @@ To setup the bogus app and run the tests follow these steps:
 		
 * Edit Gemfile
 
+    # jekyll-lunr-search/spec/javascripts/fixtures/app/Gemfile
 		#add following dependencies
 		gem 'jekyll-assets', :git => 'git://github.com/yortz/jekyll-assets.git'
 		gem 'yui-compressor', :git => 'git://github.com/betterdoctor/ruby-yui-compressor.git'
@@ -173,33 +174,16 @@ you have to freeze to v0.3.5 or to another version [prior](https://github.com/ix
 * Bootstrapp app
 
 		$: cd jekyll-lunr-search/spec/javascripts/fixtures/app
-		$: bundle install
-		$: rake generate
+    $: rake test_setup
 	
-* Copy files and directories
-
-		$: cp ../../../../_config.yml _config.yml 
-		$: cp ../../../../plugins/search_generator.rb plugins/search_generator.rb
-		$: cp ../../../../plugins/ext.rb plugins/ext.rb
-	
-* Sync app/source folder and populate it with some posts
-
-		$: rsync -a ../../support/source .
-		
-* Sync app/sass folder to include path to images via jekyll-assets liquid {% asset_path %} tag
-
-		$: rsync -a ../../support/sass .
-	
-* Update site
-
-		$: rake generate
-	
-You can now simply go back to your jekyll-lunr-search dir and start guard; it will automatically watch and compile changes in your source and spec coffeescript files.
+You can now simply go back to your jekyll-lunr-search dir and start
+guard; it will automatically compile coffeescript files and watch for
+changes in your source and spec directories.
 
 * Guard
 
 		$: cd jekyll-lunr-search
-		$: guard
+		$: rake wc
 
 ## References
 
