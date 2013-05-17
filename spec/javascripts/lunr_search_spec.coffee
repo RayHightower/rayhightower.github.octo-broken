@@ -31,7 +31,7 @@ describe "LunrSearch", ->
     @search.search("first")
     post = @search.$entries.children()
     content = post.html().replace( new RegExp( "\>[\n\t ]+\<" , "g" ) , "><" ).trim()
-    (expect content).toBe('''<h3><small><time datetime="April/19/2013" pubdate="">April/19/2013</time></small><a href="/blog/2013/04/19/first-post/">first post</a><p>tagged: tag_one,tag_two | category: first_category </p></h3>''')
+    (expect content).toBe('''<h3><small><time datetime="April/19/2013" pubdate="">April/19/2013</time></small><a href="/blog/2013/04/19/first-post/">first post</a><p>tagged: tag_one,tag_two | category: <a href="/categories/first_category">first_category</a></p></h3>''')
 
   it "displays Nothing found message when there is no result", ->
     @search.search("hgkflgfkgfgo")
