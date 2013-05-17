@@ -164,7 +164,16 @@ PLEASE NOTE! Since the officially-maintained
 [jekyll-assets](https://github.com/ixti/jekyll-assets) repo dropped liquid-preprocessing support (read more [here](https://github.com/ixti/jekyll-assets/issues/25))
 you have to freeze to v0.3.5 or to another version [prior](https://github.com/ixti/jekyll-assets/commit/517c5fbabc36d8f95f335e05c33ee40c7801feb1) to dropped liquid-preprocessing support.
 	
-You can now simply go back to your jekyll-lunr-search dir and start
+* Run app 
+
+    $: cd spec/javascripts/fixtures/app
+    $: rake preview
+
+Above step runs your app and search_generator.rb plugin, updating your
+public folder with a generated search.json file needed for the test. You
+can close your app once public/search.json is generated.
+
+Go back to your jekyll-lunr-search dir and start
 guard; it will automatically compile coffeescript files and watch for
 changes in your source and spec directories.
 
