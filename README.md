@@ -150,7 +150,7 @@ Note the use of `{% raw %}` and `{% endraw %}` to ensure the HandleBars tags are
 
 Testing is possible thanks to [jasmine](http://pivotal.github.io/jasmine/), [jasmine-jquery](https://github.com/velesin/jasmine-jquery) and [jasmine-headless-webkit](https://github.com/johnbintz/jasmine-headless-webkit)
 
-To setup the bogus app and run the tests follow these steps:
+To setup the bogus app and run the tests
 
 * Init and add octopress submodule
 
@@ -159,22 +159,10 @@ To setup the bogus app and run the tests follow these steps:
 		$: git submodule init
 		$: git submodule update
 		
-* Edit Gemfile
-
-    # jekyll-lunr-search/spec/javascripts/fixtures/app/Gemfile
-		#add following dependencies
-		gem 'jekyll-assets', :git => 'git://github.com/yortz/jekyll-assets.git'
-		gem 'yui-compressor', :git => 'git://github.com/betterdoctor/ruby-yui-compressor.git'
-		gem 'coffee-script'
 
 PLEASE NOTE! Since the officially-maintained
 [jekyll-assets](https://github.com/ixti/jekyll-assets) repo dropped liquid-preprocessing support (read more [here](https://github.com/ixti/jekyll-assets/issues/25))
 you have to freeze to v0.3.5 or to another version [prior](https://github.com/ixti/jekyll-assets/commit/517c5fbabc36d8f95f335e05c33ee40c7801feb1) to dropped liquid-preprocessing support.
-	
-* Bootstrapp app
-
-		$: cd jekyll-lunr-search/spec/javascripts/fixtures/app
-    $: rake test_setup
 	
 You can now simply go back to your jekyll-lunr-search dir and start
 guard; it will automatically compile coffeescript files and watch for
