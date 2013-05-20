@@ -166,11 +166,11 @@ you have to freeze to v0.3.5 or to another version [prior](https://github.com/ix
 	
 * Run app 
 
-    $: cd spec/javascripts/fixtures/app
-    $: rake preview
+		$: cd spec/javascripts/fixtures/app
+		$: rake preview
 
-Above step runs your app and search_generator.rb plugin, updating your
-public folder with a generated search.json file needed for the test. You
+Above step bootstraps octopress and runs search_generator.rb plugin, updating your
+public folder with a generated search.json file needed for the tests. You
 can close your app once public/search.json is generated.
 
 Go back to your jekyll-lunr-search dir and start
