@@ -181,6 +181,10 @@ changes in your source and spec directories.
 
 		$: cd jekyll-lunr-search
 		$: rake wc
+		
+##Demo
+
+You can find a working demo at [http://yortz.it/search](http://yortz.it/search)
 
 ## References
 
