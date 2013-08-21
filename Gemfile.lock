@@ -45,6 +45,7 @@ GEM
       slop (~> 3.4)
     rack (1.5.2)
     rainbow (1.1.4)
+    rake (10.0.4)
     rb-fsevent (0.9.3)
     rspec (2.13.0)
       rspec-core (~> 2.13.0)
@@ -77,4 +78,5 @@ DEPENDENCIES
   guard-jasmine-headless-webkit
   jasmine
   jasmine-headless-webkit
+  rake
   rb-fsevent (~> 0.9)
