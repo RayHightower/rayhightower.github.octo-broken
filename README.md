@@ -102,6 +102,21 @@ Add dependencies to your app.js.coffee file (used to instantiate other libraries
 	               	 	entries: ".entries",
 	 	                template: "#search-results-template"
 										
+### PLEASE NOTE:
+
+By default octopress is using ender.js as submodule library, so if you are using
+it in your own octopress install some modifications are needed to prevent
+conflicts. e.g.:
+
+  
+	#source/_assets/javascripts/app.js.coffee
+
+	jQuery.noConflict() # prevents conflicts with Ender.js, use jQuery instead of $
+
+	jQuery ->
+		Handlebars.registerHelper "toLowerCase", (value) ->
+		  (if (value and typeof value is "string") then new Handlebars.SafeString(value.toLowerCase()) else "")
+
 ## Assets:
 
 ### 1. search form (source/_includes/custom/lunr-search/search-form.html)
