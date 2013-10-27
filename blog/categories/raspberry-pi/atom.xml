@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Raspberry Pi | RayHightower.com]]></title>
+  <link href="http://RayHightower.com/blog/categories/raspberry-pi/atom.xml" rel="self"/>
+  <link href="http://RayHightower.com/"/>
+  <updated>2013-10-27T16:08:38-05:00</updated>
+  <id>http://RayHightower.com/</id>
+  <author>
+    <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[PechaKucha: Developer Education at TableXI]]></title>
+    <link href="http://RayHightower.com/blog/2013/06/27/pechakucha-developer-education-at-tablexi/"/>
+    <updated>2013-06-27T15:13:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/06/27/pechakucha-developer-education-at-tablexi</id>
+    <content type="html"><![CDATA[<p><a href="http://pechakucha.org">PechaKucha</a> is a concise presentation style developed in Japan. The PechaKucha format is 20x20: The presenter must share an idea in twenty slides, each displayed for exactly twenty seconds, advancing automatically. Total presentation time = six minutues, forty seconds.</p>
+
+<!--more-->
+
+
+<p><a href="http://www.tablexi.com/blog/2013/06/practice-begins-with-play-a-table-talk/developers/">TableXI</a> hosted a PechaKucha on June 13th with the theme <em>Developer Education</em>. I was one of six presenters invited to speak. Video:</p>
+
+<center><iframe width='460' height='345' src="http://www.pechakucha.org/presentations/51b92936dbdd200cbc000011/embed" frameborder="0"></iframe></center>
+
+
+<p>One highlight from the PechaKucha presentation: This year&rsquo;s <a href="http://windycityrails.org">WindyCityRails</a> will include a youth program on Thursday afternoon. Details will be announced in July. Follow <a href="http://twitter.com/windycityrails">@WindyCityRails</a> for the latest news on the program.</p>
+
+<p>Thanks TableXI for the PechaKucha invitation, and for sponsoring WindyCityRails 2013!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to Take a Raspberry Pi Screenshot]]></title>
+    <link href="http://RayHightower.com/blog/2013/03/19/how-to-take-a-raspberry-pi-screenshot/"/>
+    <updated>2013-03-19T20:43:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/03/19/how-to-take-a-raspberry-pi-screenshot</id>
+    <content type="html"><![CDATA[<p>After you get a <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a> up and running, you may want to take a few screenshots so you can share the experience with others. Here&rsquo;s how.</p>
+
+<!--more-->
+
+
+<h4>Install Scrot</h4>
+
+<p>First, install the screenshot utility, <code>scrot</code>. Open up the LXTerminal
+and type the following at the prompt:</p>
+
+<p><code>bash
+$ sudo apt-get install scrot
+</code></p>
+
+<h4>Use Scrot</h4>
+
+<p>To take a screenshot of the whole screen:
+<code>bash
+$ sudo scrot
+</code>
+By default, the screenshot will be stored in the current directory in a file named for the numerical date and time with a <code>.png</code> extension.</p>
+
+<p>To take a screenshot after a 10-second delay:
+<code>bash
+$ sudo scrot -d10
+</code></p>
+
+<h4>Learn More About Scrot</h4>
+
+<p>To display a list of Scrot commands:
+<code>bash
+$ sudo scrot -h
+</code>
+That&rsquo;s it!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby on Raspberry Pi]]></title>
+    <link href="http://RayHightower.com/blog/2012/12/03/ruby-on-raspberry-pi/"/>
+    <updated>2012-12-03T06:38:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2012/12/03/ruby-on-raspberry-pi</id>
+    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/assets/raspberry_pi_iphone.jpg" width="400" align="right" title="Raspberry Pi Circuit Board" alt="Raspberry Pi Circuit Board">
+Raspberry Pi is a single-board computer roughly the size of a deck of cards. It&rsquo;s equipped with an ARM processor that runs Linux. USB ports let you attach a keyboard and mouse. Video is supported via HDMI and RCA. Storage is handled by SD cards. There&rsquo;s an Ethernet port.</p>
+
+<p>You can buy a Raspberry Pi for $35.00.</p>
+
+<h4>Will it Run Ruby?</h4>
+
+<p>When my Raspberry Pi arrived, I was curious: Will it run Ruby? How about Rails?  This article describes my experience with RVM, Ruby, and Rails on a Raspberry Pi, along with the &ldquo;gotchas&rdquo; I encountered along the way.</p>
+
+<!--more-->
+
+
+<h4>Why Raspberry Pi?</h4>
+
+<p>Raspberry Pi was created by a group of UK educators and engineers with a concern: Inexpensive hobbyist computers like the old Commodore 64 no longer exist. Game consoles continue to get better, but there is no replacement for the Commodore. As a result, young people who <em>might</em> become developers get introduced to the profession as gamers or users of Word or Excel. They begin as consumers, not creators. Sad news, because creators shape the world we all enjoy.</p>
+
+<p>Creators get stronger when they have tools for learning, play, and <a href="/blog/2012/09/03/10000-hours-of-practice/">10,000 hours of practice</a>. Enter Raspberry Pi. It&rsquo;s a tiny, inexpensive computer. It runs open source software so it is highly accessible to curious minds that are eager to learn, practice, and play.</p>
+
+<h4>Yes, It Will Run Ruby</h4>
+
+<p>Here&rsquo;s a screenshot from my Raspberry Pi with the Midori web browser, RVM, Ruby 1.9.3-p327, Rails 3.2.9, Vim 7.3, and other tools. In this shot, I&rsquo;m using the Pi&rsquo;s HDMI output to drive a 1080p monitor.</p>
+
+<p><img src="http://RayHightower.com/assets/RaspberryPi-Desktop.png" width="800" align="middle" title="Raspberry Pi 1080p HDMI Monitor" alt="Raspberry Pi 1080p HDMI Monitor" ></p>
+
+<p>Yes, this tiny, $35 device will drive a monitor at full 1080p HD.</p>
+
+<h4>Getting Started</h4>
+
+<p>Here&rsquo;s what you need to get Ruby running on your Raspberry Pi.</p>
+
+<ul>
+<li>1 Raspberry Pi with 512MB RAM or more. I bought mine from <a href="http://newark.com">Newark/element14</a>.</li>
+<li>1 Monitor that accepts HDMI or RCA video input.</li>
+<li>1 HDMI or RCA cable, depending on your monitor.</li>
+<li>1 USB keyboard</li>
+<li>1 USB mouse</li>
+<li>1 8GB (or larger) SD card. The instructions recommend 4GB, but I suggest at least 8GB if you expect to run Rails. You&rsquo;ll need room for gems, git, etc.</li>
+<li>1 Ethernet cable w/RJ-45 ends.</li>
+<li>1 high-speed Internet connection.</li>
+<li>A separate computer capable of writing an SD card image, or an SD card pre-configured for Raspberry Pi.</li>
+</ul>
+
+
+<p>The Pi makers have tested the device with SD cards as large as 32GB, even though 4GB is recommended. Personally, I prefer the larger cards because they allow more room for experiments.</p>
+
+<h4>Prepping the SD Card</h4>
+
+<p>The Pi&rsquo;s operating system boots from the SD card. There are several methods for prepping the SD card with the Raspberry Pi system. The easiest: Buy a Pi with a pre-configured SD card.</p>
+
+<p>My Pi arrived before the pre-configured SD card. I&rsquo;m a little bit impatient when it comes to new gadgets, so I decided to prep an old SD card of my own.</p>
+
+<p><em>Note:</em> If you&rsquo;re reading this article, you already know the standard disclaimer about how technology changes rapidly therefore this procedure could be wrong by the time you read this. I&rsquo;ve included links to references so you can check for updates on your own. You know the risks. Please backup everything that needs it.</p>
+
+<p>References:</p>
+
+<ul>
+<li><a href="http://elinux.org/RPi_Easy_SD_Card_Setup">eLinux SD Card Setup</a>. Methods for putting your preferred image on the SD card. I chose the &ldquo;Copying an image to the SD card in Mac OS X (mostly graphical interface)&rdquo; method.</li>
+<li><a href="http://www.raspberrypi.org/downloads">Raspberry Pi Official Downloads</a>. Several SD card images, and a beginners wiki.</li>
+</ul>
+
+
+<p>Prepping an SD card takes a <em>long</em> time. In my case, it took 23 minutes from the time I executed the SD write command (<code>$ sudo dd...</code>) to the completion of the process. It was a little disconcerting because the system didn&rsquo;t do anything during that time. No feedback whatsoever. Sounds like an opportunity for a pull request!</p>
+
+<h4>Starting the System</h4>
+
+<p>To start your Raspberry Pi system:</p>
+
+<ul>
+<li>Plug the SD card, USB keyboard &amp; mouse, Ethernet cable, and video cable (HDMI or RCA) into their corresponding sockets.</li>
+<li>Plug in the USB power adapter.</li>
+</ul>
+
+
+<p>There is no power switch. The device is turned on/off by adding or removing the power cable.</p>
+
+<p>Linux will boot in text mode. When the system is done booting, you will be prompted for a username and password. Here are the default credentials:</p>
+
+<pre><code>
+raspberrypi login: pi
+Password: raspberry
+</code></pre>
+
+
+<p>Several seconds later, you will be greeted with the $ prompt. You can continue to use the Pi in text mode, or you can start the X Window GUI with:</p>
+
+<p><code>bash
+$ startx
+</code></p>
+
+<h4>Ruby with RVM</h4>
+
+<p>I am a big fan of <a href="http://rvm.io">Ruby Version Manager (RVM)</a>. I learn best when I break things. RVM&rsquo;s handling of Ruby versions and gemsets enables me to recover rapidly and well.</p>
+
+<p>This command will install the latest stable versions of RVM and Ruby:</p>
+
+<p><code>bash
+$ curl -L https://get.rvm.io | bash -s stable --ruby
+</code></p>
+
+<p>It took over an hour for Ruby to compile on my Pi. The read/write speed of my SD card (Class 4) could have been a factor. I have a faster (Class 10) SD card on order.</p>
+
+<h3>Installing Rails</h3>
+
+<p>First, make sure you&rsquo;re using the version of Ruby you want to use.</p>
+
+<p><code>bash
+$ rvm current
+</code></p>
+
+<p>Next, create a gemset and tell RVM that you want to use it.</p>
+
+<p><code>bash
+$ rvm use [version of Ruby you want to use]
+$ rvm gemset create firstgemset
+$ rvm gemset use firstgemset
+</code></p>
+
+<p>And then install Rails as you would on any other &lsquo;nix-based machine.</p>
+
+<p><code>
+$ gem install rails
+</code></p>
+
+<h4>Gotchas</h4>
+
+<p>The installation process was relatively smooth. Still, here are a few gotchas I encountered with the Pi:</p>
+
+<ul>
+<li>I already mentioned this, but it&rsquo;s worth repeating: It took 23 minutes to write the SD card, and there was no feedback along the way. This wasn&rsquo;t a big deal since I had been pre-warned by one of the wikis.</li>
+<li>apt-get needed an update before I could install git. <code>$ sudo apt-get update</code> did the trick.</li>
+<li>The Pi will do absolutely nothing without a properly configured SD card. You know how a PC will partially boot (to CMOS) even without a hard drive? Not so with the Pi.</li>
+<li>The micro-USB power port requires 700mA or more of current. Most micro-USB power adapters deliver 500mA or less. Raspberry Pi will only boot if the micro-USB provides sufficient amperage. Only one of my several micro-USB adapters met this requirement.</li>
+<li>A 4GB SD card is far too small if you want to do something useful with the Pi. My first Rails installation failed due to size limitations because I was using a 4GB card. Go with 8GB or larger.</li>
+<li>I&rsquo;m not 100% sure, but I think that a faster SD card will make a difference especially during the compilation of the Ruby interpreter. This is only a guess at this point. I don&rsquo;t yet know where the bottlenecks are.</li>
+</ul>
+
+
+<p>Overall, the gotchas were minor.</p>
+
+<h4>For Screenshots, Try Scrot</h4>
+
+<p>To take screenshots of the Raspberry Pi desktop, I used Scrot (SCReenshOT). Here&rsquo;s how to install Scrot:</p>
+
+<p><code>
+$ sudo apt-get install scrot
+</code></p>
+
+<p>After you install Scrot, this command will take a shot of the entire desktop and drop it into a file called <code>desktop.png</code> in your home directory.</p>
+
+<p><code>
+$ scrot ~/desktop.png
+</code></p>
+
+<p>To pause five seconds before taking the screenshot:</p>
+
+<p><code>
+$ sleep 5; scrot ~/desktop.png
+</code></p>
+
+<p><img src="http://RayHightower.com/assets/raspberry-pi-analog-TV.jpg" width="400" align="right" title="Raspberry Pi Analog TV Monitor" alt="Raspberry Pi Analog TV Monitor" ></p>
+
+<h4>Analog TV</h4>
+
+<p>Don&rsquo;t laugh: I still have an old analog TV in my living room. It&rsquo;s twelve years old and it still works. Since Raspberry Pi comes with multiple video outupts, analog TVs are useful again.</p>
+
+<p>Here&rsquo;s Raspberry Pi running with my old analog TV as a monitor. Reminds me of the Commodore 64 days!</p>
+
+<p>Raspberry Pi will work with a wide range of monitors, from HDMI to ancient analog. That makes the Pi accessible to a large audience of hobbyists and developers.</p>
+
+<h4>Conclusion</h4>
+
+<p>Raspberry Pi will never replace my primary machine because it&rsquo;s too slow. But it is certainly fast enough for learning. It meets the goals set forth by the engineering team.</p>
+
+<p>I am excited by the learning opportunities offered by Raspberry Pi. To the Raspberry Pi Foundation: Thank you for an impressive device. I wish you much success.</p>
+]]></content>
+  </entry>
+  
+</feed>

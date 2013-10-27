@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>New RVM Behavior With .ruby-version and .ruby-gemset - RayHightower.com</title>
+  <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
+
+  
+  <meta name="description" content="I trust RVM to manage my Ruby versions and my gemsets. So when I saw an unexpected change in RVM&rsquo;s behavior, I was concerned about a possible &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://RayHightower.com/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="RayHightower.com" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-330946-28']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">RayHightower.com</a></h1>
+  
+    <h2>Thoughts about Ruby, Rails, RubyMotion, iOS, and business growth.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:RayHightower.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">New RVM Behavior With .ruby-version and .ruby-gemset</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-18T20:33:00-05:00" pubdate data-updated="true">Apr 18<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><a href="/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset/"><img src="/images/rvm.png" height="98" width="89" align="right" alt="RVM .ruby-version .ruby-gemset" title="RVM .ruby-version .ruby-gemset"></a>
+I trust <a href="http://rvm.io">RVM</a> to manage my Ruby versions and my gemsets. So when I saw an unexpected change in RVM&rsquo;s behavior, I was concerned about a possible disruption in my workflow.</p>
+
+<!--more-->
+
+
+<h4>A New RVM Message</h4>
+
+<p>Here&rsquo;s the message I received when I changed into <code>mydirectory/</code>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/Ruby/apps/<span class="nv">$ </span><span class="nb">cd </span>mydirectory/
+</span><span class='line'>You are using <span class="s1">&#39;.rvmrc&#39;</span>, it requires trusting, it is slower and it is not
+</span><span class='line'>compatible with other ruby managers, you can switch to <span class="s1">&#39;.ruby-version&#39;</span>
+</span><span class='line'>using <span class="s1">&#39;rvm rvmrc to [.]ruby-version&#39;</span> or ignore this warnings with
+</span><span class='line'><span class="s1">&#39;rvm rvmrc warning ignore ~/Code/Ruby/apps/mydirectory/.rvmrc&#39;</span>,
+</span><span class='line'><span class="s1">&#39;.rvmrc&#39;</span> will <span class="k">continue </span>to be the default project file in RVM 1 and RVM 2,
+</span><span class='line'>to ignore the warning <span class="k">for </span>all files run
+</span><span class='line'><span class="s1">&#39;rvm rvmrc warning ignore all .rvmrcs&#39;</span>.
+</span><span class='line'>
+</span><span class='line'>~/Code/Ruby/apps/mydirectory<span class="o">[</span>master<span class="o">]</span><span class="err">$</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Decision: Do the Update</h4>
+
+<p>Ignoring a warning feels like sticking my head in the sand. It&rsquo;s better to face things head-on. So I decided to go with the update. If things don&rsquo;t work out, I can always remove RVM completely and start from scratch.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/Ruby/apps/mydirectory<span class="o">[</span>master<span class="o">]</span><span class="nv">$ </span>rvm rvmrc to .ruby-version
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>My shell responded by repeating the <code>.rvmrc</code> vs <code>.ruby-version</code> notice. But when I examine the directory, everything looks good.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>total 56
+</span><span class='line'>drwx---rwx   53 rth  wheel   1802 Apr 19 07:18 .
+</span><span class='line'>drwx---rwx   27 rth  wheel    918 Feb 10 08:26 ..
+</span><span class='line'>-rw-r--r--    1 rth  wheel    175 Feb  4 13:41 .gitignore
+</span><span class='line'>-rw-r--r--@   1 rth  wheel      0 Oct 15  2012 .repl_history
+</span><span class='line'>-rw-r--r--    1 rth  wheel     11 Apr 19 07:18 .ruby-gemset
+</span><span class='line'>-rw-r--r--    1 rth  wheel     16 Apr 19 07:18 .ruby-version
+</span><span class='line'>drwxr-xr-x   10 rth  wheel    340 Feb 14 20:41 AFNetworking-RubyMotion-Example
+</span><span class='line'>drwxr-xr-x   13 rth  wheel    442 Feb 24 17:29 AccordionUIView
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Instead of a single <code>.rvmrc</code> file, Ruby versions are managed by
+<code>.ruby-version</code> while gemsets are managed through <code>.ruby-gemset</code>.</p>
+
+<h4>Bash Alias</h4>
+
+<p>Next, it&rsquo;s time to clean things up by adding an <code>alias</code> to
+<code>~/.bash_profile</code>.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">alias </span><span class="nv">newrvm</span><span class="o">=</span><span class="s2">&quot;rvm rvmrc to .ruby-version&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Tell the terminal session to use the new <code>~/.bash_profile</code> with</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="nb">source</span> ~/.bash_profile
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And now we can begin using <code>.ruby-version</code> and <code>.ruby-gemset</code> in any .rvmrc-equipped directory with a simple one-word command.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>newrvm
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Feedback Welcome</h4>
+
+<p>If you notice any snags (including typos) in the above procedure, please reach out via the comments below or through <a href="http://twitter.com/rayhightower">Twitter</a>.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-18T20:33:00-05:00" pubdate data-updated="true">Apr 18<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/rails/'>Rails</a>, <a class='category' href='/blog/categories/ruby/'>Ruby</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset/" data-via="" data-counturl="http://RayHightower.com/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/04/12/elegant-code/" title="Previous Post: Elegant Code">&laquo; Elegant Code</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/04/20/ack-written-in-perl-useful-with-ruby/" title="Next Post: Ack 2.0: Written in Perl, Useful With Ruby">Ack 2.0: Written in Perl, Useful With Ruby &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>A little something about me.</p>
+</section>
+Included file 'asides/observations.html' not found in _includes directoryIncluded file 'custom/asides/speaking.html' not found in _includes directoryIncluded file 'custom/asides/code.html' not found in _includes directoryIncluded file 'asides/category_list.html' not found in _includes directoryIncluded file 'asides/popular_posts.html' not found in _includes directoryIncluded file 'asides/twitter.html' not found in _includes directoryIncluded file 'custom/asides/vim.html' not found in _includes directory
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'rayhightower';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://RayHightower.com/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset/';
+        var disqus_url = 'http://RayHightower.com/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

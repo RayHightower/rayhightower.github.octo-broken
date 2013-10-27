@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Rails | RayHightower.com]]></title>
+  <link href="http://RayHightower.com/blog/categories/rails/atom.xml" rel="self"/>
+  <link href="http://RayHightower.com/"/>
+  <updated>2013-10-27T16:08:38-05:00</updated>
+  <id>http://RayHightower.com/</id>
+  <author>
+    <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[BeagleBone Black, Up & Running]]></title>
+    <link href="http://RayHightower.com/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/"/>
+    <updated>2013-05-22T22:13:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/05/22/beaglebone-black-running-ruby-on-rails</id>
+    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/BeagleBoneBlack.jpg" width="372" height="600" title="BeagleBone Black" alt="BeagleBone Black" align="right">
+<a href="http://beagleboard.org/Products/BeagleBone%20Black">BeagleBone Black</a>, like the <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a>, is a small, inexpensive computer that runs Linux. It&rsquo;s smaller than a deck of cards and you can buy one for about forty-five dollars ($45.00). The device is made by <a href="http://circuitco.com">CircuitCo</a> in Richardson, TX, USA.</p>
+
+<h3>It Just Works</h3>
+
+<p>BeagleBone Black runs Linux right out of the box. Steps required:</p>
+
+<ul>
+<li>Plug in the micro-HDMI cable for the monitor. See the &ldquo;Gotchas&rdquo;
+section about micro-HDMI below.</li>
+<li>Plug in the keyboard &amp; mouse via the USB port. You might need a USB hub because the board only has one USB port.</li>
+<li>Add power via the mini-USB port or the 5v power connection.</li>
+</ul>
+
+
+<p>After a few minutes of boot time, we have a fully-functioning Linux computer with a GUI, Firefox browser, and other tools.</p>
+
+<!--more-->
+
+
+<p>The BeagleBone Black has 2GB of flash storage on the board, and part
+of that is used for Linux. Here&rsquo;s a screenshot after just a few minutes of ownership.</p>
+
+<center><img src="http://RayHightower.com/images/BeagleBoneBlack-WindyCityRails.png" width="600" height="338" title="BeagleBone Black Firefox WindyCityRails" alt="BeagleBone Black Firefox WindyCityRails" align="center"></center>
+
+
+<h3>Documentation</h3>
+
+<p><img src="http://RayHightower.com/images/BeagleBoneBlack-USB.png" width="250" height="200" title="BeagleBone Black USB" alt="BeagleBone Black USB" align="right">
+All of the paper documentation for the BeagleBone Black fits on a slip of paper roughly the size of two business cards. The meat of the documentation resides on the device itself. To reach the electronic documentation:</p>
+
+<ol>
+<li>Plug the BeagleBone Black into a USB port on your laptop.</li>
+<li>The board will appear as a USB storage device. One of the files at the
+root of the storage device, <code>START.htm</code>, contains the documentation. It
+can be viewed in a web browser.</li>
+</ol>
+
+
+<p>The documentation recommends against <a href="http://en.wikipedia.org/wiki/Internet_Explorer">MSIE</a>.</p>
+
+<h3>Gotchas</h3>
+
+<p><img src="http://RayHightower.com/images/micro-HDMI-home-depot.jpg" width="400" height="300" title="Micro HDMI Home Depot" alt="Micro HDMI Home Depot" align="right">
+The manufacturer included a mini-USB cable with the device, so you can power it up right after you rip open the package. Gotcha: You need a micro-HDMI cable (or adapter) if you want to attach a monitor. I would have preferred a micro-HDMI-to-HDMI adapater in the box instead of the mini-USB cable. That&rsquo;s a little nit-picky on my part since micro-HDMI cables are easy to find at Home Depot.</p>
+
+<p>A quick shout-out to Home Depot: Their store-brand cables let you test the cable end without opening the package, right in the store. Excellent package design by Home Depot.</p>
+
+<p>My second &ldquo;gotcha&rdquo; is more important: The <code>curl</code> command did not behave as flawlessly as it did with the Raspberry Pi, so I was not able to install Ruby as quickly as planned. Details below.</p>
+
+<h3>Installing Rails</h3>
+
+<p>I will have to cover Ruby and Rails installation in a future blog post because my initial attempts were not successful. <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">RVM, Ruby, and Rails installed easily with Raspberry Pi</a>, even though the compilation time was long. With the BeagleBone Black, I received the following in response to the <code>curl</code> command:</p>
+
+<p>```bash
+sh-4.2# curl -L <a href="https://get.rvm.io">https://get.rvm.io</a> | bash -s stable &mdash;ruby
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current</p>
+
+<pre><code>                             Dload  Upload   Total   Spent    Left  Speed
+</code></pre>
+
+<p>  0     0    0     0    0     0      0      0 &mdash;:&mdash;:&mdash; &mdash;:&mdash;:&mdash; &mdash;:&mdash;:&mdash;     0
+curl: (77) Problem with the SSL CA cert (path? access rights?)
+sh-4.2#
+```</p>
+
+<p>Maybe it&rsquo;s time to try <a href="https://github.com/sstephenson/rbenv">RBEnv</a>? I&rsquo;ll post a solution when I find it. Or&hellip; if a reader of this blog already has a solution for the BeagleBone Black Rails installation challenge, please post in the comments below and I&rsquo;ll credit you here.</p>
+
+<h4>BeagleBone Black vs. Raspberry Pi</h4>
+
+<p>Which is better, BeagleBone Black or Raspberry Pi? There&rsquo;s no clear winner in my opinion. It&rsquo;s a matter of trade-offs:</p>
+
+<ul>
+<li>The &lsquo;Bone runs Linux right out of the box, while it takes some time to get Linux running on the Pi, unless you buy a card pre-configured for the Pi.</li>
+<li>RVM, Ruby, and Rails installation was painless on the Pi even though compilation time was long. The jury is still out w/r/t RVM on the &lsquo;Bone.</li>
+<li>Cost-wise, they&rsquo;re within ten bucks of each other. That&rsquo;s a wash.</li>
+<li>The &lsquo;Bone has more Ardunio-like provisions for digital projects.</li>
+<li>The Pi includes an RCA output for older TVs. Plus the Pi uses standard HDMI, so there&rsquo;s no need to get a special micro-HDMI cable.</li>
+</ul>
+
+
+<p>I&rsquo;ve owned my &lsquo;Bone for just over 24 hours. Lots more to learn. Looking forward to it!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Upgrading Ruby With RVM]]></title>
+    <link href="http://RayHightower.com/blog/2013/05/16/upgrading-ruby-with-rvm/"/>
+    <updated>2013-05-16T13:36:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/05/16/upgrading-ruby-with-rvm</id>
+    <content type="html"><![CDATA[<p><a href="http://rvm.io">Ruby Version Manager (RVM)</a> is one of my favorite tools in the Ruby ecosystem.  Reason: RVM lets me experiment with Ruby and Rails at will. I don&rsquo;t know about you, but my best experiments are full of risk so they eventually blow things up. When that happens, I can always recover the broken areas without wasting time on a full system restore.</p>
+
+<p>Some devs choose to use another tool, <a href="https://github.com/sstephenson/rbenv">RBenv</a>, that serves a purpose similar to RVM. I began working with RVM before the other tools existed, and since it has always worked well for me, I have no reason to switch.</p>
+
+<h4>Ruby 2.0.0-p195</h4>
+
+<p>The latest patch of Ruby 2.0.0, p195, was released two days ago. Time to take it for a spin. RVM lets devs upgrade Ruby and manage gemsets seamlessly. Here&rsquo;s how the process went.</p>
+
+<!--more-->
+
+
+<h4>Get the Latest RVM</h4>
+
+<p>Instructions for installing RVM are at <a href="http://rvm.io">http://rvm.io</a>.
+If you already have RVM installed, you should confirm that you have the
+latest version.</p>
+
+<p><code>bash
+$ rvm get head
+</code></p>
+
+<h4>Grab the Ruby Patch</h4>
+
+<p>With the latest RVM installed, you can upgrade to the latest Ruby
+patch level.</p>
+
+<p><code>bash
+$ rvm upgrade 2.0.0
+Are you sure you wish to upgrade from ruby-2.0.0-p0 to ruby-2.0.0-p195? (Y/n): y
+Installing new ruby ruby-2.0.0-p195
+Searching for binary rubies, this might take some time.
+</code></p>
+
+<p>The process took at least twenty minutes on my system. I don&rsquo;t have an exact time because I began working on other tasks during the upgrade, and when I looked back at the terminal window, the process was mostly complete, except for a few questions about gemsets&hellip;</p>
+
+<p><code>bash
+Migrating gems from ruby-2.0.0-p0 to ruby-2.0.0-p195
+Are you sure you wish to MOVE gems from ruby-2.0.0-p0 to ruby-2.0.0-p195?
+This will overwrite existing gems in ruby-2.0.0-p195 and remove them from ruby-2.0.0-p0 (Y/n): y
+Moving gemsets...
+</code>
+&hellip;and aliases, wrappers, and archiving my patchless Ruby 2.0.0.</p>
+
+<p>```bash
+Do you wish to move over aliases? (Y/n): y
+Do you wish to move over wrappers? (Y/n): y
+Do you also wish to completely remove ruby-2.0.0-p0 (inc. archive)? (Y/n): y
+Removing ruby-2.0.0-p0&hellip;&hellip;..
+Successfully migrated ruby-2.0.0-p0 to ruby-2.0.0-p195
+Upgrade complete!</p>
+
+<p>$
+```</p>
+
+<p>Upgrade complete. Now running the latest patch of Ruby 2.0.0-p195</p>
+
+<p>```bash
+~$ rvm list</p>
+
+<p>rvm rubies</p>
+
+<p>   macruby-0.12 [ i686 ]
+   ruby-1.8.7-p334 [ i686 ]
+   ruby-1.9.2-p290 [ x86_64 ]
+ * ruby-1.9.3-p385 [ x86_64 ]
+   ruby-2.0.0-p195 [ x86_64 ]</p>
+
+<h1>=> &ndash; current</h1>
+
+<h1>=* &ndash; current &amp;&amp; default</h1>
+
+<h1>* &ndash; default</h1>
+
+<p>```</p>
+
+<p>As a final option, I chose to make this latest Ruby patch my default.</p>
+
+<p>```bash</p>
+
+<p>~$ rvm use ruby-2.0.0 &mdash;default
+Using /Users/rth/.rvm/gems/ruby-2.0.0-p195</p>
+
+<p>~$ rvm list</p>
+
+<p>rvm rubies</p>
+
+<p>   macruby-0.12 [ i686 ]
+   ruby-1.8.7-p334 [ i686 ]
+   ruby-1.9.2-p290 [ x86_64 ]
+   ruby-1.9.3-p385 [ x86_64 ]
+=* ruby-2.0.0-p195 [ x86_64 ]</p>
+
+<h1>=> &ndash; current</h1>
+
+<h1>=* &ndash; current &amp;&amp; default</h1>
+
+<h1>* &ndash; default</h1>
+
+<p>~$
+```
+And that&rsquo;s it.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ack 2.0: Written in Perl, Useful With Ruby]]></title>
+    <link href="http://RayHightower.com/blog/2013/04/20/ack-written-in-perl-useful-with-ruby/"/>
+    <updated>2013-04-20T17:12:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/04/20/ack-written-in-perl-useful-with-ruby</id>
+    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/ack.png" align="right" height="237" width="230" alt="Ack Linux Mac OS X" title="Ack Linux Mac OS X"></p>
+
+<p><a href="http://beyondgrep.com/">Ack</a> is an open source command line tool that lets developers search large trees of source code very quickly. If you are looking for a method definition in a haystack of files, Ack will find that needle for you. Many devs regard Ack as a replacement for <a href="http://en.wikipedia.org/wiki/Grep">grep</a>.</p>
+
+<p>The Elmhurst <a href="http://chicagoruby.org">ChicagoRuby</a> meetings are always a source of unexpected learning. Today ChicagoRuby welcomed <a href="http://twitter.com/petdance">Andy Lester</a>, creator of Ack. Andy released Ack 2.0 two days ago. He shared some of the latest features in an impromptu demo.</p>
+
+<!--more-->
+
+
+<h4>Why Ack?</h4>
+
+<p>Have you ever been working on a project, only to be interrupted when you need to look for something? It could be a method name, a variable declaration, or a string of text in a comment. A minor distraction costs you the time it takes to search plus the time required to re-focus.</p>
+
+<p>All of us are more productive when we stay <em>in the zone</em>. Ack helps devs to maintain focus and thereby produce better results.</p>
+
+<h4>First, Install Perl</h4>
+
+<p>Ack requires the <a href="http://en.wikipedia.org/wiki/Perl">Perl</a> programming language. Perl comes pre-installed on Mac OS X and most Linux distros. If you&rsquo;re running on a &lsquo;nix platform, you probably have Perl already.</p>
+
+<p>Windows installations are beyond the scope of this article. If you&rsquo;re running Windows, you might consider a Linux VM for Ruby and Rails-related work.</p>
+
+<h4>Installing Ack on Mac OS X</h4>
+
+<p>Installing Ack is so easy that it almost feels wrong: Grab Ack in a single Perl file and drop it in your <code>~/bin/</code> directory. That&rsquo;s it.</p>
+
+<p>Ack can also be installed via <a href="http://mxcl.github.io/homebrew/">Homebrew</a>, but I prefer the <em>drop it in ~/bin</em> installation since everything is contained in one file. Here&rsquo;s a more detailed version of the steps:</p>
+
+<ol>
+<li>If you don&rsquo;t have one already, create <code>~/bin/</code> as a subdirectory of your home directory.</li>
+<li>Grab a the single-file copy of Ack from <a href="http://beyondgrep.com/">http://beyondgrep.com/ </a></li>
+<li>Drop the single-file copy of Ack into a file called <code>~/bin/ack</code></li>
+<li>Make sure that <code>$HOME/bin:</code> appears at the beginning of your <code>$PATH</code> environment variable.</li>
+</ol>
+
+
+<p>At this point you should be running Ack v2.0 or later. To verify:</p>
+
+<p>```bash
+~/bin$ ack &mdash;version
+ack 2.02 (git commit f3c8827)
+Running under Perl 5.12.4 at /usr/bin/perl</p>
+
+<p>Copyright 2005-2013 Andy Lester.</p>
+
+<p>This program is free software.  You may modify or distribute it
+under the terms of the Artistic License v2.0.</p>
+
+<p>~/bin$
+```</p>
+
+<p>Installation complete. Now, let&rsquo;s take Ack for a spin.</p>
+
+<h4>Using Ack at the Command Line</h4>
+
+<p>For a sample project, let&rsquo;s use <code>demo_app</code> from Michael Hartl&rsquo;s <a href="http://rubyonrailstutorial.com">Ruby on
+Rails Tutorial</a>. Imagine that you want
+to find every file in the project that references <code>user_id</code>. How would
+you do that?
+<img src="http://RayHightower.com/images/ack_user_id.png" align="center" height="650" width="887" alt="Ack command line demo" title="Ack command line demo"></p>
+
+<p>Fast, clear, and highlighted in color. Bonus: If you&rsquo;re a Vim user,
+try <a href="https://github.com/mileszs/ack.vim">ack.vim</a> if you want to run Ack
+without leaving your editor.</p>
+
+<h4>The Bottom Line</h4>
+
+<p>Ack helps devs to find things quicker without leaving the zone. Try it!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[New RVM Behavior With .ruby-version and .ruby-gemset]]></title>
+    <link href="http://RayHightower.com/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset/"/>
+    <updated>2013-04-18T20:33:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset</id>
+    <content type="html"><![CDATA[<p><a href="http://RayHightower.com/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset/"><img src="http://RayHightower.com/images/rvm.png" height="98" width="89" align="right" alt="RVM .ruby-version .ruby-gemset" title="RVM .ruby-version .ruby-gemset"></a>
+I trust <a href="http://rvm.io">RVM</a> to manage my Ruby versions and my gemsets. So when I saw an unexpected change in RVM&rsquo;s behavior, I was concerned about a possible disruption in my workflow.</p>
+
+<!--more-->
+
+
+<h4>A New RVM Message</h4>
+
+<p>Here&rsquo;s the message I received when I changed into <code>mydirectory/</code>:</p>
+
+<p>```bash
+~/Code/Ruby/apps/$ cd mydirectory/
+You are using &lsquo;.rvmrc&rsquo;, it requires trusting, it is slower and it is not
+compatible with other ruby managers, you can switch to &lsquo;.ruby-version&rsquo;
+using &lsquo;rvm rvmrc to [.]ruby-version&rsquo; or ignore this warnings with
+&lsquo;rvm rvmrc warning ignore ~/Code/Ruby/apps/mydirectory/.rvmrc&rsquo;,
+&lsquo;.rvmrc&rsquo; will continue to be the default project file in RVM 1 and RVM 2,
+to ignore the warning for all files run
+&lsquo;rvm rvmrc warning ignore all .rvmrcs&rsquo;.</p>
+
+<p>~/Code/Ruby/apps/mydirectory[master]$
+```</p>
+
+<h4>Decision: Do the Update</h4>
+
+<p>Ignoring a warning feels like sticking my head in the sand. It&rsquo;s better to face things head-on. So I decided to go with the update. If things don&rsquo;t work out, I can always remove RVM completely and start from scratch.</p>
+
+<p>```bash
+~/Code/Ruby/apps/mydirectory[master]$ rvm rvmrc to .ruby-version</p>
+
+<p><code>
+My shell responded by repeating the `.rvmrc` vs `.ruby-version` notice. But when I examine the directory, everything looks good.
+</code>bash
+total 56
+drwx&mdash;-rwx   53 rth  wheel   1802 Apr 19 07:18 .
+drwx&mdash;-rwx   27 rth  wheel    918 Feb 10 08:26 ..
+-rw-r&mdash;r&mdash;    1 rth  wheel    175 Feb  4 13:41 .gitignore
+-rw-r&mdash;r&mdash;@   1 rth  wheel      0 Oct 15  2012 .repl_history
+-rw-r&mdash;r&mdash;    1 rth  wheel     11 Apr 19 07:18 .ruby-gemset
+-rw-r&mdash;r&mdash;    1 rth  wheel     16 Apr 19 07:18 .ruby-version
+drwxr-xr-x   10 rth  wheel    340 Feb 14 20:41 AFNetworking-RubyMotion-Example
+drwxr-xr-x   13 rth  wheel    442 Feb 24 17:29 AccordionUIView
+```</p>
+
+<p>Instead of a single <code>.rvmrc</code> file, Ruby versions are managed by
+<code>.ruby-version</code> while gemsets are managed through <code>.ruby-gemset</code>.</p>
+
+<h4>Bash Alias</h4>
+
+<p>Next, it&rsquo;s time to clean things up by adding an <code>alias</code> to
+<code>~/.bash_profile</code>.
+<code>bash
+alias newrvm="rvm rvmrc to .ruby-version"
+</code></p>
+
+<p>Tell the terminal session to use the new <code>~/.bash_profile</code> with
+<code>bash
+$ source ~/.bash_profile
+</code></p>
+
+<p>And now we can begin using <code>.ruby-version</code> and <code>.ruby-gemset</code> in any .rvmrc-equipped directory with a simple one-word command.
+<code>bash
+$ newrvm
+</code></p>
+
+<h4>Feedback Welcome</h4>
+
+<p>If you notice any snags (including typos) in the above procedure, please reach out via the comments below or through <a href="http://twitter.com/rayhightower">Twitter</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby on Raspberry Pi]]></title>
+    <link href="http://RayHightower.com/blog/2012/12/03/ruby-on-raspberry-pi/"/>
+    <updated>2012-12-03T06:38:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2012/12/03/ruby-on-raspberry-pi</id>
+    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/assets/raspberry_pi_iphone.jpg" width="400" align="right" title="Raspberry Pi Circuit Board" alt="Raspberry Pi Circuit Board">
+Raspberry Pi is a single-board computer roughly the size of a deck of cards. It&rsquo;s equipped with an ARM processor that runs Linux. USB ports let you attach a keyboard and mouse. Video is supported via HDMI and RCA. Storage is handled by SD cards. There&rsquo;s an Ethernet port.</p>
+
+<p>You can buy a Raspberry Pi for $35.00.</p>
+
+<h4>Will it Run Ruby?</h4>
+
+<p>When my Raspberry Pi arrived, I was curious: Will it run Ruby? How about Rails?  This article describes my experience with RVM, Ruby, and Rails on a Raspberry Pi, along with the &ldquo;gotchas&rdquo; I encountered along the way.</p>
+
+<!--more-->
+
+
+<h4>Why Raspberry Pi?</h4>
+
+<p>Raspberry Pi was created by a group of UK educators and engineers with a concern: Inexpensive hobbyist computers like the old Commodore 64 no longer exist. Game consoles continue to get better, but there is no replacement for the Commodore. As a result, young people who <em>might</em> become developers get introduced to the profession as gamers or users of Word or Excel. They begin as consumers, not creators. Sad news, because creators shape the world we all enjoy.</p>
+
+<p>Creators get stronger when they have tools for learning, play, and <a href="/blog/2012/09/03/10000-hours-of-practice/">10,000 hours of practice</a>. Enter Raspberry Pi. It&rsquo;s a tiny, inexpensive computer. It runs open source software so it is highly accessible to curious minds that are eager to learn, practice, and play.</p>
+
+<h4>Yes, It Will Run Ruby</h4>
+
+<p>Here&rsquo;s a screenshot from my Raspberry Pi with the Midori web browser, RVM, Ruby 1.9.3-p327, Rails 3.2.9, Vim 7.3, and other tools. In this shot, I&rsquo;m using the Pi&rsquo;s HDMI output to drive a 1080p monitor.</p>
+
+<p><img src="http://RayHightower.com/assets/RaspberryPi-Desktop.png" width="800" align="middle" title="Raspberry Pi 1080p HDMI Monitor" alt="Raspberry Pi 1080p HDMI Monitor" ></p>
+
+<p>Yes, this tiny, $35 device will drive a monitor at full 1080p HD.</p>
+
+<h4>Getting Started</h4>
+
+<p>Here&rsquo;s what you need to get Ruby running on your Raspberry Pi.</p>
+
+<ul>
+<li>1 Raspberry Pi with 512MB RAM or more. I bought mine from <a href="http://newark.com">Newark/element14</a>.</li>
+<li>1 Monitor that accepts HDMI or RCA video input.</li>
+<li>1 HDMI or RCA cable, depending on your monitor.</li>
+<li>1 USB keyboard</li>
+<li>1 USB mouse</li>
+<li>1 8GB (or larger) SD card. The instructions recommend 4GB, but I suggest at least 8GB if you expect to run Rails. You&rsquo;ll need room for gems, git, etc.</li>
+<li>1 Ethernet cable w/RJ-45 ends.</li>
+<li>1 high-speed Internet connection.</li>
+<li>A separate computer capable of writing an SD card image, or an SD card pre-configured for Raspberry Pi.</li>
+</ul>
+
+
+<p>The Pi makers have tested the device with SD cards as large as 32GB, even though 4GB is recommended. Personally, I prefer the larger cards because they allow more room for experiments.</p>
+
+<h4>Prepping the SD Card</h4>
+
+<p>The Pi&rsquo;s operating system boots from the SD card. There are several methods for prepping the SD card with the Raspberry Pi system. The easiest: Buy a Pi with a pre-configured SD card.</p>
+
+<p>My Pi arrived before the pre-configured SD card. I&rsquo;m a little bit impatient when it comes to new gadgets, so I decided to prep an old SD card of my own.</p>
+
+<p><em>Note:</em> If you&rsquo;re reading this article, you already know the standard disclaimer about how technology changes rapidly therefore this procedure could be wrong by the time you read this. I&rsquo;ve included links to references so you can check for updates on your own. You know the risks. Please backup everything that needs it.</p>
+
+<p>References:</p>
+
+<ul>
+<li><a href="http://elinux.org/RPi_Easy_SD_Card_Setup">eLinux SD Card Setup</a>. Methods for putting your preferred image on the SD card. I chose the &ldquo;Copying an image to the SD card in Mac OS X (mostly graphical interface)&rdquo; method.</li>
+<li><a href="http://www.raspberrypi.org/downloads">Raspberry Pi Official Downloads</a>. Several SD card images, and a beginners wiki.</li>
+</ul>
+
+
+<p>Prepping an SD card takes a <em>long</em> time. In my case, it took 23 minutes from the time I executed the SD write command (<code>$ sudo dd...</code>) to the completion of the process. It was a little disconcerting because the system didn&rsquo;t do anything during that time. No feedback whatsoever. Sounds like an opportunity for a pull request!</p>
+
+<h4>Starting the System</h4>
+
+<p>To start your Raspberry Pi system:</p>
+
+<ul>
+<li>Plug the SD card, USB keyboard &amp; mouse, Ethernet cable, and video cable (HDMI or RCA) into their corresponding sockets.</li>
+<li>Plug in the USB power adapter.</li>
+</ul>
+
+
+<p>There is no power switch. The device is turned on/off by adding or removing the power cable.</p>
+
+<p>Linux will boot in text mode. When the system is done booting, you will be prompted for a username and password. Here are the default credentials:</p>
+
+<pre><code>
+raspberrypi login: pi
+Password: raspberry
+</code></pre>
+
+
+<p>Several seconds later, you will be greeted with the $ prompt. You can continue to use the Pi in text mode, or you can start the X Window GUI with:</p>
+
+<p><code>bash
+$ startx
+</code></p>
+
+<h4>Ruby with RVM</h4>
+
+<p>I am a big fan of <a href="http://rvm.io">Ruby Version Manager (RVM)</a>. I learn best when I break things. RVM&rsquo;s handling of Ruby versions and gemsets enables me to recover rapidly and well.</p>
+
+<p>This command will install the latest stable versions of RVM and Ruby:</p>
+
+<p><code>bash
+$ curl -L https://get.rvm.io | bash -s stable --ruby
+</code></p>
+
+<p>It took over an hour for Ruby to compile on my Pi. The read/write speed of my SD card (Class 4) could have been a factor. I have a faster (Class 10) SD card on order.</p>
+
+<h3>Installing Rails</h3>
+
+<p>First, make sure you&rsquo;re using the version of Ruby you want to use.</p>
+
+<p><code>bash
+$ rvm current
+</code></p>
+
+<p>Next, create a gemset and tell RVM that you want to use it.</p>
+
+<p><code>bash
+$ rvm use [version of Ruby you want to use]
+$ rvm gemset create firstgemset
+$ rvm gemset use firstgemset
+</code></p>
+
+<p>And then install Rails as you would on any other &lsquo;nix-based machine.</p>
+
+<p><code>
+$ gem install rails
+</code></p>
+
+<h4>Gotchas</h4>
+
+<p>The installation process was relatively smooth. Still, here are a few gotchas I encountered with the Pi:</p>
+
+<ul>
+<li>I already mentioned this, but it&rsquo;s worth repeating: It took 23 minutes to write the SD card, and there was no feedback along the way. This wasn&rsquo;t a big deal since I had been pre-warned by one of the wikis.</li>
+<li>apt-get needed an update before I could install git. <code>$ sudo apt-get update</code> did the trick.</li>
+<li>The Pi will do absolutely nothing without a properly configured SD card. You know how a PC will partially boot (to CMOS) even without a hard drive? Not so with the Pi.</li>
+<li>The micro-USB power port requires 700mA or more of current. Most micro-USB power adapters deliver 500mA or less. Raspberry Pi will only boot if the micro-USB provides sufficient amperage. Only one of my several micro-USB adapters met this requirement.</li>
+<li>A 4GB SD card is far too small if you want to do something useful with the Pi. My first Rails installation failed due to size limitations because I was using a 4GB card. Go with 8GB or larger.</li>
+<li>I&rsquo;m not 100% sure, but I think that a faster SD card will make a difference especially during the compilation of the Ruby interpreter. This is only a guess at this point. I don&rsquo;t yet know where the bottlenecks are.</li>
+</ul>
+
+
+<p>Overall, the gotchas were minor.</p>
+
+<h4>For Screenshots, Try Scrot</h4>
+
+<p>To take screenshots of the Raspberry Pi desktop, I used Scrot (SCReenshOT). Here&rsquo;s how to install Scrot:</p>
+
+<p><code>
+$ sudo apt-get install scrot
+</code></p>
+
+<p>After you install Scrot, this command will take a shot of the entire desktop and drop it into a file called <code>desktop.png</code> in your home directory.</p>
+
+<p><code>
+$ scrot ~/desktop.png
+</code></p>
+
+<p>To pause five seconds before taking the screenshot:</p>
+
+<p><code>
+$ sleep 5; scrot ~/desktop.png
+</code></p>
+
+<p><img src="http://RayHightower.com/assets/raspberry-pi-analog-TV.jpg" width="400" align="right" title="Raspberry Pi Analog TV Monitor" alt="Raspberry Pi Analog TV Monitor" ></p>
+
+<h4>Analog TV</h4>
+
+<p>Don&rsquo;t laugh: I still have an old analog TV in my living room. It&rsquo;s twelve years old and it still works. Since Raspberry Pi comes with multiple video outupts, analog TVs are useful again.</p>
+
+<p>Here&rsquo;s Raspberry Pi running with my old analog TV as a monitor. Reminds me of the Commodore 64 days!</p>
+
+<p>Raspberry Pi will work with a wide range of monitors, from HDMI to ancient analog. That makes the Pi accessible to a large audience of hobbyists and developers.</p>
+
+<h4>Conclusion</h4>
+
+<p>Raspberry Pi will never replace my primary machine because it&rsquo;s too slow. But it is certainly fast enough for learning. It meets the goals set forth by the engineering team.</p>
+
+<p>I am excited by the learning opportunities offered by Raspberry Pi. To the Raspberry Pi Foundation: Thank you for an impressive device. I wish you much success.</p>
+]]></content>
+  </entry>
+  
+</feed>

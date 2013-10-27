@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Replacing Google Reader with Feed Wrangler - RayHightower.com</title>
+  <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
+
+  
+  <meta name="description" content="Google Reader, the RSS product, shuts down on July 1st. I consume most news via RSS, and the ability to sync multiple RSS clients between iPhone, &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://RayHightower.com/blog/2013/06/21/replacing-google-reader-with-feed-wrangler">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="RayHightower.com" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-330946-28']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">RayHightower.com</a></h1>
+  
+    <h2>Thoughts about Ruby, Rails, RubyMotion, iOS, and business growth.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:RayHightower.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Replacing Google Reader With Feed Wrangler</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-21T18:52:00-05:00" pubdate data-updated="true">Jun 21<span>st</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><img src="/images/feedwrangler-gil.jpg" height="600" width="450" align="right" alt="Google Reader Replacement: Feed Wrangler - iPad" title="Google Reader Replacement: Feed Wrangler - iPad">
+Google Reader, the RSS product, shuts down on July 1st. I consume most news via RSS, and the ability to sync multiple RSS clients between iPhone, iPad, and desktop with Google Reader in the background saved time while keeping me informed. Finding a replacement is critical.</p>
+
+<p>Fortunately, strong alternatives are emerging. <a href="http://feedwrangler.net">Feed Wrangler</a> is a Google Reader replacement by independent developer <a href="http://david-smith.org">David Smith</a>. Here are my first impressions.</p>
+
+<!--more-->
+
+
+<h3>Pros</h3>
+
+<p>After using the service for a few hours, I can already see some things that I like. Specifically:</p>
+
+<ul>
+<li>Minimal fluff. Other RSS clients feature big photos and page-flipping special effects. That&rsquo;s not for me. Just the facts, RSS.</li>
+<li>Easy RSS import from Google Reader. Just log in with your Google account and follow the prompts. After you import your feeds into Feed Wrangler&rsquo;s web app, you will never need Google Reader again.</li>
+<li>Reasonable cost. The Feed Wrangler service costs $19/year. Google dropped Reader because they couldn&rsquo;t make money from the free product. You can&rsquo;t fix that with volume! When an app makes money (directly or indirectly) then the app is more likely to stick around.</li>
+<li>iPhone and iPad apps. Feed Wrangler&rsquo;s native apps for <a href="https://itunes.apple.com/us/app/feed-wrangler/id634486174?mt=8">iPhone and iPad</a> sync with the web app. This is important for me because I consume most RSS on-the-go. A screenshot from the iPad app appears above.</li>
+</ul>
+
+
+<h3>Cons</h3>
+
+<p>Like most users, I want the developer to add &ldquo;just one or two more features&rdquo; to make the app perfect for me. Of course that&rsquo;s the slippery slope to bloatware since every user has a different set of one-or-two features.</p>
+
+<p>The developer can avoid bloatware by ignoring all other users and focusing on <em>my</em> feature requests:</p>
+
+<ul>
+<li>Evernote integration. My current RSS client lets me drop an article into Evernote with a few taps on the screen. Sometimes I want to re-read an article or think about it more deeply at a later time. Evernote lets me do this.</li>
+<li>Organized imports. While Feed Wrangler imports feeds from Google Reader, it does not maintain Reader&rsquo;s organization. So I had to organize my feeds manually with Feed Wrangler&rsquo;s &ldquo;Smart Stream&rdquo; feature. If Reader&rsquo;s folders could be imported as Feed Wrangler&rsquo;s Smart Streams, that would be cool.</li>
+<li>Feed counter. Sometimes I prioritize my reading by the number of unread articles. A counter next to each feed would be helpful.</li>
+</ul>
+
+
+<h3>Summary</h3>
+
+<p>I plan to try other RSS readers before Google Reader shuts down on July 1st. Feed Wrangler is making a good impression so far.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-21T18:52:00-05:00" pubdate data-updated="true">Jun 21<span>st</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/business/'>Business</a>, <a class='category' href='/blog/categories/education/'>Education</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2013/06/21/replacing-google-reader-with-feed-wrangler/" data-via="" data-counturl="http://RayHightower.com/blog/2013/06/21/replacing-google-reader-with-feed-wrangler/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/06/13/practice-begins-with-play/" title="Previous Post: Practice Begins With Play">&laquo; Practice Begins With Play</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/" title="Next Post: Prep for Parallella's 64 Cores: Installing Go on Mac OS X">Prep for Parallella's 64 Cores: Installing Go on Mac OS X &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>A little something about me.</p>
+</section>
+Included file 'asides/observations.html' not found in _includes directoryIncluded file 'custom/asides/speaking.html' not found in _includes directoryIncluded file 'custom/asides/code.html' not found in _includes directoryIncluded file 'asides/category_list.html' not found in _includes directoryIncluded file 'asides/popular_posts.html' not found in _includes directoryIncluded file 'asides/twitter.html' not found in _includes directoryIncluded file 'custom/asides/vim.html' not found in _includes directory
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'rayhightower';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://RayHightower.com/blog/2013/06/21/replacing-google-reader-with-feed-wrangler/';
+        var disqus_url = 'http://RayHightower.com/blog/2013/06/21/replacing-google-reader-with-feed-wrangler/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

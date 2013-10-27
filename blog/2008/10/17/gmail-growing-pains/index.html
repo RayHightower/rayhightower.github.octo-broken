@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>GMail Growing Pains - RayHightower.com</title>
+  <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
+
+  
+  <meta name="description" content="Note: This article was originally posted on the WisdomGroup blog. WisdomGroup is both a proponent and a user of GMail. Of course, the service is not &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://RayHightower.com/blog/2008/10/17/gmail-growing-pains">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="RayHightower.com" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-330946-28']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">RayHightower.com</a></h1>
+  
+    <h2>Thoughts about Ruby, Rails, RubyMotion, iOS, and business growth.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:RayHightower.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">GMail Growing Pains</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-10-17T00:22:00-05:00" pubdate data-updated="true">Oct 17<span>th</span>, 2008</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><em>Note: This article was originally posted on the <a href="http://wisdomgroup.com">WisdomGroup</a> blog.</em></p>
+
+<p>WisdomGroup is both a proponent and a <a href="/blog/2007/12/10/gmail-vs-microsoft-exchange/">user of GMail</a>. Of course, the service is not perfect, as proven during yesterday&rsquo;s GMail outage. &ldquo;It&rsquo;s only affecting a small number of users&rdquo; is hardly consolation when you&rsquo;re one of the affected users.</p>
+
+<!-- more -->
+
+
+<h4>Sys Admin Anger</h4>
+
+<p>One angry systems administrator posted this message in the <a href="http://groups.google.com/group/hosted-the-basics/browse_thread/thread/4465cc3272db6728?hl=en">Google Apps Discussion Group</a></p>
+
+<blockquote><p>Since yesterday around at least 4:00pm my CEO cannot access his mail. He gets a 502 temporary error. Support keeps telling me it is affecting a small number of users. This is not a temporary problem if it lasts this long. It is frustrating to not be able to expedite these issues. I have to speak with the boss again and he&rsquo;s po&rsquo;d. This is considered a mission critical issue here. We may have to make other arrangements. Apparently Google mail is not very reliable. I think I would have pushed for something else before we switched if I had known the level of unreliability.</p></blockquote>
+
+<h4>Achieving 100% Uptime</h4>
+
+<p>In a perfect world, I could complete this sentence:</p>
+
+<blockquote><p>Achieving 100% uptime is easy. All you have to do is&hellip;</p></blockquote>
+
+<p>Unfortunately, I don&rsquo;t know of a 100% uptime solution. Systems are imperfect because they&rsquo;re designed by imperfect humans. Good engineers design systems with multiple redundancies. Sometimes those redundancies fail.</p>
+
+<h4>What Sys Admins Can Do</h4>
+
+<p>The GMail web client is outstanding. But when it fails, users can sometimes send/receive email through an old fat client like Microsoft Outlook or Apple Mail. Just point the fat client to GMail, and you&rsquo;re in business.</p>
+
+<h4>What Google Can Do</h4>
+
+<p>The best thing a company can do in a time of failure: Communicate. Solve the problem, and make sure you&rsquo;re sharing updates with users on a regular basis.</p>
+
+<h4>Bring Email In House?</h4>
+
+<p>When GMail fails, it&rsquo;s tempting to wish for the good-old-days of the in-house mail server. &ldquo;What moron moved us to external email?&rdquo; is a common thought during an outage. But it&rsquo;s important to balance our thinking:</p>
+
+<ul>
+<li>With in-house email, you&rsquo;re responsible for everything. Uptime, malware, bandwidth, etc.</li>
+<li>Managing in-house email takes time. Time for regular maintenance. Time for troubleshooting when things go wrong.</li>
+<li>Managing in-house takes money. Money for software upgrades, anit-malware tools, and talented technical people.</li>
+</ul>
+
+
+<p>Sometimes in-house email makes sense. In other cases, the time &amp; energy spent on email management is better applied to business issues. It&rsquo;s important to weigh the options rationally, especially in a time of crisis.</p>
+
+<p>By the way, in-house email systems are subject to the same &ldquo;less than 100% uptime&rdquo; rules as all other systems.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-10-17T00:22:00-05:00" pubdate data-updated="true">Oct 17<span>th</span>, 2008</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/business/'>Business</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2008/10/17/gmail-growing-pains/" data-via="" data-counturl="http://RayHightower.com/blog/2008/10/17/gmail-growing-pains/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2007/12/10/gmail-vs-microsoft-exchange/" title="Previous Post: GMail vs Microsoft Exchange">&laquo; GMail vs Microsoft Exchange</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2011/07/27/ruby-on-rails-3-tutorial-by-michael-hartl/" title="Next Post: Ruby on Rails 3 Tutorial By Michael Hartl">Ruby on Rails 3 Tutorial By Michael Hartl &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>A little something about me.</p>
+</section>
+Included file 'asides/observations.html' not found in _includes directoryIncluded file 'custom/asides/speaking.html' not found in _includes directoryIncluded file 'custom/asides/code.html' not found in _includes directoryIncluded file 'asides/category_list.html' not found in _includes directoryIncluded file 'asides/popular_posts.html' not found in _includes directoryIncluded file 'asides/twitter.html' not found in _includes directoryIncluded file 'custom/asides/vim.html' not found in _includes directory
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'rayhightower';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://RayHightower.com/blog/2008/10/17/gmail-growing-pains/';
+        var disqus_url = 'http://RayHightower.com/blog/2008/10/17/gmail-growing-pains/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

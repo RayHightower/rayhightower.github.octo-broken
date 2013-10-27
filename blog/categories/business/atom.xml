@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Business | RayHightower.com]]></title>
+  <link href="http://RayHightower.com/blog/categories/business/atom.xml" rel="self"/>
+  <link href="http://RayHightower.com/"/>
+  <updated>2013-10-27T16:08:38-05:00</updated>
+  <id>http://RayHightower.com/</id>
+  <author>
+    <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Successful Companies Are Built Around Communities]]></title>
+    <link href="http://RayHightower.com/blog/2013/07/09/successful-companies-are-built-around-communities/"/>
+    <updated>2013-07-09T23:52:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/07/09/successful-companies-are-built-around-communities</id>
+    <content type="html"><![CDATA[<p><a href="http://www.sethgodin.com">Seth Godin</a> is on a mission. Technology enables us to form communities that stretch beyond traditional boundaries like age and social status. Godin is convinced that revolutions within and between communities will yield huge opportunities for those who have the courage to take action. Don’t waste the revolution!</p>
+
+<p>I had the opportunity to hear Godin speak at a Chicago area event some time ago. This post was inspired by the presentation.</p>
+
+<!--more-->
+
+
+<h3>Recognizing Change</h3>
+
+<p>Humans rarely recognize change when we’re in the middle of it. We’re too busy living! One example from Chicago history: The advent of the skyscraper. On the surface, a skyscraper is just a tall building… big deal. However, in hindsight we can see that the skyscraper (and the Chicago school of architecture) in the late 1880s led to the expansion of cities. Cities became magnets for <a href="http://en.wikipedia.org/wiki/Knowledge_worker">knowledge workers</a>. As cities grew to accommodate more people, political power shifted away from farms and toward urban areas. Professional service firms, companies that exist to make other companies better, blossomed &amp; grew. We continue to feel the effects of this trend today, over a century later.</p>
+
+<p>Godin believes that we are now dealing with another catalyst of change, one that is even more powerful than the skyscraper: the community. Communities are growing in size and power. Companies that know how to leverage communities are thriving.</p>
+
+<h3>Threadless is Not About T-Shirts</h3>
+
+<p>Fast forward to the early 21st century where we find a Chicago-area company called Threadless. If you sell a product that is easily copied, how do you differentiate yourself from the competition? By selling something that goes beyond the easily cloned product. <a href="http://threadless.com/">Threadless</a> has created a community around T-shirt sales. When building the company, the founders of Threadless looked at available technology and asked themselves, “What do people really want?” Their answers:</p>
+
+<ul>
+<li>To be famous.</li>
+<li>To be recognized.</li>
+<li>To be talked about.</li>
+</ul>
+
+
+<p>So they built the company to fulfill these basic human needs. If you’re an artist, submit a design. If enough people vote for your design, it gets printed on a shirt. And while you’re looking around the Threadless site, you’re welcome to buy any of the other designs for about $20 each.</p>
+
+<p>While other t-shirt companies are trying to undercut each other on price, Threadless gives customers what they really want, customers gladly pay a premium, and everybody wins.</p>
+
+<p><img src="http://RayHightower.com/images/rails_logo.jpg" width="200" height="285" align="right" title="Ruby on Rails Logo" alt="Ruby on Rails Logo"></p>
+
+<h3>We Don’t Pay for Software. We Pay for Results</h3>
+
+<p>Godin cites <a href="http://37signals.com">37signals</a> as an example of a company that nutures a community of software developers by giving away software for free. 37signals extracted the <a href="http://rubyonrails.org">Ruby on Rails</a> web framework from their Basecamp project management tool. Rather than charge for Rails, the company makes it available to the open source community at no charge. 37signals benefits because the people who use Rails, software developers, end up trying, buying and recommending the paid products to their colleagues. This results in an upward spiral in revenue for the company. To top it off, 37signals benefits from the open source community in ways that are not easily measured in dollars.</p>
+
+<p>WisdomGroup is grateful to the entire Ruby on Rails community, including 37signals. We express our gratitude through <a href="http://chicagoruby.org">ChicagoRuby</a> and <a href="http://windycityrails.org">WindyCityRails</a>. Contributing to the open source community has enabled us to develop wonderful relationships with contractors, clients, advisors… all sorts of people who have helped us to grow &amp; prosper. User groups and conferences enable the software community to come together – creating something far beyond the grasp of an individual genius.</p>
+
+<h3>The Bottom Line</h3>
+
+<p>Seth Godin’s point: Our most successful companies are built around communities. Companies that know how to build &amp; nurture communities will thrive &amp; grow. Companies stuck in the old paradigm (massive advertising on a massive scale) might survive, but they will be easily eclipsed by companies that understand the value of strong communities. The revolution is here, and Seth Godin urges all of us not to waste it.</p>
+
+<p><em>Note: An earlier version of this article was published at <a href="http://wisdomgroup.com">WisdomGroup.com</a>.</em></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Replacing Google Reader with Feed Wrangler]]></title>
+    <link href="http://RayHightower.com/blog/2013/06/21/replacing-google-reader-with-feed-wrangler/"/>
+    <updated>2013-06-21T18:52:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/06/21/replacing-google-reader-with-feed-wrangler</id>
+    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/feedwrangler-gil.jpg" height="600" width="450" align="right" alt="Google Reader Replacement: Feed Wrangler - iPad" title="Google Reader Replacement: Feed Wrangler - iPad">
+Google Reader, the RSS product, shuts down on July 1st. I consume most news via RSS, and the ability to sync multiple RSS clients between iPhone, iPad, and desktop with Google Reader in the background saved time while keeping me informed. Finding a replacement is critical.</p>
+
+<p>Fortunately, strong alternatives are emerging. <a href="http://feedwrangler.net">Feed Wrangler</a> is a Google Reader replacement by independent developer <a href="http://david-smith.org">David Smith</a>. Here are my first impressions.</p>
+
+<!--more-->
+
+
+<h3>Pros</h3>
+
+<p>After using the service for a few hours, I can already see some things that I like. Specifically:</p>
+
+<ul>
+<li>Minimal fluff. Other RSS clients feature big photos and page-flipping special effects. That&rsquo;s not for me. Just the facts, RSS.</li>
+<li>Easy RSS import from Google Reader. Just log in with your Google account and follow the prompts. After you import your feeds into Feed Wrangler&rsquo;s web app, you will never need Google Reader again.</li>
+<li>Reasonable cost. The Feed Wrangler service costs $19/year. Google dropped Reader because they couldn&rsquo;t make money from the free product. You can&rsquo;t fix that with volume! When an app makes money (directly or indirectly) then the app is more likely to stick around.</li>
+<li>iPhone and iPad apps. Feed Wrangler&rsquo;s native apps for <a href="https://itunes.apple.com/us/app/feed-wrangler/id634486174?mt=8">iPhone and iPad</a> sync with the web app. This is important for me because I consume most RSS on-the-go. A screenshot from the iPad app appears above.</li>
+</ul>
+
+
+<h3>Cons</h3>
+
+<p>Like most users, I want the developer to add &ldquo;just one or two more features&rdquo; to make the app perfect for me. Of course that&rsquo;s the slippery slope to bloatware since every user has a different set of one-or-two features.</p>
+
+<p>The developer can avoid bloatware by ignoring all other users and focusing on <em>my</em> feature requests:</p>
+
+<ul>
+<li>Evernote integration. My current RSS client lets me drop an article into Evernote with a few taps on the screen. Sometimes I want to re-read an article or think about it more deeply at a later time. Evernote lets me do this.</li>
+<li>Organized imports. While Feed Wrangler imports feeds from Google Reader, it does not maintain Reader&rsquo;s organization. So I had to organize my feeds manually with Feed Wrangler&rsquo;s &ldquo;Smart Stream&rdquo; feature. If Reader&rsquo;s folders could be imported as Feed Wrangler&rsquo;s Smart Streams, that would be cool.</li>
+<li>Feed counter. Sometimes I prioritize my reading by the number of unread articles. A counter next to each feed would be helpful.</li>
+</ul>
+
+
+<h3>Summary</h3>
+
+<p>I plan to try other RSS readers before Google Reader shuts down on July 1st. Feed Wrangler is making a good impression so far.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Man Who Sold Hot Dogs]]></title>
+    <link href="http://RayHightower.com/blog/2013/04/23/the-man-who-sold-hot-dogs/"/>
+    <updated>2013-04-23T18:13:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/04/23/the-man-who-sold-hot-dogs</id>
+    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/hot-dog-cart.jpg" width="250" height="277" align="right" title="The Man Who Sold Hot Dogs" alt="The Man Who Sold Hot Dogs">
+<em>Note: This timeless story pre-dates the web, and it has appeared at <a href="http://wisdomgroup.com">WisdomGroup.com</a>. Author unknown.</em></p>
+
+<p>There was a man who lived by the side of the road and sold hot dogs. He was hard of hearing, so he had no radio. He had trouble with his eyes, so he read no newspaper. But he sold good hot dogs. He put signs up on the highway telling how good they were. He stood on the side of the road and cried &ldquo;Buy a hot dog, mister?&rdquo; And people bought. He increased his meat and bun orders. He bought a bigger stove to take care of his trade.</p>
+
+<p>One day, his son came home from college to help him out. <!--more--> The son said, &ldquo;Father, haven’t you been listening to the radio? Haven’t you been reading the newspaper? There’s a big recession. The European situation is terrible. The domestic situation is worse.&rdquo;</p>
+
+<p>Whereupon the father thought, &ldquo;Well, my son has been to college. He reads the papers and listens to the radio. He ought to know.&rdquo;</p>
+
+<p>So the father cut down on his meat and bun orders, took down his advertising signs, and no longer bothered to stand out on the highway to sell his hot dogs.</p>
+
+<p>Hot dog sales fell almost overnight.</p>
+
+<p>&ldquo;You’re right, son,&rdquo; the father said. &ldquo;We are certainly in the middle of a great recession.&rdquo;</p>
+
+<h4>Epilogue</h4>
+
+<p>Whether times are good or bad, all of us must ask ourselves: What role is played by self-fulfilling prophesy?</p>
+
+<p>Luck is what happens when preparation meets opportunity.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Challenges Make Us Stronger]]></title>
+    <link href="http://RayHightower.com/blog/2013/03/25/challenges-make-us-stronger/"/>
+    <updated>2013-03-25T09:37:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/03/25/challenges-make-us-stronger</id>
+    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/moth.png" width="300" height="215" align="right" title="Emperor moth photo by Dean Morley" alt="Emperor moth photo by Dean Morley">
+A man found a cocoon of an emperor moth. He took it home so that he could watch the moth come out of the cocoon. On the day a small opening appeared, he sat and watched the moth for several hours as the moth struggled to force its body through that little hole.</p>
+
+<p>Then it seemed to stop making any progress. It appeared as if it had gotten as far as it could and it could go no farther. It just seemed to be stuck.</p>
+
+<!--more-->
+
+
+<h4>Kindness</h4>
+
+<p>Then the man, in his kindness, decided to help the moth, so he took a pair of scissors and snipped off the remaining bit of the cocoon. The moth then emerged easily. But it had a swollen body and small, shriveled wings. The man continued to watch the moth because he expected that, at any moment, the wings would enlarge and expand to be able to support the body, which would contract in time. Neither happened! In fact, the little moth spent the rest of its life crawling around with a swollen body and shriveled body and shriveled wings. It never was able to fly.</p>
+
+<h4>Helping vs. Understanding</h4>
+
+<p>What the man in his kindness and haste did not understand was that the restricting cocoon and the struggle required for the moth to get through the tiny opening was the way of forcing fluid from the body of the moth into its wings so that it would be ready for flight once it achieved its freedom from the cocoon. Freedom and flight would only come after the struggle. By depriving the moth of a struggle, he deprived the moth of health.</p>
+
+<h4>Obstacles and Growth</h4>
+
+<p>Sometimes struggles are exactly what we need in our life. If we were to go through our life without any obstacles, we would be crippled. We would not be as strong as what we could have been. Give every opportunity a chance, and leave no room for regrets.</p>
+
+<p><em>The author of this article is unknown. Emperor moth photo by <a href="http://www.flickr.com/photos/33465428@N02/7015602897/">Dean Morley</a></em>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[You Can Do It Now]]></title>
+    <link href="http://RayHightower.com/blog/2013/03/13/you-can-do-it-now/"/>
+    <updated>2013-03-13T15:31:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/03/13/you-can-do-it-now</id>
+    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/do_it_now.jpg" align="right" width="200" height="296" alt="You Can Do It Now" title="You Can Do It Now">
+If you are fortunate enough to work in the technology industry, you do not need permission to move forward. So do it now.</p>
+
+<p>Yes, you will have to define <em>it</em> for yourself.</p>
+
+<h4>ChiPMA – Product Management</h4>
+
+<p>A few years ago I had the pleasure of hearing <a href="http://www.youtube.com/watch?v=igsvMAU5POY">Suneel Gupta</a> speak at a Chicago Product Management Association meeting hosted by Pathfinder Development. Three points raised during Gupta’s talk:</p>
+
+<ul>
+<li>Conditions are never perfect. So start now.</li>
+<li>What does <em>start</em> mean? Figure that out, and draw out the plan.</li>
+<li>If you suck at first, keep going.</li>
+<li>Conditions are never perfect.</li>
+</ul>
+
+
+<!-- more -->
+
+
+<h4>Learning From History</h4>
+
+<p>Gupta is a student of history. He began the talk by drawing parallels between today’s startup culture and the early days of powered flight.</p>
+
+<p>In the late 1800s, Samuel Pierpont Langley was an accomplished engineer with great connections to money and resources. One of his lifelong goals was to develop a vehicle for powered flight. He built several successful models, hired the smartest collaborators he could find, and he even raised $50k (in 1898 dollars) from investors. Newspaper reporters followed his entourage as they conducted experiments. Surely, this team of thoroughbreds would solve the flight puzzle.</p>
+
+<p>But most people have never heard of Langley. Somewhere in Ohio, far from the news outlets of the day, the Wright Brothers achieved the goal first. When Langley heard the news, he stopped trying.</p>
+
+<p>Why did the Wright Brothers win? They never waited for perfect conditions. The Wright Brothers did what they could with the resources they had at the time. Maybe constraints are advantages in disguise.</p>
+
+<h4>Draw Out the Plan</h4>
+
+<p>Everybody has dreams. Something magical happens when we take the time to map out our dreams on paper.</p>
+
+<p>Gupta’s example: Jack Dorsey, creator of Twitter. Dorsey drew the first mock-up for Twitter on paper. And then he showed it to people. Some laughed. Many gave feedback. He used the feedback to hone the idea into a viable product.</p>
+
+<p>Until you put the idea on paper (or some other medium) so you can show it to potential customers and collaborators, you’ll never get the feedback you need to improve.</p>
+
+<h4>Keep Going</h4>
+
+<p>Gupta and his brother had an idea. They wanted to create videos about the first wave of Indians to move to America. They approached Hollywood experts about creating the videos.</p>
+
+<p>&ldquo;You’ll need at least $1 million,&rdquo; they were told. Much too expensive. Most people fold when facing a million dollar wall.</p>
+
+<p>But Suneel and his brother made their own videos with the equipment they had available. The videos were not million-dollar productions. But here’s the upside: When they were done, they had something of substance that they could show to people. They posted their work at <a href="http://kahanimovement.com">KahaniMovement.com</a>. One viewer liked the site enough to send a link to Steven Spielberg.</p>
+
+<p>Spielberg viewed the videos and he gave the brothers clear, actionable feedback. They made improvements. And they learned something interesting about Spielberg in the process: Even Spielberg starts with a loose cut sometimes! When Spielberg has a fresh idea that he’s trying to communicate, he will grab a hand-held camera, shoot the idea (no matter how rough) and show it to his team. If a picture is a thousand words, then a video is… you get the idea.</p>
+
+<h4>Teachers &amp; Parents Ignite Our Passion</h4>
+
+<p>Gupta shared a story about his 7th grade social studies class. The class watched a film of JFK delivering his inaugural speech in 1960. Gupta was moved. At the end of the film, the teacher informed that class that JFK had not written the speech. The author was Ted Sorensen, a man whom Kennedy called his <em>intellectual blood bank</em>.</p>
+
+<p>In 7th grade, Gupta had found his calling. He would become a speech writer.</p>
+
+<p>He went home and told his mother about his decision to become a speech writer. And that’s when his mother gave him a powerful piece of advice: &ldquo;If you want to do that, you don’t have to wait. You can do it now.&rdquo;</p>
+
+<p>You can do it now. What are you waiting for?</p>
+
+<p><em>A version of this article was originally posted at <a href="http://wisdomgroup.com">http://wisdomgroup.com</a>.</em></p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Unix for Ruby Developers - RayHightower.com</title>
+  <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
+
+  
+  <meta name="description" content="It is gratifying to know that learning something tangentially related to Ruby will, in fact, teach me more about Ruby. Working With Unix Processes, &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://RayHightower.com/blog/2012/12/24/unix-for-ruby-developers">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="RayHightower.com" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-330946-28']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">RayHightower.com</a></h1>
+  
+    <h2>Thoughts about Ruby, Rails, RubyMotion, iOS, and business growth.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:RayHightower.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Unix for Ruby Developers</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-24T16:50:00-06:00" pubdate data-updated="true">Dec 24<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><a href="http://workingwithunixprocesses.com/"><img src="/images/working-w-unix-processes.jpg" align="right" width="350" height="266"></a>
+It is gratifying to know that learning something tangentially related to Ruby will, in fact, teach me more about Ruby.</p>
+
+<p><a href="http://workingwithunixprocesses.com/"><em>Working With Unix Processes</em></a>, by Jesse Storimer, is ostensibly about Unix internals. However, in reading this book, I have become more aware of how executables run on my favorite family of operating systems, which in turn gives me more insight into Ruby.</p>
+
+<h3>Passing Arguments</h3>
+
+<p>For example, what happens when we pass arguments to a process, Ruby or otherwise? How do the arguments get there? Storimer offers a 1-line Ruby program called <code>argv.rb</code> that we can use to play with the ARGV array:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/Ruby/apps/sandbox<span class="nv">$ </span><span class="nb">echo</span> <span class="s1">&#39;p ARGV&#39;</span> &gt; argv.rb
+</span><span class='line'>
+</span><span class='line'>~/Code/Ruby/apps/sandbox<span class="nv">$ </span>ruby argv.rb what results can we expect here
+</span><span class='line'><span class="o">[</span><span class="s2">&quot;what&quot;</span>, <span class="s2">&quot;results&quot;</span>, <span class="s2">&quot;can&quot;</span>, <span class="s2">&quot;we&quot;</span>, <span class="s2">&quot;expect&quot;</span>, <span class="s2">&quot;here&quot;</span><span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'>~/Code/Ruby/apps/sandbox<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<!--more-->
+
+
+<p>Once we have our hands on the ARGV array, we can parse it and manipulate it at will.</p>
+
+<h3>Grokking Forks</h3>
+
+<p>The section on forks contains a lot of mind-bending fun. The author offers some code to explain how forks work, but some concepts are only understandable when we write our own code. I had to write my own in order to raise my comfort level with forks.</p>
+
+<p>Here&rsquo;s what the code does:</p>
+
+<ul>
+<li>In the parent process, <code>fork</code> returns the <code>pid</code> of the child process.</li>
+<li>In the child process, <code>fork</code> returns <code>nil</code>.</li>
+<li>Therefore, the <code>if</code> block should be executed by the parent process&hellip;</li>
+<li>&hellip;and the <code>else</code> block should be executed by the child process.</li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">puts</span> <span class="s2">&quot;Parent process pid (before fork) is </span><span class="si">#{</span><span class="no">Process</span><span class="o">.</span><span class="n">pid</span><span class="si">}</span><span class="s2">.</span><span class="se">\n</span><span class="s2">&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">if</span> <span class="nb">fork</span>
+</span><span class='line'>  <span class="n">current_process</span> <span class="o">=</span> <span class="no">Process</span><span class="o">.</span><span class="n">pid</span>
+</span><span class='line'>  <span class="n">parent_process</span> <span class="o">=</span> <span class="no">Process</span><span class="o">.</span><span class="n">ppid</span>
+</span><span class='line'>  <span class="nb">printf</span> <span class="s2">&quot;Entered the *if* block during Process </span><span class="si">#{</span><span class="n">current_process</span><span class="si">}</span><span class="s2">.&quot;</span>
+</span><span class='line'>  <span class="nb">printf</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">The parent of this process is </span><span class="si">#{</span><span class="no">Process</span><span class="o">.</span><span class="n">ppid</span><span class="si">}</span><span class="s2">, which should be bash.</span><span class="se">\n\n</span><span class="s2">&quot;</span>
+</span><span class='line'><span class="k">else</span>
+</span><span class='line'>  <span class="n">current_process</span> <span class="o">=</span> <span class="no">Process</span><span class="o">.</span><span class="n">pid</span>
+</span><span class='line'>  <span class="n">parent_process</span> <span class="o">=</span> <span class="no">Process</span><span class="o">.</span><span class="n">ppid</span>
+</span><span class='line'>  <span class="nb">printf</span> <span class="s2">&quot;Entered the *else* block during Process </span><span class="si">#{</span><span class="n">current_process</span><span class="si">}</span><span class="s2">.&quot;</span>
+</span><span class='line'>  <span class="nb">printf</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">The parent of this process is </span><span class="si">#{</span><span class="n">parent_process</span><span class="si">}</span><span class="s2">, which should be the original of this process.</span><span class="se">\n\n</span><span class="s2">&quot;</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Running the above Ruby code produces the following results:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/Ruby/apps/sandbox<span class="nv">$ </span>ruby forking_around.rb
+</span><span class='line'>Parent process pid <span class="o">(</span>before fork<span class="o">)</span> is 79703.
+</span><span class='line'>Entered the *if* block during Process 79703.
+</span><span class='line'>The parent of this process is 76751, which should be bash.
+</span><span class='line'>
+</span><span class='line'>Entered the *else* block during Process 79704.
+</span><span class='line'>The parent of this process is 79703, which should be the original of this process.
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Digging further: Let&rsquo;s look at the names that correspond to our
+<code>pids</code>.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/Ruby/apps/sandbox<span class="nv">$ </span>ps -p 79703
+</span><span class='line'>  PID TTY           TIME CMD
+</span><span class='line'>
+</span><span class='line'>~/Code/Ruby/apps/sandbox<span class="nv">$ </span>ps -p 79704
+</span><span class='line'>  PID TTY           TIME CMD
+</span><span class='line'>
+</span><span class='line'>~/Code/Ruby/apps/sandbox<span class="nv">$ </span>ps -p 76751
+</span><span class='line'>  PID TTY           TIME CMD
+</span><span class='line'>76751 ttys003    0:00.40 -bash
+</span><span class='line'>
+</span><span class='line'>~/Code/Ruby/apps/sandbox<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>We get zero data for the <code>pids</code> 79703 and 79704 because those processes terminated with the program <code>forking_around.rb</code>. However, 76751 shows <code>bash</code> because bash is still running.</p>
+
+<p>The book is full of rich playground examples that go much deeper than this. Time slips away when I get rolling with this stuff!</p>
+
+<h3>Errata Handling</h3>
+
+<p>The book is new so you can expect a few typos. If you run into problems with sample code, a quick Google search will lead you to the corrected text. For example, early in the book I had problems with a command that returns the maximum number of processes allowed on a system. Turns out there was a typo, and <a href="http://forums.pragprog.com/forums/261/topics/11191">the correction</a> was posted by the author himself on the publisher&rsquo;s errata page.</p>
+
+<h3>Conclusion</h3>
+
+<p>I enjoyed reading <em>Working With Unix Processes</em> because it replaces a belief in &ldquo;the magic of Unix&rdquo; with a sound understanding of Unix fundamentals. The book is clear and brief with plenty of examples. The author assumes that readers have at least a basic understanding of Ruby. After that, you only need a command line, IRB, and the willingness to explore.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-24T16:50:00-06:00" pubdate data-updated="true">Dec 24<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/education/'>Education</a>, <a class='category' href='/blog/categories/linux-unix-osx/'>Linux-Unix-OSX</a>, <a class='category' href='/blog/categories/ruby/'>Ruby</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2012/12/24/unix-for-ruby-developers/" data-via="" data-counturl="http://RayHightower.com/blog/2012/12/24/unix-for-ruby-developers/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/12/14/mobile-makers-objective-c-rubymotion/" title="Previous Post: Mobile Makers, Objective-C, and RubyMotion">&laquo; Mobile Makers, Objective-C, and RubyMotion</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/12/26/rubymotion-provisioning-profiles/" title="Next Post: RubyMotion Provisioning Profiles">RubyMotion Provisioning Profiles &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>A little something about me.</p>
+</section>
+Included file 'asides/observations.html' not found in _includes directoryIncluded file 'custom/asides/speaking.html' not found in _includes directoryIncluded file 'custom/asides/code.html' not found in _includes directoryIncluded file 'asides/category_list.html' not found in _includes directoryIncluded file 'asides/popular_posts.html' not found in _includes directoryIncluded file 'asides/twitter.html' not found in _includes directoryIncluded file 'custom/asides/vim.html' not found in _includes directory
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'rayhightower';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://RayHightower.com/blog/2012/12/24/unix-for-ruby-developers/';
+        var disqus_url = 'http://RayHightower.com/blog/2012/12/24/unix-for-ruby-developers/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

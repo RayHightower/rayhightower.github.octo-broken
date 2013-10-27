@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Education | RayHightower.com]]></title>
+  <link href="http://RayHightower.com/blog/categories/education/atom.xml" rel="self"/>
+  <link href="http://RayHightower.com/"/>
+  <updated>2013-10-27T16:08:38-05:00</updated>
+  <id>http://RayHightower.com/</id>
+  <author>
+    <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Why We Need STEM]]></title>
+    <link href="http://RayHightower.com/blog/2013/07/29/why-we-need-stem/"/>
+    <updated>2013-07-29T00:22:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/07/29/why-we-need-stem</id>
+    <content type="html"><![CDATA[<p><a href="http://ignitechi.org">Ignite Chicago</a> is an evening of 5-minute talks presented by speakers who want to inspire others. Each speaker is allowed twenty slides, and the slides advance automatically every fifteen seconds. The Ignite organizers asked me to present <em>Why We Need STEM</em> at <a href="http://1871.com">1871</a>. I&rsquo;ll post the video when it becomes available. For now, check out the slides&hellip;</p>
+
+<!-- more -->
+
+
+<center><script async class="speakerdeck-embed" data-id="4c328420da3d01301487425a5f060967" data-ratio="1.29456384323641" src="http://RayHightower.com//speakerdeck.com/assets/embed.js"></script></center>
+
+
+<p>Thank you Ignite Chicago organizers (<a href="http://www.goteampete.com">Pete Aiello</a> and <a href="http://clairelew.com">Claire Lew</a>) for the invitation and for hosting a great event.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Petascale Tools Workshop 2013]]></title>
+    <link href="http://RayHightower.com/blog/2013/07/19/petascale-tools-workshop-2013/"/>
+    <updated>2013-07-19T02:12:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/07/19/petascale-tools-workshop-2013</id>
+    <content type="html"><![CDATA[<p>The <a href="http://www.paradyn.org/CSCADS2013/index.html">Petascale Tools Workshop</a> is for computer scientists who create tools that enable apps to run efficiently on the world&rsquo;s fastest supercomputers. Supercomputer performance is measured in petaflops: 10<sup><sup>15</sup></sup> floating point operations per second. That&rsquo;s blazing speed, thousands of times faster than the fastest MacBook Pro.</p>
+
+<!--more-->
+
+
+<p><a href="http://WisdomGroup.com">WisdomGroup</a> was invited to attend the workshop because we have a client client, <a href="http://www.wisdomgroup.com/case-studies/texas-am-university/">Texas A &amp; M University</a>, operating in the high performance computing (HPC) space. As the only non-PhD in the room, I was given a chance to exercise Pat Metheny&rsquo;s <a href="/blog/2013/07/17/pat-metheny-be-the-worst/">be-the-worst</a> philosophy in the extreme. The result: I learned things that will help WisdomGroup to deliver better solutions for our clients, especially the TAMU team.</p>
+
+<h3>One Megawatt = $1,000,000.00</h3>
+
+<p>As with other disciplines of engineering, supercomputer design is all about managing trade-offs. If you increase the clock speed, how will that affect your electrical bill? If you increase the size of the cache, how much more will you spend on hardware?</p>
+
+<p>Every Petascale Workshop presenter highlighted the toughest constraint: The cost of electrical power. High performance computers gulp electricity. The wattage numbers were all very abstract to me until one presenter layed out a direct one-to-one correspondence between electricity and money. <em>One megawatt of power used over the course of a year costs one million dollars.</em></p>
+
+<p>Express a constraint in terms of money, and the abstractions melt away.</p>
+
+<p>The debate between the scientists was vigorous yet respectful. After hearing the 1-to-1 rule of thumb, one audience member remarked, &ldquo;I know how to genererate a megawatt for only $865,000.&rdquo; He then outlined his solution, a combination of coal, fossil fuels, and natural gas that would achieve the reduction. The more important point: Electricity is expensive.</p>
+
+<h3>Re-Framing the Power Problem</h3>
+
+<p>There is another way to look at the power problem. Consider it from the perspective of performance, not power. Here&rsquo;s how one presenter put it: No matter where we build a supercomputer, we will only have a limited amount of power. Let&rsquo;s look at the maximum available power as a constraint and go from there.</p>
+
+<p>Rubyists are familiar with the saying &#34;<a href="http://gettingreal.37signals.com/ch03_Embrace_Constraints.php">constraints are liberating</a>&#34;, popularized by 37signals. Since power limitations are real constraints, our next step is to figure out how to extract the best results allowed within the constraints.</p>
+
+<h3>Top Five</h3>
+
+<p>Supercomputer scientists are as competitive as olympic athletes. As of June 2013, the five fastest machines in the world are:</p>
+
+<center>
+<table class="table table-condensed">
+    <thead>
+    <tr>
+        <th width="50">Rank</th>
+        <th width="75">Site</th>
+        <th width="100" style="text-align: right;">Cores</th>
+        <th width="75" style="text-align: right;">Rmax (PF/s)</th>
+        <th width="75" style="text-align: right;">Power (MW)</th>
+    </tr>
+    </thead>
+
+    <tr class="sublist odd">
+        <td><span class="badge">1</span></td>
+        <td>China</td>
+        <td style="text-align: right;">3,120,000</td>
+        <td style="text-align: right;">33.9</td>
+        <td style="text-align: right;">17.8</td>
+    </tr>
+
+    <tr class="sublist even">
+        <td><span class="badge">2</span></td>
+        <td>USA</td>
+        <td style="text-align: right;">560,640</td>
+        <td style="text-align: right;">17.5</td>
+        <td style="text-align: right;">8.2</td>
+    </tr>
+
+    <tr class="sublist odd">
+        <td><span class="badge">3</span></td>
+        <td>USA</td>
+        <td style="text-align: right;">1,572,864</td>
+        <td style="text-align: right;">17.2</td>
+        <td style="text-align: right;">7.9</td>
+    </tr>
+
+    <tr class="sublist even">
+        <td><span class="badge">4</span></td>
+        <td>Japan</td>
+        <td style="text-align: right;">705,024</td>
+        <td style="text-align: right;">10.5</td>
+        <td style="text-align: right;">12.6</td>
+    </tr>
+
+    <tr class="sublist odd">
+        <td><span class="badge">5</span></td>
+        <td>USA</td>
+        <td style="text-align: right;">786,432</td>
+        <td style="text-align: right;">8.6</td>
+        <td style="text-align: right;">3.9</td>
+    </tr>
+</table>
+</center>
+
+
+<p>&nbsp;<br/>
+Scientists determine Rmax by running the <a href="http://en.wikipedia.org/wiki/LINPACK_benchmarks">LINPACK</a> benchmark. <a href="http://top500.org">Top500.org</a> has more information about the fastest
+machines.</p>
+
+<h3>Digging Deeper</h3>
+
+<p>Some of the biggest performance gains can be realized through more efficient software. Most supercomputers run some distribution of Linux. Some teams of researchers focus on ways to optimize the Linux kernel for supercomputing.</p>
+
+<p>Optimization is not a one-size-fits all process. The scientists need to consder the type of applications being run, percentage of time spent on I/O, efficiency of algorithms, and so on. Each potential optimization choice is like a node on an ever expanding tree. The choices are endless, and the seasoned expert will know where to focus for the best results.</p>
+
+<p>In the Ruby world, we might use tools like <a href="http://newrelic.com">New Relic</a> or <a href="http://codeclimate.com">Code Climate</a> to identify hot spots in our code, places where re-factoring can reduce CPU utilization or improve I/O. HPC tools tend to be highly customizable because the users are intimately familar with their own hardware. During a lunch conversation, one team of scientists shared how they suspected a defect in hardware counters used to measure the behavior of a supercomputer under study. The instincts of the scientists proved correct, and the errant counters were replaced.</p>
+
+<h3>Conclusion</h3>
+
+<p>When smart people challenge each other to grow, great things happen. The scientists at the Petascale Tools Workshop were clearly helping each other to grow. The next few years in supercomputing will be exciting!</p>
+
+<h3>Acknowledgements</h3>
+
+<p>I am grateful to the organizers of the Petascale Tools Workshop for hosting the event, and to the TAMU team for extending the invitation. Thank you both!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Pat Metheny: Be the Worst]]></title>
+    <link href="http://RayHightower.com/blog/2013/07/17/pat-metheny-be-the-worst/"/>
+    <updated>2013-07-17T07:58:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/07/17/pat-metheny-be-the-worst</id>
+    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/PatMethenyGroup.jpg" width="400" height="400"
+align="right" alt="Pat Metheny: Be the Worst" title="Pat Metheny: Be the Worst" >
+Pat Metheny encourages musicians to &ldquo;be the worst&rdquo; in whatever band they choose to join. Of course, he does not mean to play poorly.</p>
+
+<p>Rather, he encourages us to surround ourselves with the best musicians we can find so that we can learn from them. The concept is explored further in the book <a href="/blog/2013/02/17/apprenticeship-patterns-by-dave-h-hoover-and-adewale-oshineye/">Apprenticeship Patterns</a> by Dave Hoover and Ade Oshineye.</p>
+
+<p>I was reminded to be-the-worst while attending a conference this week, an event where I was surrounded by computer scientists with much more experience than me. I learned a lot his week. I will share details in a future post.</p>
+
+<p>In the meantime, I invite you to join me in a Pat Metheny learning exercise of your choice. Be the worst!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[FeeddlerPro for RSS]]></title>
+    <link href="http://RayHightower.com/blog/2013/07/04/feeddlerpro-for-rss/"/>
+    <updated>2013-07-04T15:07:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/07/04/feeddlerpro-for-rss</id>
+    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/FeeddlerPro-accounts.png" width="300" height="258"
+align="right" alt="FeeddlerPro Accounts" title="FeeddlerPro Accounts">
+Yes, the name appears misspelled. But <a href="https://itunes.apple.com/us/app/feeddler-rss-reader-pro/id365710282?mt=8">FeeddlerPro</a> is my choice for RSS on iPhone and iPad. Feeddler has long been my favorite RSS reader. The developer&rsquo;s decision to add support for services beyond Google Reader (Bazqux Reader, FeedHQ, and The OldReader) sealed the decision for me.</p>
+
+<h3>Second Choice</h3>
+
+<p><a href="/blog/2013/06/21/replacing-google-reader-with-feed-wrangler/">Feed Wrangler</a> was a close second. I like Feed Wrangler&rsquo;s minimalist approach to RSS. However, the app is missing a few features that FeeddlerPro already has baked in.</p>
+
+<!--more-->
+
+
+<h3>Server-Side Synchronization</h3>
+
+<p>Of course, an RSS client is nothing without the server-side to keep everything synchronized. I chose <a href="http://theoldreader.com">The Old Reader</a> because it syncs between iPhone, iPad, and web without extra fluff.</p>
+
+<p>Other RSS providers probably offer the same level of service. Fortunately, Feeddler makes it easy to switch between RSS services seamlessly.</p>
+
+<p>Google Reader is history, but RSS marches on.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[PechaKucha: Developer Education at TableXI]]></title>
+    <link href="http://RayHightower.com/blog/2013/06/27/pechakucha-developer-education-at-tablexi/"/>
+    <updated>2013-06-27T15:13:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/06/27/pechakucha-developer-education-at-tablexi</id>
+    <content type="html"><![CDATA[<p><a href="http://pechakucha.org">PechaKucha</a> is a concise presentation style developed in Japan. The PechaKucha format is 20x20: The presenter must share an idea in twenty slides, each displayed for exactly twenty seconds, advancing automatically. Total presentation time = six minutues, forty seconds.</p>
+
+<!--more-->
+
+
+<p><a href="http://www.tablexi.com/blog/2013/06/practice-begins-with-play-a-table-talk/developers/">TableXI</a> hosted a PechaKucha on June 13th with the theme <em>Developer Education</em>. I was one of six presenters invited to speak. Video:</p>
+
+<center><iframe width='460' height='345' src="http://www.pechakucha.org/presentations/51b92936dbdd200cbc000011/embed" frameborder="0"></iframe></center>
+
+
+<p>One highlight from the PechaKucha presentation: This year&rsquo;s <a href="http://windycityrails.org">WindyCityRails</a> will include a youth program on Thursday afternoon. Details will be announced in July. Follow <a href="http://twitter.com/windycityrails">@WindyCityRails</a> for the latest news on the program.</p>
+
+<p>Thanks TableXI for the PechaKucha invitation, and for sponsoring WindyCityRails 2013!</p>
+]]></content>
+  </entry>
+  
+</feed>

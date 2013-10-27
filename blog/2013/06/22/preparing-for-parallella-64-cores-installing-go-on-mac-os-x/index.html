@@ -1,0 +1,431 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Prep for Parallella's 64 Cores: Installing Go on Mac OS X - RayHightower.com</title>
+  <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
+
+  
+  <meta name="description" content="The idea of owning a 64-core parallel system for two hundred dollars (yes, $200.00) is exciting. Parallella is working to make that happen, perhaps &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://RayHightower.com/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="RayHightower.com" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-330946-28']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">RayHightower.com</a></h1>
+  
+    <h2>Thoughts about Ruby, Rails, RubyMotion, iOS, and business growth.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:RayHightower.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Prep for Parallella's 64 Cores: Installing Go on Mac OS X</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-22T12:58:00-05:00" pubdate data-updated="true">Jun 22<span>nd</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><img src="/images/parallella.jpg" width="450" height="257" alt="Parallella 64-core supercomputer" title="Parallella 64-core supercomputer" align="right" imgcap="Parallella Board">
+The idea of owning a 64-core parallel system for two hundred dollars (yes, $200.00) is exciting. <a href="http://www.parallella.org/introduction/">Parallella</a> is working to make that happen, perhaps as early as August 2013. To prepare for that day, I&rsquo;ve decided to introduce myself to the Go language.</p>
+
+<!--more-->
+
+
+<h3>What is Go?</h3>
+
+<p><a href="http://golang.org">The Go language</a> is designed for parallel systems. Why does Go exist? One developer sums it up this way:</p>
+
+<blockquote><p>Go was created at Google, by Google, for Google-size problems.<br/>~Dave Astels</p></blockquote>
+
+<p>Google writes software that runs on thousands of machines in parallel. As the number of concurrent operations increases, new challenges are encountered. Google addressed those challenges by creating Go.</p>
+
+<h3>Why Does a Rubyist Learn Go?</h3>
+
+<p>The team at <a href="http://wisdomgroup.com">WisdomGroup</a> writes web and mobile apps, mainly in Ruby. So why am I learning Go?</p>
+
+<p>Because the best developers are polyglot. When we learn a new language, we cause ourselves to see old problems in new ways and we strengthen our ability to solve new problems. It&rsquo;s like cross-training for  athletes. In the end, we become better developers.</p>
+
+<h3>How to Install Go on Mac OS X</h3>
+
+<ol>
+<li><a href="https://code.google.com/p/go/downloads/list">Download the binary of Go that matches your system</a> <i>but don&#8217;t install it yet</i>. You will need to complete the rest of these steps before installation. For my 2010 i5-based 15-inch MacBook Pro, I chose <code>go1.1.1.darwin-amd64.pkg</code>. I was concerned about the reference to <code>amd64</code> in the name. But the description includes <code>Mac OS X (x86 64-bit)</code>, and the binary worked for me.</li>
+<br/>
+<li>If you are upgrading from a previous version of Go, you will need to remove the old Go directory. You can do this while the new binary is downloading in the background:</li>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rm -rf /usr/local/go
+</span></code></pre></td></tr></table></div></figure>
+
+<li>Define the <code>GOROOT</code> and <code>GOPATH</code> environmental variables. My system uses <code>~/.bash_profile</code> to define environmental variables, so I added the following lines to the end of that file:
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">export </span><span class="nv">GOROOT</span><span class="o">=</span>/usr/local/go
+</span><span class='line'><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$GOROOT</span>/bin
+</span><span class='line'><span class="nb">export </span><span class="nv">GOPATH</span><span class="o">=</span>~/Code/gocode
+</span></code></pre></td></tr></table></div></figure>
+Note: I&#8217;m using the default <code>GOROOT</code> variable, but your <code>GOPATH</code> may differ from mine. I store all of my source code in a subdirectory of home:<code>~/Code</code>. My complete Go directory structure is given below. By looking at my structure, you can adjust these steps to fit your system.</li>
+<br/>
+<li>Tell your terminal session to recognize the new environmental variables. You can either restart terminal, or if your environmental variables are in <code>~/.bash_profile</code> like mine, you can do the following:</li>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="nb">source</span> ~/.bash_profile
+</span></code></pre></td></tr></table></div></figure>
+<li>Run the package installation program, <code>go1.1.1.darwin-amd64.pkg</code>, that was downloaded in Step 1.</li>
+</ol>
+
+
+<p>Now, let&rsquo;s Go for a test drive.</p>
+
+<h3>Creating a Go Workspace</h3>
+
+<p>Before you can run a Go program on your system, you have to create a Go workspace. A workspace is a directory structure that contains source code and binaries that a Go program needs in order to compile and execute.</p>
+
+<p>We can examine the Go Workspace on my system with the Unix <code>tree</code> command:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/gocode<span class="nv">$ </span>tree
+</span><span class='line'>.
+</span><span class='line'>└── src
+</span><span class='line'>    └── github.com
+</span><span class='line'>        └── rayhightower
+</span><span class='line'>            └── hello
+</span><span class='line'>                └── hello.go
+</span><span class='line'>
+</span><span class='line'>4 directories, 1 file
+</span><span class='line'>
+</span><span class='line'>~/Code/gocode<span class="err">$</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Here&rsquo;s a brief description of the directories:</p>
+
+<ul>
+<li>Code = root directory for all source code on my system. Yours may differ.</li>
+<li>gocode = where I store all of the Go code on my system. I&rsquo;m following the structure recommended by the Go documentation. I may alter this as I learn more about the language.</li>
+<li>src = source code</li>
+<li>github.com = directory named after the place where I store repos</li>
+<li>rayhightower = my GitHub profile name</li>
+<li>hello = directory named for our first Go application</li>
+<li>hello.go = the Go source file for our <code>Hello World</code> program</li>
+</ul>
+
+
+<p>All structure below the <code>gocode</code> directory is mandated by Go.</p>
+
+<h3>Writing &lsquo;Hello World!&rsquo; in Go</h3>
+
+<p>Google&rsquo;s official installation instructions include a simple &lsquo;Hello World&rsquo; program for testing the installation. A slightly modified version appears below:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='go'><span class='line'><span class="kn">package</span> <span class="nx">main</span>
+</span><span class='line'>
+</span><span class='line'><span class="kn">import</span> <span class="s">&quot;fmt&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;\n****** Hey Parallella enthusiasts: Learn Go! ******\n&quot;</span><span class="p">)</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Compiling and Running</h3>
+
+<p>We drop the code into a file called <code>hello.go</code> in the <code>hello</code> directory. To compile the program:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/gocode/src/github.com/rayhightower/hello<span class="nv">$ </span>go install
+</span><span class='line'>
+</span><span class='line'>~/Code/gocode/src/github.com/rayhightower/hello<span class="err">$</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If the Go compiler responds with a blank prompt (like above) then the program compiled successfully and a <code>bin</code> directory has been created inside the Go workspace. Run the <code>tree</code> command from the <code>gocode</code> directory to see how the structure has changed:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/gocode<span class="nv">$ </span>tree
+</span><span class='line'>.
+</span><span class='line'>├── bin
+</span><span class='line'>│   └── hello
+</span><span class='line'>└── src
+</span><span class='line'>    └── github.com
+</span><span class='line'>        └── rayhightower
+</span><span class='line'>            └── hello
+</span><span class='line'>                └── hello.go
+</span><span class='line'>
+</span><span class='line'>5 directories, 2 files
+</span><span class='line'>
+</span><span class='line'>~/Code/gocode<span class="err">$</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The newly created <code>bin/</code> directory contains our <code>hello</code> executable. And now, let&rsquo;s cut the suspense and <em>run the program</em>. To do so, change into the <code>bin/</code> directory and type <code>./hello</code>.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/gocode/src/github.com/rayhightower/hello<span class="nv">$ </span><span class="nb">cd</span> ~/Code/gocode/bin
+</span><span class='line'>
+</span><span class='line'>~/Code/gocode/bin<span class="nv">$ </span>./hello
+</span><span class='line'>
+</span><span class='line'>****** Hey Parallella enthusiasts: Learn Go! ******
+</span><span class='line'>
+</span><span class='line'>~/Code/gocode/bin<span class="err">$</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Success!</p>
+
+<h3>It&rsquo;s Not Official, But It Makes Sense</h3>
+
+<p>As of this writing, Parallella does not officially support the Go language. So why go through all of this trouble? Because&hellip;</p>
+
+<ul>
+<li>A 64-core Parallella is just too cool to pass up. And it&rsquo;s open source.</li>
+<li>Go is designed for parallel systems. And it&rsquo;s open source.</li>
+<li>Open source devs are working on a Go compiler for Parallella right now. If you&rsquo;re reading this, and you&rsquo;re one of the devs, thank you!</li>
+</ul>
+
+
+<p>The Go-Parallella match makes sense. It&rsquo;s always good to skate where the puck is going.</p>
+
+<h3>Next Steps</h3>
+
+<p>Now it&rsquo;s time to explore the Go language. The real adventure begins when the 64-core Parallella arrives. Looking forward to it!</p>
+
+<h3>Acknowledgements</h3>
+
+<p>I was inspired to explore Go by <a href="https://twitter.com/blakesmith">Blake Smith&rsquo;s</a> presentation at <a href="http://www.meetup.com/ChicagoSC/events/120658422/">8th Light</a>. <a href="http://twitter.com/wondible">Justin Love</a> introduced me to Parallella last month at ChicagoRuby.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-22T12:58:00-05:00" pubdate data-updated="true">Jun 22<span>nd</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/education/'>Education</a>, <a class='category' href='/blog/categories/linux-unix-osx/'>Linux-Unix-OSX</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/" data-via="" data-counturl="http://RayHightower.com/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/06/21/replacing-google-reader-with-feed-wrangler/" title="Previous Post: Replacing Google Reader with Feed Wrangler">&laquo; Replacing Google Reader with Feed Wrangler</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/06/27/pechakucha-developer-education-at-tablexi/" title="Next Post: PechaKucha: Developer Education at TableXI">PechaKucha: Developer Education at TableXI &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>A little something about me.</p>
+</section>
+Included file 'asides/observations.html' not found in _includes directoryIncluded file 'custom/asides/speaking.html' not found in _includes directoryIncluded file 'custom/asides/code.html' not found in _includes directoryIncluded file 'asides/category_list.html' not found in _includes directoryIncluded file 'asides/popular_posts.html' not found in _includes directoryIncluded file 'asides/twitter.html' not found in _includes directoryIncluded file 'custom/asides/vim.html' not found in _includes directory
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'rayhightower';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://RayHightower.com/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/';
+        var disqus_url = 'http://RayHightower.com/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
