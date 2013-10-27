@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ruby | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-10-27T17:57:55-05:00</updated>
+  <updated>2013-10-27T18:10:55-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,49 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Madison Ruby 2013]]></title>
+    <link href="http://RayHightower.com/blog/2013/08/25/madison-ruby-2013/"/>
+    <updated>2013-08-25T01:14:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/08/25/madison-ruby-2013</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/madison-ruby.png' width='' height='' alt='Madison Ruby 2011 T-Shirt Design by Mike Rohde' title='Madison Ruby 2011 T-Shirt Design by Mike Rohde'><span class='caption-text'>Madison Ruby 2011 T-Shirt Design by Mike Rohde</span></span>
+<a href="http://madisonruby.com">Madison Ruby</a> 2013 was held this weekend. The conference attracts smart, intellectually curious people who are thirsty to learn more.</p>
+
+<p>By the way, Madison Ruby was a lot of fun, too!</p>
+
+<h3>Speakers: Impressive and Accessible</h3>
+
+<p>First, lets cover the obvious high points so we can focus on those things that make Madison Ruby unique. Organizers <a href="https://twitter.com/jremsikjr">Jim</a> &amp; <a href="https://twitter.com/JenRemsik">Jen Remsik</a> have solidified their reputation for choosing engaging, well-prepared speakers. The Remsik network of speakers includes accomplished developers from around the world. Many are published authors. Some, like <a href="http://madisoncircusspace.com/">Danielle Lee</a> and <a href="https://twitter.com/marteeeen">Martin Atkins</a>, excel in fields outside of software development.</p>
+
+<!--more-->
+
+
+<p>What the presenters have in common: All are high achievers. All are inspiring. All take time to stick around after their time on stage to interact with attendees. That kind of interaction makes the Madison Ruby community work.</p>
+
+<h3>Community in Madison</h3>
+
+<p>Madison Ruby is unique in the way it brings the local community into the event. Local business and community leaders speak at the conference. The local leaders are enthusiastic about Madison and they engage attendees. One year, a farmer shared her experience growing up in a cheese-producing family business. This year, a biomedical engineering graduate of the University of Wisconsin encouraged the audience to build our creative muscles by having fun. She drove the point home with a hula-hoop demonstration, followed with a <a href="http://madisoncircusspace.com/classes/german-wheel/">German Wheel</a> performance by a colleague.</p>
+
+<p>People from other worlds speaking at a software conference&hellip; it works.</p>
+
+<h3>Meal Time</h3>
+
+<p>Lunch was served by the entire Madison restaurant community. Gift certificates were supplied by Engine Yard, and the certificates were redeemable for meals at local restaurants.  What a wonderful way to put serendipity to work! Attendees who just met formed clusters of lunch parties on a whim. The conversations were rich.</p>
+
+<h3>After-Hours Gatherings</h3>
+
+<p>Thursday night&rsquo;s gathering, <a href="http://hypeharvest.com/">Hype Harvest</a>, had elements of a party but it was so much more. Hype Harvest was held on the roof of the Madison Museum of Modern Art, and it served multiple purposes. First, to raise funds for Nairobi Dev School, founded by <a href="http://www.cnn.com/2013/07/17/tech/teenager-hacker-school-africa-google">Martha Chumo</a>, a 19-year-old software developer in Nairobi, Kenya. Second, to give everyone a taste of the presenters to come. Third, to let the attendees gather, renew old friendships, and begin new ones.</p>
+
+<p>Friday night&rsquo;s party was held at <a href="http://bendyworks.com">Bendyworks</a>. An outdoor concert ran concurrently in the middle of the street next to the office. Bendyworks guests had the best seats around because the second floor office sits right above the musical stage.</p>
+
+<h3>Madison Ruby and My Brother</h3>
+
+<p>As an organizer of WindyCityRails, my relationship with Madison Ruby reminds me of my relationship with my brother, <a href="http://motoringventures.com">Edward Hightower</a>, while we were growing up. Edward and I are one year apart, and we competed aggressively in every way: On the swim team, in the <a href="http://troop534.org">Boy Scouts</a>, in academics&hellip; you name it. Through the competition, we learned to love and respect each other. My brother Edward is one of my closest friends. That doesn&rsquo;t always happen with family!</p>
+
+<p>Madison Ruby competes with WindyCityRails. At the same time, I enjoy the trip to Madison because I get so much from the experience. Congratulations to the Madison Ruby organizer team for running a great event three years in a row. I plan to return next year.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[RVM Saves the Day for Octopress]]></title>
@@ -379,82 +422,6 @@ without leaving your editor.</p>
 <h4>The Bottom Line</h4>
 
 <p>Ack helps devs to find things quicker without leaving the zone. Try it!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[New RVM Behavior With .ruby-version and .ruby-gemset]]></title>
-    <link href="http://RayHightower.com/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset/"/>
-    <updated>2013-04-18T20:33:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset</id>
-    <content type="html"><![CDATA[<p><a href="http://RayHightower.com/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset/"><img src="http://RayHightower.com/images/rvm.png" height="98" width="89" align="right" alt="RVM .ruby-version .ruby-gemset" title="RVM .ruby-version .ruby-gemset"></a>
-I trust <a href="http://rvm.io">RVM</a> to manage my Ruby versions and my gemsets. So when I saw an unexpected change in RVM&rsquo;s behavior, I was concerned about a possible disruption in my workflow.</p>
-
-<!--more-->
-
-
-<h4>A New RVM Message</h4>
-
-<p>Here&rsquo;s the message I received when I changed into <code>mydirectory/</code>:</p>
-
-<p>```bash
-~/Code/Ruby/apps/$ cd mydirectory/
-You are using &lsquo;.rvmrc&rsquo;, it requires trusting, it is slower and it is not
-compatible with other ruby managers, you can switch to &lsquo;.ruby-version&rsquo;
-using &lsquo;rvm rvmrc to [.]ruby-version&rsquo; or ignore this warnings with
-&lsquo;rvm rvmrc warning ignore ~/Code/Ruby/apps/mydirectory/.rvmrc&rsquo;,
-&lsquo;.rvmrc&rsquo; will continue to be the default project file in RVM 1 and RVM 2,
-to ignore the warning for all files run
-&lsquo;rvm rvmrc warning ignore all .rvmrcs&rsquo;.</p>
-
-<p>~/Code/Ruby/apps/mydirectory[master]$
-```</p>
-
-<h4>Decision: Do the Update</h4>
-
-<p>Ignoring a warning feels like sticking my head in the sand. It&rsquo;s better to face things head-on. So I decided to go with the update. If things don&rsquo;t work out, I can always remove RVM completely and start from scratch.</p>
-
-<p>```bash
-~/Code/Ruby/apps/mydirectory[master]$ rvm rvmrc to .ruby-version</p>
-
-<p><code>
-My shell responded by repeating the `.rvmrc` vs `.ruby-version` notice. But when I examine the directory, everything looks good.
-</code>bash
-total 56
-drwx&mdash;-rwx   53 rth  wheel   1802 Apr 19 07:18 .
-drwx&mdash;-rwx   27 rth  wheel    918 Feb 10 08:26 ..
--rw-r&mdash;r&mdash;    1 rth  wheel    175 Feb  4 13:41 .gitignore
--rw-r&mdash;r&mdash;@   1 rth  wheel      0 Oct 15  2012 .repl_history
--rw-r&mdash;r&mdash;    1 rth  wheel     11 Apr 19 07:18 .ruby-gemset
--rw-r&mdash;r&mdash;    1 rth  wheel     16 Apr 19 07:18 .ruby-version
-drwxr-xr-x   10 rth  wheel    340 Feb 14 20:41 AFNetworking-RubyMotion-Example
-drwxr-xr-x   13 rth  wheel    442 Feb 24 17:29 AccordionUIView
-```</p>
-
-<p>Instead of a single <code>.rvmrc</code> file, Ruby versions are managed by
-<code>.ruby-version</code> while gemsets are managed through <code>.ruby-gemset</code>.</p>
-
-<h4>Bash Alias</h4>
-
-<p>Next, it&rsquo;s time to clean things up by adding an <code>alias</code> to
-<code>~/.bash_profile</code>.
-<code>bash
-alias newrvm="rvm rvmrc to .ruby-version"
-</code></p>
-
-<p>Tell the terminal session to use the new <code>~/.bash_profile</code> with
-<code>bash
-$ source ~/.bash_profile
-</code></p>
-
-<p>And now we can begin using <code>.ruby-version</code> and <code>.ruby-gemset</code> in any .rvmrc-equipped directory with a simple one-word command.
-<code>bash
-$ newrvm
-</code></p>
-
-<h4>Feedback Welcome</h4>
-
-<p>If you notice any snags (including typos) in the above procedure, please reach out via the comments below or through <a href="http://twitter.com/rayhightower">Twitter</a>.</p>
 ]]></content>
   </entry>
   

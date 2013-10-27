@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Education | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/education/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-10-27T17:57:55-05:00</updated>
+  <updated>2013-10-27T18:10:55-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,105 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[You Can Build Things]]></title>
+    <link href="http://RayHightower.com/blog/2013/09/02/you-can-build-things/"/>
+    <updated>2013-09-02T20:24:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/09/02/you-can-build-things</id>
+    <content type="html"><![CDATA[<p>From a video interview with Steve Jobs (after another generate):</p>
+
+<blockquote><p>When you grow up you tend to get told that the world is the way it is, and your life is just to live your life inside the world. Try not to bash into the walls too much. Try to have a nice family life. Have fun. Save a little money.</p>
+
+<p>That&rsquo;s a very limited life. Life can be much broader once you discover one simple fact.<!--more--></p>
+
+<p>Everything around you that you call life was made up by people who are no smarter than you. And you can change it. You can influence it. You can build other things that other people can use.</p>
+
+<p>Once you learn that, you&rsquo;ll never be the same again.</p></blockquote>
+
+<p>Check out the video:</p>
+
+<center><iframe width="560" height="315" src="http://RayHightower.com//www.youtube.com/embed/GHAJhosbWiM?rel=0" frameborder="0" allowfullscreen></iframe></center>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Madison Ruby 2013]]></title>
+    <link href="http://RayHightower.com/blog/2013/08/25/madison-ruby-2013/"/>
+    <updated>2013-08-25T01:14:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/08/25/madison-ruby-2013</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/madison-ruby.png' width='' height='' alt='Madison Ruby 2011 T-Shirt Design by Mike Rohde' title='Madison Ruby 2011 T-Shirt Design by Mike Rohde'><span class='caption-text'>Madison Ruby 2011 T-Shirt Design by Mike Rohde</span></span>
+<a href="http://madisonruby.com">Madison Ruby</a> 2013 was held this weekend. The conference attracts smart, intellectually curious people who are thirsty to learn more.</p>
+
+<p>By the way, Madison Ruby was a lot of fun, too!</p>
+
+<h3>Speakers: Impressive and Accessible</h3>
+
+<p>First, lets cover the obvious high points so we can focus on those things that make Madison Ruby unique. Organizers <a href="https://twitter.com/jremsikjr">Jim</a> &amp; <a href="https://twitter.com/JenRemsik">Jen Remsik</a> have solidified their reputation for choosing engaging, well-prepared speakers. The Remsik network of speakers includes accomplished developers from around the world. Many are published authors. Some, like <a href="http://madisoncircusspace.com/">Danielle Lee</a> and <a href="https://twitter.com/marteeeen">Martin Atkins</a>, excel in fields outside of software development.</p>
+
+<!--more-->
+
+
+<p>What the presenters have in common: All are high achievers. All are inspiring. All take time to stick around after their time on stage to interact with attendees. That kind of interaction makes the Madison Ruby community work.</p>
+
+<h3>Community in Madison</h3>
+
+<p>Madison Ruby is unique in the way it brings the local community into the event. Local business and community leaders speak at the conference. The local leaders are enthusiastic about Madison and they engage attendees. One year, a farmer shared her experience growing up in a cheese-producing family business. This year, a biomedical engineering graduate of the University of Wisconsin encouraged the audience to build our creative muscles by having fun. She drove the point home with a hula-hoop demonstration, followed with a <a href="http://madisoncircusspace.com/classes/german-wheel/">German Wheel</a> performance by a colleague.</p>
+
+<p>People from other worlds speaking at a software conference&hellip; it works.</p>
+
+<h3>Meal Time</h3>
+
+<p>Lunch was served by the entire Madison restaurant community. Gift certificates were supplied by Engine Yard, and the certificates were redeemable for meals at local restaurants.  What a wonderful way to put serendipity to work! Attendees who just met formed clusters of lunch parties on a whim. The conversations were rich.</p>
+
+<h3>After-Hours Gatherings</h3>
+
+<p>Thursday night&rsquo;s gathering, <a href="http://hypeharvest.com/">Hype Harvest</a>, had elements of a party but it was so much more. Hype Harvest was held on the roof of the Madison Museum of Modern Art, and it served multiple purposes. First, to raise funds for Nairobi Dev School, founded by <a href="http://www.cnn.com/2013/07/17/tech/teenager-hacker-school-africa-google">Martha Chumo</a>, a 19-year-old software developer in Nairobi, Kenya. Second, to give everyone a taste of the presenters to come. Third, to let the attendees gather, renew old friendships, and begin new ones.</p>
+
+<p>Friday night&rsquo;s party was held at <a href="http://bendyworks.com">Bendyworks</a>. An outdoor concert ran concurrently in the middle of the street next to the office. Bendyworks guests had the best seats around because the second floor office sits right above the musical stage.</p>
+
+<h3>Madison Ruby and My Brother</h3>
+
+<p>As an organizer of WindyCityRails, my relationship with Madison Ruby reminds me of my relationship with my brother, <a href="http://motoringventures.com">Edward Hightower</a>, while we were growing up. Edward and I are one year apart, and we competed aggressively in every way: On the swim team, in the <a href="http://troop534.org">Boy Scouts</a>, in academics&hellip; you name it. Through the competition, we learned to love and respect each other. My brother Edward is one of my closest friends. That doesn&rsquo;t always happen with family!</p>
+
+<p>Madison Ruby competes with WindyCityRails. At the same time, I enjoy the trip to Madison because I get so much from the experience. Congratulations to the Madison Ruby organizer team for running a great event three years in a row. I plan to return next year.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Age vs. Ability]]></title>
+    <link href="http://RayHightower.com/blog/2013/08/05/age-vs-ability/"/>
+    <updated>2013-08-05T06:34:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/08/05/age-vs-ability</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/Benjamin-Franklin.jpg' width='' height='' alt='Benjamin Franklin: Statesman &amp; Scientist' title='Benjamin Franklin: Statesman &amp; Scientist'><span class='caption-text'>Benjamin Franklin: Statesman &amp; Scientist</span></span>
+Age has little to do with ability. Every profession has examples of people who achieve goals even though others consider them <em>too young</em> or <em>too old</em>. People who excel in the face of stereotypes are exciting to watch.</p>
+
+<p><em>The Wall Street Journal</em> listed some examples in a 1980s-era ad for United Technologies Corporation.</p>
+
+<!--more-->
+
+
+<blockquote><p>It&rsquo;s what you do &ndash; not when you do it.</p>
+
+<ul>
+<li>Ted Williams, at age 42, slammed a home run in his last official at bat.</li>
+<li>Mickey Mantle, age 20, hit 23 home runs in his first full year in the major leagues.</li>
+<li>Golda Meir was 71 when she became Prime Minister of Israel.</li>
+<li>William Pitt II was 24 when he became Prime Minister of Great Britain.</li>
+<li>George Bernard Shaw was 94 when one of his plays was first produced.</li>
+<li>Mozart was just seven when his first composition was published.</li>
+<li>Now, how about this? Benjamin Franklin was a newspaper columnist at 16, a framer of The United States Constitution at 81, and a scientist throughout his life.</li>
+</ul>
+
+
+<p>You&rsquo;re never too young or too old if you&rsquo;ve got talent. Let&rsquo;s recognize that age has little to do with ability.</p></blockquote>
+
+<p>Now&hellip; let&rsquo;s get back to work!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Why We Need STEM]]></title>
@@ -136,70 +235,6 @@ machines.</p>
 <h3>Acknowledgements</h3>
 
 <p>I am grateful to the organizers of the Petascale Tools Workshop for hosting the event, and to the TAMU team for extending the invitation. Thank you both!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Pat Metheny: Be the Worst]]></title>
-    <link href="http://RayHightower.com/blog/2013/07/17/pat-metheny-be-the-worst/"/>
-    <updated>2013-07-17T07:58:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2013/07/17/pat-metheny-be-the-worst</id>
-    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/PatMethenyGroup.jpg" width="400" height="400"
-align="right" alt="Pat Metheny: Be the Worst" title="Pat Metheny: Be the Worst" >
-Pat Metheny encourages musicians to &ldquo;be the worst&rdquo; in whatever band they choose to join. Of course, he does not mean to play poorly.</p>
-
-<p>Rather, he encourages us to surround ourselves with the best musicians we can find so that we can learn from them. The concept is explored further in the book <a href="/blog/2013/02/17/apprenticeship-patterns-by-dave-h-hoover-and-adewale-oshineye/">Apprenticeship Patterns</a> by Dave Hoover and Ade Oshineye.</p>
-
-<p>I was reminded to be-the-worst while attending a conference this week, an event where I was surrounded by computer scientists with much more experience than me. I learned a lot his week. I will share details in a future post.</p>
-
-<p>In the meantime, I invite you to join me in a Pat Metheny learning exercise of your choice. Be the worst!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[FeeddlerPro for RSS]]></title>
-    <link href="http://RayHightower.com/blog/2013/07/04/feeddlerpro-for-rss/"/>
-    <updated>2013-07-04T15:07:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2013/07/04/feeddlerpro-for-rss</id>
-    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/FeeddlerPro-accounts.png" width="300" height="258"
-align="right" alt="FeeddlerPro Accounts" title="FeeddlerPro Accounts">
-Yes, the name appears misspelled. But <a href="https://itunes.apple.com/us/app/feeddler-rss-reader-pro/id365710282?mt=8">FeeddlerPro</a> is my choice for RSS on iPhone and iPad. Feeddler has long been my favorite RSS reader. The developer&rsquo;s decision to add support for services beyond Google Reader (Bazqux Reader, FeedHQ, and The OldReader) sealed the decision for me.</p>
-
-<h3>Second Choice</h3>
-
-<p><a href="/blog/2013/06/21/replacing-google-reader-with-feed-wrangler/">Feed Wrangler</a> was a close second. I like Feed Wrangler&rsquo;s minimalist approach to RSS. However, the app is missing a few features that FeeddlerPro already has baked in.</p>
-
-<!--more-->
-
-
-<h3>Server-Side Synchronization</h3>
-
-<p>Of course, an RSS client is nothing without the server-side to keep everything synchronized. I chose <a href="http://theoldreader.com">The Old Reader</a> because it syncs between iPhone, iPad, and web without extra fluff.</p>
-
-<p>Other RSS providers probably offer the same level of service. Fortunately, Feeddler makes it easy to switch between RSS services seamlessly.</p>
-
-<p>Google Reader is history, but RSS marches on.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[PechaKucha: Developer Education at TableXI]]></title>
-    <link href="http://RayHightower.com/blog/2013/06/27/pechakucha-developer-education-at-tablexi/"/>
-    <updated>2013-06-27T15:13:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2013/06/27/pechakucha-developer-education-at-tablexi</id>
-    <content type="html"><![CDATA[<p><a href="http://pechakucha.org">PechaKucha</a> is a concise presentation style developed in Japan. The PechaKucha format is 20x20: The presenter must share an idea in twenty slides, each displayed for exactly twenty seconds, advancing automatically. Total presentation time = six minutues, forty seconds.</p>
-
-<!--more-->
-
-
-<p><a href="http://www.tablexi.com/blog/2013/06/practice-begins-with-play-a-table-talk/developers/">TableXI</a> hosted a PechaKucha on June 13th with the theme <em>Developer Education</em>. I was one of six presenters invited to speak. Video:</p>
-
-<center><iframe width='460' height='345' src="http://www.pechakucha.org/presentations/51b92936dbdd200cbc000011/embed" frameborder="0"></iframe></center>
-
-
-<p>One highlight from the PechaKucha presentation: This year&rsquo;s <a href="http://windycityrails.org">WindyCityRails</a> will include a youth program on Thursday afternoon. Details will be announced in July. Follow <a href="http://twitter.com/windycityrails">@WindyCityRails</a> for the latest news on the program.</p>
-
-<p>Thanks TableXI for the PechaKucha invitation, and for sponsoring WindyCityRails 2013!</p>
 ]]></content>
   </entry>
   
