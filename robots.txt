@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://RayHightower.github.io/sitemap.xml 
+Sitemap: http://RayHightower.com/sitemap.xml 
