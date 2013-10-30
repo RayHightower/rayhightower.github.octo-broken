@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-10-27T19:00:27-05:00</updated>
+  <updated>2013-10-30T17:37:05-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,40 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Youth Program Recap]]></title>
+    <link href="http://RayHightower.com/blog/2013/10/30/youth-program-recap-windycityrails-2013/"/>
+    <updated>2013-10-30T17:22:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/10/30/youth-program-recap-windycityrails-2013</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/arduino-youth-program.png' width='' height='' alt='Arduino' title='Arduino'><span class='caption-text'>Arduino</span></span>
+Planet Earth is facing a shortage of people who make things. People like scientists, software developers, architects, and  engineers. People who use their brains and hands to make greatness happen.</p>
+
+<p>To increase the world&rsquo;s supply of problem solvers, the organizers of <a href="http://windycityrails.org">WindyCityRails</a> partnered with a group of energetic college students, the founders of <a href="http://hackthemonkey.com">Monkey Bars</a>. The result: Together, we launched the first WindyCityRails Youth Program featuring the Arduino microcontroller.</p>
+
+<!--more-->
+
+
+<h3>Video Summary</h3>
+
+<p>Here&rsquo;s the launch video:</p>
+
+<center><iframe src="http://RayHightower.com//player.vimeo.com/video/74022351" width="500" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
+
+
+<h3>Results</h3>
+
+<p>The youth who participated in the program were engaged and enthusiastic. The Monkey Bars team introduced the youth to the Arduino micro-controller and related hardware.</p>
+
+<p>At the end of the program, parents arrived to take their kids home, and the kids were reluctant to leave! They were absorbed in their Arduino projects. Even better, friendships formed between the youth participants.</p>
+
+<p>It&rsquo;s exciting to think about the new companies that may have been launched that day!</p>
+
+<h3>Next Year</h3>
+
+<p>Planning for next year&rsquo;s WindyCityRails, including the Youth Program, is currently underway. If there are things you&rsquo;d like to see in next year&rsquo;s program, feel free to <a href="http://windycityrails.org/contact">contact the WindyCityRails organizers</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[You Can Build Things]]></title>
@@ -1188,109 +1222,6 @@ without leaving your editor.</p>
 <h4>The Bottom Line</h4>
 
 <p>Ack helps devs to find things quicker without leaving the zone. Try it!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[New RVM Behavior With .ruby-version and .ruby-gemset]]></title>
-    <link href="http://RayHightower.com/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset/"/>
-    <updated>2013-04-18T20:33:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset</id>
-    <content type="html"><![CDATA[<p><a href="http://RayHightower.com/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset/"><img src="http://RayHightower.com/images/rvm.png" height="98" width="89" align="right" alt="RVM .ruby-version .ruby-gemset" title="RVM .ruby-version .ruby-gemset"></a>
-I trust <a href="http://rvm.io">RVM</a> to manage my Ruby versions and my gemsets. So when I saw an unexpected change in RVM&rsquo;s behavior, I was concerned about a possible disruption in my workflow.</p>
-
-<!--more-->
-
-
-<h4>A New RVM Message</h4>
-
-<p>Here&rsquo;s the message I received when I changed into <code>mydirectory/</code>:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/Ruby/apps/<span class="nv">$ </span><span class="nb">cd </span>mydirectory/
-</span><span class='line'>You are using <span class="s1">&#39;.rvmrc&#39;</span>, it requires trusting, it is slower and it is not
-</span><span class='line'>compatible with other ruby managers, you can switch to <span class="s1">&#39;.ruby-version&#39;</span>
-</span><span class='line'>using <span class="s1">&#39;rvm rvmrc to [.]ruby-version&#39;</span> or ignore this warnings with
-</span><span class='line'><span class="s1">&#39;rvm rvmrc warning ignore ~/Code/Ruby/apps/mydirectory/.rvmrc&#39;</span>,
-</span><span class='line'><span class="s1">&#39;.rvmrc&#39;</span> will <span class="k">continue </span>to be the default project file in RVM 1 and RVM 2,
-</span><span class='line'>to ignore the warning <span class="k">for </span>all files run
-</span><span class='line'><span class="s1">&#39;rvm rvmrc warning ignore all .rvmrcs&#39;</span>.
-</span><span class='line'>
-</span><span class='line'>~/Code/Ruby/apps/mydirectory<span class="o">[</span>master<span class="o">]</span><span class="err">$</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>Decision: Do the Update</h4>
-
-<p>Ignoring a warning feels like sticking my head in the sand. It&rsquo;s better to face things head-on. So I decided to go with the update. If things don&rsquo;t work out, I can always remove RVM completely and start from scratch.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/Ruby/apps/mydirectory<span class="o">[</span>master<span class="o">]</span><span class="nv">$ </span>rvm rvmrc to .ruby-version
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>My shell responded by repeating the <code>.rvmrc</code> vs <code>.ruby-version</code> notice. But when I examine the directory, everything looks good.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>total 56
-</span><span class='line'>drwx---rwx   53 rth  wheel   1802 Apr 19 07:18 .
-</span><span class='line'>drwx---rwx   27 rth  wheel    918 Feb 10 08:26 ..
-</span><span class='line'>-rw-r--r--    1 rth  wheel    175 Feb  4 13:41 .gitignore
-</span><span class='line'>-rw-r--r--@   1 rth  wheel      0 Oct 15  2012 .repl_history
-</span><span class='line'>-rw-r--r--    1 rth  wheel     11 Apr 19 07:18 .ruby-gemset
-</span><span class='line'>-rw-r--r--    1 rth  wheel     16 Apr 19 07:18 .ruby-version
-</span><span class='line'>drwxr-xr-x   10 rth  wheel    340 Feb 14 20:41 AFNetworking-RubyMotion-Example
-</span><span class='line'>drwxr-xr-x   13 rth  wheel    442 Feb 24 17:29 AccordionUIView
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Instead of a single <code>.rvmrc</code> file, Ruby versions are managed by
-<code>.ruby-version</code> while gemsets are managed through <code>.ruby-gemset</code>.</p>
-
-<h4>Bash Alias</h4>
-
-<p>Next, it&rsquo;s time to clean things up by adding an <code>alias</code> to
-<code>~/.bash_profile</code>.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">alias </span><span class="nv">newrvm</span><span class="o">=</span><span class="s2">&quot;rvm rvmrc to .ruby-version&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Tell the terminal session to use the new <code>~/.bash_profile</code> with</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="nb">source</span> ~/.bash_profile
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>And now we can begin using <code>.ruby-version</code> and <code>.ruby-gemset</code> in any .rvmrc-equipped directory with a simple one-word command.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>newrvm
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h4>Feedback Welcome</h4>
-
-<p>If you notice any snags (including typos) in the above procedure, please reach out via the comments below or through <a href="http://twitter.com/rayhightower">Twitter</a>.</p>
 ]]></content>
   </entry>
   
