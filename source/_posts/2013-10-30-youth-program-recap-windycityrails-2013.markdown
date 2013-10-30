@@ -19,7 +19,7 @@ Here's the launch video:
 ###Results
 The youth who participated in the program were engaged and enthusiastic. The Monkey Bars team introduced the youth to the Arduino micro-controller and related hardware.  
 
-At the end of the program, parents arrived to take their kids home, and the kids ignored them! They were absorbed in their Arduino projects. Even better, friendships formed between the youth participants. 
+At the end of the program, parents arrived to take their kids home, and the kids were reluctant to leave! They were absorbed in their Arduino projects. Even better, friendships formed between the youth participants. 
 
 It's exciting to think about the new companies that may have been launched that day!
 
