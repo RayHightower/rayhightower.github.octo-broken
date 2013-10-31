@@ -135,8 +135,8 @@ If the code looks washed out when you paste it into Keynote, you have a few alte
 ###The Finished Slide
 Here's the finished product looks like. All set for Saturday's presentation.
 
-{% imgcap middle /images/osxfinished.png The final snippet. %}
+{% imgcap middle /images/osxfinished.png The final snippet, in Keynote. %}
 
-###Easier Method?
+###Easier Way?
 There is probably an easier way to do this. If you know the answer, feel free to mention it in the comments below. Thanks!
 
