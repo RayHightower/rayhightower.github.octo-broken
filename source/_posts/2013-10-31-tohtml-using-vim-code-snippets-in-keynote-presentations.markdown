@@ -122,25 +122,21 @@ Save the new buffer as `~/Desktop/convertedstuff.html` or any other file name th
 :w ~/Desktop/convertedrakefile.html
 ```
 
-Open the converted in a web browser.
+Open the converted file in a web browser.
 
-{% imgcap center /images/rakefile-browser.png Rakefile in Chrome. %}
+{% imgcap middle /images/rakefile-browser.png Rakefile in Chrome. %}
 
 Copy and paste the text from the browser into Keynote.
 
 If the code looks washed out when you paste it into Keynote, you have a few alternatives:
-# Start with a lighter background in Vim at the beginning.
-# Darken the background in Keynote by using the Keynote inspector.
+1. Start with a lighter background in Vim at the beginning, or
+1. Darken the background in Keynote by using the Keynote inspector.
 
 ###The Finished Slide
 Here's the finished product looks like. All set for Saturday's presentation.
 
-osxfinished.png
-
-
-
-
+{% imgcap middle /images/osxfinished.png The final snippet. %}
 
 ###Easier Method?
-It wouldn't surprise me if there was an easier way to get this done. If you know of one, feel free to mention it in the comments below. Thanks!
+There is probably an easier way to do this. If you know the answer, feel free to mention it in the comments below. Thanks!
 
