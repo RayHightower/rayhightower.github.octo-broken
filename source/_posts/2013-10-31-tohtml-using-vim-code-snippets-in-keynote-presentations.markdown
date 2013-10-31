@@ -128,6 +128,7 @@ Open the converted file in a web browser.
 
 Copy and paste the text from the browser into Keynote.
 
+###Washed Out Code?
 If the code looks washed out when you paste it into Keynote, you have a few alternatives:
 
 * Start with a lighter background in Vim at the beginning, or
