@@ -5,7 +5,7 @@ date: 2013-10-31 16:13
 comments: true
 categories: [Education, Vim]
 ---
-While finishing my presentation for [Chippewa Valley Code Camp](http://chippewavalleycodecamp.com/), I decided to add some blocks of code to my slides. I forgot the name of the tool I used for my last slide deck, and it took several minutes of Google-fu to find it. 
+While finishing my presentation for the upcoming [Chippewa Valley Code Camp](http://chippewavalleycodecamp.com/), I decided to add some blocks of code to my slides. I forgot the name of the tool I used for my last slide deck, and it took several minutes of Google-fu to find it. 
 
 Google led me back to `:TOhtml`. Whew! I'm documenting `:TOhtml` here to avoid wasting time with a future search.
 <!--more-->
@@ -34,7 +34,7 @@ end
 
 Next, visually select the lines you want to convert. You can do this with shift-V, or with the (gasp!) mouse. Or if you want to convert the entire file, 
 
-Enter :TOhtml in the command area. Vim will convert the highlighted text into HTML in a new buffer. Here's the result:
+Enter `:TOhtml` in the command area. Vim will convert the highlighted text into HTML in a new buffer. Here's the result:
 
 ```html
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
