@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Using Vim Code Snippets in Keynote Presentations"
+title: ":TOhtml - Using Vim Code Snippets in Keynote Presentations"
 date: 2013-10-31 16:13
 comments: true
 categories: [Education, Vim]
 ---
-While finishing my presentation for [Chippewa Valley Code Camp](http://chippewavalleycodecamp.com/), I decided to add some blocks of code to my slides. I forgot the name of the tool I used in my last slide deck, and it took several minutes of Google-fu to find it. 
+While finishing my presentation for [Chippewa Valley Code Camp](http://chippewavalleycodecamp.com/), I decided to add some blocks of code to my slides. I forgot the name of the tool I used for my last slide deck, and it took several minutes of Google-fu to find it. 
 
-Google led me back to :TOhtml. I'm documenting it here to avoid a time-wasting search in the future.
+Google led me back to `:TOhtml`. Whew! I'm documenting `:TOhtml` here to avoid a time-wasting search in the future.
 <!--more-->
 ###Start With a Block of Code
 Fire up Vim and drop the block of code you want to convert into a new Vim buffer. In this example, I've created a sample RubyMotion OS X app, and I want to show the contents of the Rakefile.
