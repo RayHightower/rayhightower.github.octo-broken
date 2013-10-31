@@ -1,0 +1,554 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>:TOhtml - Using Vim Code Snippets in Keynote Presentations - RayHightower.com</title>
+  <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
+
+  
+  <meta name="description" content="While finishing my presentation for the upcoming Chippewa Valley Code Camp, I decided to add some blocks of code to my slides. I forgot the name of &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://RayHightower.com/blog/2013/10/31/tohtml-using-vim-code-snippets-in-keynote-presentations">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="RayHightower.com" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+<!-- Arvo is like Rockwell. Added by RTH on 12/27/2012. -->
+<link href='http://fonts.googleapis.com/css?family=Arvo:700' rel='stylesheet' type='text/css'>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-330946-28']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">RayHightower.com</a></h1>
+  
+    <h2>Thoughts about Ruby, Rails, RubyMotion, iOS, and business growth.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:RayHightower.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/speaking">Speaking</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">:TOhtml - Using Vim Code Snippets in Keynote Presentations</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-10-31T16:13:00-05:00" pubdate data-updated="true">Oct 31<span>st</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>While finishing my presentation for the upcoming <a href="http://chippewavalleycodecamp.com/">Chippewa Valley Code Camp</a>, I decided to add some blocks of code to my slides. I forgot the name of the tool I used for my last slide deck, and it took several minutes of Google-fu to find it.</p>
+
+<p>Google led me back to <code>:TOhtml</code>. Whew! I&rsquo;m documenting <code>:TOhtml</code> here to avoid wasting time with a future search.</p>
+
+<!--more-->
+
+
+<h3>Start With a Block of Code</h3>
+
+<p>Fire up Vim and drop the block of code you want to convert into a new Vim buffer. In this example, I&rsquo;ve created a sample <a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a> OS X app, and I want to show the contents of the Rakefile.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1"># -*- coding: utf-8 -*-</span>
+</span><span class='line'><span class="vg">$:</span><span class="o">.</span><span class="n">unshift</span><span class="p">(</span><span class="s2">&quot;/Library/RubyMotion/lib&quot;</span><span class="p">)</span>
+</span><span class='line'><span class="nb">require</span> <span class="s1">&#39;motion/project/template/osx&#39;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">begin</span>
+</span><span class='line'>  <span class="nb">require</span> <span class="s1">&#39;bundler&#39;</span>
+</span><span class='line'>  <span class="no">Bundler</span><span class="o">.</span><span class="n">require</span>
+</span><span class='line'><span class="k">rescue</span> <span class="no">LoadError</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="ss">Motion</span><span class="p">:</span><span class="ss">:Project</span><span class="o">::</span><span class="no">App</span><span class="o">.</span><span class="n">setup</span> <span class="k">do</span> <span class="o">|</span><span class="n">app</span><span class="o">|</span>
+</span><span class='line'>  <span class="c1"># Use `rake config&#39; to see complete project settings.</span>
+</span><span class='line'>  <span class="n">app</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;EjectDisks&#39;</span>
+</span><span class='line'>  <span class="n">app</span><span class="o">.</span><span class="n">info_plist</span><span class="o">[</span><span class="s1">&#39;LSUIElement&#39;</span><span class="o">]</span> <span class="o">=</span> <span class="kp">true</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>(Acknowledgement: I&rsquo;m using the <code>osx-status-bar-app-template</code> gem by <a href="http://ejdraper.com/">Elliott Draper</a> for this example.)</p>
+
+<p>Next, visually select the lines you want to convert. You can do this with shift-V, or with the (gasp!) mouse. Or if you want to convert the entire file,</p>
+
+<p>Enter <code>:TOhtml</code> in the command area. Vim will convert the highlighted text into HTML in a new buffer. Here&rsquo;s the result:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="cp">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;</span>
+</span><span class='line'><span class="nt">&lt;html&gt;</span>
+</span><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'><span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;content-type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=UTF-8&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;title&gt;</span>~/Code/Ruby/RubyMotion/EjectDisks/Rakefile.html<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;Generator&quot;</span> <span class="na">content=</span><span class="s">&quot;Vim/7.4&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;plugin-version&quot;</span> <span class="na">content=</span><span class="s">&quot;vim7.4_v1&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;syntax&quot;</span> <span class="na">content=</span><span class="s">&quot;ruby&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;settings&quot;</span> <span class="na">content=</span><span class="s">&quot;number_lines,use_css,no_foldcolumn,expand_tabs,line_ids,prevent_copy=&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;colorscheme&quot;</span> <span class="na">content=</span><span class="s">&quot;darkspectrum&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="o">&lt;!</span><span class="nt">--</span>
+</span><span class='line'><span class="nt">pre</span> <span class="p">{</span> <span class="k">font-family</span><span class="o">:</span> <span class="k">monospace</span><span class="p">;</span> <span class="k">color</span><span class="o">:</span> <span class="m">#efefef</span><span class="p">;</span> <span class="k">background-color</span><span class="o">:</span> <span class="m">#2a2a2a</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'><span class="nt">body</span> <span class="p">{</span> <span class="k">font-family</span><span class="o">:</span> <span class="k">monospace</span><span class="p">;</span> <span class="k">color</span><span class="o">:</span> <span class="m">#efefef</span><span class="p">;</span> <span class="k">background-color</span><span class="o">:</span> <span class="m">#2a2a2a</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'><span class="o">*</span> <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span> <span class="m">1em</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'><span class="nc">.String</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="m">#fce94f</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'><span class="nc">.Statement</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="m">#ffffff</span><span class="p">;</span> <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'><span class="nc">.PreProc</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="m">#ffffff</span><span class="p">;</span> <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'><span class="nc">.LineNr</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="m">#535353</span><span class="p">;</span> <span class="k">background-color</span><span class="o">:</span> <span class="m">#202020</span><span class="p">;</span> <span class="k">padding-bottom</span><span class="o">:</span> <span class="m">1px</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'><span class="nc">.Comment</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="m">#8a8a8a</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'><span class="nc">.Type</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="m">#8ae234</span><span class="p">;</span> <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'><span class="nc">.Special</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="m">#e9b96e</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'><span class="nc">.Identifier</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="m">#729fcf</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'><span class="nc">.Constant</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="m">#ef5939</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'><span class="nt">--</span><span class="o">&gt;</span>
+</span><span class='line'><span class="nt">&lt;/style&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&#39;text/javascript&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="c">&lt;!--</span>
+</span><span class='line'>
+</span><span class='line'><span class="cm">/* function to open any folds containing a jumped-to line before jumping to it */</span>
+</span><span class='line'><span class="kd">function</span> <span class="nx">JumpToLine</span><span class="p">()</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">lineNum</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">lineNum</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">hash</span><span class="p">;</span>
+</span><span class='line'>  <span class="nx">lineNum</span> <span class="o">=</span> <span class="nx">lineNum</span><span class="p">.</span><span class="nx">substr</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span> <span class="cm">/* strip off &#39;#&#39; */</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="nx">lineNum</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">&#39;L&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">lineNum</span> <span class="o">=</span> <span class="s1">&#39;L&#39;</span><span class="o">+</span><span class="nx">lineNum</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="nx">lineElem</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">lineNum</span><span class="p">);</span>
+</span><span class='line'>  <span class="cm">/* Always jump to new location even if the line was hidden inside a fold, or</span>
+</span><span class='line'><span class="cm">   * we corrected the raw number to a line ID.</span>
+</span><span class='line'><span class="cm">   */</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="nx">lineElem</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">lineElem</span><span class="p">.</span><span class="nx">scrollIntoView</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="k">if</span> <span class="p">(</span><span class="s1">&#39;onhashchange&#39;</span> <span class="k">in</span> <span class="nb">window</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nb">window</span><span class="p">.</span><span class="nx">onhashchange</span> <span class="o">=</span> <span class="nx">JumpToLine</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">--&gt;</span>
+</span><span class='line'><span class="nt">&lt;/script&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span><span class='line'><span class="nt">&lt;body</span> <span class="na">onload=</span><span class="s">&#39;JumpToLine();&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;pre</span> <span class="na">id=</span><span class="s">&#39;vimCodeElement&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L1&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span> 1 <span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;Comment&quot;</span><span class="nt">&gt;</span># -*- coding: utf-8 -*-<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L2&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span> 2 <span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;Identifier&quot;</span><span class="nt">&gt;</span>$:<span class="nt">&lt;/span&gt;</span>.unshift(<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;Special&quot;</span><span class="nt">&gt;</span><span class="ni">&amp;quot;</span><span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;String&quot;</span><span class="nt">&gt;</span>/Library/RubyMotion/lib<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;Special&quot;</span><span class="nt">&gt;</span><span class="ni">&amp;quot;</span><span class="nt">&lt;/span&gt;</span>)
+</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L3&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span> 3 <span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;PreProc&quot;</span><span class="nt">&gt;</span>require<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;Special&quot;</span><span class="nt">&gt;</span>&#39;<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;String&quot;</span><span class="nt">&gt;</span>motion/project/template/osx<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;Special&quot;</span><span class="nt">&gt;</span>&#39;<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L4&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span> 4 <span class="nt">&lt;/span&gt;</span>
+</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L5&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span> 5 <span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;Statement&quot;</span><span class="nt">&gt;</span>begin<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L6&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span> 6 <span class="nt">&lt;/span&gt;</span>  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;PreProc&quot;</span><span class="nt">&gt;</span>require<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;Special&quot;</span><span class="nt">&gt;</span>&#39;<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;String&quot;</span><span class="nt">&gt;</span>bundler<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;Special&quot;</span><span class="nt">&gt;</span>&#39;<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L7&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span> 7 <span class="nt">&lt;/span&gt;</span>  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;Type&quot;</span><span class="nt">&gt;</span>Bundler<span class="nt">&lt;/span&gt;</span>.require
+</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L8&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span> 8 <span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;Statement&quot;</span><span class="nt">&gt;</span>rescue<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;Type&quot;</span><span class="nt">&gt;</span>LoadError<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L9&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span> 9 <span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;Statement&quot;</span><span class="nt">&gt;</span>end<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L10&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span>10 <span class="nt">&lt;/span&gt;</span>
+</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L11&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span>11 <span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;Type&quot;</span><span class="nt">&gt;</span>Motion<span class="nt">&lt;/span&gt;</span>::<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;Type&quot;</span><span class="nt">&gt;</span>Project<span class="nt">&lt;/span&gt;</span>::<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;Type&quot;</span><span class="nt">&gt;</span>App<span class="nt">&lt;/span&gt;</span>.<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;Statement&quot;</span><span class="nt">&gt;</span>setup<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;Statement&quot;</span><span class="nt">&gt;</span>do<span class="nt">&lt;/span&gt;</span> |<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;Identifier&quot;</span><span class="nt">&gt;</span>app<span class="nt">&lt;/span&gt;</span>|
+</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L12&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span>12 <span class="nt">&lt;/span&gt;</span>  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;Comment&quot;</span><span class="nt">&gt;</span># Use `rake config&#39; to see complete project settings.<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L13&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span>13 <span class="nt">&lt;/span&gt;</span>  app.name = <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;Special&quot;</span><span class="nt">&gt;</span>&#39;<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;String&quot;</span><span class="nt">&gt;</span>EjectDisks<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;Special&quot;</span><span class="nt">&gt;</span>&#39;<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L14&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span>14 <span class="nt">&lt;/span&gt;</span>  app.info_plist[<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;Special&quot;</span><span class="nt">&gt;</span>&#39;<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;String&quot;</span><span class="nt">&gt;</span>LSUIElement<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;Special&quot;</span><span class="nt">&gt;</span>&#39;<span class="nt">&lt;/span&gt;</span>] = <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;Constant&quot;</span><span class="nt">&gt;</span>true<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L15&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span>15 <span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;Statement&quot;</span><span class="nt">&gt;</span>end<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'><span class="nt">&lt;/pre&gt;</span>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span><span class='line'><span class="c">&lt;!-- vim: set foldmethod=manual : --&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Save the new buffer as <code>~/Desktop/convertedstuff.html</code> or any other file name that you choose. In this case, I chose:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>:w ~/Desktop/convertedrakefile.html
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Open the converted file in a web browser.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/rakefile-browser.png' width='' height='' alt='Rakefile in Chrome.' title='Rakefile in Chrome.'><span class='caption-text'>Rakefile in Chrome.</span></span></p>
+
+<p>Copy and paste the text from the browser into Keynote.</p>
+
+<h3>Washed Out Code?</h3>
+
+<p>If the code looks washed out when you paste it into Keynote, you have a few alternatives:</p>
+
+<ul>
+<li>Start with a different theme in Vim at the beginning, or</li>
+<li>Darken/lighten the background in Keynote by using the Keynote inspector.</li>
+</ul>
+
+
+<h3>The Finished Slide</h3>
+
+<p>Here&rsquo;s what the finished product looks like. All the clarity of syntax-highlighted text. You can even adjust font size at will using the Keynote inspector. All set for the presentation.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/osxfinished.png' width='' height='' alt='The final snippet, in Keynote.' title='The final snippet, in Keynote.'><span class='caption-text'>The final snippet, in Keynote.</span></span></p>
+
+<h3>Easier Way?</h3>
+
+<p>Can this process be simplified? If you know the answer, feel free to mention it in the comments below. Thanks!</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-10-31T16:13:00-05:00" pubdate data-updated="true">Oct 31<span>st</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/education/'>Education</a>, <a class='category' href='/blog/categories/vim/'>Vim</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2013/10/31/tohtml-using-vim-code-snippets-in-keynote-presentations/" data-via="" data-counturl="http://RayHightower.com/blog/2013/10/31/tohtml-using-vim-code-snippets-in-keynote-presentations/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/10/30/youth-program-recap-windycityrails-2013/" title="Previous Post: Youth Program Recap">&laquo; Youth Program Recap</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About</h1>
+  <p>Raymond T. Hightower is a software developer, perpetual student, founder of <a href="http://wisdomgroup.com">WisdomGroup</a>, and organizer of <a href="http://chicagoruby.org">ChicagoRuby</a> & <a href="http://windycityrails.org">WindyCityRails</a>. He is currently exploring RubyMotion & iOS.
+  </p>
+  <p>
+  <a href="http://wisdomgroup.com"><img src="/images/wisdomgroup.jpg" width="191" height="42" alt="WisdomGroup - Ruby on Rails. MVP. iPhone. iPad." title="WisdomGroup - Ruby on Rails. MVP. iPhone. iPad."/></a><br/>
+  <a href="http://windycityrails.org"><img src="/images/windycityrails.jpg" width="191" height="42" alt="WindyCityRails - Ruby on Rails Conference in Chicago, IL USA" title="WindyCityRails - Ruby on Rails Conference in Chicago, IL USA"/></a><br/>
+  <a href="http://chicagoruby.org"><img src="/images/chicagoruby.jpg" width="191" height="42" alt="ChicagoRuby - Ruby on Rails in Chicago, IL USA" title="ChicagoRuby - Ruby on Rails in Chicago, IL USA" /></a><br/>
+  </p>
+</section>
+<section>
+  <h1>Observations</h1>
+  <ul>
+    <li>A person with a new idea is a crank until the idea succeeds.<br/> ~Mark Twain</li>
+    <li>Find a need and fulfill it. Successful businesses are founded on the needs of people.<br/>~A. G. Gaston</li>
+    <li>Everybody told me no at first, including my wife. I turned the
+    nos into yeses and the disadvantages into advantages.<br/>~John H.
+    Johnson</li>
+    <li>I would have been fired a hundred times at a company run by
+    MBAs. But I never went into business to make money. I went... so
+    that I could do interesting things that hadn't been done
+    before.<br/>~Amar Bose</li>
+  </ul>
+</section>
+<section>
+  <h1>Speaking</h1>
+  <ul>
+    <li><a href="http://ignitechi.org">Ignite Chicago</a> at 1871 in
+    Chicago, IL</li>
+    <li><a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">Aloha Ruby</a> in Honolulu, HI</li>
+    <li><a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">Magic Ruby</a> in Orlando, FL</li>
+    <li><a href="http://www.meetup.com/Geekfest/events/100821552/">Geekfest</a> at Groupon in Chicago, IL</li>
+    <li><a href="http://snow-mobile.org">Snow Mobile</a> in Madison, WI</li>
+    <li><a href="http://chicagocodecamp.com">Chicago Code Camp</a> in Grayslake, IL</li>
+  </ul>
+</section>
+<section>
+  <h1>Code & Biz</h1>
+  <ul>
+    <li><a href="http://github.com/rayhightower">GitHub</a></li>
+    <li><a href="http://coderwall.com/rayhightower">Coder Wall</a></li>
+    <li><a href="http://twitter.com/rayhightower">Twitter (@RayHightower)</a></li>
+  </ul>
+<!-- AddThis Follow BEGIN -->
+<div class="addthis_toolbox addthis_32x32_style addthis_default_style">
+<a class="addthis_button_linkedin_follow" addthis:userid="rayhightower"></a>
+<a class="addthis_button_vimeo_follow" addthis:userid="chicagoruby"></a>
+</div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50904f5d21a0414f"></script>
+<!-- AddThis Follow END -->
+</section>
+<!-- added by RTH 1/9/2013 from http://www.dotnetguy.co.uk/post/2012/06/25/octopress-category-list-plugin/ -->
+<section>
+  <h1>Blog Categories</h1>
+  <ul id="categories">
+    <li class='category'><a href='/blog/categories/arduino/'>Arduino (1)</a></li>
+<li class='category'><a href='/blog/categories/beaglebone-black/'>BeagleBone Black (2)</a></li>
+<li class='category'><a href='/blog/categories/business/'>Business (19)</a></li>
+<li class='category'><a href='/blog/categories/education/'>Education (28)</a></li>
+<li class='category'><a href='/blog/categories/ios/'>iOS (9)</a></li>
+<li class='category'><a href='/blog/categories/linux-unix-osx/'>Linux-Unix-OSX (6)</a></li>
+<li class='category'><a href='/blog/categories/objective-c/'>Objective-C (4)</a></li>
+<li class='category'><a href='/blog/categories/rails/'>Rails (7)</a></li>
+<li class='category'><a href='/blog/categories/raspberry-pi/'>Raspberry Pi (3)</a></li>
+<li class='category'><a href='/blog/categories/ruby/'>Ruby (13)</a></li>
+<li class='category'><a href='/blog/categories/rubymotion/'>RubyMotion (8)</a></li>
+<li class='category'><a href='/blog/categories/ux/'>UX (1)</a></li>
+<li class='category'><a href='/blog/categories/vim/'>Vim (4)</a></li>
+<li class='category'><a href='/blog/categories/xcode/'>Xcode (4)</a></li>
+
+  </ul>
+</section>
+<section>
+  <h1>Popular Blog Posts</h1>
+  <ul>
+    <li><a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Ruby on Raspberry Pi</a></li>
+    <li><a href="/blog/2013/07/29/why-we-need-stem/">Why We Need STEM</a></li>
+    <li><a href="/blog/2013/05/31/kali-linux-pentesting/">Kali Linux Pentesting</a></li>
+    <li><a href="/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/">Preparing for Parallella's 64 Cores</a></li>
+    <li><a href="/blog/2013/02/26/atari-pong-rubymotion-objective-c/">Atari's Pong with RubyMotion</a></li>
+    <li><a href="/blog/2012/09/03/10000-hours-of-practice/">10,000 Hours of Practice</a></li>
+  </ul>
+</section>
+<section>
+  <h1>Vim</h1>
+  <p>I don't always use a modal editor. But when I do, I use <a href="/blog/2013/01/12/why-i-use-vim/">Vim</a>.</p>
+  <p>
+  <a href="/blog/2013/01/12/why-i-use-vim/"><img src="/images/vim_editor.gif" width="125" height="60" alt="Vim, the editor" title="Vim, the editor"/></a>
+  </p>
+</section>
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'rayhightower';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://RayHightower.com/blog/2013/10/31/tohtml-using-vim-code-snippets-in-keynote-presentations/';
+        var disqus_url = 'http://RayHightower.com/blog/2013/10/31/tohtml-using-vim-code-snippets-in-keynote-presentations/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

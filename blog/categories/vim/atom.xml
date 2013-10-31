@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Vim | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/vim/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-10-30T17:37:05-05:00</updated>
+  <updated>2013-10-31T17:00:52-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,158 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[:TOhtml - Using Vim Code Snippets in Keynote Presentations]]></title>
+    <link href="http://RayHightower.com/blog/2013/10/31/tohtml-using-vim-code-snippets-in-keynote-presentations/"/>
+    <updated>2013-10-31T16:13:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/10/31/tohtml-using-vim-code-snippets-in-keynote-presentations</id>
+    <content type="html"><![CDATA[<p>While finishing my presentation for the upcoming <a href="http://chippewavalleycodecamp.com/">Chippewa Valley Code Camp</a>, I decided to add some blocks of code to my slides. I forgot the name of the tool I used for my last slide deck, and it took several minutes of Google-fu to find it.</p>
+
+<p>Google led me back to <code>:TOhtml</code>. Whew! I&rsquo;m documenting <code>:TOhtml</code> here to avoid wasting time with a future search.</p>
+
+<!--more-->
+
+
+<h3>Start With a Block of Code</h3>
+
+<p>Fire up Vim and drop the block of code you want to convert into a new Vim buffer. In this example, I&rsquo;ve created a sample <a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a> OS X app, and I want to show the contents of the Rakefile.</p>
+
+<p>```ruby</p>
+
+<h1>&ndash;<em>&ndash; coding: utf-8 &ndash;</em>&ndash;</h1>
+
+<p>$:.unshift(&ldquo;/Library/RubyMotion/lib&rdquo;)
+require &lsquo;motion/project/template/osx&rsquo;</p>
+
+<p>begin
+  require &lsquo;bundler&rsquo;
+  Bundler.require
+rescue LoadError
+end</p>
+
+<p>Motion::Project::App.setup do |app|
+  # Use `rake config' to see complete project settings.
+  app.name = &lsquo;EjectDisks&rsquo;
+  app.info_plist[&lsquo;LSUIElement&rsquo;] = true
+end
+```</p>
+
+<p>(Acknowledgement: I&rsquo;m using the <code>osx-status-bar-app-template</code> gem by <a href="http://ejdraper.com/">Elliott Draper</a> for this example.)</p>
+
+<p>Next, visually select the lines you want to convert. You can do this with shift-V, or with the (gasp!) mouse. Or if you want to convert the entire file,</p>
+
+<p>Enter <code>:TOhtml</code> in the command area. Vim will convert the highlighted text into HTML in a new buffer. Here&rsquo;s the result:</p>
+
+<p>```html
+&lt;!DOCTYPE HTML PUBLIC &ldquo;&ndash;//W3C//DTD HTML 4.01//EN&rdquo; &ldquo;<a href="http://www.w3.org/TR/html4/strict.dtd">http://www.w3.org/TR/html4/strict.dtd</a>&rdquo;>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>~/Code/Ruby/RubyMotion/EjectDisks/Rakefile.html</title>
+<meta name="Generator" content="Vim/7.4">
+<meta name="plugin-version" content="vim7.4_v1">
+<meta name="syntax" content="ruby">
+<meta name="settings" content="number_lines,use_css,no_foldcolumn,expand_tabs,line_ids,prevent_copy=">
+<meta name="colorscheme" content="darkspectrum"></p>
+
+
+
+
+
+<script type='text/javascript'>
+<!--
+
+/* function to open any folds containing a jumped-to line before jumping to it */
+function JumpToLine()
+{
+  var lineNum;
+  lineNum = window.location.hash;
+  lineNum = lineNum.substr(1); /* strip off '#' */
+
+  if (lineNum.indexOf('L') == -1) {
+    lineNum = 'L'+lineNum;
+  }
+  lineElem = document.getElementById(lineNum);
+  /* Always jump to new location even if the line was hidden inside a fold, or
+   * we corrected the raw number to a line ID.
+   */
+  if (lineElem) {
+    lineElem.scrollIntoView(true);
+  }
+  return true;
+}
+if ('onhashchange' in window) {
+  window.onhashchange = JumpToLine;
+}
+
+-->
+</script>
+
+
+<p></head>
+<body onload='JumpToLine();'></p>
+
+<pre id='vimCodeElement'>
+<span id="L1" class="LineNr"> 1 </span><span class="Comment"># -*- coding: utf-8 -*-</span>
+<span id="L2" class="LineNr"> 2 </span><span class="Identifier">$:</span>.unshift(<span class="Special">&quot;</span><span class="String">/Library/RubyMotion/lib</span><span class="Special">&quot;</span>)
+<span id="L3" class="LineNr"> 3 </span><span class="PreProc">require</span> <span class="Special">'</span><span class="String">motion/project/template/osx</span><span class="Special">'</span>
+<span id="L4" class="LineNr"> 4 </span>
+<span id="L5" class="LineNr"> 5 </span><span class="Statement">begin</span>
+<span id="L6" class="LineNr"> 6 </span>  <span class="PreProc">require</span> <span class="Special">'</span><span class="String">bundler</span><span class="Special">'</span>
+<span id="L7" class="LineNr"> 7 </span>  <span class="Type">Bundler</span>.require
+<span id="L8" class="LineNr"> 8 </span><span class="Statement">rescue</span> <span class="Type">LoadError</span>
+<span id="L9" class="LineNr"> 9 </span><span class="Statement">end</span>
+<span id="L10" class="LineNr">10 </span>
+<span id="L11" class="LineNr">11 </span><span class="Type">Motion</span>::<span class="Type">Project</span>::<span class="Type">App</span>.<span class="Statement">setup</span> <span class="Statement">do</span> |<span class="Identifier">app</span>|
+<span id="L12" class="LineNr">12 </span>  <span class="Comment"># Use `rake config' to see complete project settings.</span>
+<span id="L13" class="LineNr">13 </span>  app.name = <span class="Special">'</span><span class="String">EjectDisks</span><span class="Special">'</span>
+<span id="L14" class="LineNr">14 </span>  app.info_plist[<span class="Special">'</span><span class="String">LSUIElement</span><span class="Special">'</span>] = <span class="Constant">true</span>
+<span id="L15" class="LineNr">15 </span><span class="Statement">end</span>
+</pre>
+
+
+<p></body>
+</html></p>
+
+<!-- vim: set foldmethod=manual : -->
+
+
+<p>```</p>
+
+<p>Save the new buffer as <code>~/Desktop/convertedstuff.html</code> or any other file name that you choose. In this case, I chose:</p>
+
+<p><code>
+:w ~/Desktop/convertedrakefile.html
+</code></p>
+
+<p>Open the converted file in a web browser.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/rakefile-browser.png' width='' height='' alt='Rakefile in Chrome.' title='Rakefile in Chrome.'><span class='caption-text'>Rakefile in Chrome.</span></span></p>
+
+<p>Copy and paste the text from the browser into Keynote.</p>
+
+<h3>Washed Out Code?</h3>
+
+<p>If the code looks washed out when you paste it into Keynote, you have a few alternatives:</p>
+
+<ul>
+<li>Start with a different theme in Vim at the beginning, or</li>
+<li>Darken/lighten the background in Keynote by using the Keynote inspector.</li>
+</ul>
+
+
+<h3>The Finished Slide</h3>
+
+<p>Here&rsquo;s what the finished product looks like. All the clarity of syntax-highlighted text. You can even adjust font size at will using the Keynote inspector. All set for the presentation.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/osxfinished.png' width='' height='' alt='The final snippet, in Keynote.' title='The final snippet, in Keynote.'><span class='caption-text'>The final snippet, in Keynote.</span></span></p>
+
+<h3>Easier Way?</h3>
+
+<p>Can this process be simplified? If you know the answer, feel free to mention it in the comments below. Thanks!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ack 2.0: Written in Perl, Useful With Ruby]]></title>
