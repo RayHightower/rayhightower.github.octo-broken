@@ -135,10 +135,9 @@ If the code looks washed out when you paste it into Keynote, you have a few alte
 * Darken/lighten the background in Keynote by using the Keynote inspector.
 
 ###The Finished Slide
-Here's what the finished product looks like. All set for Saturday's presentation.
+Here's what the finished product looks like. All the clarity of syntax-highlighted text. You can even adjust font size at will using the Keynote inspector. All set for the presentation.
 
 {% imgcap middle /images/osxfinished.png The final snippet, in Keynote. %}
 
 ###Easier Way?
-There is probably an easier way to do this. If you know the answer, feel free to mention it in the comments below. Thanks!
-
+Can this process be simplified? If you know the answer, feel free to mention it in the comments below. Thanks!
