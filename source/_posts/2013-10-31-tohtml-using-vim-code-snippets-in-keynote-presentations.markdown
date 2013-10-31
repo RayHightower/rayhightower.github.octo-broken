@@ -131,8 +131,8 @@ Copy and paste the text from the browser into Keynote.
 ###Washed Out Code?
 If the code looks washed out when you paste it into Keynote, you have a few alternatives:
 
-* Start with a lighter background in Vim at the beginning, or
-* Darken the background in Keynote by using the Keynote inspector.
+* Start with a different theme in Vim at the beginning, or
+* Darken/lighten the background in Keynote by using the Keynote inspector.
 
 ###The Finished Slide
 Here's what the finished product looks like. All set for Saturday's presentation.
