@@ -129,11 +129,12 @@ Open the converted file in a web browser.
 Copy and paste the text from the browser into Keynote.
 
 If the code looks washed out when you paste it into Keynote, you have a few alternatives:
-1. Start with a lighter background in Vim at the beginning, or
-1. Darken the background in Keynote by using the Keynote inspector.
+
+* Start with a lighter background in Vim at the beginning, or
+* Darken the background in Keynote by using the Keynote inspector.
 
 ###The Finished Slide
-Here's the finished product looks like. All set for Saturday's presentation.
+Here's what the finished product looks like. All set for Saturday's presentation.
 
 {% imgcap middle /images/osxfinished.png The final snippet, in Keynote. %}
 
