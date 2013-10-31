@@ -7,10 +7,10 @@ categories: [Education, Vim]
 ---
 While finishing my presentation for [Chippewa Valley Code Camp](http://chippewavalleycodecamp.com/), I decided to add some blocks of code to my slides. I forgot the name of the tool I used for my last slide deck, and it took several minutes of Google-fu to find it. 
 
-Google led me back to `:TOhtml`. Whew! I'm documenting `:TOhtml` here to avoid a time-wasting search in the future.
+Google led me back to `:TOhtml`. Whew! I'm documenting `:TOhtml` here to avoid wasting time with a future search.
 <!--more-->
 ###Start With a Block of Code
-Fire up Vim and drop the block of code you want to convert into a new Vim buffer. In this example, I've created a sample RubyMotion OS X app, and I want to show the contents of the Rakefile.
+Fire up Vim and drop the block of code you want to convert into a new Vim buffer. In this example, I've created a sample [RubyMotion](/blog/2012/10/29/building-ios-apps-with-ruby-motion/) OS X app, and I want to show the contents of the Rakefile.
 
 ```ruby
 # -*- coding: utf-8 -*-
@@ -116,7 +116,7 @@ if ('onhashchange' in window) {
 <!-- vim: set foldmethod=manual : -->
 ```
 
-Save the new buffer as ~/Desktop/convertedstuff.html or any other file name that you choose. In this case, I chose:
+Save the new buffer as `~/Desktop/convertedstuff.html` or any other file name that you choose. In this case, I chose:
 
 ```
 :w ~/Desktop/convertedrakefile.html
@@ -124,7 +124,7 @@ Save the new buffer as ~/Desktop/convertedstuff.html or any other file name that
 
 Open the converted in a web browser.
 
-[rakefilebrowser]
+{% imgcap center /images/rakefile-browser.png Rakefile in Chrome. %}
 
 Copy and paste the text from the browser into Keynote.
 
