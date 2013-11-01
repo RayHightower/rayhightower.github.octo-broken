@@ -1,11 +1,27 @@
 ---
 layout: post
-title: "EjectDisks - Written in RubyMotion for OS X"
+title: "Building an OS X App With RubyMotion"
 date: 2013-11-01 00:15
 comments: true
 categories: [Ruby, RubyMotion]
 ---
 {% imgcap right /images/time-machine-backup-disks.png Redundancy rocks. %}
+No matter how much we spend on our computing equipment, the data we create and use is worth much more. The best data protection employs a backup systems with several levels of redundancy.
+
+My backup system starts with Apple's [Time Machine](http://www.apple.com/findouthow/mac/#timemachinebasics), which handles first level backups painlessly in the background. Time machine is even more effective when multiple disks are used. I like to combine that with a couple of online solutions (Crash Plan and Drop Box) with GitHub for source code and Evernote for notes. Redundancy is a good thing.
+
+I prefer USB-attached drives with Time Machine. I found that Time Machine was inconsistent over WiFi, and when it failed, troubleshooting took too much valuable time. That was a few years ago and things have probably improved over time. I've never had to troubleshoot a USB-attached Time machine drive. They just work.
+
+###Disconnecting USB in a Hurry
+My only problem with USB-attached drives comes when I need to leave my desk in a hurry. You may have seen this message before:
+
+{% imgcap right /images/disk-not-ejected-properly.png In a hurry to eject? %}
+
+All three of my USB drives are attached through a single USB hub. Yanking the cable while running for a meeting is… bad! Forgetting to eject even one of the USB drives is also bad.
+
+I solved the problem about a year ago by writing a command line tool that ejects all three drives with a single click. Yesterday I deciced to improve my command line tool with RubyMotion.
+
+###EjectDisks From the Menu Bar
 Apple's Time Machine handles backups painlessly in the background. Time machine is even more effective when multiple disks are used. I like to combine that with an online solution like Mozy or Crash Plan, mix in Drop Box, and top it off with GitHub for source code.
 
 I am a big fan of redundant backups. 
