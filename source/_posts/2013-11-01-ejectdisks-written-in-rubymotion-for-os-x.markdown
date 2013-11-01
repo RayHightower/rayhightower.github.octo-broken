@@ -6,10 +6,11 @@ comments: true
 categories: [Ruby, RubyMotion]
 ---
 
+
 [RubyMotion](/blog/2012/10/29/building-ios-apps-with-ruby-motion/) added support for OS X apps earlier this year. 
 
 
 EjectDisks is a simple OS X program written with the RubyMotion toolchain for Mac OS X. It uses the `osx-status-bar-app-template` gem created by [Elliott Draper](https://github.com/kickcode/osx-status-bar-app-template).
 
-<center><iframe width="560" height="315" src="//www.youtube.com/embed/Lb9ZUESIpms" frameborder="0" allowfullscreen></iframe></center>
+<center><iframe name="eject-disks-osx" width="560" height="315" src="//www.youtube.com/embed/Lb9ZUESIpms" frameborder="0" allowfullscreen></iframe></center>
 
