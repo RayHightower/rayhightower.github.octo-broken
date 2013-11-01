@@ -94,3 +94,6 @@ class AppDelegate
 end
 ```
 
+###Next Steps
+Not everything in the EjectTools is business-related. Do we really need to include a greeting to the members of the [Chippewa Valley Code Camp](http://chippewavalleycodecamp.com/)?  Yes, we do!
+
