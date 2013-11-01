@@ -5,7 +5,7 @@ date: 2013-11-01 00:15
 comments: true
 categories: [Ruby, RubyMotion]
 ---
-
+{% imgcap right /images/disk-not-ejected-properly.png In a hurry to eject? %}
 
 [RubyMotion](/blog/2012/10/29/building-ios-apps-with-ruby-motion/) added support for OS X apps earlier this year. 
 
