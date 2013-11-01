@@ -11,10 +11,10 @@ RubyMotion's OS X support enabled me to solve a small problem yesterday.  Here's
 ###Background on Backup
 No matter how much money we spend on computing equipment, the data we create is worth more. The best data protection employs several levels of redundancy.
 
-My backup system starts with Apple's [Time Machine](http://www.apple.com/findouthow/mac/#timemachinebasics), which handles first level backups painlessly in the background. Time machine is even more effective when multiple disks are used. I like to combine that with online solutions: Crash Plan, Drop Box, GitHub, and Evernote. Redundancy is a good thing.
-<!--more-->
-USB-attached drives work great with Time Machine. I found that Time Machine was inconsistent over WiFi, and when it failed, troubleshooting took too much time. That was a few years ago and things have probably improved since then. I've never had to troubleshoot a USB-attached Time machine drive. USB just works.
+My backup system starts with Apple's [Time Machine](http://www.apple.com/findouthow/mac/#timemachinebasics), which handles first level backups painlessly in the background. Time machine is even more effective when multiple disks are used. I like to combine that with online solutions. Redundancy is a good thing.
 
+USB-attached drives work great with Time Machine. I found that Time Machine was inconsistent over WiFi, and when it failed, troubleshooting took too much time. That was a few years ago and things have probably improved since then. I've never had to troubleshoot a USB-attached Time machine drive. USB just works. Except when it doesn't. And that's where RubyMotion was able to help.
+<!--more-->
 ###Disconnecting USB in a Hurry
 My only problem with USB-attached drives comes when I need to leave my desk in a hurry. You may have seen this message before:
 
