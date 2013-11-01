@@ -6,7 +6,7 @@ comments: true
 categories: [Ruby, RubyMotion]
 ---
 {% imgcap right /images/time-machine-backup-disks.png Redundancy rocks. %}
-Disaster recovery has come a long way from the days of the tape drive.  Apple's Time Machine handles backups painlessly in the background.  Combine that with an online solution like Mozy or Crash Plan, mix in Drop Box, and top it off with GitHub for source code.
+Apple's Time Machine handles backups painlessly in the background. Time machine is even more effective when multiple disks are used. I like to combine that with an online solution like Mozy or Crash Plan, mix in Drop Box, and top it off with GitHub for source code.
 
 I am a big fan of redundant backups. 
 
