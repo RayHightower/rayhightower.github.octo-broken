@@ -29,8 +29,6 @@ I solved the problem about a year ago by writing a command line tool that ejects
 
 <center><iframe name="eject-disks-osx" src="//player.vimeo.com/video/78349497" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
 
-<center><iframe name="eject-disks-osx" width="560" height="315" src="//www.youtube.com/embed/Lb9ZUESIpms" frameborder="0" allowfullscreen></iframe></center>
-
 ###The Code
 The latest version of the EjectDisk code is on [GitHub](https://github.com/RayHightower/EjectDisks). The `app_delegate.rb` file appears below.
 
