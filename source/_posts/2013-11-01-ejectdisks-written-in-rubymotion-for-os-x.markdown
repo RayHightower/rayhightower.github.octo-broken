@@ -9,6 +9,9 @@ categories: [Ruby, RubyMotion]
 Apple's Time Machine handles backups painlessly in the background. Time machine is even more effective when multiple disks are used. I like to combine that with an online solution like Mozy or Crash Plan, mix in Drop Box, and top it off with GitHub for source code.
 
 I am a big fan of redundant backups. 
+<!--more-->
+
+All of my Time Machine disks are connected through a USB hub. 
 
 ###Ejecting in a Hurry
 {% imgcap right /images/disk-not-ejected-properly.png In a hurry to eject? %}
@@ -17,7 +20,6 @@ I am a big fan of redundant backups.
 
 `EjectDisks` is a simple OS X program written with the RubyMotion toolchain for Mac OS X. It uses the `osx-status-bar-app-template` gem created by [Elliott Draper](https://github.com/kickcode/osx-status-bar-app-template).
 
-<!--more-->
 ###Video Demo
 Here's a quick video demo of the EjectDisks app.
 
