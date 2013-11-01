@@ -6,7 +6,7 @@ comments: true
 categories: [Ruby, RubyMotion]
 ---
 {% imgcap right /images/time-machine-backup-disks.png Redundancy rocks. %}
-RubyMotion's OS X support enabled me to solve a small problem yesterday.  Here's the story.
+[RubyMotion](/blog/2012/10/29/building-ios-apps-with-ruby-motion/)'s OS X support enabled me to solve a small problem yesterday.  Here's the story.
 
 ###Background on Backup
 No matter how much money we spend on computers, the data we create is worth more. The best data protection employs several levels of redundancy.
@@ -25,12 +25,9 @@ All three of my USB drives are attached through a single USB hub. Yanking the ca
 I solved the problem about a year ago by writing a command line tool that ejects all three drives with one double-click of an icon. Yesterday I deciced to improve my command line tool with RubyMotion.
 
 ###Ejecting in a Hurry
-[RubyMotion](/blog/2012/10/29/building-ios-apps-with-ruby-motion/) added support for OS X apps earlier this year. 
+`EjectDisks` is a simple OS X program written with the RubyMotion toolchain for Mac OS X. It uses the `osx-status-bar-app-template` gem created by [Elliott Draper](https://github.com/kickcode/osx-status-bar-app-template). Here's a 10-second demo.
 
-`EjectDisks` is a simple OS X program written with the RubyMotion toolchain for Mac OS X. It uses the `osx-status-bar-app-template` gem created by [Elliott Draper](https://github.com/kickcode/osx-status-bar-app-template).
-
-###Video Demo
-Here's a quick video demo of the EjectDisks app.
+<iframe src="//player.vimeo.com/video/78349497" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 <center><iframe name="eject-disks-osx" width="560" height="315" src="//www.youtube.com/embed/Lb9ZUESIpms" frameborder="0" allowfullscreen></iframe></center>
 
