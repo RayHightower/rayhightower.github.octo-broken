@@ -18,7 +18,7 @@ USB-attached drives work great with Time Machine. I found that Time Machine was 
 ###Disconnecting USB in a Hurry
 My only problem with USB-attached drives comes when I need to leave my desk in a hurry. You may have seen this message before:
 
-{% imgcap right /images/disk-not-ejected-properly.png In a hurry to eject? %}
+{% imgcap /images/disk-not-ejected-properly.png In a hurry to eject? %}
 
 All three of my USB drives are attached through a single USB hub. Yanking the cable while running for a meeting is… bad! Forgetting to eject even one of the USB drives is also bad.
 
