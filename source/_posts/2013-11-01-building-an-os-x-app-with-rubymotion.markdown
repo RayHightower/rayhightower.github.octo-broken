@@ -95,7 +95,7 @@ end
 ```
 
 ###Next Steps
-Not everything in the EjectTools is business-related. Do we really need to include a greeting to the members of the [Chippewa Valley Code Camp](http://chippewavalleycodecamp.com/)?  Yes, we do!
+Not everything in the EjectDisks tool is business-related. Do we really need to include a greeting to the members of the [Chippewa Valley Code Camp](http://chippewavalleycodecamp.com/)?  Yes, we do!
 
 On the serious side, the app should handle disk ejection as a background process. It's not good to tie up the system for a simple task. Look for a forked process in a future version of the app.
 
