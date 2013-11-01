@@ -5,10 +5,13 @@ date: 2013-11-01 00:15
 comments: true
 categories: [Ruby, RubyMotion]
 ---
-{% imgcap right /images/disk-not-ejected-properly.png In a hurry to eject? %}
+{% imgcap right /images/time-machine-backup-disks.png Redundancy rocks. %}
 Disaster recovery has come a long way from the days of the tape drive.  Apple's Time Machine handles backups painlessly in the background.  Combine that with an online solution like Mozy or Crash Plan, mix in Drop Box, and top it off with GitHub for source code.
 
 I am a big fan of redundant backups. 
+
+###Ejecting in a Hurry
+{% imgcap right /images/disk-not-ejected-properly.png In a hurry to eject? %}
 
 [RubyMotion](/blog/2012/10/29/building-ios-apps-with-ruby-motion/) added support for OS X apps earlier this year. 
 
