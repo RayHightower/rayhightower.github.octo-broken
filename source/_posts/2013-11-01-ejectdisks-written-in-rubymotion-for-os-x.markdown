@@ -6,9 +6,9 @@ comments: true
 categories: [Ruby, RubyMotion]
 ---
 {% imgcap right /images/time-machine-backup-disks.png Redundancy rocks. %}
-No matter how much money we spend on our computing equipment, the data we create and use is worth more. The best data protection employs a backup systems with several levels of redundancy.
+No matter how much money we spend on computing equipment, the data we create is worth more. The best data protection employs several levels of redundancy.
 
-My backup system starts with Apple's [Time Machine](http://www.apple.com/findouthow/mac/#timemachinebasics), which handles first level backups painlessly in the background. Time machine is even more effective when multiple disks are used. I like to combine that with a couple of online solutions (Crash Plan and Drop Box) with GitHub for source code and Evernote for notes. Redundancy is a good thing.
+My backup system starts with Apple's [Time Machine](http://www.apple.com/findouthow/mac/#timemachinebasics), which handles first level backups painlessly in the background. Time machine is even more effective when multiple disks are used. I like to combine that with online solutions: Crash Plan, Drop Box, GitHub, and Evernote. Redundancy is a good thing.
 <!--more-->
 I prefer USB-attached drives with Time Machine. I found that Time Machine was inconsistent over WiFi, and when it failed, troubleshooting took too much valuable time. That was a few years ago and things have probably improved over time. I've never had to troubleshoot a USB-attached Time machine drive. They just work.
 
