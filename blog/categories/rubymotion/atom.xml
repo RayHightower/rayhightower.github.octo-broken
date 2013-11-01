@@ -4,7 +4,7 @@
   <title><![CDATA[Category: RubyMotion | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/rubymotion/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-10-31T17:00:52-05:00</updated>
+  <updated>2013-11-01T10:15:40-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,135 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Building an OS X App With RubyMotion]]></title>
+    <link href="http://RayHightower.com/blog/2013/11/01/building-an-os-x-app-with-rubymotion/"/>
+    <updated>2013-11-01T00:15:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/11/01/building-an-os-x-app-with-rubymotion</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/time-machine-backup-disks.png' width='' height='' alt='Redundancy rocks.' title='Redundancy rocks.'><span class='caption-text'>Redundancy rocks.</span></span>
+<a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a>&rsquo;s OS X support enabled me to solve a small problem yesterday.  Here&rsquo;s the story.</p>
+
+<h3>Background on Backup</h3>
+
+<p>No matter how much money we spend on computers, the data we create is worth more. The best data protection employs several levels of redundancy.</p>
+
+<p>My backup system starts with Apple&rsquo;s <a href="http://www.apple.com/findouthow/mac/#timemachinebasics">Time Machine</a>, which handles first level backups painlessly in the background. Time machine is even more effective when multiple disks are used. I like to combine that with online solutions. Redundancy is a good thing.</p>
+
+<p>USB-attached drives work great with Time Machine. I found that Time Machine was inconsistent over WiFi, and when it failed, troubleshooting took too much time. That was a few years ago and things have probably improved since then. I&rsquo;ve never had to troubleshoot a USB-attached Time Machine drive. USB just works. Except when it doesn&rsquo;t. And that&rsquo;s where RubyMotion proved helpful.</p>
+
+<!--more-->
+
+
+<h3>Disconnecting USB in a Hurry</h3>
+
+<p>My only problem with USB-attached drives comes when I need to leave my desk in a hurry. You may have seen this message before:</p>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/disk-not-ejected-properly.png' width='' height='' alt='In a hurry to eject?' title='In a hurry to eject?'><span class='caption-text'>In a hurry to eject?</span></span></p>
+
+<p>All three of my USB drives are attached through a single USB hub. Yanking the cable while running for a meeting is… bad! Forgetting to eject even one of the USB drives is also bad.</p>
+
+<p>I solved the problem about a year ago by writing a command line tool that ejects all three drives with one double-click of an icon. Yesterday I deciced to improve my command line tool with RubyMotion.</p>
+
+<h3>Ejecting in a Hurry</h3>
+
+<p><code>EjectDisks</code> is a simple OS X program written with the RubyMotion toolchain for Mac OS X. It uses the <code>osx-status-bar-app-template</code> gem created by <a href="https://github.com/kickcode/osx-status-bar-app-template">Elliott Draper</a>. Here&rsquo;s a 10-second demo.</p>
+
+<center><iframe name="eject-disks-osx" src="http://RayHightower.com//player.vimeo.com/video/78349497" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
+
+
+<h3>The Code</h3>
+
+<p>The latest version of the EjectDisk code is on <a href="https://github.com/RayHightower/EjectDisks">GitHub</a>. The <code>app_delegate.rb</code> file appears below.</p>
+
+<p>```ruby
+class AppDelegate
+  attr_accessor :status_menu</p>
+
+<p>  def applicationDidFinishLaunching(notification)</p>
+
+<pre><code>@app_name = NSBundle.mainBundle.infoDictionary['CFBundleDisplayName']
+
+@status_menu = NSMenu.new
+
+@status_item = NSStatusBar.systemStatusBar.statusItemWithLength(NSVariableStatusItemLength).init
+@status_item.setMenu(@status_menu)
+@status_item.setHighlightMode(true)
+@status_item.setTitle(@app_name)
+
+@status_menu.addItem createMenuItem("About #{@app_name}", 'orderFrontStandardAboutPanel:')
+@status_menu.addItem createMenuItem("Custom Action", 'pressAction')
+@status_menu.addItem createMenuItem("Eject Three Disks", 'ejectThreeDisks')
+@status_menu.addItem createMenuItem("Say Something", 'sayDroid')
+@status_menu.addItem createMenuItem("Sing", 'singSomething')
+@status_menu.addItem createMenuItem("Greetings", 'greetings')
+@status_menu.addItem createMenuItem("Quit", 'terminate:')
+</code></pre>
+
+<p>  end</p>
+
+<p>  def createMenuItem(name, action)</p>
+
+<pre><code>NSMenuItem.alloc.initWithTitle(name, action: action, keyEquivalent: '')
+</code></pre>
+
+<p>  end</p>
+
+<p>  def pressAction</p>
+
+<pre><code>alert = NSAlert.alloc.init
+alert.setMessageText "Action triggered from status bar menu"
+alert.addButtonWithTitle "OK"
+alert.runModal
+</code></pre>
+
+<p>  end</p>
+
+<p>  def sayDroid</p>
+
+<pre><code>%x(say -v cello droid)
+</code></pre>
+
+<p>  end</p>
+
+<p>  def singSomething</p>
+
+<pre><code>%x(say -v cello da da da da da da da da da da da da da da da da da da da da da da da da da da)
+</code></pre>
+
+<p>  end</p>
+
+<p>  def greetings</p>
+
+<pre><code>%x(say -v cello Greetings to the members of Chippewa Valley Code Camp &amp;)
+alert = NSAlert.alloc.init
+alert.setMessageText "Greetings to the members of Chippewa Valley Code Camp!"
+alert.addButtonWithTitle "OK"
+alert.runModal
+</code></pre>
+
+<p>  end</p>
+
+<p>  def ejectThreeDisks</p>
+
+<pre><code>alert = NSAlert.alloc.init
+response = %x(/usr/sbin/diskutil eject SiiGBlack) + "\n"
+response += %x(/usr/sbin/diskutil eject Ultra3TB) + "\n"
+response += %x(/usr/sbin/diskutil eject WDSilver) + "\n"
+alert.setMessageText response
+alert.addButtonWithTitle "OK"
+alert.runModal
+</code></pre>
+
+<p>  end
+end
+```</p>
+
+<h3>Next Steps</h3>
+
+<p>Not everything in the EjectTools is business-related. Do we really need to include a greeting to the members of the <a href="http://chippewavalleycodecamp.com/">Chippewa Valley Code Camp</a>?  Yes, we do!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[RubyMotion Sketchnotes]]></title>
@@ -279,43 +408,6 @@ To use the RubyMotion console, cd into the new directory: NewApp</p>
 <h4>Feedback Welcome</h4>
 
 <p>If you notice any glitches with this approach, feel free to send me a &ldquo;heads up&rdquo; via the <a href="/contact/">contact</a> form on this site or in the blog comments below.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[RubyMotion Provisioning Profiles]]></title>
-    <link href="http://RayHightower.com/blog/2012/12/26/rubymotion-provisioning-profiles/"/>
-    <updated>2012-12-26T20:46:00-06:00</updated>
-    <id>http://RayHightower.com/blog/2012/12/26/rubymotion-provisioning-profiles</id>
-    <content type="html"><![CDATA[<p><em>Note: This article on provisioning profiles was first posted in the <a href="https://groups.google.com/forum/?fromgroups=#!topic/rubymotion/Nvo8dH_8rkI">RubyMotion Google Group</a> on May 10, 2012. It was also referenced on <a href="http://stackoverflow.com/questions/13539743/rubymotion-build-error-cant-find-a-provisioning-profile-named-mixios-tea">Stack Overflow</a>.</em></p>
-
-<p>Everything with RubyMotion worked great until I tried to run the sample apps on a physical device. And then I had to spend a few hours wrestling with provisioning profiles. Hopefully this post will save time for somebody else.</p>
-
-<!-- more -->
-
-
-<p>In order to successfully run a RubyMotion app on a non-jailbroken iPhone 3GS (via <code>$ rake device</code>) I had to:</p>
-
-<ul>
-<li>Delete all of the expired provisioning profiles in the Mac OS X Keychain Access app. Yeah, my past is littered with many random experiments :&ndash;)</li>
-<li>Explicitly set the path to my provisioning profile in the rakefile for the app (the defaults didn&rsquo;t work for me).</li>
-<li>Explicitly set the name of my codesign_certificate.</li>
-</ul>
-
-
-<p>The default &ldquo;iOS Team Profile&rdquo; didn&rsquo;t work for me. I had to set explicit values in my rakefile for the app. Here&rsquo;s my rakefile for the <a href="https://github.com/HipByte/RubyMotionSamples/tree/master/Tweets">&lsquo;Tweets&rsquo; sample app</a>:</p>
-
-<p><code>ruby
-$:.unshift("/Library/RubyMotion/lib")
-require 'motion/project'
-Motion::Project::App.setup do |app| # Use `rake config' to see complete project settings.
-  app.name = 'Tweets'
-  app.provisioning_profile = '/Users/[username]/Library/ MobileDevice/Provisioning Profiles/[string-of-numbers].mobileprovision'
-  app.codesign_certificate = 'iPhone Developer: John Q Developer (A5QZ9QF4Z1)'
-end
-</code></p>
-
-<p>Of course, my name isn&rsquo;t &ldquo;John Q Developer&rdquo;, but you get the idea. Hope this helps!</p>
 ]]></content>
   </entry>
   

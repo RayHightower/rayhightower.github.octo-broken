@@ -218,7 +218,7 @@
     </url>
     <url>
         <loc>http://RayHightower.com/blog/2013/08/25/madison-ruby-2013/</loc>
-        <lastmod>2013-10-27T11:50:06-05:00</lastmod>
+        <lastmod>2013-11-01T01:21:29-05:00</lastmod>
     </url>
     <url>
         <loc>http://RayHightower.com/blog/2013/09/02/you-can-build-things/</loc>
@@ -234,7 +234,11 @@
         <loc>
             http://RayHightower.com/blog/2013/10/31/tohtml-using-vim-code-snippets-in-keynote-presentations/
         </loc>
-        <lastmod>2013-10-31T17:00:46-05:00</lastmod>
+        <lastmod>2013-10-31T17:11:05-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://RayHightower.com/blog/2013/11/01/building-an-os-x-app-with-rubymotion/</loc>
+        <lastmod>2013-11-01T10:13:48-05:00</lastmod>
     </url>
     <url>
         <loc>http://RayHightower.com/404.html</loc>
@@ -242,7 +246,7 @@
     </url>
     <url>
         <loc>http://RayHightower.com/blog/archives/</loc>
-        <lastmod>2013-10-31T17:00:46-05:00</lastmod>
+        <lastmod>2013-11-01T10:13:48-05:00</lastmod>
     </url>
     <url>
         <loc>http://RayHightower.com/contact/</loc>
@@ -250,7 +254,7 @@
     </url>
     <url>
         <loc>http://RayHightower.com/</loc>
-        <lastmod>2013-10-31T17:00:46-05:00</lastmod>
+        <lastmod>2013-11-01T10:13:48-05:00</lastmod>
     </url>
     <url>
         <loc>http://RayHightower.com/robots.txt</loc>
