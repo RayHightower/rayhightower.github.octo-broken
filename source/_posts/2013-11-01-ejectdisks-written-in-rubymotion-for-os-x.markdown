@@ -26,7 +26,7 @@ Here's a quick video demo of the EjectDisks app.
 <center><iframe name="eject-disks-osx" width="560" height="315" src="//www.youtube.com/embed/Lb9ZUESIpms" frameborder="0" allowfullscreen></iframe></center>
 
 ###The Code
-The latest version of the EjectDisk code is on [GitHub](). The `app_delegate.rb` file appears below.
+The latest version of the EjectDisk code is on [GitHub](https://github.com/RayHightower/EjectDisks). The `app_delegate.rb` file appears below.
 
 ```ruby
 class AppDelegate
