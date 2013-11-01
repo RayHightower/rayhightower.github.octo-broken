@@ -9,11 +9,11 @@ categories: [Ruby, RubyMotion]
 RubyMotion's OS X support enabled me to solve a small problem yesterday.  Here's the story.
 
 ###Background on Backup
-No matter how much money we spend on computing equipment, the data we create is worth more. The best data protection employs several levels of redundancy.
+No matter how much money we spend on computers, the data we create is worth more. The best data protection employs several levels of redundancy.
 
 My backup system starts with Apple's [Time Machine](http://www.apple.com/findouthow/mac/#timemachinebasics), which handles first level backups painlessly in the background. Time machine is even more effective when multiple disks are used. I like to combine that with online solutions. Redundancy is a good thing.
 
-USB-attached drives work great with Time Machine. I found that Time Machine was inconsistent over WiFi, and when it failed, troubleshooting took too much time. That was a few years ago and things have probably improved since then. I've never had to troubleshoot a USB-attached Time machine drive. USB just works. Except when it doesn't. And that's where RubyMotion was able to help.
+USB-attached drives work great with Time Machine. I found that Time Machine was inconsistent over WiFi, and when it failed, troubleshooting took too much time. That was a few years ago and things have probably improved since then. I've never had to troubleshoot a USB-attached Time Machine drive. USB just works. Except when it doesn't. And that's where RubyMotion proved helpful.
 <!--more-->
 ###Disconnecting USB in a Hurry
 My only problem with USB-attached drives comes when I need to leave my desk in a hurry. You may have seen this message before:
@@ -22,9 +22,7 @@ My only problem with USB-attached drives comes when I need to leave my desk in a
 
 All three of my USB drives are attached through a single USB hub. Yanking the cable while running for a meeting is… bad! Forgetting to eject even one of the USB drives is also bad.
 
-I solved the problem about a year ago by writing a command line tool that ejects all three drives with a single click. Yesterday I deciced to improve my command line tool with RubyMotion.
-
-All of my Time Machine disks are connected through a USB hub. 
+I solved the problem about a year ago by writing a command line tool that ejects all three drives with one double-click of an icon. Yesterday I deciced to improve my command line tool with RubyMotion.
 
 ###Ejecting in a Hurry
 [RubyMotion](/blog/2012/10/29/building-ios-apps-with-ruby-motion/) added support for OS X apps earlier this year. 
