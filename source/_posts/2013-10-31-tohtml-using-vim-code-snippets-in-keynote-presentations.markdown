@@ -30,11 +30,7 @@ Motion::Project::App.setup do |app|
 end
 ```
 
-(Acknowledgement: I'm using the `osx-status-bar-app-template` gem by [Elliott Draper](http://ejdraper.com/) for this example.)
-
-Next, visually select the lines you want to convert. You can do this with shift-V, or with the (gasp!) mouse. Or if you want to convert the entire file, 
-
-Enter `:TOhtml` in the command area. Vim will convert the highlighted text into HTML in a new buffer. Here's the result:
+Next, visually select the lines you want to convert. You can do this with shift-V, or with the (gasp!) mouse. Or if you want to convert the entire file, enter `:TOhtml` in the command area. Vim will convert the highlighted text into HTML in a new buffer. Here's the result:
 
 ```html
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
