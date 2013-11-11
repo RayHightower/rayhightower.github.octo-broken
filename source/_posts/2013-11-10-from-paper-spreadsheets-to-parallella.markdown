@@ -10,14 +10,33 @@ The [Raspberry Pi](/blog/2012/12/03/ruby-on-raspberry-pi/), Beaglebone Black, an
 
 ###Inspiration
 The HP 5036 Microprocessor Lab gave me my first exposure to assembler language. I was eighteen, working my first software internship, and loving every minute of it. When I devised ways to complete my _regular work_ faster than management expected, I had some time on my hands. So I spent that time with the HP 5036.
-{% imgcap right /images/hp-5036.png HP 5036 Microprocessor Lab %}
+
+Here's how the 5036 worked:
+1. Start by writing your assembler-level code by hand on paper.
+2. Next, grab the reference book for the microprocessor running on the
+   board, Intel 8080.
+3. For each assembler-level command, find the corresponding 2-digit
+   hexidecimal operation code.
+4. Key the op code into the 5036 by hand. 
+5. Run the program.
+
+Working with the 5036 was addictive in a positive way.
+
+###Pi, Bone, Parallella
+Fast forward a few decades. We now have the Raspberry Pi, BeagleBone
+Black, and Parallella. Wonderful devices, but with one flaw: No
+portability. That's when I had a flashback to my days with the 5036.
+
+I bought a $35 technician box from Home Depot and I ripped out the insides. Micro Center had old LCD monitors on sale for $90, so I bought one of those. I didn't want to spend the extra bucks for a 1080p LCD because you never know how something like this might work out! Finally, I topped everything off with a $25 keyboard/trackpad combo from Amazon.  The result appears in the photo at the top of this piece.
+
+###Why?
+Why did I spend the time and money to assemble this kit? It's all about learning. Devs learn more when we interact with other devs - people who are learning some of the same things that we're wrestling with. And sometimes the things we need to learn are too new for books.
+
+By carrying my Raspberry Pi, BeagleBone Black, and Parallella with me in a portable unit, I can share my experiences with other devs and learn more in the process.  Everybody wins when that happens.
+
+###Next Steps
 
 
-My first exposure to assembler language came through an HP 5036
-Microprocessor Lab. The lab was designed for electical engineers who
-wanted to learn about microprocessors long after graduating from
-college. The lab was designed for engineers who finished college before
-the advent of the microprocessor.
 
 
 
