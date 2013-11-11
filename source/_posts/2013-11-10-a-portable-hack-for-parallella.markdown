@@ -23,7 +23,7 @@ The entire 5036 fits in a suitcase... how cool is that! Here's how the 5036 work
 4. Key the op code into the 5036 by hand. 
 5. Run the program.
 
-Working with the 5036 was addictive in a positive way. In a future job, where I wrote assembler to drive hardware devices, I was ready.
+Working with the 5036 was addictive in a positive way. In a subsequent job, where I wrote assembler to drive hardware devices, I was ready.
 
 ###Portability Needed
 Fast forward a few decades. We now have the Raspberry Pi, BeagleBone Black, and Parallella. Wonderful devices with one flaw in common: No portability. That's when I had a flashback to my days with the 5036.
