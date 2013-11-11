@@ -38,4 +38,4 @@ By carrying my Raspberry Pi, BeagleBone Black, and Parallella with me in a porta
 ###Thanks SCNA!
 The organizers of [Software Craftsmanship North America (SCNA)](http://scna.softwarecraftsmanship.org/) gave me the opportunity to present this story as a lightning talk at the conference. Slides are here:
 <center><script async class="speakerdeck-embed" data-id="b3558fd02cac0131cfc62a9baba32394" data-ratio="1.29456384323641" src="//speakerdeck.com/assets/embed.js"></script></center>
-Thank you SCNA! As I shared with the other devs at SCNA, I will gladly share my mistakes and _gotchas_ here if people are interested in building a unit like this.
+Thank you SCNA! As I shared with the other devs at SCNA, I will gladly post my mistakes and _gotchas_ here for people who want to build a unit like this. Let's build!
