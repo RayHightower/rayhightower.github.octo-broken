@@ -6,7 +6,7 @@ comments: true
 categories: [BeagleBone Black, Education, Parallella, Raspberry Pi]
 ---
 {% imgcap left /images/parallella-portable.png Portablity for Raspberry Pi, BeagleBone Black, and Parallella. %}
-The [Raspberry Pi](/blog/2012/12/03/ruby-on-raspberry-pi/), Beaglebone Black, and Parallella are powerful and small. But in order to make these devices truly portable, we need a way to carry a monitor and keyboard along. This article describes one hack that works.
+The [Raspberry Pi](/blog/2012/12/03/ruby-on-raspberry-pi/), [Beaglebone Black](/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/), and [Parallella](/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/) are powerful and small. But in order to make these devices truly portable, we need a way to carry a monitor and keyboard along. This article describes one hack that works.
 
 ###Inspiration in a Suitcase
 The HP 5036 Microprocessor Lab gave me my first exposure to assembler language. I was eighteen, working my first software internship, and loving every minute of it. When I devised ways to complete my _regular work_ faster than management expected, I had some time on my hands. So I spent time learning assembler with the HP 5036.
