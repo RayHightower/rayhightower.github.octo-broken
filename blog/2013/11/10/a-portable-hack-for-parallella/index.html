@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Petascale Tools Workshop 2013 - RayHightower.com</title>
+  <title>A Portable Hack for Parallella - RayHightower.com</title>
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="The Petascale Tools Workshop is for computer scientists who create tools that enable apps to run efficiently on the world&rsquo;s fastest &hellip;">
+  <meta name="description" content="Portablity for Raspberry Pi, BeagleBone Black, and Parallella.
+The Raspberry Pi, Beaglebone Black, and Parallella are powerful and small. But in &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://RayHightower.com/blog/2013/07/19/petascale-tools-workshop-2013">
+  <link rel="canonical" href="http://RayHightower.com/blog/2013/11/10/a-portable-hack-for-parallella">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="RayHightower.com" type="application/atom+xml">
@@ -85,7 +86,7 @@
   
   <header>
     
-      <h1 class="entry-title">Petascale Tools Workshop 2013</h1>
+      <h1 class="entry-title">A Portable Hack for Parallella</h1>
     
     
       <p class="meta">
@@ -101,114 +102,60 @@
   
 
 
-<time datetime="2013-07-19T02:12:00-05:00" pubdate data-updated="true">Jul 19<span>th</span>, 2013</time>
+<time datetime="2013-11-10T23:05:00-06:00" pubdate data-updated="true">Nov 10<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>The <a href="http://www.paradyn.org/CSCADS2013/index.html">Petascale Tools Workshop</a> is for computer scientists who create tools that enable apps to run efficiently on the world&rsquo;s fastest supercomputers. Supercomputer performance is measured in petaflops: 10<sup><sup>15</sup></sup> floating point operations per second. That&rsquo;s blazing speed, thousands of times faster than the fastest MacBook Pro.</p>
+<div class="entry-content"><p><span class='caption-wrapper left'><img class='caption' src='/images/parallella-portable.png' width='' height='' alt='Portablity for Raspberry Pi, BeagleBone Black, and Parallella.' title='Portablity for Raspberry Pi, BeagleBone Black, and Parallella.'><span class='caption-text'>Portablity for Raspberry Pi, BeagleBone Black, and Parallella.</span></span>
+The <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a>, <a href="/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/">Beaglebone Black</a>, and <a href="/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/">Parallella</a> are powerful and small. But in order to make these devices truly portable, we need a way to carry a monitor and keyboard along. This article describes one hack that works.</p>
+
+<h3>Inspiration in a Suitcase</h3>
+
+<p>The HP 5036 Microprocessor Lab gave me my first exposure to assembler language. I was eighteen, working my first software internship, and loving every minute of it. When I devised ways to complete my <em>regular work</em> faster than management expected, I had some time on my hands. So I spent time learning assembler with the HP 5036.</p>
 
 <!--more-->
 
 
-<p><a href="http://WisdomGroup.com">WisdomGroup</a> was invited to attend the workshop because we have a client client, <a href="http://www.wisdomgroup.com/case-studies/texas-am-university/">Texas A &amp; M University</a>, operating in the high performance computing (HPC) space. As the only non-PhD in the room, I was given a chance to exercise Pat Metheny&rsquo;s <a href="/blog/2013/07/17/pat-metheny-be-the-worst/">be-the-worst</a> philosophy in the extreme. The result: I learned things that will help WisdomGroup to deliver better solutions for our clients, especially the TAMU team.</p>
+<p><span class='caption-wrapper'><img class='caption' src='/images/hp-5036.png' width='' height='' alt='HP 5036 Microprocessor Lab' title='HP 5036 Microprocessor Lab'><span class='caption-text'>HP 5036 Microprocessor Lab</span></span></p>
 
-<h3>One Megawatt = $1,000,000.00</h3>
+<p>The entire 5036 fits in a suitcase&hellip; how cool is that! Here&rsquo;s how the 5036 works:</p>
 
-<p>As with other disciplines of engineering, supercomputer design is all about managing trade-offs. If you increase the clock speed, how will that affect your electrical bill? If you increase the size of the cache, how much more will you spend on hardware?</p>
-
-<p>Every Petascale Workshop presenter highlighted the toughest constraint: The cost of electrical power. High performance computers gulp electricity. The wattage numbers were all very abstract to me until one presenter layed out a direct one-to-one correspondence between electricity and money. <em>One megawatt of power used over the course of a year costs one million dollars.</em></p>
-
-<p>Express a constraint in terms of money, and the abstractions melt away.</p>
-
-<p>The debate between the scientists was vigorous yet respectful. After hearing the 1-to-1 rule of thumb, one audience member remarked, &ldquo;I know how to genererate a megawatt for only $865,000.&rdquo; He then outlined his solution, a combination of coal, fossil fuels, and natural gas that would achieve the reduction. The more important point: Electricity is expensive.</p>
-
-<h3>Re-Framing the Power Problem</h3>
-
-<p>There is another way to look at the power problem. Consider it from the perspective of performance, not power. Here&rsquo;s how one presenter put it: No matter where we build a supercomputer, we will only have a limited amount of power. Let&rsquo;s look at the maximum available power as a constraint and go from there.</p>
-
-<p>Rubyists are familiar with the saying &#34;<a href="http://gettingreal.37signals.com/ch03_Embrace_Constraints.php">constraints are liberating</a>&#34;, popularized by 37signals. Since power limitations are real constraints, our next step is to figure out how to extract the best results allowed within the constraints.</p>
-
-<h3>Top Five</h3>
-
-<p>Supercomputer scientists are as competitive as olympic athletes. As of June 2013, the five fastest machines in the world are:</p>
-
-<center>
-<table class="table table-condensed">
-    <thead>
-    <tr>
-        <th width="50">Rank</th>
-        <th width="75">Site</th>
-        <th width="100" style="text-align: right;">Cores</th>
-        <th width="75" style="text-align: right;">Rmax (PF/s)</th>
-        <th width="75" style="text-align: right;">Power (MW)</th>
-    </tr>
-    </thead>
-
-    <tr class="sublist odd">
-        <td><span class="badge">1</span></td>
-        <td>China</td>
-        <td style="text-align: right;">3,120,000</td>
-        <td style="text-align: right;">33.9</td>
-        <td style="text-align: right;">17.8</td>
-    </tr>
-
-    <tr class="sublist even">
-        <td><span class="badge">2</span></td>
-        <td>USA</td>
-        <td style="text-align: right;">560,640</td>
-        <td style="text-align: right;">17.5</td>
-        <td style="text-align: right;">8.2</td>
-    </tr>
-
-    <tr class="sublist odd">
-        <td><span class="badge">3</span></td>
-        <td>USA</td>
-        <td style="text-align: right;">1,572,864</td>
-        <td style="text-align: right;">17.2</td>
-        <td style="text-align: right;">7.9</td>
-    </tr>
-
-    <tr class="sublist even">
-        <td><span class="badge">4</span></td>
-        <td>Japan</td>
-        <td style="text-align: right;">705,024</td>
-        <td style="text-align: right;">10.5</td>
-        <td style="text-align: right;">12.6</td>
-    </tr>
-
-    <tr class="sublist odd">
-        <td><span class="badge">5</span></td>
-        <td>USA</td>
-        <td style="text-align: right;">786,432</td>
-        <td style="text-align: right;">8.6</td>
-        <td style="text-align: right;">3.9</td>
-    </tr>
-</table>
-</center>
+<ol>
+<li>Start by writing assembler-level code by hand on paper.</li>
+<li>Grab the reference book for the microprocessor running on the
+board, Intel 8080.</li>
+<li>For each assembler-level command, find the corresponding 2-digit
+hexidecimal operation code.</li>
+<li>Key the op code into the 5036 by hand.</li>
+<li>Run the program.</li>
+</ol>
 
 
-<p>&nbsp;<br/>
-Scientists determine Rmax by running the <a href="http://en.wikipedia.org/wiki/LINPACK_benchmarks">LINPACK</a> benchmark. <a href="http://top500.org">Top500.org</a> has more information about the fastest
-machines.</p>
+<p>Working with the 5036 was addictive in a positive way. In a future job, where I wrote assembler to drive hardware devices, I was ready.</p>
 
-<h3>Digging Deeper</h3>
+<h3>Portability Needed</h3>
 
-<p>Some of the biggest performance gains can be realized through more efficient software. Most supercomputers run some distribution of Linux. Some teams of researchers focus on ways to optimize the Linux kernel for supercomputing.</p>
+<p>Fast forward a few decades. We now have the Raspberry Pi, BeagleBone Black, and Parallella. Wonderful devices with one flaw in common: No portability. That&rsquo;s when I had a flashback to my days with the 5036.</p>
 
-<p>Optimization is not a one-size-fits all process. The scientists need to consder the type of applications being run, percentage of time spent on I/O, efficiency of algorithms, and so on. Each potential optimization choice is like a node on an ever expanding tree. The choices are endless, and the seasoned expert will know where to focus for the best results.</p>
+<p>I bought a $35 technician box from Home Depot and I ripped out the insides. Micro Center had 720p LCD monitors on sale for $90, so I bought one of those. I didn&rsquo;t want to spend the extra bucks for a 1080p LCD because you never know how something like this might work out! Finally, I topped everything off with a $25 keyboard/trackpad combo from Amazon.  The result appears in the photo at the top of this piece.</p>
 
-<p>In the Ruby world, we might use tools like <a href="http://newrelic.com">New Relic</a> or <a href="http://codeclimate.com">Code Climate</a> to identify hot spots in our code, places where re-factoring can reduce CPU utilization or improve I/O. HPC tools tend to be highly customizable because the users are intimately familar with their own hardware. During a lunch conversation, one team of scientists shared how they suspected a defect in hardware counters used to measure the behavior of a supercomputer under study. The instincts of the scientists proved correct, and the errant counters were replaced.</p>
+<h3>Why?</h3>
 
-<h3>Conclusion</h3>
+<p>Why did I spend the time and money to assemble this kit? It&rsquo;s all about learning. Devs learn more when we interact with other devs &ndash; people who are learning some of the same things that we&rsquo;re wrestling with. And sometimes the things we need to learn are too new for books.</p>
 
-<p>When smart people challenge each other to grow, great things happen. The scientists at the Petascale Tools Workshop were clearly helping each other to grow. The next few years in supercomputing will be exciting!</p>
+<p>By carrying my Raspberry Pi, BeagleBone Black, and Parallella with me in a portable unit, I can share my experiences with other devs and learn more in the process. Everybody wins when that happens.</p>
 
-<h3>Acknowledgements</h3>
+<h3>Thanks SCNA!</h3>
 
-<p>I am grateful to the organizers of the Petascale Tools Workshop for hosting the event, and to the TAMU team for extending the invitation. Thank you both!</p>
+<p>The organizers of <a href="http://scna.softwarecraftsmanship.org/">Software Craftsmanship North America (SCNA)</a> gave me the opportunity to present this story as a lightning talk at the conference. Slides are here:</p>
+
+<center><script async class="speakerdeck-embed" data-id="b3558fd02cac0131cfc62a9baba32394" data-ratio="1.29456384323641" src="//speakerdeck.com/assets/embed.js"></script></center>
+
+
+<p>Thank you SCNA! As I shared with the other devs at SCNA, I will gladly post my mistakes and <em>gotchas</em> here for people who want to build a unit like this. Let&rsquo;s build!</p>
 </div>
 
 
@@ -231,12 +178,12 @@ machines.</p>
   
 
 
-<time datetime="2013-07-19T02:12:00-05:00" pubdate data-updated="true">Jul 19<span>th</span>, 2013</time>
+<time datetime="2013-11-10T23:05:00-06:00" pubdate data-updated="true">Nov 10<span>th</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/education/'>Education</a>
+    <a class='category' href='/blog/categories/beaglebone-black/'>BeagleBone Black</a>, <a class='category' href='/blog/categories/education/'>Education</a>, <a class='category' href='/blog/categories/parallella/'>Parallella</a>, <a class='category' href='/blog/categories/raspberry-pi/'>Raspberry Pi</a>
   
 </span>
 
@@ -245,7 +192,7 @@ machines.</p>
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2013/07/19/petascale-tools-workshop-2013/" data-via="" data-counturl="http://RayHightower.com/blog/2013/07/19/petascale-tools-workshop-2013/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2013/11/10/a-portable-hack-for-parallella/" data-via="" data-counturl="http://RayHightower.com/blog/2013/11/10/a-portable-hack-for-parallella/" >Tweet</a>
   
   
   
@@ -254,10 +201,8 @@ machines.</p>
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/07/17/pat-metheny-be-the-worst/" title="Previous Post: Pat Metheny: Be the Worst">&laquo; Pat Metheny: Be the Worst</a>
+        <a class="basic-alignment left" href="/blog/2013/11/01/building-an-os-x-app-with-rubymotion/" title="Previous Post: Building an OS X App With RubyMotion">&laquo; Building an OS X App With RubyMotion</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/07/29/why-we-need-stem/" title="Next Post: Why We Need STEM">Why We Need STEM &raquo;</a>
       
     </p>
   </footer>
@@ -384,8 +329,8 @@ machines.</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://RayHightower.com/blog/2013/07/19/petascale-tools-workshop-2013/';
-        var disqus_url = 'http://RayHightower.com/blog/2013/07/19/petascale-tools-workshop-2013/';
+        var disqus_identifier = 'http://RayHightower.com/blog/2013/11/10/a-portable-hack-for-parallella/';
+        var disqus_url = 'http://RayHightower.com/blog/2013/11/10/a-portable-hack-for-parallella/';
         var disqus_script = 'embed.js';
       
     (function () {
