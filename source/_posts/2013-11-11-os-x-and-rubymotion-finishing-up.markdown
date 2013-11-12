@@ -27,6 +27,7 @@ It doesn't really matter whether we copy the file or move it.  RubyMotion create
 
 ###Launch at Login
 I want the EjectDisks utility to be always available, so it would be good to have it launch automatically at login. That behavior is managed in the `Users and Groups` preference pane, shown below:
+
 {% imgcap /images/launch-at-login.png %}
 
 Click the `+` sign, navigate to the app you want to launch at login time (in this case, EjectDisks) and select it. Done.
