@@ -99,3 +99,4 @@ Not everything in the EjectDisks tool is business-related. Do we really need to 
 
 On the serious side, the app should handle disk ejection as a background process. It's not good to tie up the system for a simple task. Look for a forked process in a future version of the app.
 
+_Update: This article should have included instructions on how to run the executable on any Mac OS X system without having RubyMotion installed. The omission is corrected in a later blog post, [OS X and RubyMotion, Finishing Up](/blog/2013/11/11/os-x-and-rubymotion-finishing-up/)._
