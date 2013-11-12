@@ -5,19 +5,20 @@ date: 2013-11-11 19:03
 comments: true
 categories: [ Linux-Unix-OSX, RubyMotion ]
 ---
+{% imgcap right /images/show-package-contents.png %}
 There is something I neglected to mention in a previous blog post, [Building an OS X App With RubyMotion](/blog/2013/11/01/building-an-os-x-app-with-rubymotion/). Once you've written the OS X app, where do you find the executable, and how do you add it to the `Applications` folder on the Mac?
 
 Long-time Mac enthusiasts may already know how to do this. The information is included here for completeness.
 <!--more-->
 ###Find, Drag, and Drop
-First thing to note: A Mac app named [random-app].app is actually a directory, even though it appears to be a file when viewed in the `Applications` folder.
+First thing to note: A Mac app named [random-app].app is actually a directory, even though it appears to be a file when viewed in the `Applications` folder. If you're curious, right-click on any app in the `Applications` folder and choose `Show Package Contents` from the speed menu.
 
-After compilation, RubyMotion puts all of the executables in the `/build/` directory. Using Finder, drag the file named `[your-app-name].app` into the Applications folder.
+After compilation, RubyMotion puts all of the executables in the `build/` directory. Using Finder, drag the file named `[your-app-name].app` into the `Applications` folder.
 
 Or, if you prefer the command line…
 
 ```bash
-$ cd [root directory of your RubyMotion OS X app]
+$ cd [root-directory-of-your-app]
 $ cp build/[your-app-name].app ~/Applications
 $
 ```
