@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: Linux-Unix-OSX - RayHightower.com</title>
+  <title>OS X and RubyMotion, Finishing Up - RayHightower.com</title>
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="Category: Linux-Unix-OSX">
+  <meta name="description" content="There is something I neglected to cover in a previous blog post, Building an OS X App With RubyMotion. Once you&rsquo;ve written the OS X app, where &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://RayHightower.comblog/categories/linux-unix-osx">
+  <link rel="canonical" href="http://RayHightower.com/blog/2013/11/11/os-x-and-rubymotion-finishing-up">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="RayHightower.com" type="application/atom+xml">
@@ -81,123 +81,123 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Linux-Unix-OSX</h1>
+    
+      <h1 class="entry-title">OS X and RubyMotion, Finishing Up</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-11T19:03:00-06:00" pubdate data-updated="true">Nov 11<span>th</span>, 2013</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p><span class='caption-wrapper right'><img class='caption' src='/images/show-package-contents.png' width='' height='' alt='' title=''><span class='caption-text'></span></span>
+There is something I neglected to cover in a previous blog post, <a href="/blog/2013/11/01/building-an-os-x-app-with-rubymotion/">Building an OS X App With RubyMotion</a>. Once you&rsquo;ve written the OS X app, where do you find the executable, and how do you add it to the <code>Applications</code> folder on the Mac?</p>
 
-  
-  <h2>2013</h2>
+<p>Long-time Mac enthusiasts may already know how to do this. The information is included here for completeness.</p>
 
-<article>
-  
-<h1><a href="/blog/2013/11/11/os-x-and-rubymotion-finishing-up/">OS X and RubyMotion, Finishing Up</a></h1>
-<time datetime="2013-11-11T19:03:00-06:00" pubdate><span class='month'>Nov</span> <span class='day'>11</span> <span class='year'>2013</span></time>
+<h3>Find, Drag, and Drop</h3>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/linux-unix-osx/'>Linux-Unix-OSX</a>, <a class='category' href='/blog/categories/rubymotion/'>RubyMotion</a></span>
-</footer>
+<p>First thing to note: A Mac app named [random-app].app is actually a directory, even though it appears to be a file when viewed in the <code>Applications</code> folder. If you&rsquo;re curious, right-click on any app in the <code>Applications</code> folder and choose <code>Show Package Contents</code> from the speed menu.</p>
+
+<!--more-->
 
 
-</article>
+<p>After compilation, RubyMotion puts all of the executables in the app&rsquo;s <code>build/</code> directory. Using Finder, drag the folder named <code>[your-app-name].app</code> into the <code>Applications</code> folder.</p>
+
+<p>Or, if you prefer the command line…</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="nb">cd</span> <span class="o">[</span>root-directory-of-your-app<span class="o">]</span>
+</span><span class='line'><span class="nv">$ </span>cp build/MacOSX-10.8-Development/<span class="o">[</span>your-app-name<span class="o">]</span>.app /Applications
+</span><span class='line'><span class="err">$</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
+<p>It doesn&rsquo;t really matter whether we copy the file or move it.  RubyMotion creates a new one with every build, when we type <code>rake</code>.</p>
 
-<article>
-  
-<h1><a href="/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/">Prep for Parallella's 64 Cores: Installing Go on Mac OS X</a></h1>
-<time datetime="2013-06-22T12:58:00-05:00" pubdate><span class='month'>Jun</span> <span class='day'>22</span> <span class='year'>2013</span></time>
+<h3>Launch at Login</h3>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/education/'>Education</a>, <a class='category' href='/blog/categories/linux-unix-osx/'>Linux-Unix-OSX</a>, <a class='category' href='/blog/categories/parallella/'>Parallella</a></span>
-</footer>
+<p>I want the EjectDisks utility to be always available, so it would be good to have it launch automatically at login. That behavior is managed in the <code>Users and Groups</code> preference pane, shown below:
+<span class='caption-wrapper'><img class='caption' src='/images/launch-at-login.png' width='' height='' alt='' title=''><span class='caption-text'></span></span></p>
 
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/05/31/kali-linux-pentesting/">Kali Linux for Pentesting</a></h1>
-<time datetime="2013-05-31T00:15:00-05:00" pubdate><span class='month'>May</span> <span class='day'>31</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/education/'>Education</a>, <a class='category' href='/blog/categories/linux-unix-osx/'>Linux-Unix-OSX</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/04/20/ack-written-in-perl-useful-with-ruby/">Ack 2.0: Written in Perl, Useful With Ruby</a></h1>
-<time datetime="2013-04-20T17:12:00-05:00" pubdate><span class='month'>Apr</span> <span class='day'>20</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/education/'>Education</a>, <a class='category' href='/blog/categories/linux-unix-osx/'>Linux-Unix-OSX</a>, <a class='category' href='/blog/categories/rails/'>Rails</a>, <a class='category' href='/blog/categories/ruby/'>Ruby</a>, <a class='category' href='/blog/categories/vim/'>Vim</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/03/19/how-to-take-a-raspberry-pi-screenshot/">How to Take a Raspberry Pi Screenshot</a></h1>
-<time datetime="2013-03-19T20:43:00-05:00" pubdate><span class='month'>Mar</span> <span class='day'>19</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/linux-unix-osx/'>Linux-Unix-OSX</a>, <a class='category' href='/blog/categories/raspberry-pi/'>Raspberry Pi</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/02/12/automatic-ctags-with-rubymotion-and-vim/">Automatic ctags with RubyMotion and Vim</a></h1>
-<time datetime="2013-02-12T19:35:00-06:00" pubdate><span class='month'>Feb</span> <span class='day'>12</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/linux-unix-osx/'>Linux-Unix-OSX</a>, <a class='category' href='/blog/categories/ruby/'>Ruby</a>, <a class='category' href='/blog/categories/rubymotion/'>RubyMotion</a>, <a class='category' href='/blog/categories/vim/'>Vim</a>, <a class='category' href='/blog/categories/ios/'>iOS</a></span>
-</footer>
-
-
-</article>
-
-
-
-  
-  <h2>2012</h2>
-
-<article>
-  
-<h1><a href="/blog/2012/12/24/unix-for-ruby-developers/">Unix for Ruby Developers</a></h1>
-<time datetime="2012-12-24T16:50:00-06:00" pubdate><span class='month'>Dec</span> <span class='day'>24</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/education/'>Education</a>, <a class='category' href='/blog/categories/linux-unix-osx/'>Linux-Unix-OSX</a>, <a class='category' href='/blog/categories/ruby/'>Ruby</a></span>
-</footer>
-
-
-</article>
-
+<p>Click the <code>+</code> sign, navigate to the app you want to launch at login time (in this case, EjectDisks) and select it. Done.</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-11T19:03:00-06:00" pubdate data-updated="true">Nov 11<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/linux-unix-osx/'>Linux-Unix-OSX</a>, <a class='category' href='/blog/categories/rubymotion/'>RubyMotion</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2013/11/11/os-x-and-rubymotion-finishing-up/" data-via="" data-counturl="http://RayHightower.com/blog/2013/11/11/os-x-and-rubymotion-finishing-up/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/11/10/a-portable-hack-for-parallella/" title="Previous Post: A Portable Hack for Parallella">&laquo; A Portable Hack for Parallella</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -313,7 +313,10 @@
       var disqus_shortname = 'rayhightower';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://RayHightower.com/blog/2013/11/11/os-x-and-rubymotion-finishing-up/';
+        var disqus_url = 'http://RayHightower.com/blog/2013/11/11/os-x-and-rubymotion-finishing-up/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
