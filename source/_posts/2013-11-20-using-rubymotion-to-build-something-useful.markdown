@@ -6,12 +6,19 @@ comments: true
 published: false
 categories: [ iOS, Ruby, RubyMotion, Xcode ]
 ---
-The Chicago RubyMotion User Group held its inaugural meeting last night.
-The organizer, Dave Astels, asked me to present. Thanks Dave for the
-opportunity to share my experiences with the group.
+The [Chicago RubyMotion User Group](http://www.meetup.com/Chicago-RubyMotion/) held its inaugural meeting last night. Thank you Dave Astels (the organizer) for asking me to present. 
 
-Fellow developers are welcome to examine the [code examples on GitHub](https://github.com/RayHightower/Chicago-RubyMotion-Nov2013).
+Code examples from the talk are in [this repo on GitHub](https://github.com/RayHightower/Chicago-RubyMotion-Nov2013).
 
+###Something Useful
+Here's a n-second video demo of an app written in RubyMotion:
+
+
+###Yes, RubyMotion Supports OS X
+
+
+
+###Additional Resources
 The first few minutes were spent in [intro/overview mode](http://rayhightower.com/blog/2012/10/29/building-ios-apps-with-ruby-motion/).
 
 
