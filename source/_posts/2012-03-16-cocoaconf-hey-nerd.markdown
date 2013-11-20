@@ -8,13 +8,13 @@ categories: [ Education, iOS, Objective-C ]
 {% imgcap right /images/cocoaconf-mug.png Offical Cocoaconf Mug %}
 "Hey Nerd!"
 
-It was the night before [CocoConf](http://cocoaconf). I had just walked into the hotel bar. A table full of wise guys (as in Stooges, not Sopranos) called out to someone named Nerd. 
+It was the night before [CocoConf](http://cocoaconf). I had just walked into the hotel bar. A table full of wise guys (wise as in Stooges, not Sopranos) called out to someone named Nerd. 
 
 "Hey Nerd!" they shouted again.
 
-This time I looked at their lanyards and badges. Same as mine. They were talking to me. Complete strangers, but not for long because they invited me to join their table. I was immediately comfortable when the discussion turned to midichlorian levels and the lego version of the Millenium Falcon. Camaraderie like this is why I go to conferences.
+This time I looked at their lanyards and badges. Same as mine. They _were_ talking to me. Complete strangers, but not for long because they invited me to join their table. I was immediately comfortable when the discussion turned to midichlorian levels and Lego's model of the Millenium Falcon. Camaraderie like this is why I go to conferences.
 <!--more--> 
-Earlier that day I listened to the author of a popular iPad app as he described the challenges of writing 3D graphics code. The latest version of Apple's tablet gets delivered today, so this conference full of Mac developers is pumped! Discussions like this are why I go to conferences.
+Earlier that day I listened to the author of a popular iPad app as he described the challenges of writing 3D graphics code. The newest iPad was delivered during CocoaConf, so this room full of Mac devs was pumped! I go to conferences for discussions like this.
 
 It's a little after 5am as I type this blog entry. I'm excited about the presentations scheduled for this morning, so excited that I had to get up a few hours early just to write about it. Excitement like this is why I go to conferences.
 
