@@ -28,7 +28,7 @@ Working with the 5036 was addictive in a positive way. In a subsequent job, wher
 ###Portability Needed
 Fast forward a few decades. We now have the Raspberry Pi, BeagleBone Black, and Parallella. Wonderful devices with one flaw in common: No portability. That's when I had a flashback to my days with the 5036.
 
-I bought a $35 technician box from Home Depot and I ripped out the insides. Micro Center had 720p LCD monitors on sale for $90, so I bought one of those. I didn't want to spend the extra bucks for a 1080p LCD because you never know how something like this might work out! Finally, I topped everything off with a $25 keyboard/trackpad combo from Amazon.  The result appears in the photo at the top of this article.
+I bought a $35 technician box from Home Depot and I ripped out the insides. Micro Center had 720p LCD monitors on sale for $90, so I bought one of those. I didn't want to spend the extra bucks for a 1080p LCD because you never know how something like this might work out! Finally, I topped everything off with a $25 keyboard/trackpad combo from Amazon.  The result appears in the photo at the top of this article. Special thanks to Ericka [last name unknown] from Home Depot who gave me tons of ideas on how to securely fasten the monitor to the case.
 
 ###Why?
 Why did I spend the time and money to assemble this kit? It's all about learning. Devs learn more when we interact with other devs - people who are learning some of the same things that we're wrestling with. And sometimes the things we need to learn are too new for books.
