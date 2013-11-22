@@ -4,7 +4,7 @@
   <title><![CDATA[Category: BeagleBone Black | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/beaglebone-black/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-11-22T08:10:42-06:00</updated>
+  <updated>2013-11-22T11:43:42-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -49,7 +49,7 @@ hexidecimal operation code.</li>
 
 <p>Fast forward a few decades. We now have the Raspberry Pi, BeagleBone Black, and Parallella. Wonderful devices with one flaw in common: No portability. That&rsquo;s when I had a flashback to my days with the 5036.</p>
 
-<p>I bought a $35 technician box from Home Depot and I ripped out the insides. Micro Center had 720p LCD monitors on sale for $90, so I bought one of those. I didn&rsquo;t want to spend the extra bucks for a 1080p LCD because you never know how something like this might work out! Finally, I topped everything off with a $25 keyboard/trackpad combo from Amazon.  The result appears in the photo at the top of this article.</p>
+<p>I bought a $35 technician box from Home Depot and I ripped out the insides. Micro Center had 720p LCD monitors on sale for $90, so I bought one of those. I didn&rsquo;t want to spend the extra bucks for a 1080p LCD because you never know how something like this might work out! Finally, I topped everything off with a $25 keyboard/trackpad combo from Amazon.  The result appears in the photo at the top of this article. Special thanks to Ericka [last name unknown] from Home Depot who gave me tons of ideas on how to securely fasten the monitor to the case.</p>
 
 <h3>Why?</h3>
 
