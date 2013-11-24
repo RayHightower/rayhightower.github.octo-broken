@@ -246,11 +246,17 @@
     </url>
     <url>
         <loc>http://RayHightower.com/blog/2013/11/10/a-portable-hack-for-parallella/</loc>
-        <lastmod>2013-11-22T11:43:11-06:00</lastmod>
+        <lastmod>2013-11-22T11:49:49-06:00</lastmod>
     </url>
     <url>
         <loc>http://RayHightower.com/blog/2013/11/11/os-x-and-rubymotion-finishing-up/</loc>
         <lastmod>2013-11-11T19:51:50-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://RayHightower.com/blog/2013/11/23/using-rubymotion-to-build-something-useful/
+        </loc>
+        <lastmod>2013-11-23T21:28:47-06:00</lastmod>
     </url>
     <url>
         <loc>http://RayHightower.com/404.html</loc>
@@ -258,7 +264,7 @@
     </url>
     <url>
         <loc>http://RayHightower.com/blog/archives/</loc>
-        <lastmod>2013-11-22T11:43:11-06:00</lastmod>
+        <lastmod>2013-11-23T21:28:47-06:00</lastmod>
     </url>
     <url>
         <loc>http://RayHightower.com/contact/</loc>
@@ -266,7 +272,7 @@
     </url>
     <url>
         <loc>http://RayHightower.com/</loc>
-        <lastmod>2013-11-22T11:43:11-06:00</lastmod>
+        <lastmod>2013-11-23T21:28:47-06:00</lastmod>
     </url>
     <url>
         <loc>http://RayHightower.com/robots.txt</loc>

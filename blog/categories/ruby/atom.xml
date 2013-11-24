@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ruby | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-11-22T11:43:42-06:00</updated>
+  <updated>2013-11-23T21:28:57-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Using RubyMotion to Build Something Useful]]></title>
+    <link href="http://RayHightower.com/blog/2013/11/23/using-rubymotion-to-build-something-useful/"/>
+    <updated>2013-11-23T14:11:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2013/11/23/using-rubymotion-to-build-something-useful</id>
+    <content type="html"><![CDATA[<p>The <a href="http://www.meetup.com/Chicago-RubyMotion/">Chicago RubyMotion User Group</a> held its inaugural meeting this week. Thank you <a href="http://twitter.com/dastels">Dave Astels</a> for organizing the group and for asking me to present. Thanks also to <a href="http://devbootcamp.com">Dev Bootcamp</a> for hosting the event.</p>
+
+<p>Slides are embedded here:</p>
+
+<center><script async class="speakerdeck-embed" data-id="f0c21e7036e10131765f62eb06398856" data-ratio="1.29456384323641" src="http://RayHightower.com//speakerdeck.com/assets/embed.js"></script></center>
+
+
+<h3>Doing RubyMotion in Chicago? Be There!</h3>
+
+<p>If you&rsquo;re using RubyMotion and you&rsquo;re located in the Chicago area, check out a <a href="http://www.meetup.com/Chicago-RubyMotion/">Chicago RubyMotion</a> meeting. The group attracts devs who are running into the same challenges as you. Devs who work with other devs tend to learn more over time. As Linus Torvolds says, &ldquo;Given enough eyeballs, all bugs are shallow.&rdquo;</p>
+
+<p>See you there!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Building an OS X App With RubyMotion]]></title>
@@ -315,96 +335,6 @@ Successfully generated site: source &ndash;> public
 <h3>RVM Saves the Day</h3>
 
 <p>Once again, RVM lets me recover quickly by shifting to an earlier version of Ruby. What&rsquo;s the root cause of the problem? I don&rsquo;t know at this point. But for now, the blog is up &amp; running!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[BeagleBone Black, Up & Running]]></title>
-    <link href="http://RayHightower.com/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/"/>
-    <updated>2013-05-22T22:13:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2013/05/22/beaglebone-black-running-ruby-on-rails</id>
-    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/BeagleBoneBlack.jpg" width="372" height="600" title="BeagleBone Black" alt="BeagleBone Black" align="right">
-<a href="http://beagleboard.org/Products/BeagleBone%20Black">BeagleBone Black</a>, like the <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a>, is a small, inexpensive computer that runs Linux. It&rsquo;s smaller than a deck of cards and you can buy one for about forty-five dollars ($45.00). The device is made by <a href="http://circuitco.com">CircuitCo</a> in Richardson, TX, USA.</p>
-
-<h3>It Just Works</h3>
-
-<p>BeagleBone Black runs Linux right out of the box. Steps required:</p>
-
-<ul>
-<li>Plug in the micro-HDMI cable for the monitor. See the &ldquo;Gotchas&rdquo;
-section about micro-HDMI below.</li>
-<li>Plug in the keyboard &amp; mouse via the USB port. You might need a USB hub because the board only has one USB port.</li>
-<li>Add power via the mini-USB port or the 5v power connection.</li>
-</ul>
-
-
-<p>After a few minutes of boot time, we have a fully-functioning Linux computer with a GUI, Firefox browser, and other tools.</p>
-
-<!--more-->
-
-
-<p>The BeagleBone Black has 2GB of flash storage on the board, and part
-of that is used for Linux. Here&rsquo;s a screenshot after just a few minutes of ownership.</p>
-
-<center><img src="http://RayHightower.com/images/BeagleBoneBlack-WindyCityRails.png" width="600" height="338" title="BeagleBone Black Firefox WindyCityRails" alt="BeagleBone Black Firefox WindyCityRails" align="center"></center>
-
-
-<h3>Documentation</h3>
-
-<p><img src="http://RayHightower.com/images/BeagleBoneBlack-USB.png" width="250" height="200" title="BeagleBone Black USB" alt="BeagleBone Black USB" align="right">
-All of the paper documentation for the BeagleBone Black fits on a slip of paper roughly the size of two business cards. The meat of the documentation resides on the device itself. To reach the electronic documentation:</p>
-
-<ol>
-<li>Plug the BeagleBone Black into a USB port on your laptop.</li>
-<li>The board will appear as a USB storage device. One of the files at the
-root of the storage device, <code>START.htm</code>, contains the documentation. It
-can be viewed in a web browser.</li>
-</ol>
-
-
-<p>The documentation recommends against <a href="http://en.wikipedia.org/wiki/Internet_Explorer">MSIE</a>.</p>
-
-<h3>Gotchas</h3>
-
-<p><img src="http://RayHightower.com/images/micro-HDMI-home-depot.jpg" width="400" height="300" title="Micro HDMI Home Depot" alt="Micro HDMI Home Depot" align="right">
-The manufacturer included a mini-USB cable with the device, so you can power it up right after you rip open the package. Gotcha: You need a micro-HDMI cable (or adapter) if you want to attach a monitor. I would have preferred a micro-HDMI-to-HDMI adapater in the box instead of the mini-USB cable. That&rsquo;s a little nit-picky on my part since micro-HDMI cables are easy to find at Home Depot.</p>
-
-<p>A quick shout-out to Home Depot: Their store-brand cables let you test the cable end without opening the package, right in the store. Excellent package design by Home Depot.</p>
-
-<p>My second &ldquo;gotcha&rdquo; is more important: The <code>curl</code> command did not behave as flawlessly as it did with the Raspberry Pi, so I was not able to install Ruby as quickly as planned. Details below.</p>
-
-<h3>Installing Rails</h3>
-
-<p>I will have to cover Ruby and Rails installation in a future blog post because my initial attempts were not successful. <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">RVM, Ruby, and Rails installed easily with Raspberry Pi</a>, even though the compilation time was long. With the BeagleBone Black, I received the following in response to the <code>curl</code> command:</p>
-
-<p>```bash
-sh-4.2# curl -L <a href="https://get.rvm.io">https://get.rvm.io</a> | bash -s stable &mdash;ruby
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current</p>
-
-<pre><code>                             Dload  Upload   Total   Spent    Left  Speed
-</code></pre>
-
-<p>  0     0    0     0    0     0      0      0 &mdash;:&mdash;:&mdash; &mdash;:&mdash;:&mdash; &mdash;:&mdash;:&mdash;     0
-curl: (77) Problem with the SSL CA cert (path? access rights?)
-sh-4.2#
-```</p>
-
-<p>Maybe it&rsquo;s time to try <a href="https://github.com/sstephenson/rbenv">RBEnv</a>? I&rsquo;ll post a solution when I find it. Or&hellip; if a reader of this blog already has a solution for the BeagleBone Black Rails installation challenge, please post in the comments below and I&rsquo;ll credit you here.</p>
-
-<h4>BeagleBone Black vs. Raspberry Pi</h4>
-
-<p>Which is better, BeagleBone Black or Raspberry Pi? There&rsquo;s no clear winner in my opinion. It&rsquo;s a matter of trade-offs:</p>
-
-<ul>
-<li>The &lsquo;Bone runs Linux right out of the box, while it takes some time to get Linux running on the Pi, unless you buy a card pre-configured for the Pi.</li>
-<li>RVM, Ruby, and Rails installation was painless on the Pi even though compilation time was long. The jury is still out w/r/t RVM on the &lsquo;Bone.</li>
-<li>Cost-wise, they&rsquo;re within ten bucks of each other. That&rsquo;s a wash.</li>
-<li>The &lsquo;Bone has more Ardunio-like provisions for digital projects.</li>
-<li>The Pi includes an RCA output for older TVs. Plus the Pi uses standard HDMI, so there&rsquo;s no need to get a special micro-HDMI cable.</li>
-</ul>
-
-
-<p>I&rsquo;ve owned my &lsquo;Bone for just over 24 hours. Lots more to learn. Looking forward to it!</p>
 ]]></content>
   </entry>
   
