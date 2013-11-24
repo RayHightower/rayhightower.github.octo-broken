@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Using RubyMotion to Build Something Useful"
-date: 2013-11-20 14:11
+date: 2013-11-23 14:11
 comments: true
 published: false
 categories: [ iOS, Ruby, RubyMotion, Xcode ]
 ---
-The [Chicago RubyMotion User Group](http://www.meetup.com/Chicago-RubyMotion/) held its inaugural meeting last night. Thank you Dave Astels (the organizer) for asking me to present. 
+The [Chicago RubyMotion User Group](http://www.meetup.com/Chicago-RubyMotion/) held its inaugural meeting this week. Thank you organizer [Dave Astels](http://twitter.com/dastels) for asking me to present. 
 
 Code examples from the talk are in [this repo on GitHub](https://github.com/RayHightower/Chicago-RubyMotion-Nov2013).
 
