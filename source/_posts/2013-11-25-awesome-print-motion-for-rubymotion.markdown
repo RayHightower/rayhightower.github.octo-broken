@@ -14,7 +14,7 @@ pong-rm $ rake
 
 Mouse over the playing field and `Command-click` to grab the entire playing field object in the RubyMotion console. Confirm that you grabbed the object by typing `self` at the console prompt.
 
-```bash
+```ruby
 (UIView(#9d820c0, [[0.0, 0.0], ...)> self
 
 => UIView(#9d820c0, [[0.0, 0.0], [480.0, 320.0]]), child of UIView(#c876920)
@@ -22,7 +22,7 @@ Mouse over the playing field and `Command-click` to grab the entire playing fiel
 
 And then, to see what objects are on the playing field,
 
-```bash
+```ruby
 (UIView(#9d820c0, [[0.0, 0.0], ...)> self.subviews
 => [UIView(#9d82430, [[357.0, 175.0], [50.0, 50.0]]), child of
 UIView(#9d820c0), PaddleView(#9d82580, [[410.0, 190.0], [20.0, 100.0]]),
