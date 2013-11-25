@@ -50,10 +50,10 @@ This blob of text is difficult for the human brain to parse. Now, let's try it w
 
 ```
 
-Much easier to read. The structure of the `subviews` array is clear. Each element of the array has an easy-to-read index. Debugging is a snap :-)
+Much easier to read. The structure of the `subviews` array is clear. Each element of the array has an easy-to-read index. Debugging time is reduced.
 
 ###How to Install awesome_print_motion
-RubyMotion uses bundler. So we start by adding a reference to our gemfile.
+RubyMotion uses bundler. So we start by refering to `awesome_print_motion` in our gemfile.
 
 ```ruby
 gem 'awesome_print_motion'
@@ -74,20 +74,18 @@ The older way is to manually add a `require` statement to the Rakefile.
 ```ruby
 require 'ap'
 ```
-
 Personally, I prefer the newer way because it reduces the odds of a typo
 by me.
 
 ###How to Use awesome_print_motion
-To use the new gem, start the app and explore away.
+To use the new gem, start the app and explore away. Any time you want to
+run output through the `awesome_print_motion` gem, send the code as a
+parameter to the `ap` method like so...
 
 ```ruby
-
+> ap(self.subviews)
 ```
+... and the output will be easier to read.
 
 ###Acknowledgements
 Thank you [Michael Dvorkin](http://www.dvorkin.net/) for adding RubyMotion support to your [awesome_print](http://rubygems.org/gems/awesome_print) gem.
-
-
-
-
