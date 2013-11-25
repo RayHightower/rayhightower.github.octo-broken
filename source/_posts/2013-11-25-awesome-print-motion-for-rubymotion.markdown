@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Gain Insight with awesome_print_motion for RubyMotion"
+title: "awesome_print_motion for RubyMotion"
 date: 2013-11-25 15:08
 comments: true
 categories: [ iOS, Ruby, RubyMotion ]
 ---
 ###The Problem
-Let's say you're building a version of Atari's [Pong in RubyMotion](/blog/2013/02/26/atari-pong-rubymotion-objective-c/). You're debugging an issue with the paddles; they don't line up the way you want them to. Time to examine the playing field via the RubyMotion console.
+Let's say we're building a version of Atari's [Pong in RubyMotion](/blog/2013/02/26/atari-pong-rubymotion-objective-c/). We're debugging an issue with the paddles; they don't line up the way we want them to. Time to examine the playing field via the RubyMotion console.
 
 ```bash
 pong-rm $ rake
@@ -21,7 +21,7 @@ Mouse over the playing field and Command-click to grab the object in the RubyMot
 ```
 
 Difficult for the human brain to parse, eh? Now, try it with the awesome_print_motion gem.
-
+<!--more-->
 ```bash
 > self.subviews
 …
@@ -58,7 +58,7 @@ To use the new gem, start the app and explore away.
 ```
 
 ###Acknowledgements
-Thank you Michael Dvorkin for adding RubyMotion support to your [awesome_print](http://rubygems.org/gems/awesome_print) gem.
+Thank you [Michael Dvorkin](http://www.dvorkin.net/) for adding RubyMotion support to your [awesome_print](http://rubygems.org/gems/awesome_print) gem.
 
 
 
