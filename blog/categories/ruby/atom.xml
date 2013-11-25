@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ruby | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-11-25T10:32:23-06:00</updated>
+  <updated>2013-11-25T16:00:12-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,111 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[awesome_print_motion for RubyMotion]]></title>
+    <link href="http://RayHightower.com/blog/2013/11/25/awesome-print-motion-for-rubymotion/"/>
+    <updated>2013-11-25T15:08:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2013/11/25/awesome-print-motion-for-rubymotion</id>
+    <content type="html"><![CDATA[<h3>The Problem</h3>
+
+<p>Let&rsquo;s say we&rsquo;re building a version of Atari&rsquo;s <a href="/blog/2013/02/26/atari-pong-rubymotion-objective-c/">Pong in RubyMotion</a>. We&rsquo;re debugging an issue with the paddles; they don&rsquo;t line up the way we want them to. Time to examine the playing field via the RubyMotion console.</p>
+
+<p><code>bash
+pong-rm $ rake
+</code></p>
+
+<p>Mouse over the playing field and <code>Command-click</code> to grab the entire playing field object in the RubyMotion console. Confirm that you grabbed the object by typing <code>self</code> at the console prompt.</p>
+
+<p>```ruby
+(UIView(#9d820c0, [[0.0, 0.0], &hellip;)> self</p>
+
+<p>=> UIView(#9d820c0, [[0.0, 0.0], [480.0, 320.0]]), child of UIView(#c876920)
+```</p>
+
+<p>And then, to see what objects are on the playing field, use
+<code>self.subviews</code> to show the subviews array of the current object.</p>
+
+<p><code>ruby
+(UIView(#9d820c0, [[0.0, 0.0], ...)&gt; self.subviews
+=&gt; [UIView(#9d82430, [[357.0, 175.0], [50.0, 50.0]]), child of
+UIView(#9d820c0), PaddleView(#9d82580, [[410.0, 190.0], [20.0, 100.0]]),
+child of UIView(#9d820c0), PaddleView(#9d82970, [[10.0, 190.0], [20.0,
+100.0]]), child of UIView(#9d820c0), ScoreLabel(#9d82a80, [[110.0, 9.0],
+[20.0, 42.0]], text: "1"), child of UIView(#9d820c0),
+ScoreLabel(#9d83c90, [[350.0, 9.0], [20.0, 42.0]], text: "0"), child of
+UIView(#9d820c0)]
+(UIView(#9d820c0, [[0.0, 0.0], ...)&gt;
+</code></p>
+
+<p>This blob of text is difficult for the human brain to parse. Now, let&rsquo;s try it with the <code>awesome_print_motion</code> gem.</p>
+
+<!--more-->
+
+
+<p>```ruby
+(UIView(#9d820c0, [[0.0, 0.0], &hellip;)> ap(self.subviews)
+[</p>
+
+<pre><code>[0] UIView(#9d82430, [[308.0, 118.0], [50.0, 50.0]]), child of UIView(#9d820c0),
+[1] PaddleView(#9d82580, [[410.0, 190.0], [20.0, 100.0]]), child of UIView(#9d820c0),
+[2] PaddleView(#9d82970, [[10.0, 190.0], [20.0, 100.0]]), child of UIView(#9d820c0),
+[3] ScoreLabel(#9d82a80, [[110.0, 9.0], [39.0, 42.0]], text: "61"), child of UIView(#9d820c0),
+[4] ScoreLabel(#9d83c90, [[350.0, 9.0], [20.0, 42.0]], text: "0"), child of UIView(#9d820c0)
+</code></pre>
+
+<p>]
+=> nil
+(UIView(#9d820c0, [[0.0, 0.0], &hellip;)></p>
+
+<p>```</p>
+
+<p>Much easier to read. The structure of the <code>subviews</code> array is clear. Each element of the array has an easy-to-read index. Debugging time is reduced.</p>
+
+<h3>How to Install awesome_print_motion</h3>
+
+<p>RubyMotion uses bundler. So we start by refering to <code>awesome_print_motion</code> in our gemfile.</p>
+
+<p><code>ruby
+gem 'awesome_print_motion'
+</code></p>
+
+<p>In the app&rsquo;s <code>Rakefile</code>, there are two possible ways to proceed. The preferred way is to use the following lines to tell the app to require every gem mentioned in Bundler&rsquo;s Gemfile:</p>
+
+<p><code>ruby
+begin
+  require 'bundler'
+  Bundler.require
+rescue LoadError
+end
+</code></p>
+
+<p>The older way is to manually add a <code>require</code> statement to the Rakefile.</p>
+
+<p><code>ruby
+require 'ap'
+</code>
+Personally, I prefer the newer way because it automatically
+requires all of the gems mentioned in the <code>Gemfile</code>. The odds of a
+typo-induced error are reduced.</p>
+
+<h3>How to Use awesome_print_motion</h3>
+
+<p>To use the new gem, start the app and explore away. Any time you want to
+run output through the <code>awesome_print_motion</code> gem, send the code as a
+parameter to the <code>ap</code> method like so&hellip;</p>
+
+<p>```ruby</p>
+
+<blockquote><p>ap(self.subviews)
+```
+&hellip; and the output will be easier to read.</p></blockquote>
+
+<h3>Acknowledgements</h3>
+
+<p>Thank you <a href="http://www.dvorkin.net/">Michael Dvorkin</a> for adding RubyMotion support to your <a href="http://rubygems.org/gems/awesome_print">awesome_print</a> gem.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Using RubyMotion to Build Something Useful]]></title>
@@ -243,101 +348,6 @@ Planet Earth is facing a shortage of people who make things. People like scienti
 <p>As an organizer of WindyCityRails, my relationship with Madison Ruby reminds me of my relationship with my brother, <a href="http://motoringventures.com">Edward Hightower</a>, while we were growing up. Edward and I are one year apart, and we competed aggressively in every way: On the swim team, in the <a href="http://troop534.org">Boy Scouts</a>, in academics&hellip; you name it. Through the competition, we learned to love and respect each other. My brother Edward is one of my closest friends. That doesn&rsquo;t always happen with family!</p>
 
 <p>Madison Ruby competes with WindyCityRails. At the same time, I enjoy the trip to Madison because I get so much from the experience. Congratulations to the Madison Ruby organizer team for running a great event three years in a row. I plan to return next year.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[RVM Saves the Day for Octopress]]></title>
-    <link href="http://RayHightower.com/blog/2013/07/15/rvm-saves-the-day-for-octopress/"/>
-    <updated>2013-07-15T14:29:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2013/07/15/rvm-saves-the-day-for-octopress</id>
-    <content type="html"><![CDATA[<p><a href="http://octopress.org">Octopress</a> is a lean blogging engine that happens to power <a href="http://rayhightower.com">RayHightower.com</a>. Earlier today, after a quick update to the blog, I encountered the following:</p>
-
-<p><code>``bash
-$ rake generate
-/Users/rth/.rvm/gems/ruby-1.9.3-p448@global/gems/bundler-1.2.4/lib/bundler/rubygems_integration.rb:187:in</code>stub_source_index170': uninitialized constant Gem::SourceIndex (NameError)</p>
-
-<pre><code> from /Users/rth/.rvm/gems/ruby-1.9.3-p448@global/gems/bundler-1.2.4/lib/bundler/rubygems_integration.rb:353:in `stub_rubygems'
- from /Users/rth/.rvm/gems/ruby-1.9.3-p448@global/gems/bundler-1.2.4/lib/bundler/rubygems_integration.rb:250:in `replace_entrypoints'
- from /Users/rth/.rvm/gems/ruby-1.9.3-p448@global/gems/bundler-1.2.4/lib/bundler/runtime.rb:14:in `setup'
- from /Users/rth/.rvm/gems/ruby-1.9.3-p448@global/gems/bundler-1.2.4/lib/bundler.rb:116:in `setup'
- from /Users/rth/.rvm/gems/ruby-1.9.3-p448@global/gems/rubygems-bundler-1.1.0/lib/rubygems-bundler/noexec.rb:77:in `setup'
- from /Users/rth/.rvm/gems/ruby-1.9.3-p448@global/gems/rubygems-bundler-1.1.0/lib/rubygems-bundler/noexec.rb:89:in `&lt;top (required)&gt;'
- from /Users/rth/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:116:in `require'
- from /Users/rth/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:116:in `rescue in require'
- from /Users/rth/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:122:in `require'
- from /Users/rth/.rvm/gems/ruby-1.9.3-p448@octopress/bin/ruby_noexec_wrapper:9:in `&lt;main&gt;'
-</code></pre>
-
-<p>$
-```</p>
-
-<p>Not good. What happened?</p>
-
-<!--more-->
-
-
-<h3>The Problem</h3>
-
-<p>From the error message, it appeared that my current version of Bundler was incompatible with Octopress. Googling for the error message (a favorite trick) was unhelpful. Had to try a different line of attack.</p>
-
-<h3>The Solution: Roll Back</h3>
-
-<p>Fortunately, I use <a href="http://rayhightower.com/blog/2013/05/16/upgrading-ruby-with-rvm/">RVM</a>. Currently installed versions of Ruby:</p>
-
-<p>```bash
-~$ rvm list</p>
-
-<p>rvm rubies</p>
-
-<p>   jruby-1.7.3 [ x86_64 ]
-   macruby-0.12 [ i686 ]
-   ruby-1.8.7-p334 [ i686 ]
-   ruby-1.9.2-p290 [ x86_64 ]
-   ruby-1.9.3-p448 [ x86_64 ]
-=* ruby-2.0.0-p247 [ x86_64 ]</p>
-
-<h1>=> &ndash; current</h1>
-
-<h1>=* &ndash; current &amp;&amp; default</h1>
-
-<h1>* &ndash; default</h1>
-
-<p>```</p>
-
-<p>Since <code>$ rake deploy</code> last worked with Ruby 1.9.2 on my machine, I decided to roll back to that point.</p>
-
-<p>```bash
-$ rvm use ruby-1.9.2-p290</p>
-
-<p>```</p>
-
-<p>Next, I built another <code>octopress</code> gemset to work with this version of Ruby, pointed to the gemset, and used Bundler to add the necessary gems.</p>
-
-<p><code>bash
-$ rvm gemset create octopress
-$ rvm gemset use octopress
-$ bundle install
-</code></p>
-
-<p>And now <code>$ rake generate</code> works as required.</p>
-
-<p>```bash
-$ rake generate</p>
-
-<h2>Generating Site with Jekyll</h2>
-
-<p>identical source/stylesheets/screen.css
-Configuration from /Users/rth/Code/Ruby/apps/rayhightower/_config.yml
-Building site: source &ndash;> public
-Successfully generated site: source &ndash;> public
-```</p>
-
-<p>Success!</p>
-
-<h3>RVM Saves the Day</h3>
-
-<p>Once again, RVM lets me recover quickly by shifting to an earlier version of Ruby. What&rsquo;s the root cause of the problem? I don&rsquo;t know at this point. But for now, the blog is up &amp; running!</p>
 ]]></content>
   </entry>
   
