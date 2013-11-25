@@ -12,15 +12,23 @@ Let's say we're building a version of Atari's [Pong in RubyMotion](/blog/2013/02
 pong-rm $ rake
 ```
 
-Mouse over the playing field and Command-click to grab the object in the RubyMotion console. Confirm that you grabbed the object by typing `self` at the console prompt. And then, to see what objects are on the playing field,
+Mouse over the playing field and `Command-click` to grab the entire playing field object in the RubyMotion console. Confirm that you grabbed the object by typing `self` at the console prompt.
 
 ```bash
-> self.subviews
-…
+(UIView(#9d820c0, [[0.0, 0.0], ...)> self
 
+=> UIView(#9d820c0, [[0.0, 0.0], [480.0, 320.0]]), child of UIView(#c876920)
 ```
 
-Difficult for the human brain to parse, eh? Now, try it with the awesome_print_motion gem.
+And then, to see what objects are on the playing field,
+
+```bash
+(UIView(#9d820c0, [[0.0, 0.0], ...)> self.subviews
+=> [UIView(#9d82430, [[357.0, 175.0], [50.0, 50.0]]), child of UIView(#9d820c0), PaddleView(#9d82580, [[410.0, 190.0], [20.0, 100.0]]), child of UIView(#9d820c0), PaddleView(#9d82970, [[10.0, 190.0], [20.0, 100.0]]), child of UIView(#9d820c0), ScoreLabel(#9d82a80, [[110.0, 9.0], [20.0, 42.0]], text: "1"), child of UIView(#9d820c0), ScoreLabel(#9d83c90, [[350.0, 9.0], [20.0, 42.0]], text: "0"), child of UIView(#9d820c0)]
+(UIView(#9d820c0, [[0.0, 0.0], ...)>
+```
+
+Difficult for the human brain to parse, eh? Now, try it with the `awesome_print_motion` gem.
 <!--more-->
 ```bash
 > self.subviews
@@ -40,15 +48,21 @@ gem 'awesome_print_motion'
 In the app's `Rakefile`, there are two possible ways to proceed. The preferred way is to use the following lines to tell the app to require every gem mentioned in Bundler's Gemfile:
 
 ```ruby
-
-
+begin
+  require 'bundler'
+  Bundler.require
+rescue LoadError
+end
 ```
 
 The older way is to manually add a `require` statement to the Rakefile.
 
 ```ruby
-
+require 'ap'
 ```
+
+Personally, I prefer the newer way because it reduces the odds of a typo
+by me.
 
 ###How to Use awesome_print_motion
 To use the new gem, start the app and explore away.
