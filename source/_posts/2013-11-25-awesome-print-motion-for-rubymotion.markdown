@@ -24,15 +24,29 @@ And then, to see what objects are on the playing field,
 
 ```bash
 (UIView(#9d820c0, [[0.0, 0.0], ...)> self.subviews
-=> [UIView(#9d82430, [[357.0, 175.0], [50.0, 50.0]]), child of UIView(#9d820c0), PaddleView(#9d82580, [[410.0, 190.0], [20.0, 100.0]]), child of UIView(#9d820c0), PaddleView(#9d82970, [[10.0, 190.0], [20.0, 100.0]]), child of UIView(#9d820c0), ScoreLabel(#9d82a80, [[110.0, 9.0], [20.0, 42.0]], text: "1"), child of UIView(#9d820c0), ScoreLabel(#9d83c90, [[350.0, 9.0], [20.0, 42.0]], text: "0"), child of UIView(#9d820c0)]
+=> [UIView(#9d82430, [[357.0, 175.0], [50.0, 50.0]]), child of
+UIView(#9d820c0), PaddleView(#9d82580, [[410.0, 190.0], [20.0, 100.0]]),
+child of UIView(#9d820c0), PaddleView(#9d82970, [[10.0, 190.0], [20.0,
+100.0]]), child of UIView(#9d820c0), ScoreLabel(#9d82a80, [[110.0, 9.0],
+[20.0, 42.0]], text: "1"), child of UIView(#9d820c0),
+ScoreLabel(#9d83c90, [[350.0, 9.0], [20.0, 42.0]], text: "0"), child of
+UIView(#9d820c0)]
 (UIView(#9d820c0, [[0.0, 0.0], ...)>
 ```
 
-Difficult for the human brain to parse, eh? Now, try it with the `awesome_print_motion` gem.
+This blob of text is difficult for the human brain to parse. Now, let's try it with the `awesome_print_motion` gem.
 <!--more-->
-```bash
-> self.subviews
-…
+```ruby
+(UIView(#9d820c0, [[0.0, 0.0], ...)> ap(self.subviews)
+[
+    [0] UIView(#9d82430, [[308.0, 118.0], [50.0, 50.0]]), child of UIView(#9d820c0),
+    [1] PaddleView(#9d82580, [[410.0, 190.0], [20.0, 100.0]]), child of UIView(#9d820c0),
+    [2] PaddleView(#9d82970, [[10.0, 190.0], [20.0, 100.0]]), child of UIView(#9d820c0),
+    [3] ScoreLabel(#9d82a80, [[110.0, 9.0], [39.0, 42.0]], text: "61"), child of UIView(#9d820c0),
+    [4] ScoreLabel(#9d83c90, [[350.0, 9.0], [20.0, 42.0]], text: "0"), child of UIView(#9d820c0)
+]
+=> nil
+(UIView(#9d820c0, [[0.0, 0.0], ...)>
 
 ```
 
