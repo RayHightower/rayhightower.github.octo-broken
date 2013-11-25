@@ -20,7 +20,8 @@ Mouse over the playing field and `Command-click` to grab the entire playing fiel
 => UIView(#9d820c0, [[0.0, 0.0], [480.0, 320.0]]), child of UIView(#c876920)
 ```
 
-And then, to see what objects are on the playing field,
+And then, to see what objects are on the playing field, use
+`self.subviews` to show the subviews array of the current object.
 
 ```ruby
 (UIView(#9d820c0, [[0.0, 0.0], ...)> self.subviews
@@ -74,8 +75,9 @@ The older way is to manually add a `require` statement to the Rakefile.
 ```ruby
 require 'ap'
 ```
-Personally, I prefer the newer way because it reduces the odds of a typo
-by me.
+Personally, I prefer the newer way because it automatically
+requires all of the gems mentioned in the `Gemfile`. The odds of a
+typo-induced error are reduced.
 
 ###How to Use awesome_print_motion
 To use the new gem, start the app and explore away. Any time you want to
