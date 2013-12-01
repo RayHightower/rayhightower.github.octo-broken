@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-11-25T16:00:12-06:00</updated>
+  <updated>2013-11-30T19:48:31-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Specialized Knowledge and the Courage to Execute]]></title>
+    <link href="http://RayHightower.com/blog/2013/11/30/specialized-knowledge-and-the-courage-to-execute/"/>
+    <updated>2013-11-30T10:35:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2013/11/30/specialized-knowledge-and-the-courage-to-execute</id>
+    <content type="html"><![CDATA[<p>Boy Scout <a href="http://troop534.org">Troop 534</a> &ldquo;Hey!&rdquo; asked me to speak at the Troop&rsquo;s annual reunion breakfast this year. This was a big deal for me because I grew up in the troop, I currently serve as one of the adult leaders, and the breakfast organizers normally invite an outsider to speak. Why listen to a speaker who you see all the time?</p>
+
+<p>I took the speaking invitation as a challenge to come up with some new material.</p>
+
+<!--more-->
+
+
+<h3>Three Stories</h3>
+
+<p>Teenagers are a tough audience. I chose to approach them with three stories centered around the them of <em>Specialized Knowledge and the Courage to Execute</em>. What a boring title! But the three stories appealed to the group. Here&rsquo;s a summary of the first story:</p>
+
+<blockquote><p>The owner of a tractor company makes a life-changing decision when the founder of the Ferrari car company, Mr. Enzo Ferrari, pisses him off.</p></blockquote>
+
+<p>Here&rsquo;s the 11-minute video. I hope you enjoy it. Thank you Troop 534 &ldquo;Hey!&rdquo; for having me!</p>
+
+<center><iframe width="560" height="315" src="http://RayHightower.com//www.youtube.com/embed/tWdFhEI6JiM?rel=0" frameborder="0" allowfullscreen></iframe></center>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[awesome_print_motion for RubyMotion]]></title>
@@ -1431,31 +1456,6 @@ Google Reader, the RSS product, shuts down on July 1st. I consume most news via 
 <h3>Summary</h3>
 
 <p>I plan to try other RSS readers before Google Reader shuts down on July 1st. Feed Wrangler is making a good impression so far.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Practice Begins With Play]]></title>
-    <link href="http://RayHightower.com/blog/2013/06/13/practice-begins-with-play/"/>
-    <updated>2013-06-13T10:09:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2013/06/13/practice-begins-with-play</id>
-    <content type="html"><![CDATA[<p>This afternoon I was invited to speak at the June <a href="http://www.tablexi.com/blog/2013/06/developer-education-june-table-talks/developers/">Table Talks</a> hosted by Table XI. Today&rsquo;s theme was developer education. My topic: <em>Practice Begins With Play</em>. Developers who want to achieve mastery have many practice resources to choose from, including open source hardware like <a href="http://RayHightower.com/blog/2012/12/03/ruby-on-raspberry-pi/">Raspbery Pi</a>, <a href="http://RayHightower.com/blog/2013/05/22/beaglebone-black-up-and-running/">BeagleBone Black</a>, and <a href="http://parallella.org">Parallella</a>.</p>
-
-<!--more-->
-
-
-<h4>PechaKucha</h4>
-
-<p>Presentations were given in the <a href="http://www.pechakucha.org/faq">PechaKucha</a> format, which encourages presenters to deliver the maximimum amount of useful information in a relatively short time. Each presenter is only allowed twenty slides, with twenty seconds per slide. Truly high impact!</p>
-
-<h4>Slides and Video</h4>
-
-<p>Slides from the talk appear below. Video will be posted here as soon as it becomes available. <em>Update: Video has been <a href="http://RayHightower.com/blog/2013/06/27/pechakucha-developer-education-at-tablexi/">posted</a>.</em></p>
-
-<center><script async class="speakerdeck-embed" data-id="391a4b80b66a013009c8226af5af9159" data-ratio="1.29456384323641" src="http://RayHightower.com//speakerdeck.com/assets/embed.js"></script></center>
-
-
-<p>Thank you Table XI for the invitation!</p>
 ]]></content>
   </entry>
   
