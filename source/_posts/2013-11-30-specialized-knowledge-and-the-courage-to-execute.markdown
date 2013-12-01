@@ -10,7 +10,7 @@ Boy Scout [Troop 534](http://troop534.org) "Hey!" asked me to speak at the Troop
 I took the speaking invitation as a challenge to come up with some new material.
 <!--more-->
 ###Three Stories
-Teenagers are a tough audience. I chose to approach them with three stories centered around the them of _Specialized Knowledge and the Courage to Execute_. What a boring title! But the three stories appealed to the group. Here's a summary of the first story:
+Teenagers are a tough audience. I chose to approach them with three stories centered around the theme of _Specialized Knowledge and the Courage to Execute_. What a boring title! But the three stories appealed to the group. Here's a summary of the first story:
 
 >The owner of a tractor company makes a life-changing decision when the founder of the Ferrari car company, Mr. Enzo Ferrari, pisses him off.
 
