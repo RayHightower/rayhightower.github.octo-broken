@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-12-01T18:56:40-06:00</updated>
+  <updated>2013-12-01T23:10:52-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,37 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Amazon's Guerrilla Marketing]]></title>
+    <link href="http://RayHightower.com/blog/2013/12/02/amazon-guerrilla-marketing/"/>
+    <updated>2013-12-02T20:03:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2013/12/02/amazon-guerrilla-marketing</id>
+    <content type="html"><![CDATA[<p>Last night&rsquo;s episode of 60 Minutes featured an interview with Jeff Bezos, CEO of Amazon. The timing was perfect for Amazon. Black Friday was a few days ago. Cyber Monday is today. Online retailers want to be top-of-mind when people are inclined to spend money.</p>
+
+<h3>Amazon&rsquo;s Surprise: Drones</h3>
+
+<p>Bezos unveiled a surprise for interviewer Charlie Rose: <a href="http://www.amazon.com/b?ref_=tsm_1_tw_s_amzn_mx3eqp&amp;node=8037720011">Amazon Prime Air</a>, a service that will deliver most Amazon products in thirty minutes or less using a fleet of octocopter drones.</p>
+
+<!--more-->
+
+
+<p><span class='caption-wrapper'><img class='caption' src='http://RayHightower.com/images/amazon-prime-air-drone.jpg' width='' height='' alt='Amazon Prime Air. Octocopter drone ready for take-off.' title='Amazon Prime Air. Octocopter drone ready for take-off.'><span class='caption-text'>Amazon Prime Air. Octocopter drone ready for take-off.</span></span></p>
+
+<h3>Guerrilla Marketing</h3>
+
+<p><a href="http://www.gmarketing.com/">Jay Conrad Levinson</a>, author of <em>Guerrilla Marketing</em>, would applaud this move by Amazon. Amazon Prime Air is two years away at the earliest. The flying drones require Federal Aviation Administration (FAA) approval, and that takes time. By unveiling the drones now, before approval, Amazon reaps several benefits:</p>
+
+<ul>
+<li>Buzz. Everybody is talking about Amazon on Cyber Monday.</li>
+<li>Political influence. Some of the people feeling the buzz are FAA officials.</li>
+<li>Continued top-of-mind awareness. Long after Cyber Monday, the excitement of the drone idea will carry on.</li>
+</ul>
+
+
+<p>Congrats to the Amazon team for a well-executed Guerrilla Marketing move.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Specialized Knowledge and the Courage to Execute]]></title>
@@ -1416,50 +1447,6 @@ Note: I&#8217;m using the default <code>GOROOT</code> variable, but your <code>G
 <h3>Acknowledgements</h3>
 
 <p>I was inspired to explore Go by <a href="https://twitter.com/blakesmith">Blake Smith&rsquo;s</a> presentation at <a href="http://www.meetup.com/ChicagoSC/events/120658422/">8th Light</a>. <a href="http://twitter.com/wondible">Justin Love</a> introduced me to Parallella last month at ChicagoRuby.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Replacing Google Reader with Feed Wrangler]]></title>
-    <link href="http://RayHightower.com/blog/2013/06/21/replacing-google-reader-with-feed-wrangler/"/>
-    <updated>2013-06-21T18:52:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2013/06/21/replacing-google-reader-with-feed-wrangler</id>
-    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/feedwrangler-gil.jpg" height="600" width="450" align="right" alt="Google Reader Replacement: Feed Wrangler - iPad" title="Google Reader Replacement: Feed Wrangler - iPad">
-Google Reader, the RSS product, shuts down on July 1st. I consume most news via RSS, and the ability to sync multiple RSS clients between iPhone, iPad, and desktop with Google Reader in the background saved time while keeping me informed. Finding a replacement is critical.</p>
-
-<p>Fortunately, strong alternatives are emerging. <a href="http://feedwrangler.net">Feed Wrangler</a> is a Google Reader replacement by independent developer <a href="http://david-smith.org">David Smith</a>. Here are my first impressions.</p>
-
-<!--more-->
-
-
-<h3>Pros</h3>
-
-<p>After using the service for a few hours, I can already see some things that I like. Specifically:</p>
-
-<ul>
-<li>Minimal fluff. Other RSS clients feature big photos and page-flipping special effects. That&rsquo;s not for me. Just the facts, RSS.</li>
-<li>Easy RSS import from Google Reader. Just log in with your Google account and follow the prompts. After you import your feeds into Feed Wrangler&rsquo;s web app, you will never need Google Reader again.</li>
-<li>Reasonable cost. The Feed Wrangler service costs $19/year. Google dropped Reader because they couldn&rsquo;t make money from the free product. You can&rsquo;t fix that with volume! When an app makes money (directly or indirectly) then the app is more likely to stick around.</li>
-<li>iPhone and iPad apps. Feed Wrangler&rsquo;s native apps for <a href="https://itunes.apple.com/us/app/feed-wrangler/id634486174?mt=8">iPhone and iPad</a> sync with the web app. This is important for me because I consume most RSS on-the-go. A screenshot from the iPad app appears above.</li>
-</ul>
-
-
-<h3>Cons</h3>
-
-<p>Like most users, I want the developer to add &ldquo;just one or two more features&rdquo; to make the app perfect for me. Of course that&rsquo;s the slippery slope to bloatware since every user has a different set of one-or-two features.</p>
-
-<p>The developer can avoid bloatware by ignoring all other users and focusing on <em>my</em> feature requests:</p>
-
-<ul>
-<li>Evernote integration. My current RSS client lets me drop an article into Evernote with a few taps on the screen. Sometimes I want to re-read an article or think about it more deeply at a later time. Evernote lets me do this.</li>
-<li>Organized imports. While Feed Wrangler imports feeds from Google Reader, it does not maintain Reader&rsquo;s organization. So I had to organize my feeds manually with Feed Wrangler&rsquo;s &ldquo;Smart Stream&rdquo; feature. If Reader&rsquo;s folders could be imported as Feed Wrangler&rsquo;s Smart Streams, that would be cool.</li>
-<li>Feed counter. Sometimes I prioritize my reading by the number of unread articles. A counter next to each feed would be helpful.</li>
-</ul>
-
-
-<h3>Summary</h3>
-
-<p>I plan to try other RSS readers before Google Reader shuts down on July 1st. Feed Wrangler is making a good impression so far.</p>
 ]]></content>
   </entry>
   
