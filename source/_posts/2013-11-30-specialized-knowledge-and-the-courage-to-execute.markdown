@@ -12,11 +12,11 @@ Boy Scout [Troop 534 "Hey!"](http://troop534.org) asked me to speak at the Troop
 
 >A tractor maker takes drastic action when when Enzo Ferrari (creator of the Ferrari sports car) pisses him off.
 <!--more-->
-The 11-minute video appears below.
+Here's the 11-minute video:
 
 <center><iframe width="560" height="315" src="//www.youtube.com/embed/tWdFhEI6JiM?rel=0" frameborder="0" allowfullscreen></iframe></center>
 
 ###Gratitude
 This event was a big deal for me because I grew up in Troop 534 "Hey!", I currently serve as one of the adult leaders, and the breakfast organizers normally invite an outsider to speak. Why listen to a speaker who you see all the time?
 
-I took the speaking invitation as an opportunity to assemble some new material. Thank you Scouts, parents, and leaders for having me.
+I took the speaking invitation as an opportunity to assemble some new material. Thank you scouts, parents, and leaders for having me.
