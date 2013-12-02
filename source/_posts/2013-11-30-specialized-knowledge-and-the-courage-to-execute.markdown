@@ -5,7 +5,7 @@ date: 2013-11-30 10:35
 comments: true
 categories: [ Business, Education ]
 ---
-Teenagers are a tough audience. If you've ever spoken to a youth group, you know the challenge: Speak about something important without putting the youth to sleep. Tall order.
+Teenagers are a tough audience. If you have ever spoken to a youth group, you know the challenge: Speak about something important without putting the youth to sleep. Tall order.
 
 ###Three Stories
 Boy Scout [Troop 534 "Hey!"](http://troop534.org) asked me to speak at the Troop’s annual reunion breakfast this year.  I approached them with three stories centered around the theme of _Specialized Knowledge and the Courage to Execute_. What a boring title! But the three stories appealed to the group. Here’s a summary of the first story:
