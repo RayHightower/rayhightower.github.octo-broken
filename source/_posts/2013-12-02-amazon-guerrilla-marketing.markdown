@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Amazon Guerrilla Marketing"
-date: 2013-12-01 20:03
+date: 2013-12-02 20:03
 comments: true
 categories: [ Business ]
 ---
