@@ -13,7 +13,7 @@ Bezos unveiled a surprise for interviewer Charlie Rose: [Amazon Prime Air](http:
 {% imgcap /images/amazon-prime-air-drone.jpg Amazon Prime Air. Octocopter drone ready for take-off. %}
 
 ###Guerrilla Marketing
-[Jay Conrad Levinson](http://www.gmarketing.com/ ), author of _Guerrilla Marketing_, would applaud this move by Amazon. Amazon Prime Air is two years away at the earliest. The flying drones require Federal Aviation Administration (FAA) approval, and that takes time. By unveiling the drones now, before approval, Bezos enjoys several benefits:
+[Jay Conrad Levinson](http://www.gmarketing.com/ ), author of _Guerrilla Marketing_, would applaud this move by Amazon. Amazon Prime Air is two years away at the earliest. The flying drones require Federal Aviation Administration (FAA) approval, and that takes time. By unveiling the drones now, before approval, Amazon reaps several benefits:
 
 * Buzz. Everybody is talking about Amazon on Cyber Monday.
 * Political influence. Some of the people feeling the buzz are FAA officials.
