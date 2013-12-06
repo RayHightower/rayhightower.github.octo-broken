@@ -5,10 +5,10 @@ date: 2013-12-06 17:30
 comments: true
 categories: [ Education, Ruby ]
 ---
-I encountered some interesting behavior between [Homebrew](http://brew.sh/) and Ruby this afternoon. I can describe what happened, but I have yet to understand why. Perhaps another member of the dev community can shed some light.
+I encountered some interesting behavior between [Homebrew](http://brew.sh/) and Ruby this afternoon. I can describe what happened, but I don't yet understand why. Perhaps another member of the dev community can shed some light.
 
 ###Upgrading to Git 1.8.5
-Earlier today I learned that Git 1.8.5 was available. So I decided to upgrade. Since I use Homebrew for package management, this meant it was time for `$ brew doctor` `$ brew update` as well.
+Earlier today I learned that Git 1.8.5 was available. So I decided to upgrade. Since I use Homebrew for package management, it was time for `$ brew doctor` `$ brew update` as well.
 
 ```bash
 $ brew doctor
@@ -25,7 +25,7 @@ To update Homebrew, run `brew update`.
 ~/Code/Ruby/apps$
 ```
 
-Time to update Homebrew.
+`$ brew doctor` has spoken. Time to update Homebrew.
 <!--more-->
 ###Homebrew First. Git Later.
 Updating Homebrew is as simple as `$ brew update`, right?
@@ -46,7 +46,7 @@ Please report this bug:
 
 ~/Code/Ruby/apps$
 ```
-Not so. Further, Homebrew said that I should report a bug. But something smelled fishy. I decided to try running Homebrew under Ruby 2.0.0 instead of Ruby 1.9.3, the default on my system. Running RVM makes bouncing between Ruby versions a snap.
+`$ brew update` choked and further, Homebrew said that I should report a bug. But something smelled fishy. I decided to try running Homebrew under Ruby 2.0.0 instead of Ruby 1.9.3, the default on my system. Running [RVM](/blog/2013/05/16/upgrading-ruby-with-rvm/) makes bouncing between Ruby versions a snap.
 
 ```bash
 ~$ rvm use 2.0.0
