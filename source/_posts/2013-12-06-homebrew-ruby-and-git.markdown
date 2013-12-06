@@ -8,7 +8,7 @@ categories: [ Education, Ruby ]
 I encountered some interesting behavior between [Homebrew](http://brew.sh/) and Ruby this afternoon. I can describe what happened, but I don't yet understand why. Perhaps another member of the dev community can shed some light.
 
 ###Upgrading to Git 1.8.5
-Earlier today I learned that Git 1.8.5 was available. So I decided to upgrade. Since I use Homebrew for package management, it was time for `$ brew doctor` `$ brew update` as well.
+Earlier today I learned that Git 1.8.5 was available. So I decided to upgrade. Since I use Homebrew for package management, it was time for `$ brew doctor` and `$ brew update` as well.
 
 ```bash
 $ brew doctor
