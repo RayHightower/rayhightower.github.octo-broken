@@ -5,11 +5,10 @@ date: 2013-12-06 17:30
 comments: true
 categories: [ Education, Ruby ]
 ---
-
-I encountered some interesting behavior between Homebrew and Ruby this afternoon. I can describe what happened, but I have yet to understand why. Perhaps another member of the dev community can shed some light.
+I encountered some interesting behavior between [Homebrew](http://brew.sh/) and Ruby this afternoon. I can describe what happened, but I have yet to understand why. Perhaps another member of the dev community can shed some light.
 
 ###Upgrading to Git 1.8.5
-Earlier today I learned that Git 1.8.5 was available. So I decided to upgrade. Since I use [Homebrew](http://brew.sh/) for package management, this meant it was time for `$ brew update` as well.
+Earlier today I learned that Git 1.8.5 was available. So I decided to upgrade. Since I use Homebrew for package management, this meant it was time for `$ brew doctor` `$ brew update` as well.
 
 ```bash
 $ brew doctor
@@ -26,10 +25,13 @@ To update Homebrew, run `brew update`.
 ~/Code/Ruby/apps$
 ```
 
-Fine. Time to update Homebrew.
+Time to update Homebrew.
+<!--more-->
+###Homebrew First. Git Later.
+Updating Homebrew is as simple as `$ brew update`, right?
 
 ```bash
-$ brew update
+~$ brew update
 Warning: Could not tap homebrew/dupes/ant over mxcl/master/ant
 Warning: Could not tap homebrew/dupes/cvs over mxcl/master/cvs
 Error: undefined method `to_sym' for nil:NilClass
@@ -44,15 +46,15 @@ Please report this bug:
 
 ~/Code/Ruby/apps$
 ```
-
-I decided to try running Homebrew under Ruby 2.0.0 instead of Ruby 1.9.3, the default under my system. Running RVM makes bouncing between Ruby versions a snap.
+Not so. Further, Homebrew said that I should report a bug. But something smelled fishy. I decided to try running Homebrew under Ruby 2.0.0 instead of Ruby 1.9.3, the default on my system. Running RVM makes bouncing between Ruby versions a snap.
 
 ```bash
-$ rvm use 2.0.0
+~$ rvm use 2.0.0
 
 ```
 
-And now the Homebrew update works fine. `$ brew doctor` says so!
+That did the trick. `$ brew update` worked fine, and `$ brew doctor`
+confirmed it.
 
 ```bash
 ~$ brew update
@@ -64,9 +66,8 @@ Updated Homebrew from 69a83176 to 691c72bf.
 Your system is ready to brew.
 
 ```
-
-Now, it's time to upgrade Git.
-
+###Back to Git
+Now that the yak is well-shaved, we're ready to upgrade Git.
 
 ```bash
 ~$ brew upgrade git
@@ -98,7 +99,6 @@ git version 1.8.5.1
 ```
 
 ###Why This Matters
+I'm posting this article as a note to my future self. Error messages sometimes lie. They don't mean to lie, but an error messsage can only give you its best guess based on what it _thinks_ is happening on your system. It's up to the developer to sniff out the rest of the clues.
 
-
-
-
+After decades in this industry, I'm still learning this lesson :-)
