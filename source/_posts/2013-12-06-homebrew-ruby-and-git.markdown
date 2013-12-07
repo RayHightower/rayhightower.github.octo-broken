@@ -90,8 +90,12 @@ Bash completion has been installed to:
 zsh completion has been installed to:
   /usr/local/share/zsh/site-functions
 ==> Summary
-🍺  /usr/local/Cellar/git/1.8.5.1: 1333 files, 30M
+  /usr/local/Cellar/git/1.8.5.1: 1333 files, 30M
+```
 
+Mission accomplished. Git has been upgraded to 1.8.5.
+
+```bash
 ~$ git --version
 git version 1.8.5.1
 
