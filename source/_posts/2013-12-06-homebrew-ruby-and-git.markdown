@@ -46,7 +46,7 @@ Please report this bug:
 
 ~/Code/Ruby/apps$
 ```
-`$ brew update` choked and further, Homebrew said that I should report a bug. But something smelled fishy. I decided to try running Homebrew under Ruby 2.0.0 instead of Ruby 1.9.3, the default on my system. Running [RVM](/blog/2013/05/16/upgrading-ruby-with-rvm/) makes bouncing between Ruby versions a snap.
+`$ brew update` choked. Further, Homebrew said that I should report a bug. But something smelled fishy. I decided to try running Homebrew under Ruby 2.0.0 instead of Ruby 1.9.3, the default on my system. Running [RVM](/blog/2013/05/16/upgrading-ruby-with-rvm/) makes bouncing between Ruby versions a snap.
 
 ```bash
 ~$ rvm use 2.0.0
