@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: High Performance Computing | RayHightower.com]]></title>
+  <link href="http://RayHightower.com/blog/categories/high-performance-computing/atom.xml" rel="self"/>
+  <link href="http://RayHightower.com/"/>
+  <updated>2013-12-12T01:51:21-06:00</updated>
+  <id>http://RayHightower.com/</id>
+  <author>
+    <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[High Performance Computing at ACM]]></title>
+    <link href="http://RayHightower.com/blog/2013/12/12/high-performance-computing-at-acm/"/>
+    <updated>2013-12-12T22:22:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2013/12/12/high-performance-computing-at-acm</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/cray-sonexion.png' width='' height='' alt='Cray Sonexion Storage Appliance' title='Cray Sonexion Storage Appliance'><span class='caption-text'>Cray Sonexion Storage Appliance</span></span></p>
+
+<blockquote><p>Anyone can build a fast CPU. The trick is to build a fast system.
+&nbsp;<br/>
+~ Seymour Cray</p></blockquote>
+
+<p>The Chicago chapter of the Association for Computing Machinery (ACM) hosted a lecture titled <em>Supercomputing and You</em> yesterday evening. The talk was delivered by <a href="http://www.linkedin.com/in/sharankalwani">Sharan Kalwani</a> of Fermilab. Kalwani&rsquo;s background blends mechanical engineering and computer science with decades of high performance computing experience.</p>
+
+<h3>10x => High Performance Computing</h3>
+
+<p>Kawani began his talk by drawing a distinction between <em>supercomputing</em> and <em>high performance computing (HPC)</em>. Supercomputing is the buzzword that everybody knows, but the word implies that the designers are focused only on improving the performance of the CPU. Such narrow focus leads to new problems. If engineers focus on improving CPU performance alone, applications that are CPU-bound will quickly encounter I/O bottlenecks. High performance computing takes the entire system into account, therby producing computers tailored for the applications they are expected to run.</p>
+
+<!--more-->
+
+
+<p>Supercomputers perform at least ten times faster than the current state-of-the art. The definition is therefore a moving target. The processor in today&rsquo;s smartphone would have been considered a high performance computer a decade ago.</p>
+
+<h3>The First Supercomputer</h3>
+
+<p><a href="http://www.cray.com/">Seymour Cray</a> is considered to be the father of the supercomputer. Cray cobbled together the first supercomputer using off-the-shelf components of the day and his unique ideas about computer architecture.</p>
+
+<p>For example, Cray observed that the speed of an electrical signal was one bottleneck in computer performance. Electrical signals travel at the speed of light. Light can travel roughly one foot in one nanosecond.  Therefore, Cray decided that all internal cables in his new system would be less than a foot in length. No input would need to wait more than a nanosecond for a signal.</p>
+
+<p>The 1972-era Cray supercomputer ran at a clock speed of 80MHz. It used a 64-bit word size.</p>
+
+<h3>Supercomputers&hellip; So What?</h3>
+
+<p>Why do we need to spend time and money on high performance computers?  How does the general public benefit?</p>
+
+<p>HPC enables us to solve problems that elude typical computers. For example:</p>
+
+<ul>
+<li><em>Auto safety testing</em>. Kawani spent several years using HPC to run simulated crash tests for General Motors. A physical crash test, one in which the car is destroyed, costs $500k per car. The same test can be run in a simulator for $5k. Engineers still need to test a physical car at the end of the testing cycle, but the number of cars destroyed is drastically reduced. The business advantage of HPC-simulated tests is clear.</li>
+<li><em>Nuclear testing</em>. It is very expensive (measured both in dollars and in human lives) to test a nuclear power plant. Fortunately, scientists know enough about nuclear behavior to create realistic simulations. Testing via simulation helps to manage costs and reduce accidents.</li>
+<li><em>Weather forecasting</em>. The first supercomputers needed three days to predict the weather for <em>tomorrow</em>. What good is a 2-day-old weather forecast? A good forecast can save lives by telling people to evacute before a life-threatening natural disaster. Today&rsquo;s supercomputers can produce accurate weather forecasts while the reader still has time to take action.</li>
+<li><em>Bioinformatics</em>. When scientists can reliably simulate drug behavior before live human testing, medical treatments can be improved and lives can be saved.</li>
+<li><em>Energy exploration</em>. As long as people depend on fossil fuels, new sources need to be discovered in a timely and cost-effective way.  Supercomputers can process seismic data quickly and with sufficient granularity to tell prospectors where to drill.</li>
+</ul>
+
+
+<p>The bottom line: High performance computers deliver a return on investment that far outweighs their cost.</p>
+
+<h3>Trickle Down Technology</h3>
+
+<p>Many of the advances that we enjoy on today&rsquo;s laptops were invented by HPC architects. Kalwani shared one example: Cray invented the solid state disk (SSD) when mechanical disk drives proved to be a bottleneck. Can you imagine what an SSD must have cost in 1982 when it was invented? Today, SSDs are standard equipment on many laptops.</p>
+
+<h3>Who Has the Fastest Supercomputer?</h3>
+
+<p><a href="http://top500.org/">Top500.org</a> lists the fastest supercomputers on the planet, ordered by number of floating point operations per second (FLOPS). The race to be the fastest is highly competitive, so check the list for the latest champion.</p>
+
+<p>There are those who believe that the Top 500 list is missing a few names. Some governments or companies might not want to publicize their HPC skills strengths.</p>
+
+<h3>Other Top Computing Lists</h3>
+
+<p>High performance computers gulp power. Rule of thumb: 1 megawatt of electricity used over the course of one year costs $1 million. The owners of the world&rsquo;s fastest supercomputer spend $17 million dollars per year on electricity <em>for one computer</em>.</p>
+
+<p>Another group of supercomputing professionals maintains <a href="http://green500.org">The Green
+500</a> list to recognize the most energy efficient
+supercomputers in the world.</p>
+
+<h3>The Fourth Paradigm</h3>
+
+<p>Kalwani closed the historical section of his talk with a discussion of <a href="http://research.microsoft.com/en-us/collaboration/fourthparadigm/">The Fourth Paradigm</a> of discovery. The concept comes from a collection of essays published by Microsoft Press. As of this writing, a free PDF of the book is available from <a href="http://research.microsoft.com/en-us/collaboration/fourthparadigm/">Microsoft Research</a>.</p>
+
+<p>The book&rsquo;s introduction posits that there have been four paradigms of human scientific discovery:</p>
+
+<ul>
+<li><em>Empirical</em>. Started a thousand years ago. Science was all about describing natural phenomena.</li>
+<li><em>Theoretical</em>. Started a few hundred years ago. Scientific understanding is achieved via models and generalizations.</li>
+<li><em>Computational</em>. Started a few decades ago. Scientists seek understanding by simulating complex phenomena using computer models.</li>
+<li><em>Data Exploration (eScience)</em>. Starting now. Scientists now have the technology to capture and store huge quantities of data, inexpensively and indefinitely. Software will &ldquo;look&rdquo; for trends in the data using statistical models. The software will identify trends in the data, and point them out for further investigation.</li>
+</ul>
+
+
+<p>One example of the Fourth Paradigm in action: Recent discoveries of sub-atomic particles were initiated by eScience. Software running on high performance computers identified trends, and the scientists followed up with deeper investations. Discoveries followed after that.</p>
+
+<p>Businesses have led the way in extracting trends from mountains of data. This path offered limited results for scientists because computers were too slow to handle scientific data in a timely fashion. Partial differential equations eat many CPU cycles!</p>
+
+<p>High performance computing opens up a new universe of data insight for scientists and engineers.</p>
+
+<h3>The Future of HPC</h3>
+
+<p>Kalwani ended the talk by looking into his crystal ball and telling us about the future of HPC. A few trends on the horizon:</p>
+
+<ul>
+<li>Power consumption issues will dominate discussions. High performance computers are terribly inefficient. Either we need to find a free, unlimited supply of energy (unlikely) or we must design supercomputers that gulp less power.</li>
+<li>GPGPUs. General purpose graphics processing units are already used for non-graphics applications, like Bitcoin mining. As more applications are discovered for the devices, faster GPGPUs will follow.</li>
+<li>ARM. Advanced Risc Machine processors use less power and their performance continues to increase. Could ARM hold the key to power reduction in high performance computing?</li>
+<li>Quantum computing. Kalwani ran out of time as he was explaining this one, but he shared enough to make me want to study it further. He offered an analogy: Quantum computing is to digital computing as digital computing is to the abacus.</li>
+<li>Rex Parallella. Kalwani shared this fresh from last month&rsquo;s <a href="http://sc13.supercomputing.org/">Supercomputing Conference</a>. <a href="http://www.rexcomputing.com/">Rex Computing</a> is using <a href="http://www.parallella.org/">Parallella</a> boards to build low-energy high performance computing clusters.</li>
+</ul>
+
+
+<p>Exciting stuff.</p>
+
+<h3>Conclusion</h3>
+
+<p>Thank you Sharan Kalwani for presenting at ACM, and thank you ACM for hosting.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Petascale Tools Workshop 2013]]></title>
+    <link href="http://RayHightower.com/blog/2013/07/19/petascale-tools-workshop-2013/"/>
+    <updated>2013-07-19T02:12:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/07/19/petascale-tools-workshop-2013</id>
+    <content type="html"><![CDATA[<p>The <a href="http://www.paradyn.org/CSCADS2013/index.html">Petascale Tools Workshop</a> is for computer scientists who create tools that enable apps to run efficiently on the world&rsquo;s fastest supercomputers. Supercomputer performance is measured in petaflops: 10<sup><sup>15</sup></sup> floating point operations per second. That&rsquo;s blazing speed, thousands of times faster than the fastest MacBook Pro.</p>
+
+<!--more-->
+
+
+<p><a href="http://WisdomGroup.com">WisdomGroup</a> was invited to attend the workshop because we have a client client, <a href="http://www.wisdomgroup.com/case-studies/texas-am-university/">Texas A &amp; M University</a>, operating in the high performance computing (HPC) space. As the only non-PhD in the room, I was given a chance to exercise Pat Metheny&rsquo;s <a href="/blog/2013/07/17/pat-metheny-be-the-worst/">be-the-worst</a> philosophy in the extreme. The result: I learned things that will help WisdomGroup to deliver better solutions for our clients, especially the TAMU team.</p>
+
+<h3>One Megawatt = $1,000,000.00</h3>
+
+<p>As with other disciplines of engineering, supercomputer design is all about managing trade-offs. If you increase the clock speed, how will that affect your electrical bill? If you increase the size of the cache, how much more will you spend on hardware?</p>
+
+<p>Every Petascale Workshop presenter highlighted the toughest constraint: The cost of electrical power. High performance computers gulp electricity. The wattage numbers were all very abstract to me until one presenter layed out a direct one-to-one correspondence between electricity and money. <em>One megawatt of power used over the course of a year costs one million dollars.</em></p>
+
+<p>Express a constraint in terms of money, and the abstractions melt away.</p>
+
+<p>The debate between the scientists was vigorous yet respectful. After hearing the 1-to-1 rule of thumb, one audience member remarked, &ldquo;I know how to genererate a megawatt for only $865,000.&rdquo; He then outlined his solution, a combination of coal, fossil fuels, and natural gas that would achieve the reduction. The more important point: Electricity is expensive.</p>
+
+<h3>Re-Framing the Power Problem</h3>
+
+<p>There is another way to look at the power problem. Consider it from the perspective of performance, not power. Here&rsquo;s how one presenter put it: No matter where we build a supercomputer, we will only have a limited amount of power. Let&rsquo;s look at the maximum available power as a constraint and go from there.</p>
+
+<p>Rubyists are familiar with the saying &#34;<a href="http://gettingreal.37signals.com/ch03_Embrace_Constraints.php">constraints are liberating</a>&#34;, popularized by 37signals. Since power limitations are real constraints, our next step is to figure out how to extract the best results allowed within the constraints.</p>
+
+<h3>Top Five</h3>
+
+<p>Supercomputer scientists are as competitive as olympic athletes. As of June 2013, the five fastest machines in the world are:</p>
+
+<center>
+<table class="table table-condensed">
+    <thead>
+    <tr>
+        <th width="50">Rank</th>
+        <th width="75">Site</th>
+        <th width="100" style="text-align: right;">Cores</th>
+        <th width="75" style="text-align: right;">Rmax (PF/s)</th>
+        <th width="75" style="text-align: right;">Power (MW)</th>
+    </tr>
+    </thead>
+
+    <tr class="sublist odd">
+        <td><span class="badge">1</span></td>
+        <td>China</td>
+        <td style="text-align: right;">3,120,000</td>
+        <td style="text-align: right;">33.9</td>
+        <td style="text-align: right;">17.8</td>
+    </tr>
+
+    <tr class="sublist even">
+        <td><span class="badge">2</span></td>
+        <td>USA</td>
+        <td style="text-align: right;">560,640</td>
+        <td style="text-align: right;">17.5</td>
+        <td style="text-align: right;">8.2</td>
+    </tr>
+
+    <tr class="sublist odd">
+        <td><span class="badge">3</span></td>
+        <td>USA</td>
+        <td style="text-align: right;">1,572,864</td>
+        <td style="text-align: right;">17.2</td>
+        <td style="text-align: right;">7.9</td>
+    </tr>
+
+    <tr class="sublist even">
+        <td><span class="badge">4</span></td>
+        <td>Japan</td>
+        <td style="text-align: right;">705,024</td>
+        <td style="text-align: right;">10.5</td>
+        <td style="text-align: right;">12.6</td>
+    </tr>
+
+    <tr class="sublist odd">
+        <td><span class="badge">5</span></td>
+        <td>USA</td>
+        <td style="text-align: right;">786,432</td>
+        <td style="text-align: right;">8.6</td>
+        <td style="text-align: right;">3.9</td>
+    </tr>
+</table>
+</center>
+
+
+<p>&nbsp;<br/>
+Scientists determine Rmax by running the <a href="http://en.wikipedia.org/wiki/LINPACK_benchmarks">LINPACK</a> benchmark. <a href="http://top500.org">Top500.org</a> has more information about the fastest
+machines.</p>
+
+<h3>Digging Deeper</h3>
+
+<p>Some of the biggest performance gains can be realized through more efficient software. Most supercomputers run some distribution of Linux. Some teams of researchers focus on ways to optimize the Linux kernel for supercomputing.</p>
+
+<p>Optimization is not a one-size-fits all process. The scientists need to consder the type of applications being run, percentage of time spent on I/O, efficiency of algorithms, and so on. Each potential optimization choice is like a node on an ever expanding tree. The choices are endless, and the seasoned expert will know where to focus for the best results.</p>
+
+<p>In the Ruby world, we might use tools like <a href="http://newrelic.com">New Relic</a> or <a href="http://codeclimate.com">Code Climate</a> to identify hot spots in our code, places where re-factoring can reduce CPU utilization or improve I/O. HPC tools tend to be highly customizable because the users are intimately familar with their own hardware. During a lunch conversation, one team of scientists shared how they suspected a defect in hardware counters used to measure the behavior of a supercomputer under study. The instincts of the scientists proved correct, and the errant counters were replaced.</p>
+
+<h3>Conclusion</h3>
+
+<p>When smart people challenge each other to grow, great things happen. The scientists at the Petascale Tools Workshop were clearly helping each other to grow. The next few years in supercomputing will be exciting!</p>
+
+<h3>Acknowledgements</h3>
+
+<p>I am grateful to the organizers of the Petascale Tools Workshop for hosting the event, and to the TAMU team for extending the invitation. Thank you both!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Prep for Parallella's 64 Cores: Installing Go on Mac OS X]]></title>
+    <link href="http://RayHightower.com/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/"/>
+    <updated>2013-06-22T12:58:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x</id>
+    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/parallella.jpg" width="450" height="257" alt="Parallella 64-core supercomputer" title="Parallella 64-core supercomputer" align="right" imgcap="Parallella Board">
+The idea of owning a 64-core parallel system for two hundred dollars (yes, $200.00) is exciting. <a href="http://www.parallella.org/introduction/">Parallella</a> is working to make that happen, perhaps as early as August 2013. To prepare for that day, I&rsquo;ve decided to introduce myself to the Go language.</p>
+
+<!--more-->
+
+
+<h3>What is Go?</h3>
+
+<p><a href="http://golang.org">The Go language</a> is designed for parallel systems. Why does Go exist? One developer sums it up this way:</p>
+
+<blockquote><p>Go was created at Google, by Google, for Google-size problems.<br/>~Dave Astels</p></blockquote>
+
+<p>Google writes software that runs on thousands of machines in parallel. As the number of concurrent operations increases, new challenges are encountered. Google addressed those challenges by creating Go.</p>
+
+<h3>Why Does a Rubyist Learn Go?</h3>
+
+<p>The team at <a href="http://wisdomgroup.com">WisdomGroup</a> writes web and mobile apps, mainly in Ruby. So why am I learning Go?</p>
+
+<p>Because the best developers are polyglot. When we learn a new language, we cause ourselves to see old problems in new ways and we strengthen our ability to solve new problems. It&rsquo;s like cross-training for  athletes. In the end, we become better developers.</p>
+
+<h3>How to Install Go on Mac OS X</h3>
+
+<ol>
+<li><a href="https://code.google.com/p/go/downloads/list">Download the binary of Go that matches your system</a> <i>but don't install it yet</i>. You will need to complete the rest of these steps before installation. For my 2010 i5-based 15-inch MacBook Pro, I chose <code>go1.1.1.darwin-amd64.pkg</code>. I was concerned about the reference to <code>amd64</code> in the name. But the description includes <code>Mac OS X (x86 64-bit)</code>, and the binary worked for me.</li>
+<br/>
+<li>If you are upgrading from a previous version of Go, you will need to remove the old Go directory. You can do this while the new binary is downloading in the background:</li>
+
+```bash
+$ rm -rf /usr/local/go
+```
+
+<li>Define the <code>GOROOT</code> and <code>GOPATH</code> environmental variables. My system uses <code>~/.bash_profile</code> to define environmental variables, so I added the following lines to the end of that file:
+
+```bash
+export GOROOT=/usr/local/go
+export PATH=$PATH:$GOROOT/bin
+export GOPATH=~/Code/gocode
+```
+Note: I'm using the default <code>GOROOT</code> variable, but your <code>GOPATH</code> may differ from mine. I store all of my source code in a subdirectory of home:<code>~/Code</code>. My complete Go directory structure is given below. By looking at my structure, you can adjust these steps to fit your system.</li>
+<br/>
+<li>Tell your terminal session to recognize the new environmental variables. You can either restart terminal, or if your environmental variables are in <code>~/.bash_profile</code> like mine, you can do the following:</li>
+
+```bash
+$ source ~/.bash_profile
+```
+<li>Run the package installation program, <code>go1.1.1.darwin-amd64.pkg</code>, that was downloaded in Step 1.</li>
+</ol>
+
+
+<p>Now, let&rsquo;s Go for a test drive.</p>
+
+<h3>Creating a Go Workspace</h3>
+
+<p>Before you can run a Go program on your system, you have to create a Go workspace. A workspace is a directory structure that contains source code and binaries that a Go program needs in order to compile and execute.</p>
+
+<p>We can examine the Go Workspace on my system with the Unix <code>tree</code> command:</p>
+
+<p>```bash
+~/Code/gocode$ tree
+.
+└── src</p>
+
+<pre><code>└── github.com
+    └── rayhightower
+        └── hello
+            └── hello.go
+</code></pre>
+
+<p>4 directories, 1 file</p>
+
+<p>~/Code/gocode$
+```</p>
+
+<p>Here&rsquo;s a brief description of the directories:</p>
+
+<ul>
+<li>Code = root directory for all source code on my system. Yours may differ.</li>
+<li>gocode = where I store all of the Go code on my system. I&rsquo;m following the structure recommended by the Go documentation. I may alter this as I learn more about the language.</li>
+<li>src = source code</li>
+<li>github.com = directory named after the place where I store repos</li>
+<li>rayhightower = my GitHub profile name</li>
+<li>hello = directory named for our first Go application</li>
+<li>hello.go = the Go source file for our <code>Hello World</code> program</li>
+</ul>
+
+
+<p>All structure below the <code>gocode</code> directory is mandated by Go.</p>
+
+<h3>Writing &lsquo;Hello World!&rsquo; in Go</h3>
+
+<p>Google&rsquo;s official installation instructions include a simple &lsquo;Hello World&rsquo; program for testing the installation. A slightly modified version appears below:</p>
+
+<p>```go
+package main</p>
+
+<p>import &ldquo;fmt&rdquo;</p>
+
+<p>func main() {</p>
+
+<pre><code>fmt.Printf("\n****** Hey Parallella enthusiasts: Learn Go! ******\n")
+</code></pre>
+
+<p>}
+```</p>
+
+<h3>Compiling and Running</h3>
+
+<p>We drop the code into a file called <code>hello.go</code> in the <code>hello</code> directory. To compile the program:</p>
+
+<p>```bash
+~/Code/gocode/src/github.com/rayhightower/hello$ go install</p>
+
+<p>~/Code/gocode/src/github.com/rayhightower/hello$
+<code>``
+If the Go compiler responds with a blank prompt (like above) then the program compiled successfully and a</code>bin<code>directory has been created inside the Go workspace. Run the</code>tree<code>command from the</code>gocode` directory to see how the structure has changed:</p>
+
+<p>```bash
+~/Code/gocode$ tree
+.
+├── bin
+│   └── hello
+└── src</p>
+
+<pre><code>└── github.com
+    └── rayhightower
+        └── hello
+            └── hello.go
+</code></pre>
+
+<p>5 directories, 2 files</p>
+
+<p>~/Code/gocode$
+```</p>
+
+<p>The newly created <code>bin/</code> directory contains our <code>hello</code> executable. And now, let&rsquo;s cut the suspense and <em>run the program</em>. To do so, change into the <code>bin/</code> directory and type <code>./hello</code>.</p>
+
+<p>```bash
+~/Code/gocode/src/github.com/rayhightower/hello$ cd ~/Code/gocode/bin</p>
+
+<p>~/Code/gocode/bin$ ./hello</p>
+
+<p><strong><strong><strong> Hey Parallella enthusiasts: Learn Go! </strong></strong></strong></p>
+
+<p>~/Code/gocode/bin$
+```
+Success!</p>
+
+<h3>It&rsquo;s Not Official, But It Makes Sense</h3>
+
+<p>As of this writing, Parallella does not officially support the Go language. So why go through all of this trouble? Because&hellip;</p>
+
+<ul>
+<li>A 64-core Parallella is just too cool to pass up. And it&rsquo;s open source.</li>
+<li>Go is designed for parallel systems. And it&rsquo;s open source.</li>
+<li>Open source devs are working on a Go compiler for Parallella right now. If you&rsquo;re reading this, and you&rsquo;re one of the devs, thank you!</li>
+</ul>
+
+
+<p>The Go-Parallella match makes sense. It&rsquo;s always good to skate where the puck is going.</p>
+
+<h3>Next Steps</h3>
+
+<p>Now it&rsquo;s time to explore the Go language. The real adventure begins when the 64-core Parallella arrives. Looking forward to it!</p>
+
+<h3>Acknowledgements</h3>
+
+<p>I was inspired to explore Go by <a href="https://twitter.com/blakesmith">Blake Smith&rsquo;s</a> presentation at <a href="http://www.meetup.com/ChicagoSC/events/120658422/">8th Light</a>. <a href="http://twitter.com/wondible">Justin Love</a> introduced me to Parallella last month at ChicagoRuby.</p>
+]]></content>
+  </entry>
+  
+</feed>
