@@ -53,9 +53,10 @@ Another group of supercomputing professionals maintains [The Green
 supercomputers in the world. 
 
 ###The Fourth Paradigm
-Kalwani closed the historical section of his talk with a discussion of [The Fourth Paradigm](http://research.microsoft.com/en-us/collaboration/fourthparadigm/) of discovery. The concept comes from a collection of essays edited by Jim Gray and published by Microsoft Press. As of this writing, a free PDF of the book is available from [Microsoft Research](http://research.microsoft.com/en-us/collaboration/fourthparadigm/).
+Kalwani closed the historical section of his talk with a discussion of [The Fourth Paradigm](http://research.microsoft.com/en-us/collaboration/fourthparadigm/) of discovery. The concept comes from a collection of essays published by Microsoft Press. As of this writing, a free PDF of the book is available from [Microsoft Research](http://research.microsoft.com/en-us/collaboration/fourthparadigm/).
 
-Jim Gray's introduction posits that there have been four paradigms of human scientific discovery:
+The book's introduction posits that there have been four paradigms of human scientific discovery:
+
 * *Empirical*. Started a thousand years ago. Science was all about describing natural phenomena.
 * *Theoretical*. Started a few hundred years ago. Humans seek to understand the world using models and generalizations.
 * *Computational*. Started a few decades ago. Humans seek understanding by simulating complex phenomena using computer models.
