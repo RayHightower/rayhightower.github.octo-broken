@@ -46,7 +46,7 @@ Many of the advances that we enjoy on today's laptops were invented by HPC archi
 There are those who believe that the Top 500 list is missing a few names. Some governments or companies might not want to publicize their HPC skills strengths. 
 
 ###Other Top Computing Lists
-High performance computers gulp power. Rule of thumb: 1 megawatt of electricity used over the course of one year costs $1 million. The owners of the fastest machine on the Top 500 list spend $17 million dollars per year on electricity _for one computer_.
+High performance computers gulp power. Rule of thumb: 1 megawatt of electricity used over the course of one year costs $1 million. The owners of the world's fastest supercomputer spend $17 million dollars per year on electricity _for one computer_.
 
 Another group of supercomputing professionals maintains [The Green
 500](http://green500.org) list to recognize the most energy efficient
