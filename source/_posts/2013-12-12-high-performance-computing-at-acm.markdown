@@ -13,16 +13,18 @@ categories: [ Education, High Performance Computing ]
 The Chicago chapter of the Association for Computing Machinery (ACM) hosted a lecture titled _Supercomputing and You_ yesterday evening. The talk was delivered by [Sharan Kalwani](http://www.linkedin.com/in/sharankalwani) of [Fermilab](http://www.fnal.gov/). Kalwani's background blends mechanical engineering and computer science with decades of high performance computing experience.
 
 ###10x => High Performance Computing
-Kalwani began his talk by drawing a distinction between _supercomputing_ and _high performance computing (HPC)_. Supercomputing is the buzzword that everybody knows, but the word implies that the designers are focused only on improving the performance of the CPU. Such narrow focus leads to new problems. If engineers focus on improving CPU performance alone, applications that are CPU-bound will quickly encounter I/O bottlenecks. High performance computing takes the entire system into account: CPU, I/O, cache, memory... anything that can influence performance. 
+Kalwani began his talk by drawing a distinction between _supercomputing_ and _high performance computing (HPC)_. Supercomputing is the buzzword that everyone knows, but the word implies that the designers are focused only on improving the CPU performance. Such narrow focus could cause us to ignore important subsystems. For example, if engineers focus strictly on CPU performance, applications that are CPU-bound will quickly encounter I/O bottlenecks. High performance computing takes the entire system into account: CPU, I/O, cache, memory... anything that can influence performance. 
 <!--more-->
-Supercomputers perform at least ten times faster than the current state-of-the art. The definition is therefore a moving target. The processor in today's smartphone would have been considered a high performance computer a decade ago.
+This article will use the terms _supercomputing_ and _high performance computing_ interchangably because we are discussing the field in general. The distinction would be more important in a design document.
+
+By definition, supercomputers perform at least ten times faster than the current state-of-the art. The definition is a moving target. The processor in today's smartphone would have been considered a high performance computer a decade ago.
 
 ###The First Supercomputer
 [Seymour Cray](http://www.cray.com/) is considered to be the father of the supercomputer. Cray cobbled together the first supercomputer using off-the-shelf components of the day and his unique ideas about computer architecture. 
 
 For example, Cray observed that the speed of an electrical signal was one bottleneck in computer performance. Electrical signals travel at the speed of light. Light can travel roughly one foot in one nanosecond.  Therefore, Cray decided that all internal cables in his new system would be less than a foot in length. No input would need to wait more than a nanosecond for a signal.
 
-The 1972-era Cray supercomputer ran at a clock speed of 80MHz. It used a 64-bit word size.
+The 1972-era Cray supercomputer ran at a clock speed of 80MHz. It used a 64-bit word size. As a point of comparison, a 1972-era business mainframe ran at 4MHz with a 16-bit word size.
  
 ###Supercomputers... So What?
 Why do we need to spend time and money on high performance computers?  How does the general public benefit?
