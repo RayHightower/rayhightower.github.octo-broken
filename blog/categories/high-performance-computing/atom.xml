@@ -4,7 +4,7 @@
   <title><![CDATA[Category: High Performance Computing | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/high-performance-computing/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2013-12-12T08:22:53-06:00</updated>
+  <updated>2013-12-12T08:42:24-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -28,12 +28,14 @@
 
 <h3>10x => High Performance Computing</h3>
 
-<p>Kalwani began his talk by drawing a distinction between <em>supercomputing</em> and <em>high performance computing (HPC)</em>. Supercomputing is the buzzword that everybody knows, but the word implies that the designers are focused only on improving the performance of the CPU. Such narrow focus leads to new problems. If engineers focus on improving CPU performance alone, applications that are CPU-bound will quickly encounter I/O bottlenecks. High performance computing takes the entire system into account: CPU, I/O, cache, memory&hellip; anything that can influence performance.</p>
+<p>Kalwani began his talk by drawing a distinction between <em>supercomputing</em> and <em>high performance computing (HPC)</em>. Supercomputing is the buzzword that everyone knows, but the word implies that the designers are focused only on improving the CPU performance. Such narrow focus could cause us to ignore important subsystems. For example, if engineers focus strictly on CPU performance, applications that are CPU-bound will quickly encounter I/O bottlenecks. High performance computing takes the entire system into account: CPU, I/O, cache, memory&hellip; anything that can influence performance.</p>
 
 <!--more-->
 
 
-<p>Supercomputers perform at least ten times faster than the current state-of-the art. The definition is therefore a moving target. The processor in today&rsquo;s smartphone would have been considered a high performance computer a decade ago.</p>
+<p>This article will use the terms <em>supercomputing</em> and <em>high performance computing</em> interchangably because we are discussing the field in general. The distinction would be more important in a design document.</p>
+
+<p>By definition, supercomputers perform at least ten times faster than the current state-of-the art. The definition is a moving target. The processor in today&rsquo;s smartphone would have been considered a high performance computer a decade ago.</p>
 
 <h3>The First Supercomputer</h3>
 
@@ -41,7 +43,7 @@
 
 <p>For example, Cray observed that the speed of an electrical signal was one bottleneck in computer performance. Electrical signals travel at the speed of light. Light can travel roughly one foot in one nanosecond.  Therefore, Cray decided that all internal cables in his new system would be less than a foot in length. No input would need to wait more than a nanosecond for a signal.</p>
 
-<p>The 1972-era Cray supercomputer ran at a clock speed of 80MHz. It used a 64-bit word size.</p>
+<p>The 1972-era Cray supercomputer ran at a clock speed of 80MHz. It used a 64-bit word size. As a point of comparison, a 1972-era business mainframe ran at 4MHz with a 16-bit word size.</p>
 
 <h3>Supercomputers&hellip; So What?</h3>
 
