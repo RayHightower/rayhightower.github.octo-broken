@@ -3,7 +3,7 @@ layout: post
 title: "Prep for Parallella's 64 Cores: Installing Go on Mac OS X"
 date: 2013-06-22 12:58
 comments: true
-categories: [ Education, Linux-Unix-OSX, Parallella ]
+categories: [ Education, High Performance Computing, Linux-Unix-OSX, Parallella ]
 ---
 <img src="/images/parallella.jpg" width="450" height="257" alt="Parallella 64-core supercomputer" title="Parallella 64-core supercomputer" align="right" imgcap="Parallella Board">
 The idea of owning a 64-core parallel system for two hundred dollars (yes, $200.00) is exciting. [Parallella](http://www.parallella.org/introduction/) is working to make that happen, perhaps as early as August 2013. To prepare for that day, I've decided to introduce myself to the Go language. 

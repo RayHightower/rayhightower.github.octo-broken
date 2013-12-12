@@ -3,7 +3,7 @@ layout: post
 title: "High Performance Computing at ACM"
 date: 2013-12-12 22:22
 comments: true
-categories: [ Education ]
+categories: [ Education, High Performance Computing ]
 ---
 {% imgcap right /images/cray-sonexion.png Cray Sonexion Storage Appliance %}
 >Anyone can build a fast CPU. The trick is to build a fast system. 
