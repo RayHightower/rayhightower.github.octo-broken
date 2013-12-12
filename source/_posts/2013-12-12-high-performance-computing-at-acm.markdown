@@ -48,7 +48,7 @@ Many of the advances that we enjoy on today's laptops were invented by HPC archi
 There are those who believe that the Top 500 list is missing a few names. Some governments or companies might not want to publicize their HPC skills. 
 
 ###Speed vs. Power
-High performance computers gulp electricity. Rule of thumb: One megawatt of electricity used over the course of one year costs $1 million. The fastest supercomputer in the world uses 17 megawatts of electricity, so its owners have an annual electric bill of $17 million dollars.
+Supercomputers gulp electricity. Rule of thumb: One megawatt of electricity used over the course of one year costs $1 million. The fastest supercomputer in the world uses 17 megawatts of electricity, so its owners have an annual electric bill of $17 million dollars.
 
 [The Green 500](http://green500.org) list recognizes the most energy efficient supercomputers in the world. 
 
