@@ -74,7 +74,7 @@ Kalwani ended the talk by looking into his crystal ball and telling us about the
 * Power consumption issues will dominate discussions. High performance computers are terribly inefficient. Either we need to find a free, unlimited supply of energy (unlikely) or we must design supercomputers that gulp less power.
 * GPGPUs. General purpose graphics processing units are already used for non-graphics applications, like Bitcoin mining. As more applications are discovered for the devices, faster GPGPUs will follow.
 * ARM. Advanced Risc Machine processors use less power and their performance continues to increase. Could ARM hold the key to power reduction in high performance computing?
-* Quantum computing. Kalwani ran out of time as he was explaining this one, but he shared enough to make me want to study it further. He offered an analogy: Quantum computing is to digital computing as digital computing is to the abacus.
+* Quantum computing. Kalwani ran out of time as he was explaining this one, but he shared enough to make me want to study it further. He offered an analogy: Quantum computing is to digital computing as digital computing is to the abacus. [D-Wave](http://www.dwavesys.com/) is one company exploring this area.
 * Rex Parallella. Kalwani shared this fresh from last month's [Supercomputing Conference](http://sc13.supercomputing.org/). [Rex Computing](http://www.rexcomputing.com/) is using [Parallella](http://www.parallella.org/) boards to build low-energy high performance computing clusters.
 
 Exciting stuff.
