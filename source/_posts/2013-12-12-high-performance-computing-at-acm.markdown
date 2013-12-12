@@ -46,7 +46,7 @@ Many of the advances that we enjoy on today's laptops were invented by HPC archi
 There are those who believe that the Top 500 list is missing a few names. Some governments or companies might not want to publicize their HPC skills. 
 
 ###Other Top Computing Lists
-High performance computers gulp power. Rule of thumb: 1 megawatt of electricity used over the course of one year costs $1 million. The owners of the world's fastest supercomputer spend $17 million dollars per year on electricity _for one computer_.
+High performance computers gulp power. Rule of thumb: one megawatt of electricity used over the course of one year costs $1 million. The owners of the world's fastest supercomputer spend $17 million dollars per year on electricity _for one computer_.
 
 Another group of supercomputing professionals maintains [The Green
 500](http://green500.org) list to recognize the most energy efficient
@@ -62,7 +62,7 @@ The book's introduction posits that there have been four paradigms of human scie
 * *Computational*. Started a few decades ago. Scientists seek understanding by simulating complex phenomena using computer models.
 * *Data Exploration (eScience)*. Starting now. Scientists now have the technology to capture and store huge quantities of data, inexpensively and indefinitely. Software will "look" for trends in the data using statistical models. The software will identify trends in the data, and point them out for further investigation.
 
-One example of the Fourth Paradigm in action: Recent discoveries of sub-atomic particles were initiated by eScience. Software running on high performance computers identified trends, and the scientists followed up with deeper investations. Discoveries followed after that.
+One example of the Fourth Paradigm in action: Recent discoveries of sub-atomic particles were initiated by eScience. Software running on high performance computers identified trends, and the scientists followed up with deeper investigation. Discoveries followed after that.
 
 Businesses have led the way in extracting trends from mountains of data. This path offered limited results for scientists because computers were too slow to handle scientific data in a timely fashion. Partial differential equations eat many CPU cycles!
 
