@@ -47,12 +47,10 @@ Many of the advances that we enjoy on today's laptops were invented by HPC archi
 
 There are those who believe that the Top 500 list is missing a few names. Some governments or companies might not want to publicize their HPC skills. 
 
-###Other Top Computing Lists
-High performance computers gulp power. Rule of thumb: One megawatt of electricity used over the course of one year costs $1 million. The owners of the world's fastest supercomputer spend $17 million dollars per year on electricity _for one computer_.
+###Speed vs. Power
+High performance computers gulp electricity. Rule of thumb: One megawatt of electricity used over the course of one year costs $1 million. The fastest supercomputer in the world uses 17 megawatts of electricity, so its owners have an annual electric bill of $17 million dollars.
 
-Another group of supercomputing professionals maintains [The Green
-500](http://green500.org) list to recognize the most energy efficient
-supercomputers in the world. 
+[The Green 500](http://green500.org) list recognizes the most energy efficient supercomputers in the world. 
 
 ###The Fourth Paradigm
 Kalwani closed the historical section of his talk with a discussion of [The Fourth Paradigm](http://research.microsoft.com/en-us/collaboration/fourthparadigm/) of discovery. The concept comes from a collection of essays published by Microsoft Press. As of this writing, a free PDF of the book is available from [Microsoft Research](http://research.microsoft.com/en-us/collaboration/fourthparadigm/).
