@@ -10,17 +10,17 @@ categories: [ Education, High Performance Computing ]
 >&nbsp;<br/>
 >~ Seymour Cray
 
-The Chicago chapter of the Association for Computing Machinery (ACM) hosted a lecture titled _Supercomputing and You_ yesterday evening. The talk was delivered by [Sharan Kalwani](http://www.linkedin.com/in/sharankalwani) of [Fermilab](http://www.fnal.gov/). Kalwani's background blends mechanical engineering and computer science with decades of high performance computing experience.
+The Chicago chapter of the Association for Computing Machinery ([Chicago ACM](http://www.chicagoacm.org/)) hosted a lecture titled _Supercomputing and You_ yesterday evening. The talk was delivered by [Sharan Kalwani](http://www.linkedin.com/in/sharankalwani) of [Fermilab](http://www.fnal.gov/). Kalwani's background blends mechanical engineering and computer science with decades of high performance computing experience.
 
 ###10x => High Performance Computing
-Kalwani began his talk by drawing a distinction between _supercomputing_ and _high performance computing (HPC)_. Supercomputing is the buzzword that everyone knows, but the word implies that the designers are focused only on improving the CPU performance. Such narrow focus could cause us to ignore important subsystems. For example, if engineers focus strictly on CPU performance, applications that are CPU-bound will quickly encounter I/O bottlenecks. High performance computing takes the entire system into account: CPU, I/O, cache, memory... anything that can influence performance. 
+Kalwani began his talk by drawing a distinction between _supercomputing_ and _high performance computing (HPC)_. Supercomputing is the buzzword that everyone knows, but the word implies that the designers are focused only on improving CPU performance. Such narrow focus could cause us to ignore important subsystems. For example, if engineers focus strictly on CPU performance, applications that are CPU-bound will quickly encounter I/O bottlenecks. High performance computing takes the entire system into account: CPU, I/O, cache, memory... anything that can influence performance. 
 <!--more-->
-This article will use the terms _supercomputing_ and _high performance computing_ interchangably because we are discussing the field in general. The distinction would be more important in a design document.
+This article will use the terms _supercomputing_ and _high performance computing_ interchangably because we are discussing the field in general. In an engineering document, the distinction would be more important.
 
 By definition, supercomputers perform at least ten times faster than the current state-of-the art. The definition is a moving target. The processor in today's smartphone would have been considered a high performance computer a decade ago.
 
 ###The First Supercomputer
-[Seymour Cray](http://www.cray.com/) is considered to be the father of the supercomputer. Cray cobbled together the first supercomputer using off-the-shelf components of the day and his unique ideas about computer architecture. 
+[Seymour Cray](http://www.cray.com/) is regarded as the father of the supercomputer. Cray cobbled together the first supercomputer using off-the-shelf components of the day and his unique ideas about computer architecture. 
 
 For example, Cray observed that the speed of an electrical signal was one bottleneck in computer performance. Electrical signals travel at the speed of light. Light can travel roughly one foot in one nanosecond.  Therefore, Cray decided that all internal cables in his new system would be less than a foot in length. No input would need to wait more than a nanosecond for a signal.
 
@@ -80,5 +80,5 @@ Kalwani ended the talk by looking into his crystal ball and telling us about the
 * Quantum computing. Kalwani ran out of time as he was covering this item, but he shared enough to spark my interest. He explained quantum computing by using an analogy: Quantum computing is to digital computing as digital computing is to the abacus. The degree of advancement is that dramatic. [D-Wave](http://www.dwavesys.com/) is one company exploring this area.
 
 ###Conclusion
-Thank you Sharan Kalwani for presenting at ACM, and thank you ACM for hosting.
+Thank you Sharan Kalwani for presenting, and thank you [Chicago ACM](http://www.chicagoacm.org/) for hosting.
 
