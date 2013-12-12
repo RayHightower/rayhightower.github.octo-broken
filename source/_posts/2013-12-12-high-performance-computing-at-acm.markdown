@@ -58,13 +58,27 @@ Kalwani closed the historical section of his talk with a discussion of [The Four
 The book's introduction posits that there have been four paradigms of human scientific discovery:
 
 * *Empirical*. Started a thousand years ago. Science was all about describing natural phenomena.
-* *Theoretical*. Started a few hundred years ago. Humans seek to understand the world using models and generalizations.
-* *Computational*. Started a few decades ago. Humans seek understanding by simulating complex phenomena using computer models.
-* *Data Exploration (eScience)*. Starting now. We now have to technology to capture huge quantities of data. Software will "look" for trends in the data using statistical models. The software will identify trends and relationships before we see them.
+* *Theoretical*. Started a few hundred years ago. Scientific understanding is achieved via models and generalizations.
+* *Computational*. Started a few decades ago. Scientists seek understanding by simulating complex phenomena using computer models.
+* *Data Exploration (eScience)*. Starting now. Scientists now have the technology to capture and store huge quantities of data, inexpensively and indefinitely. Software will "look" for trends in the data using statistical models. The software will identify trends in the data, and point them out for further investigation.
 
-Businesses have led the way in identifying trends from mountains of data. This path offered limited results for scientists because computers were not powerful enough to handle scientific data in a timely fashion. Partial differential equations will eat many CPU cycles!
+One example of the Fourth Paradigm in action: Recent discoveries of sub-atomic particles were initiated by eScience. Software running on high performance computers identified trends, and the scientists followed up with deeper investations. Discoveries followed after that.
 
-High performance computing opens up a new universe of data insight for scientists.
+Businesses have led the way in extracting trends from mountains of data. This path offered limited results for scientists because computers were too slow to handle scientific data in a timely fashion. Partial differential equations eat many CPU cycles!
+
+High performance computing opens up a new universe of data insight for scientists and engineers.
 
 ###The Future of HPC
+Kalwani ended the talk by looking into his crystal ball and telling us about the future of HPC. A few trends on the horizon:
+
+* Power consumption issues will dominate discussions. High performance computers are terribly inefficient. Either we need to find a free, unlimited supply of energy (unlikely) or we must design supercomputers that gulp less power.
+* GPGPUs. General purpose graphics processing units are already used for non-graphics applications, like Bitcoin mining. As more applications are discovered for the devices, faster GPGPUs will follow.
+* ARM. Advanced Risc Machine processors use less power and their performance continues to increase. Could ARM hold the key to power reduction in high performance computing?
+* Quantum computing. Kalwani ran out of time as he was explaining this one, but he shared enough to make me want to study it further. He offered an analogy: Quantum computing is to digital computing as digital computing is to the abacus.
+* Rex Parallella. Kalwani shared this fresh from last month's [Supercomputing Conference](http://sc13.supercomputing.org/). [Rex Computing](http://www.rexcomputing.com/) is using [Parallella](http://www.parallella.org/) boards to build low-energy high performance computing clusters.
+
+Exciting stuff.
+
+###Conclusion
+Thank you Sharan Kalwani for presenting at ACM, and thank you ACM for hosting.
 
