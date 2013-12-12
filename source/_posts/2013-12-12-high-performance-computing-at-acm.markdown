@@ -10,10 +10,10 @@ categories: [ Education, High Performance Computing ]
 >&nbsp;<br/>
 >~ Seymour Cray
 
-The Chicago chapter of the Association for Computing Machinery (ACM) hosted a lecture titled _Supercomputing and You_ yesterday evening. The talk was delivered by [Sharan Kalwani](http://www.linkedin.com/in/sharankalwani) of Fermilab. Kalwani's background blends mechanical engineering and computer science with decades of high performance computing experience.
+The Chicago chapter of the Association for Computing Machinery (ACM) hosted a lecture titled _Supercomputing and You_ yesterday evening. The talk was delivered by [Sharan Kalwani](http://www.linkedin.com/in/sharankalwani) of [Fermilab](http://www.fnal.gov/). Kalwani's background blends mechanical engineering and computer science with decades of high performance computing experience.
 
 ###10x => High Performance Computing
-Kawani began his talk by drawing a distinction between _supercomputing_ and _high performance computing (HPC)_. Supercomputing is the buzzword that everybody knows, but the word implies that the designers are focused only on improving the performance of the CPU. Such narrow focus leads to new problems. If engineers focus on improving CPU performance alone, applications that are CPU-bound will quickly encounter I/O bottlenecks. High performance computing takes the entire system into account: CPU, I/O, cache, memory... anything that can influence performance. 
+Kalwani began his talk by drawing a distinction between _supercomputing_ and _high performance computing (HPC)_. Supercomputing is the buzzword that everybody knows, but the word implies that the designers are focused only on improving the performance of the CPU. Such narrow focus leads to new problems. If engineers focus on improving CPU performance alone, applications that are CPU-bound will quickly encounter I/O bottlenecks. High performance computing takes the entire system into account: CPU, I/O, cache, memory... anything that can influence performance. 
 <!--more-->
 Supercomputers perform at least ten times faster than the current state-of-the art. The definition is therefore a moving target. The processor in today's smartphone would have been considered a high performance computer a decade ago.
 
@@ -29,7 +29,7 @@ Why do we need to spend time and money on high performance computers?  How does 
 
 HPC enables us to solve problems that elude typical computers. For example:
 
-* *Auto safety testing*. Kawani spent several years using HPC to run simulated crash tests for General Motors. A physical crash test, one in which the car is destroyed, costs $500k per car. The same test can be run in a simulator for $5k. Engineers still need to test a physical car at the end of the testing cycle, but the number of cars destroyed is drastically reduced. The business advantage of HPC-simulated tests is clear.
+* *Auto safety testing*. Kalwani spent several years using HPC to run simulated crash tests for General Motors. A physical crash test, one in which the car is destroyed, costs $500k per car. The same test can be run in a simulator for $5k. Engineers still need to test a physical car at the end of the testing cycle, but the number of cars destroyed is drastically reduced. The business advantage of HPC-simulated tests is clear.
 * *Nuclear testing*. It is very expensive (measured both in dollars and in human lives) to test a nuclear power plant. Fortunately, scientists know enough about nuclear behavior to create realistic simulations. Testing via simulation helps to manage costs and reduce accidents.
 * *Weather forecasting*. The first supercomputers needed three days to predict the weather for _tomorrow_. What good is a 2-day-old weather forecast? A good forecast can save lives by telling people to evacute before a life-threatening natural disaster. Today's supercomputers can produce accurate weather forecasts while the reader still has time to take action.
 * *Bioinformatics*. When scientists can reliably simulate drug behavior before live human testing, medical treatments can be improved and lives can be saved.
@@ -46,7 +46,7 @@ Many of the advances that we enjoy on today's laptops were invented by HPC archi
 There are those who believe that the Top 500 list is missing a few names. Some governments or companies might not want to publicize their HPC skills. 
 
 ###Other Top Computing Lists
-High performance computers gulp power. Rule of thumb: one megawatt of electricity used over the course of one year costs $1 million. The owners of the world's fastest supercomputer spend $17 million dollars per year on electricity _for one computer_.
+High performance computers gulp power. Rule of thumb: One megawatt of electricity used over the course of one year costs $1 million. The owners of the world's fastest supercomputer spend $17 million dollars per year on electricity _for one computer_.
 
 Another group of supercomputing professionals maintains [The Green
 500](http://green500.org) list to recognize the most energy efficient
@@ -74,8 +74,8 @@ Kalwani ended the talk by looking into his crystal ball and telling us about the
 * Power consumption issues will dominate discussions. High performance computers are terribly inefficient. Either we need to find a free, unlimited supply of energy (unlikely) or we must design supercomputers that gulp less power.
 * GPGPUs. General purpose graphics processing units are already used for non-graphics applications, like Bitcoin mining. As more applications are discovered for the devices, faster GPGPUs will follow.
 * ARM. Advanced Risc Machine processors use less power and their performance continues to increase. Could ARM hold the key to power reduction in high performance computing?
-* Quantum computing. Kalwani ran out of time as he was explaining this one, but he shared enough to make me want to study it further. He offered an analogy: Quantum computing is to digital computing as digital computing is to the abacus. [D-Wave](http://www.dwavesys.com/) is one company exploring this area.
-* Rex Parallella. Kalwani shared this fresh from last month's [Supercomputing Conference](http://sc13.supercomputing.org/). [Rex Computing](http://www.rexcomputing.com/) is using [Parallella](http://www.parallella.org/) boards to build low-energy high performance computing clusters.
+* Rex Parallella. Fresh from last month's [Supercomputing Conference](http://sc13.supercomputing.org/): [Rex Computing](http://www.rexcomputing.com/) is using [Parallella](http://www.parallella.org/) boards to build low-energy high performance computing clusters.
+* Quantum computing. Kalwani ran out of time as he was covering this item, but he shared enough to spark my interest. He explained quantum computing by using an analogy: Quantum computing is to digital computing as digital computing is to the abacus. The degree of advancement is that dramatic. [D-Wave](http://www.dwavesys.com/) is one company exploring this area.
 
 ###Conclusion
 Thank you Sharan Kalwani for presenting at ACM, and thank you ACM for hosting.
