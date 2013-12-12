@@ -77,8 +77,6 @@ Kalwani ended the talk by looking into his crystal ball and telling us about the
 * Quantum computing. Kalwani ran out of time as he was explaining this one, but he shared enough to make me want to study it further. He offered an analogy: Quantum computing is to digital computing as digital computing is to the abacus. [D-Wave](http://www.dwavesys.com/) is one company exploring this area.
 * Rex Parallella. Kalwani shared this fresh from last month's [Supercomputing Conference](http://sc13.supercomputing.org/). [Rex Computing](http://www.rexcomputing.com/) is using [Parallella](http://www.parallella.org/) boards to build low-energy high performance computing clusters.
 
-Exciting stuff.
-
 ###Conclusion
 Thank you Sharan Kalwani for presenting at ACM, and thank you ACM for hosting.
 
