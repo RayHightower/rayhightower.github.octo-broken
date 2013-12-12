@@ -43,7 +43,7 @@ Many of the advances that we enjoy on today's laptops were invented by HPC archi
 ###Who Has the Fastest Supercomputer?
 [Top500.org](http://top500.org/) lists the fastest supercomputers on the planet, ordered by number of floating point operations per second (FLOPS). The race to be the fastest is highly competitive, so check the list for the latest champion.
 
-There are those who believe that the Top 500 list is missing a few names. Some governments or companies might not want to publicize their HPC skills strengths. 
+There are those who believe that the Top 500 list is missing a few names. Some governments or companies might not want to publicize their HPC skills. 
 
 ###Other Top Computing Lists
 High performance computers gulp power. Rule of thumb: 1 megawatt of electricity used over the course of one year costs $1 million. The owners of the world's fastest supercomputer spend $17 million dollars per year on electricity _for one computer_.
