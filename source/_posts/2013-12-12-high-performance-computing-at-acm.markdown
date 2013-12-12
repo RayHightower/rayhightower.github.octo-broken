@@ -3,15 +3,16 @@ layout: post
 title: "High Performance Computing at ACM"
 date: 2013-12-12 22:22
 comments: true
-categories: 
+categories: [ Education ]
 ---
-{% imgcap right /images/cray-xk7.png Cray XK7 %}
+{% imgcap right /images/cray-sonexion.png Cray Sonexion Storage Appliance %}
 >Anyone can build a fast CPU. The trick is to build a fast system. 
+>&nbsp;<br/>
 >~ Seymour Cray
 
-The Chicago chapter of ACM hosted a lecture on supercomputing yesterday evening. The talk was delivered by Sharan ... Of Fermilab. 
+The Chicago chapter of the Association for Computing Machinery (ACM) hosted a lecture titled _Supercomputing and You_ yesterday evening. The talk was delivered by [Sharan Kalwani](http://www.linkedin.com/in/sharankalwani) of Fermilab. Kalwani's background blends mechanical engineering and computer science with hands-on experience in automotive engineering, supercomputing, hardware driver design, and (buzzword alert) big data. 
 
-###What is Supercomputing?
+###What is High Performance Computing?
 10x the state of the art
 
 ###Cray in 1972
