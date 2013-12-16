@@ -81,4 +81,4 @@ Kalwani ended the talk by looking into his crystal ball and telling us about the
 Thank you Sharan Kalwani for presenting, and thank you [Chicago ACM](http://www.chicagoacm.org/) for hosting.
 
 ###Acknowledgements
-The photo at the top of the article shows a Cray-1, the first supercomputer, on display at the [Swiss Federal Institute of Technology (EPFL)](http://www.epfl.ch/) in Lausanne.
+The photo at the top of the article shows a Cray-1, the first supercomputer, on display at the [Swiss Federal Institute of Technology (EPFL)](http://www.epfl.ch/) in Lausanne. Some of the original panels have been replaced with plexiglass.
