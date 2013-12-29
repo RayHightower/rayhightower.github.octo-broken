@@ -21,7 +21,9 @@ Taking the ad apart required one simple tool, a pair of scissors. Here's what's 
  
 This assembly is more expensive than a typical full-page ad, but probably not by much. Mildly amusing to play with, and fun to take apart. Yes, the advertisers succeded in grabbing my attention.
 
-###Worth the Expense?
+###Advertising ROI?
+A famous ad expert once remarked, "Half the money I spend on advertising is wasted. The trouble is I don't know which half." Is the Moto X ad useful or wasted?
+
 An observation: I played with this paper gadget for a good ten minutes and I took the thing apart _before_ I considered reading the ad copy. Maybe the color change is too distracting for the ad to be effective? Maybe the temptation to disassemble the ad is too distracting, too.
 
 On the other hand, I'm still talking about the ad. And blogging about it. Ultimate test: How will an ad like this influence buying behavior?
