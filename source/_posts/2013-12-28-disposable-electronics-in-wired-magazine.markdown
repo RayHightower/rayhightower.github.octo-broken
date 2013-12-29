@@ -17,14 +17,14 @@ Taking the ad apart required one simple tool, a pair of scissors. Here's what's 
 * Eleven switches in one switch assembly. The switches are connected to the circuit board via seven leads.
 * Three LEDs, pointed to shine light on a 3.5" x 6.5" reflecting panel.
 
-{% imgcap right /images/moto-x-wired-ad.jpg Internal workings of the Moto X ad. %}
+{% imgcap /images/moto-x-wired-ad.jpg Internal workings of Wired Magazine's Moto X ad. %}
  
-This assembly is more expensive than a typical full-page ad, but probably not by much. And yet the lights are fun to play with, especially in the middle of a tech-focused magazine like _Wired_. This add succesfully grabbed my attention.
+This assembly is more expensive than a typical full-page ad, but probably not by much. Mildly amusing to play with, and fun to take apart. Yes, the advertisers succeded in grabbing my attention.
 
-###Advantages
-The ad is different. It captured my attention enough to make me want to blog about it!
+###Worth the Expense?
+An observation: I played with this paper gadget for a good ten minutes and I took the thing apart _before_ I considered reading the ad copy. Maybe the color change is too distracting for the ad to be effective? Maybe the temptation to disassemble the ad is too distracting, too.
 
-###Disadvantage
-Something I hate to admit: I played with this paper gadget for a good ten minutes and I took the thing apart _before_ I considered reading the ad copy. Maybe the color change is too distracting for the ad to be effective? 
+On the other hand, I'm still talking about the ad. And blogging about it. Ultimate test: How will an ad like this influence buying behavior?
 
-Or maybe the 
+Beyond advertising, what else can we do with disposable electronics?
+
