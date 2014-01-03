@@ -37,6 +37,15 @@ In addition to the BeagleBone Black, the following items should be gathered befo
 * Ethernet cable with RJ-45 ends.
 * A fast internet connection. How fast? That all depends on how long you want to wait for the files to download and install.
 
+###The xz Extraction Utility
+The `xz` utility is available via [Homebrew](http://brew.sh/). Homebrew rocks for package management. Once you have Homebrew installed,
+
+```bash
+$ brew install xz
+```
+
+will install `xz` for you.
+
 ###Test the BeagleBone Black First
 Before you do anything, power up your BeagleBone Black and make sure it runs with the built-in Ångström Linux installation. One great thing about the Bone is that it will [boot to the Ångström GUI](/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/) straight out of the box, with no prior configuration.
 
