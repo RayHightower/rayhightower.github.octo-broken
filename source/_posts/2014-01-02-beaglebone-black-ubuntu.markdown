@@ -14,37 +14,28 @@ My opinion: The factory standard is fine, but it's always good to have options. 
 * Ubuntu documentation is plentiful. Books, blogs, and videos are readily available. 
 * The Ubuntu community is huge. When a dev runs into an Ubuntu-related snag, it's likely that another dev has encountered a similar problem, and they can collaborate on a solution.
 * Ubuntu is the distro that I'm most familiar with. [WisdomGroup](http://wisdomgroup.com) uses Ubuntu for multiple projects. With a common OS, knowledge gained in one environment is immediately useful in another.
-* Prepping for [Parallella](/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/), the 16-core single-board computer that costs about a hundred bucks. The Parallella is currently in short supply. When it becomes available, it will run Ubuntu. Experience with other single-board computers, especially those running Ubuntu, will prove useful.
+* Prepping for [Parallella](/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/), the 64-core single-board computer that will cost about two hundred bucks. The Parallella is currently in short supply. When it becomes available, it will run Ubuntu. Experience with other single-board computers, especially those running Ubuntu, will prove useful.
 
 This article will show how to install Ubuntu on the BeagleBone Black.  _Gotchas_ will be pointed out along the way. Where possible, I will explain the reasons behind my decisions so that you can make different choices if you like.
 <!--more-->
-###First Gotcha: Ubuntu 13
+###First Gotcha: Ubuntu 13 on the Bone
 As of this writing, Ubuntu 12 runs well on the BeagleBone Black, but Ubuntu 13 does not. My Ubuntu 13 installation appeared to be successful, but the Ubuntu 13 GUI hung up immediately after login. The Ubuntu 13 command line interface worked fine. 
 
-Google reveals that others ran into similar roadblocks with version 13. Every successful Bone/13 installation was used via SSH, not interactively via keyboard and GUI. Hopefully this will change with future updates. Or, since we're dealing in the open source world, maybe I can pitch in and help.
+A quick search on Google reveals that others encountered similar roadblocks with version 13. One successful Bone/13 installation was used via SSH, not interactively via keyboard and GUI. Hopefully this will change with future updates. Or, since we're dealing in the open source world, maybe I can pitch in and help.
 
-Everything in this article will focus on Ubuntu 12.
+Due to the issues encountered with version 13, everything in this article will focus on Ubuntu 12.
 
 ###Materials Needed
 In addition to the BeagleBone Black, the following items should be gathered before installation:
 
 * Micro SD card of at least 8GB. It's possible to perform the installation with a 4GB card, but that won't leave much room for Ubuntu applications.
-* SD card reader/writer. The Apple MacBook Pro after 2009 has an SD reader/writer built in.
-* SD to Micro-SD card adapter. The Bone likes micro SD, and the MacBook Pro likes the full-sized SD. Some micro SD packages come with the adapter. 
+* SD card reader/writer. Recent versions of Apple's MacBook Pro come with an SD reader/writer built in.
+* SD to Micro-SD card adapter. The Bone is designed for micro SD, and the MacBook Pro is designed for full-sized SD. Some micro SD packages come with the adapter. 
 * A monitor that accepts HDMI input.
 * Micro HDMI to HDMI adapter. The Bone uses micro HDMI for video output, but your monitor probably uses full-sized HDMI.
 * External 5V power adapter for the Bone. Personally, I trust the standard 5v power input more than I trust the power provided via USB. One never knows if USB can provide sufficient (and stable) amperage for a circuit board. Power fluctuations can lead to strange behavior, including video flickering.
 * Ethernet cable with RJ-45 ends.
 * A fast internet connection. How fast? That all depends on how long you want to wait for the files to download and install.
-
-###The xz Extraction Utility
-The `xz` utility is available via [Homebrew](http://brew.sh/). Homebrew rocks for package management. Once you have Homebrew installed,
-
-```bash
-$ brew install xz
-```
-
-will install `xz` for you.
 
 ###Test the BeagleBone Black First
 Before you do anything, power up your BeagleBone Black and make sure it runs with the built-in Ångström Linux installation. One great thing about the Bone is that it will [boot to the Ångström GUI](/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/) straight out of the box, with no prior configuration.
@@ -67,6 +58,15 @@ Here are the steps I followed:
 ```bash
 $ xz ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img.xz
 ```
+
+###The xz Extraction Utility
+The `xz` utility is available via [Homebrew](http://brew.sh/). Homebrew rocks for package management. If you already have Homebrew installed,
+
+```bash
+$ brew install xz
+```
+
+will install `xz` for you.
 
 
 ###Gotcha: Running RVM
