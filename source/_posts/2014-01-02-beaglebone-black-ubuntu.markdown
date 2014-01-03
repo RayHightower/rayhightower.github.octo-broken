@@ -16,8 +16,10 @@ My opinion: The factory standard is fine, but it's always good to have options. 
 * Ubuntu is the distro that I'm most familiar with. [WisdomGroup](http://wisdomgroup.com) uses Ubuntu for multiple projects. With a common operating system, knowledge gained in one environment is immediately useful in another.
 * Prepping for [Parallella](/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/), the 64-core single-board computer that will cost about two hundred bucks. The Parallella is currently in short supply. When it becomes available, it will run Ubuntu. Experience with other single-board computers, especially those running Ubuntu, will prove useful.
 
-This article will show how to install Ubuntu on the BeagleBone Black.  _Gotchas_ will be pointed out along the way. Where possible, I will explain the reasons behind my decisions so that you can make different choices if you like.
+This article will show how to install Ubuntu on the BeagleBone Black. _Gotchas_ will be pointed out along the way. Where possible, I will explain the reasons behind my decisions so that you can make different choices if you like.
 <!--more-->
+For a comparable examination of the Raspberry Pi, take a look at [Ruby on Raspberry Pi](/blog/2012/12/03/ruby-on-raspberry-pi/).
+
 ###Sudo Disclaimer: You Could Destroy Everything
 Procedures described here will ask you to use the `sudo` command. [Sudo endows users with great power](http://xkcd.com/149/). You could destroy all of the data on your computer by using `sudo` incorrectly. Further, since technology changes rapidly, everything you see here could be out of date by the time you read this. Please be careful, and double-check these steps through your own sources.  
 
@@ -131,7 +133,7 @@ $ sudo dd bs=1m if=ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img of=/dev/disk1
 
 ```
 
-Note that it may take up to an hour for the image to be written.
+Note that it may take up to an hour for the image to be written. 
 
 One drawback of using the command line is that there is no gauge to tell you how much progress the utility is making. Fortunately, I stumbled upon a way to measure progress at [eLinux.org](http://elinux.org). While the command line utility is running, and while that window has focus, type `control-T`. A few seconds later, the terminal window will show a brief activity report.
 
@@ -146,7 +148,47 @@ load: 2.03  cmd: dd 75608 uninterruptible 0.00u 0.54s
 We can strike `Control-T` again to receive additional updates. The numbers will tell us if we are making progress. Don't get carried away with `Control-T`. A watched pot never boils :-)
 
 ###Booting with the New SD Card
-The terminal will return to the command prompt after the Ubuntu image has been written to the SD card. 
+The terminal will return to the command prompt after the Ubuntu image has been written to the SD card. Now it's time to boot with the new image.
+
+1. Eject the SD card from the Mac. 
+2. Remove power from the BeagleBone Black, and insert the micro SD card.
+3. Note the location of the "boot" button on the Bone. It's the micro switch closest to the USB port. We will need to hold this switch down while powering up the Bone.
+
+A few notes about item #3. It takes some juggling to hold down a micro switch while plugging in power to the board. I found it easier to plug the power adapter into a powered-off surge suppressor, hold down the microswitch, and then power-on the surge suppressor with my elbow.  Sounds ridiculous, but it worked.
+
+About sixty seconds after boot, the Linux penguin appeared in the upper left corner of the Bone display. And then the login prompt appeared.
+
+Another note about the "boot" switch: It looks like the Bone will boot into the SD's operating system without the micro switch if the switch was used in the previous boot. I havn't rebooted enough times to test this, yet.
+
+###Default Credentials for Ubuntu on BeagleBone Black
+Ubuntu's default BeagleBone Black login credentials are shown here because I always end up hunting for these when I need them. It's much easier to have information at one's fingertips.
+
+```bash
+login: ubuntu
+pw: ubuntu
+```
+
+###Gotcha: Resize the SD Card Partition Before Installing GUI
+Two things to know about GUI installation:
+* GUI installation only takes a single line command, but it takes an hour to download, compile, and install all of the GUI libraries.
+* Before installing the GUI, we will need to re-size one of the partitions on the SD card.
+
+
+
+###Installing the Ubuntu GUI
+After the partition on the SD card has been resized, this single command will intall the GUI. Note that the process takes about an hour:
+
+```bash
+$ sudo apt-get install ubuntu-desktop
+```
+When installation and compilation are complete, Ubuntu will return to the command prompt. Here's how to reboot:
+
+```bash
+$ sudo reboot
+```
+
+Several minutes later, the Ubuntu 12 GUI will appear. Congratulations!
+
 
 ###Gotcha: Running RVM
 RVM didn't want to behave, initially. Then I learned, from the RVM site, that…
@@ -157,7 +199,6 @@ Here's the checkbox mentioned in the quote, highlighted with a red rectangle:
 {% imgcap /images/rvm-ubuntu-run-command_as_login-shell.jpg RVM: Run command as login shell. %}
 
 Details are in the brief article [Integrating RVM with gnome-terminal](http://rvm.io/integration/gnome-terminal).
-
 
 ###Gotcha: Ruby Installation
 Nonconclusive, but I should mention it here: My Ruby installation (with RVM) initially failed because the BBB went into power save mode during installation. On my second Ruby installation attempt, I kept the machine awake by moving the mouse. The same tactic worked with the Rails installation.
