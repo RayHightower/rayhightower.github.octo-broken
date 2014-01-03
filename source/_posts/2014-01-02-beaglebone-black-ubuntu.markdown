@@ -18,6 +18,9 @@ My opinion: The factory standard is fine, but it's always good to have options. 
 
 This article will show how to install Ubuntu on the BeagleBone Black.  _Gotchas_ will be pointed out along the way. Where possible, I will explain the reasons behind my decisions so that you can make different choices if you like.
 <!--more-->
+###Disclaimer: You Could Destroy Everything
+Procedures described here will ask you to use the `sudo` command. [sudo endows users with great power](http://xkcd.com/149/). You could destroy all of the data on your computer by using `sudo` incorrectly. Further, since technology changes rapidly, everything you see here could be out of date by the time you read this. Please be careful, and double-check everything through your own sources.  
+
 ###First Gotcha: Ubuntu 13 on the Bone
 As of this writing, Ubuntu 12 runs well on the BeagleBone Black, but Ubuntu 13 does not. My Ubuntu 13 installation appeared to be successful, but the Ubuntu 13 GUI hung up immediately after login. The Ubuntu 13 command line interface worked fine. 
 
@@ -47,17 +50,19 @@ If the GUI doesn't boot, it may have been damaged in a prior experiement. Embara
 1. Re-build Ångström.
 2. Try something different, like Ubuntu.
 
-Option two worked well.
+Option two worked well!
 
-###Grab the Ubuntu Disk Image
-Here are the steps I followed:
+###Grab and Burn the Ubuntu Disk Image
+Here is how to obtain and install an Ubuntu image on a MicroSD card:
 
-1. Download an Ubuntu 12.04 image from [http://armhf.com](http://s3.armhf.com/debian/precise/bone/ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img.xz).
-2. Follow the instructions at [http://armhf.com]() to extract the
-   image and burn it to the SD card.
+1. Download the Ubuntu 12.04 image from [http://armhf.com](http://s3.armhf.com/debian/precise/bone/ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img.xz).
+2. Extract the image using the `xz` utility.
 ```bash
 $ xz ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img.xz
 ```
+3. The extracted image will end with `.img`. Use the `dd` utility to burn the disk image to your SD caard.
+
+Detailed instructions for all of the above are at [http://armhf.com](http://www.armhf.com/index.php/boards/beaglebone-black/#precise).
 
 ###The xz Extraction Utility
 The `xz` utility is available via [Homebrew](http://brew.sh/). Homebrew rocks for package management. If you already have Homebrew installed,
