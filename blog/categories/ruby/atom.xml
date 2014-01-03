@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ruby | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-01-03T02:37:18-06:00</updated>
+  <updated>2014-01-03T02:42:02-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[BeagleBone Black Running Ubuntu: Part 1]]></title>
-    <link href="http://RayHightower.com/blog/2014/01/02/beaglebone-black-ubuntu/"/>
+    <link href="http://RayHightower.com/blog/2014/01/02/beaglebone-black-ubuntu-part-1/"/>
     <updated>2014-01-02T15:59:00-06:00</updated>
-    <id>http://RayHightower.com/blog/2014/01/02/beaglebone-black-ubuntu</id>
+    <id>http://RayHightower.com/blog/2014/01/02/beaglebone-black-ubuntu-part-1</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper center'><img class='caption' src='/images/beaglebone-black-ubuntu-ruby-rails.jpg' width='' height='' alt='BeagleBone Black running Ubuntu, Ruby, &amp; Rails.' title='BeagleBone Black running Ubuntu, Ruby, &amp; Rails.'><span class='caption-text'>BeagleBone Black running Ubuntu, Ruby, &amp; Rails.</span></span></p>
 
 <p>The above screenshot shows a BeagleBone Black running Ubuntu, Ruby, and Rails. Why Ubuntu? The Bone comes pre-installed with <a href="http://www.angstrom-distribution.org/">Ångström</a>. Why not stick with Ångström?</p>
