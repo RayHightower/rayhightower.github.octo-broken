@@ -21,12 +21,12 @@ This article will show how to install Ubuntu on the BeagleBone Black.  _Gotchas_
 ###First Gotcha: Ubuntu 13
 As of this writing, Ubuntu 12 runs well on the BeagleBone Black, but Ubuntu 13 does not. My Ubuntu 13 installation appeared to be successful, but the Ubuntu 13 GUI hung up immediately after login. The Ubuntu 13 command line interface worked fine. 
 
-Google reveals that others ran into similar roadblocks with version 13. Hopefully this will change with future updates. Or, since we're dealing in the open source world, maybe I can pitch in and help.
+Google reveals that others ran into similar roadblocks with version 13. Every successful Bone/13 installation was used via SSH, not interactively via keyboard and GUI. Hopefully this will change with future updates. Or, since we're dealing in the open source world, maybe I can pitch in and help.
 
 Everything in this article will focus on Ubuntu 12.
 
 ###Materials Needed
-The following items should be gathered before installation:
+In addition to the BeagleBone Black, the following items should be gathered before installation:
 
 * Micro SD card of at least 8GB. It's possible to perform the installation with a 4GB card, but that won't leave much room for Ubuntu applications.
 * SD card reader/writer. The Apple MacBook Pro after 2009 has an SD reader/writer built in.
@@ -47,9 +47,17 @@ If the GUI doesn't boot, it may have been damaged in a prior experiement. Embara
 1. Re-build Ångström.
 2. Try something different, like Ubuntu.
 
-Option two worked well!
+Option two worked well.
 
 ###Grab the Ubuntu Disk Image
+Here are the steps I followed:
+
+1. Download an Ubuntu 12.04 image from [http://armhf.com](http://s3.armhf.com/debian/precise/bone/ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img.xz).
+2. Follow the instructions at [http://armhf.com]() to extract the
+   image and burn it to the SD card.
+```bash
+$ xz ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img.xz
+```
 
 
 ###Gotcha: Running RVM
