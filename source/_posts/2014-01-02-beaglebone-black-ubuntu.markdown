@@ -13,13 +13,13 @@ My opinion: The factory standard is fine, but it's always good to have options. 
 
 * Ubuntu documentation is plentiful. Books, blogs, and videos are readily available. 
 * The Ubuntu community is huge. When a dev runs into an Ubuntu-related snag, it's likely that another dev has encountered a similar problem, and they can collaborate on a solution.
-* Ubuntu is the distro that I'm most familiar with. [WisdomGroup](http://wisdomgroup.com) uses Ubuntu for multiple projects. With a common OS, knowledge gained in one environment is immediately useful in another.
+* Ubuntu is the distro that I'm most familiar with. [WisdomGroup](http://wisdomgroup.com) uses Ubuntu for multiple projects. With a common operating system, knowledge gained in one environment is immediately useful in another.
 * Prepping for [Parallella](/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/), the 64-core single-board computer that will cost about two hundred bucks. The Parallella is currently in short supply. When it becomes available, it will run Ubuntu. Experience with other single-board computers, especially those running Ubuntu, will prove useful.
 
 This article will show how to install Ubuntu on the BeagleBone Black.  _Gotchas_ will be pointed out along the way. Where possible, I will explain the reasons behind my decisions so that you can make different choices if you like.
 <!--more-->
 ###Sudo Disclaimer: You Could Destroy Everything
-Procedures described here will ask you to use the `sudo` command. [sudo endows users with great power](http://xkcd.com/149/). You could destroy all of the data on your computer by using `sudo` incorrectly. Further, since technology changes rapidly, everything you see here could be out of date by the time you read this. Please be careful, and double-check these steps through your own sources.  
+Procedures described here will ask you to use the `sudo` command. [Sudo endows users with great power](http://xkcd.com/149/). You could destroy all of the data on your computer by using `sudo` incorrectly. Further, since technology changes rapidly, everything you see here could be out of date by the time you read this. Please be careful, and double-check these steps through your own sources.  
 
 ###First Gotcha: Ubuntu 13 on the Bone
 As of this writing, Ubuntu 12 runs well on the BeagleBone Black, but Ubuntu 13 does not. My Ubuntu 13 installation appeared to be successful, but the Ubuntu 13 GUI hung up immediately after login. The Ubuntu 13 command line interface worked fine. 
@@ -28,7 +28,7 @@ A quick search on Google reveals that others encountered similar roadblocks with
 
 Due to the issues encountered with version 13, everything in this article will focus on Ubuntu 12.
 
-###Materials Needed
+###Materials Needed for Installing Ubuntu 12
 In addition to the BeagleBone Black, the following items should be gathered before installation:
 
 * Micro SD card of at least 8GB. It's possible to perform the installation with a 4GB card, but that won't leave much room for Ubuntu applications.
@@ -38,10 +38,35 @@ In addition to the BeagleBone Black, the following items should be gathered befo
 * Micro HDMI to HDMI adapter. The Bone uses micro HDMI for video output, but your monitor probably uses full-sized HDMI.
 * External 5V power adapter for the Bone. Personally, I trust the standard 5v power input more than I trust the power provided via USB. One never knows if USB can provide sufficient (and stable) amperage for a circuit board. Power fluctuations can lead to strange behavior, including video flickering.
 * Ethernet cable with RJ-45 ends.
-* A fast internet connection. How fast? That all depends on how long you want to wait for the files to download and install.
+* A fast internet connection.
+
+###Hombrew Required
+Homebrew is the easiest way to install 'nix utilities on Mac OS X. We need Homebrew in order to install some of the utilities needed to burn the SD card. The one-line Homebrew installation command is given on the  [Homebrew site](http://brew.sh/).
+
+Each time we use Homebrew, we run `$ brew doctor` and `$ brew update` to make sure the packages are up-to-date.
+
+```bash
+$ brew doctor
+Warning: Your Homebrew is outdated.
+You haven't updated for at least 24 hours, this is a long time in brewland!
+To update Homebrew, run `brew update`.
+
+$ brew update
+Updated Homebrew from a2e44659 to 4c7bc9ec.
+
+$ brew doctor
+Your system is ready to brew.
+```
+
+###The xz Extraction Utility
+Disk image files are downloaded in a compressed format. We need the `xz` utility in order to extract the files into something usable. `xz` is available via Homebrew. If you already have Homebrew installed, this command will install `xz` for you.
+
+```bash
+$ brew install xz
+```
 
 ###Test the BeagleBone Black First
-Before you do anything, power up your BeagleBone Black and make sure it runs with the built-in Ångström Linux installation. One great thing about the Bone is that it will [boot to the Ångström GUI](/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/) straight out of the box, with no prior configuration.
+Power up your BeagleBone Black and make sure it runs with the built-in Ångström Linux installation. One great thing about the Bone is that it will [boot to the Ångström GUI](/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/) straight out of the box, with no prior configuration.
 
 If the GUI boots, then you're in good shape.
 
@@ -60,28 +85,16 @@ Here is how to obtain and install an Ubuntu image on a MicroSD card:
 ```bash
 $ xz ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img.xz
 ```
-* The extracted image will end with `.img`. Use the `dd` utility to burn the disk image to your SD card.
-```bash
-$ xz ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img.xz
-```
+* The extracted image will end with `.img`. We will use the `dd` utility to burn the disk image to the SD card. But first, we need to determine the designation of the SD card.
 
 Detailed instructions for all of the above are at [http://armhf.com](http://www.armhf.com/index.php/boards/beaglebone-black/#precise).
-
-###The xz Extraction Utility
-The `xz` utility is available via [Homebrew](http://brew.sh/). Homebrew rocks for package management. If you already have Homebrew installed,
-
-```bash
-$ brew install xz
-```
-will install `xz` for you.
-
-
 
 ###Checking Progress at the Command Line
 One drawback of using the command line is that there is no gauge to tell you how much progress the utility is making. Fortunately, I stumbled upon a way to measure progress at [eLinux.org](http://elinux.org). While the command line utility is running, and while that window has focus, type `control-T`. A few seconds later, the terminal window will show a brief activity report.
 
 ```bash
 Password:
+```
 
 Here's the report from the first time I struck `Control-T` ...
 
