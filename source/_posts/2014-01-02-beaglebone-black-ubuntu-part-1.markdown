@@ -37,12 +37,13 @@ In addition to the BeagleBone Black, the following items should be gathered befo
 * SD card reader/writer. Recent versions of Apple's MacBook Pro come with an SD reader/writer built in.
 * SD to Micro-SD card adapter. The Bone is designed for micro SD, and the MacBook Pro is designed for full-sized SD. Some micro SD packages come with the adapter. 
 * A monitor that accepts HDMI input.
+* USB keyboard and mouse.
 * Micro HDMI to HDMI adapter. The Bone uses micro HDMI for video output, but your monitor probably uses full-sized HDMI.
 * External 5V power adapter for the Bone. Personally, I trust the standard 5v power input more than I trust the power provided via USB. One never knows if USB can provide sufficient (and stable) amperage for a circuit board. Power fluctuations can lead to strange behavior, including video flickering.
 * Ethernet cable with RJ-45 ends.
 * A fast internet connection.
 
-###Hombrew Required
+###Homebrew Required
 Homebrew is the easiest way to install 'nix utilities on Mac OS X. We need Homebrew in order to install some of the utilities needed to burn the SD card. The one-line Homebrew installation command is given on the  [Homebrew site](http://brew.sh/).
 
 Each time we use Homebrew, we run `$ brew doctor` and `$ brew update` to make sure the packages are up-to-date.
@@ -82,7 +83,7 @@ Option two worked well!
 ###Prep the SD Card
 Apple's Disk Utility is a convenient tool for wiping the SD card.  Standard warnings about any disk utility apply. Double-check everything, and make sure you're wiping the right volume, or you could lose all of your data.
 
-Next, download the Ubuntu 12.04 image from [http://armhf.com](http://s3.armhf.com/debian/precise/bone/ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img.xz).
+Next, download the Ubuntu 12.04 image from [http://armhf.com](http://www.armhf.com/index.php/boards/beaglebone-black/#precise).
 
 Extract the image using the `xz` utility.
 ```bash
@@ -90,8 +91,6 @@ $ xz ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img.xz
 ```
 
 The extracted image will have a `.img` file extension. We will use the `dd` utility to burn the disk image to the SD card. But first, we need to determine the designation of the SD card.
-
-Additional details for all of the above are at [http://armhf.com](http://www.armhf.com/index.php/boards/beaglebone-black/#precise).
 
 ###Find the SD Card Designation
 In order to burn the SD card, we need to make sure we target it correctly. Here's how to figure out which device to target.
@@ -137,7 +136,7 @@ Note that it may take up to an hour for the image to be written.
 
 One drawback of using the command line is that there is no gauge to tell you how much progress the utility is making. Fortunately, I stumbled upon a way to measure progress at [eLinux.org](http://elinux.org). While the command line utility is running, and while that window has focus, type `control-T`. A few seconds later, the terminal window will show a brief activity report.
 
-Here's a report from the first time I struck `Control-T` ...
+Here's a report from the first time I struck `control-T` ...
 
 ```bash
 load: 2.03  cmd: dd 75608 uninterruptible 0.00u 0.54s
@@ -145,7 +144,7 @@ load: 2.03  cmd: dd 75608 uninterruptible 0.00u 0.54s
 39+0 records out
 ```
 
-We can strike `Control-T` again to receive additional updates. The numbers will tell us if we are making progress. Don't get carried away with `Control-T`. A watched pot never boils :-)
+We can strike `control-T` again to receive additional updates. The numbers will tell us if we are making progress. Don't get carried away with `control-T`. A watched pot never boils :-)
 
 ###Booting with the New SD Card
 The terminal will return to the command prompt after the Ubuntu image has been written to the SD card. Now it's time to boot with the new image.
@@ -158,7 +157,7 @@ A few notes about item #3. It takes some juggling to hold down a micro switch wh
 
 About sixty seconds after boot, the Linux penguin appeared in the upper left corner of the Bone display. And then the login prompt appeared.
 
-Another note about the "boot" switch: It looks like the Bone will boot into the SD's operating system without the micro switch if the switch was used in the previous boot. I havn't rebooted enough times to test this, yet.
+Another note about the "boot" switch: It looks like the Bone will boot into the SD's operating system (instead of the eMMC flash OS where Angstrom resides) without the micro switch if the switch was used in the previous boot. I haven't rebooted enough times to test this thoroughly.
 
 ###Default Credentials for Ubuntu on BeagleBone Black
 Ubuntu's default BeagleBone Black login credentials are shown here because I always end up hunting for these when I need them. It's much easier to have information at one's fingertips.
@@ -171,10 +170,10 @@ pw: ubuntu
 ###End of Part One
 This marks the end of part one of this post about BeagleBone Black and Ubuntu.
 
-Part two will cover...
+Part two will cover Ruby on BeagleBone Black, including...
 
 * Getting the GUI running, including a disk resizing _gotcha_.
-* Installing Ruby, including an RVM _gotcha_.
+* Installing Ruby, including a Ruby Version Manager (RVM) _gotcha_.
 * Installing Rails, and how to handle a JavaScript runtime _gotcha_.
 
 Stay tuned!
