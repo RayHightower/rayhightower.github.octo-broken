@@ -59,7 +59,7 @@ Your system is ready to brew.
 ```
 
 ###The xz Extraction Utility
-Disk image files are downloaded in a compressed format. We need the `xz` utility in order to extract the files into something usable. `xz` is available via Homebrew. If you already have Homebrew installed, this command will install `xz` for you.
+Disk image files are downloaded in a compressed format. We need the `xz` utility in order to extract the files into something usable. If you already have Homebrew installed, this command will install `xz` for you.
 
 ```bash
 $ brew install xz
@@ -77,17 +77,62 @@ If the GUI doesn't boot, it may have been damaged in a prior experiement. Embara
 
 Option two worked well!
 
-###Grab and Burn the Ubuntu Disk Image
-Here is how to obtain and install an Ubuntu image on a MicroSD card:
+###Prep the SD Card
+Apple's Disk Utility is a convenient tool for wiping the SD card.  Standard warnings about any disk utility apply. Double-check everything, and make sure you're wiping the right volume, or you could lose all of your data.
 
-* Download the Ubuntu 12.04 image from [http://armhf.com](http://s3.armhf.com/debian/precise/bone/ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img.xz).
-* Extract the image using the `xz` utility.
+Next, download the Ubuntu 12.04 image from [http://armhf.com](http://s3.armhf.com/debian/precise/bone/ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img.xz).
+
+Extract the image using the `xz` utility.
 ```bash
 $ xz ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img.xz
 ```
-* The extracted image will end with `.img`. We will use the `dd` utility to burn the disk image to the SD card. But first, we need to determine the designation of the SD card.
 
-Detailed instructions for all of the above are at [http://armhf.com](http://www.armhf.com/index.php/boards/beaglebone-black/#precise).
+The extracted image will end with `.img`. We will use the `dd` utility to burn the disk image to the SD card. But first, we need to determine the designation of the SD card.
+
+Additional details for all of the above are at [http://armhf.com](http://www.armhf.com/index.php/boards/beaglebone-black/#precise).
+
+###Finding the SD Card Designation
+In order to burn the SD card, we need to make sure we target it correctly. Here's how to figure out which mount point to target.
+
+`$ diskutil list` will show all of the partitions mounted on the system.
+
+```bash
+$ diskutil list
+/dev/disk0
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *500.3 GB   disk0
+   1:                        EFI                         209.7 MB   disk0s1
+   2:                  Apple_HFS Macintosh HD            499.4 GB   disk0s2
+   3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
+/dev/disk1
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     FDisk_partition_scheme                        *8.0 GB     disk1
+```
+I happen to know that my SD Card is 8.0 GB in capacity, and my system also has a 500 GB hard drive. The goal is to burn the SD card while leaving the hard drive intact. From the `$ diskutil list` report, I can see that the SD card's designation _in my system_ is `/dev/disk1`.
+
+Note the italicized words _in my system_. Your system is probably different, especially if you have a DVD drive or a second hard drive. I have neither of those. The SD card's designation will be different in each system where it is mounted depending on the number and location of the drives that are already there.
+
+Now that I know the SD card's designation, I can unmount it. We unmount the drive (but leave the card inserted in the reader) so that it can be written with the Ubuntu disk image.
+
+```bash
+$ diskutil unmountDisk /dev/disk1
+Unmount of all volumes on disk1 was successful
+```
+
+Looks like the SD card was unmounted successfully. Let's take a look.
+
+```bash
+$ diskutil list
+/dev/disk0
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *500.3 GB   disk0
+   1:                        EFI                         209.7 MB   disk0s1
+   2:                  Apple_HFS Macintosh HD            499.4 GB   disk0s2
+   3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
+/dev/disk1
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     FDisk_partition_scheme                        *8.0 GB     disk1
+```
 
 ###Checking Progress at the Command Line
 One drawback of using the command line is that there is no gauge to tell you how much progress the utility is making. Fortunately, I stumbled upon a way to measure progress at [eLinux.org](http://elinux.org). While the command line utility is running, and while that window has focus, type `control-T`. A few seconds later, the terminal window will show a brief activity report.
