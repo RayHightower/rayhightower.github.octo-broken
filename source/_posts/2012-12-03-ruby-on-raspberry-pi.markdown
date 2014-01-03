@@ -153,3 +153,5 @@ Raspberry Pi will work with a wide range of monitors, from HDMI to ancient analo
 Raspberry Pi will never replace my primary machine because it's too slow. But it is certainly fast enough for learning. It meets the goals set forth by the engineering team. 
 
 I am excited by the learning opportunities offered by Raspberry Pi. To the Raspberry Pi Foundation: Thank you for an impressive device. I wish you much success. 
+
+_Update: You might also be interested in [BeagleBone Black Running Ubuntu](/blog/2014/01/02/beaglebone-black-ubuntu-part-1/)._
