@@ -123,17 +123,19 @@ Looks like the SD card was unmounted successfully. Now we can write the
 Ubuntu image with the `dd` utility.
 
 ###Writing the Ubuntu Image
-
-
-
-###Checking Progress at the Command Line
-One drawback of using the command line is that there is no gauge to tell you how much progress the utility is making. Fortunately, I stumbled upon a way to measure progress at [eLinux.org](http://elinux.org). While the command line utility is running, and while that window has focus, type `control-T`. A few seconds later, the terminal window will show a brief activity report.
+The following command will write the decompressed Ubuntu image to the SD
+card.
 
 ```bash
-Password:
+$ sudo dd bs=1m if=ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img of=/dev/disk1
+
 ```
 
-Here's the report from the first time I struck `Control-T` ...
+Note that it may take up to an hour for the image to be written.
+
+One drawback of using the command line is that there is no gauge to tell you how much progress the utility is making. Fortunately, I stumbled upon a way to measure progress at [eLinux.org](http://elinux.org). While the command line utility is running, and while that window has focus, type `control-T`. A few seconds later, the terminal window will show a brief activity report.
+
+Here's a report from the first time I struck `Control-T` ...
 
 ```bash
 load: 2.03  cmd: dd 75608 uninterruptible 0.00u 0.54s
@@ -141,17 +143,10 @@ load: 2.03  cmd: dd 75608 uninterruptible 0.00u 0.54s
 39+0 records out
 ```
 
-Strike `Control-T` again...
+We can strike `Control-T` again to receive additional updates. The numbers will tell us if we are making progress. Don't get carried away with `Control-T`. A watched pot never boils :-)
 
-```bash
-40894464 bytes transferred in 549.916772 secs (74365 bytes/sec)
-load: 1.55  cmd: dd 75608 uninterruptible 0.00u 0.71s
-52+0 records in
-51+0 records out
-53477376 bytes transferred in 722.963135 secs (73970 bytes/sec)
-```
-
-
+###Booting with the New SD Card
+The terminal will return to the command prompt after the Ubuntu image has been written to the SD card. 
 
 ###Gotcha: Running RVM
 RVM didn't want to behave, initially. Then I learned, from the RVM site, that…
