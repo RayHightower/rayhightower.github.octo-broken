@@ -54,7 +54,7 @@ Option two worked well!
 RVM didn't want to behave, initially. Then I learned, from the RVM site, that…
 > For RVM to work properly, you have to set the 'Run command as login shell' checkbox on the Title and Command tab inside of gnome-terminal's Settings page.
 
-Here's the checkbox mentioned in the quote:
+Here's the checkbox mentioned in the quote, highlighted with a red rectangle:
 
 {% imgcap /images/rvm-ubuntu-run-command_as_login-shell.jpg RVM: Run command as login shell. %}
 
@@ -62,8 +62,20 @@ Details are in the brief article [Integrating RVM with gnome-terminal](http://rv
 
 
 ###Gotcha: Ruby Installation
-* Nonconclusive, but I should mention it here: My Ruby installation (with RVM) initially failed because the BBB went into power save mode during installation. On my second Ruby installation attempt, I kept the machine awake by moving the mouse. The same tactic worked with the Rails installation.
-* Rails needs a JavaScript runtime in order to function. You can install NodeJS. Or you can install `therubyracer` gem. Either appears to work.
+Nonconclusive, but I should mention it here: My Ruby installation (with RVM) initially failed because the BBB went into power save mode during installation. On my second Ruby installation attempt, I kept the machine awake by moving the mouse. The same tactic worked with the Rails installation.
+
+###Gotcha: Rails Installation
+Rails needs a JavaScript runtime in order to function. There are two ways to meet this requirement: 
+
+* Install NodeJS, or 
+* Install `therubyracer` gem. 
+
+Installing `therubyracer` gem did not work for me. But NodeJS installed quickly, like so:
+
+```bash
+$ sudo apt-get install nodejs
+```
+
 
 ###JavaScript Runtime Required for Rails 4.0
 
