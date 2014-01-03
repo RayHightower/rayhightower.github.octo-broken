@@ -18,8 +18,8 @@ My opinion: The factory standard is fine, but it's always good to have options. 
 
 This article will show how to install Ubuntu on the BeagleBone Black.  _Gotchas_ will be pointed out along the way. Where possible, I will explain the reasons behind my decisions so that you can make different choices if you like.
 <!--more-->
-###Disclaimer: You Could Destroy Everything
-Procedures described here will ask you to use the `sudo` command. [sudo endows users with great power](http://xkcd.com/149/). You could destroy all of the data on your computer by using `sudo` incorrectly. Further, since technology changes rapidly, everything you see here could be out of date by the time you read this. Please be careful, and double-check everything through your own sources.  
+###Sudo Disclaimer: You Could Destroy Everything
+Procedures described here will ask you to use the `sudo` command. [sudo endows users with great power](http://xkcd.com/149/). You could destroy all of the data on your computer by using `sudo` incorrectly. Further, since technology changes rapidly, everything you see here could be out of date by the time you read this. Please be careful, and double-check these steps through your own sources.  
 
 ###First Gotcha: Ubuntu 13 on the Bone
 As of this writing, Ubuntu 12 runs well on the BeagleBone Black, but Ubuntu 13 does not. My Ubuntu 13 installation appeared to be successful, but the Ubuntu 13 GUI hung up immediately after login. The Ubuntu 13 command line interface worked fine. 
@@ -55,12 +55,15 @@ Option two worked well!
 ###Grab and Burn the Ubuntu Disk Image
 Here is how to obtain and install an Ubuntu image on a MicroSD card:
 
-1. Download the Ubuntu 12.04 image from [http://armhf.com](http://s3.armhf.com/debian/precise/bone/ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img.xz).
-2. Extract the image using the `xz` utility.
+* Download the Ubuntu 12.04 image from [http://armhf.com](http://s3.armhf.com/debian/precise/bone/ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img.xz).
+* Extract the image using the `xz` utility.
 ```bash
 $ xz ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img.xz
 ```
-3. The extracted image will end with `.img`. Use the `dd` utility to burn the disk image to your SD caard.
+* The extracted image will end with `.img`. Use the `dd` utility to burn the disk image to your SD card.
+```bash
+$ xz ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img.xz
+```
 
 Detailed instructions for all of the above are at [http://armhf.com](http://www.armhf.com/index.php/boards/beaglebone-black/#precise).
 
@@ -70,8 +73,34 @@ The `xz` utility is available via [Homebrew](http://brew.sh/). Homebrew rocks fo
 ```bash
 $ brew install xz
 ```
-
 will install `xz` for you.
+
+
+
+###Checking Progress at the Command Line
+One drawback of using the command line is that there is no gauge to tell you how much progress the utility is making. Fortunately, I stumbled upon a way to measure progress at [eLinux.org](http://elinux.org). While the command line utility is running, and while that window has focus, type `control-T`. A few seconds later, the terminal window will show a brief activity report.
+
+```bash
+Password:
+
+Here's the report from the first time I struck `Control-T` ...
+
+```bash
+load: 2.03  cmd: dd 75608 uninterruptible 0.00u 0.54s
+40+0 records in
+39+0 records out
+```
+
+Strike `Control-T` again...
+
+```bash
+40894464 bytes transferred in 549.916772 secs (74365 bytes/sec)
+load: 1.55  cmd: dd 75608 uninterruptible 0.00u 0.71s
+52+0 records in
+51+0 records out
+53477376 bytes transferred in 722.963135 secs (73970 bytes/sec)
+```
+
 
 
 ###Gotcha: Running RVM
