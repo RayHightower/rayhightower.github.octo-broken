@@ -87,12 +87,12 @@ Extract the image using the `xz` utility.
 $ xz ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img.xz
 ```
 
-The extracted image will end with `.img`. We will use the `dd` utility to burn the disk image to the SD card. But first, we need to determine the designation of the SD card.
+The extracted image will have a `.img` file extension. We will use the `dd` utility to burn the disk image to the SD card. But first, we need to determine the designation of the SD card.
 
 Additional details for all of the above are at [http://armhf.com](http://www.armhf.com/index.php/boards/beaglebone-black/#precise).
 
-###Finding the SD Card Designation
-In order to burn the SD card, we need to make sure we target it correctly. Here's how to figure out which mount point to target.
+###Find the SD Card Designation
+In order to burn the SD card, we need to make sure we target it correctly. Here's how to figure out which device to target.
 
 `$ diskutil list` will show all of the partitions mounted on the system.
 
@@ -108,31 +108,23 @@ $ diskutil list
    #:                       TYPE NAME                    SIZE       IDENTIFIER
    0:     FDisk_partition_scheme                        *8.0 GB     disk1
 ```
-I happen to know that my SD Card is 8.0 GB in capacity, and my system also has a 500 GB SSD. The goal is to burn the SD card while leaving the SSD (home of the Mac OS X operating system) intact. From the `$ diskutil list` report, I can see that the SD card's designation _in my system_ is `/dev/disk1`.
+I happen to know that my SD Card is 8.0 GB in capacity, and my system also has a 500 GB SSD. The goal is to burn the SD card while leaving the 500 GB SSD (home of the Mac OS X operating system and all of my data) intact. From the `$ diskutil list` report, I can see that the SD card's designation _in my system_ is `/dev/disk1`.
 
 Note the italicized words _in my system_. Your system is probably different, especially if you have a DVD drive or a second hard drive. I have neither of those. The SD card's designation will be different in each system where it is mounted depending on the number and location of the drives that are already there.
 
-Now that I know the SD card's designation, I can unmount it. We unmount the drive (but leave the card inserted in the reader) so that it can be written with the Ubuntu disk image.
+Now that we know the SD card's designation, we can unmount it. We unmount the drive (but leave the card inserted in the reader) so that it can be written with the Ubuntu disk image.
 
 ```bash
 $ diskutil unmountDisk /dev/disk1
 Unmount of all volumes on disk1 was successful
 ```
 
-Looks like the SD card was unmounted successfully. Let's take a look.
+Looks like the SD card was unmounted successfully. Now we can write the
+Ubuntu image with the `dd` utility.
 
-```bash
-$ diskutil list
-/dev/disk0
-   #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      GUID_partition_scheme                        *500.3 GB   disk0
-   1:                        EFI                         209.7 MB   disk0s1
-   2:                  Apple_HFS Macintosh HD            499.4 GB   disk0s2
-   3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
-/dev/disk1
-   #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:     FDisk_partition_scheme                        *8.0 GB     disk1
-```
+###Writing the Ubuntu Image
+
+
 
 ###Checking Progress at the Command Line
 One drawback of using the command line is that there is no gauge to tell you how much progress the utility is making. Fortunately, I stumbled upon a way to measure progress at [eLinux.org](http://elinux.org). While the command line utility is running, and while that window has focus, type `control-T`. A few seconds later, the terminal window will show a brief activity report.
