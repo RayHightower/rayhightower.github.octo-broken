@@ -108,7 +108,7 @@ $ diskutil list
    #:                       TYPE NAME                    SIZE       IDENTIFIER
    0:     FDisk_partition_scheme                        *8.0 GB     disk1
 ```
-I happen to know that my SD Card is 8.0 GB in capacity, and my system also has a 500 GB hard drive. The goal is to burn the SD card while leaving the hard drive intact. From the `$ diskutil list` report, I can see that the SD card's designation _in my system_ is `/dev/disk1`.
+I happen to know that my SD Card is 8.0 GB in capacity, and my system also has a 500 GB SSD. The goal is to burn the SD card while leaving the SSD (home of the Mac OS X operating system) intact. From the `$ diskutil list` report, I can see that the SD card's designation _in my system_ is `/dev/disk1`.
 
 Note the italicized words _in my system_. Your system is probably different, especially if you have a DVD drive or a second hard drive. I have neither of those. The SD card's designation will be different in each system where it is mounted depending on the number and location of the drives that are already there.
 
