@@ -1,0 +1,557 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>BeagleBone Black Running Ubuntu: Part 1 - RayHightower.com</title>
+  <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
+
+  
+  <meta name="description" content="BeagleBone Black running Ubuntu, Ruby, &amp; Rails. The above screenshot shows a BeagleBone Black running Ubuntu, Ruby, and Rails. Why Ubuntu? The &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://RayHightower.com/blog/2014/01/02/beaglebone-black-ubuntu">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="RayHightower.com" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+<!-- Arvo is like Rockwell. Added by RTH on 12/27/2012. -->
+<link href='http://fonts.googleapis.com/css?family=Arvo:700' rel='stylesheet' type='text/css'>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-330946-28']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">RayHightower.com</a></h1>
+  
+    <h2>Thoughts about Ruby, Rails, RubyMotion, iOS, and business growth.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:RayHightower.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/speaking">Speaking</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">BeagleBone Black Running Ubuntu: Part 1</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-02T15:59:00-06:00" pubdate data-updated="true">Jan 2<span>nd</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><span class='caption-wrapper center'><img class='caption' src='/images/beaglebone-black-ubuntu-ruby-rails.jpg' width='' height='' alt='BeagleBone Black running Ubuntu, Ruby, & Rails.' title='BeagleBone Black running Ubuntu, Ruby, & Rails.'><span class='caption-text'>BeagleBone Black running Ubuntu, Ruby, &amp; Rails.</span></span></p>
+
+<p>The above screenshot shows a BeagleBone Black running Ubuntu, Ruby, and Rails. Why Ubuntu? The Bone comes pre-installed with <a href="http://www.angstrom-distribution.org/">Ångström</a>. Why not stick with Ångström?</p>
+
+<p>My opinion: The factory standard is fine, but it&rsquo;s always good to have options. Here&rsquo;s why I decided to try Ubuntu on the BeagleBone Black:</p>
+
+<ul>
+<li>Ubuntu documentation is plentiful. Books, blogs, and videos are readily available.</li>
+<li>The Ubuntu community is huge. When a dev runs into an Ubuntu-related snag, it&rsquo;s likely that another dev has encountered a similar problem, and they can collaborate on a solution.</li>
+<li>Ubuntu is the distro that I&rsquo;m most familiar with. <a href="http://wisdomgroup.com">WisdomGroup</a> uses Ubuntu for multiple projects. With a common operating system, knowledge gained in one environment is immediately useful in another.</li>
+<li>Prepping for <a href="/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/">Parallella</a>, the 64-core single-board computer that will cost about two hundred bucks. The Parallella is currently in short supply. When it becomes available, it will run Ubuntu. Experience with other single-board computers, especially those running Ubuntu, will prove useful.</li>
+</ul>
+
+
+<p>This article will show how to install Ubuntu on the BeagleBone Black. <em>Gotchas</em> will be pointed out along the way. Where possible, I will explain the reasons behind my decisions so that you can make different choices if you like.</p>
+
+<!--more-->
+
+
+<p>For a comparable examination of the Raspberry Pi, take a look at <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Ruby on Raspberry Pi</a>.</p>
+
+<h3>Sudo Disclaimer: You Could Destroy Everything</h3>
+
+<p>Procedures described here will ask you to use the <code>sudo</code> command. <a href="http://xkcd.com/149/">Sudo endows users with great power</a>. You could destroy all of the data on your computer by using <code>sudo</code> incorrectly. Further, since technology changes rapidly, everything you see here could be out of date by the time you read this. Please be careful, and double-check these steps through your own sources.</p>
+
+<h3>First Gotcha: Ubuntu 13 on the Bone</h3>
+
+<p>As of this writing, Ubuntu 12 runs well on the BeagleBone Black, but Ubuntu 13 does not. My Ubuntu 13 installation appeared to be successful, but the Ubuntu 13 GUI hung up immediately after login. The Ubuntu 13 command line interface worked fine.</p>
+
+<p>A quick search on Google reveals that others encountered similar roadblocks with version 13. One successful Bone/13 installation was used via SSH, not interactively via keyboard and GUI. Hopefully this will change with future updates. Or, since we&rsquo;re dealing in the open source world, maybe I can pitch in and help.</p>
+
+<p>Due to the issues encountered with version 13, everything in this article will focus on Ubuntu 12.</p>
+
+<h3>Materials Needed for Installing Ubuntu 12</h3>
+
+<p>In addition to the BeagleBone Black, the following items should be gathered before installation:</p>
+
+<ul>
+<li>Micro SD card of at least 8GB. It&rsquo;s possible to perform the installation with a 4GB card, but that won&rsquo;t leave much room for Ubuntu applications.</li>
+<li>SD card reader/writer. Recent versions of Apple&rsquo;s MacBook Pro come with an SD reader/writer built in.</li>
+<li>SD to Micro-SD card adapter. The Bone is designed for micro SD, and the MacBook Pro is designed for full-sized SD. Some micro SD packages come with the adapter.</li>
+<li>A monitor that accepts HDMI input.</li>
+<li>Micro HDMI to HDMI adapter. The Bone uses micro HDMI for video output, but your monitor probably uses full-sized HDMI.</li>
+<li>External 5V power adapter for the Bone. Personally, I trust the standard 5v power input more than I trust the power provided via USB. One never knows if USB can provide sufficient (and stable) amperage for a circuit board. Power fluctuations can lead to strange behavior, including video flickering.</li>
+<li>Ethernet cable with RJ-45 ends.</li>
+<li>A fast internet connection.</li>
+</ul>
+
+
+<h3>Hombrew Required</h3>
+
+<p>Homebrew is the easiest way to install &lsquo;nix utilities on Mac OS X. We need Homebrew in order to install some of the utilities needed to burn the SD card. The one-line Homebrew installation command is given on the  <a href="http://brew.sh/">Homebrew site</a>.</p>
+
+<p>Each time we use Homebrew, we run <code>$ brew doctor</code> and <code>$ brew update</code> to make sure the packages are up-to-date.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>brew doctor
+</span><span class='line'>Warning: Your Homebrew is outdated.
+</span><span class='line'>You haven<span class="err">&#39;</span>t updated <span class="k">for </span>at least 24 hours, this is a long <span class="nb">time </span>in brewland!
+</span><span class='line'>To update Homebrew, run <span class="sb">`</span>brew update<span class="sb">`</span>.
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>brew update
+</span><span class='line'>Updated Homebrew from a2e44659 to 4c7bc9ec.
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>brew doctor
+</span><span class='line'>Your system is ready to brew.
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>The xz Extraction Utility</h3>
+
+<p>Disk image files are downloaded in a compressed format. We need the <code>xz</code> utility in order to extract the files into something usable. If you already have Homebrew installed, this command will install <code>xz</code> for you.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>brew install xz
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Test the BeagleBone Black First</h3>
+
+<p>Power up your BeagleBone Black and make sure it runs with the built-in Ångström Linux installation. One great thing about the Bone is that it will <a href="/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/">boot to the Ångström GUI</a> straight out of the box, with no prior configuration.</p>
+
+<p>If the GUI boots, then you&rsquo;re in good shape.</p>
+
+<p>If the GUI doesn&rsquo;t boot, it may have been damaged in a prior experiement. Embarassing note: I started looking for a way to install Ubuntu on the Bone because I broke my Ångström installation. What can I say&hellip; I learn more from destructive experiments. Faced with a non-booting Bone, I had two choices.</p>
+
+<ol>
+<li>Re-build Ångström.</li>
+<li>Try something different, like Ubuntu.</li>
+</ol>
+
+
+<p>Option two worked well!</p>
+
+<h3>Prep the SD Card</h3>
+
+<p>Apple&rsquo;s Disk Utility is a convenient tool for wiping the SD card.  Standard warnings about any disk utility apply. Double-check everything, and make sure you&rsquo;re wiping the right volume, or you could lose all of your data.</p>
+
+<p>Next, download the Ubuntu 12.04 image from <a href="http://s3.armhf.com/debian/precise/bone/ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img.xz">http://armhf.com</a>.</p>
+
+<p>Extract the image using the <code>xz</code> utility.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>xz ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img.xz
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The extracted image will have a <code>.img</code> file extension. We will use the <code>dd</code> utility to burn the disk image to the SD card. But first, we need to determine the designation of the SD card.</p>
+
+<p>Additional details for all of the above are at <a href="http://www.armhf.com/index.php/boards/beaglebone-black/#precise">http://armhf.com</a>.</p>
+
+<h3>Find the SD Card Designation</h3>
+
+<p>In order to burn the SD card, we need to make sure we target it correctly. Here&rsquo;s how to figure out which device to target.</p>
+
+<p><code>$ diskutil list</code> will show all of the partitions mounted on the system.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>diskutil list
+</span><span class='line'>/dev/disk0
+</span><span class='line'>   <span class="c">#:                       TYPE NAME                    SIZE       IDENTIFIER</span>
+</span><span class='line'>   0:      GUID_partition_scheme                        *500.3 GB   disk0
+</span><span class='line'>   1:                        EFI                         209.7 MB   disk0s1
+</span><span class='line'>   2:                  Apple_HFS Macintosh HD            499.4 GB   disk0s2
+</span><span class='line'>   3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
+</span><span class='line'>/dev/disk1
+</span><span class='line'>   <span class="c">#:                       TYPE NAME                    SIZE       IDENTIFIER</span>
+</span><span class='line'>   0:     FDisk_partition_scheme                        *8.0 GB     disk1
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I happen to know that my SD Card is 8.0 GB in capacity, and my system also has a 500 GB SSD. The goal is to burn the SD card while leaving the 500 GB SSD (home of the Mac OS X operating system and all of my data) intact. From the <code>$ diskutil list</code> report, I can see that the SD card&rsquo;s designation <em>in my system</em> is <code>/dev/disk1</code>.</p>
+
+<p>Note the italicized words <em>in my system</em>. Your system is probably different, especially if you have a DVD drive or a second hard drive. I have neither of those. The SD card&rsquo;s designation will be different in each system where it is mounted depending on the number and location of the drives that are already there.</p>
+
+<p>Now that we know the SD card&rsquo;s designation, we can unmount it. We unmount the drive (but leave the card inserted in the reader) so that it can be written with the Ubuntu disk image.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>diskutil unmountDisk /dev/disk1
+</span><span class='line'>Unmount of all volumes on disk1 was successful
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Looks like the SD card was unmounted successfully. Now we can write the
+Ubuntu image with the <code>dd</code> utility.</p>
+
+<h3>Writing the Ubuntu Image</h3>
+
+<p>The following command will write the decompressed Ubuntu image to the SD
+card.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo dd <span class="nv">bs</span><span class="o">=</span>1m <span class="k">if</span><span class="o">=</span>ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img <span class="nv">of</span><span class="o">=</span>/dev/disk1
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Note that it may take up to an hour for the image to be written.</p>
+
+<p>One drawback of using the command line is that there is no gauge to tell you how much progress the utility is making. Fortunately, I stumbled upon a way to measure progress at <a href="http://elinux.org">eLinux.org</a>. While the command line utility is running, and while that window has focus, type <code>control-T</code>. A few seconds later, the terminal window will show a brief activity report.</p>
+
+<p>Here&rsquo;s a report from the first time I struck <code>Control-T</code> &hellip;</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>load: 2.03  cmd: dd 75608 uninterruptible 0.00u 0.54s
+</span><span class='line'>40+0 records in
+</span><span class='line'>39+0 records out
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>We can strike <code>Control-T</code> again to receive additional updates. The numbers will tell us if we are making progress. Don&rsquo;t get carried away with <code>Control-T</code>. A watched pot never boils :&ndash;)</p>
+
+<h3>Booting with the New SD Card</h3>
+
+<p>The terminal will return to the command prompt after the Ubuntu image has been written to the SD card. Now it&rsquo;s time to boot with the new image.</p>
+
+<ol>
+<li>Eject the SD card from the Mac.</li>
+<li>Remove power from the BeagleBone Black, and insert the micro SD card.</li>
+<li>Note the location of the &ldquo;boot&rdquo; button on the Bone. It&rsquo;s the micro switch closest to the USB port. We will need to hold this switch down while powering up the Bone.</li>
+</ol>
+
+
+<p>A few notes about item #3. It takes some juggling to hold down a micro switch while plugging in power to the board. I found it easier to plug the power adapter into a powered-off surge suppressor, hold down the microswitch, and then power-on the surge suppressor with my elbow.  Sounds ridiculous, but it worked.</p>
+
+<p>About sixty seconds after boot, the Linux penguin appeared in the upper left corner of the Bone display. And then the login prompt appeared.</p>
+
+<p>Another note about the &ldquo;boot&rdquo; switch: It looks like the Bone will boot into the SD&rsquo;s operating system without the micro switch if the switch was used in the previous boot. I havn&rsquo;t rebooted enough times to test this, yet.</p>
+
+<h3>Default Credentials for Ubuntu on BeagleBone Black</h3>
+
+<p>Ubuntu&rsquo;s default BeagleBone Black login credentials are shown here because I always end up hunting for these when I need them. It&rsquo;s much easier to have information at one&rsquo;s fingertips.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>login: ubuntu
+</span><span class='line'>pw: ubuntu
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>End of Part One</h3>
+
+<p>This marks the end of part one of this post about BeagleBone Black and Ubuntu.</p>
+
+<p>Part two will cover&hellip;</p>
+
+<ul>
+<li>Getting the GUI running, including a disk resizing <em>gotcha</em>.</li>
+<li>Installing Ruby, including an RVM <em>gotcha</em>.</li>
+<li>Installing Rails, and how to handle a JavaScript runtime <em>gotcha</em>.</li>
+</ul>
+
+
+<p>Stay tuned!</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-02T15:59:00-06:00" pubdate data-updated="true">Jan 2<span>nd</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/beaglebone-black/'>BeagleBone Black</a>, <a class='category' href='/blog/categories/linux-unix-osx/'>Linux-Unix-OSX</a>, <a class='category' href='/blog/categories/rails/'>Rails</a>, <a class='category' href='/blog/categories/ruby/'>Ruby</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2014/01/02/beaglebone-black-ubuntu/" data-via="" data-counturl="http://RayHightower.com/blog/2014/01/02/beaglebone-black-ubuntu/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/12/28/disposable-electronics-in-wired-magazine/" title="Previous Post: Disposable Electronics in Wired Magazine">&laquo; Disposable Electronics in Wired Magazine</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About</h1>
+  <p>Raymond T. Hightower is a software developer, perpetual student, founder of <a href="http://wisdomgroup.com">WisdomGroup</a>, and organizer of <a href="http://chicagoruby.org">ChicagoRuby</a> & <a href="http://windycityrails.org">WindyCityRails</a>. He is currently exploring RubyMotion & iOS.
+  </p>
+  <p>
+  <a href="http://wisdomgroup.com"><img src="/images/wisdomgroup.jpg" width="191" height="42" alt="WisdomGroup - Ruby on Rails. MVP. iPhone. iPad." title="WisdomGroup - Ruby on Rails. MVP. iPhone. iPad."/></a><br/>
+  <a href="http://windycityrails.org"><img src="/images/windycityrails.jpg" width="191" height="42" alt="WindyCityRails - Ruby on Rails Conference in Chicago, IL USA" title="WindyCityRails - Ruby on Rails Conference in Chicago, IL USA"/></a><br/>
+  <a href="http://chicagoruby.org"><img src="/images/chicagoruby.jpg" width="191" height="42" alt="ChicagoRuby - Ruby on Rails in Chicago, IL USA" title="ChicagoRuby - Ruby on Rails in Chicago, IL USA" /></a><br/>
+  </p>
+</section>
+<section>
+  <h1>Observations</h1>
+  <ul>
+    <li>Find a need and fulfill it. Successful businesses are founded on the needs of people.<br/>~A. G. Gaston</li>
+    <li>A person with a new idea is a crank until the idea succeeds.<br/> ~Mark Twain</li>
+    <li>The best way to make dreams come true is to wake up.<br/> ~Mae C. Jemison</li>
+    <li>Everybody told me no at first, including my wife. I turned the
+    nos into yeses and the disadvantages into advantages.<br/>~John H.
+    Johnson</li>
+    <li>I would have been fired a hundred times at a company run by
+    MBAs. But I never went into business to make money. I went... so
+    that I could do interesting things that hadn't been done
+    before.<br/>~Amar Bose</li>
+    <li>It's kind of fun to do the impossible.<br/>~Walt Disney</li>
+  </ul>
+</section>
+<section>
+  <h1>Speaking</h1>
+  <ul>
+    <li><a href="http://www.meetup.com/Chicago-RubyMotion/events/143412442/">Chicago RubyMotion</a> at DevBootcamp<br/>in Chicago, IL</li>
+    <li><a href="http://chippewavalleycodecamp.com/">Chippewa Valley Code Camp</a><br/>in Eau Claire, WI</li> 
+    <li><a href="http://ignitechi.org">Ignite Chicago</a> at 1871 in Chicago, IL</li>
+    <li><a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">Aloha Ruby</a> in Honolulu, HI</li>
+    <li><a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">Magic Ruby</a> in Orlando, FL</li>
+    <li><a href="http://www.meetup.com/Geekfest/events/100821552/">Geekfest</a> at Groupon in Chicago, IL</li>
+    <li><a href="http://snow-mobile.org">Snow Mobile</a> in Madison, WI</li>
+    <li><a href="http://chicagocodecamp.com">Chicago Code Camp</a> in Grayslake, IL</li>
+  </ul>
+</section>
+<section>
+  <h1>Social Media</h1>
+		<ul class="social" id="css3">
+			<li class="twitter">
+				<a href="http://twitter.com/rayhightower"><strong>Twitter</strong></a>
+			</li>
+			<li class="github">
+				<a href="http://www.github.com/rayhightower"><strong>GitHub</strong></a>
+			</li>
+			<li class="linkedin">
+				<a href="http://www.linkedin.com/in/rayhightower"><strong>LinkedIn</strong></a>
+			</li>
+			<li class="vimeo">
+				<a href="http://vimeo.com/chicagoruby"><strong>Vimeo</strong></a>
+			</li>
+		</ul>
+    <p>&nbsp;<br/>&nbsp;</p>
+</section>
+<!-- added by RTH 1/9/2013 from http://www.dotnetguy.co.uk/post/2012/06/25/octopress-category-list-plugin/ -->
+<section>
+  <h1>Blog Categories</h1>
+  <ul id="categories">
+    <li class='category'><a href='/blog/categories/arduino/'>Arduino (1)</a></li>
+<li class='category'><a href='/blog/categories/beaglebone-black/'>BeagleBone Black (4)</a></li>
+<li class='category'><a href='/blog/categories/business/'>Business (22)</a></li>
+<li class='category'><a href='/blog/categories/education/'>Education (33)</a></li>
+<li class='category'><a href='/blog/categories/high-performance-computing/'>High Performance Computing (3)</a></li>
+<li class='category'><a href='/blog/categories/ios/'>iOS (12)</a></li>
+<li class='category'><a href='/blog/categories/linux-unix-osx/'>Linux-Unix-OSX (8)</a></li>
+<li class='category'><a href='/blog/categories/objective-c/'>Objective-C (5)</a></li>
+<li class='category'><a href='/blog/categories/parallella/'>Parallella (2)</a></li>
+<li class='category'><a href='/blog/categories/rails/'>Rails (8)</a></li>
+<li class='category'><a href='/blog/categories/raspberry-pi/'>Raspberry Pi (4)</a></li>
+<li class='category'><a href='/blog/categories/ruby/'>Ruby (18)</a></li>
+<li class='category'><a href='/blog/categories/rubymotion/'>RubyMotion (12)</a></li>
+<li class='category'><a href='/blog/categories/ux/'>UX (1)</a></li>
+<li class='category'><a href='/blog/categories/vim/'>Vim (4)</a></li>
+<li class='category'><a href='/blog/categories/xcode/'>Xcode (5)</a></li>
+
+  </ul>
+</section>
+<section>
+  <h1>Popular Blog Posts</h1>
+  <ul>
+    <li><a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Ruby on Raspberry Pi</a></li>
+    <li><a href="/blog/2013/07/29/why-we-need-stem/">Why We Need STEM</a></li>
+    <li><a href="/blog/2013/05/31/kali-linux-pentesting/">Kali Linux Pentesting</a></li>
+    <li><a href="/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/">Preparing for Parallella's 64 Cores</a></li>
+    <li><a href="/blog/2013/02/26/atari-pong-rubymotion-objective-c/">Atari's Pong with RubyMotion</a></li>
+    <li><a href="/blog/2012/09/03/10000-hours-of-practice/">10,000 Hours of Practice</a></li>
+  </ul>
+</section>
+<section>
+  <h1>Vim</h1>
+  <p>I don't always use a modal editor. But when I do, I use <a href="/blog/2013/01/12/why-i-use-vim/">Vim</a>.</p>
+  <p>
+  <a href="/blog/2013/01/12/why-i-use-vim/"><img src="/images/vim_editor.gif" width="125" height="60" alt="Vim, the editor" title="Vim, the editor"/></a>
+  </p>
+</section>
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'rayhightower';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://RayHightower.com/blog/2014/01/02/beaglebone-black-ubuntu/';
+        var disqus_url = 'http://RayHightower.com/blog/2014/01/02/beaglebone-black-ubuntu/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
