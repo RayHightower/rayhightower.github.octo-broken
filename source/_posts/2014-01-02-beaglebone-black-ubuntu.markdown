@@ -7,11 +7,13 @@ categories: [ BeagleBone Black, Linux-Unix-OSX, Rails, Ruby ]
 ---
 {% imgcap center /images/beaglebone-black-ubuntu-ruby-rails.jpg BeagleBone Black running Ubuntu, Ruby, & Rails. %}
 
-The above screenshot shows a BeagleBone Black running Ubuntu, Ruby, and Rails. Why Ubuntu? The Bone comes pre-installed with [Ångström](http://www.angstrom-distribution.org/). Why not stick with Ångström? The factory standard is fine, but it's always good to have options. Here's why I decided to try Ubuntu on the BeagleBone Black:
+The above screenshot shows a BeagleBone Black running Ubuntu, Ruby, and Rails. Why Ubuntu? The Bone comes pre-installed with [Ångström](http://www.angstrom-distribution.org/). Why not stick with Ångström? 
+
+My opinion: The factory standard is fine, but it's always good to have options. Here's why I decided to try Ubuntu on the BeagleBone Black:
 
 * Ubuntu documentation is plentiful. Books, blogs, and videos are readily available. 
 * The Ubuntu community is huge. When a dev runs into an Ubuntu-related snag, it's likely that another dev has encountered a similar problem, and they can collaborate on a solution.
-* Ubuntu is the distro that I'm most familiar with. [WisdomGroup](http://wisdomgroup.com) uses Ubuntu in other environments. With a common OS, knowledge gained in one environment is immediately useful in another.
+* Ubuntu is the distro that I'm most familiar with. [WisdomGroup](http://wisdomgroup.com) uses Ubuntu for multiple projects. With a common OS, knowledge gained in one environment is immediately useful in another.
 * Prepping for [Parallella](/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/), the 16-core single-board computer that costs about a hundred bucks. The Parallella is currently in short supply. When it becomes available, it will run Ubuntu. Experience with other single-board computers, especially those running Ubuntu, will prove useful.
 
 This article will show how to install Ubuntu on the BeagleBone Black.  _Gotchas_ will be pointed out along the way. Where possible, I will explain the reasons behind my decisions so that you can make different choices if you like.
