@@ -17,9 +17,7 @@ At the end of part one, we successfully booted the Bone with the Ubuntu command 
 * The partition created on the SD card is too small to hold the Ubuntu GUI. Solution: The SD card has some extra room, and we can re-size the partition. 
 * We can install the GUI with a single line command. But it takes an hour for the Bone to download, compile, and install all of the GUI libraries.
 
-If we try to install the GUI without re-sizing the partition, the
-installation will fail about halfway through and we will have wasted
-half an hour. So it's best to re-size first. 
+If we try to install the GUI without re-sizing the partition, the installation will fail about halfway through and we will have wasted half an hour. So it's best to re-size first. 
 <!--more-->
 ###Re-Sizing the Partition
 Why didn't the partition have the right size when we downloaded the image file? Good question.
@@ -36,7 +34,7 @@ $
 
 
 ###Installing the Ubuntu GUI
-After the partition on the SD card has been resized, this single command will intall the GUI. Note that the process takes about an hour:
+After the partition on the SD card has been resized, this command will intall the GUI. Note that the process takes about an hour:
 
 ```bash
 $ sudo apt-get install ubuntu-desktop
@@ -47,12 +45,10 @@ When installation and compilation are complete, Ubuntu will return to the comman
 $ sudo reboot
 ```
 
-Several minutes later, the Ubuntu 12 GUI will appear. Congratulations!
-Login using the default credentials (login: ubuntu, pw: ubuntu) to get
-to the Ubuntu desktop.
+Several minutes later, the Ubuntu 12 GUI will appear. Congratulations!  Login using the default credentials (login: ubuntu, pw: ubuntu) to get to the Ubuntu desktop.
 
 ###Gotcha: Running RVM
-I prefer to use the Ruby Version Manager (RVM) for Ruby installations. RVM misbehaved, initially. Then I learned, from the RVM site, that…
+I prefer to use the Ruby Version Manager (RVM) for bouncing between Ruby versions. RVM misbehaved, initially. Then I learned something special about RVM on Ubuntu. From the RVM site…
 > For RVM to work properly, you have to set the 'Run command as login shell' checkbox on the Title and Command tab inside of gnome-terminal's Settings page.
 
 Here's the checkbox mentioned in the quote, highlighted with the second red rectangle in the image:
@@ -77,8 +73,7 @@ $ sudo apt-get install nodejs
 ```
 
 ###Conclusion
-The bottom line: Ruby, Rails, and Ubuntu are now running on my
-BeagleBone Black, with Node.js as a bonus.
+The bottom line: Ruby, Rails, and Ubuntu are now running on my BeagleBone Black, with Node.js as a bonus.
 
 The BeagleBone Black is a cool option for running Ubuntu. Yes, it runs slower than a typical laptop. But how many laptops can be purchased for $45? This Ubuntu/BeagleBone Black combination lets us run Linux on a $45 computer. What an amazing bundle of technology.
 
