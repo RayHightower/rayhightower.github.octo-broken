@@ -5,12 +5,13 @@ date: 2014-01-04 02:31
 comments: true
 categories: [ BeagleBone Black, Linux-Unix-OSX, Rails, Ruby ]
 ---
-{% imgcap right /images/ruby-rails-beaglebone-black.jpg Ruby, Rails, and BeagleBone Black. %}
+{% imgcap right /images/ruby-rails-beaglebone-black.jpg Ruby. Rails. BeagleBone Black. %}
 
 [Part 1](/blog/2014/01/02/beaglebone-black-ubuntu-part-1/) of this series shows how to install Ubuntu on the BeagleBone Black. This episode covers the installation of the Ubuntu GUI, Ruby, and Rails.
 
-###Gotcha: Resize the SD Card
+Side note: Rails requires a JavaScript runtime, and NodeJS offered the quickest way to fulfill this requirement. Details appear within.
 
+###Gotcha: Resize the SD Card
 Two things to know about GUI installation:
 
 * Before installing the GUI, we will need to re-size one of the partitions on the SD card.
