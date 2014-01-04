@@ -48,14 +48,14 @@ $ sudo reboot
 Several minutes later, the Ubuntu 12 GUI will appear. Congratulations!  Login using the default credentials (login: ubuntu, pw: ubuntu) to get to the Ubuntu desktop.
 
 ###Gotcha: Running RVM
-I prefer to use the Ruby Version Manager (RVM) for bouncing between Ruby versions. RVM misbehaved, initially. Then I learned something special about RVM on Ubuntu. From the RVM site…
+I prefer to use the Ruby Version Manager (RVM) for bouncing between Ruby versions. RVM misbehaved, initially. Then I learned something special about RVM's interaction with Ubuntu. From the RVM support pages…
 > For RVM to work properly, you have to set the 'Run command as login shell' checkbox on the Title and Command tab inside of gnome-terminal's Settings page.
 
-Here's the checkbox mentioned in the quote, highlighted with the second red rectangle in the image:
+This image shows the checkbox mentioned in the quote. It's inside of the lower red rectangle.
 
 {% imgcap /images/rvm-ubuntu-run-command_as_login-shell.jpg RVM: Run command as login shell. %}
 
-Details are in the brief article [Integrating RVM with gnome-terminal](http://rvm.io/integration/gnome-terminal).
+Details are in the RVM support article [Integrating RVM with gnome-terminal](http://rvm.io/integration/gnome-terminal).
 
 ###Gotcha: Ruby Installation
 My first Ruby installation failed (I think) because the Bone went into power save mode during the installation process. The second Ruby installation attempt succeeded because I kept the machine awake by moving the mouse. I will need to test this further in order to confirm the _power save hypothesis_. 
