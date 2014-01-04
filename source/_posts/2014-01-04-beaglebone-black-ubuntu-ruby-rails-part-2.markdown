@@ -29,6 +29,14 @@ To re-size the partition, use the `fdisk` utility as follows:
 ```bash
 $
 
+$
+
+$
+
+$
+
+$
+
 ```
 
 
