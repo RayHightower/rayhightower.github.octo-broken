@@ -22,14 +22,9 @@ installation will fail about halfway through and we will have wasted
 half an hour. So let's re-size first. 
 <!--more-->
 ###Re-Sizing the Partition
-Why didn't the partition have the right size when we downloaded the
-image file? That's a good question.
+Why didn't the partition have the right size when we downloaded the image file? Good question.
 
-My speculation: The image file was designed to be as small as possible
-in order to minimize download time. I plan to test this theory by
-creating a new image with a larger size and a pre-installed GUI. If the
-test is successful, results will be posted on this blog. If the mission
-fails, then the secretary will disavow any knowledge...
+My guess: The image file was designed to be as small as possible in order to minimize download time. I plan to test this theory by creating a new image with a larger size and a pre-installed GUI. If the test is successful, results will be posted on this blog. If the mission fails, then the secretary will disavow any knowledge...
 
 To re-size the partition, do the following:
 
