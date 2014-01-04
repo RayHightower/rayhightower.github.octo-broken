@@ -7,16 +7,22 @@ categories: [ BeagleBone Black, Linux-Unix-OSX, Rails, Ruby ]
 ---
 {% imgcap right /images/ruby-rails-ubuntu-beaglebone-black.png Ruby. Rails. Ubuntu. BeagleBone Black. %}
 
-[Part 1](/blog/2014/01/02/beaglebone-black-ubuntu-part-1/) of this series shows how to install Ubuntu on the BeagleBone Black. This episode covers the installation of the Ubuntu GUI, Ruby, and Rails.
+The first episode of this series shows [how to install Ubuntu on the BeagleBone Black](/blog/2014/01/02/beaglebone-black-ubuntu-part-1/). This post covers the installation of the Ubuntu GUI, Ruby, and Rails.
 
-Side note: Rails requires a JavaScript runtime, and NodeJS offered the quickest way to fulfill this requirement. Details appear within.
+Node.js bonus: Rails requires a JavaScript runtime, and Node.js offered the quickest way to fulfill this requirement. Details appear within.
 
 ###Gotcha: Resize the SD Card
-Two things to know about GUI installation:
+At the end of part one, the Bone successfully booted with the Ubuntu command line interface. Now it's time to add the GUI. Two things to know about the Ubuntu GUI installation:
 
-* Before installing the GUI, we will need to re-size one of the partitions on the SD card.
+* The partition created on the SD card is not large enough to hold the Ubuntu GUI. No problem. The SD card has some extra room, and we can re-size the partition. 
 * GUI installation only takes a single line command, but it takes an hour to download, compile, and install all of the GUI libraries.
+
+If we try to install the GUI without re-sizing the partition, the
+installation will fail about halfway through and we will have wasted
+half an hour. So let's re-size first. 
 <!--more-->
+###Re-Sizing the Right Partition
+
 ###Installing the Ubuntu GUI
 After the partition on the SD card has been resized, this single command will intall the GUI. Note that the process takes about an hour:
 
