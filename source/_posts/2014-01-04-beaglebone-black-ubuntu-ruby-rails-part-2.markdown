@@ -9,12 +9,13 @@ categories: [ BeagleBone Black, Linux-Unix-OSX, Rails, Ruby ]
 
 [Part 1](/blog/2014/01/02/beaglebone-black-ubuntu-part-1/) of this series shows how to install Ubuntu on the BeagleBone Black. This episode covers the installation of the Ubuntu GUI, Ruby, and Rails.
 
-###Gotcha: Resize the SD Card Partition Before Installing GUI
+###Gotcha: Resize the SD Card
+
 Two things to know about GUI installation:
 
 * Before installing the GUI, we will need to re-size one of the partitions on the SD card.
 * GUI installation only takes a single line command, but it takes an hour to download, compile, and install all of the GUI libraries.
-
+<!--more-->
 ###Installing the Ubuntu GUI
 After the partition on the SD card has been resized, this single command will intall the GUI. Note that the process takes about an hour:
 
