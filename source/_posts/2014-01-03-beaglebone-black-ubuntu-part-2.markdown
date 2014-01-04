@@ -3,12 +3,13 @@ layout: post
 title: "BeagleBone Black Running Ubuntu: Part 2"
 date: 2014-01-03 02:31
 comments: true
-published: false
 categories: [ BeagleBone Black, Linux-Unix-OSX, Rails, Ruby ]
 ---
+{% imgcap right /images/ruby-rails-beaglebone-black.jpg Ruby, Rails, and BeagleBone Black. %}
 
 ###Gotcha: Resize the SD Card Partition Before Installing GUI
 Two things to know about GUI installation:
+
 * GUI installation only takes a single line command, but it takes an hour to download, compile, and install all of the GUI libraries.
 * Before installing the GUI, we will need to re-size one of the partitions on the SD card.
 
