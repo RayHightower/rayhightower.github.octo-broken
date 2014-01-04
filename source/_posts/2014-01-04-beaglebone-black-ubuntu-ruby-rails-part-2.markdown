@@ -5,7 +5,7 @@ date: 2014-01-04 02:31
 comments: true
 categories: [ BeagleBone Black, Linux-Unix-OSX, Rails, Ruby ]
 ---
-{% imgcap right /images/ruby-rails-ubuntu-beaglebone-black.jpg Ruby. Rails. Ubuntu. BeagleBone Black. %}
+{% imgcap right /images/ruby-rails-ubuntu-beaglebone-black.png Ruby. Rails. Ubuntu. BeagleBone Black. %}
 
 [Part 1](/blog/2014/01/02/beaglebone-black-ubuntu-part-1/) of this series shows how to install Ubuntu on the BeagleBone Black. This episode covers the installation of the Ubuntu GUI, Ruby, and Rails.
 
