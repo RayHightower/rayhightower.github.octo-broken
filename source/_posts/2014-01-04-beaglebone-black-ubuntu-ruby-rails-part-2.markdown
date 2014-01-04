@@ -7,7 +7,7 @@ categories: [ BeagleBone Black, Linux-Unix-OSX, Rails, Ruby ]
 ---
 {% imgcap right /images/ruby-rails-ubuntu-beaglebone-black.png Ruby. Rails. Ubuntu. BeagleBone Black. %}
 
-The first episode of this series shows [how to install Ubuntu on the BeagleBone Black](/blog/2014/01/02/beaglebone-black-ubuntu-part-1/). This post covers the installation of the Ubuntu GUI, Ruby, and Rails.
+Episode one of this series shows [how to install Ubuntu on the BeagleBone Black](/blog/2014/01/02/beaglebone-black-ubuntu-part-1/). This post covers the installation of the Ubuntu GUI, Ruby, and Rails.
 
 Node.js bonus: Rails requires a JavaScript runtime, and Node.js offered the quickest way to fulfill this requirement. Details appear within.
 
