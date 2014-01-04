@@ -58,10 +58,10 @@ This image shows the checkbox mentioned in the quote. It's inside of the lower r
 Details are in the RVM support article [Integrating RVM with gnome-terminal](http://rvm.io/integration/gnome-terminal).
 
 ###Gotcha: Ruby Installation
-My first Ruby installation failed (I think) because the Bone went into power save mode during the installation process. The second Ruby installation attempt succeeded because I kept the machine awake by moving the mouse. I will need to test this further in order to confirm the _power save hypothesis_. 
+Ruby installation initially failed (speculation) because the Bone went into power save mode during the installation process. Ruby installed successfully on the second try when I kept the machine awake by moving the mouse. This _power save hypothesis_ has not been thoroughly tested. 
 
 ###Gotcha: Rails Installation
-Rails needs a JavaScript runtime in order to function. There are two ways to meet this requirement: 
+Rails needs a JavaScript runtime in order to function. Here are two ways to meet this requirement: 
 
 * Install NodeJS, or 
 * Install `therubyracer` gem. 
@@ -73,7 +73,9 @@ $ sudo apt-get install nodejs
 ```
 
 ###Conclusion
-The bottom line: Ruby, Rails, and Ubuntu are now running on my BeagleBone Black, with Node.js as a bonus.
+Bottom line: Ruby, Rails, and Ubuntu can run successfully on BeagleBone Black, with Node.js as a bonus.
 
-The BeagleBone Black is a cool option for running Ubuntu. Yes, it runs slower than a typical laptop. But how many laptops can be purchased for $45? This Ubuntu/BeagleBone Black combination lets us run Linux on a $45 computer. What an amazing bundle of technology.
+The BeagleBone Black is a cool option for running Ubuntu. Yes, it runs slower than a typical laptop. But it runs, and at $45 each we can build a cluster if we're concerned about performance! 
+
+What an amazing bundle of technology.
 
