@@ -71,10 +71,10 @@ Ruby installation initially failed (speculation) because the Bone went into powe
 ###Gotcha: Rails Installation
 Rails needs a JavaScript runtime in order to function. Here are two ways to meet this requirement: 
 
-* Install NodeJS, or 
+* Install Node.js, or 
 * Install `therubyracer` gem. 
 
-Installing `therubyracer` gem did not work for me. But NodeJS installed quickly, like so:
+Installing `therubyracer` gem did not work for me. But Node.js installed quickly, like so:
 
 ```bash
 $ sudo apt-get install nodejs
