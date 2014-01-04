@@ -7,19 +7,19 @@ categories: [ BeagleBone Black, Linux-Unix-OSX, Rails, Ruby ]
 ---
 {% imgcap right /images/ruby-rails-ubuntu-beaglebone-black.png Ruby. Rails. Ubuntu. BeagleBone Black. %}
 
-Episode one of this series shows [how to install Ubuntu on the BeagleBone Black](/blog/2014/01/02/beaglebone-black-ubuntu-part-1/). This post covers the installation of the Ubuntu GUI, Ruby, and Rails.
+Part one of this series shows [how to install Ubuntu on the BeagleBone Black](/blog/2014/01/02/beaglebone-black-ubuntu-part-1/). We used a MacBook Pro to burn an Ubuntu disk image onto an SD card, and then we booted a BeagleBone Black from the image we created.
 
-All of the commands in this article are run on the BeagleBone Black.
+This post, part two, covers the installation of the Ubuntu GUI, Ruby, and Rails. All of the commands in this article are run on the BeagleBone Black.
 
 Node.js bonus: Rails requires a JavaScript runtime, and Node.js offered the quickest way to fulfill this requirement. Details appear within.
 
 ###Gotcha: Partition Size
 At the end of part one, we successfully booted the Bone with the Ubuntu command line interface. Now it's time to add the GUI. Two things to know about the Ubuntu GUI installation:
 
-* The partition created on the SD card is too small to hold the Ubuntu GUI. Solution: The SD card has some extra room, and we can re-size the partition. 
-* We can install the GUI with a single line command. But it takes an hour for the Bone to download, compile, and install all of the GUI libraries.
+* The partition we created on the SD card (in part one) is too small to hold the Ubuntu GUI. Solution: The SD card has some extra room, and we can re-size the partition. 
+* We can install the Ubuntu GUI with a single line command. But it takes an hour for the Bone to download, compile, and install all of the GUI libraries.
 
-If we try to install the GUI without re-sizing the partition, the installation will fail about halfway through and we will have wasted half an hour. So it's best to re-size first. 
+If we try to install the GUI without re-sizing the partition, the installation will fail midway and we will have wasted half an hour. So it's best to re-size first. 
 <!--more-->
 ###Re-Sizing the Partition
 Why didn't the partition have the right size when we downloaded the image file? Good question.
