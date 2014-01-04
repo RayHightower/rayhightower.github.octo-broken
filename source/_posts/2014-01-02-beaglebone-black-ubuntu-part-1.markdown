@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "BeagleBone Black Running Ubuntu: Part 1"
+title: "BeagleBone Black Running Ubuntu: Part1"
 date: 2014-01-02 15:59
 comments: true
 categories: [ BeagleBone Black, Linux-Unix-OSX, Rails, Ruby ]
