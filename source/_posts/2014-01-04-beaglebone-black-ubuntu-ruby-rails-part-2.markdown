@@ -11,7 +11,7 @@ The first episode of this series shows [how to install Ubuntu on the BeagleBone 
 
 Node.js bonus: Rails requires a JavaScript runtime, and Node.js offered the quickest way to fulfill this requirement. Details appear within.
 
-###Gotcha: Resize the SD Card
+###Gotcha: Partition Size
 At the end of part one, the Bone successfully booted with the Ubuntu command line interface. Now it's time to add the GUI. Two things to know about the Ubuntu GUI installation:
 
 * The partition created on the SD card is not large enough to hold the Ubuntu GUI. No problem. The SD card has some extra room, and we can re-size the partition. 
@@ -21,7 +21,18 @@ If we try to install the GUI without re-sizing the partition, the
 installation will fail about halfway through and we will have wasted
 half an hour. So let's re-size first. 
 <!--more-->
-###Re-Sizing the Right Partition
+###Re-Sizing the Partition
+Why didn't the partition have the right size when we downloaded the
+image file? That's a good question.
+
+My speculation: The image file was designed to be as small as possible
+in order to minimize download time. I plan to test this theory by
+creating a new image with a larger size and a pre-installed GUI. If the
+test is successful, results will be posted on this blog. If the mission
+fails, then the secretary will disavow any knowledge...
+
+To re-size the partition, do the following:
+
 
 ###Installing the Ubuntu GUI
 After the partition on the SD card has been resized, this single command will intall the GUI. Note that the process takes about an hour:
