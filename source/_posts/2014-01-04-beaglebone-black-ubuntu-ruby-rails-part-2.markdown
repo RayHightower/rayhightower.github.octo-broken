@@ -24,7 +24,7 @@ If we try to install the GUI without re-sizing the partition, the installation w
 ###Re-Sizing the Partition
 Why didn't the partition have the right size when we downloaded the image file? Good question.
 
-My guess: The image file was designed to be as small as possible in order to minimize download time. I plan to test this theory by creating a new image with a larger partition size and a pre-installed GUI. If the test is successful, results will be posted on this blog. If the mission fails, then the secretary will disavow any knowledge...
+My guess: The image file was designed to be as small as possible in order to minimize download time. That makes sense. I plan to test this theory by creating a new image with a larger partition size and a pre-installed GUI. If the test is successful, results will be posted on this blog. If the mission fails, then the secretary will disavow any knowledge...
 
 To re-size the partition, start with the `fdisk` utility...
 
@@ -71,6 +71,7 @@ Details are in the RVM support article [Integrating RVM with gnome-terminal](htt
 Ruby installation initially failed (speculation) because the Bone went into power save mode during the installation process. Ruby installed successfully on the second try when I kept the machine awake by moving the mouse. This _power save hypothesis_ has not been thoroughly tested. 
 
 ###Gotcha: Rails Installation
+{% imgcap right /images/nodejs-white.png Node.js on BeagleBone Black. %}
 Rails needs a JavaScript runtime in order to function. Here are two ways to meet this requirement: 
 
 * Install Node.js, or 
@@ -81,6 +82,11 @@ Installing `therubyracer` gem did not work for me. But Node.js installed quickly
 ```bash
 $ sudo apt-get install nodejs
 ```
+
+Now that we have a JavaScript runtime, Rails runs successfully.
+
+Side note: If you want to see what a Node.js-equipped Bone can do, check
+out [OpenROV](http://openrov.com).
 
 ###Conclusion
 Bottom line: Ruby, Rails, and Ubuntu can run successfully on BeagleBone Black, with Node.js as a bonus.
