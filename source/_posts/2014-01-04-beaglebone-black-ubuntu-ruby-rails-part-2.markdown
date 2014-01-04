@@ -29,6 +29,7 @@ My guess: The image file was designed to be as small as possible in order to min
 To re-size the partition, use the `fdisk` utility as follows:
 
 ```bash
+$
 
 ```
 
