@@ -24,7 +24,7 @@ Why didn't the partition have the right size when we downloaded the image file? 
 
 My guess: The image file was designed to be as small as possible in order to minimize download time. I plan to test this theory by creating a new image with a larger partition size and a pre-installed GUI. If the test is successful, results will be posted on this blog. If the mission fails, then the secretary will disavow any knowledge...
 
-To re-size the partition, use the `fdisk` utility as follows:
+To re-size the partition, start with the `fdisk` utility...
 
 ```bash
 $
