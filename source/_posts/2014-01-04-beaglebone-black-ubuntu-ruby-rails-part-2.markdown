@@ -83,7 +83,7 @@ $ sudo apt-get install nodejs
 ###Conclusion
 Bottom line: Ruby, Rails, and Ubuntu can run successfully on BeagleBone Black, with Node.js as a bonus.
 
-The BeagleBone Black is a cool option for running Ubuntu. Yes, it runs slower than a typical laptop. But it runs, and at $45 each we can build a cluster if we're concerned about performance! 
+The BeagleBone Black is a cool option for running Ubuntu. Yes, it runs slower than a typical laptop. But it runs, and at $45 each we can build a cluster of Bones if we're concerned about performance! 
 
 What an amazing bundle of technology.
 
