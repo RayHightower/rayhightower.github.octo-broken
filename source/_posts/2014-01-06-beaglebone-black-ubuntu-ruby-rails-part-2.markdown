@@ -26,7 +26,13 @@ Why didn't the partition have the right size when we downloaded the image file? 
 
 My guess: The image file was designed to be as small as possible in order to minimize download time. That makes sense. I plan to test this theory by creating a new image with a larger partition size and a pre-installed GUI. If the test is successful, results will be posted on this blog. If the mission fails, then the secretary will disavow any knowledge...
 
-To re-size the partition, start by grabbing root priviledges, since only root can change the partition table. This line will give us root proviledges for all subsequent commands, until we logout as `root`.
+`ll` is one of the useful aliases built into Ubuntu's `.bashrc` file.
+
+```bash
+ubuntu@ubuntu-armhf:~$ ll /dev/mmcblk*
+```
+
+`fdisk` will resize the partition we're after. `root` priviledges are required to modify the partition table, so we'll use `sudo`. (The standard warnings about `$ sudo` apply.)
 
 ```bash
 ubuntu@ubuntu-armhf:~$ sudo su
