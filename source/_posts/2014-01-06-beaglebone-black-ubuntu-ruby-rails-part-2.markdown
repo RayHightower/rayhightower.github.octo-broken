@@ -26,6 +26,23 @@ Why didn't the partition have the right size when we downloaded the image file? 
 
 My guess: The image file was designed to be as small as possible in order to minimize download time. That makes sense. I plan to test this theory by creating a new image with a larger partition size and a pre-installed GUI. If the test is successful, results will be posted on this blog. If the mission fails, then the secretary will disavow any knowledge...
 
+`df` will show...
+
+```bash
+ubuntu@ubuntu-armhf:~$ df
+Filesystem     1K-blocks    Used Available Use% Mounted on
+rootfs           3778576 2722944    885776  76% /
+/dev/root        3778576 2722944    885776  76% /
+devtmpfs          253580       4    253576   1% /dev
+none               50748     608     50140   2% /run
+none                5120       0      5120   0% /run/lock
+none              253728     204    253524   1% /run/shm
+/dev/mmcblk0p1      1004     480       524  48% /boot/uboot
+/dev/mmcblk1p1     65390    6536     58854  10% /media/boot
+/dev/mmcblk1p2   1748200    2664   1655068   1% /media/rootfs
+ubuntu@ubuntu-armhf:~$ 
+```
+
 `ll` is one of the useful aliases built into Ubuntu's `.bashrc` file. We
 can use it to examine the partitions on the SD card.
 
@@ -43,6 +60,13 @@ ubuntu@ubuntu-armhf:~$
 ```
 
 `fdisk` will resize the partition we're after. `root` priviledges are required to modify the partition table, so we'll use `sudo`. (The standard warnings about sudo apply.)
+
+A few useful `fdisk` commands:
+
+* `p` prints the partition table.
+* `d` deletes a partition.
+* `n` creates a new partition.
+* `q` quits fdisk.
 
 ```bash
 ubuntu@ubuntu-armhf:~$ sudo fdisk /dev/mmcblk0
@@ -66,20 +90,6 @@ ubuntu@ubuntu-armhf:~$ ubuntu@ubuntu-armhf:~$
 ```
 
 
-```bash
-ubuntu@ubuntu-armhf:~$ sudo su
-```
-
-with the `fdisk` utility...
-
-```bash
-ubuntu@ubuntu-armhf:~$ sudo fdisk /dev/mmcblk0
-
-
-
-```
-
-
  
 ```bash
 Filesystem     1K-blocks    Used Available Use% Mounted on
@@ -92,17 +102,6 @@ none              253728     156    253572   1% /run/shm
 /dev/mmcblk0p1      1004     480       524  48% /boot/uboot
 /dev/mmcblk1p1     65390    6536     58854  10% /media/boot
 /dev/mmcblk1p2   1748200    2664   1655068   1% /media/rootfs
-
-$
-
-$
-
-$
-
-$
-
-$
-
 ```
 
 
