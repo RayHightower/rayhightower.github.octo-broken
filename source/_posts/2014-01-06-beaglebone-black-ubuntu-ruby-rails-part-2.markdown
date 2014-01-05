@@ -11,7 +11,7 @@ Part one of this series shows [how to install Ubuntu on the BeagleBone Black](/b
 
 This post, part two, covers the installation of the Ubuntu GUI, Ruby, and Rails. All of the commands in this article are run on the BeagleBone Black.
 
-Node.js bonus: Rails requires a JavaScript runtime, and Node.js offered the quickest way to fulfill this requirement. Details appear within.
+[Node.js](http://nodejs.org) bonus: Rails requires a JavaScript runtime, and Node.js offered the quickest way to fulfill this requirement. Details appear within.
 
 ###Gotcha: Partition Size
 At the end of part one, we successfully booted the Bone with the Ubuntu command line interface. Now it's time to add the GUI. Two things to know about the Ubuntu GUI installation:
