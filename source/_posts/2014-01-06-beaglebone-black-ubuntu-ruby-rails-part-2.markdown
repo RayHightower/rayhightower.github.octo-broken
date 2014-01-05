@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "BeagleBone Black Running Ubuntu: Part2"
-date: 2014-01-04 02:31
+title: "BeagleBone Black Running Ubuntu: Part2 (Plus Ruby on Rails)"
+date: 2014-01-06 02:31
 comments: true
 categories: [ BeagleBone Black, Linux-Unix-OSX, Rails, Ruby ]
 ---
@@ -26,9 +26,35 @@ Why didn't the partition have the right size when we downloaded the image file? 
 
 My guess: The image file was designed to be as small as possible in order to minimize download time. That makes sense. I plan to test this theory by creating a new image with a larger partition size and a pre-installed GUI. If the test is successful, results will be posted on this blog. If the mission fails, then the secretary will disavow any knowledge...
 
-To re-size the partition, start with the `fdisk` utility...
+To re-size the partition, start by grabbing root priviledges, since only root can change the partition table. This line will give us root proviledges for all subsequent commands, until we logout as `root`.
 
 ```bash
+ubuntu@ubuntu-armhf:~$ sudo su
+```
+
+with the `fdisk` utility...
+
+```bash
+ubuntu@ubuntu-armhf:~$ sudo fdisk /dev/mmcblk0
+
+
+
+```
+
+
+ 
+```bash
+Filesystem     1K-blocks    Used Available Use% Mounted on
+rootfs           3778576 2731444    877276  76% /
+/dev/root        3778576 2731444    877276  76% /
+devtmpfs          253580       4    253576   1% /dev
+none               50748     608     50140   2% /run
+none                5120       0      5120   0% /run/lock
+none              253728     156    253572   1% /run/shm
+/dev/mmcblk0p1      1004     480       524  48% /boot/uboot
+/dev/mmcblk1p1     65390    6536     58854  10% /media/boot
+/dev/mmcblk1p2   1748200    2664   1655068   1% /media/rootfs
+
 $
 
 $
