@@ -26,7 +26,8 @@ Why didn't the partition have the right size when we downloaded the image file? 
 
 My guess: The image file was designed to be as small as possible in order to minimize download time. That makes sense. I plan to test this theory by creating a new image with a larger partition size and a pre-installed GUI. If the test is successful, results will be posted on this blog. If the mission fails, then the secretary will disavow any knowledge...
 
-`ll` is one of the useful aliases built into Ubuntu's `.bashrc` file.
+`ll` is one of the useful aliases built into Ubuntu's `.bashrc` file. We
+can use it to examine the partitions on the SD card.
 
 ```bash
 ubuntu@ubuntu-armhf:~$ ll /dev/mmcblk*
@@ -41,7 +42,7 @@ brw-rw---- 1 root disk 179, 10 Jan  1  2000 /dev/mmcblk1p2
 ubuntu@ubuntu-armhf:~$ 
 ```
 
-`fdisk` will resize the partition we're after. `root` priviledges are required to modify the partition table, so we'll use `sudo`. (The standard warnings about apply.)
+`fdisk` will resize the partition we're after. `root` priviledges are required to modify the partition table, so we'll use `sudo`. (The standard warnings about sudo apply.)
 
 ```bash
 ubuntu@ubuntu-armhf:~$ sudo fdisk /dev/mmcblk0
