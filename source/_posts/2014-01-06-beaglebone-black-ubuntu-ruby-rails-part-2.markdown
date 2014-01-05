@@ -30,9 +30,40 @@ My guess: The image file was designed to be as small as possible in order to min
 
 ```bash
 ubuntu@ubuntu-armhf:~$ ll /dev/mmcblk*
+brw-rw---- 1 root disk 179,  0 Jan  5 15:37 /dev/mmcblk0
+brw-rw---- 1 root disk 179,  1 Jan  1  2000 /dev/mmcblk0p1
+brw-rw---- 1 root disk 179,  2 Jan  1  2000 /dev/mmcblk0p2
+brw-rw---- 1 root disk 179,  8 Jan  1  2000 /dev/mmcblk1
+brw-rw---- 1 root disk 179, 16 Jan  1  2000 /dev/mmcblk1boot0
+brw-rw---- 1 root disk 179, 24 Jan  1  2000 /dev/mmcblk1boot1
+brw-rw---- 1 root disk 179,  9 Jan  1  2000 /dev/mmcblk1p1
+brw-rw---- 1 root disk 179, 10 Jan  1  2000 /dev/mmcblk1p2
+ubuntu@ubuntu-armhf:~$ 
 ```
 
-`fdisk` will resize the partition we're after. `root` priviledges are required to modify the partition table, so we'll use `sudo`. (The standard warnings about `$ sudo` apply.)
+`fdisk` will resize the partition we're after. `root` priviledges are required to modify the partition table, so we'll use `sudo`. (The standard warnings about apply.)
+
+```bash
+ubuntu@ubuntu-armhf:~$ sudo fdisk /dev/mmcblk0
+
+Command (m for help): p
+
+Disk /dev/mmcblk0: 3965 MB, 3965190144 bytes
+4 heads, 16 sectors/track, 121008 cylinders, total 7744512 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x80008000
+
+        Device Boot      Start         End      Blocks   Id  System
+/dev/mmcblk0p1   *        2048        4095        1024    1  FAT12
+/dev/mmcblk0p2            4096     7744511     3870208   83  Linux
+
+Command (m for help): q
+
+ubuntu@ubuntu-armhf:~$ ubuntu@ubuntu-armhf:~$
+```
+
 
 ```bash
 ubuntu@ubuntu-armhf:~$ sudo su
