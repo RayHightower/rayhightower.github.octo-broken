@@ -199,9 +199,9 @@ Ruby installation initially failed (speculation) because the Bone went into powe
 Rails needs a JavaScript runtime in order to function. Here are two ways to meet this requirement: 
 
 * Install Node.js, or 
-* Install `therubyracer` gem. 
+* Install [therubyracer](http://rubygems.org/gems/therubyracer) gem. 
 
-Installing `therubyracer` gem did not work for me. But Node.js installed quickly, like so:
+Installing `therubyracer` did not work for me. But Node.js installed quickly, like so:
 
 ```bash
 $ sudo apt-get install nodejs
@@ -219,4 +219,4 @@ The BeagleBone Black is a cool option for running Ubuntu. Yes, it runs slower th
 
 What an amazing bundle of technology.
 
-_For a similar discussion about another single-board computer, check out [Ruby on Raspberry Pi](/blog/2012/12/03/ruby-on-raspberry-pi/)_.
+_You might also be interested in [Ruby on Raspberry Pi](/blog/2012/12/03/ruby-on-raspberry-pi/)_.
