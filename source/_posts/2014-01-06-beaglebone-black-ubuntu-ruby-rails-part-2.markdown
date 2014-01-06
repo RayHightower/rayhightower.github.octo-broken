@@ -14,13 +14,13 @@ This post, part two, covers the installation of the Ubuntu GUI, Ruby, and Rails.
 [Node.js](http://nodejs.org) bonus: Rails requires a JavaScript runtime, and Node.js offered the quickest way to fulfill this requirement. Details appear within.
 
 ###Gotcha: Partition Size
-At the end of part one, we successfully booted the Bone with the Ubuntu command line interface. Now it's time to add the GUI. Two things to know about the Ubuntu GUI installation:
-
+At the end of [part one](/blog/2014/01/02/beaglebone-black-ubuntu-part-1/), we successfully booted the Bone with the Ubuntu command line interface. Now it's time to add the GUI. Two things to know about the Ubuntu GUI installation...
+<!--more-->
 * The partition we created on the SD card (in part one) is too small to hold the Ubuntu GUI. Solution: The SD card has some extra room, and we can re-size the partition. 
 * We can install the Ubuntu GUI with a single line command. But it takes an hour for the Bone to download, compile, and install all of the GUI libraries.
 
 If we try to install the GUI with insufficient space, the installation will fail midway and we will have wasted half an hour. So it's best to re-size first. 
-<!--more-->
+
 ###Why Must We Do the Re-Sizing?
 Why didn't the partition have the right size when we originally downloaded the image file? Good question.
 
