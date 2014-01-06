@@ -79,6 +79,7 @@ Your numbers will vary depending on the size and configuration of your SD card, 
 
 ```bash
 ubuntu@ubuntu-armhf:~$ sudo fdisk /dev/mmcblk0
+[sudo] password for ubuntu:
 
 Command (m for help): p
 
@@ -90,8 +91,8 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 Disk identifier: 0x80008000
 
         Device Boot      Start         End      Blocks   Id  System
-/dev/mmcblk0p1   *        2048        4095        1024    1  FAT12
-/dev/mmcblk0p2            4096     7744511     3870208   83  Linux
+/dev/mmcblk0p1   *        2048      133119       65536    e  W95 FAT16 (LBA)
+/dev/mmcblk0p2          133120     1638399      752640   83  Linux
 
 Command (m for help): d
 Partition number (1-4): 2
@@ -106,7 +107,7 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 Disk identifier: 0x80008000
 
         Device Boot      Start         End      Blocks   Id  System
-/dev/mmcblk0p1   *        2048        4095        1024    1  FAT12
+/dev/mmcblk0p1   *        2048      133119       65536    e  W95 FAT16 (LBA)
 
 Command (m for help): n
 Partition type:
@@ -129,8 +130,8 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 Disk identifier: 0x80008000
 
         Device Boot      Start         End      Blocks   Id  System
-/dev/mmcblk0p1   *        2048        4095        1024    1  FAT12
-/dev/mmcblk0p2            4096     7744511     3870208   83  Linux
+/dev/mmcblk0p1   *        2048      133119       65536    e  W95 FAT16 (LBA)
+/dev/mmcblk0p2          133120     7744511     3805696   83  Linux
 
 Command (m for help): w
 The partition table has been altered!
@@ -145,16 +146,29 @@ Syncing disks.
 ubuntu@ubuntu-armhf:~$
 ```
 
-The warning/error message just means that we need reboot the Bone before the partition table takes effect.
+The warning/error message at the end just means that we need reboot the Bone before the partition table takes effect.
 
 Reboot the BeagleBone Black, holding down the boot switch (closest to
 the USB port) to ensure that we boot to the system on the SD card
 instead of the eMMC. 
 
+After the Bone reboots, run `resize2fs` to expand the partition created above.
+
+```bash
+ubuntu@ubuntu-armhf:~$ sudo resize2fs /dev/mmcblk0p2
+[sudo] password for ubuntu:
+resize2fs 1.42.5 (29-Jul-2012)
+Filesystem at /dev/mmcblk0p2 is mounted on /; on-line resizing required
+old_desc_blocks = 1, new_desc_blocks = 1
+The filesystem on /dev/mmcblk0p2 is now 951424 blocks long.
+
+ubuntu@ubuntu-armhf:~$
+```
+
 And now we have enough room to install the Ubuntu GUI.
 
 ###Installing the Ubuntu GUI
-After the partition on the SD card has been resized, this command will intall the GUI. Note that the process takes about an hour:
+After the partition on the SD card has been resized, this command will intall the GUI. The command is short, but the process takes about an hour:
 
 ```bash
 $ sudo apt-get install ubuntu-desktop
