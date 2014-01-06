@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Rails | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/rails/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-01-06T08:45:58-06:00</updated>
+  <updated>2014-01-06T11:21:59-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -580,6 +580,8 @@ sh-4.2#
 ```</p>
 
 <p>Maybe it&rsquo;s time to try <a href="https://github.com/sstephenson/rbenv">RBEnv</a>? I&rsquo;ll post a solution when I find it. Or&hellip; if a reader of this blog already has a solution for the BeagleBone Black Rails installation challenge, please post in the comments below and I&rsquo;ll credit you here.</p>
+
+<p><em>Update (Jan 2014): <a href="/blog/2014/01/02/beaglebone-black-ubuntu-part-1/">BeagleBone Black Running Ubuntu, Ruby, Rails</a></em></p>
 
 <h4>BeagleBone Black vs. Raspberry Pi</h4>
 
