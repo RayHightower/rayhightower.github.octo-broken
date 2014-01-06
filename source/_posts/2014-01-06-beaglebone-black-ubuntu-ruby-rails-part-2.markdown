@@ -71,6 +71,7 @@ A few useful `fdisk` commands:
 * `p` prints the partition table.
 * `d` deletes a partition.
 * `n` creates a new partition.
+* `w` write new information to the partition table.
 * `q` quits fdisk.
 
 Here's the plan: In order to increase the size of `/dev/mmcblk0p2`, we will delete it, and then re-create it with a larger size. Note the use of the `d` and `n` commands in the following sequence. When `fdisk` asks us for the new partition number, type, first sector, and last sector, we will choose the defaults. Choosing the defaults will use all of the available space on the SD card.
