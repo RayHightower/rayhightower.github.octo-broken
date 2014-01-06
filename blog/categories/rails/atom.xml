@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Rails | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/rails/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-01-06T11:26:13-06:00</updated>
+  <updated>2014-01-06T12:05:24-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -86,7 +86,7 @@ brw-rw&mdash;&mdash; 1 root disk 179, 10 Jan  1  2000 /dev/mmcblk1p2</p>
 <p>ubuntu@ubuntu-armhf:~$
 ```</p>
 
-<p><code>fdisk</code> will resize the partition we&rsquo;re after. <code>root</code> priviledges are required to modify the partition table, so we&rsquo;ll use <code>sudo</code>. The standard warnings about sudo apply.</p>
+<p><code>fdisk</code> will resize the partition we&rsquo;re after. <code>root</code> priviledges are required to modify the partition table, so we&rsquo;ll use <code>sudo</code>. The standard <a href="/sudo-disclaimer">sudo disclaimer</a> applies.</p>
 
 <p>A few useful <code>fdisk</code> commands:</p>
 
@@ -290,10 +290,6 @@ out <a href="http://openrov.com">OpenROV</a>.</p>
 
 <p>For a comparable examination of the Raspberry Pi, take a look at <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Ruby on Raspberry Pi</a>.</p>
 
-<h3>Sudo Disclaimer: You Could Destroy Everything</h3>
-
-<p>Procedures described here will ask you to use the <code>sudo</code> command. <a href="http://xkcd.com/149/">Sudo endows users with great power</a>. You could destroy all of the data on your computer by using <code>sudo</code> incorrectly. Further, since technology changes rapidly, everything you see here could be out of date by the time you read this. Please be careful, and double-check these steps through your own sources.</p>
-
 <h3>First Gotcha: Ubuntu 13 on the Bone</h3>
 
 <p>As of this writing, Ubuntu 12 runs well on the BeagleBone Black, but Ubuntu 13 does not. My Ubuntu 13 installation appeared to be successful, but the Ubuntu 13 GUI hung up immediately after login. The Ubuntu 13 command line interface worked fine.</p>
@@ -318,6 +314,8 @@ out <a href="http://openrov.com">OpenROV</a>.</p>
 <li>A fast internet connection.</li>
 </ul>
 
+
+<p>The standard <a href="/sudo-disclaimer">sudo disclaimer</a> applies.</p>
 
 <h3>Homebrew Required</h3>
 
