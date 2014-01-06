@@ -19,9 +19,9 @@ At the end of part one, we successfully booted the Bone with the Ubuntu command 
 * The partition we created on the SD card (in part one) is too small to hold the Ubuntu GUI. Solution: The SD card has some extra room, and we can re-size the partition. 
 * We can install the Ubuntu GUI with a single line command. But it takes an hour for the Bone to download, compile, and install all of the GUI libraries.
 
-If we try to install the GUI without re-sizing the partition, the installation will fail midway and we will have wasted half an hour. So it's best to re-size first. 
+If we try to install the GUI with insufficient space, the installation will fail midway and we will have wasted half an hour. So it's best to re-size first. 
 <!--more-->
-###Why Re-Size the Partition?
+###Why Must We Do the Re-Sizing?
 Why didn't the partition have the right size when we originally downloaded the image file? Good question.
 
 My guess: The image file was designed to be as small as possible in order to minimize download time. That makes sense. I plan to test this theory by creating a new image with a larger partition size and a pre-installed GUI. If the test is successful, results will be posted on this blog. If the mission fails, then the secretary will disavow any knowledge...
@@ -64,7 +64,7 @@ brw-rw---- 1 root disk 179, 10 Jan  1  2000 /dev/mmcblk1p2
 ubuntu@ubuntu-armhf:~$ 
 ```
 
-`fdisk` will resize the partition we're after. `root` priviledges are required to modify the partition table, so we'll use `sudo`. (The standard warnings about sudo apply.)
+`fdisk` will resize the partition we're after. `root` priviledges are required to modify the partition table, so we'll use `sudo`. The standard warnings about sudo apply.
 
 A few useful `fdisk` commands:
 
@@ -73,9 +73,9 @@ A few useful `fdisk` commands:
 * `n` creates a new partition.
 * `q` quits fdisk.
 
-Here's the plan: In order to increase the size of `/dev/mmcblk0p2`, we will delete it, and then re-create it with a larger size. Note the use of the `d` and `n` commands in the following sequence. When `fdisk` asks us for the new partition number, type, first sector, and last sector, we will choose the defaults. Choosing the defaults will give us the largest available size for our SD card.
+Here's the plan: In order to increase the size of `/dev/mmcblk0p2`, we will delete it, and then re-create it with a larger size. Note the use of the `d` and `n` commands in the following sequence. When `fdisk` asks us for the new partition number, type, first sector, and last sector, we will choose the defaults. Choosing the defaults will use all of the available space on the SD card.
 
-Note: Your numbers will vary depending on the size and configuration of your SD card, but the general procedure will be the same.
+Your numbers will vary depending on the size and configuration of your SD card, but the general procedure will be the same.
 
 ```bash
 ubuntu@ubuntu-armhf:~$ sudo fdisk /dev/mmcblk0
@@ -92,11 +92,66 @@ Disk identifier: 0x80008000
         Device Boot      Start         End      Blocks   Id  System
 /dev/mmcblk0p1   *        2048        4095        1024    1  FAT12
 /dev/mmcblk0p2            4096     7744511     3870208   83  Linux
+
+Command (m for help): d
+Partition number (1-4): 2
+
+Command (m for help): p
+
+Disk /dev/mmcblk0: 3965 MB, 3965190144 bytes
+4 heads, 16 sectors/track, 121008 cylinders, total 7744512 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x80008000
+
+        Device Boot      Start         End      Blocks   Id  System
+/dev/mmcblk0p1   *        2048        4095        1024    1  FAT12
+
+Command (m for help): n
+Partition type:
+   p   primary (1 primary, 0 extended, 3 free)
+   e   extended
+Select (default p): p
+Partition number (1-4, default 2): 2
+First sector (133120-7744511, default 133120):
+Using default value 133120
+Last sector, +sectors or +size{K,M,G} (133120-7444511, default 7744511):
+Using default value 7744511
+
+Command (m for help): p
+
+Disk /dev/mmcblk0: 3965 MB, 3965190144 bytes
+4 heads, 16 sectors/track, 121008 cylinders, total 7744512 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x80008000
+
+        Device Boot      Start         End      Blocks   Id  System
+/dev/mmcblk0p1   *        2048        4095        1024    1  FAT12
+/dev/mmcblk0p2            4096     7744511     3870208   83  Linux
+
+Command (m for help): w
+The partition table has been altered!
+
+Calling ioctl() to re-read partition table.
+
+Warning: Re-reading the partition table failed with error 16: Device or resource busy.
+The kernel still uses the old table. The new table will b eused at
+the next reboot or after you run partprobe(8) or kpartx(8)
+Syncing disks.
+
+ubuntu@ubuntu-armhf:~$
 ```
 
- 
+The warning/error message just means that we need reboot the Bone before the partition table takes effect.
 
-And we're done! Now we have enough room to install the Ubuntu GUI.
+Reboot the BeagleBone Black, holding down the boot switch (closest to
+the USB port) to ensure that we boot to the system on the SD card
+instead of the eMMC. 
+
+And now we have enough room to install the Ubuntu GUI.
 
 ###Installing the Ubuntu GUI
 After the partition on the SD card has been resized, this command will intall the GUI. Note that the process takes about an hour:
