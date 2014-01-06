@@ -1,0 +1,661 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>BeagleBone Black Running Ubuntu: Part2 (Plus Ruby on Rails) - RayHightower.com</title>
+  <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
+
+  
+  <meta name="description" content="Ruby. Rails. Ubuntu. BeagleBone Black. Part one of this series shows how to install Ubuntu on the BeagleBone Black. We used a MacBook Pro to burn an &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://RayHightower.com/blog/2014/01/06/beaglebone-black-ubuntu-ruby-rails-part-2">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="RayHightower.com" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+<!-- Arvo is like Rockwell. Added by RTH on 12/27/2012. -->
+<link href='http://fonts.googleapis.com/css?family=Arvo:700' rel='stylesheet' type='text/css'>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-330946-28']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">RayHightower.com</a></h1>
+  
+    <h2>Thoughts about Ruby, Rails, RubyMotion, iOS, and business growth.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:RayHightower.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/speaking">Speaking</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">BeagleBone Black Running Ubuntu: Part2 (Plus Ruby on Rails)</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-06T02:31:00-06:00" pubdate data-updated="true">Jan 6<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><span class='caption-wrapper right'><img class='caption' src='/images/ruby-rails-ubuntu-beaglebone-black.png' width='' height='' alt='Ruby. Rails. Ubuntu. BeagleBone Black.' title='Ruby. Rails. Ubuntu. BeagleBone Black.'><span class='caption-text'>Ruby. Rails. Ubuntu. BeagleBone Black.</span></span></p>
+
+<p>Part one of this series shows <a href="/blog/2014/01/02/beaglebone-black-ubuntu-part-1/">how to install Ubuntu on the BeagleBone Black</a>. We used a MacBook Pro to burn an Ubuntu disk image onto an SD card, and then we booted a BeagleBone Black from the image we created.</p>
+
+<p>This post, part two, covers the installation of the Ubuntu GUI, Ruby, and Rails. All of the commands in this article are run on the BeagleBone Black.</p>
+
+<p><a href="http://nodejs.org">Node.js</a> bonus: Rails requires a JavaScript runtime, and Node.js offered the quickest way to fulfill this requirement. Details appear within.</p>
+
+<h3>Gotcha: Partition Size</h3>
+
+<p>At the end of part one, we successfully booted the Bone with the Ubuntu command line interface. Now it&rsquo;s time to add the GUI. Two things to know about the Ubuntu GUI installation:</p>
+
+<ul>
+<li>The partition we created on the SD card (in part one) is too small to hold the Ubuntu GUI. Solution: The SD card has some extra room, and we can re-size the partition.</li>
+<li>We can install the Ubuntu GUI with a single line command. But it takes an hour for the Bone to download, compile, and install all of the GUI libraries.</li>
+</ul>
+
+
+<p>If we try to install the GUI with insufficient space, the installation will fail midway and we will have wasted half an hour. So it&rsquo;s best to re-size first.</p>
+
+<!--more-->
+
+
+<h3>Why Must We Do the Re-Sizing?</h3>
+
+<p>Why didn&rsquo;t the partition have the right size when we originally downloaded the image file? Good question.</p>
+
+<p>My guess: The image file was designed to be as small as possible in order to minimize download time. That makes sense. I plan to test this theory by creating a new image with a larger partition size and a pre-installed GUI. If the test is successful, results will be posted on this blog. If the mission fails, then the secretary will disavow any knowledge&hellip;</p>
+
+<h3>How to Re-Size the Partition</h3>
+
+<p><code>df</code> is the Unix &lsquo;disk free&rsquo; command. It shows used/available diskspace.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>ubuntu@ubuntu-armhf:~<span class="nv">$ </span>df
+</span><span class='line'>
+</span><span class='line'>Filesystem     1K-blocks    Used Available Use% Mounted on
+</span><span class='line'>rootfs           3778576 2722944    885776  76% /
+</span><span class='line'>/dev/root        3778576 2722944    885776  76% /
+</span><span class='line'>devtmpfs          253580       4    253576   1% /dev
+</span><span class='line'>none               50748     608     50140   2% /run
+</span><span class='line'>none                5120       0      5120   0% /run/lock
+</span><span class='line'>none              253728     204    253524   1% /run/shm
+</span><span class='line'>/dev/mmcblk0p1      1004     480       524  48% /boot/uboot
+</span><span class='line'>/dev/mmcblk1p1     65390    6536     58854  10% /media/boot
+</span><span class='line'>/dev/mmcblk1p2   1748200    2664   1655068   1% /media/rootfs
+</span><span class='line'>
+</span><span class='line'>ubuntu@ubuntu-armhf:~<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>ll</code> is one of the useful aliases built into Ubuntu&rsquo;s <code>.bashrc</code> file. We
+can use it to examine the partitions on the SD card.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>ubuntu@ubuntu-armhf:~<span class="nv">$ </span>ll /dev/mmcblk*
+</span><span class='line'>
+</span><span class='line'>brw-rw---- 1 root disk 179,  0 Jan  5 15:37 /dev/mmcblk0
+</span><span class='line'>brw-rw---- 1 root disk 179,  1 Jan  1  2000 /dev/mmcblk0p1
+</span><span class='line'>brw-rw---- 1 root disk 179,  2 Jan  1  2000 /dev/mmcblk0p2
+</span><span class='line'>brw-rw---- 1 root disk 179,  8 Jan  1  2000 /dev/mmcblk1
+</span><span class='line'>brw-rw---- 1 root disk 179, 16 Jan  1  2000 /dev/mmcblk1boot0
+</span><span class='line'>brw-rw---- 1 root disk 179, 24 Jan  1  2000 /dev/mmcblk1boot1
+</span><span class='line'>brw-rw---- 1 root disk 179,  9 Jan  1  2000 /dev/mmcblk1p1
+</span><span class='line'>brw-rw---- 1 root disk 179, 10 Jan  1  2000 /dev/mmcblk1p2
+</span><span class='line'>
+</span><span class='line'>ubuntu@ubuntu-armhf:~<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>fdisk</code> will resize the partition we&rsquo;re after. <code>root</code> priviledges are required to modify the partition table, so we&rsquo;ll use <code>sudo</code>. The standard warnings about sudo apply.</p>
+
+<p>A few useful <code>fdisk</code> commands:</p>
+
+<ul>
+<li><code>p</code> prints the partition table.</li>
+<li><code>d</code> deletes a partition.</li>
+<li><code>n</code> creates a new partition.</li>
+<li><code>q</code> quits fdisk.</li>
+</ul>
+
+
+<p>Here&rsquo;s the plan: In order to increase the size of <code>/dev/mmcblk0p2</code>, we will delete it, and then re-create it with a larger size. Note the use of the <code>d</code> and <code>n</code> commands in the following sequence. When <code>fdisk</code> asks us for the new partition number, type, first sector, and last sector, we will choose the defaults. Choosing the defaults will use all of the available space on the SD card.</p>
+
+<p>Your numbers will vary depending on the size and configuration of your SD card, but the general procedure will be the same.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>ubuntu@ubuntu-armhf:~<span class="nv">$ </span>sudo fdisk /dev/mmcblk0
+</span><span class='line'><span class="o">[</span>sudo<span class="o">]</span> password <span class="k">for </span>ubuntu:
+</span><span class='line'>
+</span><span class='line'>Command <span class="o">(</span>m <span class="k">for </span><span class="nb">help</span><span class="o">)</span>: p
+</span><span class='line'>
+</span><span class='line'>Disk /dev/mmcblk0: 3965 MB, 3965190144 bytes
+</span><span class='line'>4 heads, 16 sectors/track, 121008 cylinders, total 7744512 sectors
+</span><span class='line'><span class="nv">Units</span> <span class="o">=</span> sectors of 1 * <span class="nv">512</span> <span class="o">=</span> 512 bytes
+</span><span class='line'>Sector size <span class="o">(</span>logical/physical<span class="o">)</span>: 512 bytes / 512 bytes
+</span><span class='line'>I/O size <span class="o">(</span>minimum/optimal<span class="o">)</span>: 512 bytes / 512 bytes
+</span><span class='line'>Disk identifier: 0x80008000
+</span><span class='line'>
+</span><span class='line'>        Device Boot      Start         End      Blocks   Id  System
+</span><span class='line'>/dev/mmcblk0p1   *        2048      133119       65536    e  W95 FAT16 <span class="o">(</span>LBA<span class="o">)</span>
+</span><span class='line'>/dev/mmcblk0p2          133120     1638399      752640   83  Linux
+</span><span class='line'>
+</span><span class='line'>Command <span class="o">(</span>m <span class="k">for </span><span class="nb">help</span><span class="o">)</span>: d
+</span><span class='line'>Partition number <span class="o">(</span>1-4<span class="o">)</span>: 2
+</span><span class='line'>
+</span><span class='line'>Command <span class="o">(</span>m <span class="k">for </span><span class="nb">help</span><span class="o">)</span>: p
+</span><span class='line'>
+</span><span class='line'>Disk /dev/mmcblk0: 3965 MB, 3965190144 bytes
+</span><span class='line'>4 heads, 16 sectors/track, 121008 cylinders, total 7744512 sectors
+</span><span class='line'><span class="nv">Units</span> <span class="o">=</span> sectors of 1 * <span class="nv">512</span> <span class="o">=</span> 512 bytes
+</span><span class='line'>Sector size <span class="o">(</span>logical/physical<span class="o">)</span>: 512 bytes / 512 bytes
+</span><span class='line'>I/O size <span class="o">(</span>minimum/optimal<span class="o">)</span>: 512 bytes / 512 bytes
+</span><span class='line'>Disk identifier: 0x80008000
+</span><span class='line'>
+</span><span class='line'>        Device Boot      Start         End      Blocks   Id  System
+</span><span class='line'>/dev/mmcblk0p1   *        2048      133119       65536    e  W95 FAT16 <span class="o">(</span>LBA<span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'>Command <span class="o">(</span>m <span class="k">for </span><span class="nb">help</span><span class="o">)</span>: n
+</span><span class='line'>Partition <span class="nb">type</span>:
+</span><span class='line'>   p   primary <span class="o">(</span>1 primary, 0 extended, 3 free<span class="o">)</span>
+</span><span class='line'>   e   extended
+</span><span class='line'>Select <span class="o">(</span>default p<span class="o">)</span>: p
+</span><span class='line'>Partition number <span class="o">(</span>1-4, default 2<span class="o">)</span>: 2
+</span><span class='line'>First sector <span class="o">(</span>133120-7744511, default 133120<span class="o">)</span>:
+</span><span class='line'>Using default value 133120
+</span><span class='line'>Last sector, +sectors or +size<span class="o">{</span>K,M,G<span class="o">}</span> <span class="o">(</span>133120-7444511, default 7744511<span class="o">)</span>:
+</span><span class='line'>Using default value 7744511
+</span><span class='line'>
+</span><span class='line'>Command <span class="o">(</span>m <span class="k">for </span><span class="nb">help</span><span class="o">)</span>: p
+</span><span class='line'>
+</span><span class='line'>Disk /dev/mmcblk0: 3965 MB, 3965190144 bytes
+</span><span class='line'>4 heads, 16 sectors/track, 121008 cylinders, total 7744512 sectors
+</span><span class='line'><span class="nv">Units</span> <span class="o">=</span> sectors of 1 * <span class="nv">512</span> <span class="o">=</span> 512 bytes
+</span><span class='line'>Sector size <span class="o">(</span>logical/physical<span class="o">)</span>: 512 bytes / 512 bytes
+</span><span class='line'>I/O size <span class="o">(</span>minimum/optimal<span class="o">)</span>: 512 bytes / 512 bytes
+</span><span class='line'>Disk identifier: 0x80008000
+</span><span class='line'>
+</span><span class='line'>        Device Boot      Start         End      Blocks   Id  System
+</span><span class='line'>/dev/mmcblk0p1   *        2048      133119       65536    e  W95 FAT16 <span class="o">(</span>LBA<span class="o">)</span>
+</span><span class='line'>/dev/mmcblk0p2          133120     7744511     3805696   83  Linux
+</span><span class='line'>
+</span><span class='line'>Command <span class="o">(</span>m <span class="k">for </span><span class="nb">help</span><span class="o">)</span>: w
+</span><span class='line'>The partition table has been altered!
+</span><span class='line'>
+</span><span class='line'>Calling ioctl<span class="o">()</span> to re-read partition table.
+</span><span class='line'>
+</span><span class='line'>Warning: Re-reading the partition table failed with error 16: Device or resource busy.
+</span><span class='line'>The kernel still uses the old table. The new table will b eused at
+</span><span class='line'>the next reboot or after you run partprobe<span class="o">(</span>8<span class="o">)</span> or kpartx<span class="o">(</span>8<span class="o">)</span>
+</span><span class='line'>Syncing disks.
+</span><span class='line'>
+</span><span class='line'>ubuntu@ubuntu-armhf:~<span class="err">$</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The warning/error message at the end just means that we need reboot the Bone before the partition table takes effect.</p>
+
+<p>Reboot the BeagleBone Black, holding down the boot switch (closest to
+the USB port) to ensure that we boot to the system on the SD card
+instead of the eMMC.</p>
+
+<p>After the Bone reboots, run <code>resize2fs</code> to expand the partition created above.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>ubuntu@ubuntu-armhf:~<span class="nv">$ </span>sudo resize2fs /dev/mmcblk0p2
+</span><span class='line'><span class="o">[</span>sudo<span class="o">]</span> password <span class="k">for </span>ubuntu:
+</span><span class='line'>resize2fs 1.42.5 <span class="o">(</span>29-Jul-2012<span class="o">)</span>
+</span><span class='line'>Filesystem at /dev/mmcblk0p2 is mounted on /; on-line resizing required
+</span><span class='line'><span class="nv">old_desc_blocks</span> <span class="o">=</span> 1, <span class="nv">new_desc_blocks</span> <span class="o">=</span> 1
+</span><span class='line'>The filesystem on /dev/mmcblk0p2 is now 951424 blocks long.
+</span><span class='line'>
+</span><span class='line'>ubuntu@ubuntu-armhf:~<span class="err">$</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And now we have enough room to install the Ubuntu GUI.</p>
+
+<h3>Installing the Ubuntu GUI</h3>
+
+<p>After the partition on the SD card has been resized, this command will intall the GUI. The command is short, but the process takes about an hour:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo apt-get install ubuntu-desktop
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>When installation and compilation are complete, Ubuntu will return to the command prompt. Here&rsquo;s how to reboot:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo reboot
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Several minutes later, the Ubuntu 12 GUI will appear. Congratulations!  Login using the default credentials (login: ubuntu, pw: ubuntu) to get to the Ubuntu desktop.</p>
+
+<h3>Gotcha: Running RVM</h3>
+
+<p>I prefer to use the Ruby Version Manager (RVM) for bouncing between Ruby versions. RVM misbehaved, initially. Then I learned something special about RVM&rsquo;s interaction with Ubuntu. From the RVM support pages…</p>
+
+<blockquote><p>For RVM to work properly, you have to set the &lsquo;Run command as login shell&rsquo; checkbox on the Title and Command tab inside of gnome-terminal&rsquo;s Settings page.</p></blockquote>
+
+<p>This image shows the checkbox mentioned in the quote. It&rsquo;s inside of the lower red rectangle.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/rvm-ubuntu-run-command_as_login-shell.jpg' width='' height='' alt='RVM: Run command as login shell.' title='RVM: Run command as login shell.'><span class='caption-text'>RVM: Run command as login shell.</span></span></p>
+
+<p>Details are in the RVM support article <a href="http://rvm.io/integration/gnome-terminal">Integrating RVM with gnome-terminal</a>.</p>
+
+<h3>Gotcha: Ruby Installation</h3>
+
+<p>Ruby installation initially failed (speculation) because the Bone went into power save mode during the installation process. Ruby installed successfully on the second try when I kept the machine awake by moving the mouse. This <em>power save hypothesis</em> has not been thoroughly tested.</p>
+
+<h3>Gotcha: Rails Installation</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/nodejs-white.png' width='' height='' alt='Node.js on BeagleBone Black.' title='Node.js on BeagleBone Black.'><span class='caption-text'>Node.js on BeagleBone Black.</span></span>
+Rails needs a JavaScript runtime in order to function. Here are two ways to meet this requirement:</p>
+
+<ul>
+<li>Install Node.js, or</li>
+<li>Install <code>therubyracer</code> gem.</li>
+</ul>
+
+
+<p>Installing <code>therubyracer</code> gem did not work for me. But Node.js installed quickly, like so:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo apt-get install nodejs
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now that we have a JavaScript runtime, Rails runs successfully.</p>
+
+<p>Side note: If you want to see what a Node.js-equipped Bone can do, check
+out <a href="http://openrov.com">OpenROV</a>.</p>
+
+<h3>Conclusion</h3>
+
+<p>Bottom line: Ruby, Rails, and Ubuntu can run successfully on BeagleBone Black, with Node.js as a bonus.</p>
+
+<p>The BeagleBone Black is a cool option for running Ubuntu. Yes, it runs slower than a typical laptop. But it runs, and at $45 each we can build a cluster of Bones if we&rsquo;re concerned about performance!</p>
+
+<p>What an amazing bundle of technology.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-06T02:31:00-06:00" pubdate data-updated="true">Jan 6<span>th</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/beaglebone-black/'>BeagleBone Black</a>, <a class='category' href='/blog/categories/linux-unix-osx/'>Linux-Unix-OSX</a>, <a class='category' href='/blog/categories/rails/'>Rails</a>, <a class='category' href='/blog/categories/ruby/'>Ruby</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2014/01/06/beaglebone-black-ubuntu-ruby-rails-part-2/" data-via="" data-counturl="http://RayHightower.com/blog/2014/01/06/beaglebone-black-ubuntu-ruby-rails-part-2/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/01/02/beaglebone-black-ubuntu-part-1/" title="Previous Post: BeagleBone Black Running Ubuntu: Part1">&laquo; BeagleBone Black Running Ubuntu: Part1</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About</h1>
+  <p>Raymond T. Hightower is a software developer, perpetual student, founder of <a href="http://wisdomgroup.com">WisdomGroup</a>, and organizer of <a href="http://chicagoruby.org">ChicagoRuby</a> & <a href="http://windycityrails.org">WindyCityRails</a>. He is currently exploring RubyMotion & iOS.
+  </p>
+  <p>
+  <a href="http://wisdomgroup.com"><img src="/images/wisdomgroup.jpg" width="191" height="42" alt="WisdomGroup - Ruby on Rails. MVP. iPhone. iPad." title="WisdomGroup - Ruby on Rails. MVP. iPhone. iPad."/></a><br/>
+  <a href="http://windycityrails.org"><img src="/images/windycityrails.jpg" width="191" height="42" alt="WindyCityRails - Ruby on Rails Conference in Chicago, IL USA" title="WindyCityRails - Ruby on Rails Conference in Chicago, IL USA"/></a><br/>
+  <a href="http://chicagoruby.org"><img src="/images/chicagoruby.jpg" width="191" height="42" alt="ChicagoRuby - Ruby on Rails in Chicago, IL USA" title="ChicagoRuby - Ruby on Rails in Chicago, IL USA" /></a><br/>
+  </p>
+</section>
+<section>
+  <h1>Observations</h1>
+  <ul>
+    <li>Find a need and fulfill it. Successful businesses are founded on the needs of people.<br/>~A. G. Gaston</li>
+    <li>A person with a new idea is a crank until the idea succeeds.<br/> ~Mark Twain</li>
+    <li>The best way to make dreams come true is to wake up.<br/> ~Mae C. Jemison</li>
+    <li>Everybody told me no at first, including my wife. I turned the
+    nos into yeses and the disadvantages into advantages.<br/>~John H.
+    Johnson</li>
+    <li>I would have been fired a hundred times at a company run by
+    MBAs. But I never went into business to make money. I went... so
+    that I could do interesting things that hadn't been done
+    before.<br/>~Amar Bose</li>
+    <li>It's kind of fun to do the impossible.<br/>~Walt Disney</li>
+  </ul>
+</section>
+<section>
+  <h1>Speaking</h1>
+  <ul>
+    <li><a href="http://www.meetup.com/Chicago-RubyMotion/events/143412442/">Chicago RubyMotion</a> at DevBootcamp<br/>in Chicago, IL</li>
+    <li><a href="http://chippewavalleycodecamp.com/">Chippewa Valley Code Camp</a><br/>in Eau Claire, WI</li> 
+    <li><a href="http://ignitechi.org">Ignite Chicago</a> at 1871 in Chicago, IL</li>
+    <li><a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">Aloha Ruby</a> in Honolulu, HI</li>
+    <li><a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">Magic Ruby</a> in Orlando, FL</li>
+    <li><a href="http://www.meetup.com/Geekfest/events/100821552/">Geekfest</a> at Groupon in Chicago, IL</li>
+    <li><a href="http://snow-mobile.org">Snow Mobile</a> in Madison, WI</li>
+    <li><a href="http://chicagocodecamp.com">Chicago Code Camp</a> in Grayslake, IL</li>
+  </ul>
+</section>
+<section>
+  <h1>Social Media</h1>
+		<ul class="social" id="css3">
+			<li class="twitter">
+				<a href="http://twitter.com/rayhightower"><strong>Twitter</strong></a>
+			</li>
+			<li class="github">
+				<a href="http://www.github.com/rayhightower"><strong>GitHub</strong></a>
+			</li>
+			<li class="linkedin">
+				<a href="http://www.linkedin.com/in/rayhightower"><strong>LinkedIn</strong></a>
+			</li>
+			<li class="vimeo">
+				<a href="http://vimeo.com/chicagoruby"><strong>Vimeo</strong></a>
+			</li>
+		</ul>
+    <p>&nbsp;<br/>&nbsp;</p>
+</section>
+<!-- added by RTH 1/9/2013 from http://www.dotnetguy.co.uk/post/2012/06/25/octopress-category-list-plugin/ -->
+<section>
+  <h1>Blog Categories</h1>
+  <ul id="categories">
+    <li class='category'><a href='/blog/categories/arduino/'>Arduino (1)</a></li>
+<li class='category'><a href='/blog/categories/beaglebone-black/'>BeagleBone Black (5)</a></li>
+<li class='category'><a href='/blog/categories/business/'>Business (22)</a></li>
+<li class='category'><a href='/blog/categories/education/'>Education (33)</a></li>
+<li class='category'><a href='/blog/categories/high-performance-computing/'>High Performance Computing (3)</a></li>
+<li class='category'><a href='/blog/categories/ios/'>iOS (12)</a></li>
+<li class='category'><a href='/blog/categories/linux-unix-osx/'>Linux-Unix-OSX (9)</a></li>
+<li class='category'><a href='/blog/categories/objective-c/'>Objective-C (5)</a></li>
+<li class='category'><a href='/blog/categories/parallella/'>Parallella (2)</a></li>
+<li class='category'><a href='/blog/categories/rails/'>Rails (9)</a></li>
+<li class='category'><a href='/blog/categories/raspberry-pi/'>Raspberry Pi (4)</a></li>
+<li class='category'><a href='/blog/categories/ruby/'>Ruby (19)</a></li>
+<li class='category'><a href='/blog/categories/rubymotion/'>RubyMotion (12)</a></li>
+<li class='category'><a href='/blog/categories/ux/'>UX (1)</a></li>
+<li class='category'><a href='/blog/categories/vim/'>Vim (4)</a></li>
+<li class='category'><a href='/blog/categories/xcode/'>Xcode (5)</a></li>
+
+  </ul>
+</section>
+<section>
+  <h1>Popular Blog Posts</h1>
+  <ul>
+    <li><a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Ruby on Raspberry Pi</a></li>
+    <li><a href="/blog/2013/07/29/why-we-need-stem/">Why We Need STEM</a></li>
+    <li><a href="/blog/2013/05/31/kali-linux-pentesting/">Kali Linux Pentesting</a></li>
+    <li><a href="/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/">Preparing for Parallella's 64 Cores</a></li>
+    <li><a href="/blog/2013/02/26/atari-pong-rubymotion-objective-c/">Atari's Pong with RubyMotion</a></li>
+    <li><a href="/blog/2012/09/03/10000-hours-of-practice/">10,000 Hours of Practice</a></li>
+  </ul>
+</section>
+<section>
+  <h1>Vim</h1>
+  <p>I don't always use a modal editor. But when I do, I use <a href="/blog/2013/01/12/why-i-use-vim/">Vim</a>.</p>
+  <p>
+  <a href="/blog/2013/01/12/why-i-use-vim/"><img src="/images/vim_editor.gif" width="125" height="60" alt="Vim, the editor" title="Vim, the editor"/></a>
+  </p>
+</section>
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'rayhightower';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://RayHightower.com/blog/2014/01/06/beaglebone-black-ubuntu-ruby-rails-part-2/';
+        var disqus_url = 'http://RayHightower.com/blog/2014/01/06/beaglebone-black-ubuntu-ruby-rails-part-2/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

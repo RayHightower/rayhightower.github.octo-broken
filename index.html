@@ -9,7 +9,7 @@
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="BeagleBone Black running Ubuntu, Ruby, &amp; Rails. The above screenshot shows a BeagleBone Black running Ubuntu, Ruby, and Rails. Why Ubuntu? The &hellip;">
+  <meta name="description" content="Ruby. Rails. Ubuntu. BeagleBone Black. Part one of this series shows how to install Ubuntu on the BeagleBone Black. We used a MacBook Pro to burn an &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -88,7 +88,66 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2014/01/02/beaglebone-black-ubuntu-part-1/">BeagleBone Black Running Ubuntu: Part 1</a></h1>
+      <h1 class="entry-title"><a href="/blog/2014/01/06/beaglebone-black-ubuntu-ruby-rails-part-2/">BeagleBone Black Running Ubuntu: Part2 (Plus Ruby on Rails)</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-06T02:31:00-06:00" pubdate data-updated="true">Jan 6<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><span class='caption-wrapper right'><img class='caption' src='/images/ruby-rails-ubuntu-beaglebone-black.png' width='' height='' alt='Ruby. Rails. Ubuntu. BeagleBone Black.' title='Ruby. Rails. Ubuntu. BeagleBone Black.'><span class='caption-text'>Ruby. Rails. Ubuntu. BeagleBone Black.</span></span></p>
+
+<p>Part one of this series shows <a href="/blog/2014/01/02/beaglebone-black-ubuntu-part-1/">how to install Ubuntu on the BeagleBone Black</a>. We used a MacBook Pro to burn an Ubuntu disk image onto an SD card, and then we booted a BeagleBone Black from the image we created.</p>
+
+<p>This post, part two, covers the installation of the Ubuntu GUI, Ruby, and Rails. All of the commands in this article are run on the BeagleBone Black.</p>
+
+<p><a href="http://nodejs.org">Node.js</a> bonus: Rails requires a JavaScript runtime, and Node.js offered the quickest way to fulfill this requirement. Details appear within.</p>
+
+<h3>Gotcha: Partition Size</h3>
+
+<p>At the end of part one, we successfully booted the Bone with the Ubuntu command line interface. Now it&rsquo;s time to add the GUI. Two things to know about the Ubuntu GUI installation:</p>
+
+<ul>
+<li>The partition we created on the SD card (in part one) is too small to hold the Ubuntu GUI. Solution: The SD card has some extra room, and we can re-size the partition.</li>
+<li>We can install the Ubuntu GUI with a single line command. But it takes an hour for the Bone to download, compile, and install all of the GUI libraries.</li>
+</ul>
+
+
+<p>If we try to install the GUI with insufficient space, the installation will fail midway and we will have wasted half an hour. So it&rsquo;s best to re-size first.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/01/06/beaglebone-black-ubuntu-ruby-rails-part-2/">Continue reading &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/01/02/beaglebone-black-ubuntu-part-1/">BeagleBone Black Running Ubuntu: Part1</a></h1>
     
     
       <p class="meta">
@@ -113,7 +172,7 @@
 
   <div class="entry-content"><p><span class='caption-wrapper center'><img class='caption' src='/images/beaglebone-black-ubuntu-ruby-rails.jpg' width='' height='' alt='BeagleBone Black running Ubuntu, Ruby, & Rails.' title='BeagleBone Black running Ubuntu, Ruby, & Rails.'><span class='caption-text'>BeagleBone Black running Ubuntu, Ruby, &amp; Rails.</span></span></p>
 
-<p>The above screenshot shows a BeagleBone Black running Ubuntu, Ruby, and Rails. Why Ubuntu? The Bone comes pre-installed with <a href="http://www.angstrom-distribution.org/">Ångström</a>. Why not stick with Ångström?</p>
+<p>The above screenshot shows a BeagleBone Black running Ubuntu, Ruby, and Rails. Why Ubuntu? The Bone comes <a href="/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/">pre-installed with Ångström</a>, and it boots as soon as you unbox it. Why not stick with Ångström?</p>
 
 <p>My opinion: The factory standard is fine, but it&rsquo;s always good to have options. Here&rsquo;s why I decided to try Ubuntu on the BeagleBone Black:</p>
 
@@ -578,52 +637,6 @@ There is something I neglected to cover in a previous blog post, <a href="/blog/
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/11/10/a-portable-hack-for-parallella/">A Portable Hack for Parallella</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-11-10T23:05:00-06:00" pubdate data-updated="true">Nov 10<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><span class='caption-wrapper left'><img class='caption' src='/images/parallella-portable.png' width='' height='' alt='Portability for Parallella-sized devices.' title='Portability for Parallella-sized devices.'><span class='caption-text'>Portability for Parallella-sized devices.</span></span>
-<a href="/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/">Beaglebone Black</a>, <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a>, and <a href="/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/">Parallella</a> are three small, powerful Linux-based computers. But in order to make these devices truly portable, we need a way to carry a monitor and keyboard along. This article describes one hack that works.</p>
-
-<h3>Inspiration in a Suitcase</h3>
-
-<p>The HP 5036 Microprocessor Lab gave me my first exposure to assembler language. I was eighteen, working my first software internship, and loving every minute of it. When I devised ways to complete my <em>regular work</em> faster than management expected, I had some time on my hands. So I spent time learning assembler with the HP 5036.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/11/10/a-portable-hack-for-parallella/">Continue reading &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -696,17 +709,17 @@ There is something I neglected to cover in a previous blog post, <a href="/blog/
   <h1>Blog Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/arduino/'>Arduino (1)</a></li>
-<li class='category'><a href='/blog/categories/beaglebone-black/'>BeagleBone Black (4)</a></li>
+<li class='category'><a href='/blog/categories/beaglebone-black/'>BeagleBone Black (5)</a></li>
 <li class='category'><a href='/blog/categories/business/'>Business (22)</a></li>
 <li class='category'><a href='/blog/categories/education/'>Education (33)</a></li>
 <li class='category'><a href='/blog/categories/high-performance-computing/'>High Performance Computing (3)</a></li>
 <li class='category'><a href='/blog/categories/ios/'>iOS (12)</a></li>
-<li class='category'><a href='/blog/categories/linux-unix-osx/'>Linux-Unix-OSX (8)</a></li>
+<li class='category'><a href='/blog/categories/linux-unix-osx/'>Linux-Unix-OSX (9)</a></li>
 <li class='category'><a href='/blog/categories/objective-c/'>Objective-C (5)</a></li>
 <li class='category'><a href='/blog/categories/parallella/'>Parallella (2)</a></li>
-<li class='category'><a href='/blog/categories/rails/'>Rails (8)</a></li>
+<li class='category'><a href='/blog/categories/rails/'>Rails (9)</a></li>
 <li class='category'><a href='/blog/categories/raspberry-pi/'>Raspberry Pi (4)</a></li>
-<li class='category'><a href='/blog/categories/ruby/'>Ruby (18)</a></li>
+<li class='category'><a href='/blog/categories/ruby/'>Ruby (19)</a></li>
 <li class='category'><a href='/blog/categories/rubymotion/'>RubyMotion (12)</a></li>
 <li class='category'><a href='/blog/categories/ux/'>UX (1)</a></li>
 <li class='category'><a href='/blog/categories/vim/'>Vim (4)</a></li>

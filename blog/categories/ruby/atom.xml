@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ruby | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-01-03T08:05:41-06:00</updated>
+  <updated>2014-01-05T20:16:14-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -14,13 +14,261 @@
 
   
   <entry>
-    <title type="html"><![CDATA[BeagleBone Black Running Ubuntu: Part 1]]></title>
+    <title type="html"><![CDATA[BeagleBone Black Running Ubuntu: Part2 (Plus Ruby on Rails)]]></title>
+    <link href="http://RayHightower.com/blog/2014/01/06/beaglebone-black-ubuntu-ruby-rails-part-2/"/>
+    <updated>2014-01-06T02:31:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2014/01/06/beaglebone-black-ubuntu-ruby-rails-part-2</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/ruby-rails-ubuntu-beaglebone-black.png' width='' height='' alt='Ruby. Rails. Ubuntu. BeagleBone Black.' title='Ruby. Rails. Ubuntu. BeagleBone Black.'><span class='caption-text'>Ruby. Rails. Ubuntu. BeagleBone Black.</span></span></p>
+
+<p>Part one of this series shows <a href="/blog/2014/01/02/beaglebone-black-ubuntu-part-1/">how to install Ubuntu on the BeagleBone Black</a>. We used a MacBook Pro to burn an Ubuntu disk image onto an SD card, and then we booted a BeagleBone Black from the image we created.</p>
+
+<p>This post, part two, covers the installation of the Ubuntu GUI, Ruby, and Rails. All of the commands in this article are run on the BeagleBone Black.</p>
+
+<p><a href="http://nodejs.org">Node.js</a> bonus: Rails requires a JavaScript runtime, and Node.js offered the quickest way to fulfill this requirement. Details appear within.</p>
+
+<h3>Gotcha: Partition Size</h3>
+
+<p>At the end of part one, we successfully booted the Bone with the Ubuntu command line interface. Now it&rsquo;s time to add the GUI. Two things to know about the Ubuntu GUI installation:</p>
+
+<ul>
+<li>The partition we created on the SD card (in part one) is too small to hold the Ubuntu GUI. Solution: The SD card has some extra room, and we can re-size the partition.</li>
+<li>We can install the Ubuntu GUI with a single line command. But it takes an hour for the Bone to download, compile, and install all of the GUI libraries.</li>
+</ul>
+
+
+<p>If we try to install the GUI with insufficient space, the installation will fail midway and we will have wasted half an hour. So it&rsquo;s best to re-size first.</p>
+
+<!--more-->
+
+
+<h3>Why Must We Do the Re-Sizing?</h3>
+
+<p>Why didn&rsquo;t the partition have the right size when we originally downloaded the image file? Good question.</p>
+
+<p>My guess: The image file was designed to be as small as possible in order to minimize download time. That makes sense. I plan to test this theory by creating a new image with a larger partition size and a pre-installed GUI. If the test is successful, results will be posted on this blog. If the mission fails, then the secretary will disavow any knowledge&hellip;</p>
+
+<h3>How to Re-Size the Partition</h3>
+
+<p><code>df</code> is the Unix &lsquo;disk free&rsquo; command. It shows used/available diskspace.</p>
+
+<p>```bash
+ubuntu@ubuntu-armhf:~$ df</p>
+
+<p>Filesystem     1K-blocks    Used Available Use% Mounted on
+rootfs           3778576 2722944    885776  76% /
+/dev/root        3778576 2722944    885776  76% /
+devtmpfs          253580       4    253576   1% /dev
+none               50748     608     50140   2% /run
+none                5120       0      5120   0% /run/lock
+none              253728     204    253524   1% /run/shm
+/dev/mmcblk0p1      1004     480       524  48% /boot/uboot
+/dev/mmcblk1p1     65390    6536     58854  10% /media/boot
+/dev/mmcblk1p2   1748200    2664   1655068   1% /media/rootfs</p>
+
+<p>ubuntu@ubuntu-armhf:~$
+```</p>
+
+<p><code>ll</code> is one of the useful aliases built into Ubuntu&rsquo;s <code>.bashrc</code> file. We
+can use it to examine the partitions on the SD card.</p>
+
+<p>```bash
+ubuntu@ubuntu-armhf:~$ ll /dev/mmcblk*</p>
+
+<p>brw-rw&mdash;&mdash; 1 root disk 179,  0 Jan  5 15:37 /dev/mmcblk0
+brw-rw&mdash;&mdash; 1 root disk 179,  1 Jan  1  2000 /dev/mmcblk0p1
+brw-rw&mdash;&mdash; 1 root disk 179,  2 Jan  1  2000 /dev/mmcblk0p2
+brw-rw&mdash;&mdash; 1 root disk 179,  8 Jan  1  2000 /dev/mmcblk1
+brw-rw&mdash;&mdash; 1 root disk 179, 16 Jan  1  2000 /dev/mmcblk1boot0
+brw-rw&mdash;&mdash; 1 root disk 179, 24 Jan  1  2000 /dev/mmcblk1boot1
+brw-rw&mdash;&mdash; 1 root disk 179,  9 Jan  1  2000 /dev/mmcblk1p1
+brw-rw&mdash;&mdash; 1 root disk 179, 10 Jan  1  2000 /dev/mmcblk1p2</p>
+
+<p>ubuntu@ubuntu-armhf:~$
+```</p>
+
+<p><code>fdisk</code> will resize the partition we&rsquo;re after. <code>root</code> priviledges are required to modify the partition table, so we&rsquo;ll use <code>sudo</code>. The standard warnings about sudo apply.</p>
+
+<p>A few useful <code>fdisk</code> commands:</p>
+
+<ul>
+<li><code>p</code> prints the partition table.</li>
+<li><code>d</code> deletes a partition.</li>
+<li><code>n</code> creates a new partition.</li>
+<li><code>q</code> quits fdisk.</li>
+</ul>
+
+
+<p>Here&rsquo;s the plan: In order to increase the size of <code>/dev/mmcblk0p2</code>, we will delete it, and then re-create it with a larger size. Note the use of the <code>d</code> and <code>n</code> commands in the following sequence. When <code>fdisk</code> asks us for the new partition number, type, first sector, and last sector, we will choose the defaults. Choosing the defaults will use all of the available space on the SD card.</p>
+
+<p>Your numbers will vary depending on the size and configuration of your SD card, but the general procedure will be the same.</p>
+
+<p>```bash
+ubuntu@ubuntu-armhf:~$ sudo fdisk /dev/mmcblk0
+[sudo] password for ubuntu:</p>
+
+<p>Command (m for help): p</p>
+
+<p>Disk /dev/mmcblk0: 3965 MB, 3965190144 bytes
+4 heads, 16 sectors/track, 121008 cylinders, total 7744512 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x80008000</p>
+
+<pre><code>    Device Boot      Start         End      Blocks   Id  System
+</code></pre>
+
+<p>/dev/mmcblk0p1   *        2048      133119       65536    e  W95 FAT16 (LBA)
+/dev/mmcblk0p2          133120     1638399      752640   83  Linux</p>
+
+<p>Command (m for help): d
+Partition number (1-4): 2</p>
+
+<p>Command (m for help): p</p>
+
+<p>Disk /dev/mmcblk0: 3965 MB, 3965190144 bytes
+4 heads, 16 sectors/track, 121008 cylinders, total 7744512 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x80008000</p>
+
+<pre><code>    Device Boot      Start         End      Blocks   Id  System
+</code></pre>
+
+<p>/dev/mmcblk0p1   *        2048      133119       65536    e  W95 FAT16 (LBA)</p>
+
+<p>Command (m for help): n
+Partition type:
+   p   primary (1 primary, 0 extended, 3 free)
+   e   extended
+Select (default p): p
+Partition number (1-4, default 2): 2
+First sector (133120-7744511, default 133120):
+Using default value 133120
+Last sector, +sectors or +size{K,M,G} (133120-7444511, default 7744511):
+Using default value 7744511</p>
+
+<p>Command (m for help): p</p>
+
+<p>Disk /dev/mmcblk0: 3965 MB, 3965190144 bytes
+4 heads, 16 sectors/track, 121008 cylinders, total 7744512 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x80008000</p>
+
+<pre><code>    Device Boot      Start         End      Blocks   Id  System
+</code></pre>
+
+<p>/dev/mmcblk0p1   *        2048      133119       65536    e  W95 FAT16 (LBA)
+/dev/mmcblk0p2          133120     7744511     3805696   83  Linux</p>
+
+<p>Command (m for help): w
+The partition table has been altered!</p>
+
+<p>Calling ioctl() to re-read partition table.</p>
+
+<p>Warning: Re-reading the partition table failed with error 16: Device or resource busy.
+The kernel still uses the old table. The new table will b eused at
+the next reboot or after you run partprobe(8) or kpartx(8)
+Syncing disks.</p>
+
+<p>ubuntu@ubuntu-armhf:~$
+```</p>
+
+<p>The warning/error message at the end just means that we need reboot the Bone before the partition table takes effect.</p>
+
+<p>Reboot the BeagleBone Black, holding down the boot switch (closest to
+the USB port) to ensure that we boot to the system on the SD card
+instead of the eMMC.</p>
+
+<p>After the Bone reboots, run <code>resize2fs</code> to expand the partition created above.</p>
+
+<p>```bash
+ubuntu@ubuntu-armhf:~$ sudo resize2fs /dev/mmcblk0p2
+[sudo] password for ubuntu:
+resize2fs 1.42.5 (29-Jul-2012)
+Filesystem at /dev/mmcblk0p2 is mounted on /; on-line resizing required
+old_desc_blocks = 1, new_desc_blocks = 1
+The filesystem on /dev/mmcblk0p2 is now 951424 blocks long.</p>
+
+<p>ubuntu@ubuntu-armhf:~$
+```</p>
+
+<p>And now we have enough room to install the Ubuntu GUI.</p>
+
+<h3>Installing the Ubuntu GUI</h3>
+
+<p>After the partition on the SD card has been resized, this command will intall the GUI. The command is short, but the process takes about an hour:</p>
+
+<p><code>bash
+$ sudo apt-get install ubuntu-desktop
+</code>
+When installation and compilation are complete, Ubuntu will return to the command prompt. Here&rsquo;s how to reboot:</p>
+
+<p><code>bash
+$ sudo reboot
+</code></p>
+
+<p>Several minutes later, the Ubuntu 12 GUI will appear. Congratulations!  Login using the default credentials (login: ubuntu, pw: ubuntu) to get to the Ubuntu desktop.</p>
+
+<h3>Gotcha: Running RVM</h3>
+
+<p>I prefer to use the Ruby Version Manager (RVM) for bouncing between Ruby versions. RVM misbehaved, initially. Then I learned something special about RVM&rsquo;s interaction with Ubuntu. From the RVM support pages…</p>
+
+<blockquote><p>For RVM to work properly, you have to set the &lsquo;Run command as login shell&rsquo; checkbox on the Title and Command tab inside of gnome-terminal&rsquo;s Settings page.</p></blockquote>
+
+<p>This image shows the checkbox mentioned in the quote. It&rsquo;s inside of the lower red rectangle.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/rvm-ubuntu-run-command_as_login-shell.jpg' width='' height='' alt='RVM: Run command as login shell.' title='RVM: Run command as login shell.'><span class='caption-text'>RVM: Run command as login shell.</span></span></p>
+
+<p>Details are in the RVM support article <a href="http://rvm.io/integration/gnome-terminal">Integrating RVM with gnome-terminal</a>.</p>
+
+<h3>Gotcha: Ruby Installation</h3>
+
+<p>Ruby installation initially failed (speculation) because the Bone went into power save mode during the installation process. Ruby installed successfully on the second try when I kept the machine awake by moving the mouse. This <em>power save hypothesis</em> has not been thoroughly tested.</p>
+
+<h3>Gotcha: Rails Installation</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/nodejs-white.png' width='' height='' alt='Node.js on BeagleBone Black.' title='Node.js on BeagleBone Black.'><span class='caption-text'>Node.js on BeagleBone Black.</span></span>
+Rails needs a JavaScript runtime in order to function. Here are two ways to meet this requirement:</p>
+
+<ul>
+<li>Install Node.js, or</li>
+<li>Install <code>therubyracer</code> gem.</li>
+</ul>
+
+
+<p>Installing <code>therubyracer</code> gem did not work for me. But Node.js installed quickly, like so:</p>
+
+<p><code>bash
+$ sudo apt-get install nodejs
+</code></p>
+
+<p>Now that we have a JavaScript runtime, Rails runs successfully.</p>
+
+<p>Side note: If you want to see what a Node.js-equipped Bone can do, check
+out <a href="http://openrov.com">OpenROV</a>.</p>
+
+<h3>Conclusion</h3>
+
+<p>Bottom line: Ruby, Rails, and Ubuntu can run successfully on BeagleBone Black, with Node.js as a bonus.</p>
+
+<p>The BeagleBone Black is a cool option for running Ubuntu. Yes, it runs slower than a typical laptop. But it runs, and at $45 each we can build a cluster of Bones if we&rsquo;re concerned about performance!</p>
+
+<p>What an amazing bundle of technology.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[BeagleBone Black Running Ubuntu: Part1]]></title>
     <link href="http://RayHightower.com/blog/2014/01/02/beaglebone-black-ubuntu-part-1/"/>
     <updated>2014-01-02T15:59:00-06:00</updated>
     <id>http://RayHightower.com/blog/2014/01/02/beaglebone-black-ubuntu-part-1</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper center'><img class='caption' src='/images/beaglebone-black-ubuntu-ruby-rails.jpg' width='' height='' alt='BeagleBone Black running Ubuntu, Ruby, &amp; Rails.' title='BeagleBone Black running Ubuntu, Ruby, &amp; Rails.'><span class='caption-text'>BeagleBone Black running Ubuntu, Ruby, &amp; Rails.</span></span></p>
 
-<p>The above screenshot shows a BeagleBone Black running Ubuntu, Ruby, and Rails. Why Ubuntu? The Bone comes pre-installed with <a href="http://www.angstrom-distribution.org/">Ångström</a>. Why not stick with Ångström?</p>
+<p>The above screenshot shows a BeagleBone Black running Ubuntu, Ruby, and Rails. Why Ubuntu? The Bone comes <a href="/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/">pre-installed with Ångström</a>, and it boots as soon as you unbox it. Why not stick with Ångström?</p>
 
 <p>My opinion: The factory standard is fine, but it&rsquo;s always good to have options. Here&rsquo;s why I decided to try Ubuntu on the BeagleBone Black:</p>
 
@@ -470,139 +718,6 @@ parameter to the <code>ap</code> method like so&hellip;</p>
 <p>If you&rsquo;re using RubyMotion and you&rsquo;re located in the Chicago area, check out the <a href="http://www.meetup.com/Chicago-RubyMotion/">Chicago RubyMotion</a> group. The group attracts devs who are running into the same challenges as you. Devs who work with other devs tend to learn more over time.</p>
 
 <p>See you there!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Building an OS X App With RubyMotion]]></title>
-    <link href="http://RayHightower.com/blog/2013/11/01/building-an-os-x-app-with-rubymotion/"/>
-    <updated>2013-11-01T00:15:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2013/11/01/building-an-os-x-app-with-rubymotion</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/time-machine-backup-disks.png' width='' height='' alt='Redundancy rocks.' title='Redundancy rocks.'><span class='caption-text'>Redundancy rocks.</span></span>
-<a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a>&rsquo;s OS X support enabled me to solve a small problem yesterday.  Here&rsquo;s the story.</p>
-
-<h3>Background on Backup</h3>
-
-<p>No matter how much money we spend on computers, the data we create is worth more. The best data protection employs several levels of redundancy.</p>
-
-<p>My backup system starts with Apple&rsquo;s <a href="http://www.apple.com/findouthow/mac/#timemachinebasics">Time Machine</a>, which handles first level backups painlessly in the background. Time machine is even more effective when multiple disks are used. I like to combine that with online solutions. Redundancy is a good thing.</p>
-
-<p>USB-attached drives work great with Time Machine. I found that Time Machine was inconsistent over WiFi, and when it failed, troubleshooting took too much time. That was a few years ago and things have probably improved since then. I&rsquo;ve never had to troubleshoot a USB-attached Time Machine drive. USB just works. Except when it doesn&rsquo;t. And that&rsquo;s where RubyMotion proved helpful.</p>
-
-<!--more-->
-
-
-<h3>Disconnecting USB in a Hurry</h3>
-
-<p>My only problem with USB-attached drives comes when I need to leave my desk in a hurry. You may have seen this message before:</p>
-
-<p><span class='caption-wrapper'><img class='caption' src='/images/disk-not-ejected-properly.png' width='' height='' alt='In a hurry to eject?' title='In a hurry to eject?'><span class='caption-text'>In a hurry to eject?</span></span></p>
-
-<p>All three of my USB drives are attached through a single USB hub. Yanking the cable while running for a meeting is… bad! Forgetting to eject even one of the USB drives is also bad.</p>
-
-<p>I solved the problem about a year ago by writing a command line tool that ejects all three drives with one double-click of an icon. Yesterday I deciced to improve my command line tool with RubyMotion.</p>
-
-<h3>Ejecting in a Hurry</h3>
-
-<p><code>EjectDisks</code> is a simple OS X program written with the RubyMotion toolchain for Mac OS X. It uses the <code>osx-status-bar-app-template</code> gem created by <a href="https://github.com/kickcode/osx-status-bar-app-template">Elliott Draper</a>. Here&rsquo;s a 10-second demo.</p>
-
-<center><iframe name="eject-disks-osx" src="http://RayHightower.com//player.vimeo.com/video/78349497" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
-
-
-<h3>The Code</h3>
-
-<p>The latest version of the EjectDisk code is on <a href="https://github.com/RayHightower/EjectDisks">GitHub</a>. The <code>app_delegate.rb</code> file appears below.</p>
-
-<p>```ruby
-class AppDelegate
-  attr_accessor :status_menu</p>
-
-<p>  def applicationDidFinishLaunching(notification)</p>
-
-<pre><code>@app_name = NSBundle.mainBundle.infoDictionary['CFBundleDisplayName']
-
-@status_menu = NSMenu.new
-
-@status_item = NSStatusBar.systemStatusBar.statusItemWithLength(NSVariableStatusItemLength).init
-@status_item.setMenu(@status_menu)
-@status_item.setHighlightMode(true)
-@status_item.setTitle(@app_name)
-
-@status_menu.addItem createMenuItem("About #{@app_name}", 'orderFrontStandardAboutPanel:')
-@status_menu.addItem createMenuItem("Custom Action", 'pressAction')
-@status_menu.addItem createMenuItem("Eject Three Disks", 'ejectThreeDisks')
-@status_menu.addItem createMenuItem("Say Something", 'sayDroid')
-@status_menu.addItem createMenuItem("Sing", 'singSomething')
-@status_menu.addItem createMenuItem("Greetings", 'greetings')
-@status_menu.addItem createMenuItem("Quit", 'terminate:')
-</code></pre>
-
-<p>  end</p>
-
-<p>  def createMenuItem(name, action)</p>
-
-<pre><code>NSMenuItem.alloc.initWithTitle(name, action: action, keyEquivalent: '')
-</code></pre>
-
-<p>  end</p>
-
-<p>  def pressAction</p>
-
-<pre><code>alert = NSAlert.alloc.init
-alert.setMessageText "Action triggered from status bar menu"
-alert.addButtonWithTitle "OK"
-alert.runModal
-</code></pre>
-
-<p>  end</p>
-
-<p>  def sayDroid</p>
-
-<pre><code>%x(say -v cello droid)
-</code></pre>
-
-<p>  end</p>
-
-<p>  def singSomething</p>
-
-<pre><code>%x(say -v cello da da da da da da da da da da da da da da da da da da da da da da da da da da)
-</code></pre>
-
-<p>  end</p>
-
-<p>  def greetings</p>
-
-<pre><code>%x(say -v cello Greetings to the members of Chippewa Valley Code Camp &amp;)
-alert = NSAlert.alloc.init
-alert.setMessageText "Greetings to the members of Chippewa Valley Code Camp!"
-alert.addButtonWithTitle "OK"
-alert.runModal
-</code></pre>
-
-<p>  end</p>
-
-<p>  def ejectThreeDisks</p>
-
-<pre><code>alert = NSAlert.alloc.init
-response = %x(/usr/sbin/diskutil eject SiiGBlack) + "\n"
-response += %x(/usr/sbin/diskutil eject Ultra3TB) + "\n"
-response += %x(/usr/sbin/diskutil eject WDSilver) + "\n"
-alert.setMessageText response
-alert.addButtonWithTitle "OK"
-alert.runModal
-</code></pre>
-
-<p>  end
-end
-```</p>
-
-<h3>Next Steps</h3>
-
-<p>Not everything in the EjectDisks tool is business-related. Do we really need to include a greeting to the members of the <a href="http://chippewavalleycodecamp.com/">Chippewa Valley Code Camp</a>?  Yes, we do!</p>
-
-<p>On the serious side, the app should handle disk ejection as a background process. It&rsquo;s not good to tie up the system for a simple task. Look for a forked process in a future version of the app.</p>
-
-<p><em>Update: This article should have included instructions on how to run the executable on any Mac OS X system without having RubyMotion installed. The omission is corrected in a later blog post, <a href="/blog/2013/11/11/os-x-and-rubymotion-finishing-up/">OS X and RubyMotion, Finishing Up</a>.</em></p>
 ]]></content>
   </entry>
   
