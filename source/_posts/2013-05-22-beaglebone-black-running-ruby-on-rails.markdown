@@ -56,6 +56,8 @@ sh-4.2#
 
 Maybe it's time to try [RBEnv](https://github.com/sstephenson/rbenv)? I'll post a solution when I find it. Or... if a reader of this blog already has a solution for the BeagleBone Black Rails installation challenge, please post in the comments below and I'll credit you here.
 
+_Update (Jan 2014): [BeagleBone Black Running Ubuntu, Ruby, Rails](/blog/2014/01/02/beaglebone-black-ubuntu-part-1/)_
+
 ####BeagleBone Black vs. Raspberry Pi
 Which is better, BeagleBone Black or Raspberry Pi? There's no clear winner in my opinion. It's a matter of trade-offs:
 
