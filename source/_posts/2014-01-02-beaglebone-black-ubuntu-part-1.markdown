@@ -20,9 +20,6 @@ This article will show how to install Ubuntu on the BeagleBone Black. _Gotchas_ 
 
 For a comparable examination of the Raspberry Pi, take a look at [Ruby on Raspberry Pi](/blog/2012/12/03/ruby-on-raspberry-pi/).
 
-###Sudo Disclaimer: You Could Destroy Everything
-Some of these steps will require the `sudo` command. [Sudo endows users with great power](http://xkcd.com/149/). You could destroy all of the data on your computer by using `sudo` incorrectly. Further, since technology changes rapidly, everything you see here could be out of date by the time you read this. Please be careful, and double-check these steps through your own sources.  
-
 ###First Gotcha: Ubuntu 13 on the Bone
 As of this writing, Ubuntu 12 runs well on the BeagleBone Black, but Ubuntu 13 does not. My Ubuntu 13 installation appeared to be successful, but the Ubuntu 13 GUI hung up immediately after login. The Ubuntu 13 command line interface worked fine. 
 
@@ -42,6 +39,8 @@ In addition to the BeagleBone Black, the following items should be gathered befo
 * External 5V power adapter for the Bone. Personally, I trust the standard 5v power input more than I trust the power provided via USB. One never knows if USB can provide sufficient (and stable) amperage for a circuit board. Power fluctuations can lead to strange behavior, including video flickering.
 * Ethernet cable with RJ-45 ends.
 * A fast internet connection.
+
+The standard [sudo disclaimer](/sudo-disclaimer) applies.
 
 ###Homebrew Required
 Homebrew is the easiest way to install 'nix utilities on Mac OS X. We need Homebrew in order to install some of the utilities needed to burn the SD card. The one-line Homebrew installation command is given on the  [Homebrew site](http://brew.sh/).

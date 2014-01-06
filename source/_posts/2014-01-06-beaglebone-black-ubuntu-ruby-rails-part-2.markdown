@@ -64,7 +64,7 @@ brw-rw---- 1 root disk 179, 10 Jan  1  2000 /dev/mmcblk1p2
 ubuntu@ubuntu-armhf:~$ 
 ```
 
-`fdisk` will resize the partition we're after. `root` priviledges are required to modify the partition table, so we'll use `sudo`. The standard warnings about sudo apply.
+`fdisk` will resize the partition we're after. `root` priviledges are required to modify the partition table, so we'll use `sudo`. The standard [sudo disclaimer](/sudo-disclaimer) applies.
 
 A few useful `fdisk` commands:
 
