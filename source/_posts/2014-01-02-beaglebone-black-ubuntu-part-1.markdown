@@ -9,15 +9,15 @@ categories: [ BeagleBone Black, Linux-Unix-OSX, Rails, Ruby ]
 
 The above screenshot shows a BeagleBone Black running Ubuntu, Ruby, and Rails. Why Ubuntu? The Bone comes [pre-installed with Ångström](/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/), and it boots as soon as you unbox it. Why not stick with Ångström? 
 
-My opinion: The factory standard is fine, but it's always good to have options. Here's why I decided to try Ubuntu on the BeagleBone Black:
-
+My opinion: The factory standard is fine, but it's always good to have options. Here's why I decided to try Ubuntu on the BeagleBone Black...
+<!--more-->
 * Ubuntu documentation is plentiful. Books, blogs, and videos are readily available. 
 * The Ubuntu community is huge. When a dev runs into an Ubuntu-related snag, it's likely that another dev has encountered a similar problem, and they can collaborate on a solution.
 * Ubuntu is the distro that I'm most familiar with. [WisdomGroup](http://wisdomgroup.com) uses Ubuntu for multiple projects. With a common operating system, knowledge gained in one environment is immediately useful in another.
 * Prepping for [Parallella](/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/), the 64-core single-board computer that will cost about two hundred bucks. The Parallella is currently in short supply. When it becomes available, it will run Ubuntu. Experience with other single-board computers, especially those running Ubuntu, will prove useful.
 
 This article will show how to install Ubuntu on the BeagleBone Black. _Gotchas_ will be pointed out along the way. Where possible, I will explain the reasons behind my decisions so that you can make different choices if you like.
-<!--more-->
+
 For a comparable examination of the Raspberry Pi, take a look at [Ruby on Raspberry Pi](/blog/2012/12/03/ruby-on-raspberry-pi/).
 
 ###Sudo Disclaimer: You Could Destroy Everything
