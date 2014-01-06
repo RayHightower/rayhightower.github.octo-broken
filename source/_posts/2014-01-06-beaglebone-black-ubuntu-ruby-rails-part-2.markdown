@@ -21,15 +21,17 @@ At the end of part one, we successfully booted the Bone with the Ubuntu command 
 
 If we try to install the GUI without re-sizing the partition, the installation will fail midway and we will have wasted half an hour. So it's best to re-size first. 
 <!--more-->
-###Re-Sizing the Partition
-Why didn't the partition have the right size when we downloaded the image file? Good question.
+###Why Re-Size the Partition?
+Why didn't the partition have the right size when we originally downloaded the image file? Good question.
 
 My guess: The image file was designed to be as small as possible in order to minimize download time. That makes sense. I plan to test this theory by creating a new image with a larger partition size and a pre-installed GUI. If the test is successful, results will be posted on this blog. If the mission fails, then the secretary will disavow any knowledge...
 
-`df` will show...
+###How to Re-Size the Partition
+`df` is the Unix 'disk free' command. It shows used/available diskspace. 
 
 ```bash
 ubuntu@ubuntu-armhf:~$ df
+
 Filesystem     1K-blocks    Used Available Use% Mounted on
 rootfs           3778576 2722944    885776  76% /
 /dev/root        3778576 2722944    885776  76% /
@@ -40,6 +42,7 @@ none              253728     204    253524   1% /run/shm
 /dev/mmcblk0p1      1004     480       524  48% /boot/uboot
 /dev/mmcblk1p1     65390    6536     58854  10% /media/boot
 /dev/mmcblk1p2   1748200    2664   1655068   1% /media/rootfs
+
 ubuntu@ubuntu-armhf:~$ 
 ```
 
@@ -48,6 +51,7 @@ can use it to examine the partitions on the SD card.
 
 ```bash
 ubuntu@ubuntu-armhf:~$ ll /dev/mmcblk*
+
 brw-rw---- 1 root disk 179,  0 Jan  5 15:37 /dev/mmcblk0
 brw-rw---- 1 root disk 179,  1 Jan  1  2000 /dev/mmcblk0p1
 brw-rw---- 1 root disk 179,  2 Jan  1  2000 /dev/mmcblk0p2
@@ -56,6 +60,7 @@ brw-rw---- 1 root disk 179, 16 Jan  1  2000 /dev/mmcblk1boot0
 brw-rw---- 1 root disk 179, 24 Jan  1  2000 /dev/mmcblk1boot1
 brw-rw---- 1 root disk 179,  9 Jan  1  2000 /dev/mmcblk1p1
 brw-rw---- 1 root disk 179, 10 Jan  1  2000 /dev/mmcblk1p2
+
 ubuntu@ubuntu-armhf:~$ 
 ```
 
@@ -67,6 +72,10 @@ A few useful `fdisk` commands:
 * `d` deletes a partition.
 * `n` creates a new partition.
 * `q` quits fdisk.
+
+Here's the plan: In order to increase the size of `/dev/mmcblk0p2`, we will delete it, and then re-create it with a larger size. Note the use of the `d` and `n` commands in the following sequence. When `fdisk` asks us for the new partition number, type, first sector, and last sector, we will choose the defaults. Choosing the defaults will give us the largest available size for our SD card.
+
+Note: Your numbers will vary depending on the size and configuration of your SD card, but the general procedure will be the same.
 
 ```bash
 ubuntu@ubuntu-armhf:~$ sudo fdisk /dev/mmcblk0
@@ -83,28 +92,11 @@ Disk identifier: 0x80008000
         Device Boot      Start         End      Blocks   Id  System
 /dev/mmcblk0p1   *        2048        4095        1024    1  FAT12
 /dev/mmcblk0p2            4096     7744511     3870208   83  Linux
-
-Command (m for help): q
-
-ubuntu@ubuntu-armhf:~$ ubuntu@ubuntu-armhf:~$
 ```
-
 
  
-```bash
-Filesystem     1K-blocks    Used Available Use% Mounted on
-rootfs           3778576 2731444    877276  76% /
-/dev/root        3778576 2731444    877276  76% /
-devtmpfs          253580       4    253576   1% /dev
-none               50748     608     50140   2% /run
-none                5120       0      5120   0% /run/lock
-none              253728     156    253572   1% /run/shm
-/dev/mmcblk0p1      1004     480       524  48% /boot/uboot
-/dev/mmcblk1p1     65390    6536     58854  10% /media/boot
-/dev/mmcblk1p2   1748200    2664   1655068   1% /media/rootfs
-```
 
-
+And we're done! Now we have enough room to install the Ubuntu GUI.
 
 ###Installing the Ubuntu GUI
 After the partition on the SD card has been resized, this command will intall the GUI. Note that the process takes about an hour:
