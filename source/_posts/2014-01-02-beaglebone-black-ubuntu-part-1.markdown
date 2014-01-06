@@ -168,9 +168,9 @@ pw: ubuntu
 ```
 
 ###End of Part One
-This marks the end of part one of this post about BeagleBone Black and Ubuntu.
+This marks the end of part one of this series about BeagleBone Black and Ubuntu.
 
-Part two will cover Ruby on BeagleBone Black, including...
+[Part two](/blog/2014/01/06/beaglebone-black-ubuntu-ruby-rails-part-2/) covers [Ruby on BeagleBone Black](/blog/2014/01/06/beaglebone-black-ubuntu-ruby-rails-part-2/), with information about...
 
 * Getting the GUI running, including a disk resizing _gotcha_.
 * Installing Ruby, including a Ruby Version Manager (RVM) _gotcha_.
