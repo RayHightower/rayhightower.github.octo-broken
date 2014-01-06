@@ -21,7 +21,7 @@ At the end of [part one](/blog/2014/01/02/beaglebone-black-ubuntu-part-1/), we s
 
 If we try to install the GUI with insufficient space, the installation will fail midway and we will have wasted half an hour. So it's best to re-size first. 
 
-###Why Must _We_ Do the Re-Sizing?
+###Doing Our Own Re-Sizing?
 Why didn't the partition have the right size when we originally downloaded the image file? Good question.
 
 My guess: The image file was designed to be as small as possible in order to minimize download time. That makes sense. I plan to test this theory by creating a new image with a larger partition size and a pre-installed GUI. If the test is successful, results will be posted on this blog. If the mission fails, then the secretary will disavow any knowledge...
@@ -219,3 +219,4 @@ The BeagleBone Black is a cool option for running Ubuntu. Yes, it runs slower th
 
 What an amazing bundle of technology.
 
+_For a similar discussion about another single-board computer, check out [Ruby on Raspberry Pi](/blog/2012/12/03/ruby-on-raspberry-pi/)_.
