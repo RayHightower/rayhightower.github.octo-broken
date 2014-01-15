@@ -10,7 +10,7 @@ categories: [ Business, UX ]
 >
 >~Henry Ford
 
-The above Henry Ford quote is often cited in presentations about innovation. The point of the quote: An inventor who listens to customers too closely, without observing customer behavior, will reap tiny improvements, at best. Ford ignored the request for "a faster horse", and that is how the Ford Motor Company became a leader in the early auto industry.
+The above Henry Ford quote is often cited in presentations about innovation. The point of the quote: An inventor who listens to customers too closely, without observing customer behavior, will reap tiny improvements at best. Ford ignored the request for "a faster horse", and that is how the Ford Motor Company became a leader in the early auto industry.
 
 That's one way to interpret Ford's quote. Last night, I was introduced to another view.
 <!--more-->
