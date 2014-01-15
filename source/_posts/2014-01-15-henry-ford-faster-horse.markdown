@@ -22,4 +22,4 @@ Something interesting happens when we parse the quote differently. The adjective
 ###Focus on Faster 
 _Faster_ tells us that we can stretch beyond our current thinking and consider other modes of transportation. Focusing on _faster_ led to the beginning of the automobile industry.
 
-Customers are telling us what they want all the time. We need to listen carefully and parse well. Thanks IxDA Chicago and Chris Holmes for the lesson.
+Customers are sharing their desires all the time. We need to listen carefully and parse well. Thanks IxDA Chicago and Chris Holmes for the lesson.
