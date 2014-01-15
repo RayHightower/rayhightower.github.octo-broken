@@ -43,7 +43,11 @@ A quick shout-out to Home Depot: Their store-brand cables let you test the cable
 My second "gotcha" is more important: The `curl` command did not behave as flawlessly as it did with the Raspberry Pi, so I was not able to install Ruby as quickly as planned. Details below.
 
 ###Installing Rails
-I will have to cover Ruby and Rails installation in a future blog post because my initial attempts were not successful. [RVM, Ruby, and Rails installed easily with Raspberry Pi](/blog/2012/12/03/ruby-on-raspberry-pi/), even though the compilation time was long. With the BeagleBone Black, I received the following in response to the `curl` command:
+~~I will have to cover Ruby and Rails installation in a future blog post because my initial attempts were not successful.~~ 
+
+_Update (Jan 2014): Ruby, Rails, and Ubuntu will run on the BeagleBone Black. [Installation details](/blog/2014/01/02/beaglebone-black-ubuntu-part-1/)_
+
+[RVM, Ruby, and Rails installed easily with Raspberry Pi](/blog/2012/12/03/ruby-on-raspberry-pi/), even though the compilation time was long. With the BeagleBone Black, I received the following in response to the `curl` command:
 
 ```bash
 sh-4.2# curl -L https://get.rvm.io | bash -s stable --ruby
@@ -55,8 +59,6 @@ sh-4.2#
 ```
 
 Maybe it's time to try [RBEnv](https://github.com/sstephenson/rbenv)? I'll post a solution when I find it. Or... if a reader of this blog already has a solution for the BeagleBone Black Rails installation challenge, please post in the comments below and I'll credit you here.
-
-_Update (Jan 2014): [BeagleBone Black Running Ubuntu, Ruby, Rails](/blog/2014/01/02/beaglebone-black-ubuntu-part-1/)_
 
 ####BeagleBone Black vs. Raspberry Pi
 Which is better, BeagleBone Black or Raspberry Pi? There's no clear winner in my opinion. It's a matter of trade-offs:
