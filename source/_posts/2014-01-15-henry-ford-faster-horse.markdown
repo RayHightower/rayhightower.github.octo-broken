@@ -10,7 +10,7 @@ categories: [ Business, UX ]
 >&nbsp;
 >~Henry Ford
 
-The above Henry Ford quote is often cited in presentations about innovation. The point of the quote: An inventor who listens to customers too closely, without observing customer behavior, will reap tiny improvements. Ford challenged the assumtion that horseback was the only way to travel. 
+The above Henry Ford quote is often cited in presentations about innovation. The point of the quote: An inventor who listens to customers too closely, without observing customer behavior, will reap tiny improvements. Ford challenged the assumtion that horseback was the only way to travel. That is how Ford became a leader in the early automotive industry.
 
 That's the traditional way to interpret Ford's quote. Last night, I was introduced to another view.
 <!--more-->
