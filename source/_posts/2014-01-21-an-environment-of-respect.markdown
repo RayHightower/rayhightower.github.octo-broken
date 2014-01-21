@@ -11,9 +11,9 @@ Here is an early draft of the [WindyCityRails](http://windycityrails.org) Code o
 
 There may be some word-smithing and typo-correction this week, but the final version will essentially read as it appears above. Key objectives achieved:
 
-   * Simplicity. The point is made with minimal words.
-   * Inclusiveness. Everybody who wants to learn and engage is included. 
-   * Respect. Everybody is treated with respect. No threats are made.
+* Simplicity. The point is made with minimal words.
+* Inclusiveness. Everybody who wants to learn and engage is included. 
+* Respect. Everybody is treated with respect. No threats are made.
 
 You have already read the most important part of this post. The rest tells how the code came to be.
 <!--more-->
@@ -50,9 +50,9 @@ Another example of inclusiveness: All of ChicagoRuby's monthly events are free b
 ###Excluding Others
 I have more experience with racism than any other -ism, so that's what I'll talk about here. A mentor of mine raised two questions during a discussion about racism and oppression. 
 
-   * Do you want to end all oppression, or just the oppression directed at you?
+* Do you want to end all oppression, or just the oppression directed at you?
 
-   * Do you really want to end oppression, or do you simply want to change places with your oppressor?
+* Do you really want to end oppression, or do you simply want to change places with your oppressor?
 
 Here's an experience that shapes my thoughts on this subject. A few decades ago, when I was a young developer for a company in Colorado, I had a confrontation with senior developer, a White man. I was certain that this was a Black/White issue. I won't go into details, but I will admit that I treated that White man very badly in retaliation.
 
