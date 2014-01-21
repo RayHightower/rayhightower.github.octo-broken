@@ -45,7 +45,7 @@ That changed when I became an organizer. Today we announce the drink invitation 
 
 Further, we make it clear that one does not have to drink alcohol to participate. Soft drinks and cranberry juice are in abundance.
 
-Another example of inclusiveness: All of ChicagoRuby's monthly events are free because we want to include developers regardless of income. Expenses for the monthly events are covered by revenue from WindyCityRails and monthly sponsors. 
+Another example of inclusiveness: All of ChicagoRuby's monthly events are free because we want to include developers regardless of income. Expenses for the monthly events are covered by monthly sponsors and revenue from WindyCityRails. 
 
 ###Excluding Others
 I have more experience with racism than any other -ism, so that's what I'll talk about here. 
