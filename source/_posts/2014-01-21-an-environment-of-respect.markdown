@@ -7,7 +7,7 @@ categories: [ Community ]
 ---
 Here is an early draft of the [WindyCityRails](http://windycityrails.org) Code of Conduct:
 
->WindyCityRails strives to provide a healthy, harassment-free conference experience for all attendees. Our Code of Conduct, which has been lived by members of our community for years, is as follows: Treat everyone at the conference as you would want yourself, a family member, or an esteemed colleague to be treated. Our community is stronger when every member contributes to the safety and learning of the other members. We are colleagues, and we treat each other with respect.
+>WindyCityRails strives to provide a healthy, harassment-free conference experience for all attendees. Our Code of Conduct, which has been practiced by members of our community for years, is as follows: Treat everyone at the conference as you would want yourself, a family member, or an esteemed colleague to be treated. Our community is stronger when every member contributes to the safety and learning of the other members. We are colleagues, and we treat each other with respect.
 
 The organizer team may do some word-smithing and typo-correction this week, but the final version will essentially read as it appears above. Key objectives achieved:
 
@@ -55,18 +55,18 @@ A mentor of mine raised two questions during a discussion about racism and oppre
 
 When drafting the new code of conduct, I wanted to be sure to treat all groups of people with respect. A few decades ago, when I was a young developer for a company in Colorado, I had a confrontation with senior developer, a White man. I won't go into details, but I was fairly sure that this was a Black/White issue. And I will admit that I treated that White man very badly in retaliation.
 
-Some days later, I walked past my manager's desk, and there was my nemesis, interacting with my manager (another White man who also happened to be his manager) in the same manner that he had interacted with me. That's when I figured out that this guy wasn't a racist, he was just an asshole.
+Some days later, I walked past my manager's desk, and there was my "nemesis", interacting with my manager (another White man who also happened to be his manager) in the same manner that he had interacted with me. That's when I figured out that this guy wasn't a racist, he was just an asshole.
 
 And, because of the way I had treated him, I was the one guilty of racism.
 
 In drafting the WindyCityRails code of conduct, it was important to not treat any group better than another. All groups must be treated with respect, not just my own.
 
 ###Respect
-I was disturbed by the language in some of the sample codes of conduct. It took me awhile to figure out what bothered me. And then it hit me: The tone seemed threatening. To summarize: "Follow these rules or we will kick you out and take away your money." 
+I was disturbed by the language in some of the sample codes of conduct. It took me awhile to figure out what bothered me. And then it hit me: The tone seemed threatening. To paraphrase: "Follow these rules or we will kick you out and take away your money." 
 
 Colleagues don't threaten each other.
 
-Some may point out that without a method of enforcement, the code has no teeth. That might be true. However, I don't believe that "teeth" or threats are needed amongst colleagues. Colleagues treat each other with respect.
+Some may point out that without a method of enforcement, the code has no teeth. They're right, there are no teeth. However, I don't believe that "teeth" or threats are needed amongst colleagues. Colleagues treat each other with respect.
 
 ###Conclusion
 There you have it… my opinion. Can my opinion change? Perhaps. I have many blind spots, and that is why I am sharing my reasoning here. I look forward to hearing your feedback in the comments below or over a cup of coffee.
