@@ -56,14 +56,14 @@ I have more experience with racism than any other -ism, so that's what I'll talk
 
 Here's an experience that influences my thoughts on this subject. A few decades ago, when I was a young developer for a company in Colorado, I had a confrontation with senior developer, a White man. I was certain that this was a Black/White issue. I won't go into details, but I will admit that I treated that White man very badly in retaliation.
 
-Some days later, I walked past my manager's desk, and there was my "nemesis", interacting with my manager (another White man who also happened to be his manager) in the same manner that he had interacted with me. That's when I figured out that this guy wasn't a racist, he was just an asshole.
+Some days later, as I walked past my manager's desk, I noticed my "nemesis", interacting with my manager (another White man who also happened to be his manager) in the same manner that he had interacted with me. That's when I figured out that this guy wasn't a racist, he was just an asshole.
 
 And, because of the way I had treated him, I was the one guilty of racism.
 
 In drafting the WindyCityRails code of conduct, it was important to avoid showing favoritism toward any group. All groups must be treated with respect, not just my own.
 
 ###Respect
-I was disturbed by the language in some of the sample codes of conduct. It took me awhile to figure out what bothered me. And then it hit me: The tone was threatening. They seemed to say (paraphrased): "Follow these rules or we will kick you out and take away your money." 
+I was disturbed by the language in some of the sample codes of conduct. It took me awhile to figure out what bothered me. Finally, it hit me: The tone was threatening. They seemed to say (paraphrased): "Follow these rules or we will kick you out and take away your money." 
 
 Colleagues don't threaten each other. Colleagues treat each other with respect.
 
