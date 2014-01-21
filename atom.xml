@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-01-17T00:21:50-06:00</updated>
+  <updated>2014-01-21T15:52:04-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,105 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[An Environment of Respect]]></title>
+    <link href="http://RayHightower.com/blog/2014/01/21/an-environment-of-respect/"/>
+    <updated>2014-01-21T13:16:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2014/01/21/an-environment-of-respect</id>
+    <content type="html"><![CDATA[<p>Here is an early draft of the <a href="http://windycityrails.org">WindyCityRails</a> Code of Conduct:</p>
+
+<blockquote><p>WindyCityRails strives to provide a healthy, harassment-free conference experience for all attendees. Our Code of Conduct, which has been practiced by members of our community for years, is as follows: Treat everyone at the conference as you would want yourself, a family member, or an esteemed colleague to be treated. Our community is stronger when every member contributes to the safety and learning of the other members. We are colleagues, and we treat each other with respect.</p></blockquote>
+
+<p>There may be some wordsmithing and typo-correction this week, but the final version will essentially read as it appears above. Key objectives achieved:</p>
+
+<ul>
+<li>Simplicity. The point is made with minimal words.</li>
+<li>Inclusiveness. Everybody who wants to learn and engage is included.</li>
+<li>Respect. Everybody is treated with respect. No threats are made.</li>
+</ul>
+
+
+<p>You have already read the most important part of this post. The rest tells how the code came to be.</p>
+
+<!--more-->
+
+
+<h3>First Person Singular</h3>
+
+<p>Normally, when discussing WindyCityRails and ChicagoRuby, I shine the light on the organizers as a team (we) rather than on myself. WindyCityRails is blessed with a great team of organizers. We pool our talents to get things done.</p>
+
+<p>However, when concerns are raised, the buck stops with the team leader: me. Please forgive me for using first person pronouns throughout this post. Also, other members of the organizer team may have opinions that differ from mine. If I say anything here that disturbs you, please know that it comes from me directly. I am the only one at fault.</p>
+
+<h3>My Knee-Jerk Response</h3>
+
+<p>Last week a Twitter user asked if WindyCityRails had a code of conduct. I responded (through the @WindyCityRails handle) with a one-word answer: No.</p>
+
+<p>Why the terse response? Because I have a deep bias against bureaucracy. Initially, that&rsquo;s what a code of conduct sounds like to me. Do we have a problem with diversity in the tech community? Hell yes. But bureaucracy does not solve problems. We will only solve the diversity problem through active engagement and real work. We solve the diversity problem by ensuring that people from all groups feel welcome and engaged.</p>
+
+<p>One example of real work: The <a href="http://www.windycityrails.org/youth/">WindyCityRails Youth Program</a>, launched last year. A diverse group of college students taught a diverse group of high school students how to program the Arduino. These students from diverse backgrounds bonded via their common interest in technology.</p>
+
+<p>To summarize my knee-jerk response: A code of conduct makes us feel good about nice words written on a sheet of paper, while no real work gets done.</p>
+
+<h3>After My Initial Reaction</h3>
+
+<p>Kindergarten taught me that it is important for me to listen to others. A community thrives on interaction between people who see things differently. If everyone thinks the same way, we don&rsquo;t have diversity, do we?</p>
+
+<p>Other inquiries about a code of conduct followed via Twitter and email. All were helpful. Some people offered sample text from other events. Most of the sample text was good.</p>
+
+<p>Two of my fellow organizers (thank you <a href="https://twitter.com/ginnyhendry">Ginny Hendry</a> and <a href="https://twitter.com/wondible">Justin Love</a>) encouraged me to examine the question more closely. Clearly, I needed to study this. So that is how I have spent the last few days.</p>
+
+<h3>Simplicity</h3>
+
+<p>In drafting text for WindyCityRails (and, by extension, ChicagoRuby) I tried to create something that fits our culture. We are an inclusive group and we treat people well.</p>
+
+<p>At the same time, it is important to keep the word count low to limit bureaucracy.</p>
+
+<h3>Inclusiveness</h3>
+
+<p>The WindyCityRails and ChicagoRuby communities have always strived to be inclusive. We do that in several ways.</p>
+
+<p>Here&rsquo;s an example. Before I became an organizer of ChicagoRuby, I heard that a group of developers met for drinks after every meeting. I always heard about the gathering after the fact. I could have taken this personally, but I realized that the group was not intentionally excluding me. They just didn&rsquo;t know me. Further, they were so caught up in their discussions that it simply never occurred to them to invite people they didn&rsquo;t know.</p>
+
+<p>Things are different today. Today we announce the drink invitation at the beginning of each meeting, and we post it with every meeting announcement. Brand new people are made to feel welcome.</p>
+
+<p>Further, we make it clear that one does not have to drink alcohol to participate. Soft drinks and cranberry juice are in abundance.</p>
+
+<p>Another example of inclusiveness: All of ChicagoRuby&rsquo;s monthly events are free because we want to include aspiring developers regardless of income. Expenses for the monthly events are covered by monthly sponsors and revenue from WindyCityRails.</p>
+
+<h3>Excluding Others</h3>
+
+<p>I have more experience with racism than any other -ism, so that&rsquo;s what I&rsquo;ll talk about here. A mentor of mine raised two questions during a discussion about racism and oppression.</p>
+
+<ul>
+<li><p>Do you want to end all oppression, or just the oppression directed at you?</p></li>
+<li><p>Do you really want to end oppression, or do you simply want to change places with your oppressor?</p></li>
+</ul>
+
+
+<p>Here&rsquo;s an experience that influences my thoughts on this subject. A few decades ago, when I was a young developer for a company in Colorado, I had a confrontation with senior developer, a White man. I was certain that this was a Black/White issue. I won&rsquo;t go into details, but I will admit that I treated that White man very badly in retaliation.</p>
+
+<p>Some days later, as I walked past my manager&rsquo;s desk, I noticed my &ldquo;nemesis&rdquo; interacting with my manager (a White man who also happened to be his manager) in the same manner that he had interacted with me. That&rsquo;s when I figured out that this guy wasn&rsquo;t a racist, he was just an asshole.</p>
+
+<p>And, because of the way I had treated him, I was the one guilty of racism.</p>
+
+<p>In drafting the WindyCityRails code of conduct, it was important to avoid showing favoritism toward any group. All groups must be treated with respect, not just my own.</p>
+
+<h3>Respect</h3>
+
+<p>I was disturbed by the language in some of the sample codes of conduct. It took me awhile to figure out what bothered me. Finally, it hit me: The tone was threatening. They seemed to say (paraphrased): &ldquo;Follow these rules or we will kick you out and take away your money.&rdquo;</p>
+
+<p>Colleagues don&rsquo;t threaten each other. Colleagues treat each other with respect.</p>
+
+<p>Some may point out that without a method of enforcement, the code has no teeth. They&rsquo;re right. There are no teeth. However, I don&rsquo;t believe that &ldquo;teeth&rdquo; or threats are needed amongst colleagues. Colleagues treat each other with respect.</p>
+
+<h3>Conclusion</h3>
+
+<p>There you have it&hellip; my opinion. Can my opinion change? Perhaps. I have many blind spots, and that is why I am sharing my thought process. I look forward to hearing your feedback in the comments below or over a cup of coffee.</p>
+
+<p>By the way, the <a href="http://www.windycityrails.org">WindyCityRails call for proposals</a> is still open, as of the date of this post. If you are doing something exciting with Ruby and/or Rails, please submit a proposal. Thanks.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Henry Ford's Faster Horse]]></title>
@@ -1831,115 +1930,6 @@ Age has little to do with ability. Every profession has examples of people who a
 
 
 <p>Thank you Ignite Chicago organizers (<a href="http://www.goteampete.com">Pete Aiello</a> and <a href="http://clairelew.com">Claire Lew</a>) for the invitation and for hosting a great event.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Petascale Tools Workshop 2013]]></title>
-    <link href="http://RayHightower.com/blog/2013/07/19/petascale-tools-workshop-2013/"/>
-    <updated>2013-07-19T02:12:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2013/07/19/petascale-tools-workshop-2013</id>
-    <content type="html"><![CDATA[<p>The <a href="http://www.paradyn.org/CSCADS2013/index.html">Petascale Tools Workshop</a> is for computer scientists who create tools that enable apps to run efficiently on the world&rsquo;s fastest supercomputers. Supercomputer performance is measured in petaflops: 10<sup><sup>15</sup></sup> floating point operations per second. That&rsquo;s blazing speed, thousands of times faster than the fastest MacBook Pro.</p>
-
-<!--more-->
-
-
-<p><a href="http://WisdomGroup.com">WisdomGroup</a> was invited to attend the workshop because we have a client client, <a href="http://www.wisdomgroup.com/case-studies/texas-am-university/">Texas A &amp; M University</a>, operating in the high performance computing (HPC) space. As the only non-PhD in the room, I was given a chance to exercise Pat Metheny&rsquo;s <a href="http://RayHightower.com/blog/2013/07/17/pat-metheny-be-the-worst/">be-the-worst</a> philosophy in the extreme. The result: I learned things that will help WisdomGroup to deliver better solutions for our clients, especially the TAMU team.</p>
-
-<h3>One Megawatt = $1,000,000.00</h3>
-
-<p>As with other disciplines of engineering, supercomputer design is all about managing trade-offs. If you increase the clock speed, how will that affect your electrical bill? If you increase the size of the cache, how much more will you spend on hardware?</p>
-
-<p>Every Petascale Workshop presenter highlighted the toughest constraint: The cost of electrical power. High performance computers gulp electricity. The wattage numbers were all very abstract to me until one presenter layed out a direct one-to-one correspondence between electricity and money. <em>One megawatt of power used over the course of a year costs one million dollars.</em></p>
-
-<p>Express a constraint in terms of money, and the abstractions melt away.</p>
-
-<p>The debate between the scientists was vigorous yet respectful. After hearing the 1-to-1 rule of thumb, one audience member remarked, &ldquo;I know how to genererate a megawatt for only $865,000.&rdquo; He then outlined his solution, a combination of coal, fossil fuels, and natural gas that would achieve the reduction. The more important point: Electricity is expensive.</p>
-
-<h3>Re-Framing the Power Problem</h3>
-
-<p>There is another way to look at the power problem. Consider it from the perspective of performance, not power. Here&rsquo;s how one presenter put it: No matter where we build a supercomputer, we will only have a limited amount of power. Let&rsquo;s look at the maximum available power as a constraint and go from there.</p>
-
-<p>Rubyists are familiar with the saying &#34;<a href="http://gettingreal.37signals.com/ch03_Embrace_Constraints.php">constraints are liberating</a>&#34;, popularized by 37signals. Since power limitations are real constraints, our next step is to figure out how to extract the best results allowed within the constraints.</p>
-
-<h3>Top Five</h3>
-
-<p>Supercomputer scientists are as competitive as olympic athletes. As of June 2013, the five fastest machines in the world are:</p>
-
-<center>
-<table class="table table-condensed">
-    <thead>
-    <tr>
-        <th width="50">Rank</th>
-        <th width="75">Site</th>
-        <th width="100" style="text-align: right;">Cores</th>
-        <th width="75" style="text-align: right;">Rmax (PF/s)</th>
-        <th width="75" style="text-align: right;">Power (MW)</th>
-    </tr>
-    </thead>
-
-    <tr class="sublist odd">
-        <td><span class="badge">1</span></td>
-        <td>China</td>
-        <td style="text-align: right;">3,120,000</td>
-        <td style="text-align: right;">33.9</td>
-        <td style="text-align: right;">17.8</td>
-    </tr>
-
-    <tr class="sublist even">
-        <td><span class="badge">2</span></td>
-        <td>USA</td>
-        <td style="text-align: right;">560,640</td>
-        <td style="text-align: right;">17.5</td>
-        <td style="text-align: right;">8.2</td>
-    </tr>
-
-    <tr class="sublist odd">
-        <td><span class="badge">3</span></td>
-        <td>USA</td>
-        <td style="text-align: right;">1,572,864</td>
-        <td style="text-align: right;">17.2</td>
-        <td style="text-align: right;">7.9</td>
-    </tr>
-
-    <tr class="sublist even">
-        <td><span class="badge">4</span></td>
-        <td>Japan</td>
-        <td style="text-align: right;">705,024</td>
-        <td style="text-align: right;">10.5</td>
-        <td style="text-align: right;">12.6</td>
-    </tr>
-
-    <tr class="sublist odd">
-        <td><span class="badge">5</span></td>
-        <td>USA</td>
-        <td style="text-align: right;">786,432</td>
-        <td style="text-align: right;">8.6</td>
-        <td style="text-align: right;">3.9</td>
-    </tr>
-</table>
-</center>
-
-
-<p>&nbsp;<br/>
-Scientists determine Rmax by running the <a href="http://en.wikipedia.org/wiki/LINPACK_benchmarks">LINPACK</a> benchmark. <a href="http://top500.org">Top500.org</a> has more information about the fastest
-machines.</p>
-
-<h3>Digging Deeper</h3>
-
-<p>Some of the biggest performance gains can be realized through more efficient software. Most supercomputers run some distribution of Linux. Some teams of researchers focus on ways to optimize the Linux kernel for supercomputing.</p>
-
-<p>Optimization is not a one-size-fits all process. The scientists need to consder the type of applications being run, percentage of time spent on I/O, efficiency of algorithms, and so on. Each potential optimization choice is like a node on an ever expanding tree. The choices are endless, and the seasoned expert will know where to focus for the best results.</p>
-
-<p>In the Ruby world, we might use tools like <a href="http://newrelic.com">New Relic</a> or <a href="http://codeclimate.com">Code Climate</a> to identify hot spots in our code, places where re-factoring can reduce CPU utilization or improve I/O. HPC tools tend to be highly customizable because the users are intimately familar with their own hardware. During a lunch conversation, one team of scientists shared how they suspected a defect in hardware counters used to measure the behavior of a supercomputer under study. The instincts of the scientists proved correct, and the errant counters were replaced.</p>
-
-<h3>Conclusion</h3>
-
-<p>When smart people challenge each other to grow, great things happen. The scientists at the Petascale Tools Workshop were clearly helping each other to grow. The next few years in supercomputing will be exciting!</p>
-
-<h3>Acknowledgements</h3>
-
-<p>I am grateful to the organizers of the Petascale Tools Workshop for hosting the event, and to the TAMU team for extending the invitation. Thank you both!</p>
 ]]></content>
   </entry>
   

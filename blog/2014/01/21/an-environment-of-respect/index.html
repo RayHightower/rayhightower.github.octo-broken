@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>RubyMotion Provisioning Profiles - RayHightower.com</title>
+  <title>An Environment of Respect - RayHightower.com</title>
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="Note: This article on provisioning profiles was first posted in the RubyMotion Google Group on May 10, 2012. It was also referenced on Stack Overflow &hellip;">
+  <meta name="description" content="Here is an early draft of the WindyCityRails Code of Conduct: WindyCityRails strives to provide a healthy, harassment-free conference experience for &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://RayHightower.com/blog/2012/12/26/rubymotion-provisioning-profiles">
+  <link rel="canonical" href="http://RayHightower.com/blog/2014/01/21/an-environment-of-respect">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="RayHightower.com" type="application/atom+xml">
@@ -85,7 +85,7 @@
   
   <header>
     
-      <h1 class="entry-title">RubyMotion Provisioning Profiles</h1>
+      <h1 class="entry-title">An Environment of Respect</h1>
     
     
       <p class="meta">
@@ -101,49 +101,104 @@
   
 
 
-<time datetime="2012-12-26T20:46:00-06:00" pubdate data-updated="true">Dec 26<span>th</span>, 2012</time>
+<time datetime="2014-01-21T13:16:00-06:00" pubdate data-updated="true">Jan 21<span>st</span>, 2014</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p><em>Note: This article on provisioning profiles was first posted in the <a href="https://groups.google.com/forum/?fromgroups=#!topic/rubymotion/Nvo8dH_8rkI">RubyMotion Google Group</a> on May 10, 2012. It was also referenced on <a href="http://stackoverflow.com/questions/13539743/rubymotion-build-error-cant-find-a-provisioning-profile-named-mixios-tea">Stack Overflow</a>.</em></p>
+<div class="entry-content"><p>Here is an early draft of the <a href="http://windycityrails.org">WindyCityRails</a> Code of Conduct:</p>
 
-<p>Everything with RubyMotion worked great until I tried to run the sample apps on a physical device. And then I had to spend a few hours wrestling with provisioning profiles. Hopefully this post will save time for somebody else.</p>
+<blockquote><p>WindyCityRails strives to provide a healthy, harassment-free conference experience for all attendees. Our Code of Conduct, which has been practiced by members of our community for years, is as follows: Treat everyone at the conference as you would want yourself, a family member, or an esteemed colleague to be treated. Our community is stronger when every member contributes to the safety and learning of the other members. We are colleagues, and we treat each other with respect.</p></blockquote>
 
-<!-- more -->
-
-
-<p>In order to successfully run a RubyMotion app on a non-jailbroken iPhone 3GS (via <code>$ rake device</code>) I had to:</p>
+<p>There may be some wordsmithing and typo-correction this week, but the final version will essentially read as it appears above. Key objectives achieved:</p>
 
 <ul>
-<li>Delete all of the expired provisioning profiles in the Mac OS X Keychain Access app. Yeah, my past is littered with many random experiments :&ndash;)</li>
-<li>Explicitly set the path to my provisioning profile in the rakefile for the app (the defaults didn&rsquo;t work for me).</li>
-<li>Explicitly set the name of my codesign_certificate.</li>
+<li>Simplicity. The point is made with minimal words.</li>
+<li>Inclusiveness. Everybody who wants to learn and engage is included.</li>
+<li>Respect. Everybody is treated with respect. No threats are made.</li>
 </ul>
 
 
-<p>The default &ldquo;iOS Team Profile&rdquo; didn&rsquo;t work for me. I had to set explicit values in my rakefile for the app. Here&rsquo;s my rakefile for the <a href="https://github.com/HipByte/RubyMotionSamples/tree/master/Tweets">&lsquo;Tweets&rsquo; sample app</a>:</p>
+<p>You have already read the most important part of this post. The rest tells how the code came to be.</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="vg">$:</span><span class="o">.</span><span class="n">unshift</span><span class="p">(</span><span class="s2">&quot;/Library/RubyMotion/lib&quot;</span><span class="p">)</span>
-</span><span class='line'><span class="nb">require</span> <span class="s1">&#39;motion/project&#39;</span>
-</span><span class='line'><span class="ss">Motion</span><span class="p">:</span><span class="ss">:Project</span><span class="o">::</span><span class="no">App</span><span class="o">.</span><span class="n">setup</span> <span class="k">do</span> <span class="o">|</span><span class="n">app</span><span class="o">|</span> <span class="c1"># Use `rake config&#39; to see complete project settings. </span>
-</span><span class='line'>  <span class="n">app</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Tweets&#39;</span>
-</span><span class='line'>  <span class="n">app</span><span class="o">.</span><span class="n">provisioning_profile</span> <span class="o">=</span> <span class="s1">&#39;/Users/[username]/Library/ MobileDevice/Provisioning Profiles/[string-of-numbers].mobileprovision&#39;</span>
-</span><span class='line'>  <span class="n">app</span><span class="o">.</span><span class="n">codesign_certificate</span> <span class="o">=</span> <span class="s1">&#39;iPhone Developer: John Q Developer (A5QZ9QF4Z1)&#39;</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
+<!--more-->
 
 
-<p>Of course, my name isn&rsquo;t &ldquo;John Q Developer&rdquo;, but you get the idea. Hope this helps!</p>
+<h3>First Person Singular</h3>
+
+<p>Normally, when discussing WindyCityRails and ChicagoRuby, I shine the light on the organizers as a team (we) rather than on myself. WindyCityRails is blessed with a great team of organizers. We pool our talents to get things done.</p>
+
+<p>However, when concerns are raised, the buck stops with the team leader: me. Please forgive me for using first person pronouns throughout this post. Also, other members of the organizer team may have opinions that differ from mine. If I say anything here that disturbs you, please know that it comes from me directly. I am the only one at fault.</p>
+
+<h3>My Knee-Jerk Response</h3>
+
+<p>Last week a Twitter user asked if WindyCityRails had a code of conduct. I responded (through the @WindyCityRails handle) with a one-word answer: No.</p>
+
+<p>Why the terse response? Because I have a deep bias against bureaucracy. Initially, that&rsquo;s what a code of conduct sounds like to me. Do we have a problem with diversity in the tech community? Hell yes. But bureaucracy does not solve problems. We will only solve the diversity problem through active engagement and real work. We solve the diversity problem by ensuring that people from all groups feel welcome and engaged.</p>
+
+<p>One example of real work: The <a href="http://www.windycityrails.org/youth/">WindyCityRails Youth Program</a>, launched last year. A diverse group of college students taught a diverse group of high school students how to program the Arduino. These students from diverse backgrounds bonded via their common interest in technology.</p>
+
+<p>To summarize my knee-jerk response: A code of conduct makes us feel good about nice words written on a sheet of paper, while no real work gets done.</p>
+
+<h3>After My Initial Reaction</h3>
+
+<p>Kindergarten taught me that it is important for me to listen to others. A community thrives on interaction between people who see things differently. If everyone thinks the same way, we don&rsquo;t have diversity, do we?</p>
+
+<p>Other inquiries about a code of conduct followed via Twitter and email. All were helpful. Some people offered sample text from other events. Most of the sample text was good.</p>
+
+<p>Two of my fellow organizers (thank you <a href="https://twitter.com/ginnyhendry">Ginny Hendry</a> and <a href="https://twitter.com/wondible">Justin Love</a>) encouraged me to examine the question more closely. Clearly, I needed to study this. So that is how I have spent the last few days.</p>
+
+<h3>Simplicity</h3>
+
+<p>In drafting text for WindyCityRails (and, by extension, ChicagoRuby) I tried to create something that fits our culture. We are an inclusive group and we treat people well.</p>
+
+<p>At the same time, it is important to keep the word count low to limit bureaucracy.</p>
+
+<h3>Inclusiveness</h3>
+
+<p>The WindyCityRails and ChicagoRuby communities have always strived to be inclusive. We do that in several ways.</p>
+
+<p>Here&rsquo;s an example. Before I became an organizer of ChicagoRuby, I heard that a group of developers met for drinks after every meeting. I always heard about the gathering after the fact. I could have taken this personally, but I realized that the group was not intentionally excluding me. They just didn&rsquo;t know me. Further, they were so caught up in their discussions that it simply never occurred to them to invite people they didn&rsquo;t know.</p>
+
+<p>Things are different today. Today we announce the drink invitation at the beginning of each meeting, and we post it with every meeting announcement. Brand new people are made to feel welcome.</p>
+
+<p>Further, we make it clear that one does not have to drink alcohol to participate. Soft drinks and cranberry juice are in abundance.</p>
+
+<p>Another example of inclusiveness: All of ChicagoRuby&rsquo;s monthly events are free because we want to include aspiring developers regardless of income. Expenses for the monthly events are covered by monthly sponsors and revenue from WindyCityRails.</p>
+
+<h3>Excluding Others</h3>
+
+<p>I have more experience with racism than any other -ism, so that&rsquo;s what I&rsquo;ll talk about here. A mentor of mine raised two questions during a discussion about racism and oppression.</p>
+
+<ul>
+<li><p>Do you want to end all oppression, or just the oppression directed at you?</p></li>
+<li><p>Do you really want to end oppression, or do you simply want to change places with your oppressor?</p></li>
+</ul>
+
+
+<p>Here&rsquo;s an experience that influences my thoughts on this subject. A few decades ago, when I was a young developer for a company in Colorado, I had a confrontation with senior developer, a White man. I was certain that this was a Black/White issue. I won&rsquo;t go into details, but I will admit that I treated that White man very badly in retaliation.</p>
+
+<p>Some days later, as I walked past my manager&rsquo;s desk, I noticed my &ldquo;nemesis&rdquo; interacting with my manager (a White man who also happened to be his manager) in the same manner that he had interacted with me. That&rsquo;s when I figured out that this guy wasn&rsquo;t a racist, he was just an asshole.</p>
+
+<p>And, because of the way I had treated him, I was the one guilty of racism.</p>
+
+<p>In drafting the WindyCityRails code of conduct, it was important to avoid showing favoritism toward any group. All groups must be treated with respect, not just my own.</p>
+
+<h3>Respect</h3>
+
+<p>I was disturbed by the language in some of the sample codes of conduct. It took me awhile to figure out what bothered me. Finally, it hit me: The tone was threatening. They seemed to say (paraphrased): &ldquo;Follow these rules or we will kick you out and take away your money.&rdquo;</p>
+
+<p>Colleagues don&rsquo;t threaten each other. Colleagues treat each other with respect.</p>
+
+<p>Some may point out that without a method of enforcement, the code has no teeth. They&rsquo;re right. There are no teeth. However, I don&rsquo;t believe that &ldquo;teeth&rdquo; or threats are needed amongst colleagues. Colleagues treat each other with respect.</p>
+
+<h3>Conclusion</h3>
+
+<p>There you have it&hellip; my opinion. Can my opinion change? Perhaps. I have many blind spots, and that is why I am sharing my thought process. I look forward to hearing your feedback in the comments below or over a cup of coffee.</p>
+
+<p>By the way, the <a href="http://www.windycityrails.org">WindyCityRails call for proposals</a> is still open, as of the date of this post. If you are doing something exciting with Ruby and/or Rails, please submit a proposal. Thanks.</p>
 </div>
 
 
@@ -166,12 +221,12 @@
   
 
 
-<time datetime="2012-12-26T20:46:00-06:00" pubdate data-updated="true">Dec 26<span>th</span>, 2012</time>
+<time datetime="2014-01-21T13:16:00-06:00" pubdate data-updated="true">Jan 21<span>st</span>, 2014</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/rubymotion/'>RubyMotion</a>, <a class='category' href='/blog/categories/ios/'>iOS</a>
+    <a class='category' href='/blog/categories/community/'>Community</a>
   
 </span>
 
@@ -180,7 +235,7 @@
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2012/12/26/rubymotion-provisioning-profiles/" data-via="" data-counturl="http://RayHightower.com/blog/2012/12/26/rubymotion-provisioning-profiles/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2014/01/21/an-environment-of-respect/" data-via="" data-counturl="http://RayHightower.com/blog/2014/01/21/an-environment-of-respect/" >Tweet</a>
   
   
   
@@ -189,10 +244,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/12/24/unix-for-ruby-developers/" title="Previous Post: Unix for Ruby Developers">&laquo; Unix for Ruby Developers</a>
+        <a class="basic-alignment left" href="/blog/2014/01/15/henry-ford-faster-horse/" title="Previous Post: Henry Ford's Faster Horse">&laquo; Henry Ford's Faster Horse</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/01/07/leap-motion-advanced-user-interface/" title="Next Post: Leap Motion: Advanced User Interface">Leap Motion: Advanced User Interface &raquo;</a>
       
     </p>
   </footer>
@@ -328,8 +381,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://RayHightower.com/blog/2012/12/26/rubymotion-provisioning-profiles/';
-        var disqus_url = 'http://RayHightower.com/blog/2012/12/26/rubymotion-provisioning-profiles/';
+        var disqus_identifier = 'http://RayHightower.com/blog/2014/01/21/an-environment-of-respect/';
+        var disqus_url = 'http://RayHightower.com/blog/2014/01/21/an-environment-of-respect/';
         var disqus_script = 'embed.js';
       
     (function () {
