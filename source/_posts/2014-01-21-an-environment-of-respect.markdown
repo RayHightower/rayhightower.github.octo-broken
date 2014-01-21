@@ -54,7 +54,7 @@ I have more experience with racism than any other -ism, so that's what I'll talk
 
    * Do you really want to end oppression, or do you simply want to change places with your oppressor?
 
-When drafting the new code of conduct, I wanted to be sure to treat all groups of people with respect. A few decades ago, when I was a young developer for a company in Colorado, I had a confrontation with senior developer, a White man. I was certain that this was a Black/White issue. I won't go into details, but I will admit that I treated that White man very badly in retaliation.
+Here's an experience that shapes my thoughts on this subject. A few decades ago, when I was a young developer for a company in Colorado, I had a confrontation with senior developer, a White man. I was certain that this was a Black/White issue. I won't go into details, but I will admit that I treated that White man very badly in retaliation.
 
 Some days later, I walked past my manager's desk, and there was my "nemesis", interacting with my manager (another White man who also happened to be his manager) in the same manner that he had interacted with me. That's when I figured out that this guy wasn't a racist, he was just an asshole.
 
@@ -70,6 +70,6 @@ Colleagues don't threaten each other. Colleagues treat each other with respect.
 Some may point out that without a method of enforcement, the code has no teeth. They're right, there are no teeth. However, I don't believe that "teeth" or threats are needed amongst colleagues. Colleagues treat each other with respect.
 
 ###Conclusion
-There you have it… my opinion. Can my opinion change? Perhaps. I have many blind spots, and that is why I am sharing my thought process. I look forward to hearing your feedback in the comments below or over a cup of coffee.
+There you have it... my opinion. Can my opinion change? Perhaps. I have many blind spots, and that is why I am sharing my thought process. I look forward to hearing your feedback in the comments below or over a cup of coffee.
 
 By the way, the [WindyCityRails call for proposals](http://www.windycityrails.org) is still open, as of the date of this post. If you are doing something exciting with Ruby and/or Rails, please submit a proposal. Thanks.
