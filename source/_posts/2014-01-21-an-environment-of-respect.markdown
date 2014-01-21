@@ -52,7 +52,7 @@ Things are different today. Today we announce the drink invitation at the beginn
 
 Further, we make it clear that one does not have to drink alcohol to participate. Soft drinks and cranberry juice are in abundance.
 
-Another example of inclusiveness: All of ChicagoRuby's monthly events are free because we want to include developers regardless of income. Expenses for the monthly events are covered by monthly sponsors and revenue from WindyCityRails. 
+Another example of inclusiveness: All of ChicagoRuby's monthly events are free because we want to include aspiring developers regardless of income. Expenses for the monthly events are covered by monthly sponsors and revenue from WindyCityRails. 
 
 ###Excluding Others
 I have more experience with racism than any other -ism, so that's what I'll talk about here. A mentor of mine raised two questions during a discussion about racism and oppression. 
@@ -63,7 +63,7 @@ I have more experience with racism than any other -ism, so that's what I'll talk
 
 Here's an experience that influences my thoughts on this subject. A few decades ago, when I was a young developer for a company in Colorado, I had a confrontation with senior developer, a White man. I was certain that this was a Black/White issue. I won't go into details, but I will admit that I treated that White man very badly in retaliation.
 
-Some days later, as I walked past my manager's desk, I noticed my "nemesis", interacting with my manager (another White man who also happened to be his manager) in the same manner that he had interacted with me. That's when I figured out that this guy wasn't a racist, he was just an asshole.
+Some days later, as I walked past my manager's desk, I noticed my "nemesis" interacting with my manager (a White man who also happened to be his manager) in the same manner that he had interacted with me. That's when I figured out that this guy wasn't a racist, he was just an asshole.
 
 And, because of the way I had treated him, I was the one guilty of racism.
 
