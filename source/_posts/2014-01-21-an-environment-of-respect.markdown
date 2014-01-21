@@ -63,13 +63,13 @@ And, because of the way I had treated him, I was the one guilty of racism.
 In drafting the WindyCityRails code of conduct, it was important to avoid showing favoritism toward any group. All groups must be treated with respect, not just my own.
 
 ###Respect
-I was disturbed by the language in some of the sample codes of conduct. It took me awhile to figure out what bothered me. And then it hit me: The tone was threatening. They seemed to say (paraphrase): "Follow these rules or we will kick you out and take away your money." 
+I was disturbed by the language in some of the sample codes of conduct. It took me awhile to figure out what bothered me. And then it hit me: The tone was threatening. They seemed to say (paraphrased): "Follow these rules or we will kick you out and take away your money." 
 
 Colleagues don't threaten each other. Colleagues treat each other with respect.
 
-Some may point out that without a method of enforcement, the code has no teeth. They're right, there are no teeth. However, I don't believe that "teeth" or threats are needed amongst colleagues. Colleagues treat each other with respect.
+Some may point out that without a method of enforcement, the code has no teeth. They're right. There are no teeth. However, I don't believe that "teeth" or threats are needed amongst colleagues. Colleagues treat each other with respect.
 
 ###Conclusion
-There you have it... my opinion. Can my opinion change? Perhaps. I have many blind spots, and that is why I am sharing my thought process. I look forward to hearing your feedback in the comments below or over a cup of coffee.
+There you have it... my opinion. Can my opinion change? Perhaps. I have many blind spots, and that is why my thought process is shared in this post. I look forward to hearing your feedback in the comments below or over a cup of coffee.
 
 By the way, the [WindyCityRails call for proposals](http://www.windycityrails.org) is still open, as of the date of this post. If you are doing something exciting with Ruby and/or Rails, please submit a proposal. Thanks.
