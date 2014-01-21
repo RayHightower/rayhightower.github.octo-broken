@@ -18,7 +18,7 @@ There may be some word-smithing and typo-correction this week, but the final ver
 You have already read the most important part of this post. The rest tells how the code came to be.
 <!--more-->
 ###First Person Singular
-Normally, when discussing WindyCityRails and ChicagoRuby, I shine the light on the organizers as a team (we) rather than on myself. WindyCityRails is blessed with a great team of organizers. We pool our talents to deliver a great conference experience for everyone.
+Normally, when discussing WindyCityRails and ChicagoRuby, I shine the light on the organizers as a team (we) rather than on myself. WindyCityRails is blessed with a great team of organizers. We pool our talents to get things done.
 
 However, when concerns are raised, the buck stops with the team leader: me. Please forgive me for using first person pronouns throughout this post. Also, other members of the organizer team may have opinions that differ from mine. If I say anything here that disturbs you, please know that it comes from me directly. I am the only one at fault.
 
@@ -29,17 +29,17 @@ Why the terse response? Because I have a deep bias against bureaucracy. A code o
 
 Other inquiries followed via Twitter and email. All were helpful. Some people offered sample text from other events. Most of the sample text was good.
 
-Other members of the organizer team (thank you [Ginny Hendry](https://twitter.com/ginnyhendry) and [Justin Love](https://twitter.com/wondible)) encouraged me to examine this more closely. Clearly, I needed to study this. So that is how I have spent the last few days.
+Two of my fellow organizers (thank you [Ginny Hendry](https://twitter.com/ginnyhendry) and [Justin Love](https://twitter.com/wondible)) encouraged me to examine the question more closely. Clearly, I needed to study this. So that is how I have spent the last few days.
 
 ###Simplicity
 In drafting text for WindyCityRails (and, by extension, ChicagoRuby) I tried to create something that fits our culture. We are an inclusive group that treats people well.
 
-At the same time, it is important to keep the word count low. 140 characters would be ideal.
+At the same time, it is important to keep the word count low to limit bureaucracy. 140 characters would be ideal.
 
 ###Inclusiveness
 The WindyCityRails and ChicagoRuby communities have always been inclusive. Even as we grow, we strive to maintain our inclusiveness.
 
-Here's an example. Before I became an organizer of ChicagoRuby, I heard that a group of developers met for drinks after every meeting. I always heard about the gathering days afterwards. I could have taken this personally, but I later realized that the group was not intentionally excluding me. They just didn't know me. Further, they were so caught up in their discussions that it simply never occurred to them to invite people they didn't know.
+Here's an example. Before I became an organizer of ChicagoRuby, I heard that a group of developers met for drinks after every meeting. I always heard about the gathering after the fact. I could have taken this personally, but I realized that the group was not intentionally excluding me. They just didn't know me. Further, they were so caught up in their discussions that it simply never occurred to them to invite people they didn't know.
 
 That changed when I became an organizer. Today we announce the drink invitation at the beginning of each meeting, and we post it with every meeting announcement. Brand new people are made to feel welcome.
 
