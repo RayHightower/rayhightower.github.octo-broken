@@ -41,7 +41,7 @@ The WindyCityRails and ChicagoRuby communities have always strived to be inclusi
 
 Here's an example. Before I became an organizer of ChicagoRuby, I heard that a group of developers met for drinks after every meeting. I always heard about the gathering after the fact. I could have taken this personally, but I realized that the group was not intentionally excluding me. They just didn't know me. Further, they were so caught up in their discussions that it simply never occurred to them to invite people they didn't know.
 
-That changed when I became an organizer. Today we announce the drink invitation at the beginning of each meeting, and we post it with every meeting announcement. Brand new people are made to feel welcome.
+Things are different today. Today we announce the drink invitation at the beginning of each meeting, and we post it with every meeting announcement. Brand new people are made to feel welcome.
 
 Further, we make it clear that one does not have to drink alcohol to participate. Soft drinks and cranberry juice are in abundance.
 
