@@ -37,7 +37,7 @@ In drafting text for WindyCityRails (and, by extension, ChicagoRuby) I tried to 
 At the same time, it is important to keep the word count low to limit bureaucracy.
 
 ###Inclusiveness
-The WindyCityRails and ChicagoRuby communities have always strived for inclusive. We do that in several ways.
+The WindyCityRails and ChicagoRuby communities have always strived to be inclusive. We do that in several ways.
 
 Here's an example. Before I became an organizer of ChicagoRuby, I heard that a group of developers met for drinks after every meeting. I always heard about the gathering after the fact. I could have taken this personally, but I realized that the group was not intentionally excluding me. They just didn't know me. Further, they were so caught up in their discussions that it simply never occurred to them to invite people they didn't know.
 
