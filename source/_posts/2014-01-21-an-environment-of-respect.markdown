@@ -23,7 +23,7 @@ Normally, when discussing WindyCityRails and ChicagoRuby, I shine the light on t
 However, when concerns are raised, the buck stops with the team leader: me. Please forgive me for using first person pronouns throughout this post. Also, other members of the organizer team may have opinions that differ from mine. If I say anything here that disturbs you, please know that it comes from me directly. I am the only one at fault.
 
 ###Simplicity
-Last week a Twitter user asked if WindyCityRails had a code of conduct. I responded (through the @WindyCityRails handle) with a one word: No. 
+Last week a Twitter user asked if WindyCityRails had a code of conduct. I responded (through the @WindyCityRails handle) with a one-word answer: No. 
 
 My first thought: I don't like bureaucracy. A code of conduct sounds like a big ball of bureaucracy coiled up in a heaping helping of red tape. 
 
@@ -53,13 +53,13 @@ A mentor of mine raised two questions during a discussion about racism and oppre
 
    * Do you really want to end oppression, or do you simply want to change places with your oppressor?
 
-When drafting the new code of conduct, I wanted to be sure to treat all groups of people with respect. Several years ago, when I was a young developer for a company out West, I had a confrontation with senior developer, a White man. I won't go into details, but I was fairly sure that this was a Black/White issue. And I will admit that I treated that White man very badly in retaliation.
+When drafting the new code of conduct, I wanted to be sure to treat all groups of people with respect. A few decades ago, when I was a young developer for a company in Colorado, I had a confrontation with senior developer, a White man. I won't go into details, but I was fairly sure that this was a Black/White issue. And I will admit that I treated that White man very badly in retaliation.
 
-Some days later, I walked past my manager's desk, and there was my nemesis, interacting with my manager (another White male who also happened to be his manager) in the same manner that he had interacted with me. That's when I figured out that this guy wasn't a racist, he was just an asshole.
+Some days later, I walked past my manager's desk, and there was my nemesis, interacting with my manager (another White man who also happened to be his manager) in the same manner that he had interacted with me. That's when I figured out that this guy wasn't a racist, he was just an asshole.
 
 And, because of the way I had treated him, I was the one guilty of racism.
 
-In drafting the WindyCityRails code of conduct, it was important to any group over another. All groups must be treated with respect, not just my own.
+In drafting the WindyCityRails code of conduct, it was important to not treat any group better than another. All groups must be treated with respect, not just my own.
 
 ###Respect
 I was disturbed by the language in some of the sample codes of conduct. It took me awhile to figure out what bothered me. And then it hit me: The tone seemed threatening. To summarize: "Follow these rules or we will kick you out and take away your money." 
