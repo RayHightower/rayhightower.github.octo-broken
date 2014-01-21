@@ -9,7 +9,7 @@ Here is an early draft of the [WindyCityRails](http://windycityrails.org) Code o
 
 >WindyCityRails strives to provide a healthy, harassment-free conference experience for all attendees. Our Code of Conduct, which has been practiced by members of our community for years, is as follows: Treat everyone at the conference as you would want yourself, a family member, or an esteemed colleague to be treated. Our community is stronger when every member contributes to the safety and learning of the other members. We are colleagues, and we treat each other with respect.
 
-The organizer team may do some word-smithing and typo-correction this week, but the final version will essentially read as it appears above. Key objectives achieved:
+There may be some word-smithing and typo-correction this week, but the final version will essentially read as it appears above. Key objectives achieved:
 
    * Simplicity. The point is made with minimal words.
    * Inclusiveness. Everybody who wants to learn and engage is included. 
