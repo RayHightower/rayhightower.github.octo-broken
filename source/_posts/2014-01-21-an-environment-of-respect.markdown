@@ -25,7 +25,7 @@ However, when concerns are raised, the buck stops with the team leader: me. Plea
 ###Simplicity
 Last week a Twitter user asked if WindyCityRails had a code of conduct. I responded (through the @WindyCityRails handle) with a one-word answer: No. 
 
-My first thought: I don't like bureaucracy. A code of conduct sounds like a big ball of bureaucracy coiled up in a heaping helping of red tape. 
+Why the terse response? Because I don't like bureaucracy. A code of conduct sounds like a big ball of bureaucracy coiled up in a heaping helping of red tape. 
 
 Other inquiries followed via Twitter and email. All were helpful. Some people offered sample text from other events. Thanks to these sources, I've spent the last few days reviewing codes and guidelines used by others. Most of what they offer is good.
 
