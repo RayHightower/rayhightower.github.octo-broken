@@ -22,13 +22,18 @@ Normally, when discussing WindyCityRails and ChicagoRuby, I shine the light on t
 
 However, when concerns are raised, the buck stops with the team leader: me. Please forgive me for using first person pronouns throughout this post. Also, other members of the organizer team may have opinions that differ from mine. If I say anything here that disturbs you, please know that it comes from me directly. I am the only one at fault.
 
-###Simplicity
+###Knee-Jerk Response
 Last week a Twitter user asked if WindyCityRails had a code of conduct. I responded (through the @WindyCityRails handle) with a one-word answer: No. 
 
-Why the terse response? Because I don't like bureaucracy. A code of conduct sounds like a big ball of bureaucracy coiled up in a heaping helping of red tape. 
+Why the terse response? Because I have a deep bias against bureaucracy. A code of conduct sounds like a big ball of bureaucracy coiled up in a heaping helping of red tape. 
 
 Other inquiries followed via Twitter and email. All were helpful. Some people offered sample text from other events. Thanks to these sources, I've spent the last few days reviewing codes and guidelines used by others. Most of what they offer is good.
 
+Fortunately, other members of the organizer team (thank you [Ginny
+Hendry](https://twitter.com/ginnyhendry) and [Justin Love](https://twitter.com/wondible)) encouraged me to think differently. I
+needed to study this. That is how I've spent the past few days.
+
+###Simplicity
 In drafting text for WindyCityRails (and, by extension, ChicagoRuby) I tried to create something that fits our culture. We are an inclusive group that treats people well.
 
 At the same time, it is important to keep the word count low. 140 characters would be ideal!
