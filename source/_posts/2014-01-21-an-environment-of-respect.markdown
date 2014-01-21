@@ -22,17 +22,24 @@ Normally, when discussing WindyCityRails and ChicagoRuby, I shine the light on t
 
 However, when concerns are raised, the buck stops with the team leader: me. Please forgive me for using first person pronouns throughout this post. Also, other members of the organizer team may have opinions that differ from mine. If I say anything here that disturbs you, please know that it comes from me directly. I am the only one at fault.
 
-###Knee-Jerk Response
+###My Knee-Jerk Response
 Last week a Twitter user asked if WindyCityRails had a code of conduct. I responded (through the @WindyCityRails handle) with a one-word answer: No. 
 
-Why the terse response? Because I have a deep bias against bureaucracy. A code of conduct sounds like a big ball of bureaucracy coiled up in a heaping helping of red tape. 
+Why the terse response? Because I have a deep bias against bureaucracy. Initially, that's what a code of conduct sounds like to me. Do we have a problem with diversity in the tech community? Hell yes. But bureaucracy does not solve problems. We will only solve the diversity problem through active engagement and real work. We solve the diversity problem by ensuring that people from all groups feel welcome and engaged.
 
-Other inquiries followed via Twitter and email. All were helpful. Some people offered sample text from other events. Most of the sample text was good.
+One example of real work: The [WindyCityRails Youth Program](http://www.windycityrails.org/youth/), launched last year. A diverse group of college students taught a diverse group of high school students how to program the Arduino. These students from diverse backgrounds bonded via their common interest in technology.
+
+To summarize my knee-jerk response: A code of conduct makes us feel good about nice words written on a sheet of paper, while no real work gets done.
+
+###After My Initial Reaction
+Kindergarten taught me that it is important for me to listen to others. A community thrives on interaction between people who see things differently. If everyone thinks the same way, we don't have diversity, do we?
+
+Other inquiries about a code of conduct followed via Twitter and email. All were helpful. Some people offered sample text from other events. Most of the sample text was good.
 
 Two of my fellow organizers (thank you [Ginny Hendry](https://twitter.com/ginnyhendry) and [Justin Love](https://twitter.com/wondible)) encouraged me to examine the question more closely. Clearly, I needed to study this. So that is how I have spent the last few days.
 
 ###Simplicity
-In drafting text for WindyCityRails (and, by extension, ChicagoRuby) I tried to create something that fits our culture. We are an inclusive group that treats people well.
+In drafting text for WindyCityRails (and, by extension, ChicagoRuby) I tried to create something that fits our culture. We are an inclusive group and we treat people well.
 
 At the same time, it is important to keep the word count low to limit bureaucracy.
 
