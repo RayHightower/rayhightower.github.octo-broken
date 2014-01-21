@@ -12,7 +12,7 @@ Here is an early draft of the [WindyCityRails](http://windycityrails.org) Code o
 The organizer team may do some word-smithing and typo-correction this week, but the final version will essentially read as it appears above. Key objectives achieved:
 
    * Simplicity. The point is made with minimal words.
-   * Inclusiveness. Everybody who wants to learn and engage is included. Nobody who wants to be part of a positive environment is excluded.
+   * Inclusiveness. Everybody who wants to learn and engage is included. 
    * Respect. Everybody is treated with respect. No threats are made.
 
 You have already read the most important part of this post. The rest tells how the code came to be.
