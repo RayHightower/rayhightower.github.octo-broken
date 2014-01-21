@@ -36,7 +36,7 @@ At the same time, it is important to keep the word count low. 140 characters wou
 ###Inclusiveness
 The WindyCityRails and ChicagoRuby communities have always been inclusive. Even as we grow, we strive to maintain our inclusiveness.
 
-Here's an example. Before I became an organizer of ChicagoRuby, I heard that a group of developers met for drinks after every meeting. I always heard about the gathering days afterwards. I could have taken this personally, but I later realized that the group was not intentionally excluding me. They just didn't know me. Further, they were so caught up in their discussions that it simply never occurred to invite people who weren't part of the ongoing conversation.
+Here's an example. Before I became an organizer of ChicagoRuby, I heard that a group of developers met for drinks after every meeting. I always heard about the gathering days afterwards. I could have taken this personally, but I later realized that the group was not intentionally excluding me. They just didn't know me. Further, they were so caught up in their discussions that it simply never occurred to them to invite people they didn't know.
 
 That changed when I became an organizer. Today we announce the drink invitation at the beginning of each meeting, and we post it with every meeting announcement. Brand new people are made to feel welcome.
 
