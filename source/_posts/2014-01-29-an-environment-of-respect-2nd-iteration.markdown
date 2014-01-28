@@ -5,6 +5,37 @@ date: 2014-01-29 07:08
 comments: true
 categories: [ Community ]
 ---
+Thank you to everyone who offered feedback on [An Environment of Respect](http://rayhightower.com/blog/2014/01/21/an-environment-of-respect/), where I shared an early draft of the WindyCityRails Code of Conduct.
+
+I never realized how divided people would be on this matter. Some of the feedback was positive, on the order of "we're all colleagues, we treat each other with respect, that's good."
+
+However, I paid special attention to the negative feedback because it surprised me. Surprise happens when I face something that I do not understand. In past experience, when I encounter something that I do not understand, there's an opportunity for learning that I never imagined before.
+
+So I did what I always do when I'm clueless about something. I spoke with people who know more than me.
+<!--more-->
+###Wise Counsel
+Several people in our industry were generous when I asked for advice. One technology veteran summed it up this way: 
+
+>You wrote a code of conduct for an Environment of Respect. 99.9% of the people will know what that means, and they can even function well without a code. But a code of conduct needs to written for an Environment of Hostility... for the one fool who doesn't know how to act. 
+
+Another member of the local community offered an interesting view of bureaucracy when it comes to codes of conduct:
+
+>Think of it less as bureaucracy and more along the lines of “In case of emergency, break glass and help is on the way.”
+
+
+I am grateful to everyone who took the time to share their views.
+
+###Verbose and Draconian? No.
+Some of the advice seemed to point toward a more verbose and draconian code of conduct, like the ones offered by the less-constructive "advisors" last week. Not good. If we have a code, it can't have a threatening tone. WindyCityRails is a community of colleagues who treat each other with respect. Colleagues don't threaten each other.
+
+Fortunately, one member of our team found a code that balances between clarity and respectfulness.
+
+###Ruby DCamp: Thanks
+[Evan Light](http://twitter.com/elight) wrote the original version of this code of conduct for [Ruby DCamp](http://rubydcamp.org/). When I asked Evan for permission to use his work for WindyCityRails, he responded with an immediate "yes." Thanks Evan!
+
+Here it is.
+
+
 
 Preface
 
