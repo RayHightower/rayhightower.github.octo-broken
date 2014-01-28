@@ -18,7 +18,7 @@ Several people in our industry were generous when I asked for advice. One techno
 
 >You wrote a code of conduct for an Environment of Respect. 99.9% of the people will know what that means, and they can even function well without a code. But a code of conduct needs to written for an Environment of Hostility... for the one fool who doesn't know how to act. 
 
-Another member of the local community offered an interesting view of bureaucracy when it comes to codes of conduct:
+A member of the local community offered an interesting view of bureaucracy when it comes to codes of conduct:
 
 >Think of it less as bureaucracy and more along the lines of “In case of emergency, break glass and help is on the way.”
 
@@ -26,25 +26,23 @@ Another member of the local community offered an interesting view of bureaucracy
 I am grateful to everyone who took the time to share their views.
 
 ###Verbose and Draconian? No.
-Some of the advice seemed to point toward a more verbose and draconian code of conduct, like the ones offered by the less-constructive "advisors" last week. Not good. If we have a code, it can't have a threatening tone. WindyCityRails is a community of colleagues who treat each other with respect. Colleagues don't threaten each other.
+Some of the advice seemed to point toward a more verbose and draconian code of conduct, like the ones suggested by a few people last week. Not good. If we have a code, it can't have a threatening tone. WindyCityRails is a community of colleagues who treat each other with respect. Colleagues don't threaten each other.
 
-Fortunately, one member of our team found a code that balances between clarity and respectfulness.
+Fortunately, one member of our team found a code that strikes a balance between clarity and respectfulness.
 
 ###Ruby DCamp: Thanks
 [Evan Light](http://twitter.com/elight) wrote the original version of this code of conduct for [Ruby DCamp](http://rubydcamp.org/). When I asked Evan for permission to use his work for WindyCityRails, he responded with an immediate "yes." Thanks Evan!
 
 Here it is.
 
+####WindyCityRails Code of Conduct
 
-
-Preface
-
+###Preface
 WindyCityRails is and has been an event made up of welcoming, tolerant, compassionate, and loving participants. For several years now, WindyCityRails participants have been respectful of one another in our differences. We have employed those differences to elevate, educate, and celebrate one another at WindyCityRails.
 
 It is in that same spirit that we now adopt this Code of Conduct: Not as a punitive action, but as a measure to protect that which we already have and to signal to all that we are a tolerant and loving community.
 
-WindyCityRails Code of Conduct
-
+###WindyCityRails Code of Conduct
 WindyCityRails is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity, sexual orientation, disability, physical appearance, body size, race, or religion. We do not tolerate harassment of participants in any form.
 
 If you think your conversation is making another community member uncomfortable, try to make amends and move forward.
@@ -55,11 +53,11 @@ That said, silliness, mockery, and general irreverence are welcome, expected, an
 
 However, should another participant's behavior be injurious to you, we ask three things.
 
-1) Give others the benefit of the doubt.
+###1) Give others the benefit of the doubt.
 
 People are generally decent. It has been our experience, these past several years, that those who attend WindyCityRails are just a cut above in that respect.
 
-2) Attempt to address the behavior with the other party immediately.
+###2) Attempt to address the behavior with the other party immediately.
 
 In the case of intractable situations, we are here to help you (see "Ask for Help!" below). However, this is where we ask participants to try to behave "like grown ups." It is part of the WindyCityRails ethos: If you have a problem with something, don't wait for someone to fix it but instead try to fix it yourself.
 
@@ -67,8 +65,21 @@ If you’re comfortable doing so, let the person know that you found what he or 
 
 If you're uncomfortable approaching the other person…
 
-3) Ask for Help!
+###3) Ask for Help!
 
 We're all human. While life, and WindyCityRails, expects a good deal of self-sufficiency, we are also a community. If you cannot manage a situation alone, we are here for you. Seek out any member of the conference organizer team. We can be identified with special "Organizer" lanyards.
 
-- WindyCityRails Organizers Team
+~WindyCityRails Organizers Team
+
+
+###Conclusion
+Thanks for taking the time to read this through. 
+
+###Sponsors and Tickets
+If the WindyCityRails community is one that you want to reach, we invite you to [become a sponsor](http://www.windycityrails.org/). Ruby sponsorships (top-level) are sold out. But there are still some slots available at the other levels.
+
+Interested in speaking? The [WindyCityRails call for proposals](http://windycityrails.org) is still open, as of the date of this post. If you are doing something exciting with Ruby and/or Rails, you are welcome to submit a proposal. 
+
+If you are able to plan your calendar as far ahead as September, this is a great time to [buy a ticket for WindyCityRails](). Super early bird tickets offer a two hundred dollar ($200) savings. Only one hundred super early bird tickets will be sold.
+
+
