@@ -28,7 +28,7 @@ I am grateful to everyone who took the time to share their thoughts.
 ###Verbose and Draconian? Not Here.
 Some of the advice seemed to point toward a more verbose and draconian code of conduct, like the ones suggested by a few people last week. Not good. If we have a code, it's better to avoid the threatening tone. WindyCityRails is a community of colleagues who treat each other with respect. Colleagues don't threaten each other.
 
-Fortunately, one member of our team found a code that works. Every member of the community is treated like an independent-thinking adult who respects the rights of others. The rules are clear, and the threatening tone is gone.
+Fortunately, one member of our team found a code that works. Every member of the community is treated like an independent-thinking adult who respects the rights of others. Expectations are clear, and the threatening tone is gone.
 
 ###Ruby DCamp: Thanks
 [Evan Light](http://twitter.com/elight) wrote the original version of this code of conduct for [Ruby DCamp](http://rubydcamp.org/). When asked for permission to use his work for WindyCityRails, Evan responded with an enthusiastic _yes_. Thanks Evan!
