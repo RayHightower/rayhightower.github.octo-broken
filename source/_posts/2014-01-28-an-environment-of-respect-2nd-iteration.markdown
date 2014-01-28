@@ -18,7 +18,7 @@ Several people in our industry were generous when I asked for advice. One techno
 
 >You wrote a code of conduct for an Environment of Respect. 99.9% of the people will know what that means, and they can even function well without a code. But a code of conduct needs to written for an Environment of Hostility... for the one fool who doesn't know how to act. 
 
-A member of the local community offered an interesting view of bureaucracy when it comes to codes of conduct:
+In a discussion about reducing bureaucracy, one developer offered this view:
 
 >Think of it less as bureaucracy and more along the lines of “In case of emergency, break glass and help is on the way.”
 
