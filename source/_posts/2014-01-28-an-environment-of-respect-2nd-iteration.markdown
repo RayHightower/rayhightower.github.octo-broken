@@ -72,4 +72,4 @@ We're all human. While life, and WindyCityRails, expects a good deal of self-suf
 ###Conclusion
 Thanks for reading this through. See you at [WindyCityRails](http://windycityrails.org)!
 
-Related: The [WindyCityRails call for proposals](http://www.windycityrails.org) is still open, as of the date of this post. If you are doing something exciting with Ruby and/or Rails, please submit a proposal. Thanks.
+Related: The [WindyCityRails call for proposals](http://www.windycityrails.org) is still open, as of the date of this post. If you are doing something exciting with Ruby and/or Rails, we invite you to submit a proposal.
