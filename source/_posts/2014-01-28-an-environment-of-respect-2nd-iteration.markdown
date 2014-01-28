@@ -70,5 +70,4 @@ We're all human. While life, and WindyCityRails, expects a good deal of self-suf
 
 
 ###Conclusion
-Thanks for taking the time to read this through. See you at
-[WindyCityRails](http://windycityrails.org)!
+Thanks for reading this through. See you at [WindyCityRails](http://windycityrails.org)!
