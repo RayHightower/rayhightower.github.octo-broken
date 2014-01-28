@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-01-21T16:10:30-06:00</updated>
+  <updated>2014-01-28T11:36:28-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,90 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[An Environment of Respect, 2nd Iteration]]></title>
+    <link href="http://RayHightower.com/blog/2014/01/28/an-environment-of-respect-2nd-iteration/"/>
+    <updated>2014-01-28T07:08:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2014/01/28/an-environment-of-respect-2nd-iteration</id>
+    <content type="html"><![CDATA[<p>Thank you to everyone who offered feedback on <a href="http://RayHightower.com/blog/2014/01/21/an-environment-of-respect/">An Environment of Respect</a>, which included an early draft of the WindyCityRails Code of Conduct.</p>
+
+<p>The frank and earnest exchange of ideas was educational. Some of the feedback was positive, on the order of &ldquo;we&rsquo;re all colleagues, we treat each other with respect, that&rsquo;s good.&rdquo;</p>
+
+<p>However, I paid special attention to the negative feedback because it surprised me. Surprise happens when I face something that I do not understand. When I encounter something that I do not understand, there&rsquo;s an opportunity for learning.</p>
+
+<p>So I did what I always do when I need to learn more. I spoke with people who know more than me.</p>
+
+<!--more-->
+
+
+<h3>Wise Counsel</h3>
+
+<p>Several people in our industry were generous when I asked for advice. One technology veteran summed it up this way:</p>
+
+<blockquote><p>You wrote a code of conduct for an Environment of Respect. 99.9% of the people will know what that means, and they can even function well without a code. But a code of conduct needs to written for an Environment of Hostility&hellip; for the one fool who doesn&rsquo;t know how to act.</p></blockquote>
+
+<p>In a discussion about reducing bureaucracy, one developer offered this view:</p>
+
+<blockquote><p>Think of it less as bureaucracy and more along the lines of “In case of emergency, break glass and help is on the way.”</p></blockquote>
+
+<p>I am grateful to everyone who took the time to share their thoughts.</p>
+
+<h3>Verbose and Draconian? Not Here.</h3>
+
+<p>Some of the advice seemed to point toward a more verbose and draconian code of conduct, like the ones suggested by a few people last week. Not good. If we have a code, it&rsquo;s better to avoid the threatening tone. WindyCityRails is a community of colleagues who treat each other with respect.</p>
+
+<p>Fortunately, one member of our team found a code that works. Every member of the community is treated like an independent-thinking adult who respects the rights of others. Expectations are clear, and the threatening tone is gone.</p>
+
+<h3>Ruby DCamp: Thanks</h3>
+
+<p><a href="http://twitter.com/elight">Evan Light</a> wrote the original version of this code of conduct for <a href="http://rubydcamp.org/">Ruby DCamp</a>. When asked for permission to use his work for WindyCityRails, Evan responded with an enthusiastic <em>yes</em>. Thanks Evan!</p>
+
+<p>Here it is.</p>
+
+<h3>Draft: Code of Conduct</h3>
+
+<h4>Preface</h4>
+
+<p>WindyCityRails is and has been an event made up of welcoming, tolerant, compassionate, and loving participants. For several years now, WindyCityRails participants have been respectful of one another in our differences. We have employed those differences to elevate, educate, and celebrate one another at WindyCityRails.</p>
+
+<p>It is in that same spirit that we now adopt this Code of Conduct: Not as a punitive action, but as a measure to protect that which we already have and to signal to all that we are a tolerant and loving community.</p>
+
+<h4>WindyCityRails Code of Conduct</h4>
+
+<p>WindyCityRails is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity, sexual orientation, disability, physical appearance, body size, race, or religion. We do not tolerate harassment of participants in any form.</p>
+
+<p>If you think your conversation is making another community member uncomfortable, try to make amends and move forward.</p>
+
+<p>Participants asked to stop any harassing behavior are expected to comply immediately. WindyCityRails participants violating these rules may be sanctioned or expelled from the conference at the event organizers&#8217; discretion. This applies to all attendees, speakers, sponsors, and otherwise.</p>
+
+<p>That said, silliness, mockery, and general irreverence are welcome, expected, and even encouraged so long as they all come from a loving place.</p>
+
+<p>However, should another participant&rsquo;s behavior be injurious to you, we ask three things.</p>
+
+<h4>1) Give others the benefit of the doubt.</h4>
+
+<p>People are generally decent. It has been our experience, these past several years, that those who attend WindyCityRails are just a cut above in that respect.</p>
+
+<h4>2) Attempt to address the behavior with the other party immediately.</h4>
+
+<p>In the case of intractable situations, we are here to help you (see &ldquo;Ask for Help!&rdquo; below). However, this is where we ask participants to try to behave &ldquo;like grown ups.&rdquo; It is part of the WindyCityRails ethos: If you have a problem with something, don&rsquo;t wait for someone to fix it but instead try to fix it yourself.</p>
+
+<p>If you’re comfortable doing so, let the person know that you found what he or she said or did inappropriate. Attempt to resolve the situation amicably. When addressing it yourself, remember to continue to treat the other party with kindness and respect.</p>
+
+<p>If you&rsquo;re uncomfortable approaching the other person…</p>
+
+<h4>3) Ask for Help!</h4>
+
+<p>We&rsquo;re all human. While life, and WindyCityRails, expects a good deal of self-sufficiency, we are also a community. If you cannot manage a situation alone, we are here for you. Seek out any member of the conference organizer team. We can be identified with special &ldquo;Organizer&rdquo; lanyards.</p>
+
+<p>~WindyCityRails Organizers Team</p>
+
+<h3>Conclusion</h3>
+
+<p>Thanks for reading this through. See you at <a href="http://windycityrails.org">WindyCityRails</a>!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[An Environment of Respect]]></title>
@@ -1913,23 +1997,6 @@ Age has little to do with ability. Every profession has examples of people who a
 <p>You&rsquo;re never too young or too old if you&rsquo;ve got talent. Let&rsquo;s recognize that age has little to do with ability.</p></blockquote>
 
 <p>Now&hellip; let&rsquo;s get back to work!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Why We Need STEM]]></title>
-    <link href="http://RayHightower.com/blog/2013/07/29/why-we-need-stem/"/>
-    <updated>2013-07-29T00:22:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2013/07/29/why-we-need-stem</id>
-    <content type="html"><![CDATA[<p><a href="http://ignitechi.org">Ignite Chicago</a> is an evening of 5-minute talks presented by speakers who want to inspire others. Each speaker is allowed twenty slides, and the slides advance automatically every fifteen seconds. The Ignite organizers asked me to present <em>Why We Need STEM</em> at <a href="http://1871.com">1871</a>. I&rsquo;ll post the video when it becomes available. For now, check out the slides&hellip;</p>
-
-<!-- more -->
-
-
-<center><script async class="speakerdeck-embed" data-id="4c328420da3d01301487425a5f060967" data-ratio="1.29456384323641" src="http://RayHightower.com//speakerdeck.com/assets/embed.js"></script></center>
-
-
-<p>Thank you Ignite Chicago organizers (<a href="http://www.goteampete.com">Pete Aiello</a> and <a href="http://clairelew.com">Claire Lew</a>) for the invitation and for hosting a great event.</p>
 ]]></content>
   </entry>
   
