@@ -82,7 +82,4 @@ There you have it... my opinion. Can my opinion change? Perhaps. I have many bli
 By the way, the [WindyCityRails call for proposals](http://www.windycityrails.org) is still open, as of the date of this post. If you are doing something exciting with Ruby and/or Rails, please submit a proposal. Thanks.
 
 ###_Update (Jan 2014)_
-_After this post, several colleagues introduced me to new information.
-The result, an updated code of conduct, is covered in [An Environment of
-Respect, 2nd Iteration](/blog/2014/01/28/an-environment-of-respect-2nd-iteration/)._
-
+_After this post, several colleagues introduced me to new information.  The result, an updated code of conduct, is covered in [An Environment of Respect, 2nd Iteration](/blog/2014/01/28/an-environment-of-respect-2nd-iteration/)._ 
