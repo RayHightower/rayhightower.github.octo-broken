@@ -18,4 +18,4 @@ Some of the topics covered during the discussion:
   days!
 
 ###Gratitude
-Thank you 8th Light for making this happen!
+Thank you 8th Light for making this happen.
