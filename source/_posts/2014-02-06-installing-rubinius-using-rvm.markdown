@@ -74,8 +74,7 @@ rvm rubies
 $
 ```
 
-Hmm…. Is there any other way to check this?
-
+It's always good to have multiple ways to verify information.
 
 ```bash
 $ ruby --version
@@ -84,12 +83,10 @@ rubinius 2.0.0.n37 (1.9.3 6d611c7a 2014-02-06 JI) [x86_64-darwin12.5.0]
 $
 ```
 
-And now, let's do a quick "Hello World" test drive.
-
-
+And now, let's do a quick "Hello World" test drive using the Rubinius
+version of `irb`.
 
 ```bash
-
 $ irb
 rbx-2.2.4 :001 > p 'Hello World, from Rubinius'
 "Hello World, from Rubinius"
@@ -105,4 +102,4 @@ The installation script found that I had two outdated Homebrew-installed package
 Why install Rubinius? Why do we care about concurrency? These are two questions I expect to explore through my new Rubinius installation. 
 
 ###Come Hack With Rubinius
-If you plan to be in the Chicago area in March 2014, drop by [ChicagoRuby]() for some back-to-back Rubinius action. See [http://meetup.com/chicagoruby](http://meetup.com/chicagoruby) for details. 
+If March 2014 finds you in the Chicago area, you're invited to visit ChicagoRuby for some back-to-back Rubinius action. See [http://meetup.com/chicagoruby](http://www.meetup.com/ChicagoRuby/events/114749352/) for details. 
