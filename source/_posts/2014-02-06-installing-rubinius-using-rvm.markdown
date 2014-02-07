@@ -15,7 +15,7 @@ To prepare for the Rubinius events, I decided to install Rubinius on my machine.
 
 If you don't have RVM installed, detailed installation instructions can be found at [http://rvm.io](http://rvm.io).
 
-###Installing Rubinius
+###Get the Latest RVM
 These instructions work on Mac OS X v10.8.5. The same steps will probably work on Linux, except for the references to Homebrew.
 
 First, make sure you're running the latest version of RVM.
