@@ -101,7 +101,7 @@ $
 ```
 
 ###Post Installation Notes
-The installation script found two outdated Homebrew-installed packages on my system: `automake` and `openssl`. If I had to perform this installation again, I would upgrade Homebrew and related packages _before_ installing Rubinius.
+The installation script found two outdated Homebrew-installed packages on my system: `automake` and `openssl`. It would have been better for me to upgrade Homebrew and related packages _before_ installing Rubinius.
 
 Why install Rubinius? Why do we care about concurrency? These are two questions I expect to explore through my new Rubinius installation. 
 
