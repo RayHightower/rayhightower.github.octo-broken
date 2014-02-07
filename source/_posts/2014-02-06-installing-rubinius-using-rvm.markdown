@@ -45,7 +45,7 @@ $
 ```
 
 ###Next, Install Rubinius
-As of this writing, Rubinius can operate in 1.8 language mode (the default) or 1.9 language mode. A 1.9 mode installation requires an additional command line flag, shown below.
+As of this writing, Rubinius can operate in 1.8 language mode (the default) or 1.9 language mode. Installing in 1.9 mode requires an additional command line flag, shown below.
 
 ```bash
 $ rvm install rbx --1.9
