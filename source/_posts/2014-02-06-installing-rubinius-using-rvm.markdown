@@ -17,9 +17,7 @@ To prepare for the Rubinius events, I decided to install Rubinius on my machine.
 * bounce between the different versions, and 
 * to do all of that with minimal headaches. 
 
-Similar tools exist, but RVM is the one that has always worked for me.
-
-If you don't have RVM installed, detailed installation instructions can be found at [http://rvm.io](http://rvm.io).
+Similar tools exist, but RVM is the one that has always worked for me.  If you don't have RVM installed, detailed installation instructions can be found at [http://rvm.io](http://rvm.io).
 
 ###Get the Latest RVM
 These instructions work on Mac OS X v10.8.5. The same steps will probably work on Linux, except for the references to Homebrew.
@@ -103,7 +101,7 @@ $
 ```
 
 ###Post Installation Notes
-The installation script found that I had two outdated Homebrew-installed packages: `automake` and `openssl`. If I had to perform this installation again, I would upgrade Homebrew and related packages _before_ installing Rubinius.
+The installation script found two outdated Homebrew-installed packages on my system: `automake` and `openssl`. If I had to perform this installation again, I would upgrade Homebrew and related packages _before_ installing Rubinius.
 
 Why install Rubinius? Why do we care about concurrency? These are two questions I expect to explore through my new Rubinius installation. 
 
