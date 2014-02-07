@@ -11,7 +11,13 @@ categories: [ Ruby ]
 To prepare for the Rubinius events, I decided to install Rubinius on my machine. RVM makes the process smooth.
 <!--more-->
 ###RVM Recap
-[Ruby Version Manager (RVM)](http://rayhightower.com/blog/2013/05/16/upgrading-ruby-with-rvm/) is one of my favorite tools because it allows developers to install multiple versions of Ruby on one system, to bounce between the different versions, and to do all of that with minimal headaches. Similar tools exist, but RVM is the one that has always worked for me.
+[Ruby Version Manager (RVM)](http://rayhightower.com/blog/2013/05/16/upgrading-ruby-with-rvm/) is one of my favorite tools because it allows developers to...
+
+* install multiple versions of Ruby on one system,
+* bounce between the different versions, and 
+* to do all of that with minimal headaches. 
+
+Similar tools exist, but RVM is the one that has always worked for me.
 
 If you don't have RVM installed, detailed installation instructions can be found at [http://rvm.io](http://rvm.io).
 
