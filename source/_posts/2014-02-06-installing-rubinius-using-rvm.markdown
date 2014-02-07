@@ -6,7 +6,7 @@ comments: true
 categories: [ Ruby ]
 ---
 {% img right /images/rubinius.png %}
-[Rubinius](http://rubini.us/) is an implementation of the Ruby language designed for concurrency. The lead developer of Rubinius, [Brian Shirai](http://twitter.com/brixen), will present Rubinius at ChicagoRuby on 3/4/2014 followed by a hack night on 3/12/2014. Details are on the [ChicagoRuby meetup site](http://meetup.com/chicagoruby).
+[Rubinius](http://rubini.us/) is an implementation of the Ruby language designed for concurrency. The lead developer of Rubinius, [Brian Shirai](http://twitter.com/brixen), will present Rubinius at ChicagoRuby on March 4, 2014 followed by a hack night on March 12th. Details are on the [ChicagoRuby meetup site](http://meetup.com/chicagoruby).
 
 To prepare for the Rubinius presentation and hack night coming up in March, I decided to install Rubinius on my machine. Once again, RVM rides in to make the process smooth.
 <!--more-->
