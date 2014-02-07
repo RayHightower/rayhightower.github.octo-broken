@@ -6,7 +6,7 @@ comments: true
 categories: [ Ruby ]
 ---
 {% img right /images/rubinius.png %}
-[Rubinius](http://rubini.us/) is an implementation of the Ruby language designed for concurrency. The lead developer of Rubinius, [Brian Shirai](http://twitter.com/brixen), will present Rubinius at ChicagoRuby on March 4, 2014 followed by a hack night on March 12th. Details are on the [ChicagoRuby meetup site](http://meetup.com/chicagoruby).
+[Rubinius](http://rubini.us/) is an implementation of the Ruby language designed for concurrency. The lead developer of Rubinius, [Brian Shirai](http://twitter.com/brixen), will present Rubinius at ChicagoRuby on March 4, 2014 followed by a hack night on March 12th. Details are on the [ChicagoRuby meetup site](http://www.meetup.com/ChicagoRuby/events/114749352/).
 
 To prepare for the Rubinius presentation and hack night coming up in March, I decided to install Rubinius on my machine. Once again, RVM rides in to make the process smooth.
 <!--more-->
@@ -16,6 +16,8 @@ To prepare for the Rubinius presentation and hack night coming up in March, I de
 If you don't have RVM installed, detailed installation instructions can be found at [http://rvm.io](http://rvm.io).
 
 ###Installing Rubinius
+These instructions work on Mac OS X v10.8.5. The same steps will probably work on Linux, except for the references to Homebrew.
+
 First, make sure you're running the latest version of RVM.
 
 ```bash
