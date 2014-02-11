@@ -31,7 +31,7 @@ Before installing any new software tool, it is helpful to know what to expect fr
 ```bash
 $ brew server
 ```
-{% imgcap center /images/brew-server.png Browsing Homebrew packages. %}
+{% imgcap center /images/brew-server.png Browsing Homebrew packages with Homebrew's built-in web server. %}
 
 
 
