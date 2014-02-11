@@ -37,7 +37,4 @@ $ brew server
 
 
 ###Making Your Own Packages
-Homebrew is Ruby-based, so if you know Ruby, you can create your own packages. Details can be found in the (continuously updated) [Homebrew repo on GitHub](https://github.com/Homebrew/).
-
-
-
+Homebrew is Ruby-based, so Rubyists can create their own packages.  Details can be found in the (continuously updated) [Homebrew repo on GitHub](https://github.com/Homebrew/).
