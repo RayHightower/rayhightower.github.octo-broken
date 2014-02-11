@@ -5,14 +5,15 @@ date: 2014-02-11 14:20
 comments: true
 categories: [ Ruby ]
 ---
-Spend enough time writing software on Mac OS X, and you will eventually need to install software that was written for Unix, but not specifically for OS X. For cases like that, there's [Homebrew](http://brew.sh/), written by [Max Howell](https://twitter.com/mxcl). Homebrew makes it easier to install Unix software on Mac OS X. 
+Spend enough time developing software on Mac OS X, and you will eventually need to install tools that were written for Unix, but not specifically for OS X. For cases like that, there's [Homebrew](http://brew.sh/), written by [Max Howell](https://twitter.com/mxcl). Homebrew makes it easier to install Unix software on Mac OS X. 
 
-Before Homebrew, developers would need to manually 
-Download the source code for the utility.
-Manually compile using gcc.
-Resolve dependencies manually.
+Before Homebrew, developers would need to manually:
 
-Homebrew handles all of these steps automatically. That way, developers can focus their attention on solving real problems.
+* Download the source code for the tool.
+* Manually compile using gcc or another compiler.
+* Resolve dependencies manually.
+
+The process was long and error-prone. Homebrew handles all of these steps automatically. That way, developers can focus their attention on solving real problems.
 <!--more-->
 The Homebrew application and related scripts were 
 
