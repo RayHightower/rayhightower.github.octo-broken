@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-02-07T00:48:48-06:00</updated>
+  <updated>2014-02-12T17:31:57-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,142 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Homebrew Fundamentals]]></title>
+    <link href="http://RayHightower.com/blog/2014/02/12/homebrew-fundamentals/"/>
+    <updated>2014-02-12T14:20:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2014/02/12/homebrew-fundamentals</id>
+    <content type="html"><![CDATA[<p>Spend enough time developing software on Mac OS X, and you will eventually need to install libraries that were written for Unix, but not specifically for OS X. Fortunately we have <a href="http://brew.sh/">Homebrew</a>, which makes it easier to install Unix libraries on the Mac.</p>
+
+<h3>Why Homebrew?</h3>
+
+<p>Before installing any new software, it is helpful to have a clear view of <em>why</em> we need it.</p>
+
+<p>Homebrew is a package manager. It differs from earlier package managers like <a href="http://www.finkproject.org/">Fink</a> and <a href="http://www.macports.org/">MacPorts</a> because it is written in Ruby and based on Git. The Ruby/Git foundation means that developers from around the planet can easily contribute to Homebrew&rsquo;s growth.</p>
+
+<p>Before package managers, developers who needed a particular library would have to:</p>
+
+<ul>
+<li>Manually download source code for the library.</li>
+<li>Manually compile using <code>gcc</code> or another compiler.</li>
+<li>Resolve dependencies manually.</li>
+</ul>
+
+
+<p>Manually, manually, manually&hellip; The old way was long and error-prone. <a href="https://twitter.com/mxcl">Max Howell</a> created Homebrew to download, compile, and resolve dependencies automatically. Now developers can focus more attention on solving problems that are directly related to their work.</p>
+
+<!--more-->
+
+
+<h3>How to Install Homebrew</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/xcode-app-store.png' width='' height='' alt='Homebrew depends on Xcode.' title='Homebrew depends on Xcode.'><span class='caption-text'>Homebrew depends on Xcode.</span></span>
+Some parts of Homebrew require Xcode, Apple&rsquo;s environment for developing software on Mac OS X. Make sure you have Xcode installed on your Mac. Xcode is available for free in the Mac App Store.</p>
+
+<p>With Xcode installed, you can install Homebrew by pasting the following
+command into a terminal window.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>ruby -e <span class="s2">&quot;$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)&quot;</span>install
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The script will walk you through the installation process. If you would like to read the script before installation, you can visit the <a href="https://github.com/Homebrew/homebrew">Homebrew repo on Github</a>.</p>
+
+<h3>Installing Packages</h3>
+
+<p>A list of <a href="https://github.com/Homebrew/homebrew/tree/master/Library/Formula">available Homebrew packages</a> is maintained on GitHub.</p>
+
+<p>To install a package, say <code>imagemagick</code> for example&hellip;</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>brew install imagemagick
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Before Homebrew, installing <code>imagemagick</code> was long and arduous. With Homebrew, the installation and compilation steps still take awhile. But dependencies are resolved by Homebrew, and little user interaction is required after the first step.</p>
+
+<h3>Maintaining Homebrew</h3>
+
+<p>Developers from around the world contribute to Homebrew, so the tool gets improved often. To check the health of your Homebrew installation, use <code>brew doctor</code>.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>brew doctor
+</span><span class='line'>Warning: Your Homebrew is outdated.
+</span><span class='line'>You haven<span class="err">&#39;</span>t updated <span class="k">for </span>at least 24 hours, this is a long <span class="nb">time </span>in brewland!
+</span><span class='line'>To update Homebrew, run <span class="sb">`</span>brew update<span class="sb">`</span>.
+</span><span class='line'>
+</span><span class='line'><span class="err">$</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>brew update</code> will apply recent updates.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>brew update
+</span><span class='line'>Updated Homebrew from f83642fc to cfad513e.
+</span><span class='line'><span class="o">==</span>&gt; New Formulae
+</span><span class='line'>...
+</span><span class='line'><span class="o">==</span>&gt; Updated Formulae
+</span><span class='line'>...
+</span><span class='line'><span class="o">==</span>&gt; Deleted Formulae
+</span><span class='line'>...
+</span><span class='line'>
+</span><span class='line'><span class="err">$</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Looking at Packages</h3>
+
+<p>There are several ways to view the packages that have been installed on a system via Homebrew. Use <code>brew list</code> at the command prompt to get a quick view of what Homebrew has installed.</p>
+
+<p>Even better: <code>brew server</code> will launch a local <a href="http://www.sinatrarb.com/com">Sinatra</a> app, and then you can point a browser to <code>http://localhost:4567</code> for a web-enabled view of the installed packages.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>brew server
+</span><span class='line'>View our tasting menu at http://localhost:4567/
+</span><span class='line'>Use <span class="s2">&quot;Control-C&quot;</span> to exit.
+</span><span class='line'>
+</span><span class='line'><span class="o">[</span>2014-02-12 16:33:18<span class="o">]</span> INFO  WEBrick 1.3.1
+</span><span class='line'><span class="o">[</span>2014-02-12 16:33:18<span class="o">]</span> INFO  ruby 1.8.7 <span class="o">(</span>2012-02-08<span class="o">)</span> <span class="o">[</span>universal-darwin12.0<span class="o">]</span>
+</span><span class='line'><span class="o">==</span> Sinatra/1.3.3 has taken the stage on 4567 <span class="k">for </span>development with backup from WEBrick
+</span><span class='line'><span class="o">[</span>2014-02-12 16:33:18<span class="o">]</span> INFO  WEBrick::HTTPServer#start: <span class="nv">pid</span><span class="o">=</span>96694 <span class="nv">port</span><span class="o">=</span>4567
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><span class='caption-wrapper center'><img class='caption' src='http://RayHightower.com/images/brew-server.png' width='' height='' alt='Browsing locally-installed Homebrew packages.' title='Browsing locally-installed Homebrew packages.'><span class='caption-text'>Browsing locally-installed Homebrew packages.</span></span></p>
+
+<h3>Making Your Own Packages</h3>
+
+<p>Homebrew is Ruby-based, so Rubyists can create their own packages.  Details can be found in the (continuously updated) <a href="https://github.com/Homebrew/">Homebrew repo on GitHub</a>.</p>
+
+<h3>Conclusion</h3>
+
+<p>Enjoy Homebrew!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Installing Rubinius Using RVM]]></title>
@@ -2101,30 +2237,6 @@ Planet Earth is facing a shortage of people who make things. People like scienti
 <h3>Next Year</h3>
 
 <p>Planning for next year&rsquo;s WindyCityRails, including the Youth Program, is currently underway. If there are things you&rsquo;d like to see in next year&rsquo;s program, feel free to <a href="http://windycityrails.org/contact">contact the WindyCityRails organizers</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[You Can Build Things]]></title>
-    <link href="http://RayHightower.com/blog/2013/09/02/you-can-build-things/"/>
-    <updated>2013-09-02T20:24:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2013/09/02/you-can-build-things</id>
-    <content type="html"><![CDATA[<p>From a video interview with Steve Jobs:</p>
-
-<blockquote><p>When you grow up you tend to get told that the world is the way it is, and your life is just to live your life inside the world. Try not to bash into the walls too much. Try to have a nice family life. Have fun. Save a little money.</p>
-
-<p>That&rsquo;s a very limited life. Life can be much broader once you discover one simple fact.<!--more--></p>
-
-<p>Everything around you that you call life was made up by people who are no smarter than you. And you can change it. You can influence it. You can build other things that other people can use.</p>
-
-<p>Once you learn that, you&rsquo;ll never be the same again.</p></blockquote>
-
-<p>Check out the video:</p>
-
-<center><iframe width="560" height="315" src="http://RayHightower.com//www.youtube.com/embed/GHAJhosbWiM?rel=0" frameborder="0" allowfullscreen></iframe></center>
-
-
-
 ]]></content>
   </entry>
   
