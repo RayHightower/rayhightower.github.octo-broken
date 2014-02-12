@@ -42,7 +42,7 @@ To install a package, say `imagemagick` for example...
 $ brew install imagemagick
 ```
 
-Installing `imagemagick` before Homebrew was long and arduous. Now, the installation happens in a snap.
+Installing `imagemagick` before Homebrew was long and arduous. With Homebrew, the installation and compilation steps will still take some time. But dependencies are resolved by Homebrew, and little user interaction is required.
 
 ###Maintaining Homebrew
 Developers from around the world contribute to Homebrew, so the tool can quickly fall out of date. To check the health of your Homebrew installation, use `brew doctor`.
