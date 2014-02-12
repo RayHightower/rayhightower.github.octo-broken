@@ -8,9 +8,9 @@ categories: [ Ruby ]
 Spend enough time developing software on Mac OS X, and you will eventually need to install libraries that were written for Unix, but not specifically for OS X. Fortunately we have [Homebrew](http://brew.sh/), which makes it easier to install Unix libraries on the Mac. 
 
 ###Why Homebrew?
-Before installing any new software, it is helpful to know what to expect from it.
+Before installing any new software, it is helpful to have a clear view of _why_ we need it.
 
-Homebrew is a package manager. It differes from earlier package managers like [Fink](http://www.finkproject.org/) and [MacPorts](http://www.macports.org/) because it is written in Ruby and based on Git. The Ruby/Git foundation means that developers from around the planet can easily contribute to Homebrew's growth. 
+Homebrew is a package manager. It differs from earlier package managers like [Fink](http://www.finkproject.org/) and [MacPorts](http://www.macports.org/) because it is written in Ruby and based on Git. The Ruby/Git foundation means that developers from around the planet can easily contribute to Homebrew's growth. 
 
 Before package managers, developers who needed a particular library would have to:
 
@@ -22,7 +22,7 @@ Manually, manually, manually... The old way was long and error-prone. [Max Howel
 <!--more-->
 ###How to Install Homebrew
 {% imgcap right /images/xcode-app-store.png Homebrew depends on Xcode. %}
-Some parts of Homebrew require Xcode. Make sure you have Xcode installed on your Mac. Xcode is available for free in the Mac App Store.
+Some parts of Homebrew require Xcode, Apple's environment for developing software on Mac OS X. Make sure you have Xcode installed on your Mac. Xcode is available for free in the Mac App Store.
 
 With Xcode installed, you can install Homebrew by pasting the following
 command into a terminal window.
