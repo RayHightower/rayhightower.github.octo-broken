@@ -42,7 +42,7 @@ To install a package, say `imagemagick` for example...
 $ brew install imagemagick
 ```
 
-Installing `imagemagick` before Homebrew was long and arduous. With Homebrew, the installation and compilation steps will still take some time. But dependencies are resolved by Homebrew, and little user interaction is required.
+Installing `imagemagick` before Homebrew was long and arduous. With Homebrew, the installation and compilation steps will still take some time. But dependencies are resolved by Homebrew, and little user interaction is required after the first step.
 
 ###Maintaining Homebrew
 Developers from around the world contribute to Homebrew, so the tool can quickly fall out of date. To check the health of your Homebrew installation, use `brew doctor`.
@@ -76,7 +76,7 @@ $
 ###Looking at Packages
 There are several ways to view the packages that have been installed on a system via Homebrew. Use `brew list` at the command prompt to get a quick view of what Homebrew has installed.
 
-Even better: `brew server` will launch a local Sinatra app, and then you can point your browser to `http://localhost:4567` for a web-enabled view of the installed packages.
+Even better: `brew server` will launch a local [Sinatra](http://www.sinatrarb.com/com) app, and then you can point a browser to `http://localhost:4567` for a web-enabled view of the installed packages.
 
 ```bash
 $ brew server
@@ -93,3 +93,6 @@ Use "Control-C" to exit.
 
 ###Making Your Own Packages
 Homebrew is Ruby-based, so Rubyists can create their own packages.  Details can be found in the (continuously updated) [Homebrew repo on GitHub](https://github.com/Homebrew/).
+
+###Conclusion
+Enjoy Homebrew!
