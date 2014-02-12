@@ -5,9 +5,14 @@ date: 2014-02-11 14:20
 comments: true
 categories: [ Ruby ]
 ---
-Spend enough time developing software on Mac OS X, and you will eventually need to install tools that were written for Unix, but not specifically for OS X. Fortunately we have [Homebrew](http://brew.sh/), which makes it easier to install Unix software on the Mac. 
+Spend enough time developing software on Mac OS X, and you will eventually need to install libraries that were written for Unix, but not specifically for OS X. Fortunately we have [Homebrew](http://brew.sh/), which makes it easier to install Unix libraries on the Mac. 
 
-Homebrew is a package manager. It differes from earlier package managers like [Fink](http://www.finkproject.org/) and [MacPorts](http://www.macports.org/) because it is written in Ruby and based on Git, modern tools in the web developer's toolbox. Before package managers, developers who needed a particular library would have to:
+###Why Homebrew?
+Before installing any new software, it is helpful to know what to expect from it.
+
+Homebrew is a package manager. It differes from earlier package managers like [Fink](http://www.finkproject.org/) and [MacPorts](http://www.macports.org/) because it is written in Ruby and based on Git. The Ruby/Git foundation means that developers from around the planet can easily contribute to Homebrew's growth. 
+
+Before package managers, developers who needed a particular library would have to:
 
 * Manually download source code for the library.
 * Manually compile using `gcc` or another compiler.
@@ -19,14 +24,57 @@ Manually, manually, manually... The old way was long and error-prone. [Max Howel
 {% imgcap right /images/xcode-app-store.png Homebrew depends on Xcode. %}
 Some parts of Homebrew require Xcode. Make sure you have Xcode installed on your Mac. Xcode is available for free in the Mac App Store.
 
+With Xcode installed, you can install Homebrew by pasting the following
+command into a terminal window.
 
+```bash
+$ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"install
 
-###Why Homebrew?
-Before installing any new software tool, it is helpful to know what to expect from the tool.
+```
+The script will walk you through the installation process. If you would like to read the script before installation, you can visit the [Homebrew repo on Github](https://github.com/Homebrew/homebrew).
 
+###Installing Packages
+A list of [available Homebrew packages](https://github.com/Homebrew/homebrew/tree/master/Library/Formula) is maintained on GitHub.
+
+To install a package, say `imagemagick` for example...
+
+```bash
+$ brew install imagemagick
+```
+
+Installing `imagemagick` before Homebrew was long and arduous. Now, the installation happens in a snap.
+
+###Maintaining Homebrew
+Developers from around the world contribute to Homebrew, so the tool can quickly fall out of date. To check the health of your Homebrew installation, use `brew doctor`.
+
+```bash
+$ brew doctor
+Warning: Your Homebrew is outdated.
+You haven't updated for at least 24 hours, this is a long time in brewland!
+To update Homebrew, run `brew update`.
+
+$
+
+```
+
+`brew update` will apply recent updates.
+
+```bash
+$ brew update
+Updated Homebrew from f83642fc to cfad513e.
+==> New Formulae
+...
+==> Updated Formulae
+...
+==> Deleted Formulae
+...
+
+$
+
+```
 
 ###Looking at Packages
-There are several ways to view the packages that have been installed on a system via Homebrew. Use `brew list` at the command prompt to get a quick view of what Homebrew has installed on the system.
+There are several ways to view the packages that have been installed on a system via Homebrew. Use `brew list` at the command prompt to get a quick view of what Homebrew has installed.
 
 Even better: `brew server` will launch a local Sinatra app, and then you can point your browser to `http://localhost:4567` for a web-enabled view of the installed packages.
 
