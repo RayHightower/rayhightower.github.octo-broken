@@ -5,9 +5,9 @@ date: 2014-02-11 14:20
 comments: true
 categories: [ Ruby ]
 ---
-Spend enough time developing software on Mac OS X, and you will eventually need to install tools that were written for Unix, but not specifically for OS X. Fortunately we have the [Homebrew](http://brew.sh/) package manager, which makes it easier to install Unix software on Mac OS X. 
+Spend enough time developing software on Mac OS X, and you will eventually need to install tools that were written for Unix, but not specifically for OS X. Fortunately we have [Homebrew](http://brew.sh/), which makes it easier to install Unix software on the Mac. 
 
-Homebrew is a package manager, like [Fink](http://www.finkproject.org/) and [MacPorts](http://www.macports.org/). Before package managers, developers who needed a particular tool would have to:
+Homebrew is a package manager. It differes from earlier package managers like [Fink](http://www.finkproject.org/) and [MacPorts](http://www.macports.org/) because it is written in Ruby and based on Git, modern weapons in the web developers arsenal. Before package managers, developers who needed a particular tool would have to:
 
 * Manually download source code for the tool.
 * Manually compile using `gcc` or another compiler.
