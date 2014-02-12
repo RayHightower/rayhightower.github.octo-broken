@@ -26,16 +26,22 @@ Before installing any new software tool, it is helpful to know what to expect fr
 
 
 ###Looking at Packages
-There are several ways to view the packages that have been installed on
-a system via Homebrew. 
+There are several ways to view the packages that have been installed on a system via Homebrew. Use `brew list` at the command prompt to get a quick view of what Homebrew has installed on the system.
+
+Even better: `brew server` will launch a local Sinatra app, and then you can point your browser to `http://localhost:4567` for a web-enabled view of the installed packages.
 
 ```bash
 $ brew server
+View our tasting menu at http://localhost:4567/
+Use "Control-C" to exit.
+
+[2014-02-12 16:33:18] INFO  WEBrick 1.3.1
+[2014-02-12 16:33:18] INFO  ruby 1.8.7 (2012-02-08) [universal-darwin12.0]
+== Sinatra/1.3.3 has taken the stage on 4567 for development with backup from WEBrick
+[2014-02-12 16:33:18] INFO  WEBrick::HTTPServer#start: pid=96694 port=4567
 ```
-{% imgcap center /images/brew-server.png Browsing packages with Homebrew's built-in web server. %}
 
-
-
+{% imgcap center /images/brew-server.png Browsing locally-installed Homebrew packages. %}
 
 ###Making Your Own Packages
 Homebrew is Ruby-based, so Rubyists can create their own packages.  Details can be found in the (continuously updated) [Homebrew repo on GitHub](https://github.com/Homebrew/).
