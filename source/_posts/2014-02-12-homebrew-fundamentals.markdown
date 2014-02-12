@@ -45,7 +45,7 @@ $ brew install imagemagick
 Installing `imagemagick` before Homebrew was long and arduous. With Homebrew, the installation and compilation steps will still take some time. But dependencies are resolved by Homebrew, and little user interaction is required after the first step.
 
 ###Maintaining Homebrew
-Developers from around the world contribute to Homebrew, so the tool can quickly fall out of date. To check the health of your Homebrew installation, use `brew doctor`.
+Developers from around the world contribute to Homebrew, so the tool gets improved often. To check the health of your Homebrew installation, use `brew doctor`.
 
 ```bash
 $ brew doctor
