@@ -76,7 +76,7 @@ $
 ###Looking at Packages
 There are several ways to view the packages that have been installed on a system via Homebrew. Use `brew list` at the command prompt to get a quick view of what Homebrew has installed.
 
-Even better: `brew server` will launch a local [Sinatra](http://www.sinatrarb.com/com) app, and then you can point a browser to `http://localhost:4567` for a web-enabled view of the installed packages.
+Even better: `brew server` will launch a local [Sinatra](http://www.sinatrarb.com/) app, and then you can point a browser to `http://localhost:4567` for a web-enabled view of the installed packages.
 
 ```bash
 $ brew server
