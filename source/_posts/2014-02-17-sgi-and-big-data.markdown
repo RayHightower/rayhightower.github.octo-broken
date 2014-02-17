@@ -40,7 +40,3 @@ Freed summed up the successful path as follows: Successful implementation of big
 
 ###About Chicago ACM
 [The Chicago Chapter of the Association for Computing Machinery (Chicago ACM)](http://www.meetup.com/chicagoacm/) is on fire. December's meeting featured a supercomputing presentation by [Sharan Kalwani of Fermilab](/blog/2013/12/12/high-performance-computing-at-acm/). The February The February meeting was all about SGI's push into Big Data, and next month will focus on the Internet of Things (IoT). What an exciting combination. Looking forward to more!
-
-###SGI's Future
-
-
