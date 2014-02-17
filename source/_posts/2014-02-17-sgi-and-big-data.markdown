@@ -49,4 +49,4 @@ A few ways to avoid the pitfalls: Start small. Have goals. And, like any good ag
 >Successful implementation of big data is not an event. It is an iterative process where we continuously learn over time.
 
 ###About Chicago ACM
-[The Chicago Chapter of the Association for Computing Machinery (Chicago ACM)](http://www.meetup.com/chicagoacm/) is on fire. December's meeting featured a supercomputing presentation by [Sharan Kalwani of Fermilab](/blog/2013/12/12/high-performance-computing-at-acm/). The February The February meeting was all about SGI's push into big data, and next month will focus on the Internet of Things (IoT). What an exciting combination. Looking forward to more!
+[The Chicago Chapter of the Association for Computing Machinery (Chicago ACM)](http://www.meetup.com/chicagoacm/) is on fire. December's meeting featured a supercomputing presentation by [Sharan Kalwani of Fermilab](/blog/2013/12/12/high-performance-computing-at-acm/). The February meeting was all about SGI's push into big data, and next month will focus on the Internet of Things (IoT). The organizers are assembling an exciting combination of events. Looking forward to more!
