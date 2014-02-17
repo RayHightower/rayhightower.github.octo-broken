@@ -10,10 +10,10 @@ categories: [ Community ]
 
 But success in the computer industry is fleeting. A few years after Jurassic Park, a convergence of tech advances (Moore's Law, x86 architecture, and Linux) made it possible for commodity PCs to perform as well as SGI's premium workstations. Wall Street traders and other power users abandoned workstations in favor of Linux-based PCs. High-end makers like SGI fell on hard times.
 
-Today, SGI is fighting back. The company is blending x86, Linux, and (buzzword alert) Big Data to attack the high performance computing market. The vision was presented at this month's [Chicago ACM](http://www.meetup.com/chicagoacm/) meeting by Brian Freed, VP of Strategy for SGI.
+Today, SGI is fighting back. The company is blending x86, Linux, and (buzzword alert) big data to attack the high performance computing market. The vision was presented at this month's [Chicago ACM](http://www.meetup.com/chicagoacm/events/163287562/) meeting by Brian Freed, VP of Strategy for SGI.
 <!--more-->
 ###What is Big Data?
-Freed shared a definition of Big Data from [Edd Dumbill's O'Reilly Radar article](http://strata.oreilly.com/2012/01/what-is-big-data.html). Big Data is characterized by volume (lots of it), variety (it's unstructured), and velocity (the data changes quickly).
+Freed shared a definition of big data from [Edd Dumbill's O'Reilly Radar article](http://strata.oreilly.com/2012/01/what-is-big-data.html). Big data is characterized by volume (lots of it), variety (it's unstructured), and velocity (the data changes quickly).
 
 In the words of the O'Reilly author...
 
@@ -21,22 +21,32 @@ In the words of the O'Reilly author...
 >
 > ~Edd Dumbill
 
-Most companies could not afford to reap the benefits of Big Data in the early days because of two huge barriers: Cost and computing power.
+Definitions are fine, but it's more important to understand _why_ a company might care about big data. Here's an example. 
 
 ###Example: Fraud Detection with Big Data
-Consider the challenge faced by credit card companies. When a credit card is presented for an online purchase, how does the authorizing body know if the charge is legitimate? Can legitimacy be determined in a timely fashion, before an impatient buyer abandons a slow seller for a quicker seller?  
+Consider one challenge faced by credit card companies. When a credit card is presented for an online purchase, how does the authorizing body know if the charge is legitimate? Can legitimacy be determined in a timely fashion, before an impatient buyer abandons a slow seller for a quicker seller?  
 
 Sellers who decide too quickly will suffer fraud. Sellers who decide too slowly will lose customers. The problem is amplified because millions of shoppers are clicking the "buy now" button simultaneously, and they all expect an answer _right now_.  
 
-Big Data helps credit card companies to make better authorization decisions in less time. Traditional fraud detection systems could measure two potential fraud vectors at most within the allowed time window. However, [Hadoop](http://hadoop.apache.org/) clusters running on SGI hardware are able to examine the problem deeper, and render a yes/no decision faster. Buyers are happier because they can complete a purchase faster. Companies are happier because fraud is reduced.
+Traditional fraud detection systems could measure just a few potential fraud criteria within the allowed time window. SGI solves the problem with [Hadoop clusters](http://hadoop.apache.org/) running on SGI hardware. This big data design is able to examine each transaction deeper, and render a yes/no decision faster. Buyers are happier because they can complete a purchase faster. Companies are happier because fraud is reduced.
+
+Big data helps credit card companies to make better authorization decisions in less time.
+
+###Example: Auto Manufacturing
+Some problems, like credit authorization, require a quick response.  Other problems, like manufacturing, require the problem solver to crunch large volumes of data.
+
+Consider an auto manufacturer. Every system in the modern automobile is controlled by software on silicon. Where software runs, data gets collected. And that data is voluminous.
+
+Manufacturers have discovered some unexpected benefits of collecting so much data. For example, they can use identify trends like common failures among components, and use that data to improve future components. They can spot hidden trends, like geographic issues related to extreme cold or heat, and then design parts that are specially equipped for the target environment.
+
+For these particular manufacturing examples, handling huge volumes of data is more important than delivering a quick answer. Insights that lead to quality improvements can be delivered in hours, and that's fast enough for the designers. Before big data, such insights could not be entirely data-driven; they were driven more by instinct and experience.
 
 ###Pitfalls of Big Data
-From what I gathered from Freed's presentation, the biggest pitfall is trying to use this _hammer_ for every _nail_ in sight, whether the solution fits the problem or not. It's the same hazard we face with any new technology. We run the risk of using a sledgehammer when a fly swatter would do. 
+From what I gathered during Freed's presentation, the biggest pitfall is trying to use the big data _hammer_ for every _nail_ in sight, whether the solution fits the problem or not. It's the same hazard we face with any new technology. We run the risk of using a sledgehammer when a fly swatter would do. 
 
-A few ways to avoid the pitfalls: Start small. Have goals.
+A few ways to avoid the pitfalls: Start small. Have goals. And, like any good agile software developer, iterate. In Freed's words...
 
-###Success Through Iteration
-Freed summed up the successful path as follows: Successful implementation of big data is not an event. It is an iterative process where we continuously learn over time.
+>Successful implementation of big data is not an event. It is an iterative process where we continuously learn over time.
 
 ###About Chicago ACM
-[The Chicago Chapter of the Association for Computing Machinery (Chicago ACM)](http://www.meetup.com/chicagoacm/) is on fire. December's meeting featured a supercomputing presentation by [Sharan Kalwani of Fermilab](/blog/2013/12/12/high-performance-computing-at-acm/). The February The February meeting was all about SGI's push into Big Data, and next month will focus on the Internet of Things (IoT). What an exciting combination. Looking forward to more!
+[The Chicago Chapter of the Association for Computing Machinery (Chicago ACM)](http://www.meetup.com/chicagoacm/) is on fire. December's meeting featured a supercomputing presentation by [Sharan Kalwani of Fermilab](/blog/2013/12/12/high-performance-computing-at-acm/). The February The February meeting was all about SGI's push into big data, and next month will focus on the Internet of Things (IoT). What an exciting combination. Looking forward to more!
