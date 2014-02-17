@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Community | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/community/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-02-17T09:55:34-06:00</updated>
+  <updated>2014-02-17T17:44:32-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,67 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[SGI & Big Data]]></title>
+    <link href="http://RayHightower.com/blog/2014/02/17/sgi-and-big-data/"/>
+    <updated>2014-02-17T14:46:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2014/02/17/sgi-and-big-data</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/sgi-logo-1990s.png' width='' height='' alt='SGI&rsquo;s logo from the 1990s.' title='SGI&rsquo;s logo from the 1990s.'><span class='caption-text'>SGI&rsquo;s logo from the 1990s.</span></span>
+<a href="http://sgi.com">Silicon Graphics International Corporation (SGI)</a> computers rendered the special effects for the original <a href="http://en.wikipedia.org/wiki/Jurassic_Park">Jurassic Park</a> movie. Computer enthusiasts coveted SGI machines throughout the 1990s.</p>
+
+<p>But success in the computer industry is fleeting. A few years after Jurassic Park, a convergence of tech advances (Moore&rsquo;s Law, x86 architecture, and Linux) made it possible for commodity PCs to perform as well as SGI&rsquo;s premium workstations. Wall Street traders and other power users abandoned workstations in favor of Linux-based PCs. High-end makers like SGI fell on hard times.</p>
+
+<p>Today, SGI is fighting back. The company is blending x86, Linux, and (buzzword alert) big data to attack the high performance computing market. The vision was presented at this month&rsquo;s <a href="http://www.meetup.com/chicagoacm/events/163287562/">Chicago ACM</a> meeting by Brian Freed, VP of Strategy for SGI.</p>
+
+<!--more-->
+
+
+<h3>What is Big Data?</h3>
+
+<p>Freed shared a definition of big data from <a href="http://strata.oreilly.com/2012/01/what-is-big-data.html">Edd Dumbill&rsquo;s O'Reilly Radar article</a>. Big data is characterized by volume (lots of it), variety (it&rsquo;s unstructured), and velocity (the data changes quickly).</p>
+
+<p>In the words of the O'Reilly author&hellip;</p>
+
+<blockquote><p>Big data is data that exceeds the processing capacity of conventional database systems. The data is too big, moves too fast, or doesn’t fit the strictures of your database architectures. To gain value from this data, you must choose an alternative way to process it.</p>
+
+<p>~Edd Dumbill</p></blockquote>
+
+<p>Definitions are fine, but it&rsquo;s more important to understand <em>why</em> a company might care about big data. Here are a few examples that Freed shared during the ACM meeting.</p>
+
+<h3>Example: Fraud Detection with Big Data</h3>
+
+<p>Consider one challenge faced by credit card companies. When a credit card is presented for an online purchase, how does the authorizing body know if the charge is legitimate? Can legitimacy be determined in a timely fashion, before an impatient buyer abandons a slow seller for a quicker seller?</p>
+
+<p>Sellers who decide too quickly will suffer fraud. Sellers who decide too slowly will lose customers. The problem is amplified because millions of shoppers are clicking the &ldquo;buy now&rdquo; button simultaneously, and they all expect an answer <em>right now</em>.</p>
+
+<p>Traditional fraud detection systems could measure just a few potential fraud criteria within the allowed time window. SGI solves the problem with <a href="http://hadoop.apache.org/">Hadoop clusters</a> running on SGI hardware. This big data design is able to examine each transaction deeper, and render a yes/no decision faster. Buyers are happier because they can complete a purchase faster. Companies are happier because fraud is reduced.</p>
+
+<p>Big data helps credit card companies to make better authorization decisions in less time.</p>
+
+<h3>Example: Auto Manufacturing</h3>
+
+<p>Some problems, like credit authorization, require a quick response.  Other problems, like manufacturing, require the problem solver to crunch large volumes of data.</p>
+
+<p>Consider an auto manufacturer. Every system in the modern automobile is controlled by software on silicon. Where software runs, data can be collected. The data piles up rapidly over time.</p>
+
+<p>Manufacturers have discovered some unexpected benefits of collecting so much data. For example, they can identify trends like common failures among components, and use that data to improve future components. They can spot hidden trends, like geographic issues related to extreme cold or heat, and then design parts that are specially equipped for the target environment.</p>
+
+<p>For these particular manufacturing examples, handling huge volumes of data is more important than delivering a quick answer. Insights that lead to quality improvements can be delivered in hours, and that&rsquo;s fast enough for the designers. Before big data, many design decisions were driven by instinct and experience alone. Big data helps auto companies to make more informed decisions.</p>
+
+<h3>Pitfalls of Big Data</h3>
+
+<p>One big pitfall is trying to use the big data <em>hammer</em> for every <em>nail</em> in sight, whether the solution fits the problem or not. It&rsquo;s the same hazard we face with any new technology. We run the risk of using a sledgehammer when a fly swatter would do.</p>
+
+<p>A few ways to avoid the pitfalls: Start small. Have goals. And, like any good agile software developer, iterate. In Freed&rsquo;s words&hellip;</p>
+
+<blockquote><p>Successful implementation of big data is not an event. It is an iterative process where we continuously learn over time.</p></blockquote>
+
+<h3>About Chicago ACM</h3>
+
+<p><a href="http://www.meetup.com/chicagoacm/">The Chicago Chapter of the Association for Computing Machinery (Chicago ACM)</a> is on fire. December&rsquo;s meeting featured a supercomputing presentation by <a href="/blog/2013/12/12/high-performance-computing-at-acm/">Sharan Kalwani of Fermilab</a>. The February meeting was all about SGI&rsquo;s push into big data, and next month will focus on the Internet of Things (IoT). The organizers are assembling an exciting combination of events. Looking forward to more!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Exploring Controversial Coding Topics at 8th Light]]></title>
