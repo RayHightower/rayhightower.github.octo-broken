@@ -5,13 +5,27 @@ date: 2014-02-17 14:46
 comments: true
 categories: [ Community ]
 ---
-[Silicon Graphics International Corporation (SGI)](http://sgi.com) built the computers that rendered special effects for the original [Jurassic Park](http://en.wikipedia.org/wiki/Jurassic_Park_(film)). SGI machines were coveted by computer enthusiasts throughout the 1990s. Eventually, Moore's Law, x86 architecture, and Linux made it possible for commodity PCs to perform as well as SGI's premium workstations. Wall Street traders and other power users abandoned workstations in favor of Linux. Makers of premium workstations, like SGI, fell on hard times.
+{% imgcap right /images/sgi-logo-1990s.png SGI's logo from the 1990s. %}
+[Silicon Graphics International Corporation (SGI)](http://sgi.com) computers rendered the special effects for the original [Jurassic Park](http://en.wikipedia.org/wiki/Jurassic_Park) movie. Computer enthusiasts coveted SGI machines throughout the 1990s. 
 
-SGI is back. The company is blending x86, Linux, and (buzzword alert) Big Data to attack the high performance computing market.
+But success in the tech industry is fleeting. A few years after Jurassic Park, a convergence of tech advances (Moore's Law, x86 architecture, and Linux) made it possible for commodity PCs to perform as well as SGI's premium workstations. Wall Street traders and other power users abandoned workstations in favor of Linux-based PCs. Makers of premium workstations, like SGI, fell on hard times.
+
+Today, SGI is fighting back. The company is blending x86, Linux, and (buzzword alert) Big Data to attack the high performance computing market. The vision was presented at this month's Chicago ACM meeting by Brian Freed, VP of Strategy for SGI.
 <!--more-->
+###What is Big Data?
+Freed's definition of Big Data summarizes an [O'Reilly Radar article by Edd Dumbill](http://strata.oreilly.com/2012/01/what-is-big-data.html). In Freed's words, Big Data is characterized by volume (lots of it), variety (it's unstructured), and velocity (response times must be measured in milliseconds).
 
-Brian Freed, VP of Strategy for SGI. Topic: Big Data
+Expressed by the O'Reilly author...
+
+>Big data is data that exceeds the processing capacity of conventional database systems. The data is too big, moves too fast, or doesn’t fit the strictures of your database architectures. To gain value from this data, you must choose an alternative way to process it.
+> ~Edd Dumbill
 
 
-###About Chicago ACM
-[The Chicago Chapter of the Association for Computing Machinery (Chicago ACM)](http://www.meetup.com/chicagoacm/) is on fire. December's meeting featured a supercomputing presentation from [Sharan Kalwani of Fermilab](). This month's meeting featured SGI and Big Data, and next month will focus on the Internet of Things (IoT). What an exciting combination. Looking forward to more!
+
+###Side Note: About Chicago ACM
+[The Chicago Chapter of the Association for Computing Machinery (Chicago ACM)](http://www.meetup.com/chicagoacm/) is on fire. December's meeting featured a supercomputing presentation by [Sharan Kalwani of Fermilab](/blog/2013/12/12/high-performance-computing-at-acm/). The February The February meeting was all about SGI's push into Big Data, and next month will focus on the Internet of Things (IoT). What an exciting combination. Looking forward to more!
+
+###SGI's Future
+Brian Freed, VP of Strategy for SGI, was the presenter.  Topic: Big Data
+
+
