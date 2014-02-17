@@ -169,6 +169,12 @@ ubuntu@ubuntu-armhf:~$
 And now we have enough room to install the Ubuntu GUI.
 
 ###Installing the Ubuntu GUI
+_Update (Feb2014): In the comments below, Jonathan Chan describes how he updated the desktop installation files before installing the Ubuntu desktop. You can update the desktop installation files with..._ 
+
+```bash
+sudo apt-get install ubuntu-desktop
+```
+
 After the partition on the SD card has been resized, this command will intall the GUI. The command is short, but the process takes about an hour:
 
 ```bash
