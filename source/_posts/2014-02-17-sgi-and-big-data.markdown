@@ -21,7 +21,7 @@ In the words of the O'Reilly author...
 >
 > ~Edd Dumbill
 
-Definitions are fine, but it's more important to understand _why_ a company might care about big data. Here's an example. 
+Definitions are fine, but it's more important to understand _why_ a company might care about big data. Here are a few examples that Freed shared during the ACM meeting.
 
 ###Example: Fraud Detection with Big Data
 Consider one challenge faced by credit card companies. When a credit card is presented for an online purchase, how does the authorizing body know if the charge is legitimate? Can legitimacy be determined in a timely fashion, before an impatient buyer abandons a slow seller for a quicker seller?  
