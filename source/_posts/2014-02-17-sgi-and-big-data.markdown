@@ -28,7 +28,7 @@ Consider one challenge faced by credit card companies. When a credit card is pre
 
 Sellers who decide too quickly will suffer fraud. Sellers who decide too slowly will lose customers. The problem is amplified because millions of shoppers are clicking the "buy now" button simultaneously, and they all expect an answer _right now_.  
 
-Traditional fraud detection systems could measure just a few potential fraud criteria within the allowed time window. SGI solves the problem with [Hadoop clusters](http://hadoop.apache.org/) running on SGI hardware. This big data design is able to examine each transaction deeper, and render a yes/no decision faster. Buyers are happier because they can complete a purchase faster. Companies are happier because fraud is reduced.
+Traditional fraud detection systems could measure just a few potential fraud criteria within tat most within he allowed time window. SGI solves the problem with [Hadoop clusters](http://hadoop.apache.org/) running on SGI hardware. This big data design is able to examine each transaction deeper, and render a yes/no decision faster. Buyers are happier because they can complete a purchase faster. Companies are happier because fraud is reduced.
 
 Big data helps credit card companies to make better authorization decisions in less time.
 
