@@ -3,7 +3,7 @@ layout: post
 title: "SGI & Big Data"
 date: 2014-02-17 14:46
 comments: true
-categories: [ Community ]
+categories: [ Community, High Performance Computing ]
 ---
 {% imgcap right /images/sgi-logo-1990s.png SGI's logo from the 1990s. %}
 [Silicon Graphics International Corporation (SGI)](http://sgi.com) computers rendered the special effects for the original [Jurassic Park](http://en.wikipedia.org/wiki/Jurassic_Park) movie. Computer enthusiasts coveted SGI machines throughout the 1990s. 

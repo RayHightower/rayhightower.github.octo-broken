@@ -3,7 +3,7 @@ layout: post
 title: "High Performance Computing at ACM"
 date: 2013-12-12 22:22
 comments: true
-categories: [ Education, High Performance Computing ]
+categories: [ Community, Education, High Performance Computing ]
 ---
 {% imgcap right /images/cray-1.jpg Cray-1 at the Swiss Federal Institute of Technology. %}
 >Anyone can build a fast CPU. The trick is to build a fast system. 
