@@ -14,7 +14,7 @@ Given that several successful companies have bet their livelihood on open source
 * What is open source?
 * Why should I care?
 * How can my company benefit?
-
+<!--more-->
 ###Source Code, Executable Code
 Let us first define the word “source,” which in this case refers to source code. Source code is a human-modifiable form of software. It’s software as created by programmers. Source code must be translated into executable code (through a process called compiling) before a computer can run it.
 
