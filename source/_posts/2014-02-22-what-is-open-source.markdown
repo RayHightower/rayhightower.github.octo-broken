@@ -6,17 +6,20 @@ comments: true
 categories: [ Education ]
 ---
 {% imgcap right /images/linux-penguin.png The Linux penguin. %}
+Non-developers who are interested in the open source movement may find
+this article useful.
+
 ###When Performance Matters
 Over seventy percent (70%) of the web servers on the planet use a powerful blend of open source software running on the Linux operating system. Google, Facebook, and Amazon all run Linux. They’ve bet their companies on this decision.
 
-Given that several successful companies have bet their livelihood on open source, you might ask these questions:
+Given that several successful companies have bet their livelihood on open source, a business owner might ask these questions:
 
 * What is open source?
-* Why should I care?
-* How can my company benefit?
+* Why should one care?
+* How can a company benefit from open source?
 <!--more-->
 ###Source Code, Executable Code
-Let us first define the word “source,” which in this case refers to source code. Source code is a human-modifiable form of software. It’s software as created by programmers. Source code must be translated into executable code (through a process called compiling) before a computer can run it.
+Source code is a human-modifiable form of software. It’s software as created by programmers. Source code must be translated into executable code (through a process called compiling) before a computer can run it.
 
 Water is a useful metaphor for this discussion. Water can exist in three different states (steam, liquid, and ice) without changing its chemical properties. It’s still water. Likewise, software can exist as source code or executable code – it’s still software. We use water in one of its three states depending on whether we want to wash a car (liquid), cool a drink (ice), or clean a carpet (steam).
 
