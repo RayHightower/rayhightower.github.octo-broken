@@ -18,16 +18,16 @@ Given that thousands of successful companies have bet their livelihood on open s
 * How can a company profit from software that is given away for free?
 <!--more-->
 ###Source Code, Executable Code
-Source code is a human-modifiable form of software. It’s software as created by programmers. Source code must be translated into executable code (through a process called compiling) before a computer can run it.
+First, a few definitions. Source code is a human-modifiable form of software. It’s software as written by programmers. Source code must be translated into executable code (either compiled or interpreted) before a computer can run it.
 
 Water is a useful metaphor for this discussion. Water can exist in three different states (steam, liquid, and ice) without changing its chemical properties. It’s still water. Likewise, software can exist as source code or executable code – it’s still software. We use water in one of its three states depending on whether we want to wash a car (liquid), cool a drink (ice), or clean a carpet (steam).
 
-In the world of software, executable code is difficult for humans to read, but easily digested by computers. Source code is easily read & modified by humans, but indigestible by computers.
+In the world of software, executable code is difficult for humans to read, but easily executed by computers. Source code is easily read and modified by humans, but computers cannot execute it. Source code must be compiled or interpreted before a computer can execute it.
 
 ###One Way Translation
 Translating source code into executable code is a one-way street. Once a programmer has compiled source code into executable code, it is virtually impossible to convert it back into source code. You might think of a compiler as a blender that chops the food into a form easily digestible by the computer. After it’s chopped, the food never returns to its original form.
 
-That’s why programmers always keep a copy of the source code handy. You might need to make changes (fix bugs) and re-compile.
+That’s why programmers always keep a copy of the source code handy. It might be necessary to make changes (fix bugs) and re-compile.
 
 Trade secrets that are hidden in executable code can be easily read in source code. So developers go to great lengths to protect their source code, except in the open source community.
 
@@ -37,21 +37,26 @@ Most of today’s business software is closed source. Two examples: Microsoft Of
 Contrast that against open source software. Open source products make the source code freely available for viewing, comments, and modification by the software community at large.
 
 ###Open Source Chaos?
-But doesn’t such openness lead to chaos? Intuitively, you would think so, but it doesn’t. The culture of the open source community has its own rules of conduct that most members willingly follow. Rules are enforced by the community in ways that developers respond to.
+But doesn't such openness lead to chaos? Intuitively, you would think so, but it doesn't. The culture of the open source community has its own rules of conduct that most members willingly follow. Rules are enforced by the community in ways that developers respond to.
 
-It is difficult to imagine an apparently chaotic system that produces robust software. How counter-intuitive! But a long list of successful open source projects (available through your favorite search engine) shows that the method works. Programmer & anthropologist Eric S. Raymond explores open source cultural norms in his book, The Cathedral and the Bazaar.
+It is difficult to imagine an apparently chaotic system that produces robust software. How counter-intuitive! But a long list of successful open source projects (available through your favorite search engine) shows that the method works. Eric S. Raymond explores open source cultural norms in his book [The Cathedral and the Bazaar](http://www.amazon.com/Cathedral-Bazaar-Musings-Accidental-Revolutionary-ebook/dp/B0026OR3LM).
 
 ###The Banking Metaphor
-Some makers of security software believe that hiding their source code will prevent malcontents from finding & exploiting vulnerabilities. Their reasoning is like that of a bank owner who keeps the building blueprints secret so thieves don’t know how to drill the safe from next door.
+Some makers of security software believe that hiding their source code will prevent malcontents from finding vulnerabilities and exploiting them. Their reasoning is like that of a bank owner who keeps the building blueprints secret so thieves don’t know how to drill the safe from next door.
 
-Other security software companies take a different view. They want many people (including malcontents) to view the code so that vulnerabilities can be discovered and patched early. Their philosophy could be summed up in a statement by Linus Torvalds, the creator of Linux: “Given enough eyeballs, all bugs are shallow.” In other words, when you have thousands of developers working on the same project they are likely to be widely dispersed across the code. Wide coverage means that a given bug is more likely to be discovered by at least one developer.
+Other security experts disagree. They want many people (including malcontents) to view the code so that vulnerabilities can be discovered and patched early. Their philosophy could be summed up in a statement by the creator of Linux: 
+
+>Given enough eyeballs, all bugs are shallow.
+>~Linus Torvalds
+
+In other words, when thousands of developers are working on the same project they are likely to be widely dispersed across the code. Wide coverage means that a given bug is more likely to be discovered by at least one developer.
 
 In our banking metaphor, the open source company would be like a bank owner who wants many people to review the blueprints, find the weak spots, and fix security holes before the bank gets robbed.
 
 ###It’s Not All-or-Nothing
 Choosing an open or closed source strategy is not an all-or-nothing decision. Google, the busiest search engine on the web, has bet the company on open source software. And yet their most strategic software, the secret mathematical engine that drives their search results, remains closed. So how does a company decide what to open and what to close?
 
-Open source works when the upside of sharing outweighs the downside of exposed code. In the Google example, using & contributing to Linux gives Google a very stable operating platform at a relatively low cost. In effect they are leveraging the time and talent of thousands of developers around the world, while those developers are also leveraging Google’s expertise.
+Open source works when the upside of sharing outweighs the downside of exposed code. In the Google example, using and contributing to Linux gives Google a very stable operating platform at a relatively low cost. In effect they are leveraging the time and talent of thousands of developers around the world, while those developers are also leveraging Google’s expertise.
 
 It doesn’t matter that Google’s competitors also benefit from that same stable Linux platform because Google differentiates itself through advanced search techniques. By leveraging the community for assistance with the platform (Linux, Apache, and other tools), Google frees up engineering time & talent to focus on their secret sauce (search methodology & mathematics).
 
