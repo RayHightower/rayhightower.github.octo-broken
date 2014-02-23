@@ -6,7 +6,7 @@ comments: true
 categories: [ Education ]
 ---
 {% imgcap right /images/linux-penguin.png The Linux penguin. %}
-Entrepreneurs, especially those with backgrounds outside of software development, may find this article useful.
+Entrepreneurs, especially those outside of software development, may find this article useful.
 
 ###When Performance Matters
 Over seventy percent of the web servers on the planet run Linux, the open source operating system. Google, Facebook, and Amazon all run Linux. They bet their companies on this decision every day.
@@ -62,22 +62,21 @@ Open source works when the upside of sharing outweighs the downside of exposed c
 It doesn't matter that Google's competitors also benefit from that same stable Linux platform because Google differentiates itself through advanced search technology. By leveraging the community for assistance with the platform (Linux, Apache, and other tools), Google frees up engineering time and talent to focus on their secret sauce: Search methodology and mathematics.
 
 ###If Your Business Isn’t Software
-So... How can a non-software company profit from open source?
+So... If you don't run a software company, how can you benefit from open source?
 
 There’s always a chance that open source won’t work for your company. Maybe you run an enterprise that doesn’t benefit from the web. In that case, your current software options may suit you just fine.
 
-Of course, you may have already benefited from open source. There is at least a 50% chance that your company’s web site runs on Linux. If that’s the case, then rest assured that you’re running on a very stable and robust platform.
+Of course, you may have already benefited from open source. There is at least a 70% chance that your company’s web site runs on Linux. If that’s the case, then rest assured that you’re running on a very stable and robust platform.
 
 ###Think Big, Start Small for ROI
 If you really want to see ROI from open source, encourage your technical team (software developers, network support, etc.) to explore open source tools. Chances are that they’ve already experimented with open source and they’re waiting for an opportunity to do an official company project.
 
-Start small, perhaps with an automated network monitoring project or a small database. As you explore the technology, new ideas will become apparent to you. View this as a way to accelerate & strengthen the software development process.
+Start small, perhaps with an automated network monitoring project or a small database. As you explore the technology, new ideas will become apparent to you. View this as a way to accelerate and strengthen the software development process.
 
 ###Open Source and Automobiles
-BMW is arguably the best automotive engineering company on the planet. Does BMW invent the wheel every time they design a new automobile? Absolutely not. BMW leverages thousands of years of “open source“ wheel technology, and they focus their design energy in areas where they can make a difference: engine, transmission, suspension, and luxury amenities. A similar model can be applied to software development. In fact, it already has.
+BMW is arguably the best automotive engineering company on the planet. Does BMW invent the wheel every time they design a new automobile? Absolutely not. BMW leverages thousands of years of "open source" wheel technology, and they focus their design energy in areas where they can make a difference: Engine, transmission, suspension, and luxury amenities. A similar model can be applied to software development. In fact, it already has.
 
 ###Suggested Reading
-The Cathedral and the Bazaar, by Eric S. Raymond. The author is both participant and anthropologist in the open source community.
+[The Cathedral and the Bazaar](http://www.amazon.com/Cathedral-Bazaar-Musings-Accidental-Revolutionary-ebook/dp/B0026OR3LM), by Eric S. Raymond. The author is both participant and anthropologist in the open source community.
 
-_Note: An earlier version of this article was published at <a
-href="http://wisdomgroup.com">WisdomGroup.com</a>_.
+_Note: An earlier version of this article was published at <a href="http://wisdomgroup.com">WisdomGroup.com</a>_.
