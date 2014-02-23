@@ -6,17 +6,16 @@ comments: true
 categories: [ Education ]
 ---
 {% imgcap right /images/linux-penguin.png The Linux penguin. %}
-Non-developers who are interested in the open source movement may find
-this article useful.
+Entrepreneurs, especially those with backgrounds outside of software development, may find this article useful.
 
 ###When Performance Matters
-Over seventy percent (70%) of the web servers on the planet use a powerful blend of open source software running on the Linux operating system. Google, Facebook, and Amazon all run Linux. They’ve bet their companies on this decision.
+Over seventy percent of the web servers on the planet run Linux, the open source operating system. Google, Facebook, and Amazon all run Linux. They bet their companies on this decision every day.
 
-Given that several successful companies have bet their livelihood on open source, a business owner might ask these questions:
+Given that thousands of successful companies have bet their livelihood on open source, an observer might ask these questions:
 
 * What is open source?
-* Why should one care?
-* How can a company benefit from open source?
+* Why should one care about open source?
+* How can a company profit from software that is given away for free?
 <!--more-->
 ###Source Code, Executable Code
 Source code is a human-modifiable form of software. It’s software as created by programmers. Source code must be translated into executable code (through a process called compiling) before a computer can run it.
