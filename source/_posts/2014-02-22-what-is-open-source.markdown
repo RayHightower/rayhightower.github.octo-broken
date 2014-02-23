@@ -47,6 +47,7 @@ Some makers of security software believe that hiding their source code will prev
 Other security experts disagree. They want many people (including malcontents) to view the code so that vulnerabilities can be discovered and patched early. Their philosophy could be summed up in a statement by the creator of Linux: 
 
 >Given enough eyeballs, all bugs are shallow.
+><br/>&nbsp; 
 >~Linus Torvalds
 
 In other words, when thousands of developers are working on the same project they are likely to be widely dispersed across the code. Wide coverage means that a given bug is more likely to be discovered by at least one developer.
