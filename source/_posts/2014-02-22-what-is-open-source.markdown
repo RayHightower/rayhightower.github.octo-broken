@@ -59,10 +59,10 @@ Choosing an open or closed source strategy is not an all-or-nothing decision. Go
 
 Open source works when the upside of sharing outweighs the downside of exposed code. In the Google example, using and contributing to Linux gives Google a very stable operating platform at a relatively low cost. In effect they are leveraging the time and talent of thousands of developers around the world, while those developers are also leveraging Google’s expertise.
 
-It doesn’t matter that Google’s competitors also benefit from that same stable Linux platform because Google differentiates itself through advanced search techniques. By leveraging the community for assistance with the platform (Linux, Apache, and other tools), Google frees up engineering time & talent to focus on their secret sauce (search methodology & mathematics).
+It doesn't matter that Google's competitors also benefit from that same stable Linux platform because Google differentiates itself through advanced search technology. By leveraging the community for assistance with the platform (Linux, Apache, and other tools), Google frees up engineering time and talent to focus on their secret sauce: Search methodology and mathematics.
 
 ###If Your Business Isn’t Software
-So...What if you don’t run a software company? How can you profit from open source software?
+So... How can a non-software company profit from open source?
 
 There’s always a chance that open source won’t work for your company. Maybe you run an enterprise that doesn’t benefit from the web. In that case, your current software options may suit you just fine.
 
