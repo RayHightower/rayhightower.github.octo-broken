@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-02-17T20:23:59-06:00</updated>
+  <updated>2014-02-22T19:19:31-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,106 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[What Is Open Source?]]></title>
+    <link href="http://RayHightower.com/blog/2014/02/22/what-is-open-source/"/>
+    <updated>2014-02-22T16:41:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2014/02/22/what-is-open-source</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/linux-penguin.png' width='' height='' alt='The Linux penguin.' title='The Linux penguin.'><span class='caption-text'>The Linux penguin.</span></span>
+Entrepreneurs, especially those outside of software development, may find this article useful.</p>
+
+<h3>When Performance Matters</h3>
+
+<p>Over seventy percent of the web servers on the planet run Linux, the open source operating system. Google, Facebook, and Amazon all run Linux. They bet their companies on this decision every day.</p>
+
+<p>Given that thousands of successful companies have bet their livelihood on open source, an observer might ask these questions:</p>
+
+<ul>
+<li>What is open source?</li>
+<li>Why should one care about open source?</li>
+<li>How can a company profit from software that is given away for free?</li>
+</ul>
+
+
+<!--more-->
+
+
+<h3>Source Code, Executable Code</h3>
+
+<p>First, a few definitions. Source code is a human-modifiable form of software. It’s software as written by programmers. Source code must be translated into executable code (either compiled or interpreted) before a computer can run it.</p>
+
+<p>Water is a useful metaphor for this discussion. Water can exist in three different states (steam, liquid, and ice) without changing its chemical properties. It’s still water. Likewise, software can exist as source code or executable code – it’s still software. We use water in one of its three states depending on whether we want to wash a car (liquid), cool a drink (ice), or clean a carpet (steam).</p>
+
+<p>In the world of software, executable code is difficult for humans to read, but easily executed by computers. Source code is easily read and modified by humans, but computers cannot execute it. Source code must be compiled or interpreted before a computer can execute it.</p>
+
+<h3>One Way Translation</h3>
+
+<p>Translating source code into executable code is a one-way street. Once a programmer has compiled source code into executable code, it is virtually impossible to convert it back into source code. You might think of a compiler as a blender that chops the food into a form easily digestible by the computer. After it’s chopped, the food never returns to its original form.</p>
+
+<p>That’s why programmers always keep a copy of the source code handy. It might be necessary to make changes (fix bugs) and re-compile.</p>
+
+<p>Trade secrets that are hidden in executable code can be easily read in source code. So developers go to great lengths to protect their source code, except in the open source community.</p>
+
+<h3>Closed Source Tradition</h3>
+
+<p>Most of today’s business software is closed source. Two examples: Microsoft Office and Apple iWork. Both Microsoft and Apple consider the source code for their respective office suites to be highly confidential. You will never (legally) download the source code for a closed source product. Security is so tight at Microsoft, for example, that engineers are only allowed to view that portion of the source code that is relevant to their current project.</p>
+
+<p>Contrast that against open source software. Open source products make the source code freely available for viewing, comments, and modification by the software community at large.</p>
+
+<h3>Open Source Chaos?</h3>
+
+<p>But doesn&rsquo;t such openness lead to chaos? Intuitively, you would think so, but it doesn&rsquo;t. The culture of the open source community has its own rules of conduct that most members willingly follow. Rules are enforced by the community in ways that developers respond to.</p>
+
+<p>It is difficult to imagine an apparently chaotic system that produces robust software. How counter-intuitive! But a long list of successful open source projects (available through your favorite search engine) shows that the method works. Eric S. Raymond explores open source cultural norms in his book <a href="http://www.amazon.com/Cathedral-Bazaar-Musings-Accidental-Revolutionary-ebook/dp/B0026OR3LM">The Cathedral and the Bazaar</a>.</p>
+
+<h3>The Banking Metaphor</h3>
+
+<p>Some makers of security software believe that hiding their source code will prevent malcontents from finding vulnerabilities and exploiting them. Their reasoning is like that of a bank owner who keeps the building blueprints secret so thieves don’t know how to drill the safe from next door.</p>
+
+<p>Other security experts disagree. They want many people (including malcontents) to view the code so that vulnerabilities can be discovered and patched early. Their philosophy could be summed up in a statement by the creator of Linux:</p>
+
+<blockquote><p>Given enough eyeballs, all bugs are shallow.
+<br/>&nbsp;
+~Linus Torvalds</p></blockquote>
+
+<p>In other words, when thousands of developers are working on the same project they are likely to be widely dispersed across the code. Wide coverage means that a given bug is more likely to be discovered by at least one developer.</p>
+
+<p>In our banking metaphor, the open source company would be like a bank owner who wants many people to review the blueprints, find the weak spots, and fix security holes before the bank gets robbed.</p>
+
+<h3>It’s Not All-or-Nothing</h3>
+
+<p>Choosing an open or closed source strategy is not an all-or-nothing decision. Google, the busiest search engine on the web, has bet the company on open source software. And yet their most strategic software, the secret mathematical engine that drives their search results, remains closed. So how does a company decide what to open and what to close?</p>
+
+<p>Open source works when the upside of sharing outweighs the downside of exposed code. In the Google example, using and contributing to Linux gives Google a very stable operating platform at a relatively low cost. In effect they are leveraging the time and talent of thousands of developers around the world, while those developers are also leveraging Google’s expertise.</p>
+
+<p>It doesn&rsquo;t matter that Google&rsquo;s competitors also benefit from that same stable Linux platform because Google differentiates itself through advanced search technology. By leveraging the community for assistance with the platform (Linux, Apache, and other tools), Google frees up engineering time and talent to focus on their secret sauce: Search methodology and mathematics.</p>
+
+<h3>If Your Business Isn’t Software</h3>
+
+<p>So&hellip; If you don&rsquo;t run a software company, how can you benefit from open source?</p>
+
+<p>There’s always a chance that open source won’t work for your company. Maybe you run an enterprise that doesn’t benefit from the web. In that case, your current software options may suit you just fine.</p>
+
+<p>Of course, you may have already benefited from open source. There is at least a 70% chance that your company’s web site runs on Linux. If that’s the case, then rest assured that you’re running on a very stable and robust platform.</p>
+
+<h3>Think Big, Start Small for ROI</h3>
+
+<p>If you really want to see ROI from open source, encourage your technical team (software developers, network support, etc.) to explore open source tools. Chances are that they’ve already experimented with open source and they’re waiting for an opportunity to do an official company project.</p>
+
+<p>Start small, perhaps with an automated network monitoring project or a small database. As you explore the technology, new ideas will become apparent to you. View this as a way to accelerate and strengthen the software development process.</p>
+
+<h3>Open Source and Automobiles</h3>
+
+<p>BMW is arguably the best automotive engineering company on the planet. Does BMW invent the wheel every time they design a new automobile? Absolutely not. BMW leverages thousands of years of &ldquo;open source&rdquo; wheel technology, and they focus their design energy in areas where they can make a difference: Engine, transmission, suspension, and luxury amenities. A similar model can be applied to software development. In fact, it already has.</p>
+
+<h3>Suggested Reading</h3>
+
+<p><a href="http://www.amazon.com/Cathedral-Bazaar-Musings-Accidental-Revolutionary-ebook/dp/B0026OR3LM">The Cathedral and the Bazaar</a>, by Eric S. Raymond. The author is both participant and anthropologist in the open source community.</p>
+
+<p><em>Note: An earlier version of this article was published at <a href="http://wisdomgroup.com">WisdomGroup.com</a></em>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[SGI & Big Data]]></title>
@@ -2028,249 +2128,6 @@ hexidecimal operation code.</li>
 <p>On the serious side, the app should handle disk ejection as a background process. It&rsquo;s not good to tie up the system for a simple task. Look for a forked process in a future version of the app.</p>
 
 <p><em>Update: This article should have included instructions on how to run the executable on any Mac OS X system without having RubyMotion installed. The omission is corrected in a later blog post, <a href="http://RayHightower.com/blog/2013/11/11/os-x-and-rubymotion-finishing-up/">OS X and RubyMotion, Finishing Up</a>.</em></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[:TOhtml - Using Vim Code Snippets in Keynote Presentations]]></title>
-    <link href="http://RayHightower.com/blog/2013/10/31/tohtml-using-vim-code-snippets-in-keynote-presentations/"/>
-    <updated>2013-10-31T16:13:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2013/10/31/tohtml-using-vim-code-snippets-in-keynote-presentations</id>
-    <content type="html"><![CDATA[<p>While finishing my presentation for the upcoming <a href="http://chippewavalleycodecamp.com/">Chippewa Valley Code Camp</a>, I decided to add some blocks of code to my slides. I forgot the name of the tool I used for my last slide deck, and it took several minutes of Google-fu to find it.</p>
-
-<p>Google led me back to <code>:TOhtml</code>. Whew! I&rsquo;m documenting <code>:TOhtml</code> here to avoid wasting time with a future search.</p>
-
-<!--more-->
-
-
-<h3>Start With a Block of Code</h3>
-
-<p>Fire up Vim and drop the block of code you want to convert into a new Vim buffer. In this example, I&rsquo;ve created a sample <a href="http://RayHightower.com/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a> OS X app, and I want to show the contents of the Rakefile.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1"># -*- coding: utf-8 -*-</span>
-</span><span class='line'><span class="vg">$:</span><span class="o">.</span><span class="n">unshift</span><span class="p">(</span><span class="s2">&quot;/Library/RubyMotion/lib&quot;</span><span class="p">)</span>
-</span><span class='line'><span class="nb">require</span> <span class="s1">&#39;motion/project/template/osx&#39;</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">begin</span>
-</span><span class='line'>  <span class="nb">require</span> <span class="s1">&#39;bundler&#39;</span>
-</span><span class='line'>  <span class="no">Bundler</span><span class="o">.</span><span class="n">require</span>
-</span><span class='line'><span class="k">rescue</span> <span class="no">LoadError</span>
-</span><span class='line'><span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'><span class="ss">Motion</span><span class="p">:</span><span class="ss">:Project</span><span class="o">::</span><span class="no">App</span><span class="o">.</span><span class="n">setup</span> <span class="k">do</span> <span class="o">|</span><span class="n">app</span><span class="o">|</span>
-</span><span class='line'>  <span class="c1"># Use `rake config&#39; to see complete project settings.</span>
-</span><span class='line'>  <span class="n">app</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;EjectDisks&#39;</span>
-</span><span class='line'>  <span class="n">app</span><span class="o">.</span><span class="n">info_plist</span><span class="o">[</span><span class="s1">&#39;LSUIElement&#39;</span><span class="o">]</span> <span class="o">=</span> <span class="kp">true</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Next, visually select the lines you want to convert. You can do this with shift-V, or with the (gasp!) mouse. Or if you want to convert the entire file, enter <code>:TOhtml</code> in the command area. Vim will convert the highlighted text into HTML in a new buffer. Here&rsquo;s the result:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-<span class='line-number'>46</span>
-<span class='line-number'>47</span>
-<span class='line-number'>48</span>
-<span class='line-number'>49</span>
-<span class='line-number'>50</span>
-<span class='line-number'>51</span>
-<span class='line-number'>52</span>
-<span class='line-number'>53</span>
-<span class='line-number'>54</span>
-<span class='line-number'>55</span>
-<span class='line-number'>56</span>
-<span class='line-number'>57</span>
-<span class='line-number'>58</span>
-<span class='line-number'>59</span>
-<span class='line-number'>60</span>
-<span class='line-number'>61</span>
-<span class='line-number'>62</span>
-<span class='line-number'>63</span>
-<span class='line-number'>64</span>
-<span class='line-number'>65</span>
-<span class='line-number'>66</span>
-<span class='line-number'>67</span>
-<span class='line-number'>68</span>
-<span class='line-number'>69</span>
-<span class='line-number'>70</span>
-<span class='line-number'>71</span>
-<span class='line-number'>72</span>
-<span class='line-number'>73</span>
-<span class='line-number'>74</span>
-<span class='line-number'>75</span>
-<span class='line-number'>76</span>
-<span class='line-number'>77</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="cp">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;</span>
-</span><span class='line'><span class="nt">&lt;html&gt;</span>
-</span><span class='line'><span class="nt">&lt;head&gt;</span>
-</span><span class='line'><span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;content-type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=UTF-8&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'><span class="nt">&lt;title&gt;</span>~/Code/Ruby/RubyMotion/EjectDisks/Rakefile.html<span class="nt">&lt;/title&gt;</span>
-</span><span class='line'><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;Generator&quot;</span> <span class="na">content=</span><span class="s">&quot;Vim/7.4&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;plugin-version&quot;</span> <span class="na">content=</span><span class="s">&quot;vim7.4_v1&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;syntax&quot;</span> <span class="na">content=</span><span class="s">&quot;ruby&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;settings&quot;</span> <span class="na">content=</span><span class="s">&quot;number_lines,use_css,no_foldcolumn,expand_tabs,line_ids,prevent_copy=&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;colorscheme&quot;</span> <span class="na">content=</span><span class="s">&quot;darkspectrum&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'><span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'><span class="o">&lt;!</span><span class="nt">--</span>
-</span><span class='line'><span class="nt">pre</span> <span class="p">{</span> <span class="k">font-family</span><span class="o">:</span> <span class="k">monospace</span><span class="p">;</span> <span class="k">color</span><span class="o">:</span> <span class="m">#efefef</span><span class="p">;</span> <span class="k">background-color</span><span class="o">:</span> <span class="m">#2a2a2a</span><span class="p">;</span> <span class="p">}</span>
-</span><span class='line'><span class="nt">body</span> <span class="p">{</span> <span class="k">font-family</span><span class="o">:</span> <span class="k">monospace</span><span class="p">;</span> <span class="k">color</span><span class="o">:</span> <span class="m">#efefef</span><span class="p">;</span> <span class="k">background-color</span><span class="o">:</span> <span class="m">#2a2a2a</span><span class="p">;</span> <span class="p">}</span>
-</span><span class='line'><span class="o">*</span> <span class="p">{</span> <span class="k">font-size</span><span class="o">:</span> <span class="m">1em</span><span class="p">;</span> <span class="p">}</span>
-</span><span class='line'><span class="nc">.String</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="m">#fce94f</span><span class="p">;</span> <span class="p">}</span>
-</span><span class='line'><span class="nc">.Statement</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="m">#ffffff</span><span class="p">;</span> <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span> <span class="p">}</span>
-</span><span class='line'><span class="nc">.PreProc</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="m">#ffffff</span><span class="p">;</span> <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span> <span class="p">}</span>
-</span><span class='line'><span class="nc">.LineNr</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="m">#535353</span><span class="p">;</span> <span class="k">background-color</span><span class="o">:</span> <span class="m">#202020</span><span class="p">;</span> <span class="k">padding-bottom</span><span class="o">:</span> <span class="m">1px</span><span class="p">;</span> <span class="p">}</span>
-</span><span class='line'><span class="nc">.Comment</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="m">#8a8a8a</span><span class="p">;</span> <span class="p">}</span>
-</span><span class='line'><span class="nc">.Type</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="m">#8ae234</span><span class="p">;</span> <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span> <span class="p">}</span>
-</span><span class='line'><span class="nc">.Special</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="m">#e9b96e</span><span class="p">;</span> <span class="p">}</span>
-</span><span class='line'><span class="nc">.Identifier</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="m">#729fcf</span><span class="p">;</span> <span class="p">}</span>
-</span><span class='line'><span class="nc">.Constant</span> <span class="p">{</span> <span class="k">color</span><span class="o">:</span> <span class="m">#ef5939</span><span class="p">;</span> <span class="p">}</span>
-</span><span class='line'><span class="nt">--</span><span class="o">&gt;</span>
-</span><span class='line'><span class="nt">&lt;/style&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&#39;text/javascript&#39;</span><span class="nt">&gt;</span>
-</span><span class='line'><span class="c">&lt;!--</span>
-</span><span class='line'>
-</span><span class='line'><span class="cm">/* function to open any folds containing a jumped-to line before jumping to it */</span>
-</span><span class='line'><span class="kd">function</span> <span class="nx">JumpToLine</span><span class="p">()</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'>  <span class="kd">var</span> <span class="nx">lineNum</span><span class="p">;</span>
-</span><span class='line'>  <span class="nx">lineNum</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">hash</span><span class="p">;</span>
-</span><span class='line'>  <span class="nx">lineNum</span> <span class="o">=</span> <span class="nx">lineNum</span><span class="p">.</span><span class="nx">substr</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span> <span class="cm">/* strip off &#39;#&#39; */</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="nx">lineNum</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">&#39;L&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">lineNum</span> <span class="o">=</span> <span class="s1">&#39;L&#39;</span><span class="o">+</span><span class="nx">lineNum</span><span class="p">;</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>  <span class="nx">lineElem</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">lineNum</span><span class="p">);</span>
-</span><span class='line'>  <span class="cm">/* Always jump to new location even if the line was hidden inside a fold, or</span>
-</span><span class='line'><span class="cm">   * we corrected the raw number to a line ID.</span>
-</span><span class='line'><span class="cm">   */</span>
-</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="nx">lineElem</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">lineElem</span><span class="p">.</span><span class="nx">scrollIntoView</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>  <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="k">if</span> <span class="p">(</span><span class="s1">&#39;onhashchange&#39;</span> <span class="k">in</span> <span class="nb">window</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>  <span class="nb">window</span><span class="p">.</span><span class="nx">onhashchange</span> <span class="o">=</span> <span class="nx">JumpToLine</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">--&gt;</span>
-</span><span class='line'><span class="nt">&lt;/script&gt;</span>
-</span><span class='line'><span class="nt">&lt;/head&gt;</span>
-</span><span class='line'><span class="nt">&lt;body</span> <span class="na">onload=</span><span class="s">&#39;JumpToLine();&#39;</span><span class="nt">&gt;</span>
-</span><span class='line'><span class="nt">&lt;pre</span> <span class="na">id=</span><span class="s">&#39;vimCodeElement&#39;</span><span class="nt">&gt;</span>
-</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L1&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span> 1 <span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;Comment&quot;</span><span class="nt">&gt;</span># -*- coding: utf-8 -*-<span class="nt">&lt;/span&gt;</span>
-</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L2&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span> 2 <span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;Identifier&quot;</span><span class="nt">&gt;</span>$:<span class="nt">&lt;/span&gt;</span>.unshift(<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;Special&quot;</span><span class="nt">&gt;</span><span class="ni">&amp;quot;</span><span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;String&quot;</span><span class="nt">&gt;</span>/Library/RubyMotion/lib<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;Special&quot;</span><span class="nt">&gt;</span><span class="ni">&amp;quot;</span><span class="nt">&lt;/span&gt;</span>)
-</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L3&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span> 3 <span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;PreProc&quot;</span><span class="nt">&gt;</span>require<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;Special&quot;</span><span class="nt">&gt;</span>&#39;<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;String&quot;</span><span class="nt">&gt;</span>motion/project/template/osx<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;Special&quot;</span><span class="nt">&gt;</span>&#39;<span class="nt">&lt;/span&gt;</span>
-</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L4&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span> 4 <span class="nt">&lt;/span&gt;</span>
-</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L5&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span> 5 <span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;Statement&quot;</span><span class="nt">&gt;</span>begin<span class="nt">&lt;/span&gt;</span>
-</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L6&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span> 6 <span class="nt">&lt;/span&gt;</span>  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;PreProc&quot;</span><span class="nt">&gt;</span>require<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;Special&quot;</span><span class="nt">&gt;</span>&#39;<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;String&quot;</span><span class="nt">&gt;</span>bundler<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;Special&quot;</span><span class="nt">&gt;</span>&#39;<span class="nt">&lt;/span&gt;</span>
-</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L7&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span> 7 <span class="nt">&lt;/span&gt;</span>  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;Type&quot;</span><span class="nt">&gt;</span>Bundler<span class="nt">&lt;/span&gt;</span>.require
-</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L8&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span> 8 <span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;Statement&quot;</span><span class="nt">&gt;</span>rescue<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;Type&quot;</span><span class="nt">&gt;</span>LoadError<span class="nt">&lt;/span&gt;</span>
-</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L9&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span> 9 <span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;Statement&quot;</span><span class="nt">&gt;</span>end<span class="nt">&lt;/span&gt;</span>
-</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L10&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span>10 <span class="nt">&lt;/span&gt;</span>
-</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L11&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span>11 <span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;Type&quot;</span><span class="nt">&gt;</span>Motion<span class="nt">&lt;/span&gt;</span>::<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;Type&quot;</span><span class="nt">&gt;</span>Project<span class="nt">&lt;/span&gt;</span>::<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;Type&quot;</span><span class="nt">&gt;</span>App<span class="nt">&lt;/span&gt;</span>.<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;Statement&quot;</span><span class="nt">&gt;</span>setup<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;Statement&quot;</span><span class="nt">&gt;</span>do<span class="nt">&lt;/span&gt;</span> |<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;Identifier&quot;</span><span class="nt">&gt;</span>app<span class="nt">&lt;/span&gt;</span>|
-</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L12&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span>12 <span class="nt">&lt;/span&gt;</span>  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;Comment&quot;</span><span class="nt">&gt;</span># Use `rake config&#39; to see complete project settings.<span class="nt">&lt;/span&gt;</span>
-</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L13&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span>13 <span class="nt">&lt;/span&gt;</span>  app.name = <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;Special&quot;</span><span class="nt">&gt;</span>&#39;<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;String&quot;</span><span class="nt">&gt;</span>EjectDisks<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;Special&quot;</span><span class="nt">&gt;</span>&#39;<span class="nt">&lt;/span&gt;</span>
-</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L14&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span>14 <span class="nt">&lt;/span&gt;</span>  app.info_plist[<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;Special&quot;</span><span class="nt">&gt;</span>&#39;<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;String&quot;</span><span class="nt">&gt;</span>LSUIElement<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;Special&quot;</span><span class="nt">&gt;</span>&#39;<span class="nt">&lt;/span&gt;</span>] = <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;Constant&quot;</span><span class="nt">&gt;</span>true<span class="nt">&lt;/span&gt;</span>
-</span><span class='line'><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;L15&quot;</span> <span class="na">class=</span><span class="s">&quot;LineNr&quot;</span><span class="nt">&gt;</span>15 <span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;Statement&quot;</span><span class="nt">&gt;</span>end<span class="nt">&lt;/span&gt;</span>
-</span><span class='line'><span class="nt">&lt;/pre&gt;</span>
-</span><span class='line'><span class="nt">&lt;/body&gt;</span>
-</span><span class='line'><span class="nt">&lt;/html&gt;</span>
-</span><span class='line'><span class="c">&lt;!-- vim: set foldmethod=manual : --&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Save the new buffer as <code>~/Desktop/convertedstuff.html</code> or any other file name that you choose. In this case, I chose:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'>:w ~/Desktop/convertedrakefile.html
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Open the converted file in a web browser.</p>
-
-<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/rakefile-browser.png' width='' height='' alt='Rakefile in Chrome.' title='Rakefile in Chrome.'><span class='caption-text'>Rakefile in Chrome.</span></span></p>
-
-<p>Copy and paste the text from the browser into Keynote.</p>
-
-<h3>Washed Out Code?</h3>
-
-<p>If the code looks washed out when you paste it into Keynote, you have a few alternatives:</p>
-
-<ul>
-<li>Start with a different theme in Vim at the beginning, or</li>
-<li>Darken/lighten the background in Keynote by using the Keynote inspector.</li>
-</ul>
-
-
-<h3>The Finished Slide</h3>
-
-<p>Here&rsquo;s what the finished product looks like. All the clarity of syntax-highlighted text. You can even adjust font size at will using the Keynote inspector. All set for the presentation.</p>
-
-<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/osxfinished.png' width='' height='' alt='The final snippet, in Keynote.' title='The final snippet, in Keynote.'><span class='caption-text'>The final snippet, in Keynote.</span></span></p>
-
-<h3>Easier Way?</h3>
-
-<p>Can this process be simplified? If you know the answer, feel free to mention it in the comments below. Thanks!</p>
 ]]></content>
   </entry>
   

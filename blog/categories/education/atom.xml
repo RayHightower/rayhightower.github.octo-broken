@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Education | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/education/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-02-17T20:23:59-06:00</updated>
+  <updated>2014-02-22T19:19:31-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,106 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[What Is Open Source?]]></title>
+    <link href="http://RayHightower.com/blog/2014/02/22/what-is-open-source/"/>
+    <updated>2014-02-22T16:41:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2014/02/22/what-is-open-source</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/linux-penguin.png' width='' height='' alt='The Linux penguin.' title='The Linux penguin.'><span class='caption-text'>The Linux penguin.</span></span>
+Entrepreneurs, especially those outside of software development, may find this article useful.</p>
+
+<h3>When Performance Matters</h3>
+
+<p>Over seventy percent of the web servers on the planet run Linux, the open source operating system. Google, Facebook, and Amazon all run Linux. They bet their companies on this decision every day.</p>
+
+<p>Given that thousands of successful companies have bet their livelihood on open source, an observer might ask these questions:</p>
+
+<ul>
+<li>What is open source?</li>
+<li>Why should one care about open source?</li>
+<li>How can a company profit from software that is given away for free?</li>
+</ul>
+
+
+<!--more-->
+
+
+<h3>Source Code, Executable Code</h3>
+
+<p>First, a few definitions. Source code is a human-modifiable form of software. It’s software as written by programmers. Source code must be translated into executable code (either compiled or interpreted) before a computer can run it.</p>
+
+<p>Water is a useful metaphor for this discussion. Water can exist in three different states (steam, liquid, and ice) without changing its chemical properties. It’s still water. Likewise, software can exist as source code or executable code – it’s still software. We use water in one of its three states depending on whether we want to wash a car (liquid), cool a drink (ice), or clean a carpet (steam).</p>
+
+<p>In the world of software, executable code is difficult for humans to read, but easily executed by computers. Source code is easily read and modified by humans, but computers cannot execute it. Source code must be compiled or interpreted before a computer can execute it.</p>
+
+<h3>One Way Translation</h3>
+
+<p>Translating source code into executable code is a one-way street. Once a programmer has compiled source code into executable code, it is virtually impossible to convert it back into source code. You might think of a compiler as a blender that chops the food into a form easily digestible by the computer. After it’s chopped, the food never returns to its original form.</p>
+
+<p>That’s why programmers always keep a copy of the source code handy. It might be necessary to make changes (fix bugs) and re-compile.</p>
+
+<p>Trade secrets that are hidden in executable code can be easily read in source code. So developers go to great lengths to protect their source code, except in the open source community.</p>
+
+<h3>Closed Source Tradition</h3>
+
+<p>Most of today’s business software is closed source. Two examples: Microsoft Office and Apple iWork. Both Microsoft and Apple consider the source code for their respective office suites to be highly confidential. You will never (legally) download the source code for a closed source product. Security is so tight at Microsoft, for example, that engineers are only allowed to view that portion of the source code that is relevant to their current project.</p>
+
+<p>Contrast that against open source software. Open source products make the source code freely available for viewing, comments, and modification by the software community at large.</p>
+
+<h3>Open Source Chaos?</h3>
+
+<p>But doesn&rsquo;t such openness lead to chaos? Intuitively, you would think so, but it doesn&rsquo;t. The culture of the open source community has its own rules of conduct that most members willingly follow. Rules are enforced by the community in ways that developers respond to.</p>
+
+<p>It is difficult to imagine an apparently chaotic system that produces robust software. How counter-intuitive! But a long list of successful open source projects (available through your favorite search engine) shows that the method works. Eric S. Raymond explores open source cultural norms in his book <a href="http://www.amazon.com/Cathedral-Bazaar-Musings-Accidental-Revolutionary-ebook/dp/B0026OR3LM">The Cathedral and the Bazaar</a>.</p>
+
+<h3>The Banking Metaphor</h3>
+
+<p>Some makers of security software believe that hiding their source code will prevent malcontents from finding vulnerabilities and exploiting them. Their reasoning is like that of a bank owner who keeps the building blueprints secret so thieves don’t know how to drill the safe from next door.</p>
+
+<p>Other security experts disagree. They want many people (including malcontents) to view the code so that vulnerabilities can be discovered and patched early. Their philosophy could be summed up in a statement by the creator of Linux:</p>
+
+<blockquote><p>Given enough eyeballs, all bugs are shallow.
+<br/>&nbsp;
+~Linus Torvalds</p></blockquote>
+
+<p>In other words, when thousands of developers are working on the same project they are likely to be widely dispersed across the code. Wide coverage means that a given bug is more likely to be discovered by at least one developer.</p>
+
+<p>In our banking metaphor, the open source company would be like a bank owner who wants many people to review the blueprints, find the weak spots, and fix security holes before the bank gets robbed.</p>
+
+<h3>It’s Not All-or-Nothing</h3>
+
+<p>Choosing an open or closed source strategy is not an all-or-nothing decision. Google, the busiest search engine on the web, has bet the company on open source software. And yet their most strategic software, the secret mathematical engine that drives their search results, remains closed. So how does a company decide what to open and what to close?</p>
+
+<p>Open source works when the upside of sharing outweighs the downside of exposed code. In the Google example, using and contributing to Linux gives Google a very stable operating platform at a relatively low cost. In effect they are leveraging the time and talent of thousands of developers around the world, while those developers are also leveraging Google’s expertise.</p>
+
+<p>It doesn&rsquo;t matter that Google&rsquo;s competitors also benefit from that same stable Linux platform because Google differentiates itself through advanced search technology. By leveraging the community for assistance with the platform (Linux, Apache, and other tools), Google frees up engineering time and talent to focus on their secret sauce: Search methodology and mathematics.</p>
+
+<h3>If Your Business Isn’t Software</h3>
+
+<p>So&hellip; If you don&rsquo;t run a software company, how can you benefit from open source?</p>
+
+<p>There’s always a chance that open source won’t work for your company. Maybe you run an enterprise that doesn’t benefit from the web. In that case, your current software options may suit you just fine.</p>
+
+<p>Of course, you may have already benefited from open source. There is at least a 70% chance that your company’s web site runs on Linux. If that’s the case, then rest assured that you’re running on a very stable and robust platform.</p>
+
+<h3>Think Big, Start Small for ROI</h3>
+
+<p>If you really want to see ROI from open source, encourage your technical team (software developers, network support, etc.) to explore open source tools. Chances are that they’ve already experimented with open source and they’re waiting for an opportunity to do an official company project.</p>
+
+<p>Start small, perhaps with an automated network monitoring project or a small database. As you explore the technology, new ideas will become apparent to you. View this as a way to accelerate and strengthen the software development process.</p>
+
+<h3>Open Source and Automobiles</h3>
+
+<p>BMW is arguably the best automotive engineering company on the planet. Does BMW invent the wheel every time they design a new automobile? Absolutely not. BMW leverages thousands of years of &ldquo;open source&rdquo; wheel technology, and they focus their design energy in areas where they can make a difference: Engine, transmission, suspension, and luxury amenities. A similar model can be applied to software development. In fact, it already has.</p>
+
+<h3>Suggested Reading</h3>
+
+<p><a href="http://www.amazon.com/Cathedral-Bazaar-Musings-Accidental-Revolutionary-ebook/dp/B0026OR3LM">The Cathedral and the Bazaar</a>, by Eric S. Raymond. The author is both participant and anthropologist in the open source community.</p>
+
+<p><em>Note: An earlier version of this article was published at <a href="http://wisdomgroup.com">WisdomGroup.com</a></em>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[High Performance Computing at ACM]]></title>
@@ -324,154 +424,6 @@ hexidecimal operation code.</li>
 
 
 <p>Thank you SCNA! As I shared with the other devs at SCNA, I will gladly post my mistakes and <em>gotchas</em> here for people who want to build a unit like this. Let&rsquo;s build!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[:TOhtml - Using Vim Code Snippets in Keynote Presentations]]></title>
-    <link href="http://RayHightower.com/blog/2013/10/31/tohtml-using-vim-code-snippets-in-keynote-presentations/"/>
-    <updated>2013-10-31T16:13:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2013/10/31/tohtml-using-vim-code-snippets-in-keynote-presentations</id>
-    <content type="html"><![CDATA[<p>While finishing my presentation for the upcoming <a href="http://chippewavalleycodecamp.com/">Chippewa Valley Code Camp</a>, I decided to add some blocks of code to my slides. I forgot the name of the tool I used for my last slide deck, and it took several minutes of Google-fu to find it.</p>
-
-<p>Google led me back to <code>:TOhtml</code>. Whew! I&rsquo;m documenting <code>:TOhtml</code> here to avoid wasting time with a future search.</p>
-
-<!--more-->
-
-
-<h3>Start With a Block of Code</h3>
-
-<p>Fire up Vim and drop the block of code you want to convert into a new Vim buffer. In this example, I&rsquo;ve created a sample <a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a> OS X app, and I want to show the contents of the Rakefile.</p>
-
-<p>```ruby</p>
-
-<h1>&ndash;<em>&ndash; coding: utf-8 &ndash;</em>&ndash;</h1>
-
-<p>$:.unshift(&ldquo;/Library/RubyMotion/lib&rdquo;)
-require &lsquo;motion/project/template/osx&rsquo;</p>
-
-<p>begin
-  require &lsquo;bundler&rsquo;
-  Bundler.require
-rescue LoadError
-end</p>
-
-<p>Motion::Project::App.setup do |app|
-  # Use `rake config' to see complete project settings.
-  app.name = &lsquo;EjectDisks&rsquo;
-  app.info_plist[&lsquo;LSUIElement&rsquo;] = true
-end
-```</p>
-
-<p>Next, visually select the lines you want to convert. You can do this with shift-V, or with the (gasp!) mouse. Or if you want to convert the entire file, enter <code>:TOhtml</code> in the command area. Vim will convert the highlighted text into HTML in a new buffer. Here&rsquo;s the result:</p>
-
-<p>```html
-&lt;!DOCTYPE HTML PUBLIC &ldquo;&ndash;//W3C//DTD HTML 4.01//EN&rdquo; &ldquo;<a href="http://www.w3.org/TR/html4/strict.dtd">http://www.w3.org/TR/html4/strict.dtd</a>&rdquo;>
-<html>
-<head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>~/Code/Ruby/RubyMotion/EjectDisks/Rakefile.html</title>
-<meta name="Generator" content="Vim/7.4">
-<meta name="plugin-version" content="vim7.4_v1">
-<meta name="syntax" content="ruby">
-<meta name="settings" content="number_lines,use_css,no_foldcolumn,expand_tabs,line_ids,prevent_copy=">
-<meta name="colorscheme" content="darkspectrum"></p>
-
-
-
-
-
-<script type='text/javascript'>
-<!--
-
-/* function to open any folds containing a jumped-to line before jumping to it */
-function JumpToLine()
-{
-  var lineNum;
-  lineNum = window.location.hash;
-  lineNum = lineNum.substr(1); /* strip off '#' */
-
-  if (lineNum.indexOf('L') == -1) {
-    lineNum = 'L'+lineNum;
-  }
-  lineElem = document.getElementById(lineNum);
-  /* Always jump to new location even if the line was hidden inside a fold, or
-   * we corrected the raw number to a line ID.
-   */
-  if (lineElem) {
-    lineElem.scrollIntoView(true);
-  }
-  return true;
-}
-if ('onhashchange' in window) {
-  window.onhashchange = JumpToLine;
-}
-
--->
-</script>
-
-
-<p></head>
-<body onload='JumpToLine();'></p>
-
-<pre id='vimCodeElement'>
-<span id="L1" class="LineNr"> 1 </span><span class="Comment"># -*- coding: utf-8 -*-</span>
-<span id="L2" class="LineNr"> 2 </span><span class="Identifier">$:</span>.unshift(<span class="Special">&quot;</span><span class="String">/Library/RubyMotion/lib</span><span class="Special">&quot;</span>)
-<span id="L3" class="LineNr"> 3 </span><span class="PreProc">require</span> <span class="Special">'</span><span class="String">motion/project/template/osx</span><span class="Special">'</span>
-<span id="L4" class="LineNr"> 4 </span>
-<span id="L5" class="LineNr"> 5 </span><span class="Statement">begin</span>
-<span id="L6" class="LineNr"> 6 </span>  <span class="PreProc">require</span> <span class="Special">'</span><span class="String">bundler</span><span class="Special">'</span>
-<span id="L7" class="LineNr"> 7 </span>  <span class="Type">Bundler</span>.require
-<span id="L8" class="LineNr"> 8 </span><span class="Statement">rescue</span> <span class="Type">LoadError</span>
-<span id="L9" class="LineNr"> 9 </span><span class="Statement">end</span>
-<span id="L10" class="LineNr">10 </span>
-<span id="L11" class="LineNr">11 </span><span class="Type">Motion</span>::<span class="Type">Project</span>::<span class="Type">App</span>.<span class="Statement">setup</span> <span class="Statement">do</span> |<span class="Identifier">app</span>|
-<span id="L12" class="LineNr">12 </span>  <span class="Comment"># Use `rake config' to see complete project settings.</span>
-<span id="L13" class="LineNr">13 </span>  app.name = <span class="Special">'</span><span class="String">EjectDisks</span><span class="Special">'</span>
-<span id="L14" class="LineNr">14 </span>  app.info_plist[<span class="Special">'</span><span class="String">LSUIElement</span><span class="Special">'</span>] = <span class="Constant">true</span>
-<span id="L15" class="LineNr">15 </span><span class="Statement">end</span>
-</pre>
-
-
-<p></body>
-</html></p>
-
-<!-- vim: set foldmethod=manual : -->
-
-
-<p>```</p>
-
-<p>Save the new buffer as <code>~/Desktop/convertedstuff.html</code> or any other file name that you choose. In this case, I chose:</p>
-
-<p><code>
-:w ~/Desktop/convertedrakefile.html
-</code></p>
-
-<p>Open the converted file in a web browser.</p>
-
-<p><span class='caption-wrapper middle'><img class='caption' src='/images/rakefile-browser.png' width='' height='' alt='Rakefile in Chrome.' title='Rakefile in Chrome.'><span class='caption-text'>Rakefile in Chrome.</span></span></p>
-
-<p>Copy and paste the text from the browser into Keynote.</p>
-
-<h3>Washed Out Code?</h3>
-
-<p>If the code looks washed out when you paste it into Keynote, you have a few alternatives:</p>
-
-<ul>
-<li>Start with a different theme in Vim at the beginning, or</li>
-<li>Darken/lighten the background in Keynote by using the Keynote inspector.</li>
-</ul>
-
-
-<h3>The Finished Slide</h3>
-
-<p>Here&rsquo;s what the finished product looks like. All the clarity of syntax-highlighted text. You can even adjust font size at will using the Keynote inspector. All set for the presentation.</p>
-
-<p><span class='caption-wrapper middle'><img class='caption' src='/images/osxfinished.png' width='' height='' alt='The final snippet, in Keynote.' title='The final snippet, in Keynote.'><span class='caption-text'>The final snippet, in Keynote.</span></span></p>
-
-<h3>Easier Way?</h3>
-
-<p>Can this process be simplified? If you know the answer, feel free to mention it in the comments below. Thanks!</p>
 ]]></content>
   </entry>
   
