@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Fixing MacVim on Mavericks"
+title: "Fixing MacVim on OS X Mavericks"
 date: 2014-03-04 14:48
 comments: true
 categories: [ Education, Linux-Unix-OSX, Vim ]
 ---
-Experience told me to delay upgrading to Mavericks for as long as possible because the upgrade would likely break my dev environment. Sure enough, the upgrade broke [MacVim](/blog/2013/01/12/why-i-use-vim/).
+Experience told me to delay upgrading to OS X Mavericks for as long as possible because the upgrade would likely break my dev environment. Sure enough, the upgrade broke [MacVim](/blog/2013/01/12/why-i-use-vim/).
 
 ```bash
 ~$ which mvim
