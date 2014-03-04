@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-02-22T19:19:31-06:00</updated>
+  <updated>2014-03-04T14:54:33-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,86 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Fixing MacVim on Mavericks]]></title>
+    <link href="http://RayHightower.com/blog/2014/03/04/fixing-macvim-on-mavericks/"/>
+    <updated>2014-03-04T14:48:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2014/03/04/fixing-macvim-on-mavericks</id>
+    <content type="html"><![CDATA[<p>Experience told me to delay upgrading to Mavericks for as long as possible because the upgrade would likely break my dev environment. Sure enough, the upgrade broke <a href="http://RayHightower.com/blog/2013/01/12/why-i-use-vim/">MacVim</a>.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>which mvim
+</span><span class='line'>
+</span><span class='line'>~<span class="err">$</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The &lsquo;nix <code>which</code> command did not gave a null response when asked about MacVim. Not cool, Mavericks!</p>
+
+<!--more-->
+
+
+<p>Fortunately, I’m running <a href="">Homebrew</a>. After the standard <code>brew doctor</code> and <code>brew update</code>, the following resolved the MacVim problem:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>brew uninstall macvim
+</span><span class='line'>Uninstalling /usr/local/Cellar/macvim/7.4-70...
+</span><span class='line'>
+</span><span class='line'>~<span class="err">$</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>followed by…</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>brew install <span class="nv">macvim</span>
+</span><span class='line'><span class="o">==</span>&gt; Downloading https://github.com/b4winckler/macvim/archive/snapshot-72.tar.gz
+</span><span class='line'><span class="c">######################################################################## 100.0%</span>
+</span><span class='line'><span class="o">==</span>&gt; ./configure --with-features<span class="o">=</span>huge --enable-multibyte --with-macarchs<span class="o">=</span>x86_64 --enable-perlinterp --enable-rubyinterp --enable-tcli
+</span><span class='line'><span class="o">==</span>&gt; <span class="nv">make</span>
+</span><span class='line'><span class="o">==</span>&gt; Caveats
+</span><span class='line'>.app bundles were installed.
+</span><span class='line'>Run <span class="sb">`</span>brew linkapps<span class="sb">`</span> to symlink these to /Applications.
+</span><span class='line'><span class="o">==</span>&gt; Summary
+</span><span class='line'>🍺  /usr/local/Cellar/macvim/7.4-72: 1799 files, 28M, built in 37 seconds
+</span><span class='line'>
+</span><span class='line'>~<span class="err">$</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And now…</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>which mvim
+</span><span class='line'>/usr/local/bin/mvim
+</span><span class='line'>
+</span><span class='line'>~<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Whew. Homebrew saves the day again!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[What Is Open Source?]]></title>
@@ -1957,177 +2037,6 @@ hexidecimal operation code.</li>
 
 
 <p>Thank you SCNA! As I shared with the other devs at SCNA, I will gladly post my mistakes and <em>gotchas</em> here for people who want to build a unit like this. Let&rsquo;s build!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Building an OS X App With RubyMotion]]></title>
-    <link href="http://RayHightower.com/blog/2013/11/01/building-an-os-x-app-with-rubymotion/"/>
-    <updated>2013-11-01T00:15:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2013/11/01/building-an-os-x-app-with-rubymotion</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/time-machine-backup-disks.png' width='' height='' alt='Redundancy rocks.' title='Redundancy rocks.'><span class='caption-text'>Redundancy rocks.</span></span>
-<a href="http://RayHightower.com/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a>&rsquo;s OS X support enabled me to solve a small problem yesterday.  Here&rsquo;s the story.</p>
-
-<h3>Background on Backup</h3>
-
-<p>No matter how much money we spend on computers, the data we create is worth more. The best data protection employs several levels of redundancy.</p>
-
-<p>My backup system starts with Apple&rsquo;s <a href="http://www.apple.com/findouthow/mac/#timemachinebasics">Time Machine</a>, which handles first level backups painlessly in the background. Time machine is even more effective when multiple disks are used. I like to combine that with online solutions. Redundancy is a good thing.</p>
-
-<p>USB-attached drives work great with Time Machine. I found that Time Machine was inconsistent over WiFi, and when it failed, troubleshooting took too much time. That was a few years ago and things have probably improved since then. I&rsquo;ve never had to troubleshoot a USB-attached Time Machine drive. USB just works. Except when it doesn&rsquo;t. And that&rsquo;s where RubyMotion proved helpful.</p>
-
-<!--more-->
-
-
-<h3>Disconnecting USB in a Hurry</h3>
-
-<p>My only problem with USB-attached drives comes when I need to leave my desk in a hurry. You may have seen this message before:</p>
-
-<p><span class='caption-wrapper'><img class='caption' src='http://RayHightower.com/images/disk-not-ejected-properly.png' width='' height='' alt='In a hurry to eject?' title='In a hurry to eject?'><span class='caption-text'>In a hurry to eject?</span></span></p>
-
-<p>All three of my USB drives are attached through a single USB hub. Yanking the cable while running for a meeting is… bad! Forgetting to eject even one of the USB drives is also bad.</p>
-
-<p>I solved the problem about a year ago by writing a command line tool that ejects all three drives with one double-click of an icon. Yesterday I deciced to improve my command line tool with RubyMotion.</p>
-
-<h3>Ejecting in a Hurry</h3>
-
-<p><code>EjectDisks</code> is a simple OS X program written with the RubyMotion toolchain for Mac OS X. It uses the <code>osx-status-bar-app-template</code> gem created by <a href="https://github.com/kickcode/osx-status-bar-app-template">Elliott Draper</a>. Here&rsquo;s a 10-second demo.</p>
-
-<center><iframe name="eject-disks-osx" src="http://RayHightower.com//player.vimeo.com/video/78349497" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
-
-
-<h3>The Code</h3>
-
-<p>The latest version of the EjectDisk code is on <a href="https://github.com/RayHightower/EjectDisks">GitHub</a>. The <code>app_delegate.rb</code> file appears below.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-<span class='line-number'>46</span>
-<span class='line-number'>47</span>
-<span class='line-number'>48</span>
-<span class='line-number'>49</span>
-<span class='line-number'>50</span>
-<span class='line-number'>51</span>
-<span class='line-number'>52</span>
-<span class='line-number'>53</span>
-<span class='line-number'>54</span>
-<span class='line-number'>55</span>
-<span class='line-number'>56</span>
-<span class='line-number'>57</span>
-<span class='line-number'>58</span>
-<span class='line-number'>59</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">AppDelegate</span>
-</span><span class='line'>  <span class="kp">attr_accessor</span> <span class="ss">:status_menu</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">def</span> <span class="nf">applicationDidFinishLaunching</span><span class="p">(</span><span class="n">notification</span><span class="p">)</span>
-</span><span class='line'>    <span class="vi">@app_name</span> <span class="o">=</span> <span class="no">NSBundle</span><span class="o">.</span><span class="n">mainBundle</span><span class="o">.</span><span class="n">infoDictionary</span><span class="o">[</span><span class="s1">&#39;CFBundleDisplayName&#39;</span><span class="o">]</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="vi">@status_menu</span> <span class="o">=</span> <span class="no">NSMenu</span><span class="o">.</span><span class="n">new</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="vi">@status_item</span> <span class="o">=</span> <span class="no">NSStatusBar</span><span class="o">.</span><span class="n">systemStatusBar</span><span class="o">.</span><span class="n">statusItemWithLength</span><span class="p">(</span><span class="no">NSVariableStatusItemLength</span><span class="p">)</span><span class="o">.</span><span class="n">init</span>
-</span><span class='line'>    <span class="vi">@status_item</span><span class="o">.</span><span class="n">setMenu</span><span class="p">(</span><span class="vi">@status_menu</span><span class="p">)</span>
-</span><span class='line'>    <span class="vi">@status_item</span><span class="o">.</span><span class="n">setHighlightMode</span><span class="p">(</span><span class="kp">true</span><span class="p">)</span>
-</span><span class='line'>    <span class="vi">@status_item</span><span class="o">.</span><span class="n">setTitle</span><span class="p">(</span><span class="vi">@app_name</span><span class="p">)</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="vi">@status_menu</span><span class="o">.</span><span class="n">addItem</span> <span class="n">createMenuItem</span><span class="p">(</span><span class="s2">&quot;About </span><span class="si">#{</span><span class="vi">@app_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s1">&#39;orderFrontStandardAboutPanel:&#39;</span><span class="p">)</span>
-</span><span class='line'>    <span class="vi">@status_menu</span><span class="o">.</span><span class="n">addItem</span> <span class="n">createMenuItem</span><span class="p">(</span><span class="s2">&quot;Custom Action&quot;</span><span class="p">,</span> <span class="s1">&#39;pressAction&#39;</span><span class="p">)</span>
-</span><span class='line'>    <span class="vi">@status_menu</span><span class="o">.</span><span class="n">addItem</span> <span class="n">createMenuItem</span><span class="p">(</span><span class="s2">&quot;Eject Three Disks&quot;</span><span class="p">,</span> <span class="s1">&#39;ejectThreeDisks&#39;</span><span class="p">)</span>
-</span><span class='line'>    <span class="vi">@status_menu</span><span class="o">.</span><span class="n">addItem</span> <span class="n">createMenuItem</span><span class="p">(</span><span class="s2">&quot;Say Something&quot;</span><span class="p">,</span> <span class="s1">&#39;sayDroid&#39;</span><span class="p">)</span>
-</span><span class='line'>    <span class="vi">@status_menu</span><span class="o">.</span><span class="n">addItem</span> <span class="n">createMenuItem</span><span class="p">(</span><span class="s2">&quot;Sing&quot;</span><span class="p">,</span> <span class="s1">&#39;singSomething&#39;</span><span class="p">)</span>
-</span><span class='line'>    <span class="vi">@status_menu</span><span class="o">.</span><span class="n">addItem</span> <span class="n">createMenuItem</span><span class="p">(</span><span class="s2">&quot;Greetings&quot;</span><span class="p">,</span> <span class="s1">&#39;greetings&#39;</span><span class="p">)</span>
-</span><span class='line'>    <span class="vi">@status_menu</span><span class="o">.</span><span class="n">addItem</span> <span class="n">createMenuItem</span><span class="p">(</span><span class="s2">&quot;Quit&quot;</span><span class="p">,</span> <span class="s1">&#39;terminate:&#39;</span><span class="p">)</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">def</span> <span class="nf">createMenuItem</span><span class="p">(</span><span class="nb">name</span><span class="p">,</span> <span class="n">action</span><span class="p">)</span>
-</span><span class='line'>    <span class="no">NSMenuItem</span><span class="o">.</span><span class="n">alloc</span><span class="o">.</span><span class="n">initWithTitle</span><span class="p">(</span><span class="nb">name</span><span class="p">,</span> <span class="ss">action</span><span class="p">:</span> <span class="n">action</span><span class="p">,</span> <span class="ss">keyEquivalent</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">def</span> <span class="nf">pressAction</span>
-</span><span class='line'>    <span class="n">alert</span> <span class="o">=</span> <span class="no">NSAlert</span><span class="o">.</span><span class="n">alloc</span><span class="o">.</span><span class="n">init</span>
-</span><span class='line'>    <span class="n">alert</span><span class="o">.</span><span class="n">setMessageText</span> <span class="s2">&quot;Action triggered from status bar menu&quot;</span>
-</span><span class='line'>    <span class="n">alert</span><span class="o">.</span><span class="n">addButtonWithTitle</span> <span class="s2">&quot;OK&quot;</span>
-</span><span class='line'>    <span class="n">alert</span><span class="o">.</span><span class="n">runModal</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">def</span> <span class="nf">sayDroid</span>
-</span><span class='line'>    <span class="sx">%x(say -v cello droid)</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">def</span> <span class="nf">singSomething</span>
-</span><span class='line'>    <span class="sx">%x(say -v cello da da da da da da da da da da da da da da da da da da da da da da da da da da)</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">def</span> <span class="nf">greetings</span>
-</span><span class='line'>    <span class="sx">%x(say -v cello Greetings to the members of Chippewa Valley Code Camp &amp;)</span>
-</span><span class='line'>    <span class="n">alert</span> <span class="o">=</span> <span class="no">NSAlert</span><span class="o">.</span><span class="n">alloc</span><span class="o">.</span><span class="n">init</span>
-</span><span class='line'>    <span class="n">alert</span><span class="o">.</span><span class="n">setMessageText</span> <span class="s2">&quot;Greetings to the members of Chippewa Valley Code Camp!&quot;</span>
-</span><span class='line'>    <span class="n">alert</span><span class="o">.</span><span class="n">addButtonWithTitle</span> <span class="s2">&quot;OK&quot;</span>
-</span><span class='line'>    <span class="n">alert</span><span class="o">.</span><span class="n">runModal</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">def</span> <span class="nf">ejectThreeDisks</span>
-</span><span class='line'>    <span class="n">alert</span> <span class="o">=</span> <span class="no">NSAlert</span><span class="o">.</span><span class="n">alloc</span><span class="o">.</span><span class="n">init</span>
-</span><span class='line'>    <span class="n">response</span> <span class="o">=</span> <span class="sx">%x(/usr/sbin/diskutil eject SiiGBlack)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
-</span><span class='line'>    <span class="n">response</span> <span class="o">+=</span> <span class="sx">%x(/usr/sbin/diskutil eject Ultra3TB)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
-</span><span class='line'>    <span class="n">response</span> <span class="o">+=</span> <span class="sx">%x(/usr/sbin/diskutil eject WDSilver)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
-</span><span class='line'>    <span class="n">alert</span><span class="o">.</span><span class="n">setMessageText</span> <span class="n">response</span>
-</span><span class='line'>    <span class="n">alert</span><span class="o">.</span><span class="n">addButtonWithTitle</span> <span class="s2">&quot;OK&quot;</span>
-</span><span class='line'>    <span class="n">alert</span><span class="o">.</span><span class="n">runModal</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Next Steps</h3>
-
-<p>Not everything in the EjectDisks tool is business-related. Do we really need to include a greeting to the members of the <a href="http://chippewavalleycodecamp.com/">Chippewa Valley Code Camp</a>?  Yes, we do!</p>
-
-<p>On the serious side, the app should handle disk ejection as a background process. It&rsquo;s not good to tie up the system for a simple task. Look for a forked process in a future version of the app.</p>
-
-<p><em>Update: This article should have included instructions on how to run the executable on any Mac OS X system without having RubyMotion installed. The omission is corrected in a later blog post, <a href="http://RayHightower.com/blog/2013/11/11/os-x-and-rubymotion-finishing-up/">OS X and RubyMotion, Finishing Up</a>.</em></p>
 ]]></content>
   </entry>
   
