@@ -13,7 +13,7 @@ Experience told me to delay upgrading to Mavericks for as long as possible becau
 ~$
 ```
 
-No response to `which`? Not what we want to see! 
+The 'nix `which` command did not gave a null response when asked about MacVim. Not cool, Mavericks! 
 <!--more-->
 Fortunately, I’m running [Homebrew](). After the standard `brew doctor` and `brew update`, the following resolved the MacVim problem:
 
