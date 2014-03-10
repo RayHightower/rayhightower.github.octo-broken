@@ -25,9 +25,20 @@ Customer-focused mobile apps usually communicate with other software via the web
 
 A new class in iOS 7, `NSURLSession`, lets us upload and download in the background. Users are kept happy because the app continues to interact with them. Scheirman's [slides](https://speakerdeck.com/subdigital/effective-network-programming-in-ios-7) and [sample code](https://github.com/subdigital/mods-2013) provide more details.
 
+###Xcode Walkabout
+Most of my iOS time is spent with [Vim]() and [RubyMotion]().
+
+
+###SpriteKit
+How do we manage images without doing all of the work from scratch?
+
+
+###Parallel Computing with OpenCL
+The parallel computing talk by [Jeff Biggus]()was the most mind-blowing session of CocoaConf, for me. Maybe it's because WisdomGroup is working Perhaps this is because of WisdomGroup's work with [high performance computing](http://www.wisdomgroup.com/case-studies/texas-am-university/).
+
 
 
 ###The Klein Family
-CocoaConf is run by Dave and Debbie Klein and their 14 children. Check out [About The Family Behind CocoaConf](http://cocoaconf.com/family) for details.
+CocoaConf is run by Dave and Debbie Klein and their 14 children. [About The Family Behind CocoaConf](http://cocoaconf.com/family) gives details.
 
 Thank you, Klein family, for another great CocoaConf!
