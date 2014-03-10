@@ -12,7 +12,7 @@ categories:
 
 Early adopters on Apple's Mac OS X and iOS platforms flock to [CocoaConf](http://cocoaconf.com/), a multi-city conference for developers. Tickets are slightly easier to get than [WWDC](http://en.wikipedia.org/wiki/Wwdc); CocoaConf consistently sells out. 
 
-CocoaConf's presenters are practicing developers, actively building real software every day. They come to CocoaConf to share their experiences with the audience, and with each other. Here are a few highlights.
+CocoaConf's presenters are practicing developers, actively building real software every day. They come to CocoaConf to share their experiences in a powerful upward-spiral of technical learning. Here are a few highlights from this weekend's CocoaConf near Chicago.
 <!--more-->
 ###Customers Will Pay for Services
 [Justin Williams](https://twitter.com/justin) kicked things off with a keynote titled _10 Things I Think I Think_. Justin is a business owner as well as a developer, so his list included insights on the best way to make money from apps: Forget about selling a million copies in the app store. Instead, create a service, charge a monthly fee for the service, and give the app away for free so customers can become more engaged with the service. If the experience is all about the customer, the customer will pay.
