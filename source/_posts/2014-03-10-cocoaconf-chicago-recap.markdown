@@ -3,7 +3,7 @@ layout: post
 title: "CocoaConf Chicago Recap"
 date: 2014-03-10 11:46
 comments: true
-categories: 
+categories: [ Community, iOS ]
 ---
 {% imgcap right /images/cocoaconf-2014.jpg Cool stuff from CocoaConf. %}
 > One purpose of a conference is to help you to spot trends while there's still time to reap the benefits of being an early adopter. 
