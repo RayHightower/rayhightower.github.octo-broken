@@ -8,7 +8,7 @@ categories: [ Community, iOS ]
 {% imgcap right /images/cocoaconf-2014.jpg Cool stuff from CocoaConf. %}
 > One purpose of a conference is to help you to spot trends while there's still time to reap the benefits of being an early adopter. 
 >&nbsp;<br/>
->~Brian Marick at SCNA 2013
+>~Brian Marick at [SCNA 2013](http://scna.softwarecraftsmanship.org/)
 
 Early adopters on Apple's Mac OS X and iOS platforms flock to [CocoaConf](http://cocoaconf.com/), a multi-city conference for developers. Tickets are slightly easier to get than [WWDC](http://en.wikipedia.org/wiki/Wwdc); CocoaConf consistently sells out. 
 
