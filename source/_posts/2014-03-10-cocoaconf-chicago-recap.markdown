@@ -30,6 +30,7 @@ Customer-focused mobile apps usually communicate with other software via the web
 {% imgcap right /images/xcode-git-commit.png Showing Git commit messages in Xcode. %}
 Most of my iOS time is spent with [Vim](/blog/2013/01/12/why-i-use-vim/) and [RubyMotion](/blog/2012/10/29/building-ios-apps-with-ruby-motion/). I use Xcode mainly to learn things that I can apply to RubyMotion. Still, [Laura Savino](http://twitter.com/savinola)'s exploration of Xcode was very valuable. 
 
+Like many developers on the Apple platform, Savino has a love/hate relationship with Xcode. She almost titled her talk "stupid little buttons that don't even look like buttons." Her talk summarized several years of Xcode immersion and pair programming into 60 minutes of little-known tips and tricks. For example, Xcode plays nicely with Git (you can even show commit messages within the IDE). And it's possible to use Vim key bindings while editing files.
 
 ###SpriteKit
 How do we manage images without doing all of the work from scratch?
