@@ -26,7 +26,7 @@ Customer-focused mobile apps usually communicate with other software via the web
 
 `NSURLSession`, introduced with iOS 7, lets us upload and download in the background. Users are kept happy because the app continues to function in the foreground. Scheirman's [slides](https://speakerdeck.com/subdigital/effective-network-programming-in-ios-7) and [sample code](https://github.com/subdigital/mods-2013) give more details.
 
-It is also interesting to not what tools hte presenters use in their
+It is also interesting to note what tools the presenters use in their
 daily work. Scheirman uses [Charles](http://www.charlesproxy.com/)
 to monitor network traffic between machines, and to track down hiccups.
 
@@ -34,7 +34,7 @@ to monitor network traffic between machines, and to track down hiccups.
 {% imgcap right /images/xcode-git-commit.png Showing Git commit messages in Xcode. %}
 Most of my iOS time is spent with [Vim](/blog/2013/01/12/why-i-use-vim/) and [RubyMotion](/blog/2012/10/29/building-ios-apps-with-ruby-motion/). I use Xcode mainly to learn things that I can apply to RubyMotion. Still, [Laura Savino](http://twitter.com/savinola)'s exploration of Xcode proved valuable. 
 
-Like many developers on the Apple platforms, Savino has a love/hate relationship with Xcode. She almost titled her talk "stupid little buttons that don't even look like buttons." Her talk summarized several years of Xcode immersion and pair programming into 60 minutes of little-known tips and tricks. For example, Xcode plays nicely with Git (you can even show commit messages within the IDE). And it's possible to use Vim key bindings while editing files.
+Like many developers on the Apple platforms, Savino has a love/hate relationship with Xcode. She almost titled her talk "stupid little buttons that don't even look like buttons." Savino summarized several years of Xcode immersion and pair programming into 60 minutes of little-known tips and tricks. For example, Xcode plays nicely with Git (you can even show commit messages within the IDE). And it's possible to use Vim key bindings while editing files.
 
 ###Sprite Kit
 [Josh Smith](http://twitter.com/kognate)'s SpriteKit presentation was full of gotcha-eliminating information. For example, the coordinate systems for Sprite Kit and UIKit are inverted. I'm sure this is documented somewhere, but I didn't know about it! The bottom line with Sprite Kit: We can add animation to our apps without doing all of the fundamental work. Saves time.
