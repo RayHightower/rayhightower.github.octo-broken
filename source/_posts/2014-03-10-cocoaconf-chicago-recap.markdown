@@ -36,17 +36,16 @@ Like many developers on the Apple platforms, Savino has a love/hate relationship
 [Josh Smith](http://twitter.com/kognate)'s SpriteKit presentation was full of gotcha-eliminating information. For example, the coordinate systems for Sprite Kit and UIKit are inverted. I'm sure this is documented somewhere, but I didn't know about it! The bottom line with Sprite Kit: We can add animation to our apps without doing all of the fundamental work. Saves time.
 
 ###Parallel Computing with OpenCL
-The parallel computing talk by [Jeff Biggus](http://twitter.com/hyperjeff) was the most mind-blowing session of CocoaConf, for me.  Granted, I may have been primed by WisdomGroup's work with [high performance computing](http://www.wisdomgroup.com/case-studies/texas-am-university/).
+The parallel computing talk by [Jeff Biggus](http://twitter.com/hyperjeff) was the most mind-blowing session of CocoaConf, for me. The presentation was exciting because it tied our current set of tools (like [GCD](https://developer.apple.com/library/ios/documentation/Performance/Reference/GCD_libdispatch_Ref/Reference/reference.html)) with high performance computing work currently underway at universities and at corporations like NVidia. When theory blends with application, great things can be achieved.
 
-[OpenCL](https://www.khronos.org/opencl/) is a standard designed for cross-platform parallel computing. We care about parallel computing because...
+Biggus shared some of the work of [OpenCL](https://www.khronos.org/opencl/), a standard designed for cross-platform parallel computing. We care about parallel computing because...
 
 * Moore's Law has just about run its course. 
 * Engineers have packed transistors about as tightly as they can on silicon.
 
-Unless we can figure out how to re-write the laws of physics, the next advances in computing performance will come from making processors work together without stepping on each other's toes.
+Unless we can figure out how to [rewrite the laws of physics](http://en.wikipedia.org/wiki/Montgomery_Scott), the next advances in computing performance will come from making processors work together without stepping on each other's toes.
 
-Jeff Biggus' parallel computing presentation was exciting because it tied our current set of Apple tools (like [GCD]()) with work currently underway at NVidia
-
+###Conclusion
 
 
 
