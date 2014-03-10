@@ -45,12 +45,7 @@ Biggus shared some of the work of [OpenCL](https://www.khronos.org/opencl/), a s
 
 Unless we can figure out how to [rewrite the laws of physics](http://en.wikipedia.org/wiki/Montgomery_Scott), the next advances in computing performance will come from making processors work together without stepping on each other's toes.
 
-###Conclusion
-
-
-
-
 ###The Klein Family
-CocoaConf is run by Dave and Debbie Klein and their 14 children. [About The Family Behind CocoaConf](http://cocoaconf.com/family) gives details.
+2014 marks CocoaConf's third year in the Chicago area. The conference is run by Dave and Debbie Klein and their 14 children. [About The Family Behind CocoaConf](http://cocoaconf.com/family) gives details.
 
 Thank you, Klein family, for another great CocoaConf!
