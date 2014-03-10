@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-03-04T15:05:46-06:00</updated>
+  <updated>2014-03-10T15:42:38-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,78 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[CocoaConf Chicago Recap]]></title>
+    <link href="http://RayHightower.com/blog/2014/03/10/cocoaconf-chicago-recap/"/>
+    <updated>2014-03-10T11:46:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/03/10/cocoaconf-chicago-recap</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/cocoaconf-2014.jpg' width='' height='' alt='Cool stuff from CocoaConf.' title='Cool stuff from CocoaConf.'><span class='caption-text'>Cool stuff from CocoaConf.</span></span></p>
+
+<blockquote><p>One purpose of a conference is to help you to spot trends while there&rsquo;s still time to reap the benefits of being an early adopter.
+&nbsp;<br/>
+~Brian Marick at <a href="http://scna.softwarecraftsmanship.org/">SCNA 2013</a></p></blockquote>
+
+<p>Early adopters on Apple&rsquo;s Mac OS X and iOS platforms flock to <a href="http://cocoaconf.com/">CocoaConf</a>, a multi-city conference for developers. Tickets are slightly easier to get than <a href="http://en.wikipedia.org/wiki/Wwdc">WWDC</a>; CocoaConf consistently sells out.</p>
+
+<p>CocoaConf&rsquo;s presenters are practicing developers, actively building real software every day. They come to CocoaConf to share their experiences in a wonderful upward-spiral of technical learning. Here are a few highlights from the latest CocoaConf, held March 7-8 near Chicago.</p>
+
+<!--more-->
+
+
+<h3>Customers Will Pay for Services</h3>
+
+<p><a href="https://twitter.com/justin">Justin Williams</a> kicked things off with a keynote titled <em>10 Things I Think I Think</em>. Williams recently acquired <a href="http://glassboard.com/">Glassboard</a>, so his developer skills are blended with the insights of a business owner. His list of ten included one approach to making money from mobile apps: Forget about selling a million copies in the App Store. Instead, create a service, charge a monthly fee for the service, and give the app away for free so customers can engage with the service. When customers are served well, they will pay.</p>
+
+<h3>Effective iOS 7 Networking</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/afnetworking-charles.png' width='' height='' alt='Charles shows network connections.' title='Charles shows network connections.'><span class='caption-text'>Charles shows network connections.</span></span>
+Customer-focused mobile apps usually communicate with other software via the web. <a href="http://twitter.com/subdigital">Ben Scheirman</a> shared his experiences in building iOS apps that communicate with web services. Several questions are raised when we build apps like this, namely:</p>
+
+<ul>
+<li>How do we include communication capabilities without sacrificing performance?</li>
+<li>If the mobile app requests information from a web service, and the service is unavailable (or slow) how do we avoid frustrating the user?</li>
+</ul>
+
+
+<p><code>NSURLSession</code>, introduced with iOS 7, lets us upload and download in the background. Users are kept happy because the app continues to function in the foreground. Scheirman&rsquo;s <a href="https://speakerdeck.com/subdigital/effective-network-programming-in-ios-7">slides</a> and <a href="https://github.com/subdigital/mods-2013">sample code</a> give more details.</p>
+
+<p>It is also interesting to note what tools the presenters use in their
+daily work. Scheirman uses <a href="http://www.charlesproxy.com/">Charles</a>
+to monitor network traffic between machines, and to track down hiccups.</p>
+
+<h3>Xcode Walkabout</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/xcode-git-commit.png' width='' height='' alt='Showing Git commit messages in Xcode.' title='Showing Git commit messages in Xcode.'><span class='caption-text'>Showing Git commit messages in Xcode.</span></span>
+Most of my iOS time is spent with <a href="http://RayHightower.com/blog/2013/01/12/why-i-use-vim/">Vim</a> and <a href="http://RayHightower.com/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a>. I use Xcode mainly to learn things that I can apply to RubyMotion. Still, <a href="http://twitter.com/savinola">Laura Savino</a>&rsquo;s exploration of Xcode proved valuable.</p>
+
+<p>Like many developers on the Apple platforms, Savino has a love/hate relationship with Xcode. She almost titled her talk &ldquo;stupid little buttons that don&rsquo;t even look like buttons.&rdquo; Savino summarized several years of Xcode immersion and pair programming into 60 minutes of little-known tips and tricks. For example, Xcode plays nicely with Git (you can even show commit messages within the IDE). And it&rsquo;s possible to use Vim key bindings while editing files.</p>
+
+<h3>Sprite Kit</h3>
+
+<p><a href="http://twitter.com/kognate">Josh Smith</a>&rsquo;s SpriteKit presentation was full of gotcha-eliminating information. For example, the coordinate systems for Sprite Kit and UIKit are inverted. I&rsquo;m sure this is documented somewhere, but I didn&rsquo;t know about it! The bottom line with Sprite Kit: We can add animation to our apps without doing all of the fundamental work. Saves time.</p>
+
+<h3>Parallel Computing with OpenCL</h3>
+
+<p>The parallel computing talk by <a href="http://twitter.com/hyperjeff">Jeff Biggus</a> was the most mind-blowing session of CocoaConf, for me. The presentation was exciting because it tied our current set of tools (like <a href="https://developer.apple.com/library/ios/documentation/Performance/Reference/GCD_libdispatch_Ref/Reference/reference.html">GCD</a>) with high performance computing work currently underway at universities and at corporations like NVidia. When theory blends with application, great things can be achieved.</p>
+
+<p>Biggus shared some of the work of <a href="https://www.khronos.org/opencl/">OpenCL</a>, a standard designed for cross-platform parallel computing. We care about parallel computing because&hellip;</p>
+
+<ul>
+<li>Moore&rsquo;s Law has just about run its course.</li>
+<li>Engineers have packed transistors about as tightly as they can on silicon.</li>
+</ul>
+
+
+<p>Unless we can figure out how to <a href="http://en.wikipedia.org/wiki/Montgomery_Scott">rewrite the laws of physics</a>, the next advances in computing performance will come from making processors work together without stepping on each other&rsquo;s toes.</p>
+
+<h3>The Klein Family</h3>
+
+<p>2014 marks CocoaConf&rsquo;s third year in the Chicago area. The conference is run by Dave and Debbie Klein and their 14 children. <a href="http://cocoaconf.com/family">About The Family Behind CocoaConf</a> gives details.</p>
+
+<p>Thank you, Klein family, for another great CocoaConf!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Fixing MacVim on OS X Mavericks]]></title>
@@ -1982,61 +2054,6 @@ There is something I neglected to cover in a previous blog post, <a href="http:/
 <p><span class='caption-wrapper'><img class='caption' src='http://RayHightower.com/images/launch-at-login.png' width='' height='' alt='' title=''><span class='caption-text'></span></span></p>
 
 <p>Click the <code>+</code> sign, navigate to the app you want to launch at login time (in this case, EjectDisks) and select it. Done.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[A Portable Hack for Parallella]]></title>
-    <link href="http://RayHightower.com/blog/2013/11/10/a-portable-hack-for-parallella/"/>
-    <updated>2013-11-10T23:05:00-06:00</updated>
-    <id>http://RayHightower.com/blog/2013/11/10/a-portable-hack-for-parallella</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper left'><img class='caption' src='http://RayHightower.com/images/parallella-portable.png' width='' height='' alt='Portability for Parallella-sized devices.' title='Portability for Parallella-sized devices.'><span class='caption-text'>Portability for Parallella-sized devices.</span></span>
-<a href="http://RayHightower.com/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/">Beaglebone Black</a>, <a href="http://RayHightower.com/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a>, and <a href="http://RayHightower.com/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/">Parallella</a> are three small, powerful Linux-based computers. But in order to make these devices truly portable, we need a way to carry a monitor and keyboard along. This article describes one hack that works.</p>
-
-<h3>Inspiration in a Suitcase</h3>
-
-<p>The HP 5036 Microprocessor Lab gave me my first exposure to assembler language. I was eighteen, working my first software internship, and loving every minute of it. When I devised ways to complete my <em>regular work</em> faster than management expected, I had some time on my hands. So I spent time learning assembler with the HP 5036.</p>
-
-<!--more-->
-
-
-<p><span class='caption-wrapper'><img class='caption' src='http://RayHightower.com/images/hp-5036.png' width='' height='' alt='HP 5036 Microprocessor Lab' title='HP 5036 Microprocessor Lab'><span class='caption-text'>HP 5036 Microprocessor Lab</span></span></p>
-
-<p>The entire 5036 fits in a suitcase&hellip; how cool is that! Here&rsquo;s how the 5036 works:</p>
-
-<ol>
-<li>Start by writing assembler-level code by hand on paper.</li>
-<li>Grab the reference book for the microprocessor running on the
-board, Intel 8080.</li>
-<li>For each assembler-level command, find the corresponding 2-digit
-hexidecimal operation code.</li>
-<li>Key the op code into the 5036 by hand.</li>
-<li>Run the program.</li>
-</ol>
-
-
-<p>Working with the 5036 was addictive in a positive way. In a subsequent job, where I wrote assembler to drive hardware devices, I was ready.</p>
-
-<h3>Portability Needed</h3>
-
-<p>Fast forward a few decades. We now have the Raspberry Pi, BeagleBone Black, and Parallella. Wonderful devices with one flaw in common: No portability. That&rsquo;s when I had a flashback to my days with the 5036.</p>
-
-<p>I bought a $35 technician box from Home Depot and I ripped out the insides. Micro Center had 720p LCD monitors on sale for $90, so I bought one of those. I didn&rsquo;t want to spend the extra bucks for a 1080p LCD because you never know how something like this might work out! Finally, I topped everything off with a $25 keyboard/trackpad combo from Amazon.  The result appears in the photo at the top of this article. Special thanks to Ericka [last name unknown] from Home Depot who gave me tons of ideas on how to securely fasten the monitor to the case.</p>
-
-<h3>Why?</h3>
-
-<p>Why did I spend the time and money to assemble this kit? It&rsquo;s all about learning. Devs learn more when we interact with other devs &ndash; people who are learning some of the same things that we&rsquo;re wrestling with. And sometimes the things we need to learn are too new for books.</p>
-
-<p>By carrying my Raspberry Pi, BeagleBone Black, and Parallella with me in a portable unit, I can share my experiences with other devs and learn more in the process. Everybody wins when that happens.</p>
-
-<h3>Thanks SCNA!</h3>
-
-<p>The organizers of <a href="http://scna.softwarecraftsmanship.org/">Software Craftsmanship North America (SCNA)</a> gave me the opportunity to present this story as a lightning talk at the conference. Slides are here:</p>
-
-<center><script async class="speakerdeck-embed" data-id="b3558fd02cac0131cfc62a9baba32394" data-ratio="1.29456384323641" src="http://RayHightower.com//speakerdeck.com/assets/embed.js"></script></center>
-
-
-<p>Thank you SCNA! As I shared with the other devs at SCNA, I will gladly post my mistakes and <em>gotchas</em> here for people who want to build a unit like this. Let&rsquo;s build!</p>
 ]]></content>
   </entry>
   

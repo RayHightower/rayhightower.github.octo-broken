@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Why We Need STEM - RayHightower.com</title>
+  <title>CocoaConf Chicago Recap - RayHightower.com</title>
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="Ignite Chicago is an evening of 5-minute talks presented by speakers who want to inspire others. Each speaker is allowed twenty slides, and the &hellip;">
+  <meta name="description" content="Cool stuff from CocoaConf. One purpose of a conference is to help you to spot trends while there&rsquo;s still time to reap the benefits of being an &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://RayHightower.com/blog/2013/07/29/why-we-need-stem">
+  <link rel="canonical" href="http://RayHightower.com/blog/2014/03/10/cocoaconf-chicago-recap">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="RayHightower.com" type="application/atom+xml">
@@ -85,7 +85,7 @@
   
   <header>
     
-      <h1 class="entry-title">Why We Need STEM</h1>
+      <h1 class="entry-title">CocoaConf Chicago Recap</h1>
     
     
       <p class="meta">
@@ -101,22 +101,77 @@
   
 
 
-<time datetime="2013-07-29T00:22:00-05:00" pubdate data-updated="true">Jul 29<span>th</span>, 2013</time>
+<time datetime="2014-03-10T11:46:00-05:00" pubdate data-updated="true">Mar 10<span>th</span>, 2014</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p><a href="http://ignitechi.org">Ignite Chicago</a> is an evening of 5-minute talks presented by speakers who want to inspire others. Each speaker is allowed twenty slides, and the slides advance automatically every fifteen seconds. The Ignite organizers asked me to present <em>Why We Need STEM</em> at <a href="http://1871.com">1871</a>. I&rsquo;ll post the video when it becomes available. For now, check out the slides&hellip;</p>
+<div class="entry-content"><p><span class='caption-wrapper right'><img class='caption' src='/images/cocoaconf-2014.jpg' width='' height='' alt='Cool stuff from CocoaConf.' title='Cool stuff from CocoaConf.'><span class='caption-text'>Cool stuff from CocoaConf.</span></span></p>
 
-<!-- more -->
+<blockquote><p>One purpose of a conference is to help you to spot trends while there&rsquo;s still time to reap the benefits of being an early adopter.
+&nbsp;<br/>
+~Brian Marick at <a href="http://scna.softwarecraftsmanship.org/">SCNA 2013</a></p></blockquote>
+
+<p>Early adopters on Apple&rsquo;s Mac OS X and iOS platforms flock to <a href="http://cocoaconf.com/">CocoaConf</a>, a multi-city conference for developers. Tickets are slightly easier to get than <a href="http://en.wikipedia.org/wiki/Wwdc">WWDC</a>; CocoaConf consistently sells out.</p>
+
+<p>CocoaConf&rsquo;s presenters are practicing developers, actively building real software every day. They come to CocoaConf to share their experiences in a wonderful upward-spiral of technical learning. Here are a few highlights from the latest CocoaConf, held March 7-8 near Chicago.</p>
+
+<!--more-->
 
 
-<center><script async class="speakerdeck-embed" data-id="4c328420da3d01301487425a5f060967" data-ratio="1.29456384323641" src="//speakerdeck.com/assets/embed.js"></script></center>
+<h3>Customers Will Pay for Services</h3>
+
+<p><a href="https://twitter.com/justin">Justin Williams</a> kicked things off with a keynote titled <em>10 Things I Think I Think</em>. Williams recently acquired <a href="http://glassboard.com/">Glassboard</a>, so his developer skills are blended with the insights of a business owner. His list of ten included one approach to making money from mobile apps: Forget about selling a million copies in the App Store. Instead, create a service, charge a monthly fee for the service, and give the app away for free so customers can engage with the service. When customers are served well, they will pay.</p>
+
+<h3>Effective iOS 7 Networking</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/afnetworking-charles.png' width='' height='' alt='Charles shows network connections.' title='Charles shows network connections.'><span class='caption-text'>Charles shows network connections.</span></span>
+Customer-focused mobile apps usually communicate with other software via the web. <a href="http://twitter.com/subdigital">Ben Scheirman</a> shared his experiences in building iOS apps that communicate with web services. Several questions are raised when we build apps like this, namely:</p>
+
+<ul>
+<li>How do we include communication capabilities without sacrificing performance?</li>
+<li>If the mobile app requests information from a web service, and the service is unavailable (or slow) how do we avoid frustrating the user?</li>
+</ul>
 
 
-<p>Thank you Ignite Chicago organizers (<a href="http://www.goteampete.com">Pete Aiello</a> and <a href="http://clairelew.com">Claire Lew</a>) for the invitation and for hosting a great event.</p>
+<p><code>NSURLSession</code>, introduced with iOS 7, lets us upload and download in the background. Users are kept happy because the app continues to function in the foreground. Scheirman&rsquo;s <a href="https://speakerdeck.com/subdigital/effective-network-programming-in-ios-7">slides</a> and <a href="https://github.com/subdigital/mods-2013">sample code</a> give more details.</p>
+
+<p>It is also interesting to note what tools the presenters use in their
+daily work. Scheirman uses <a href="http://www.charlesproxy.com/">Charles</a>
+to monitor network traffic between machines, and to track down hiccups.</p>
+
+<h3>Xcode Walkabout</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/xcode-git-commit.png' width='' height='' alt='Showing Git commit messages in Xcode.' title='Showing Git commit messages in Xcode.'><span class='caption-text'>Showing Git commit messages in Xcode.</span></span>
+Most of my iOS time is spent with <a href="/blog/2013/01/12/why-i-use-vim/">Vim</a> and <a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a>. I use Xcode mainly to learn things that I can apply to RubyMotion. Still, <a href="http://twitter.com/savinola">Laura Savino</a>&rsquo;s exploration of Xcode proved valuable.</p>
+
+<p>Like many developers on the Apple platforms, Savino has a love/hate relationship with Xcode. She almost titled her talk &ldquo;stupid little buttons that don&rsquo;t even look like buttons.&rdquo; Savino summarized several years of Xcode immersion and pair programming into 60 minutes of little-known tips and tricks. For example, Xcode plays nicely with Git (you can even show commit messages within the IDE). And it&rsquo;s possible to use Vim key bindings while editing files.</p>
+
+<h3>Sprite Kit</h3>
+
+<p><a href="http://twitter.com/kognate">Josh Smith</a>&rsquo;s SpriteKit presentation was full of gotcha-eliminating information. For example, the coordinate systems for Sprite Kit and UIKit are inverted. I&rsquo;m sure this is documented somewhere, but I didn&rsquo;t know about it! The bottom line with Sprite Kit: We can add animation to our apps without doing all of the fundamental work. Saves time.</p>
+
+<h3>Parallel Computing with OpenCL</h3>
+
+<p>The parallel computing talk by <a href="http://twitter.com/hyperjeff">Jeff Biggus</a> was the most mind-blowing session of CocoaConf, for me. The presentation was exciting because it tied our current set of tools (like <a href="https://developer.apple.com/library/ios/documentation/Performance/Reference/GCD_libdispatch_Ref/Reference/reference.html">GCD</a>) with high performance computing work currently underway at universities and at corporations like NVidia. When theory blends with application, great things can be achieved.</p>
+
+<p>Biggus shared some of the work of <a href="https://www.khronos.org/opencl/">OpenCL</a>, a standard designed for cross-platform parallel computing. We care about parallel computing because&hellip;</p>
+
+<ul>
+<li>Moore&rsquo;s Law has just about run its course.</li>
+<li>Engineers have packed transistors about as tightly as they can on silicon.</li>
+</ul>
+
+
+<p>Unless we can figure out how to <a href="http://en.wikipedia.org/wiki/Montgomery_Scott">rewrite the laws of physics</a>, the next advances in computing performance will come from making processors work together without stepping on each other&rsquo;s toes.</p>
+
+<h3>The Klein Family</h3>
+
+<p>2014 marks CocoaConf&rsquo;s third year in the Chicago area. The conference is run by Dave and Debbie Klein and their 14 children. <a href="http://cocoaconf.com/family">About The Family Behind CocoaConf</a> gives details.</p>
+
+<p>Thank you, Klein family, for another great CocoaConf!</p>
 </div>
 
 
@@ -139,12 +194,12 @@
   
 
 
-<time datetime="2013-07-29T00:22:00-05:00" pubdate data-updated="true">Jul 29<span>th</span>, 2013</time>
+<time datetime="2014-03-10T11:46:00-05:00" pubdate data-updated="true">Mar 10<span>th</span>, 2014</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/education/'>Education</a>
+    <a class='category' href='/blog/categories/community/'>Community</a>, <a class='category' href='/blog/categories/ios/'>iOS</a>
   
 </span>
 
@@ -153,7 +208,7 @@
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2013/07/29/why-we-need-stem/" data-via="" data-counturl="http://RayHightower.com/blog/2013/07/29/why-we-need-stem/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2014/03/10/cocoaconf-chicago-recap/" data-via="" data-counturl="http://RayHightower.com/blog/2014/03/10/cocoaconf-chicago-recap/" >Tweet</a>
   
   
   
@@ -162,10 +217,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/07/19/petascale-tools-workshop-2013/" title="Previous Post: Petascale Tools Workshop 2013">&laquo; Petascale Tools Workshop 2013</a>
+        <a class="basic-alignment left" href="/blog/2014/03/04/fixing-macvim-on-osx-mavericks/" title="Previous Post: Fixing MacVim on OS X Mavericks">&laquo; Fixing MacVim on OS X Mavericks</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/08/05/age-vs-ability/" title="Next Post: Age vs. Ability">Age vs. Ability &raquo;</a>
       
     </p>
   </footer>
@@ -301,8 +354,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://RayHightower.com/blog/2013/07/29/why-we-need-stem/';
-        var disqus_url = 'http://RayHightower.com/blog/2013/07/29/why-we-need-stem/';
+        var disqus_identifier = 'http://RayHightower.com/blog/2014/03/10/cocoaconf-chicago-recap/';
+        var disqus_url = 'http://RayHightower.com/blog/2014/03/10/cocoaconf-chicago-recap/';
         var disqus_script = 'embed.js';
       
     (function () {

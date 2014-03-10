@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Community | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/community/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-03-04T15:05:46-06:00</updated>
+  <updated>2014-03-10T15:42:38-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,78 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[CocoaConf Chicago Recap]]></title>
+    <link href="http://RayHightower.com/blog/2014/03/10/cocoaconf-chicago-recap/"/>
+    <updated>2014-03-10T11:46:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/03/10/cocoaconf-chicago-recap</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/cocoaconf-2014.jpg' width='' height='' alt='Cool stuff from CocoaConf.' title='Cool stuff from CocoaConf.'><span class='caption-text'>Cool stuff from CocoaConf.</span></span></p>
+
+<blockquote><p>One purpose of a conference is to help you to spot trends while there&rsquo;s still time to reap the benefits of being an early adopter.
+&nbsp;<br/>
+~Brian Marick at <a href="http://scna.softwarecraftsmanship.org/">SCNA 2013</a></p></blockquote>
+
+<p>Early adopters on Apple&rsquo;s Mac OS X and iOS platforms flock to <a href="http://cocoaconf.com/">CocoaConf</a>, a multi-city conference for developers. Tickets are slightly easier to get than <a href="http://en.wikipedia.org/wiki/Wwdc">WWDC</a>; CocoaConf consistently sells out.</p>
+
+<p>CocoaConf&rsquo;s presenters are practicing developers, actively building real software every day. They come to CocoaConf to share their experiences in a wonderful upward-spiral of technical learning. Here are a few highlights from the latest CocoaConf, held March 7-8 near Chicago.</p>
+
+<!--more-->
+
+
+<h3>Customers Will Pay for Services</h3>
+
+<p><a href="https://twitter.com/justin">Justin Williams</a> kicked things off with a keynote titled <em>10 Things I Think I Think</em>. Williams recently acquired <a href="http://glassboard.com/">Glassboard</a>, so his developer skills are blended with the insights of a business owner. His list of ten included one approach to making money from mobile apps: Forget about selling a million copies in the App Store. Instead, create a service, charge a monthly fee for the service, and give the app away for free so customers can engage with the service. When customers are served well, they will pay.</p>
+
+<h3>Effective iOS 7 Networking</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/afnetworking-charles.png' width='' height='' alt='Charles shows network connections.' title='Charles shows network connections.'><span class='caption-text'>Charles shows network connections.</span></span>
+Customer-focused mobile apps usually communicate with other software via the web. <a href="http://twitter.com/subdigital">Ben Scheirman</a> shared his experiences in building iOS apps that communicate with web services. Several questions are raised when we build apps like this, namely:</p>
+
+<ul>
+<li>How do we include communication capabilities without sacrificing performance?</li>
+<li>If the mobile app requests information from a web service, and the service is unavailable (or slow) how do we avoid frustrating the user?</li>
+</ul>
+
+
+<p><code>NSURLSession</code>, introduced with iOS 7, lets us upload and download in the background. Users are kept happy because the app continues to function in the foreground. Scheirman&rsquo;s <a href="https://speakerdeck.com/subdigital/effective-network-programming-in-ios-7">slides</a> and <a href="https://github.com/subdigital/mods-2013">sample code</a> give more details.</p>
+
+<p>It is also interesting to note what tools the presenters use in their
+daily work. Scheirman uses <a href="http://www.charlesproxy.com/">Charles</a>
+to monitor network traffic between machines, and to track down hiccups.</p>
+
+<h3>Xcode Walkabout</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/xcode-git-commit.png' width='' height='' alt='Showing Git commit messages in Xcode.' title='Showing Git commit messages in Xcode.'><span class='caption-text'>Showing Git commit messages in Xcode.</span></span>
+Most of my iOS time is spent with <a href="/blog/2013/01/12/why-i-use-vim/">Vim</a> and <a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a>. I use Xcode mainly to learn things that I can apply to RubyMotion. Still, <a href="http://twitter.com/savinola">Laura Savino</a>&rsquo;s exploration of Xcode proved valuable.</p>
+
+<p>Like many developers on the Apple platforms, Savino has a love/hate relationship with Xcode. She almost titled her talk &ldquo;stupid little buttons that don&rsquo;t even look like buttons.&rdquo; Savino summarized several years of Xcode immersion and pair programming into 60 minutes of little-known tips and tricks. For example, Xcode plays nicely with Git (you can even show commit messages within the IDE). And it&rsquo;s possible to use Vim key bindings while editing files.</p>
+
+<h3>Sprite Kit</h3>
+
+<p><a href="http://twitter.com/kognate">Josh Smith</a>&rsquo;s SpriteKit presentation was full of gotcha-eliminating information. For example, the coordinate systems for Sprite Kit and UIKit are inverted. I&rsquo;m sure this is documented somewhere, but I didn&rsquo;t know about it! The bottom line with Sprite Kit: We can add animation to our apps without doing all of the fundamental work. Saves time.</p>
+
+<h3>Parallel Computing with OpenCL</h3>
+
+<p>The parallel computing talk by <a href="http://twitter.com/hyperjeff">Jeff Biggus</a> was the most mind-blowing session of CocoaConf, for me. The presentation was exciting because it tied our current set of tools (like <a href="https://developer.apple.com/library/ios/documentation/Performance/Reference/GCD_libdispatch_Ref/Reference/reference.html">GCD</a>) with high performance computing work currently underway at universities and at corporations like NVidia. When theory blends with application, great things can be achieved.</p>
+
+<p>Biggus shared some of the work of <a href="https://www.khronos.org/opencl/">OpenCL</a>, a standard designed for cross-platform parallel computing. We care about parallel computing because&hellip;</p>
+
+<ul>
+<li>Moore&rsquo;s Law has just about run its course.</li>
+<li>Engineers have packed transistors about as tightly as they can on silicon.</li>
+</ul>
+
+
+<p>Unless we can figure out how to <a href="http://en.wikipedia.org/wiki/Montgomery_Scott">rewrite the laws of physics</a>, the next advances in computing performance will come from making processors work together without stepping on each other&rsquo;s toes.</p>
+
+<h3>The Klein Family</h3>
+
+<p>2014 marks CocoaConf&rsquo;s third year in the Chicago area. The conference is run by Dave and Debbie Klein and their 14 children. <a href="http://cocoaconf.com/family">About The Family Behind CocoaConf</a> gives details.</p>
+
+<p>Thank you, Klein family, for another great CocoaConf!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[SGI & Big Data]]></title>
@@ -289,114 +361,6 @@ days!</li>
 <h3><em>Update (Jan 2014)</em></h3>
 
 <p><em>After this post, several colleagues introduced me to new information.  The result, an updated code of conduct, is covered in <a href="/blog/2014/01/28/an-environment-of-respect-2nd-iteration/">An Environment of Respect, 2nd Iteration</a>.</em></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[High Performance Computing at ACM]]></title>
-    <link href="http://RayHightower.com/blog/2013/12/12/high-performance-computing-at-acm/"/>
-    <updated>2013-12-12T22:22:00-06:00</updated>
-    <id>http://RayHightower.com/blog/2013/12/12/high-performance-computing-at-acm</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/cray-1.jpg' width='' height='' alt='Cray-1 at the Swiss Federal Institute of Technology.' title='Cray-1 at the Swiss Federal Institute of Technology.'><span class='caption-text'>Cray-1 at the Swiss Federal Institute of Technology.</span></span></p>
-
-<blockquote><p>Anyone can build a fast CPU. The trick is to build a fast system.
-&nbsp;<br/>
-~ Seymour Cray</p></blockquote>
-
-<p>The Chicago chapter of the Association for Computing Machinery (<a href="http://www.chicagoacm.org/">Chicago ACM</a>) hosted a lecture titled <em>Supercomputing and You</em> yesterday evening. The talk was delivered by <a href="http://www.linkedin.com/in/sharankalwani">Sharan Kalwani</a> of <a href="http://www.fnal.gov/">Fermilab</a>. Kalwani&rsquo;s background blends mechanical engineering and computer science with decades of high performance computing experience.</p>
-
-<h3>10x => High Performance Computing</h3>
-
-<p>Kalwani began his talk by drawing a distinction between <em>supercomputing</em> and <em>high performance computing (HPC)</em>. Supercomputing is the buzzword that everyone knows, but the word implies that the designers are focused only on improving CPU performance. Such narrow focus could cause us to ignore important subsystems. For example, if engineers focus strictly on CPU performance, applications that are CPU-bound will quickly encounter I/O bottlenecks. High performance computing takes the entire system into account: CPU, I/O, cache, memory&hellip; anything that can influence performance.</p>
-
-<!--more-->
-
-
-<p>This article will use the terms <em>supercomputing</em> and <em>high performance computing</em> interchangably because we are discussing the field in general. In an engineering document, the distinction would be more important.</p>
-
-<p>By definition, supercomputers perform at least ten times faster than the current state-of-the art. The definition is a moving target. The processor in today&rsquo;s smartphone would have been considered a high performance computer a decade ago.</p>
-
-<h3>The First Supercomputer</h3>
-
-<p><a href="http://www.cray.com/">Seymour Cray</a> is regarded as the father of the supercomputer. Cray cobbled together the first supercomputer using off-the-shelf components of the day and his unique ideas about computer architecture.</p>
-
-<p>For example, Cray observed that the speed of an electrical signal was one bottleneck in computer performance. Electrical signals travel at the speed of light. Light can travel roughly one foot in one nanosecond.  Therefore, Cray decided that all internal cables in his new system would be less than a foot in length. No input would need to wait more than a nanosecond for a signal.</p>
-
-<p>The 1972-era Cray supercomputer ran at a clock speed of 80MHz. It used a 64-bit word size. As a point of comparison, a 1972-era business mainframe ran at 4MHz with a 16-bit word size.</p>
-
-<h3>Supercomputers&hellip; So What?</h3>
-
-<p>Why do we need to spend time and money on high performance computers?  How does the general public benefit?</p>
-
-<p>HPC enables us to solve problems that elude typical computers. For example:</p>
-
-<ul>
-<li><em>Auto safety testing</em>. Kalwani spent several years using HPC to run simulated crash tests for General Motors. A physical crash test, one in which the car is destroyed, costs $500k per car. The same test can be run in a simulator for $5k. Engineers still need to test a physical car at the end of the testing cycle, but the number of cars destroyed is drastically reduced. The business advantage of HPC-simulated tests is clear.</li>
-<li><em>Nuclear testing</em>. It is very expensive (measured both in dollars and in human lives) to test a nuclear power plant. Fortunately, scientists know enough about nuclear behavior to create realistic simulations. Testing via simulation helps to manage costs and reduce accidents.</li>
-<li><em>Weather forecasting</em>. The first supercomputers needed three days to predict the weather for <em>tomorrow</em>. What good is a 2-day-old weather forecast? A good forecast can save lives by telling people to evacute before a life-threatening natural disaster. Today&rsquo;s supercomputers can produce accurate weather forecasts while the reader still has time to take action.</li>
-<li><em>Bioinformatics</em>. When scientists can reliably simulate drug behavior before live human testing, medical treatments can be improved and lives can be saved.</li>
-<li><em>Energy exploration</em>. As long as people depend on fossil fuels, new sources need to be discovered in a timely and cost-effective way.  Supercomputers can process seismic data quickly and with sufficient granularity to tell prospectors where to drill.</li>
-</ul>
-
-
-<p>The bottom line: High performance computers deliver a return on investment that far outweighs their cost.</p>
-
-<h3>Trickle Down Technology</h3>
-
-<p>Many of the advances that we enjoy on today&rsquo;s laptops were invented by HPC architects. Kalwani shared one example: Cray invented the solid state disk (SSD) when mechanical disk drives proved to be a bottleneck. Can you imagine what an SSD must have cost in 1982 when it was invented? Today, SSDs are standard equipment on many laptops.</p>
-
-<h3>Who Has the Fastest Supercomputer?</h3>
-
-<p><a href="http://top500.org/">Top500.org</a> lists the fastest supercomputers on the planet, ordered by number of floating point operations per second (FLOPS). The race to be the fastest is highly competitive, so check the list for the latest champion.</p>
-
-<p>There are those who believe that the Top 500 list is missing a few names. Some governments or companies might not want to publicize their HPC skills.</p>
-
-<h3>Speed vs. Power</h3>
-
-<p>Supercomputers gulp electricity. Rule of thumb: One megawatt of electricity used over the course of one year costs $1 million. The fastest supercomputer in the world uses 17 megawatts of electricity, so its owners have an annual electric bill of $17 million dollars.</p>
-
-<p><a href="http://green500.org">The Green 500</a> list recognizes the most energy efficient supercomputers in the world.</p>
-
-<h3>The Fourth Paradigm</h3>
-
-<p>Kalwani closed the historical section of his talk with a discussion of <a href="http://research.microsoft.com/en-us/collaboration/fourthparadigm/">The Fourth Paradigm</a> of discovery. The concept comes from a collection of essays published by Microsoft Press. As of this writing, a free PDF of the book is available from <a href="http://research.microsoft.com/en-us/collaboration/fourthparadigm/">Microsoft Research</a>.</p>
-
-<p>The book&rsquo;s introduction posits that there have been four paradigms of human scientific discovery:</p>
-
-<ul>
-<li><em>Empirical</em>. Started a thousand years ago. Science was all about describing natural phenomena.</li>
-<li><em>Theoretical</em>. Started a few hundred years ago. Scientific understanding is achieved via models and generalizations.</li>
-<li><em>Computational</em>. Started a few decades ago. Scientists seek understanding by simulating complex phenomena using computer models.</li>
-<li><em>Data Exploration (eScience)</em>. Starting now. Scientists now have the technology to capture and store huge quantities of data, inexpensively and indefinitely. Software will &ldquo;look&rdquo; for trends in the data using statistical models. The software will identify trends in the data, and point them out for further investigation.</li>
-</ul>
-
-
-<p>One example of the Fourth Paradigm in action: Recent discoveries of sub-atomic particles were initiated by eScience. Software running on high performance computers identified trends, and the scientists followed up with deeper investigation. Discoveries followed after that.</p>
-
-<p>Businesses have led the way in extracting trends from mountains of data. This path offered limited results for scientists because computers were too slow to handle scientific data in a timely fashion. Partial differential equations eat many CPU cycles!</p>
-
-<p>High performance computing opens up a new universe of data insight for scientists and engineers.</p>
-
-<h3>The Future of HPC</h3>
-
-<p>Kalwani ended the talk by looking into his crystal ball and telling us about the future of HPC. A few trends on the horizon:</p>
-
-<ul>
-<li>Power consumption issues will dominate discussions. High performance computers are terribly inefficient. Either we need to find a free, unlimited supply of energy (unlikely) or we must design supercomputers that gulp less power.</li>
-<li>GPGPUs. General purpose graphics processing units are already used for non-graphics applications, like Bitcoin mining. As more applications are discovered for the devices, faster GPGPUs will follow.</li>
-<li>ARM. Advanced Risc Machine processors use less power and their performance continues to increase. Could ARM hold the key to power reduction in high performance computing?</li>
-<li>Rex Parallella. Fresh from last month&rsquo;s <a href="http://sc13.supercomputing.org/">Supercomputing Conference</a>: <a href="http://www.rexcomputing.com/">Rex Computing</a> is using <a href="http://www.parallella.org/">Parallella</a> boards to build low-energy high performance computing clusters.</li>
-<li>Quantum computing. Kalwani ran out of time as he was covering this item, but he shared enough to spark my interest. He explained quantum computing by using an analogy: Quantum computing is to digital computing as digital computing is to the abacus. The degree of advancement is that dramatic. <a href="http://www.dwavesys.com/">D-Wave</a> is one company exploring this area.</li>
-</ul>
-
-
-<h3>Conclusion</h3>
-
-<p>Thank you Sharan Kalwani for presenting, and thank you <a href="http://www.chicagoacm.org/">Chicago ACM</a> for hosting.</p>
-
-<h3>Acknowledgements</h3>
-
-<p>The photo at the top of the article shows a Cray-1, the first supercomputer, on display at the <a href="http://www.epfl.ch/">Swiss Federal Institute of Technology (EPFL)</a> in Lausanne. Some of the original panels have been replaced with plexiglass.</p>
 ]]></content>
   </entry>
   
