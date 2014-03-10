@@ -18,15 +18,17 @@ CocoaConf's presenters are practicing developers, actively building real softwar
 [Justin Williams](https://twitter.com/justin) kicked things off with a keynote titled _10 Things I Think I Think_. Justin recently acquired [Glassboard](http://glassboard.com/), so his developer skills are blended with the insights of a business owner. His list of ten included one approach to making money from mobile apps: Forget about selling a million copies in the App Store. Instead, create a service, charge a monthly fee for the service, and give the app away for free so customers can engage with the service. When customers are served well, they will pay.
 
 ###Effective iOS 7 Networking
+{% imgcap right /images/afnetworking-charles.png Charles shows network connections. %}
 Customer-focused mobile apps usually communicate with other software via the web. [Ben Scheirman](http://twitter.com/subdigital) shared his experiences in building iOS apps that communicate with web services. Several questions are raised when we build apps like this, namely:
 
-* How do you ensure communication without sacrificing performance? 
-* If the mobile app requests information from a web service, and the service is unavailable (or slow) how do you avoid frustrating the user? 
+* How do we include communication capabilities without sacrificing performance? 
+* If the mobile app requests information from a web service, and the service is unavailable (or slow) how do we avoid frustrating the user? 
 
-A new class in iOS 7, `NSURLSession`, lets us upload and download in the background. Users are kept happy because the app continues to interact with them. Scheirman's [slides](https://speakerdeck.com/subdigital/effective-network-programming-in-ios-7) and [sample code](https://github.com/subdigital/mods-2013) provide more details.
+`NSURLSession`, brand new in iOS 7, lets us upload and download in the background. Users are kept happy because the app continues to function in the foreground. Scheirman's [slides](https://speakerdeck.com/subdigital/effective-network-programming-in-ios-7) and [sample code](https://github.com/subdigital/mods-2013) give more details.
 
 ###Xcode Walkabout
-Most of my iOS time is spent with [Vim]() and [RubyMotion]().
+{% imgcap right /images/xcode-git-commit.png Showing Git commit messages in Xcode. %}
+Most of my iOS time is spent with [Vim](/blog/2013/01/12/why-i-use-vim/) and [RubyMotion](/blog/2012/10/29/building-ios-apps-with-ruby-motion/). I use Xcode mainly to learn things that I can apply to RubyMotion. Still, [Laura Savino](http://twitter.com/savinola)'s exploration of Xcode was very valuable. 
 
 
 ###SpriteKit
