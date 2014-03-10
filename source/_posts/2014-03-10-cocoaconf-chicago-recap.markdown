@@ -15,4 +15,6 @@ categories:
 <!--more-->
 
 ###The Klein Family
+CocoaConf is run by Dave and Debbie Klein and their 14 children. No, that's not a typo! Check out [About The Family Behind CocoaConf](http://cocoaconf.com/family) for details.
 
+Thank you, Klein family, for another great CocoaConf!
