@@ -39,6 +39,8 @@ Like many developers on the Apple platforms, Savino has a love/hate relationship
 ###Sprite Kit
 [Josh Smith](http://twitter.com/kognate)'s SpriteKit presentation was full of gotcha-eliminating information. For example, the coordinate systems for Sprite Kit and UIKit are inverted. I'm sure this is documented somewhere, but I didn't know about it! The bottom line with Sprite Kit: We can add animation to our apps without doing all of the fundamental work. Saves time.
 
+Slides and code are posted in a single [repo on GitHub](https://github.com/kognate/presentations). Worth looking at.
+
 ###Parallel Computing with OpenCL
 The parallel computing talk by [Jeff Biggus](http://twitter.com/hyperjeff) was the most mind-blowing session of CocoaConf, for me. The presentation was exciting because it tied our current set of tools (like [GCD](https://developer.apple.com/library/ios/documentation/Performance/Reference/GCD_libdispatch_Ref/Reference/reference.html)) with high performance computing work currently underway at universities and at corporations like NVidia. When theory blends with application, great things can be achieved.
 
