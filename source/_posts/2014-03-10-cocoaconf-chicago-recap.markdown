@@ -37,7 +37,7 @@ Most of my iOS time is spent with [Vim](/blog/2013/01/12/why-i-use-vim/) and [Ru
 Like many developers on the Apple platforms, Savino has a love/hate relationship with Xcode. She almost titled her talk "stupid little buttons that don't even look like buttons." Savino summarized several years of Xcode immersion and pair programming into 60 minutes of little-known tips and tricks. For example, Xcode plays nicely with Git (you can even show commit messages within the IDE). And it's possible to use Vim key bindings while editing files.
 
 ###Sprite Kit
-[Josh Smith](http://twitter.com/kognate)'s SpriteKit presentation was full of gotcha-eliminating information. For example, the coordinate systems for Sprite Kit and UIKit are inverted. I'm sure this is documented somewhere, but I didn't know about it! The bottom line with Sprite Kit: We can add animation to our apps without doing all of the fundamental work. Saves time.
+[Josh Smith](http://twitter.com/kognate)'s Sprite Kit presentation was full of gotcha-eliminating information. For example, the coordinate systems for Sprite Kit and UIKit are inverted. I'm sure this is documented somewhere, but I didn't know about it! The bottom line with Sprite Kit: We can add animation to our apps without doing all of the fundamental work. Saves time.
 
 Slides and code are posted in a single [repo on GitHub](https://github.com/kognate/presentations). Worth looking at.
 
