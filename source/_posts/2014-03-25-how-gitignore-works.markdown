@@ -11,8 +11,8 @@ What?
 
 Either there was a bug in Git, or my understanding of `.gitignore` was incomplete. It was time for me to dig in and learn more about `.gitignore`.
 <!--more-->
-###What I Did Not Know
-The root cause of my problem: Once Git has begun tracking a file or directory, adding it to `.gitignore` changes nothing. Git will continue to track the file unless we explicitly tell Git to stop tracking it.
+###What I Learned About .gitignore
+The root cause of my problem: Once Git has begun tracking a file or directory, adding it to `.gitignore` changes nothing. Git will continue to track the file unless we explicitly tell Git to stop tracking the file.
 
 ```bash
 $ git rm --cached [filename]
@@ -29,6 +29,8 @@ $
 ```
 
 The `-r` flag will tell Git to stop tracking all of the sub-directories and files within `directoryname`, recursively.
+
+Git was behaving exactly as designed. 
 
 ###Penalty
 I should have known this a long time ago. My penalty: A public admission :-) 
