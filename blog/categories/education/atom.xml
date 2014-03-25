@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Education | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/education/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-03-16T15:53:31-05:00</updated>
+  <updated>2014-03-25T18:47:09-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,48 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How .gitignore Works]]></title>
+    <link href="http://RayHightower.com/blog/2014/03/25/how-gitignore-works/"/>
+    <updated>2014-03-25T18:20:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/03/25/how-gitignore-works</id>
+    <content type="html"><![CDATA[<p>Earlier today I ran into a Git issue within a RubyMotion project. I added a directory to the project&rsquo;s <code>.gitignore</code> file, but Git seemed to ignore my ignore. Expressed more clearly, Git continued to track a directory that I explicitly told it to ignore.</p>
+
+<p>What?</p>
+
+<p>Either there was a bug in Git, or my understanding of <code>.gitignore</code> was incomplete. It was time for me to dig in and learn more about <code>.gitignore</code>.</p>
+
+<!--more-->
+
+
+<h3>What I Learned About .gitignore</h3>
+
+<p>The root cause of my problem: Once Git has begun tracking a file or directory, adding it to <code>.gitignore</code> changes nothing. Git will continue to track the file unless we explicitly tell Git to stop tracking the file.</p>
+
+<p>```bash
+$ git rm &mdash;cached [filename]</p>
+
+<p>$
+```</p>
+
+<p>Or, if you want to stop tracking an entire directory (like me in this case)&hellip;</p>
+
+<p>```bash
+$ git rm -r &mdash;cached [directoryname]</p>
+
+<p>$
+```</p>
+
+<p>The <code>-r</code> flag will tell Git to stop tracking all of the sub-directories and files within <code>directoryname</code>, recursively.</p>
+
+<p>Git was behaving exactly as designed.</p>
+
+<h3>Penalty</h3>
+
+<p>I should have known this a long time ago. My penalty: A public admission :&ndash;)</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Fixing MacVim on OS X Mavericks]]></title>
@@ -399,35 +441,6 @@ git version 1.8.5.1</p>
 <p>I&rsquo;m posting this article as a note to my future self. Error messages sometimes lie. They don&rsquo;t mean to lie, but an error messsage can only give you its best guess based on what it <em>thinks</em> is happening on your system. It&rsquo;s up to the developer to sniff out the rest of the clues.</p>
 
 <p>After decades in this industry, I&rsquo;m still learning this lesson :&ndash;)</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Specialized Knowledge and the Courage to Execute]]></title>
-    <link href="http://RayHightower.com/blog/2013/11/30/specialized-knowledge-and-the-courage-to-execute/"/>
-    <updated>2013-11-30T10:35:00-06:00</updated>
-    <id>http://RayHightower.com/blog/2013/11/30/specialized-knowledge-and-the-courage-to-execute</id>
-    <content type="html"><![CDATA[<p>Teenagers are a tough audience. If you have ever spoken to a youth group, you know the challenge: Speak about something important without putting the youth to sleep. Tall order.</p>
-
-<h3>Three Stories</h3>
-
-<p>Boy Scout <a href="http://troop534.org">Troop 534 &ldquo;Hey!&rdquo;</a> asked me to speak at the Troop’s annual reunion breakfast this year.  I approached them with three stories centered around the theme of <em>Specialized Knowledge and the Courage to Execute</em>. What a boring title! But the three stories appealed to the group. Here’s a summary of the first story:</p>
-
-<blockquote><p>A tractor maker takes drastic action when when Enzo Ferrari (creator of the Ferrari sports car) pisses him off.</p></blockquote>
-
-<!--more-->
-
-
-<p>Here&rsquo;s the 11-minute video:</p>
-
-<center><iframe width="560" height="315" src="http://RayHightower.com//www.youtube.com/embed/tWdFhEI6JiM?rel=0" frameborder="0" allowfullscreen></iframe></center>
-
-
-<h3>Gratitude</h3>
-
-<p>This event was a big deal for me because I grew up in Troop 534 &ldquo;Hey!&rdquo;, I currently serve as one of the adult leaders, and the breakfast organizers normally invite an outsider to speak. Why listen to a speaker who you see all the time?</p>
-
-<p>I took the speaking invitation as an opportunity to assemble some new material. Thank you scouts, parents, and leaders for having me.</p>
 ]]></content>
   </entry>
   

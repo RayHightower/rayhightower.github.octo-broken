@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux-Unix-OSX | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/linux-unix-osx/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-03-16T15:53:31-05:00</updated>
+  <updated>2014-03-25T18:47:09-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,48 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How .gitignore Works]]></title>
+    <link href="http://RayHightower.com/blog/2014/03/25/how-gitignore-works/"/>
+    <updated>2014-03-25T18:20:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/03/25/how-gitignore-works</id>
+    <content type="html"><![CDATA[<p>Earlier today I ran into a Git issue within a RubyMotion project. I added a directory to the project&rsquo;s <code>.gitignore</code> file, but Git seemed to ignore my ignore. Expressed more clearly, Git continued to track a directory that I explicitly told it to ignore.</p>
+
+<p>What?</p>
+
+<p>Either there was a bug in Git, or my understanding of <code>.gitignore</code> was incomplete. It was time for me to dig in and learn more about <code>.gitignore</code>.</p>
+
+<!--more-->
+
+
+<h3>What I Learned About .gitignore</h3>
+
+<p>The root cause of my problem: Once Git has begun tracking a file or directory, adding it to <code>.gitignore</code> changes nothing. Git will continue to track the file unless we explicitly tell Git to stop tracking the file.</p>
+
+<p>```bash
+$ git rm &mdash;cached [filename]</p>
+
+<p>$
+```</p>
+
+<p>Or, if you want to stop tracking an entire directory (like me in this case)&hellip;</p>
+
+<p>```bash
+$ git rm -r &mdash;cached [directoryname]</p>
+
+<p>$
+```</p>
+
+<p>The <code>-r</code> flag will tell Git to stop tracking all of the sub-directories and files within <code>directoryname</code>, recursively.</p>
+
+<p>Git was behaving exactly as designed.</p>
+
+<h3>Penalty</h3>
+
+<p>I should have known this a long time ago. My penalty: A public admission :&ndash;)</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Fixing MacVim on OS X Mavericks]]></title>
@@ -573,181 +615,6 @@ $
 <p><span class='caption-wrapper'><img class='caption' src='/images/launch-at-login.png' width='' height='' alt='' title=''><span class='caption-text'></span></span></p>
 
 <p>Click the <code>+</code> sign, navigate to the app you want to launch at login time (in this case, EjectDisks) and select it. Done.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Prep for Parallella's 64 Cores: Installing Go on Mac OS X]]></title>
-    <link href="http://RayHightower.com/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/"/>
-    <updated>2013-06-22T12:58:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x</id>
-    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/parallella.jpg" width="450" height="257" alt="Parallella 64-core supercomputer" title="Parallella 64-core supercomputer" align="right" imgcap="Parallella Board">
-The idea of owning a 64-core parallel system for two hundred dollars (yes, $200.00) is exciting. <a href="http://www.parallella.org/introduction/">Parallella</a> is working to make that happen, perhaps as early as August 2013. To prepare for that day, I&rsquo;ve decided to introduce myself to the Go language.</p>
-
-<!--more-->
-
-
-<h3>What is Go?</h3>
-
-<p><a href="http://golang.org">The Go language</a> is designed for parallel systems. Why does Go exist? One developer sums it up this way:</p>
-
-<blockquote><p>Go was created at Google, by Google, for Google-size problems.<br/>~Dave Astels</p></blockquote>
-
-<p>Google writes software that runs on thousands of machines in parallel. As the number of concurrent operations increases, new challenges are encountered. Google addressed those challenges by creating Go.</p>
-
-<h3>Why Does a Rubyist Learn Go?</h3>
-
-<p>The team at <a href="http://wisdomgroup.com">WisdomGroup</a> writes web and mobile apps, mainly in Ruby. So why am I learning Go?</p>
-
-<p>Because the best developers are polyglot. When we learn a new language, we cause ourselves to see old problems in new ways and we strengthen our ability to solve new problems. It&rsquo;s like cross-training for  athletes. In the end, we become better developers.</p>
-
-<h3>How to Install Go on Mac OS X</h3>
-
-<ol>
-<li><a href="https://code.google.com/p/go/downloads/list">Download the binary of Go that matches your system</a> <i>but don't install it yet</i>. You will need to complete the rest of these steps before installation. For my 2010 i5-based 15-inch MacBook Pro, I chose <code>go1.1.1.darwin-amd64.pkg</code>. I was concerned about the reference to <code>amd64</code> in the name. But the description includes <code>Mac OS X (x86 64-bit)</code>, and the binary worked for me.</li>
-<br/>
-<li>If you are upgrading from a previous version of Go, you will need to remove the old Go directory. You can do this while the new binary is downloading in the background:</li>
-
-```bash
-$ rm -rf /usr/local/go
-```
-
-<li>Define the <code>GOROOT</code> and <code>GOPATH</code> environmental variables. My system uses <code>~/.bash_profile</code> to define environmental variables, so I added the following lines to the end of that file:
-
-```bash
-export GOROOT=/usr/local/go
-export PATH=$PATH:$GOROOT/bin
-export GOPATH=~/Code/gocode
-```
-Note: I'm using the default <code>GOROOT</code> variable, but your <code>GOPATH</code> may differ from mine. I store all of my source code in a subdirectory of home:<code>~/Code</code>. My complete Go directory structure is given below. By looking at my structure, you can adjust these steps to fit your system.</li>
-<br/>
-<li>Tell your terminal session to recognize the new environmental variables. You can either restart terminal, or if your environmental variables are in <code>~/.bash_profile</code> like mine, you can do the following:</li>
-
-```bash
-$ source ~/.bash_profile
-```
-<li>Run the package installation program, <code>go1.1.1.darwin-amd64.pkg</code>, that was downloaded in Step 1.</li>
-</ol>
-
-
-<p>Now, let&rsquo;s Go for a test drive.</p>
-
-<h3>Creating a Go Workspace</h3>
-
-<p>Before you can run a Go program on your system, you have to create a Go workspace. A workspace is a directory structure that contains source code and binaries that a Go program needs in order to compile and execute.</p>
-
-<p>We can examine the Go Workspace on my system with the Unix <code>tree</code> command:</p>
-
-<p>```bash
-~/Code/gocode$ tree
-.
-└── src</p>
-
-<pre><code>└── github.com
-    └── rayhightower
-        └── hello
-            └── hello.go
-</code></pre>
-
-<p>4 directories, 1 file</p>
-
-<p>~/Code/gocode$
-```</p>
-
-<p>Here&rsquo;s a brief description of the directories:</p>
-
-<ul>
-<li>Code = root directory for all source code on my system. Yours may differ.</li>
-<li>gocode = where I store all of the Go code on my system. I&rsquo;m following the structure recommended by the Go documentation. I may alter this as I learn more about the language.</li>
-<li>src = source code</li>
-<li>github.com = directory named after the place where I store repos</li>
-<li>rayhightower = my GitHub profile name</li>
-<li>hello = directory named for our first Go application</li>
-<li>hello.go = the Go source file for our <code>Hello World</code> program</li>
-</ul>
-
-
-<p>All structure below the <code>gocode</code> directory is mandated by Go.</p>
-
-<h3>Writing &lsquo;Hello World!&rsquo; in Go</h3>
-
-<p>Google&rsquo;s official installation instructions include a simple &lsquo;Hello World&rsquo; program for testing the installation. A slightly modified version appears below:</p>
-
-<p>```go
-package main</p>
-
-<p>import &ldquo;fmt&rdquo;</p>
-
-<p>func main() {</p>
-
-<pre><code>fmt.Printf("\n****** Hey Parallella enthusiasts: Learn Go! ******\n")
-</code></pre>
-
-<p>}
-```</p>
-
-<h3>Compiling and Running</h3>
-
-<p>We drop the code into a file called <code>hello.go</code> in the <code>hello</code> directory. To compile the program:</p>
-
-<p>```bash
-~/Code/gocode/src/github.com/rayhightower/hello$ go install</p>
-
-<p>~/Code/gocode/src/github.com/rayhightower/hello$
-<code>``
-If the Go compiler responds with a blank prompt (like above) then the program compiled successfully and a</code>bin<code>directory has been created inside the Go workspace. Run the</code>tree<code>command from the</code>gocode` directory to see how the structure has changed:</p>
-
-<p>```bash
-~/Code/gocode$ tree
-.
-├── bin
-│   └── hello
-└── src</p>
-
-<pre><code>└── github.com
-    └── rayhightower
-        └── hello
-            └── hello.go
-</code></pre>
-
-<p>5 directories, 2 files</p>
-
-<p>~/Code/gocode$
-```</p>
-
-<p>The newly created <code>bin/</code> directory contains our <code>hello</code> executable. And now, let&rsquo;s cut the suspense and <em>run the program</em>. To do so, change into the <code>bin/</code> directory and type <code>./hello</code>.</p>
-
-<p>```bash
-~/Code/gocode/src/github.com/rayhightower/hello$ cd ~/Code/gocode/bin</p>
-
-<p>~/Code/gocode/bin$ ./hello</p>
-
-<p><strong><strong><strong> Hey Parallella enthusiasts: Learn Go! </strong></strong></strong></p>
-
-<p>~/Code/gocode/bin$
-```
-Success!</p>
-
-<h3>It&rsquo;s Not Official, But It Makes Sense</h3>
-
-<p>As of this writing, Parallella does not officially support the Go language. So why go through all of this trouble? Because&hellip;</p>
-
-<ul>
-<li>A 64-core Parallella is just too cool to pass up. And it&rsquo;s open source.</li>
-<li>Go is designed for parallel systems. And it&rsquo;s open source.</li>
-<li>Open source devs are working on a Go compiler for Parallella right now. If you&rsquo;re reading this, and you&rsquo;re one of the devs, thank you!</li>
-</ul>
-
-
-<p>The Go-Parallella match makes sense. It&rsquo;s always good to skate where the puck is going.</p>
-
-<h3>Next Steps</h3>
-
-<p>Now it&rsquo;s time to explore the Go language. The real adventure begins when the 64-core Parallella arrives. Looking forward to it!</p>
-
-<h3>Acknowledgements</h3>
-
-<p>I was inspired to explore Go by <a href="https://twitter.com/blakesmith">Blake Smith&rsquo;s</a> presentation at <a href="http://www.meetup.com/ChicagoSC/events/120658422/">8th Light</a>. <a href="http://twitter.com/wondible">Justin Love</a> introduced me to Parallella last month at ChicagoRuby.</p>
 ]]></content>
   </entry>
   
