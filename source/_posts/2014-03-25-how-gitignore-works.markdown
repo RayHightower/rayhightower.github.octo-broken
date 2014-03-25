@@ -10,4 +10,6 @@ Earlier today I ran into a Git issue within a RubyMotion project. I added a dire
 What?
 
 Either there was a bug in Git, or my understanding of `.gitignore` was incomplete. It was time for me to dig in and learn more about `.gitignore`.
-<!--more-—>
+<!--more-->
+Testing.
+
