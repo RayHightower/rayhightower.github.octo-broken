@@ -7,10 +7,7 @@ categories: [ Community, Education ]
 ---
 [Flourish](http://flourishconf.com) is an open source conference to be held at the University of Illinois at Chicago on Saturday, April 5, 2014. The conference is run by university students and tickets are free.
 
-Thank you, Flourish organizers, for inviting me to speak this year. UIC is where I first learned about open source, Linux, and the web. My appreciation for UIC extends beyond my CS degree.
-
 Why go to Flourish? Because...
-
 <!--more-->
 * You like open source.
 * You want to know more about open source.
@@ -23,5 +20,7 @@ Linux may be the best known open source project, but open source is not just abo
 My neighbor pulled an Arduino out of his backpack and showed it to me. Wow. Open source extends to hardware, too! Since then, the Arduino has become part of the WindyCityRails Youth Program. Beyond microcontrollers, [Raspeberry Pi](/blog/2012/12/03/ruby-on-raspberry-pi/), [Beaglebone Black](/blog/2014/01/02/beaglebone-black-ubuntu-part-1/), and [Parallella](/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/) have joined the open source hardware ranks.
 
 ###See You There
+Thank you, Flourish organizers, for inviting me to speak this year. UIC is where I first learned about open source, Linux, and the web. My appreciation for UIC extends beyond my CS degree.
+
 Great things happen when like-minded people come together to exchange ideas. I look forward to seeing you at Flourish 2014!
 
