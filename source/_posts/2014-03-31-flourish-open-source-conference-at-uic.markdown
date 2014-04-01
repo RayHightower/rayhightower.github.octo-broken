@@ -10,6 +10,7 @@ categories: [ Community, Education ]
 Thank you, Flourish organizers, for inviting me to speak this year. UIC is where I first learned about open source, Linux, and the web. My appreciation for UIC extends beyond my degree.
 
 Why go to Flourish?
+
 <!--more-->
 * You like open source.
 * You want to know more about open source.
