@@ -17,7 +17,7 @@ Why go to Flourish? Because...
 ###Not Just Software
 Linux may be the best known open source project, but open source is not just about software. At Flourish 2009 a speaker mentioned a funny little circuit board called “Arduino” during one of the presentations. I turned to my neighbor in the audience, and I asked “What’s an Arduino?”
 
-My neighbor pulled an Arduino out of his backpack and showed it to me. Wow. Open source extends to hardware, too! Since then, the Arduino has become part of the [WindyCityRails Youth Program](http://www.windycityrails.org/youth/). Beyond microcontrollers, [Raspeberry Pi](/blog/2012/12/03/ruby-on-raspberry-pi/), [Beaglebone Black](/blog/2014/01/02/beaglebone-black-ubuntu-part-1/), and [Parallella](/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/) have joined the open source hardware ranks.
+My neighbor pulled an Arduino out of his backpack and showed it to me. Wow. Open source extends to hardware, too! Since then, the Arduino has become part of the [WindyCityRails Youth Program](http://www.windycityrails.org/youth/). Beyond microcontrollers, single-board Linux machines like the [Raspeberry Pi](/blog/2012/12/03/ruby-on-raspberry-pi/), [Beaglebone Black](/blog/2014/01/02/beaglebone-black-ubuntu-part-1/), and [Parallella](/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/) have joined the open source hardware ranks.
 
 ###See You There
 Thank you, Flourish organizers, for inviting me to speak this year. UIC is where I first learned about open source, Linux, and the web. My appreciation for UIC extends beyond my CS degree.
