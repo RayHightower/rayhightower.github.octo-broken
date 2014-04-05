@@ -12,4 +12,4 @@ The topic [What is Open Source](/blog/2014/02/22/what-is-open-source/) is covere
 <!--more-->
 <center><script async class="speakerdeck-embed" data-id="e20291c09eb00131918d4a0f4a2b8270" data-ratio="1.29456384323641" src="//speakerdeck.com/assets/embed.js"></script></center>
 
-This presentation was delivered at the [Flourish 2014](http://flourishconf.com/) conference at the University of Illinois at Chicago. Thanks Flourish and UIC for inviting me to speak.
+This presentation was delivered at the [Flourish 2014](http://flourishconf.com/) conference at the University of Illinois at Chicago. I am grateful to the Flourish organizers and to UIC for inviting me to speak.
