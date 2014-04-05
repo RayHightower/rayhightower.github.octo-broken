@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Education | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/education/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-04-01T01:16:47-05:00</updated>
+  <updated>2014-04-05T09:24:45-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Why Open Source?]]></title>
+    <link href="http://RayHightower.com/blog/2014/04/05/why-open-source/"/>
+    <updated>2014-04-05T00:40:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/04/05/why-open-source</id>
+    <content type="html"><![CDATA[<p>As members of the open source community, we have internalized the benefits of open source. Sometimes, knowing a topic so well can hinder us from explaining it to people who need to understand our work: Clients, customers, and employers. They need to understand us because they pay us.</p>
+
+<p>The topic <a href="/blog/2014/02/22/what-is-open-source/">What is Open Source</a> is covered in earlier post by that title. This presentation covers some of the &ldquo;whys&rdquo; of open source in terms that matter to the people we serve: Clients, customers, and employers.</p>
+
+<!--more-->
+
+
+<center><script async class="speakerdeck-embed" data-id="e20291c09eb00131918d4a0f4a2b8270" data-ratio="1.29456384323641" src="http://RayHightower.com//speakerdeck.com/assets/embed.js"></script></center>
+
+
+<p>This presentation was delivered at the <a href="http://flourishconf.com/">Flourish 2014</a> conference at the University of Illinois at Chicago. Thanks Flourish and UIC for inviting me to speak.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Flourish Open Source Conference at UIC]]></title>
@@ -245,114 +264,6 @@ Entrepreneurs, especially those outside of software development, may find this a
 <p><a href="http://www.amazon.com/Cathedral-Bazaar-Musings-Accidental-Revolutionary-ebook/dp/B0026OR3LM">The Cathedral and the Bazaar</a>, by Eric S. Raymond. The author is both participant and anthropologist in the open source community.</p>
 
 <p><em>Note: An earlier version of this article was published at <a href="http://wisdomgroup.com">WisdomGroup.com</a></em>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[High Performance Computing at ACM]]></title>
-    <link href="http://RayHightower.com/blog/2013/12/12/high-performance-computing-at-acm/"/>
-    <updated>2013-12-12T22:22:00-06:00</updated>
-    <id>http://RayHightower.com/blog/2013/12/12/high-performance-computing-at-acm</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/cray-1.jpg' width='' height='' alt='Cray-1 at the Swiss Federal Institute of Technology.' title='Cray-1 at the Swiss Federal Institute of Technology.'><span class='caption-text'>Cray-1 at the Swiss Federal Institute of Technology.</span></span></p>
-
-<blockquote><p>Anyone can build a fast CPU. The trick is to build a fast system.
-&nbsp;<br/>
-~ Seymour Cray</p></blockquote>
-
-<p>The Chicago chapter of the Association for Computing Machinery (<a href="http://www.chicagoacm.org/">Chicago ACM</a>) hosted a lecture titled <em>Supercomputing and You</em> yesterday evening. The talk was delivered by <a href="http://www.linkedin.com/in/sharankalwani">Sharan Kalwani</a> of <a href="http://www.fnal.gov/">Fermilab</a>. Kalwani&rsquo;s background blends mechanical engineering and computer science with decades of high performance computing experience.</p>
-
-<h3>10x => High Performance Computing</h3>
-
-<p>Kalwani began his talk by drawing a distinction between <em>supercomputing</em> and <em>high performance computing (HPC)</em>. Supercomputing is the buzzword that everyone knows, but the word implies that the designers are focused only on improving CPU performance. Such narrow focus could cause us to ignore important subsystems. For example, if engineers focus strictly on CPU performance, applications that are CPU-bound will quickly encounter I/O bottlenecks. High performance computing takes the entire system into account: CPU, I/O, cache, memory&hellip; anything that can influence performance.</p>
-
-<!--more-->
-
-
-<p>This article will use the terms <em>supercomputing</em> and <em>high performance computing</em> interchangably because we are discussing the field in general. In an engineering document, the distinction would be more important.</p>
-
-<p>By definition, supercomputers perform at least ten times faster than the current state-of-the art. The definition is a moving target. The processor in today&rsquo;s smartphone would have been considered a high performance computer a decade ago.</p>
-
-<h3>The First Supercomputer</h3>
-
-<p><a href="http://www.cray.com/">Seymour Cray</a> is regarded as the father of the supercomputer. Cray cobbled together the first supercomputer using off-the-shelf components of the day and his unique ideas about computer architecture.</p>
-
-<p>For example, Cray observed that the speed of an electrical signal was one bottleneck in computer performance. Electrical signals travel at the speed of light. Light can travel roughly one foot in one nanosecond.  Therefore, Cray decided that all internal cables in his new system would be less than a foot in length. No input would need to wait more than a nanosecond for a signal.</p>
-
-<p>The 1972-era Cray supercomputer ran at a clock speed of 80MHz. It used a 64-bit word size. As a point of comparison, a 1972-era business mainframe ran at 4MHz with a 16-bit word size.</p>
-
-<h3>Supercomputers&hellip; So What?</h3>
-
-<p>Why do we need to spend time and money on high performance computers?  How does the general public benefit?</p>
-
-<p>HPC enables us to solve problems that elude typical computers. For example:</p>
-
-<ul>
-<li><em>Auto safety testing</em>. Kalwani spent several years using HPC to run simulated crash tests for General Motors. A physical crash test, one in which the car is destroyed, costs $500k per car. The same test can be run in a simulator for $5k. Engineers still need to test a physical car at the end of the testing cycle, but the number of cars destroyed is drastically reduced. The business advantage of HPC-simulated tests is clear.</li>
-<li><em>Nuclear testing</em>. It is very expensive (measured both in dollars and in human lives) to test a nuclear power plant. Fortunately, scientists know enough about nuclear behavior to create realistic simulations. Testing via simulation helps to manage costs and reduce accidents.</li>
-<li><em>Weather forecasting</em>. The first supercomputers needed three days to predict the weather for <em>tomorrow</em>. What good is a 2-day-old weather forecast? A good forecast can save lives by telling people to evacute before a life-threatening natural disaster. Today&rsquo;s supercomputers can produce accurate weather forecasts while the reader still has time to take action.</li>
-<li><em>Bioinformatics</em>. When scientists can reliably simulate drug behavior before live human testing, medical treatments can be improved and lives can be saved.</li>
-<li><em>Energy exploration</em>. As long as people depend on fossil fuels, new sources need to be discovered in a timely and cost-effective way.  Supercomputers can process seismic data quickly and with sufficient granularity to tell prospectors where to drill.</li>
-</ul>
-
-
-<p>The bottom line: High performance computers deliver a return on investment that far outweighs their cost.</p>
-
-<h3>Trickle Down Technology</h3>
-
-<p>Many of the advances that we enjoy on today&rsquo;s laptops were invented by HPC architects. Kalwani shared one example: Cray invented the solid state disk (SSD) when mechanical disk drives proved to be a bottleneck. Can you imagine what an SSD must have cost in 1982 when it was invented? Today, SSDs are standard equipment on many laptops.</p>
-
-<h3>Who Has the Fastest Supercomputer?</h3>
-
-<p><a href="http://top500.org/">Top500.org</a> lists the fastest supercomputers on the planet, ordered by number of floating point operations per second (FLOPS). The race to be the fastest is highly competitive, so check the list for the latest champion.</p>
-
-<p>There are those who believe that the Top 500 list is missing a few names. Some governments or companies might not want to publicize their HPC skills.</p>
-
-<h3>Speed vs. Power</h3>
-
-<p>Supercomputers gulp electricity. Rule of thumb: One megawatt of electricity used over the course of one year costs $1 million. The fastest supercomputer in the world uses 17 megawatts of electricity, so its owners have an annual electric bill of $17 million dollars.</p>
-
-<p><a href="http://green500.org">The Green 500</a> list recognizes the most energy efficient supercomputers in the world.</p>
-
-<h3>The Fourth Paradigm</h3>
-
-<p>Kalwani closed the historical section of his talk with a discussion of <a href="http://research.microsoft.com/en-us/collaboration/fourthparadigm/">The Fourth Paradigm</a> of discovery. The concept comes from a collection of essays published by Microsoft Press. As of this writing, a free PDF of the book is available from <a href="http://research.microsoft.com/en-us/collaboration/fourthparadigm/">Microsoft Research</a>.</p>
-
-<p>The book&rsquo;s introduction posits that there have been four paradigms of human scientific discovery:</p>
-
-<ul>
-<li><em>Empirical</em>. Started a thousand years ago. Science was all about describing natural phenomena.</li>
-<li><em>Theoretical</em>. Started a few hundred years ago. Scientific understanding is achieved via models and generalizations.</li>
-<li><em>Computational</em>. Started a few decades ago. Scientists seek understanding by simulating complex phenomena using computer models.</li>
-<li><em>Data Exploration (eScience)</em>. Starting now. Scientists now have the technology to capture and store huge quantities of data, inexpensively and indefinitely. Software will &ldquo;look&rdquo; for trends in the data using statistical models. The software will identify trends in the data, and point them out for further investigation.</li>
-</ul>
-
-
-<p>One example of the Fourth Paradigm in action: Recent discoveries of sub-atomic particles were initiated by eScience. Software running on high performance computers identified trends, and the scientists followed up with deeper investigation. Discoveries followed after that.</p>
-
-<p>Businesses have led the way in extracting trends from mountains of data. This path offered limited results for scientists because computers were too slow to handle scientific data in a timely fashion. Partial differential equations eat many CPU cycles!</p>
-
-<p>High performance computing opens up a new universe of data insight for scientists and engineers.</p>
-
-<h3>The Future of HPC</h3>
-
-<p>Kalwani ended the talk by looking into his crystal ball and telling us about the future of HPC. A few trends on the horizon:</p>
-
-<ul>
-<li>Power consumption issues will dominate discussions. High performance computers are terribly inefficient. Either we need to find a free, unlimited supply of energy (unlikely) or we must design supercomputers that gulp less power.</li>
-<li>GPGPUs. General purpose graphics processing units are already used for non-graphics applications, like Bitcoin mining. As more applications are discovered for the devices, faster GPGPUs will follow.</li>
-<li>ARM. Advanced Risc Machine processors use less power and their performance continues to increase. Could ARM hold the key to power reduction in high performance computing?</li>
-<li>Rex Parallella. Fresh from last month&rsquo;s <a href="http://sc13.supercomputing.org/">Supercomputing Conference</a>: <a href="http://www.rexcomputing.com/">Rex Computing</a> is using <a href="http://www.parallella.org/">Parallella</a> boards to build low-energy high performance computing clusters.</li>
-<li>Quantum computing. Kalwani ran out of time as he was covering this item, but he shared enough to spark my interest. He explained quantum computing by using an analogy: Quantum computing is to digital computing as digital computing is to the abacus. The degree of advancement is that dramatic. <a href="http://www.dwavesys.com/">D-Wave</a> is one company exploring this area.</li>
-</ul>
-
-
-<h3>Conclusion</h3>
-
-<p>Thank you Sharan Kalwani for presenting, and thank you <a href="http://www.chicagoacm.org/">Chicago ACM</a> for hosting.</p>
-
-<h3>Acknowledgements</h3>
-
-<p>The photo at the top of the article shows a Cray-1, the first supercomputer, on display at the <a href="http://www.epfl.ch/">Swiss Federal Institute of Technology (EPFL)</a> in Lausanne. Some of the original panels have been replaced with plexiglass.</p>
 ]]></content>
   </entry>
   

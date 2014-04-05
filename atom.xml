@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-04-01T01:16:47-05:00</updated>
+  <updated>2014-04-05T09:24:45-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Why Open Source?]]></title>
+    <link href="http://RayHightower.com/blog/2014/04/05/why-open-source/"/>
+    <updated>2014-04-05T00:40:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/04/05/why-open-source</id>
+    <content type="html"><![CDATA[<p>As members of the open source community, we have internalized the benefits of open source. Sometimes, knowing a topic so well can hinder us from explaining it to people who need to understand our work: Clients, customers, and employers. They need to understand us because they pay us.</p>
+
+<p>The topic <a href="http://RayHightower.com/blog/2014/02/22/what-is-open-source/">What is Open Source</a> is covered in earlier post by that title. This presentation covers some of the &ldquo;whys&rdquo; of open source in terms that matter to the people we serve: Clients, customers, and employers.</p>
+
+<!--more-->
+
+
+<center><script async class="speakerdeck-embed" data-id="e20291c09eb00131918d4a0f4a2b8270" data-ratio="1.29456384323641" src="http://RayHightower.com//speakerdeck.com/assets/embed.js"></script></center>
+
+
+<p>This presentation was delivered at the <a href="http://flourishconf.com/">Flourish 2014</a> conference at the University of Illinois at Chicago. Thanks Flourish and UIC for inviting me to speak.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Flourish Open Source Conference at UIC]]></title>
@@ -1940,139 +1959,6 @@ confirmed it.</p>
 <p>This event was a big deal for me because I grew up in Troop 534 &ldquo;Hey!&rdquo;, I currently serve as one of the adult leaders, and the breakfast organizers normally invite an outsider to speak. Why listen to a speaker who you see all the time?</p>
 
 <p>I took the speaking invitation as an opportunity to assemble some new material. Thank you scouts, parents, and leaders for having me.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[awesome_print_motion for RubyMotion]]></title>
-    <link href="http://RayHightower.com/blog/2013/11/25/awesome-print-motion-for-rubymotion/"/>
-    <updated>2013-11-25T15:08:00-06:00</updated>
-    <id>http://RayHightower.com/blog/2013/11/25/awesome-print-motion-for-rubymotion</id>
-    <content type="html"><![CDATA[<h3>The Problem</h3>
-
-<p>Let&rsquo;s say we&rsquo;re building a version of Atari&rsquo;s <a href="http://RayHightower.com/blog/2013/02/26/atari-pong-rubymotion-objective-c/">Pong in RubyMotion</a>. We&rsquo;re debugging an issue with the paddles; they don&rsquo;t line up the way we want them to. Time to examine the playing field via the RubyMotion console.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>pong-rm <span class="nv">$ </span>rake
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Mouse over the playing field and <code>Command-click</code> to grab the entire playing field object in the RubyMotion console. Confirm that you grabbed the object by typing <code>self</code> at the console prompt.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="p">(</span><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0, [[0.0, 0.0], ...)&gt; self</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">=&gt;</span> <span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0, [[0.0, 0.0], [480.0, 320.0]]), child of UIView(#c876920)</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>And then, to see what objects are on the playing field, use
-<code>self.subviews</code> to show the subviews array of the current object.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="p">(</span><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0, [[0.0, 0.0], ...)&gt; self.subviews</span>
-</span><span class='line'><span class="o">=&gt;</span> <span class="o">[</span><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d82430, [[357.0, 175.0], [50.0, 50.0]]), child of</span>
-</span><span class='line'><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0), PaddleView(#9d82580, [[410.0, 190.0], [20.0, 100.0]]),</span>
-</span><span class='line'><span class="n">child</span> <span class="n">of</span> <span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0), PaddleView(#9d82970, [[10.0, 190.0], [20.0,</span>
-</span><span class='line'><span class="mi">100</span><span class="o">.</span><span class="mi">0</span><span class="o">]]</span><span class="p">),</span> <span class="n">child</span> <span class="n">of</span> <span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0), ScoreLabel(#9d82a80, [[110.0, 9.0],</span>
-</span><span class='line'><span class="o">[</span><span class="mi">20</span><span class="o">.</span><span class="mi">0</span><span class="p">,</span> <span class="mi">42</span><span class="o">.</span><span class="mi">0</span><span class="o">]]</span><span class="p">,</span> <span class="ss">text</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">),</span> <span class="n">child</span> <span class="n">of</span> <span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0),</span>
-</span><span class='line'><span class="no">ScoreLabel</span><span class="p">(</span><span class="c1">#9d83c90, [[350.0, 9.0], [20.0, 42.0]], text: &quot;0&quot;), child of</span>
-</span><span class='line'><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0)]</span>
-</span><span class='line'><span class="p">(</span><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0, [[0.0, 0.0], ...)&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>This blob of text is difficult for the human brain to parse. Now, let&rsquo;s try it with the <code>awesome_print_motion</code> gem.</p>
-
-<!--more-->
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="p">(</span><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0, [[0.0, 0.0], ...)&gt; ap(self.subviews)</span>
-</span><span class='line'><span class="o">[</span>
-</span><span class='line'>    <span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="no">UIView</span><span class="p">(</span><span class="c1">#9d82430, [[308.0, 118.0], [50.0, 50.0]]), child of UIView(#9d820c0),</span>
-</span><span class='line'>    <span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="no">PaddleView</span><span class="p">(</span><span class="c1">#9d82580, [[410.0, 190.0], [20.0, 100.0]]), child of UIView(#9d820c0),</span>
-</span><span class='line'>    <span class="o">[</span><span class="mi">2</span><span class="o">]</span> <span class="no">PaddleView</span><span class="p">(</span><span class="c1">#9d82970, [[10.0, 190.0], [20.0, 100.0]]), child of UIView(#9d820c0),</span>
-</span><span class='line'>    <span class="o">[</span><span class="mi">3</span><span class="o">]</span> <span class="no">ScoreLabel</span><span class="p">(</span><span class="c1">#9d82a80, [[110.0, 9.0], [39.0, 42.0]], text: &quot;61&quot;), child of UIView(#9d820c0),</span>
-</span><span class='line'>    <span class="o">[</span><span class="mi">4</span><span class="o">]</span> <span class="no">ScoreLabel</span><span class="p">(</span><span class="c1">#9d83c90, [[350.0, 9.0], [20.0, 42.0]], text: &quot;0&quot;), child of UIView(#9d820c0)</span>
-</span><span class='line'><span class="o">]</span>
-</span><span class='line'><span class="o">=&gt;</span> <span class="kp">nil</span>
-</span><span class='line'><span class="p">(</span><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0, [[0.0, 0.0], ...)&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Much easier to read. The structure of the <code>subviews</code> array is clear. Each element of the array has an easy-to-read index. Debugging time is reduced.</p>
-
-<h3>How to Install awesome_print_motion</h3>
-
-<p>RubyMotion uses bundler. So we start by refering to <code>awesome_print_motion</code> in our gemfile.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">gem</span> <span class="s1">&#39;awesome_print_motion&#39;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>In the app&rsquo;s <code>Rakefile</code>, there are two possible ways to proceed. The preferred way is to use the following lines to tell the app to require every gem mentioned in Bundler&rsquo;s Gemfile:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">begin</span>
-</span><span class='line'>  <span class="nb">require</span> <span class="s1">&#39;bundler&#39;</span>
-</span><span class='line'>  <span class="no">Bundler</span><span class="o">.</span><span class="n">require</span>
-</span><span class='line'><span class="k">rescue</span> <span class="no">LoadError</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The older way is to manually add a <code>require</code> statement to the Rakefile.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">require</span> <span class="s1">&#39;ap&#39;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Personally, I prefer the newer way because it automatically
-requires all of the gems mentioned in the <code>Gemfile</code>. The odds of a
-typo-induced error are reduced.</p>
-
-<h3>How to Use awesome_print_motion</h3>
-
-<p>To use the new gem, start the app and explore away. Any time you want to
-run output through the <code>awesome_print_motion</code> gem, send the code as a
-parameter to the <code>ap</code> method like so&hellip;</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&gt;</span> <span class="n">ap</span><span class="p">(</span><span class="nb">self</span><span class="o">.</span><span class="n">subviews</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>&hellip; and the output will be easier to read.</p>
-
-<h3>Acknowledgements</h3>
-
-<p>Thank you <a href="http://www.dvorkin.net/">Michael Dvorkin</a> for adding RubyMotion support to your <a href="http://rubygems.org/gems/awesome_print">awesome_print</a> gem.</p>
 ]]></content>
   </entry>
   
