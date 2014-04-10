@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-04-05T15:27:48-05:00</updated>
+  <updated>2014-04-10T16:07:19-04:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -14,9 +14,77 @@
 
   
   <entry>
+    <title type="html"><![CDATA[When in Doubt, Rake Clean]]></title>
+    <link href="http://RayHightower.com/blog/2014/04/10/when-in-doubt-rake-clean/"/>
+    <updated>2014-04-10T15:53:00-04:00</updated>
+    <id>http://RayHightower.com/blog/2014/04/10/when-in-doubt-rake-clean</id>
+    <content type="html"><![CDATA[<p>Earlier today, I upgraded from RubyMotion <code>v 2.24</code> to <code>v2.26</code>. Immediately after the upgrade, I attempted to run a RubyMotion app that I’m working on. The result?</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rake
+</span><span class='line'>
+</span><span class='line'>     Build ./build/iPhoneSimulator-7.1-Development
+</span><span class='line'>   Compile ./app/app_delegate.rb
+</span><span class='line'>   Compile ./app/views/score_label.rb
+</span><span class='line'>   Compile ./app/views/paddle_view.rb
+</span><span class='line'>      Link ./build/iPhoneSimulator-7.1-Development/pong-rm4.app/pong-rm4
+</span><span class='line'>Undefined symbols <span class="k">for </span>architecture i386:
+</span><span class='line'>
+</span><span class='line'>...
+</span><span class='line'>
+</span><span class='line'>clang: error: linker <span class="nb">command </span>failed with <span class="nb">exit </span>code 1 <span class="o">(</span>use -v to see invocation<span class="o">)</span>
+</span><span class='line'>rake aborted!
+</span><span class='line'>
+</span><span class='line'><span class="err">$</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>What happened? It just ran a few minutes ago, right before the upgrade! Was RubyMotion broken? Was it time to reach out to the Twitterverse or Stack Overflow for assistance?</p>
+
+<p>Not yet.</p>
+
+<!--more-->
+
+
+<h3>Cooler Heads</h3>
+
+<p>Every time RubyMotion build an app, it stores the results in the <code>./build</code> directory. Since I had just done an upgrade, it was possible that remnants from a <code>v 2.24</code> build were interfering with my new <code>v 2.26</code> build. The solution?</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rake clean
+</span><span class='line'>
+</span><span class='line'>    Delete ./build
+</span><span class='line'>
+</span><span class='line'><span class="err">$</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And now the app runs fine. Crisis averted. Back to work!</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Why Open Source?]]></title>
     <link href="http://RayHightower.com/blog/2014/04/05/why-open-source/"/>
-    <updated>2014-04-05T00:40:00-05:00</updated>
+    <updated>2014-04-05T00:40:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/04/05/why-open-source</id>
     <content type="html"><![CDATA[<p>As members of the open source community, we have internalized the benefits of open source. Sometimes, knowing a topic so well can hinder us from explaining it to people who need to understand our work: Clients, customers, and employers. They need to understand us because they pay us. Understanding helps to build trust.</p>
 
@@ -35,7 +103,7 @@
   <entry>
     <title type="html"><![CDATA[Flourish Open Source Conference at UIC]]></title>
     <link href="http://RayHightower.com/blog/2014/03/31/flourish-open-source-conference-at-uic/"/>
-    <updated>2014-03-31T23:42:00-05:00</updated>
+    <updated>2014-03-31T23:42:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/03/31/flourish-open-source-conference-at-uic</id>
     <content type="html"><![CDATA[<p><a href="http://flourishconf.com">Flourish</a> is an open source conference to be held at the University of Illinois at Chicago on Saturday, April 5, 2014. The conference is run by university students and tickets are free.</p>
 
@@ -69,7 +137,7 @@
   <entry>
     <title type="html"><![CDATA[How .gitignore Works]]></title>
     <link href="http://RayHightower.com/blog/2014/03/25/how-gitignore-works/"/>
-    <updated>2014-03-25T18:20:00-05:00</updated>
+    <updated>2014-03-25T18:20:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/03/25/how-gitignore-works</id>
     <content type="html"><![CDATA[<p>Earlier today I ran into a Git issue within a RubyMotion project. I added a directory to the project&rsquo;s <code>.gitignore</code> file, but Git seemed to ignore my ignore. Expressed more clearly, Git continued to track a directory that I explicitly told it to ignore.</p>
 
@@ -117,7 +185,7 @@
   <entry>
     <title type="html"><![CDATA[CocoaConf Chicago Recap]]></title>
     <link href="http://RayHightower.com/blog/2014/03/10/cocoaconf-chicago-recap/"/>
-    <updated>2014-03-10T11:46:00-05:00</updated>
+    <updated>2014-03-10T11:46:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/03/10/cocoaconf-chicago-recap</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/cocoaconf-2014.jpg' width='' height='' alt='Cool stuff from CocoaConf.' title='Cool stuff from CocoaConf.'><span class='caption-text'>Cool stuff from CocoaConf.</span></span></p>
 
@@ -191,7 +259,7 @@ Most of my iOS time is spent with <a href="http://RayHightower.com/blog/2013/01/
   <entry>
     <title type="html"><![CDATA[Fixing MacVim on OS X Mavericks]]></title>
     <link href="http://RayHightower.com/blog/2014/03/04/fixing-macvim-on-osx-mavericks/"/>
-    <updated>2014-03-04T14:48:00-06:00</updated>
+    <updated>2014-03-04T14:48:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/03/04/fixing-macvim-on-osx-mavericks</id>
     <content type="html"><![CDATA[<p>Experience told me to delay upgrading to OS X Mavericks for as long as possible because the upgrade would likely break my dev environment. Sure enough, the upgrade broke <a href="http://RayHightower.com/blog/2013/01/12/why-i-use-vim/">MacVim</a>.</p>
 
@@ -271,7 +339,7 @@ Most of my iOS time is spent with <a href="http://RayHightower.com/blog/2013/01/
   <entry>
     <title type="html"><![CDATA[What Is Open Source?]]></title>
     <link href="http://RayHightower.com/blog/2014/02/22/what-is-open-source/"/>
-    <updated>2014-02-22T16:41:00-06:00</updated>
+    <updated>2014-02-22T16:41:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/02/22/what-is-open-source</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/linux-penguin.png' width='' height='' alt='The Linux penguin.' title='The Linux penguin.'><span class='caption-text'>The Linux penguin.</span></span>
 Entrepreneurs, especially those outside of software development, may find this article useful.</p>
@@ -371,7 +439,7 @@ Entrepreneurs, especially those outside of software development, may find this a
   <entry>
     <title type="html"><![CDATA[SGI & Big Data]]></title>
     <link href="http://RayHightower.com/blog/2014/02/17/sgi-and-big-data/"/>
-    <updated>2014-02-17T14:46:00-06:00</updated>
+    <updated>2014-02-17T14:46:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/02/17/sgi-and-big-data</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/sgi-logo-1990s.png' width='' height='' alt='SGI's logo from the 1990s.' title='SGI's logo from the 1990s.'><span class='caption-text'>SGI&rsquo;s logo from the 1990s.</span></span>
 <a href="http://sgi.com">Silicon Graphics International Corporation (SGI)</a> computers rendered the special effects for the original <a href="http://en.wikipedia.org/wiki/Jurassic_Park">Jurassic Park</a> movie. Computer enthusiasts coveted SGI machines throughout the 1990s.</p>
@@ -432,7 +500,7 @@ Entrepreneurs, especially those outside of software development, may find this a
   <entry>
     <title type="html"><![CDATA[Homebrew Fundamentals]]></title>
     <link href="http://RayHightower.com/blog/2014/02/12/homebrew-fundamentals/"/>
-    <updated>2014-02-12T14:20:00-06:00</updated>
+    <updated>2014-02-12T14:20:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/02/12/homebrew-fundamentals</id>
     <content type="html"><![CDATA[<p>Spend enough time developing software on Mac OS X, and you will eventually need to install libraries that were written for Unix, but not specifically for OS X. Fortunately we have <a href="http://brew.sh/">Homebrew</a>, which makes it easier to install Unix libraries on the Mac.</p>
 
@@ -568,7 +636,7 @@ command into a terminal window.</p>
   <entry>
     <title type="html"><![CDATA[Installing Rubinius Using RVM]]></title>
     <link href="http://RayHightower.com/blog/2014/02/06/installing-rubinius-using-rvm/"/>
-    <updated>2014-02-06T18:17:00-06:00</updated>
+    <updated>2014-02-06T18:17:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/02/06/installing-rubinius-using-rvm</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://RayHightower.com/images/rubinius.png">
 <a href="http://rubini.us/">Rubinius</a> is an implementation of the Ruby language designed for concurrency. The lead developer of Rubinius, <a href="http://twitter.com/brixen">Brian Shirai</a>, will present Rubinius at ChicagoRuby on March 4, 2014. ChicagoRuby will follow-up with a Rubinius-themed hack night on March 12th. <a href="http://www.meetup.com/ChicagoRuby/events/114749352/">Details</a>.</p>
@@ -736,7 +804,7 @@ version of <code>irb</code>.</p>
   <entry>
     <title type="html"><![CDATA[Exploring Controversial Coding Topics at 8th Light]]></title>
     <link href="http://RayHightower.com/blog/2014/02/03/exploring-controversial-coding-topics-at-8th-light/"/>
-    <updated>2014-02-03T12:11:00-06:00</updated>
+    <updated>2014-02-03T12:11:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/02/03/exploring-controversial-coding-topics-at-8th-light</id>
     <content type="html"><![CDATA[<p><a href="http://8thlight.com">8th Light</a> recently hosted a panel discussion on Controversial Coding Topics. I was honored to share the panel with two technology leaders whom I admire: <a href="http://twitter.com/markrickmeier">Mark Rickmeier</a> of <a href="http://tablexi.com">Table XI</a> and <a href="http://twitter.com/coreyhaines">Corey Haines</a> of <a href="http://wavetable.com">Wavetable</a>. <a href="http://twitter.com/little_fig">Rachel Feigenbaum</a> of 8th Light organized the event.</p>
 
@@ -767,7 +835,7 @@ days!</li>
   <entry>
     <title type="html"><![CDATA[An Environment of Respect, 2nd Iteration]]></title>
     <link href="http://RayHightower.com/blog/2014/01/28/an-environment-of-respect-2nd-iteration/"/>
-    <updated>2014-01-28T07:08:00-06:00</updated>
+    <updated>2014-01-28T07:08:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/01/28/an-environment-of-respect-2nd-iteration</id>
     <content type="html"><![CDATA[<p>Thank you to everyone who offered feedback on <a href="http://RayHightower.com/blog/2014/01/21/an-environment-of-respect/">An Environment of Respect</a>, which included an early draft of the WindyCityRails Code of Conduct.</p>
 
@@ -851,7 +919,7 @@ days!</li>
   <entry>
     <title type="html"><![CDATA[An Environment of Respect]]></title>
     <link href="http://RayHightower.com/blog/2014/01/21/an-environment-of-respect/"/>
-    <updated>2014-01-21T13:16:00-06:00</updated>
+    <updated>2014-01-21T13:16:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/01/21/an-environment-of-respect</id>
     <content type="html"><![CDATA[<p>Here is an early draft of the <a href="http://windycityrails.org">WindyCityRails</a> Code of Conduct:</p>
 
@@ -954,7 +1022,7 @@ days!</li>
   <entry>
     <title type="html"><![CDATA[Henry Ford's Faster Horse]]></title>
     <link href="http://RayHightower.com/blog/2014/01/15/henry-ford-faster-horse/"/>
-    <updated>2014-01-15T13:49:00-06:00</updated>
+    <updated>2014-01-15T13:49:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/01/15/henry-ford-faster-horse</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/ford-model-t-1910.jpg' width='' height='' alt='1910 Ford Model T' title='1910 Ford Model T'><span class='caption-text'>1910 Ford Model T</span></span></p>
 
@@ -986,7 +1054,7 @@ days!</li>
   <entry>
     <title type="html"><![CDATA[BeagleBone Black Running Ubuntu: Part2 (Plus Ruby on Rails)]]></title>
     <link href="http://RayHightower.com/blog/2014/01/06/beaglebone-black-ubuntu-ruby-rails-part-2/"/>
-    <updated>2014-01-06T02:31:00-06:00</updated>
+    <updated>2014-01-06T02:31:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/01/06/beaglebone-black-ubuntu-ruby-rails-part-2</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/ruby-rails-ubuntu-beaglebone-black.png' width='' height='' alt='Ruby. Rails. Ubuntu. BeagleBone Black.' title='Ruby. Rails. Ubuntu. BeagleBone Black.'><span class='caption-text'>Ruby. Rails. Ubuntu. BeagleBone Black.</span></span></p>
 
@@ -1342,7 +1410,7 @@ out <a href="http://openrov.com">OpenROV</a>.</p>
   <entry>
     <title type="html"><![CDATA[BeagleBone Black Running Ubuntu: Part1]]></title>
     <link href="http://RayHightower.com/blog/2014/01/02/beaglebone-black-ubuntu-part-1/"/>
-    <updated>2014-01-02T15:59:00-06:00</updated>
+    <updated>2014-01-02T15:59:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/01/02/beaglebone-black-ubuntu-part-1</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper center'><img class='caption' src='http://RayHightower.com/images/beaglebone-black-ubuntu-ruby-rails.jpg' width='' height='' alt='BeagleBone Black running Ubuntu, Ruby, & Rails.' title='BeagleBone Black running Ubuntu, Ruby, & Rails.'><span class='caption-text'>BeagleBone Black running Ubuntu, Ruby, &amp; Rails.</span></span></p>
 
@@ -1581,7 +1649,7 @@ card.</p>
   <entry>
     <title type="html"><![CDATA[Disposable Electronics in Wired Magazine]]></title>
     <link href="http://RayHightower.com/blog/2013/12/28/disposable-electronics-in-wired-magazine/"/>
-    <updated>2013-12-28T14:30:00-06:00</updated>
+    <updated>2013-12-28T14:30:00-04:00</updated>
     <id>http://RayHightower.com/blog/2013/12/28/disposable-electronics-in-wired-magazine</id>
     <content type="html"><![CDATA[<p>What can we build with disposable electronics? An ad in the January 2014 issue of <a href="http://wired.com">Wired Magazine</a> lets the reader change the color of a Moto X smartphone by pressing a colored circle on the page. This 20-second video shows the ad in operation followed by a glimpse of the inner workings.</p>
 
@@ -1622,7 +1690,7 @@ card.</p>
   <entry>
     <title type="html"><![CDATA[High Performance Computing at ACM]]></title>
     <link href="http://RayHightower.com/blog/2013/12/12/high-performance-computing-at-acm/"/>
-    <updated>2013-12-12T22:22:00-06:00</updated>
+    <updated>2013-12-12T22:22:00-04:00</updated>
     <id>http://RayHightower.com/blog/2013/12/12/high-performance-computing-at-acm</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/cray-1.jpg' width='' height='' alt='Cray-1 at the Swiss Federal Institute of Technology.' title='Cray-1 at the Swiss Federal Institute of Technology.'><span class='caption-text'>Cray-1 at the Swiss Federal Institute of Technology.</span></span></p>
 
@@ -1730,7 +1798,7 @@ card.</p>
   <entry>
     <title type="html"><![CDATA[Homebrew, Ruby, and Git]]></title>
     <link href="http://RayHightower.com/blog/2013/12/06/homebrew-ruby-and-git/"/>
-    <updated>2013-12-06T17:30:00-06:00</updated>
+    <updated>2013-12-06T17:30:00-04:00</updated>
     <id>http://RayHightower.com/blog/2013/12/06/homebrew-ruby-and-git</id>
     <content type="html"><![CDATA[<p>I encountered some interesting behavior between <a href="http://brew.sh/">Homebrew</a> and Ruby this afternoon. I can describe what happened, but I don&rsquo;t yet understand why. Perhaps another member of the dev community can shed some light.</p>
 
@@ -1905,7 +1973,7 @@ confirmed it.</p>
   <entry>
     <title type="html"><![CDATA[Amazon's Guerrilla Marketing]]></title>
     <link href="http://RayHightower.com/blog/2013/12/02/amazon-guerrilla-marketing/"/>
-    <updated>2013-12-02T20:03:00-06:00</updated>
+    <updated>2013-12-02T20:03:00-04:00</updated>
     <id>http://RayHightower.com/blog/2013/12/02/amazon-guerrilla-marketing</id>
     <content type="html"><![CDATA[<p>Last night&rsquo;s episode of 60 Minutes featured an interview with Jeff Bezos, CEO of Amazon. The timing was perfect for Amazon. Black Friday was a few days ago. Cyber Monday is today. Online retailers want to be top-of-mind when people are inclined to spend money.</p>
 
@@ -1930,35 +1998,6 @@ confirmed it.</p>
 
 
 <p>Congrats to the Amazon team for a well-executed Guerrilla Marketing move.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Specialized Knowledge and the Courage to Execute]]></title>
-    <link href="http://RayHightower.com/blog/2013/11/30/specialized-knowledge-and-the-courage-to-execute/"/>
-    <updated>2013-11-30T10:35:00-06:00</updated>
-    <id>http://RayHightower.com/blog/2013/11/30/specialized-knowledge-and-the-courage-to-execute</id>
-    <content type="html"><![CDATA[<p>Teenagers are a tough audience. If you have ever spoken to a youth group, you know the challenge: Speak about something important without putting the youth to sleep. Tall order.</p>
-
-<h3>Three Stories</h3>
-
-<p>Boy Scout <a href="http://troop534.org">Troop 534 &ldquo;Hey!&rdquo;</a> asked me to speak at the Troop’s annual reunion breakfast this year.  I approached them with three stories centered around the theme of <em>Specialized Knowledge and the Courage to Execute</em>. What a boring title! But the three stories appealed to the group. Here’s a summary of the first story:</p>
-
-<blockquote><p>A tractor maker takes drastic action when when Enzo Ferrari (creator of the Ferrari sports car) pisses him off.</p></blockquote>
-
-<!--more-->
-
-
-<p>Here&rsquo;s the 11-minute video:</p>
-
-<center><iframe width="560" height="315" src="http://RayHightower.com//www.youtube.com/embed/tWdFhEI6JiM?rel=0" frameborder="0" allowfullscreen></iframe></center>
-
-
-<h3>Gratitude</h3>
-
-<p>This event was a big deal for me because I grew up in Troop 534 &ldquo;Hey!&rdquo;, I currently serve as one of the adult leaders, and the breakfast organizers normally invite an outsider to speak. Why listen to a speaker who you see all the time?</p>
-
-<p>I took the speaking invitation as an opportunity to assemble some new material. Thank you scouts, parents, and leaders for having me.</p>
 ]]></content>
   </entry>
   

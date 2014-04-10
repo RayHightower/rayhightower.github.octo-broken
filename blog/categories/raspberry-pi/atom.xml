@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Raspberry Pi | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/raspberry-pi/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-04-05T15:27:48-05:00</updated>
+  <updated>2014-04-10T16:07:19-04:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[A Portable Hack for Parallella]]></title>
     <link href="http://RayHightower.com/blog/2013/11/10/a-portable-hack-for-parallella/"/>
-    <updated>2013-11-10T23:05:00-06:00</updated>
+    <updated>2013-11-10T23:05:00-04:00</updated>
     <id>http://RayHightower.com/blog/2013/11/10/a-portable-hack-for-parallella</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper left'><img class='caption' src='/images/parallella-portable.png' width='' height='' alt='Portability for Parallella-sized devices.' title='Portability for Parallella-sized devices.'><span class='caption-text'>Portability for Parallella-sized devices.</span></span>
 <a href="/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/">Beaglebone Black</a>, <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a>, and <a href="/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/">Parallella</a> are three small, powerful Linux-based computers. But in order to make these devices truly portable, we need a way to carry a monitor and keyboard along. This article describes one hack that works.</p>
@@ -71,7 +71,7 @@ hexidecimal operation code.</li>
   <entry>
     <title type="html"><![CDATA[PechaKucha: Developer Education at TableXI]]></title>
     <link href="http://RayHightower.com/blog/2013/06/27/pechakucha-developer-education-at-tablexi/"/>
-    <updated>2013-06-27T15:13:00-05:00</updated>
+    <updated>2013-06-27T15:13:00-04:00</updated>
     <id>http://RayHightower.com/blog/2013/06/27/pechakucha-developer-education-at-tablexi</id>
     <content type="html"><![CDATA[<p><a href="http://pechakucha.org">PechaKucha</a> is a concise presentation style developed in Japan. The PechaKucha format is 20x20: The presenter must share an idea in twenty slides, each displayed for exactly twenty seconds, advancing automatically. Total presentation time = six minutues, forty seconds.</p>
 
@@ -92,7 +92,7 @@ hexidecimal operation code.</li>
   <entry>
     <title type="html"><![CDATA[How to Take a Raspberry Pi Screenshot]]></title>
     <link href="http://RayHightower.com/blog/2013/03/19/how-to-take-a-raspberry-pi-screenshot/"/>
-    <updated>2013-03-19T20:43:00-05:00</updated>
+    <updated>2013-03-19T20:43:00-04:00</updated>
     <id>http://RayHightower.com/blog/2013/03/19/how-to-take-a-raspberry-pi-screenshot</id>
     <content type="html"><![CDATA[<p>After you get a <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a> up and running, you may want to take a few screenshots so you can share the experience with others. Here&rsquo;s how.</p>
 
@@ -134,7 +134,7 @@ That&rsquo;s it!</p>
   <entry>
     <title type="html"><![CDATA[Ruby on Raspberry Pi]]></title>
     <link href="http://RayHightower.com/blog/2012/12/03/ruby-on-raspberry-pi/"/>
-    <updated>2012-12-03T06:38:00-06:00</updated>
+    <updated>2012-12-03T06:38:00-04:00</updated>
     <id>http://RayHightower.com/blog/2012/12/03/ruby-on-raspberry-pi</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/assets/raspberry_pi_iphone.jpg" width="400" align="right" title="Raspberry Pi Circuit Board" alt="Raspberry Pi Circuit Board">
 Raspberry Pi is a single-board computer roughly the size of a deck of cards. It&rsquo;s equipped with an ARM processor that runs Linux. USB ports let you attach a keyboard and mouse. Video is supported via HDMI and RCA. Storage is handled by SD cards. There&rsquo;s an Ethernet port.</p>
