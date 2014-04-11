@@ -5,7 +5,7 @@ date: 2014-04-10 15:53
 comments: true
 categories: [ RubyMotion ]
 ---
-Earlier today, I upgraded from RubyMotion `v 2.24` to `v2.26`. Immediately after the upgrade, I attempted to run a RubyMotion app that I’m working on. The result?
+Earlier today, I upgraded from RubyMotion `v 2.24` to `v 2.26`. Immediately after the upgrade, I attempted to run a RubyMotion app that I’m working on. The result?
 
 ```bash
 $ rake
@@ -22,7 +22,7 @@ Undefined symbols for architecture i386:
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 rake aborted!
 
-$
+$  
 
 ```
 
@@ -39,7 +39,7 @@ $ rake clean
 
     Delete ./build
 
-$
+$  
 ```
 
 And now the app runs fine. Crisis averted. Back to work!
