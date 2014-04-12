@@ -9,9 +9,9 @@ categories: [ Education, Ruby ]
 >&nbsp;<br/>
 >~ L. Peter Deutsch
 
-Recursion is available in many high-level languages, including Ruby. Recursive solutions can be wonderful in their elegance. At the same time, recursion can lead to performance pitfalls.
+Recursion is available in many high-level languages, including Ruby. Such solutions can be joyfully elegant. At the same time, the pursuit of elegance can lead to performance pitfalls if we don't think things through.
 
-Fortunately, we can use an optimization technique to fix the performance problem before it occurs.
+Fortunately, we can use optimization techniques to address performance problems before they occur. Memoization is one technique in our arsenal.
 <!--more-->
 ###Before Memoization
 Consider a method called `fibo(n)` that calculates the _nth_ number of the [Fibonacci](http://en.wikipedia.org/wiki/Fibonacci_number) sequence.
