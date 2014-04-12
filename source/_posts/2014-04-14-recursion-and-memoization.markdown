@@ -11,6 +11,9 @@ categories: [ Education, Ruby ]
 
 Recursion is available in many high-level languages, including Ruby. Recursive solutions can be wonderful in their elegance. At the same time, recursion can lead to performance pitfalls.
 
+Fortunately, we can use a performance optimization technique to fix the problem before it occurs.
+<!--more-->
+###Before Memoization
 Consider a method called `fibo(n)` that calculates the _nth_ number of the [Fibonacci](http://en.wikipedia.org/wiki/Fibonacci_number) sequence.
 
 ```ruby
@@ -30,7 +33,7 @@ end
 end
 ```
 
-The example runs, but performance slows down as _n_ gets larger. Why? Because this method re-calculates all preceeding Fibonacci numbers every time it calculates `fibo(n)`. When we calculate Fibonacci numbers manually, we know better. But this method, as defined above, only does what we tell it to do.
+The example runs, but performance slows down as _n_ gets larger. Why? Because this method re-calculates all preceeding Fibonacci numbers every time it calculates a new `fibo(n)`. When we calculate Fibonacci numbers manually, we know better; we refer to our earlier work. But this method, does not manage time very well.
 
 Is it possible for the `fibo(n)` method to remember the results of earlier calculations so that it can avoid repeated work? Yes, through [memoization](http://en.wikipedia.org/wiki/Memoization).
 
