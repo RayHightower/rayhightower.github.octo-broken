@@ -30,14 +30,14 @@ end
 end
 ```
 
-The example runs, but performance gets slow after `fibo(20)`.
+The example runs, but performance slows down as _n_ gets larger. Why? Because this method re-calculates all preceeding Fibonacci numbers every time it calculates `fibo(n)`. When we calculate Fibonacci numbers manually, we know better. But this method, as defined above, only does what we tell it to do.
 
-
+Is it possible for the `fibo(n)` method to remember the results of earlier calculations so that it can avoid repeated work? Yes, through [memoization](http://en.wikipedia.org/wiki/Memoization).
 
 ###Memoization
 
 
 
 ###Sample Code
-Sample code related to this article can be found at [https://github.com/RayHightower/fibonacci](https://github.com/RayHightower/fibonacci).
+Sample code related to this article can be found on [GitHub](https://github.com/RayHightower/fibonacci).
 
