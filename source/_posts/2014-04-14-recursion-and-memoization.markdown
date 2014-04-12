@@ -35,7 +35,39 @@ The example runs, but performance slows down as _n_ gets larger. Why? Because th
 Is it possible for the `fibo(n)` method to remember the results of earlier calculations so that it can avoid repeated work? Yes, through [memoization](http://en.wikipedia.org/wiki/Memoization).
 
 ###Memoization
+Memoization is a performance optimization technique. If our code depends on the results of earlier calculations, and if the same calculations are performed over-and-over again, then it makes sense to store interim results (jot results down on a 'memo') so that we can avoid repeated steps. 
 
+The Fibonacci example can be improved through memoization as follows.
+
+```ruby
+# Fibonacci numbers WITH memoization.
+
+# Initialize the memoization array.
+@scratchpad = []
+@max_fibo_size = 40
+(1..@max_fibo_size).each do |i|
+  @scratchpad[i] = :notcalculated
+end
+
+# Calculate the nth Fibonacci number, f(n).
+def fibo (n)
+  if n > @max_fibo_size
+    return "n must be #{@max_fibo_size} or less."
+  elsif n <= 1
+    return n
+  elsif @scratchpad[n] != :notcalculated
+    return @scratchpad[n]
+  else
+    @scratchpad[n] = fibo(n-1) + fibo(n-2)
+    return @scratchpad[n]
+  end
+end
+
+# Display the Fibonacci sequence.
+(1..50).each do |number|
+  puts "fibo(#{number}) = #{fibo(number)}"
+end
+```
 
 
 ###Sample Code
