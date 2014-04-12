@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Recursion and Memoization"
-date: 2014-04-14 10:48
+date: 2014-04-12 10:48
 comments: true
 categories: [ Education, Ruby ]
 ---
