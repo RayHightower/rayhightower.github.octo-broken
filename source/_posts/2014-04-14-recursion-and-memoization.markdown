@@ -44,7 +44,7 @@ The Fibonacci example can be improved through memoization as follows.
 
 # Initialize the memoization array.
 @scratchpad = []
-@max_fibo_size = 40
+@max_fibo_size = 50
 (1..@max_fibo_size).each do |i|
   @scratchpad[i] = :notcalculated
 end
@@ -69,6 +69,11 @@ end
 end
 ```
 
+Walking through the code... First we create a memoization array, a place to store the pre-calculated values. In this example, `@scratchpad[]` serves as our memoization array.
+
+The `fibo(n)` method is similar to the one in the earlier example, with a few subtle differences. First, we need to determine whether we've already calculated a particular value. Since we initialized all elements of the `@scratchpad` array with the `:notcalculated` symbol, it's easy to figure out where work needs to be done. If a particular Fibonacci number has already been calculated, we return the value stored in the `@scratchpad[]` array. Otherwise, we calculate the new Fibonacci number and store that value in `@scratchpad[]` for later use.
+
+Run the two examples on your machine, and you'll see that the performance difference is huge!
 
 ###Sample Code
 Sample code related to this article can be found on [GitHub](https://github.com/RayHightower/fibonacci).
