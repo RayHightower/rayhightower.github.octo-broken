@@ -11,7 +11,7 @@ categories: [ Education, Ruby ]
 
 Recursion is available in many high-level languages, including Ruby. Recursive solutions can be wonderful in their elegance. At the same time, recursion can lead to performance pitfalls.
 
-Fortunately, we can use a performance optimization technique to fix the problem before it occurs.
+Fortunately, we can use an optimization technique to fix the performance problem before it occurs.
 <!--more-->
 ###Before Memoization
 Consider a method called `fibo(n)` that calculates the _nth_ number of the [Fibonacci](http://en.wikipedia.org/wiki/Fibonacci_number) sequence.
