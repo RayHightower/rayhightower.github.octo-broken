@@ -33,12 +33,12 @@ end
 end
 ```
 
-The example runs, but performance slows down as _n_ gets larger. Why? Because this method re-calculates all preceeding Fibonacci numbers every time it calculates a new `fibo(n)`. When we calculate Fibonacci numbers manually, we know better; we refer to our earlier work. But this method does not manage time very well.
+The example runs, but performance slows down as _n_ gets larger. Why? Because this method re-calculates all preceeding Fibonacci numbers every time it calculates a new `fibo(n)`. When we calculate Fibonacci numbers manually, we know better. Humans are smart enough to refer to earlier work. But the `fibo(n)` does not manage time very well.
 
-Is it possible for the `fibo(n)` method to remember the results of earlier calculations so that it can avoid repeated work? Yes, through [memoization](http://en.wikipedia.org/wiki/Memoization).
+Is it possible for the `fibo(n)` method to remember the results of earlier calculations so that it can avoid doing work that is already done? Yes, through [memoization](http://en.wikipedia.org/wiki/Memoization).
 
 ###Memoization
-Memoization means recording the results of earlier calculations so that we don't have to repeat the calculations later. If our code depends on the results of earlier calculations, and if the same calculations are performed over-and-over again, then it makes sense to store interim results (jot results down on a 'memo') so that we can avoid repeating the math. 
+Memoization means recording the results of earlier calculations so that we don't have to repeat the calculations later. If our code depends on the results of earlier calculations, and if the same calculations are performed over-and-over again, then it makes sense to store interim results (jot results down on a 'memo' = memoization) so that we can avoid repeating the math. 
 
 The Fibonacci example can be improved through memoization as follows.
 
