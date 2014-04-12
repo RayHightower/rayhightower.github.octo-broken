@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>A Portable Hack for Parallella - RayHightower.com</title>
+  <title>RayHightower.com</title>
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="Portability for Parallella-sized devices.
-Beaglebone Black, Raspberry Pi, and Parallella are three small, powerful Linux-based computers. But in &hellip;">
+  <meta name="description" content="Blogger&rsquo;s Note from Feb2013: This article was originally posted on the WisdomGroup blog in Jan2007. In hindsight, my precicted timeline was too &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@ Beaglebone Black, Raspberry Pi, and Parallella are three small, powerful Linux-b
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://RayHightower.com/blog/2013/11/10/a-portable-hack-for-parallella">
+  <link rel="canonical" href="http://RayHightower.com/blog/page/9">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="RayHightower.com" type="application/atom+xml">
@@ -81,12 +80,15 @@ Beaglebone Black, Raspberry Pi, and Parallella are three small, powerful Linux-b
 </nav>
   <div id="main">
     <div id="content">
-      <div>
-<article class="hentry" role="article">
+      <div class="blog-index">
   
+  
+  
+    <article>
+      
   <header>
     
-      <h1 class="entry-title">A Portable Hack for Parallella</h1>
+      <h1 class="entry-title"><a href="/blog/2007/01/02/diamonds-for-ten-dollars-per-carat/">Diamonds for Ten Dollars Per Carat</a></h1>
     
     
       <p class="meta">
@@ -102,122 +104,39 @@ Beaglebone Black, Raspberry Pi, and Parallella are three small, powerful Linux-b
   
 
 
-<time datetime="2013-11-10T23:05:00-04:00" pubdate data-updated="true">Nov 10<span>th</span>, 2013</time>
+<time datetime="2007-01-02T00:55:00-04:00" pubdate data-updated="true">Jan 2<span>nd</span>, 2007</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p><span class='caption-wrapper left'><img class='caption' src='/images/parallella-portable.png' width='' height='' alt='Portability for Parallella-sized devices.' title='Portability for Parallella-sized devices.'><span class='caption-text'>Portability for Parallella-sized devices.</span></span>
-<a href="/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/">Beaglebone Black</a>, <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a>, and <a href="/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/">Parallella</a> are three small, powerful Linux-based computers. But in order to make these devices truly portable, we need a way to carry a monitor and keyboard along. This article describes one hack that works.</p>
+  <div class="entry-content"><p><em>Blogger&rsquo;s Note from Feb2013: This article was originally posted on the <a href="http://wisdomgroup.com">WisdomGroup</a> blog in Jan2007. In hindsight, my precicted timeline was too aggressive. However, the rest of the post remains sound.</em></p>
 
-<h3>Inspiration in a Suitcase</h3>
+<blockquote><p>If Woolworth&rsquo;s sold diamond rings, you&rsquo;d have a million of &lsquo;em baby!<br/> ~Fats Waller, Piano composer/performer, circa 1915</p></blockquote>
 
-<p>The HP 5036 Microprocessor Lab gave me my first exposure to assembler language. I was eighteen, working my first software internship, and loving every minute of it. When I devised ways to complete my <em>regular work</em> faster than management expected, I had some time on my hands. So I spent time learning assembler with the HP 5036.</p>
+<p><img src="/images/diamond.jpg" width="300" height="190" align="right" alt="Diamonds for Ten Dollars Per Carat" title="Diamonds for Ten Dollars Per Carat">
+Woolworth&rsquo;s and Fats Waller are long gone, but Waller&rsquo;s tounge-in-cheek prediction will come to pass in the next few years. Diamonds will sell for $10.00 per carat in the year 2015. Advances in the fabrication of synthetic/cultured diamonds will drive down the price and value of these &ldquo;precious&rdquo; gems. At the same time, the needs of computer manufacturers and huge economies of scale will make it worthwhile for diamond fabricators to roll out cheap diamonds by the pound.</p>
 
-<!--more-->
-
-
-<p><span class='caption-wrapper'><img class='caption' src='/images/hp-5036.png' width='' height='' alt='HP 5036 Microprocessor Lab' title='HP 5036 Microprocessor Lab'><span class='caption-text'>HP 5036 Microprocessor Lab</span></span></p>
-
-<p>The entire 5036 fits in a suitcase&hellip; how cool is that! Here&rsquo;s how the 5036 works:</p>
-
-<ol>
-<li>Start by writing assembler-level code by hand on paper.</li>
-<li>Grab the reference book for the microprocessor running on the
-board, Intel 8080.</li>
-<li>For each assembler-level command, find the corresponding 2-digit
-hexidecimal operation code.</li>
-<li>Key the op code into the 5036 by hand.</li>
-<li>Run the program.</li>
-</ol>
-
-
-<p>Working with the 5036 was addictive in a positive way. In a subsequent job, where I wrote assembler to drive hardware devices, I was ready.</p>
-
-<h3>Portability Needed</h3>
-
-<p>Fast forward a few decades. We now have the Raspberry Pi, BeagleBone Black, and Parallella. Wonderful devices with one flaw in common: No portability. That&rsquo;s when I had a flashback to my days with the 5036.</p>
-
-<p>I bought a $35 technician box from Home Depot and I ripped out the insides. Micro Center had 720p LCD monitors on sale for $90, so I bought one of those. I didn&rsquo;t want to spend the extra bucks for a 1080p LCD because you never know how something like this might work out! Finally, I topped everything off with a $25 keyboard/trackpad combo from Amazon.  The result appears in the photo at the top of this article. Special thanks to Ericka [last name unknown] from Home Depot who gave me tons of ideas on how to securely fasten the monitor to the case.</p>
-
-<h3>Why?</h3>
-
-<p>Why did I spend the time and money to assemble this kit? It&rsquo;s all about learning. Devs learn more when we interact with other devs &ndash; people who are learning some of the same things that we&rsquo;re wrestling with. And sometimes the things we need to learn are too new for books.</p>
-
-<p>By carrying my Raspberry Pi, BeagleBone Black, and Parallella with me in a portable unit, I can share my experiences with other devs and learn more in the process. Everybody wins when that happens.</p>
-
-<h3>Thanks SCNA!</h3>
-
-<p>The organizers of <a href="http://scna.softwarecraftsmanship.org/">Software Craftsmanship North America (SCNA)</a> gave me the opportunity to present this story as a lightning talk at the conference. Slides are here:</p>
-
-<center><script async class="speakerdeck-embed" data-id="b3558fd02cac0131cfc62a9baba32394" data-ratio="1.29456384323641" src="//speakerdeck.com/assets/embed.js"></script></center>
-
-
-<p>Thank you SCNA! As I shared with the other devs at SCNA, I will gladly post my mistakes and <em>gotchas</em> here for people who want to build a unit like this. Let&rsquo;s build!</p>
 </div>
-
-
-  <footer>
-    <p class="meta">
-      
   
-
-<span class="byline author vcard">Posted by <span class="fn">Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer</span></span>
-
-      
-
-
-
-
-
-
-
-
+  
+    <footer>
+      <a rel="full-article" href="/blog/2007/01/02/diamonds-for-ten-dollars-per-carat/">Continue reading &rarr;</a>
+    </footer>
   
 
 
-<time datetime="2013-11-10T23:05:00-04:00" pubdate data-updated="true">Nov 10<span>th</span>, 2013</time>
-      
-
-<span class="categories">
+    </article>
   
-    <a class='category' href='/blog/categories/beaglebone-black/'>BeagleBone Black</a>, <a class='category' href='/blog/categories/education/'>Education</a>, <a class='category' href='/blog/categories/parallella/'>Parallella</a>, <a class='category' href='/blog/categories/raspberry-pi/'>Raspberry Pi</a>
-  
-</span>
-
-
-    </p>
+  <div class="pagination">
     
-      <div class="sharing">
-  
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2013/11/10/a-portable-hack-for-parallella/" data-via="" data-counturl="http://RayHightower.com/blog/2013/11/10/a-portable-hack-for-parallella/" >Tweet</a>
-  
-  
-  
-</div>
-
+    <a href="/blog/archives">Blog Archives</a>
     
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/2013/11/01/building-an-os-x-app-with-rubymotion/" title="Previous Post: Building an OS X App With RubyMotion">&laquo; Building an OS X App With RubyMotion</a>
-      
-      
-        <a class="basic-alignment right" href="/blog/2013/11/11/os-x-and-rubymotion-finishing-up/" title="Next Post: OS X and RubyMotion, Finishing Up">OS X and RubyMotion, Finishing Up &raquo;</a>
-      
-    </p>
-  </footer>
-</article>
-
-  <section>
-    <h1>Comments</h1>
-    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a class="next" href="/blog/page/8/">Newer &rarr;</a>
+    
+  </div>
 </div>
-  </section>
-
-</div>
-
 <aside class="sidebar">
   
     <section>
@@ -240,10 +159,10 @@ hexidecimal operation code.</li>
     nos into yeses and the disadvantages into advantages.<br/>~John H.
     Johnson</li>
     <li>I would have been fired a hundred times at a company run by
-    MBAs. But I never went into business to make money. I went... so
-    that I could do interesting things that hadn't been done
+    MBAs. But I never went into business to make money. I went&#8230; so
+    that I could do interesting things that hadn&#8217;t been done
     before.<br/>~Amar Bose</li>
-    <li>It's kind of fun to do the impossible.<br/>~Walt Disney</li>
+    <li>It&#8217;s kind of fun to do the impossible.<br/>~Walt Disney</li>
   </ul>
 </section>
 <section>
@@ -309,14 +228,14 @@ hexidecimal operation code.</li>
     <li><a href="/blog/2014/01/02/beaglebone-black-ubuntu-part-1/">Ruby on BeagleBone Black</a></li>
     <li><a href="/blog/2013/07/29/why-we-need-stem/">Why We Need STEM</a></li>
     <li><a href="/blog/2013/05/31/kali-linux-pentesting/">Kali Linux Pentesting</a></li>
-    <li><a href="/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/">Preparing for Parallella's 64 Cores</a></li>
-    <li><a href="/blog/2013/02/26/atari-pong-rubymotion-objective-c/">Atari's Pong with RubyMotion</a></li>
+    <li><a href="/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/">Preparing for Parallella&#8217;s 64 Cores</a></li>
+    <li><a href="/blog/2013/02/26/atari-pong-rubymotion-objective-c/">Atari&#8217;s Pong with RubyMotion</a></li>
     <li><a href="/blog/2012/09/03/10000-hours-of-practice/">10,000 Hours of Practice</a></li>
   </ul>
 </section>
 <section>
   <h1>Vim</h1>
-  <p>I don't always use a modal editor. But when I do, I use <a href="/blog/2013/01/12/why-i-use-vim/">Vim</a>.</p>
+  <p>I don&#8217;t always use a modal editor. But when I do, I use <a href="/blog/2013/01/12/why-i-use-vim/">Vim</a>.</p>
   <p>
   <a href="/blog/2013/01/12/why-i-use-vim/"><img src="/images/vim_editor.gif" width="125" height="60" alt="Vim, the editor" title="Vim, the editor"/></a>
   </p>
@@ -324,7 +243,6 @@ hexidecimal operation code.</li>
 
   
 </aside>
-
 
     </div>
   </div>
@@ -340,10 +258,7 @@ hexidecimal operation code.</li>
       var disqus_shortname = 'rayhightower';
       
         
-        // var disqus_developer = 1;
-        var disqus_identifier = 'http://RayHightower.com/blog/2013/11/10/a-portable-hack-for-parallella/';
-        var disqus_url = 'http://RayHightower.com/blog/2013/11/10/a-portable-hack-for-parallella/';
-        var disqus_script = 'embed.js';
+        var disqus_script = 'count.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

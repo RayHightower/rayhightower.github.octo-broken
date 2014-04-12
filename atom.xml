@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-04-11T20:50:23-04:00</updated>
+  <updated>2014-04-12T12:03:48-04:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,147 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Recursion and Memoization]]></title>
+    <link href="http://RayHightower.com/blog/2014/04/12/recursion-and-memoization/"/>
+    <updated>2014-04-12T10:48:00-04:00</updated>
+    <id>http://RayHightower.com/blog/2014/04/12/recursion-and-memoization</id>
+    <content type="html"><![CDATA[<blockquote><p>To iterate is human, to recurse divine.
+&nbsp;<br/>
+~ L. Peter Deutsch</p></blockquote>
+
+<p>Recursion is available in many high-level languages, including Ruby. Recursive solutions can be joyfully elegant. At the same time, the pursuit of elegance can lead to unexpected performance pitfalls.</p>
+
+<p>Fortunately, we can use optimization techniques to address performance problems before they occur. Memoization is one technique in our arsenal.</p>
+
+<!--more-->
+
+
+<h3>Before Memoization</h3>
+
+<p>Memoization was designed to solve a particular kind of problem. Consider a method called <code>fibo(n)</code> that calculates the <em>nth</em> number of the <a href="http://en.wikipedia.org/wiki/Fibonacci_number">Fibonacci</a> sequence.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1"># Calculate the nth Fibonacci number, f(n).</span>
+</span><span class='line'><span class="k">def</span> <span class="nf">fibo</span> <span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">n</span>
+</span><span class='line'>  <span class="k">else</span>
+</span><span class='line'>    <span class="n">value</span> <span class="o">=</span> <span class="n">fibo</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fibo</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">value</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Display the Fibonacci sequence.</span>
+</span><span class='line'><span class="p">(</span><span class="mi">1</span><span class="o">.</span><span class="n">.</span><span class="mi">40</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">number</span><span class="o">|</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;fibo(</span><span class="si">#{</span><span class="n">number</span><span class="si">}</span><span class="s2">) = </span><span class="si">#{</span><span class="n">fibo</span><span class="p">(</span><span class="n">number</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The example runs, but performance slows down as <em>n</em> gets larger. Why? Because this method re-calculates all preceeding Fibonacci numbers every time it calculates a new <code>fibo(n)</code>. When we calculate Fibonacci numbers manually, we know better. Humans are smart enough to refer to earlier work. But the <code>fibo(n)</code> does not manage time very well.</p>
+
+<p>Is it possible for the <code>fibo(n)</code> method to remember the results of earlier calculations so that it can avoid doing work that is already done? Yes, through <a href="http://en.wikipedia.org/wiki/Memoization">memoization</a>.</p>
+
+<h3>Memoization</h3>
+
+<p>Memoization means recording the results of earlier calculations so that we don&rsquo;t have to repeat the calculations later. If our code depends on the results of earlier calculations, and if the same calculations are performed over-and-over again, then it makes sense to store interim results (jot results down on a &lsquo;memo&rsquo; = memoization) so that we can avoid repeating the math.</p>
+
+<p>The Fibonacci example can be improved through memoization as follows.</p>
+
+<ul>
+<li>Create a place to store temporary results.</li>
+<li>Before performing a calculation, find out if the calculation has
+already been done. If so, use the stored result.</li>
+<li>If this is our first time calculating a particular <code>fibo(n)</code>, store
+the results for future use.</li>
+</ul>
+
+
+<p>Here&rsquo;s how memoization is implemented in the Fibonacci example:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1"># Fibonacci numbers WITH memoization.</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Initialize the memoization array.</span>
+</span><span class='line'><span class="vi">@scratchpad</span> <span class="o">=</span> <span class="o">[]</span>
+</span><span class='line'><span class="vi">@max_fibo_size</span> <span class="o">=</span> <span class="mi">50</span>
+</span><span class='line'><span class="p">(</span><span class="mi">1</span><span class="o">.</span><span class="n">.</span><span class="vi">@max_fibo_size</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
+</span><span class='line'>  <span class="vi">@scratchpad</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="ss">:notcalculated</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Calculate the nth Fibonacci number, f(n).</span>
+</span><span class='line'><span class="k">def</span> <span class="nf">fibo</span> <span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="vi">@max_fibo_size</span>
+</span><span class='line'>    <span class="k">return</span> <span class="s2">&quot;n must be </span><span class="si">#{</span><span class="vi">@max_fibo_size</span><span class="si">}</span><span class="s2"> or less.&quot;</span>
+</span><span class='line'>  <span class="k">elsif</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">n</span>
+</span><span class='line'>  <span class="k">elsif</span> <span class="vi">@scratchpad</span><span class="o">[</span><span class="n">n</span><span class="o">]</span> <span class="o">!=</span> <span class="ss">:notcalculated</span>
+</span><span class='line'>    <span class="k">return</span> <span class="vi">@scratchpad</span><span class="o">[</span><span class="n">n</span><span class="o">]</span>
+</span><span class='line'>  <span class="k">else</span>
+</span><span class='line'>    <span class="vi">@scratchpad</span><span class="o">[</span><span class="n">n</span><span class="o">]</span> <span class="o">=</span> <span class="n">fibo</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fibo</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">return</span> <span class="vi">@scratchpad</span><span class="o">[</span><span class="n">n</span><span class="o">]</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Display the Fibonacci sequence.</span>
+</span><span class='line'><span class="p">(</span><span class="mi">1</span><span class="o">.</span><span class="n">.</span><span class="mi">50</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">number</span><span class="o">|</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;fibo(</span><span class="si">#{</span><span class="n">number</span><span class="si">}</span><span class="s2">) = </span><span class="si">#{</span><span class="n">fibo</span><span class="p">(</span><span class="n">number</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Walking through the code&hellip; First we create a memoization array, a place to store the pre-calculated values. In this example, <code>@scratchpad[]</code> serves as our memoization array.</p>
+
+<p>The <code>fibo(n)</code> method is similar to the one in the earlier example, with a few subtle differences. First, we need to determine whether we&rsquo;ve already calculated a particular value. Since we initialized all elements of the <code>@scratchpad</code> array with the <code>:notcalculated</code> symbol, it&rsquo;s easy to figure out where work needs to be done. If a particular Fibonacci number has already been calculated, we return the value stored in the <code>@scratchpad[]</code> array. Otherwise, we calculate the new Fibonacci number and store that value in <code>@scratchpad[]</code> for later use.</p>
+
+<p>Run the two examples on your machine, and you&rsquo;ll see that the performance difference is huge!</p>
+
+<h3>Sample Code</h3>
+
+<p>Sample code related to this article can be found on <a href="https://github.com/RayHightower/fibonacci">GitHub</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[When in Doubt, Rake Clean]]></title>
@@ -1967,37 +2108,6 @@ confirmed it.</p>
 <p>I&rsquo;m posting this article as a note to my future self. Error messages sometimes lie. They don&rsquo;t mean to lie, but an error messsage can only give you its best guess based on what it <em>thinks</em> is happening on your system. It&rsquo;s up to the developer to sniff out the rest of the clues.</p>
 
 <p>After decades in this industry, I&rsquo;m still learning this lesson :&ndash;)</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Amazon's Guerrilla Marketing]]></title>
-    <link href="http://RayHightower.com/blog/2013/12/02/amazon-guerrilla-marketing/"/>
-    <updated>2013-12-02T20:03:00-04:00</updated>
-    <id>http://RayHightower.com/blog/2013/12/02/amazon-guerrilla-marketing</id>
-    <content type="html"><![CDATA[<p>Last night&rsquo;s episode of 60 Minutes featured an interview with Jeff Bezos, CEO of Amazon. The timing was perfect for Amazon. Black Friday was a few days ago. Cyber Monday is today. Online retailers want to be top-of-mind when people are inclined to spend money.</p>
-
-<h3>Amazon&rsquo;s Surprise: Drones</h3>
-
-<p>Bezos unveiled a surprise for interviewer Charlie Rose: <a href="http://www.amazon.com/b?ref_=tsm_1_tw_s_amzn_mx3eqp&amp;node=8037720011">Amazon Prime Air</a>, a service that will deliver most Amazon products in thirty minutes or less using a fleet of octocopter drones.</p>
-
-<!--more-->
-
-
-<p><span class='caption-wrapper'><img class='caption' src='http://RayHightower.com/images/amazon-prime-air-drone.jpg' width='' height='' alt='Amazon Prime Air. Octocopter drone ready for take-off.' title='Amazon Prime Air. Octocopter drone ready for take-off.'><span class='caption-text'>Amazon Prime Air. Octocopter drone ready for take-off.</span></span></p>
-
-<h3>Guerrilla Marketing</h3>
-
-<p><a href="http://www.gmarketing.com/">Jay Conrad Levinson</a>, author of <em>Guerrilla Marketing</em>, would applaud this move by Amazon. Amazon Prime Air is two years away at the earliest. The flying drones require Federal Aviation Administration (FAA) approval, and that takes time. By unveiling the drones now, before approval, Amazon reaps several benefits:</p>
-
-<ul>
-<li>Buzz. Everybody is talking about Amazon on Cyber Monday.</li>
-<li>Political influence. Some of the people feeling the buzz are FAA officials.</li>
-<li>Continued top-of-mind awareness. Long after Cyber Monday, the excitement of the drone idea will carry on.</li>
-</ul>
-
-
-<p>Congrats to the Amazon team for a well-executed Guerrilla Marketing move.</p>
 ]]></content>
   </entry>
   

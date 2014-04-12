@@ -5,11 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Automatic ctags with RubyMotion and Vim - RayHightower.com</title>
+  <title>Recursion and Memoization - RayHightower.com</title>
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="RubyMotion includes a rake task that generates Exuberant Ctags. To generate tags, run the following in the root directory of a RubyMotion project. 1 &hellip;">
+  <meta name="description" content="To iterate is human, to recurse divine.
+&nbsp;
+~ L. Peter Deutsch Recursion is available in many high-level languages, including Ruby. Recursive &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://RayHightower.com/blog/2013/02/12/automatic-ctags-with-rubymotion-and-vim">
+  <link rel="canonical" href="http://RayHightower.com/blog/2014/04/12/recursion-and-memoization">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="RayHightower.com" type="application/atom+xml">
@@ -85,7 +87,7 @@
   
   <header>
     
-      <h1 class="entry-title">Automatic ctags with RubyMotion and Vim</h1>
+      <h1 class="entry-title">Recursion and Memoization</h1>
     
     
       <p class="meta">
@@ -101,37 +103,27 @@
   
 
 
-<time datetime="2013-02-12T19:35:00-04:00" pubdate data-updated="true">Feb 12<span>th</span>, 2013</time>
+<time datetime="2014-04-12T10:48:00-04:00" pubdate data-updated="true">Apr 12<span>th</span>, 2014</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p><a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a> includes a <code>rake</code> task that generates <a href="http://ctags.sourceforge.net/whatis.html">Exuberant Ctags</a>. To generate tags, run the following in the root directory of a RubyMotion project.</p>
+<div class="entry-content"><blockquote><p>To iterate is human, to recurse divine.
+&nbsp;<br/>
+~ L. Peter Deutsch</p></blockquote>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rake ctags
-</span></code></pre></td></tr></table></div></figure>
+<p>Recursion is available in many high-level languages, including Ruby. Recursive solutions can be joyfully elegant. At the same time, the pursuit of elegance can lead to unexpected performance pitfalls.</p>
 
+<p>Fortunately, we can use optimization techniques to address performance problems before they occur. Memoization is one technique in our arsenal.</p>
 
-<h4>Make Ctags Better With Automation</h4>
-
-<p>Ctags make writing code more efficient. But we shouldn&rsquo;t have to type <code>$ rake ctags</code> every time we create a new RubyMotion project. This article shows how to use a shell script to generate ctags automatically every time you create a new RubyMotion app.</p>
-
-<!-- more -->
+<!--more-->
 
 
-<h4>How Ctags Save Time</h4>
+<h3>Before Memoization</h3>
 
-<p>Ctags can save you time. For example, when creating a new class called <code>HomeViewController</code> that inherits from <code>UIViewController</code>, typing the first view characters of the superclass will produce the drop-down shown below.
-<img src="/images/uiviewcontroller.png" align="center" width="800" height="433" title="ctags RubyMotion Vim" alt="ctags RubyMotion Vim"></p>
-
-<p>RubyMotion&rsquo;s implementation of ctags includes support for built-in iOS classes like UIViewController. The code completion and drop-downs offered by ctags will reduce keystrokes and errors, freeing the developer to focus on solving harder problems.</p>
-
-<h4>Creating the Script</h4>
-
-<p>Here&rsquo;s the script. You can use any name that suits you. My script is called <code>mmotion.command</code> (with two m&rsquo;s at the beginning to distinguish it from the standard <code>motion</code> command) and it&rsquo;s in the <code>~/bin/</code> directory.</p>
+<p>Memoization was designed to solve a particular kind of problem. Consider a method called <code>fibo(n)</code> that calculates the <em>nth</em> number of the <a href="http://en.wikipedia.org/wiki/Fibonacci_number">Fibonacci</a> sequence.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -145,46 +137,45 @@
 <span class='line-number'>10</span>
 <span class='line-number'>11</span>
 <span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c">#!/bin/bash</span>
-</span><span class='line'><span class="c"># Create a RubyMotion app, change into the app&#39;s directory, and run ctags.</span>
-</span><span class='line'><span class="c"># Written by Raymond T. Hightower on February 12, 2013</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1"># Calculate the nth Fibonacci number, f(n).</span>
+</span><span class='line'><span class="k">def</span> <span class="nf">fibo</span> <span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">n</span>
+</span><span class='line'>  <span class="k">else</span>
+</span><span class='line'>    <span class="n">value</span> <span class="o">=</span> <span class="n">fibo</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fibo</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">value</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
 </span><span class='line'>
-</span><span class='line'><span class="nb">echo</span> <span class="s2">&quot;Creating a new RubyMotion app called:&quot;</span> <span class="nv">$1</span>
-</span><span class='line'>motion create <span class="nv">$1</span>
-</span><span class='line'><span class="nb">cd</span> <span class="nv">$1</span>
-</span><span class='line'><span class="nb">echo</span> <span class="s2">&quot;Creating ctags for the new RubyMotion app...&quot;</span>
-</span><span class='line'>rake ctags
-</span><span class='line'><span class="nb">echo</span> <span class="s2">&quot;Opening the new app in Vim...&quot;</span>
-</span><span class='line'>mvim .
-</span><span class='line'><span class="nb">echo</span> <span class="s2">&quot;To use the RubyMotion console, cd into the new directory:&quot;</span> <span class="nv">$1</span>
+</span><span class='line'><span class="c1"># Display the Fibonacci sequence.</span>
+</span><span class='line'><span class="p">(</span><span class="mi">1</span><span class="o">.</span><span class="n">.</span><span class="mi">40</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">number</span><span class="o">|</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;fibo(</span><span class="si">#{</span><span class="n">number</span><span class="si">}</span><span class="s2">) = </span><span class="si">#{</span><span class="n">fibo</span><span class="p">(</span><span class="n">number</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'><span class="k">end</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>All of the work is done by by four lines. The remaining lines are comments or &lsquo;echos&rsquo; that tell the user what&rsquo;s happening while the script is running.</p>
+<p>The example runs, but performance slows down as <em>n</em> gets larger. Why? Because this method re-calculates all preceeding Fibonacci numbers every time it calculates a new <code>fibo(n)</code>. When we calculate Fibonacci numbers manually, we know better. Humans are smart enough to refer to earlier work. But the <code>fibo(n)</code> does not manage time very well.</p>
 
-<h4>Running the Script</h4>
+<p>Is it possible for the <code>fibo(n)</code> method to remember the results of earlier calculations so that it can avoid doing work that is already done? Yes, through <a href="http://en.wikipedia.org/wiki/Memoization">memoization</a>.</p>
 
-<p>If <code>~/bin/</code> is in the <code>$PATH</code>, you can run the script with the following line command:</p>
+<h3>Memoization</h3>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>mmotion.command <span class="o">[</span>app name<span class="o">]</span>
-</span></code></pre></td></tr></table></div></figure>
+<p>Memoization means recording the results of earlier calculations so that we don&rsquo;t have to repeat the calculations later. If our code depends on the results of earlier calculations, and if the same calculations are performed over-and-over again, then it makes sense to store interim results (jot results down on a &lsquo;memo&rsquo; = memoization) so that we can avoid repeating the math.</p>
 
+<p>The Fibonacci example can be improved through memoization as follows.</p>
 
-<p>Of course, we can still do better by leveraging the power of aliases in <code>~/.bash_profile</code>.</p>
-
-<h4>Adding an Alias to ~/.bash_profile</h4>
-
-<p>Dropping an alias into <code>~/.bash_profile</code> streamlines the process even more. You can use any alias you want as long as it doesn&rsquo;t confilct with another command. Here&rsquo;s what my alias looks like:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">alias </span><span class="nv">mmotion</span><span class="o">=</span><span class="s2">&quot;mmotion.command&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
+<ul>
+<li>Create a place to store temporary results.</li>
+<li>Before performing a calculation, find out if the calculation has
+already been done. If so, use the stored result.</li>
+<li>If this is our first time calculating a particular <code>fibo(n)</code>, store
+the results for future use.</li>
+</ul>
 
 
-<h4>Taking the Script for a Spin</h4>
-
-<p>Now we can build a new RubyMotion app called <code>NewApp</code> with these results:</p>
+<p>Here&rsquo;s how memoization is implemented in the Fibonacci example:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -201,31 +192,57 @@
 <span class='line-number'>13</span>
 <span class='line-number'>14</span>
 <span class='line-number'>15</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/Ruby/RubyMotion<span class="nv">$ </span>mmotion NewApp
-</span><span class='line'>Creating a new RubyMotion app called: NewApp
-</span><span class='line'>    Create NewApp
-</span><span class='line'>    Create NewApp/.gitignore
-</span><span class='line'>    Create NewApp/Rakefile
-</span><span class='line'>    Create NewApp/app
-</span><span class='line'>    Create NewApp/app/app_delegate.rb
-</span><span class='line'>    Create NewApp/resources
-</span><span class='line'>    Create NewApp/spec
-</span><span class='line'>    Create NewApp/spec/main_spec.rb
-</span><span class='line'>Creating ctags <span class="k">for </span>the new RubyMotion app...
-</span><span class='line'>Opening the new app in Vim...
-</span><span class='line'>To use the RubyMotion console, <span class="nb">cd </span>into the new directory: NewApp
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1"># Fibonacci numbers WITH memoization.</span>
 </span><span class='line'>
-</span><span class='line'>~/Code/Ruby/RubyMotion<span class="nv">$ </span>
+</span><span class='line'><span class="c1"># Initialize the memoization array.</span>
+</span><span class='line'><span class="vi">@scratchpad</span> <span class="o">=</span> <span class="o">[]</span>
+</span><span class='line'><span class="vi">@max_fibo_size</span> <span class="o">=</span> <span class="mi">50</span>
+</span><span class='line'><span class="p">(</span><span class="mi">1</span><span class="o">.</span><span class="n">.</span><span class="vi">@max_fibo_size</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
+</span><span class='line'>  <span class="vi">@scratchpad</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="ss">:notcalculated</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Calculate the nth Fibonacci number, f(n).</span>
+</span><span class='line'><span class="k">def</span> <span class="nf">fibo</span> <span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="vi">@max_fibo_size</span>
+</span><span class='line'>    <span class="k">return</span> <span class="s2">&quot;n must be </span><span class="si">#{</span><span class="vi">@max_fibo_size</span><span class="si">}</span><span class="s2"> or less.&quot;</span>
+</span><span class='line'>  <span class="k">elsif</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">n</span>
+</span><span class='line'>  <span class="k">elsif</span> <span class="vi">@scratchpad</span><span class="o">[</span><span class="n">n</span><span class="o">]</span> <span class="o">!=</span> <span class="ss">:notcalculated</span>
+</span><span class='line'>    <span class="k">return</span> <span class="vi">@scratchpad</span><span class="o">[</span><span class="n">n</span><span class="o">]</span>
+</span><span class='line'>  <span class="k">else</span>
+</span><span class='line'>    <span class="vi">@scratchpad</span><span class="o">[</span><span class="n">n</span><span class="o">]</span> <span class="o">=</span> <span class="n">fibo</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fibo</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">return</span> <span class="vi">@scratchpad</span><span class="o">[</span><span class="n">n</span><span class="o">]</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Display the Fibonacci sequence.</span>
+</span><span class='line'><span class="p">(</span><span class="mi">1</span><span class="o">.</span><span class="n">.</span><span class="mi">50</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">number</span><span class="o">|</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;fibo(</span><span class="si">#{</span><span class="n">number</span><span class="si">}</span><span class="s2">) = </span><span class="si">#{</span><span class="n">fibo</span><span class="p">(</span><span class="n">number</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'><span class="k">end</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>After the bash script ends, it lands in the directory from which it was originally run, no matter what directories it changed to during execution. This script will open the new app in Vim when it&rsquo;s done.</p>
+<p>Walking through the code&hellip; First we create a memoization array, a place to store the pre-calculated values. In this example, <code>@scratchpad[]</code> serves as our memoization array.</p>
 
-<p>From here, you can <code>$ cd NewApp</code> and type <code>rake</code> to run the app in the iOS simulator.</p>
+<p>The <code>fibo(n)</code> method is similar to the one in the earlier example, with a few subtle differences. First, we need to determine whether we&rsquo;ve already calculated a particular value. Since we initialized all elements of the <code>@scratchpad</code> array with the <code>:notcalculated</code> symbol, it&rsquo;s easy to figure out where work needs to be done. If a particular Fibonacci number has already been calculated, we return the value stored in the <code>@scratchpad[]</code> array. Otherwise, we calculate the new Fibonacci number and store that value in <code>@scratchpad[]</code> for later use.</p>
 
-<h4>Feedback Welcome</h4>
+<p>Run the two examples on your machine, and you&rsquo;ll see that the performance difference is huge!</p>
 
-<p>If you notice any glitches with this approach, feel free to send me a &ldquo;heads up&rdquo; via the <a href="/contact/">contact</a> form on this site or in the blog comments below.</p>
+<h3>Sample Code</h3>
+
+<p>Sample code related to this article can be found on <a href="https://github.com/RayHightower/fibonacci">GitHub</a>.</p>
 </div>
 
 
@@ -248,12 +265,12 @@
   
 
 
-<time datetime="2013-02-12T19:35:00-04:00" pubdate data-updated="true">Feb 12<span>th</span>, 2013</time>
+<time datetime="2014-04-12T10:48:00-04:00" pubdate data-updated="true">Apr 12<span>th</span>, 2014</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/linux-unix-osx/'>Linux-Unix-OSX</a>, <a class='category' href='/blog/categories/ruby/'>Ruby</a>, <a class='category' href='/blog/categories/rubymotion/'>RubyMotion</a>, <a class='category' href='/blog/categories/vim/'>Vim</a>, <a class='category' href='/blog/categories/ios/'>iOS</a>
+    <a class='category' href='/blog/categories/education/'>Education</a>, <a class='category' href='/blog/categories/ruby/'>Ruby</a>
   
 </span>
 
@@ -262,7 +279,7 @@
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2013/02/12/automatic-ctags-with-rubymotion-and-vim/" data-via="" data-counturl="http://RayHightower.com/blog/2013/02/12/automatic-ctags-with-rubymotion-and-vim/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2014/04/12/recursion-and-memoization/" data-via="" data-counturl="http://RayHightower.com/blog/2014/04/12/recursion-and-memoization/" >Tweet</a>
   
   
   
@@ -271,10 +288,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/01/17/the-vast-and-endless-sea/" title="Previous Post: The Vast and Endless Sea">&laquo; The Vast and Endless Sea</a>
+        <a class="basic-alignment left" href="/blog/2014/04/10/when-in-doubt-rake-clean/" title="Previous Post: When in Doubt, Rake Clean">&laquo; When in Doubt, Rake Clean</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/02/17/apprenticeship-patterns-by-dave-h-hoover-and-adewale-oshineye/" title="Next Post: Apprenticeship Patterns">Apprenticeship Patterns &raquo;</a>
       
     </p>
   </footer>
@@ -411,8 +426,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://RayHightower.com/blog/2013/02/12/automatic-ctags-with-rubymotion-and-vim/';
-        var disqus_url = 'http://RayHightower.com/blog/2013/02/12/automatic-ctags-with-rubymotion-and-vim/';
+        var disqus_identifier = 'http://RayHightower.com/blog/2014/04/12/recursion-and-memoization/';
+        var disqus_url = 'http://RayHightower.com/blog/2014/04/12/recursion-and-memoization/';
         var disqus_script = 'embed.js';
       
     (function () {
