@@ -9,7 +9,7 @@ Dotfiles, the configuration files used by Unix-like machines, can get disorganiz
 
 ###Why Use Git to Manage Dotfiles?
 Git is a great tool for managing files that change over time. Dotfiles can change as we install new software or tweak our development environment. If we make a mistake, or if an installation script makes a mistake, we can use Git to roll back in history to a pre-mistake version of the dotfile.
-
+<!--more-->
 ###Don't Make All Dotfiles Public
 There are some dotfiles that you don't want to share publicly. For
 example, `.bash_history` contains all of the commaands that have been executed in the shell. Do you really want the world that you sometimes `$ ssh myuserid@[embarassingdomainname].com`? Probably not. If you think that a dotfile might contain personal or confidential information, no need to broadcast it.
