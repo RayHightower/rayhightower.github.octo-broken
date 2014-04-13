@@ -84,7 +84,12 @@ Walking through the code... First we create a memoization array, a place to stor
 
 The `fibo(n)` method is similar to the one in the earlier example, with a few subtle differences. First, we need to determine whether we've already calculated a particular value. Since we initialized all elements of the `@scratchpad` array with the `:notcalculated` symbol, it's easy to figure out where work needs to be done. If a Fibonacci number `fibo(n)` has already been calculated, we return the value stored at `@scratchpad[n]`. Otherwise, we calculate the new `fibo(n)` and store that value at `@scratchpad[n]` for later use.
 
-Run the two examples on your machine, and you'll see that the performance difference is huge!
+###Performance Comparison
+The performance of the two programs is compared in this 1-minute video.
+
+<center><iframe src="//player.vimeo.com/video/91841948" width="500" height="313" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
+
+As you can see, the performance difference is huge!
 
 ###Sample Code
 Sample code related to this article can be found on [GitHub](https://github.com/RayHightower/fibonacci).
