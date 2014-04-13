@@ -89,7 +89,7 @@ The performance of the two programs is compared in this 1-minute video.
 
 <center><iframe src="//player.vimeo.com/video/91841948" width="500" height="313" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
 
-As the video shows, memoization gives a clear performance boost in this example.
+As the video shows, memoization is a performance booster.
 
 ###Sample Code
 Sample code related to this article can be found on [GitHub](https://github.com/RayHightower/fibonacci).
