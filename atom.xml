@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-04-12T12:03:48-04:00</updated>
+  <updated>2014-04-13T07:22:00-04:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -144,7 +144,7 @@ the results for future use.</li>
 
 <p>Walking through the code&hellip; First we create a memoization array, a place to store the pre-calculated values. In this example, <code>@scratchpad[]</code> serves as our memoization array.</p>
 
-<p>The <code>fibo(n)</code> method is similar to the one in the earlier example, with a few subtle differences. First, we need to determine whether we&rsquo;ve already calculated a particular value. Since we initialized all elements of the <code>@scratchpad</code> array with the <code>:notcalculated</code> symbol, it&rsquo;s easy to figure out where work needs to be done. If a particular Fibonacci number has already been calculated, we return the value stored in the <code>@scratchpad[]</code> array. Otherwise, we calculate the new Fibonacci number and store that value in <code>@scratchpad[]</code> for later use.</p>
+<p>The <code>fibo(n)</code> method is similar to the one in the earlier example, with a few subtle differences. First, we need to determine whether we&rsquo;ve already calculated a particular value. Since we initialized all elements of the <code>@scratchpad</code> array with the <code>:notcalculated</code> symbol, it&rsquo;s easy to figure out where work needs to be done. If a Fibonacci number <code>fibo(n)</code> has already been calculated, we return the value stored at <code>@scratchpad[n]</code>. Otherwise, we calculate the new <code>fibo(n)</code> and store that value at <code>@scratchpad[n]</code> for later use.</p>
 
 <p>Run the two examples on your machine, and you&rsquo;ll see that the performance difference is huge!</p>
 
