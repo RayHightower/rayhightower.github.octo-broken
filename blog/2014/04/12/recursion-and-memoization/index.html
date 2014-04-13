@@ -238,7 +238,14 @@ the results for future use.</li>
 
 <p>The <code>fibo(n)</code> method is similar to the one in the earlier example, with a few subtle differences. First, we need to determine whether we&rsquo;ve already calculated a particular value. Since we initialized all elements of the <code>@scratchpad</code> array with the <code>:notcalculated</code> symbol, it&rsquo;s easy to figure out where work needs to be done. If a Fibonacci number <code>fibo(n)</code> has already been calculated, we return the value stored at <code>@scratchpad[n]</code>. Otherwise, we calculate the new <code>fibo(n)</code> and store that value at <code>@scratchpad[n]</code> for later use.</p>
 
-<p>Run the two examples on your machine, and you&rsquo;ll see that the performance difference is huge!</p>
+<h3>Performance Comparison</h3>
+
+<p>The performance of the two programs is compared in this 1-minute video.</p>
+
+<center><iframe src="//player.vimeo.com/video/91841948" width="500" height="313" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
+
+
+<p>As the video shows, memoization gives a clear performance boost in this example.</p>
 
 <h3>Sample Code</h3>
 
