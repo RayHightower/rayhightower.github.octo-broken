@@ -15,7 +15,7 @@ There are some dotfiles that you don't want to share publicly. For
 example, `.bash_history` contains all of the commaands that have been executed in the shell. Do you really want the world that you sometimes `$ ssh myuserid@[embarassingdomainname].com`? Probably not. If you think that a dotfile might contain personal or confidential information, no need to broadcast it.
 
 ###.dotfiles Directory
-Most of my dotfiles, like `.bash_profile`, don't contain anything private. In fact, most of what I know about dotfiles has come from other developers via books, user groups, blogs, and spelunking through GitHub. [Hashrocket's dotmatrix repo](https://github.com/hashrocket/dotmatrix) is especially good. My `~/.dotfiles` directory is available for public viewing on [GitHub](https://github.com/RayHightower/.dotfiles).
+Most of my dotfiles, like `.bash_profile`, don't contain anything private. In fact, most of what I know about dotfiles has come from other developers via books, user groups, blogs, and spelunking through GitHub. Dotfile collections by [Hashrocket](https://github.com/hashrocket/dotmatrix) and [Thoughtbot](https://github.com/thoughtbot/dotfiles) are  especially good. My `~/.dotfiles` directory is available for public viewing on [GitHub](https://github.com/RayHightower/.dotfiles).
 
 
 created a `~/.dotfiles` directory
