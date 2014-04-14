@@ -21,7 +21,7 @@ drwxr-xr-x  14 rth  staff   476 Apr 14 02:25 .git
 -rw-r--r--   1 rth  staff   118 Aug 22  2013 .zprofile
 -rw-r--r--   1 rth  staff   375 Apr 14 01:44 README.mdown
 
-~/.dotfiles[master]$
+~/.dotfiles[master]$ 
 ```
 
 ###Why Use Git to Manage Dotfiles?
