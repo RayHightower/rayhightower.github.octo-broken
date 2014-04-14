@@ -25,4 +25,7 @@ $ mv ~/.gitk .
 $ cd ~
 $ ln -s ~/.dotfiles/.gitk
 
+###Tweets (delete before deploy)
+One way to manage dotfiles. http://rayhightower.com/blog/2014/04/15/managing-dotfiles/
+
 
