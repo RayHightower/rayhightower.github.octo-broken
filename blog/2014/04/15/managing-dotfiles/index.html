@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Diamonds for Ten Dollars Per Carat - RayHightower.com</title>
+  <title>Managing Dotfiles - RayHightower.com</title>
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="Blogger&rsquo;s Note from Feb2013: This article was originally posted on the WisdomGroup blog in Jan2007. In hindsight, my precicted timeline was too &hellip;">
+  <meta name="description" content="Dotfiles, the configuration files used by Unix-like machines, can become disorganized over time. Entropy rules! This article describes my recent &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://RayHightower.com/blog/2007/01/02/diamonds-for-ten-dollars-per-carat">
+  <link rel="canonical" href="http://RayHightower.com/blog/2014/04/15/managing-dotfiles">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="RayHightower.com" type="application/atom+xml">
@@ -85,7 +85,7 @@
   
   <header>
     
-      <h1 class="entry-title">Diamonds for Ten Dollars Per Carat</h1>
+      <h1 class="entry-title">Managing Dotfiles</h1>
     
     
       <p class="meta">
@@ -101,80 +101,134 @@
   
 
 
-<time datetime="2007-01-02T00:55:00-06:00" pubdate data-updated="true">Jan 2<span>nd</span>, 2007</time>
+<time datetime="2014-04-15T17:13:00-05:00" pubdate data-updated="true">Apr 15<span>th</span>, 2014</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p><em>Blogger&rsquo;s Note from Feb2013: This article was originally posted on the <a href="http://wisdomgroup.com">WisdomGroup</a> blog in Jan2007. In hindsight, my precicted timeline was too aggressive. However, the rest of the post remains sound.</em></p>
-
-<blockquote><p>If Woolworth&rsquo;s sold diamond rings, you&rsquo;d have a million of &lsquo;em baby!<br/> ~Fats Waller, Piano composer/performer, circa 1915</p></blockquote>
-
-<p><img src="/images/diamond.jpg" width="300" height="190" align="right" alt="Diamonds for Ten Dollars Per Carat" title="Diamonds for Ten Dollars Per Carat">
-Woolworth&rsquo;s and Fats Waller are long gone, but Waller&rsquo;s tounge-in-cheek prediction will come to pass in the next few years. Diamonds will sell for $10.00 per carat in the year 2015. Advances in the fabrication of synthetic/cultured diamonds will drive down the price and value of these &ldquo;precious&rdquo; gems. At the same time, the needs of computer manufacturers and huge economies of scale will make it worthwhile for diamond fabricators to roll out cheap diamonds by the pound.</p>
-
-<!-- more -->
-
-
-<h4>Yes, They&rsquo;re Real</h4>
-
-<p>The diamonds I&rsquo;m talking about are chemically identical to diamonds found in the mines of South Africa, Canada, and other spots around the world. I&rsquo;m not talking about cubic zirconium. I mean man-made diamonds that are arguably superior to diamonds found in mines. Mined diamonds occur in nature, and they are formed when carbon is exposed to millions of years of heat and pressure beneath the earth&rsquo;s surface. Volcanic activity can play a role. As natural diamonds form and harden, they tend to envelope impurities within. These impurities, (the diamond industry calls them &ldquo;inclusions&rdquo;) can greatly reduce the value of a diamond.</p>
-
-<p>But man-made diamonds contain zero inclusions.</p>
-
-<p>There are several ways to make a diamond. Some methods duplicate the heat and pressure deep within our planet. Others grow a diamond from a &ldquo;seed&rdquo; crystal in a special chamber. Regardless of technique, a man-made diamond will only contain inclusions if that is what the manufacturer wants. Cultured diamonds are real, and they&rsquo;re more attractive.</p>
-
-<h4>Wired Magazine&rsquo;s Diamond Revelation</h4>
-
-<p>Check out this article in <a href="http://www.wired.com/wired/archive/11.09/diamond.html">Wired Magazine</a>. The writer interviews two diamond makers right here in the United States. <a href="http://en.wikipedia.org/wiki/Apollo_Diamond">Apollo Diamond, Inc.</a> sells diamonds for jewelry and technology. <a href="http://www.gemesis.com">Gemesis</a> sells colored diamonds that are rare in nature (very expensive), but so easy to make in their Florida-based warehouse. Other entrepreneurs are sure to follow, and prices will certainly fall. The biggest drop will come when diamond-makers in China, India, and other manufacturing powerhouses come online.</p>
-
-<h4>Are Cheap Diamonds Worth Making?</h4>
-
-<p>Computer industry insiders are familiar with Moore&rsquo;s Law. The law says that computers will double in processing capacity and halve in price every eighteen months. Moore&rsquo;s Law has held true for over forty years since Moore first announced his prediction in the early 1960&rsquo;s. But now Moore&rsquo;s law is approaching a wall.</p>
-
-<p>Today&rsquo;s microprocessors are made of silicon. Each new microprocessor generation contains double the number of transistors of the previous generation. Two byproducts of cramming lots of transistors on a piece of silicon: processing power (good) and heat (bad). Heat must be removed from the system in order for it to work properly, and that&rsquo;s why computers have fans, heat sinks, and (in some cases) liquid cooling systems. Even better: Make chips that can take the heat!</p>
-
-<h4>Diamonds Can Stand the Heat</h4>
-
-<p>Diamonds withstand heat that would evaporate silicon. Researchers at the <a href="http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=512107">University of Arkansas</a> have demonstrated that &ldquo;Diamond, the best thermal conductor known, is the ultimate choice&hellip; in the next generation compact, high power and high speed computer.&rdquo; Other Universities and research institutes have found similar results. Google the term &ldquo;diamond substrate circuit&rdquo; and you will find over 600,000 hits. The only problem: Right now, diamonds are too expensive.</p>
-
-<h4>Prices Driven Downward</h4>
-
-<p>Diamond prices will plummet in a wonderful downward spiral as the following factors converge:</p>
+<div class="entry-content"><p>Dotfiles, the configuration files used by Unix-like machines, can become disorganized over time. Entropy rules! This article describes my recent attempt to bring order to dotfile chaos. The steps can be summarized as follows:</p>
 
 <ul>
-<li>Silicon exhausts its potential as the material of choice for chip production. Too many transistors, too much heat will cause the demise of silicon.</li>
-<li>Computer users demand more and more power every year, and computer manufacturers will oblige or be driven out of business by competitors.</li>
-<li>More diamond makers come online in low cost, high volume manufacturing countries like China and India.</li>
+<li>Move the non-public dotfiles into a directory called <code>~/.dotfiles</code>.</li>
+<li>From the <code>home</code> directory, create a symbolic link to each dotfile in the <code>~/.dotfiles</code> directory.</li>
+<li>Use Git to manage the <code>~/.dotfiles</code> directory.</li>
 </ul>
 
 
-<h4>What About the Diamond Cartel?</h4>
+<p>Dotfiles are normally hidden when you try to view them in the Mac OS X Finder. To view them from the command prompt, use <code>$ ls -al</code>.</p>
 
-<p>Some argue that the powerful diamond cartel, an entity that has held the line on diamond prices since 1905, will squelch the synthetic diamond movement. They&rsquo;ve allegedly toppled governments in their quest for global diamond control.</p>
-
-<p>But the diamond cartel has never come up against the fiercely competitive beings of the technology industry. Microsoft, Intel, Apple, Dell, HP, IBM, Google, Sun, SGI, AT&amp;T, Oracle, and all the rest are fiercely aggressive, amazingly brilliant, and they love to win. These companies have honed their skills against each other in a global marketplace that devours companies that make mistakes. Do you really think the diamond cartel can stand up against technology industry titans?</p>
-
-<p>Another factor: Governments are hungry for weapons, and weapons are driven by computer technology. A government bent on military might will not bow to the wishes of a cartel that sells shiny stones.</p>
-
-<p>The bottom line: The diamond cartel will be broken.</p>
-
-<h4>Why &ldquo;ten dollars&rdquo; and &ldquo;2015&rdquo;?</h4>
-
-<p>Simple. I pulled those numbers out of thin air. Almost. I was at a family reunion two years ago when I first decided to make my diamond theory public. My cousins are very opinionated (unlike me), and I needed to get my point across in a direct, simple, and shocking way. The idea &ldquo;ten dollars in ten years&rdquo; came to mind, hence <em>Ten Dollars per Carat in 2015</em> (the year was 2005).</p>
-
-<p>It&rsquo;s hard to get the numbers exactly right when predicting the future. But the trend is clear. Synthetic diamonds (or &ldquo;cultured&rdquo; diamonds, take your pick) will plummet in price over the next few years. People will realize that they are:</p>
-
-<ul>
-<li>chemically identical to mined diamonds</li>
-<li>superior in terms of the &#8220;four C&#8217;s&#8221;: color, cut, clarity, and carat</li>
-<li>mass produced and readily available to everybody</li>
-</ul>
+<!--more-->
 
 
-<p>Further, technology companies will demand diamond-based circuitry in their quest for faster and smaller computers. The future is clear. Diamonds will sell for ten dollars per carat in the year 2015.</p>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/.dotfiles<span class="o">[</span>master<span class="o">]</span><span class="nv">$ </span>ls -al
+</span><span class='line'>total 40
+</span><span class='line'>drwxr-xr-x   8 rth  staff   272 Apr 14 01:44 .
+</span><span class='line'>drwxr-xr-x+ 71 rth  staff  2414 Apr 14 02:12 ..
+</span><span class='line'>-rwxr-xr-x   1 rth  staff  3455 Apr 13 16:01 .bash_profile
+</span><span class='line'>drwxr-xr-x  14 rth  staff   476 Apr 14 02:25 .git
+</span><span class='line'>-rw-r--r--   1 rth  staff  1649 Apr 13 16:44 .gitk
+</span><span class='line'>-rw-r--r--   1 rth  staff  1760 Apr 13 16:10 .irbrc
+</span><span class='line'>-rw-r--r--   1 rth  staff   118 Aug 22  2013 .zprofile
+</span><span class='line'>-rw-r--r--   1 rth  staff   375 Apr 14 01:44 README.mdown
+</span><span class='line'>
+</span><span class='line'>~/.dotfiles<span class="o">[</span>master<span class="o">]</span><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The <code>.bash_profile</code> in this example has grown to include aliases, path specifications, and a script that shows the current Git branch as part of the command prompt. The file also contains two aliases useful for showing or hiding dotfiles in the Finder: <code>showdots</code> and <code>hidedots</code>.</p>
+
+<h3>Putting Dotfiles in One Directory</h3>
+
+<p>Dotfiles are normally created in the user&rsquo;s home directory. For organization purposes, I moved my non-private dotfiles into a directory called <code>.dotfiles</code>, listed above. Unix makes this easy. First, move to the home directory and create <code>~/.dotfiles</code>.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span><span class="nb">cd</span> ~
+</span><span class='line'>
+</span><span class='line'>~<span class="nv">$ </span>mkdir .dotfiles
+</span><span class='line'>
+</span><span class='line'>~<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><em>Note: Dotfiles can sometimes include private information. If you don&rsquo;t want to share information in a particular dotfile, don&rsquo;t put it on GitHub!</em></p>
+
+<p>Next, change in to the <code>~/.dotfiles</code> directory and move non-public dotfiles into the newly created directory. In this example, we&rsquo;ll only move one file, <code>.bash_profile</code>.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span><span class="nb">cd</span> .dotfiles/
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>mv ../.bash_profile .
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Symbolic Links</h3>
+
+<p>Symbolic links ensure that our dotfiles can be found when needed.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="nb">cd</span> ~
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>ln -s ~/.dotfiles/.bash_profile
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>ls -al
+</span><span class='line'>total 8
+</span><span class='line'>drwxr-xr-x   3 rth  staff   102 Apr 14 19:48 .
+</span><span class='line'>drwxr-xr-x+ 73 rth  staff  2482 Apr 14 19:47 ..
+</span><span class='line'>lrwxr-xr-x   1 rth  staff    34 Apr 14 19:48 .bash_profile -&gt; /Users/rth/.dotfiles/.bash_profile
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>In the above example, we created a symbolic link called <code>.bash_profile</code> to the real <code>~/.dotfiles/.bash_profile</code> located in the <code>.dotfiles</code> directory. That way, any program that&rsquo;s looking for the <code>.bash_profile</code> file in the home directory will find what it needs, even though the file is somewhere else.</p>
+
+<h3>Why Use Git to Manage Dotfiles?</h3>
+
+<p>Git is a great tool for managing files that change over time. Dotfiles can change as we install new software or tweak our development environment. If we make a mistake, or if an installation script makes a mistake, we can use Git to roll back in history to a pre-mistake version of the dotfile.</p>
+
+<h3>Don&rsquo;t Make All Dotfiles Public</h3>
+
+<p>There are some dotfiles that you don&rsquo;t want to share publicly. For example, <code>.bash_history</code> contains all of the commands that have been executed in the shell. Do you really want the world that you sometimes <code>$ ssh myuserid@[embarassingdomainname].com</code>? Probably not. If you think that a dotfile might contain personal or confidential information, no need to broadcast it.</p>
+
+<h3>Learning More About Dotfiles</h3>
+
+<p>Most of my dotfiles, like <code>.bash_profile</code>, don&rsquo;t contain anything private. In fact, most of what I know about dotfiles has come from other developers via books, user groups, blogs, and spelunking through GitHub. Dotfile collections by <a href="https://github.com/hashrocket/dotmatrix">Hashrocket</a> and <a href="https://github.com/thoughtbot/dotfiles">Thoughtbot</a> are  especially good. My <code>~/.dotfiles</code> directory is available for public viewing on <a href="https://github.com/RayHightower/.dotfiles">GitHub</a>.</p>
+
+<p>If you&rsquo;re doing something especially cool with your dotfiles, let&rsquo;s hear about it!</p>
 </div>
 
 
@@ -197,12 +251,12 @@ Woolworth&rsquo;s and Fats Waller are long gone, but Waller&rsquo;s tounge-in-ch
   
 
 
-<time datetime="2007-01-02T00:55:00-06:00" pubdate data-updated="true">Jan 2<span>nd</span>, 2007</time>
+<time datetime="2014-04-15T17:13:00-05:00" pubdate data-updated="true">Apr 15<span>th</span>, 2014</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/business/'>Business</a>
+    <a class='category' href='/blog/categories/community/'>Community</a>, <a class='category' href='/blog/categories/linux-unix-osx/'>Linux-Unix-OSX</a>
   
 </span>
 
@@ -211,7 +265,7 @@ Woolworth&rsquo;s and Fats Waller are long gone, but Waller&rsquo;s tounge-in-ch
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2007/01/02/diamonds-for-ten-dollars-per-carat/" data-via="" data-counturl="http://RayHightower.com/blog/2007/01/02/diamonds-for-ten-dollars-per-carat/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2014/04/15/managing-dotfiles/" data-via="" data-counturl="http://RayHightower.com/blog/2014/04/15/managing-dotfiles/" >Tweet</a>
   
   
   
@@ -220,8 +274,8 @@ Woolworth&rsquo;s and Fats Waller are long gone, but Waller&rsquo;s tounge-in-ch
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2014/04/12/recursion-and-memoization/" title="Previous Post: Recursion and Memoization">&laquo; Recursion and Memoization</a>
       
-        <a class="basic-alignment right" href="/blog/2007/12/10/gmail-vs-microsoft-exchange/" title="Next Post: GMail vs Microsoft Exchange">GMail vs Microsoft Exchange &raquo;</a>
       
     </p>
   </footer>
@@ -358,8 +412,8 @@ Woolworth&rsquo;s and Fats Waller are long gone, but Waller&rsquo;s tounge-in-ch
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://RayHightower.com/blog/2007/01/02/diamonds-for-ten-dollars-per-carat/';
-        var disqus_url = 'http://RayHightower.com/blog/2007/01/02/diamonds-for-ten-dollars-per-carat/';
+        var disqus_identifier = 'http://RayHightower.com/blog/2014/04/15/managing-dotfiles/';
+        var disqus_url = 'http://RayHightower.com/blog/2014/04/15/managing-dotfiles/';
         var disqus_script = 'embed.js';
       
     (function () {

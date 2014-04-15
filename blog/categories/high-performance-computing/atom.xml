@@ -4,7 +4,7 @@
   <title><![CDATA[Category: High Performance Computing | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/high-performance-computing/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-04-13T09:31:53-04:00</updated>
+  <updated>2014-04-14T20:36:45-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[SGI & Big Data]]></title>
     <link href="http://RayHightower.com/blog/2014/02/17/sgi-and-big-data/"/>
-    <updated>2014-02-17T14:46:00-04:00</updated>
+    <updated>2014-02-17T14:46:00-06:00</updated>
     <id>http://RayHightower.com/blog/2014/02/17/sgi-and-big-data</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/sgi-logo-1990s.png' width='' height='' alt='SGI&rsquo;s logo from the 1990s.' title='SGI&rsquo;s logo from the 1990s.'><span class='caption-text'>SGI&rsquo;s logo from the 1990s.</span></span>
 <a href="http://sgi.com">Silicon Graphics International Corporation (SGI)</a> computers rendered the special effects for the original <a href="http://en.wikipedia.org/wiki/Jurassic_Park">Jurassic Park</a> movie. Computer enthusiasts coveted SGI machines throughout the 1990s.</p>
@@ -77,7 +77,7 @@
   <entry>
     <title type="html"><![CDATA[High Performance Computing at ACM]]></title>
     <link href="http://RayHightower.com/blog/2013/12/12/high-performance-computing-at-acm/"/>
-    <updated>2013-12-12T22:22:00-04:00</updated>
+    <updated>2013-12-12T22:22:00-06:00</updated>
     <id>http://RayHightower.com/blog/2013/12/12/high-performance-computing-at-acm</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/cray-1.jpg' width='' height='' alt='Cray-1 at the Swiss Federal Institute of Technology.' title='Cray-1 at the Swiss Federal Institute of Technology.'><span class='caption-text'>Cray-1 at the Swiss Federal Institute of Technology.</span></span></p>
 
@@ -185,7 +185,7 @@
   <entry>
     <title type="html"><![CDATA[Petascale Tools Workshop 2013]]></title>
     <link href="http://RayHightower.com/blog/2013/07/19/petascale-tools-workshop-2013/"/>
-    <updated>2013-07-19T02:12:00-04:00</updated>
+    <updated>2013-07-19T02:12:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/07/19/petascale-tools-workshop-2013</id>
     <content type="html"><![CDATA[<p>The <a href="http://www.paradyn.org/CSCADS2013/index.html">Petascale Tools Workshop</a> is for computer scientists who create tools that enable apps to run efficiently on the world&rsquo;s fastest supercomputers. Supercomputer performance is measured in petaflops: 10<sup><sup>15</sup></sup> floating point operations per second. That&rsquo;s blazing speed, thousands of times faster than the fastest MacBook Pro.</p>
 
@@ -294,7 +294,7 @@ machines.</p>
   <entry>
     <title type="html"><![CDATA[Prep for Parallella's 64 Cores: Installing Go on Mac OS X]]></title>
     <link href="http://RayHightower.com/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/"/>
-    <updated>2013-06-22T12:58:00-04:00</updated>
+    <updated>2013-06-22T12:58:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/parallella.jpg" width="450" height="257" alt="Parallella 64-core supercomputer" title="Parallella 64-core supercomputer" align="right" imgcap="Parallella Board">
 The idea of owning a 64-core parallel system for two hundred dollars (yes, $200.00) is exciting. <a href="http://www.parallella.org/introduction/">Parallella</a> is working to make that happen, perhaps as early as August 2013. To prepare for that day, I&rsquo;ve decided to introduce myself to the Go language.</p>

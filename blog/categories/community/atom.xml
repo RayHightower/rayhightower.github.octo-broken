@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Community | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/community/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-04-13T09:31:53-04:00</updated>
+  <updated>2014-04-14T20:36:45-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -14,9 +14,110 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Managing Dotfiles]]></title>
+    <link href="http://RayHightower.com/blog/2014/04/15/managing-dotfiles/"/>
+    <updated>2014-04-15T17:13:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/04/15/managing-dotfiles</id>
+    <content type="html"><![CDATA[<p>Dotfiles, the configuration files used by Unix-like machines, can become disorganized over time. Entropy rules! This article describes my recent attempt to bring order to dotfile chaos. The steps can be summarized as follows:</p>
+
+<ul>
+<li>Move the non-public dotfiles into a directory called <code>~/.dotfiles</code>.</li>
+<li>From the <code>home</code> directory, create a symbolic link to each dotfile in the <code>~/.dotfiles</code> directory.</li>
+<li>Use Git to manage the <code>~/.dotfiles</code> directory.</li>
+</ul>
+
+
+<p>Dotfiles are normally hidden when you try to view them in the Mac OS X Finder. To view them from the command prompt, use <code>$ ls -al</code>.</p>
+
+<!--more-->
+
+
+<p>```bash
+~/.dotfiles[master]$ ls -al
+total 40
+drwxr-xr-x   8 rth  staff   272 Apr 14 01:44 .
+drwxr-xr-x+ 71 rth  staff  2414 Apr 14 02:12 ..
+-rwxr-xr-x   1 rth  staff  3455 Apr 13 16:01 .bash_profile
+drwxr-xr-x  14 rth  staff   476 Apr 14 02:25 .git
+-rw-r&mdash;r&mdash;   1 rth  staff  1649 Apr 13 16:44 .gitk
+-rw-r&mdash;r&mdash;   1 rth  staff  1760 Apr 13 16:10 .irbrc
+-rw-r&mdash;r&mdash;   1 rth  staff   118 Aug 22  2013 .zprofile
+-rw-r&mdash;r&mdash;   1 rth  staff   375 Apr 14 01:44 README.mdown</p>
+
+<p>~/.dotfiles[master]$
+```</p>
+
+<p>The <code>.bash_profile</code> in this example has grown to include aliases, path specifications, and a script that shows the current Git branch as part of the command prompt. The file also contains two aliases useful for showing or hiding dotfiles in the Finder: <code>showdots</code> and <code>hidedots</code>.</p>
+
+<h3>Putting Dotfiles in One Directory</h3>
+
+<p>Dotfiles are normally created in the user&rsquo;s home directory. For organization purposes, I moved my non-private dotfiles into a directory called <code>.dotfiles</code>, listed above. Unix makes this easy. First, move to the home directory and create <code>~/.dotfiles</code>.</p>
+
+<p>```bash
+~$ cd ~</p>
+
+<p>~$ mkdir .dotfiles</p>
+
+<p>~$</p>
+
+<p>```</p>
+
+<p><em>Note: Dotfiles can sometimes include private information. If you don&rsquo;t want to share information in a particular dotfile, don&rsquo;t put it on GitHub!</em></p>
+
+<p>Next, change in to the <code>~/.dotfiles</code> directory and move non-public dotfiles into the newly created directory. In this example, we&rsquo;ll only move one file, <code>.bash_profile</code>.</p>
+
+<p>```bash</p>
+
+<p>~$ cd .dotfiles/</p>
+
+<p>$ mv ../.bash_profile .</p>
+
+<p>$</p>
+
+<p>```</p>
+
+<h3>Symbolic Links</h3>
+
+<p>Symbolic links ensure that our dotfiles can be found when needed.</p>
+
+<p>```bash</p>
+
+<p>$ cd ~</p>
+
+<p>$ ln -s ~/.dotfiles/.bash_profile</p>
+
+<p>$ ls -al
+total 8
+drwxr-xr-x   3 rth  staff   102 Apr 14 19:48 .
+drwxr-xr-x+ 73 rth  staff  2482 Apr 14 19:47 ..
+lrwxr-xr-x   1 rth  staff    34 Apr 14 19:48 .bash_profile &ndash;> /Users/rth/.dotfiles/.bash_profile</p>
+
+<p>$</p>
+
+<p>```</p>
+
+<p>In the above example, we created a symbolic link called <code>.bash_profile</code> to the real <code>~/.dotfiles/.bash_profile</code> located in the <code>.dotfiles</code> directory. That way, any program that&rsquo;s looking for the <code>.bash_profile</code> file in the home directory will find what it needs, even though the file is somewhere else.</p>
+
+<h3>Why Use Git to Manage Dotfiles?</h3>
+
+<p>Git is a great tool for managing files that change over time. Dotfiles can change as we install new software or tweak our development environment. If we make a mistake, or if an installation script makes a mistake, we can use Git to roll back in history to a pre-mistake version of the dotfile.</p>
+
+<h3>Don&rsquo;t Make All Dotfiles Public</h3>
+
+<p>There are some dotfiles that you don&rsquo;t want to share publicly. For example, <code>.bash_history</code> contains all of the commands that have been executed in the shell. Do you really want the world that you sometimes <code>$ ssh myuserid@[embarassingdomainname].com</code>? Probably not. If you think that a dotfile might contain personal or confidential information, no need to broadcast it.</p>
+
+<h3>Learning More About Dotfiles</h3>
+
+<p>Most of my dotfiles, like <code>.bash_profile</code>, don&rsquo;t contain anything private. In fact, most of what I know about dotfiles has come from other developers via books, user groups, blogs, and spelunking through GitHub. Dotfile collections by <a href="https://github.com/hashrocket/dotmatrix">Hashrocket</a> and <a href="https://github.com/thoughtbot/dotfiles">Thoughtbot</a> are  especially good. My <code>~/.dotfiles</code> directory is available for public viewing on <a href="https://github.com/RayHightower/.dotfiles">GitHub</a>.</p>
+
+<p>If you&rsquo;re doing something especially cool with your dotfiles, let&rsquo;s hear about it!</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Why Open Source?]]></title>
     <link href="http://RayHightower.com/blog/2014/04/05/why-open-source/"/>
-    <updated>2014-04-05T00:40:00-04:00</updated>
+    <updated>2014-04-05T00:40:00-05:00</updated>
     <id>http://RayHightower.com/blog/2014/04/05/why-open-source</id>
     <content type="html"><![CDATA[<p>As members of the open source community, we have internalized the benefits of open source. Sometimes, knowing a topic so well can hinder us from explaining it to people who need to understand our work: Clients, customers, and employers. They need to understand us because they pay us. Understanding helps to build trust.</p>
 
@@ -35,7 +136,7 @@
   <entry>
     <title type="html"><![CDATA[Flourish Open Source Conference at UIC]]></title>
     <link href="http://RayHightower.com/blog/2014/03/31/flourish-open-source-conference-at-uic/"/>
-    <updated>2014-03-31T23:42:00-04:00</updated>
+    <updated>2014-03-31T23:42:00-05:00</updated>
     <id>http://RayHightower.com/blog/2014/03/31/flourish-open-source-conference-at-uic</id>
     <content type="html"><![CDATA[<p><a href="http://flourishconf.com">Flourish</a> is an open source conference to be held at the University of Illinois at Chicago on Saturday, April 5, 2014. The conference is run by university students and tickets are free.</p>
 
@@ -69,7 +170,7 @@
   <entry>
     <title type="html"><![CDATA[CocoaConf Chicago Recap]]></title>
     <link href="http://RayHightower.com/blog/2014/03/10/cocoaconf-chicago-recap/"/>
-    <updated>2014-03-10T11:46:00-04:00</updated>
+    <updated>2014-03-10T11:46:00-05:00</updated>
     <id>http://RayHightower.com/blog/2014/03/10/cocoaconf-chicago-recap</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/cocoaconf-2014.jpg' width='' height='' alt='Cool stuff from CocoaConf.' title='Cool stuff from CocoaConf.'><span class='caption-text'>Cool stuff from CocoaConf.</span></span></p>
 
@@ -143,7 +244,7 @@ Most of my iOS time is spent with <a href="/blog/2013/01/12/why-i-use-vim/">Vim<
   <entry>
     <title type="html"><![CDATA[SGI & Big Data]]></title>
     <link href="http://RayHightower.com/blog/2014/02/17/sgi-and-big-data/"/>
-    <updated>2014-02-17T14:46:00-04:00</updated>
+    <updated>2014-02-17T14:46:00-06:00</updated>
     <id>http://RayHightower.com/blog/2014/02/17/sgi-and-big-data</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/sgi-logo-1990s.png' width='' height='' alt='SGI&rsquo;s logo from the 1990s.' title='SGI&rsquo;s logo from the 1990s.'><span class='caption-text'>SGI&rsquo;s logo from the 1990s.</span></span>
 <a href="http://sgi.com">Silicon Graphics International Corporation (SGI)</a> computers rendered the special effects for the original <a href="http://en.wikipedia.org/wiki/Jurassic_Park">Jurassic Park</a> movie. Computer enthusiasts coveted SGI machines throughout the 1990s.</p>
@@ -198,37 +299,6 @@ Most of my iOS time is spent with <a href="/blog/2013/01/12/why-i-use-vim/">Vim<
 <h3>About Chicago ACM</h3>
 
 <p><a href="http://www.meetup.com/chicagoacm/">The Chicago Chapter of the Association for Computing Machinery (Chicago ACM)</a> is on fire. December&rsquo;s meeting featured a supercomputing presentation by <a href="/blog/2013/12/12/high-performance-computing-at-acm/">Sharan Kalwani of Fermilab</a>. The February meeting was all about SGI&rsquo;s push into big data, and next month will focus on the Internet of Things (IoT). The organizers are assembling an exciting combination of events. Looking forward to more!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Exploring Controversial Coding Topics at 8th Light]]></title>
-    <link href="http://RayHightower.com/blog/2014/02/03/exploring-controversial-coding-topics-at-8th-light/"/>
-    <updated>2014-02-03T12:11:00-04:00</updated>
-    <id>http://RayHightower.com/blog/2014/02/03/exploring-controversial-coding-topics-at-8th-light</id>
-    <content type="html"><![CDATA[<p><a href="http://8thlight.com">8th Light</a> recently hosted a panel discussion on Controversial Coding Topics. I was honored to share the panel with two technology leaders whom I admire: <a href="http://twitter.com/markrickmeier">Mark Rickmeier</a> of <a href="http://tablexi.com">Table XI</a> and <a href="http://twitter.com/coreyhaines">Corey Haines</a> of <a href="http://wavetable.com">Wavetable</a>. <a href="http://twitter.com/little_fig">Rachel Feigenbaum</a> of 8th Light organized the event.</p>
-
-<!--more-->
-
-
-<center><iframe src="http://RayHightower.com//player.vimeo.com/video/84793305" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
-
-
-<h3>Topics Covered</h3>
-
-<p>Some of the topics covered during the discussion:</p>
-
-<ul>
-<li>Hiring. What do you look for when building a team?</li>
-<li>Establishing team standards.</li>
-<li>Balancing professional time with personal time. Don&rsquo;t work 12-hour
-days!</li>
-</ul>
-
-
-<h3>Gratitude</h3>
-
-<p>Thank you 8th Light for making this happen.</p>
 ]]></content>
   </entry>
   
