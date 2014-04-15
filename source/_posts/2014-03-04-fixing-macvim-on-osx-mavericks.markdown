@@ -10,7 +10,7 @@ Experience told me to delay upgrading to OS X Mavericks for as long as possible 
 ```bash
 ~$ which mvim
 
-~$
+~$ 
 ```
 
 The 'nix `which` command returned a null response when asked about MacVim. Not cool, Mavericks! 
@@ -22,7 +22,7 @@ Fortunately, I’m running [Homebrew](/blog/2014/02/12/homebrew-fundamentals/). 
 ~$ brew uninstall macvim
 Uninstalling /usr/local/Cellar/macvim/7.4-70...
 
-~$
+~$ 
 ```
 
 followed by…
@@ -39,7 +39,7 @@ Run `brew linkapps` to symlink these to /Applications.
 ==> Summary
 🍺  /usr/local/Cellar/macvim/7.4-72: 1799 files, 28M, built in 37 seconds
 
-~$
+~$ 
 ```
 
 And now…
