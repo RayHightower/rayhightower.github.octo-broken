@@ -5,10 +5,14 @@ date: 2014-04-15 17:13
 comments: true
 categories: [ Community, Linux-Unix-OSX ]
 ---
-Dotfiles, the configuration files used by Unix-like machines, can become disorganized over time. Entropy rules! This article describes my recent attempt to bring order to dotfile chaos.
+Dotfiles, the configuration files used by Unix-like machines, can become disorganized over time. Entropy rules! This article describes my recent attempt to bring order to dotfile chaos. The steps can be summarized as follows:
+
+* Move the non-public dotfiles into a directory called `~/.dotfiles`.
+* Create symbolic links to each dotfile in the home directory.
+* Use Git to manage the ~/.dotfiles` directory.
 
 Dotfiles are normally hidden when you try to view them in the Mac OS X Finder. To view them from the command prompt, use `$ ls -al`.
-
+<!--more-->
 ```bash
 ~/.dotfiles[master]$ ls -al
 total 40
@@ -24,10 +28,11 @@ drwxr-xr-x  14 rth  staff   476 Apr 14 02:25 .git
 ~/.dotfiles[master]$ 
 ```
 
-`.bash_profile` contains aliases, path configuration, and a script that shows the current Git branch as part of the command prompt. The file also contains two aliases useful for showing or hiding dotfiles in the Finder: `showdots` and `hidedots`.
-<!--more-->
+The `.bash_profile` in this example has grown to include aliases, path specifications, and a script that shows the current Git branch as part of the command prompt. The file also contains two aliases useful for showing or hiding dotfiles in the Finder: `showdots` and `hidedots`.
+
 ###Putting Dotfiles in One Directory
 Dotfiles are normally created in the user's home directory. For organizatino purposes, I moved my non-private dotfiles into a directory called `.dotfiles`, listed above. Unix makes this easy. First, move to the home directory and create `~/.dotfiles`.
+
 
 ```bash
 ~$ cd ~
@@ -37,6 +42,8 @@ Dotfiles are normally created in the user's home directory. For organizatino pur
 ~$ 
 
 ```
+
+_Note: Dotfiles can sometimes include private information. If you don't want to share information in a particular dotfile, don't put it on GitHub!_
 
 Next, change in to the `~/.dotfiles` directory and copy non-public dotfiles into the newly created directory. In this example, we'll only move one file, `.bash_profile`.
 
