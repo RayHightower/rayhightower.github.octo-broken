@@ -28,7 +28,7 @@ drwxr-xr-x  14 rth  staff   476 Apr 14 02:25 .git
 ~/.dotfiles[master]$ 
 ```
 
-The `.bash_profile` in this example has grown to include aliases, path specifications, and a script that shows the current Git branch as part of the command prompt. The file also contains two aliases useful for showing or hiding dotfiles in the Finder: `showdots` and `hidedots`.
+The [.bash_profile](https://github.com/RayHightower/.dotfiles/blob/master/.bash_profile) in this example has grown to include aliases, path specifications, and a script that shows the current Git branch as part of the command prompt. The file also contains two aliases useful for showing or hiding dotfiles in the Finder: `showdots` and `hidedots`.
 
 ###Putting Dotfiles in One Directory
 Dotfiles are normally created in the user's home directory. For organization purposes, I moved my non-private dotfiles into a directory called `.dotfiles`, listed above. Unix makes this easy. First, move to the home directory and create `~/.dotfiles`.
