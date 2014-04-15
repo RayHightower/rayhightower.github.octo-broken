@@ -53,7 +53,7 @@ Warning: Your Homebrew is outdated.
 You haven't updated for at least 24 hours, this is a long time in brewland!
 To update Homebrew, run `brew update`.
 
-$
+$ 
 
 ```
 
@@ -69,7 +69,7 @@ Updated Homebrew from f83642fc to cfad513e.
 ==> Deleted Formulae
 ...
 
-$
+$ 
 
 ```
 
