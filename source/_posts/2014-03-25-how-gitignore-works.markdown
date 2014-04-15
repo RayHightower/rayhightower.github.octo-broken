@@ -17,7 +17,7 @@ The root cause of my problem: Once Git has begun tracking a file or directory, a
 ```bash
 $ git rm --cached [filename]
 
-$
+$ 
 ```
 
 Or, if you want to stop tracking an entire directory (like me in this case)...
@@ -25,7 +25,7 @@ Or, if you want to stop tracking an entire directory (like me in this case)...
 ```bash
 $ git rm -r --cached [directoryname]
 
-$
+$ 
 ```
 
 The `-r` flag will tell Git to stop tracking all of the sub-directories and files within `directoryname`, recursively.
