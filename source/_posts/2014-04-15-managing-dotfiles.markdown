@@ -9,7 +9,7 @@ Dotfiles, the configuration files used by Unix-like machines, can become disorga
 
 * Move the non-private dotfiles (dotfiles that will be viewed by others on Github) into a directory called `~/.dotfiles`.
 * From the `home` directory, create a symbolic link to each dotfile in the `~/.dotfiles` directory.
-* Use Git to manage the `~/.dotfiles` directory.
+* Use Git to manage the `~/.dotfiles` directory, and share it on GitHub.
 
 Dotfiles are normally hidden when you try to view them in the Mac OS X Finder. To view them from the command prompt, use `$ ls -al`.
 <!--more-->
