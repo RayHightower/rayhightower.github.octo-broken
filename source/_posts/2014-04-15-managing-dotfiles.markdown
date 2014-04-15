@@ -25,9 +25,11 @@ drwxr-xr-x  14 rth  staff   476 Apr 14 02:25 .git
 ```
 
 `.bash_profile` contains aliases, path configuration, and a script that shows the current Git branch as part of the command prompt. The file also contains two aliases useful for showing or hiding dotfiles in the Finder: `showdots` and `hidedots`.
-
-One of the dotfiles in the 
 <!--more-->
+###Putting Dotfiles in One Directory
+All of the non-private dotfiles are in one directory, `.dotfiles`
+One of the dotfiles in the 
+
 ###Why Use Git to Manage Dotfiles?
 As a version control system, Git is a great tool for managing files that change over time. Dotfiles can change as we install new software or tweak our development environment. If we make a mistake, or if an installation script makes a mistake, we can use Git to roll back in history to a pre-mistake version of the dotfile.
 <!--more-->
