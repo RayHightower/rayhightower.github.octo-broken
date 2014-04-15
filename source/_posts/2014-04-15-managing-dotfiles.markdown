@@ -44,7 +44,7 @@ Dotfiles are normally created in the user's home directory. For organization pur
 
 _Note: Dotfiles can sometimes include private information. If you don't want to share information in a particular dotfile, don't put it on GitHub!_
 
-Next, change in to the `~/.dotfiles` directory and move non-public dotfiles into the newly created directory. In this example, we'll only move one file, `.bash_profile`.
+In this example, we'll only move one file, `.bash_profile`.
 
 ```bash
 
@@ -57,7 +57,7 @@ $
 ```
 
 ###Symbolic Links
-Symbolic links ensure that our dotfiles can be found when needed. 
+Symbolic links ensure that executables can find our dotfiles as needed. 
 
 ```bash
 
