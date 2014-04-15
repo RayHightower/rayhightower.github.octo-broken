@@ -22,7 +22,7 @@ Warning: Your Homebrew is outdated.
 You haven't updated for at least 24 hours, this is a long time in brewland!
 To update Homebrew, run `brew update`.
 
-~/Code/Ruby/apps$
+~/Code/Ruby/apps$ 
 ```
 
 `$ brew doctor` has spoken. Time to update Homebrew.
@@ -44,7 +44,7 @@ Please report this bug:
 /usr/local/Library/brew.rb:95:in `send'
 /usr/local/Library/brew.rb:95
 
-~/Code/Ruby/apps$
+~/Code/Ruby/apps$ 
 ```
 `$ brew update` choked. Further, Homebrew said that I should report a bug. But something smelled fishy. I decided to try running Homebrew under Ruby 2.0.0 instead of Ruby 1.9.3, the default on my system. Running [RVM](/blog/2013/05/16/upgrading-ruby-with-rvm/) makes bouncing between Ruby versions a snap.
 
@@ -99,7 +99,7 @@ Mission accomplished. Git has been upgraded to 1.8.5.
 ~$ git --version
 git version 1.8.5.1
 
-~$
+~$ 
 ```
 
 ###Why This Matters
