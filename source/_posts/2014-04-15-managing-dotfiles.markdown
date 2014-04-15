@@ -7,7 +7,7 @@ categories: [ Community, Linux-Unix-OSX ]
 ---
 Dotfiles, the configuration files used by Unix-like machines, can become disorganized over time. Entropy rules! This article describes my recent attempt to bring order to dotfile chaos. The steps can be summarized as follows:
 
-* Move the non-public dotfiles into a directory called `~/.dotfiles`.
+* Move the non-private dotfiles (dotfiles that will be viewed by others on Github) into a directory called `~/.dotfiles`.
 * From the `home` directory, create a symbolic link to each dotfile in the `~/.dotfiles` directory.
 * Use Git to manage the `~/.dotfiles` directory.
 
