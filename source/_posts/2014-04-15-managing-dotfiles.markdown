@@ -27,6 +27,49 @@ drwxr-xr-x  14 rth  staff   476 Apr 14 02:25 .git
 `.bash_profile` contains aliases, path configuration, and a script that shows the current Git branch as part of the command prompt. The file also contains two aliases useful for showing or hiding dotfiles in the Finder: `showdots` and `hidedots`.
 <!--more-->
 ###Putting Dotfiles in One Directory
+Dotfiles are normally created in the user's home directory. For organizatino purposes, I moved my non-private dotfiles into a directory called `.dotfiles`, listed above. Unix makes this easy. First, move to the home directory and create `~/.dotfiles`.
+
+```bash
+~$ cd ~
+
+~$ mkdir .dotfiles
+
+~$ 
+
+```
+
+Next, change in to the `~/.dotfiles` directory and copy non-public dotfiles into the newly created directory. In this example, we'll only move one file, `.bash_profile`.
+
+```bash
+
+~$ cd .dotfiles/
+
+~/.dotfiles$ mv ../.bash_profile .
+
+~/.dotfiles$ 
+
+```
+###Symbolic Links
+Now that we've moved `.bash_profile` into another directory, how will it be found by programs that are looking for it in the user's home directory? We solve the problem with symbolic links.
+
+```bash
+
+$ cd ~
+
+$ ln -s ~/.dotfiles/.bash_profile
+
+$ ls -al
+total 8
+drwxr-xr-x   3 rth  staff   102 Apr 14 19:48 .
+drwxr-xr-x+ 73 rth  staff  2482 Apr 14 19:47 ..
+lrwxr-xr-x   1 rth  staff    34 Apr 14 19:48 .bash_profile -> /Users/rth/.dotfiles/.bash_profile
+
+$ 
+
+```
+
+In the above example, we created a symbolic link called `.bash_profile` to the real `~/.dotfiles/.bash_profile` located in the `.dotfiles` directory. That way, any program that's looking for the `.bash_profile` file in the home directory will find what it needs, even though the file isn't really there. 
+
 All of the non-private dotfiles are in one directory, `.dotfiles`
 One of the dotfiles in the 
 
