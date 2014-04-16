@@ -45,10 +45,10 @@ article {
   img, video, .flash-video, .caption-wrapper {
     @extend .flex-content;
     @extend .basic-alignment;
-    @include shadow-box;
     &.caption {
       @include reset-shadow-box;
      }
+    border:  none !important;
    }
    .caption-wrapper {
      display: inline-block;
