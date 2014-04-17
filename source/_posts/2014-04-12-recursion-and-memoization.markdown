@@ -33,7 +33,7 @@ end
 end
 ```
 
-The example runs, but performance slows down as _n_ gets larger. Why? Because this method re-calculates all preceeding Fibonacci numbers every time it calculates a new `fibo(n)`. When we calculate Fibonacci numbers manually, we know better. Humans are smart enough to refer to earlier work. But the `fibo(n)` does not manage time very well.
+The example runs, but performance slows down as _n_ gets larger. Why? Because this method re-calculates all preceeding Fibonacci numbers every time it calculates a new `fibo(n)`. When we calculate Fibonacci numbers manually, we know better. Humans are smart enough to refer to earlier work. But the `fibo(n)` method does not manage time very well.
 
 Is it possible for the `fibo(n)` method to remember the results of earlier calculations so that it can avoid doing work that is already done? Yes, through [memoization](http://en.wikipedia.org/wiki/Memoization).
 
