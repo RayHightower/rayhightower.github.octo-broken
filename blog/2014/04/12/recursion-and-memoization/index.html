@@ -156,7 +156,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>The example runs, but performance slows down as <em>n</em> gets larger. Why? Because this method re-calculates all preceeding Fibonacci numbers every time it calculates a new <code>fibo(n)</code>. When we calculate Fibonacci numbers manually, we know better. Humans are smart enough to refer to earlier work. But the <code>fibo(n)</code> does not manage time very well.</p>
+<p>The example runs, but performance slows down as <em>n</em> gets larger. Why? Because this method re-calculates all preceeding Fibonacci numbers every time it calculates a new <code>fibo(n)</code>. When we calculate Fibonacci numbers manually, we know better. Humans are smart enough to refer to earlier work. But the <code>fibo(n)</code> method does not manage time very well.</p>
 
 <p>Is it possible for the <code>fibo(n)</code> method to remember the results of earlier calculations so that it can avoid doing work that is already done? Yes, through <a href="http://en.wikipedia.org/wiki/Memoization">memoization</a>.</p>
 
