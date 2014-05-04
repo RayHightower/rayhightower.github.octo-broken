@@ -67,7 +67,7 @@ We can examine the Go Workspace on my system with the Unix <code>tree</code> com
 
 4 directories, 1 file
 
-~/Code/gocode$
+~/Code/gocode$ 
 ```
 
 Here's a brief description of the directories:
@@ -101,7 +101,7 @@ We drop the code into a file called `hello.go` in the `hello` directory. To comp
 ```bash
 ~/Code/gocode/src/github.com/rayhightower/hello$ go install
 
-~/Code/gocode/src/github.com/rayhightower/hello$
+~/Code/gocode/src/github.com/rayhightower/hello$ 
 ```
 If the Go compiler responds with a blank prompt (like above) then the program compiled successfully and a `bin` directory has been created inside the Go workspace. Run the `tree` command from the `gocode` directory to see how the structure has changed: 
 
@@ -118,7 +118,7 @@ If the Go compiler responds with a blank prompt (like above) then the program co
 
 5 directories, 2 files
 
-~/Code/gocode$
+~/Code/gocode$ 
 ```
 
 The newly created `bin/` directory contains our `hello` executable. And now, let's cut the suspense and _run the program_. To do so, change into the `bin/` directory and type `./hello`.
@@ -130,7 +130,7 @@ The newly created `bin/` directory contains our `hello` executable. And now, let
 
 ****** Hey Parallella enthusiasts: Learn Go! ******
 
-~/Code/gocode/bin$
+~/Code/gocode/bin$ 
 ```
 Success!
 
