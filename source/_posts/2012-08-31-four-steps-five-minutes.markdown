@@ -9,10 +9,6 @@ Nine out of ten startups fail in the first year. Why? More important, what can w
 
 <center><iframe name="foursteps" width="560" height="349" src="http://www.youtube.com/embed/uIYUTKP1pl8?rel=0" frameborder="0" allowfullscreen></iframe></center>
 <!-- more -->
-
-####Ignite Chicago
-This presentation was created for <a href="http://ignitechi.org">Ignite Chicago</a>. Ignite talks are special because speakers are required to present their thoughts in five minutes with slides that auto-advance every fifteen seconds. Thank you Stella Fayman and Tim Jahn for organizing the event.
-
 ####About the Author of _The Four Steps to the Epiphany_
 <a href="http://steveblank.com">Steve Blank</a> worked in, owned, or managed eight different silicon valley startups in the course of twenty years. His eighth startup was very successful; he was able to exit with enough money to retire. At that point, Blank began to reflect on the successes and failures of the various startups he had been involved with. Reflection led to lectures at Stanford, Berkeley, and Columbia. Notes from his lectures evolved into the book: _The Four Steps to the Epiphany_.
 
@@ -51,6 +47,9 @@ After we've gone through the first three customer-oriented steps, we build the c
 
 ####That's Not All...
 We live in a time of continuous & rapid change. Once a business has become successful with _The Four Steps_, it's important to remain watchful for new opportunities. Good companies become great when they execute consistently over time.
+
+####Ignite Chicago
+This presentation was created for <a href="http://ignitechi.org">Ignite Chicago</a>. Ignite talks are special because speakers are required to present their thoughts in five minutes with slides that auto-advance every fifteen seconds. Thank you Stella Fayman and Tim Jahn for organizing the event.
 
 _Note: A version of this post originally appeared on the [WisdomGroup Blog](http://wisdomgroup.com)._
 
