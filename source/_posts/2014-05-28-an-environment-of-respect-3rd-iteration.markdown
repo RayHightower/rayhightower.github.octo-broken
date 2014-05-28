@@ -14,7 +14,7 @@ Harassment is a serious issue, and a 140-character tweet will not do the discuss
 * Any of the contact names listed on the current code of conduct
 * Phone number listed on the code of conduct
 
-The contact list may change as responsibilities shift within ChicagoRuby. However, there will always be multiple people available to address harassment concerns.
+If you have concerns in this area, please feel free to use one of the channels. The contact list may change as responsibilities shift within ChicagoRuby. However, there will always be multiple people available to address harassment concerns.
 
 Thank you Coraline and Liz for your work in making this happen. And thank you [Ken Walters](https://twitter.com/lostghost) of [Brad’s Deals](http://twitter.com/bradsdeals) for facilitating the meeting.
 
