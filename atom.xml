@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-05-21T21:42:57-05:00</updated>
+  <updated>2014-05-28T09:40:34-07:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -14,9 +14,36 @@
 
   
   <entry>
+    <title type="html"><![CDATA[An Environment of Respect 3rd Iteration]]></title>
+    <link href="http://RayHightower.com/blog/2014/05/28/an-environment-of-respect-3rd-iteration/"/>
+    <updated>2014-05-28T06:42:00-07:00</updated>
+    <id>http://RayHightower.com/blog/2014/05/28/an-environment-of-respect-3rd-iteration</id>
+    <content type="html"><![CDATA[<p>Last week, <a href="https://twitter.com/bantik">Coraline Emhke</a> and <a href="https://twitter.com/feministy">Liz Abbinante</a> met with three members of the WindyCityRails organizer team: <a href="https://twitter.com/zolk">Kevin Zolkiewicz</a>, <a href="https://twitter.com/themccreefiles">Alonda McCree</a>, and me. Good dialog. End result: The updated <a href="http://www.windycityrails.org/code-of-conduct/">WindyCityRails Code of Conduct</a>.</p>
+
+<!--more-->
+
+
+<p>Harassment is a serious issue, and a 140-character tweet will not do the discussion justice. Therefore, the ChicagoRuby organizers have created multiple communication channels for this issue:</p>
+
+<ul>
+<li>Email: <a href="&#x6d;&#x61;&#x69;&#108;&#116;&#x6f;&#x3a;&#99;&#111;&#100;&#x65;&#x6f;&#102;&#99;&#111;&#x6e;&#100;&#x75;&#x63;&#116;&#64;&#99;&#104;&#105;&#99;&#97;&#103;&#x6f;&#x72;&#117;&#98;&#x79;&#x2e;&#x6f;&#x72;&#103;">&#99;&#111;&#100;&#x65;&#x6f;&#102;&#99;&#x6f;&#110;&#100;&#x75;&#99;&#116;&#64;&#x63;&#104;&#105;&#x63;&#97;&#103;&#x6f;&#x72;&#x75;&#x62;&#x79;&#x2e;&#111;&#x72;&#103;</a></li>
+<li>Any of the contact names listed on the current code of conduct</li>
+<li>Phone number listed on the code of conduct</li>
+</ul>
+
+
+<p>If you have concerns in this area, please feel free to use one of the channels. The contact list may change as responsibilities shift within ChicagoRuby. However, there will always be multiple people available to address harassment concerns.</p>
+
+<p>Thank you Coraline and Liz for your work in making this happen. And thank you <a href="https://twitter.com/lostghost">Ken Walters</a> of <a href="http://twitter.com/bradsdeals">Brad’s Deals</a> for facilitating the meeting.</p>
+
+<p>Now, let’s go write some code!</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Managing Dotfiles]]></title>
     <link href="http://RayHightower.com/blog/2014/04/15/managing-dotfiles/"/>
-    <updated>2014-04-15T17:13:00-05:00</updated>
+    <updated>2014-04-15T17:13:00-07:00</updated>
     <id>http://RayHightower.com/blog/2014/04/15/managing-dotfiles</id>
     <content type="html"><![CDATA[<p>Dotfiles, the configuration files used by Unix-like machines, can become disorganized over time. Entropy rules! This article describes my recent attempt to bring order to dotfile chaos. The steps can be summarized as follows:</p>
 
@@ -145,7 +172,7 @@
   <entry>
     <title type="html"><![CDATA[Recursion and Memoization]]></title>
     <link href="http://RayHightower.com/blog/2014/04/12/recursion-and-memoization/"/>
-    <updated>2014-04-12T10:48:00-05:00</updated>
+    <updated>2014-04-12T10:48:00-07:00</updated>
     <id>http://RayHightower.com/blog/2014/04/12/recursion-and-memoization</id>
     <content type="html"><![CDATA[<blockquote><p>To iterate is human, to recurse divine.
 &nbsp;<br/>
@@ -293,7 +320,7 @@ the results for future use.</li>
   <entry>
     <title type="html"><![CDATA[When in Doubt, Rake Clean]]></title>
     <link href="http://RayHightower.com/blog/2014/04/10/when-in-doubt-rake-clean/"/>
-    <updated>2014-04-10T15:53:00-05:00</updated>
+    <updated>2014-04-10T15:53:00-07:00</updated>
     <id>http://RayHightower.com/blog/2014/04/10/when-in-doubt-rake-clean</id>
     <content type="html"><![CDATA[<p>Earlier today, I upgraded from RubyMotion <code>v 2.24</code> to <code>v 2.26</code>. Immediately after the upgrade, I attempted to run a RubyMotion app that I’m working on. The result?</p>
 
@@ -361,7 +388,7 @@ the results for future use.</li>
   <entry>
     <title type="html"><![CDATA[Why Open Source?]]></title>
     <link href="http://RayHightower.com/blog/2014/04/05/why-open-source/"/>
-    <updated>2014-04-05T00:40:00-05:00</updated>
+    <updated>2014-04-05T00:40:00-07:00</updated>
     <id>http://RayHightower.com/blog/2014/04/05/why-open-source</id>
     <content type="html"><![CDATA[<p>As members of the open source community, we have internalized the benefits of open source. Sometimes, knowing a topic so well can hinder us from explaining it to people who need to understand our work: Clients, customers, and employers. They need to understand us because they pay us. Understanding helps to build trust.</p>
 
@@ -380,7 +407,7 @@ the results for future use.</li>
   <entry>
     <title type="html"><![CDATA[Flourish Open Source Conference at UIC]]></title>
     <link href="http://RayHightower.com/blog/2014/03/31/flourish-open-source-conference-at-uic/"/>
-    <updated>2014-03-31T23:42:00-05:00</updated>
+    <updated>2014-03-31T23:42:00-07:00</updated>
     <id>http://RayHightower.com/blog/2014/03/31/flourish-open-source-conference-at-uic</id>
     <content type="html"><![CDATA[<p><a href="http://flourishconf.com">Flourish</a> is an open source conference to be held at the University of Illinois at Chicago on Saturday, April 5, 2014. The conference is run by university students and tickets are free.</p>
 
@@ -414,7 +441,7 @@ the results for future use.</li>
   <entry>
     <title type="html"><![CDATA[How .gitignore Works]]></title>
     <link href="http://RayHightower.com/blog/2014/03/25/how-gitignore-works/"/>
-    <updated>2014-03-25T18:20:00-05:00</updated>
+    <updated>2014-03-25T18:20:00-07:00</updated>
     <id>http://RayHightower.com/blog/2014/03/25/how-gitignore-works</id>
     <content type="html"><![CDATA[<p>Earlier today I ran into a Git issue within a RubyMotion project. I added a directory to the project&rsquo;s <code>.gitignore</code> file, but Git seemed to ignore my ignore. Expressed more clearly, Git continued to track a directory that I explicitly told it to ignore.</p>
 
@@ -462,7 +489,7 @@ the results for future use.</li>
   <entry>
     <title type="html"><![CDATA[CocoaConf Chicago Recap]]></title>
     <link href="http://RayHightower.com/blog/2014/03/10/cocoaconf-chicago-recap/"/>
-    <updated>2014-03-10T11:46:00-05:00</updated>
+    <updated>2014-03-10T11:46:00-07:00</updated>
     <id>http://RayHightower.com/blog/2014/03/10/cocoaconf-chicago-recap</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/cocoaconf-2014.jpg' width='' height='' alt='Cool stuff from CocoaConf.' title='Cool stuff from CocoaConf.'><span class='caption-text'>Cool stuff from CocoaConf.</span></span></p>
 
@@ -536,7 +563,7 @@ Most of my iOS time is spent with <a href="http://RayHightower.com/blog/2013/01/
   <entry>
     <title type="html"><![CDATA[Fixing MacVim on OS X Mavericks]]></title>
     <link href="http://RayHightower.com/blog/2014/03/04/fixing-macvim-on-osx-mavericks/"/>
-    <updated>2014-03-04T14:48:00-06:00</updated>
+    <updated>2014-03-04T14:48:00-08:00</updated>
     <id>http://RayHightower.com/blog/2014/03/04/fixing-macvim-on-osx-mavericks</id>
     <content type="html"><![CDATA[<p>Experience told me to delay upgrading to OS X Mavericks for as long as possible because the upgrade would likely break my dev environment. Sure enough, the upgrade broke <a href="http://RayHightower.com/blog/2013/01/12/why-i-use-vim/">MacVim</a>.</p>
 
@@ -616,7 +643,7 @@ Most of my iOS time is spent with <a href="http://RayHightower.com/blog/2013/01/
   <entry>
     <title type="html"><![CDATA[What Is Open Source?]]></title>
     <link href="http://RayHightower.com/blog/2014/02/22/what-is-open-source/"/>
-    <updated>2014-02-22T16:41:00-06:00</updated>
+    <updated>2014-02-22T16:41:00-08:00</updated>
     <id>http://RayHightower.com/blog/2014/02/22/what-is-open-source</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/linux-penguin.png' width='' height='' alt='The Linux penguin.' title='The Linux penguin.'><span class='caption-text'>The Linux penguin.</span></span>
 Entrepreneurs, especially those outside of software development, may find this article useful.</p>
@@ -716,7 +743,7 @@ Entrepreneurs, especially those outside of software development, may find this a
   <entry>
     <title type="html"><![CDATA[SGI & Big Data]]></title>
     <link href="http://RayHightower.com/blog/2014/02/17/sgi-and-big-data/"/>
-    <updated>2014-02-17T14:46:00-06:00</updated>
+    <updated>2014-02-17T14:46:00-08:00</updated>
     <id>http://RayHightower.com/blog/2014/02/17/sgi-and-big-data</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/sgi-logo-1990s.png' width='' height='' alt='SGI's logo from the 1990s.' title='SGI's logo from the 1990s.'><span class='caption-text'>SGI&rsquo;s logo from the 1990s.</span></span>
 <a href="http://sgi.com">Silicon Graphics International Corporation (SGI)</a> computers rendered the special effects for the original <a href="http://en.wikipedia.org/wiki/Jurassic_Park">Jurassic Park</a> movie. Computer enthusiasts coveted SGI machines throughout the 1990s.</p>
@@ -777,7 +804,7 @@ Entrepreneurs, especially those outside of software development, may find this a
   <entry>
     <title type="html"><![CDATA[Homebrew Fundamentals]]></title>
     <link href="http://RayHightower.com/blog/2014/02/12/homebrew-fundamentals/"/>
-    <updated>2014-02-12T14:20:00-06:00</updated>
+    <updated>2014-02-12T14:20:00-08:00</updated>
     <id>http://RayHightower.com/blog/2014/02/12/homebrew-fundamentals</id>
     <content type="html"><![CDATA[<p>Spend enough time developing software on Mac OS X, and you will eventually need to install libraries that were written for Unix, but not specifically for OS X. Fortunately we have <a href="http://brew.sh/">Homebrew</a>, which makes it easier to install Unix libraries on the Mac.</p>
 
@@ -913,7 +940,7 @@ command into a terminal window.</p>
   <entry>
     <title type="html"><![CDATA[Installing Rubinius Using RVM]]></title>
     <link href="http://RayHightower.com/blog/2014/02/06/installing-rubinius-using-rvm/"/>
-    <updated>2014-02-06T18:17:00-06:00</updated>
+    <updated>2014-02-06T18:17:00-08:00</updated>
     <id>http://RayHightower.com/blog/2014/02/06/installing-rubinius-using-rvm</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://RayHightower.com/images/rubinius.png">
 <a href="http://rubini.us/">Rubinius</a> is an implementation of the Ruby language designed for concurrency. The lead developer of Rubinius, <a href="http://twitter.com/brixen">Brian Shirai</a>, will present Rubinius at ChicagoRuby on March 4, 2014. ChicagoRuby will follow-up with a Rubinius-themed hack night on March 12th. <a href="http://www.meetup.com/ChicagoRuby/events/114749352/">Details</a>.</p>
@@ -1081,7 +1108,7 @@ version of <code>irb</code>.</p>
   <entry>
     <title type="html"><![CDATA[Exploring Controversial Coding Topics at 8th Light]]></title>
     <link href="http://RayHightower.com/blog/2014/02/03/exploring-controversial-coding-topics-at-8th-light/"/>
-    <updated>2014-02-03T12:11:00-06:00</updated>
+    <updated>2014-02-03T12:11:00-08:00</updated>
     <id>http://RayHightower.com/blog/2014/02/03/exploring-controversial-coding-topics-at-8th-light</id>
     <content type="html"><![CDATA[<p><a href="http://8thlight.com">8th Light</a> recently hosted a panel discussion on Controversial Coding Topics. I was honored to share the panel with two technology leaders whom I admire: <a href="http://twitter.com/markrickmeier">Mark Rickmeier</a> of <a href="http://tablexi.com">Table XI</a> and <a href="http://twitter.com/coreyhaines">Corey Haines</a> of <a href="http://wavetable.com">Wavetable</a>. <a href="http://twitter.com/little_fig">Rachel Feigenbaum</a> of 8th Light organized the event.</p>
 
@@ -1112,7 +1139,7 @@ days!</li>
   <entry>
     <title type="html"><![CDATA[An Environment of Respect, 2nd Iteration]]></title>
     <link href="http://RayHightower.com/blog/2014/01/28/an-environment-of-respect-2nd-iteration/"/>
-    <updated>2014-01-28T07:08:00-06:00</updated>
+    <updated>2014-01-28T07:08:00-08:00</updated>
     <id>http://RayHightower.com/blog/2014/01/28/an-environment-of-respect-2nd-iteration</id>
     <content type="html"><![CDATA[<p>Thank you to everyone who offered feedback on <a href="http://RayHightower.com/blog/2014/01/21/an-environment-of-respect/">An Environment of Respect</a>, which included an early draft of the WindyCityRails Code of Conduct.</p>
 
@@ -1196,7 +1223,7 @@ days!</li>
   <entry>
     <title type="html"><![CDATA[An Environment of Respect]]></title>
     <link href="http://RayHightower.com/blog/2014/01/21/an-environment-of-respect/"/>
-    <updated>2014-01-21T13:16:00-06:00</updated>
+    <updated>2014-01-21T13:16:00-08:00</updated>
     <id>http://RayHightower.com/blog/2014/01/21/an-environment-of-respect</id>
     <content type="html"><![CDATA[<p>Here is an early draft of the <a href="http://windycityrails.org">WindyCityRails</a> Code of Conduct:</p>
 
@@ -1299,7 +1326,7 @@ days!</li>
   <entry>
     <title type="html"><![CDATA[Henry Ford's Faster Horse]]></title>
     <link href="http://RayHightower.com/blog/2014/01/15/henry-ford-faster-horse/"/>
-    <updated>2014-01-15T13:49:00-06:00</updated>
+    <updated>2014-01-15T13:49:00-08:00</updated>
     <id>http://RayHightower.com/blog/2014/01/15/henry-ford-faster-horse</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/ford-model-t-1910.jpg' width='' height='' alt='1910 Ford Model T' title='1910 Ford Model T'><span class='caption-text'>1910 Ford Model T</span></span></p>
 
@@ -1331,7 +1358,7 @@ days!</li>
   <entry>
     <title type="html"><![CDATA[BeagleBone Black Running Ubuntu: Part2 (Plus Ruby on Rails)]]></title>
     <link href="http://RayHightower.com/blog/2014/01/06/beaglebone-black-ubuntu-ruby-rails-part-2/"/>
-    <updated>2014-01-06T02:31:00-06:00</updated>
+    <updated>2014-01-06T02:31:00-08:00</updated>
     <id>http://RayHightower.com/blog/2014/01/06/beaglebone-black-ubuntu-ruby-rails-part-2</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/ruby-rails-ubuntu-beaglebone-black.png' width='' height='' alt='Ruby. Rails. Ubuntu. BeagleBone Black.' title='Ruby. Rails. Ubuntu. BeagleBone Black.'><span class='caption-text'>Ruby. Rails. Ubuntu. BeagleBone Black.</span></span></p>
 
@@ -1687,7 +1714,7 @@ out <a href="http://openrov.com">OpenROV</a>.</p>
   <entry>
     <title type="html"><![CDATA[BeagleBone Black Running Ubuntu: Part1]]></title>
     <link href="http://RayHightower.com/blog/2014/01/02/beaglebone-black-ubuntu-part-1/"/>
-    <updated>2014-01-02T15:59:00-06:00</updated>
+    <updated>2014-01-02T15:59:00-08:00</updated>
     <id>http://RayHightower.com/blog/2014/01/02/beaglebone-black-ubuntu-part-1</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper center'><img class='caption' src='http://RayHightower.com/images/beaglebone-black-ubuntu-ruby-rails.jpg' width='' height='' alt='BeagleBone Black running Ubuntu, Ruby, & Rails.' title='BeagleBone Black running Ubuntu, Ruby, & Rails.'><span class='caption-text'>BeagleBone Black running Ubuntu, Ruby, &amp; Rails.</span></span></p>
 
@@ -1926,7 +1953,7 @@ card.</p>
   <entry>
     <title type="html"><![CDATA[Disposable Electronics in Wired Magazine]]></title>
     <link href="http://RayHightower.com/blog/2013/12/28/disposable-electronics-in-wired-magazine/"/>
-    <updated>2013-12-28T14:30:00-06:00</updated>
+    <updated>2013-12-28T14:30:00-08:00</updated>
     <id>http://RayHightower.com/blog/2013/12/28/disposable-electronics-in-wired-magazine</id>
     <content type="html"><![CDATA[<p>What can we build with disposable electronics? An ad in the January 2014 issue of <a href="http://wired.com">Wired Magazine</a> lets the reader change the color of a Moto X smartphone by pressing a colored circle on the page. This 20-second video shows the ad in operation followed by a glimpse of the inner workings.</p>
 
@@ -1961,114 +1988,6 @@ card.</p>
 <p>On the other hand, I&rsquo;m still talking about the ad. And blogging about it. Ultimate test: How will an ad like this influence buying behavior?</p>
 
 <p>Beyond advertising, what else can we do with disposable electronics?</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[High Performance Computing at ACM]]></title>
-    <link href="http://RayHightower.com/blog/2013/12/12/high-performance-computing-at-acm/"/>
-    <updated>2013-12-12T22:22:00-06:00</updated>
-    <id>http://RayHightower.com/blog/2013/12/12/high-performance-computing-at-acm</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/cray-1.jpg' width='' height='' alt='Cray-1 at the Swiss Federal Institute of Technology.' title='Cray-1 at the Swiss Federal Institute of Technology.'><span class='caption-text'>Cray-1 at the Swiss Federal Institute of Technology.</span></span></p>
-
-<blockquote><p>Anyone can build a fast CPU. The trick is to build a fast system.
-&nbsp;<br/>
-~ Seymour Cray</p></blockquote>
-
-<p>The Chicago chapter of the Association for Computing Machinery (<a href="http://www.chicagoacm.org/">Chicago ACM</a>) hosted a lecture titled <em>Supercomputing and You</em> yesterday evening. The talk was delivered by <a href="http://www.linkedin.com/in/sharankalwani">Sharan Kalwani</a> of <a href="http://www.fnal.gov/">Fermilab</a>. Kalwani&rsquo;s background blends mechanical engineering and computer science with decades of high performance computing experience.</p>
-
-<h3>10x => High Performance Computing</h3>
-
-<p>Kalwani began his talk by drawing a distinction between <em>supercomputing</em> and <em>high performance computing (HPC)</em>. Supercomputing is the buzzword that everyone knows, but the word implies that the designers are focused only on improving CPU performance. Such narrow focus could cause us to ignore important subsystems. For example, if engineers focus strictly on CPU performance, applications that are CPU-bound will quickly encounter I/O bottlenecks. High performance computing takes the entire system into account: CPU, I/O, cache, memory&hellip; anything that can influence performance.</p>
-
-<!--more-->
-
-
-<p>This article will use the terms <em>supercomputing</em> and <em>high performance computing</em> interchangably because we are discussing the field in general. In an engineering document, the distinction would be more important.</p>
-
-<p>By definition, supercomputers perform at least ten times faster than the current state-of-the art. The definition is a moving target. The processor in today&rsquo;s smartphone would have been considered a high performance computer a decade ago.</p>
-
-<h3>The First Supercomputer</h3>
-
-<p><a href="http://www.cray.com/">Seymour Cray</a> is regarded as the father of the supercomputer. Cray cobbled together the first supercomputer using off-the-shelf components of the day and his unique ideas about computer architecture.</p>
-
-<p>For example, Cray observed that the speed of an electrical signal was one bottleneck in computer performance. Electrical signals travel at the speed of light. Light can travel roughly one foot in one nanosecond.  Therefore, Cray decided that all internal cables in his new system would be less than a foot in length. No input would need to wait more than a nanosecond for a signal.</p>
-
-<p>The 1972-era Cray supercomputer ran at a clock speed of 80MHz. It used a 64-bit word size. As a point of comparison, a 1972-era business mainframe ran at 4MHz with a 16-bit word size.</p>
-
-<h3>Supercomputers&hellip; So What?</h3>
-
-<p>Why do we need to spend time and money on high performance computers?  How does the general public benefit?</p>
-
-<p>HPC enables us to solve problems that elude typical computers. For example:</p>
-
-<ul>
-<li><em>Auto safety testing</em>. Kalwani spent several years using HPC to run simulated crash tests for General Motors. A physical crash test, one in which the car is destroyed, costs $500k per car. The same test can be run in a simulator for $5k. Engineers still need to test a physical car at the end of the testing cycle, but the number of cars destroyed is drastically reduced. The business advantage of HPC-simulated tests is clear.</li>
-<li><em>Nuclear testing</em>. It is very expensive (measured both in dollars and in human lives) to test a nuclear power plant. Fortunately, scientists know enough about nuclear behavior to create realistic simulations. Testing via simulation helps to manage costs and reduce accidents.</li>
-<li><em>Weather forecasting</em>. The first supercomputers needed three days to predict the weather for <em>tomorrow</em>. What good is a 2-day-old weather forecast? A good forecast can save lives by telling people to evacute before a life-threatening natural disaster. Today&rsquo;s supercomputers can produce accurate weather forecasts while the reader still has time to take action.</li>
-<li><em>Bioinformatics</em>. When scientists can reliably simulate drug behavior before live human testing, medical treatments can be improved and lives can be saved.</li>
-<li><em>Energy exploration</em>. As long as people depend on fossil fuels, new sources need to be discovered in a timely and cost-effective way.  Supercomputers can process seismic data quickly and with sufficient granularity to tell prospectors where to drill.</li>
-</ul>
-
-
-<p>The bottom line: High performance computers deliver a return on investment that far outweighs their cost.</p>
-
-<h3>Trickle Down Technology</h3>
-
-<p>Many of the advances that we enjoy on today&rsquo;s laptops were invented by HPC architects. Kalwani shared one example: Cray invented the solid state disk (SSD) when mechanical disk drives proved to be a bottleneck. Can you imagine what an SSD must have cost in 1982 when it was invented? Today, SSDs are standard equipment on many laptops.</p>
-
-<h3>Who Has the Fastest Supercomputer?</h3>
-
-<p><a href="http://top500.org/">Top500.org</a> lists the fastest supercomputers on the planet, ordered by number of floating point operations per second (FLOPS). The race to be the fastest is highly competitive, so check the list for the latest champion.</p>
-
-<p>There are those who believe that the Top 500 list is missing a few names. Some governments or companies might not want to publicize their HPC skills.</p>
-
-<h3>Speed vs. Power</h3>
-
-<p>Supercomputers gulp electricity. Rule of thumb: One megawatt of electricity used over the course of one year costs $1 million. The fastest supercomputer in the world uses 17 megawatts of electricity, so its owners have an annual electric bill of $17 million dollars.</p>
-
-<p><a href="http://green500.org">The Green 500</a> list recognizes the most energy efficient supercomputers in the world.</p>
-
-<h3>The Fourth Paradigm</h3>
-
-<p>Kalwani closed the historical section of his talk with a discussion of <a href="http://research.microsoft.com/en-us/collaboration/fourthparadigm/">The Fourth Paradigm</a> of discovery. The concept comes from a collection of essays published by Microsoft Press. As of this writing, a free PDF of the book is available from <a href="http://research.microsoft.com/en-us/collaboration/fourthparadigm/">Microsoft Research</a>.</p>
-
-<p>The book&rsquo;s introduction posits that there have been four paradigms of human scientific discovery:</p>
-
-<ul>
-<li><em>Empirical</em>. Started a thousand years ago. Science was all about describing natural phenomena.</li>
-<li><em>Theoretical</em>. Started a few hundred years ago. Scientific understanding is achieved via models and generalizations.</li>
-<li><em>Computational</em>. Started a few decades ago. Scientists seek understanding by simulating complex phenomena using computer models.</li>
-<li><em>Data Exploration (eScience)</em>. Starting now. Scientists now have the technology to capture and store huge quantities of data, inexpensively and indefinitely. Software will &ldquo;look&rdquo; for trends in the data using statistical models. The software will identify trends in the data, and point them out for further investigation.</li>
-</ul>
-
-
-<p>One example of the Fourth Paradigm in action: Recent discoveries of sub-atomic particles were initiated by eScience. Software running on high performance computers identified trends, and the scientists followed up with deeper investigation. Discoveries followed after that.</p>
-
-<p>Businesses have led the way in extracting trends from mountains of data. This path offered limited results for scientists because computers were too slow to handle scientific data in a timely fashion. Partial differential equations eat many CPU cycles!</p>
-
-<p>High performance computing opens up a new universe of data insight for scientists and engineers.</p>
-
-<h3>The Future of HPC</h3>
-
-<p>Kalwani ended the talk by looking into his crystal ball and telling us about the future of HPC. A few trends on the horizon:</p>
-
-<ul>
-<li>Power consumption issues will dominate discussions. High performance computers are terribly inefficient. Either we need to find a free, unlimited supply of energy (unlikely) or we must design supercomputers that gulp less power.</li>
-<li>GPGPUs. General purpose graphics processing units are already used for non-graphics applications, like Bitcoin mining. As more applications are discovered for the devices, faster GPGPUs will follow.</li>
-<li>ARM. Advanced Risc Machine processors use less power and their performance continues to increase. Could ARM hold the key to power reduction in high performance computing?</li>
-<li>Rex Parallella. Fresh from last month&rsquo;s <a href="http://sc13.supercomputing.org/">Supercomputing Conference</a>: <a href="http://www.rexcomputing.com/">Rex Computing</a> is using <a href="http://www.parallella.org/">Parallella</a> boards to build low-energy high performance computing clusters.</li>
-<li>Quantum computing. Kalwani ran out of time as he was covering this item, but he shared enough to spark my interest. He explained quantum computing by using an analogy: Quantum computing is to digital computing as digital computing is to the abacus. The degree of advancement is that dramatic. <a href="http://www.dwavesys.com/">D-Wave</a> is one company exploring this area.</li>
-</ul>
-
-
-<h3>Conclusion</h3>
-
-<p>Thank you Sharan Kalwani for presenting, and thank you <a href="http://www.chicagoacm.org/">Chicago ACM</a> for hosting.</p>
-
-<h3>Acknowledgements</h3>
-
-<p>The photo at the top of the article shows a Cray-1, the first supercomputer, on display at the <a href="http://www.epfl.ch/">Swiss Federal Institute of Technology (EPFL)</a> in Lausanne. Some of the original panels have been replaced with plexiglass.</p>
 ]]></content>
   </entry>
   
