@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "An Environment of Respect 3rd Iteration"
+title: "An Environment of Respect, 3rd Iteration"
 date: 2014-05-28 06:42
 comments: true
 categories: [ Community ]
