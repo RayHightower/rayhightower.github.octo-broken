@@ -6,12 +6,12 @@ comments: true
 categories: 
 ---
 {% img right /images/git-logo.png %}
-With the announcement of version 2.0, the developers of Git are making a serious effort to improve intuitiveness for first-time users. Of course, all users benefit when intuitiveness improves. When our tools _just work_, we can spend less time sifting through documentation and more time solving problems for our customers.
+With the announcement of version 2.0, the developers of Git are making a serious effort to improve intuitiveness for first-time users. Of course, all users benefit from intuitive tools. When our tools _just work_, we spend less time sifting through documentation and more time solving problems for our customers.
 <!--more-->
 ###How to Upgrade
 If you’re on Mac OS X, make sure you’re using [Homebrew](/blog/2014/02/12/homebrew-fundamentals/). It’s the easiest way to install and manage Unix libraries on the Mac.
 
-It’s usually a good idea to check your current version before doing an upgrade.
+It’s usually a good idea to check your current version before upgrading.
 
 ```bash
 $ git --version
@@ -20,7 +20,7 @@ git version 1.9.2
 $ 
 
 ```
-Next, make sure that Homebrew is up to date.
+Next, make sure that Homebrew is current.
 
 ```bash
 $ brew doctor
