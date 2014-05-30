@@ -6,7 +6,7 @@ comments: true
 categories: [ Education, Git ]
 ---
 {% img right /images/git-logo.png %}
-With the announcement of version 2.0, the developers of Git are making a serious effort to improve intuitiveness for first-time users. Of course, all users benefit from intuitive tools. When our tools _just work_, we spend less time sifting through documentation and more time solving problems for our customers.
+Developers of Git are making a serious effort to improve intuitiveness for first-time users. Of course, all users benefit from intuitive tools. When our tools _just work_, we spend less time sifting through documentation and more time solving problems for our customers.
 <!--more-->
 ###How to Upgrade
 If you’re on Mac OS X, make sure you’re using [Homebrew](/blog/2014/02/12/homebrew-fundamentals/). It’s the easiest way to install and manage Unix libraries on the Mac.
