@@ -73,10 +73,10 @@ zsh completion has been installed to:
 ==> Summary
 🍺  /usr/local/Cellar/git/2.0.0: 1324 files, 31M
 
-~/Code/Ruby/RubyMotion$
+$ 
 ```
 
-And finally, check the Git version to confirm that the upgrade went properly.
+Finished. Let's check the Git version to confirm that the upgrade went properly.
 
 ```bash
 $ git --version
@@ -86,11 +86,4 @@ $
 
 ```
 
-Future articles will examine the this version in detail. For now, enjoy!
-
-
-
-
-
-
-
+Future articles will examine the this latest version of Git in detail. For now, enjoy!
