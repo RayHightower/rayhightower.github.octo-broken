@@ -35,8 +35,6 @@ $
 
 My Homebrew was outdated, so I grabbed the new packages like so.
 
-
-
 ```bash
 $ brew update
 Updated Homebrew from b46160b8 to afff2b23.
@@ -44,7 +42,7 @@ Updated Homebrew from b46160b8 to afff2b23.
 aces_container                    git-number                      picolisp
 apache-spark                    homebrew/versions/mongodb24       probatron4j
 
-…
+...
 
 $ 
 
