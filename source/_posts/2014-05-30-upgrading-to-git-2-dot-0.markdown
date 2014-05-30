@@ -33,7 +33,7 @@ $
 
 ```
 
-My Homebrew was outdated, so I grabbed the new packages like so.
+My Homebrew was outdated, so I used `brew update` to grab the new packages.
 
 ```bash
 $ brew update
@@ -46,7 +46,7 @@ apache-spark                    homebrew/versions/mongodb24       probatron4j
 
 $ 
 
-```bash
+```
 
 Next, use Homebrew to upgrade Git.
 
