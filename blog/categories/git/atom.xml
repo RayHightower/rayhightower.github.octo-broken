@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Git | RayHightower.com]]></title>
+  <link href="http://RayHightower.com/blog/categories/git/atom.xml" rel="self"/>
+  <link href="http://RayHightower.com/"/>
+  <updated>2014-05-30T11:56:45-07:00</updated>
+  <id>http://RayHightower.com/</id>
+  <author>
+    <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Upgrading to Git 2.0]]></title>
+    <link href="http://RayHightower.com/blog/2014/05/30/upgrading-to-git-2-dot-0/"/>
+    <updated>2014-05-30T11:33:00-07:00</updated>
+    <id>http://RayHightower.com/blog/2014/05/30/upgrading-to-git-2-dot-0</id>
+    <content type="html"><![CDATA[<p><img class="right" src="/images/git-logo.png">
+With the announcement of version 2.0, the developers of Git are making a serious effort to improve intuitiveness for first-time users. Of course, all users benefit from intuitive tools. When our tools <em>just work</em>, we spend less time sifting through documentation and more time solving problems for our customers.</p>
+
+<!--more-->
+
+
+<h3>How to Upgrade</h3>
+
+<p>If you’re on Mac OS X, make sure you’re using <a href="/blog/2014/02/12/homebrew-fundamentals/">Homebrew</a>. It’s the easiest way to install and manage Unix libraries on the Mac.</p>
+
+<p>It’s usually a good idea to check your current version before upgrading.</p>
+
+<p>```bash
+$ git &mdash;version
+git version 1.9.2</p>
+
+<p>$</p>
+
+<p>```
+Next, make sure that Homebrew is current.</p>
+
+<p>```bash
+$ brew doctor</p>
+
+<p>Warning: Your Homebrew is outdated.
+You haven&rsquo;t updated for at least 24 hours, this is a long time in brewland!
+To update Homebrew, run <code>brew update</code>.</p>
+
+<p>$</p>
+
+<p>```</p>
+
+<p>My Homebrew was outdated, so I used <code>brew update</code> to grab the new packages.</p>
+
+<p>```bash
+$ brew update
+Updated Homebrew from b46160b8 to afff2b23.
+==> New Formulae
+aces_container                    git-number                      picolisp
+apache-spark                    homebrew/versions/mongodb24       probatron4j</p>
+
+<p>&hellip;</p>
+
+<p>$</p>
+
+<p>```</p>
+
+<p>Next, use Homebrew to upgrade Git.</p>
+
+<p>```bash
+$ brew upgrade git
+==> Upgrading 1 outdated package, with result:
+git 2.0.0
+==> Upgrading git
+==> Downloading <a href="https://downloads.sf.net/project/machomebrew/Bottles/git-2.0.0.mavericks.bottle.tar.gz">https://downloads.sf.net/project/machomebrew/Bottles/git-2.0.0.mavericks.bottle.tar.gz</a></p>
+
+<h6>################################################################## 100.0%</h6>
+
+<p>==> Pouring git-2.0.0.mavericks.bottle.tar.gz
+==> Caveats
+The OS X keychain credential helper has been installed to:
+  /usr/local/bin/git-credential-osxkeychain</p>
+
+<p>The &lsquo;contrib&rsquo; directory has been installed to:
+  /usr/local/share/git-core/contrib</p>
+
+<p>Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d</p>
+
+<p>zsh completion has been installed to:
+  /usr/local/share/zsh/site-functions
+==> Summary
+🍺  /usr/local/Cellar/git/2.0.0: 1324 files, 31M</p>
+
+<p>$
+```</p>
+
+<p>Finished. Let&rsquo;s check the Git version to confirm that the upgrade went properly.</p>
+
+<p>```bash
+$ git &mdash;version
+git version 2.0.0</p>
+
+<p>$</p>
+
+<p>```</p>
+
+<p>Future articles will examine the this latest version of Git in detail. For now, enjoy!</p>
+]]></content>
+  </entry>
+  
+</feed>
