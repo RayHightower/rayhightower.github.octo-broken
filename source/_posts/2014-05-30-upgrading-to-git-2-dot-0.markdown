@@ -5,13 +5,9 @@ date: 2014-05-30 11:33
 comments: true
 categories: 
 ---
-
-
-
-###Why Upgrade to GIt 2.0?
-
-
-
+{% img right /images/git-logo.png %}
+With the announcement of version 2.0, the developers of Git are making a serious effort to improve intuitiveness for first-time users. Of course, all users benefit when intuitiveness improves. When our tools _just work_, we can spend less time sifting through documentation and more time solving problems for our customers.
+<!--more-->
 ###How to Upgrade
 If you’re on Mac OS X, make sure you’re using [Homebrew](/blog/2014/02/12/homebrew-fundamentals/). It’s the easiest way to install and manage Unix libraries on the Mac.
 
