@@ -49,6 +49,8 @@ The domain is registered with [DNSimple](http://dnsimple.com), so the process wa
 1. Leave `Name` blank.
 1. Next to `Alias for` enter the GitHub Pages endpoint. In my case, the endpoint is `rayhightower.github.io`.
 
+More information on [GitHub Pages and DNSimple](http://support.dnsimple.com/articles/github-pages/).
+
 I set TTL to 1 minute to encourage the changes to propagate quickly. If you know of a better configuration choice for TTL, please let me know in the comments below.
 
 ###Expect Propagation Delays
