@@ -11,19 +11,19 @@ Today, the _new crew_ has grown ChicagoRuby to over 2,700 members. The group hos
 
 How did ChicagoRuby do it? Through teamwork, iteration, and learning from mistakes.
 <!--more-->
-###First: Build a Team
-ChicagoRuby believes in sharing the work amongst multiple organizers. The group is stronger with several brains at the helm. The new crew started with three organizers in August 2007. Today we have eight. Working as a team enables us to build on each other’s strengths: Some organizers have strong design skills, others are strong developers. And some are good at asking members for help.
+###Building the Team
+ChicagoRuby believes in sharing the work amongst multiple organizers. The group is stronger with several brains at the helm. The new crew started with three organizers in August 2007. Today we have eight. Working as a team enables us to benefit from each other’s strengths. Some organizers have strong design skills, others are strong developers. And some are good at asking members for help.
 
 ###How to Ask for Help
 
 >Any favor he asks of you, you will offer to do before he requests it.
 > <br/>~Tom Hagen, Consigliere
 
-One way to ask for help: Encourage members to help in their area of enthusiasm. For example, organizer [Ginny Hendry](https://twitter.com/ginnyhendry) runs the ChicagoRuby hack nights every month. Ginny got started when she approached the organizers after a meeting and said “We should have hack nights.” Clearly, she was enthused about hack nights, so she became our organizer of hack nights.
+One way to ask for help: Encourage members to help in their area of enthusiasm. For example, organizer [Ginny Hendry](https://twitter.com/ginnyhendry) runs the ChicagoRuby hack nights every month. Ginny got started when she approached the organizers after a meeting and said "We should have hack nights." Clearly, she was enthused about hack nights, so she became our organizer of hack nights.
 
-Today, Ginny’s hack nights are consistently the highest rated of all ChicagoRuby events. Members who have ideas for improvement tend to be strong leaders. When we get out of their way and let them lead, the whole group benefits. 
+Today, Ginny’s hack nights are consistently the highest rated of all ChicagoRuby events. Members who have ideas for improvement tend to be strong leaders. The whole group benefits when we get out of the way and let them lead.
 
-Other members joined the organizer team in a similar way:
+Current members of the ChicagoRuby organizer team are:
 
 * [Justin Love](http://twitter.com/wondible) is a prolific developer and an organizer of the [Chicago JavaScript Meetup Group (JS-Chi)](http://www.meetup.com/js-chi/). Justin will
 also be a lab advisor for RubyCaribe in January 2015.
