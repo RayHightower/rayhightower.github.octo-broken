@@ -34,10 +34,13 @@ Today, Ginny’s hack nights are consistently the highest rated of all ChicagoRu
 
 Members of the ChicagoRuby organizer team:
 
+* [Ginny Hendry](https://twitter.com/ginnyhendry), mentioned above.
 * [Justin Love](http://twitter.com/wondible) is a developer and an organizer of the [Chicago JavaScript Meetup Group (JS-Chi)](http://www.meetup.com/js-chi/). Justin will also be a lab advisor for RubyCaribe in January 2015.
 * [Hugo Corbucci](http://twitter.com/hugocorbucci), [Emily Rosengren](http://www.meetup.com/ChicagoRuby/members/42800032/), and [Sam Jacobs](http://www.meetup.com/ChicagoRuby/members/135529442/) are developers at [ThoughtWorks](http://thoughtworks.com). Since ThoughtWorkers travel often, ChicagoRuby always invites two or more to be on the organizer team. 
 * [Alonda McCree](http://twitter.com/themccreefiles) manages the downtown meetups, including logistics and video. Alonda will be the conference manager for RubyCaribe.
 * [Marty Lavin](http://www.meetup.com/ChicagoRuby/members/1345203/) manages ChicagoRuby's Elmhurst meetups, including logistics and scheduling. Marty is consistently active in Elmhurst, so we asked him to join the team.
+* [Ray Hightower](http://twitter.com/rayhightower), author of this
+article.
 
 In addition to the core group of ChicagoRuby organizers, one person deserves special mention. [Kevin Zolkiewicz](http://twitter.com/zolk) has managed every WindyCityRails since the first one in 2008. Kevin's project management, design, and leadership skills are enjoyed by everyone who attends WindyCityRails.
 
