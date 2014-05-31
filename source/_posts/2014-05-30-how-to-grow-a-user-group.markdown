@@ -21,7 +21,7 @@ ChicagoRuby cancelled one meeting in January 2011 due to a killer snow storm in 
 Yes, there will be times when the organizer is too exhausted to run an upcoming meeting. That's why it's important to share the work by building a team.
 
 ###Build the Team
-ChicagoRuby believes in sharing the work amongst multiple organizers. The group is stronger with several brains at the helm. The new crew started with three organizers in August 2007. Today we have eight. Working as a team enables us to benefit from each other’s strengths. Some organizers have strong design skills, others are strong developers. And some are good at asking members for help.
+ChicagoRuby believes in sharing the work amongst multiple organizers. The group is stronger with several brains at the helm. We started with three organizers in August 2007. Today we have eight. Working as a team enables us to benefit from each other’s strengths. Some organizers have strong design skills, others are strong developers. And some are good at asking members for help.
 
 ###Ask for Help
 
