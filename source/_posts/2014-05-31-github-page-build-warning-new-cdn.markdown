@@ -36,4 +36,7 @@ The domain is registered with [DNSimple](http://dnsimple.com), so here’s what 
 1. What will appear on this line?
 1. How about this line?
 
+###Expect Propagation Delays
+DNS changes can take up to a day to propagate. Delays tend to be shorter with DNSimple because time-to-live (TTL) can be set as low as one minute for some records.
+
 
