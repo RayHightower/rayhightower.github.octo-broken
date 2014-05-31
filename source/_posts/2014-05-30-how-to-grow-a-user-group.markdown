@@ -11,6 +11,15 @@ Today, the _new crew_ has grown ChicagoRuby to over 2,700 members. The group hos
 
 How did ChicagoRuby do it? Through teamwork, iteration, and learning from mistakes.
 <!--more-->
+###Be Consistent With Meetings
+People trust consistency. Consistent meetings grow groups. 
+
+Members of ChicagoRuby know that we meet on the first Tuesday of every month downtown, the third Saturday of every month in Elmhurst, and one evening per month for the hack night. Members can plan their calendars months in advance because the ChicagoRuby calendar is consistent. Consistency builds trust.
+
+ChicagoRuby cancelled one meeting in January 2011 due to a killer snow storm in Chicago. We were forced to cancel because building management shut the entire building down. We're a little bit stubborn about consistency. And that's how we build trust. 
+
+Yes, there will be times when the organizer is too exhausted to run an upcoming meeting. That's why it's important to share the work by building a team.
+
 ###Build the Team
 ChicagoRuby believes in sharing the work amongst multiple organizers. The group is stronger with several brains at the helm. The new crew started with three organizers in August 2007. Today we have eight. Working as a team enables us to benefit from each other’s strengths. Some organizers have strong design skills, others are strong developers. And some are good at asking members for help.
 
