@@ -11,13 +11,24 @@ Today, the _new crew_ has grown ChicagoRuby to over 2,700 members. The group hos
 
 How did ChicagoRuby do it? Through teamwork, iteration, and learning from mistakes.
 <!--more-->
+###First: Build a Team
+ChicagoRuby will always have multiple organizers. The group is stronger with multiple brains at the helm. We started with three organizers in August 2007. Today we have eight. Working as a team enables us to build on each other’s strengths: Some organizers have strong design skills, others are strong developers. And some are good at asking members for help with user group tasks.
 
-###First: Get a Good Name
-Our first priority upon assuming leadership: Growth. In order to grow, a group has to attract new members. New members who are looking for groups to join are likely to start with the search engines, and search engines like simplicity.
+###How to Ask for Help
 
-The group was originally called _The Chicago Area Ruby on Rails Meetup Group_. Accurate, and a mouthful. We discovered that the [ChicagoRuby.org](http://chicagoruby.org) name was available, so we grabbed it, along with the [@ChicagoRuby](http://twitter.com/chicagoruby) Twitter handle.
+>Any favor he asks of you, you will offer to do before he requests it.
+> ~Tom Hagen, Consigliere
 
-It was also important to make every web property point to all of the other web properties in the ChicagoRuby ecosystem. For example, all of the conference pages point to the ChicagoRuby main page, and vice versa.
+One way to ask for help: Encourage members to help in their area of enthusiasm. For example, organizer [Ginny Hendry](https://twitter.com/ginnyhendry) runs the ChicagoRuby hack nights every month. Ginny got started when she approached me after one meeting and said “Hey Ray, we should have hack nights.” Clearly, she was enthused about hack nights, so I asked her to run them for the group. Today, Ginny’s hack nights are consistently the highest rated of all ChicagoRuby events.
+
+Members who have ideas for improvement tend to be strong leaders. When we get out of their way and let them lead, the whole group benefits. 
+
+###Naming the Group
+Growth is an ongoing priority for ChicagoRuby. In order to grow, a group has to attract new members. New members who are looking for a group to join are likely to start with a search engine, and search engines crave simplicity.
+
+Our group was originally called _The Chicago Area Ruby on Rails Meetup Group_. Accurate, and a mouthful. We discovered that a simple domain name, [ChicagoRuby.org](http://chicagoruby.org), name was available. So we grabbed it, along with the [@ChicagoRuby](http://twitter.com/chicagoruby) Twitter handle.
+
+It is also important to make every web property point to all of the other web properties in the ChicagoRuby ecosystem. For example, all of the conference pages point to the ChicagoRuby main page, and vice versa. When a new member finds one part of the ecosystem, they find the whole thing. People feel welcome when they know everything that the group has to offer.
 
 ###Keep Monthly Events Free
 I firmly believe that monthly meetings should be free.  We never know what a member of our community is going through financially. Therefore, nobody will be barred from a monthly ChicagoRuby meeting for lack of money.
