@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Education | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/education/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-05-30T17:22:33-07:00</updated>
+  <updated>2014-05-31T00:07:28-07:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,118 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Grow a User Group]]></title>
+    <link href="http://RayHightower.com/blog/2014/05/30/how-to-grow-a-user-group/"/>
+    <updated>2014-05-30T17:34:00-07:00</updated>
+    <id>http://RayHightower.com/blog/2014/05/30/how-to-grow-a-user-group</id>
+    <content type="html"><![CDATA[<p>The current team of <a href="http://chicagoruby.org">ChicagoRuby</a> organizers assumed leadership in August 2007. Back then, typical monthly attendence was about five people and the group&rsquo;s <a href="http://meetup.com/chicagoruby">Meetup.com</a> database contained 78 members. The previous organizer was swamped with work (always a good thing) so he handed the baton to a new crew.</p>
+
+<p>Today, the <em>new crew</em> has grown ChicagoRuby to over 2,700 members. The group hosts three meetups every month, and the downtown meetings consistently max out the 100-person RSVP limit. Bonus: ChicagoRuby hosts two conferences, <a href="http://windycityrails.org">WindyCityRails</a> in Chicago and <a href="http://rubycaribe.com">RubyCaribe</a> on the Caribbean island of Barbados.</p>
+
+<p>How does ChicagoRuby do it? Through consistency, teamwork, iteration, and learning from mistakes.</p>
+
+<!--more-->
+
+
+<h3>Be Consistent With Meetings</h3>
+
+<p>People trust consistency. Consistent meetings grow groups.</p>
+
+<p>Members of ChicagoRuby know that we meet on the first Tuesday of every month downtown, the third Saturday of every month in Elmhurst, and one evening per month for the hack night. Members can plan their calendars months in advance because the ChicagoRuby calendar is consistent. Consistency builds trust.</p>
+
+<p>ChicagoRuby cancelled one meeting in January 2011 due to a killer snow storm in Chicago. We were forced to cancel because building management shut the entire building down. We&rsquo;re a little bit stubborn about consistency. And that&rsquo;s how we build trust.</p>
+
+<p>Yes, there will be times when the organizer is too exhausted to run an upcoming meeting. That&rsquo;s why it&rsquo;s important to share the work by building a team.</p>
+
+<h3>Build the Team</h3>
+
+<p>ChicagoRuby believes in sharing the work amongst multiple organizers. The group is stronger with several brains at the helm. Today we have eight organizers. Working as a team enables us to benefit from each other’s strengths. Some organizers have strong design skills, others are strong developers. And some are good at asking members for help.</p>
+
+<h3>Ask for Help</h3>
+
+<blockquote><p>I guarantee you that any favor he asks of you, you will offer to do before he requests it.
+<br/>~Tom Hagen, Consigliere</p></blockquote>
+
+<p>One way to ask for help: Encourage members to help in their area of enthusiasm. For example, organizer <a href="https://twitter.com/ginnyhendry">Ginny Hendry</a> runs the ChicagoRuby hack nights every month. Ginny got started when she approached the organizers after a meeting and said &ldquo;We should have hack nights.&rdquo; Clearly, she was enthused about hack nights, so we asked her to take the lead in that area.</p>
+
+<p>Today, Ginny’s hack nights are consistently the highest rated of all ChicagoRuby events. In January, she will be a lab advisor at RubyCaribe. Members who have ideas for improvement tend to be strong leaders. The whole group benefits when we get out of the way and let them lead.</p>
+
+<p>Current members of the ChicagoRuby organizer team are:</p>
+
+<ul>
+<li><a href="http://twitter.com/wondible">Justin Love</a> is a developer and an organizer of the <a href="http://www.meetup.com/js-chi/">Chicago JavaScript Meetup Group (JS-Chi)</a>. Justin will also be a lab advisor for RubyCaribe in January 2015.</li>
+<li><a href="http://twitter.com/hugocorbucci">Hugo Corbucci</a>, <a href="http://www.meetup.com/ChicagoRuby/members/42800032/">Emily Rosengren</a>, and <a href="http://www.meetup.com/ChicagoRuby/members/135529442/">Sam Jacobs</a> are developers at <a href="http://thoughtworks.com">ThoughtWorks</a>. Since ThoughtWorkers travel often, ChicagoRuby always invites two or more to be on the organizer team.</li>
+<li><a href="http://twitter.com/themccreefiles">Alonda McCree</a> manages the downtown meetups, including logistics and video. Alonda will be the conference manager for RubyCaribe.</li>
+<li><a href="http://www.meetup.com/ChicagoRuby/members/1345203/">Marty Lavin</a> manages ChicagoRuby&rsquo;s Elmhurst meetups, including logistics and scheduling. Marty is consistently active in Elmhurst, so we asked him to join the team.</li>
+</ul>
+
+
+<p>In addition to the core group of ChicagoRuby organizers, one person deserves special mention. <a href="http://twitter.com/zolk">Kevin Zolkiewicz</a> has managed every WindyCityRails since the first one in 2008. Kevin&rsquo;s project management, design, and leadership skills are enjoyed by everyone who attends WindyCityRails.</p>
+
+<p>The <a href="http://www.chicagoruby.org/about/organizers/">ChicagoRuby Organizer Page</a> contains the list of current and past organizers. Many of the former organizers remain active in an emeritus role. Every mind helps to make the group stronger.</p>
+
+<h3>Choose a Short Name</h3>
+
+<p>Growth is an ongoing priority for ChicagoRuby. In order to grow, a group has to attract new members. New members who are looking for a group to join are likely to start with a search engine, and search engines adore simplicity.</p>
+
+<p>Our group was originally called <em>The Chicago Area Ruby on Rails Meetup Group</em>. Accurate, and a mouthful. We discovered that a simple domain name, <a href="http://chicagoruby.org">ChicagoRuby.org</a>, was available. So we grabbed it, along with the <a href="http://twitter.com/chicagoruby">@ChicagoRuby</a> Twitter handle.</p>
+
+<p>It is also important to make every web property point to all of the other web properties in the ChicagoRuby ecosystem. For example, all of the conference sites point to the ChicagoRuby site, and vice versa. A new member who finds one part of the ecosystem will find the whole thing. People feel welcome when information is easy to find.</p>
+
+<p>Making future members feel welcome is key to growth. Free monthly events are another way to make people feel welcome.</p>
+
+<h3>Keep Monthly Events Free</h3>
+
+<p>I firmly believe that monthly user group meetings should be free. We never know what a member of our community is going through financially. Therefore, ChicagoRuby&rsquo;s monthly meetings have always been free.</p>
+
+<p>My personal history includes times when I was dead broke due to one entrepreneurial venture or another. So I have emotional reasons for keeping ChicagoRuby’s monthly events free of charge.</p>
+
+<p>Of course, the money to pay for the meetings has to come from somewhere. That’s where sponsors come in.</p>
+
+<h3>Cover Monthly Costs Through Sponsorships</h3>
+
+<p>Companies will gladly sponsor a group that gives them a return on their investment. Sponsorships don&rsquo;t always come in the form of money.</p>
+
+<p>For example, ChicagoRuby’s first sponsor was <a href="http://www.deforestgroup.com/">DeForest Group</a>. Owner <a href="https://www.linkedin.com/in/leedeforest">Lee DeForest</a> provides ChicagoRuby with free space and WiFi for our Saturday meetings. Lee was one of the five people in the room when the current organizers took over, and we will always be grateful for his early support.</p>
+
+<p>ChicagoRuby’s downtown sponsors are <a href="http://enova.com">Enova</a> and <a href="http://thoughtworks.com">ThoughtWorks</a>. Each company provides space, WiFi, pizza, and beverages on a monthly basis.</p>
+
+<p>All of our sponsors have the opportunity to address our group at the beginning of the meeting. More important, by sponsoring ChicagoRuby over time, the company build trust amongst the membership.</p>
+
+<p>Sponsors get involved with user groups for two main reasons: To recruit developers, or to market products to developers. Everybody wins when sponsors get involved with user groups, financially or otherwise.</p>
+
+<h3>Vet Speakers</h3>
+
+<p>Members of ChicagoRuby trust the organizers to deliver quality events every month. I dropped the ball one month when I failed to properly vet a speaker. After that meeting, organizer <a href="https://twitter.com/dgiunta">Dave Giunta</a> wrote the first draft of the ChicagoRuby <a href="http://www.chicagoruby.org/about/speaker-guidelines/">speaker guidelines</a>. We&rsquo;ve word-smithed the guidelines over the years, but the most important parts were created by Dave.</p>
+
+<h3>Maintain Focus, and Explore New Areas</h3>
+
+<p>Focus can lead to excellence, but if we focus too intensely we might mix
+the Next Great Thing. How does a group balance between the two?</p>
+
+<p>Over the years, ChicagoRuby has experimented with other ventures. We ran a job board for awhile. We ran conferences related to NoSQL and mobile. We moved away from these because they drained our resources, and pulled us away from our core, which is Ruby.</p>
+
+<p>For ChicagoRuby, it makes sense to use the monthly meetups as a place for exploration. Monthly events take minimal resources, so they&rsquo;re ideal for experiments. For example, we continue to explore polyglot programming. <a href="http://www.chicagoruby.org/videos/archives/2013/12/03/ployglot-night/">Polyglot Night</a> in Jan 2014 was very successful. You can expect to see another more experiments in the future.</p>
+
+<p>Since conferences require more resources, you can expect our future conferences to draw upon our core strengths in Ruby. RubyCaribe is one such venture.</p>
+
+<h3>The Future: RubyCaribe and LinuxBarbados</h3>
+
+<p>Our newest work is happening in the Caribbean, in the island nation of Barbados. <a href="http://linuxbarbados.org">LinuxBarbados</a> is a brand new group for open source enthusiasts. <a href="http://rubycaribe.com">RubyCaribe</a> is a brand new conference for intermediate and advanced Ruby developers. The new ventures have introduced ChicagoRuby to work done by the <a href="https://www.cavehill.uwi.edu/">University of the West Indies at Cave Hill (UWI)</a>.</p>
+
+<p><a href="http://www.cavehill.uwi.edu/fst/cmp/staff/colin-depradine.aspx">Dr. Colin Depradine</a>, Dean of the University’s Faculty of Science and Technology, is serious about growing the next generation of scientists and engineers in the Caribbean. Under Dr. Depradine&rsquo;s leadership, UWI encourages collaboration between the sciences. For example, computer scientists are writing software to crunch data related to solar energy research. Looking even further into the future, the UWI team has introduced children as young as eight to programming.</p>
+
+<p>UWI will also serve as host to LinuxBarbados. The new group will be led by <a href="http://cavehill.uwi.edu/fst/home.aspx">Maurice Beckles</a>, a Barbados-based open source enthusiast and IT technician at UWI.</p>
+
+<h3>Conclusion</h3>
+
+<p>A better title for this post might have been <em>One Way to Grow a User Group</em>. Every group will grow differently depending on its particular strengths and interests. Of course, groups that grow are likely to have a few things in common. Things like consistency, teamwork, iteration, and learning from mistakes.</p>
+
+<p>If you have ideas to add, feel free to do so in the comments below.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Upgrading to Git 2.0]]></title>
@@ -291,48 +403,6 @@ end
 <p>Thank you, Flourish organizers, for inviting me to speak this year. UIC is where I first learned about open source, Linux, and the web. My appreciation for UIC extends beyond my CS degree.</p>
 
 <p>Great things happen when like-minded people come together to exchange ideas. I look forward to seeing you at Flourish 2014!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How .gitignore Works]]></title>
-    <link href="http://RayHightower.com/blog/2014/03/25/how-gitignore-works/"/>
-    <updated>2014-03-25T18:20:00-07:00</updated>
-    <id>http://RayHightower.com/blog/2014/03/25/how-gitignore-works</id>
-    <content type="html"><![CDATA[<p>Earlier today I ran into a Git issue within a RubyMotion project. I added a directory to the project&rsquo;s <code>.gitignore</code> file, but Git seemed to ignore my ignore. Expressed more clearly, Git continued to track a directory that I explicitly told it to ignore.</p>
-
-<p>What?</p>
-
-<p>Either there was a bug in Git, or my understanding of <code>.gitignore</code> was incomplete. It was time for me to dig in and learn more about <code>.gitignore</code>.</p>
-
-<!--more-->
-
-
-<h3>What I Learned About .gitignore</h3>
-
-<p>The root cause of my problem: Once Git has begun tracking a file or directory, adding it to <code>.gitignore</code> changes nothing. Git will continue to track the file unless we explicitly tell Git to stop tracking the file.</p>
-
-<p>```bash
-$ git rm &mdash;cached [filename]</p>
-
-<p>$
-```</p>
-
-<p>Or, if you want to stop tracking an entire directory (like me in this case)&hellip;</p>
-
-<p>```bash
-$ git rm -r &mdash;cached [directoryname]</p>
-
-<p>$
-```</p>
-
-<p>The <code>-r</code> flag will tell Git to stop tracking all of the sub-directories and files within <code>directoryname</code>, recursively.</p>
-
-<p>Git was behaving exactly as designed.</p>
-
-<h3>Penalty</h3>
-
-<p>I should have known this a long time ago. My penalty: A public admission :&ndash;)</p>
 ]]></content>
   </entry>
   
