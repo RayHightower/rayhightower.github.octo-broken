@@ -5,14 +5,14 @@ date: 2014-05-31 13:44
 comments: true
 categories: [ Git ]
 ---
-This blog is based on [Octopress](http://octopress.org/) and hosted on GitHub Pages. Recently, when I deployed a site update, GitHub sent me an email with a `Page build warning` message. Since this was _just a warning_, I ignored it while I attacked more pressing tasks (not always a good idea).
+This blog is based on [Octopress](http://octopress.org/) and hosted on [GitHub Pages](https://pages.github.com/). Recently, after I deployed a site update, GitHub sent me an email with a `Page build warning` message. Since this was _just a warning_, I ignored it while I attacked more pressing tasks (not always a good idea).
 
-Today I finally, I took the time to research the topic so I could figure out what to do next. This article is the result of that research.
+Today I finally took the time to research the topic so I could figure out what to do next. This article is the result of that research.
 <!--more-->
 ##What the Message Means
 Here are the important points of the of the `Page build warning` message:
 
-* GitHub introduced a content delivery network (CDN) to make pages load faster.
+* GitHub introduced a [content delivery network (CDN)](http://en.wikipedia.org/wiki/Content_delivery_network) to make pages load faster.
 * If you do nothing to your GitHub Pages site, your pages will continue to load the old way. People who visit your site won’t see anything different.
 * If you want GitHub to serve your site faster, follow the instructions given in the blog articles.
 
@@ -30,6 +30,6 @@ Here’s the original message. If you’re satisfied with the above translation,
 >If you have any questions please contact us at https://github.com/contact.
 
 ###What to Do Next
-The `RayHightower.com` domain is registered with [DNSimple](http://dnsimple.com), so here’s what I did.
+The domain is registered with [DNSimple](http://dnsimple.com), so here’s what needed to be done.
 
 
