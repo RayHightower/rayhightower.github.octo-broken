@@ -95,7 +95,7 @@ To balance between focus and exploration, we have decided to use the monthly use
 
 Conferences require more planning and resources than monthly meetups. To maximize efficiency, ChicagoRuby builds conferences around the group's core strength: Ruby. RubyCaribe is the newest example of this approach.
 
-###Collaborate With Others
+###Collaborate With Other Groups
 Collaboration stretches our brains in unexpected and wonderful ways. For our newest ventures, ChicagoRuby is collaborating with developers in the Caribbean, in the island nation of Barbados. 
 
 * [LinuxBarbados](http://linuxbarbados.org) is a monthly user group for open source enthusiasts. 
