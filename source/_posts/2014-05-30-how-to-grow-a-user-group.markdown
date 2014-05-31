@@ -32,7 +32,7 @@ One way to ask for help: Encourage members to help in their area of enthusiasm. 
 
 Today, Ginny’s hack nights are consistently the highest rated of all ChicagoRuby events. In January, she will be a lab advisor at RubyCaribe. Members who have ideas for improvement tend to be strong leaders. The whole group benefits when we get out of the way and let them lead.
 
-Current members of the ChicagoRuby organizer team are:
+Members of the ChicagoRuby organizer team:
 
 * [Justin Love](http://twitter.com/wondible) is a developer and an organizer of the [Chicago JavaScript Meetup Group (JS-Chi)](http://www.meetup.com/js-chi/). Justin will also be a lab advisor for RubyCaribe in January 2015.
 * [Hugo Corbucci](http://twitter.com/hugocorbucci), [Emily Rosengren](http://www.meetup.com/ChicagoRuby/members/42800032/), and [Sam Jacobs](http://www.meetup.com/ChicagoRuby/members/135529442/) are developers at [ThoughtWorks](http://thoughtworks.com). Since ThoughtWorkers travel often, ChicagoRuby always invites two or more to be on the organizer team. 
