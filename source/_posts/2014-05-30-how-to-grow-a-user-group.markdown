@@ -98,7 +98,7 @@ Conferences require more planning and resources than monthly meetups. To maximiz
 ###The Future: RubyCaribe and LinuxBarbados
 Our newest work is happening in the Caribbean, in the island nation of Barbados. 
 
-* [LinuxBarbados](http://linuxbarbados.org) is a brand new group for open source enthusiasts. 
+* [LinuxBarbados](http://linuxbarbados.org) is a monthly user group for open source enthusiasts. 
 * [RubyCaribe](http://rubycaribe.com) is a brand new conference for intermediate and advanced Ruby developers. 
 
 The new ventures have introduced ChicagoRuby to work done by the [University of the West Indies at Cave Hill (UWI)](https://www.cavehill.uwi.edu/).
