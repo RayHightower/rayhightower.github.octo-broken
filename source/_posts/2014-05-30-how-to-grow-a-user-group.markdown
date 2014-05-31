@@ -39,12 +39,12 @@ Growth is an ongoing priority for ChicagoRuby. In order to grow, a group has to 
 
 Our group was originally called _The Chicago Area Ruby on Rails Meetup Group_. Accurate, and a mouthful. We discovered that a simple domain name, [ChicagoRuby.org](http://chicagoruby.org), name was available. So we grabbed it, along with the [@ChicagoRuby](http://twitter.com/chicagoruby) Twitter handle.
 
-It is also important to make every web property point to all of the other web properties in the ChicagoRuby ecosystem. For example, all of the conference sites point to the ChicagoRuby site, and vice versa. A new member who finds one part of the ecosystem will find the whole thing. People feel welcome when they know everything that the group has to offer.
+It is also important to make every web property point to all of the other web properties in the ChicagoRuby ecosystem. For example, all of the conference sites point to the ChicagoRuby site, and vice versa. A new member who finds one part of the ecosystem will find the whole thing. People feel welcome when information is easy to find.
 
-Making future members feel welcome is key to growth. Free meetings are another way to make people feel welcome. 
+Making future members feel welcome is key to growth. Free monthly events are another way to make people feel welcome. 
 
 ###Keep Monthly Events Free
-I firmly believe that monthly user group meetings should be free. We never know what a member of our community is going through financially. Therefore, nobody will be barred from a monthly ChicagoRuby meeting for lack of money.
+I firmly believe that monthly user group meetings should be free. We never know what a member of our community is going through financially. Therefore, ChicagoRuby's monthly meetings have always been free.
 
 My personal history includes times when I was dead broke due to one entrepreneurial venture or another. So I have emotional reasons for keeping ChicagoRuby’s monthly events free of charge.
 
@@ -53,7 +53,7 @@ Of course, the money to pay for the meetings has to come from somewhere. That’
 ###Cover Monthly Costs Through Sponsorships
 Companies will gladly sponsor a group that gives them a return on their investment. Sponsorships don’t always have to come in the form of money.
 
-For example, ChicagoRuby’s first sponsor was [DeForest Group](http://www.deforestgroup.com/). Owner [Lee DeForest](https://www.linkedin.com/in/leedeforest) provides ChicagoRuby with free space and WiFi for our Saturday meetings. Lee was one of the five people in the room when the current organizers took over, and we will always be grateful to him for supporting us in the early days.
+For example, ChicagoRuby’s first sponsor was [DeForest Group](http://www.deforestgroup.com/). Owner [Lee DeForest](https://www.linkedin.com/in/leedeforest) provides ChicagoRuby with free space and WiFi for our Saturday meetings. Lee was one of the five people in the room when the current organizers took over, and we will always be grateful for his early support.
 
 ChicagoRuby’s downtown sponsors are [Enova](http://enova.com) and [ThoughtWorks](http://thoughtworks.com). Each company provides space, WiFi, pizza, and beverages on a monthly basis. 
 
@@ -61,25 +61,20 @@ All of our sponsors have the opportunity to address our group at the beginning o
 
 Sponsors get involved with user groups for two main reasons: To recruit developers, or to market products to developers. Everybody wins when sponsors get involved with user groups, financially or otherwise.
 
-###Merging With Downtown (Chirb)
-Chirb
-
-
 ###Maintaining Focus
-Over the years, ChicagoRuby has experimented with other ventures. We ran a job board for awhile. We ran conferences related to NoSQL and mobile. We moved away from these because they drained our resources, and pulled us away from our core, which is Ruby. We continue to believe in polyglot programming, and the [polyglot night](http://www.chicagoruby.org/videos/archives/2013/12/03/ployglot-night/) in Jan 2014 was very successful. You can expect to see another polyglot night in the future.
+Over the years, ChicagoRuby has experimented with other ventures. We ran a job board for awhile. We ran conferences related to NoSQL and mobile. We moved away from these because they drained our resources, and pulled us away from our core, which is Ruby. 
 
-###Learning from Mistakes
-Members have come to trust the ChicagoRuby organizers over the years. 
+We continue to explore polyglot programming, and the [polyglot night](http://www.chicagoruby.org/videos/archives/2013/12/03/ployglot-night/) in Jan 2014 was very successful. You can expect to see another polyglot night in the future.
 
+###Vetting Speakers
+Members of ChicagoRuby trust the organizers to deliver quality every month. I dropped the ball one month when I failed to properly vet a speaker. After that meeting, organizer [Dave Giunta](https://twitter.com/dgiunta) wrote the first draft of the ChicagoRuby [speaker guidelines](http://www.chicagoruby.org/about/speaker-guidelines/). 
 
 ###The Future: RubyCaribe and LinuxBarbados
-Our newest work is happenging in the Caribbean, in the island nation of Barbados. [RubyCaribe](http://rubycaribe.com) and [LinuxBarbados](http://linuxbarbados.org).
+Our newest work is happenging in the Caribbean, in the island nation of Barbados: [RubyCaribe](http://rubycaribe.com) and [LinuxBarbados](http://linuxbarbados.org). The new ventures have introduced ChicagoRuby to work done by the [University of the West Indies at Cave Hill (UWI)](https://www.cavehill.uwi.edu/).
 
-With LinuxBarbadfos, we hope to follow the model that has worked well for us here in the States. Keep the user group (LinuxBarbados) free by charging for the conference (RubyCaribe). Collaborating with the University of the West Indies at Cave Hill gives the group a huge advantage. 
+[Dr. Colin Depradine](http://www.cavehill.uwi.edu/fst/cmp/staff/colin-depradine.aspx), Dean of the University’s Faculty of Science and Technology is serious about growing the next generation of scientists and engineers in the Caribbean. Dr. Depradine encourages collaboration between the sciences. For example, computer scientists can write software to crunch data related to solar energy research. Looking even further into the future, Dr. Depradine and his team have introduced children as young as eight to programming.
 
-Dr. Colin Depradine, Dean of the University’s Faculty of Science and Technology is serious about growing the next generation of scientists and engineers in the Caribbean. 
-
-
+UWI will also serve as host to LinuxBarbados. The new group will be led by [Maurice Beckles](http://cavehill.uwi.edu/fst/home.aspx), a Barbados-based open source enthusiast and IT technician at UWI.
 
 
 
