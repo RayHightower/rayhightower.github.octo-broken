@@ -107,7 +107,7 @@ The new ventures have introduced ChicagoRuby to work done by the [University of 
 
 UWI also serves as host to LinuxBarbados. The group is organized by [Maurice Beckles](http://www.meetup.com/LinuxBarbados/members/143194822/), a Barbados-based open source enthusiast and IT technician at UWI. If you're in Barbados, be sure to ask him about his sink-or-swim introduction to Linux at a local bank!
 
-Notice the pattern: The conference (RubyCaribe) focuses on ChicagoRuby's core strength, Ruby. The monthly user group, LinuxBarbados, is a vehicle for exploring a wide range of topics including Linux, Ruby, embedded devices, and anything related to open source. Maurice Beckles and his team are headed for an exciting adventure!
+Notice the pattern: The conference (RubyCaribe) focuses on ChicagoRuby's core strength, Ruby. The monthly user group, LinuxBarbados, is a vehicle for exploring a wide range of topics including Linux, Ruby, embedded devices, and anything related to open source.
 
 ###Conclusion
 A better title for this post might have been _One Way to Grow a User Group_. Every group will grow differently depending on its particular strengths and interests. Of course, groups that grow are likely to have a few things in common. Things like consistency, teamwork, iteration, and learning from mistakes.
