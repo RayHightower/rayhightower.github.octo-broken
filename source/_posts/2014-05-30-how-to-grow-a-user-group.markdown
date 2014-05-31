@@ -93,7 +93,9 @@ Our newest work is happening in the Caribbean, in the island nation of Barbados.
 
 [Dr. Colin Depradine](http://www.cavehill.uwi.edu/fst/cmp/staff/colin-depradine.aspx), Dean of the University’s Faculty of Science and Technology, is serious about growing the next generation of scientists and engineers in the Caribbean. Under Dr. Depradine's leadership, UWI encourages collaboration between the sciences. For example, computer scientists are writing software to crunch data related to solar energy research. Looking even further into the future, the UWI team has introduced children as young as eight to programming.
 
-UWI will also serve as host to LinuxBarbados. The new group will be led by [Maurice Beckles](http://cavehill.uwi.edu/fst/home.aspx), a Barbados-based open source enthusiast and IT technician at UWI.
+UWI will also serve as host to LinuxBarbados. The new group is led by [Maurice Beckles](http://cavehill.uwi.edu/fst/home.aspx), a Barbados-based open source enthusiast and IT technician at UWI. If you're in Barbados, be sure to ask him about his sink-or-swim introduction to Linux at a local bank!
+
+Notice the pattern: The conference (RubyCaribe) focuses on ChicagoRuby's core strength, Ruby. The monthly user group, LinuxBarbados, is a great vehicle for exploration into new areas including Linux, Ruby, embedded devices, and anything related to open source. Maurice Beckles and his team are headed for an exciting adventure!
 
 ###Conclusion
 A better title for this post might have been _One Way to Grow a User Group_. Every group will grow differently depending on its particular strengths and interests. Of course, groups that grow are likely to have a few things in common. Things like consistency, teamwork, iteration, and learning from mistakes.
