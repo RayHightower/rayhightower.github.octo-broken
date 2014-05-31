@@ -47,13 +47,9 @@ The domain is registered with [DNSimple](http://dnsimple.com), so the process wa
 1. Go into DNSimple's advanced editor for the domain.
 1. Click `Add a Record` and select `ALIAS`.
 1. Leave `Name` blank.
-1. Next to `Alias for`, enter the GitHub Pages endpoint. In my case, the
-endpoint is `rayhightower.github.io`.
+1. Next to `Alias for` enter the GitHub Pages endpoint. In my case, the endpoint is `rayhightower.github.io`.
 
 I set TTL to 1 minute to encourage the changes to propagate quickly. If you know of a better configuration choice for TTL, please let me know in the comments below.
 
 ###Expect Propagation Delays
 DNS changes can take up to a day to propagate. Delays tend to be shorter with DNSimple because time-to-live (TTL) can be set as low as one minute for some records. Updates will be posted here as I learn more.
-
-
-
