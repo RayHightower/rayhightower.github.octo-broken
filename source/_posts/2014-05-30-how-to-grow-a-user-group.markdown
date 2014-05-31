@@ -79,7 +79,7 @@ the Next Great Thing. How does a group balance between the two?
 
 Over the years, ChicagoRuby has experimented with other ventures. We ran a job board for awhile. We ran conferences related to NoSQL and mobile. We moved away from these because they drained our resources, and pulled us away from our core, which is Ruby. 
 
-For ChicagoRuby, it makes sense to use the monthly meetups as a place for exploration. Monthly events take minimal resources, so they're ideal for experimentation. For example, we continue to explore polyglot programming. [Polyglot night](http://www.chicagoruby.org/videos/archives/2013/12/03/ployglot-night/) in Jan 2014 was very successful. You can expect to see another polyglot night in the future.
+For ChicagoRuby, it makes sense to use the monthly meetups as a place for exploration. Monthly events take minimal resources, so they're ideal for experiments. For example, we continue to explore polyglot programming. [Polyglot night](http://www.chicagoruby.org/videos/archives/2013/12/03/ployglot-night/) in Jan 2014 was very successful. You can expect to see another polyglot night in the future.
 
 Since conferences require more resources, you can expect our future conferences to draw upon our core strengths in Ruby. RubyCaribe is one such venture.
 
