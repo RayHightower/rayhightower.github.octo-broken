@@ -12,7 +12,7 @@ Today, the _new crew_ has grown ChicagoRuby to over 2,700 members. The group hos
 How did ChicagoRuby do it? Through teamwork, iteration, and learning from mistakes.
 <!--more-->
 ###First: Build a Team
-ChicagoRuby will always have multiple organizers. The group is stronger with multiple brains at the helm. We started with three organizers in August 2007. Today we have eight. Working as a team enables us to build on each other’s strengths: Some organizers have strong design skills, others are strong developers. And some are good at asking members for help with user group tasks.
+ChicagoRuby believes in sharing the work amongst multiple organizers. The group is stronger with several brains at the helm. The new crew started with three organizers in August 2007. Today we have eight. Working as a team enables us to build on each other’s strengths: Some organizers have strong design skills, others are strong developers. And some are good at asking members for help.
 
 ###How to Ask for Help
 
@@ -22,6 +22,27 @@ ChicagoRuby will always have multiple organizers. The group is stronger with mul
 One way to ask for help: Encourage members to help in their area of enthusiasm. For example, organizer [Ginny Hendry](https://twitter.com/ginnyhendry) runs the ChicagoRuby hack nights every month. Ginny got started when she approached me after one meeting and said “We should have hack nights.” Clearly, she was enthused about hack nights, so I asked her to run them for the group. 
 
 Today, Ginny’s hack nights are consistently the highest rated of all ChicagoRuby events. Members who have ideas for improvement tend to be strong leaders. When we get out of their way and let them lead, the whole group benefits. 
+
+Other members of our team:
+* [Justin Love](http://twitter.com/wondible)
+* [Hugo Corbucci](http://twitter.com/hugocorbucci)
+* [Alonda McCree](http://twitter.com/themccreefiles)
+* [Marty Lavin](http://www.meetup.com/ChicagoRuby/members/1345203/)
+* [Emily Rosengren](http://www.meetup.com/ChicagoRuby/members/42800032/) of [ThoughtWorks](http://thoughtworks.com) manages our downtown meetups.
+* [Sam Jacobs](http://www.meetup.com/ChicagoRuby/members/135529442/)
+
+* Marty Lavin was a consistent voice of reason in Elmhurst, so now he runs
+that part of the group. 
+Justin Love
+Hugo Corbucci
+Alonda McCree
+Marty Lavin
+Emily Rosengren
+Sam Jacobs
+* [Emily Rosengren]() 
+
+
+In addition to the ChicagoRuby organizers, one person deserves special mention. [Kevin Zolkiewicz](http://twitter.com/zolk) has managed every WindyCityRails since the first one in 2008. Kevin's project management, design, and leadership skills have been enjoyed by everyone who has ever attended WindyCityRails.
 
 The [ChicagoRuby Organizer Page](http://www.chicagoruby.org/about/organizers/) contains the list of current and past organizers. Each has helped to make the group stronger.
 
