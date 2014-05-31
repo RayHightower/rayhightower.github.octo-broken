@@ -32,8 +32,8 @@ Here’s the original message. If you’re satisfied with the above translation,
 ###What to Do Next
 The domain is registered with [DNSimple](http://dnsimple.com), so here’s what needed to be done.
 
-1 Point a CNAME record to [GitHub-user-name].github.io. In this case,  rayhightower.github.io.
-1 WHat will appear on this line?
-1 How about this line?
+1. Point a CNAME record to [GitHub-user-name].github.io. In this case,  rayhightower.github.io.
+1. WHat will appear on this line?
+1. How about this line?
 
 
