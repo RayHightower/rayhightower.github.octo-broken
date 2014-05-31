@@ -16,7 +16,7 @@ ChicagoRuby believes in sharing the work amongst multiple organizers. The group 
 
 ###How to Ask for Help
 
->Any favor he asks of you, you will offer to do before he requests it.
+>I guarantee you that any favor he asks of you, you will offer to do before he requests it.
 > <br/>~Tom Hagen, Consigliere
 
 One way to ask for help: Encourage members to help in their area of enthusiasm. For example, organizer [Ginny Hendry](https://twitter.com/ginnyhendry) runs the ChicagoRuby hack nights every month. Ginny got started when she approached the organizers after a meeting and said "We should have hack nights." Clearly, she was enthused about hack nights, so she took the lead in that area.
