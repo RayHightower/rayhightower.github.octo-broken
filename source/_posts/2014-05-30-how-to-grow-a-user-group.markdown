@@ -71,7 +71,7 @@ All of our sponsors have the opportunity to address our group at the beginning o
 Sponsors get involved with user groups for two main reasons: To recruit developers, or to market products to developers. Everybody wins when sponsors get involved with user groups, financially or otherwise.
 
 ###Vet Speakers
-Members of ChicagoRuby trust the organizers to deliver quality every month. I dropped the ball one month when I failed to properly vet a speaker. After that meeting, organizer [Dave Giunta](https://twitter.com/dgiunta) wrote the first draft of the ChicagoRuby [speaker guidelines](http://www.chicagoruby.org/about/speaker-guidelines/). We've word-smithed the guidelines over the years, but the most important parts were created by Dave.
+Members of ChicagoRuby trust the organizers to deliver quality events every month. I dropped the ball one month when I failed to properly vet a speaker. After that meeting, organizer [Dave Giunta](https://twitter.com/dgiunta) wrote the first draft of the ChicagoRuby [speaker guidelines](http://www.chicagoruby.org/about/speaker-guidelines/). We've word-smithed the guidelines over the years, but the most important parts were created by Dave.
 
 ###Maintain Focus, and Explore New Areas
 Focus can lead to excellence, but if we focus too intensely we might mix
