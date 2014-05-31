@@ -80,14 +80,13 @@ Sponsors get involved with user groups for two main reasons: To recruit develope
 Members of ChicagoRuby trust the organizers to deliver quality events every month. I dropped the ball one month when I failed to properly vet a speaker. After that meeting, organizer [Dave Giunta](https://twitter.com/dgiunta) wrote the first draft of the ChicagoRuby [speaker guidelines](http://www.chicagoruby.org/about/speaker-guidelines/). We've word-smithed the guidelines over the years, but the most important parts were created by Dave.
 
 ###Maintain Focus, and Explore New Areas
-Focus can lead to excellence, but if we focus too intensely we might mix
-the Next Great Thing. How does a group balance between the two?
+Focus can lead to excellence. But if our focus is too tight, we might miss the Next Great Thing. How does a group balance between focus and exploration?
 
 Over the years, ChicagoRuby has experimented with other ventures. We ran a job board for awhile. We ran conferences related to NoSQL and mobile. We moved away from these because they drained our resources, and pulled us away from our core, which is Ruby. 
 
-For ChicagoRuby, it makes sense to use the monthly meetups as a place for exploration. Monthly events take minimal resources, so they're ideal for experiments. For example, we continue to explore polyglot programming. [Polyglot Night](http://www.chicagoruby.org/videos/archives/2013/12/03/ployglot-night/) in Jan 2014 was very successful. You can expect to see another more experiments in the future.
+To balance between focus and exploration, we have decided to use the monthly user groups for exploration, while the conferences are all about focus. Monthly events take minimal resources, so they're ideal for experiments. For example, we continue to explore polyglot programming. [Polyglot Night](http://www.chicagoruby.org/videos/archives/2013/12/03/ployglot-night/) in Jan 2014 was very successful. You can expect to see another more experiments at future monthly events.
 
-Since conferences require more resources, you can expect our future conferences to draw upon our core strengths in Ruby. RubyCaribe is one such venture.
+Conferences require more time, energy, and resources than monthly meetups. To maximize efficiency, ChicagoRuby builds conferences around the group's core strength: Ruby. RubyCaribe is the newest example of this approach. Every month, ChicagoRuby strengthens relationships within the Ruby community. RubyCaribe is an extension of the relationship building.
 
 ###The Future: RubyCaribe and LinuxBarbados
 Our newest work is happening in the Caribbean, in the island nation of Barbados. [LinuxBarbados](http://linuxbarbados.org) is a brand new group for open source enthusiasts. [RubyCaribe](http://rubycaribe.com) is a brand new conference for intermediate and advanced Ruby developers. The new ventures have introduced ChicagoRuby to work done by the [University of the West Indies at Cave Hill (UWI)](https://www.cavehill.uwi.edu/).
