@@ -60,7 +60,7 @@ My personal history includes times when I was dead broke due to one entrepreneur
 Of course, the money to pay for the meetings has to come from somewhere. That’s where sponsors come in.
 
 ###Cover Monthly Costs Through Sponsorships
-Companies will gladly sponsor a group that gives them a return on their investment. Sponsorships don’t always have to come in the form of money.
+Companies will gladly sponsor a group that gives them a return on their investment. Sponsorships don't always come in the form of money.
 
 For example, ChicagoRuby’s first sponsor was [DeForest Group](http://www.deforestgroup.com/). Owner [Lee DeForest](https://www.linkedin.com/in/leedeforest) provides ChicagoRuby with free space and WiFi for our Saturday meetings. Lee was one of the five people in the room when the current organizers took over, and we will always be grateful for his early support.
 
