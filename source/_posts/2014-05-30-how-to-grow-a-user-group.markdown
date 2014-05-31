@@ -67,12 +67,12 @@ Over the years, ChicagoRuby has experimented with other ventures. We ran a job b
 We continue to explore polyglot programming, and the [polyglot night](http://www.chicagoruby.org/videos/archives/2013/12/03/ployglot-night/) in Jan 2014 was very successful. You can expect to see another polyglot night in the future.
 
 ###Vetting Speakers
-Members of ChicagoRuby trust the organizers to deliver quality every month. I dropped the ball one month when I failed to properly vet a speaker. After that meeting, organizer [Dave Giunta](https://twitter.com/dgiunta) wrote the first draft of the ChicagoRuby [speaker guidelines](http://www.chicagoruby.org/about/speaker-guidelines/). 
+Members of ChicagoRuby trust the organizers to deliver quality every month. I dropped the ball one month when I failed to properly vet a speaker. After that meeting, organizer [Dave Giunta](https://twitter.com/dgiunta) wrote the first draft of the ChicagoRuby [speaker guidelines](http://www.chicagoruby.org/about/speaker-guidelines/). We've word-smithed the guidelines over the years, but the most important parts were created by Dave.
 
 ###The Future: RubyCaribe and LinuxBarbados
-Our newest work is happenging in the Caribbean, in the island nation of Barbados: [RubyCaribe](http://rubycaribe.com) and [LinuxBarbados](http://linuxbarbados.org). The new ventures have introduced ChicagoRuby to work done by the [University of the West Indies at Cave Hill (UWI)](https://www.cavehill.uwi.edu/).
+Our newest work is happening in the Caribbean, in the island nation of Barbados. [LinuxBarbados](http://linuxbarbados.org) is a brand new group for open source enthusiasts. [RubyCaribe](http://rubycaribe.com) is a brand new conference for intermediate and advanced Ruby developers. The new ventures have introduced ChicagoRuby to work done by the [University of the West Indies at Cave Hill (UWI)](https://www.cavehill.uwi.edu/).
 
-[Dr. Colin Depradine](http://www.cavehill.uwi.edu/fst/cmp/staff/colin-depradine.aspx), Dean of the University’s Faculty of Science and Technology is serious about growing the next generation of scientists and engineers in the Caribbean. Dr. Depradine encourages collaboration between the sciences. For example, computer scientists can write software to crunch data related to solar energy research. Looking even further into the future, Dr. Depradine and his team have introduced children as young as eight to programming.
+[Dr. Colin Depradine](http://www.cavehill.uwi.edu/fst/cmp/staff/colin-depradine.aspx), Dean of the University’s Faculty of Science and Technology, is serious about growing the next generation of scientists and engineers in the Caribbean. Dr. Depradine encourages collaboration between the sciences. For example, computer scientists are writing software to crunch data related to solar energy research. Looking even further into the future, Dr. Depradine and his team have introduced children as young as eight to programming.
 
 UWI will also serve as host to LinuxBarbados. The new group will be led by [Maurice Beckles](http://cavehill.uwi.edu/fst/home.aspx), a Barbados-based open source enthusiast and IT technician at UWI.
 
