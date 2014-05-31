@@ -75,7 +75,7 @@ Members of ChicagoRuby trust the organizers to deliver quality events every mont
 
 ###Maintain Focus, and Explore New Areas
 Focus can lead to excellence, but if we focus too intensely we might mix
-the Next Great Thing. How does a group maintain balance?
+the Next Great Thing. How does a group balance between the two?
 
 Over the years, ChicagoRuby has experimented with other ventures. We ran a job board for awhile. We ran conferences related to NoSQL and mobile. We moved away from these because they drained our resources, and pulled us away from our core, which is Ruby. 
 
