@@ -5,7 +5,7 @@ date: 2014-05-30 11:33
 comments: true
 categories: [ Education, Git ]
 ---
-{% img right /images/git-logo.png %}
+{% img right /images/git-200.png %}
 Developers of Git are making a serious effort to improve intuitiveness for first-time users. Of course, all users benefit from intuitive tools. When our tools _just work_, we spend less time sifting through documentation and more time solving problems for our customers.
 <!--more-->
 ###How to Upgrade
