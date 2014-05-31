@@ -27,11 +27,9 @@ Current members of the ChicagoRuby organizer team are:
 
 * [Justin Love](http://twitter.com/wondible) is a prolific developer and an organizer of the [Chicago JavaScript Meetup Group (JS-Chi)](http://www.meetup.com/js-chi/). Justin will
 also be a lab advisor for RubyCaribe in January 2015.
-* [Hugo Corbucci](http://twitter.com/hugocorbucci), [Emily Rosengren](http://www.meetup.com/ChicagoRuby/members/42800032/), and [Sam Jacobs](http://www.meetup.com/ChicagoRuby/members/135529442/) are members of [ThoughtWorks](http://thoughtworks.com)' consulting team. Since ThoughtWorkers travel a lot, ChicagoRubymaintains contact with several. 
-* [Alonda McCree](http://twitter.com/themccreefiles) manages the
-downtown meetings and she manage the RubyCaribe conference.
-* [Marty Lavin](http://www.meetup.com/ChicagoRuby/members/1345203/)
-manages ChicagoRuby's monthly meetups in the western suburbs.
+* [Hugo Corbucci](http://twitter.com/hugocorbucci), [Emily Rosengren](http://www.meetup.com/ChicagoRuby/members/42800032/), and [Sam Jacobs](http://www.meetup.com/ChicagoRuby/members/135529442/) are developers at [ThoughtWorks](http://thoughtworks.com). Since ThoughtWorkers travel often, ChicagoRuby always asks two or more to be on the organizer team. 
+* [Alonda McCree](http://twitter.com/themccreefiles) manages the downtown meetups, including logistics and video. Alonda is also conference manager for RubyCaribe.
+* [Marty Lavin](http://www.meetup.com/ChicagoRuby/members/1345203/) manages ChicagoRuby's Elmhurst meetups.
 
 In addition to the core group of ChicagoRuby organizers, one person deserves special mention. [Kevin Zolkiewicz](http://twitter.com/zolk) has managed every WindyCityRails since the first one in 2008. Kevin's project management, design, and leadership skills have been enjoyed by everyone who has ever attended WindyCityRails.
 
