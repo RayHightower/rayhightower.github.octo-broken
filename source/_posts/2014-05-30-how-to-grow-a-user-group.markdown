@@ -50,6 +50,11 @@ In addition to the core group of ChicagoRuby organizers, one person deserves spe
 
 The [ChicagoRuby Organizer Page](http://www.chicagoruby.org/about/organizers/) contains the list of current and past organizers. Many of the former organizers remain active in an emeritus role. Every mind helps to make the group stronger.
 
+###Automate Everything
+Managing a database of 2,700+ members could be drudgery. Fortunately, Meetup.com makes the process easy. Meetup handles RSVPs, membership additions and deletions, and reminders. Sometimes, the 2-week automated reminder from Meetup.com reminds the organizers to get a speaker for the next meeting!
+
+Early in our history, someone suggested that ChicagoRuby should not use Meetup.com because it's written in PHP, and we're a Ruby group. We see things differently. ChicagoRuby is a Ruby group that uses the best tool for the job, regardless of language. Meetup.com has proven itself useful for eight years and counting.
+
 ###Choose a Short Name
 Growth is an ongoing priority for ChicagoRuby. In order to grow, a group has to attract new members. New members who are looking for a group to join are likely to start with a search engine, and search engines adore simplicity.
 
@@ -59,11 +64,6 @@ Our group was originally called _The Chicago Area Ruby on Rails Meetup Group_. A
 To make the group even easier to find, every web site in the ChicagoRuby ecosystem points to all of the group's other web sites. For example, all of the conference sites point to the ChicagoRuby site, and vice versa. A new member who finds one part of the ecosystem will find the whole thing. People feel welcome when information is easy to find.
 
 Making future members feel welcome is key to growth. Free monthly events are another way to make people feel welcome. 
-
-###Automate Everything With Meetup.com
-Managing a database of 2,700+ members could be drudgery. Fortunately, Meetup.com makes the process easy. Meetup handles RSVPs, membership additions and deletions, and reminders. Sometimes, the 2-week reminder from Meetup.com reminds the organizers to get a speaker for the next meeting!
-
-Early in our history, someone suggested that ChicagoRuby should not use Meetup.com because it's written in PHP, and we're a Ruby group. We see things differently. ChicagoRuby is a Ruby group that uses the best tool for the job, regardless of language. Meetup.com has proven itself useful for eight years and counting.
 
 ###Keep Monthly Events Free
 I firmly believe that monthly user group meetings should be free. We never know what a member of our community is going through financially. Therefore, ChicagoRuby's monthly meetings have always been free.
