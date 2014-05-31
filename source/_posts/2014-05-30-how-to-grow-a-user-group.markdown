@@ -44,7 +44,7 @@ In addition to the core group of ChicagoRuby organizers, one person deserves spe
 The [ChicagoRuby Organizer Page](http://www.chicagoruby.org/about/organizers/) contains the list of current and past organizers. Many of the former organizers remain active in an emeritus role. Every mind helps to make the group stronger.
 
 ###Choose a Short Name
-Growth is an ongoing priority for ChicagoRuby. In order to grow, a group has to attract new members. New members who are looking for a group to join are likely to start with a search engine, and search engines crave simplicity.
+Growth is an ongoing priority for ChicagoRuby. In order to grow, a group has to attract new members. New members who are looking for a group to join are likely to start with a search engine, and search engines adore simplicity.
 
 Our group was originally called _The Chicago Area Ruby on Rails Meetup Group_. Accurate, and a mouthful. We discovered that a simple domain name, [ChicagoRuby.org](http://chicagoruby.org), was available. So we grabbed it, along with the [@ChicagoRuby](http://twitter.com/chicagoruby) Twitter handle.
 
