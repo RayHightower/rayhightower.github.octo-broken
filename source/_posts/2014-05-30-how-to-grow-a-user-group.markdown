@@ -37,7 +37,7 @@ Making future members feel welcome is key to growth. Free meetings are another w
 ###Keep Monthly Events Free
 I firmly believe that monthly user group meetings should be free. We never know what a member of our community is going through financially. Therefore, nobody will be barred from a monthly ChicagoRuby meeting for lack of money.
 
-My personal history includes times when I was dead broke due to one "entrepreneurial" venture or another. So I have emotional reasons for keeping ChicagoRuby’s monthly events free of charge.
+My personal history includes times when I was dead broke due to one entrepreneurial venture or another. So I have emotional reasons for keeping ChicagoRuby’s monthly events free of charge.
 
 Of course, the money to pay for the meetings has to come from somewhere. That’s where sponsors come in.
 
