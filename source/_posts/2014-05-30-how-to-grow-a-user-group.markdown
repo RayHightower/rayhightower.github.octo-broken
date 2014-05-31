@@ -53,10 +53,23 @@ All of our sponsors have the opportunity to address our group at the beginning o
 Sponsors get involved with user groups for two main reasons: To recruit developers, or to market products to developers. Everybody wins when sponsors get involved with user groups, financially or otherwise.
 
 ###Merging With Downtown (Chirb)
+Chirb
 
+
+###Maintaining Focus
+Over the years, ChicagoRuby has experimented with other ventures. We ran a job board for awhile. We ran conferences related to NoSQL and mobile. We moved away from these because they drained our resources, and pulled us away from our core, which is Ruby. We continue to believe in polyglot programming, and the [polyglot night](http://www.chicagoruby.org/videos/archives/2013/12/03/ployglot-night/) in Jan 2014 was very successful. You can expect to see another polyglot night in the future.
 
 ###Learning from Mistakes
 Members have come to trust the ChicagoRuby organizers over the years. 
+
+
+###The Future: RubyCaribe and LinuxBarbados
+Our newest work is happenging in the Caribbean, in the island nation of Barbados. [RubyCaribe](http://rubycaribe.com) and [LinuxBarbados](http://linuxbarbados.org).
+
+With LinuxBarbadfos, we hope to follow the model that has worked well for us here in the States. Keep the user group (LinuxBarbados) free by charging for the conference (RubyCaribe). Collaborating with the University of the West Indies at Cave Hill gives the group a huge advantage. 
+
+Dr. Colin Depradine, Dean of the University’s Faculty of Science and Technology is serious about growing the next generation of scientists and engineers in the Caribbean. 
+
 
 
 
