@@ -19,7 +19,7 @@ Here are the important points of the of the `Page build warning` message:
 ###The Original Message
 Here’s the original message. If you’re satisfied with the above translation, you can skip this section.
 
-```bash
+```text
 The page build completed successfully, but returned the following warning:
 
 
