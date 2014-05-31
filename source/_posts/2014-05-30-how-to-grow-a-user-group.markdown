@@ -92,3 +92,5 @@ UWI will also serve as host to LinuxBarbados. The new group will be led by [Maur
 
 ###Conclusion
 A better title for this post might have been _One Way to Grow a User Group_. Every group will grow differently depending on its particular strengths and interests. Of course, groups that grow are likely to have a few things in common. Things like consistency, teamwork, iteration, and learning from mistakes.
+
+If you have ideas to add, feel free to do so in the comments below.
