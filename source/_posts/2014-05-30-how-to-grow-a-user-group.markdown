@@ -72,7 +72,7 @@ For example, ChicagoRuby’s first sponsor was [DeForest Group](http://www.defor
 
 ChicagoRuby’s downtown sponsors are [Enova](http://enova.com) and [ThoughtWorks](http://thoughtworks.com). Each company provides space, WiFi, pizza, and beverages on a monthly basis. 
 
-All of our sponsors have the opportunity to address our group at the beginning of the meeting. More important, by sponsoring ChicagoRuby over time, the company build trust amongst the membership.
+Sponsors get to address the group at the beginning of the meeting. More important, by sponsoring ChicagoRuby over time, a company can build trust within the membership.
 
 Sponsors get involved with user groups for two main reasons: To recruit developers, or to market products to developers. Everybody wins when sponsors get involved with user groups, financially or otherwise.
 
