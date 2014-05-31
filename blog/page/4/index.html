@@ -9,8 +9,8 @@
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="Redundancy rocks.
-RubyMotion&rsquo;s OS X support enabled me to solve a small problem yesterday. Here&rsquo;s the story. Background on Backup No &hellip;">
+  <meta name="description" content="Portability for Parallella-sized devices.
+Beaglebone Black, Raspberry Pi, and Parallella are three small, powerful Linux-based computers. But in &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -83,6 +83,52 @@ RubyMotion&rsquo;s OS X support enabled me to solve a small problem yesterday. H
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/11/10/a-portable-hack-for-parallella/">A Portable Hack for Parallella</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-10T23:05:00-08:00" pubdate data-updated="true">Nov 10<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><span class='caption-wrapper left'><img class='caption' src='/images/parallella-portable.png' width='' height='' alt='Portability for Parallella-sized devices.' title='Portability for Parallella-sized devices.'><span class='caption-text'>Portability for Parallella-sized devices.</span></span>
+<a href="/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/">Beaglebone Black</a>, <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a>, and <a href="/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/">Parallella</a> are three small, powerful Linux-based computers. But in order to make these devices truly portable, we need a way to carry a monitor and keyboard along. This article describes one hack that works.</p>
+
+<h3>Inspiration in a Suitcase</h3>
+
+<p>The HP 5036 Microprocessor Lab gave me my first exposure to assembler language. I was eighteen, working my first software internship, and loving every minute of it. When I devised ways to complete my <em>regular work</em> faster than management expected, I had some time on my hands. So I spent time learning assembler with the HP 5036.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/11/10/a-portable-hack-for-parallella/">Continue reading &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -482,80 +528,6 @@ Pat Metheny encourages musicians to &ldquo;be the worst&rdquo; in whatever band 
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/07/15/rvm-saves-the-day-for-octopress/">RVM Saves the Day for Octopress</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-07-15T14:29:00-07:00" pubdate data-updated="true">Jul 15<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://octopress.org">Octopress</a> is a lean blogging engine that happens to power <a href="http://rayhightower.com">RayHightower.com</a>. Earlier today, after a quick update to the blog, I encountered the following:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rake generate
-</span><span class='line'>/Users/rth/.rvm/gems/ruby-1.9.3-p448@global/gems/bundler-1.2.4/lib/bundler/rubygems_integration.rb:187:in <span class="sb">`</span>stub_source_index170<span class="s1">&#39;: uninitialized constant Gem::SourceIndex (NameError)</span>
-</span><span class='line'><span class="s1">     from /Users/rth/.rvm/gems/ruby-1.9.3-p448@global/gems/bundler-1.2.4/lib/bundler/rubygems_integration.rb:353:in `stub_rubygems&#39;</span>
-</span><span class='line'>     from /Users/rth/.rvm/gems/ruby-1.9.3-p448@global/gems/bundler-1.2.4/lib/bundler/rubygems_integration.rb:250:in <span class="sb">`</span>replace_entrypoints<span class="s1">&#39;</span>
-</span><span class='line'><span class="s1">     from /Users/rth/.rvm/gems/ruby-1.9.3-p448@global/gems/bundler-1.2.4/lib/bundler/runtime.rb:14:in `setup&#39;</span>
-</span><span class='line'>     from /Users/rth/.rvm/gems/ruby-1.9.3-p448@global/gems/bundler-1.2.4/lib/bundler.rb:116:in <span class="sb">`</span>setup<span class="s1">&#39;</span>
-</span><span class='line'><span class="s1">     from /Users/rth/.rvm/gems/ruby-1.9.3-p448@global/gems/rubygems-bundler-1.1.0/lib/rubygems-bundler/noexec.rb:77:in `setup&#39;</span>
-</span><span class='line'>     from /Users/rth/.rvm/gems/ruby-1.9.3-p448@global/gems/rubygems-bundler-1.1.0/lib/rubygems-bundler/noexec.rb:89:in <span class="sb">`</span>&lt;top <span class="o">(</span>required<span class="o">)</span>&gt;<span class="s1">&#39;</span>
-</span><span class='line'><span class="s1">     from /Users/rth/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:116:in `require&#39;</span>
-</span><span class='line'>     from /Users/rth/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:116:in <span class="sb">`</span>rescue in require<span class="s1">&#39;</span>
-</span><span class='line'><span class="s1">     from /Users/rth/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/site_ruby/1.9.1/rubygems/core_ext/kernel_require.rb:122:in `require&#39;</span>
-</span><span class='line'>     from /Users/rth/.rvm/gems/ruby-1.9.3-p448@octopress/bin/ruby_noexec_wrapper:9:in <span class="sb">`</span>&lt;main&gt;<span class="err">&#39;</span>
-</span><span class='line'>
-</span><span class='line'><span class="err">$</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Not good. What happened?</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/07/15/rvm-saves-the-day-for-octopress/">Continue reading &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/5/">&larr; Older</a>
@@ -636,7 +608,7 @@ Pat Metheny encourages musicians to &ldquo;be the worst&rdquo; in whatever band 
 <li class='category'><a href='/blog/categories/business/'>Business (24)</a></li>
 <li class='category'><a href='/blog/categories/community/'>Community (11)</a></li>
 <li class='category'><a href='/blog/categories/education/'>Education (41)</a></li>
-<li class='category'><a href='/blog/categories/git/'>Git (3)</a></li>
+<li class='category'><a href='/blog/categories/git/'>Git (4)</a></li>
 <li class='category'><a href='/blog/categories/high-performance-computing/'>High Performance Computing (4)</a></li>
 <li class='category'><a href='/blog/categories/ios/'>iOS (13)</a></li>
 <li class='category'><a href='/blog/categories/linux-unix-osx/'>Linux-Unix-OSX (12)</a></li>
