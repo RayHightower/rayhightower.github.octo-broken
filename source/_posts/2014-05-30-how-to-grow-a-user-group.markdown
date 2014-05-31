@@ -11,10 +11,10 @@ Today, the _new crew_ has grown ChicagoRuby to over 2,700 members. The group hos
 
 How did ChicagoRuby do it? Through teamwork, iteration, and learning from mistakes.
 <!--more-->
-###Building the Team
+###Build the Team
 ChicagoRuby believes in sharing the work amongst multiple organizers. The group is stronger with several brains at the helm. The new crew started with three organizers in August 2007. Today we have eight. Working as a team enables us to benefit from each other’s strengths. Some organizers have strong design skills, others are strong developers. And some are good at asking members for help.
 
-###How to Ask for Help
+###Ask for Help
 
 >I guarantee you that any favor he asks of you, you will offer to do before he requests it.
 > <br/>~Tom Hagen, Consigliere
@@ -34,7 +34,7 @@ In addition to the core group of ChicagoRuby organizers, one person deserves spe
 
 The [ChicagoRuby Organizer Page](http://www.chicagoruby.org/about/organizers/) contains the list of current and past organizers. Many of the former organizers remain active in an emeritus role. Every mind helps to make the group stronger.
 
-###Naming the Group
+###Choose a Short Name
 Growth is an ongoing priority for ChicagoRuby. In order to grow, a group has to attract new members. New members who are looking for a group to join are likely to start with a search engine, and search engines crave simplicity.
 
 Our group was originally called _The Chicago Area Ruby on Rails Meetup Group_. Accurate, and a mouthful. We discovered that a simple domain name, [ChicagoRuby.org](http://chicagoruby.org), name was available. So we grabbed it, along with the [@ChicagoRuby](http://twitter.com/chicagoruby) Twitter handle.
@@ -61,13 +61,18 @@ All of our sponsors have the opportunity to address our group at the beginning o
 
 Sponsors get involved with user groups for two main reasons: To recruit developers, or to market products to developers. Everybody wins when sponsors get involved with user groups, financially or otherwise.
 
-###Maintaining Focus
+###Vet Speakers
+Members of ChicagoRuby trust the organizers to deliver quality every month. I dropped the ball one month when I failed to properly vet a speaker. After that meeting, organizer [Dave Giunta](https://twitter.com/dgiunta) wrote the first draft of the ChicagoRuby [speaker guidelines](http://www.chicagoruby.org/about/speaker-guidelines/). We've word-smithed the guidelines over the years, but the most important parts were created by Dave.
+
+###Maintain Focus, and Explore New Areas
+Focus can lead to excellence, but if we focus too intensely we might mix
+the Next Great Thing. How does a group maintain balance?
+
 Over the years, ChicagoRuby has experimented with other ventures. We ran a job board for awhile. We ran conferences related to NoSQL and mobile. We moved away from these because they drained our resources, and pulled us away from our core, which is Ruby. 
 
-We continue to explore polyglot programming, and the [polyglot night](http://www.chicagoruby.org/videos/archives/2013/12/03/ployglot-night/) in Jan 2014 was very successful. You can expect to see another polyglot night in the future.
+For ChicagoRuby, it makes sense to use the monthly meetups as a place for exploration. Monthly events take minimal resources, so they're ideal for experimentation. For example, we continue to explore polyglot programming. [Polyglot night](http://www.chicagoruby.org/videos/archives/2013/12/03/ployglot-night/) in Jan 2014 was very successful. You can expect to see another polyglot night in the future.
 
-###Vetting Speakers
-Members of ChicagoRuby trust the organizers to deliver quality every month. I dropped the ball one month when I failed to properly vet a speaker. After that meeting, organizer [Dave Giunta](https://twitter.com/dgiunta) wrote the first draft of the ChicagoRuby [speaker guidelines](http://www.chicagoruby.org/about/speaker-guidelines/). We've word-smithed the guidelines over the years, but the most important parts were created by Dave.
+Since conferences require more resources, you can expect our future conferences to draw upon our core strengths in Ruby. RubyCaribe is one such venture.
 
 ###The Future: RubyCaribe and LinuxBarbados
 Our newest work is happening in the Caribbean, in the island nation of Barbados. [LinuxBarbados](http://linuxbarbados.org) is a brand new group for open source enthusiasts. [RubyCaribe](http://rubycaribe.com) is a brand new conference for intermediate and advanced Ruby developers. The new ventures have introduced ChicagoRuby to work done by the [University of the West Indies at Cave Hill (UWI)](https://www.cavehill.uwi.edu/).
@@ -75,6 +80,7 @@ Our newest work is happening in the Caribbean, in the island nation of Barbados.
 [Dr. Colin Depradine](http://www.cavehill.uwi.edu/fst/cmp/staff/colin-depradine.aspx), Dean of the University’s Faculty of Science and Technology, is serious about growing the next generation of scientists and engineers in the Caribbean. Dr. Depradine encourages collaboration between the sciences. For example, computer scientists are writing software to crunch data related to solar energy research. Looking even further into the future, Dr. Depradine and his team have introduced children as young as eight to programming.
 
 UWI will also serve as host to LinuxBarbados. The new group will be led by [Maurice Beckles](http://cavehill.uwi.edu/fst/home.aspx), a Barbados-based open source enthusiast and IT technician at UWI.
+
 
 
 
