@@ -30,8 +30,7 @@ Here’s the original message. If you’re satisfied with the above translation,
 >If you have any questions please contact us at https://github.com/contact.
 
 ###First: Check the CNAME File
-Since the blog was configured for Octopress a few years ago, it already
-had a `source/CNAME` file. To check the contents:
+Since `RayHightower.com` was configured for Octopress a few years ago, it already had a `source/CNAME` file. To check the contents:
 
 ```bash
 $ cat source/CNAME
@@ -40,9 +39,11 @@ rayhightower.com
 $ 
 
 ```
+Everything looks fine, according to the GitHub's blog. Time for the next
+step.
 
 ###Next: Domain Records
-The domain is registered with [DNSimple](http://dnsimple.com), so here’s what needed to be done.
+The domain is registered with [DNSimple](http://dnsimple.com), so here’s what needed to be done (screenshots below).
 
 1. Point a CNAME record to `[GitHub-user-name].github.io`. In this case,  `rayhightower.github.io`.
 1. What will appear on this line?
