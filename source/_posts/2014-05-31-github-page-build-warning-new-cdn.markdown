@@ -17,7 +17,7 @@ Here are the important points of the of the `Page build warning` message:
 * If you want GitHub to serve your site faster, follow the instructions given in the blog articles.
 
 ###The Original Message
-_Here’s the original message. If you’re satisfied with the above translation, you can skip this section._
+Here’s the original message. If you’re satisfied with the above translation, you can skip this section.
 
 >The page build completed successfully, but returned the following warning:
 
