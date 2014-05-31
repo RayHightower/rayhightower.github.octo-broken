@@ -32,7 +32,7 @@ Current members of the ChicagoRuby organizer team are:
 
 In addition to the core group of ChicagoRuby organizers, one person deserves special mention. [Kevin Zolkiewicz](http://twitter.com/zolk) has managed every WindyCityRails since the first one in 2008. Kevin's project management, design, and leadership skills are enjoyed by everyone who attends WindyCityRails.
 
-The [ChicagoRuby Organizer Page](http://www.chicagoruby.org/about/organizers/) contains the list of current and past organizers. Many ofthe former organizers remain active in an emeritus role. Every mind helps to make the group stronger.
+The [ChicagoRuby Organizer Page](http://www.chicagoruby.org/about/organizers/) contains the list of current and past organizers. Many of the former organizers remain active in an emeritus role. Every mind helps to make the group stronger.
 
 ###Naming the Group
 Growth is an ongoing priority for ChicagoRuby. In order to grow, a group has to attract new members. New members who are looking for a group to join are likely to start with a search engine, and search engines crave simplicity.
