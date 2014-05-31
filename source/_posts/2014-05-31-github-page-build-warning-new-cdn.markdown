@@ -12,7 +12,7 @@ Today I finally took the time to research the topic so I could figure out what t
 ##What the Message Means
 Here are the important points of the of the `Page build warning` message:
 
-* GitHub introduced a [content delivery network (CDN)](http://en.wikipedia.org/wiki/Content_delivery_network) to make pages load faster.
+* GitHub introduced a [content delivery network (CDN)](http://en.wikipedia.org/wiki/Content_delivery_network) for faster page loads and protection against [denial of sevice (DOS)](http://en.wikipedia.org/wiki/Denial-of-service_attack) attacks.
 * If you do nothing to your GitHub Pages site, your pages will continue to load the old way. People who visit your site won’t see anything different.
 * If you want GitHub to serve your site faster, follow the instructions given in the blog articles.
 
