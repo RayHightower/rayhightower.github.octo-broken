@@ -19,30 +19,21 @@ ChicagoRuby believes in sharing the work amongst multiple organizers. The group 
 >Any favor he asks of you, you will offer to do before he requests it.
 > <br/>~Tom Hagen, Consigliere
 
-One way to ask for help: Encourage members to help in their area of enthusiasm. For example, organizer [Ginny Hendry](https://twitter.com/ginnyhendry) runs the ChicagoRuby hack nights every month. Ginny got started when she approached me after one meeting and said “We should have hack nights.” Clearly, she was enthused about hack nights, so I asked her to run them for the group. 
+One way to ask for help: Encourage members to help in their area of enthusiasm. For example, organizer [Ginny Hendry](https://twitter.com/ginnyhendry) runs the ChicagoRuby hack nights every month. Ginny got started when she approached the organizers after a meeting and said “We should have hack nights.” Clearly, she was enthused about hack nights, so she became our organizer of hack nights.
 
 Today, Ginny’s hack nights are consistently the highest rated of all ChicagoRuby events. Members who have ideas for improvement tend to be strong leaders. When we get out of their way and let them lead, the whole group benefits. 
 
-Other members of our team:
-* [Justin Love](http://twitter.com/wondible)
-* [Hugo Corbucci](http://twitter.com/hugocorbucci)
-* [Alonda McCree](http://twitter.com/themccreefiles)
+Other members joined the organizer team in a similar way:
+
+* [Justin Love](http://twitter.com/wondible) is a prolific developer and an organizer of the [Chicago JavaScript Meetup Group (JS-Chi)](http://www.meetup.com/js-chi/). Justin will
+also be a lab advisor for RubyCaribe in January 2015.
+* [Hugo Corbucci](http://twitter.com/hugocorbucci), [Emily Rosengren](http://www.meetup.com/ChicagoRuby/members/42800032/), and [Sam Jacobs](http://www.meetup.com/ChicagoRuby/members/135529442/) are members of [ThoughtWorks](http://thoughtworks.com)' consulting team. Since ThoughtWorkers travel a lot, ChicagoRubymaintains contact with several. 
+* [Alonda McCree](http://twitter.com/themccreefiles) manages the
+downtown meetings and she manage the RubyCaribe conference.
 * [Marty Lavin](http://www.meetup.com/ChicagoRuby/members/1345203/)
-* [Emily Rosengren](http://www.meetup.com/ChicagoRuby/members/42800032/) of [ThoughtWorks](http://thoughtworks.com) manages our downtown meetups.
-* [Sam Jacobs](http://www.meetup.com/ChicagoRuby/members/135529442/)
+manages ChicagoRuby's monthly meetups in the western suburbs.
 
-* Marty Lavin was a consistent voice of reason in Elmhurst, so now he runs
-that part of the group. 
-Justin Love
-Hugo Corbucci
-Alonda McCree
-Marty Lavin
-Emily Rosengren
-Sam Jacobs
-* [Emily Rosengren]() 
-
-
-In addition to the ChicagoRuby organizers, one person deserves special mention. [Kevin Zolkiewicz](http://twitter.com/zolk) has managed every WindyCityRails since the first one in 2008. Kevin's project management, design, and leadership skills have been enjoyed by everyone who has ever attended WindyCityRails.
+In addition to the core group of ChicagoRuby organizers, one person deserves special mention. [Kevin Zolkiewicz](http://twitter.com/zolk) has managed every WindyCityRails since the first one in 2008. Kevin's project management, design, and leadership skills have been enjoyed by everyone who has ever attended WindyCityRails.
 
 The [ChicagoRuby Organizer Page](http://www.chicagoruby.org/about/organizers/) contains the list of current and past organizers. Each has helped to make the group stronger.
 
