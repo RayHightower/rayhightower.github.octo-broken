@@ -29,7 +29,19 @@ Here’s the original message. If you’re satisfied with the above translation,
 
 >If you have any questions please contact us at https://github.com/contact.
 
-###What to Do Next
+###First: Check the CNAME File
+Since the blog was configured for Octopress a few years ago, it already
+had a `source/CNAME` file. To check the contents:
+
+```bash
+$ cat source/CNAME
+rayhightower.com
+
+$ 
+
+```
+
+###Next: Domain Records
 The domain is registered with [DNSimple](http://dnsimple.com), so here’s what needed to be done.
 
 1. Point a CNAME record to `[GitHub-user-name].github.io`. In this case,  `rayhightower.github.io`.
