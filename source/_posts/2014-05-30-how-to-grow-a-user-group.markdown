@@ -95,8 +95,8 @@ To balance between focus and exploration, we have decided to use the monthly use
 
 Conferences require more planning and resources than monthly meetups. To maximize efficiency, ChicagoRuby builds conferences around the group's core strength: Ruby. RubyCaribe is the newest example of this approach.
 
-###The Future: RubyCaribe and LinuxBarbados
-Our newest work is happening in the Caribbean, in the island nation of Barbados. 
+###Plan for the Future
+ChicagoRuby's newest work is happening in the Caribbean, in the island nation of Barbados. 
 
 * [LinuxBarbados](http://linuxbarbados.org) is a monthly user group for open source enthusiasts. 
 * [RubyCaribe](http://rubycaribe.com) is a brand new conference for intermediate and advanced Ruby developers. 
@@ -107,7 +107,7 @@ The new ventures have introduced ChicagoRuby to work done by the [University of 
 
 UWI will also serve as host to LinuxBarbados. The group is organized by [Maurice Beckles](http://www.meetup.com/LinuxBarbados/members/143194822/), a Barbados-based open source enthusiast and IT technician at UWI. If you're in Barbados, be sure to ask him about his sink-or-swim introduction to Linux at a local bank!
 
-Notice the pattern: The conference (RubyCaribe) focuses on ChicagoRuby's core strength, Ruby. The monthly user group, LinuxBarbados, is a great vehicle for exploration into new areas including Linux, Ruby, embedded devices, and anything related to open source. Maurice Beckles and his team are headed for an exciting adventure!
+Notice the pattern: The conference (RubyCaribe) focuses on ChicagoRuby's core strength, Ruby. The monthly user group, LinuxBarbados, is a great vehicle for exploring new areas including Linux, Ruby, embedded devices, and anything related to open source. Maurice Beckles and his team are headed for an exciting adventure!
 
 ###Conclusion
 A better title for this post might have been _One Way to Grow a User Group_. Every group will grow differently depending on its particular strengths and interests. Of course, groups that grow are likely to have a few things in common. Things like consistency, teamwork, iteration, and learning from mistakes.
