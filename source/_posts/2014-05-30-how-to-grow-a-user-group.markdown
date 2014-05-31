@@ -36,7 +36,7 @@ Before he moved to Florida, [Matt Polito](http://twitter.com/mattpolito) was par
 
 Members who have ideas for improvement tend to be strong leaders. The whole group benefits when we get out of the way and let them lead.
 
-Members of the ChicagoRuby organizer team:
+The current members of the ChicagoRuby organizer team are:
 
 * [Ginny Hendry](https://twitter.com/ginnyhendry), mentioned above.
 * [Justin Love](http://twitter.com/wondible) is a developer and an organizer of the [Chicago JavaScript Meetup Group (JS-Chi)](http://www.meetup.com/js-chi/). Justin will also be a lab advisor for RubyCaribe in January 2015.
