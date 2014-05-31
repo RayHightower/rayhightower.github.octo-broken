@@ -105,7 +105,7 @@ The new ventures have introduced ChicagoRuby to work done by the [University of 
 
 [Dr. Colin Depradine](http://www.cavehill.uwi.edu/fst/cmp/staff/colin-depradine.aspx), Dean of the University’s Faculty of Science and Technology, is growing the next generation of scientists and engineers in the Caribbean. Under Dr. Depradine's leadership, UWI encourages collaboration between the sciences. For example, computer scientists are writing software to crunch data related to solar energy research. Looking even further into the future, the UWI team has introduced children as young as eight to programming.
 
-UWI will also serve as host to LinuxBarbados. The group is organized by [Maurice Beckles](http://www.meetup.com/LinuxBarbados/members/143194822/), a Barbados-based open source enthusiast and IT technician at UWI. If you're in Barbados, be sure to ask him about his sink-or-swim introduction to Linux at a local bank!
+UWI also serves as host to LinuxBarbados. The group is organized by [Maurice Beckles](http://www.meetup.com/LinuxBarbados/members/143194822/), a Barbados-based open source enthusiast and IT technician at UWI. If you're in Barbados, be sure to ask him about his sink-or-swim introduction to Linux at a local bank!
 
 Notice the pattern: The conference (RubyCaribe) focuses on ChicagoRuby's core strength, Ruby. The monthly user group, LinuxBarbados, is a great vehicle for exploring new areas including Linux, Ruby, embedded devices, and anything related to open source. Maurice Beckles and his team are headed for an exciting adventure!
 
