@@ -30,7 +30,11 @@ ChicagoRuby believes in sharing the work amongst multiple organizers. The group 
 
 One way to ask for help: Encourage members to help in their area of enthusiasm. For example, organizer [Ginny Hendry](https://twitter.com/ginnyhendry) runs the ChicagoRuby hack nights every month. Ginny got started when she approached the organizers after a meeting and said "We should have hack nights." Clearly, she was enthused about hack nights, so we asked her to take the lead in that area.
 
-Today, Ginny’s hack nights are consistently the highest rated of all ChicagoRuby events. In January, she will be a lab advisor at RubyCaribe. Members who have ideas for improvement tend to be strong leaders. The whole group benefits when we get out of the way and let them lead.
+Today, Ginny’s hack nights are consistently the highest rated of all ChicagoRuby events. In January, she will be a lab advisor at RubyCaribe. 
+
+Organizer emeritus [Matt Polito](http://twitter.com/mattpolito) wanted ChicagoRuby to have a logo. I was against it. We were planning the first WindyCityRails and I wanted everyone to focus on the conference. Matt went out and got the logo done anyway. Everybody likes it. Matt, thank you for ignoring me!
+
+Members who have ideas for improvement tend to be strong leaders. The whole group benefits when we get out of the way and let them lead.
 
 Members of the ChicagoRuby organizer team:
 
