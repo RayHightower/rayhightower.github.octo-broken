@@ -5,7 +5,7 @@ date: 2014-05-31 13:44
 comments: true
 categories: [ Git ]
 ---
-This blog is based on [Octopress](http://octopress.org/) and hosted on GitHub Pages. Recently, when I deployed a site update, GitHub sent me an email with a `GitHub Page Build Warning` message. Since this was _just a warning_, I ignored it while I attacked more pressing tasks (not always a good idea).
+This blog is based on [Octopress](http://octopress.org/) and hosted on GitHub Pages. Recently, when I deployed a site update, GitHub sent me an email with a `Page build warning` message. Since this was _just a warning_, I ignored it while I attacked more pressing tasks (not always a good idea).
 
 Today I finally, I took the time to research the topic so I could figure out what to do next. This article is the result of that research.
 <!--more-->
