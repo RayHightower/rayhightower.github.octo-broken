@@ -52,4 +52,12 @@ All of our sponsors have the opportunity to address our group at the beginning o
 
 Sponsors get involved with user groups for two main reasons: To recruit developers, or to market products to developers. Everybody wins when sponsors get involved with user groups, financially or otherwise.
 
+###Merging With Downtown (Chirb)
+
+
+###Learning from Mistakes
+Members have come to trust the ChicagoRuby organizers over the years. 
+
+
+
 
