@@ -10,7 +10,7 @@ This blog is based on [Octopress](http://octopress.org/) and hosted on GitHub Pa
 Today I finally, I took the time to research the topic so I could figure out what to do next. This article is the result of that research.
 <!--more-->
 ##What the Message Means
-Here are the important points of the of the `GitHub Page Build Warning` message:
+Here are the important points of the of the `Page build warning` message:
 
 * GitHub introduced a content delivery network (CDN) to make pages load faster.
 * If you do nothing to your GitHub Pages site, your pages will continue to load the old way. People who visit your site won’t see anything different.
