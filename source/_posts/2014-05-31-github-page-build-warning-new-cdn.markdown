@@ -39,7 +39,7 @@ rayhightower.com
 $ 
 
 ```
-The CNAME file looks fine, according to the GitHub's blog. Time for the next step.  
+The `CNAME` file looks fine, according to the GitHub's blog. Time for the next step.  
 
 ###Next: Domain Records
 The domain is registered with [DNSimple](http://dnsimple.com), so here’s what needed to be done (screenshots below).
