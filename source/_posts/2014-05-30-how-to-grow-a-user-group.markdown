@@ -48,7 +48,7 @@ Growth is an ongoing priority for ChicagoRuby. In order to grow, a group has to 
 
 Our group was originally called _The Chicago Area Ruby on Rails Meetup Group_. Accurate, and a mouthful. We discovered that a simple domain name, [ChicagoRuby.org](http://chicagoruby.org), was available. So we grabbed it, along with the [@ChicagoRuby](http://twitter.com/chicagoruby) Twitter handle.
 
-It is also important to make every web property point to all of the other web properties in the ChicagoRuby ecosystem. For example, all of the conference sites point to the ChicagoRuby site, and vice versa. A new member who finds one part of the ecosystem will find the whole thing. People feel welcome when information is easy to find.
+To make the group even easier to find, every web site in the ChicagoRuby ecosystem points to all of the other web sites. For example, all of the conference sites point to the ChicagoRuby site, and vice versa. A new member who finds one part of the ecosystem will find the whole thing. People feel welcome when information is easy to find.
 
 Making future members feel welcome is key to growth. Free monthly events are another way to make people feel welcome. 
 
