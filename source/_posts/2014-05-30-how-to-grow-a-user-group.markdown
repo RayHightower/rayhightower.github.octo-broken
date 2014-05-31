@@ -32,7 +32,7 @@ One way to ask for help: Encourage members to help in their area of enthusiasm. 
 
 Today, Ginny’s hack nights are consistently the highest rated of all ChicagoRuby events. In January, she will be a lab advisor at RubyCaribe. 
 
-Organizer emeritus [Matt Polito](http://twitter.com/mattpolito) wanted ChicagoRuby to have a logo. I was against it. We were planning the first WindyCityRails and I wanted everyone to focus on the conference. Matt went out and got the logo done anyway. Everybody likes it. Matt, thank you for ignoring me!
+Before he moved to Florida, [Matt Polito](http://twitter.com/mattpolito) was part of the ChicagoRuby organizer team. Matt wanted ChicagoRuby to have a logo. I was against it. We were planning the first WindyCityRails and I wanted everyone to focus on the conference. Matt went out and got the logo done anyway. Everybody likes it. Matt, thank you for ignoring me!
 
 Members who have ideas for improvement tend to be strong leaders. The whole group benefits when we get out of the way and let them lead.
 
