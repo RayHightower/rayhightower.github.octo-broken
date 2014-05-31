@@ -66,7 +66,7 @@ I firmly believe that monthly user group meetings should be free. We never know 
 
 My personal history includes times when I was dead broke due to one entrepreneurial setback or another. So I have emotional reasons for keeping ChicagoRuby’s monthly events free of charge.
 
-Of course, the money to pay for the meetings has to come from somewhere. That’s where sponsors come in.
+Of course, the money to pay for the meetings has to come from somewhere. That’s where sponsors can help.
 
 ###Cover Monthly Costs Through Sponsorships
 Companies will gladly sponsor a group that gives them a return on their investment. Sponsorships don't always come in the form of money.
@@ -87,12 +87,17 @@ Focus can lead to excellence. But if our focus is too tight, we might miss the N
 
 Over the years, ChicagoRuby has experimented with other ventures. We ran a job board for awhile. We ran conferences related to NoSQL and mobile. We moved away from these because they drained our resources, and pulled us away from our core, which is Ruby. 
 
-To balance between focus and exploration, we have decided to use the monthly user groups for exploration, while the conferences are all about focus. Monthly events take minimal resources, so they're ideal for experiments. For example, we continue to explore polyglot programming. [Polyglot Night](http://www.chicagoruby.org/videos/archives/2013/12/03/ployglot-night/) in Jan 2014 was very successful. You can expect to see another more experiments at future monthly events.
+To balance between focus and exploration, we have decided to use the monthly user groups for exploration. Conferences will focus on Ruby. Monthly events take minimal resources, so they're ideal for experiments. For example, [Polyglot Night](http://www.chicagoruby.org/videos/archives/2013/12/03/ployglot-night/) in Jan 2014 was very successful. You can expect to explore more areas (NoSQL, mobile, IoT, polyglot) at ChicagoRuby's monthly events.
 
-Conferences require more time, energy, and resources than monthly meetups. To maximize efficiency, ChicagoRuby builds conferences around the group's core strength: Ruby. RubyCaribe is the newest example of this approach. Every month, ChicagoRuby strengthens relationships within the Ruby community. RubyCaribe is an extension of the relationship building.
+Conferences require more planning and resources than monthly meetups. To maximize efficiency, ChicagoRuby builds conferences around the group's core strength: Ruby. RubyCaribe is the newest example of this approach.
 
 ###The Future: RubyCaribe and LinuxBarbados
-Our newest work is happening in the Caribbean, in the island nation of Barbados. [LinuxBarbados](http://linuxbarbados.org) is a brand new group for open source enthusiasts. [RubyCaribe](http://rubycaribe.com) is a brand new conference for intermediate and advanced Ruby developers. The new ventures have introduced ChicagoRuby to work done by the [University of the West Indies at Cave Hill (UWI)](https://www.cavehill.uwi.edu/).
+Our newest work is happening in the Caribbean, in the island nation of Barbados. 
+
+* [LinuxBarbados](http://linuxbarbados.org) is a brand new group for open source enthusiasts. 
+* [RubyCaribe](http://rubycaribe.com) is a brand new conference for intermediate and advanced Ruby developers. 
+
+The new ventures have introduced ChicagoRuby to work done by the [University of the West Indies at Cave Hill (UWI)](https://www.cavehill.uwi.edu/).
 
 [Dr. Colin Depradine](http://www.cavehill.uwi.edu/fst/cmp/staff/colin-depradine.aspx), Dean of the University’s Faculty of Science and Technology, is serious about growing the next generation of scientists and engineers in the Caribbean. Under Dr. Depradine's leadership, UWI encourages collaboration between the sciences. For example, computer scientists are writing software to crunch data related to solar energy research. Looking even further into the future, the UWI team has introduced children as young as eight to programming.
 
