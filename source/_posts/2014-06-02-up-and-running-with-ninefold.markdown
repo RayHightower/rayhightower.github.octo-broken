@@ -64,7 +64,7 @@ Username: rayhightower
 Password:
 ✔︎  Done
 
-$
+$ 
 ```
 `$ ninefold help` will show the list of available commands.
 
