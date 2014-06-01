@@ -87,7 +87,7 @@ Sponsors get involved with user groups for two main reasons: To recruit develope
 Members of ChicagoRuby trust the organizers to deliver quality events every month. I dropped the ball one month when I failed to properly vet a speaker. After that meeting, organizer [Dave Giunta](https://twitter.com/dgiunta) wrote the first draft of the ChicagoRuby [speaker guidelines](http://www.chicagoruby.org/about/speaker-guidelines/). We've word-smithed the guidelines over the years, but the most important parts were created by Dave.
 
 ###Make Members Feel Awesome
-We humans have a need to belong to something. The feeling of belonging (awesomeness) can be strengthened when we go out for drinks after an event. Drinks are not necessarily alcohol; when we go to a bar together, some members will have a soda, juice, or coffee. Informal camaraderie, after the meeting, makes members feel like members.
+We humans have a need to belong to something. The feeling of belonging (awesomeness) can be strengthened when we go out for drinks after an event. Drinks are not necessarily alcohol; when we go to a bar together, some members will have a soda, juice, or coffee. Informal camaraderie makes members feel like members.
 
 ChicagoRuby members gather together at a bar for an hour or so after our downtown meetings. In Elmhurst, the meetings end at noon, so we grab lunch together at a local restaurant. The conversation continues, and bonds are formed.
 
@@ -96,7 +96,7 @@ Focus can lead to excellence. But if our focus is too tight, we might miss the N
 
 Over the years, ChicagoRuby has struggled with focus. We've experimented with other ventures. We ran a job board for awhile. We ran conferences related to NoSQL and mobile. We moved away from these because they drained our resources, and pulled us away from our core, which is Ruby. 
 
-Here's how we balance between focus and exploration. The monthly user group meetings are for exploration. Monthly events take minimal resources, so they're ideal for experiments. For example, [Polyglot Night](http://www.chicagoruby.org/videos/archives/2013/12/03/ployglot-night/) in Jan 2014 was very successful. You can expect to explore more areas (NoSQL, mobile, IoT, polyglot) at ChicagoRuby's monthly events.
+Here's how we balance between focus and exploration. The monthly user group meetings are for exploration. Monthly events take minimal resources, so they're ideal for experiments. For example, [Polyglot Night](http://www.chicagoruby.org/videos/archives/2013/12/03/ployglot-night/) in Jan 2014 was very successful. Monthly meetings might explore NoSQL, mobile, or IoT.
 
 Our conferences focus on Ruby. Conferences require more planning and resources than monthly meetups. So it's important for the group to build conferences around the group's core strength: Ruby. RubyCaribe is the newest example of this focused approach.
 
