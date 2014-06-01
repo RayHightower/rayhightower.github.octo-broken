@@ -101,7 +101,7 @@ Collaboration stretches our brains in unexpected and wonderful ways. For our new
 * [LinuxBarbados](http://linuxbarbados.org) is a monthly user group for open source enthusiasts. 
 * [RubyCaribe](http://rubycaribe.com) is a brand new conference for intermediate and advanced Ruby developers. 
 
-The new ventures have introduced ChicagoRuby to work done by the [University of the West Indies at Cave Hill (UWI)](https://www.cavehill.uwi.edu/).
+Through the new ventures, ChicagoRuby has been introduced to work done by the [University of the West Indies at Cave Hill (UWI)](https://www.cavehill.uwi.edu/).
 
 [Dr. Colin Depradine](http://www.cavehill.uwi.edu/fst/cmp/staff/colin-depradine.aspx), Dean of the University’s Faculty of Science and Technology, is growing the next generation of scientists and engineers in the Caribbean. Under Dr. Depradine's leadership, UWI encourages collaboration between the sciences. For example, computer scientists are writing software to crunch data related to solar energy research. Looking even further into the future, the UWI team has introduced children as young as eight to programming.
 
