@@ -77,9 +77,7 @@ Companies will gladly sponsor a group that gives them a return on their investme
 
 For example, ChicagoRuby’s first sponsor was [DeForest Group](http://www.deforestgroup.com/). Owner [Lee DeForest](https://www.linkedin.com/in/leedeforest) provides ChicagoRuby with free space and WiFi for our Saturday meetings. Lee was one of the five people in the room when the current organizers took over, and we will always be grateful for his early support.
 
-ChicagoRuby’s downtown sponsors are [Enova](http://enova.com) and [ThoughtWorks](http://thoughtworks.com). Each company provides space, WiFi, pizza, and beverages on a monthly basis. 
-
-Sponsors get to address the group at the beginning of the meeting. More important, by sponsoring ChicagoRuby over time, a company can build trust within the membership.
+ChicagoRuby’s downtown sponsors are [Enova](http://enova.com) and [ThoughtWorks](http://thoughtworks.com). Each company provides space, WiFi, pizza, and beverages on a monthly basis. Sponsors get to address the group at the beginning of the meeting. More important, by sponsoring ChicagoRuby over time, a company can build trust within the membership.
 
 Sponsors get involved with user groups for two main reasons: To recruit developers, or to market products to developers. Everybody wins when sponsors get involved with user groups, financially or otherwise.
 
