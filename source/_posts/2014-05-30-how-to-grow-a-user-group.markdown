@@ -81,7 +81,7 @@ For example, ChicagoRuby’s first sponsor was [DeForest Group](http://www.defor
 
 ChicagoRuby’s downtown sponsors are [Enova](http://enova.com) and [ThoughtWorks](http://thoughtworks.com). Each company provides space, WiFi, pizza, and beverages on a monthly basis. Sponsors get to address the group at the beginning of the meeting. More important, by sponsoring ChicagoRuby over time, a company can build trust within the membership.
 
-[O'Reilly Media](http://oreilly.com) was our first publishing sponsor.  O'Reilly, [Pearson Education](), and [The Pragmatic Programmers](http://pragprog.com/) provide books for ChicagoRuby members to [review](http://www.chicagoruby.org/book-reviews/).
+[O'Reilly Media](http://oreilly.com) was our first publishing sponsor.  O'Reilly, [Pearson Education](http://www.informit.com/user_groups/), and [The Pragmatic Programmers](http://pragprog.com/) provide books for ChicagoRuby members to [review](http://www.chicagoruby.org/book-reviews/).
 
 Sponsors get involved with user groups for two main reasons: To recruit developers, or to market products to developers. Everybody wins when sponsors get involved with user groups, financially or otherwise.
 
