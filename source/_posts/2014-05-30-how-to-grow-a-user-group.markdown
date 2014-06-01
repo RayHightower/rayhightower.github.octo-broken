@@ -117,6 +117,5 @@ UWI also serves as host to LinuxBarbados. The group is organized by [Maurice Bec
 Notice the pattern: The conference (RubyCaribe) focuses on ChicagoRuby's core strength, Ruby. The monthly user group, LinuxBarbados, is a vehicle for exploring a wide range of topics including Linux, Ruby, embedded devices, and anything related to open source.
 
 ###Conclusion
-A better title for this post might have been _One Way to Grow a User Group_. Every group will grow differently depending on its particular strengths and interests. Of course, groups that grow are likely to have a few things in common. Things like consistency, teamwork, iteration, and learning from mistakes.
+A better title for this post might have been _One Way to Grow a User Group_. Every group will grow differently depending on its particular strengths and interests. Of course, groups that grow are likely to have a few things in common. When a group is built on the pillars of consistency and teamwork, they are likely to succeed in a big way.
 
-If you have ideas to add, feel free to do so in the comments below.
