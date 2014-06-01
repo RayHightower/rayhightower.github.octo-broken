@@ -16,7 +16,7 @@ Consistency is very difficult in the beginning, especially on that night when on
 
 People trust consistency. Consistent meetings grow groups. 
 
-Members of ChicagoRuby know that we meet on the first Tuesday of every month downtown, the third Saturday of every month in Elmhurst, and one evening per month for the hack night. Members can plan their calendars months in advance because the ChicagoRuby calendar is consistent. Consistency builds trust.
+Members of ChicagoRuby know that we meet on the first Tuesday of every month downtown, the third Saturday of every month in Elmhurst, and one evening per month for the hack night. Members can plan their schedules months in advance because the ChicagoRuby calendar is consistent. Consistency builds trust.
 
 ChicagoRuby cancelled one meeting in January 2011 due to a killer snow storm in Chicago. We were forced to cancel because the property manager shut the entire building down. We're a little bit stubborn about consistency. And that's how we build trust. 
 
