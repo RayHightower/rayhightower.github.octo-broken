@@ -89,7 +89,7 @@ Members of ChicagoRuby trust the organizers to deliver quality events every mont
 ###Maintain Focus, and Explore New Areas
 Focus can lead to excellence. But if our focus is too tight, we might miss the Next Great Thing. How does a group balance between focus and exploration?
 
-Over the years, ChicagoRuby has experimented with other ventures. We ran a job board for awhile. We ran conferences related to NoSQL and mobile. We moved away from these because they drained our resources, and pulled us away from our core, which is Ruby. 
+Over the years, ChicagoRuby has struggled with focus. We've experimented with other ventures. We ran a job board for awhile. We ran conferences related to NoSQL and mobile. We moved away from these because they drained our resources, and pulled us away from our core, which is Ruby. 
 
 To balance between focus and exploration, we have decided to use the monthly user groups for exploration. Conferences will focus on Ruby. Monthly events take minimal resources, so they're ideal for experiments. For example, [Polyglot Night](http://www.chicagoruby.org/videos/archives/2013/12/03/ployglot-night/) in Jan 2014 was very successful. You can expect to explore more areas (NoSQL, mobile, IoT, polyglot) at ChicagoRuby's monthly events.
 
