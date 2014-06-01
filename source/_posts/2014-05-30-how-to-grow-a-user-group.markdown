@@ -77,7 +77,7 @@ Of course, the money to pay for the meetings has to come from somewhere. That’
 ###Cover Monthly Costs Through Sponsorships
 Companies will gladly sponsor a group that gives them a return on their investment. Sponsorships don't always come in the form of money.
 
-For example, ChicagoRuby’s first sponsor was [DeForest Group](http://www.deforestgroup.com/). Owner [Lee DeForest](https://www.linkedin.com/in/leedeforest) provides ChicagoRuby with free space and WiFi for our Saturday meetings. Lee was one of the five people in the room when the current organizers took over, and we will always be grateful for his early support.
+For example, ChicagoRuby’s first sponsor was [DeForest Group](http://www.deforestgroup.com/). Owners [Lee DeForest](https://www.linkedin.com/in/leedeforest) and [Jim DeForest](http://www.linkedin.com/pub/james-deforest/40/57a/881) provide ChicagoRuby with free space and WiFi for our Saturday meetings. Lee was one of the five people in the room when the current organizers took over, and we will always be grateful for his early support.
 
 ChicagoRuby’s downtown sponsors are [Enova](http://enova.com) and [ThoughtWorks](http://thoughtworks.com). Each company provides space, WiFi, pizza, and beverages on a monthly basis. Sponsors get to address the group at the beginning of the meeting. More important, by sponsoring ChicagoRuby over time, a company can build trust within the membership.
 
