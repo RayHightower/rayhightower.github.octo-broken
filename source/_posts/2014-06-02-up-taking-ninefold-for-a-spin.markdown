@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Up &amp; Running With Ninefold"
+title: "Taking Ninefold for a Spin"
 date: 2014-06-02 18:47
 comments: true
 categories: [ Rails, Ruby ]
