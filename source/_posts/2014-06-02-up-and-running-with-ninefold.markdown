@@ -81,7 +81,7 @@ somethwere else (via generic Git URL).
 Prior to deploying my app, Ninefold looked through my gemfile and noticed that it was missing the `pg` gem. It recommended adding `pg` and running `$ bundle install` before attempting to deploy again. How cool is that! 
 
 ###Hiccups
-I experienced one hiccup during my first deployment on Ninefold. As mentioned above, Ninefold recommended adding the `pg` gem to the app's gemfile before proceeding. The `pg` gem would not install until I uninstalled and reinstalled Postgresql. This wasn't a big deal since I'm using Homebrew, and the problem was probably due to an earlier Homebrew/Mavericks issue on my local machine. Again, Homebrew enabled me to solve the problem in minutes.
+I experienced one hiccup during my first deployment on Ninefold. As mentioned above, Ninefold recommended adding the `pg` gem to the app's gemfile before proceeding. The `pg` gem would not install until I uninstalled and reinstalled Postgresql. This wasn't a big deal since I'm using Homebrew, and the problem was probably due to an earlier Homebrew/Mavericks issue on my local machine. Fortunately, Homebrew enabled me to solve the problem in minutes.
 
 ###Costs Estimated in Advance
 During deployment, Ninefold shows the estimated cost of running the app based on the configuration options chosen during deployment. We don't have to guess about the cost; the numbers are right there. Excellent move, Ninefold.
