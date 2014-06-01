@@ -12,6 +12,8 @@ Today, the _new crew_ has grown ChicagoRuby to over 2,700 members. The group hos
 How does ChicagoRuby do it? Through consistency, teamwork, iteration, and learning from mistakes.
 <!--more-->
 ###Be Consistent With Meetings
+Consistency is very difficult in the beginning, especially on that night when only three people show up for the meeting. I have hosted a 3-person ChicagoRuby meeting before. Consistency is hard, and it is also the most important factor in user group success.
+
 People trust consistency. Consistent meetings grow groups. 
 
 Members of ChicagoRuby know that we meet on the first Tuesday of every month downtown, the third Saturday of every month in Elmhurst, and one evening per month for the hack night. Members can plan their calendars months in advance because the ChicagoRuby calendar is consistent. Consistency builds trust.
