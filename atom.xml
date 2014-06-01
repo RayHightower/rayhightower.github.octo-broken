@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-05-31T20:16:32-07:00</updated>
+  <updated>2014-05-31T20:20:44-07:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -83,7 +83,7 @@
 
 <blockquote><p>The page build completed successfully, but returned the following warning:</p>
 
-<p>GitHub Pages recently underwent some improvements (<a href="https://github.com/blog/1715-faster-more-awesome-github-pages">https://github.com/blog/1715-faster-more-awesome-github-pages</a>) to make your site faster and more awesome, but we&rsquo;ve noticed that rayhightower.com isn&rsquo;t properly configured to take advantage of these new features. While your site will continue to work just fine, updating your domain&rsquo;s configuration offers some additional speed and performance benefits. Instructions on updating your site&rsquo;s IP address can be found at <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,">https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,</a> and of course, you can always get in touch with a human at <a href="&#109;&#97;&#x69;&#108;&#x74;&#111;&#x3a;&#115;&#x75;&#x70;&#x70;&#x6f;&#x72;&#x74;&#x40;&#103;&#105;&#116;&#104;&#117;&#98;&#x2e;&#x63;&#x6f;&#109;&#46;">&#x73;&#117;&#x70;&#x70;&#x6f;&#x72;&#x74;&#64;&#103;&#105;&#x74;&#x68;&#117;&#98;&#46;&#x63;&#x6f;&#x6d;&#46;</a> For the more technical minded folks who want to skip the help docs: your site&rsquo;s DNS records are pointed to a deprecated IP address.</p>
+<p>GitHub Pages recently underwent some improvements (<a href="https://github.com/blog/1715-faster-more-awesome-github-pages">https://github.com/blog/1715-faster-more-awesome-github-pages</a>) to make your site faster and more awesome, but we&rsquo;ve noticed that rayhightower.com isn&rsquo;t properly configured to take advantage of these new features. While your site will continue to work just fine, updating your domain&rsquo;s configuration offers some additional speed and performance benefits. Instructions on updating your site&rsquo;s IP address can be found at <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,">https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,</a> and of course, you can always get in touch with a human at <a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#x6f;&#58;&#115;&#117;&#112;&#112;&#x6f;&#x72;&#116;&#64;&#103;&#x69;&#x74;&#x68;&#117;&#x62;&#x2e;&#99;&#x6f;&#x6d;&#46;">&#x73;&#x75;&#112;&#x70;&#111;&#x72;&#116;&#x40;&#103;&#x69;&#116;&#104;&#x75;&#x62;&#46;&#x63;&#111;&#x6d;&#x2e;</a> For the more technical minded folks who want to skip the help docs: your site&rsquo;s DNS records are pointed to a deprecated IP address.</p>
 
 <p>For information on troubleshooting Jekyll see:</p>
 
@@ -236,9 +236,9 @@ article.</li>
 
 <p>Over the years, ChicagoRuby has struggled with focus. We&rsquo;ve experimented with other ventures. We ran a job board for awhile. We ran conferences related to NoSQL and mobile. We moved away from these because they drained our resources, and pulled us away from our core, which is Ruby.</p>
 
-<p>To balance between focus and exploration, we have decided to use the monthly user groups for exploration. Conferences will focus on Ruby. Monthly events take minimal resources, so they&rsquo;re ideal for experiments. For example, <a href="http://www.chicagoruby.org/videos/archives/2013/12/03/ployglot-night/">Polyglot Night</a> in Jan 2014 was very successful. You can expect to explore more areas (NoSQL, mobile, IoT, polyglot) at ChicagoRuby&rsquo;s monthly events.</p>
+<p>Here&rsquo;s how we balance between focus and exploration. The monthly user group meetings are for exploration. Monthly events take minimal resources, so they&rsquo;re ideal for experiments. For example, <a href="http://www.chicagoruby.org/videos/archives/2013/12/03/ployglot-night/">Polyglot Night</a> in Jan 2014 was very successful. You can expect to explore more areas (NoSQL, mobile, IoT, polyglot) at ChicagoRuby&rsquo;s monthly events.</p>
 
-<p>Conferences require more planning and resources than monthly meetups. To maximize efficiency, ChicagoRuby builds conferences around the group&rsquo;s core strength: Ruby. RubyCaribe is the newest example of this approach.</p>
+<p>Our conferences focus on Ruby. Conferences require more planning and resources than monthly meetups. So it&rsquo;s important for the group to build conferences around the group&rsquo;s core strength: Ruby. RubyCaribe is the newest example of this approach.</p>
 
 <h3>Collaborate With Other Groups</h3>
 
@@ -417,7 +417,7 @@ Developers of Git are making a serious effort to improve intuitiveness for first
 <p>Harassment is a serious issue, and a 140-character tweet will not do the discussion justice. Therefore, the ChicagoRuby organizers have created multiple communication channels for this issue:</p>
 
 <ul>
-<li>Email: <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#x3a;&#x63;&#x6f;&#100;&#101;&#x6f;&#x66;&#99;&#111;&#110;&#x64;&#x75;&#x63;&#x74;&#x40;&#99;&#104;&#x69;&#x63;&#97;&#103;&#x6f;&#x72;&#117;&#98;&#121;&#x2e;&#111;&#x72;&#x67;">&#99;&#111;&#100;&#x65;&#111;&#x66;&#99;&#111;&#x6e;&#100;&#117;&#99;&#116;&#x40;&#x63;&#x68;&#105;&#x63;&#97;&#x67;&#x6f;&#114;&#117;&#x62;&#121;&#46;&#x6f;&#x72;&#x67;</a></li>
+<li>Email: <a href="&#109;&#97;&#105;&#x6c;&#116;&#x6f;&#58;&#x63;&#111;&#100;&#101;&#x6f;&#x66;&#x63;&#x6f;&#x6e;&#100;&#x75;&#99;&#x74;&#x40;&#99;&#104;&#105;&#99;&#x61;&#103;&#111;&#x72;&#117;&#x62;&#121;&#x2e;&#111;&#x72;&#x67;">&#x63;&#x6f;&#100;&#101;&#111;&#102;&#x63;&#x6f;&#110;&#x64;&#x75;&#99;&#116;&#x40;&#x63;&#x68;&#x69;&#x63;&#x61;&#103;&#111;&#114;&#117;&#98;&#121;&#x2e;&#111;&#x72;&#x67;</a></li>
 <li>Any of the contact names listed on the current code of conduct</li>
 <li>Phone number listed on the code of conduct</li>
 </ul>
