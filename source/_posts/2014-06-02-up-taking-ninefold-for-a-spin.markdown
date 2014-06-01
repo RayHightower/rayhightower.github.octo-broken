@@ -3,7 +3,7 @@ layout: post
 title: "Taking Ninefold for a Spin"
 date: 2014-06-02 18:47
 comments: true
-published: false
+publish: false
 categories: [ Rails, Ruby ]
 ---
 {% img right /images/ninefold-logo.png %}
