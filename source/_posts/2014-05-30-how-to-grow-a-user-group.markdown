@@ -5,7 +5,7 @@ date: 2014-05-30 17:34
 comments: true
 categories: [ Community, Education ]
 ---
-The current team of [ChicagoRuby](http://chicagoruby.org) organizers assumed leadership in August 2007. Back then, typical monthly attendence was about five people and the group's [Meetup.com](http://meetup.com/chicagoruby) database contained 78 members. The previous organizer was swamped with work at his day job, so he stepped down, handing baton to a new crew.
+The current team of [ChicagoRuby](http://chicagoruby.org) organizers assumed leadership in August 2007. Back then, typical monthly attendence was about five people and the group's [Meetup.com](http://meetup.com/chicagoruby) database contained 78 members. The previous organizer was swamped with work at his day job, so he stepped down, handing the baton to a new crew.
 
 Today, the _new crew_ has grown ChicagoRuby to over 2,700 members. The group hosts three meetups every month, and the downtown meetings consistently max out the 100-person RSVP limit. Bonus: ChicagoRuby hosts two conferences, [WindyCityRails](http://windycityrails.org) in Chicago and [RubyCaribe](http://rubycaribe.com) on the Caribbean island of Barbados.
 
