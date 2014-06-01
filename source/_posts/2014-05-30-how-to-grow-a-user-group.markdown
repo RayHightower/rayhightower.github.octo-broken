@@ -51,7 +51,7 @@ In addition to the core group of ChicagoRuby organizers, one person deserves spe
 The [ChicagoRuby Organizer Page](http://www.chicagoruby.org/about/organizers/) contains the list of current and past organizers. Many of the former organizers remain active in an emeritus role. Every mind helps to make the group stronger.
 
 ###Automate Everything
-Managing a database of 2,700+ members could be drudgery. Fortunately, Meetup.com makes the process easy. Meetup handles RSVPs, membership additions and deletions, and reminders. Sometimes, the 2-week automated reminder from Meetup.com reminds the organizers to get a speaker for the next meeting!
+Managing a database of 2,700+ members could be drudgery. Fortunately, [Meetup.com](http://meetup.com/chicagoruby) makes the process easy. Meetup handles RSVPs, membership additions and deletions, and reminders. Sometimes, the 2-week automated reminder from Meetup.com reminds the organizers to get a speaker for the next meeting!
 
 Early in our history, someone suggested that ChicagoRuby should not use Meetup.com because it's written in PHP, and we're a Ruby group. We see things differently. ChicagoRuby is a Ruby group that uses the best tool for the job, regardless of language. Meetup.com has proven itself useful for eight years and counting.
 
