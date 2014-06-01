@@ -17,7 +17,7 @@ These experiments were conducted with Ruby 2.1.1 and Rails 4.1.1. Destructive te
 $ rvm current
 ruby-2.1.1@ninefold
 
-$
+$ 
 
 ```
 
