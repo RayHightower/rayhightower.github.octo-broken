@@ -54,13 +54,37 @@ $
 
 ```
 
-Alternatively, you can include the `ninefold` gem as part of the application's gemfile.
+###Test the CLI Installation
+Test the CLI installation by signing in to Ninefold from the commanbd line.
 
-```ruby
-gem ninefold
+```bash
+$ ninefold signin
+Please, sign in
+Username: rayhightower
+Password:
+✔︎  Done
 
+$
 ```
+`$ ninefold help` will show the list of available commands.
 
+The Ninefold CLI is written in Ruby, open source, and available on GitHub. Those who want to contribute to CLI development can do so.
+
+###Deploying an App
+Deploying an app was so simple that I almost felt like Ninefold was tricking me. Apps can be deployed from GitHub, Bitbucket, or another private Git repo. To deploy...
+
+1. Login to Ninefold and click the blue `Deploy` button.
+1. Specify whether your app is coming from GitHub, Bitbucket, or
+somethwere else (via generic Git URL).
+1. Signin to GitHub and authorize Ninefold to access the repo you want to deploy. Ninefold will install a post-commit hook to enable automatic deployment in the future.
+
+Prior to deploying my app, Ninefold looked through my gemfile and noticed that it was missing the `pg` gem. It recommended adding `pg` and running `$ bundle install` before attempting to deploy again. How cool is that! 
+
+###Hiccups
+I experienced one hiccup during my first deployment on Ninefold. As mentioned above, Ninefold recommended adding the `pg` gem to the app's gemfile before proceeding. The `pg` gem would not install until I uninstalled and reinstalled Postgresql. This wasn't a big deal since I'm using Homebrew, and the problem was probably due to an earlier Homebrew/Mavericks issue on my local machine. Again, Homebrew enabled me to solve the problem in minutes.
+
+###Costs Estimated in Advance
+During deployment, Ninefold shows the estimated cost of running the app based on the configuration options chosen during deployment. We don't have to guess about the cost; the numbers are right there. Excellent move, Ninefold.
 
 
 
