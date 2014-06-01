@@ -93,7 +93,7 @@ Over the years, ChicagoRuby has struggled with focus. We've experimented with ot
 
 Here's how we balance between focus and exploration. The monthly user group meetings are for exploration. Monthly events take minimal resources, so they're ideal for experiments. For example, [Polyglot Night](http://www.chicagoruby.org/videos/archives/2013/12/03/ployglot-night/) in Jan 2014 was very successful. You can expect to explore more areas (NoSQL, mobile, IoT, polyglot) at ChicagoRuby's monthly events.
 
-Our conferences focus on Ruby. Conferences require more planning and resources than monthly meetups. So it's important for the group to build conferences around the group's core strength: Ruby. RubyCaribe is the newest example of this approach.
+Our conferences focus on Ruby. Conferences require more planning and resources than monthly meetups. So it's important for the group to build conferences around the group's core strength: Ruby. RubyCaribe is the newest example of this focused approach.
 
 ###Collaborate With Other Groups
 Collaboration stretches our brains in unexpected and wonderful ways. For our newest ventures, ChicagoRuby is collaborating with developers in the Caribbean, in the island nation of Barbados. 
