@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-06-01T16:18:26-07:00</updated>
+  <updated>2014-06-01T17:11:27-07:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -18,7 +18,7 @@
     <link href="http://RayHightower.com/blog/2014/05/31/github-page-build-warning-new-cdn/"/>
     <updated>2014-05-31T13:44:00-07:00</updated>
     <id>http://RayHightower.com/blog/2014/05/31/github-page-build-warning-new-cdn</id>
-    <content type="html"><![CDATA[<p>The <code>RayHightower.com</code> blog is built on <a href="http://octopress.org/">Octopress</a> and hosted on <a href="https://pages.github.com/">GitHub Pages</a>. Recently, after I deployed a site update, GitHub sent me an email with a <code>Page build warning</code> message. Since this was <em>just a warning</em>, I ignored it while I attacked more pressing tasks (not always a good idea).</p>
+    <content type="html"><![CDATA[<p>The <code>RayHightower.com</code> blog is built on <a href="http://octopress.org/">Octopress</a> and hosted on <a href="https://pages.github.com/">GitHub Pages</a>. Recently, after I deployed a site update, GitHub emailed me a <code>Page build warning</code> message. Since this was <em>just a warning</em>, I ignored it while I attacked more pressing tasks (not always a good idea).</p>
 
 <p>Today I finally took the time to research the topic so I could figure out what to do next. This article is the result of that research.</p>
 
@@ -42,7 +42,7 @@
 
 <blockquote><p>The page build completed successfully, but returned the following warning:</p>
 
-<p>GitHub Pages recently underwent some improvements (<a href="https://github.com/blog/1715-faster-more-awesome-github-pages">https://github.com/blog/1715-faster-more-awesome-github-pages</a>) to make your site faster and more awesome, but we&rsquo;ve noticed that rayhightower.com isn&rsquo;t properly configured to take advantage of these new features. While your site will continue to work just fine, updating your domain&rsquo;s configuration offers some additional speed and performance benefits. Instructions on updating your site&rsquo;s IP address can be found at <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,">https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,</a> and of course, you can always get in touch with a human at <a href="&#x6d;&#97;&#105;&#108;&#116;&#x6f;&#x3a;&#115;&#117;&#112;&#112;&#x6f;&#x72;&#116;&#64;&#103;&#x69;&#116;&#104;&#x75;&#x62;&#46;&#x63;&#x6f;&#109;&#x2e;">&#115;&#117;&#x70;&#112;&#111;&#114;&#x74;&#64;&#103;&#x69;&#116;&#x68;&#x75;&#98;&#46;&#99;&#x6f;&#x6d;&#46;</a> For the more technical minded folks who want to skip the help docs: your site&rsquo;s DNS records are pointed to a deprecated IP address.</p>
+<p>GitHub Pages recently underwent some improvements (<a href="https://github.com/blog/1715-faster-more-awesome-github-pages">https://github.com/blog/1715-faster-more-awesome-github-pages</a>) to make your site faster and more awesome, but we&rsquo;ve noticed that rayhightower.com isn&rsquo;t properly configured to take advantage of these new features. While your site will continue to work just fine, updating your domain&rsquo;s configuration offers some additional speed and performance benefits. Instructions on updating your site&rsquo;s IP address can be found at <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,">https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,</a> and of course, you can always get in touch with a human at <a href="&#109;&#x61;&#105;&#108;&#x74;&#x6f;&#58;&#115;&#117;&#x70;&#x70;&#111;&#x72;&#x74;&#x40;&#103;&#x69;&#116;&#104;&#117;&#x62;&#46;&#99;&#111;&#x6d;&#x2e;">&#x73;&#x75;&#112;&#x70;&#x6f;&#x72;&#116;&#x40;&#x67;&#105;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#x6f;&#x6d;&#x2e;</a> For the more technical minded folks who want to skip the help docs: your site&rsquo;s DNS records are pointed to a deprecated IP address.</p>
 
 <p>For information on troubleshooting Jekyll see:</p>
 
@@ -382,7 +382,7 @@ Developers of Git are making a serious effort to improve intuitiveness for first
 <p>Harassment is a serious issue, and a 140-character tweet will not do the discussion justice. Therefore, the ChicagoRuby organizers have created multiple communication channels for this issue:</p>
 
 <ul>
-<li>Email: <a href="&#109;&#x61;&#x69;&#x6c;&#116;&#111;&#58;&#x63;&#111;&#100;&#x65;&#x6f;&#102;&#x63;&#111;&#x6e;&#x64;&#117;&#99;&#116;&#x40;&#99;&#104;&#105;&#x63;&#x61;&#x67;&#x6f;&#x72;&#x75;&#x62;&#x79;&#46;&#x6f;&#x72;&#103;">&#x63;&#x6f;&#100;&#x65;&#x6f;&#x66;&#99;&#x6f;&#110;&#x64;&#x75;&#x63;&#x74;&#x40;&#x63;&#104;&#x69;&#99;&#97;&#103;&#x6f;&#114;&#117;&#98;&#x79;&#x2e;&#111;&#114;&#103;</a></li>
+<li>Email: <a href="&#109;&#97;&#x69;&#108;&#116;&#x6f;&#58;&#99;&#x6f;&#x64;&#101;&#111;&#102;&#x63;&#111;&#x6e;&#100;&#117;&#x63;&#x74;&#x40;&#x63;&#x68;&#105;&#99;&#x61;&#103;&#x6f;&#114;&#x75;&#x62;&#x79;&#46;&#111;&#x72;&#103;">&#x63;&#x6f;&#100;&#x65;&#111;&#x66;&#x63;&#111;&#110;&#x64;&#117;&#99;&#x74;&#x40;&#99;&#x68;&#105;&#x63;&#x61;&#103;&#111;&#x72;&#x75;&#98;&#121;&#46;&#x6f;&#114;&#103;</a></li>
 <li>Any of the contact names listed on the current code of conduct</li>
 <li>Phone number listed on the code of conduct</li>
 </ul>
