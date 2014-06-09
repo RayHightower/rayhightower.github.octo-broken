@@ -10,7 +10,9 @@ categories: [ Community ]
 
 [OpenROV](http://openrov.com/) is an underwater robot, definitely _not_ humaniod in shape. Company founders Eric Stackpole and David Lang built the robot to search for gold stolen during the 1840s California gold rush. According to legend, theives hid the gold in a deep, narrow pool of water at the back of a cave. Human divers have searched for the gold with no success. Eric and David reasoned that a robot might be the right tool for the job.
 <!--more-->
+###ROV Defined
+A remotely operated vehicle (ROV) is an underwater robot. Scientists use ROVs to study marine life. Oil companies use ROVs for underwater construction and inspection.
 
-Human divers have been unable to reach the bottom of the  the gold was hidden [ were on a mission to find hidden gold in a
-cave...
+Radio waves don't travel very well underwater, so ROV communication happens through a tether, a line of copper wire that carries signals back and forth. 
 
+Industrial-grade ROVs can cost $30,000 at the low-end to several million dollars. The OpenROV team set out to create an ROV for less than $1,000.
