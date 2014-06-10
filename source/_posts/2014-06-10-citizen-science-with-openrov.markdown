@@ -10,10 +10,10 @@ categories: [ Community ]
 
 [OpenROV](http://openrov.com) is an underwater robot, definitely not human-shaped. Company founders Eric Stackpole and David Lang are on a mission to democratize ocean exploration in the same way that Jobs, Woz, Gates, and Allen helped to democratize computing. Even better: OpenROV stands firmly on the shoulders of Moore’s Law and the open source software movement. Take a look at this list of OpenROV ingredients:
 
-* BeagleBone Black - An open-source single-board computer, smaller than a deck of cards, running Linux.
+* BeagleBone Black - an open-source single-board computer, smaller than a deck of cards, running Linux.
 * Linux - specifically, the Ubuntu distribution.
 * Node.js - platform for building web applications, based on the Google’s V8 JavaScript engine. Thanks to Node.js, any laptop running a web browser can control the OpenROV.
-* Arduino - amazing, inexpensive micro-controller
+* Arduino - inexpensive micro-controller commonly used in robotic projects.
 * TCP/IP - the communication protocol of the Internet. All communications (commands, video) between the OpenROV and the pilot’s laptop happens over TCP/IP.
 
 The OpenROV team has released all of their [schematics and source code](https://github.com/openrov) to the open source community, hence the word “open” in the company name.
