@@ -8,7 +8,7 @@ categories: [ Arduino, BeagleBone Black, Community, Linux ]
 >With regard to robots, in the early days of robots people said, 'Oh, let's build a robot' and what's the first thought? You make a robot look like a human and do human things. That's so 1950s. We are so past that. 
 ><br/>~Neil deGrasse Tyson
 
-[OpenROV](http://openrov.com) is an underwater robot, definitely not human-shaped. Company founders Eric Stackpole and David Lang are on a mission to democratize ocean exploration in the same way that Jobs, Woz, Gates, and Allen helped to democratize computing. Even better: OpenROV stands firmly on the shoulders of Moore’s Law and the open source software movement. Take a look at this list of OpenROV ingredients:
+[OpenROV](http://openrov.com) is an underwater robot, roughly the size of a toaster, and definitely not human-shaped. Company founders Eric Stackpole and David Lang are on a mission to democratize ocean exploration in the same way that Jobs, Woz, Gates, and Allen helped to democratize computing. Even better: OpenROV stands firmly on the shoulders of Moore’s Law and the open source software movement. Take a look at this list of OpenROV ingredients:
 
 * BeagleBone Black - an open-source single-board computer, smaller than a deck of cards, running Linux.
 * Linux - specifically, the Ubuntu distribution.
