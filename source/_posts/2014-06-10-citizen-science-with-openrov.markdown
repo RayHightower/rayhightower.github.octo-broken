@@ -8,7 +8,6 @@ categories: [ Community ]
 >With regard to robots, in the early days of robots people said, 'Oh, let's build a robot' and what's the first thought? You make a robot look like a human and do human things. That's so 1950s. We are so past that. 
 ><br/>~Neil deGrasse Tyson
 
-
 [OpenROV](http://openrov.com) is an underwater robot, definitely not human-shaped. Company founders Eric Stackpole and David Lang are on a mission to democratize ocean exploration in the same way that Jobs, Woz, Gates, and Allen helped to democratize computing. Even better: OpenROV stands firmly on the shoulders of Moore’s Law and the open source software movement. Take a look at this list of OpenROV ingredients:
 
 * BeagleBone Black - An open-source single-board computer, smaller than a deck of cards, running Linux.
@@ -19,7 +18,7 @@ categories: [ Community ]
 
 The OpenROV team has released all of their [schematics and source code](https://github.com/openrov) to the open source community, hence the word “open” in the company name.
 
-The open source 
+Yes, the open source aspects of OpenROV are exciting. Now let's focus on the main mission of OpenROV: Underwater exploration.
 <!--more-->
 ###Remotely Operated Vehicles 
 
