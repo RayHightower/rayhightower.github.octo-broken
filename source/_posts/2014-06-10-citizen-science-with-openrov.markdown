@@ -18,7 +18,7 @@ categories: [ Community ]
 
 The OpenROV team has released all of their [schematics and source code](https://github.com/openrov) to the open source community, hence the word “open” in the company name.
 
-Yes, the open source aspects of OpenROV are exciting. Now let's focus on the main mission of OpenROV: Underwater exploration.
+If you think the open source aspects of OpenROV are exciting, wait until you hear about the company's main mission: Underwater exploration.
 <!--more-->
 ###Remotely Operated Vehicles 
 
