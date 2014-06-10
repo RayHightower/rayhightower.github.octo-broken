@@ -16,9 +16,7 @@ categories: [ Arduino, BeagleBone Black, Community, Linux ]
 * Arduino - inexpensive micro-controller commonly used in robotic projects.
 * TCP/IP - the communication protocol of the Internet. All communications (commands, video) between the OpenROV and the pilot’s laptop happens over TCP/IP.
 
-The OpenROV team has released all of their [schematics and source code](https://github.com/openrov) to the open source community, hence the word “open” in the company name.
-
-If you think the open source aspects of OpenROV are exciting, wait until you hear about the company's main mission: Underwater exploration.
+The OpenROV team has released all of their [schematics and source code](https://github.com/openrov) to the open source community, hence the word “open” in the company name. If you think the open source aspects of OpenROV are exciting, wait until you hear about the company's main mission: Underwater exploration.
 <!--more-->
 ###Remotely Operated Vehicles 
 
