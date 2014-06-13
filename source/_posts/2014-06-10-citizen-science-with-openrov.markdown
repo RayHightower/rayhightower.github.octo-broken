@@ -9,9 +9,9 @@ categories: [ Arduino, BeagleBone Black, Community, Linux ]
 ><br/>~Neil deGrasse Tyson
 
 {% imgcap right /images/openrov-uw.jpg OpenROV: Underwater robot running Node.js. %}
-[OpenROV](http://openrov.com) is an underwater robot, roughly the size of a toaster, and definitely not human-shaped. Company founders Eric Stackpole and David Lang are on a mission to democratize ocean exploration in the same way that Jobs, Woz, Gates, and Allen helped to democratize computing. OpenROV builds on the solid foundation laid by Moore’s Law and the open source software movement. 
+[OpenROV](http://openrov.com) is an underwater robot, roughly the size of a toaster, and definitely not human-shaped. The device is controlled through a Node.js-based web app. Company founders Eric Stackpole and David Lang are on a mission to democratize ocean exploration in the same way that Jobs, Woz, Gates, and Allen helped to democratize computing. OpenROV builds on the solid foundation laid by Moore’s Law and the open source software movement. 
 
-Take a look at this list of OpenROV ingredients:
+Take a look at the OpenROV ingredients:
 
 * BeagleBone Black - an open-source single-board computer, smaller than a deck of cards, running Linux.
 * Linux - specifically, the Ubuntu distribution.
@@ -19,11 +19,9 @@ Take a look at this list of OpenROV ingredients:
 * Arduino - inexpensive micro-controller commonly used in robotics projects.
 * TCP/IP - the communication protocol of the Internet. TCP/IP handles all communications (commands, video) between the OpenROV and the pilot’s laptop. Radio waves (like WiFi) don't travel very well underwater, so ROV communication happens through a tether, copper wires that carry signals back and forth.
 
-Eric and David were kind enough to invite me to their lab/manufacturing facility last week.
+Eric and David were kind enough to invite me to their lab/manufacturing facility in Berkeley, California last week. Thank you, OpenROV makers!
 
 The OpenROV team has released all of their [schematics and source code](https://github.com/openrov) to the open source community, hence the word “open” in the company name. If you think the open source aspects of OpenROV are exciting, wait until you hear about the company's main mission: Underwater exploration.
-
-Thank you Eric and David for inviting me to your OpenROV lab last week. 
 <!--more-->
 ###Remotely Operated Vehicles 
 ROV is short for remotely operated vehicle, an underwater robot. Scientists use ROVs to study marine life. Oil companies use ROVs for underwater construction and inspections. Industry-grade ROVs are priced at $30,000 on the low-end, while a [custom ROV can cost several million dollars](http://www.mbari.org/twenty/Tiburon.htm). 
