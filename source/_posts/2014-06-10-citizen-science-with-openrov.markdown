@@ -15,7 +15,7 @@ categories: [ Arduino, BeagleBone Black, Community, Linux ]
 * Linux - specifically, the Ubuntu distribution.
 * Node.js - platform for building web applications, based on the Google’s V8 JavaScript engine. Thanks to Node.js, any laptop running a web browser can control the OpenROV.
 * Arduino - inexpensive micro-controller commonly used in robotics projects.
-* TCP/IP - the communication protocol of the Internet. TCP/IP handles all communications (commands, video) between the OpenROV and the pilot’s laptop. Radio waves (like WiFi) don't travel very well underwater, so ROV communication happens through a tether, a line of copper wire that carries the TCP/IP packets. 
+* TCP/IP - the communication protocol of the Internet. TCP/IP handles all communications (commands, video) between the OpenROV and the pilot’s laptop. Radio waves (like WiFi) don't travel very well underwater, so ROV communication happens through a tether, copper wires that carry signals back and forth.
 
 The OpenROV team has released all of their [schematics and source code](https://github.com/openrov) to the open source community, hence the word “open” in the company name. If you think the open source aspects of OpenROV are exciting, wait until you hear about the company's main mission: Underwater exploration.
 <!--more-->
