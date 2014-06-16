@@ -36,7 +36,7 @@ Our world will always need professional scientists, people working in academia a
 
 Professional scientists are good at analyzing data, because that's what they have trained themselves to do. But data gathering requires less training than analysis. Citizen science and crowdsourcing work when there's an overwhelming volume of data to gather. Or when the breakthrough is beyond the reach of current scientific knowledge.
 
-[Orville and Wilbur Wright](http://en.wikipedia.org/wiki/Wright_brothers) were citizen scientists. Many professional scientists pursued solutions for fixed-wing flight prior to the Wright brothers' success. The flight problem defied the known science of the day. A new, unorthodox approach was required. Citizen scientists may be constrainted by money, but they tend to be unconstrained by expertise. Therefore they are likely to try solutions that experts would never consider.
+Citizen scientists may be constrainted by money, but they tend to be unconstrained by expertise. Therefore they are likely to try solutions that experts would never consider. [Orville and Wilbur Wright](http://en.wikipedia.org/wiki/Wright_brothers) were citizen scientists. Professional scientists pursued solutions for fixed-wing flight prior to the Wright brothers' success. But since the flight problem defied the known science of the day, new approaches were required.
 
 Of course, citizen scientists are not immune to the constraints of expertise. For example...
 
