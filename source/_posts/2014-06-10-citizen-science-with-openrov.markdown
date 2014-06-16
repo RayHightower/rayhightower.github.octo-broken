@@ -27,7 +27,9 @@ Eric and David were kind enough to invite me to their lab/manufacturing facility
 {% imgcap right /images/controller.jpg Laptop, browser, and game controller. %}
 ROV is short for remotely operated vehicle, an underwater robot. Scientists use ROVs to study marine life. Oil companies use ROVs for underwater construction and inspections. Industry-grade ROVs are priced at $30,000 on the low-end, while a [custom ROV can cost several million dollars](http://www.mbari.org/twenty/Tiburon.htm). 
 
-The OpenROV team was convinced that they could design and build an ROV small enough to fit in a suitcase, and easy enough for a citizen scientist to assemble and maintain. Targeting the general public meant achieving a relatively low price point: under one thousand dollars ($1,000.00). Spoiler alert: They did it. The device is successful, and you can [buy an OpenROV](http://store.openrov.com/) kit today for $849.00.
+The OpenROV team was convinced that they could design and build an ROV small enough to fit in a suitcase, and easy enough for a citizen scientist to assemble and maintain. Targeting the general public meant achieving a relatively low price point: under one thousand dollars ($1,000.00). 
+
+They did it. The device is successful, and you can [buy an OpenROV](http://store.openrov.com/) kit today for $849.00.
 
 ###Citizen Science
 Our world will always need professional scientists, people working in academia and in industry to push the frontier of knoweledge. Some scientific problems require the attention of PhD-level professionals, while other problems are better solved through crowdsourcing. Enter the [citizen scientist](http://en.wikipedia.org/wiki/Citizen_science).
