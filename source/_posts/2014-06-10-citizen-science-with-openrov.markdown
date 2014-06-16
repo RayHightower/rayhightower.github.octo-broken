@@ -11,7 +11,7 @@ categories: [ Arduino, BeagleBone Black, Community, Linux ]
 {% imgcap right /images/openrov-uw.jpg OpenROV: Underwater robot running Node.js. %}
 [OpenROV](http://openrov.com) is an underwater robot, roughly the size of a toaster, and definitely not human-shaped. The device is controlled through a Node.js-based web app. Company founders Eric Stackpole and David Lang are on a mission to democratize ocean exploration in the same way that Jobs, Woz, Gates, and Allen led the democratization of  computing. OpenROV builds on the solid foundation laid by Moore’s Law and the open source software movement. 
 
-Take a look at the OpenROV ingredients:
+OpenROV's ingredients are an impressive mix of open source goodness...
 
 * BeagleBone Black - an open-source single-board computer, smaller than a deck of cards, running Linux.
 * Linux - specifically, the Ubuntu distribution.
@@ -29,13 +29,13 @@ ROV is short for remotely operated vehicle, an underwater robot. Scientists use 
 The OpenROV team was convinced that they could design and build an ROV small enough to fit in a suitcase, and easy enough for a citizen scientist to assemble and maintain. Targeting the general public meant achieving a relatively low price point: under one thousand dollars ($1,000.00).
 
 ###Citizen Science
-We will always have a need for professional-level scientists, people working in academia and in industry to push the frontier of knoweledge.  At the same time, some problems are too big for our current population of scientists to tackle; we just don't have enough scientists. Enter the citizen scientist.
+We will always have a need for professional-level scientists, people working in academia and in industry to push the frontier of knoweledge. Some scientific problems require the attention of a few high-IQ professionals, while other problems are better solved through crowdsourcing. We just don't have enough scientists. Enter the citizen scientist.
 
 Orville and Wilbur Wright were citizen scientists. Many professional scientists pursued solutions for fixed-wing flight prior to the Wright brothers' success. The flight problem defied the known science of the time; a new approach was required. Citizen scientists may be constrainted by money, but they tend to be unconstrained by expertise. Therefore they are likely to try solutions that experts would never consider.
 
 Citizen scientists do not always achieve breakthroughs, but that's not why they do it. For many, the journey is the reward.
 
-Thousands of professional and citizen scientists are now using OpenROV to explore bodies of water that have never been explored so thoroughly before. What are they likely to discover?
+Thousands of professional and citizen scientists are now using OpenROV to explore bodies of water that have never been explored so thoroughly before. Vast portions of our planet's oceans remain unexplored. What will our citizen scientists discover?
 
 ###Tethering
 Radio waves don't travel very well underwater, so ROV communication happens through a tether, a line of copper wire that carries signals between the controller and the ROV unit.
