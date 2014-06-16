@@ -26,18 +26,18 @@ Eric and David were kind enough to invite me to their lab/manufacturing facility
 ###Remotely Operated Vehicles 
 ROV is short for remotely operated vehicle, an underwater robot. Scientists use ROVs to study marine life. Oil companies use ROVs for underwater construction and inspections. Industry-grade ROVs are priced at $30,000 on the low-end, while a [custom ROV can cost several million dollars](http://www.mbari.org/twenty/Tiburon.htm). 
 
-The OpenROV team was convinced that they could design and build an ROV small enough to fit in a suitcase, and easy enough for a citizen scientist to assemble and maintain. Targeting the general public meant achieving a relatively low price point: under one thousand dollars ($1,000.00).
+The OpenROV team was convinced that they could design and build an ROV small enough to fit in a suitcase, and easy enough for a citizen scientist to assemble and maintain. Targeting the general public meant achieving a relatively low price point: under one thousand dollars ($1,000.00). Spoiler alert: They did it. The device is successful, and you can [buy an OpenROV](http://store.openrov.com/) kit today for $849.00.
 
 ###Citizen Science
 Our world will always need professional scientists, people working in academia and in industry to push the frontier of knoweledge. Some scientific problems require the attention of PhD-level professionals, while other problems are better solved through crowdsourcing. Enter the [citizen scientist](http://en.wikipedia.org/wiki/Citizen_science).
 
-Professional scientists are good at analyzing data, because that's what they're trained for. Data gathering, however, requires less training than analysis. Citizen science and crowdsourcing work when there's too much data to gather. Or when the breakthrough is beyond the reach of current scientific knowledge.
+Professional scientists are good at analyzing data, because that's what they have trained themselves to do. But data gathering requires less training than analysis. Citizen science and crowdsourcing work when there's an overwhelming volumen of data to gather. Or when the breakthrough is beyond the reach of current scientific knowledge.
 
-[Orville and Wilbur Wright](http://en.wikipedia.org/wiki/Wright_brothers) were citizen scientists. Many professional scientists pursued solutions for fixed-wing flight prior to the Wright brothers' success. The flight problem defied the known science of the time; a new, unorthodox approach was required. Citizen scientists may be constrainted by money, but they tend to be unconstrained by expertise. Therefore they are likely to try solutions that experts would never consider.
+[Orville and Wilbur Wright](http://en.wikipedia.org/wiki/Wright_brothers) were citizen scientists. Many professional scientists pursued solutions for fixed-wing flight prior to the Wright brothers' success. The flight problem defied the known science of the day. A new, unorthodox approach was required. Citizen scientists may be constrainted by money, but they tend to be unconstrained by expertise. Therefore they are likely to try solutions that experts would never consider.
 
-Citizen scientists are not immunune to the limitations accepted by the professionals. Sometimes, after a successful breakthrough, the citizen might utter words like...
+A citizen scientist who enjoys a successful breakthrough may become constrained by their new "expertise". For example...
 
->No flying machine will ever fly from New York to Paris …[because] no known motor can run at the requisite speed for four days without stopping.
+>No flying machine will ever fly from New York to Paris ...[because] no known motor can run at the requisite speed for four days without stopping.
 ><br/>~Orville Wright
 
 Thousands of professional and citizen scientists are now using OpenROV to explore bodies of water that have never been explored so thoroughly before. Vast portions of our planet's oceans remain unexplored. What will our citizen scientists discover?
