@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Education | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/education/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-06-02T18:11:18-07:00</updated>
+  <updated>2014-06-16T17:20:27-04:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[How to Grow a User Group]]></title>
     <link href="http://RayHightower.com/blog/2014/05/30/how-to-grow-a-user-group/"/>
-    <updated>2014-05-30T17:34:00-07:00</updated>
+    <updated>2014-05-30T17:34:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/05/30/how-to-grow-a-user-group</id>
     <content type="html"><![CDATA[<p>The current team of <a href="http://chicagoruby.org">ChicagoRuby</a> organizers assumed leadership in August 2007. Back then, typical monthly attendance was about five people and the group&rsquo;s <a href="http://meetup.com/chicagoruby">Meetup.com</a> database contained 78 members. The previous organizer was swamped with work at his day job, so he handed the baton to a new crew.</p>
 
@@ -158,7 +158,7 @@ article.</li>
   <entry>
     <title type="html"><![CDATA[Upgrading to Git 2.0]]></title>
     <link href="http://RayHightower.com/blog/2014/05/30/upgrading-to-git-2-dot-0/"/>
-    <updated>2014-05-30T11:33:00-07:00</updated>
+    <updated>2014-05-30T11:33:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/05/30/upgrading-to-git-2-dot-0</id>
     <content type="html"><![CDATA[<p><img class="right" src="/images/git_200.png">
 Developers of Git are making a serious effort to improve intuitiveness for first-time users. Of course, all users benefit from intuitive tools. When our tools <em>just work</em>, we spend less time sifting through documentation and more time solving problems for our customers.</p>
@@ -254,7 +254,7 @@ git version 2.0.0</p>
   <entry>
     <title type="html"><![CDATA[Recursion and Memoization]]></title>
     <link href="http://RayHightower.com/blog/2014/04/12/recursion-and-memoization/"/>
-    <updated>2014-04-12T10:48:00-07:00</updated>
+    <updated>2014-04-12T10:48:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/04/12/recursion-and-memoization</id>
     <content type="html"><![CDATA[<blockquote><p>To iterate is human, to recurse divine.
 &nbsp;<br/>
@@ -386,7 +386,7 @@ end
   <entry>
     <title type="html"><![CDATA[Why Open Source?]]></title>
     <link href="http://RayHightower.com/blog/2014/04/05/why-open-source/"/>
-    <updated>2014-04-05T00:40:00-07:00</updated>
+    <updated>2014-04-05T00:40:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/04/05/why-open-source</id>
     <content type="html"><![CDATA[<p>As members of the open source community, we have internalized the benefits of open source. Sometimes, knowing a topic so well can hinder us from explaining it to people who need to understand our work: Clients, customers, and employers. They need to understand us because they pay us. Understanding helps to build trust.</p>
 
@@ -405,7 +405,7 @@ end
   <entry>
     <title type="html"><![CDATA[Flourish Open Source Conference at UIC]]></title>
     <link href="http://RayHightower.com/blog/2014/03/31/flourish-open-source-conference-at-uic/"/>
-    <updated>2014-03-31T23:42:00-07:00</updated>
+    <updated>2014-03-31T23:42:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/03/31/flourish-open-source-conference-at-uic</id>
     <content type="html"><![CDATA[<p><a href="http://flourishconf.com">Flourish</a> is an open source conference to be held at the University of Illinois at Chicago on Saturday, April 5, 2014. The conference is run by university students and tickets are free.</p>
 

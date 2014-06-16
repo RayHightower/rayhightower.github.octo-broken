@@ -4,7 +4,7 @@
   <title><![CDATA[Category: BeagleBone Black | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/beaglebone-black/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-06-02T18:11:18-07:00</updated>
+  <updated>2014-06-16T17:20:27-04:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -14,9 +14,96 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Citizen Science With OpenROV]]></title>
+    <link href="http://RayHightower.com/blog/2014/06/16/citizen-science-with-openrov/"/>
+    <updated>2014-06-16T17:46:00-04:00</updated>
+    <id>http://RayHightower.com/blog/2014/06/16/citizen-science-with-openrov</id>
+    <content type="html"><![CDATA[<blockquote><p>With regard to robots, in the early days of robots people said, &lsquo;Oh, let&rsquo;s build a robot&rsquo; and what&rsquo;s the first thought? You make a robot look like a human and do human things. That&rsquo;s so 1950s. We are so past that.
+<br/>~Neil deGrasse Tyson</p></blockquote>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/openrov-uw.jpg' width='' height='' alt='OpenROV: Underwater robot running Node.js.' title='OpenROV: Underwater robot running Node.js.'><span class='caption-text'>OpenROV: Underwater robot running Node.js.</span></span>
+<a href="http://openrov.com">OpenROV</a> is an underwater robot, roughly the size of a toaster, and definitely not human-shaped. The device is controlled through a Node.js-based web app. Former NASA researcher Eric Stackpole and Make Magazine columnist David Lang are on a mission to democratize ocean exploration in the same way that Jobs and Woz sparked the democratization of  computing. Eric and David pooled their talents to launch OpenROV, building on the foundation laid by Moore’s Law and the open source software movement.</p>
+
+<p>OpenROV&rsquo;s ingredients are an impressive mix of open source goodness&hellip;</p>
+
+<ul>
+<li>BeagleBone Black &ndash; an open-source single-board computer, smaller than a deck of cards, running Linux.</li>
+<li>Linux &ndash; specifically, the Ubuntu distribution.</li>
+<li>Node.js &ndash; platform for building web applications, based on the Google’s V8 JavaScript engine. Thanks to Node.js, any laptop running a web browser can control the OpenROV.</li>
+<li>Arduino &ndash; inexpensive micro-controller commonly used in robotics projects.</li>
+<li>TCP/IP &ndash; the communication protocol of the Internet. TCP/IP handles all communications (commands, video) between the OpenROV and the pilot’s laptop.</li>
+</ul>
+
+
+<p>The OpenROV team has released all of their <a href="https://github.com/openrov">schematics and source code</a> to the open source community, hence the word “open” in the company name. If you think the open source aspects of OpenROV are exciting, wait until you hear about the company&rsquo;s main mission: Underwater exploration.</p>
+
+<!--more-->
+
+
+<p>Eric and David were kind enough to invite me to their lab/manufacturing facility in Berkeley, California recently. Thank you, OpenROV makers!</p>
+
+<h3>Remotely Operated Vehicles</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/controller.jpg' width='' height='' alt='Laptop, browser, and game controller.' title='Laptop, browser, and game controller.'><span class='caption-text'>Laptop, browser, and game controller.</span></span>
+ROV is short for remotely operated vehicle, an underwater robot. Scientists use ROVs to study marine life. Oil companies use ROVs for underwater construction and inspections. Industry-grade ROVs are priced at $30,000 on the low-end, while a <a href="http://www.mbari.org/twenty/Tiburon.htm">custom ROV can cost several million dollars</a>.</p>
+
+<p>The OpenROV team was convinced that they could design and build an ROV small enough to fit in a suitcase, and easy enough for a citizen scientist to assemble and maintain. Targeting the general public meant achieving a relatively low price point: under one thousand dollars ($1,000.00).</p>
+
+<p>They did it. The device is successful, and you can <a href="http://store.openrov.com/">buy an OpenROV</a> kit today for $849.00.</p>
+
+<p>Movements are controlled via a USB-connected video game controller. A Bluetooth-equipped controller should work just as well. Some users will prefer the laptop keyboard; that works too.</p>
+
+<p>In other words, the computer that you’re using to read this article can probably control the OpenROV.</p>
+
+<h3>Citizen Science</h3>
+
+<p>Our world will always need professional scientists, people working in academia and in industry to push the frontier of knoweledge. Some scientific problems require the attention of PhD-level professionals, while other problems are better solved through crowdsourcing. Enter the <a href="http://en.wikipedia.org/wiki/Citizen_science">citizen scientist</a>.</p>
+
+<p>Professional scientists are good at analyzing data, because that&rsquo;s what they have trained themselves to do. But data gathering requires less training than analysis. Citizen science and crowdsourcing work when there&rsquo;s an overwhelming volume of data to gather. Or when the breakthrough is beyond the reach of current scientific knowledge.</p>
+
+<p>Citizen scientists may be constrainted by money, but they tend to be unconstrained by expertise. Therefore they are likely to try solutions that experts would never consider. <a href="http://en.wikipedia.org/wiki/Wright_brothers">Orville and Wilbur Wright</a> were citizen scientists. Professional scientists pursued solutions for fixed-wing flight prior to the Wright brothers' success. But since the flight problem defied the known science of the day, new approaches were required.</p>
+
+<p>Amusingly, a succesful citizen scientist can become constrained by expertise just like the professionals. For example&hellip;</p>
+
+<blockquote><p>No flying machine will ever fly from New York to Paris &hellip;[because] no known motor can run at the requisite speed for four days without stopping.
+<br/>~Orville Wright</p></blockquote>
+
+<p>Thousands of professional and citizen scientists are now using OpenROV to explore bodies of water that have never been explored so thoroughly before. Vast portions of our planet&rsquo;s oceans remain unexplored. But not for long.</p>
+
+<h3>Open Source On-Site</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/ui-discussion-2.jpg' width='' height='' alt='Enthusiasts collaborate on the next UI.' title='Enthusiasts collaborate on the next UI.'><span class='caption-text'>Enthusiasts collaborate on the next UI.</span></span>
+On the day I visited the OpenROV factory, other OpenROV enthusiasts were on-site, working with company engineers on product improvements. One enthusiast, a professional ROV operator, pilots large human-sized ROVs as deep as 2,000 meters below the ocean&rsquo;s surface. &ldquo;We&rsquo;re always looking at amperage&rdquo;, she said in a discussion with another enthusiast. A spike in amperage could indicate a ground fault, and batteries drain rapidly when that happens. You do not want to be stuck underwater when the batteries run out.</p>
+
+<p>Another member of the open source community, an engineering veteran with decades of experience at <a href="http://apple.com">Apple</a> and <a href="http://oracle.com">Oracle</a>, translates the operator&rsquo;s feedback into code that might drive the next OpenROV user interface.</p>
+
+<p>That&rsquo;s how open source works at OpenROV.</p>
+
+<h3>Hardware Testing</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/testing-motor-controller.jpg' width='' height='' alt='Testing new hardware.' title='Testing new hardware.'><span class='caption-text'>Testing new hardware.</span></span>
+I offered to leave when the OpenROV team prepared to test some new components. After working in tech for decades, I&rsquo;ve learned to respect a company&rsquo;s right to protect secrets.</p>
+
+<p>&ldquo;You forget that this is all open source,&rdquo; they told me. &ldquo;The schematics are already online, so there&rsquo;s nothing to hide. Come and watch the test.&rdquo;</p>
+
+<p>Yes, they had to remind me about the real meaning of open source!</p>
+
+<p>Four OpenROV makers gathered around a tank of water to test a new motor, controller, and propeller combination. They measured power utilization, propulsion, and temperature. Power utilization is important because the batteries need to last. Temperature matters because we don&rsquo;t want the OpenROV to melt underwater (or fry the fish). And propulsion matters because if the unit can&rsquo;t move, what&rsquo;s the point?</p>
+
+<p>From the reaction of the team, it looks like they found some good components for the next batch of OpenROV kits.</p>
+
+<h3>Strong Minds, Coming Together</h3>
+
+<p>The mood in the OpenROV lab is a blend of excitement and technical expertise. Some of the people in the lab are employees of the company. Others are adventurers fascinated with this inexpensive, effective way to explore. All are united in the quest to do something awesome with technology.</p>
+
+<p>OpenROV is what we get when open source software blends with open source hardware. What a wonderful combination.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[BeagleBone Black Running Ubuntu: Part2 (Plus Ruby on Rails)]]></title>
     <link href="http://RayHightower.com/blog/2014/01/06/beaglebone-black-ubuntu-ruby-rails-part-2/"/>
-    <updated>2014-01-06T02:31:00-08:00</updated>
+    <updated>2014-01-06T02:31:00-05:00</updated>
     <id>http://RayHightower.com/blog/2014/01/06/beaglebone-black-ubuntu-ruby-rails-part-2</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/ruby-rails-ubuntu-beaglebone-black.png' width='' height='' alt='Ruby. Rails. Ubuntu. BeagleBone Black.' title='Ruby. Rails. Ubuntu. BeagleBone Black.'><span class='caption-text'>Ruby. Rails. Ubuntu. BeagleBone Black.</span></span></p>
 
@@ -279,7 +366,7 @@ out <a href="http://openrov.com">OpenROV</a>.</p>
   <entry>
     <title type="html"><![CDATA[BeagleBone Black Running Ubuntu: Part1]]></title>
     <link href="http://RayHightower.com/blog/2014/01/02/beaglebone-black-ubuntu-part-1/"/>
-    <updated>2014-01-02T15:59:00-08:00</updated>
+    <updated>2014-01-02T15:59:00-05:00</updated>
     <id>http://RayHightower.com/blog/2014/01/02/beaglebone-black-ubuntu-part-1</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper center'><img class='caption' src='/images/beaglebone-black-ubuntu-ruby-rails.jpg' width='' height='' alt='BeagleBone Black running Ubuntu, Ruby, &amp; Rails.' title='BeagleBone Black running Ubuntu, Ruby, &amp; Rails.'><span class='caption-text'>BeagleBone Black running Ubuntu, Ruby, &amp; Rails.</span></span></p>
 
@@ -487,7 +574,7 @@ pw: ubuntu
   <entry>
     <title type="html"><![CDATA[A Portable Hack for Parallella]]></title>
     <link href="http://RayHightower.com/blog/2013/11/10/a-portable-hack-for-parallella/"/>
-    <updated>2013-11-10T23:05:00-08:00</updated>
+    <updated>2013-11-10T23:05:00-05:00</updated>
     <id>http://RayHightower.com/blog/2013/11/10/a-portable-hack-for-parallella</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper left'><img class='caption' src='/images/parallella-portable.png' width='' height='' alt='Portability for Parallella-sized devices.' title='Portability for Parallella-sized devices.'><span class='caption-text'>Portability for Parallella-sized devices.</span></span>
 <a href="/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/">Beaglebone Black</a>, <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a>, and <a href="/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/">Parallella</a> are three small, powerful Linux-based computers. But in order to make these devices truly portable, we need a way to carry a monitor and keyboard along. This article describes one hack that works.</p>
@@ -542,7 +629,7 @@ hexidecimal operation code.</li>
   <entry>
     <title type="html"><![CDATA[PechaKucha: Developer Education at TableXI]]></title>
     <link href="http://RayHightower.com/blog/2013/06/27/pechakucha-developer-education-at-tablexi/"/>
-    <updated>2013-06-27T15:13:00-07:00</updated>
+    <updated>2013-06-27T15:13:00-04:00</updated>
     <id>http://RayHightower.com/blog/2013/06/27/pechakucha-developer-education-at-tablexi</id>
     <content type="html"><![CDATA[<p><a href="http://pechakucha.org">PechaKucha</a> is a concise presentation style developed in Japan. The PechaKucha format is 20x20: The presenter must share an idea in twenty slides, each displayed for exactly twenty seconds, advancing automatically. Total presentation time = six minutues, forty seconds.</p>
 
@@ -557,100 +644,6 @@ hexidecimal operation code.</li>
 <p>One highlight from the PechaKucha presentation: This year&rsquo;s <a href="http://windycityrails.org">WindyCityRails</a> will include a youth program on Thursday afternoon. Details will be announced in July. Follow <a href="http://twitter.com/windycityrails">@WindyCityRails</a> for the latest news on the program.</p>
 
 <p>Thanks TableXI for the PechaKucha invitation, and for sponsoring WindyCityRails 2013!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[BeagleBone Black, Up & Running]]></title>
-    <link href="http://RayHightower.com/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/"/>
-    <updated>2013-05-22T22:13:00-07:00</updated>
-    <id>http://RayHightower.com/blog/2013/05/22/beaglebone-black-running-ruby-on-rails</id>
-    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/BeagleBoneBlack.jpg" width="372" height="600" title="BeagleBone Black" alt="BeagleBone Black" align="right">
-<a href="http://beagleboard.org/Products/BeagleBone%20Black">BeagleBone Black</a>, like the <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a>, is a small, inexpensive computer that runs Linux. It&rsquo;s smaller than a deck of cards and you can buy one for about forty-five dollars ($45.00). The device is made by <a href="http://circuitco.com">CircuitCo</a> in Richardson, TX, USA.</p>
-
-<h3>It Just Works</h3>
-
-<p>BeagleBone Black runs Linux right out of the box. Steps required:</p>
-
-<ul>
-<li>Plug in the micro-HDMI cable for the monitor. See the &ldquo;Gotchas&rdquo;
-section about micro-HDMI below.</li>
-<li>Plug in the keyboard &amp; mouse via the USB port. You might need a USB hub because the board only has one USB port.</li>
-<li>Add power via the mini-USB port or the 5v power connection.</li>
-</ul>
-
-
-<p>After a few minutes of boot time, we have a fully-functioning Linux computer with a GUI, Firefox browser, and other tools.</p>
-
-<!--more-->
-
-
-<p>The BeagleBone Black has 2GB of flash storage on the board, and part
-of that is used for Linux. Here&rsquo;s a screenshot after just a few minutes of ownership.</p>
-
-<center><img src="http://RayHightower.com/images/BeagleBoneBlack-WindyCityRails.png" width="600" height="338" title="BeagleBone Black Firefox WindyCityRails" alt="BeagleBone Black Firefox WindyCityRails" align="center"></center>
-
-
-<h3>Documentation</h3>
-
-<p><img src="http://RayHightower.com/images/BeagleBoneBlack-USB.png" width="250" height="200" title="BeagleBone Black USB" alt="BeagleBone Black USB" align="right">
-All of the paper documentation for the BeagleBone Black fits on a slip of paper roughly the size of two business cards. The meat of the documentation resides on the device itself. To reach the electronic documentation:</p>
-
-<ol>
-<li>Plug the BeagleBone Black into a USB port on your laptop.</li>
-<li>The board will appear as a USB storage device. One of the files at the
-root of the storage device, <code>START.htm</code>, contains the documentation. It
-can be viewed in a web browser.</li>
-</ol>
-
-
-<p>The documentation recommends against <a href="http://en.wikipedia.org/wiki/Internet_Explorer">MSIE</a>.</p>
-
-<h3>Gotchas</h3>
-
-<p><img src="http://RayHightower.com/images/micro-HDMI-home-depot.jpg" width="400" height="300" title="Micro HDMI Home Depot" alt="Micro HDMI Home Depot" align="right">
-The manufacturer included a mini-USB cable with the device, so you can power it up right after you rip open the package. Gotcha: You need a micro-HDMI cable (or adapter) if you want to attach a monitor. I would have preferred a micro-HDMI-to-HDMI adapater in the box instead of the mini-USB cable. That&rsquo;s a little nit-picky on my part since micro-HDMI cables are easy to find at Home Depot.</p>
-
-<p>A quick shout-out to Home Depot: Their store-brand cables let you test the cable end without opening the package, right in the store. Excellent package design by Home Depot.</p>
-
-<p>My second &ldquo;gotcha&rdquo; is more important: The <code>curl</code> command did not behave as flawlessly as it did with the Raspberry Pi, so I was not able to install Ruby as quickly as planned. Details below.</p>
-
-<h3>Installing Rails</h3>
-
-<p><del>I will have to cover Ruby and Rails installation in a future blog post because my initial attempts were not successful.</del></p>
-
-<p><em>Update (Jan 2014): Ruby, Rails, and Ubuntu will run on the BeagleBone Black. <a href="/blog/2014/01/02/beaglebone-black-ubuntu-part-1/">Installation details</a></em></p>
-
-<p><a href="/blog/2012/12/03/ruby-on-raspberry-pi/">RVM, Ruby, and Rails installed easily with Raspberry Pi</a>, even though the compilation time was long. With the BeagleBone Black, I received the following in response to the <code>curl</code> command:</p>
-
-<p>```bash
-sh-4.2# curl -L <a href="https://get.rvm.io">https://get.rvm.io</a> | bash -s stable &mdash;ruby
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current</p>
-
-<pre><code>                             Dload  Upload   Total   Spent    Left  Speed
-</code></pre>
-
-<p>  0     0    0     0    0     0      0      0 &mdash;:&mdash;:&mdash; &mdash;:&mdash;:&mdash; &mdash;:&mdash;:&mdash;     0
-curl: (77) Problem with the SSL CA cert (path? access rights?)
-sh-4.2#
-```</p>
-
-<p>Maybe it&rsquo;s time to try <a href="https://github.com/sstephenson/rbenv">RBEnv</a>? I&rsquo;ll post a solution when I find it. Or&hellip; if a reader of this blog already has a solution for the BeagleBone Black Rails installation challenge, please post in the comments below and I&rsquo;ll credit you here.</p>
-
-<h4>BeagleBone Black vs. Raspberry Pi</h4>
-
-<p>Which is better, BeagleBone Black or Raspberry Pi? There&rsquo;s no clear winner in my opinion. It&rsquo;s a matter of trade-offs:</p>
-
-<ul>
-<li>The &lsquo;Bone runs Linux right out of the box, while it takes some time to get Linux running on the Pi, unless you buy a card pre-configured for the Pi.</li>
-<li>RVM, Ruby, and Rails installation was painless on the Pi even though compilation time was long. The jury is still out w/r/t RVM on the &lsquo;Bone.</li>
-<li>Cost-wise, they&rsquo;re within ten bucks of each other. That&rsquo;s a wash.</li>
-<li>The &lsquo;Bone has more Ardunio-like provisions for digital projects.</li>
-<li>The Pi includes an RCA output for older TVs. Plus the Pi uses standard HDMI, so there&rsquo;s no need to get a special micro-HDMI cable.</li>
-</ul>
-
-
-<p>I&rsquo;ve owned my &lsquo;Bone for just over 24 hours. Lots more to learn. Looking forward to it!</p>
 ]]></content>
   </entry>
   

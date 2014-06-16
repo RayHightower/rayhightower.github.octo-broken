@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux-Unix-OSX | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/linux-unix-osx/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-06-02T18:11:18-07:00</updated>
+  <updated>2014-06-16T17:20:27-04:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Managing Dotfiles]]></title>
     <link href="http://RayHightower.com/blog/2014/04/15/managing-dotfiles/"/>
-    <updated>2014-04-15T17:13:00-07:00</updated>
+    <updated>2014-04-15T17:13:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/04/15/managing-dotfiles</id>
     <content type="html"><![CDATA[<p>Dotfiles, the configuration files used by Unix-like machines, can become disorganized over time. Entropy rules! This article describes my recent attempt to bring order to dotfile chaos. The steps can be summarized as follows:</p>
 
@@ -117,7 +117,7 @@ lrwxr-xr-x   1 rth  staff    34 Apr 14 19:48 .bash_profile &ndash;> /Users/rth/.
   <entry>
     <title type="html"><![CDATA[How .gitignore Works]]></title>
     <link href="http://RayHightower.com/blog/2014/03/25/how-gitignore-works/"/>
-    <updated>2014-03-25T18:20:00-07:00</updated>
+    <updated>2014-03-25T18:20:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/03/25/how-gitignore-works</id>
     <content type="html"><![CDATA[<p>Earlier today I ran into a Git issue within a RubyMotion project. I added a directory to the project&rsquo;s <code>.gitignore</code> file, but Git seemed to ignore my ignore. Expressed more clearly, Git continued to track a directory that I explicitly told it to ignore.</p>
 
@@ -159,7 +159,7 @@ $ git rm -r &mdash;cached [directoryname]</p>
   <entry>
     <title type="html"><![CDATA[Fixing MacVim on OS X Mavericks]]></title>
     <link href="http://RayHightower.com/blog/2014/03/04/fixing-macvim-on-osx-mavericks/"/>
-    <updated>2014-03-04T14:48:00-08:00</updated>
+    <updated>2014-03-04T14:48:00-05:00</updated>
     <id>http://RayHightower.com/blog/2014/03/04/fixing-macvim-on-osx-mavericks</id>
     <content type="html"><![CDATA[<p>Experience told me to delay upgrading to OS X Mavericks for as long as possible because the upgrade would likely break my dev environment. Sure enough, the upgrade broke <a href="/blog/2013/01/12/why-i-use-vim/">MacVim</a>.</p>
 
@@ -218,7 +218,7 @@ Run <code>brew linkapps</code> to symlink these to /Applications.
   <entry>
     <title type="html"><![CDATA[BeagleBone Black Running Ubuntu: Part2 (Plus Ruby on Rails)]]></title>
     <link href="http://RayHightower.com/blog/2014/01/06/beaglebone-black-ubuntu-ruby-rails-part-2/"/>
-    <updated>2014-01-06T02:31:00-08:00</updated>
+    <updated>2014-01-06T02:31:00-05:00</updated>
     <id>http://RayHightower.com/blog/2014/01/06/beaglebone-black-ubuntu-ruby-rails-part-2</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/ruby-rails-ubuntu-beaglebone-black.png' width='' height='' alt='Ruby. Rails. Ubuntu. BeagleBone Black.' title='Ruby. Rails. Ubuntu. BeagleBone Black.'><span class='caption-text'>Ruby. Rails. Ubuntu. BeagleBone Black.</span></span></p>
 
@@ -481,7 +481,7 @@ out <a href="http://openrov.com">OpenROV</a>.</p>
   <entry>
     <title type="html"><![CDATA[BeagleBone Black Running Ubuntu: Part1]]></title>
     <link href="http://RayHightower.com/blog/2014/01/02/beaglebone-black-ubuntu-part-1/"/>
-    <updated>2014-01-02T15:59:00-08:00</updated>
+    <updated>2014-01-02T15:59:00-05:00</updated>
     <id>http://RayHightower.com/blog/2014/01/02/beaglebone-black-ubuntu-part-1</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper center'><img class='caption' src='/images/beaglebone-black-ubuntu-ruby-rails.jpg' width='' height='' alt='BeagleBone Black running Ubuntu, Ruby, &amp; Rails.' title='BeagleBone Black running Ubuntu, Ruby, &amp; Rails.'><span class='caption-text'>BeagleBone Black running Ubuntu, Ruby, &amp; Rails.</span></span></p>
 
