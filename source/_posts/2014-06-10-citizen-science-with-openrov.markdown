@@ -61,7 +61,7 @@ That's how open source works at OpenROV.
 {% imgcap right /images/testing-motor-controller.jpg Testing new hardware. %}
 I offered to leave when the OpenROV team prepared to test some new components. After working in tech for decades, I've learned to respect a company's right to protect secrets. 
 
-"Ray, you forget that this is all open source," they told me. "The schematics are already online, so there's nothing to hide. Come and watch the test." 
+"You forget that this is all open source," they told me. "The schematics are already online, so there's nothing to hide. Come and watch the test." 
 
 Yes, they had to remind me about the real meaning of open source!
 
