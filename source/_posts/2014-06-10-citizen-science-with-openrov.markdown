@@ -29,7 +29,9 @@ ROV is short for remotely operated vehicle, an underwater robot. Scientists use 
 The OpenROV team was convinced that they could design and build an ROV small enough to fit in a suitcase, and easy enough for a citizen scientist to assemble and maintain. Targeting the general public meant achieving a relatively low price point: under one thousand dollars ($1,000.00).
 
 ###Citizen Science
-We will always have a need for professional-level scientists, people working in academia and in industry to push the frontier of knoweledge. Some scientific problems require the attention of a few high-IQ professionals, while other problems are better solved through crowdsourcing. We just don't have enough scientists. Enter the citizen scientist.
+Our world will always need professional scientists, people working in academia and in industry to push the frontier of knoweledge. Some scientific problems require the attention of PhD-level professionals, while other problems are better solved through crowdsourcing. Enter the [citizen scientist](http://en.wikipedia.org/wiki/Citizen_science).
+
+Citizen science and crowdsourcing work when the amount of data to be collected exceeds the number of available professional scientists. Or when the breakthrough is beyond the reach of current scientific knowledge.
 
 Orville and Wilbur Wright were citizen scientists. Many professional scientists pursued solutions for fixed-wing flight prior to the Wright brothers' success. The flight problem defied the known science of the time; a new approach was required. Citizen scientists may be constrainted by money, but they tend to be unconstrained by expertise. Therefore they are likely to try solutions that experts would never consider.
 
@@ -38,5 +40,6 @@ Citizen scientists do not always achieve breakthroughs, but that's not why they 
 Thousands of professional and citizen scientists are now using OpenROV to explore bodies of water that have never been explored so thoroughly before. Vast portions of our planet's oceans remain unexplored. What will our citizen scientists discover?
 
 ###Tethering
-Radio waves don't travel very well underwater, so ROV communication happens through a tether, a line of copper wire that carries signals between the controller and the ROV unit.
+Radio waves (like WiFi) don't travel very well underwater, so ROV communication happens through a tether, a bundle of copper wires carrying signals between the controller and the ROV unit.
 
+A web application, built with Node.js, runs on the OpenROV. 
