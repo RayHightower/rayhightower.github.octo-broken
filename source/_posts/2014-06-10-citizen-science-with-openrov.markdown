@@ -31,11 +31,14 @@ The OpenROV team was convinced that they could design and build an ROV small eno
 ###Citizen Science
 Our world will always need professional scientists, people working in academia and in industry to push the frontier of knoweledge. Some scientific problems require the attention of PhD-level professionals, while other problems are better solved through crowdsourcing. Enter the [citizen scientist](http://en.wikipedia.org/wiki/Citizen_science).
 
-Citizen science and crowdsourcing work when the amount of data to be collected exceeds the number of available professional scientists. Or when the breakthrough is beyond the reach of current scientific knowledge.
+Professional scientists are good at analyzing data, because that's what they're trained for. Data gathering, however, requires less training than analysis. Citizen science and crowdsourcing work when there's too much data to gather. Or when the breakthrough is beyond the reach of current scientific knowledge.
 
-Orville and Wilbur Wright were citizen scientists. Many professional scientists pursued solutions for fixed-wing flight prior to the Wright brothers' success. The flight problem defied the known science of the time; a new approach was required. Citizen scientists may be constrainted by money, but they tend to be unconstrained by expertise. Therefore they are likely to try solutions that experts would never consider.
+[Orville and Wilbur Wright](http://en.wikipedia.org/wiki/Wright_brothers) were citizen scientists. Many professional scientists pursued solutions for fixed-wing flight prior to the Wright brothers' success. The flight problem defied the known science of the time; a new, unorthodox approach was required. Citizen scientists may be constrainted by money, but they tend to be unconstrained by expertise. Therefore they are likely to try solutions that experts would never consider.
 
-Citizen scientists do not always achieve breakthroughs, but that's not why they do it. For many, the journey is the reward.
+Citizen scientists are not immunune to the limitations accepted by the professionals. Sometimes, after a successful breakthrough, the citizen might utter words like...
+
+>No flying machine will ever fly from New York to Paris …[because] no known motor can run at the requisite speed for four days without stopping.
+><br/>~Orville Wright
 
 Thousands of professional and citizen scientists are now using OpenROV to explore bodies of water that have never been explored so thoroughly before. Vast portions of our planet's oceans remain unexplored. What will our citizen scientists discover?
 
