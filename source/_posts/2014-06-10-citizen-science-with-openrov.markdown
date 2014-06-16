@@ -41,7 +41,7 @@ Of course, citizen scientists are not immune to the constraints of expertise. Fo
 >No flying machine will ever fly from New York to Paris ...[because] no known motor can run at the requisite speed for four days without stopping.
 ><br/>~Orville Wright
 
-Thousands of professional and citizen scientists are now using OpenROV to explore bodies of water that have never been explored so thoroughly before. Vast portions of our planet's oceans remain unexplored. What will our citizen scientists discover?
+Thousands of professional and citizen scientists are now using OpenROV to explore bodies of water that have never been explored so thoroughly before. Vast portions of our planet's oceans remain unexplored. But not for long.
 
 ###Open Source On-Site
 {% imgcap right /images/ui-discussion-2.jpg Enthusiasts collaborate on the next UI. %}
