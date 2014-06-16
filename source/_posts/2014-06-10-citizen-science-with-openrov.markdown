@@ -34,7 +34,7 @@ They did it. The device is successful, and you can [buy an OpenROV](http://store
 ###Citizen Science
 Our world will always need professional scientists, people working in academia and in industry to push the frontier of knoweledge. Some scientific problems require the attention of PhD-level professionals, while other problems are better solved through crowdsourcing. Enter the [citizen scientist](http://en.wikipedia.org/wiki/Citizen_science).
 
-Professional scientists are good at analyzing data, because that's what they have trained themselves to do. But data gathering requires less training than analysis. Citizen science and crowdsourcing work when there's an overwhelming volumen of data to gather. Or when the breakthrough is beyond the reach of current scientific knowledge.
+Professional scientists are good at analyzing data, because that's what they have trained themselves to do. But data gathering requires less training than analysis. Citizen science and crowdsourcing work when there's an overwhelming volume of data to gather. Or when the breakthrough is beyond the reach of current scientific knowledge.
 
 [Orville and Wilbur Wright](http://en.wikipedia.org/wiki/Wright_brothers) were citizen scientists. Many professional scientists pursued solutions for fixed-wing flight prior to the Wright brothers' success. The flight problem defied the known science of the day. A new, unorthodox approach was required. Citizen scientists may be constrainted by money, but they tend to be unconstrained by expertise. Therefore they are likely to try solutions that experts would never consider.
 
