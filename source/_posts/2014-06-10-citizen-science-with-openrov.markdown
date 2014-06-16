@@ -9,7 +9,7 @@ categories: [ Arduino, BeagleBone Black, Community, Linux ]
 ><br/>~Neil deGrasse Tyson
 
 {% imgcap right /images/openrov-uw.jpg OpenROV: Underwater robot running Node.js. %}
-[OpenROV](http://openrov.com) is an underwater robot, roughly the size of a toaster, and definitely not human-shaped. The device is controlled through a Node.js-based web app. Former NASA researcher Eric Stackpole and Make Magazine columnist David Lang are on a mission to democratize ocean exploration in the same way that Jobs, Woz, Gates, and Allen led the democratization of  computing. Eric and David pooled their talents to launch OpenROV, building on the foundation laid by Moore’s Law and the open source software movement. 
+[OpenROV](http://openrov.com) is an underwater robot, roughly the size of a toaster, and definitely not human-shaped. The device is controlled through a Node.js-based web app. Former NASA researcher Eric Stackpole and Make Magazine columnist David Lang are on a mission to democratize ocean exploration in the same way that Jobs and Woz sparked the democratization of  computing. Eric and David pooled their talents to launch OpenROV, building on the foundation laid by Moore’s Law and the open source software movement. 
 
 OpenROV's ingredients are an impressive mix of open source goodness...
 
