@@ -9,7 +9,7 @@ categories: [ Arduino, BeagleBone Black, Community, Linux ]
 ><br/>~Neil deGrasse Tyson
 
 {% imgcap right /images/openrov-uw.jpg OpenROV: Underwater robot running Node.js. %}
-[OpenROV](http://openrov.com) is an underwater robot, roughly the size of a toaster, and definitely not human-shaped. The device is controlled through a Node.js-based web app. Company founders Eric Stackpole and David Lang are on a mission to democratize ocean exploration in the same way that Jobs, Woz, Gates, and Allen led the democratization of  computing. OpenROV builds on the solid foundation laid by Moore’s Law and the open source software movement. 
+[OpenROV](http://openrov.com) is an underwater robot, roughly the size of a toaster, and definitely not human-shaped. The device is controlled through a Node.js-based web app. Former NASA researcher Eric Stackpole and Make Magazine columnist David Lang are on a mission to democratize ocean exploration in the same way that Jobs, Woz, Gates, and Allen led the democratization of  computing. Eric and David pooled their talents to launch OpenROV, building on the foundation laid by Moore’s Law and the open source software movement. 
 
 OpenROV's ingredients are an impressive mix of open source goodness...
 
@@ -41,6 +41,18 @@ Citizen scientists are not immunune to the limitations accepted by the professio
 ><br/>~Orville Wright
 
 Thousands of professional and citizen scientists are now using OpenROV to explore bodies of water that have never been explored so thoroughly before. Vast portions of our planet's oceans remain unexplored. What will our citizen scientists discover?
+
+###Open Source
+On the day I visited the OpenROV factory, other OpenROV enthusiasts were on-site, working with company engineers on product improvements. One enthusiast, a professional ROV operator, has piloted ROVs as deep as 2,000 meters below the surface. shared her experience from the  
+
+
+
+On the day that I visited the OpenROV lab, two members of the open
+source community were on-site working on the next generation user
+interface for the controller. One enthusiast
+
+
+
 
 ###Tethering
 Radio waves (like WiFi) don't travel very well underwater, so ROV communication happens through a tether, a bundle of copper wires carrying signals between the controller and the ROV unit.
