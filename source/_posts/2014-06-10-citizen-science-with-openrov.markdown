@@ -21,7 +21,7 @@ OpenROV's ingredients are an impressive mix of open source goodness...
 
 The OpenROV team has released all of their [schematics and source code](https://github.com/openrov) to the open source community, hence the word “open” in the company name. If you think the open source aspects of OpenROV are exciting, wait until you hear about the company's main mission: Underwater exploration.
 <!--more-->
-Eric and David were kind enough to invite me to their lab/manufacturing facility in Berkeley, California last week. Thank you, OpenROV makers!
+Eric and David were kind enough to invite me to their lab/manufacturing facility in Berkeley, California recently. Thank you, OpenROV makers!
 
 ###Remotely Operated Vehicles 
 ROV is short for remotely operated vehicle, an underwater robot. Scientists use ROVs to study marine life. Oil companies use ROVs for underwater construction and inspections. Industry-grade ROVs are priced at $30,000 on the low-end, while a [custom ROV can cost several million dollars](http://www.mbari.org/twenty/Tiburon.htm). 
