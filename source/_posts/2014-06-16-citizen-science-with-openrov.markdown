@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Citizen Science With OpenROV"
-date: 2014-06-10 17:46
+date: 2014-06-16 17:46
 comments: true
 categories: [ Arduino, BeagleBone Black, Community, Linux ]
 ---
