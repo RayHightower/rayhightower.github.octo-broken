@@ -24,6 +24,7 @@ The OpenROV team has released all of their [schematics and source code](https://
 Eric and David were kind enough to invite me to their lab/manufacturing facility in Berkeley, California recently. Thank you, OpenROV makers!
 
 ###Remotely Operated Vehicles 
+{% imgcap right /images/controller.jpg Laptop, browser, and game controller. %}
 ROV is short for remotely operated vehicle, an underwater robot. Scientists use ROVs to study marine life. Oil companies use ROVs for underwater construction and inspections. Industry-grade ROVs are priced at $30,000 on the low-end, while a [custom ROV can cost several million dollars](http://www.mbari.org/twenty/Tiburon.htm). 
 
 The OpenROV team was convinced that they could design and build an ROV small enough to fit in a suitcase, and easy enough for a citizen scientist to assemble and maintain. Targeting the general public meant achieving a relatively low price point: under one thousand dollars ($1,000.00). Spoiler alert: They did it. The device is successful, and you can [buy an OpenROV](http://store.openrov.com/) kit today for $849.00.
@@ -46,7 +47,20 @@ Thousands of professional and citizen scientists are now using OpenROV to explor
 {% imgcap right /images/ui-discussion-2.jpg Enthusiasts collaborate on the next UI. %}
 On the day I visited the OpenROV factory, other OpenROV enthusiasts were on-site, working with company engineers on product improvements. One enthusiast, a professional ROV operator, pilots large human-sized ROVs as deep as 2,000 meters below the ocean's surface. "We're always looking at amperage", she said in a discussion with another enthusiast. A spike in amperage could indicate a ground fault, and batteries drain rapidly when that happens. You do not want to be stuck underwater when the batteries run out. 
 
-Another enthuisiast, an engineering veteran with decades of experience at [Apple](http://apple.com) and [Oracle](http://oracle.com), translates the operator's feedback into code that might drive the next OpenROV user interface. 
+Another member of the open source community, an engineering veteran with decades of experience at [Apple](http://apple.com) and [Oracle](http://oracle.com), translates the operator's feedback into code that might drive the next OpenROV user interface. 
+
+That's how open source works at OpenROV. 
+
+###Hardware Testing
+I offered to leave when the engineers prepared to test some new components. I've worked in technology for decades, and I respect a company's right to protect their secrets.
+
+"Ray, you forget that this is all open source," they told me. "We've already shared the schematics online, so there's nothing to hide. Come and watch the test." Yes, I had to be reminded about the real meaning of open source!
+
+Four OpenROV makers gathered around a tank of water to test a new motor, controller, and propeller combination. They measured power utilization, propulsion, and temperature. Power utilization is important because we want the batteries to last a decent amount of time. Temperature matters because we don't want the OpenROV to melt underwater (or fry the fish). And propulsion matters because if the unit can't move, what's the point?
+
+From the reaction of the team, it looks like they found some good components for the next batch of OpenROV kits.
+
+###Advantage of Kits
 
 
 
