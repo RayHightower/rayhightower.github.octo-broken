@@ -35,7 +35,7 @@ Professional scientists are good at analyzing data, because that's what they hav
 
 [Orville and Wilbur Wright](http://en.wikipedia.org/wiki/Wright_brothers) were citizen scientists. Many professional scientists pursued solutions for fixed-wing flight prior to the Wright brothers' success. The flight problem defied the known science of the day. A new, unorthodox approach was required. Citizen scientists may be constrainted by money, but they tend to be unconstrained by expertise. Therefore they are likely to try solutions that experts would never consider.
 
-A citizen scientist who enjoys a successful breakthrough may become constrained by their new "expertise". For example...
+Of course, citizen scientists are not immune to the constraints of expertise. For example...
 
 >No flying machine will ever fly from New York to Paris ...[because] no known motor can run at the requisite speed for four days without stopping.
 ><br/>~Orville Wright
