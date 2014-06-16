@@ -69,7 +69,7 @@ Four OpenROV makers gathered around a tank of water to test a new motor, control
 
 From the reaction of the team, it looks like they found some good components for the next batch of OpenROV kits.
 
-###Blending Hardware and Software
+###Strong Minds, Coming Together
 The mood in the OpenROV lab is a blend of excitement and technical expertise. Some of the people in the lab are employees of the company. Others are adventurers fascinated with this inexpensive, effective way to explore. All are united in the quest to do something awesome with technology.
 
 OpenROV is what we get when open source software blends with open source hardware. What a wonderful combination.
