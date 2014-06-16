@@ -44,7 +44,7 @@ Thousands of professional and citizen scientists are now using OpenROV to explor
 
 ###Open Source On-Site
 {% imgcap right /images/ui-discussion-2.jpg Enthusiasts collaborate on the next UI. %}
-On the day I visited the OpenROV factory, other OpenROV enthusiasts were on-site, working with company engineers on product improvements. One enthusiast, a professional ROV operator, has piloted large human-sized ROVs as deep as 2,000 meters below the ocean's surface. "We're always looking at amperage", she said in a discussion with another enthusiast. A spike in amperage could indicate a ground fault, and batteries drain rapidly when that happens. You do not want to be stuck underwater when the batteries run out. 
+On the day I visited the OpenROV factory, other OpenROV enthusiasts were on-site, working with company engineers on product improvements. One enthusiast, a professional ROV operator, pilots large human-sized ROVs as deep as 2,000 meters below the ocean's surface. "We're always looking at amperage", she said in a discussion with another enthusiast. A spike in amperage could indicate a ground fault, and batteries drain rapidly when that happens. You do not want to be stuck underwater when the batteries run out. 
 
 Another enthuisiast, an engineering veteran with decades of experience at [Apple](http://apple.com) and [Oracle](http://oracle.com), translates the operator's feedback into code that might drive the next OpenROV user interface. 
 
