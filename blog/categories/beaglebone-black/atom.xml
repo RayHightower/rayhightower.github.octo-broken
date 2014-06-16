@@ -4,7 +4,7 @@
   <title><![CDATA[Category: BeagleBone Black | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/beaglebone-black/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-06-16T17:20:27-04:00</updated>
+  <updated>2014-06-16T17:33:15-04:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -61,7 +61,7 @@ ROV is short for remotely operated vehicle, an underwater robot. Scientists use 
 
 <p>Professional scientists are good at analyzing data, because that&rsquo;s what they have trained themselves to do. But data gathering requires less training than analysis. Citizen science and crowdsourcing work when there&rsquo;s an overwhelming volume of data to gather. Or when the breakthrough is beyond the reach of current scientific knowledge.</p>
 
-<p>Citizen scientists may be constrainted by money, but they tend to be unconstrained by expertise. Therefore they are likely to try solutions that experts would never consider. <a href="http://en.wikipedia.org/wiki/Wright_brothers">Orville and Wilbur Wright</a> were citizen scientists. Professional scientists pursued solutions for fixed-wing flight prior to the Wright brothers' success. But since the flight problem defied the known science of the day, new approaches were required.</p>
+<p>Citizen scientists may be constrained by money, but they tend to be unconstrained by expertise. Therefore they are likely to try solutions that experts would never consider. <a href="http://en.wikipedia.org/wiki/Wright_brothers">Orville and Wilbur Wright</a> were citizen scientists. Professional scientists pursued solutions for fixed-wing flight prior to the Wright brothers' success. But since the flight problem defied the known science of the day, new approaches were required.</p>
 
 <p>Amusingly, a succesful citizen scientist can become constrained by expertise just like the professionals. For example&hellip;</p>
 
