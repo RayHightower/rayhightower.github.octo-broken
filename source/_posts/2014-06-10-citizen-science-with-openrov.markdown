@@ -31,6 +31,10 @@ The OpenROV team was convinced that they could design and build an ROV small eno
 
 They did it. The device is successful, and you can [buy an OpenROV](http://store.openrov.com/) kit today for $849.00.
 
+Movements are controlled via a USB-connected video game controller. A Bluetooth-equipped controller should work just as well. Some users will prefer the laptop keyboard; that works too.
+
+In other words, the computer that you’re using to read this article can probably control the OpenROV.
+
 ###Citizen Science
 Our world will always need professional scientists, people working in academia and in industry to push the frontier of knoweledge. Some scientific problems require the attention of PhD-level professionals, while other problems are better solved through crowdsourcing. Enter the [citizen scientist](http://en.wikipedia.org/wiki/Citizen_science).
 
@@ -55,17 +59,19 @@ That's how open source works at OpenROV.
 
 ###Hardware Testing
 {% imgcap right /images/testing-motor-controller.jpg Testing new hardware. %}
-I offered to leave when the engineers prepared to test some new components. After working in tech for decades, I've learned to respect a company's right to protect secrets. 
+I offered to leave when the OpenROV team prepared to test some new components. After working in tech for decades, I've learned to respect a company's right to protect secrets. 
 
-"Ray, you forget that this is all open source," they told me. "We've already shared the schematics online, so there's nothing to hide. Come and watch the test." 
+"Ray, you forget that this is all open source," they told me. "The schematics are already online, so there's nothing to hide. Come and watch the test." 
 
 Yes, they had to remind me about the real meaning of open source!
 
-Four OpenROV makers gathered around a tank of water to test a new motor, controller, and propeller combination. They measured power utilization, propulsion, and temperature. Power utilization is important because we want the batteries to last a decent amount of time. Temperature matters because we don't want the OpenROV to melt underwater (or fry the fish). And propulsion matters because if the unit can't move, what's the point?
+Four OpenROV makers gathered around a tank of water to test a new motor, controller, and propeller combination. They measured power utilization, propulsion, and temperature. Power utilization is important because the batteries need to last. Temperature matters because we don't want the OpenROV to melt underwater (or fry the fish). And propulsion matters because if the unit can't move, what's the point?
 
 From the reaction of the team, it looks like they found some good components for the next batch of OpenROV kits.
 
 ###Advantage of Kits
+Making the OpenROV 
+
 
 
 
