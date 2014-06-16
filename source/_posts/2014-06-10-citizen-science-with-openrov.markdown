@@ -53,7 +53,7 @@ That's how open source works at OpenROV.
 
 ###Hardware Testing
 {% imgcap right /images/testing-motor-controller.jpg Testing new hardware. %}
-I offered to leave when the engineers prepared to test some new components. I've worked in technology for decades, and I respect a company's right to protect their secrets.
+I offered to leave when the engineers prepared to test some new components. After working in tech for decades, I've learned to respect a company's right to protect secrets. 
 
 "Ray, you forget that this is all open source," they told me. "We've already shared the schematics online, so there's nothing to hide. Come and watch the test." 
 
