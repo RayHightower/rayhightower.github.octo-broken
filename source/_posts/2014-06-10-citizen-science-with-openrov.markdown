@@ -52,9 +52,12 @@ Another member of the open source community, an engineering veteran with decades
 That's how open source works at OpenROV. 
 
 ###Hardware Testing
+{% imgcap right /images/testing-motor-controller.jpg Testing new hardware. %}
 I offered to leave when the engineers prepared to test some new components. I've worked in technology for decades, and I respect a company's right to protect their secrets.
 
-"Ray, you forget that this is all open source," they told me. "We've already shared the schematics online, so there's nothing to hide. Come and watch the test." Yes, I had to be reminded about the real meaning of open source!
+"Ray, you forget that this is all open source," they told me. "We've already shared the schematics online, so there's nothing to hide. Come and watch the test." 
+
+Yes, they had to remind me about the real meaning of open source!
 
 Four OpenROV makers gathered around a tank of water to test a new motor, controller, and propeller combination. They measured power utilization, propulsion, and temperature. Power utilization is important because we want the batteries to last a decent amount of time. Temperature matters because we don't want the OpenROV to melt underwater (or fry the fish). And propulsion matters because if the unit can't move, what's the point?
 
