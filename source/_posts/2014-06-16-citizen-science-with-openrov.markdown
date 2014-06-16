@@ -36,7 +36,7 @@ Movements are controlled via a USB-connected video game controller. A Bluetooth-
 In other words, the computer that you’re using to read this article can probably control the OpenROV.
 
 ###Citizen Science
-Our world will always need professional scientists, people working in academia and in industry to push the frontier of knoweledge. Some scientific problems require the attention of PhD-level professionals, while other problems are better solved through crowdsourcing. Enter the [citizen scientist](http://en.wikipedia.org/wiki/Citizen_science).
+Our world will always need professional scientists, people working in academia and in industry to push the frontier of knowledge. Some scientific problems require the attention of PhD-level professionals, while other problems are better solved through crowdsourcing. Enter the [citizen scientist](http://en.wikipedia.org/wiki/Citizen_science).
 
 Professional scientists are good at analyzing data, because that's what they have trained themselves to do. But data gathering requires less training than analysis. Citizen science and crowdsourcing work when there's an overwhelming volume of data to gather. Or when the breakthrough is beyond the reach of current scientific knowledge.
 
