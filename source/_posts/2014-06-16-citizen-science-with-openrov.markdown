@@ -15,7 +15,7 @@ OpenROV's ingredients are an impressive mix of open source goodness...
 
 * BeagleBone Black - an open-source single-board computer, smaller than a deck of cards, running Linux.
 * Linux - specifically, the Ubuntu distribution.
-* Node.js - platform for building web applications, based on the Google’s V8 JavaScript engine. Thanks to Node.js, any laptop running a web browser can control the OpenROV.
+* Node.js - platform for building web applications, based on Google’s V8 JavaScript engine. Thanks to Node.js, any laptop running a web browser can control the OpenROV.
 * Arduino - inexpensive micro-controller commonly used in robotics projects.
 * TCP/IP - the communication protocol of the Internet. TCP/IP handles all communications (commands, video) between the OpenROV and the pilot’s laptop. 
 
