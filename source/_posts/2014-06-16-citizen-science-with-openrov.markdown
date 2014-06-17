@@ -47,7 +47,7 @@ Amusingly, successful citizen scientists can be outwitted by their own expertise
 >No flying machine will ever fly from New York to Paris ...[because] no known motor can run at the requisite speed for four days without stopping.
 ><br/>~Orville Wright
 
-Shifting back to the 21st century: Thousands of professional and citizen scientists are using OpenROV to explore oceans and lakes more thoroughly than ever before.
+Shifting back to the 21st century: Thousands of citizen scientists are using OpenROV to explore oceans and lakes more thoroughly than ever before.
 
 ###Open Source On-Site
 {% imgcap right /images/ui-discussion-2.jpg Enthusiasts collaborate on the next UI. %}
