@@ -3,7 +3,7 @@ layout: post
 title: "A Portable Hack for Parallella"
 date: 2013-11-10 23:05
 comments: true
-categories: [BeagleBone Black, Education, Parallella, Raspberry Pi]
+categories: [BeagleBone Black, Education, High Performance Computing, Parallella, Raspberry Pi]
 ---
 {% imgcap left /images/parallella-portable.png Portability for Parallella-sized devices. %}
 [Beaglebone Black](/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/), [Raspberry Pi](/blog/2012/12/03/ruby-on-raspberry-pi/), and [Parallella](/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/) are three small, powerful Linux-based computers. But in order to make these devices truly portable, we need a way to carry a monitor and keyboard along. This article describes one hack that works.
