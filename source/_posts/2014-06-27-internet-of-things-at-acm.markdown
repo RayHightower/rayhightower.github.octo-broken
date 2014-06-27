@@ -9,8 +9,8 @@ How many motors are in the typical automobile? The knee-jerk response might be â
 
 We take motors for granted, therefore motors have disappeared. And now, as it becomes possible to add a computer and an IP address to almost anything electronic, we bring about the Internet of Things (IoT). Computers are disappearing too.
 <!--more-->
-###ACM Presents IoT Trends
-Steven Loving is a director at [Arrayent](http://www.arrayent.com/), Arrayent makes a platoform for companies that want their products to be IoT-aware. For example, a garage door company that wants to offer iPhone control to their customers can do so without re-inventing TCP/IP themselves. Arrayent handles the IoT portion so the maker can focus on their core business. Steven shared his vision of the IoT future at [Tuesday's ACM meeting](http://www.meetup.com/chicagoacm/events/184091062/). Some of his ideas are summarized here.
+###ACM Presents Disruptive IoT
+Steven Loving is a director at [Arrayent](http://www.arrayent.com/). Arrayent makes a platoform for companies that want their products to be IoT-aware. For example, a garage door company that wants to offer iPhone control to their customers can do so without re-inventing TCP/IP themselves. Arrayent handles the IoT portion so the maker can focus on their core business. Steven shared his vision of the IoT future at [Tuesday's ACM meeting](http://www.meetup.com/chicagoacm/events/184091062/). Some of his ideas are summarized here.
 
 ###Don't Leave Home Without It
 _Don't leave home without it_ was once the catch phrase of a major charge card. Today, many of us leave home with just three things in our pockets:
