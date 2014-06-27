@@ -11,15 +11,19 @@ We take the motors for granted, therefore the motors have disappeared. And now, 
 <!--more-->
 Steven Loving is a director at [Arrayent](http://www.arrayent.com/), which makes a platform for companies that want their products to be IoT-aware. Steven shared his vision of the IoT future at [Tuesday's ACM meeting](http://www.meetup.com/chicagoacm/events/184091062/). The presentation was full of ideas that 
 
-First, the day will come (very soon) when we will leave home with just three things in our pockets:
+###Don't Leave Home Without It
+_Don't leave home without it_ was once the catch phrase of a major charge card. Today, many of us leave home with just three things in our pockets:
 
 * Wallet
 * Keys
 * Smart phone
 
-As near-field communication (or one of its descendants) becomes prevalent, we may only need the smartphone.
+As near-field communication (or one of its descendants) becomes prevalent, we may only need the smartphone. 
 
 
+
+###What's Next
+If we know where the puck is headed, what can we as developers and engineers do to get there first? The major smartphone makers get it. Apple's
 
 
 
