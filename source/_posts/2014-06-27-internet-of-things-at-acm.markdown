@@ -49,13 +49,6 @@ A great quote from the presentation...
 
 Clearly, Apple gets it. That's one reason why they released [HomeKit](https://developer.apple.com/homekit/).
 
-
-###What's Next
-If we know where the puck is headed, what can we as developers and engineers do to get there first? The major smartphone makers get it. Apple's
-
-
-
-
-
-
+###Thanks Chicago ACM
+Thanks again Chicago ACM for putting on a great program.
 
