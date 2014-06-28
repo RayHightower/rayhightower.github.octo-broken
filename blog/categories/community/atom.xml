@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Community | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/community/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-06-27T13:10:28-05:00</updated>
+  <updated>2014-06-27T19:29:23-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,78 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Internet of Things at ACM]]></title>
+    <link href="http://RayHightower.com/blog/2014/06/27/internet-of-things-at-acm/"/>
+    <updated>2014-06-27T18:08:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/06/27/internet-of-things-at-acm</id>
+    <content type="html"><![CDATA[<p>How many motors are in the typical automobile? The knee-jerk response might be “one, the big metal thing under the hood”. Upon further reflection, we may recall the motors that operate many devices in today’s automobile: windshield wipers, power windows, door locks, sun roof, reclining seats, and so on. Power devices were once luxury equipment. Today, since motors have fallen in price, most cars include these <em>luxury</em> items as standard equipment.</p>
+
+<p>We take motors for granted, therefore motors have disappeared. And now, as it becomes possible to add a computer and an IP address to almost anything electronic, we bring about the Internet of Things (IoT). Computers are disappearing too.</p>
+
+<!--more-->
+
+
+<h3>ACM Presents Disruptive IoT</h3>
+
+<p>Steven Loving is a director at <a href="http://www.arrayent.com/">Arrayent</a>. Arrayent makes a platform for companies that want their products to be IoT-aware. For example, a garage door company that wants to offer iPhone control to their customers can do so without re-inventing TCP/IP themselves. Arrayent handles the IoT portion so the maker can focus on their core business. Steven shared his vision of the IoT future at <a href="http://www.meetup.com/chicagoacm/events/184091062/">Tuesday&rsquo;s ACM meeting</a>. Some of his ideas are summarized here.</p>
+
+<h3>Don&rsquo;t Leave Home Without It</h3>
+
+<p><em>Don&rsquo;t leave home without it</em> was once the catch phrase of a major charge card. Today, many of us leave home with just three things in our pockets:</p>
+
+<ul>
+<li>Wallet</li>
+<li>Keys</li>
+<li>Smartphone</li>
+</ul>
+
+
+<p>As near-field communication (or one of its descendants) becomes prevalent, we may only need the smartphone.</p>
+
+<h3>Products Don&rsquo;t Matter Any More?</h3>
+
+<p>Products don&rsquo;t matter any more? I immediately wanted to argue against this idea. Everyone wants quality products, right? The point: As manufacturing techniques become common knowledge, companies need to come up with new ways to differentiate themselves from the competition.</p>
+
+<p>Connected products are special. For example, consider an ordinary sump pump. How does a buyer distinguish one from another? If one sump pump contains a tiny embedded Linux system with an IP address, it can alert the owner when water has approached a dangerous level, if there is a power outage, or if flood conditions are simply too strong for the pump to handle. Bad news does not get better with time, and if the sump pump can send bad news early, the owners can take corrective action while there&rsquo;s still time to do so.</p>
+
+<h3>Mobile First</h3>
+
+<p>A great quote from the presentation&hellip;</p>
+
+<blockquote><p>Do you know anybody building a product with an LCD on it? Shoot them.  I have an LCD in my pocket. It&rsquo;s called a phone.
+<br/>~Steven Loving</p></blockquote>
+
+<p>In other words, the mobile-first strategy that many developers apply to apps also applies to IoT.</p>
+
+<p>Side note: Clearly, Apple gets it. That&rsquo;s one reason why they released <a href="https://developer.apple.com/homekit/">HomeKit</a>.</p>
+
+<h3>Incumbent Companies Are Scrambling</h3>
+
+<p>Why are cable companies offering security services in addition to standard packages of television and movies? Because users are moving to Netflix and Amazon Prime. Cable companies that offer internet service must come up with other services if they expect to survive. IoT might offer a way. Self-installed home monitoring services will give customers a reason to stick with their old cable provider. Of course, this will force security companies like ADT to come up with something new, too.</p>
+
+<h3>IoT Progression</h3>
+
+<p>What opportunities will become available when every device has an IP
+address? Tuesday&rsquo;s presenter predicts the following sequence of
+events:</p>
+
+<ol>
+<li>Connected products.</li>
+<li>Connected systems &ndash; products talking to other products.</li>
+<li>Communities of systems talking to each other.</li>
+<li>Network effects.</li>
+</ol>
+
+
+<p>We&rsquo;re currently experiencing &#35;1 and &#35;2. What will happen as &#35;3 and &#35;4 begin to roll out? We cannot be sure. However, we can be certain that this will be an exciting time for software developers, electrical engineers, and entrepreneurs who build companies in those areas.</p>
+
+<h3>Thanks Chicago ACM</h3>
+
+<p>Thanks again Chicago ACM for putting on a great program.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Citizen Science With OpenROV]]></title>
@@ -255,7 +327,7 @@ article.</li>
 <p>Harassment is a serious issue, and a 140-character tweet will not do the discussion justice. Therefore, the ChicagoRuby organizers have created multiple communication channels for this issue:</p>
 
 <ul>
-<li>Email: <a href="&#x6d;&#97;&#105;&#x6c;&#116;&#x6f;&#58;&#x63;&#x6f;&#100;&#101;&#111;&#x66;&#x63;&#111;&#110;&#100;&#x75;&#99;&#116;&#64;&#99;&#104;&#105;&#99;&#97;&#103;&#x6f;&#x72;&#117;&#x62;&#121;&#x2e;&#x6f;&#x72;&#x67;">&#99;&#111;&#x64;&#101;&#111;&#x66;&#99;&#x6f;&#110;&#100;&#x75;&#99;&#116;&#x40;&#99;&#104;&#x69;&#x63;&#97;&#103;&#x6f;&#114;&#x75;&#98;&#121;&#46;&#111;&#x72;&#103;</a></li>
+<li>Email: <a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#111;&#x3a;&#x63;&#111;&#100;&#x65;&#x6f;&#102;&#x63;&#111;&#110;&#x64;&#117;&#x63;&#x74;&#x40;&#99;&#x68;&#105;&#x63;&#x61;&#x67;&#x6f;&#114;&#117;&#x62;&#x79;&#46;&#111;&#114;&#103;">&#99;&#x6f;&#100;&#x65;&#111;&#x66;&#99;&#111;&#110;&#100;&#x75;&#99;&#116;&#64;&#x63;&#x68;&#105;&#99;&#97;&#103;&#111;&#x72;&#x75;&#98;&#x79;&#46;&#111;&#114;&#x67;</a></li>
 <li>Any of the contact names listed on the current code of conduct</li>
 <li>Phone number listed on the code of conduct</li>
 </ul>
@@ -367,25 +439,6 @@ lrwxr-xr-x   1 rth  staff    34 Apr 14 19:48 .bash_profile &ndash;> /Users/rth/.
 <p>Most of my dotfiles, like <code>.bash_profile</code>, don&rsquo;t contain anything private. In fact, most of what I know about dotfiles has come from other developers via books, user groups, blogs, and spelunking through GitHub. Dotfile collections by <a href="https://github.com/hashrocket/dotmatrix">Hashrocket</a> and <a href="https://github.com/thoughtbot/dotfiles">Thoughtbot</a> are  especially good. My <code>~/.dotfiles</code> directory is available for public viewing on <a href="https://github.com/RayHightower/.dotfiles">GitHub</a>.</p>
 
 <p>If you&rsquo;re doing something especially cool with your dotfiles, let&rsquo;s hear about it!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Why Open Source?]]></title>
-    <link href="http://RayHightower.com/blog/2014/04/05/why-open-source/"/>
-    <updated>2014-04-05T00:40:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2014/04/05/why-open-source</id>
-    <content type="html"><![CDATA[<p>As members of the open source community, we have internalized the benefits of open source. Sometimes, knowing a topic so well can hinder us from explaining it to people who need to understand our work: Clients, customers, and employers. They need to understand us because they pay us. Understanding helps to build trust.</p>
-
-<p>The topic <a href="/blog/2014/02/22/what-is-open-source/">What is Open Source</a> is covered in earlier post by that title. This presentation covers some of the &ldquo;whys&rdquo; of open source in terms that matter to the people we serve: Clients, customers, and employers.</p>
-
-<!--more-->
-
-
-<center><script async class="speakerdeck-embed" data-id="e20291c09eb00131918d4a0f4a2b8270" data-ratio="1.29456384323641" src="http://RayHightower.com//speakerdeck.com/assets/embed.js"></script></center>
-
-
-<p>This presentation was delivered at the <a href="http://flourishconf.com/">Flourish 2014</a> conference at the University of Illinois at Chicago. I am grateful to the Flourish organizers and to UIC for inviting me to speak.</p>
 ]]></content>
   </entry>
   

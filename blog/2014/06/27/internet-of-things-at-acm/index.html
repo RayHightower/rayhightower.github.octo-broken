@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Homebrew, Ruby, and Git - RayHightower.com</title>
+  <title>Internet of Things at ACM - RayHightower.com</title>
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="I encountered some interesting behavior between Homebrew and Ruby this afternoon. I can describe what happened, but I don&rsquo;t yet understand why &hellip;">
+  <meta name="description" content="How many motors are in the typical automobile? The knee-jerk response might be “one, the big metal thing under the hood”. Upon further reflection, we &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://RayHightower.com/blog/2013/12/06/homebrew-ruby-and-git">
+  <link rel="canonical" href="http://RayHightower.com/blog/2014/06/27/internet-of-things-at-acm">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="RayHightower.com" type="application/atom+xml">
@@ -85,7 +85,7 @@
   
   <header>
     
-      <h1 class="entry-title">Homebrew, Ruby, and Git</h1>
+      <h1 class="entry-title">Internet of Things at ACM</h1>
     
     
       <p class="meta">
@@ -101,180 +101,77 @@
   
 
 
-<time datetime="2013-12-06T17:30:00-06:00" pubdate data-updated="true">Dec 6<span>th</span>, 2013</time>
+<time datetime="2014-06-27T18:08:00-05:00" pubdate data-updated="true">Jun 27<span>th</span>, 2014</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>I encountered some interesting behavior between <a href="http://brew.sh/">Homebrew</a> and Ruby this afternoon. I can describe what happened, but I don&rsquo;t yet understand why. Perhaps another member of the dev community can shed some light.</p>
+<div class="entry-content"><p>How many motors are in the typical automobile? The knee-jerk response might be “one, the big metal thing under the hood”. Upon further reflection, we may recall the motors that operate many devices in today’s automobile: windshield wipers, power windows, door locks, sun roof, reclining seats, and so on. Power devices were once luxury equipment. Today, since motors have fallen in price, most cars include these <em>luxury</em> items as standard equipment.</p>
 
-<h3>Upgrading to Git 1.8.5</h3>
-
-<p>Earlier today I learned that Git 1.8.5 was available. So I decided to upgrade. Since I use Homebrew for package management, it was time for <code>$ brew doctor</code> and <code>$ brew update</code> as well.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>brew doctor
-</span><span class='line'>Error: Homebrew doesn<span class="s1">&#39;t know what compiler versions ship with your version</span>
-</span><span class='line'><span class="s1">of Xcode (5.0.2). Please `brew update` and if that doesn&#39;</span>t <span class="nb">help</span>, file
-</span><span class='line'>an issue with the output of <span class="sb">`</span>brew --config<span class="sb">`</span>:
-</span><span class='line'>  https://github.com/mxcl/homebrew/issues
-</span><span class='line'>
-</span><span class='line'>Thanks!
-</span><span class='line'>Warning: Your Homebrew is outdated.
-</span><span class='line'>You haven<span class="err">&#39;</span>t updated <span class="k">for </span>at least 24 hours, this is a long <span class="nb">time </span>in brewland!
-</span><span class='line'>To update Homebrew, run <span class="sb">`</span>brew update<span class="sb">`</span>.
-</span><span class='line'>
-</span><span class='line'>~/Code/Ruby/apps<span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><code>$ brew doctor</code> has spoken. Time to update Homebrew.</p>
+<p>We take motors for granted, therefore motors have disappeared. And now, as it becomes possible to add a computer and an IP address to almost anything electronic, we bring about the Internet of Things (IoT). Computers are disappearing too.</p>
 
 <!--more-->
 
 
-<h3>Homebrew First. Git Later.</h3>
+<h3>ACM Presents Disruptive IoT</h3>
 
-<p>Updating Homebrew is as simple as <code>$ brew update</code>, right?</p>
+<p>Steven Loving is a director at <a href="http://www.arrayent.com/">Arrayent</a>. Arrayent makes a platform for companies that want their products to be IoT-aware. For example, a garage door company that wants to offer iPhone control to their customers can do so without re-inventing TCP/IP themselves. Arrayent handles the IoT portion so the maker can focus on their core business. Steven shared his vision of the IoT future at <a href="http://www.meetup.com/chicagoacm/events/184091062/">Tuesday&rsquo;s ACM meeting</a>. Some of his ideas are summarized here.</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>brew update
-</span><span class='line'>Warning: Could not tap homebrew/dupes/ant over mxcl/master/ant
-</span><span class='line'>Warning: Could not tap homebrew/dupes/cvs over mxcl/master/cvs
-</span><span class='line'>Error: undefined method <span class="sb">`</span>to_sym<span class="s1">&#39; for nil:NilClass</span>
-</span><span class='line'><span class="s1">Please report this bug:</span>
-</span><span class='line'><span class="s1">    https://github.com/mxcl/homebrew/wiki/troubleshooting</span>
-</span><span class='line'><span class="s1">/usr/local/Library/Homebrew/cmd/update.rb:123:in `report&#39;</span>
-</span><span class='line'>/usr/local/Library/Homebrew/cmd/update.rb:121:in <span class="sb">`</span>each_line<span class="s1">&#39;</span>
-</span><span class='line'><span class="s1">/usr/local/Library/Homebrew/cmd/update.rb:121:in `report&#39;</span>
-</span><span class='line'>/usr/local/Library/Homebrew/cmd/update.rb:35:in <span class="sb">`</span>update<span class="s1">&#39;</span>
-</span><span class='line'><span class="s1">/usr/local/Library/brew.rb:95:in `send&#39;</span>
-</span><span class='line'>/usr/local/Library/brew.rb:95
-</span><span class='line'>
-</span><span class='line'>~/Code/Ruby/apps<span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure>
+<h3>Don&rsquo;t Leave Home Without It</h3>
+
+<p><em>Don&rsquo;t leave home without it</em> was once the catch phrase of a major charge card. Today, many of us leave home with just three things in our pockets:</p>
+
+<ul>
+<li>Wallet</li>
+<li>Keys</li>
+<li>Smartphone</li>
+</ul>
 
 
-<p><code>$ brew update</code> choked. Further, Homebrew said that I should report a bug. But something smelled fishy. I decided to try running Homebrew under Ruby 2.0.0 instead of Ruby 1.9.3, the default on my system. Running <a href="/blog/2013/05/16/upgrading-ruby-with-rvm/">RVM</a> makes bouncing between Ruby versions a snap.</p>
+<p>As near-field communication (or one of its descendants) becomes prevalent, we may only need the smartphone.</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>rvm use 2.0.0
-</span></code></pre></td></tr></table></div></figure>
+<h3>Products Don&rsquo;t Matter Any More?</h3>
 
+<p>Products don&rsquo;t matter any more? I immediately wanted to argue against this idea. Everyone wants quality products, right? The point: As manufacturing techniques become common knowledge, companies need to come up with new ways to differentiate themselves from the competition.</p>
 
-<p>That did the trick. <code>$ brew update</code> worked fine, and <code>$ brew doctor</code>
-confirmed it.</p>
+<p>Connected products are special. For example, consider an ordinary sump pump. How does a buyer distinguish one from another? If one sump pump contains a tiny embedded Linux system with an IP address, it can alert the owner when water has approached a dangerous level, if there is a power outage, or if flood conditions are simply too strong for the pump to handle. Bad news does not get better with time, and if the sump pump can send bad news early, the owners can take corrective action while there&rsquo;s still time to do so.</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>brew update
-</span><span class='line'>Updated Homebrew from 69a83176 to 691c72bf.
-</span><span class='line'>
-</span><span class='line'>…
-</span><span class='line'>
-</span><span class='line'>~<span class="nv">$ </span>brew doctor
-</span><span class='line'>Your system is ready to brew.
-</span></code></pre></td></tr></table></div></figure>
+<h3>Mobile First</h3>
 
+<p>A great quote from the presentation&hellip;</p>
 
-<h3>Back to Git</h3>
+<blockquote><p>Do you know anybody building a product with an LCD on it? Shoot them.  I have an LCD in my pocket. It&rsquo;s called a phone.
+<br/>~Steven Loving</p></blockquote>
 
-<p>Now that the yak is well-shaved, we&rsquo;re ready to upgrade Git.</p>
+<p>In other words, the mobile-first strategy that many developers apply to apps also applies to IoT.</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>brew upgrade <span class="nv">git</span>
-</span><span class='line'><span class="o">==</span>&gt; Upgrading 1 outdated package, with result:
-</span><span class='line'>git 1.8.5.1
-</span><span class='line'><span class="o">==</span>&gt; Upgrading <span class="nv">git</span>
-</span><span class='line'><span class="o">==</span>&gt; Downloading https://downloads.sf.net/project/machomebrew/Bottles/git-1.8.5.1.mountain_lion.bottle.tar.gz
-</span><span class='line'><span class="c">######################################################################## 100.0%</span>
-</span><span class='line'><span class="o">==</span>&gt; Pouring git-1.8.5.1.mountain_lion.bottle.tar.gz
-</span><span class='line'><span class="o">==</span>&gt; Caveats
-</span><span class='line'>The OS X keychain credential helper has been installed to:
-</span><span class='line'>  /usr/local/bin/git-credential-osxkeychain
-</span><span class='line'>
-</span><span class='line'>The <span class="s1">&#39;contrib&#39;</span> directory has been installed to:
-</span><span class='line'>  /usr/local/share/git-core/contrib
-</span><span class='line'>
-</span><span class='line'>Bash completion has been installed to:
-</span><span class='line'>  /usr/local/etc/bash_completion.d
-</span><span class='line'>
-</span><span class='line'>zsh completion has been installed to:
-</span><span class='line'>  /usr/local/share/zsh/site-functions
-</span><span class='line'><span class="o">==</span>&gt; Summary
-</span><span class='line'>  /usr/local/Cellar/git/1.8.5.1: 1333 files, 30M
-</span></code></pre></td></tr></table></div></figure>
+<p>Side note: Clearly, Apple gets it. That&rsquo;s one reason why they released <a href="https://developer.apple.com/homekit/">HomeKit</a>.</p>
+
+<h3>Incumbent Companies Are Scrambling</h3>
+
+<p>Why are cable companies offering security services in addition to standard packages of television and movies? Because users are moving to Netflix and Amazon Prime. Cable companies that offer internet service must come up with other services if they expect to survive. IoT might offer a way. Self-installed home monitoring services will give customers a reason to stick with their old cable provider. Of course, this will force security companies like ADT to come up with something new, too.</p>
+
+<h3>IoT Progression</h3>
+
+<p>What opportunities will become available when every device has an IP
+address? Tuesday&rsquo;s presenter predicts the following sequence of
+events:</p>
+
+<ol>
+<li>Connected products.</li>
+<li>Connected systems &ndash; products talking to other products.</li>
+<li>Communities of systems talking to each other.</li>
+<li>Network effects.</li>
+</ol>
 
 
-<p>Mission accomplished. Git has been upgraded to 1.8.5.</p>
+<p>We&rsquo;re currently experiencing &#35;1 and &#35;2. What will happen as &#35;3 and &#35;4 begin to roll out? We cannot be sure. However, we can be certain that this will be an exciting time for software developers, electrical engineers, and entrepreneurs who build companies in those areas.</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>git --version
-</span><span class='line'>git version 1.8.5.1
-</span><span class='line'>
-</span><span class='line'>~<span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure>
+<h3>Thanks Chicago ACM</h3>
 
-
-<h3>Why This Matters</h3>
-
-<p>I&rsquo;m posting this article as a note to my future self. Error messages sometimes lie. They don&rsquo;t mean to lie, but an error messsage can only give you its best guess based on what it <em>thinks</em> is happening on your system. It&rsquo;s up to the developer to sniff out the rest of the clues.</p>
-
-<p>After decades in this industry, I&rsquo;m still learning this lesson :&ndash;)</p>
+<p>Thanks again Chicago ACM for putting on a great program.</p>
 </div>
 
 
@@ -297,12 +194,12 @@ confirmed it.</p>
   
 
 
-<time datetime="2013-12-06T17:30:00-06:00" pubdate data-updated="true">Dec 6<span>th</span>, 2013</time>
+<time datetime="2014-06-27T18:08:00-05:00" pubdate data-updated="true">Jun 27<span>th</span>, 2014</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/education/'>Education</a>, <a class='category' href='/blog/categories/git/'>Git</a>, <a class='category' href='/blog/categories/ruby/'>Ruby</a>
+    <a class='category' href='/blog/categories/community/'>Community</a>, <a class='category' href='/blog/categories/linux/'>Linux</a>
   
 </span>
 
@@ -311,7 +208,7 @@ confirmed it.</p>
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2013/12/06/homebrew-ruby-and-git/" data-via="" data-counturl="http://RayHightower.com/blog/2013/12/06/homebrew-ruby-and-git/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2014/06/27/internet-of-things-at-acm/" data-via="" data-counturl="http://RayHightower.com/blog/2014/06/27/internet-of-things-at-acm/" >Tweet</a>
   
   
   
@@ -320,10 +217,8 @@ confirmed it.</p>
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/12/02/amazon-guerrilla-marketing/" title="Previous Post: Amazon's Guerrilla Marketing">&laquo; Amazon's Guerrilla Marketing</a>
+        <a class="basic-alignment left" href="/blog/2014/06/16/citizen-science-with-openrov/" title="Previous Post: Citizen Science With OpenROV">&laquo; Citizen Science With OpenROV</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/12/12/high-performance-computing-at-acm/" title="Next Post: High Performance Computing at ACM">High Performance Computing at ACM &raquo;</a>
       
     </p>
   </footer>
@@ -466,8 +361,8 @@ CloudCamp Chicago - Developer Night</a><br/>in Chicago, IL</li>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://RayHightower.com/blog/2013/12/06/homebrew-ruby-and-git/';
-        var disqus_url = 'http://RayHightower.com/blog/2013/12/06/homebrew-ruby-and-git/';
+        var disqus_identifier = 'http://RayHightower.com/blog/2014/06/27/internet-of-things-at-acm/';
+        var disqus_url = 'http://RayHightower.com/blog/2014/06/27/internet-of-things-at-acm/';
         var disqus_script = 'embed.js';
       
     (function () {
