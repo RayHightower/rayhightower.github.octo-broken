@@ -49,7 +49,7 @@ events:
 3. Communities of systems talking to each other.
 4. Network effects.
 
-We're currently experiencing &#35;1 and &#35;2. What will happen as &#35;3 and &#35;4 begin to roll out? We cannot be sure. However, we can be certain that this will be an exciting time for software developers and electrical engineers, and entrepreneurs who build companies in those areas.
+We're currently experiencing &#35;1 and &#35;2. What will happen as &#35;3 and &#35;4 begin to roll out? We cannot be sure. However, we can be certain that this will be an exciting time for software developers, electrical engineers, and entrepreneurs who build companies in those areas.
 
 ###Thanks Chicago ACM
 Thanks again Chicago ACM for putting on a great program.
