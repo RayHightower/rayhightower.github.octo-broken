@@ -32,7 +32,9 @@ A great quote from the presentation...
 >Do you know anybody building a product with an LCD on it? Shoot them.  I have an LCD in my pocket. It's called a phone.
 ><br/>~Steven Loving
 
-In other words, the mobile-first strategy that many developers apply to apps also applies to IoT.  Clearly, Apple gets it. That's one reason why they released [HomeKit](https://developer.apple.com/homekit/).
+In other words, the mobile-first strategy that many developers apply to apps also applies to IoT.  
+
+Side note: Clearly, Apple gets it. That's one reason why they released [HomeKit](https://developer.apple.com/homekit/).
 
 ###Incumbent Companies Are Scrambling
 Why are cable companies offering security services in addition to standard packages of television and movies? Because users are moving to Netflix and Amazon Prime. Cable companies that offer internet service must come up with other services if they expect to survive. IoT might offer a way. Self-installed home monitoring services will give customers a reason to stick with their old cable provider. Of course, this will force security companies like ADT to come up with something new, too.
