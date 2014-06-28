@@ -22,7 +22,7 @@ _Don't leave home without it_ was once the catch phrase of a major charge card. 
 As near-field communication (or one of its descendants) becomes prevalent, we may only need the smartphone. 
 
 ###Products Don't Matter Any More?
-Products don't matter any more? I immediately wanted to argue against this point. Everyone wants quality products, right? The point: As manufacturing techniques become common knowledge, companies need to come up with new ways to differentiate themselves from the competition.
+Products don't matter any more? I immediately wanted to argue against this idea. Everyone wants quality products, right? The point: As manufacturing techniques become common knowledge, companies need to come up with new ways to differentiate themselves from the competition.
 
 Connected products are special. For example, consider an ordinary sump pump. How does a buyer distinguish one from another? If one sump pump contains a tiny embedded Linux system with an IP address, it can alert the owner when water has approached a dangerous level, if there is a power outage, or if flood conditions are simply too strong for the pump to handle. Bad news does not get better with time, and if the sump pump can send bad news early, the owners can take corrective action while there's still time to do so.
 
@@ -51,4 +51,3 @@ Clearly, Apple gets it. That's one reason why they released [HomeKit](https://de
 
 ###Thanks Chicago ACM
 Thanks again Chicago ACM for putting on a great program.
-
