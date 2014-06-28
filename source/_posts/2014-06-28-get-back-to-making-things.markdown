@@ -11,7 +11,9 @@ categories: [ Education, IoT, OpenROV ]
 {% imgcap right /images/zero-to-maker.gif %}
 David Lang is a maker. After a stint with a struggling Silicon Valley startup, David teamed up with former NASA engineer [Eric Stackpole](http://openrov.com/profile/1gupl83kvnk8f) to build an underwater robot called [OpenROV](/blog/2014/06/16/citizen-science-with-openrov/). That's a two-sentence oversimplification of David's maker journey, detailed in his book: [Zero to Maker: Learn (Just Enough) to Make (Just About) Anything](http://shop.oreilly.com/product/0636920028284.do). 
 
-The book starts off like a novel, with the exploration of the mysterious Hall City Cave and an 1840s-era gold robbery. Fast-forward to the present day where a multi-disciplinary team of makers joins together to create an inexpensive vehicle for underwater exploration.
+The book starts off like a novel, with the exploration of the mysterious Hall City Cave and an 1840s-era gold robbery. Fast-forward to the present day where a multi-disciplinary team of makers joins forces to create an inexpensive vehicle for underwater exploration.
+
+The author was not a born maker. But through force of will, discipline, and the right mentorship, he grew from non-maker to co-founder of the OpenROV company in roughly one year. 
 <!--more-->
 ###Making is a Team Sport 
 
