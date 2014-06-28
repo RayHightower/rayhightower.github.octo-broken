@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Education | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/education/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-06-28T14:32:09-05:00</updated>
+  <updated>2014-06-28T17:40:41-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,42 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Get Back to Making Things]]></title>
+    <link href="http://RayHightower.com/blog/2014/06/28/get-back-to-making-things/"/>
+    <updated>2014-06-28T16:25:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/06/28/get-back-to-making-things</id>
+    <content type="html"><![CDATA[<blockquote><p>You know what the trouble is? We used to make things in this country, build things. Now we just put our hand in the next guy’s pocket.
+<br/>~Frank Sobatka</p></blockquote>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/zero-to-maker.gif' width='' height='' alt='' title=''><span class='caption-text'></span></span>
+David Lang is a maker. After a stint with a struggling Silicon Valley startup, David teamed up with former NASA engineer <a href="http://openrov.com/profile/1gupl83kvnk8f">Eric Stackpole</a> to build an underwater robot called <a href="/blog/2014/06/16/citizen-science-with-openrov/">OpenROV</a>. That&rsquo;s a two-sentence oversimplification of David&rsquo;s maker journey, detailed in his book: <a href="http://shop.oreilly.com/product/0636920028284.do">Zero to Maker: Learn (Just Enough) to Make (Just About) Anything</a>.</p>
+
+<p>The book starts off like a novel, with the exploration of the mysterious Hall City Cave and an 1840s-era gold robbery. Fast-forward to the present day where a multi-disciplinary team of makers joins forces to create an inexpensive vehicle for underwater exploration.</p>
+
+<p>The author was not a born maker. But through force of will, discipline, and the right mentorship, he grew from non-maker to co-founder of the OpenROV company in roughly one year.</p>
+
+<!--more-->
+
+
+<h3>Making is a Team Sport</h3>
+
+<p><em>Zero to Maker</em> will not teach you how to use tools, what to make, or what manuals to read. But it will put you on the path to learning. For example, the author shares his first experience at a <a href="http://makerfaire.com/">Maker Faire</a>, a gathering for people who make things. Many of the exhibitors have spent decades honing their skills, while some are brand new and full of enthusiasm. Everyone shares knowledge in the Maker community. And as a result, everyone grows.</p>
+
+<p>Maker Spaces are places where tools and expertise are shared on a regular basis. <a href="https://www.noisebridge.net/">Noisebridge</a> is a maker space in San Francisco where the author got some of his early experience with specialized tools. <a href="http://pumpingstationone.org/">Pumping Station One</a> and <a href="http://www.sshchicago.org/">Southside Hackerspace Chicago</a> shoot for similar goals in Chicago.</p>
+
+<p>The author points out that no matter what you&rsquo;re trying to make, chances are that someone else has made something similar and they can share experience with you. Likewise, you have experience that other makers may find valuable, even on day one of your maker journey. Sometimes we don&rsquo;t know what we know. Maker communities remove the friction so that knowledge can be shared more freely.</p>
+
+<h3>The IKEA Effect</h3>
+
+<p>Why is the maker movement so powerful? The author explores this question in one very interesting section of the book. As it turns out, Researchers at the Harvard Business School think they have the answer. When we put our sweat and effort into building a project, we perceive the project to be more valuable. The researchers refer to this phenomenon as the IKEA effect. If we sweat to build something, it becomes valuable to us.</p>
+
+<h3>Recommendation</h3>
+
+<p>If you are a maker, or if you want to become a maker, this book is worth reading. And once you&rsquo;re done reading, go make something!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to Grow a User Group]]></title>
@@ -399,40 +435,6 @@ end
 
 
 <p>This presentation was delivered at the <a href="http://flourishconf.com/">Flourish 2014</a> conference at the University of Illinois at Chicago. I am grateful to the Flourish organizers and to UIC for inviting me to speak.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Flourish Open Source Conference at UIC]]></title>
-    <link href="http://RayHightower.com/blog/2014/03/31/flourish-open-source-conference-at-uic/"/>
-    <updated>2014-03-31T23:42:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2014/03/31/flourish-open-source-conference-at-uic</id>
-    <content type="html"><![CDATA[<p><a href="http://flourishconf.com">Flourish</a> is an open source conference to be held at the University of Illinois at Chicago on Saturday, April 5, 2014. The conference is run by university students and tickets are free.</p>
-
-<p>Why go to Flourish? Because&hellip;</p>
-
-<!--more-->
-
-
-<ul>
-<li>You like open source.</li>
-<li>You want to know more about open source.</li>
-<li>You want to meet people who are passionate about open source.</li>
-<li>All (or some combination) of the above.</li>
-</ul>
-
-
-<h3>Not Just Software</h3>
-
-<p>Linux may be the best known open source project, but open source is not just about software. At Flourish 2009 a speaker mentioned a funny little circuit board called “Arduino” during one of the presentations. I turned to my neighbor in the audience, and I asked “What’s an Arduino?”</p>
-
-<p>My neighbor pulled an Arduino out of his backpack and showed it to me. Wow. Open source extends to hardware, too! Since then, the Arduino has become part of the <a href="http://www.windycityrails.org/youth/">WindyCityRails Youth Program</a>. Beyond microcontrollers, single-board Linux machines like the <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Raspeberry Pi</a>, <a href="/blog/2014/01/02/beaglebone-black-ubuntu-part-1/">Beaglebone Black</a>, and <a href="/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/">Parallella</a> have joined the open source hardware ranks.</p>
-
-<h3>See You There</h3>
-
-<p>Thank you, Flourish organizers, for inviting me to speak this year. UIC is where I first learned about open source, Linux, and the web. My appreciation for UIC extends beyond my CS degree.</p>
-
-<p>Great things happen when like-minded people come together to exchange ideas. I look forward to seeing you at Flourish 2014!</p>
 ]]></content>
   </entry>
   
