@@ -20,7 +20,11 @@ _Zero to Maker_ will not teach you how to use tools, what to make, or what manua
 
 Maker Spaces are places where tools and expertise are shared on a regular basis. [Noisebridge](https://www.noisebridge.net/) is a maker space in San Francisco where the author got some of his early experience with specialized tools. [Pumping Station One](http://pumpingstationone.org/) and [Southside Hackerspace Chicago](http://www.sshchicago.org/) shoot for similar goals in Chicago. 
 
-No matter what you're trying to make, chances are that someone else has made something similar and they can share experience with you. Likewise, you have experience that other makers may find valuable, even on day one of your maker journey. Sometimes we don't know what we know. Maker communiites remove the friction so that knowledge can be shared more freely.
+The author points out that no matter what you're trying to make, chances are that someone else has made something similar and they can share experience with you. Likewise, you have experience that other makers may find valuable, even on day one of your maker journey. Sometimes we don't know what we know. Maker communiites remove the friction so that knowledge can be shared more freely.
 
-###Buffett's Story About Makers & Spenders
+###The IKEA Effect
+Why is the maker movement so powerful? The author explores this question in one very interesting section of the book. As it turns out, Researchers at the Harvard Business School think they have the answer. When we put our sweat and effort into building a project, we perceive the project to be more valuable. The researchers refer to this phenomenon as the IKEA effect. If we sweat to build something, it becomes valuable to us.
 
+###Recommendation
+If you are a maker, or if you want to become a maker, this book is worth
+reading.
