@@ -26,6 +26,14 @@ Products don't matter any more? I immediately wanted to argue against this idea.
 
 Connected products are special. For example, consider an ordinary sump pump. How does a buyer distinguish one from another? If one sump pump contains a tiny embedded Linux system with an IP address, it can alert the owner when water has approached a dangerous level, if there is a power outage, or if flood conditions are simply too strong for the pump to handle. Bad news does not get better with time, and if the sump pump can send bad news early, the owners can take corrective action while there's still time to do so.
 
+###Mobile First
+A great quote from the presentation...
+
+>Do you know anybody building a product with an LCD on it? Shoot them.  I have an LCD in my pocket. It's called a phone.
+><br/>~Steven Loving
+
+In other words, the mobile-first strategy that many developers apply to apps also applies to IoT.  Clearly, Apple gets it. That's one reason why they released [HomeKit](https://developer.apple.com/homekit/).
+
 ###Incumbent Companies Are Scrambling
 Why are cable companies offering security services in addition to standard packages of television and movies? Because users are moving to Netflix and Amazon Prime. Cable companies that offer internet service must come up with other services if they expect to survive. IoT might offer a way. Self-installed home monitoring services will give customers a reason to stick with their old cable provider. Of course, this will force security companies like ADT to come up with something new, too.
 
@@ -40,14 +48,6 @@ events:
 4. Network effects.
 
 We're currently experiencing &#35;1 and &#35;2. What will happen as &#35;3 and &#35;4 begin to roll out? We cannot be sure. However, we can be certain that this will be an exciting time for software developers and electrical engineers, and entrepreneurs who build companies in those areas.
-
-###How to Benefit from the IoT Trend
-A great quote from the presentation...
-
->Do you know anybody building a product with an LCD on it? Shoot them.  I have an LCD in my pocket. It's called a phone.
-><br/>~Steven Loving
-
-Clearly, Apple gets it. That's one reason why they released [HomeKit](https://developer.apple.com/homekit/).
 
 ###Thanks Chicago ACM
 Thanks again Chicago ACM for putting on a great program.
