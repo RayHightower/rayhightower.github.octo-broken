@@ -27,3 +27,5 @@ Why is the maker movement so powerful? The author explores this question in one 
 
 ###Recommendation
 If you are a maker, or if you want to become a maker, this book is worth reading. And once you're done reading, go make something!
+
+_Note: A version of this article is also posted at [http://www.chicagoruby.org/book-reviews/](http://www.chicagoruby.org/book-reviews/)._
