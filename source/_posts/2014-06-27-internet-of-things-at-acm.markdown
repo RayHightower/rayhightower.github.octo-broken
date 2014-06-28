@@ -17,7 +17,7 @@ _Don't leave home without it_ was once the catch phrase of a major charge card. 
 
 * Wallet
 * Keys
-* Smart phone
+* Smartphone
 
 As near-field communication (or one of its descendants) becomes prevalent, we may only need the smartphone. 
 
