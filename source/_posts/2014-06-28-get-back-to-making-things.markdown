@@ -16,7 +16,11 @@ The book starts off like a novel, with the exploration of the mysterious Hall Ci
 The author was not a born maker. But through force of will, discipline, and the right mentorship, he grew from non-maker to co-founder of the OpenROV company in roughly one year. 
 <!--more-->
 ###Making is a Team Sport 
+_Zero to Maker_ will not teach you how to use tools, what to make, or what manuals to read. But it will put you on the path to learning. For example, the author shares his first experience at a [Maker Faire](http://makerfaire.com/), a gathering for people who make things. Many of the exhibitors have spent decades honing their skills, while some are brand new and full of enthusiasm. Everyone shares knowledge in the Maker community. And as a result, everyone grows.
 
+Maker Spaces are places where tools and expertise are shared on a regular basis. [Noisebridge](https://www.noisebridge.net/) is a maker space in San Francisco where the author got some of his early experience with specialized tools. [Pumping Station One](http://pumpingstationone.org/) and [Southside Hackerspace Chicago](http://www.sshchicago.org/) shoot for similar goals in Chicago. 
+
+No matter what you're trying to make, chances are that someone else has made something similar and they can share experience with you. Likewise, you have experience that other makers may find valuable, even on day one of your maker journey. Sometimes we don't know what we know. Maker communiites remove the friction so that knowledge can be shared more freely.
 
 ###Buffett's Story About Makers & Spenders
 
