@@ -26,5 +26,4 @@ The author points out that no matter what you're trying to make, chances are tha
 Why is the maker movement so powerful? The author explores this question in one very interesting section of the book. As it turns out, Researchers at the Harvard Business School think they have the answer. When we put our sweat and effort into building a project, we perceive the project to be more valuable. The researchers refer to this phenomenon as the IKEA effect. If we sweat to build something, it becomes valuable to us.
 
 ###Recommendation
-If you are a maker, or if you want to become a maker, this book is worth
-reading.
+If you are a maker, or if you want to become a maker, this book is worth reading. And once you're done reading, go make something!
