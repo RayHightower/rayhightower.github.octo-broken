@@ -55,13 +55,13 @@ $
 
 
 ###Next Steps
-Future discussions about Node.js and  OpenROV will consider the following questions.
+Future blog posts about Node.js and OpenROV will consider questions like:
 
+* What does Node.js do for OpenROV that other languages can’t do?
 
-   * What does Node.js do for OpenROV that other languages can’t do?
+* What other languages might we use to control OpenROV? It’s all open source, so our brainstorms could one day turn into actual code running on OpenROV!
 
-   * What other languages might we use to control OpenROV? It’s all open source, so our brainstorms could one day turn into actual code!
-
+* How does Node.js on the BeagleBone Black interact with software running on the Arduino?
 
 Keep exploring!
 
