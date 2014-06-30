@@ -56,6 +56,7 @@ language has to say "Hello, World." Here's how to do that in Node.js.
 
 
 
+Now that you have Node.js running successfully, you're ready to explore the [OpenROV repo on GitHub](http://github.com/openrov).
 
 ###Next Steps
 Future blog posts about Node.js and OpenROV will consider questions like:
@@ -66,8 +67,4 @@ Future blog posts about Node.js and OpenROV will consider questions like:
 
 * How does Node.js on the BeagleBone Black interact with the Arduino and other OpenROV components?
 
-To get a head start, take a look at the [OpenROV repo on
-GitHub](http://github.com/openrov).
-
 Keep exploring!
-
