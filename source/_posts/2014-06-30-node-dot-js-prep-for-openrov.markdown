@@ -14,26 +14,42 @@ You don't need to know Node.js on order to use pilot an OpenROV. And you don't n
 Everything written here applies to Node.js as it runs on Mac OS X. If your local machine runs Linux or Windows, you will need to consult other resources in order to get Node up and running.
 
 ###Homebrew First
-Make sure you’re running Homebrew on your Mac. Homebrew is a very seamless way to manage packages on Mac OS X. To install Homebrew…
+Make sure you’re running [Homebrew](/blog/2014/02/12/homebrew-fundamentals/) on your Mac. Homebrew is a seamless way to manage packages on Mac OS X. To install Homebrew...
 
 ```bash
-
-
+$ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"install
 
 ```
 
-To confirm that Homebrew is running properly…
-
+After installation, confirm that Homebrew is running properly...
 
 ```bash
 $ brew doctor
 
 ```
 
-
-
 ###Installing Node.js
-Now that Homebrew is installed and running.
+Now that Homebrew is installed and running, Node.js can be installed with a single line command.
+
+```bash
+$ brew install node
+
+```
+
+To confirm that Node.js is installed on your system, and to check the version number...
+
+```bash
+$  which node
+/usr/local/bin/node
+
+$ node --version
+v0.10.26
+
+$ 
+```
+
+###Hello World in Node.js
+
 
 
 
