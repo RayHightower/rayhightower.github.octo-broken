@@ -3,7 +3,7 @@ layout: post
 title: "Node.js Prep for OpenROV"
 date: 2014-06-30 14:06
 comments: true
-categories: [ IoT, Node&#46;js, OpenROV ]
+categories: [ IoT, Node, OpenROV ]
 ---
 {% imgcap right /images/nodejs-white.png %}
 [OpenROV is an underwater robot](/blog/2014/06/16/citizen-science-with-openrov/) controlled through a web browser. The server-side of the web app is written in Node.js, running on a [BeagleBone Black](/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/) inside the OpenROV. 
