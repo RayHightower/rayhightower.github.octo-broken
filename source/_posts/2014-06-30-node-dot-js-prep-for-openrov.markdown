@@ -36,7 +36,7 @@ $ brew install node
 
 ```
 
-To confirm that Node.js is installed on your system, and to check the version number...
+To confirm that Node.js is installed on your system and to check the version number...
 
 ```bash
 $  which node
