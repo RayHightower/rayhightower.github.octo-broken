@@ -77,7 +77,7 @@ Finally, open up a web browser on your local machine and navigate to [http://127
 
 {% imgcap center /images/openrov-runs-nodejs.png %}
 
-Now that you have Node.js running successfully, you're ready to explore the [OpenROV repo on GitHub](http://github.com/openrov).
+Now that you have Node.js running locally, you're ready to explore the [OpenROV repo on GitHub](http://github.com/openrov).
 
 ###Next Steps
 Future blog posts about Node.js and OpenROV will consider questions like:
