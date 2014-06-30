@@ -51,7 +51,7 @@ $
 ###Hello World in Node.js
 You know the compter science tradition: The first program in any new language has to say "Hello, World." Here's a sample `Hello World` program from the official [Node.js](http://nodejs.org) web site, slightly modified to suit OpenROV.
 
-```nodejs
+```ruby
 // Sample web server from http://nodejs.org, slightly modified.
 
 var http = require('http');
