@@ -49,7 +49,7 @@ $
 ```
 
 ###Hello World in Node.js
-You know the compter science tradition: The first program in any new language has to say "Hello, World." Here's a sample `Hello World` program from the official [Node.js](http://nodejs.org) web site, slightly modified to suit OpenROV.
+You know the compter science tradition: The first program in any new language has to say "Hello World." Here's a sample `Hello World` program from the official [Node.js](http://nodejs.org) web site, slightly modified to suit OpenROV.
 
 First, create a file called `helloworld.js` and fill it with the following code.
 
@@ -64,7 +64,7 @@ http.createServer(function (req, res) {
 console.log('Server running at http://127.0.0.1:1337/');
 ```
 
-Next, from the directory where `helloworld.js` is located, run the file from the command line like so...
+Next, from the same directory where you saved `helloworld.js`, run the file from the command line like so...
 
 ```bash
 $ node helloworld.js
