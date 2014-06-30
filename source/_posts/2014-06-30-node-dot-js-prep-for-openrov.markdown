@@ -64,7 +64,7 @@ Future blog posts about Node.js and OpenROV will consider questions like:
 
 * What other languages might we use to control OpenROV? It’s all open source, so our brainstorms could one day turn into actual code running on OpenROV!
 
-* How does Node.js on the BeagleBone Black interact with software running on the Arduino?
+* How does Node.js on the BeagleBone Black interact with the Arduino and other OpenROV components?
 
 To get a head start, take a look at the [OpenROV repo on
 GitHub](http://github.com/openrov).
