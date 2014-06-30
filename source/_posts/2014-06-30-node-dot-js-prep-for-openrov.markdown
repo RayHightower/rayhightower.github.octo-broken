@@ -73,7 +73,7 @@ Server running at http://127.0.0.1:1337/
 $ 
 ```
 
-Finally, open up a web browser on your local machine and navigate to [http://127.0.0.1:1337/](http://Server running at http://127.0.0.1:1337/). You should see a page similar to this one.
+Finally, open up a web browser on your local machine and navigate to [http://127.0.0.1:1337/](http://Server running at http://127.0.0.1:1337/). You should see a bare-bones web page similar to this one.
 
 {% imgcap center /images/openrov-runs-nodejs.png Node.js running locally. %}
 
