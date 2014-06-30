@@ -75,7 +75,7 @@ $
 
 Finally, open up a web browser on your local machine and navigate to [http://127.0.0.1:1337/](http://Server running at http://127.0.0.1:1337/). You should see a page similar to this one.
 
-{% imgcap center /images/nodejs-running-locally.png Node.js running locally. %}
+{% imgcap center /images/openrov-runs-nodejs.png Node.js running locally. %}
 
 Now that you have Node.js running successfully, you're ready to explore the [OpenROV repo on GitHub](http://github.com/openrov).
 
