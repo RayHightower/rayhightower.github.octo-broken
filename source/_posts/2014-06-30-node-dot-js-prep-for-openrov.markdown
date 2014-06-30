@@ -11,7 +11,7 @@ categories: [ IoT, Node.js, OpenROV ]
 You don't need to know Node.js in order to pilot an OpenROV. And you don't need to do anything in this article to construct an OpenROV from a kit. But if you’re the kind of maker who likes to dig deep into a project, you might enjoy exploring Node.js.
 <!--more-->
 ###Mac OS X and Node.js
-Everything written here applies to Node.js as it runs on Mac OS X. If your local machine runs Linux or Windows, you will need to consult other resources in order to get Node up and running.
+Everything written here applies to Node.js as it runs on Mac OS X. If your local machine runs Linux or Windows, you will need to consult other resources in order to run Node locally.
 
 ###Homebrew First
 Make sure you’re running [Homebrew](/blog/2014/02/12/homebrew-fundamentals/) on your Mac. Homebrew is a seamless way to manage packages on Mac OS X. To install Homebrew...
