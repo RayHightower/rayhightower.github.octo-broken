@@ -5,11 +5,9 @@ date: 2014-06-30 14:06
 comments: true
 categories: [ IoT, Node.js, OpenROV ]
 ---
-
 {% imgcap right /images/nodejs-white.png %}
 OpenROV is an underwater robot controlled through a web browser. The server-side of the web app is written in Node.js, and it runs on a BeagleBone Black inside of the OpenROV. You don't need to know Node.js on order to use pilot an OpenROV. But if you’re the type of maker who likes to dig deep, deep, deeper in what you are making, you might want to explore Node.js.
-< more >
-
+<!--more-->
 ###Mac OS X and Node.js
 Everything written here applies to Node.js as it runs on Mac OS X. If you run Linux or Windows, you will need to consult other resources in order to get Node up and running on your machine.
 
