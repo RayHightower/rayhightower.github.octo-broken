@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>GitHub Page Build Warning - New CDN - RayHightower.com</title>
+  <title>Building iOS Apps With RubyMotion - RayHightower.com</title>
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="The RayHightower.com blog is built on Octopress and hosted on GitHub Pages. Recently, after I deployed a site update, GitHub emailed me a Page build &hellip;">
+  <meta name="description" content="Special thanks to the organizers of MagicRuby and Aloha Ruby for inviting me to present RubyMotion at their respective conferences. Confreaks &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://RayHightower.com/blog/2014/05/31/github-page-build-warning-new-cdn">
+  <link rel="canonical" href="http://RayHightower.com/blog/2012/10/29/building-ios-apps-with-ruby-motion">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="RayHightower.com" type="application/atom+xml">
@@ -85,7 +85,7 @@
   
   <header>
     
-      <h1 class="entry-title">GitHub Page Build Warning - New CDN</h1>
+      <h1 class="entry-title">Building iOS Apps With RubyMotion</h1>
     
     
       <p class="meta">
@@ -101,81 +101,32 @@
   
 
 
-<time datetime="2014-05-31T13:44:00-05:00" pubdate data-updated="true">May 31<span>st</span>, 2014</time>
+<time datetime="2012-10-29T18:49:00-05:00" pubdate data-updated="true">Oct 29<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>The <code>RayHightower.com</code> blog is built on <a href="http://octopress.org/">Octopress</a> and hosted on <a href="https://pages.github.com/">GitHub Pages</a>. Recently, after I deployed a site update, GitHub emailed me a <code>Page build warning</code> message. Since this was <em>just a warning</em>, I ignored it while I attacked more pressing tasks (not always a good idea).</p>
+<div class="entry-content"><p>Special thanks to the organizers of <a href="http://magic-ruby.com/">MagicRuby</a> and <a href="http://aloharubyconf.com/">Aloha Ruby</a> for inviting me to present RubyMotion at their respective conferences. <a href="http://confreaks.com/videos/1245-aloharuby2012-building-ios-apps-with-rubymotion">Confreaks</a> recorded video at the Aloha Ruby event.</p>
 
-<p>Today I finally took the time to research the topic so I could figure out what to do next. This article is the result of that research.</p>
+<center>
+<iframe name="rubymotionaloha" width="560" height="315" src="http://www.youtube.com/embed/3gCsen5Zs4s" frameborder="0" allowfullscreen></iframe>
+</center>
+
+
+<p>The fizzbuzz sample code can be found on <a href="https://github.com/RayHightower/fizzbuzzrm">GitHub</a>. Slides are on <a href="https://speakerdeck.com/rayhightower/building-ios-apps-with-rubymotion">SpeakerDeck</a>.</p>
+
+<p>Should you use RubyMotion or Objective-C for iOS development? That depends&hellip;</p>
 
 <!--more-->
 
 
-<h2>What the Message Means</h2>
+<p>If your team is currently building web apps, and they happen to be Ruby-focused, then RubyMotion will enable you to create a <a href="http://rayhightower.com/blog/2012/08/31/four-steps-five-minutes/">minimum viable product (MVP)</a> using skills that you already have in-house. However, if your team is currently Objective-C focused, it may be easier for you to build your MVP in Objective-C.</p>
 
-<p>Here are the important points of the of the <code>Page build warning</code> message:</p>
+<p>Keep in mind that I am Ruby-biased, so I see advantages on the RubyMotion side of the question. Building the web <em>and</em> mobile pieces of an app in the same language means that expertise can be readily shared throughout the team. Shared expertise makes the team stronger.</p>
 
-<ul>
-<li>GitHub introduced a <a href="http://en.wikipedia.org/wiki/Content_delivery_network">content delivery network (CDN)</a> for faster page loads and protection against <a href="http://en.wikipedia.org/wiki/Denial-of-service_attack">denial of sevice (DOS)</a> attacks.</li>
-<li>If you do nothing to your GitHub Pages site, your pages will continue to load normally. People who visit your site will see no difference.</li>
-<li>If you want the benefits of the CDN, follow the instructions given in GitHub&rsquo;s blog articles.</li>
-</ul>
-
-
-<h3>The Original Message</h3>
-
-<p>Here’s the original message. If you’re satisfied with the above translation, you can skip this section.</p>
-
-<blockquote><p>The page build completed successfully, but returned the following warning:</p>
-
-<p>GitHub Pages recently underwent some improvements (<a href="https://github.com/blog/1715-faster-more-awesome-github-pages">https://github.com/blog/1715-faster-more-awesome-github-pages</a>) to make your site faster and more awesome, but we&rsquo;ve noticed that rayhightower.com isn&rsquo;t properly configured to take advantage of these new features. While your site will continue to work just fine, updating your domain&rsquo;s configuration offers some additional speed and performance benefits. Instructions on updating your site&rsquo;s IP address can be found at <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,">https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,</a> and of course, you can always get in touch with a human at <a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#111;&#x3a;&#115;&#x75;&#112;&#112;&#x6f;&#x72;&#x74;&#x40;&#103;&#x69;&#x74;&#x68;&#117;&#98;&#x2e;&#x63;&#x6f;&#x6d;&#x2e;">&#x73;&#x75;&#x70;&#x70;&#x6f;&#x72;&#x74;&#64;&#103;&#x69;&#x74;&#x68;&#117;&#98;&#46;&#99;&#x6f;&#x6d;&#x2e;</a> For the more technical minded folks who want to skip the help docs: your site&rsquo;s DNS records are pointed to a deprecated IP address.</p>
-
-<p>For information on troubleshooting Jekyll see:</p>
-
-<p> <a href="https://help.github.com/articles/using-jekyll-with-pages#troubleshooting">https://help.github.com/articles/using-jekyll-with-pages#troubleshooting</a></p>
-
-<p>If you have any questions please contact us at <a href="https://github.com/contact.">https://github.com/contact.</a></p></blockquote>
-
-<h3>First: Check the CNAME File</h3>
-
-<p>Since <code>RayHightower.com</code> was configured for Octopress a few years ago, it already had a <code>source/CNAME</code> file. To check the contents:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>cat <span class="nb">source</span>/CNAME
-</span><span class='line'>rayhightower.com
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The <code>CNAME</code> file looks fine, according to the GitHub&rsquo;s blog. Time for the next step.</p>
-
-<h3>Next: Domain Records</h3>
-
-<p>The domain is registered with <a href="http://dnsimple.com">DNSimple</a>, so the process was relatively quick.</p>
-
-<ol>
-<li>Go into DNSimple&rsquo;s advanced editor for the domain.</li>
-<li>Click <code>Add a Record</code> and select <code>ALIAS</code>.</li>
-<li>Leave <code>Name</code> blank.</li>
-<li>Next to <code>Alias for</code> enter the GitHub Pages endpoint. In my case, the endpoint is <code>rayhightower.github.io</code>.</li>
-</ol>
-
-
-<p>More information on <a href="http://support.dnsimple.com/articles/github-pages/">GitHub Pages and DNSimple</a>.</p>
-
-<p>I set TTL to 1 minute to encourage the changes to propagate quickly. If you know of a better configuration choice for TTL, please let me know in the comments below.</p>
-
-<h3>Expect Propagation Delays</h3>
-
-<p>DNS changes can take up to a day to propagate. Delays tend to be shorter with DNSimple because time-to-live (TTL) can be set as low as one minute for some records. Updates will be posted here as I learn more.</p>
+<p>Thanks again to MagicRuby and Aloha Ruby for asking me to speak, and to Confreaks for recording the talk.</p>
 </div>
 
 
@@ -198,12 +149,12 @@
   
 
 
-<time datetime="2014-05-31T13:44:00-05:00" pubdate data-updated="true">May 31<span>st</span>, 2014</time>
+<time datetime="2012-10-29T18:49:00-05:00" pubdate data-updated="true">Oct 29<span>th</span>, 2012</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/git/'>Git</a>
+    <a class='category' href='/blog/categories/ruby/'>Ruby</a>, <a class='category' href='/blog/categories/rubymotion/'>RubyMotion</a>, <a class='category' href='/blog/categories/ios/'>iOS</a>
   
 </span>
 
@@ -212,7 +163,7 @@
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2014/05/31/github-page-build-warning-new-cdn/" data-via="" data-counturl="http://RayHightower.com/blog/2014/05/31/github-page-build-warning-new-cdn/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2012/10/29/building-ios-apps-with-ruby-motion/" data-via="" data-counturl="http://RayHightower.com/blog/2012/10/29/building-ios-apps-with-ruby-motion/" >Tweet</a>
   
   
   
@@ -221,10 +172,10 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2014/05/30/how-to-grow-a-user-group/" title="Previous Post: How to Grow a User Group">&laquo; How to Grow a User Group</a>
+        <a class="basic-alignment left" href="/blog/2012/10/18/using-rubymotion-with-interface-builder/" title="Previous Post: Using RubyMotion With Xcode's Interface Builder">&laquo; Using RubyMotion With Xcode's Interface Builder</a>
       
       
-        <a class="basic-alignment right" href="/blog/2014/06/16/citizen-science-with-openrov/" title="Next Post: Citizen Science With OpenROV">Citizen Science With OpenROV &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2012/11/10/make-your-competition-irrelevant/" title="Next Post: Make Your Competition Irrelevant">Make Your Competition Irrelevant &raquo;</a>
       
     </p>
   </footer>
@@ -370,8 +321,8 @@ CloudCamp Chicago - Developer Night</a><br/>in Chicago, IL</li>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://RayHightower.com/blog/2014/05/31/github-page-build-warning-new-cdn/';
-        var disqus_url = 'http://RayHightower.com/blog/2014/05/31/github-page-build-warning-new-cdn/';
+        var disqus_identifier = 'http://RayHightower.com/blog/2012/10/29/building-ios-apps-with-ruby-motion/';
+        var disqus_url = 'http://RayHightower.com/blog/2012/10/29/building-ios-apps-with-ruby-motion/';
         var disqus_script = 'embed.js';
       
     (function () {
