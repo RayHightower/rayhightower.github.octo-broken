@@ -6,7 +6,7 @@ comments: true
 categories: [ IoT, Node.js, OpenROV ]
 ---
 {% imgcap right /images/nodejs-white.png %}
-[OpenROV is an underwater robot](/blog/2014/06/16/citizen-science-with-openrov/) controlled through a web browser. The server-side of the web app is written in Node.js, and it runs on a BeagleBone Black inside the OpenROV. 
+[OpenROV is an underwater robot](/blog/2014/06/16/citizen-science-with-openrov/) controlled through a web browser. The server-side of the web app is written in Node.js, running on a BeagleBone Black inside the OpenROV. 
 
 You don't need to know Node.js on order to use pilot an OpenROV. And you don't need to do anything in this article to make your OpenROV work. But if you’re the kind of maker who likes to dig deep into a project, you might want to explore Node.js.
 <!--more-->
@@ -49,6 +49,9 @@ $
 ```
 
 ###Hello World in Node.js
+You know the compter science tradition: The first program in any new
+language has to say "Hello, World." Here's how to do that in Node.js.
+
 
 
 
@@ -62,6 +65,9 @@ Future blog posts about Node.js and OpenROV will consider questions like:
 * What other languages might we use to control OpenROV? It’s all open source, so our brainstorms could one day turn into actual code running on OpenROV!
 
 * How does Node.js on the BeagleBone Black interact with software running on the Arduino?
+
+To get a head start, take a look at the [OpenROV repo on
+GitHub](http://github.com/openrov).
 
 Keep exploring!
 
