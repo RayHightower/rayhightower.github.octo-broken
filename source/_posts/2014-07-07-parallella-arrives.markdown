@@ -6,7 +6,7 @@ comments: true
 categories: [ IoT, Parallella ]
 ---
 {% imgcap center /images/parallella_screenshot.png Parallella screenshot. %}
-A brand new 18-core (16-core [FPGA](http://en.wikipedia.org/wiki/Field-programmable_gate_array) plus 2-core [ARM](http://arm.com/)) Parallella computer arrived at WisdomGroup this weekend. The devices are in demand and supplies are short. We waited over a year for this one. As of this writing the devices are sold out again!
+A brand new Parallella parallel computer arrived at WisdomGroup this weekend. The devices are in demand and supplies are short. We waited over a year for this one. As of this writing the devices are sold out again!
 
 Why is there so much demand for a tiny parallel computer? Is it the price ($119.00), the performance, or the novelty?
 <!--more-->
@@ -19,4 +19,4 @@ Parallella is a parallel computer that fits in the palm of your hand.  [Adapteva
 
 
 
-
+18-core (16-core [FPGA](http://en.wikipedia.org/wiki/Field-programmable_gate_array) plus 2-core [ARM](http://arm.com/))
