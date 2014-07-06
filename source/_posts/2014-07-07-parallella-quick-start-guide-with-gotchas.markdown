@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Parallella Quick Start Guide"
+title: "Parallella Quick Start Guide (with gotchas)"
 date: 2014-07-07 13:31
 comments: true
 categories: [ IoT, Parallella ]
