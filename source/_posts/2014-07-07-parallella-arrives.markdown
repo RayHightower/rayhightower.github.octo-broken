@@ -11,8 +11,7 @@ A brand new 18-core (16-core FPGA plus 2-core ARM) Parallella computer arrived a
 Why is there so much demand for a tiny parallel computer? Is it the price ($119.00), the performance, or the novelty?
 <!--more-->
 ###What is Parallella?
-Parallella is a parallel computer that fits in the palm of your hand.
-Adapteva](http://adapteva.com), the manufacturer, sells two versions:
+Parallella is a parallel computer that fits in the palm of your hand.  [Adapteva](http://adapteva.com), the manufacturer, sells two versions:
 
 * A 16-FPGA model with a 2-core ARM chip.
 * A 64-FPGA model with a 2-core ARM chip.
