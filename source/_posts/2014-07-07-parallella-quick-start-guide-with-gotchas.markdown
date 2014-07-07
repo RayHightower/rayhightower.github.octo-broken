@@ -95,7 +95,7 @@ $
 
 ```
 
-As you can see from the report, it took 3363.824531 seconds (just over 56 minutes) for `dd` to write the SD card in my machine. That's a long time to wait with zero feedback. Activity Monitor will tell you what's going on.
+As you can see from the report, it took 3363.824531 seconds (just over 56 minutes) for `dd` to burn the Ubuntu image onto the SD card. That's a long time to wait with zero feedback. Activity Monitor will tell you what's going on.
 
 ###Confirm Partitions
 To confirm that the partitions have been created and that Ubuntu has been written to the SD card, use `diskutil list` again.
