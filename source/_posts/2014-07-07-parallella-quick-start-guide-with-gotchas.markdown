@@ -140,7 +140,7 @@ drwxrwxrwx@ 1 rth   staff   512 Jul  5 23:44 .Trashes
 -rwxrwxrwx  1 rth   staff  4096 Jul  5 23:44 ._.Trashes
 drwxrwxrwx  1 rth   staff   512 Jul  5 23:44 .fseventsd
 
-/Volumes/BOOT$
+/Volumes/BOOT$ 
 ```
 
 ###Gotcha #1: The FPGA Bitstream File
