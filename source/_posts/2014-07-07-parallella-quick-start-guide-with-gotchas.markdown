@@ -7,7 +7,7 @@ categories: [ IoT, Parallella ]
 ---
 {% imgcap center /images/parallella_screenshot.png Parallella screenshot, 1080p. %}
 
-Today’s fastest laptops have four processors working together to power through applications. Parallella has _eighteen_ processors (2 ARM plus 16 FPGA).  Parallella is a single-board parallel computer roughly the size of a deck of cards, like a [Raspberry Pi](/blog/2012/12/03/ruby-on-raspberry-pi/) or [Beaglebone Black](/blog/2014/01/02/beaglebone-black-ubuntu-part-1/). Parallella devices are in demand and supplies are short. WisdomGroup waited over a year for our unit. As of this writing the devices are sold out again!
+Today’s fastest laptops have four processors working together to power through applications. Parallella has _eighteen_ processors (2 ARM plus 16 FPGA).  Parallella is a single-board parallel computer roughly the size of a deck of cards, like a [Raspberry Pi](/blog/2012/12/03/ruby-on-raspberry-pi/) or [Beaglebone Black](/blog/2014/01/02/beaglebone-black-ubuntu-part-1/). Parallella devices are in demand. WisdomGroup waited over a year for our unit. And as of this writing the devices are sold out again!
 
 Everything in this post is based on the [official quick start guide created by Parallella](http://www.parallella.org/quick-start/). I ran into some _gotchas_ during my first Parallella experience. The snags (and solutions) are documented here.
 <!--more-->
