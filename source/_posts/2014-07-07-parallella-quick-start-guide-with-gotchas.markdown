@@ -47,7 +47,7 @@ Unzip the files and place them in a directory that's handy. You'll need them for
 Note: You might need different files depending on the current date (Parallella software is in a rapid state of flux) and your exact equipment. If your configuration is different, you can make the adjustments described in Parallella's official guide.
 
 ###Burn the SD Card
-Insert your SD card into your Mac's SD card reader, and use the Mac OS X `diskutil list` command to determine the designation of the SD card. If you use portable hard drives with your primary machine, the SD card designation could change from time to time, so it's important to perform this step each each time you burn a card.
+Insert your SD card into your Mac's SD card reader, and use the Mac OS X `diskutil list` command to determine the designation of the SD card. If you use portable hard drives with your primary machine, the SD card designation could change from time to time, so it's important to perform this step each time you burn a card.
 
 ```bash
 $ diskutil list
@@ -80,9 +80,9 @@ An important note about block size: The Mac section of the official Parallella g
 
 ###Checking dd Progress
 {% imgcap right /images/dd_progress.png Activity Monitor %}
-Waiting an hour for the `dd` command to run can be disconcerting because the machine does not give any feedback on progress. No gas guage, spinning indicator, nothing. How do we know if the write process is working?
+Waiting an hour for the `dd` command to run can be disconcerting because the machine does not give any feedback on progress. No gas gauge, spinning indicator, nothing. How do we know if the write process is working?
 
-Here's how to check progress. Run Apple's `Activity Monitor`, and look for `dd` on the list of processes (see diagram). The number of bytes written will increase slowly while `dd` burns the Ununtu image onto the SD card. With the current version of Ubuntu, roughly 7.4GB will be written to the SD. At completion, `dd` will disappear from the Activity Monitor list and you'll see the following at the command line.
+Here's how to check progress. Run Apple's `Activity Monitor`, and look for `dd` on the list of processes (see diagram). The number of bytes written will increase slowly while `dd` burns the Ubuntu image onto the SD card. With the current version of Ubuntu, roughly 7.4GB will be written to the SD. At completion, `dd` will disappear from the Activity Monitor list and you'll see the following at the command line.
 
 ```bash
 $ sudo dd if=ubuntu-14.04-140611.img of=/dev/disk1 bs=64k
