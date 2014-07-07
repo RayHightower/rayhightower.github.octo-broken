@@ -22,10 +22,10 @@ How does the Parallella compare with other single-board computers, like the [Ras
 Of course, the Parallella runs hotter because it has more processing power packed tightly together in limited space. Since Parallella is designed to run tasks in parallell, we can expect certain programs to perform faster than they would on the Pi or 'Bone. Future posts will cover performance comparisons. Now, let’s get started with Parallella.
 
 ###Get the Parallella Kit
-Adapteva sells an accesssories kit containing an SD card, power adapter, and USB-to-micro-USB adapter. Unless you already have these items, it may save you time to buy the kit.
+Adapteva sells an accesssories kit containing an SD card, power adapter, and USB-to-micro-USB adapter. Unless you already have these items, buying the kit may save you time.
 
 ###Getting the Parallella OS
-Burning the SD card takes a long time, so it makes sense to start that process first.
+Parallella runs a customized version of Ubuntu from a micro-SD card.Burning the SD card takes a long time, so it makes sense to start that process first.
 
 Download the files that you will need to burn onto the SD card. I'm running Mac OS X on my primary machine, and I'm configuring a Parallella-16 with a Zynq 7010 and an HDMI display. Therefore, the files needed for this configuration are:
 
@@ -33,7 +33,7 @@ Download the files that you will need to burn onto the SD card. I'm running Mac 
 * [Linux kernel with HDMI support](http://downloads.parallella.org/boot/linux/kernel-hdmi-default.tgz)
 * [Parallella-16 Zynq 7010 with HDMI display](https://github.com/parallella/parallella-hw/blob/master/fpga/bitstreams/parallella_e16_hdmi_gpiose_7010.bit.bin?raw=true)
 
-Note: The files you need may differ depending on the the date (software always gets better over time, right?) and your exact equipment. If your configuration is different, you can make the adjustments described in the Parallella's offical quick start guide.
+Note: You might need different files depending on the the date (software always gets better over time, right?) and your exact equipment. If your configuration is different, you can make the adjustments described in the Parallella's offical quick start guide.
 
 ###Burn the SD Card
 Make sure you're using an SD card of 16GB or larger. 
@@ -56,17 +56,25 @@ $ diskutil list
 $ 
 ```
 
-From this `diskutil` report, we can see that we want to burn the SD image to `dev/disk1`. The other device is the hard drive for my primary machine. Burning the wrong device means destroying data. Please double-check everything, especially target devices for disk write operations.
+From this `diskutil` report, we can see that we want to burn the SD image to `dev/disk1`. The other device is the hard drive for my primary machine. Burning the wrong device means destroying data. 
 
-Writing to the SD card took almost an hour on my machine. YMMV.
+To burn the SD card, use the `dd` command as follows...
 
-When you're done writing to the SD card, use `diskutil` again to see
-what the partitions look like.
+```bash
+$ sudo dd if=ubuntu-14.04-140611.img of=/dev/disk1 bs=64k
+Password:
+```
+ 
+The first thing you should know about this command: It takes a long time
+to run. It ran for 55 minutes on my machine.
 
-###Checking Progress
-Waiting an hour for the `dd` command to run can be nerve-wracking because the machine does not give any feedback on progress. No gas guage, spinning indicator, nothing. How can you find out whether the write process is moving along?
+The second thing you should know about `dd`: The Macintosh section of the official Parallella recommend a block size of size of 1 megabyte, while the Linux instructions recommend a 64 kilobyte block size (the option `bs=64k` in the `dd` command). I initially used `bs=1m` on my Mac, and I ran into problems. When I used `bs=64k`, everything worked fine. Note that I eventually traced my problem to something other than block size (details below) but since the 64k setting still works, I've left it intact. If I find out why Linux and OS X are using different settings, I'll post the information here.
 
-Here's how to check progress. Run Apple's `Activity Monitor`, and look for `dd` on the list of processes. The number of bytes written will increase slowly while `dd` writes to the SD card. Roughly 7.4GB will be written to the SD. When the process is done, `dd` will disappear from the list and you'll see the following at the command line.
+###Checking dd Progress
+{% imgcap right /images/dd_progress.png Activity Monitor %}
+Waiting an hour for the `dd` command to run can be disconcerting because the machine does not give any feedback on progress. No gas guage, spinning indicator, nothing. How can you find out whether the write process is moving along?
+
+Here's how to check progress. Run Apple's `Activity Monitor`, and look for `dd` on the list of processes (see diagram). The number of bytes written will increase slowly while `dd` writes to the SD card. With the current version of Ubuntu, roughly 7.4GB will be written to the SD. When the process is done, `dd` will disappear from the Activity Monitor list and you'll see the following at the command line.
 
 ```bash
 $ sudo dd if=ubuntu-14.04-140611.img of=/dev/disk1 bs=64k
@@ -79,7 +87,8 @@ $
 
 ```
 
-To confirm that the partitions have been created and that Ubuntu has been written to the SD card...
+###Confirm Partitions
+To confirm that the partitions have been created and that Ubuntu has been written to the SD card, use `diskutil list` again.
 
 ```bash
 $ diskutil list
@@ -99,11 +108,15 @@ $
 ```
 
 As expected, /dev/disk0 remains unchanged. We want it that way because
-that's where the operating system and all applications reside.
-`/dev/disk1` is the target disk we're after.
+that's where our primary machine's operating system resides. `/dev/disk1` (your actual SD card designation may be different) is the target disk we're after.
 
 
-###Out-Takes
+
+
+
+
+
+##Out-Takes
 A brand new Parallella parallel computer arrived at WisdomGroup this weekend. The devices are in demand and supplies are short. We waited over a year for this one. As of this writing the devices are sold out again!
 
 Why is there so much demand for a tiny parallel computer? Is it the price ($119.00), the performance, or the novelty?
