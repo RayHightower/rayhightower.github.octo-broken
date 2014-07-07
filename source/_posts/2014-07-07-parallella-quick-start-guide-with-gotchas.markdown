@@ -18,7 +18,7 @@ The most obvious difference: Parallella runs hot! So hot, in fact, that the unit
 Of course, the Parallella runs hotter because it has more processing power packed tightly together in limited space. Future posts will cover performance comparisons. Now, let’s get started with Parallella.
 
 ###Get the Parallella Kit
-[Adapteva](http://adapteva.com), maker of Parallella, sells an accesssories kit containing an SD card, power adapter, and USB-to-micro-USB adapter. Unless you already have these items, it may save you time to just buy the kit.
+[Adapteva](http://adapteva.com), maker of Parallella, sells an accesssories kit containing an SD card, power adapter, and USB-to-micro-USB adapter. Unless you already have these items, it may save you time to buy the kit.
 
 ###Start With the SD Card
 Burning the SD card takes a long time, so it makes sense to start that process first.
