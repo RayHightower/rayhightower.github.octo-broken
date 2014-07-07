@@ -17,7 +17,7 @@ You will need the following items in order to burn an SD card for your
 Parallella:
 
 * Micro-SD card, 16GB or greater.
-* Desktop or laptop computer with a micro-SD card reader, or an SD-card reader with a micro adapter.
+* Desktop or laptop computer with a micro-SD card reader, or an SD-card reader with a micro adapter. These instructions are tailored for a Mac. A Linux or Windows machine will work with minor modifications in the procedure.
 * High-speed internet connection, for downloading Parallella's Ubuntu
 image and related files.
 * Micro-USB-to-USB adapter, for the keyboard and mouse. Parallella is equipped with two micro-USB ports.
