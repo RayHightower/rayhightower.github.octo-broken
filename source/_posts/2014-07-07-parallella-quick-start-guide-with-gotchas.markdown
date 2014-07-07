@@ -23,13 +23,13 @@ Of course, the Parallella runs hotter because it has more processing power packe
 ###Start With the SD Card
 Burning the SD card takes a long time, so it makes sense to start that process first.
 
-First, download the files that you will need to burn onto the SD card.  I'm running Mac OS X on my primary machine, and my configuring a Parallella-16 with a Zynq 7010 and an HDMI display. Therefore, the files needed for this configuration are:
+Download the files that you will need to burn onto the SD card. I'm running Mac OS X on my primary machine, and I'm configuring a Parallella-16 with a Zynq 7010 and an HDMI display. Therefore, the files needed for this configuration are:
 
 * [Ubuntu 14.04 for Parallella](http://downloads.parallella.org/ubuntu/dists/trusty/image/ubuntu-14.04-140611.img.gz) (released June 11, 2014)
 * [Linux kernel with HDMI support](http://downloads.parallella.org/boot/linux/kernel-hdmi-default.tgz)
 * [Parallella-16 Zynq 7010 with HDMI display](https://github.com/parallella/parallella-hw/blob/master/fpga/bitstreams/parallella_e16_hdmi_gpiose_7010.bit.bin?raw=true)
 
-Note: The files you need may change depending on the the date (software always gets better over time, right?) and your exact equipment. If your configuration is different, you can make the adjustments described in the offical quick start guide.
+Note: The files you need may differ depending on the the date (software always gets better over time, right?) and your exact equipment. If your configuration is different, you can make the adjustments described in the Parallella's offical quick start guide.
 
 ###Back Everything Up
 While you're waiting for the files to download, it may make sense to [backup your machine](/sudo-disclaimer/). Technology changes rapidly, and everything you read here could change by the time you read it.
@@ -37,8 +37,24 @@ While you're waiting for the files to download, it may make sense to [backup you
 ###Burn the SD Card
 Make sure you're using an SD card of 16GB or larger. 
 
-Insert your SD card into your primary machine's SD card reader, and use
-these steps to figure out the designation of the reader.
+Insert your SD card into your primary machine's SD card reader, and use the Mac OS X `diskutil` command to determine the designation of the reader.
+
+```bash
+$ diskutil list
+/dev/disk0
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *500.3 GB   disk0
+   1:                        EFI EFI                     209.7 MB   disk0s1
+   2:                  Apple_HFS MacSSD                  499.4 GB   disk0s2
+   3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
+/dev/disk1
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     FDisk_partition_scheme                        *15.9 GB    disk1
+   1:                 DOS_FAT_32 BOOT                    134.2 MB   disk1s1
+   2:                      Linux                         7.3 GB     disk1s2
+
+$ 
+```
 
 
 
