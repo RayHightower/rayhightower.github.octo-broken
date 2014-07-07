@@ -37,7 +37,7 @@ While you're waiting for the files to download, it may make sense to [backup you
 ###Burn the SD Card
 Make sure you're using an SD card of 16GB or larger. 
 
-Insert your SD card into your primary machine's SD card reader, and use the Mac OS X `diskutil` command to determine the designation of the reader.
+Insert your SD card into your primary machine's SD card reader, and use the Mac OS X `diskutil` command to determine the designation of the SD card. If you sometimes use portable hard drives with your primary machine, the SD card designation could change from time to time, so it's important to perform this step each each time you burn a card.
 
 ```bash
 $ diskutil list
@@ -56,7 +56,7 @@ $ diskutil list
 $ 
 ```
 
-From this report, we can see that we want to burn the SD image to `dev/disk1`. The other device is the hard drive for my primary machine.  Burning the wrong device could be the start of a very bad day, so please double-check everything.
+From this `diskutil` report, we can see that we want to burn the SD image to `dev/disk1`. The other device is the hard drive for my primary machine.  Burning the wrong device could be the start of a very bad day, so please double-check everything.
 
 
 
