@@ -196,9 +196,9 @@ drwxrwxrwx  1 rth   staff      512 Jul  6 12:11 .fseventsd
 Now you're ready to eject the SD card from the Mac and insert it in the Parallella. And that brings us to the next _gotcha_.
 
 ###Gotcha #2: Powered USB Required
-After moving past the first _gotcha_, Parallella booted to a beautiful GUI, but the system was unresponsive to the keyboard and mouse. After swapping a few keyboard/mouse combinations, I finally tried a powered USB hub. The powered hub worked.
+After moving past the first _gotcha_, Parallella booted to a beautiful GUI, but the system would not respond to the keyboard or mouse. After swapping a few keyboard/mouse combinations, I finally tried a powered USB hub. The powered hub worked.
 
-The Parallella can handle a single keyboard plugged into the micro-USB port. However, if two devices are plugged in via USB, a powered hub is required. Now the USB keyboard/trackpad combo works fine.
+Through trial and error I learned that the Parallella can handle a single keyboard plugged into the micro-USB port. However, if two devices are plugged in via USB, a powered hub is required. As long as its plugged into a powered USB hub, the keyboard/trackpad combo works fine.
 
 ###Default Login Credentials
 Default login credentials for Parallella are...
