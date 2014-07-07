@@ -17,12 +17,12 @@ You will need the following items in order to burn an SD card for your
 Parallella:
 
 * Micro-SD card, 16GB or greater.
-* Desktop or laptop computer with an SD card reader.
+* Desktop or laptop computer with a micro-SD card reader, or an SD-card reader with a micro adapter.
 * High-speed internet connection, for downloading Parallella's Ubuntu
 image and related files.
 * Parallella (of course!)
 
-Adapteva sells an accesssories kit containing an SD card, power adapter, and USB-to-micro-USB adapter. Unless you already have these items, buying the kit may save you time.
+Adapteva sells an accesssories kit containing an SD card, power adapter, micro-HDMI to HDMI cable, and USB-to-micro-USB adapter. Unless you already have these items, buying the kit may save you time.
 
 ###These Steps Could Break Your Primary Machine
 Since you're experimenting with Parallella, we can assume that you are an advanced user. Your computer is already backed up, or you're running these steps on a test machine. And you know [the power and pitfalls of sudo](/sudo-disclaimer/). Technology changes rapidly, and everything you read here could change by the time you read it.
