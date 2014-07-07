@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Parallella | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/parallella/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-07-07T17:04:23-05:00</updated>
+  <updated>2014-07-07T17:07:32-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -19,12 +19,10 @@
     <updated>2014-07-07T13:31:00-05:00</updated>
     <id>http://RayHightower.com/blog/2014/07/07/parallella-quick-start-guide-with-gotchas</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper center'><img class='caption' src='/images/parallella_screenshot.png' width='' height='' alt='Parallella screenshot, 1080p.' title='Parallella screenshot, 1080p.'><span class='caption-text'>Parallella screenshot, 1080p.</span></span>
-Parallella is a single-board supercomputer smaller than a deck of cards. While today’s fastest laptops contain four processor cores, Parallella has <em>eighteen</em> (2 <a href="http://arm.com/">ARM</a> plus 16 <a href="http://en.wikipedia.org/wiki/Field-programmable_gate_array">FPGA</a>). Demand for Parallella is strong. As of this writing the devices are sold out&hellip; again.</p>
+Parallella is a single-board supercomputer smaller than a deck of cards. While today’s fastest laptops contain four processor cores, Parallella has <em>eighteen</em> (2 <a href="http://arm.com/">ARM</a> plus 16 <a href="http://en.wikipedia.org/wiki/Field-programmable_gate_array">FPGA</a>). <a href="http://adapteva.com">Adapteva</a>, maker of Parallella, is on a mission to democratize parallel computing. The company&rsquo;s tag line is <em>Supercomputing for Everyone</em>.</p>
 
 <!--more-->
 
-
-<p>Yes, Parallella is a $119 supercomputer. That is not a typo. <a href="http://adapteva.com">Adapteva</a>, maker of Parallella, is on a mission to democratize parallel computing. The company&rsquo;s tag line is <em>Supercomputing for Everyone</em>.</p>
 
 <p>Everything in this post is based on the <a href="http://www.parallella.org/quick-start/">official quick start guide created by the Parallella team</a>. These instructions are tailored for a Mac running OS X Mavericks (10.9.3) and a Parallella-16 equipped with the Zynq 7010 chip. I ran into some <em>gotchas</em> during my first Parallella experience. The snags (and solutions) are documented here.</p>
 
@@ -250,8 +248,8 @@ drwxrwxrwx  1 rth   staff      512 Jul  6 12:11 .fseventsd
 <p>You can SSH to the Parallella from the network&hellip;</p>
 
 <p>```bash
-~$ ssh <a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#x3a;&#108;&#x69;&#110;&#97;&#114;&#111;&#x40;&#49;&#57;&#50;&#x2e;&#49;&#x36;&#56;&#x2e;&#x31;&#x31;&#x2e;&#x31;&#51;&#51;">&#x6c;&#105;&#110;&#x61;&#x72;&#x6f;&#64;&#x31;&#x39;&#x32;&#x2e;&#x31;&#54;&#x38;&#x2e;&#49;&#49;&#x2e;&#49;&#51;&#x33;</a>
-<a href="&#x6d;&#97;&#x69;&#108;&#x74;&#x6f;&#x3a;&#x6c;&#x69;&#x6e;&#97;&#x72;&#111;&#x40;&#x31;&#x39;&#x32;&#46;&#49;&#54;&#56;&#x2e;&#49;&#x31;&#x2e;&#49;&#51;&#51;">&#x6c;&#105;&#x6e;&#97;&#114;&#x6f;&#64;&#49;&#57;&#50;&#x2e;&#x31;&#x36;&#x38;&#x2e;&#x31;&#49;&#46;&#49;&#x33;&#51;</a>&rsquo;s password:
+~$ ssh <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#x3a;&#x6c;&#x69;&#110;&#x61;&#x72;&#111;&#x40;&#x31;&#x39;&#x32;&#46;&#49;&#54;&#56;&#x2e;&#x31;&#x31;&#x2e;&#x31;&#51;&#51;">&#x6c;&#x69;&#x6e;&#x61;&#114;&#x6f;&#64;&#x31;&#x39;&#x32;&#x2e;&#x31;&#x36;&#56;&#46;&#49;&#x31;&#x2e;&#x31;&#x33;&#x33;</a>
+<a href="&#109;&#x61;&#x69;&#x6c;&#116;&#111;&#58;&#x6c;&#105;&#x6e;&#x61;&#x72;&#111;&#64;&#x31;&#x39;&#50;&#x2e;&#49;&#x36;&#56;&#x2e;&#x31;&#49;&#x2e;&#x31;&#x33;&#51;">&#108;&#105;&#x6e;&#97;&#x72;&#111;&#x40;&#x31;&#57;&#50;&#x2e;&#49;&#x36;&#56;&#46;&#x31;&#49;&#x2e;&#49;&#51;&#51;</a>&rsquo;s password:
 Welcome to Linaro 14.04 (GNU/Linux 3.12.0-g0bc9c3a-dirty armv7l)</p>
 
 <ul>
