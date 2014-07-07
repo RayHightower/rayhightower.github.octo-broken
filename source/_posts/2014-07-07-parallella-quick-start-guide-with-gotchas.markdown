@@ -56,6 +56,8 @@ $ diskutil list
 $ 
 ```
 
+From this report, we can see that we want to burn the SD image to `dev/disk1`. The other device is the hard drive for my primary machine.  Burning the wrong device could be the start of a very bad day, so please double-check everything.
+
 
 
 
