@@ -8,7 +8,7 @@ categories: [ High Performance Computing, IoT, Parallella ]
 {% imgcap center /images/parallella_screenshot.png Parallella screenshot, 1080p. %}
 Today’s fastest laptops contain four processors working together to power through applications. Parallella has _eighteen_ processors (2 [ARM](http://arm.com/) plus 16 [FPGA](http://en.wikipedia.org/wiki/Field-programmable_gate_array)). Parallella is a single-board supercomputer roughly the size of a deck of cards. Demand for the $119 Parallella is strong. As of this writing the devices are sold out... again!
 
-Yes, Parallella is a $119 supercomputer. That is not a typo.
+Yes, Parallella is a $119 supercomputer. That is not a typo. Adapteva, maker of Parallella, has chosen the tag line _Supercomputing for Everyone_.
 
 Everything in this post is based on the [official quick start guide created by the Parallella team](http://www.parallella.org/quick-start/). I ran into some _gotchas_ during my first Parallella experience. The snags (and solutions) are documented here.
 <!--more-->
