@@ -7,11 +7,11 @@ categories: [ High Performance Computing, IoT, Parallella ]
 ---
 {% imgcap center /images/parallella_screenshot.png Parallella screenshot, 1080p. %}
 Parallella is a single-board supercomputer smaller than a deck of cards. While today’s fastest laptops contain four processor cores, Parallella has _eighteen_ (2 [ARM](http://arm.com/) plus 16 [FPGA](http://en.wikipedia.org/wiki/Field-programmable_gate_array)). Demand for Parallella is strong. As of this writing the devices are sold out... again!
-
+<!--more-->
 Yes, Parallella is a $119 supercomputer. That is not a typo. [Adapteva](http://adapteva.com), maker of Parallella, is on a mission to democratize parallel computing. The company's tag line is _Supercomputing for Everyone_.
 
 Everything in this post is based on the [official quick start guide created by the Parallella team](http://www.parallella.org/quick-start/). These instructions are tailored for a Mac running OS X Mavericks (10.9.3) and a Parallella-16 equipped with the Zynq 7010 chip. I ran into some _gotchas_ during my first Parallella experience. The snags (and solutions) are documented here.
-<!--more-->
+
 ###Tools Required
 You will need the following items in order to burn an SD card for your
 Parallella:
