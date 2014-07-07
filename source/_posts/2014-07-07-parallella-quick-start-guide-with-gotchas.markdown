@@ -46,7 +46,7 @@ Download the files that you will need to burn onto the SD card. I'm running Mac 
 
 Unzip the files and place them in a directory that's handy. You'll need them for the next step. With Mac OS X, you can unzip the files by double-clicking them in `Finder`.
 
-Note: You might need different files depending on the the current date (Parallella software is in a rapid state of flux) and your exact equipment. If your configuration is different, you can make the adjustments described in the Parallella's offical quick start guide.
+Note: You might need different files depending on the the current date (Parallella software is in a rapid state of flux) and your exact equipment. If your configuration is different, you can make the adjustments described in Parallella's offical guide.
 
 ###Burn the SD Card
 Insert your SD card into your Mac's SD card reader, and use the Mac OS X `diskutil list` command to determine the designation of the SD card. If you use portable hard drives with your primary machine, the SD card designation could change from time to time, so it's important to perform this step each each time you burn a card.
@@ -159,48 +159,44 @@ My initial first gotcha: I made the mistake of simply copying the `parallella_e1
 
 I'm embarrased to say I spent a few hours tracking that one down! 
 
-
-###
-I spent a few hours trackgi
-mistake: I m
-I spent hours trying to nail this one...
+###Copy the Last Two Files
+Next, copy the two `kernel-hdmi-default` files to `/Volumes/BOOT`.
 
 
-
-To copy the files over...
-
+Copy over the extra files in /Parallella/kernel…
 
 ```bash
+$ cp devicetree.dtb /Volumes/BOOT/
 
-$
+~/Downloads/Parallella/kernel-hdmi-default$ cp uImage /Volumes/BOOT/
 
-$
-
+~/Downloads/Parallella/kernel-hdmi-default$
 ```
 
-And when you're done, `/Volumes/BOOT` will look like...
-
+Here’s what the BOOT partition should look like when you’re done..
 
 ```bash
 /Volumes/BOOT$ ls -al
 total 12853
-drwxrwxrwx@ 1 rth   staff     1024 Jul  5 23:58 .
-drwxrwxrwt@ 4 root  admin      136 Jul  5 23:44 ..
-drwxrwxrwx  1 rth   staff      512 Jul  5 23:44 .Spotlight-V100
-drwxrwxrwx@ 1 rth   staff      512 Jul  5 23:44 .Trashes
--rwxrwxrwx  1 rth   staff     4096 Jul  5 23:44 ._.Trashes
--rwxrwxrwx  1 rth   staff     4096 Jul  5 23:58 ._devicetree.dtb
--rwxrwxrwx  1 rth   staff     4096 Jul  5 23:56 ._parallella_e16_hdmi_gpiose_7010.bit.bin
--rwxrwxrwx  1 rth   staff     4096 Jul  5 23:57 ._uImage
-drwxrwxrwx  1 rth   staff      512 Jul  5 23:44 .fseventsd
--rwxrwxrwx@ 1 rth   staff     8607 Jul  5 23:58 devicetree.dtb
--rwxrwxrwx@ 1 rth   staff  2083744 Jul  5 23:56 parallella_e16_hdmi_gpiose_7010.bit.bin
--rwxrwxrwx@ 1 rth   staff  4468792 Jul  5 23:57 uImage
+drwxrwxrwx@ 1 rth   staff     1024 Jul  6 12:14 .
+drwxrwxrwt@ 4 root  admin      136 Jul  6 12:11 ..
+drwxrwxrwx  1 rth   staff      512 Jul  6 12:11 .Spotlight-V100
+drwxrwxrwx@ 1 rth   staff      512 Jul  6 12:11 .Trashes
+-rwxrwxrwx  1 rth   staff     4096 Jul  6 12:11 ._.Trashes
+-rwxrwxrwx  1 rth   staff     4096 Jul  6 12:13 ._devicetree.dtb
+-rwxrwxrwx  1 rth   staff     4096 Jul  6 12:14 ._parallella_e16_hdmi_gpiose_7010.bit.bin
+-rwxrwxrwx  1 rth   staff     4096 Jul  6 12:13 ._uImage
+drwxrwxrwx  1 rth   staff      512 Jul  6 12:11 .fseventsd
+-rwxrwxrwx@ 1 rth   staff     8607 Jul  6 12:13 devicetree.dtb
+-rwxrwxrwx@ 1 rth   staff  2083744 Jul  6 12:14 parallella_e16_hdmi_gpiose_7010.bit.bin
+-rwxrwxrwx@ 1 rth   staff  4468792 Jul  6 12:13 uImage
 
 /Volumes/BOOT$
-
 ```
 
+{% imgcap right /images/eject-boot.jpg Eject the SD card. %}
+###Eject the SD Card, Insert in Parallella
+Now you're ready to eject the SD card from the Mac and insert it in the Parallella. And that brings us to the next _gotcha_.
 
 ###Gotcha #2: Powered USB Required
 I tried to use a combination USB keyboard/trackpad when I first booted Parallella, but the system would not respond to the keybord or the trackpad...  
@@ -209,20 +205,7 @@ Solution: Use a powered USB hub. Now the USB keyboard/trackpad combo works fine.
 
 
 
+###Conclusion
 
 
 
-##Out-Takes
-A brand new Parallella parallel computer arrived at WisdomGroup this weekend. The devices are in demand and supplies are short. We waited over a year for this one. As of this writing the devices are sold out again!
-
-Why is there so much demand for a tiny parallel computer? Is it the price ($119.00), the performance, or the novelty?
-{% imgcap right /images/parallella_clear_case.jpg Parallella in a clear acrylic case. %}
-###What is Parallella?
-Parallella is a parallel computer that fits in the palm of your hand.  [Adapteva](http://adapteva.com), the manufacturer, sells two versions:
-
-* A 16-FPGA model with a 2-core ARM chip.
-* A 64-FPGA model with a 2-core ARM chip.
-
-
-
-18-core (16-core [FPGA](http://en.wikipedia.org/wiki/Field-programmable_gate_array) plus 2-core [ARM](http://arm.com/))
