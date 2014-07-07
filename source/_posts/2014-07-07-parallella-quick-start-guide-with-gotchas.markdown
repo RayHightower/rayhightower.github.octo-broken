@@ -8,7 +8,7 @@ categories: [ High Performance Computing, IoT, Parallella ]
 {% imgcap center /images/parallella_screenshot.png Parallella screenshot, 1080p. %}
 Today’s fastest laptops have four processors working together to power through applications. Parallella has _eighteen_ processors (2 ARM plus 16 FPGA).  Parallella is a single-board parallel computer roughly the size of a deck of cards, like a [Raspberry Pi](/blog/2012/12/03/ruby-on-raspberry-pi/) or [Beaglebone Black](/blog/2014/01/02/beaglebone-black-ubuntu-part-1/). Demand for Parallella devices is strong. As of this writing the devices are sold out... again!
 
-Everything in this post is based on the [official quick start guide created by Parallella](http://www.parallella.org/quick-start/). I ran into some _gotchas_ during my first Parallella experience. The snags (and solutions) are documented here.
+Everything in this post is based on the [official quick start guide created by the Parallella team](http://www.parallella.org/quick-start/). I ran into some _gotchas_ during my first Parallella experience. The snags (and solutions) are documented here.
 <!--more-->
 ###Comparison with Raspberry Pi or Beaglebone Black
 The most obvious difference: Parallella runs hot! So hot, in fact, that the unit comes with a heat sink and the recommendation to add a fan. I’ve never needed a fan with a Pi or a ‘Bone.
