@@ -8,7 +8,7 @@ categories: [ High Performance Computing, IoT, Parallella ]
 {% imgcap center /images/parallella_screenshot.png Parallella screenshot, 1080p. %}
 Today’s fastest laptops contain four processors working together to power through applications. Parallella has _eighteen_ processors (2 [ARM](http://arm.com/) plus 16 [FPGA](http://en.wikipedia.org/wiki/Field-programmable_gate_array)). Parallella is a single-board supercomputer roughly the size of a deck of cards. Demand for the $119 Parallella is strong. As of this writing the devices are sold out... again!
 
-Yes, Parallella is a $119 supercomputer. That is not a typo. Adapteva, maker of Parallella, has chosen the tag line _Supercomputing for Everyone_.
+Yes, Parallella is a $119 supercomputer. That is not a typo. [Adapteva](http://adapteva.com), maker of Parallella, has chosen the tag line _Supercomputing for Everyone_.
 
 Everything in this post is based on the [official quick start guide created by the Parallella team](http://www.parallella.org/quick-start/). I ran into some _gotchas_ during my first Parallella experience. The snags (and solutions) are documented here.
 <!--more-->
@@ -19,7 +19,7 @@ How does the Parallella compare with other single-board computers, like the [Ras
 Of course, the Parallella runs hotter because it has more processing power packed tightly together in limited space. Future posts will cover performance comparisons. Now, let’s get started with Parallella.
 
 ###Get the Parallella Kit
-[Adapteva](http://adapteva.com), maker of Parallella, sells an accesssories kit containing an SD card, power adapter, and USB-to-micro-USB adapter. Unless you already have these items, it may save you time to buy the kit.
+Adapteva sells an accesssories kit containing an SD card, power adapter, and USB-to-micro-USB adapter. Unless you already have these items, it may save you time to buy the kit.
 
 ###Start With the SD Card
 Burning the SD card takes a long time, so it makes sense to start that process first.
