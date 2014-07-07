@@ -72,16 +72,15 @@ $ sudo dd if=ubuntu-14.04-140611.img of=/dev/disk1 bs=64k
 Password:
 ```
  
-The first thing you should know about this command: It takes a long time
-to run. It ran for 55 minutes on my machine.
+The `dd` command takes a long time to run, over 56 minutes on my machine.
 
-The second thing you should know about `dd`: The Macintosh section of the official Parallella recommend a block size of size of 1 megabyte, while the Linux instructions recommend a 64 kilobyte block size (the option `bs=64k` in the `dd` command). I initially used `bs=1m` on my Mac, and I ran into problems. When I used `bs=64k`, everything worked fine. Note that I eventually traced my problem to something other than block size (details below) but since the 64k setting still works, I've left it intact. If I find out why Linux and OS X are using different settings, I'll post the information here.
+An important note about block size: The Mac section of the official Parallella guide recommends a block size of size of 1 megabyte, while the Linux instructions recommend a 64 kilobytes (the option `bs=64k` in the `dd` command). I initially used `bs=1m` on my Mac, and I ran into problems. When I used `bs=64k`, everything worked fine. Note that I eventually traced my problem to something other than block size (details below) but since the 64k setting still works, I've left it intact. If I find out why Linux and OS X are using different block sizes, I'll post the information here.
 
 ###Checking dd Progress
 {% imgcap right /images/dd_progress.png Activity Monitor %}
 Waiting an hour for the `dd` command to run can be disconcerting because the machine does not give any feedback on progress. No gas guage, spinning indicator, nothing. How can you find out whether the write process is moving along?
 
-Here's how to check progress. Run Apple's `Activity Monitor`, and look for `dd` on the list of processes (see diagram). The number of bytes written will increase slowly while `dd` writes to the SD card. With the current version of Ubuntu, roughly 7.4GB will be written to the SD. When the process is done, `dd` will disappear from the Activity Monitor list and you'll see the following at the command line.
+Here's how to check progress. Run Apple's `Activity Monitor`, and look for `dd` on the list of processes (see diagram). The number of bytes written will increase slowly while `dd` burns the Ununtu image on the SD card. With the current version of Ubuntu, roughly 7.4GB will be written to the SD. At completion, `dd` will disappear from the Activity Monitor list and you'll see the following at the command line.
 
 ```bash
 $ sudo dd if=ubuntu-14.04-140611.img of=/dev/disk1 bs=64k
@@ -114,9 +113,74 @@ $ diskutil list
 $ 
 ```
 
-As expected, /dev/disk0 remains unchanged. We want it that way because
-that's where our primary machine's operating system resides. `/dev/disk1` (your actual SD card designation may be different) is the target disk we're after.
+As expected, /dev/disk0 remains unchanged. We want it that way because that's where our primary machine's operating system resides. `/dev/disk1` (your actual SD card designation may be different) is the target disk we're after.
 
+###Copying Additional Files to the SD Card
+Now that Ubuntu resides on the SD card, it's time to add the files that support HDMI video and the FPGAs. Here's how.
+
+The additional files will need to be copied to `/BOOT` on the SD card.  You can reach the `/BOOT` directory via `/Volumes/BOOT` on the Mac.
+
+Before you copy over the support files, `/Volumes/BOOT` will look
+like...
+
+```bash
+~$ cd /Volumes/BOOT/
+
+/Volumes/BOOT$ ls -al
+total 12
+drwxrwxrwx@ 1 rth   staff   512 Jul  5 23:44 .
+drwxrwxrwt@ 4 root  admin   136 Jul  5 23:44 ..
+drwxrwxrwx  1 rth   staff   512 Jul  5 23:44 .Spotlight-V100
+drwxrwxrwx@ 1 rth   staff   512 Jul  5 23:44 .Trashes
+-rwxrwxrwx  1 rth   staff  4096 Jul  5 23:44 ._.Trashes
+drwxrwxrwx  1 rth   staff   512 Jul  5 23:44 .fseventsd
+
+/Volumes/BOOT$
+```
+
+To copy the files over...
+
+
+```bash
+
+$
+
+$
+
+```
+
+And when you're done, `/Volumes/BOOT` will look like...
+
+
+```bash
+/Volumes/BOOT$ ls -al
+total 12853
+drwxrwxrwx@ 1 rth   staff     1024 Jul  5 23:58 .
+drwxrwxrwt@ 4 root  admin      136 Jul  5 23:44 ..
+drwxrwxrwx  1 rth   staff      512 Jul  5 23:44 .Spotlight-V100
+drwxrwxrwx@ 1 rth   staff      512 Jul  5 23:44 .Trashes
+-rwxrwxrwx  1 rth   staff     4096 Jul  5 23:44 ._.Trashes
+-rwxrwxrwx  1 rth   staff     4096 Jul  5 23:58 ._devicetree.dtb
+-rwxrwxrwx  1 rth   staff     4096 Jul  5 23:56 ._parallella_e16_hdmi_gpiose_7010.bit.bin
+-rwxrwxrwx  1 rth   staff     4096 Jul  5 23:57 ._uImage
+drwxrwxrwx  1 rth   staff      512 Jul  5 23:44 .fseventsd
+-rwxrwxrwx@ 1 rth   staff     8607 Jul  5 23:58 devicetree.dtb
+-rwxrwxrwx@ 1 rth   staff  2083744 Jul  5 23:56 parallella_e16_hdmi_gpiose_7010.bit.bin
+-rwxrwxrwx@ 1 rth   staff  4468792 Jul  5 23:57 uImage
+
+/Volumes/BOOT$
+
+```
+
+###Gotcha #1: The FPGA Bitstream
+I spent hours trying to nail this one...
+
+
+
+###Gotcha #2: Powered USB Required
+I tried to use a combination USB keyboard/trackpad when I first booted Parallella, but the system would not respond to the keybord or the trackpad...  
+
+Solution: Use a powered USB hub. Now the USB keyboard/trackpad combo works fine.
 
 
 
