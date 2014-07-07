@@ -17,9 +17,28 @@ The most obvious difference: Parallella runs hot! So hot, in fact, that the unit
 
 Of course, the Parallella runs hotter because it has more processing power packed tightly together in limited space. Future posts will cover performance comparisons. Now, let’s get started with Parallella.
 
+###Get the Parallella Kit
+[Adapteva](http://adapteva.com), maker of Parallella, sells an accesssories kit containing an SD card, power adapter, and USB-to-micro-USB adapter. Unless you already have these items, it may save you time to just buy the kit.
+
 ###Start With the SD Card
-Burning the SD card takes a long time, so it makes sense to start that
-process first.
+Burning the SD card takes a long time, so it makes sense to start that process first.
+
+First, download the files that you will need to burn onto the SD card.  I'm running Mac OS X on my primary machine, and my configuring a Parallella-16 with a Zynq 7010 and an HDMI display. Therefore, the files needed for this configuration are:
+
+* [Ubuntu 14.04 for Parallella](http://downloads.parallella.org/ubuntu/dists/trusty/image/ubuntu-14.04-140611.img.gz) (released June 11, 2014)
+* [Linux kernel with HDMI support](http://downloads.parallella.org/boot/linux/kernel-hdmi-default.tgz)
+* [Parallella-16 Zynq 7010 with HDMI display](https://github.com/parallella/parallella-hw/blob/master/fpga/bitstreams/parallella_e16_hdmi_gpiose_7010.bit.bin?raw=true)
+
+Note: The files you need may change depending on the the date (software always gets better over time, right?) and your exact equipment. If your configuration is different, you can make the adjustments described in the offical quick start guide.
+
+###Back Everything Up
+While you're waiting for the files to download, it may make sense to [backup your machine](/sudo-disclaimer/). Technology changes rapidly, and everything you read here could change by the time you read it.
+
+###Burn the SD Card
+Make sure you're using an SD card of 16GB or larger. 
+
+
+
 
 
 ###Out-Takes
