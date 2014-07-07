@@ -191,7 +191,7 @@ drwxrwxrwx  1 rth   staff      512 Jul  6 12:11 .fseventsd
 -rwxrwxrwx@ 1 rth   staff  2083744 Jul  6 12:14 parallella_e16_hdmi_gpiose_7010.bit.bin
 -rwxrwxrwx@ 1 rth   staff  4468792 Jul  6 12:13 uImage
 
-/Volumes/BOOT$
+/Volumes/BOOT$ 
 ```
 
 {% imgcap right /images/eject-boot.jpg Eject the SD card. %}
