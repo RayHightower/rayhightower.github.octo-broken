@@ -57,7 +57,23 @@ $ diskutil list
 $ 
 ```
 
-From this `diskutil` report, we can see that we want to burn the SD image to `dev/disk1`. The other device is the hard drive for my primary machine.  Burning the wrong device could be the start of a very bad day, so please double-check everything.
+```bash
+$ diskutil list
+/dev/disk0
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *500.3 GB   disk0
+   1:                        EFI EFI                     209.7 MB   disk0s1
+   2:                  Apple_HFS MacSSD                  499.4 GB   disk0s2
+   3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
+/dev/disk1
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     FDisk_partition_scheme                       *15.9 GB     disk1
+   1:               Windows_NTFS Untitled 1             15.9 GB     disk1s1
+
+$ 
+```
+
+From this `diskutil` report, we can see that we want to burn the SD image to `dev/disk1`. The other device is the hard drive for my primary machine.  Burning the wrong device means destroying data. Please double-check everything, especially target devices for disk write operations.
 
 
 
