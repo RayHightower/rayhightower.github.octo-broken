@@ -63,7 +63,7 @@ $ diskutil list
 $ 
 ```
 
-From this `diskutil` report, we can see that we want to burn the SD image to `dev/disk1`. The other device is the hard drive for my primary machine. Burning the wrong device means destroying data. 
+From this `diskutil` report, we can see that we want to burn the SD image to `/dev/disk1`. The other device is the hard drive for my primary machine. Burning the wrong device means destroying data. 
 
 To burn the SD card, use the `dd` command as follows...
 
