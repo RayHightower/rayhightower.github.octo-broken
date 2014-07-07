@@ -12,6 +12,9 @@ Yes, Parallella is a $119 supercomputer. That is not a typo. [Adapteva](http://a
 
 Everything in this post is based on the [official quick start guide created by the Parallella team](http://www.parallella.org/quick-start/). These instructions are tailored for a Mac running OS X Mavericks (10.9.3) and a Parallella-16 equipped with the Zynq 7010 chip. I ran into some _gotchas_ during my first Parallella experience. The snags (and solutions) are documented here.
 <!--more-->
+###These Steps Could Break Your Primary Machine
+Since you're experimenting with Parallella, we can assume that you are an advanced user. Your machine is already backed up, or you're running these steps on a test machine. And you know [the power and pitfalls of sudo](/sudo-disclaimer/). Technology changes rapidly, and everything you read here could change by the time you read it.
+
 ###Comparison with Raspberry Pi or Beaglebone Black
 {% imgcap right /images/parallella_fan.jpg %}
 How does the Parallella compare with other single-board computers, like the [Raspberry Pi](/blog/2012/12/03/ruby-on-raspberry-pi/) or [Beaglebone Black](/blog/2014/01/02/beaglebone-black-ubuntu-part-1/)? The first difference noticed at boot-time: Parallella runs hot! So hot, in fact, that the unit comes with a heat sink and the recommendation to add a fan. I’ve never needed a fan with a Pi or a ‘Bone.
@@ -21,7 +24,7 @@ Of course, the Parallella runs hotter because it has more processing power packe
 ###Get the Parallella Kit
 Adapteva sells an accesssories kit containing an SD card, power adapter, and USB-to-micro-USB adapter. Unless you already have these items, it may save you time to buy the kit.
 
-###Start With the SD Card
+###Getting the Parallella OS
 Burning the SD card takes a long time, so it makes sense to start that process first.
 
 Download the files that you will need to burn onto the SD card. I'm running Mac OS X on my primary machine, and I'm configuring a Parallella-16 with a Zynq 7010 and an HDMI display. Therefore, the files needed for this configuration are:
@@ -32,13 +35,10 @@ Download the files that you will need to burn onto the SD card. I'm running Mac 
 
 Note: The files you need may differ depending on the the date (software always gets better over time, right?) and your exact equipment. If your configuration is different, you can make the adjustments described in the Parallella's offical quick start guide.
 
-###Back Everything Up
-While you're waiting for the files to download, it may make sense to [backup your machine](/sudo-disclaimer/). Technology changes rapidly, and everything you read here could change by the time you read it.
-
 ###Burn the SD Card
 Make sure you're using an SD card of 16GB or larger. 
 
-Insert your SD card into your primary machine's SD card reader, and use the Mac OS X `diskutil` command to determine the designation of the SD card. If you sometimes use portable hard drives with your primary machine, the SD card designation could change from time to time, so it's important to perform this step each each time you burn a card.
+Insert your SD card into your primary machine's SD card reader, and use the Mac OS X `diskutil list` command to determine the designation of the SD card. If you sometimes use portable hard drives with your primary machine, the SD card designation could change from time to time, so it's important to perform this step each each time you burn a card.
 
 ```bash
 $ diskutil list
@@ -56,12 +56,30 @@ $ diskutil list
 $ 
 ```
 
-From this `diskutil` report, we can see that we want to burn the SD image to `dev/disk1`. The other device is the hard drive for my primary machine.  Burning the wrong device means destroying data. Please double-check everything, especially target devices for disk write operations.
+From this `diskutil` report, we can see that we want to burn the SD image to `dev/disk1`. The other device is the hard drive for my primary machine. Burning the wrong device means destroying data. Please double-check everything, especially target devices for disk write operations.
 
 Writing to the SD card took almost an hour on my machine. YMMV.
 
 When you're done writing to the SD card, use `diskutil` again to see
 what the partitions look like.
+
+###Checking Progress
+Waiting an hour for the `dd` command to run can be nerve-wracking because the machine does not give any feedback on progress. No gas guage, spinning indicator, nothing. How can you find out whether the write process is moving along?
+
+Here's how to check progress. Run Apple's `Activity Monitor`, and look for `dd` on the list of processes. The number of bytes written will increase slowly while `dd` writes to the SD card. Roughly 7.4GB will be written to the SD. When the process is done, `dd` will disappear from the list and you'll see the following at the command line.
+
+```bash
+$ sudo dd if=ubuntu-14.04-140611.img of=/dev/disk1 bs=64k
+Password:
+121280+0 records in
+121280+0 records out
+7948206080 bytes transferred in 3363.824531 secs (2362848 bytes/sec)
+
+$ 
+
+```
+
+To confirm that the partitions have been created and that Ubuntu has been written to the SD card...
 
 ```bash
 $ diskutil list
