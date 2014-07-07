@@ -20,6 +20,9 @@ Parallella:
 * Desktop or laptop computer with an SD card reader.
 * High-speed internet connection, for downloading Parallella's Ubuntu
 image and related files.
+* Parallella (of course!)
+
+Adapteva sells an accesssories kit containing an SD card, power adapter, and USB-to-micro-USB adapter. Unless you already have these items, buying the kit may save you time.
 
 ###These Steps Could Break Your Primary Machine
 Since you're experimenting with Parallella, we can assume that you are an advanced user. Your computer is already backed up, or you're running these steps on a test machine. And you know [the power and pitfalls of sudo](/sudo-disclaimer/). Technology changes rapidly, and everything you read here could change by the time you read it.
@@ -29,9 +32,6 @@ Since you're experimenting with Parallella, we can assume that you are an advanc
 How does the Parallella compare with other single-board computers, like the [Raspberry Pi](/blog/2012/12/03/ruby-on-raspberry-pi/) or [Beaglebone Black](/blog/2014/01/02/beaglebone-black-ubuntu-part-1/)? The first difference noticed at boot-time: Parallella runs hot! So hot, in fact, that the unit comes with a heat sink and the recommendation to add a fan. I’ve never needed a fan with a Pi or a ‘Bone.
 
 Of course, the Parallella runs hotter because it has more processing power packed tightly together in limited space. Since Parallella is designed to run tasks in parallel, we can expect certain programs to perform faster than they would on the Pi or 'Bone. Future posts will cover performance comparisons. Now, let’s get started with Parallella.
-
-###Get the Parallella Kit
-Adapteva sells an accesssories kit containing an SD card, power adapter, and USB-to-micro-USB adapter. Unless you already have these items, buying the kit may save you time.
 
 ###Getting the Parallella OS
 Parallella runs a customized version of Ubuntu from a micro-SD card.Burning the SD card takes a long time, so it makes sense to start that process first.
