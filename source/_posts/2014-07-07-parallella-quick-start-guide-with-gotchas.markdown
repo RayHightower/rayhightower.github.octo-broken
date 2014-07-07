@@ -25,7 +25,7 @@ image and related files.
 Adapteva sells an accesssories kit containing an SD card, power adapter, micro-HDMI to HDMI cable, and USB-to-micro-USB adapter. Unless you already have these items, buying the kit may save you time.
 
 ###These Steps Could Break Your Primary Machine
-Since you're experimenting with Parallella, we can assume that you are an advanced user. Your computer is already backed up, or you're running these steps on a test machine. And you know [the power and pitfalls of sudo](/sudo-disclaimer/). Technology changes rapidly, and everything you read here could change by the time you read it.
+Since you're experimenting with Parallella, we can assume that you are an advanced user. Your computer is already backed up, or you're running these steps on a test machine. And you know [the power and pitfalls of sudo](/sudo-disclaimer/). Technology evolves rapidly, and everything you read here could change by the time you read it.
 
 ###Comparison with Raspberry Pi or Beaglebone Black
 {% imgcap right /images/parallella_fan.jpg %}
