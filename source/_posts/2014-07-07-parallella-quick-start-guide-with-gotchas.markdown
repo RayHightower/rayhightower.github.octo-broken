@@ -34,7 +34,7 @@ How does the Parallella compare with other single-board computers, like the [Ras
 Of course, the Parallella runs hotter because it has more processing power packed tightly together in limited space. Since Parallella is designed to run tasks in parallel, we can expect certain programs to perform faster than they would on the Pi or 'Bone. Future posts will cover performance comparisons. Now, let’s get started with Parallella.
 
 ###Getting the Parallella OS
-Parallella runs a customized version of Ubuntu from a micro-SD card.Burning the SD card takes a long time, so it makes sense to start that process first.
+Parallella runs a customized version of Ubuntu installed on a micro-SD card. Burning the SD card takes a long time, so it makes sense to start that process first.
 
 Download the files that you will need to burn onto the SD card. I'm running Mac OS X on my primary machine, and I'm configuring a Parallella-16 with a Zynq 7010 and an HDMI display. Therefore, the files needed for this configuration are:
 
