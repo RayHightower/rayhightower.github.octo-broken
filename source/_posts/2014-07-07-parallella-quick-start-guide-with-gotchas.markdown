@@ -45,7 +45,7 @@ Download the files that you will need to burn onto the SD card. I'm running Mac 
 Note: You might need different files depending on the the date (Parallella software is in a rapid state of flux) and your exact equipment. If your configuration is different, you can make the adjustments described in the Parallella's offical quick start guide.
 
 ###Burn the SD Card
-Insert your SD card into your primary machine's SD card reader, and use the Mac OS X `diskutil list` command to determine the designation of the SD card. If you sometimes use portable hard drives with your primary machine, the SD card designation could change from time to time, so it's important to perform this step each each time you burn a card.
+Insert your SD card into your primary machine's SD card reader, and use the Mac OS X `diskutil list` command to determine the designation of the SD card. If you use portable hard drives with your primary machine, the SD card designation could change from time to time, so it's important to perform this step each each time you burn a card.
 
 ```bash
 $ diskutil list
