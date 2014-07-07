@@ -155,9 +155,9 @@ $ mv parallella_e16_hdmi_gpiose_7010.bit.bin parallella.bit.bin
 $ 
 
 ```
-First gotcha: I made the mistake of simply copying the `parallella_e16_hdmi_gpiose_7010.bit.bin` file without renaming it to `parallella.bit.bin`. Parallella will only boot when it sees a file with this filename on the SD card's `BOOT` partition. The original file name will probably change as the software gets updated. With each change, we will need to make sure that the file is called `parallella.bit.bin` on the Parallella.
+First gotcha: I made the mistake of simply copying the `parallella_e16_hdmi_gpiose_7010.bit.bin` file without renaming it to `parallella.bit.bin`. Parallella will only boot when it sees a file with this filename on the SD card's `BOOT` partition. The original file name will probably change as the software gets updated. With each change, we will need to make sure that the file is renamed `parallella.bit.bin` on the Parallella.
 
-I'm embarrased to say I spent a few hours tracking that one down! 
+Obvious in hindsight, but it took me awhile to track that one down!
 
 ###Copy the Last Two Files
 Two files were decompressed from `kernel-hdmi-default`. Those should also be copied to `/Volumes/BOOT`.
