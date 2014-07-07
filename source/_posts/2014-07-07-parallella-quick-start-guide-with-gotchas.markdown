@@ -219,7 +219,7 @@ Last login: Sun Jul  6 17:34:17 2014 from wisdomgroup-mbp13
 linaro-nano:~> 
 ```
 
-... and Vim works fine.
+... Vim is operational...
 
 ```bash
 linaro-nano:~> which vim
@@ -227,6 +227,16 @@ linaro-nano:~> which vim
 linaro-nano:~> vim --version
 VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Jan  2 2014 19:49:14)
 linaro-nano:~> 
+```
+
+... and Git works fine.
+
+```bash
+linaro-nano:~> which git
+/usr/bin/git
+linaro-nano:~> git --version
+git version 1.9.1
+linaro-nano:~>
 ```
 
 ###Conclusion
