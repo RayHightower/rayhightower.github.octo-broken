@@ -1,0 +1,689 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Parallella Quick Start Guide (with gotchas) - RayHightower.com</title>
+  <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
+
+  
+  <meta name="description" content="Parallella screenshot, 1080p.
+Parallella is a single-board supercomputer smaller than a deck of cards. While today’s fastest laptops contain four &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://RayHightower.com/blog/2014/07/07/parallella-quick-start-guide-with-gotchas">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="RayHightower.com" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+<!-- Arvo is like Rockwell. Added by RTH on 12/27/2012. -->
+<link href='http://fonts.googleapis.com/css?family=Arvo:700' rel='stylesheet' type='text/css'>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-330946-28']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">RayHightower.com</a></h1>
+  
+    <h2>Thoughts about Ruby, Rails, RubyMotion, iOS, and business growth.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:RayHightower.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/speaking">Speaking</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Parallella Quick Start Guide (with gotchas)</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-07T13:31:00-05:00" pubdate data-updated="true">Jul 7<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><span class='caption-wrapper center'><img class='caption' src='/images/parallella_screenshot.png' width='' height='' alt='Parallella screenshot, 1080p.' title='Parallella screenshot, 1080p.'><span class='caption-text'>Parallella screenshot, 1080p.</span></span>
+Parallella is a single-board supercomputer smaller than a deck of cards. While today’s fastest laptops contain four processor cores, Parallella has <em>eighteen</em> (2 <a href="http://arm.com/">ARM</a> plus 16 <a href="http://en.wikipedia.org/wiki/Field-programmable_gate_array">FPGA</a>). Demand for Parallella is strong. As of this writing the devices are sold out&hellip; again!</p>
+
+<!--more-->
+
+
+<p>Yes, Parallella is a $119 supercomputer. That is not a typo. <a href="http://adapteva.com">Adapteva</a>, maker of Parallella, is on a mission to democratize parallel computing. The company&rsquo;s tag line is <em>Supercomputing for Everyone</em>.</p>
+
+<p>Everything in this post is based on the <a href="http://www.parallella.org/quick-start/">official quick start guide created by the Parallella team</a>. These instructions are tailored for a Mac running OS X Mavericks (10.9.3) and a Parallella-16 equipped with the Zynq 7010 chip. I ran into some <em>gotchas</em> during my first Parallella experience. The snags (and solutions) are documented here.</p>
+
+<h3>Tools Required</h3>
+
+<p>You will need the following items in order to burn an SD card for your
+Parallella:</p>
+
+<ul>
+<li>Micro-SD card, 16GB or greater.</li>
+<li>Desktop or laptop computer with a micro-SD card reader, or an SD-card reader with a micro adapter. These instructions are tailored for a Mac. A Linux or Windows machine will work with minor modifications in the procedure.</li>
+<li>High-speed internet connection, for downloading Parallella&rsquo;s Ubuntu
+image and related files.</li>
+<li>Micro-USB-to-USB adapter, for the keyboard and mouse. Parallella is equipped with two micro-USB ports.</li>
+<li>Micro-HDMI to HDMI cable or adapter.</li>
+<li>Parallella (of course!)</li>
+</ul>
+
+
+<p>Adapteva sells an accesssories kit containing an SD card, power adapter, micro-HDMI to HDMI cable, and USB-to-micro-USB adapter. Unless you already have these items, buying the kit may save you time.</p>
+
+<h3>These Steps Could Break Your Primary Machine</h3>
+
+<p>Since you&rsquo;re experimenting with Parallella, we can assume that you are an advanced user. Your computer is already backed up, or you&rsquo;re running these steps on a test machine. And you know <a href="/sudo-disclaimer/">the power and pitfalls of sudo</a>. Technology changes rapidly, and everything you read here could change by the time you read it.</p>
+
+<h3>Comparison with Raspberry Pi or Beaglebone Black</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/parallella_fan.jpg' width='' height='' alt='' title=''><span class='caption-text'></span></span>
+How does the Parallella compare with other single-board computers, like the <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a> or <a href="/blog/2014/01/02/beaglebone-black-ubuntu-part-1/">Beaglebone Black</a>? The first difference noticed at boot-time: Parallella runs hot! So hot, in fact, that the unit comes with a heat sink and the recommendation to add a fan. I’ve never needed a fan with a Pi or a ‘Bone.</p>
+
+<p>Of course, the Parallella runs hotter because it has more processing power packed tightly together in limited space. Since Parallella is designed to run tasks in parallel, we can expect certain programs to perform faster than they would on the Pi or &lsquo;Bone. Future posts will cover performance comparisons. Now, let’s get started with Parallella.</p>
+
+<h3>Getting the Parallella OS</h3>
+
+<p>Parallella runs a customized version of Ubuntu installed on a micro-SD card. Burning the SD card takes a long time, so it makes sense to start that process first.</p>
+
+<p>Download the files that you will need to burn onto the SD card. I&rsquo;m running Mac OS X on my primary machine, and I&rsquo;m configuring a Parallella-16 with a Zynq 7010 and an HDMI display. Therefore, the files needed for this configuration are:</p>
+
+<ul>
+<li><a href="http://downloads.parallella.org/ubuntu/dists/trusty/image/ubuntu-14.04-140611.img.gz">Ubuntu 14.04 for Parallella</a> (released June 11, 2014)</li>
+<li><a href="http://downloads.parallella.org/boot/linux/kernel-hdmi-default.tgz">Linux kernel with HDMI support</a></li>
+<li><a href="https://github.com/parallella/parallella-hw/blob/master/fpga/bitstreams/parallella_e16_hdmi_gpiose_7010.bit.bin?raw=true">Parallella-16 Zynq 7010 with HDMI display</a></li>
+</ul>
+
+
+<p>Unzip the files and place them in a directory that&rsquo;s handy. You&rsquo;ll need them for the next step. With Mac OS X, you can unzip the files by double-clicking them in <code>Finder</code>.</p>
+
+<p>Note: You might need different files depending on the the current date (Parallella software is in a rapid state of flux) and your exact equipment. If your configuration is different, you can make the adjustments described in Parallella&rsquo;s offical guide.</p>
+
+<h3>Burn the SD Card</h3>
+
+<p>Insert your SD card into your Mac&rsquo;s SD card reader, and use the Mac OS X <code>diskutil list</code> command to determine the designation of the SD card. If you use portable hard drives with your primary machine, the SD card designation could change from time to time, so it&rsquo;s important to perform this step each each time you burn a card.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>diskutil list
+</span><span class='line'>/dev/disk0
+</span><span class='line'>   <span class="c">#:                       TYPE NAME                    SIZE       IDENTIFIER</span>
+</span><span class='line'>   0:      GUID_partition_scheme                        *500.3 GB   disk0
+</span><span class='line'>   1:                        EFI EFI                     209.7 MB   disk0s1
+</span><span class='line'>   2:                  Apple_HFS MacSSD                  499.4 GB   disk0s2
+</span><span class='line'>   3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
+</span><span class='line'>/dev/disk1
+</span><span class='line'>   <span class="c">#:                       TYPE NAME                    SIZE       IDENTIFIER</span>
+</span><span class='line'>   0:     FDisk_partition_scheme                       *15.9 GB     disk1
+</span><span class='line'>   1:               Windows_NTFS Untitled 1             15.9 GB     disk1s1
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>From this <code>diskutil</code> report, we can see that we want to burn the SD image to <code>/dev/disk1</code>. The other device is the hard drive for my primary machine. Burning the wrong device means destroying data.</p>
+
+<p>To burn the SD card, use the <code>dd</code> command as follows&hellip;</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo dd <span class="k">if</span><span class="o">=</span>ubuntu-14.04-140611.img <span class="nv">of</span><span class="o">=</span>/dev/disk1 <span class="nv">bs</span><span class="o">=</span>64k
+</span><span class='line'>Password:
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The <code>dd</code> command takes a <em>long</em> time to run, over 56 minutes on my machine.</p>
+
+<p>An important note about block size: The Mac section of the official Parallella guide recommends a block size of size of 1 megabyte, while the Linux instructions recommend a 64 kilobytes (the option <code>bs=64k</code> in the <code>dd</code> command). I initially used <code>bs=1m</code> on my Mac, and I ran into problems. When I used <code>bs=64k</code>, everything worked fine. Note that I eventually traced my problem to something other than block size (details below) but since the 64k setting still works, I&rsquo;ve left it intact. If I find out why Linux and OS X are using different block sizes, I&rsquo;ll post the information here.</p>
+
+<h3>Checking dd Progress</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/dd_progress.png' width='' height='' alt='Activity Monitor' title='Activity Monitor'><span class='caption-text'>Activity Monitor</span></span>
+Waiting an hour for the <code>dd</code> command to run can be disconcerting because the machine does not give any feedback on progress. No gas guage, spinning indicator, nothing. How do we know if the write process is working?</p>
+
+<p>Here&rsquo;s how to check progress. Run Apple&rsquo;s <code>Activity Monitor</code>, and look for <code>dd</code> on the list of processes (see diagram). The number of bytes written will increase slowly while <code>dd</code> burns the Ununtu image onto the SD card. With the current version of Ubuntu, roughly 7.4GB will be written to the SD. At completion, <code>dd</code> will disappear from the Activity Monitor list and you&rsquo;ll see the following at the command line.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo dd <span class="k">if</span><span class="o">=</span>ubuntu-14.04-140611.img <span class="nv">of</span><span class="o">=</span>/dev/disk1 <span class="nv">bs</span><span class="o">=</span>64k
+</span><span class='line'>Password:
+</span><span class='line'>121280+0 records in
+</span><span class='line'>121280+0 records out
+</span><span class='line'>7948206080 bytes transferred in 3363.824531 secs <span class="o">(</span>2362848 bytes/sec<span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Confirm Partitions</h3>
+
+<p>To confirm that the partitions have been created and that Ubuntu has been written to the SD card, use <code>diskutil list</code> again.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>diskutil list
+</span><span class='line'>/dev/disk0
+</span><span class='line'>   <span class="c">#:                       TYPE NAME                    SIZE       IDENTIFIER</span>
+</span><span class='line'>   0:      GUID_partition_scheme                        *500.3 GB   disk0
+</span><span class='line'>   1:                        EFI EFI                     209.7 MB   disk0s1
+</span><span class='line'>   2:                  Apple_HFS MacSSD                  499.4 GB   disk0s2
+</span><span class='line'>   3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
+</span><span class='line'>/dev/disk1
+</span><span class='line'>   <span class="c">#:                       TYPE NAME                    SIZE       IDENTIFIER</span>
+</span><span class='line'>   0:     FDisk_partition_scheme                        *15.9 GB    disk1
+</span><span class='line'>   1:                 DOS_FAT_32 BOOT                    134.2 MB   disk1s1
+</span><span class='line'>   2:                      Linux                         7.3 GB     disk1s2
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>As expected, /dev/disk0 remains unchanged. We want it that way because that&rsquo;s where our primary machine&rsquo;s operating system resides. <code>/dev/disk1</code> (your actual SD card designation may be different) is the target disk we&rsquo;re after. Two new partitions are on the SD card, a Fat32 partition called <code>BOOT</code> and a Linux partition.</p>
+
+<p>Next we need to copy some supporting files to the new <code>BOOT</code> partition.</p>
+
+<h3>Copying Additional Files to the SD Card</h3>
+
+<p>Now that Ubuntu resides on the SD card, it&rsquo;s time to add the files that support HDMI video and the FPGAs. Here&rsquo;s how.</p>
+
+<p>The additional files will need to be copied to <code>/BOOT</code> on the SD card. While it might make sense to reach the <code>BOOT</code> partition as <code>/dev/disk1</code>, you will actually reach it via <code>/Volumes/BOOT</code>.</p>
+
+<p>Before we copy over the files, let&rsquo;s see what&rsquo;s on the <code>Boot</code> partition on the SD card.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span><span class="nb">cd</span> /Volumes/BOOT/
+</span><span class='line'>
+</span><span class='line'>/Volumes/BOOT<span class="nv">$ </span>ls -al
+</span><span class='line'>total 12
+</span><span class='line'>drwxrwxrwx@ 1 rth   staff   512 Jul  5 23:44 .
+</span><span class='line'>drwxrwxrwt@ 4 root  admin   136 Jul  5 23:44 ..
+</span><span class='line'>drwxrwxrwx  1 rth   staff   512 Jul  5 23:44 .Spotlight-V100
+</span><span class='line'>drwxrwxrwx@ 1 rth   staff   512 Jul  5 23:44 .Trashes
+</span><span class='line'>-rwxrwxrwx  1 rth   staff  4096 Jul  5 23:44 ._.Trashes
+</span><span class='line'>drwxrwxrwx  1 rth   staff   512 Jul  5 23:44 .fseventsd
+</span><span class='line'>
+</span><span class='line'>/Volumes/BOOT<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Gotcha #1: The FPGA Bitstream File</h3>
+
+<p>First, change into the directory where you stored the additional Parallella files, and copy the FPGA bitstream file to <code>/Volumes/BOOT</code>.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>cp parallella_e16_hdmi_gpiose_7010.bit.bin /Volumes/BOOT/
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>mv parallella_e16_hdmi_gpiose_7010.bit.bin parallella.bit.bin
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>First gotcha: I made the mistake of simply copying the <code>parallella_e16_hdmi_gpiose_7010.bit.bin</code> file without renaming it to <code>parallella.bit.bin</code>. Parallella will only boot when it sees a file with this filename on the SD card&rsquo;s <code>BOOT</code> partition. The original file name will probably change as the software gets updated. With each change, we will need to make sure that the file is renamed <code>parallella.bit.bin</code> on the Parallella.</p>
+
+<p>Obvious in hindsight, but it took me awhile to track that one down!</p>
+
+<h3>Copy the Last Two Files</h3>
+
+<p>Two files were decompressed from <code>kernel-hdmi-default</code>. Those should also be copied to <code>/Volumes/BOOT</code>.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>cp devicetree.dtb /Volumes/BOOT/
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>cp uImage /Volumes/BOOT/
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Here’s what the BOOT partition should look like when you’re done..</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>/Volumes/BOOT<span class="nv">$ </span>ls -al
+</span><span class='line'>total 12853
+</span><span class='line'>drwxrwxrwx@ 1 rth   staff     1024 Jul  6 12:14 .
+</span><span class='line'>drwxrwxrwt@ 4 root  admin      136 Jul  6 12:11 ..
+</span><span class='line'>drwxrwxrwx  1 rth   staff      512 Jul  6 12:11 .Spotlight-V100
+</span><span class='line'>drwxrwxrwx@ 1 rth   staff      512 Jul  6 12:11 .Trashes
+</span><span class='line'>-rwxrwxrwx  1 rth   staff     4096 Jul  6 12:11 ._.Trashes
+</span><span class='line'>-rwxrwxrwx  1 rth   staff     4096 Jul  6 12:13 ._devicetree.dtb
+</span><span class='line'>-rwxrwxrwx  1 rth   staff     4096 Jul  6 12:14 ._parallella_e16_hdmi_gpiose_7010.bit.bin
+</span><span class='line'>-rwxrwxrwx  1 rth   staff     4096 Jul  6 12:13 ._uImage
+</span><span class='line'>drwxrwxrwx  1 rth   staff      512 Jul  6 12:11 .fseventsd
+</span><span class='line'>-rwxrwxrwx@ 1 rth   staff     8607 Jul  6 12:13 devicetree.dtb
+</span><span class='line'>-rwxrwxrwx@ 1 rth   staff  2083744 Jul  6 12:14 parallella_e16_hdmi_gpiose_7010.bit.bin
+</span><span class='line'>-rwxrwxrwx@ 1 rth   staff  4468792 Jul  6 12:13 uImage
+</span><span class='line'>
+</span><span class='line'>/Volumes/BOOT<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/eject-boot.jpg' width='' height='' alt='Eject the SD card.' title='Eject the SD card.'><span class='caption-text'>Eject the SD card.</span></span></p>
+
+<h3>Eject the SD Card, Insert in Parallella</h3>
+
+<p>Now you&rsquo;re ready to eject the SD card from the Mac and insert it in the Parallella. And that brings us to the next <em>gotcha</em>.</p>
+
+<h3>Gotcha #2: Powered USB Required</h3>
+
+<p>After moving past the first <em>gotcha</em>, Parallella booted to a beautiful GUI, but the system was unresponsive to the keyboard and mouse. After swapping a few keyboard/mouse combinations, I finally tried a powered USB hub. The powered hub worked.</p>
+
+<p>The Parallella can handle a single keyboard plugged into the micro-USB port. However, if two devices are plugged in via USB, a powered hub is required. Now the USB keyboard/trackpad combo works fine.</p>
+
+<h3>Default Login Credentials</h3>
+
+<p>Default login credentials for Parallella are&hellip;</p>
+
+<ul>
+<li>username = linaro</li>
+<li>password = linaro</li>
+</ul>
+
+
+<h3>SSH, Vim, Git, etc.</h3>
+
+<p>You can SSH to the Parallella from the network&hellip;</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>ssh linaro@192.168.11.133
+</span><span class='line'>linaro@192.168.11.133<span class="err">&#39;</span>s password:
+</span><span class='line'>Welcome to Linaro 14.04 <span class="o">(</span>GNU/Linux 3.12.0-g0bc9c3a-dirty armv7l<span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'> * Documentation:  https://wiki.linaro.org/
+</span><span class='line'>Last login: Sun Jul  6 17:34:17 2014 from wisdomgroup-mbp13
+</span><span class='line'>linaro-nano:~&gt;
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>&hellip; Vim is operational&hellip;</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>linaro-nano:~&gt; which vim
+</span><span class='line'>/usr/bin/vim
+</span><span class='line'>linaro-nano:~&gt; vim --version
+</span><span class='line'>VIM - Vi IMproved 7.4 <span class="o">(</span>2013 Aug 10, compiled Jan  2 2014 19:49:14<span class="o">)</span>
+</span><span class='line'>linaro-nano:~&gt;
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>&hellip; and Git works fine.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>linaro-nano:~&gt; which git
+</span><span class='line'>/usr/bin/git
+</span><span class='line'>linaro-nano:~&gt; git --version
+</span><span class='line'>git version 1.9.1
+</span><span class='line'>linaro-nano:~&gt;
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Conclusion</h3>
+
+<p>After waiting a year for Parallella to arrive, I&rsquo;m excited to have the device up and running. Future posts will explore the &ldquo;why?&rdquo; behind parallel computing. Thanks Adapteva for helping to democratize supercomputing. Awesome times are ahead!</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-07T13:31:00-05:00" pubdate data-updated="true">Jul 7<span>th</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/high-performance-computing/'>High Performance Computing</a>, <a class='category' href='/blog/categories/iot/'>IoT</a>, <a class='category' href='/blog/categories/parallella/'>Parallella</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/" data-via="" data-counturl="http://RayHightower.com/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/06/30/node-dot-js-prep-for-openrov/" title="Previous Post: Node.js Prep for OpenROV">&laquo; Node.js Prep for OpenROV</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About</h1>
+  <p>Raymond T. Hightower is a software developer, founder of <a href="http://wisdomgroup.com">WisdomGroup</a>, organizer of <a href="http://chicagoruby.org">ChicagoRuby</a>, and producer of <a href="http://windycityrails.org">WindyCityRails</a> & <a href="http://rubycaribe.com">RubyCaribe</a>. He is currently exploring IoT, iOS, & RubyMotion.
+  </p>
+  <p>
+  <a href="http://rubycaribe.com"><img src="/images/rubycaribe.jpg" width="191" height="42" alt="RubyCaribe - Ruby conference in Barbados. Ruby in the Caribbean. Ruby on Rails." title="RubyCaribe - Ruby conference in Barbados. Ruby in the Caribbean. Ruby on Rails."/></a><br/>
+  <a href="http://windycityrails.org"><img src="/images/windycityrails.jpg" width="191" height="42" alt="WindyCityRails - Ruby on Rails Conference in Chicago, IL USA" title="WindyCityRails - Ruby on Rails Conference in Chicago, IL USA"/></a><br/>
+  <a href="http://wisdomgroup.com"><img src="/images/wisdomgroup.jpg" width="191" height="42" alt="WisdomGroup - Ruby on Rails. MVP. iPhone. iPad." title="WisdomGroup - Ruby on Rails. MVP. iPhone. iPad."/></a><br/>
+  <a href="http://chicagoruby.org"><img src="/images/chicagoruby.jpg" width="191" height="42" alt="ChicagoRuby - Ruby on Rails in Chicago, IL USA" title="ChicagoRuby - Ruby on Rails in Chicago, IL USA" /></a><br/>
+  </p>
+</section>
+<section>
+  <h1>Observations</h1>
+  <ul>
+    <li>It's kind of fun to do the impossible.<br/>~Walt Disney</li>
+    <li>Find a need and fulfill it. Successful businesses are founded on the needs of people.<br/>~A. G. Gaston</li>
+    <li>A person with a new idea is a crank until the idea succeeds.<br/> ~Mark Twain</li>
+    <li>The best way to make dreams come true is to wake up.<br/> ~Mae C. Jemison</li>
+    <li>Everybody told me no at first, including my wife. I turned the
+    nos into yeses and the disadvantages into advantages.<br/>~John H.
+    Johnson</li>
+    <li>I would have been fired a hundred times at a company run by
+    MBAs. But I never went into business to make money. I went... so
+    that I could do interesting things that hadn't been done
+    before.<br/>~Amar Bose</li>
+  </ul>
+</section>
+<section>
+  <h1>Speaking</h1>
+  <ul>
+    <li><a href="https://www.eventbrite.com/e/cloudcamp-chicago-developer-night-registration-11736697779">
+CloudCamp Chicago - Developer Night</a><br/>in Chicago, IL</li>
+    <li><a href="http://LinuxBarbados.org">LinuxBarbados</a><br/>at University of the West Indies<br/>at Cave Hill, Barbados</li>
+    <li><a href="http://flourishconf.com/2014/">Flourish Open Source Conference</a><br/>at University of Illinois at Chicago</li>
+    <li><a href="http://www.meetup.com/Chicago-RubyMotion/events/143412442/">Chicago RubyMotion</a> at DevBootcamp<br/>in Chicago, IL</li>
+    <li><a href="http://chippewavalleycodecamp.com/">Chippewa Valley Code Camp</a><br/>in Eau Claire, WI</li> 
+    <li><a href="http://ignitechi.org">Ignite Chicago</a> at 1871 in Chicago, IL</li>
+    <li><a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">Aloha Ruby</a> in Honolulu, HI</li>
+    <li><a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">Magic Ruby</a> in Orlando, FL</li>
+    <li><a href="http://www.meetup.com/Geekfest/events/100821552/">Geekfest</a> at Groupon in Chicago, IL</li>
+    <li><a href="http://snow-mobile.org">Snow Mobile</a> in Madison, WI</li>
+    <li><a href="http://chicagocodecamp.com">Chicago Code Camp</a> in Grayslake, IL</li>
+  </ul>
+</section>
+<section>
+  <h1>Social Media</h1>
+		<ul class="social" id="css3">
+			<li class="twitter">
+				<a href="http://twitter.com/rayhightower"><strong>Twitter</strong></a>
+			</li>
+			<li class="github">
+				<a href="http://www.github.com/rayhightower"><strong>GitHub</strong></a>
+			</li>
+			<li class="linkedin">
+				<a href="http://www.linkedin.com/in/rayhightower"><strong>LinkedIn</strong></a>
+			</li>
+			<li class="vimeo">
+				<a href="http://vimeo.com/chicagoruby"><strong>Vimeo</strong></a>
+			</li>
+		</ul>
+    <p>&nbsp;<br/>&nbsp;</p>
+</section>
+<!-- added by RTH 1/9/2013 from http://www.dotnetguy.co.uk/post/2012/06/25/octopress-category-list-plugin/ -->
+<section>
+  <h1>Blog Categories</h1>
+  <ul id="categories">
+    <li class='category'><a href='/blog/categories/arduino/'>Arduino (2)</a></li>
+<li class='category'><a href='/blog/categories/beaglebone-black/'>BeagleBone Black (6)</a></li>
+<li class='category'><a href='/blog/categories/business/'>Business (24)</a></li>
+<li class='category'><a href='/blog/categories/community/'>Community (13)</a></li>
+<li class='category'><a href='/blog/categories/education/'>Education (42)</a></li>
+<li class='category'><a href='/blog/categories/git/'>Git (4)</a></li>
+<li class='category'><a href='/blog/categories/high-performance-computing/'>High Performance Computing (6)</a></li>
+<li class='category'><a href='/blog/categories/ios/'>iOS (13)</a></li>
+<li class='category'><a href='/blog/categories/iot/'>IoT (5)</a></li>
+<li class='category'><a href='/blog/categories/linux/'>Linux (2)</a></li>
+<li class='category'><a href='/blog/categories/linux-unix-osx/'>Linux-Unix-OSX (12)</a></li>
+<li class='category'><a href='/blog/categories/node/'>Node (1)</a></li>
+<li class='category'><a href='/blog/categories/objective-c/'>Objective-C (5)</a></li>
+<li class='category'><a href='/blog/categories/openrov/'>OpenROV (3)</a></li>
+<li class='category'><a href='/blog/categories/parallella/'>Parallella (3)</a></li>
+<li class='category'><a href='/blog/categories/rails/'>Rails (9)</a></li>
+<li class='category'><a href='/blog/categories/raspberry-pi/'>Raspberry Pi (4)</a></li>
+<li class='category'><a href='/blog/categories/ruby/'>Ruby (22)</a></li>
+<li class='category'><a href='/blog/categories/rubymotion/'>RubyMotion (13)</a></li>
+<li class='category'><a href='/blog/categories/ux/'>UX (2)</a></li>
+<li class='category'><a href='/blog/categories/vim/'>Vim (5)</a></li>
+<li class='category'><a href='/blog/categories/xcode/'>Xcode (5)</a></li>
+
+  </ul>
+</section>
+<section>
+  <h1>Featured Articles</h1>
+  <ul>
+    <li><a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Ruby on Raspberry Pi</a></li>
+    <li><a href="/blog/2014/01/02/beaglebone-black-ubuntu-part-1/">Ruby on BeagleBone Black</a></li>
+    <li><a href="/blog/2014/04/12/recursion-and-memoization/">Recursion and Memoization</a></li>
+    <li><a href="/blog/2013/05/16/upgrading-ruby-with-rvm/">Upgrading Ruby With RVM</a></li>
+    <li><a href="/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella Quick Start Guide (with gotchas)</a></li>
+    <li><a href="/blog/2014/05/30/how-to-grow-a-user-group/">How to Grow a User Group</a></li>
+    <li><a href="/blog/2014/06/16/citizen-science-with-openrov/">Citizen Science With OpenROV</a></li>
+  </ul>
+</section>
+<section>
+  <h1>Vim</h1>
+  <p>I don't always use a modal editor. But when I do, I use <a href="/blog/2013/01/12/why-i-use-vim/">Vim</a>.</p>
+  <p>
+  <a href="/blog/2013/01/12/why-i-use-vim/"><img src="/images/vim_editor.gif" width="125" height="60" alt="Vim, the editor" title="Vim, the editor"/></a>
+  </p>
+</section>
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'rayhightower';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://RayHightower.com/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/';
+        var disqus_url = 'http://RayHightower.com/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
