@@ -20,6 +20,8 @@ Parallella:
 * Desktop or laptop computer with a micro-SD card reader, or an SD-card reader with a micro adapter.
 * High-speed internet connection, for downloading Parallella's Ubuntu
 image and related files.
+* Micro-USB-to-USB adapter, for the keyboard and mouse. Parallella is equipped with two micro-USB ports.
+* Micro-HDMI to HDMI cable or adapter. 
 * Parallella (of course!)
 
 Adapteva sells an accesssories kit containing an SD card, power adapter, micro-HDMI to HDMI cable, and USB-to-micro-USB adapter. Unless you already have these items, buying the kit may save you time.
