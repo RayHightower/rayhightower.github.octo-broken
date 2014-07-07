@@ -12,14 +12,23 @@ Yes, Parallella is a $119 supercomputer. That is not a typo. [Adapteva](http://a
 
 Everything in this post is based on the [official quick start guide created by the Parallella team](http://www.parallella.org/quick-start/). These instructions are tailored for a Mac running OS X Mavericks (10.9.3) and a Parallella-16 equipped with the Zynq 7010 chip. I ran into some _gotchas_ during my first Parallella experience. The snags (and solutions) are documented here.
 <!--more-->
+###Tools Required
+You will need the following items in order to burn an SD card for your
+Parallella:
+
+* Micro-SD card, 16GB or greater.
+* Desktop or laptop computer with an SD card reader.
+* High-speed internet connection, for downloading Parallella's Ubuntu
+image and related files.
+
 ###These Steps Could Break Your Primary Machine
-Since you're experimenting with Parallella, we can assume that you are an advanced user. Your machine is already backed up, or you're running these steps on a test machine. And you know [the power and pitfalls of sudo](/sudo-disclaimer/). Technology changes rapidly, and everything you read here could change by the time you read it.
+Since you're experimenting with Parallella, we can assume that you are an advanced user. Your computer is already backed up, or you're running these steps on a test machine. And you know [the power and pitfalls of sudo](/sudo-disclaimer/). Technology changes rapidly, and everything you read here could change by the time you read it.
 
 ###Comparison with Raspberry Pi or Beaglebone Black
 {% imgcap right /images/parallella_fan.jpg %}
 How does the Parallella compare with other single-board computers, like the [Raspberry Pi](/blog/2012/12/03/ruby-on-raspberry-pi/) or [Beaglebone Black](/blog/2014/01/02/beaglebone-black-ubuntu-part-1/)? The first difference noticed at boot-time: Parallella runs hot! So hot, in fact, that the unit comes with a heat sink and the recommendation to add a fan. I’ve never needed a fan with a Pi or a ‘Bone.
 
-Of course, the Parallella runs hotter because it has more processing power packed tightly together in limited space. Since Parallella is designed to run tasks in parallell, we can expect certain programs to perform faster than they would on the Pi or 'Bone. Future posts will cover performance comparisons. Now, let’s get started with Parallella.
+Of course, the Parallella runs hotter because it has more processing power packed tightly together in limited space. Since Parallella is designed to run tasks in parallel, we can expect certain programs to perform faster than they would on the Pi or 'Bone. Future posts will cover performance comparisons. Now, let’s get started with Parallella.
 
 ###Get the Parallella Kit
 Adapteva sells an accesssories kit containing an SD card, power adapter, and USB-to-micro-USB adapter. Unless you already have these items, buying the kit may save you time.
