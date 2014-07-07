@@ -37,6 +37,10 @@ While you're waiting for the files to download, it may make sense to [backup you
 ###Burn the SD Card
 Make sure you're using an SD card of 16GB or larger. 
 
+Insert your SD card into your primary machine's SD card reader, and use
+these steps to figure out the designation of the reader.
+
+
 
 
 
