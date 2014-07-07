@@ -133,7 +133,7 @@ image and related files.</li>
 </ul>
 
 
-<p>Adapteva sells an accesssories kit containing an SD card, power adapter, micro-HDMI to HDMI cable, and USB-to-micro-USB adapter. Unless you already have these items, buying the kit may save you time.</p>
+<p>Adapteva sells an accessories kit containing an SD card, power adapter, micro-HDMI to HDMI cable, and USB-to-micro-USB adapter. Unless you already have these items, buying the kit may save you time.</p>
 
 <h3>These Steps Could Break Your Primary Machine</h3>
 
@@ -161,11 +161,11 @@ How does the Parallella compare with other single-board computers, like the <a h
 
 <p>Unzip the files and place them in a directory that&rsquo;s handy. You&rsquo;ll need them for the next step. With Mac OS X, you can unzip the files by double-clicking them in <code>Finder</code>.</p>
 
-<p>Note: You might need different files depending on the the current date (Parallella software is in a rapid state of flux) and your exact equipment. If your configuration is different, you can make the adjustments described in Parallella&rsquo;s offical guide.</p>
+<p>Note: You might need different files depending on the current date (Parallella software is in a rapid state of flux) and your exact equipment. If your configuration is different, you can make the adjustments described in Parallella&rsquo;s official guide.</p>
 
 <h3>Burn the SD Card</h3>
 
-<p>Insert your SD card into your Mac&rsquo;s SD card reader, and use the Mac OS X <code>diskutil list</code> command to determine the designation of the SD card. If you use portable hard drives with your primary machine, the SD card designation could change from time to time, so it&rsquo;s important to perform this step each each time you burn a card.</p>
+<p>Insert your SD card into your Mac&rsquo;s SD card reader, and use the Mac OS X <code>diskutil list</code> command to determine the designation of the SD card. If you use portable hard drives with your primary machine, the SD card designation could change from time to time, so it&rsquo;s important to perform this step each time you burn a card.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -214,9 +214,9 @@ How does the Parallella compare with other single-board computers, like the <a h
 <h3>Checking dd Progress</h3>
 
 <p><span class='caption-wrapper right'><img class='caption' src='/images/dd_progress.png' width='' height='' alt='Activity Monitor' title='Activity Monitor'><span class='caption-text'>Activity Monitor</span></span>
-Waiting an hour for the <code>dd</code> command to run can be disconcerting because the machine does not give any feedback on progress. No gas guage, spinning indicator, nothing. How do we know if the write process is working?</p>
+Waiting an hour for the <code>dd</code> command to run can be disconcerting because the machine does not give any feedback on progress. No gas gauge, spinning indicator, nothing. How do we know if the write process is working?</p>
 
-<p>Here&rsquo;s how to check progress. Run Apple&rsquo;s <code>Activity Monitor</code>, and look for <code>dd</code> on the list of processes (see diagram). The number of bytes written will increase slowly while <code>dd</code> burns the Ununtu image onto the SD card. With the current version of Ubuntu, roughly 7.4GB will be written to the SD. At completion, <code>dd</code> will disappear from the Activity Monitor list and you&rsquo;ll see the following at the command line.</p>
+<p>Here&rsquo;s how to check progress. Run Apple&rsquo;s <code>Activity Monitor</code>, and look for <code>dd</code> on the list of processes (see diagram). The number of bytes written will increase slowly while <code>dd</code> burns the Ubuntu image onto the SD card. With the current version of Ubuntu, roughly 7.4GB will be written to the SD. At completion, <code>dd</code> will disappear from the Activity Monitor list and you&rsquo;ll see the following at the command line.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
