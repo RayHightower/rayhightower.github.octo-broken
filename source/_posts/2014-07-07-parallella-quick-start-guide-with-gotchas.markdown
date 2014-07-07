@@ -160,17 +160,14 @@ My initial first gotcha: I made the mistake of simply copying the `parallella_e1
 I'm embarrased to say I spent a few hours tracking that one down! 
 
 ###Copy the Last Two Files
-Next, copy the two `kernel-hdmi-default` files to `/Volumes/BOOT`.
-
-
-Copy over the extra files in /Parallella/kernel…
+Two files were decompressed from `kernel-hdmi-default`. Those should also be copied to `/Volumes/BOOT`.
 
 ```bash
 $ cp devicetree.dtb /Volumes/BOOT/
 
-~/Downloads/Parallella/kernel-hdmi-default$ cp uImage /Volumes/BOOT/
+$ cp uImage /Volumes/BOOT/
 
-~/Downloads/Parallella/kernel-hdmi-default$
+$ 
 ```
 
 Here’s what the BOOT partition should look like when you’re done..
@@ -234,5 +231,3 @@ linaro-nano:~>
 
 ###Conclusion
 After waiting a year for Parallella to arrive, I'm excited to have the device up and running. Future posts will explore the "why?" behind parallel computing. Thanks Adapteva for helping to democratize supercomputing. Awesome times are ahead!
-
-
