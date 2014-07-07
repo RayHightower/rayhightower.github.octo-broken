@@ -199,13 +199,40 @@ drwxrwxrwx  1 rth   staff      512 Jul  6 12:11 .fseventsd
 Now you're ready to eject the SD card from the Mac and insert it in the Parallella. And that brings us to the next _gotcha_.
 
 ###Gotcha #2: Powered USB Required
-I tried to use a combination USB keyboard/trackpad when I first booted Parallella, but the system would not respond to the keybord or the trackpad...  
+After moving past the first _gotcha_, Parallella booted to a beautiful GUI, but the system was unresponsive to the keyboard and mouse. After swapping a few keyboard/mouse combinations, I finally tried a powered USB hub. The powered hub worked.
 
-Solution: Use a powered USB hub. Now the USB keyboard/trackpad combo works fine.
+The Parallella can handle a single keyboard plugged into the micro-USB port. However, if two devices are plugged in via USB, a powered hub is required. Now the USB keyboard/trackpad combo works fine.
 
+###Default Login Credentials
+Default login credentials for Parallella are...
 
+* username = linaro
+* password = linaro
+
+###SSH, Vim, Git, etc.
+You can SSH to the Parallella from the network...
+
+```bash
+~$ ssh linaro@192.168.11.133
+linaro@192.168.11.133's password:
+Welcome to Linaro 14.04 (GNU/Linux 3.12.0-g0bc9c3a-dirty armv7l)
+
+ * Documentation:  https://wiki.linaro.org/
+Last login: Sun Jul  6 17:34:17 2014 from wisdomgroup-mbp13
+linaro-nano:~> 
+```
+
+... and Vim works fine.
+
+```bash
+linaro-nano:~> which vim
+/usr/bin/vim
+linaro-nano:~> vim --version
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Jan  2 2014 19:49:14)
+linaro-nano:~> 
+```
 
 ###Conclusion
-
+After waiting a year for Parallella to arrive, I'm excited to have the device up and running. Future posts will explore the "why?" behind parallel computing. Thanks Adapteva for helping to democratize supercomputing. Awesome times are ahead!
 
 
