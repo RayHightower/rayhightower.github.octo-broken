@@ -44,7 +44,9 @@ Download the files that you will need to burn onto the SD card. I'm running Mac 
 * [Linux kernel with HDMI support](http://downloads.parallella.org/boot/linux/kernel-hdmi-default.tgz)
 * [Parallella-16 Zynq 7010 with HDMI display](https://github.com/parallella/parallella-hw/blob/master/fpga/bitstreams/parallella_e16_hdmi_gpiose_7010.bit.bin?raw=true)
 
-Note: You might need different files depending on the the date (Parallella software is in a rapid state of flux) and your exact equipment. If your configuration is different, you can make the adjustments described in the Parallella's offical quick start guide.
+Unzip the files and place them in a directory that's handy. You'll need them for the next step. With Mac OS X, you can unzip the files by double-clicking them in `Finder`.
+
+Note: You might need different files depending on the the current date (Parallella software is in a rapid state of flux) and your exact equipment. If your configuration is different, you can make the adjustments described in the Parallella's offical quick start guide.
 
 ###Burn the SD Card
 Insert your SD card into your Mac's SD card reader, and use the Mac OS X `diskutil list` command to determine the designation of the SD card. If you use portable hard drives with your primary machine, the SD card designation could change from time to time, so it's important to perform this step each each time you burn a card.
@@ -74,15 +76,15 @@ $ sudo dd if=ubuntu-14.04-140611.img of=/dev/disk1 bs=64k
 Password:
 ```
  
-The `dd` command takes a long time to run, over 56 minutes on my machine.
+The `dd` command takes a _long_ time to run, over 56 minutes on my machine.
 
 An important note about block size: The Mac section of the official Parallella guide recommends a block size of size of 1 megabyte, while the Linux instructions recommend a 64 kilobytes (the option `bs=64k` in the `dd` command). I initially used `bs=1m` on my Mac, and I ran into problems. When I used `bs=64k`, everything worked fine. Note that I eventually traced my problem to something other than block size (details below) but since the 64k setting still works, I've left it intact. If I find out why Linux and OS X are using different block sizes, I'll post the information here.
 
 ###Checking dd Progress
 {% imgcap right /images/dd_progress.png Activity Monitor %}
-Waiting an hour for the `dd` command to run can be disconcerting because the machine does not give any feedback on progress. No gas guage, spinning indicator, nothing. How can you find out whether the write process is moving along?
+Waiting an hour for the `dd` command to run can be disconcerting because the machine does not give any feedback on progress. No gas guage, spinning indicator, nothing. How do we know whether the write process is working?
 
-Here's how to check progress. Run Apple's `Activity Monitor`, and look for `dd` on the list of processes (see diagram). The number of bytes written will increase slowly while `dd` burns the Ununtu image on the SD card. With the current version of Ubuntu, roughly 7.4GB will be written to the SD. At completion, `dd` will disappear from the Activity Monitor list and you'll see the following at the command line.
+Here's how to check progress. Run Apple's `Activity Monitor`, and look for `dd` on the list of processes (see diagram). The number of bytes written will increase slowly while `dd` burns the Ununtu image onto the SD card. With the current version of Ubuntu, roughly 7.4GB will be written to the SD. At completion, `dd` will disappear from the Activity Monitor list and you'll see the following at the command line.
 
 ```bash
 $ sudo dd if=ubuntu-14.04-140611.img of=/dev/disk1 bs=64k
@@ -115,15 +117,16 @@ $ diskutil list
 $ 
 ```
 
-As expected, /dev/disk0 remains unchanged. We want it that way because that's where our primary machine's operating system resides. `/dev/disk1` (your actual SD card designation may be different) is the target disk we're after.
+As expected, /dev/disk0 remains unchanged. We want it that way because that's where our primary machine's operating system resides. `/dev/disk1` (your actual SD card designation may be different) is the target disk we're after. Two new partitions are on the SD card, a Fat32 partition called `BOOT` and a Linux partition.
+
+Next we need to copy some supporting files to the new `BOOT` partition.
 
 ###Copying Additional Files to the SD Card
 Now that Ubuntu resides on the SD card, it's time to add the files that support HDMI video and the FPGAs. Here's how.
 
-The additional files will need to be copied to `/BOOT` on the SD card.  You can reach the `/BOOT` directory via `/Volumes/BOOT` on the Mac.
+The additional files will need to be copied to `/BOOT` on the SD card. While it might make sense to reach the `BOOT` partition as `/dev/disk1`, you will actually reach it via `/Volumes/BOOT`.
 
-Before you copy over the support files, `/Volumes/BOOT` will look
-like...
+Before we copy over the files, let's see what's on the `Boot` partition on the SD card.
 
 ```bash
 ~$ cd /Volumes/BOOT/
@@ -139,6 +142,30 @@ drwxrwxrwx  1 rth   staff   512 Jul  5 23:44 .fseventsd
 
 /Volumes/BOOT$
 ```
+
+###Gotcha #1: The FPGA Bitstream File
+First, change into the directory where you stored the additional Parallella files, and copy the FPGA bitstream file to `/Volumes/BOOT`.
+
+```bash
+
+$ cp parallella_e16_hdmi_gpiose_7010.bit.bin /Volumes/BOOT/
+
+$ mv parallella_e16_hdmi_gpiose_7010.bit.bin parallella.bit.bin
+
+$ 
+
+```
+My initial first gotcha: I made the mistake of simply copying the `parallella_e16_hdmi_gpiose_7010.bit.bin` file without renaming it to `parallella.bit.bin`. Parallella will only boot when it sees a file with this filename on the `BOOT` partition. The original file name will probably change as the software gets updated. With each change, we will need to make sure that the file is called `parallella.bit.bin` on the Parallella.
+
+I'm embarrased to say I spent a few hours tracking that one down! 
+
+
+###
+I spent a few hours trackgi
+mistake: I m
+I spent hours trying to nail this one...
+
+
 
 To copy the files over...
 
@@ -173,10 +200,6 @@ drwxrwxrwx  1 rth   staff      512 Jul  5 23:44 .fseventsd
 /Volumes/BOOT$
 
 ```
-
-###Gotcha #1: The FPGA Bitstream
-I spent hours trying to nail this one...
-
 
 
 ###Gotcha #2: Powered USB Required
