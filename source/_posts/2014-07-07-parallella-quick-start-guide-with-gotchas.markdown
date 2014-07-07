@@ -16,7 +16,7 @@ Everything in this post is based on the [official quick start guide created by t
 {% imgcap right /images/parallella_fan.jpg %}
 How does the Parallella compare with other single-board computers, like the [Raspberry Pi](/blog/2012/12/03/ruby-on-raspberry-pi/) or [Beaglebone Black](/blog/2014/01/02/beaglebone-black-ubuntu-part-1/)? The first difference noticed at boot-time: Parallella runs hot! So hot, in fact, that the unit comes with a heat sink and the recommendation to add a fan. I’ve never needed a fan with a Pi or a ‘Bone.
 
-Of course, the Parallella runs hotter because it has more processing power packed tightly together in limited space. Future posts will cover performance comparisons. Now, let’s get started with Parallella.
+Of course, the Parallella runs hotter because it has more processing power packed tightly together in limited space. Since Parallella is designed to run tasks in parallell, we can expect certain programs to perform faster than they would on the Pi or 'Bone. Future posts will cover performance comparisons. Now, let’s get started with Parallella.
 
 ###Get the Parallella Kit
 Adapteva sells an accesssories kit containing an SD card, power adapter, and USB-to-micro-USB adapter. Unless you already have these items, it may save you time to buy the kit.
