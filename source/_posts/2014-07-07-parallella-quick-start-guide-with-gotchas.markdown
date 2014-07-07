@@ -126,7 +126,7 @@ Now that Ubuntu resides on the SD card, it's time to add the files that support 
 
 The additional files will need to be copied to `/BOOT` on the SD card. While it might make sense to reach the `BOOT` partition as `/dev/disk1`, you will actually reach it via `/Volumes/BOOT`.
 
-Before we copy over the files, let's see what's on the `Boot` partition on the SD card.
+Before we copy over the files, let's see what's on the `BOOT` partition on the SD card.
 
 ```bash
 ~$ cd /Volumes/BOOT/
