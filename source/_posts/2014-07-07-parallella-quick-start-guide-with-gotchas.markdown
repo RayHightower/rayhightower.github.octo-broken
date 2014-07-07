@@ -10,7 +10,7 @@ Today’s fastest laptops contain four processors working together to power thro
 
 Yes, Parallella is a $119 supercomputer. That is not a typo. [Adapteva](http://adapteva.com), maker of Parallella, is on a mission to democratize parallel computing. The company's tag line is _Supercomputing for Everyone_.
 
-Everything in this post is based on the [official quick start guide created by the Parallella team](http://www.parallella.org/quick-start/). I ran into some _gotchas_ during my first Parallella experience. The snags (and solutions) are documented here.
+Everything in this post is based on the [official quick start guide created by the Parallella team](http://www.parallella.org/quick-start/). These instructions are tailored for a Mac running OS X Mavericks (10.9.3) and a Parallella-16 equipped with the Zynq 7010 chip. I ran into some _gotchas_ during my first Parallella experience. The snags (and solutions) are documented here.
 <!--more-->
 ###Comparison with Raspberry Pi or Beaglebone Black
 {% imgcap right /images/parallella_fan.jpg %}
