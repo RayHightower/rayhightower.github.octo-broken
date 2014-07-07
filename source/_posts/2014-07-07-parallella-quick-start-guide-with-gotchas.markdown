@@ -50,12 +50,18 @@ $ diskutil list
    3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
 /dev/disk1
    #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:     FDisk_partition_scheme                        *15.9 GB    disk1
-   1:                 DOS_FAT_32 BOOT                    134.2 MB   disk1s1
-   2:                      Linux                         7.3 GB     disk1s2
+   0:     FDisk_partition_scheme                       *15.9 GB     disk1
+   1:               Windows_NTFS Untitled 1             15.9 GB     disk1s1
 
 $ 
 ```
+
+From this `diskutil` report, we can see that we want to burn the SD image to `dev/disk1`. The other device is the hard drive for my primary machine.  Burning the wrong device means destroying data. Please double-check everything, especially target devices for disk write operations.
+
+Writing to the SD card took almost an hour on my machine. YMMV.
+
+When you're done writing to the SD card, use `diskutil` again to see
+what the partitions look like.
 
 ```bash
 $ diskutil list
@@ -67,17 +73,16 @@ $ diskutil list
    3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
 /dev/disk1
    #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:     FDisk_partition_scheme                       *15.9 GB     disk1
-   1:               Windows_NTFS Untitled 1             15.9 GB     disk1s1
+   0:     FDisk_partition_scheme                        *15.9 GB    disk1
+   1:                 DOS_FAT_32 BOOT                    134.2 MB   disk1s1
+   2:                      Linux                         7.3 GB     disk1s2
 
 $ 
 ```
 
-From this `diskutil` report, we can see that we want to burn the SD image to `dev/disk1`. The other device is the hard drive for my primary machine.  Burning the wrong device means destroying data. Please double-check everything, especially target devices for disk write operations.
-
-
-
-
+As expected, /dev/disk0 remains unchanged. We want it that way because
+that's where the operating system and all applications reside.
+`/dev/disk1` is the target disk we're after.
 
 
 ###Out-Takes
