@@ -42,7 +42,7 @@ Download the files that you will need to burn onto the SD card. I'm running Mac 
 * [Linux kernel with HDMI support](http://downloads.parallella.org/boot/linux/kernel-hdmi-default.tgz)
 * [Parallella-16 Zynq 7010 with HDMI display](https://github.com/parallella/parallella-hw/blob/master/fpga/bitstreams/parallella_e16_hdmi_gpiose_7010.bit.bin?raw=true)
 
-Note: You might need different files depending on the the date (software always gets better over time, right?) and your exact equipment. If your configuration is different, you can make the adjustments described in the Parallella's offical quick start guide.
+Note: You might need different files depending on the the date (Parallella software is in a rapid state of flux) and your exact equipment. If your configuration is different, you can make the adjustments described in the Parallella's offical quick start guide.
 
 ###Burn the SD Card
 Make sure you're using an SD card of 16GB or larger. 
