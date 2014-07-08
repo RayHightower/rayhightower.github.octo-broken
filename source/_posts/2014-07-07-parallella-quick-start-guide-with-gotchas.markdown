@@ -31,7 +31,7 @@ Since you're experimenting with Parallella, we can assume that you are an advanc
 {% imgcap right /images/parallella_fan.jpg %}
 How does the Parallella compare with other single-board computers, like the [Raspberry Pi](/blog/2012/12/03/ruby-on-raspberry-pi/) or [Beaglebone Black](/blog/2014/01/02/beaglebone-black-ubuntu-part-1/)? The first difference noticed at boot-time: Parallella runs hot! So hot, in fact, that the unit comes with a heat sink and the recommendation to add a fan. I’ve never needed a fan with a Pi or a ‘Bone.
 
-Of course, the Parallella runs hotter because it has more processing power packed tightly together in limited space. Since Parallella is designed to run tasks in parallel, we can expect certain programs to perform faster than they would on the Pi or 'Bone. Future posts will cover performance comparisons and experiments with languages like [Go and other languages](/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/). Now, let’s get started with Parallella.
+Of course, the Parallella runs hotter because it has more processing power packed tightly together in limited space. Since Parallella is designed to run tasks in parallel, we can expect certain programs to perform faster than they would on the Pi or 'Bone. Future posts will cover performance comparisons and experiments with [Go and other languages](/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/). Now, let’s get started with Parallella.
 
 ###Getting the Parallella OS
 Parallella runs a customized version of Ubuntu installed on a micro-SD card. Burning the SD card takes a long time, so it makes sense to start that process first.
