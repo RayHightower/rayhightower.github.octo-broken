@@ -67,10 +67,18 @@ $
 
 From this `diskutil` report, we can see that we want to burn the SD image to `/dev/disk1`. The other device is the hard drive for my primary machine. Burning the wrong device means destroying data. 
 
-To burn the SD card, change into the directory where you downloaded the Ubuntu image and use the `dd` command as follows...
+To burn the SD card...
+
+1. Change into the directory where you downloaded the Ubuntu image.
+1. Unmount the destination partition on the SD card.
+1. Use the the `dd` command to copy the Ubuntu image to the SD card.
+
+Entered as bash commands, the above steps are as follows:
 
 ```bash
 $ cd [directory containing the ubuntu image file]
+
+$ diskutil unmountDisk /dev/disk1
 
 $ sudo dd if=ubuntu-14.04-140611.img of=/dev/disk1 bs=64k
 Password:
