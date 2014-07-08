@@ -200,7 +200,7 @@ drwxrwxrwx  1 rth   staff      512 Jul  6 12:11 .fseventsd
 /Volumes/BOOT$ 
 ```
 
-{% imgcap right /images/eject-boot.jpg Eject the SD card. %}
+{% imgcap right /images/eject_boot.png Eject the SD card. %}
 ###Eject the SD Card, Insert in Parallella
 Now you're ready to eject the SD card from the Mac and insert it in the Parallella. And that brings us to the next _gotcha_.
 
