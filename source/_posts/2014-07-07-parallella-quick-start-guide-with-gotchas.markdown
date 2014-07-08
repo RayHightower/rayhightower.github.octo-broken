@@ -238,7 +238,7 @@ linaro-nano:~>
 
 ... and Git works fine.
 
-```ssh
+```bash
 linaro-nano:~> which git
 /usr/bin/git
 linaro-nano:~> git --version
