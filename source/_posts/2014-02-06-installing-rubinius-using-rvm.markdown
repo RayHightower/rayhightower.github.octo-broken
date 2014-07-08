@@ -45,7 +45,7 @@ In case of problems: http://rvm.io/help and https://twitter.com/rvm_io
 
 RVM reloaded!
 
-$
+$ 
 ```
 
 ###Next, Install Rubinius
@@ -75,7 +75,7 @@ rvm rubies
 #  * - default
 
 
-$
+$ 
 ```
 
 It's always good to have multiple ways to verify information.
@@ -84,7 +84,7 @@ It's always good to have multiple ways to verify information.
 $ ruby --version
 rubinius 2.0.0.n37 (1.9.3 6d611c7a 2014-02-06 JI) [x86_64-darwin12.5.0]
 
-$
+$ 
 ```
 
 And now, let's do a quick "Hello World" test drive using the Rubinius
@@ -97,7 +97,7 @@ rbx-2.2.4 :001 > p 'Hello World, from Rubinius'
  => "Hello World, from Rubinius"
 rbx-2.2.4 :002 > quit
 
-$
+$ 
 ```
 
 ###Post Installation Notes
