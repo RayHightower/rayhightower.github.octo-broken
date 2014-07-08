@@ -207,7 +207,7 @@ Now you're ready to eject the SD card from the Mac and insert it in the Parallel
 ###Gotcha #2: Powered USB Required
 Parallella booted to a beautiful GUI, but the system would not respond to the keyboard or mouse. After swapping a few keyboard/mouse combinations, I finally tried a powered USB hub. The powered hub worked.
 
-Through trial and error I learned that the Parallella can handle a single keyboard plugged into the micro-USB port. However, if two devices are plugged in via USB, a powered hub is required. A passibve USB hub will not work. A combination keyboard, one with both a keyboard and a trackpad, will also need a powered USB hub.
+Through trial and error I learned that the Parallella can handle a single keyboard plugged into the micro-USB port. However, if two devices are plugged in via USB, a powered hub is required. A passive USB hub will not work. A combination keyboard, one with both a keyboard and a trackpad, will also need a powered USB hub.
 
 ###Default Login Credentials
 Default login credentials for Parallella are...
