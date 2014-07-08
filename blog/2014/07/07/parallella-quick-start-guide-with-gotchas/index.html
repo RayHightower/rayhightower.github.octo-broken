@@ -207,9 +207,20 @@ How does the Parallella compare with other single-board computers, like the <a h
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>The <code>dd</code> command takes a <em>long</em> time to run, over 56 minutes on my machine.</p>
+<p>The <code>dd</code> command takes a <em>long</em> time to run, over 56 minutes on my machine. Here&rsquo;s a quick run-through of the command options:</p>
 
-<p>An important note about block size: The Mac section of the official Parallella guide recommends a block size of size of 1 megabyte, while the Linux instructions recommend a 64 kilobytes (the option <code>bs=64k</code> in the <code>dd</code> command). I initially used <code>bs=1m</code> on my Mac, and I ran into problems. When I used <code>bs=64k</code>, everything worked fine. Note that I eventually traced my problem to something other than block size (details below) but since the 64k setting still works, I&rsquo;ve left it intact. If I find out why Linux and OS X are using different block sizes, I&rsquo;ll post the information here.</p>
+<ul>
+<li><code>sudo</code> gives you <a href="/sudo-disclaimer/">super powers</a>.</li>
+<li><code>dd</code> is the &ldquo;copy and convert&rdquo; command. The letters &ldquo;dd&rdquo; have nothing to do with what the tool actually does. It&rsquo;s just a command name. And like so many things in computer science, the name might be based on a pun.</li>
+<li><code>if=</code> specifies the input file. You can include the full path, or if the file is in your current directory, you can omit the path as shown in this example.</li>
+<li><code>of=</code> specifies the output file. We know that the SD card is located at <code>/dev/disk</code> so that&rsquo;s where the results of this command are headed.  Note that your destination directory may differ from this one.</li>
+<li><code>bs=</code> specifies the block size used for the destination file.</li>
+</ul>
+
+
+<h3>About Block Size</h3>
+
+<p>The Mac section of the official Parallella guide recommends a block size of size of 1 megabyte, while the Linux instructions recommend 64 kilobytes (the option <code>bs=64k</code> in the <code>dd</code> command). I initially used <code>bs=1m</code> on my Mac, and I ran into problems. When I used <code>bs=64k</code>, everything worked fine. Note that I eventually traced my problem to something other than block size (details below) but since the 64k setting still works, I&rsquo;ve left it intact. If I find out why Linux and OS X are using different block sizes, I&rsquo;ll post the information here.</p>
 
 <h3>Checking dd Progress</h3>
 
