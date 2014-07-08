@@ -145,7 +145,7 @@ The additional files will need to be copied to `/BOOT` on the SD card. While it 
 
 We target `/dev/disk1` when burning the Ubuntu image, but to copy the supporting files we target `/Volumes/BOOT`. Both designations point to the same place, the SD card. Why the name switch? 
 
-I don't know why two different designations are used for the same SD card. I only know that it works. I will post here if I find an explantation. Or if you have an answer, feel free to post in the comments below.
+I don't know why two different designations are used for the same SD card. I only know that it works. You can expect to see an update posted here if I find an explantation. Or if you have an answer, feel free to post in the comments below.
 
 Before we copy over the files, let's see what's on the `BOOT` partition on the SD card.
 
