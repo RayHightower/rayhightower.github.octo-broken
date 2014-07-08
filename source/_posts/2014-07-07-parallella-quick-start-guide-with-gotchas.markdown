@@ -91,7 +91,7 @@ The Mac section of the official Parallella guide recommends a block size of size
 {% imgcap center /images/dd_progress.png Activity Monitor %}
 Waiting an hour for the `dd` command to run can be disconcerting because the machine does not give any feedback on progress. No gas gauge, spinning indicator, nothing. How do we know if the write process is working?
 
-Here's how to check progress. Run Apple's `Activity Monitor`, and look for `dd` on the list of processes (see diagram). The number of bytes written will increase slowly while `dd` burns the Ubuntu image onto the SD card. With the current version of Ubuntu, roughly 7.4GB will be written to the SD. At completion, `dd` will disappear from the Activity Monitor list and you'll see the following at the command line.
+Here's how to check progress. Run Apple's `Activity Monitor`, and look for `dd` on the list of processes, as shown in the Activity Monitor screenshot. The number of bytes written will increase slowly while `dd` burns the Ubuntu image onto the SD card. With the current version of Ubuntu, roughly 7.4GB will be written to the SD. At completion, `dd` will disappear from the Activity Monitor list and you'll see the following at the command line.
 
 ```bash
 $ sudo dd if=ubuntu-14.04-140611.img of=/dev/disk1 bs=64k
