@@ -126,7 +126,7 @@ $ diskutil list
 $ 
 ```
 
-As expected, `/dev/disk0` remains unchanged. We want it that way because that's where our primary machine's operating system resides. `/dev/disk1` (your actual SD card designation may be different) is the target disk we're after. Two new partitions are on the SD card, a Fat32 partition called `BOOT` and a Linux partition.
+As expected, `/dev/disk0` remains unchanged. We want it that way because that's where our primary machine's operating system resides. `/dev/disk1` (your actual SD card designation may be different) is the target disk we're after. Two new partitions are on the SD card, a FAT32 partition named `BOOT` and a Linux partition.
 
 Next we need to copy some supporting files to the new `BOOT` partition.
 
