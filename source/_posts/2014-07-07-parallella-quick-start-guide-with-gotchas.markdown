@@ -73,7 +73,7 @@ To burn the SD card...
 1. Unmount the destination partition on the SD card.
 1. Use the the `dd` command to copy the Ubuntu image to the SD card.
 
-Entered as bash commands, the above steps are as follows:
+To execute the above steps as `bash` commands, do the following:
 
 ```bash
 $ cd [directory containing the ubuntu image file]
