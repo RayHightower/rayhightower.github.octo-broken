@@ -198,11 +198,15 @@ How does the Parallella compare with other single-board computers, like the <a h
 
 <p>From this <code>diskutil</code> report, we can see that we want to burn the SD image to <code>/dev/disk1</code>. The other device is the hard drive for my primary machine. Burning the wrong device means destroying data.</p>
 
-<p>To burn the SD card, use the <code>dd</code> command as follows&hellip;</p>
+<p>To burn the SD card, change into the directory where you downloaded the Ubuntu image and use the <code>dd</code> command as follows&hellip;</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo dd <span class="k">if</span><span class="o">=</span>ubuntu-14.04-140611.img <span class="nv">of</span><span class="o">=</span>/dev/disk1 <span class="nv">bs</span><span class="o">=</span>64k
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="nb">cd</span> <span class="o">[</span>directory containing the ubuntu image file<span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>sudo dd <span class="k">if</span><span class="o">=</span>ubuntu-14.04-140611.img <span class="nv">of</span><span class="o">=</span>/dev/disk1 <span class="nv">bs</span><span class="o">=</span>64k
 </span><span class='line'>Password:
 </span></code></pre></td></tr></table></div></figure>
 
