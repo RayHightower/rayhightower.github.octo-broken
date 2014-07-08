@@ -88,7 +88,7 @@ The `dd` command takes a _long_ time to run, over 56 minutes on my machine. Here
 The Mac section of the official Parallella guide recommends a block size of size of 1 megabyte, while the Linux instructions recommend 64 kilobytes (the option `bs=64k` in the `dd` command). I initially used `bs=1m` on my Mac, and I ran into problems. When I used `bs=64k`, everything worked fine. Note that I eventually traced my problem to something other than block size (details below) but since the 64k setting still works, I've left it intact. If I find out why Linux and OS X are using different block sizes, I'll post the information here.
 
 ###Checking dd Progress
-{% imgcap right /images/dd_progress.png Activity Monitor %}
+{% imgcap center /images/dd_progress.png Activity Monitor %}
 Waiting an hour for the `dd` command to run can be disconcerting because the machine does not give any feedback on progress. No gas gauge, spinning indicator, nothing. How do we know if the write process is working?
 
 Here's how to check progress. Run Apple's `Activity Monitor`, and look for `dd` on the list of processes (see diagram). The number of bytes written will increase slowly while `dd` burns the Ubuntu image onto the SD card. With the current version of Ubuntu, roughly 7.4GB will be written to the SD. At completion, `dd` will disappear from the Activity Monitor list and you'll see the following at the command line.
