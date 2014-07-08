@@ -77,7 +77,7 @@ Password:
 The `dd` command takes a _long_ time to run, over 56 minutes on my machine. Here's a quick run-through of the command options:
 
 * `sudo` gives you [super powers](/sudo-disclaimer/). 
-* `dd` 
+* `dd` is the "copy and convert" command. The letters "dd" have nothing to do with what the tool actually does. It's just a command name. And like so many things in computer science, the name might be based on a pun.
 * `if=` specifies the input file. You can include the full path, or if the file is in your current directory, you can omit the path as shown in this example.
 * `of=` specifies the output file. We know that the SD card is located at `/dev/disk` so that's where the results of this command are headed.  Note that your destination directory may differ from this one.
 * `bs=` specifies the block size used for the destination file.
