@@ -240,15 +240,7 @@ linaro-nano:~>
 ```
 
 ###Scrot for Screenshots
-If you want to take a screenshot of the Parallella display, use `scrot`.  It comes with the Ubuntu installation. To use `scrot`...
-
-```bash
-$ scrot
-
-$
-```
-
-Type `scrot` at the command line and hit enter. Five seconds later, the entire screen will be captured and stored in a file called `[time stamp]_1920x1080_scrot.png` in the current directory.
+If you want to take a screenshot of the Parallella display, use `scrot`.  It comes with the Ubuntu installation. Type `scrot` at the command line and hit enter. Five seconds later, the entire screen will be captured and stored in a file called `[time stamp]_1920x1080_scrot.png` in the current directory.
 
 ###Conclusion
 After waiting a year for Parallella to arrive, I'm excited to have the device up and running. Future posts will explore the "why?" behind parallel computing. Thanks Adapteva for helping to democratize supercomputing. Awesome times are ahead!
