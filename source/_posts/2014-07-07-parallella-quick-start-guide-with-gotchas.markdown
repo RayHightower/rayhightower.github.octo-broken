@@ -74,9 +74,16 @@ $ sudo dd if=ubuntu-14.04-140611.img of=/dev/disk1 bs=64k
 Password:
 ```
  
-The `dd` command takes a _long_ time to run, over 56 minutes on my machine.
+The `dd` command takes a _long_ time to run, over 56 minutes on my machine. Here's a quick run-through of the command options:
 
-An important note about block size: The Mac section of the official Parallella guide recommends a block size of size of 1 megabyte, while the Linux instructions recommend a 64 kilobytes (the option `bs=64k` in the `dd` command). I initially used `bs=1m` on my Mac, and I ran into problems. When I used `bs=64k`, everything worked fine. Note that I eventually traced my problem to something other than block size (details below) but since the 64k setting still works, I've left it intact. If I find out why Linux and OS X are using different block sizes, I'll post the information here.
+* `sudo` gives you [super powers](/sudo-disclaimer/). 
+* `dd` 
+* `if=` specifies the input file. You can include the full path, or if the file is in your current directory, you can omit the path as shown in this example.
+* `of=` specifies the output file. We know that the SD card is located at `/dev/disk` so that's where the results of this command are headed.  Note that your destination directory may differ from this one.
+* `bs=` specifies the block size used for the destination file.
+
+###About Block Size
+The Mac section of the official Parallella guide recommends a block size of size of 1 megabyte, while the Linux instructions recommend 64 kilobytes (the option `bs=64k` in the `dd` command). I initially used `bs=1m` on my Mac, and I ran into problems. When I used `bs=64k`, everything worked fine. Note that I eventually traced my problem to something other than block size (details below) but since the 64k setting still works, I've left it intact. If I find out why Linux and OS X are using different block sizes, I'll post the information here.
 
 ###Checking dd Progress
 {% imgcap right /images/dd_progress.png Activity Monitor %}
