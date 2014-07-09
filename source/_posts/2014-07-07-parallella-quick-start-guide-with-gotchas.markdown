@@ -208,7 +208,7 @@ drwxrwxrwx@ 1 rth   staff      512 Jul  6 12:11 .Trashes
 -rwxrwxrwx  1 rth   staff     4096 Jul  6 12:13 ._uImage
 drwxrwxrwx  1 rth   staff      512 Jul  6 12:11 .fseventsd
 -rwxrwxrwx@ 1 rth   staff     8607 Jul  6 12:13 devicetree.dtb
--rwxrwxrwx@ 1 rth   staff  2083744 Jul  6 12:14 parallella_e16_hdmi_gpiose_7010.bit.bin
+-rwxrwxrwx@ 1 rth   staff  2083744 Jul  6 12:14 parallella.bit.bin
 -rwxrwxrwx@ 1 rth   staff  4468792 Jul  6 12:13 uImage
 
 /Volumes/BOOT$ 
