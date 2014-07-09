@@ -183,7 +183,7 @@ First gotcha: I made the mistake of simply copying the `parallella_e16_hdmi_gpio
 Obvious in hindsight, but it took me awhile to track that one down!
 
 ###Copy the Last Two Files
-Two files were decompressed from `kernel-hdmi-default.tgz`: `devicetree.dtb` and `uImage`. Copy these files to `/Volumes/BOOT`.
+Two files were decompressed from `kernel-hdmi-default.tgz`: `devicetree.dtb` and `uImage`. Change into the directory where the files were decompressed, and copy them to `/Volumes/BOOT`.
 
 ```bash
 $ cp devicetree.dtb /Volumes/BOOT/
