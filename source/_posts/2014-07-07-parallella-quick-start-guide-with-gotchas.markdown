@@ -204,7 +204,7 @@ drwxrwxrwx  1 rth   staff      512 Jul  6 12:11 .Spotlight-V100
 drwxrwxrwx@ 1 rth   staff      512 Jul  6 12:11 .Trashes
 -rwxrwxrwx  1 rth   staff     4096 Jul  6 12:11 ._.Trashes
 -rwxrwxrwx  1 rth   staff     4096 Jul  6 12:13 ._devicetree.dtb
--rwxrwxrwx  1 rth   staff     4096 Jul  6 12:14 ._parallella_e16_hdmi_gpiose_7010.bit.bin
+-rwxrwxrwx  1 rth   staff     4096 Jul  6 12:14 ._parallella.bit.bin
 -rwxrwxrwx  1 rth   staff     4096 Jul  6 12:13 ._uImage
 drwxrwxrwx  1 rth   staff      512 Jul  6 12:11 .fseventsd
 -rwxrwxrwx@ 1 rth   staff     8607 Jul  6 12:13 devicetree.dtb
