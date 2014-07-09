@@ -171,6 +171,8 @@ First, change into the directory where you stored the additional Parallella file
 
 $ cp parallella_e16_hdmi_gpiose_7010.bit.bin /Volumes/BOOT/
 
+$ cd /Volumes/BOOT/
+
 $ mv parallella_e16_hdmi_gpiose_7010.bit.bin parallella.bit.bin
 
 $ 
