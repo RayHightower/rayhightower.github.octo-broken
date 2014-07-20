@@ -36,4 +36,12 @@ Apparently, the Ubuntu/Linux `$PATH` varaible was being ignored. Or was
 it?
 
 
+```fish
+linaro-nano:~> vi .profile
+linaro-nano:~>
+
+```
+
+
+
 
