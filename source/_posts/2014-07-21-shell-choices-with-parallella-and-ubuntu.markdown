@@ -36,7 +36,7 @@ Apparently, the Ubuntu/Linux `$PATH` varaible was being ignored. Or was
 it?
 
 
-```fish
+```tcsh
 linaro-nano:~> vi .profile
 linaro-nano:~>
 
