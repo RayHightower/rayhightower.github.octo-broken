@@ -3,7 +3,7 @@ layout: post
 title: "Shell Choices With Parallella and Ubuntu"
 date: 2014-07-21 21:46
 comments: true
-categories: [ Linux-Unix-OSX, Parallella, RVM ]
+categories: [ Linux-Unix-OSX, Parallella ]
 ---
 [RVM](/blog/2013/05/16/upgrading-ruby-with-rvm/) is an effective way to manage Ruby versions on a Linux or OS X system. RVM was working well on my Ubuntu-based Parallella, until one day it stopped.
 
