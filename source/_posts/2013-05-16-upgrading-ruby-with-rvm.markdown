@@ -51,7 +51,7 @@ Removing ruby-2.0.0-p0........
 Successfully migrated ruby-2.0.0-p0 to ruby-2.0.0-p195
 Upgrade complete!
 
-$
+$ 
 ```
 
 Upgrade complete. Now running the latest patch of Ruby 2.0.0-p195
@@ -94,7 +94,7 @@ rvm rubies
 # =* - current && default
 #  * - default
 
-~$
+~$ 
 ```
 And that's it.
 
