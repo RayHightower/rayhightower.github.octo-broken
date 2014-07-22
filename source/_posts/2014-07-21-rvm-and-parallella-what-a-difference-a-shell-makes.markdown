@@ -38,7 +38,7 @@ linaro-nano:~>
 Therefore, it appeared that the Ubuntu/Linux `$PATH` variable was being ignored. Google led us to consider the shell in use on the Parallella.
 
 ###Which Shell Is In Use?
-The shell is just a program that lets humans talk to the Linux operating system via a command line. Several shell programs exist. Linux users tend to prefer one shell or another. The `$SHELL` environmental variable points to the one in use.
+The shell is just a program that lets humans talk to the Linux operating system through a command line interface. Several shell programs exist. Linux users tend to prefer one shell or another. The `$SHELL` environmental variable points to the one in use.
 
 ```bash
 linaro-nano:~> echo $SHELL
