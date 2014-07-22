@@ -37,9 +37,6 @@ linaro-nano:~>
 
 Therefore, it appeared that the Ubuntu/Linux `$PATH` variable was being ignored. Google led us to consider the shell in use on the Parallella.
 
-###Consider Fish?
-Right after this exercise, Zach had a Twitter conversation with [Josh Cheek](htp://twitter.com/josh_cheek) and about a shell called [fish](http://fishshell.com/). Something new and shiny to explore!
-
 ###Which Shell Is In Use?
 The shell is just a program that lets humans talk to the Linux operating system through a command line interface. Several shell programs exist. Linux users tend to prefer one shell or another. The `$SHELL` environmental variable points to the one in use.
 
@@ -77,6 +74,9 @@ rvm rubies
 linaro-nano:~>
 
 ```
+
+###Consider Fish?
+Right after this exercise, Zach had a Twitter conversation with [Josh Cheek](htp://twitter.com/josh_cheek) and about a shell called [fish](http://fishshell.com/). Something new and shiny to explore!
 
 ###Original Plan: Rubinius
 Did I mention that we originally planned to install [Rubinius](/blog/2014/02/06/installing-rubinius-using-rvm/) on the Parallella? Where there are goals, there are yaks waiting to be shaved!
