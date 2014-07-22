@@ -34,15 +34,7 @@ linaro-nano:~>
 
 ```
 
-Therefore, it appeared that the Ubuntu/Linux `$PATH` varaible was being ignored. But why?
-
-I was pairing with Zach Briggs Or was it?
-
-```bash
-linaro-nano:~> vi .profile
-linaro-nano:~>
-
-```
+Therefore, it appeared that the Ubuntu/Linux `$PATH` varaible was being ignored. Google led us to consider the shell in use on the Parallella.
 
 
 ```bash
@@ -51,8 +43,7 @@ linaro-nano:~> echo $SHELL
 linaro-nano:~>
 
 ```
-
-
+Very interesting. `tcsh` was our current Parallella shell. I'm more accustomed to `bash`. Could RVM prefer `bash` too? We changed one line of ~/.profile to tell the Parallella to start with `bash` instead of `tcsh`, and rebooted the Parallella.
 
 ```bash
 linaro-nano:~> echo $SHELL
