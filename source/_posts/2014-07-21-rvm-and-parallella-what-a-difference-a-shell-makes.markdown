@@ -76,7 +76,7 @@ linaro-nano:~>
 ```
 
 ###Consider Fish?
-Right after this exercise, Zach had a Twitter conversation with [Josh Cheek](htp://twitter.com/josh_cheek) and about a shell called [fish](http://fishshell.com/). Something new and shiny to explore!
+Right after this exercise, Zach and [Josh Cheek](htp://twitter.com/josh_cheek) had a Twitter conversation about a shell called [fish](http://fishshell.com/). Something new and shiny to explore!
 
 ###Original Plan: Rubinius
 Did I mention that we originally planned to install [Rubinius](/blog/2014/02/06/installing-rubinius-using-rvm/) on the Parallella? Where there are goals, there are yaks waiting to be shaved!
