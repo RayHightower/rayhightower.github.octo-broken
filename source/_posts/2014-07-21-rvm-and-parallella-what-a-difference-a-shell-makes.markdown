@@ -47,7 +47,7 @@ linaro-nano:~>
 
 ```
 
-Very interesting. `tcsh` was the current Parallella shell. I'm more accustomed to `bash`. Could RVM prefer `bash` too? We changed one line of `~/.profile` to tell the Parallella to start with `bash` instead of `tcsh`, and rebooted the Parallella.
+Very interesting. `tcsh` was the current Parallella shell. I'm more accustomed to `bash`. Could RVM prefer `bash` too? We changed one line of `/etc/passwd` to tell the Parallella to start with `bash` instead of `tcsh`, and rebooted the Parallella.
 
 ```bash
 linaro-nano:~> echo $SHELL
