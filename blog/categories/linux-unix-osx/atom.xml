@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux-Unix-OSX | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/linux-unix-osx/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-07-22T00:15:10-05:00</updated>
+  <updated>2014-07-22T00:16:48-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -58,7 +58,7 @@ linaro-nano:~> ~/.rvm/bin/rvm list</p>
 
 <h3>Which Shell Is In Use?</h3>
 
-<p>The shell is just a program that lets humans talk to the Linux operating system via a command line. Several shell programs exist; &lsquo;nix users tend to prefer one shell or another. The <code>$SHELL</code> environmental variable holds the name of the shell.</p>
+<p>The shell is just a program that lets humans talk to the Linux operating system via a command line. Several shell programs exist. Linux users tend to prefer one shell or another. The <code>$SHELL</code> environmental variable points to the one in use.</p>
 
 <p>```bash
 linaro-nano:~> echo $SHELL
