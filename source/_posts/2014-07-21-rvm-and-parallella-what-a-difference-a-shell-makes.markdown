@@ -34,7 +34,7 @@ linaro-nano:~>
 
 ```
 
-Therefore, it appeared that the Ubuntu/Linux `$PATH` varaible was being ignored. Google led us to consider the shell in use on the Parallella.
+Therefore, it appeared that the Ubuntu/Linux `$PATH` variable was being ignored. Google led us to consider the shell in use on the Parallella.
 
 
 ```bash
