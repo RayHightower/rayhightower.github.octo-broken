@@ -13,7 +13,7 @@ rvm: Command not found.
 linaro-nano:~>
 
 ```
-`RVM not found.` I was pairing with [Zach Briggs]() at an OpenHack / ChicagoRuby event, so the pressure was on to solve the problem. What happened?
+`RVM not found.` I was pairing with [Zach Briggs](https://twitter.com/theotherzach) at an OpenHack / ChicagoRuby event, so the pressure was on to solve the problem. What happened?
 <!--more-->
 
 After a few experiments, I discovered that I could run RVM if I explicitly specified the path to the executable:
