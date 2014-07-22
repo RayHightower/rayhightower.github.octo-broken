@@ -78,5 +78,11 @@ rvm rubies
 
 linaro-nano:~>
 
-
 ```
+
+###On to Fish?
+Accordig to [Twitter](https://twitter.com/TheOtherZach/status/490333914863763457), Zach has moved on to a shell called [fish](http://fishshell.com/). Sounds like a subject for a future blog post.
+
+###Original Plan: Rubinius
+Did I mention that we originally planned to install [Rubinius](/blog/2014/02/06/installing-rubinius-using-rvm/) on the Parallella? Where there are goals, there are yaks waiting to be shaved!
+
