@@ -5,7 +5,7 @@ date: 2014-07-21 21:46
 comments: true
 categories: [ Linux-Unix-OSX, Parallella ]
 ---
-[RVM](/blog/2013/05/16/upgrading-ruby-with-rvm/) is an effective way to manage Ruby versions on a Linux or OS X system. RVM was working well on my Ubuntu-based Parallella, until one day it stopped.
+[RVM](/blog/2013/05/16/upgrading-ruby-with-rvm/) is an effective way to manage Ruby versions on a Linux or OS X system. RVM was working well on my Ubuntu-based Parallella, until one day it stopped:
 
 ```bash
 linaro-nano:~> rvm list
@@ -13,8 +13,10 @@ rvm: Command not found.
 linaro-nano:~>
 
 ```
-What happened?
+`RVM not found.` I was pairing with [Zach Briggs]() at an OpenHack / ChicagoRuby event, so the pressure was on to solve the problem. What happened?
 <!--more-->
+
+After a few experiments, I discovered that I could run RVM if I explicitly specified the path to the executable:
 
 ```bash
 linaro-nano:~> ~/.rvm/bin/rvm list
@@ -32,11 +34,12 @@ rvm rubies
 linaro-nano:~>
 
 ```
-Apparently, the Ubuntu/Linux `$PATH` varaible was being ignored. Or was
-it?
 
+Therefore, it appeared that the Ubuntu/Linux `$PATH` varaible was being ignored.
 
-```tcsh
+I was pairing with Zach Briggs Or was it?
+
+```bash
 linaro-nano:~> vi .profile
 linaro-nano:~>
 
