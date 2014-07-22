@@ -15,6 +15,7 @@ linaro-nano:~>
 ```
 `RVM: Command not found.` Fortunately, [Zach Briggs](https://twitter.com/theotherzach) and I were pairing at a recent OpenHack ChicagoRuby event when the problem occurred. Zach is an ideal pairing partner; troubleshooting was smooth because he was there. Time to investigate.
 <!--more-->
+###Explicit Path
 After a few experiments, we discovered that we could run RVM by explicitly specifying the path to the executable:
 
 ```bash
@@ -36,6 +37,8 @@ linaro-nano:~>
 
 Therefore, it appeared that the Ubuntu/Linux `$PATH` variable was being ignored. Google led us to consider the shell in use on the Parallella.
 
+###What Shell Is Being Used?
+The shell is just a program that lets humans talk to the Linux operating system via a command line. Several shell programs exist; 'nix users tend to prefer one shell or another.
 
 ```bash
 linaro-nano:~> echo $SHELL
