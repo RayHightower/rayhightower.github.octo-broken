@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Shell Choices With Parallella and Ubuntu"
+title: "RVM and Parallella: What a Difference a Shell Makes"
 date: 2014-07-21 21:46
 comments: true
 categories: [ Linux-Unix-OSX, Parallella ]
