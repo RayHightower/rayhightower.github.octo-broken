@@ -37,8 +37,8 @@ linaro-nano:~>
 
 Therefore, it appeared that the Ubuntu/Linux `$PATH` variable was being ignored. Google led us to consider the shell in use on the Parallella.
 
-###What Shell Is Being Used?
-The shell is just a program that lets humans talk to the Linux operating system via a command line. Several shell programs exist; 'nix users tend to prefer one shell or another.
+###What Shell Is In Use?
+The shell is just a program that lets humans talk to the Linux operating system via a command line. Several shell programs exist; 'nix users tend to prefer one shell or another. The `$SHELL` environmental variable holds the name of the shell.
 
 ```bash
 linaro-nano:~> echo $SHELL
@@ -46,6 +46,7 @@ linaro-nano:~> echo $SHELL
 linaro-nano:~>
 
 ```
+
 Very interesting. `tcsh` was the current Parallella shell. I'm more accustomed to `bash`. Could RVM prefer `bash` too? We changed one line of `~/.profile` to tell the Parallella to start with `bash` instead of `tcsh`, and rebooted the Parallella.
 
 ```bash
