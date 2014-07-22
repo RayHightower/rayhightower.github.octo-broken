@@ -15,8 +15,7 @@ linaro-nano:~>
 ```
 `RVM not found.` Fortunately, [Zach Briggs](https://twitter.com/theotherzach) and I were pairing at a recent OpenHack ChicagoRuby event when I encountered the problem. What an ideal pairing partner! Time to investigate.
 <!--more-->
-
-After a few experiments, I discovered that I could run RVM if I explicitly specified the path to the executable:
+After a few experiments, we discovered that we could run RVM by explicitly specifying the path to the executable:
 
 ```bash
 linaro-nano:~> ~/.rvm/bin/rvm list
@@ -35,7 +34,7 @@ linaro-nano:~>
 
 ```
 
-Therefore, it appeared that the Ubuntu/Linux `$PATH` varaible was being ignored.
+Therefore, it appeared that the Ubuntu/Linux `$PATH` varaible was being ignored. But why?
 
 I was pairing with Zach Briggs Or was it?
 
@@ -46,5 +45,38 @@ linaro-nano:~>
 ```
 
 
+```bash
+linaro-nano:~> echo $SHELL
+/bin/tcsh
+linaro-nano:~>
+
+```
 
 
+
+```bash
+linaro-nano:~> echo $SHELL
+/bin/bash
+linaro-nano:~>
+
+```
+...and now RVM works normally.
+
+
+```bash
+linaro-nano:~> rvm list
+
+rvm rubies
+
+   ruby-2.0.0-p481 [ armv7l ]
+
+# Default ruby not set. Try 'rvm alias create default <ruby>'.
+
+# => - current
+# =* - current && default
+#  * - default
+
+linaro-nano:~>
+
+
+```
