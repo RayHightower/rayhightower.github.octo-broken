@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-07-25T15:16:43-05:00</updated>
+  <updated>2014-07-25T15:49:01-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[LinuxBarbados is Global]]></title>
+    <link href="http://RayHightower.com/blog/2014/07/25/linuxbarbados-is-global/"/>
+    <updated>2014-07-25T15:36:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/07/25/linuxbarbados-is-global</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/Barbados_flag_300.png' width='' height='' alt='' title=''><span class='caption-text'></span></span>
+LinuxBarbados offers solid knowledge for anyone who wants to ramp up their open source skills. For example, yesterday’s meeting featured a presentation on <a href="http://xbmc.org/">XBMC</a> by Michael Layne. The presenter dug deep into the tool, offering tips on how to write plugins in C++ or Python.</p>
+
+<!--more-->
+
+
+<h3>Global Reach</h3>
+
+<p>The group is based in Barbados on the campus of the <a href="http://www.cavehill.uwi.edu/">University of the West Indies (UWI) at Cave Hill</a>. Enthusiasts who don’t live in Barbados can participate <em>live</em> online. So far the group has used Google Hangout for video. Other video solutions will be considered as the group continues to grow.</p>
+
+<h3>Next Steps</h3>
+
+<p>Organizers <a href="http://www.meetup.com/LinuxBarbados/members/143194822/">Maurice Beckles</a> and <a href="http://www.meetup.com/LinuxBarbados/members/153574612/">Michael Layne</a> have exciting plans for the group. Take a look at the LinuxBarbados calendar, and join <a href="http://linuxbarbados.org">LinuxBarbados</a> online if you want to hear about future events.</p>
+
+<p>Whether you live in the Caribbean or in Antarctica, we look forward to seeing you!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[CloudCamp Chicago: Developer Night]]></title>
@@ -900,7 +923,7 @@ I offered to leave when the OpenROV team prepared to test some new components. A
 
 <blockquote><p>The page build completed successfully, but returned the following warning:</p>
 
-<p>GitHub Pages recently underwent some improvements (<a href="https://github.com/blog/1715-faster-more-awesome-github-pages">https://github.com/blog/1715-faster-more-awesome-github-pages</a>) to make your site faster and more awesome, but we&rsquo;ve noticed that rayhightower.com isn&rsquo;t properly configured to take advantage of these new features. While your site will continue to work just fine, updating your domain&rsquo;s configuration offers some additional speed and performance benefits. Instructions on updating your site&rsquo;s IP address can be found at <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,">https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,</a> and of course, you can always get in touch with a human at <a href="&#109;&#x61;&#x69;&#108;&#x74;&#111;&#58;&#x73;&#117;&#x70;&#112;&#111;&#x72;&#116;&#x40;&#x67;&#x69;&#x74;&#104;&#117;&#x62;&#x2e;&#99;&#x6f;&#x6d;&#46;">&#115;&#x75;&#112;&#x70;&#111;&#114;&#x74;&#64;&#103;&#105;&#116;&#x68;&#x75;&#x62;&#46;&#x63;&#x6f;&#x6d;&#x2e;</a> For the more technical minded folks who want to skip the help docs: your site&rsquo;s DNS records are pointed to a deprecated IP address.</p>
+<p>GitHub Pages recently underwent some improvements (<a href="https://github.com/blog/1715-faster-more-awesome-github-pages">https://github.com/blog/1715-faster-more-awesome-github-pages</a>) to make your site faster and more awesome, but we&rsquo;ve noticed that rayhightower.com isn&rsquo;t properly configured to take advantage of these new features. While your site will continue to work just fine, updating your domain&rsquo;s configuration offers some additional speed and performance benefits. Instructions on updating your site&rsquo;s IP address can be found at <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,">https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,</a> and of course, you can always get in touch with a human at <a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#58;&#x73;&#x75;&#x70;&#x70;&#111;&#x72;&#x74;&#x40;&#x67;&#105;&#x74;&#x68;&#117;&#98;&#x2e;&#99;&#111;&#x6d;&#x2e;">&#x73;&#117;&#x70;&#x70;&#111;&#x72;&#116;&#x40;&#103;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#99;&#x6f;&#x6d;&#46;</a> For the more technical minded folks who want to skip the help docs: your site&rsquo;s DNS records are pointed to a deprecated IP address.</p>
 
 <p>For information on troubleshooting Jekyll see:</p>
 
@@ -1240,7 +1263,7 @@ Developers of Git are making a serious effort to improve intuitiveness for first
 <p>Harassment is a serious issue, and a 140-character tweet will not do the discussion justice. Therefore, the ChicagoRuby organizers have created multiple communication channels for this issue:</p>
 
 <ul>
-<li>Email: <a href="&#109;&#x61;&#x69;&#108;&#x74;&#x6f;&#58;&#x63;&#111;&#100;&#x65;&#x6f;&#102;&#99;&#x6f;&#110;&#x64;&#117;&#99;&#x74;&#64;&#x63;&#x68;&#x69;&#99;&#97;&#x67;&#x6f;&#x72;&#117;&#x62;&#x79;&#x2e;&#x6f;&#114;&#103;">&#99;&#111;&#x64;&#x65;&#111;&#102;&#99;&#x6f;&#110;&#x64;&#x75;&#99;&#x74;&#64;&#x63;&#104;&#x69;&#x63;&#x61;&#x67;&#x6f;&#114;&#117;&#98;&#121;&#46;&#111;&#x72;&#x67;</a></li>
+<li>Email: <a href="&#x6d;&#97;&#x69;&#108;&#116;&#111;&#x3a;&#99;&#x6f;&#x64;&#101;&#x6f;&#x66;&#x63;&#x6f;&#110;&#100;&#x75;&#x63;&#116;&#64;&#x63;&#104;&#105;&#99;&#x61;&#103;&#111;&#x72;&#x75;&#x62;&#121;&#x2e;&#111;&#x72;&#x67;">&#99;&#111;&#x64;&#101;&#x6f;&#x66;&#x63;&#x6f;&#110;&#100;&#x75;&#99;&#x74;&#64;&#99;&#x68;&#x69;&#99;&#x61;&#103;&#111;&#114;&#117;&#x62;&#x79;&#x2e;&#x6f;&#114;&#103;</a></li>
 <li>Any of the contact names listed on the current code of conduct</li>
 <li>Phone number listed on the code of conduct</li>
 </ul>
@@ -1851,106 +1874,6 @@ Most of my iOS time is spent with <a href="http://RayHightower.com/blog/2013/01/
 
 
 <p>Whew. Homebrew saves the day again!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[What Is Open Source?]]></title>
-    <link href="http://RayHightower.com/blog/2014/02/22/what-is-open-source/"/>
-    <updated>2014-02-22T16:41:00-06:00</updated>
-    <id>http://RayHightower.com/blog/2014/02/22/what-is-open-source</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/linux-penguin.png' width='' height='' alt='The Linux penguin.' title='The Linux penguin.'><span class='caption-text'>The Linux penguin.</span></span>
-Entrepreneurs, especially those outside of software development, may find this article useful.</p>
-
-<h3>When Performance Matters</h3>
-
-<p>Over seventy percent of the web servers on the planet run Linux, the open source operating system. Google, Facebook, and Amazon all run Linux. They bet their companies on this decision every day.</p>
-
-<p>Given that thousands of successful companies have bet their livelihood on open source, an observer might ask these questions:</p>
-
-<ul>
-<li>What is open source?</li>
-<li>Why should one care about open source?</li>
-<li>How can a company profit from software that is given away for free?</li>
-</ul>
-
-
-<!--more-->
-
-
-<h3>Source Code, Executable Code</h3>
-
-<p>First, a few definitions. Source code is a human-modifiable form of software. It’s software as written by programmers. Source code must be translated into executable code (either compiled or interpreted) before a computer can run it.</p>
-
-<p>Water is a useful metaphor for this discussion. Water can exist in three different states (steam, liquid, and ice) without changing its chemical properties. It’s still water. Likewise, software can exist as source code or executable code – it’s still software. We use water in one of its three states depending on whether we want to wash a car (liquid), cool a drink (ice), or clean a carpet (steam).</p>
-
-<p>In the world of software, executable code is difficult for humans to read, but easily executed by computers. Source code is easily read and modified by humans, but computers cannot execute it. Source code must be compiled or interpreted before a computer can execute it.</p>
-
-<h3>One Way Translation</h3>
-
-<p>Translating source code into executable code is a one-way street. Once a programmer has compiled source code into executable code, it is virtually impossible to convert it back into source code. You might think of a compiler as a blender that chops the food into a form easily digestible by the computer. After it’s chopped, the food never returns to its original form.</p>
-
-<p>That’s why programmers always keep a copy of the source code handy. It might be necessary to make changes (fix bugs) and re-compile.</p>
-
-<p>Trade secrets that are hidden in executable code can be easily read in source code. So developers go to great lengths to protect their source code, except in the open source community.</p>
-
-<h3>Closed Source Tradition</h3>
-
-<p>Most of today’s business software is closed source. Two examples: Microsoft Office and Apple iWork. Both Microsoft and Apple consider the source code for their respective office suites to be highly confidential. You will never (legally) download the source code for a closed source product. Security is so tight at Microsoft, for example, that engineers are only allowed to view that portion of the source code that is relevant to their current project.</p>
-
-<p>Contrast that against open source software. Open source products make the source code freely available for viewing, comments, and modification by the software community at large.</p>
-
-<h3>Open Source Chaos?</h3>
-
-<p>But doesn&rsquo;t such openness lead to chaos? Intuitively, you would think so, but it doesn&rsquo;t. The culture of the open source community has its own rules of conduct that most members willingly follow. Rules are enforced by the community in ways that developers respond to.</p>
-
-<p>It is difficult to imagine an apparently chaotic system that produces robust software. How counter-intuitive! But a long list of successful open source projects (available through your favorite search engine) shows that the method works. Eric S. Raymond explores open source cultural norms in his book <a href="http://www.amazon.com/Cathedral-Bazaar-Musings-Accidental-Revolutionary-ebook/dp/B0026OR3LM">The Cathedral and the Bazaar</a>.</p>
-
-<h3>The Banking Metaphor</h3>
-
-<p>Some makers of security software believe that hiding their source code will prevent malcontents from finding vulnerabilities and exploiting them. Their reasoning is like that of a bank owner who keeps the building blueprints secret so thieves don’t know how to drill the safe from next door.</p>
-
-<p>Other security experts disagree. They want many people (including malcontents) to view the code so that vulnerabilities can be discovered and patched early. Their philosophy could be summed up in a statement by the creator of Linux:</p>
-
-<blockquote><p>Given enough eyeballs, all bugs are shallow.
-<br/>&nbsp;
-~Linus Torvalds</p></blockquote>
-
-<p>In other words, when thousands of developers are working on the same project they are likely to be widely dispersed across the code. Wide coverage means that a given bug is more likely to be discovered by at least one developer.</p>
-
-<p>In our banking metaphor, the open source company would be like a bank owner who wants many people to review the blueprints, find the weak spots, and fix security holes before the bank gets robbed.</p>
-
-<h3>It’s Not All-or-Nothing</h3>
-
-<p>Choosing an open or closed source strategy is not an all-or-nothing decision. Google, the busiest search engine on the web, has bet the company on open source software. And yet their most strategic software, the secret mathematical engine that drives their search results, remains closed. So how does a company decide what to open and what to close?</p>
-
-<p>Open source works when the upside of sharing outweighs the downside of exposed code. In the Google example, using and contributing to Linux gives Google a very stable operating platform at a relatively low cost. In effect they are leveraging the time and talent of thousands of developers around the world, while those developers are also leveraging Google’s expertise.</p>
-
-<p>It doesn&rsquo;t matter that Google&rsquo;s competitors also benefit from that same stable Linux platform because Google differentiates itself through advanced search technology. By leveraging the community for assistance with the platform (Linux, Apache, and other tools), Google frees up engineering time and talent to focus on their secret sauce: Search methodology and mathematics.</p>
-
-<h3>If Your Business Isn’t Software</h3>
-
-<p>So&hellip; If you don&rsquo;t run a software company, how can you benefit from open source?</p>
-
-<p>There’s always a chance that open source won’t work for your company. Maybe you run an enterprise that doesn’t benefit from the web. In that case, your current software options may suit you just fine.</p>
-
-<p>Of course, you may have already benefited from open source. There is at least a 70% chance that your company’s web site runs on Linux. If that’s the case, then rest assured that you’re running on a very stable and robust platform.</p>
-
-<h3>Think Big, Start Small for ROI</h3>
-
-<p>If you really want to see ROI from open source, encourage your technical team (software developers, network support, etc.) to explore open source tools. Chances are that they’ve already experimented with open source and they’re waiting for an opportunity to do an official company project.</p>
-
-<p>Start small, perhaps with an automated network monitoring project or a small database. As you explore the technology, new ideas will become apparent to you. View this as a way to accelerate and strengthen the software development process.</p>
-
-<h3>Open Source and Automobiles</h3>
-
-<p>BMW is arguably the best automotive engineering company on the planet. Does BMW invent the wheel every time they design a new automobile? Absolutely not. BMW leverages thousands of years of &ldquo;open source&rdquo; wheel technology, and they focus their design energy in areas where they can make a difference: Engine, transmission, suspension, and luxury amenities. A similar model can be applied to software development. In fact, it already has.</p>
-
-<h3>Suggested Reading</h3>
-
-<p><a href="http://www.amazon.com/Cathedral-Bazaar-Musings-Accidental-Revolutionary-ebook/dp/B0026OR3LM">The Cathedral and the Bazaar</a>, by Eric S. Raymond. The author is both participant and anthropologist in the open source community.</p>
-
-<p><em>Note: An earlier version of this article was published at <a href="http://wisdomgroup.com">WisdomGroup.com</a></em>.</p>
 ]]></content>
   </entry>
   
