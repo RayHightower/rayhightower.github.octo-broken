@@ -12,6 +12,6 @@ LinuxBarbados offers solid knowledge for anyone who wants to ramp up their open 
 The group is based in the Barbados on the campus of the University of the West Indies. Enthusiasts who don’t live in Barbados can participate _live_ online. So far the group has used Google Hangout for video. Other video solutions will be considered as the group continues to grow.
 
 ###Next Steps
-Organizers [Maurice Beckles](http://www.meetup.com/LinuxBarbados/members/143194822/) and [Michael Layne](http://www.meetup.com/LinuxBarbados/members/153574612/) have exciting plans for the group. Take a look at the LinuxBarbados calendar, and join [LinuxBarbados](http://linuxbarbados.org) online if you want to be notified about future events.
+Organizers [Maurice Beckles](http://www.meetup.com/LinuxBarbados/members/143194822/) and [Michael Layne](http://www.meetup.com/LinuxBarbados/members/153574612/) have exciting plans for the group. Take a look at the LinuxBarbados calendar, and join [LinuxBarbados](http://linuxbarbados.org) online if you want to hear about future events.
 
-We look forward to seeing you!
+Whether you live in the Caribbean or in Antarctica, we look forward to seeing you!
