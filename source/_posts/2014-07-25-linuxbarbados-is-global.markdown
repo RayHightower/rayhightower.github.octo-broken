@@ -5,6 +5,7 @@ date: 2014-07-25 15:36
 comments: true
 categories: [ Community ]
 ---
+{% imgcap right /images/Barbados_flag_300.png %}
 LinuxBarbados offers solid knowledge for anyone who wants to ramp up their open source skills. For example, yesterday’s meeting featured a presentation on [XBMC](http://xbmc.org/) by Michael Layne. The presenter dug deep into the tool, offering tips on how to write plugins in C++ or Python. 
 
 ###Global Reach
