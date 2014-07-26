@@ -6,7 +6,7 @@ comments: true
 categories: [ Community ]
 ---
 {% imgcap right /images/Barbados_flag_300.png %}
-LinuxBarbados offers solid knowledge for anyone who wants to ramp up their open source skills. For example, yesterday’s meeting featured a presentation on [XBMC](http://xbmc.org/) by Michael Layne. The presenter dug deep into the tool, offering tips on how to write plugins in C++ or Python. 
+LinuxBarbados is a user group for open source enthusiasts. The group meets monthly, offering solid knowledge for anyone who wants to ramp up their open source skills. For example, yesterday’s meeting featured a presentation on [XBMC](http://xbmc.org/) by Michael Layne. The presenter dug deep into the tool, offering tips on how to write plugins in C++ or Python. 
 <!--more-->
 ###Global Reach
 The group is based in Barbados on the campus of the [University of the West Indies (UWI) at Cave Hill](http://www.cavehill.uwi.edu/). Enthusiasts who don’t live in Barbados can participate _live_ online. So far the group has used Google Hangout for video. Other video solutions will be considered as the group continues to grow.
