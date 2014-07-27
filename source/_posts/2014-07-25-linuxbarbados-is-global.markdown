@@ -5,7 +5,7 @@ date: 2014-07-25 15:36
 comments: true
 categories: [ Community ]
 ---
-{% imgcap right /images/Barbados_flag_300.png %}
+{% imgcap right /images/LinuxBarbados-tux-logo_300.png %}
 LinuxBarbados is a user group for open source enthusiasts. The group meets monthly, offering solid knowledge for anyone who wants to ramp up their open source skills. For example, yesterday’s meeting featured a presentation on [XBMC](http://xbmc.org/) by Michael Layne. The presenter dug deep into the tool, offering tips on how to write plugins in C++ or Python. 
 <!--more-->
 ###Global Reach
