@@ -10,12 +10,12 @@ From a video interview with Steve Jobs:
 
 >That's a very limited life. Life can be much broader once you discover one simple fact.<!--more--> 
 
->Everything around you that you call life was made up by people who are no smarter than you. And you can change it. You can influence it. You can build other things that other people can use.
+>Everything around you that you call life was made up by people who are no smarter than you. And you can change it. You can influence it. You can build your own things that other people can use.
 
 >Once you learn that, you'll never be the same again.
 
 Check out the video:
 
-<center><iframe width="560" height="315" src="//www.youtube.com/embed/GHAJhosbWiM?rel=0" frameborder="0" allowfullscreen></iframe></center>
+<center><iframe width="560" height="315" src="//www.youtube.com/embed/UvEiSa6_EPA?rel=0" frameborder="0" allowfullscreen></iframe></center>
 
 
