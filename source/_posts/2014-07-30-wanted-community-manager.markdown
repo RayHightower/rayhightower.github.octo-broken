@@ -36,5 +36,5 @@ To learn more about WisdomGroup, visit:
 * [RayHightower.com](http://rayhightower.com) - president's personal blog. 
 
 ###To Apply
-If you would like to apply for the position, email a PDF of your resume to careers@wisdomgroup.com, and include the words "Community Manager" in the subject line. I look forward to hearing from you.
+To apply for the position, email a PDF of your resume to careers@wisdomgroup.com, and include the words "Community Manager" in the subject line. We look forward to hearing from you.
 
