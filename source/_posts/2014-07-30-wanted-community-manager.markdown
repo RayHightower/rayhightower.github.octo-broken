@@ -5,13 +5,12 @@ date: 2014-07-30 12:43
 comments: true
 categories: 
 ---
-{% imgcap right /images/chicagoruby_community.png Learning together. Jamming together. %}
-WisdomGroup is hiring a Community Manager (CM) to help run our user groups and conferences. This is a part time independent contractor position, mostly remote, with some on-site work during meetings and conferences. The position could become full time depending on results produced and community growth.
+{% imgcap right /images/chicagoruby_community.png  Jamming together. Growing together. %}
+WisdomGroup is hiring a Community Manager (CM) to help run our user groups and conferences. This is a part-time independent contractor position, mostly remote, with some on-site work during meetings and conferences. The position could become full-time depending on results produced and community growth.
 
 ###Smart People, Growing Together
 Our community philosophy can be summarized as follows: _When smart people challenge each other to grow, great things happen_. Our track record is  covered in the article [How to Grow a User Group](/blog/2014/05/30/how-to-grow-a-user-group/). The right CM will help to grow thes groups to the next level of excellence.
 <!--more-->
-
 ###Responsibilities
 The CM will be responsible for the following:
 
