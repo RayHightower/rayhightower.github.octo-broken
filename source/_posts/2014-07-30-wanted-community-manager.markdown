@@ -5,9 +5,7 @@ date: 2014-07-30 12:43
 comments: true
 categories: 
 ---
-WisdomGroup is hiring a Community Manager (CM) to help run our user groups and conferences. This is a part time independent contractor position, mostly remote, with some on-site work during meetings and conferences. The position could become full time depending on results produced.
-
-(The position will initially last for six months, with opportunities for extension depending on results produced.)???????
+WisdomGroup is hiring a Community Manager (CM) to help run our user groups and conferences. This is a part time independent contractor position, mostly remote, with some on-site work during meetings and conferences. The position could become full time depending on results produced and community growth.
 <!--more-->
 ###Smart People, Growing Together
 Our community philosophy can be summed up as follows: _When smart people challenge each other to grow, great things happen_. Community growth is  described in the article [How to Grow a User Group](/blog/2014/05/30/how-to-grow-a-user-group/). The right CM will lead these growing groups to the next level of excellence.
