@@ -3,7 +3,7 @@ layout: post
 title: "OS X and RubyMotion, Finishing Up"
 date: 2013-11-11 19:03
 comments: true
-categories: [ Linux-Unix-OSX, RubyMotion ]
+categories: [ OS X, RubyMotion ]
 ---
 {% imgcap right /images/show-package-contents.png %}
 There is something I neglected to cover in a previous blog post, [Building an OS X App With RubyMotion](/blog/2013/11/01/building-an-os-x-app-with-rubymotion/). Once you've written the OS X app, where do you find the executable, and how do you add it to the `Applications` folder on the Mac?

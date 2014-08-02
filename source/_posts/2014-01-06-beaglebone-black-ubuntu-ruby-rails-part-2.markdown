@@ -3,7 +3,7 @@ layout: post
 title: "BeagleBone Black Running Ubuntu: Part2 (Plus Ruby on Rails)"
 date: 2014-01-06 02:31
 comments: true
-categories: [ BeagleBone Black, Linux, OS X, Rails, Ruby ]
+categories: [ BeagleBone Black, Linux, Node, Rails, Ruby ]
 ---
 {% imgcap right /images/ruby-rails-ubuntu-beaglebone-black.png Ruby. Rails. Ubuntu. BeagleBone Black. %}
 
