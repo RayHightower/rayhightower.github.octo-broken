@@ -29,7 +29,7 @@ The ideal candidate will fit the following description:
 * **Self Starter** - Works remotely to produce outstanding results with minimal supervision. Runs through walls to get things done.
 * **Team Player** - Works well with other members of the WisdomGroup team. Shares information with team members via Basecamp and other collaboration tools.
 * **Strategic Thinker** - Understands how the CM position fits into WisdomGroup's big picture. Demonstrates understanding by personally taking action where needed.
-* **Aggressive Learner** - Actively uses current social media tools like Twitter and Facebook. Learns and creates ways to engage the community with social media tools.
+* **Aggressive Learner** - Currently uses social media tools like Twitter and Facebook. Learns and creates new ways to engage the community with social media tools.
 
 ###About WisdomGroup
 To learn more about WisdomGroup, visit:
