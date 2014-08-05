@@ -28,7 +28,7 @@ Maybe you built a gem to solve a problem for yourself, and now you want to relea
 How about security? Have you outgrown the `Devise` gem? Or do you simply need to know more about `Devise` internals so that you can use it more effectively? Maybe it's time to abandon username/password logins altogether and go with SQRL. [Justin Love](http://www.windycityrails.org/schedule/#love) and [Lucas Mazza](http://www.windycityrails.org/schedule/#mazza) might have some ideas for you.
 
 ###Awesome Speakers. Awesome Audience.
-This year's WindyCityRails features the most powerful collection of speakers we've ever assembled. Check outn the [complete list of WindyCityRails speakers](http://www.windycityrails.org/schedule/) and ask yourself what you can learn from each one.
+This year's WindyCityRails features the most powerful collection of speakers we've ever assembled. Check out the [complete list of WindyCityRails speakers](http://www.windycityrails.org/schedule/) and ask yourself what you can learn from each one.
 
 Even better: Only 300 WindyCityRails tickets will be sold. Our speakers enjoy interacting with audience members throughout the conference. As professionals, they are always learning, too! So if you want some face time with people who understand Big League Problems (and more importantly, Big League Solutions) WindyCityRails is the place for you to be.
 
