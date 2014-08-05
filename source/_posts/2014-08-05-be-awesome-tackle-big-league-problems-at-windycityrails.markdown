@@ -10,7 +10,7 @@ Do you see yourself in any of these scenarios?
 
 * You have already built a successful Rails app. Now that you're "done", you know you can make it better, but you're not sure how. You want to take your skills to the next level.
 
-* You recently graduated from [Dev Bootcamp](http://devbootcamp.com), [Starter League](http://thestarterleague.com), or another school. You're ready to meet and interact with your next generation of mentors.
+* You recently graduated from [Dev Bootcamp](http://devbootcamp.com), [Starter League](http://thestarterleague.com), [Mobile Makers](http://www.mobilemakers.co/) or another school. You're ready to meet and interact with your next generation of mentors.
 
 * You are no longer a beginner. You have seen _advanced_ developers in action, and you are determined to get there yourself.
 
