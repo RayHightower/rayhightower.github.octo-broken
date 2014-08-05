@@ -25,14 +25,14 @@ Now... How do you scale? Do you buy more hardware, change your architecure, choo
 
 Maybe you built a gem to solve a problem for yourself, and now you want to release your gem to the world. What legal questions do you need to consider? [David Heinemeier Hansson](http://twitter.com/dhh) faced a similar challenge when he built Rails, right? [Daliah Saper](http://www.windycityrails.org/schedule/#saper) is an attorney who specializes in intellectual property and other open source software issues. Put her team to work for you.
 
-How about security? Have you outgrown the `Devise` gem? Or do you simply need to know more about `Devise` internals so that you can use it more effectively? Maybe it's time to abandon username/password logins altogether and go with SQRL. [Justin Love](http://www.windycityrails.org/schedule/#love) and [Lucas Mazza](http://www.windycityrails.org/schedule/#mazza) might have some ideas in this area.
+How about security? Have you outgrown the `Devise` gem? Or do you simply need to know more about `Devise` internals so that you can use it more effectively? Maybe it's time to abandon username/password logins altogether and go with SQRL. [Justin Love](http://www.windycityrails.org/schedule/#love) and [Lucas Mazza](http://www.windycityrails.org/schedule/#mazza) might have some ideas for you.
 
 ###Awesome Speakers. Awesome Audience.
-Call me biased, but this year's WindyCityRails features the most powerful collection of speakers we've ever assembled. Check outn the [complete list of WindyCityRails speakers]() and ask yourself what each one can teach you.
+This year's WindyCityRails features the most powerful collection of speakers we've ever assembled. Check outn the [complete list of WindyCityRails speakers](http://www.windycityrails.org/schedule/) and ask yourself what you can learn from each one.
 
-Finally, remember that only 300 WindyCityRails tickets will be sold. Our speakers enjoy interacting with the audience, before and after their presentations. So if you want some face time with people who understand Big League Problems (and more importantly, Big League Solutions) WindyCityRails is the place for you to be.
+Even better: Only 300 WindyCityRails tickets will be sold. Our speakers enjoy interacting with audience members throughout the conference. As professionals, they are always learning, too! So if you want some face time with people who understand Big League Problems (and more importantly, Big League Solutions) WindyCityRails is the place for you to be.
 
-###Get Your Ticket Now
+###Get Tickets Now
 Tickets are selling fast. Get yours now at [http://www.windycityrails.org/register/](http://www.windycityrails.org/register/). Use the promo code AWESOME to save $75.00 on the standard price.
 
-I look forward to seeing you at WindyCityRails!
+We look forward to seeing you at WindyCityRails!
