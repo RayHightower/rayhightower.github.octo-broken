@@ -19,36 +19,18 @@ Do you see yourself in any of these scenarios?
 Common thread: It's time to unleash the awesomeness in your bones. You want to take your skills to the next level, and you are ready to tackle _Big League Problems_. [WindyCityRails](http://windycityrails.org) is for you.
 <!--more-->
 ###What are Big League Problems?
-You might think of a big league problem as a good problem. For example, the Rails app you built is pulling in customers, and you're bumping into the limits of your software architecture. Who knew that so many people would want to buy from you? How do you scale? Do you buy more hardware, change your architecure, choose a new platform, or some combination of the above? [Dr. Nic Williams](), [Brian Shirai](), [Evan Light](), [Mark Menard]() have dealt with problems just like that. Learn from them.
+You might think of a big league problem as a good problem. For example, the Rails app you built is pulling in customers, and you're bumping into the limits of your software architecture. Who knew that so many people would want to buy from you? How do you scale? Do you buy more hardware, change your architecure, choose a new platform, or some combination of the above? [Dr. Nic Williams](http://www.windycityrails.org/schedule/#williams), [Brian Shirai](http://www.windycityrails.org/schedule/#shirai), [Evan Light](http://www.windycityrails.org/schedule/#light), [Mark Menard](http://www.windycityrails.org/schedule/#menard) have dealt with problems just like that. Learn from them.
 
-Maybe you built a gem to solve a problem for yourself, and now you want to release your gem to the world. What legal questions do you need to consider? [David Heinemeier Hansson](http://twitter.com/dhh) faced a similar challenge when he built Rails, right? [Daliah Saper](http://www.windycityrails.org/schedule/#saper) is an attorney who specializes in intellectual property and other aspects of open source.
+Maybe you built a gem to solve a problem for yourself, and now you want to release your gem to the world. What legal questions do you need to consider? [David Heinemeier Hansson](http://twitter.com/dhh) faced a similar challenge when he built Rails, right? [Daliah Saper](http://www.windycityrails.org/schedule/#saper) is an attorney who specializes in intellectual property and other aspects of open source. Put her team to work for you.
 
-How about security? Have you outgrown the `Devise` gem? Or do you simply need to know more about `Devise` internals so that you can use it more effectively? Maybe it's time to abandon username/password logins altogether and go with SQRL. [Justin Love]() and [Lucas Mazza]() might ber able to help you in this area.
+How about security? Have you outgrown the `Devise` gem? Or do you simply need to know more about `Devise` internals so that you can use it more effectively? Maybe it's time to abandon username/password logins altogether and go with SQRL. [Justin Love](http://www.windycityrails.org/schedule/#love) and [Lucas Mazza](http://www.windycityrails.org/schedule/#mazza) might have some ideas in this area.
 
 ###Awesome Speakers. Awesome Audience.
-Call me biased, but this year's WindyCityRails features the most
-powerful collection of speakers we've ever assembled. In addition to the
-ones mentioned above, feast your eyes on these:
+Call me biased, but this year's WindyCityRails features the most powerful collection of speakers we've ever assembled. Check outn the [complete list of WindyCityRails speakers]() and ask yourself what each one can teach you.
 
-
+Finally, remember that only 300 WindyCityRails tickets will be sold. Our speakers enjoy interacting with the audience, before and after their presentations. So if you want some face time with people who understand Big League Problems (and more importantly, Big League Solutions) WindyCityRails is the place for you to be.
 
 ###Get Your Ticket Now
+Tickets are selling fast. Get yours now at [http://www.windycityrails.org/register/](http://www.windycityrails.org/register/). Use the promo code AWESOME to save $75.00 on the standard price.
 
-
-
-
-How do you scale
-
-Rubinius. [Moore’s Law]() is running out. How do we achieve better performance now that we’re bumping up against the laws of physics. On Star Trek, Scotty would simply re-write the laws of physics. 
-
-How do we extract more performance from Ruby on multiple cores? Brian Shirai shows how with Rubinius.
-
-Recommendation Engines. After your online customers buy something from you, how do you recommend future purchases that they care about? Miss the target, and customers will classify you as spam. Evan Light shares his experience in this area.
-
-Rails is great for growing businesses, right? It’s one thing to read those words in a blog post. But Jimmy Odom is living proof that it can happen.
-
-If you want to add authentication to your app, `gem install devise` offers a good foundation. But to use Devise well, you’d better know what’s going on inside the black box. Lucas Mazza tells what Devise is doing when we’re not looking.
-
-Is it better to design up front, or should TDD guide the way?
-
-No more usernames and passwords? Justin Love explores SQRL, a way to implement security without usernames/password login.
+I look forward to seeing you at WindyCityRails!
