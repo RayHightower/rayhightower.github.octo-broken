@@ -8,7 +8,7 @@ categories: [ Community ]
 {% imgcap right /images/big_league_problems_windycityrails.jpg Be awesome. %}
 Do you see yourself in any of these scenarios?
 
-* You’ve already built a successful Rails app. Now that you’re “done”, you know you can make it better, but you’re not sure how. You want to take your skills to the next level.
+* You have already built a successful Rails app. Now that you're "done", you know you can make it better, but you're not sure how. You want to take your skills to the next level.
 
 * You recently graduated from [Dev Bootcamp](http://devbootcamp.com), [Starter League](http://thestarterleague.com), or another school. You’re ready to meet and interact with your next generation of mentors.
 
@@ -16,7 +16,7 @@ Do you see yourself in any of these scenarios?
 
 * Software development is relatively new to you, but you built a successful track record in another profession. You want to meet people who can help you accelerate through the beginner phase so you can start something useful.
 
-Common thread for all of the above: Awesomenessis in your bones, and you are ready to unleash it. You want to take your skills to the next level, and you’re ready to tackle _Big League Problems_. [WindyCityRails](http://windycityrails.org) is for you.
+Common thread for all of the above: Awesomeness is in your bones, and you are ready to unleash it. You want to take your skills to the next level, and you’re ready to tackle _Big League Problems_. [WindyCityRails](http://windycityrails.org) is for you.
 <!--more-->
 ###Speakers
 
