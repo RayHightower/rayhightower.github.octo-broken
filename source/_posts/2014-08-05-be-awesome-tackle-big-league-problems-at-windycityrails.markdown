@@ -12,11 +12,11 @@ Do you see yourself in any of these scenarios?
 
 * You recently graduated from [Dev Bootcamp](http://devbootcamp.com), [Starter League](http://thestarterleague.com), or another school. You’re ready to meet and interact with your next generation of mentors.
 
-* You are no longer a beginner. You know what “advanced” looks like, and you are driven to get there.
+* You are no longer a beginner. You have seen _advanced_ developers in action, and you are determined to get there yourself.
 
-* Software development is brand new to you, but you have a successful track record from another profession. You want to meet people who can help you accelerate through the beginner phase so you can start something useful.
+* Software development is relatively new to you, but you built a successful track record in another profession. You want to meet people who can help you accelerate through the beginner phase so you can start something useful.
 
-Common thread for all of the above: You want to take your skills to the next level, and you’re ready to tackle _Big League Problems_. [WindyCityRails](http://windycityrails.org) is for you.
+Common thread for all of the above: Awesomenessis in your bones, and you are ready to unleash it. You want to take your skills to the next level, and you’re ready to tackle _Big League Problems_. [WindyCityRails](http://windycityrails.org) is for you.
 <!--more-->
 ###Speakers
 
