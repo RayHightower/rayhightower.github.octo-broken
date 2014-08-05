@@ -16,9 +16,7 @@ Do you see yourself in any of these scenarios?
 
 * Software development is relatively new to you, but you built a successful track record in another profession. You want to meet people who can help you accelerate through the beginner phase so you can start something useful.
 
-Common thread: It's time to unleash the awesomeness in your bones. You want to take your skills to the next level, and you’re ready to tackle _Big League Problems_. [WindyCityRails](http://windycityrails.org) is for you.
-
-Common thread: Awesomeness is in your bones, and you are ready to unleash it. You want to take your skills to the next level, and you’re ready to tackle _Big League Problems_. [WindyCityRails](http://windycityrails.org) is for you.
+Common thread: It's time to unleash the awesomeness in your bones. You want to take your skills to the next level, and you are ready to tackle _Big League Problems_. [WindyCityRails](http://windycityrails.org) is for you.
 <!--more-->
 ###Speakers
 
