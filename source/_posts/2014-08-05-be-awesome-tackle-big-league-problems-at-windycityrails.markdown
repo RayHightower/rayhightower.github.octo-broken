@@ -23,7 +23,7 @@ You might think of a big league problem as a good problem. For example, the Rail
 
 Now... How do you scale? Do you buy more hardware, change your architecture, choose a new platform, or some combination of these? [Dr. Nic Williams](http://www.windycityrails.org/schedule/#williams), [Brian Shirai](http://www.windycityrails.org/schedule/#shirai), [Evan Light](http://www.windycityrails.org/schedule/#light), [Mark Menard](http://www.windycityrails.org/schedule/#menard) deal with scaling problems. Learn from them.
 
-Maybe you built a gem to solve a problem for yourself, and now you want to release your gem to the world. What legal questions do you need to consider? [David Heinemeier Hansson](http://twitter.com/dhh) faced a similar challenge when he built Rails, right? [Daliah Saper](http://www.windycityrails.org/schedule/#saper) is an attorney who specializes in intellectual property and other open source software issues. Put her team to work for you.
+Maybe you built a gem to solve a problem for yourself, and now you want to release your gem to the world. What legal questions do you need to consider? Did Rails face similar challenges in the beginning? [Daliah Saper](http://www.windycityrails.org/schedule/#saper) is an attorney who specializes in intellectual property and other open source software issues. Put her team to work for you.
 
 How about security? Have you outgrown the `Devise` gem? Or do you simply need to know more about `Devise` internals so that you can use it more effectively? Maybe it's time to abandon username/password logins altogether and go with SQRL. [Justin Love](http://www.windycityrails.org/schedule/#love) and [Lucas Mazza](http://www.windycityrails.org/schedule/#mazza) might have some ideas for you.
 
