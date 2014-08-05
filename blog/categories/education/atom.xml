@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Education | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/education/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-08-03T16:50:38-05:00</updated>
+  <updated>2014-08-05T17:36:26-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Be Awesome. Tackle Big League Problems at WindyCityRails]]></title>
+    <link href="http://RayHightower.com/blog/2014/08/05/be-awesome-tackle-big-league-problems-at-windycityrails/"/>
+    <updated>2014-08-05T16:21:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/08/05/be-awesome-tackle-big-league-problems-at-windycityrails</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/big_league_problems_windycityrails.jpg' width='' height='' alt='Be awesome.' title='Be awesome.'><span class='caption-text'>Be awesome.</span></span>
+Do you see yourself in any of these scenarios?</p>
+
+<ul>
+<li><p>You have already built a successful Rails app. Now that you&rsquo;re &ldquo;done&rdquo;, you know you can make it better, but you&rsquo;re not sure how. You want to take your skills to the next level.</p></li>
+<li><p>You recently graduated from <a href="http://devbootcamp.com">Dev Bootcamp</a>, <a href="http://thestarterleague.com">Starter League</a>, <a href="http://www.mobilemakers.co/">Mobile Makers</a> or another school. You&rsquo;re ready to meet and interact with your next generation of mentors.</p></li>
+<li><p>You are no longer a beginner. You have seen <em>advanced</em> developers in action, and you are determined to get there yourself.</p></li>
+<li><p>Software development is relatively new to you, and you built a successful track record in another profession. You want to meet people who can help you accelerate through the beginner phase so you can launch something useful.</p></li>
+</ul>
+
+
+<p>Common thread: It&rsquo;s time to unleash the awesomeness in your bones. You want to take your skills to the next level, and you are ready to tackle <em>Big League Problems</em>. <a href="http://windycityrails.org">WindyCityRails</a> is for you.</p>
+
+<!--more-->
+
+
+<h3>What are Big League Problems?</h3>
+
+<p>You might think of a big league problem as a good problem. For example, the Rails app you built is pulling in customers, and you&rsquo;re bumping into the limits of your software architecture. Who knew that so many people would buy from you?</p>
+
+<p>Now&hellip; How do you scale? Do you buy more hardware, change your architecture, choose a new platform, or some combination of these? <a href="http://www.windycityrails.org/schedule/#williams">Dr. Nic Williams</a>, <a href="http://www.windycityrails.org/schedule/#shirai">Brian Shirai</a>, <a href="http://www.windycityrails.org/schedule/#light">Evan Light</a>, <a href="http://www.windycityrails.org/schedule/#menard">Mark Menard</a> deal with scaling problems. Learn from them.</p>
+
+<p>Maybe you built a gem to solve a problem for yourself, and now you want to release your gem to the world. What legal questions do you need to consider? Did Rails face similar challenges in the beginning? <a href="http://www.windycityrails.org/schedule/#saper">Daliah Saper</a> is an attorney who specializes in intellectual property and other open source software issues. Put her team to work for you.</p>
+
+<p>How about security? Have you outgrown the <code>Devise</code> gem? Or do you simply need to know more about <code>Devise</code> internals so that you can use it more effectively? Maybe it&rsquo;s time to abandon username/password logins altogether and go with SQRL. <a href="http://www.windycityrails.org/schedule/#love">Justin Love</a> and <a href="http://www.windycityrails.org/schedule/#mazza">Lucas Mazza</a> might have some ideas for you.</p>
+
+<h3>Awesome Speakers. Awesome Audience.</h3>
+
+<p>This year&rsquo;s WindyCityRails features the most powerful collection of speakers we&rsquo;ve ever assembled. Check out the <a href="http://www.windycityrails.org/schedule/">complete list of WindyCityRails speakers</a> and ask yourself what you can learn from each one.</p>
+
+<p>Even better: Only 300 WindyCityRails tickets will be sold. Our speakers enjoy interacting with audience members throughout the conference. As professionals, they are always learning, too! So if you want some face time with people who understand Big League Problems (and more importantly, Big League Solutions) WindyCityRails is the place for you to be.</p>
+
+<h3>Get Tickets Now</h3>
+
+<p>Tickets are selling fast. Get yours now at <a href="http://www.windycityrails.org/register/">http://www.windycityrails.org/register/</a>. Use the promo code AWESOME to save $75.00 on the standard price.</p>
+
+<p>We look forward to seeing you at WindyCityRails!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Get Back to Making Things]]></title>
@@ -418,25 +463,6 @@ end
 <h3>Sample Code</h3>
 
 <p>Sample code related to this article can be found on <a href="https://github.com/RayHightower/fibonacci">GitHub</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Why Open Source?]]></title>
-    <link href="http://RayHightower.com/blog/2014/04/05/why-open-source/"/>
-    <updated>2014-04-05T00:40:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2014/04/05/why-open-source</id>
-    <content type="html"><![CDATA[<p>As members of the open source community, we have internalized the benefits of open source. Sometimes, knowing a topic so well can hinder us from explaining it to people who need to understand our work: Clients, customers, and employers. They need to understand us because they pay us. Understanding helps to build trust.</p>
-
-<p>The topic <a href="/blog/2014/02/22/what-is-open-source/">What is Open Source</a> is covered in earlier post by that title. This presentation covers some of the &ldquo;whys&rdquo; of open source in terms that matter to the people we serve: Clients, customers, and employers.</p>
-
-<!--more-->
-
-
-<center><script async class="speakerdeck-embed" data-id="e20291c09eb00131918d4a0f4a2b8270" data-ratio="1.29456384323641" src="http://RayHightower.com//speakerdeck.com/assets/embed.js"></script></center>
-
-
-<p>This presentation was delivered at the <a href="http://flourishconf.com/">Flourish 2014</a> conference at the University of Illinois at Chicago. I am grateful to the Flourish organizers and to UIC for inviting me to speak.</p>
 ]]></content>
   </entry>
   
