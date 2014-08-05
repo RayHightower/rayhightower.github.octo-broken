@@ -26,6 +26,14 @@ Maybe you built a gem to solve a problem for yourself, and now you want to relea
 How about security? Have you outgrown the `Devise` gem? Or do you simply need to know more about `Devise` internals so that you can use it more effectively? Maybe it's time to abandon username/password logins altogether and go with SQRL. [Justin Love]() and [Lucas Mazza]() might ber able to help you in this area.
 
 ###Awesome Speakers. Awesome Audience.
+Call me biased, but this year's WindyCityRails features the most
+powerful collection of speakers we've ever assembled. In addition to the
+ones mentioned above, feast your eyes on these:
+
+
+
+###Get Your Ticket Now
+
 
 
 
