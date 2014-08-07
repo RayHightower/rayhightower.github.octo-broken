@@ -10,6 +10,7 @@ Parallella is a single-board supercomputer smaller than a deck of cards. While t
 <!--more-->
 Everything in this post is based on the [official quick start guide created by the Parallella team](http://www.parallella.org/quick-start/). These instructions are tailored for a Mac running OS X Mavericks (10.9.3) and a Parallella-16 equipped with the Zynq 7010 chip. I ran into some _gotchas_ during my first Parallella experience. The snags (and solutions) are documented here.
 
+{% imgcap right /images/parallella.jpg Parallella. Tiny and powerful. %}
 ###Tools Required
 You will need the following items in order to burn an SD card for your
 Parallella:
