@@ -11,10 +11,8 @@ I know this problem can be solved. I just haven’t figured it out yet, and I ne
 ###Parts That Work
 Image updates on the Beaglebone Black work flawlessly thanks to scripts written by [Brian Adams](https://github.com/BrianAdams) and [Dominick Fretz](https://github.com/BrianAdams). I can view images via the cockpit software and the camera, the LED lights are super-bright, and the lasers hold steady at 10cm apart. My fully assembled OpenROV passes the water submersion test. Yes, it’s waterproof, thanks to O-rings and silicon-based lubricant!
 
-What about the motors? The motors work, almost. I know that I missed a step, somewhere. And I need help from the OpenROV community to crack this puzzle.
+What about the motors? The motors work, almost...
 <!--more-->
-
-
 ###Problem Summary
 With the cockpit software running:
 If I turn on any of the three ESCs, two of my motors (vertical and port) start running at full blast. 
