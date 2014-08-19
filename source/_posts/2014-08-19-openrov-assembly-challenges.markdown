@@ -16,17 +16,39 @@ electronic speed control (ESC) settings, calibration, or less than
 perfect soldering? That's where I need help.
 <!--more-->
 ###Summary of Symptoms
-With the cockpit software running:
-If I turn on any of the three ESCs, two of my motors (vertical and port) start running at full blast. 
-The port motor responds to the cockpit slider controls as expected: +1 is full blast on one direction, -1 is full blast in the other direction, and 0 stops the motor completely.
+With the cockpit software running and attached to the OpenROV:
 
+* If I turn on any of the three ESCs, two of the motors (vertical and port) start running at full blast. The starboard motor remains stationary.
+* While the V and P motors continue to run at full blast, the starboard motor responds to the cockpit slider controls as expected: +1 makes S run full blast on one direction, -1 send S full blast in the other direction, and 0 stops the S motor completely. During this exercise, V and P continue at full blast.
+* Turning off the ESC stops the V and P motors.
+* When I turn on any of the ESCs, the camera servo jumps slightly, about 10 degrees.
 
-###Using a Power Supply Instead of Batteries
-{% imgcap /images/power_supply_openrov.jpg Applying power. %}
+When the cockpit software is not running (and the Google Chrome browser is completely closed):
 
+* Turning on an ESC has no effect on the motors.
+* The camera servo jumps slightly, about 10 degrees, as it did with the cockpit software running.
 
-
+Interesting behavior!
 
 ###Double-Checking the ESC Settings
 {% imgcap /images/esc_program_card.jpg ESC Program Card %}
-Setting the electronic speed controllers (ESCs) with the beep-and-button-push method was time consuming. And I was concerned that I may have made a mistake in the settings. To double-check the 
+During troubleshooting, my first step was to double-check the electronic speed controller (ESC) settings. Setting the ESCs with the beep-and-button-push method was time consuming. And I was concerned that I may have made a mistake in counting the beeps.
+
+Solution: I bought an ESC program card. Amazon sells them for less than fifteen dollars, well worth the price when you consider the peace of mind that the card brings. The program card shows each ESC setting with a clear 7-segment LED display, much easier than counting beeps!
+
+According to the program card, all of the ESC settings are correct.
+
+###Using a Power Supply Instead of Batteries
+All of the time spent troubleshooting drained the OpenROV batteries. So I devised a way to apply power directly to the OpenROV without batteries.
+{% imgcap /images/openrov_power_supply.jpg Directly connected to power supply. %}
+
+Here's how it works. A power supply set to 12 volts with the `+` lead connected to the `+` leads of the battery containers, and the `-` lead connected to a ground terminal on the OpenROV controller board. If you're reading this paragraph and you know a better way for me to connect the power supply, please let me know in the comment section below.
+
+###Advice Welcome
+I'm not sure where to look next to solve the challenge with the motors.  The only thing certain is that I probably skipped a step somewhere.  Advice welcome!
+
+
+
+
+
+
