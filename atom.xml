@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-08-07T09:57:03-05:00</updated>
+  <updated>2014-08-19T17:45:28-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,81 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[OpenROV Assembly Challenges]]></title>
+    <link href="http://RayHightower.com/blog/2014/08/19/openrov-assembly-challenges/"/>
+    <updated>2014-08-19T16:44:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/08/19/openrov-assembly-challenges</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/openrov_rth.jpg' width='' height='' alt='OpenROV fully assembled.' title='OpenROV fully assembled.'><span class='caption-text'>OpenROV fully assembled.</span></span>
+I know this problem can be solved. I just haven’t figured it out yet, and I need help from the <a href="http://openrov.com/">OpenROV</a> community to do so.</p>
+
+<h3>Parts That Work</h3>
+
+<p>Software image updates on the Beaglebone Black work flawlessly thanks to scripts written by <a href="https://github.com/BrianAdams">Brian Adams</a> and <a href="https://github.com/BrianAdams">Dominick Fretz</a>. The cockpit software shows a real-time image from the camera, the LED lights are super-bright, and the lasers hold steady at 10cm apart. My fully assembled OpenROV passes the water submersion test. Yes, it’s waterproof, thanks to O-rings and silicon-based lubricant!</p>
+
+<p>What about the motors? The motors work, almost. Could it be the
+electronic speed control (ESC) settings, calibration, or less than
+perfect soldering? That&rsquo;s where I need help.</p>
+
+<!--more-->
+
+
+<h3>Summary of Symptoms</h3>
+
+<p>With the cockpit software running and attached to the OpenROV:</p>
+
+<ul>
+<li>If I turn on any of the three ESCs, two of the motors (vertical and port) start running at full blast. The starboard motor remains stationary.</li>
+<li>While the V and P motors continue to run at full blast, the starboard motor responds to the cockpit slider controls as expected: +1 makes S run full blast on one direction, -1 send S full blast in the other direction, and 0 stops the S motor completely. During this exercise, V and P continue at full blast.</li>
+<li>Turning off the ESC stops the V and P motors.</li>
+<li>When I turn on any of the ESCs, the camera servo jumps slightly, about 10 degrees. And then the V and P motors run full blast.</li>
+</ul>
+
+
+<p>When the cockpit software is not running (and the Google Chrome browser is completely closed):</p>
+
+<ul>
+<li>Turning on an ESC has no effect on the motors.</li>
+<li>The camera servo jumps slightly, about 10 degrees, as it did with the cockpit software running. But the motors remain stationary.</li>
+</ul>
+
+
+<p>Interesting behavior!</p>
+
+<h3>Double-Checking the ESC Settings</h3>
+
+<p><span class='caption-wrapper'><img class='caption' src='http://RayHightower.com/images/esc_program_card.jpg' width='' height='' alt='ESC Program Card' title='ESC Program Card'><span class='caption-text'>ESC Program Card</span></span>
+During troubleshooting, my first step was to double-check the electronic speed controller (ESC) settings. Setting the ESCs with the beep-and-button-push method was time consuming. And I was concerned that I may have made a mistake in counting the beeps.</p>
+
+<p>Solution: I bought an ESC program card. Amazon sells them for less than fifteen dollars, well worth the price when you consider the peace of mind that the card brings. The program card shows each ESC setting with a clear 7-segment LED display, much easier than counting beeps!</p>
+
+<p>According to the program card, all of the ESC settings are correct.</p>
+
+<h3>Using a Power Supply Instead of Batteries</h3>
+
+<p>All of the time spent troubleshooting drained the OpenROV batteries. So I devised a way to apply power directly to the OpenROV without batteries.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/openrov_power_supply.jpg' width='' height='' alt='Directly connected to power supply.' title='Directly connected to power supply.'><span class='caption-text'>Directly connected to power supply.</span></span></p>
+
+<p>The photo reveals the random condition of my work surface, so here&rsquo;s a verbal description of this hack:</p>
+
+<ul>
+<li>In the background, a power supply set to 12 volts</li>
+<li><code>+</code> lead (red) connected to the <code>+</code> leads of the battery containers, via a wire acting as a Y-connector.</li>
+<li><code>-</code> lead (black) connected to a ground terminal on the OpenROV controller board through a black jumper cable</li>
+</ul>
+
+
+<p>I find that this hack works best if I connect the 12 volt setup first while the Topside Adapter is powered off. Applying power (via USB) to the Topside Adapter turns the entire assembly on.</p>
+
+<p>If you&rsquo;re reading this section and you know a better way for me to connect the power supply, please advise in the comments section below.</p>
+
+<h3>Advice Welcome</h3>
+
+<p>I&rsquo;m not sure where to look next to solve the challenge with the motors. Maybe I skipped a step somewhere during assembly? Advice welcome!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Be Awesome. Tackle Big League Problems at WindyCityRails]]></title>
@@ -1031,7 +1106,7 @@ I offered to leave when the OpenROV team prepared to test some new components. A
 
 <blockquote><p>The page build completed successfully, but returned the following warning:</p>
 
-<p>GitHub Pages recently underwent some improvements (<a href="https://github.com/blog/1715-faster-more-awesome-github-pages">https://github.com/blog/1715-faster-more-awesome-github-pages</a>) to make your site faster and more awesome, but we&rsquo;ve noticed that rayhightower.com isn&rsquo;t properly configured to take advantage of these new features. While your site will continue to work just fine, updating your domain&rsquo;s configuration offers some additional speed and performance benefits. Instructions on updating your site&rsquo;s IP address can be found at <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,">https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,</a> and of course, you can always get in touch with a human at <a href="&#109;&#97;&#105;&#x6c;&#x74;&#111;&#58;&#115;&#x75;&#x70;&#112;&#111;&#114;&#116;&#64;&#103;&#105;&#x74;&#104;&#117;&#98;&#46;&#x63;&#x6f;&#x6d;&#46;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#x67;&#x69;&#116;&#x68;&#x75;&#98;&#46;&#x63;&#111;&#x6d;&#46;</a> For the more technical minded folks who want to skip the help docs: your site&rsquo;s DNS records are pointed to a deprecated IP address.</p>
+<p>GitHub Pages recently underwent some improvements (<a href="https://github.com/blog/1715-faster-more-awesome-github-pages">https://github.com/blog/1715-faster-more-awesome-github-pages</a>) to make your site faster and more awesome, but we&rsquo;ve noticed that rayhightower.com isn&rsquo;t properly configured to take advantage of these new features. While your site will continue to work just fine, updating your domain&rsquo;s configuration offers some additional speed and performance benefits. Instructions on updating your site&rsquo;s IP address can be found at <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,">https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,</a> and of course, you can always get in touch with a human at <a href="&#x6d;&#x61;&#x69;&#108;&#116;&#x6f;&#58;&#x73;&#x75;&#112;&#112;&#111;&#114;&#116;&#x40;&#103;&#x69;&#116;&#104;&#117;&#98;&#46;&#x63;&#x6f;&#109;&#46;">&#x73;&#x75;&#x70;&#x70;&#x6f;&#114;&#116;&#64;&#103;&#105;&#116;&#x68;&#x75;&#x62;&#x2e;&#99;&#111;&#x6d;&#46;</a> For the more technical minded folks who want to skip the help docs: your site&rsquo;s DNS records are pointed to a deprecated IP address.</p>
 
 <p>For information on troubleshooting Jekyll see:</p>
 
@@ -1371,7 +1446,7 @@ Developers of Git are making a serious effort to improve intuitiveness for first
 <p>Harassment is a serious issue, and a 140-character tweet will not do the discussion justice. Therefore, the ChicagoRuby organizers have created multiple communication channels for this issue:</p>
 
 <ul>
-<li>Email: <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x63;&#111;&#x64;&#x65;&#x6f;&#102;&#x63;&#x6f;&#110;&#100;&#x75;&#99;&#x74;&#64;&#99;&#104;&#105;&#99;&#x61;&#103;&#x6f;&#114;&#117;&#x62;&#121;&#46;&#111;&#114;&#103;">&#x63;&#x6f;&#x64;&#101;&#111;&#102;&#x63;&#x6f;&#110;&#x64;&#x75;&#99;&#116;&#64;&#x63;&#104;&#105;&#99;&#x61;&#103;&#x6f;&#x72;&#x75;&#x62;&#x79;&#46;&#x6f;&#x72;&#103;</a></li>
+<li>Email: <a href="&#109;&#97;&#x69;&#108;&#116;&#x6f;&#x3a;&#x63;&#111;&#x64;&#101;&#111;&#x66;&#x63;&#x6f;&#x6e;&#x64;&#x75;&#x63;&#x74;&#64;&#x63;&#x68;&#x69;&#x63;&#x61;&#103;&#111;&#x72;&#x75;&#x62;&#x79;&#x2e;&#111;&#x72;&#x67;">&#99;&#x6f;&#x64;&#101;&#111;&#x66;&#99;&#x6f;&#x6e;&#x64;&#117;&#99;&#116;&#x40;&#x63;&#x68;&#105;&#99;&#97;&#103;&#x6f;&#x72;&#117;&#98;&#121;&#x2e;&#x6f;&#x72;&#x67;</a></li>
 <li>Any of the contact names listed on the current code of conduct</li>
 <li>Phone number listed on the code of conduct</li>
 </ul>
@@ -1780,54 +1855,6 @@ the results for future use.</li>
 <p>Thank you, Flourish organizers, for inviting me to speak this year. UIC is where I first learned about open source, Linux, and the web. My appreciation for UIC extends beyond my CS degree.</p>
 
 <p>Great things happen when like-minded people come together to exchange ideas. I look forward to seeing you at Flourish 2014!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How .gitignore Works]]></title>
-    <link href="http://RayHightower.com/blog/2014/03/25/how-gitignore-works/"/>
-    <updated>2014-03-25T18:20:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2014/03/25/how-gitignore-works</id>
-    <content type="html"><![CDATA[<p>Earlier today I ran into a Git issue within a RubyMotion project. I added a directory to the project&rsquo;s <code>.gitignore</code> file, but Git seemed to ignore my ignore. Expressed more clearly, Git continued to track a directory that I explicitly told it to ignore.</p>
-
-<p>What?</p>
-
-<p>Either there was a bug in Git, or my understanding of <code>.gitignore</code> was incomplete. It was time for me to dig in and learn more about <code>.gitignore</code>.</p>
-
-<!--more-->
-
-
-<h3>What I Learned About .gitignore</h3>
-
-<p>The root cause of my problem: Once Git has begun tracking a file or directory, adding it to <code>.gitignore</code> changes nothing. Git will continue to track the file unless we explicitly tell Git to stop tracking the file.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>git rm --cached <span class="o">[</span>filename<span class="o">]</span>
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Or, if you want to stop tracking an entire directory (like me in this case)&hellip;</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>git rm -r --cached <span class="o">[</span>directoryname<span class="o">]</span>
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The <code>-r</code> flag will tell Git to stop tracking all of the sub-directories and files within <code>directoryname</code>, recursively.</p>
-
-<p>Git was behaving exactly as designed.</p>
-
-<h3>Penalty</h3>
-
-<p>I should have known this a long time ago. My penalty: A public admission :&ndash;)</p>
 ]]></content>
   </entry>
   
