@@ -21,12 +21,12 @@ With the cockpit software running and attached to the OpenROV:
 * If I turn on any of the three ESCs, two of the motors (vertical and port) start running at full blast. The starboard motor remains stationary.
 * While the V and P motors continue to run at full blast, the starboard motor responds to the cockpit slider controls as expected: +1 makes S run full blast on one direction, -1 send S full blast in the other direction, and 0 stops the S motor completely. During this exercise, V and P continue at full blast.
 * Turning off the ESC stops the V and P motors.
-* When I turn on any of the ESCs, the camera servo jumps slightly, about 10 degrees.
+* When I turn on any of the ESCs, the camera servo jumps slightly, about 10 degrees. And then the V and P motors run full blast.
 
 When the cockpit software is not running (and the Google Chrome browser is completely closed):
 
 * Turning on an ESC has no effect on the motors.
-* The camera servo jumps slightly, about 10 degrees, as it did with the cockpit software running.
+* The camera servo jumps slightly, about 10 degrees, as it did with the cockpit software running. But the motors remain stationary.
 
 Interesting behavior!
 
