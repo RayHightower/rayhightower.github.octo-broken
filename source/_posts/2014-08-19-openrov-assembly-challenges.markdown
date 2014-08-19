@@ -11,9 +11,11 @@ I know this problem can be solved. I just haven’t figured it out yet, and I ne
 ###Parts That Work
 Software image updates on the Beaglebone Black work flawlessly thanks to scripts written by [Brian Adams](https://github.com/BrianAdams) and [Dominick Fretz](https://github.com/BrianAdams). The cockpit software shows a real-time image from the camera, the LED lights are super-bright, and the lasers hold steady at 10cm apart. My fully assembled OpenROV passes the water submersion test. Yes, it’s waterproof, thanks to O-rings and silicon-based lubricant!
 
-What about the motors? The motors work, almost...
+What about the motors? The motors work, almost. Could it be the
+electronic speed control (ESC) settings, calibration, or less than
+perfect soldering? That's where I need help.
 <!--more-->
-###Problem Summary
+###Summary of Symptoms
 With the cockpit software running:
 If I turn on any of the three ESCs, two of my motors (vertical and port) start running at full blast. 
 The port motor responds to the cockpit slider controls as expected: +1 is full blast on one direction, -1 is full blast in the other direction, and 0 stops the motor completely.
