@@ -42,7 +42,11 @@ According to the program card, all of the ESC settings are correct.
 All of the time spent troubleshooting drained the OpenROV batteries. So I devised a way to apply power directly to the OpenROV without batteries.
 {% imgcap /images/openrov_power_supply.jpg Directly connected to power supply. %}
 
-Here's how it works. A power supply set to 12 volts with the `+` lead connected to the `+` leads of the battery containers, and the `-` lead connected to a ground terminal on the OpenROV controller board. 
+The photo reveals the random condition of my work surface, so here's a description of how the hack works.   
+
+* In the background, a power supply set to 12 volts
+* `+` lead (red) connected to the `+` leads of the battery containers, via a wire acting as a Y-connector.
+* `-` lead (black) connected to a ground terminal on the OpenROV controller board through a black jumper cable
 
 I find that this hack works best if I connect the 12 volt setup first while the Topside Adapter is powered off. Applying power (via USB) to the Topside Adapter turns the entire assembly on. 
 
