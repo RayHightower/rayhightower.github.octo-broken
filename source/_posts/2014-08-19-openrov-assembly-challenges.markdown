@@ -41,7 +41,7 @@ According to the program card, all of the ESC settings are correct.
 ###Using a Power Supply Instead of Batteries
 All of the time spent troubleshooting drained the OpenROV batteries. So I devised a way to apply power directly to the OpenROV without batteries.
 
-{% imgcap center /images/openrov_power_supply.jpg Directly connected to power supply. %}
+{% imgcap middle /images/openrov_power_supply.jpg Directly connected to power supply. %}
 
 The photo reveals the random condition of my work surface, so here's a verbal description of this hack:
 
