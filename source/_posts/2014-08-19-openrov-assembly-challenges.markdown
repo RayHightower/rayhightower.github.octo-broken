@@ -3,7 +3,7 @@ layout: post
 title: "OpenROV Assembly Challenges"
 date: 2014-08-19 16:44
 comments: true
-categories: [ BeagleBone Black, Community, IoT, Linux, Node ]
+categories: [ BeagleBone Black, Community, IoT, Linux, Node, OpenROV ]
 ---
 {% imgcap right /images/openrov_rth.jpg OpenROV fully assembled. %}
 I know this problem can be solved. I just haven’t figured it out yet, and I need help from the [OpenROV](http://openrov.com/) community to do so.
