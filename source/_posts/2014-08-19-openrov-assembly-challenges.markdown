@@ -31,7 +31,7 @@ When the cockpit software is not running (and the Google Chrome browser is compl
 Interesting behavior!
 
 ###Double-Checking the ESC Settings
-{% imgcap /images/esc_program_card.jpg ESC Program Card %}
+{% imgcap right /images/esc_program_card.jpg ESC Program Card %}
 During troubleshooting, my first step was to double-check the electronic speed controller (ESC) settings. Setting the ESCs with the beep-and-button-push method was time consuming. And I was concerned that I may have made a mistake in counting the beeps.
 
 Solution: I bought an ESC program card. Amazon sells them for less than fifteen dollars, well worth the price when you consider the peace of mind that the card brings. The program card shows each ESC setting with a clear 7-segment LED display, much easier than counting beeps!
