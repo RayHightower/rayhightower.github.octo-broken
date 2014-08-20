@@ -9,7 +9,7 @@ categories: [ BeagleBone Black, Community, IoT, Linux, Node, OpenROV ]
 I know this problem can be solved. I just haven’t figured it out yet, and I need help from the [OpenROV](http://openrov.com/) community to do so.
 
 ###Parts That Work
-Software image updates on the Beaglebone Black work flawlessly thanks to scripts written by [Brian Adams](https://github.com/BrianAdams) and [Dominick Fretz](https://github.com/BrianAdams). The cockpit software shows a real-time image from the camera, the LED lights are super-bright, and the lasers hold steady at 10cm apart. My fully assembled OpenROV passes the water submersion test. Yes, it’s waterproof, thanks to O-rings and silicon-based lubricant!
+Software image updates on the Beaglebone Black work flawlessly thanks to scripts written by [Brian Adams](https://github.com/BrianAdams) and [Dominick Fretz](https://github.com/codewithpassion). The cockpit software shows a real-time image from the camera, the LED lights are super-bright, and the lasers hold steady at 10cm apart. My fully assembled OpenROV passes the water submersion test. Yes, it’s waterproof, thanks to O-rings and silicon-based lubricant!
 
 What about the motors? The motors work, almost. Could it be the
 electronic speed control (ESC) settings, calibration, or less than
