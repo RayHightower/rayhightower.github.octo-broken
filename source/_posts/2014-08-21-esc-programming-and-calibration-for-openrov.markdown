@@ -8,7 +8,7 @@ categories: [ BeagleBone Black, OpenROV ]
 {% imgcap middle /images/openrov_esc.jpg Three ESCs, one for each motor. Each has a switch and a power/signal line. %}
 
 ###ESCs: Brand New Experience
-Electronic speed controllers (ESCs) were completely new to me when I first assembled my OpenROV. This article documents my initial misunderstanding of ESCs so that future builders can move forward with fewer glitches.
+Electronic speed controllers (ESCs) were completely new to me when I first assembled my [OpenROV](/blog/2014/06/16/citizen-science-with-openrov/). This article documents my initial misunderstanding of ESCs so that future builders can move forward with fewer glitches.
 
 ###Main Thing To Remember About ESCs
 Until all three ESCs are calibrated, parts of the OpenROV that seem unrelated might not work. For example...
