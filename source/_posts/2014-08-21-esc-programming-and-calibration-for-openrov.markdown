@@ -8,7 +8,7 @@ categories:
 {% imgcap middle /images/openrov_esc.jpg Three ESCs, one for each motor. Each has a switch and a power/signal line. %}
 
 ###ESCs: Brand New Experience
-Electronic speed controllers (ESCs) were completely new to me when I first assembled my OpenROV. This article will document my initial misunderstanding of ESCs so that future OpenROV builders can move forward unencumbered.
+Electronic speed controllers (ESCs) were completely new to me when I first assembled my OpenROV. This article will document my initial misunderstanding of ESCs so that future builders can move forward with fewer glitches.
 
 ###First Thing To Remember About ESCs
 Until all three ESCs are calibrated, parts of the OpenROV that seem unrelated might not work. For example...
@@ -34,4 +34,5 @@ Yesterday afternoon I took the OpenROV for a spin in Chicago’s Lake Michigan. 
 {% imgcap middle /images/openrov_chicago_lake_michigan.jpg OpenROV and Lake Michigan. %}
 What an exciting way to learn about Node.js, BeagleBone Black, and the Maker Movement all at once!
 
+_Photo acknowledgement: ESC photos that appear in this article were created by OpenROV and made available at http://openrov.com. Thank you OpenROV team!_
 
