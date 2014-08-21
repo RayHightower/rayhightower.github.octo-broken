@@ -6,11 +6,11 @@ comments: true
 categories: 
 ---
 {% imgcap middle /images/openrov_esc.jpg Three ESCs, one for each motor. Each has a switch and a power/signal line. %}
-OpenROV was my first experience with electronic speed controllers
-(ESCs). This article will document my initial mistakes with ESCs, and
-some solutions.
 
-###Key Things To Remember About ESCs
+###ESCs: Brand New Experience
+Electronic speed controllers (ESCs) were completely new to me when I first assembled my OpenROV. This article will document my initial misunderstanding of ESCs so that future OpenROV builders can move forward unencumbered.
+
+###First Thing To Remember About ESCs
 Until all three ESCs are calibrated, parts of the OpenROV that seem unrelated might not work. For example...
 
 * The servo that moves the camera up and down will be unresponsive to keyboard commands. 
