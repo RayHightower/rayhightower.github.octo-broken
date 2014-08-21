@@ -14,7 +14,7 @@ Electronic speed controllers (ESCs) were completely new to me when I first assem
 Until all three ESCs are calibrated, parts of the OpenROV that seem unrelated might not work. For example...
 
 * The servo that moves the camera up and down will be unresponsive to keyboard commands. 
-* Turning on the switch for one ESC may cause an “unrelated” motor (or motors, plural) to power on. In my case, turning on one ESC caused two motors to spin.
+* When you turn on one ESC switch, an unrelated motor (or motors, plural) might start spinning. In my case, turning on one ESC (any of the three ESCs!) caused two motors to spin.
 
 When the motors responded out-of-sync with the switches, I thought I had soldered something incorrectly. De-soldering and re-soldering connections would have been a ton of work! Fortunately, I reached out to the OpenROV forum where an OpenROV engineer pointed me in the right direction.
 
