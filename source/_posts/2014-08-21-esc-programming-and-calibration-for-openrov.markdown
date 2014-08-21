@@ -5,7 +5,7 @@ date: 2014-08-21 16:27
 comments: true
 categories: 
 ---
-{% imgcap middle /images/openrov_esc.jpg 3 ESCs. Each has a switch and a power & signal cable. %}
+{% imgcap middle /images/openrov_esc.jpg Three ESCs, one for each motor. Each has a switch and a power/signal line. %}
 OpenROV was my first experience with electronic speed controllers
 (ESCs). This article will document my initial mistakes with ESCs, and
 some solutions.
