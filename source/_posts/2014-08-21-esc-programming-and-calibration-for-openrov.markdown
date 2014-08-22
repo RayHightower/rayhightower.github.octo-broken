@@ -14,7 +14,7 @@ The photo at the top of this page shows an OpenROV controller board, a
 BeagleBone Black, and three ESCs. This article will focus on the ESCs.
 
 ###Remember This About ESCs
-ESC programming and ESC calibration are two separate steps. Until all three ESCs are programmed _and_ calibrated, the OpenROV might behave erratically. For example...
+Until all three ESCs are programmed _and_ calibrated, the OpenROV might behave erratically. For example...
 
 * The servo that moves the camera up and down will not respond to keyboard commands. 
 * When you turn one ESC switch on, an unrelated motor (or motors, plural) might start spinning. In my case, turning on one ESC (any of the three ESCs) caused two motors to spin.
