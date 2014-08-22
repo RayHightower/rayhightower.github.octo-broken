@@ -13,7 +13,7 @@ Electronic speed controllers (ESCs) were completely new to me when I first assem
 The photo at the top of this page shows an OpenROV controller board, a
 BeagleBone Black, and three ESCs. This article will focus on the ESCs.
 
-###Remember This About OpenROV ESCs
+###Remember This About ESCs
 ESC programming and ESC calibration are two separate steps. Until all three ESCs are programmed _and_ calibrated, the OpenROV might behave erratically. For example...
 
 * The servo that moves the camera up and down will not respond to keyboard commands. 
