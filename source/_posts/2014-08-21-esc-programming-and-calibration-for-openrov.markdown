@@ -53,6 +53,7 @@ So here's what I had to do.
 Here are the OpenROV calibration steps, with slight tweaks based on my personal experience.
 
 {% imgcap right /images/openrov_calibration_sliders.jpg Click "Diagnostics" from the OpenROV cockpit. %}
+
 0. Each ESC switch has a red reset button. To turn the ESC on, move its slider switch toward the red reset button. The off position is in the opposite direction.
 1. With all of the ESCs switched off, go ahead and power up the OpenROV. The motors should remain stationery at this point. Connect with the cockpit software and open the diagnostic pane. 
 2. Grab one ESC switch, and hold down its red reset button while powering it on. (At this point, two of my motors began spinning, V and P. I ignored the spinning motors while plowing through the rest of the steps.) You will hear a beeping noise. Let go of the reset button. (It will keep beeping which is fine). While it’s beeping, the red LED inside the corresponding ESC will flash in rhythm with the beeps.
