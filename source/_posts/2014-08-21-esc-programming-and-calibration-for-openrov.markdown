@@ -39,12 +39,7 @@ In summary, we use ESCs so that OpenROV pilots can have greater control over mov
 Those of you with ESC experience already know about ESC program cards. I first learned about the cards while researching this problem. Amazing devices! Yes, it is possible to program ESCs using the series of button pushes and beeps in the OpenROV instructions. That's what I did, and it works. But a program card is faster. Amazon sells ESC program cards for less than fifteen dollars each. Well worth the investment, especially if you're programming ESCs for several OpenROVs.
 
 ###ESC Calibration Gotcha
-ESC programming was pretty straight forward. But ESC calibration was
-tricky for me because turning on any of the three ESC switches started
-two of my motors to spin: vertical and port. Further, since my
-electonics chassis was (mostly) assembled by the time I got to the
-calibration step, it wasn't easy for me to trace each power switch to
-its corresponding ESC.
+ESC programming went smoothly. But ESC calibration was tricky for me because turning on any of the three ESC switches started two of my motors to spin: vertical and port. Further, since my electronics chassis was (mostly) assembled by the time I got to the calibration step, it wasn't easy for me to trace each power switch to its corresponding ESC.
 
 So here's what I had to do. 
 
