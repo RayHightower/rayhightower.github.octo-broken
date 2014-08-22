@@ -23,19 +23,19 @@ In my case, the programming was correct, but I [dropped the ball on calibration]
 
 The bottom line: Do the ESC programming and calibration first. If the OpenROV misbehaves, re-check programming and calibration before considering other solutions.
 
+###Why Use ESCs?
+Since ESCs require so many steps (programming and calibration) we might logically ask: _Why use ESCs at all?_ Why not use simple analog motors without controllers and call it a day?
+
+We use ESCs because the benefits outweigh the work required to configure them. It's all about control. By using an ESC to control each motor, we can use software to specify the _exact_ number of RPMs for each motor. We can make any motor (or combination or motors) start or stop on a dime. Even better: When we move a lever on our controller of choice (keyboard, game controller, etc.) the Node.js software on the OpenROV controller board decides the exact number of RPMs for each motor at a given instant. As OpenROV pilots, we don't need to think about this process while it happens. It just works.
+
+The pilot's finger moves a controller lever. The lever position gets sent to software on the OpenROV's controller board, and controller board tells each ESC what its corresponding motor should do.
+
+In summary, we use ESCs to that OpenROV pilots can have greater control over the movement of the device.
+
 ###How to Re-Check ESC Programming
 {% imgcap right /images/esc_program_card.jpg ESC Program Card %}
 Those of you with ESC experience already know about ESC program cards. I first learned about the cards while researching this problem. Amazing devices! Yes, it is possible to program ESCs using the series of button pushes and beeps in the OpenROV instructions. That's what I did, and it works. But a program card is faster. Amazon sells ESC program cards for less than fifteen dollars each. Well worth the investment, especially if you're programming ESCs for several OpenROVs.
 
-
-###Why Use ESCs?
-Since ESCs require so many steps (programming and calibration) we might logically ask: _Why use ESCs at all?_ Why not use simple analog motors without controllers and call it a day?
-
-We use ESCs because the benefits outweigh the work required to configure them. It's all about control. By using an ESC to control each motor, we can pre-specify the _exact_ number of RPMs for each motor through software. Even better: When we move a lever on our controller of choice (keyboard, game controller, etc.) the Node.js software on the OpenROV controller board decides the exact number of RPMs for each motor at a given instant. As an OpenROV pilot, we don't even need to think about this process while it is happening. 
-
-Our finger moves a controller lever, the lever position information gets sent to the Node.js software on the OpenROV's BeagleBone Black, and the BBB tells each ESC what its corresponding motor should do.
-
-In summary, we use ESCs to that OpenROV pilots can have greater control over the movement of the device.
 
 
 
