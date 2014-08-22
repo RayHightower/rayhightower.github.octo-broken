@@ -74,4 +74,4 @@ In other words, calibration worked, when I ignored the craziness of the non-cali
 ###Success
 There is great satisfaction in solving an elusive problem. The OpenROV forum proved to be a powerful and useful resource. Next step: [Piloting the OpenROV in Lake Michigan](/blog/2014/08/22/openrov-meets-chicago-lake-michigan/) on the following day.
 
-_Photo acknowledgement: The ESC photo at the beginning of this article was made available by OpenROV at http://openrov.com. Thanks OpenROV team!_
+_Photo acknowledgement: The ESC photo at the beginning of this article was made available by OpenROV at [http://openrov.com](http://openrov.com). Thanks OpenROV team!_
