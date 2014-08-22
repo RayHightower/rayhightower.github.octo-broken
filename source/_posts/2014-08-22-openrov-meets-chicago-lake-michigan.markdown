@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "OpenROV Meets Lake Michigan"
+title: "OpenROV Meets Chicago's Lake Michigan"
 date: 2014-08-22 19:27
 comments: true
 categories: [ OpenROV ]
