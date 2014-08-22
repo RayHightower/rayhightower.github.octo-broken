@@ -57,3 +57,6 @@ If you're reading this section and you know a better way for me to connect the p
 
 ###Advice Welcome
 I'm not sure where to look next to solve the challenge with the motors. Maybe I skipped a step somewhere during assembly? Advice welcome!
+
+_Update: As noted at the beginning of this article, this problem has been solved. Solution: [ESC Programming and Calibration for OpenROV](/blog/2014/08/21/esc-programming-and-calibration-for-openrov/)._
+
