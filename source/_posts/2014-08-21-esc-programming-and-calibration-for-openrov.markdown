@@ -21,7 +21,7 @@ ESC programming and ESC calibration are two separate steps. Until all three ESCs
 
 In my case, the programming was correct, but I [dropped the ball on calibration](/blog/2014/08/19/openrov-assembly-challenges/). And when the motors responded out-of-sync with the switches, I thought I had soldered some connections incorrectly. De-soldering and re-soldering connections would have been a ton of extra work! Fortunately, I reached out to the OpenROV forum where OpenROV engineer Brian Adams pointed me in the right direction. Brian's diplomatic response to my query was RTFM :-)
 
-The bottom line: Do the ESC programming and calibration first. If it doesn't work, re-check everything before considering other solutions.
+The bottom line: Do the ESC programming and calibration first. If the OpenROV misbehaves, re-check programming and calibration before considering other solutions.
 
 
 _Photo acknowledgement: ESC photos that appear in this article were created by OpenROV and made available at http://openrov.com. Thank you OpenROV team!_
