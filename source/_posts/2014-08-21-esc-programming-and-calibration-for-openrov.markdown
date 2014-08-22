@@ -64,10 +64,10 @@ Here are the OpenROV calibration steps, with slight tweaks based on my personal 
 {% imgcap right /images/openrov_lake_michigan_2.jpg OpenROV meets Lake Michigan. %}
 After calibration:
 
-* I was able to leave all three ESCs powered on with no movement from the motors.
+* With all three ESCs powered on, the motors remained stationary.
 * Each motor responded to the correct slider within the cockpit software's diagnostic pane.
 * The up/down servo for the camera responded correctly to the Q, A, and Z commands.
-* The motors moved in response to the correct commands on the keyboard, as described by the cockpit software's quick reference guide.
+* The motors responded to keyboard commands, as described within the cockpit's quick reference guide.
 
 In other words, calibration worked when I ignored the behavior of the motors while plowing through the steps.
 
