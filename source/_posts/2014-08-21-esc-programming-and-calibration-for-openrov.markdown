@@ -50,10 +50,24 @@ So here's what I had to do.
 
 * First, I took everything apart, while keeping the electronic leads (those which had already been soldered) intact.
 * Next, I labeled each ESC switch with its corresponding ESC number. I did not want to go through the disassembly step again! The Brother P-Touch label maker was perfect for this step.
+* Finally, I followed the ESC calibration steps _while ignoring the behavior of the motors_. For example, turning on ESC1 caused the motors connected to ESC1 (port) _and_ ESC2 (vertical) to spin. I ignored the motors while plowing through the written directions.
 
+###Modified Calibration Steps
+Here are the OpenROV calibration steps, with slight tweaks based on my personal experience.
 
+1. With all of the ESCs switched off, go ahead and power up. Nothing should happen on the motors. Connect with the cockpit software and open the diagnostic pane. 
+2. Hold the reset button on the ESC while powering on the first ESC using the switch on the ESC. (At this point, two of my motors began spinning, V and P. I ignored them and plowed on through the rest of the steps.) It should start beeping. Let go of the reset button. (It will keep beeping which is fine). While it’s beeping, the red LED inside the corresponding ESC will flash in rhythm with the beeps.
+3. Press reset once and you should hear a single beep. Move that motor's slider all the way to the right (or click the "1") and then press the reset on the ESC again. You should get 2 beeps. The motor will not move during this step. 
+4. Move that motor's slider all the way to the left (or click the "-1") and then press the reset on the ESC again. You will hear three beeps.
+5. After a few seconds the motor will begin to spin. Switch off the ESC, and the motor will stop spinning.
+6. Move the slider back to the middle (or click the "0"). 
+7. Repeat these steps with the next ESC.
 
+After calibration:
 
+* I was able to leave all three ESCs powered on with no movement from the motors.
+* The motors only moved when I moved one of the sliders in the diagnostics pane. Further, each motor responded to the correct slider.
+* The servo for the up/down motion of the camera responded correctly to the Q, A, and Z commands.
 
-_Photo acknowledgement: ESC and circuit board photos that appear in this article were created by OpenROV and made available at [http://openrov.com](http://openrov.com). Thank you OpenROV team!_
-
+###Success
+Words cannot express the joy of having a successfully assembled OpenROV.  Only one thing was better: [Piloting the OpenROV on Lake Michigan](/blog/2014/08/22/openrov-meets-chicago-lake-michigan/) on the following day.
