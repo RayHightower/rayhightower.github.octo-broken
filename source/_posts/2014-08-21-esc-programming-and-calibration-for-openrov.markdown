@@ -71,3 +71,5 @@ After calibration:
 
 ###Success
 Words cannot express the joy of having a successfully assembled OpenROV.  Only one thing was better: [Piloting the OpenROV on Lake Michigan](/blog/2014/08/22/openrov-meets-chicago-lake-michigan/) on the following day.
+
+_Photo acknowledgement: The ESC photo at the beginning of this article was made available by OpenROV at http://openrov.com. Thank you OpenROV team!_
