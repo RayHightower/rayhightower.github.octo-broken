@@ -5,7 +5,7 @@ date: 2014-08-22 19:27
 comments: true
 categories: [ IoT, OpenROV ]
 ---
-{% imgcap middle /images/openrov_chicago_lake_michigan.jpg OpenROV meets Chicago's Lake Michigan. %}
+{% imgcap middle /images/openrov_chicago_lake_michigan.jpg OpenROV meets  Lake Michigan in Chicago. %}
 
 This week I took the [OpenROV](/blog/2014/06/16/citizen-science-with-openrov/) for a spin in Chicago’s Lake Michigan. Success! Here are a few first-voyage observations:
 <!--more-->
