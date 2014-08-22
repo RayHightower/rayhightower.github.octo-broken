@@ -5,9 +5,9 @@ date: 2014-08-22 19:27
 comments: true
 categories: [ IoT, OpenROV ]
 ---
-{% imgcap middle /images/openrov_chicago_lake_michigan.jpg OpenROV meets  Lake Michigan in Chicago. %}
+{% imgcap middle /images/openrov_chicago_lake_michigan.jpg OpenROV meets  Lake Michigan. %}
 
-This week I took the [OpenROV](/blog/2014/06/16/citizen-science-with-openrov/) for a spin in Chicago’s Lake Michigan. Success! Here are a few first-voyage observations:
+This week I took the [OpenROV](/blog/2014/06/16/citizen-science-with-openrov/) for a spin in Lake Michigan. Success! Here are a few first-voyage observations:
 <!--more-->
 * The electronics chassis is truly waterproof. Same for the battery compartments. Waterproofing was my biggest concern during assembly. Hats off to the OpenROV team for an excellent set of assembly instructions.
 * Condensation builds up in the electronics chassis during operation. A quick review of the OpenROV forum tells me that I should add a desiccant bag to the compartment. Or pack the unit in low humidity.
