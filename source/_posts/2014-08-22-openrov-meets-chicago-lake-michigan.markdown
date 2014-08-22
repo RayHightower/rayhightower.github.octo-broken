@@ -16,5 +16,5 @@ This week I took the OpenROV for a spin in Chicago’s Lake Michigan. Success! H
 simple dip in the lake a voyage?) my OpenROV tether is a mess. Time to
 build a way to manage the tether.
 
-What an exciting way to learn about Node.js, BeagleBone Black, and the Maker Movement all at once.
+What an exciting way to explore Node.js, BeagleBone Black, and the Maker Movement all at once.
 
