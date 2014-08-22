@@ -67,8 +67,11 @@ Here are the OpenROV calibration steps, with slight tweaks based on my personal 
 After calibration:
 
 * I was able to leave all three ESCs powered on with no movement from the motors.
-* The motors only moved when I moved one of the sliders on the  cockpit software's diagnostic pane. Further, each motor responded to the correct slider.
+* The motors moved when I moved one of the sliders on the  cockpit software's diagnostic pane. Further, each motor responded to the correct slider.
 * The servo for the up/down motion of the camera responded correctly to the Q, A, and Z commands.
+* The motors moved in response to the correct commands on the keyboard, as described by the cockpit software's quick reference guide.
+
+In other words, calibration worked, when I ignored the craziness of the non-calibrated motors while plowing through. RTFM worked!
 
 ###Success
 There is great satisfaction in solving an elusive problem. The OpenROV proved to be a powerful and useful resource. Next step: [Piloting the OpenROV on Lake Michigan](/blog/2014/08/22/openrov-meets-chicago-lake-michigan/) on the following day.
