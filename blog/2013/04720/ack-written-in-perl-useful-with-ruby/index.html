@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>An Environment of Respect, 3rd Iteration - RayHightower.com</title>
+  <title>Ack 2.0: Written in Perl, Useful With Ruby - RayHightower.com</title>
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="Last week, Coraline Ehmke and Liz Abinante met with three members of the WindyCityRails organizer team: Kevin Zolkiewicz, Alonda McCree, and me. Good &hellip;">
+  <meta name="description" content="Ack is an open source command line tool that lets developers search large trees of source code very quickly. If you are looking for a method &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://RayHightower.com/blog/2014/05/28/an-environment-of-respect-3rd-iteration">
+  <link rel="canonical" href="http://RayHightower.com/blog/2013/04/20/ack-written-in-perl-useful-with-ruby">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="RayHightower.com" type="application/atom+xml">
@@ -85,7 +85,7 @@
   
   <header>
     
-      <h1 class="entry-title">An Environment of Respect, 3rd Iteration</h1>
+      <h1 class="entry-title">Ack 2.0: Written in Perl, Useful With Ruby</h1>
     
     
       <p class="meta">
@@ -101,32 +101,90 @@
   
 
 
-<time datetime="2014-05-28T06:42:00-05:00" pubdate data-updated="true">May 28<span>th</span>, 2014</time>
+<time datetime="2013-04-20T17:12:00-05:00" pubdate data-updated="true">Apr 20<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>Last week, <a href="https://twitter.com/bantik">Coraline Ehmke</a> and <a href="https://twitter.com/feministy">Liz Abinante</a> met with three members of the WindyCityRails organizer team: <a href="https://twitter.com/zolk">Kevin Zolkiewicz</a>, <a href="https://twitter.com/themccreefiles">Alonda McCree</a>, and me. Good dialog. End result: The updated <a href="http://www.windycityrails.org/code-of-conduct/">WindyCityRails Code of Conduct</a>.</p>
+<div class="entry-content"><p><img src="/images/ack.png" align="right" height="237" width="230" alt="Ack Linux Mac OS X" title="Ack Linux Mac OS X"></p>
+
+<p><a href="http://beyondgrep.com/">Ack</a> is an open source command line tool that lets developers search large trees of source code very quickly. If you are looking for a method definition in a haystack of files, Ack will find that needle for you. Many devs regard Ack as a replacement for <a href="http://en.wikipedia.org/wiki/Grep">grep</a>.</p>
+
+<p>The Elmhurst <a href="http://chicagoruby.org">ChicagoRuby</a> meetings are always a source of unexpected learning. Today ChicagoRuby welcomed <a href="http://twitter.com/petdance">Andy Lester</a>, creator of Ack. Andy released Ack 2.0 two days ago. He shared some of the latest features in an impromptu demo.</p>
 
 <!--more-->
 
 
-<p>Harassment is a serious issue, and a 140-character tweet will not do the discussion justice. Therefore, the ChicagoRuby organizers have created multiple communication channels for this issue:</p>
+<h4>Why Ack?</h4>
 
-<ul>
-<li>Email: <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#99;&#111;&#x64;&#101;&#x6f;&#102;&#99;&#111;&#110;&#x64;&#x75;&#x63;&#x74;&#64;&#x63;&#104;&#x69;&#x63;&#97;&#103;&#x6f;&#x72;&#117;&#x62;&#121;&#x2e;&#111;&#114;&#103;">&#99;&#x6f;&#100;&#101;&#111;&#x66;&#99;&#111;&#x6e;&#100;&#117;&#99;&#x74;&#64;&#99;&#x68;&#x69;&#99;&#x61;&#103;&#x6f;&#x72;&#x75;&#98;&#x79;&#46;&#x6f;&#114;&#x67;</a></li>
-<li>Any of the contact names listed on the current code of conduct</li>
-<li>Phone number listed on the code of conduct</li>
-</ul>
+<p>Have you ever been working on a project, only to be interrupted when you need to look for something? It could be a method name, a variable declaration, or a string of text in a comment. A minor distraction costs you the time it takes to search plus the time required to re-focus.</p>
+
+<p>All of us are more productive when we stay <em>in the zone</em>. Ack helps devs to maintain focus and thereby produce better results.</p>
+
+<h4>First, Install Perl</h4>
+
+<p>Ack requires the <a href="http://en.wikipedia.org/wiki/Perl">Perl</a> programming language. Perl comes pre-installed on Mac OS X and most Linux distros. If you&rsquo;re running on a &lsquo;nix platform, you probably have Perl already.</p>
+
+<p>Windows installations are beyond the scope of this article. If you&rsquo;re running Windows, you might consider a Linux VM for Ruby and Rails-related work.</p>
+
+<h4>Installing Ack on Mac OS X</h4>
+
+<p>Installing Ack is so easy that it almost feels wrong: Grab Ack in a single Perl file and drop it in your <code>~/bin/</code> directory. That&rsquo;s it.</p>
+
+<p>Ack can also be installed via <a href="http://mxcl.github.io/homebrew/">Homebrew</a>, but I prefer the <em>drop it in ~/bin</em> installation since everything is contained in one file. Here&rsquo;s a more detailed version of the steps:</p>
+
+<ol>
+<li>If you don&rsquo;t have one already, create <code>~/bin/</code> as a subdirectory of your home directory.</li>
+<li>Grab a the single-file copy of Ack from <a href="http://beyondgrep.com/">http://beyondgrep.com/ </a></li>
+<li>Drop the single-file copy of Ack into a file called <code>~/bin/ack</code></li>
+<li>Make sure that <code>$HOME/bin:</code> appears at the beginning of your <code>$PATH</code> environment variable.</li>
+</ol>
 
 
-<p>If you have concerns in this area, please feel free to use one of the channels. The contact list may change as responsibilities shift within ChicagoRuby. However, there will always be multiple people available to address harassment concerns.</p>
+<p>At this point you should be running Ack v2.0 or later. To verify:</p>
 
-<p>Thank you Coraline and Liz for your work in making this happen. And thank you <a href="https://twitter.com/lostghost">Ken Walters</a> of <a href="http://twitter.com/bradsdeals">Brad’s Deals</a> for facilitating the meeting.</p>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/bin<span class="nv">$ </span>ack --version
+</span><span class='line'>ack 2.02 <span class="o">(</span>git commit f3c8827<span class="o">)</span>
+</span><span class='line'>Running under Perl 5.12.4 at /usr/bin/perl
+</span><span class='line'>
+</span><span class='line'>Copyright 2005-2013 Andy Lester.
+</span><span class='line'>
+</span><span class='line'>This program is free software.  You may modify or distribute it
+</span><span class='line'>under the terms of the Artistic License v2.0.
+</span><span class='line'>
+</span><span class='line'>~/bin<span class="err">$</span>
+</span></code></pre></td></tr></table></div></figure>
 
-<p>Now, let’s go write some code!</p>
+
+<p>Installation complete. Now, let&rsquo;s take Ack for a spin.</p>
+
+<h4>Using Ack at the Command Line</h4>
+
+<p>For a sample project, let&rsquo;s use <code>demo_app</code> from Michael Hartl&rsquo;s <a href="http://rubyonrailstutorial.com">Ruby on
+Rails Tutorial</a>. Imagine that you want
+to find every file in the project that references <code>user_id</code>. How would
+you do that?
+<img src="/images/ack_user_id.png" align="center" height="650" width="887" alt="Ack command line demo" title="Ack command line demo"></p>
+
+<p>Fast, clear, and highlighted in color. Bonus: If you&rsquo;re a Vim user,
+try <a href="https://github.com/mileszs/ack.vim">ack.vim</a> if you want to run Ack
+without leaving your editor.</p>
+
+<h4>The Bottom Line</h4>
+
+<p>Ack helps devs to find things quicker without leaving the zone. Try it!</p>
 </div>
 
 
@@ -149,12 +207,12 @@
   
 
 
-<time datetime="2014-05-28T06:42:00-05:00" pubdate data-updated="true">May 28<span>th</span>, 2014</time>
+<time datetime="2013-04-20T17:12:00-05:00" pubdate data-updated="true">Apr 20<span>th</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/community/'>Community</a>
+    <a class='category' href='/blog/categories/education/'>Education</a>, <a class='category' href='/blog/categories/linux/'>Linux</a>, <a class='category' href='/blog/categories/os-x/'>OS X</a>, <a class='category' href='/blog/categories/rails/'>Rails</a>, <a class='category' href='/blog/categories/ruby/'>Ruby</a>, <a class='category' href='/blog/categories/vim/'>Vim</a>
   
 </span>
 
@@ -163,7 +221,7 @@
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2014/05/28/an-environment-of-respect-3rd-iteration/" data-via="" data-counturl="http://RayHightower.com/blog/2014/05/28/an-environment-of-respect-3rd-iteration/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2013/04/20/ack-written-in-perl-useful-with-ruby/" data-via="" data-counturl="http://RayHightower.com/blog/2013/04/20/ack-written-in-perl-useful-with-ruby/" >Tweet</a>
   
   
   
@@ -172,10 +230,10 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2014/04/15/managing-dotfiles/" title="Previous Post: Managing Dotfiles">&laquo; Managing Dotfiles</a>
+        <a class="basic-alignment left" href="/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset/" title="Previous Post: New RVM Behavior With .ruby-version and .ruby-gemset">&laquo; New RVM Behavior With .ruby-version and .ruby-gemset</a>
       
       
-        <a class="basic-alignment right" href="/blog/2014/05/30/upgrading-to-git-2-dot-0/" title="Next Post: Upgrading to Git 2.0">Upgrading to Git 2.0 &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2013/04/23/the-man-who-sold-hot-dogs/" title="Next Post: The Man Who Sold Hot Dogs">The Man Who Sold Hot Dogs &raquo;</a>
       
     </p>
   </footer>
@@ -321,8 +379,8 @@ CloudCamp Chicago - Developer Night</a><br/>in Chicago, IL</li>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://RayHightower.com/blog/2014/05/28/an-environment-of-respect-3rd-iteration/';
-        var disqus_url = 'http://RayHightower.com/blog/2014/05/28/an-environment-of-respect-3rd-iteration/';
+        var disqus_identifier = 'http://RayHightower.com/blog/2013/04/20/ack-written-in-perl-useful-with-ruby/';
+        var disqus_url = 'http://RayHightower.com/blog/2013/04/20/ack-written-in-perl-useful-with-ruby/';
         var disqus_script = 'embed.js';
       
     (function () {
