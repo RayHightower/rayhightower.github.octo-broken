@@ -72,6 +72,6 @@ After calibration:
 In other words, calibration worked when I ignored the behavior of the motors while plowing through the steps.
 
 ###Success
-There is great satisfaction in solving an elusive problem. The OpenROV forum proved to be a powerful and useful resource. Next step: [Piloting the OpenROV in Lake Michigan](/blog/2014/08/22/openrov-meets-chicago-lake-michigan/) on the following day.
+There is great satisfaction in solving an elusive problem. The OpenROV forum proved to be a powerful and useful resource. Next step: [Piloting the OpenROV in Lake Michigan](/blog/2014/08/22/openrov-meets-chicago-lake-michigan/).
 
 _Photo acknowledgement: The original version of the ESC photo was published in the [OpenROV assembly manual](http://openrov.dozuki.com/Guide/How+to+Assemble+OpenROV+2.6/6). Thanks OpenROV team!_
