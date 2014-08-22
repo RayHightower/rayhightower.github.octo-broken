@@ -26,11 +26,11 @@ The bottom line: Do the ESC programming and calibration first. If the OpenROV mi
 ###Why Use ESCs?
 Since ESCs require so many steps (programming and calibration) we might logically ask: _Why use ESCs at all?_ Why not use simple analog motors without controllers and call it a day?
 
-We use ESCs because the benefits outweigh the work required to configure them. It's all about control. By using an ESC to control each motor, we can use software to specify the _exact_ number of RPMs for each motor. We can make any motor (or combination or motors) start or stop on a dime. Even better: When we move a lever on our controller of choice (keyboard, game controller, etc.) the Node.js software on the OpenROV controller board decides the exact number of RPMs for each motor at a given instant. As OpenROV pilots, we don't need to think about this process while it happens. It just works.
+We use ESCs because the benefits outweigh the work required to configure them. It's all about control. By using an ESC to control each motor, we can use software to specify the _exact_ number of RPMs and direction for each motor. We can make any motor (or combination or motors) start, stop, or change direction on a dime. Even better: When we move a lever on our controller of choice (keyboard, game controller, etc.) the Node.js software on the OpenROV controller board decides the exact number of RPMs for each motor at that instant. OpenROV pilots don't need to think about this process while it happens. It just works.
 
 The pilot's finger moves a controller lever. The lever position gets sent to software on the OpenROV's controller board, and controller board tells each ESC what its corresponding motor should do.
 
-In summary, we use ESCs to that OpenROV pilots can have greater control over the movement of the device.
+In summary, we use ESCs so that OpenROV pilots can have greater control over the movement of the device.
 
 ###How to Re-Check ESC Programming
 {% imgcap right /images/esc_program_card.jpg ESC Program Card %}
