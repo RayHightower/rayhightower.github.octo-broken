@@ -10,7 +10,10 @@ categories: [ BeagleBone Black, OpenROV ]
 ###ESCs: Brand New Experience
 Electronic speed controllers (ESCs) were completely new to me when I first assembled my [OpenROV](/blog/2014/06/16/citizen-science-with-openrov/). This article documents my initial misunderstanding of ESCs so that future builders can move forward with fewer glitches.
 
-###Main Thing To Remember About ESCs
+The photo at the top of this page shows an OpenROV controller board, a
+BeagleBone Black, and three ESCs. This article will focus on the ESCs.
+
+###Remember This About OpenROV ESCs
 Until all three ESCs are calibrated, parts of the OpenROV that seem unrelated might not work. For example...
 
 * The servo that moves the camera up and down will be unresponsive to keyboard commands. 
