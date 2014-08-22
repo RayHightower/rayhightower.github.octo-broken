@@ -69,7 +69,7 @@ After calibration:
 * The motors moved in response to the correct commands on the keyboard, as described by the cockpit software's quick reference guide.
 
 {% imgcap right /images/openrov_lake_michigan_2.jpg OpenROV meets Lake Michigan. %}
-In other words, calibration worked. The key difference: I ignored the behavior of the motors while plowing through the calibration steps.
+In other words, calibration worked when I ignored the behavior of the motors while plowing through the steps.
 
 ###Success
 There is great satisfaction in solving an elusive problem. The OpenROV forum proved to be a powerful and useful resource. Next step: [Piloting the OpenROV in Lake Michigan](/blog/2014/08/22/openrov-meets-chicago-lake-michigan/) on the following day.
