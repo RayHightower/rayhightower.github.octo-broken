@@ -9,7 +9,7 @@
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="There is something I neglected to cover in a previous blog post, Building an OS X App With RubyMotion. Once you&rsquo;ve written the OS X app, where &hellip;">
+  <meta name="description" content="The Problem Let&rsquo;s say we&rsquo;re building a version of Atari&rsquo;s Pong in RubyMotion. We&rsquo;re debugging an issue with the paddles; they &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -82,6 +82,137 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/11/25/awesome-print-motion-for-rubymotion/">awesome_print_motion for RubyMotion</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-25T15:08:00-06:00" pubdate data-updated="true">Nov 25<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h3>The Problem</h3>
+
+<p>Let&rsquo;s say we&rsquo;re building a version of Atari&rsquo;s <a href="/blog/2013/02/26/atari-pong-rubymotion-objective-c/">Pong in RubyMotion</a>. We&rsquo;re debugging an issue with the paddles; they don&rsquo;t line up the way we want them to. Time to examine the playing field via the RubyMotion console.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>pong-rm <span class="nv">$ </span>rake
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Mouse over the playing field and <code>Command-click</code> to grab the entire playing field object in the RubyMotion console. Confirm that you grabbed the object by typing <code>self</code> at the console prompt.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="p">(</span><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0, [[0.0, 0.0], ...)&gt; self</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">=&gt;</span> <span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0, [[0.0, 0.0], [480.0, 320.0]]), child of UIView(#c876920)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And then, to see what objects are on the playing field, use
+<code>self.subviews</code> to show the subviews array of the current object.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="p">(</span><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0, [[0.0, 0.0], ...)&gt; self.subviews</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="o">[</span><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d82430, [[357.0, 175.0], [50.0, 50.0]]), child of</span>
+</span><span class='line'><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0), PaddleView(#9d82580, [[410.0, 190.0], [20.0, 100.0]]),</span>
+</span><span class='line'><span class="n">child</span> <span class="n">of</span> <span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0), PaddleView(#9d82970, [[10.0, 190.0], [20.0,</span>
+</span><span class='line'><span class="mi">100</span><span class="o">.</span><span class="mi">0</span><span class="o">]]</span><span class="p">),</span> <span class="n">child</span> <span class="n">of</span> <span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0), ScoreLabel(#9d82a80, [[110.0, 9.0],</span>
+</span><span class='line'><span class="o">[</span><span class="mi">20</span><span class="o">.</span><span class="mi">0</span><span class="p">,</span> <span class="mi">42</span><span class="o">.</span><span class="mi">0</span><span class="o">]]</span><span class="p">,</span> <span class="ss">text</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">),</span> <span class="n">child</span> <span class="n">of</span> <span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0),</span>
+</span><span class='line'><span class="no">ScoreLabel</span><span class="p">(</span><span class="c1">#9d83c90, [[350.0, 9.0], [20.0, 42.0]], text: &quot;0&quot;), child of</span>
+</span><span class='line'><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0)]</span>
+</span><span class='line'><span class="p">(</span><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0, [[0.0, 0.0], ...)&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This blob of text is difficult for the human brain to parse. Now, let&rsquo;s try it with the <code>awesome_print_motion</code> gem.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/11/25/awesome-print-motion-for-rubymotion/">Continue reading &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/11/23/using-rubymotion-to-build-something-useful/">Using RubyMotion to Build Something Useful</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-23T14:11:00-06:00" pubdate data-updated="true">Nov 23<span>rd</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>The <a href="http://www.meetup.com/Chicago-RubyMotion/">Chicago RubyMotion User Group</a> held its inaugural meeting this week. Thank you <a href="http://twitter.com/dastels">Dave Astels</a> for organizing the group and for asking me to present. Thanks also to <a href="http://devbootcamp.com">Dev Bootcamp</a> for hosting the event.</p>
+
+<p>Slides are embedded here:</p>
+
+<center><script async class="speakerdeck-embed" data-id="f0c21e7036e10131765f62eb06398856" data-ratio="1.29456384323641" src="//speakerdeck.com/assets/embed.js"></script></center>
+
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/11/23/using-rubymotion-to-build-something-useful/">Continue reading &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -449,88 +580,6 @@ Age has little to do with ability. Every profession has examples of people who a
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/07/29/why-we-need-stem/">Why We Need STEM</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-07-29T00:22:00-05:00" pubdate data-updated="true">Jul 29<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://ignitechi.org">Ignite Chicago</a> is an evening of 5-minute talks presented by speakers who want to inspire others. Each speaker is allowed twenty slides, and the slides advance automatically every fifteen seconds. The Ignite organizers asked me to present <em>Why We Need STEM</em> at <a href="http://1871.com">1871</a>. I&rsquo;ll post the video when it becomes available. For now, check out the slides&hellip;</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/07/29/why-we-need-stem/">Continue reading &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/07/19/petascale-tools-workshop-2013/">Petascale Tools Workshop 2013</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-07-19T02:12:00-05:00" pubdate data-updated="true">Jul 19<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>The <a href="http://www.paradyn.org/CSCADS2013/index.html">Petascale Tools Workshop</a> is for computer scientists who create tools that enable apps to run efficiently on the world&rsquo;s fastest supercomputers. Supercomputer performance is measured in petaflops: 10<sup><sup>15</sup></sup> floating point operations per second. That&rsquo;s blazing speed, thousands of times faster than the fastest MacBook Pro.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/07/19/petascale-tools-workshop-2013/">Continue reading &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/6/">&larr; Older</a>
@@ -610,18 +659,18 @@ CloudCamp Chicago - Developer Night</a><br/>in Chicago, IL</li>
   <h1>Blog Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/arduino/'>Arduino (2)</a></li>
-<li class='category'><a href='/blog/categories/beaglebone-black/'>BeagleBone Black (7)</a></li>
+<li class='category'><a href='/blog/categories/beaglebone-black/'>BeagleBone Black (8)</a></li>
 <li class='category'><a href='/blog/categories/business/'>Business (24)</a></li>
 <li class='category'><a href='/blog/categories/community/'>Community (19)</a></li>
 <li class='category'><a href='/blog/categories/education/'>Education (43)</a></li>
 <li class='category'><a href='/blog/categories/git/'>Git (4)</a></li>
 <li class='category'><a href='/blog/categories/high-performance-computing/'>High Performance Computing (6)</a></li>
 <li class='category'><a href='/blog/categories/ios/'>iOS (13)</a></li>
-<li class='category'><a href='/blog/categories/iot/'>IoT (6)</a></li>
+<li class='category'><a href='/blog/categories/iot/'>IoT (7)</a></li>
 <li class='category'><a href='/blog/categories/linux/'>Linux (13)</a></li>
 <li class='category'><a href='/blog/categories/node/'>Node (3)</a></li>
 <li class='category'><a href='/blog/categories/objective-c/'>Objective-C (5)</a></li>
-<li class='category'><a href='/blog/categories/openrov/'>OpenROV (5)</a></li>
+<li class='category'><a href='/blog/categories/openrov/'>OpenROV (7)</a></li>
 <li class='category'><a href='/blog/categories/os-x/'>OS X (9)</a></li>
 <li class='category'><a href='/blog/categories/parallella/'>Parallella (4)</a></li>
 <li class='category'><a href='/blog/categories/rails/'>Rails (10)</a></li>
