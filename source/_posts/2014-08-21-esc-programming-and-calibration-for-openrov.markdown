@@ -35,7 +35,7 @@ The pilot's finger moves a controller lever. The lever position gets sent to sof
 In summary, we use ESCs so that OpenROV pilots can have greater control over movement.
 
 ###How to Re-Check ESC Programming
-{% imgcap right /images/esc_program_card.jpg ESC Program Card %}
+{% imgcap right /images/esc_program_card.jpg ESC program card. %}
 Those of you with ESC experience already know about ESC program cards. I first learned about the cards while researching this problem. Amazing devices! Yes, it is possible to program ESCs using the series of button pushes and beeps in the OpenROV instructions. That's what I did, and it works. But a program card is faster. Amazon sells ESC program cards for less than fifteen dollars each. Well worth the investment, especially if you're programming ESCs for several OpenROVs.
 
 ###ESC Calibration Gotcha
