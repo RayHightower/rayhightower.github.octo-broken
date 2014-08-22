@@ -47,6 +47,7 @@ its corresponding ESC.
 So here's what I had to do. 
 
 {% imgcap right /images/openrov_esc_switch_labels.jpg ESC switch labels. %}
+
 * First, I took everything apart, while keeping the electronic leads (those which had already been soldered) intact.
 * Next, I labeled each ESC switch with its corresponding ESC number. I did not want to go through the disassembly step again! The Brother P-Touch label maker was perfect for this step.
 
