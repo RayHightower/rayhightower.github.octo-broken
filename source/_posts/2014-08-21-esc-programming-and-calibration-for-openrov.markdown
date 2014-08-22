@@ -14,7 +14,7 @@ The photo at the top of this page shows an OpenROV controller board, a
 BeagleBone Black, and three ESCs. This article will focus on the ESCs.
 
 ###Remember This About OpenROV ESCs
-Until all three ESCs are calibrated, parts of the OpenROV that seem unrelated might not work. For example...
+Programming and calibration are two separate steps. Until all three ESCs are calibrated, parts of the OpenROV that seem unrelated might not work. For example...
 
 * The servo that moves the camera up and down will be unresponsive to keyboard commands. 
 * When you turn on one ESC switch, an unrelated motor (or motors, plural) might start spinning. In my case, turning on one ESC (any of the three ESCs!) caused two motors to spin.
