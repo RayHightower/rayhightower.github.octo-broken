@@ -70,7 +70,7 @@ After calibration:
 
 In other words, calibration worked, when I ignored the craziness of the non-calibrated motors while plowing through. RTFM worked!
 
-{% imgcap right /images/openrov_chicago_lake_michigan.jpg OpenROV meets Lake Michigan. %}
+{% imgcap right /images/openrov_lake_michigan_2.jpg OpenROV meets Lake Michigan. %}
 
 ###Success
 There is great satisfaction in solving an elusive problem. The OpenROV forum proved to be a powerful and useful resource. Next step: [Piloting the OpenROV in Lake Michigan](/blog/2014/08/22/openrov-meets-chicago-lake-michigan/) on the following day.
