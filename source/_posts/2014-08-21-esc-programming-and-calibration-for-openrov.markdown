@@ -68,9 +68,8 @@ After calibration:
 * The servo for the up/down motion of the camera responded correctly to the Q, A, and Z commands.
 * The motors moved in response to the correct commands on the keyboard, as described by the cockpit software's quick reference guide.
 
-In other words, calibration worked, when I ignored the craziness of the non-calibrated motors while plowing through. RTFM worked!
-
 {% imgcap right /images/openrov_lake_michigan_2.jpg OpenROV meets Lake Michigan. %}
+In other words, calibration worked, when I ignored the craziness of the non-calibrated motors while plowing through. RTFM worked!
 
 ###Success
 There is great satisfaction in solving an elusive problem. The OpenROV forum proved to be a powerful and useful resource. Next step: [Piloting the OpenROV in Lake Michigan](/blog/2014/08/22/openrov-meets-chicago-lake-michigan/) on the following day.
