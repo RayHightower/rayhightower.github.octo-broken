@@ -62,7 +62,7 @@ Here are the OpenROV calibration steps, with slight tweaks based on my personal 
 4. Move that motor's slider all the way to the left (or click the "-1") and then press the reset on the ESC again. You will hear three beeps.
 5. After a few seconds the motor will begin to spin. Switch off the ESC, and the motor will stop spinning.
 6. Move the slider back to the middle (or click the "0"). 
-7. Repeat these steps with the next ESC.
+7. Repeat these steps with the next ESC until all three ESCs are done.
 
 After calibration:
 
