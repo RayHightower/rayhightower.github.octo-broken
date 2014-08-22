@@ -25,9 +25,10 @@ The bottom line: Do the ESC programming and calibration first. If the OpenROV mi
 
 ###How to Re-Check ESC Programming
 {% imgcap right /images/esc_program_card.jpg ESC Program Card %}
-Those of you with ESC experience already know about ESC program cards. I
-first learned about the cards while researching this problem. What an
-amazing device! 
+Those of you with ESC experience already know about ESC program cards. I first learned about the cards while researching this problem. Amazing devices! Yes, it is possible to program ESCs using the series of button pushes and beeps in the OpenROV instructions. That's what I did, and it works. But a program card is faster. Amazon sells ESC program cards for less than fifteen dollars each. Well worth the investment, especially if you're programming ESCs for several OpenROVs.
+
+
+What an amazing device! 
 
 _Photo acknowledgement: ESC and circuit board photos that appear in this article were created by OpenROV and made available at [http://openrov.com](http://openrov.com). Thank you OpenROV team!_
 
