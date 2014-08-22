@@ -19,7 +19,7 @@ ESC programming and ESC calibration are two separate steps. Until all three ESCs
 * The servo that moves the camera up and down will not respond to keyboard commands. 
 * When you turn one ESC switch on, an unrelated motor (or motors, plural) might start spinning. In my case, turning on one ESC (any of the three ESCs!) caused two motors to spin.
 
-In my case, the programming was correct, but I [dropped the ball on calibration](/blog/2014/08/19/openrov-assembly-challenges/). And when the motors responded out-of-sync with the switches, I thought I had soldered some connections incorrectly. De-soldering and re-soldering connections would have been a ton of extra work! Fortunately, I reached out to the [forum](http://openrov.com/forum) where OpenROV engineer Brian Adams pointed me in the right direction. Brian's diplomatic response to my query was _RTFM_. And it worked!
+In my case, the programming was correct, but I [dropped the ball on calibration](/blog/2014/08/19/openrov-assembly-challenges/). And when the motors responded out-of-sync with the switches, I thought I had soldered some connections incorrectly. De-soldering and re-soldering connections would have been a ton of extra work! Fortunately, I reached out to the [forum](http://openrov.com/forum) where OpenROV engineer Brian Adams pointed me in the right direction. Brian's diplomatic response to my query was _RTFM_. So I re-RTFM'd, and it worked!
 
 The bottom line: Do the ESC programming and calibration first. If the OpenROV misbehaves, re-check programming and calibration before considering other solutions.
 
@@ -28,9 +28,9 @@ Since ESCs require so many steps (programming and calibration) we might logicall
 
 We use ESCs because the benefits outweigh the work required to configure them. It's all about control. By using an ESC to control each motor, we can use software to specify the _exact_ number of RPMs and direction for each motor. We can make any motor (or combination or motors) start, stop, or change direction on a dime. Even better: When we move a lever on our controller of choice (keyboard, game controller, etc.) the Node.js software on the OpenROV controller board decides the exact number of RPMs for each motor at that instant. OpenROV pilots don't need to think about this process while it happens. It just works.
 
-The pilot's finger moves a controller lever. The lever position gets sent to software on the OpenROV's controller board, and controller board tells each ESC what its corresponding motor should do.
+The pilot's finger moves a controller lever. The lever position gets sent to software on the OpenROV controller board, and the controller board tells each ESC what its corresponding motor should do.
 
-In summary, we use ESCs so that OpenROV pilots can have greater control over the movement of the device.
+In summary, we use ESCs so that OpenROV pilots can have greater control over movement.
 
 ###How to Re-Check ESC Programming
 {% imgcap right /images/esc_program_card.jpg ESC Program Card %}
