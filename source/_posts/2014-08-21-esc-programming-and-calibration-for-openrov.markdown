@@ -39,15 +39,15 @@ In summary, we use ESCs so that OpenROV pilots can have greater control over mov
 Those of you with ESC experience already know about ESC program cards. I first learned about the cards while researching this problem. Amazing devices! Yes, it is possible to program ESCs using the series of button pushes and beeps in the OpenROV instructions. That's what I did, and it works. But a program card is faster. Amazon sells ESC program cards for less than fifteen dollars each. Well worth the investment, especially if you're programming ESCs for several OpenROVs.
 
 ###ESC Calibration Gotcha
-ESC programming went smoothly. But ESC calibration was tricky for me because turning on any of the three ESC switches started two of my motors to spin: vertical and port. Further, since my electronics chassis was (mostly) assembled by the time I got to the calibration step, it wasn't easy for me to trace each power switch to its corresponding ESC.
+ESC calibration was tricky for me because turning on any of the three ESC switches caused two of my motors to spin: vertical and port. Further, since my electronics chassis was (mostly) assembled by the time I got to the calibration step, it wasn't easy for me to trace each power switch to its corresponding ESC.
 
 So here's what I had to do. 
 
 {% imgcap right /images/openrov_esc_switch_labels.jpg ESC switch labels. %}
 
-* First, I took everything apart, while keeping the electronic leads (those which had already been soldered) intact.
+* First, I took everything apart, while keeping the electronic leads (those which had already been soldered) intact. I needed to do this so I could see where each wire was going.
 * Next, I labeled each ESC switch with its corresponding ESC number. I did not want to go through the disassembly step again! The Brother P-Touch label maker was perfect for this step.
-* Finally, I followed the ESC calibration steps _while ignoring the behavior of the motors_. For example, turning on ESC1 caused the motors connected to ESC1 (port) _and_ ESC2 (vertical) to spin. I ignored the motors while plowing through the written directions.
+* Finally, I followed the ESC calibration steps _while ignoring the behavior of the motors_. For example, turning on ESC1 caused the motors connected to ESC1 (port) _and_ ESC2 (vertical) to spin. I ignored the motors while plowing through OpenROV's written calibration directions.
 
 ###Modified Calibration Steps
 Here are the OpenROV calibration steps, with slight tweaks based on my personal experience.
