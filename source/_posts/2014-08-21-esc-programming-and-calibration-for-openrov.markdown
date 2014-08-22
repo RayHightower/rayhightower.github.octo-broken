@@ -46,7 +46,7 @@ So here's what I had to do.
 {% imgcap right /images/openrov_esc_switch_labels.jpg ESC switch labels. %}
 
 * First, I took everything apart, while keeping the electronic leads (those which had already been soldered) intact. I needed to do this so I could see where each wire was going.
-* Next, I labeled each ESC switch with its corresponding ESC number. I did not want to go through the disassembly step again! The Brother P-Touch label maker was perfect for this step.
+* Next, I labeled the back of each ESC switch with its corresponding ESC number. I did not want to go through the disassembly step again! The Brother P-Touch label maker was perfect for this step.
 * Finally, I followed the ESC calibration steps _while ignoring the behavior of the motors_. For example, turning on ESC1 caused the motors connected to ESC1 (port) _and_ ESC2 (vertical) to spin. I ignored the motors while plowing through OpenROV's written calibration directions.
 
 ###Modified Calibration Steps
