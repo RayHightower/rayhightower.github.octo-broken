@@ -7,7 +7,7 @@ categories: [ IoT, OpenROV ]
 ---
 {% imgcap middle /images/openrov_chicago_lake_michigan.jpg OpenROV meets  Lake Michigan. %}
 
-The official RubyCaribe [OpenROV](/blog/2014/06/16/citizen-science-with-openrov/) went for a spin in Lake Michigan this week. Success! Here are a few first-voyage observations:
+[OpenROV](/blog/2014/06/16/citizen-science-with-openrov/) #1227 went for a spin in Lake Michigan this week. Success! Here are a few first-voyage observations:
 
 This week I took the [OpenROV](/blog/2014/06/16/citizen-science-with-openrov/) for a spin in Lake Michigan. Success! Here are a few first-voyage observations:
 <!--more-->
