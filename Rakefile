@@ -9,7 +9,12 @@ rescue LoadError
   end
 end
 
-task default: [:spec]
+task default: [:jhw]
+
+desc "Runs jasmine headless webkit"
+task :jhw do
+  system 'jasmine-headless-webkit'
+end
 
 desc "compile coffeescript from guardfile"
 task :cc do
