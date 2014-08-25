@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/yortz/octopress-lunr-js-search.svg?branch=master)](https://travis-ci.org/yortz/octopress-lunr-js-search)
+
 # Octopress Lunr.js plugin
 
 This plugin replaces [octopress](https://github.com/imathis/octopress) google search functionality with [lunr.js](http://lunrjs.com/).
@@ -50,8 +52,8 @@ The "source" folder contains the partials and libraries needed to run the plugin
 		</form>
 		{% endif %}
 
-		{% if site.lunr-search == true %}
-		  {% include custom/lunr_search/search-form.html %}
+		{% if site.lunr_search == true %}
+		  {% include custom/lunr-search/search-form.html %}
 		{% endif %}
 
 		{% include custom/navigation.html %}
