@@ -9,6 +9,8 @@ rescue LoadError
   end
 end
 
+task default: [:spec]
+
 desc "compile coffeescript from guardfile"
 task :cc do
   Guard.setup
