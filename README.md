@@ -50,7 +50,7 @@ The "source" folder contains the partials and libraries needed to run the plugin
 		</form>
 		{% endif %}
 
-		{% if site.lunr_search == true %}
+		{% if site.lunr-search == true %}
 		  {% include custom/lunr_search/search-form.html %}
 		{% endif %}
 
