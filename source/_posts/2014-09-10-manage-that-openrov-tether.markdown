@@ -5,10 +5,11 @@ date: 2014-09-10 18:40
 comments: true
 categories: [ OpenROV ]
 ---
+{% imgcap right /images/openrov_tether_management_done_wrong.jpg Tether management done wrong. %}
 Youthful exuberance drove me to pilot my OpenROV before I built a good tether management system. Oh what chaos ensues when we pilot without a management system! Bottom line: Have a tether management plan, any plan, before you pilot your OpenROV.
 
 This article describes a tether management system that works for me. Other OpenROVers have plans that work, too. Take a look at a few and eventually you will find one that works for you.
-
+<!--more-->
 ###Slip Ring
 The slip ring is central to this tether management solution. A slip ring allows an electrical spool to turn while important electrical contacts remain intact. This slip ring was purchased from [Adafruit](https://www.adafruit.com/) for about $18.00.
 
