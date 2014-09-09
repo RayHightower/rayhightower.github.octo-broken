@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Manage That OpenROV Tether"
-date: 2014-10-09 18:40
+title: "Manage That OpenROV Tether, Or Else"
+date: 2014-09-10 18:40
 comments: true
 categories: [ OpenROV ]
 ---
