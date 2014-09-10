@@ -20,7 +20,7 @@ The slip ring is central to this solution. A slip ring allows an electrical spoo
 ###Everything Fits
 The new tether management system is small enough to share space with an OpenROV inside a [Nanuk 935 case](http://nanukcase.com/productdetails.asp?node=205). The Nanuk case is rugged and small enough to fly as an airline carry-on.
 
-And when it's time to explore, whip everything out and you're ready to explore.
+Whip everything out and you're ready to explore.
 
 {% imgcap middle /images/openrov_tether_management_laptop.jpg Ready to explore Lake Michigan. %}
 
