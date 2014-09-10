@@ -9,10 +9,10 @@ categories: [ OpenROV ]
 Youthful exuberance drove me to pilot my OpenROV before I built a good tether management system. Bad idea! It's better to have a tether management plan (any plan) before you pilot your OpenROV.
 
 This article describes a tether management system that works for me. Other OpenROVers have plans that work, too. Take a look at a few and eventually you will find one that works for you.
-<!--more-->
+
 ###The Tether Management Device
 This tether management system is constructed entirely from off-the-shelf parts. The main componenet is an extension cord reel sold by [Home Depot](http://www.homedepot.com/p/KAB-Enterprise-Co-Ltd-20-ft-16-3-Cord-Reel-with-4-Outlets-CR002/100661463?MERCH=RV-_-RV_homepage_rr-1-_-NA-_-100661463-_-N) for about $14.00. Buy it, gut it, add the slip ring using three screws (also from Home Depot) and you’re good to go.
-
+<!--more-->
 ###Slip Ring
 {% imgcap right /images/adafruit_slip_ring.jpg Adafruit slip ring. %}
 The slip ring is central to this tether management solution. A slip ring allows an electrical spool to turn while important electrical contacts remain intact. This slip ring was purchased from [Adafruit](https://www.adafruit.com/) for about $18.00.
