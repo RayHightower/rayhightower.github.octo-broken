@@ -44,5 +44,5 @@ You're done! Plug everything in and watch your Parallella boot up. Note that thi
 {% imgcap middle /images/parallella_solar_complete.jpg Parallella running on solar power. %}
 
 ###Proof of Concept
-It probably doesn’t make sense to call this a project. It's more of a proof of concept. Scaling up will cost money and time. But the solar ROI is certainly worth it.
+It probably doesn’t make sense to call this a project. It's more of a proof of concept. Scaling up will cost money and time. But the benefits of solar energy, including cost savings and reduced carbon footprint, make this a worthwhile path to pursue.
 
