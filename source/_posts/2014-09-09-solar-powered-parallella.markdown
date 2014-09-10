@@ -27,6 +27,8 @@ Can a cell phone solar charger be hacked to power Parallella? Yes!
 ###Building the Hybrid Cable
 Here's how to get started...
 
+{% imgcap middle /images/parallella_usb_solar.jpg Making the connections. %}
+
 * First, get an off-the-shelf solar device capable of providing 5 volts at 2 amperes. Many cell phone solar chargers will do this, but some will only provide 1 ampere of current. You will need 2 amperes. As of this writing, Amazon sells solar cell phone chargers for about $35.00.
 
 * Cut open a USB cable to expose power (red), ground (black), and signal cables (green and white).
@@ -39,6 +41,8 @@ Here's how to get started...
 is preferred since it will last longer.
 
 * You're done! Plug everything in and watch your Parallella boot up.
+
+{% imgcap middle /images/parallella_usb_solar.jpg Parallella running on solar power. %}
 
 ###Proof of Concept
 It probably doesn’t make sense to call this a project. It's more of a proof of concept. Scaling up will cost money and time. But the solar ROI is certainly worth it.
