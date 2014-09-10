@@ -31,9 +31,9 @@ Here's how to get started...
 
 * First, get an off-the-shelf solar device capable of providing 5 volts at 2 amperes. Many cell phone solar chargers will do this, but some will only provide 1 ampere of current. You will need 2 amperes. As of this writing, Amazon sells solar cell phone chargers for about $35.00. Note that the model shown in this article combines a photovoltaic panel with a lithium ion battery. Energy provided by the sun can be stored by the battery for later use.
 
-* Cut open a USB cable to expose power (red), ground (black), and signal cables (green and white).
+* Cut open a USB cable to expose power (red), ground (black), and signal cables (green and white) as shown in the photo.
 
-* Find an old AC adapter cable that fits the Parallella power connection. Cut it open to expose the power and ground wires. 
+* Find an old AC adapter cable that fits the Parallella power connection. Cut it open to expose the power and ground wires as shown in the photo. 
 
 * Solder the USB power to the old adapter power wire, and USB ground to the adapter's ground.
 
