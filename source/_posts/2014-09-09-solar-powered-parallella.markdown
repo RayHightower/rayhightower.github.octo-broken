@@ -37,10 +37,9 @@ Here's how to get started...
 
 * Solder the USB power to the old adapter power wire, and USB ground to the adapter's ground.
 
-* Cover everything with heat shrink tubing or electrical tape. Heat shrink
-is preferred since it will last longer.
+* Cover everything with heat shrink tubing or electrical tape. Heat shrink is preferred since it will last longer.
 
-* You're done! Plug everything in and watch your Parallella boot up.
+You're done! Plug everything in and watch your Parallella boot up. Note that this configuration will also power the Parallella's cooling fan.
 
 {% imgcap middle /images/parallella_solar_complete.jpg Parallella running on solar power. %}
 
