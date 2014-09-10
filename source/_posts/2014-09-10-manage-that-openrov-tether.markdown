@@ -11,7 +11,7 @@ Youthful exuberance drove me to pilot my [OpenROV](/blog/2014/06/16/citizen-scie
 This article describes a tether management system that works for me. Other OpenROVers have plans that work, too. Take a look at a few and eventually you will find one that fits you.
 
 ###The Tether Management Device
-This tether management system is constructed entirely from off-the-shelf parts. The main component is an extension cord reel sold by [Home Depot](http://www.homedepot.com/p/KAB-Enterprise-Co-Ltd-20-ft-16-3-Cord-Reel-with-4-Outlets-CR002/100661463) for about $14.00. Buy it, gut it, add the slip ring using three screws (also from Home Depot) and you’re good to go.
+This tether management system is constructed entirely from off-the-shelf parts. The main component is an [extension cord reel sold by Home Depot](http://www.homedepot.com/p/KAB-Enterprise-Co-Ltd-20-ft-16-3-Cord-Reel-with-4-Outlets-CR002/100661463) for about $14.00. Buy it, gut it, add the slip ring using three screws (also from Home Depot) and you’re good to go.
 <!--more-->
 ###Slip Ring
 {% imgcap right /images/adafruit_slip_ring.jpg Adafruit slip ring. %}
