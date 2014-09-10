@@ -42,7 +42,7 @@ is preferred since it will last longer.
 
 * You're done! Plug everything in and watch your Parallella boot up.
 
-{% imgcap middle /images/parallella_usb_solar.jpg Parallella running on solar power. %}
+{% imgcap middle /images/parallella_solar_complete.jpg Parallella running on solar power. %}
 
 ###Proof of Concept
 It probably doesn’t make sense to call this a project. It's more of a proof of concept. Scaling up will cost money and time. But the solar ROI is certainly worth it.
