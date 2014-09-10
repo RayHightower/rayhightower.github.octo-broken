@@ -4,7 +4,7 @@
   <title><![CDATA[Category: OpenROV | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/openrov/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-08-25T06:54:00-05:00</updated>
+  <updated>2014-09-09T20:51:43-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,40 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Manage That OpenROV Tether, Or Else]]></title>
+    <link href="http://RayHightower.com/blog/2014/09/10/manage-that-openrov-tether/"/>
+    <updated>2014-09-10T18:40:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/09/10/manage-that-openrov-tether</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/openrov_tether_management_slip_ring.jpg' width='' height='' alt='Tether management, one way that works.' title='Tether management, one way that works.'><span class='caption-text'>Tether management, one way that works.</span></span>
+Youthful exuberance drove me to pilot my OpenROV before I built a good tether management system. Bad idea! It&rsquo;s better to have a tether management plan (any plan) before you pilot your OpenROV.</p>
+
+<p>This article describes a tether management system that works for me. Other OpenROVers have plans that work, too. Take a look at a few and eventually you will find one that fits you.</p>
+
+<h3>The Tether Management Device</h3>
+
+<p>This tether management system is constructed entirely from off-the-shelf parts. The main component is an extension cord reel sold by <a href="http://www.homedepot.com/p/KAB-Enterprise-Co-Ltd-20-ft-16-3-Cord-Reel-with-4-Outlets-CR002/100661463?MERCH=RV-_-RV_homepage_rr-1-_-NA-_-100661463-_-N">Home Depot</a> for about $14.00. Buy it, gut it, add the slip ring using three screws (also from Home Depot) and you’re good to go.</p>
+
+<!--more-->
+
+
+<h3>Slip Ring</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/adafruit_slip_ring.jpg' width='' height='' alt='Adafruit slip ring.' title='Adafruit slip ring.'><span class='caption-text'>Adafruit slip ring.</span></span>
+The slip ring is central to this solution. A slip ring allows an electrical spool to spin while electrical contacts remain intact. This slip ring was purchased from <a href="https://www.adafruit.com/products/736?gclid=CJDMiPma1cACFQoEaQod1iwAFQ">Adafruit</a> for about $18.00.</p>
+
+<h3>Everything Fits</h3>
+
+<p>The new tether management system is small enough to share space with an OpenROV inside a <a href="http://nanukcase.com/productdetails.asp?node=205">Nanuk 935 case</a>. The Nanuk case is rugged and small enough to fly as an airline carry-on.</p>
+
+<p>And when it&rsquo;s time to explore, whip everything out and you&rsquo;re ready to explore.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/openrov_tether_management_laptop.jpg' width='' height='' alt='Ready to explore Lake Michigan.' title='Ready to explore Lake Michigan.'><span class='caption-text'>Ready to explore Lake Michigan.</span></span></p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/openrov_lake_michigan.png' width='' height='' alt='Exploring Lake Michigan.' title='Exploring Lake Michigan.'><span class='caption-text'>Exploring Lake Michigan.</span></span></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[OpenROV Meets Chicago's Lake Michigan]]></title>
@@ -235,107 +269,6 @@ During troubleshooting, my first step was to double-check the electronic speed c
 
 
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Node.js Prep for OpenROV]]></title>
-    <link href="http://RayHightower.com/blog/2014/06/30/node-dot-js-prep-for-openrov/"/>
-    <updated>2014-06-30T14:06:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2014/06/30/node-dot-js-prep-for-openrov</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/nodejs-white.png' width='' height='' alt='' title=''><span class='caption-text'></span></span>
-<a href="/blog/2014/06/16/citizen-science-with-openrov/">OpenROV is an underwater robot</a> controlled through a web browser. The server-side of the web app is written in Node.js, running on a <a href="/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/">BeagleBone Black</a> inside the OpenROV.</p>
-
-<p>You don&rsquo;t need to know Node.js in order to pilot an OpenROV. And you don&rsquo;t need to do anything in this article to construct an OpenROV from a kit. But if you’re the kind of maker who likes to dig deep into a project, you might enjoy exploring Node.js.</p>
-
-<!--more-->
-
-
-<h3>Mac OS X and Node.js</h3>
-
-<p>Everything written here applies to Node.js as it runs on Mac OS X. If your local machine runs Linux or Windows, you will need to consult other resources in order to run Node locally.</p>
-
-<h3>Homebrew First</h3>
-
-<p>Make sure you’re running <a href="/blog/2014/02/12/homebrew-fundamentals/">Homebrew</a> on your Mac. Homebrew is a seamless way to manage packages on Mac OS X. To install Homebrew&hellip;</p>
-
-<p>```bash
-$ ruby -e &ldquo;$(curl -fsSL <a href="https://raw.github.com/Homebrew/homebrew/go/install">https://raw.github.com/Homebrew/homebrew/go/install</a>)"install</p>
-
-<p>```</p>
-
-<p>After installation, confirm that Homebrew is running properly&hellip;</p>
-
-<p>```bash
-$ brew doctor</p>
-
-<p>```</p>
-
-<h3>Installing Node.js</h3>
-
-<p>Now that Homebrew is installed and running, Node.js can be installed with a single line command.</p>
-
-<p>```bash
-$ brew install node</p>
-
-<p>```</p>
-
-<p>To confirm that Node.js is installed on your system and to check the version number&hellip;</p>
-
-<p>```bash
-$  which node
-/usr/local/bin/node</p>
-
-<p>$ node &mdash;version
-v0.10.26</p>
-
-<p>$
-```</p>
-
-<h3>Hello World in Node.js</h3>
-
-<p>You know the compter science tradition: The first program in any new language has to say &ldquo;Hello World.&rdquo; Here&rsquo;s a sample <code>Hello World</code> program from the official <a href="http://nodejs.org">Node.js</a> web site, slightly modified to suit OpenROV.</p>
-
-<p>First, create a file called <code>helloworld.js</code> and fill it with the following code.</p>
-
-<p>```javascript
-// Sample web server from <a href="http://nodejs.org,">http://nodejs.org,</a> slightly modified.</p>
-
-<p>var http = require(&lsquo;http&rsquo;);
-http.createServer(function (req, res) {
-  res.writeHead(200, {&lsquo;Content-Type&rsquo;: &lsquo;text/plain&rsquo;});
-  res.end(&lsquo;Hello World. OpenROV runs Node.js!&rsquo;);
-}).listen(1337, &lsquo;127.0.0.1&rsquo;);
-console.log(&lsquo;Server running at <a href="http://127.0.0.1:1337/">http://127.0.0.1:1337/</a>&rsquo;);
-```</p>
-
-<p>Next, from the same directory where you saved <code>helloworld.js</code>, run the file from the command line like so&hellip;</p>
-
-<p>```bash
-$ node helloworld.js
-Server running at <a href="http://127.0.0.1:1337/">http://127.0.0.1:1337/</a></p>
-
-<p>$
-```</p>
-
-<p>Finally, open up a web browser on your local machine and navigate to <code>http://127.0.0.1:1337</code>. You should see a bare-bones web page similar to this one.</p>
-
-<p><span class='caption-wrapper center'><img class='caption' src='/images/openrov-runs-nodejs.png' width='' height='' alt='' title=''><span class='caption-text'></span></span></p>
-
-<p>Now that you have Node.js running locally, you&rsquo;re ready to explore the <a href="http://github.com/openrov">OpenROV repo on GitHub</a>.</p>
-
-<h3>Next Steps</h3>
-
-<p>Future blog posts about Node.js and OpenROV will consider questions like:</p>
-
-<ul>
-<li><p>What does Node.js do for OpenROV that other languages can’t do?</p></li>
-<li><p>What other languages might we use to control OpenROV? It’s all open source, so our brainstorms could one day turn into actual code running on OpenROV!</p></li>
-<li><p>How does Node.js on the BeagleBone Black interact with the Arduino and other OpenROV components?</p></li>
-</ul>
-
-
-<p>Keep exploring!</p>
 ]]></content>
   </entry>
   

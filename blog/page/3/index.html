@@ -9,7 +9,9 @@
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="As members of the open source community, we have internalized the benefits of open source. Sometimes, knowing a topic so well can hinder us from &hellip;">
+  <meta name="description" content="To iterate is human, to recurse divine.
+&nbsp;
+~ L. Peter Deutsch Recursion is available in many high-level languages, including Ruby. Recursive &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -82,6 +84,131 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/04/12/recursion-and-memoization/">Recursion and Memoization</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-12T10:48:00-05:00" pubdate data-updated="true">Apr 12<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><blockquote><p>To iterate is human, to recurse divine.
+&nbsp;<br/>
+~ L. Peter Deutsch</p></blockquote>
+
+<p>Recursion is available in many high-level languages, including Ruby. Recursive solutions can be joyfully elegant. At the same time, the pursuit of elegance can lead to unexpected performance pitfalls.</p>
+
+<p>Fortunately, we can use optimization techniques to address performance problems before they occur. Memoization is one technique in our arsenal.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/04/12/recursion-and-memoization/">Continue reading &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/04/10/when-in-doubt-rake-clean/">When in Doubt, Rake Clean</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-10T15:53:00-05:00" pubdate data-updated="true">Apr 10<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Earlier today, I upgraded from RubyMotion <code>v 2.24</code> to <code>v 2.26</code>. Immediately after the upgrade, I attempted to run a RubyMotion app that I’m working on. The result?</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rake
+</span><span class='line'>
+</span><span class='line'>     Build ./build/iPhoneSimulator-7.1-Development
+</span><span class='line'>   Compile ./app/app_delegate.rb
+</span><span class='line'>   Compile ./app/views/score_label.rb
+</span><span class='line'>   Compile ./app/views/paddle_view.rb
+</span><span class='line'>      Link ./build/iPhoneSimulator-7.1-Development/pong-rm4.app/pong-rm4
+</span><span class='line'>Undefined symbols <span class="k">for </span>architecture i386:
+</span><span class='line'>
+</span><span class='line'>...
+</span><span class='line'>
+</span><span class='line'>clang: error: linker <span class="nb">command </span>failed with <span class="nb">exit </span>code 1 <span class="o">(</span>use -v to see invocation<span class="o">)</span>
+</span><span class='line'>rake aborted!
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>What happened? It just ran a few minutes ago, right before the upgrade! Was RubyMotion broken? Was it time to reach out to the Twitterverse or Stack Overflow for assistance?</p>
+
+<p>Not yet.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/04/10/when-in-doubt-rake-clean/">Continue reading &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -474,91 +601,6 @@ Entrepreneurs, especially those outside of software development, may find this a
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/02/06/installing-rubinius-using-rvm/">Installing Rubinius Using RVM</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-02-06T18:17:00-06:00" pubdate data-updated="true">Feb 6<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img class="right" src="/images/rubinius.png">
-<a href="http://rubini.us/">Rubinius</a> is an implementation of the Ruby language designed for concurrency. The lead developer of Rubinius, <a href="http://twitter.com/brixen">Brian Shirai</a>, will present Rubinius at ChicagoRuby on March 4, 2014. ChicagoRuby will follow-up with a Rubinius-themed hack night on March 12th. <a href="http://www.meetup.com/ChicagoRuby/events/114749352/">Details</a>.</p>
-
-<p>To prepare for the Rubinius events, some people may choose to install Rubinius locally. RVM makes the process smooth.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2014/02/06/installing-rubinius-using-rvm/">Continue reading &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/02/03/exploring-controversial-coding-topics-at-8th-light/">Exploring Controversial Coding Topics at 8th Light</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-02-03T12:11:00-06:00" pubdate data-updated="true">Feb 3<span>rd</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://8thlight.com">8th Light</a> recently hosted a panel discussion on Controversial Coding Topics. I was honored to share the panel with two technology leaders whom I admire: <a href="http://twitter.com/markrickmeier">Mark Rickmeier</a> of <a href="http://tablexi.com">Table XI</a> and <a href="http://twitter.com/coreyhaines">Corey Haines</a> of <a href="http://wavetable.com">Wavetable</a>. <a href="http://twitter.com/little_fig">Rachel Feigenbaum</a> of 8th Light organized the event.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2014/02/03/exploring-controversial-coding-topics-at-8th-light/">Continue reading &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/4/">&larr; Older</a>
@@ -643,15 +685,15 @@ CloudCamp Chicago - Developer Night</a><br/>in Chicago, IL</li>
 <li class='category'><a href='/blog/categories/community/'>Community (19)</a></li>
 <li class='category'><a href='/blog/categories/education/'>Education (43)</a></li>
 <li class='category'><a href='/blog/categories/git/'>Git (4)</a></li>
-<li class='category'><a href='/blog/categories/high-performance-computing/'>High Performance Computing (6)</a></li>
+<li class='category'><a href='/blog/categories/high-performance-computing/'>High Performance Computing (7)</a></li>
 <li class='category'><a href='/blog/categories/ios/'>iOS (13)</a></li>
 <li class='category'><a href='/blog/categories/iot/'>IoT (7)</a></li>
 <li class='category'><a href='/blog/categories/linux/'>Linux (13)</a></li>
 <li class='category'><a href='/blog/categories/node/'>Node (3)</a></li>
 <li class='category'><a href='/blog/categories/objective-c/'>Objective-C (5)</a></li>
-<li class='category'><a href='/blog/categories/openrov/'>OpenROV (7)</a></li>
+<li class='category'><a href='/blog/categories/openrov/'>OpenROV (8)</a></li>
 <li class='category'><a href='/blog/categories/os-x/'>OS X (9)</a></li>
-<li class='category'><a href='/blog/categories/parallella/'>Parallella (4)</a></li>
+<li class='category'><a href='/blog/categories/parallella/'>Parallella (5)</a></li>
 <li class='category'><a href='/blog/categories/rails/'>Rails (10)</a></li>
 <li class='category'><a href='/blog/categories/raspberry-pi/'>Raspberry Pi (4)</a></li>
 <li class='category'><a href='/blog/categories/ruby/'>Ruby (23)</a></li>

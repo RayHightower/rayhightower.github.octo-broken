@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Parallella | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/parallella/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-08-25T06:54:00-05:00</updated>
+  <updated>2014-09-09T20:51:43-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,60 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Solar Powered Parallella]]></title>
+    <link href="http://RayHightower.com/blog/2014/09/09/solar-powered-parallella/"/>
+    <updated>2014-09-09T09:18:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/09/09/solar-powered-parallella</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella_solar.jpg' width='' height='' alt='Give solar power to your Parallella with a few simple components.' title='Give solar power to your Parallella with a few simple components.'><span class='caption-text'>Give solar power to your Parallella with a few simple components.</span></span></p>
+
+<p>This article describes a simple hardware hack: Making the <a href="/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella</a> run on solar energy.</p>
+
+<p>Motivation: The fastest computers in the world gulp electricity at an alarming rate. For example, <a href="http://www.top500.org/system/177999">Tianhe-2</a> at the National Super Computer Center in Guangzhou, China uses 17.8 megawatts of energy per year. In dollars, that’s roughly $17 million spent on electricity spent each year, depending on how the electricity is sourced.</p>
+
+<p>Scientists at <a href="http://www.sandia.gov/">Sandia National Laboratories</a> estimate that the earth&rsquo;s surface absorbs enough solar energy in ninety minutes to power every electrical device on the planet for a full year. A year&rsquo;s worth of energy in ninety minutes! Surely we can use some of that energy to power our supercomputers.</p>
+
+<!--more-->
+
+
+<h3>Observations</h3>
+
+<p>The solar Parallella idea was driven by a few observations:</p>
+
+<ul>
+<li><p>Parallella only needs five watts of power, five volts at 1 ampere. The device might spike at startup or during heavy calculations, but not by much.</p></li>
+<li><p>USB provides electrical power at five volts, typically less than 2 amperes.</p></li>
+<li><p>Cell phone solar chargers are easy to find. These pocket-sized chargers provide power over USB.</p></li>
+</ul>
+
+
+<p>Can a cell phone solar charger be hacked to power Parallella? Yes!</p>
+
+<h3>Building the Hybrid Cable</h3>
+
+<p>Here&rsquo;s how to get started&hellip;</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella_usb_solar.jpg' width='' height='' alt='Making the connections.' title='Making the connections.'><span class='caption-text'>Making the connections.</span></span></p>
+
+<ul>
+<li><p>First, get an off-the-shelf solar device capable of providing 5 volts at 2 amperes. Many cell phone solar chargers will do this, but some will only provide 1 ampere of current. You will need 2 amperes. As of this writing, Amazon sells solar cell phone chargers for about $35.00.</p></li>
+<li><p>Cut open a USB cable to expose power (red), ground (black), and signal cables (green and white).</p></li>
+<li><p>Find an old AC adapter cable that fits the Parallella power connection. Cut it open to expose the power and ground wires.</p></li>
+<li><p>Solder the USB power to the old adapter power wire, and USB ground to the adapter&rsquo;s ground.</p></li>
+<li><p>Cover everything with heat shrink tubing or electrical tape. Heat shrink is preferred since it will last longer.</p></li>
+</ul>
+
+
+<p>You&rsquo;re done! Plug everything in and watch your Parallella boot up. Note that this configuration will also power the Parallella&rsquo;s cooling fan.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella_solar_complete.jpg' width='' height='' alt='Parallella running on solar power.' title='Parallella running on solar power.'><span class='caption-text'>Parallella running on solar power.</span></span></p>
+
+<h3>Proof of Concept</h3>
+
+<p>It probably doesn’t make sense to call this a project. It&rsquo;s more of a proof of concept. Scaling up will cost money and time. But the solar ROI is certainly worth it.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[RVM and Parallella: What a Difference a Shell Makes]]></title>
@@ -375,8 +429,8 @@ drwxrwxrwx  1 rth   staff      512 Jul  6 12:11 .fseventsd
 <p>You can SSH into the Parallella from the network&hellip;</p>
 
 <p>```bash
-~$ ssh <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#x6f;&#x3a;&#108;&#x69;&#x6e;&#x61;&#114;&#111;&#64;&#49;&#x39;&#x32;&#46;&#x31;&#x36;&#x38;&#46;&#x31;&#49;&#46;&#49;&#x33;&#x33;">&#x6c;&#105;&#x6e;&#97;&#114;&#111;&#64;&#x31;&#57;&#x32;&#x2e;&#x31;&#54;&#x38;&#x2e;&#x31;&#x31;&#x2e;&#49;&#51;&#x33;</a>
-<a href="&#x6d;&#97;&#105;&#108;&#x74;&#111;&#58;&#108;&#x69;&#110;&#x61;&#x72;&#x6f;&#64;&#49;&#x39;&#50;&#x2e;&#x31;&#54;&#x38;&#x2e;&#49;&#49;&#46;&#x31;&#x33;&#51;">&#108;&#105;&#x6e;&#x61;&#114;&#111;&#x40;&#x31;&#57;&#50;&#x2e;&#49;&#54;&#x38;&#x2e;&#x31;&#x31;&#x2e;&#49;&#x33;&#x33;</a>&rsquo;s password:
+~$ ssh <a href="&#109;&#97;&#105;&#x6c;&#x74;&#111;&#58;&#108;&#105;&#110;&#97;&#114;&#x6f;&#x40;&#x31;&#x39;&#x32;&#46;&#x31;&#x36;&#x38;&#x2e;&#49;&#49;&#46;&#49;&#51;&#51;">&#x6c;&#x69;&#x6e;&#97;&#x72;&#x6f;&#x40;&#x31;&#x39;&#x32;&#x2e;&#49;&#x36;&#x38;&#46;&#49;&#x31;&#x2e;&#49;&#51;&#x33;</a>
+<a href="&#x6d;&#x61;&#105;&#108;&#x74;&#x6f;&#58;&#x6c;&#x69;&#110;&#x61;&#114;&#x6f;&#x40;&#x31;&#57;&#50;&#46;&#49;&#54;&#56;&#46;&#x31;&#x31;&#46;&#49;&#51;&#51;">&#108;&#105;&#x6e;&#x61;&#x72;&#111;&#x40;&#49;&#x39;&#x32;&#46;&#49;&#54;&#x38;&#46;&#x31;&#49;&#x2e;&#49;&#51;&#51;</a>&rsquo;s password:
 Welcome to Linaro 14.04 (GNU/Linux 3.12.0-g0bc9c3a-dirty armv7l)</p>
 
 <ul>

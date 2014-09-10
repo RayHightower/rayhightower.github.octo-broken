@@ -4,7 +4,7 @@
   <title><![CDATA[Category: High Performance Computing | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/high-performance-computing/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-08-25T06:54:00-05:00</updated>
+  <updated>2014-09-09T20:51:43-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,60 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Solar Powered Parallella]]></title>
+    <link href="http://RayHightower.com/blog/2014/09/09/solar-powered-parallella/"/>
+    <updated>2014-09-09T09:18:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/09/09/solar-powered-parallella</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella_solar.jpg' width='' height='' alt='Give solar power to your Parallella with a few simple components.' title='Give solar power to your Parallella with a few simple components.'><span class='caption-text'>Give solar power to your Parallella with a few simple components.</span></span></p>
+
+<p>This article describes a simple hardware hack: Making the <a href="/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella</a> run on solar energy.</p>
+
+<p>Motivation: The fastest computers in the world gulp electricity at an alarming rate. For example, <a href="http://www.top500.org/system/177999">Tianhe-2</a> at the National Super Computer Center in Guangzhou, China uses 17.8 megawatts of energy per year. In dollars, that’s roughly $17 million spent on electricity spent each year, depending on how the electricity is sourced.</p>
+
+<p>Scientists at <a href="http://www.sandia.gov/">Sandia National Laboratories</a> estimate that the earth&rsquo;s surface absorbs enough solar energy in ninety minutes to power every electrical device on the planet for a full year. A year&rsquo;s worth of energy in ninety minutes! Surely we can use some of that energy to power our supercomputers.</p>
+
+<!--more-->
+
+
+<h3>Observations</h3>
+
+<p>The solar Parallella idea was driven by a few observations:</p>
+
+<ul>
+<li><p>Parallella only needs five watts of power, five volts at 1 ampere. The device might spike at startup or during heavy calculations, but not by much.</p></li>
+<li><p>USB provides electrical power at five volts, typically less than 2 amperes.</p></li>
+<li><p>Cell phone solar chargers are easy to find. These pocket-sized chargers provide power over USB.</p></li>
+</ul>
+
+
+<p>Can a cell phone solar charger be hacked to power Parallella? Yes!</p>
+
+<h3>Building the Hybrid Cable</h3>
+
+<p>Here&rsquo;s how to get started&hellip;</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella_usb_solar.jpg' width='' height='' alt='Making the connections.' title='Making the connections.'><span class='caption-text'>Making the connections.</span></span></p>
+
+<ul>
+<li><p>First, get an off-the-shelf solar device capable of providing 5 volts at 2 amperes. Many cell phone solar chargers will do this, but some will only provide 1 ampere of current. You will need 2 amperes. As of this writing, Amazon sells solar cell phone chargers for about $35.00.</p></li>
+<li><p>Cut open a USB cable to expose power (red), ground (black), and signal cables (green and white).</p></li>
+<li><p>Find an old AC adapter cable that fits the Parallella power connection. Cut it open to expose the power and ground wires.</p></li>
+<li><p>Solder the USB power to the old adapter power wire, and USB ground to the adapter&rsquo;s ground.</p></li>
+<li><p>Cover everything with heat shrink tubing or electrical tape. Heat shrink is preferred since it will last longer.</p></li>
+</ul>
+
+
+<p>You&rsquo;re done! Plug everything in and watch your Parallella boot up. Note that this configuration will also power the Parallella&rsquo;s cooling fan.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella_solar_complete.jpg' width='' height='' alt='Parallella running on solar power.' title='Parallella running on solar power.'><span class='caption-text'>Parallella running on solar power.</span></span></p>
+
+<h3>Proof of Concept</h3>
+
+<p>It probably doesn’t make sense to call this a project. It&rsquo;s more of a proof of concept. Scaling up will cost money and time. But the solar ROI is certainly worth it.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Parallella Quick Start Guide (with gotchas)]]></title>
@@ -282,8 +336,8 @@ drwxrwxrwx  1 rth   staff      512 Jul  6 12:11 .fseventsd
 <p>You can SSH into the Parallella from the network&hellip;</p>
 
 <p>```bash
-~$ ssh <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#x6f;&#x3a;&#108;&#x69;&#x6e;&#97;&#x72;&#x6f;&#64;&#x31;&#57;&#50;&#46;&#x31;&#x36;&#56;&#46;&#49;&#x31;&#46;&#x31;&#x33;&#x33;">&#x6c;&#105;&#x6e;&#97;&#114;&#x6f;&#64;&#x31;&#57;&#x32;&#x2e;&#x31;&#x36;&#56;&#46;&#49;&#49;&#x2e;&#49;&#51;&#x33;</a>
-<a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#111;&#58;&#x6c;&#105;&#x6e;&#97;&#114;&#x6f;&#64;&#x31;&#57;&#50;&#46;&#49;&#x36;&#56;&#x2e;&#49;&#49;&#x2e;&#x31;&#51;&#51;">&#x6c;&#105;&#x6e;&#x61;&#114;&#x6f;&#64;&#49;&#x39;&#50;&#x2e;&#x31;&#54;&#x38;&#46;&#x31;&#x31;&#x2e;&#x31;&#x33;&#x33;</a>&rsquo;s password:
+~$ ssh <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#111;&#58;&#108;&#105;&#x6e;&#97;&#114;&#111;&#64;&#49;&#57;&#50;&#x2e;&#x31;&#54;&#56;&#46;&#49;&#x31;&#46;&#x31;&#x33;&#51;">&#108;&#x69;&#110;&#x61;&#114;&#x6f;&#x40;&#x31;&#x39;&#50;&#x2e;&#x31;&#x36;&#x38;&#x2e;&#49;&#x31;&#x2e;&#49;&#51;&#x33;</a>
+<a href="&#109;&#97;&#x69;&#108;&#116;&#x6f;&#58;&#108;&#105;&#x6e;&#97;&#x72;&#x6f;&#64;&#49;&#57;&#x32;&#x2e;&#x31;&#x36;&#x38;&#x2e;&#x31;&#49;&#46;&#x31;&#51;&#51;">&#x6c;&#105;&#x6e;&#x61;&#114;&#111;&#x40;&#x31;&#x39;&#50;&#x2e;&#49;&#x36;&#x38;&#x2e;&#49;&#x31;&#x2e;&#x31;&#x33;&#x33;</a>&rsquo;s password:
 Welcome to Linaro 14.04 (GNU/Linux 3.12.0-g0bc9c3a-dirty armv7l)</p>
 
 <ul>
@@ -545,115 +599,6 @@ hexidecimal operation code.</li>
 
 
 <p>Thank you SCNA! As I shared with the other devs at SCNA, I will gladly post my mistakes and <em>gotchas</em> here for people who want to build a unit like this. Let&rsquo;s build!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Petascale Tools Workshop 2013]]></title>
-    <link href="http://RayHightower.com/blog/2013/07/19/petascale-tools-workshop-2013/"/>
-    <updated>2013-07-19T02:12:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2013/07/19/petascale-tools-workshop-2013</id>
-    <content type="html"><![CDATA[<p>The <a href="http://www.paradyn.org/CSCADS2013/index.html">Petascale Tools Workshop</a> is for computer scientists who create tools that enable apps to run efficiently on the world&rsquo;s fastest supercomputers. Supercomputer performance is measured in petaflops: 10<sup><sup>15</sup></sup> floating point operations per second. That&rsquo;s blazing speed, thousands of times faster than the fastest MacBook Pro.</p>
-
-<!--more-->
-
-
-<p><a href="http://WisdomGroup.com">WisdomGroup</a> was invited to attend the workshop because we have a client client, <a href="http://www.wisdomgroup.com/case-studies/texas-am-university/">Texas A &amp; M University</a>, operating in the high performance computing (HPC) space. As the only non-PhD in the room, I was given a chance to exercise Pat Metheny&rsquo;s <a href="/blog/2013/07/17/pat-metheny-be-the-worst/">be-the-worst</a> philosophy in the extreme. The result: I learned things that will help WisdomGroup to deliver better solutions for our clients, especially the TAMU team.</p>
-
-<h3>One Megawatt = $1,000,000.00</h3>
-
-<p>As with other disciplines of engineering, supercomputer design is all about managing trade-offs. If you increase the clock speed, how will that affect your electrical bill? If you increase the size of the cache, how much more will you spend on hardware?</p>
-
-<p>Every Petascale Workshop presenter highlighted the toughest constraint: The cost of electrical power. High performance computers gulp electricity. The wattage numbers were all very abstract to me until one presenter layed out a direct one-to-one correspondence between electricity and money. <em>One megawatt of power used over the course of a year costs one million dollars.</em></p>
-
-<p>Express a constraint in terms of money, and the abstractions melt away.</p>
-
-<p>The debate between the scientists was vigorous yet respectful. After hearing the 1-to-1 rule of thumb, one audience member remarked, &ldquo;I know how to genererate a megawatt for only $865,000.&rdquo; He then outlined his solution, a combination of coal, fossil fuels, and natural gas that would achieve the reduction. The more important point: Electricity is expensive.</p>
-
-<h3>Re-Framing the Power Problem</h3>
-
-<p>There is another way to look at the power problem. Consider it from the perspective of performance, not power. Here&rsquo;s how one presenter put it: No matter where we build a supercomputer, we will only have a limited amount of power. Let&rsquo;s look at the maximum available power as a constraint and go from there.</p>
-
-<p>Rubyists are familiar with the saying &#34;<a href="http://gettingreal.37signals.com/ch03_Embrace_Constraints.php">constraints are liberating</a>&#34;, popularized by 37signals. Since power limitations are real constraints, our next step is to figure out how to extract the best results allowed within the constraints.</p>
-
-<h3>Top Five</h3>
-
-<p>Supercomputer scientists are as competitive as olympic athletes. As of June 2013, the five fastest machines in the world are:</p>
-
-<center>
-<table class="table table-condensed">
-    <thead>
-    <tr>
-        <th width="50">Rank</th>
-        <th width="75">Site</th>
-        <th width="100" style="text-align: right;">Cores</th>
-        <th width="75" style="text-align: right;">Rmax (PF/s)</th>
-        <th width="75" style="text-align: right;">Power (MW)</th>
-    </tr>
-    </thead>
-
-    <tr class="sublist odd">
-        <td><span class="badge">1</span></td>
-        <td>China</td>
-        <td style="text-align: right;">3,120,000</td>
-        <td style="text-align: right;">33.9</td>
-        <td style="text-align: right;">17.8</td>
-    </tr>
-
-    <tr class="sublist even">
-        <td><span class="badge">2</span></td>
-        <td>USA</td>
-        <td style="text-align: right;">560,640</td>
-        <td style="text-align: right;">17.5</td>
-        <td style="text-align: right;">8.2</td>
-    </tr>
-
-    <tr class="sublist odd">
-        <td><span class="badge">3</span></td>
-        <td>USA</td>
-        <td style="text-align: right;">1,572,864</td>
-        <td style="text-align: right;">17.2</td>
-        <td style="text-align: right;">7.9</td>
-    </tr>
-
-    <tr class="sublist even">
-        <td><span class="badge">4</span></td>
-        <td>Japan</td>
-        <td style="text-align: right;">705,024</td>
-        <td style="text-align: right;">10.5</td>
-        <td style="text-align: right;">12.6</td>
-    </tr>
-
-    <tr class="sublist odd">
-        <td><span class="badge">5</span></td>
-        <td>USA</td>
-        <td style="text-align: right;">786,432</td>
-        <td style="text-align: right;">8.6</td>
-        <td style="text-align: right;">3.9</td>
-    </tr>
-</table>
-</center>
-
-
-<p>&nbsp;<br/>
-Scientists determine Rmax by running the <a href="http://en.wikipedia.org/wiki/LINPACK_benchmarks">LINPACK</a> benchmark. <a href="http://top500.org">Top500.org</a> has more information about the fastest
-machines.</p>
-
-<h3>Digging Deeper</h3>
-
-<p>Some of the biggest performance gains can be realized through more efficient software. Most supercomputers run some distribution of Linux. Some teams of researchers focus on ways to optimize the Linux kernel for supercomputing.</p>
-
-<p>Optimization is not a one-size-fits all process. The scientists need to consder the type of applications being run, percentage of time spent on I/O, efficiency of algorithms, and so on. Each potential optimization choice is like a node on an ever expanding tree. The choices are endless, and the seasoned expert will know where to focus for the best results.</p>
-
-<p>In the Ruby world, we might use tools like <a href="http://newrelic.com">New Relic</a> or <a href="http://codeclimate.com">Code Climate</a> to identify hot spots in our code, places where re-factoring can reduce CPU utilization or improve I/O. HPC tools tend to be highly customizable because the users are intimately familar with their own hardware. During a lunch conversation, one team of scientists shared how they suspected a defect in hardware counters used to measure the behavior of a supercomputer under study. The instincts of the scientists proved correct, and the errant counters were replaced.</p>
-
-<h3>Conclusion</h3>
-
-<p>When smart people challenge each other to grow, great things happen. The scientists at the Petascale Tools Workshop were clearly helping each other to grow. The next few years in supercomputing will be exciting!</p>
-
-<h3>Acknowledgements</h3>
-
-<p>I am grateful to the organizers of the Petascale Tools Workshop for hosting the event, and to the TAMU team for extending the invitation. Thank you both!</p>
 ]]></content>
   </entry>
   
