@@ -19,10 +19,11 @@ This tether management system is constructed entirely from off-the-shelf parts. 
 The slip ring is central to this tether management solution. A slip ring allows an electrical spool to turn while important electrical contacts remain intact. This slip ring was purchased from [Adafruit](https://www.adafruit.com/) for about $18.00.
 
 ###Everything Fits
-{% imgcap right /images/openrov_nanuk_case.jpg OpenROV, tether management, Nanuk 935 case. %}
 The new tether management system is small enough to share space with an OpenROV in a [Nanuk 935 case](http://www.amazon.com/gp/product/B00BP8UNFS/ref=oh_aui_detailpage_o03_s00?ie=UTF8&psc=1), available from Amazon. The case is small enough to fly as an airline carry-on.
 
 And when it's time to explore, whip everything out and you're ready to go.
-{% imgcap right /images/openrov_tether_management_laptop.jpg Ready to gog %}
+{% imgcap right /images/openrov_tether_management_laptop.jpg Ready to go. %}
+
+###What about the tangled tether?
 
 
