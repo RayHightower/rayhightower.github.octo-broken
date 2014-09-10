@@ -15,7 +15,7 @@ This tether management system is constructed entirely from off-the-shelf parts. 
 <!--more-->
 ###Slip Ring
 {% imgcap right /images/adafruit_slip_ring.jpg Adafruit slip ring. %}
-The slip ring is central to this solution. A slip ring allows an electrical spool to turn while electrical contacts remain intact. This slip ring was purchased from [Adafruit](https://www.adafruit.com/) for about $18.00.
+The slip ring is central to this solution. A slip ring allows an electrical spool to spin while electrical contacts remain intact. This slip ring was purchased from [Adafruit](https://www.adafruit.com/) for about $18.00.
 
 ###Everything Fits
 The new tether management system is small enough to share space with an OpenROV inside a [Nanuk 935 case](http://www.amazon.com/gp/product/B00BP8UNFS/ref=oh_aui_detailpage_o03_s00?ie=UTF8&psc=1). The Nanuk case is rugged and small enough to fly as an airline carry-on.
