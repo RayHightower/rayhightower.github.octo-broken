@@ -5,7 +5,7 @@ date: 2014-09-09 09:18
 comments: true
 categories: [ High Performance Computing, Parallella ]
 ---
-{% imgcap middle /images/parallella_solar.jpg Add a few simple components for a solar powered Parallella. %}
+{% imgcap middle /images/parallella_solar.jpg Give solar power to your Parallella with a few simple components. %}
 
 This article describes a simple hardware hack: Making the [Parallella](/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/) run on solar energy. 
 
