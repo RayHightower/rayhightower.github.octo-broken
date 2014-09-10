@@ -6,7 +6,7 @@ comments: true
 categories: [ OpenROV ]
 ---
 {% imgcap right /images/openrov_tether_management_slip_ring.jpg Tether management, one way that works. %}
-Youthful exuberance drove me to pilot my OpenROV before I built a good tether management system. Bad idea! It's better to have a tether management plan (any plan) before you pilot your OpenROV.
+Youthful exuberance drove me to pilot my [OpenROV](/blog/2014/06/16/citizen-science-with-openrov/) before I built a good tether management system. Bad idea! It's better to have a tether management plan (any plan) before you pilot your OpenROV.
 
 This article describes a tether management system that works for me. Other OpenROVers have plans that work, too. Take a look at a few and eventually you will find one that fits you.
 
