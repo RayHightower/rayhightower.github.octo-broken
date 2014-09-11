@@ -24,6 +24,6 @@ Whip everything out and you're ready to explore.
 
 {% imgcap middle /images/openrov_tether_management_laptop.jpg Ready to explore Lake Michigan. %}
 
-{% imgcap middle /images/openrov_lake_michigan.png Exploring Lake Michigan. %}
+{% imgcap middle /images/openrov_lake_michigan.png Exploring Lake Michigan with OpenROV. %}
 
 
