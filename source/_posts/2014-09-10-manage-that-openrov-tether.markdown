@@ -21,7 +21,7 @@ The slip ring is central to this solution. A slip ring allows an electrical spoo
 
 
 ###How to Install the Slip Ring
-First, pull the entire length of the extension cord out of the reel. It would be great to keep the whole orange cable as part of the tether, but then we wouldn’t have room for the rest of the twisted pair cable. Cut the orange cable so that only one meter remains attached to the reel assembly.
+First, pull the entire orange cable out of the extension cord reel. It would be great to keep the whole orange cable as part of the tether, but then we wouldn’t have room for the original tether (twisted pair). Cut the orange cable so that only one meter remains attached to the reel assembly.
 
 {% imgcap /images/openrov_tether_management_internals.jpg Front view, back view, internal view. %}
 
