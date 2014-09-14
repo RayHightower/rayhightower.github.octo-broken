@@ -41,7 +41,14 @@ Take a look inside the reel. You’ll see black, green, and white cables inside.
 {% imgcap /images/openrov_extra_tab.jpg Extra tab inside the reel, before and after removal. %}
 
 ###Gotcha: Removing the Extra Tab
-After initial assembly, I noticed that there was an extra tab inside of the reel. I don’t know the original purpose for the tab, but since it appeared to interfere with tether operation, it had to go. The before & after photos tell the story.
+After initial assembly, I noticed that there was an extra tab inside of the reel. I don’t know the original purpose for the tab, but since it appeared to interfere with tether operation, it had to go. Wire clippers and a dremel tool made quick work of the tab. The before & after photos tell the story.
+
+###Attaching the Tether & Topside Adapter
+Now that you have a functioning reel with a slip ring, attach the twisted pair tether to the 1-meter orange extension cable. Hook splice, solder, hot glue, and heat shring did the trick for me. 
+
+The topside adapter can be attached to the top of the reel with velcro, as shown in the photos throughout this article. Plug the green and white cables from the outer slip ring into the topside adapter, and you're ready to test the new tether management system.
+
+What should we do with the slip ring's extra lines? I tied mine together for future use. I may cut them if I decide that they're not useful. If you have other ideas, feel free to post in the comments below.
 
 ###Everything Fits
 The new tether management system is small enough to share space with an OpenROV inside a [Nanuk 935 case](http://nanukcase.com/productdetails.asp?node=205). The Nanuk case is rugged and small enough to fly as an airline carry-on.
