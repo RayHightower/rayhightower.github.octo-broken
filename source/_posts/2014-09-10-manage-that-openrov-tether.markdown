@@ -15,6 +15,8 @@ This article describes a tether management system that works for me. Other OpenR
 ###Off-the-Shelf Parts
 This tether management system is constructed entirely from off-the-shelf parts. The main component is an [extension cord reel sold by Home Depot](http://www.homedepot.com/p/KAB-Enterprise-Co-Ltd-20-ft-16-3-Cord-Reel-with-4-Outlets-CR002/100661463) for about $14.00. Buy it, gut it, add the slip ring using three screws (also from Home Depot) and you’re good to go.
 <!--more-->
+{% imgcap middle /images/openrov_lake_michigan.png Exploring Lake Michigan with OpenROV. %}
+
 ###Slip Ring
 {% imgcap right /images/adafruit_slip_ring.jpg Adafruit slip ring. %}
 The slip ring is central to this solution. A slip ring allows an electrical spool to spin while electrical contacts remain intact. This slip ring was purchased from [Adafruit](https://www.adafruit.com/products/736?gclid=CJDMiPma1cACFQoEaQod1iwAFQ) for about $18.00.
@@ -58,6 +60,5 @@ Whip everything out and you're ready to explore.
 
 {% imgcap middle /images/openrov_tether_management_laptop.jpg Ready to explore Lake Michigan. %}
 
-{% imgcap middle /images/openrov_lake_michigan.png Exploring Lake Michigan with OpenROV. %}
 
 
