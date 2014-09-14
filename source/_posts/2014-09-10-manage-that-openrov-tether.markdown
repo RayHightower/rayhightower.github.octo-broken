@@ -27,10 +27,15 @@ First, pull the entire orange cable out of the extension cord reel. It would be 
 
 Next, take the extension cord reel apart. Two phillips-head screws hold the device together. Remove the two screws, and the two orange disks will fall apart.
 
-Now let’s focus on the disk without the electrical plugs. You will need to cut a hole in the exact center of the disk. The hole will need to be large enough to let the slip ring extension through, while allowing enough of an edge for the flange screws. The photos show this more clearly than the words in this paragraph.
+Now let’s focus on the disk without the electrical plugs. You will need to cut a hole in the exact center of this disk. The hole will need to be large enough to let the thicker part of the slip ring through, while allowing enough of an edge for the flange screws. The photos give a clearer picture than the words in this paragraph.
 
 After you insert the slip ring, drill holes for the three mounting screws. One way to do this: Drill one hole first, insert, the screw, tighten the nut, and then measure/drill the remaining holes. You’re more likely to align all of the holes correctly this way.
 
+###Loctite
+{% imgcap /images/slip_ring_loctite.jpg Loctite oozing from the screws.  %}
+[Loctite](http://www.loctiteproducts.com) makes a gummy substance that keeps screws from jiggling loose. They also make super glue; that's not what you want for this project. If you use Loctite on the slip ring screws, they will remain tight until you remove them on purpose.
+
+###Connecting Inside the Reel
 Take a look inside the reel. You’ll see black, green, and white cables inside. You won’t need to do anything with the black cable. Splice the green line from the slip ring to the green line inside the reel, and splice the white slip ring line with the white reel line. Your technique may vary, but I used a combination hook splice, solder, hot glue, and heat shrink tubing. If you wear a belt and suspenders your pants will never fall down!
 
 {% imgcap /images/openrov_extra_tab.jpg Extra tab inside the reel, before and after removal. %}
