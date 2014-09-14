@@ -48,10 +48,10 @@ Now that you have a functioning reel with a slip ring, attach the twisted pair t
 
 The topside adapter can be attached to the top of the reel with velcro, as shown in the photos throughout this article. Plug the green and white cables from the outer slip ring into the topside adapter, and you're ready to test the new tether management system.
 
+{% imgcap right /images/nanuk_935_openrov.jpg Nanuk 935 with OpenROV. %}
 What should we do with the slip ring's extra lines? I tied mine together for future use. I may cut them if I decide that they're not useful. If you have other ideas, feel free to post in the comments below.
 
 ###Everything Fits
-{% imgcap right /images/nanuk_935_openrov.jpg Nanuk 935 with OpenROV. %}
 The new tether management system is small enough to share space with an OpenROV inside a [Nanuk 935 case](http://nanukcase.com/productdetails.asp?node=205). The Nanuk case has wheels, a foam interior, and it is rugged and small enough to fly as an airline carry-on.
 
 Whip everything out and you're ready to explore.
