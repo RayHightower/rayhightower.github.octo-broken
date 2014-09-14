@@ -32,7 +32,7 @@ Now let’s focus on the disk without the electrical plugs. You will need to cut
 After you insert the slip ring, drill holes for the three mounting screws. One way to do this: Drill one hole first, insert, the screw, tighten the nut, and then measure/drill the remaining holes. You’re more likely to align all of the holes correctly this way.
 
 ###Loctite
-{% imgcap /images/slip_ring_loctite.jpg Loctite oozing from the screws.  %}
+{% imgcap right /images/slip_ring_loctite.jpg Loctite oozing from the screws.  %}
 [Loctite](http://www.loctiteproducts.com) makes a gummy substance that keeps screws from jiggling loose. They also make super glue; that's not what you want for this project. If you use Loctite on the slip ring screws, they will remain tight until you remove them on purpose.
 
 ###Connecting Inside the Reel
