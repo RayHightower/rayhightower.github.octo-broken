@@ -29,7 +29,7 @@ Next, take the extension cord reel apart. Two phillips-head screws hold the devi
 
 Now let’s focus on the disk without the electrical plugs. You will need to cut a hole in the exact center of this disk. The hole will need to be large enough to let the thicker part of the slip ring through, while allowing enough of an edge for the flange screws. The photos give a clearer picture than the words in this paragraph.
 
-After you insert the slip ring, drill holes for the three mounting screws. One way to do this: Drill one hole first, insert, the screw, tighten the nut, and then measure/drill the remaining holes. You’re more likely to align all of the holes correctly this way.
+After you insert the slip ring, drill holes for the three slip ring mounting screws. One way to do this: Drill one hole first, insert the screw, tighten the nut, and then measure/drill the remaining holes. You’re more likely to align all of the holes correctly this way.
 
 ###Loctite Threadlocker
 {% imgcap right /images/slip_ring_loctite.jpg Loctite oozing from the screws.  %}
@@ -40,7 +40,7 @@ Take a look inside the reel. You’ll see black, green, and white cables inside.
 
 {% imgcap /images/openrov_extra_tab.jpg Extra tab inside the reel, before and after removal. %}
 
-###Removing the Extra Tab
+###Gotcha: Removing the Extra Tab
 After initial assembly, I noticed that there was an extra tab inside of the reel. I don’t know the original purpose for the tab, but since it appeared to interfere with tether operation, it had to go. The before & after photos tell the story.
 
 ###Everything Fits
