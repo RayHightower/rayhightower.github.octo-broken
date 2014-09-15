@@ -3,7 +3,7 @@ layout: post
 title: "Manage That OpenROV Tether, Or Else"
 date: 2014-09-10 18:40
 comments: true
-categories: [ OpenROV ]
+categories: [ IoT, OpenROV ]
 ---
 {% imgcap right /images/openrov_tether_management_slip_ring.jpg Tether management, one way that works. %}
 _Note: This article has been updated with more photos and details describing slip ring installation._
