@@ -3,7 +3,7 @@ layout: post
 title: "Solar Powered Parallella"
 date: 2014-09-09 09:18
 comments: true
-categories: [ High Performance Computing, Parallella ]
+categories: [ High Performance Computing, IoT, Parallella ]
 ---
 {% imgcap middle /images/parallella_solar.jpg Give solar power to your Parallella with a few simple components. %}
 

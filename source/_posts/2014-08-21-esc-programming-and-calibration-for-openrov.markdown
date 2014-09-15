@@ -3,7 +3,7 @@ layout: post
 title: "ESC Programming and Calibration for OpenROV"
 date: 2014-08-21 16:27
 comments: true
-categories: [ BeagleBone Black, OpenROV ]
+categories: [ BeagleBone Black, IoT, OpenROV ]
 ---
 {% imgcap middle /images/openrov_esc.jpg Three ESCs, one for each motor. Each ESC has a switch and a power/signal connector. %}
 
