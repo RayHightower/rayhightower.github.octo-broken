@@ -13,7 +13,7 @@ categories: [ Arduino, BeagleBone Black, Community, IoT, Linux, OpenROV ]
 
 OpenROV's ingredients are an impressive mix of open source goodness...
 
-{% imgcap right /images/BeagleBoneBlack_cropped.jpg BeagleBone Black running Linux & Node.js. %}
+{% imgcap right /images/BeagleBoneBlack_Linux_Nodejs.jpg BeagleBone Black running Linux & Node.js. %}
 
 * BeagleBone Black - an open-source single-board computer, smaller than a deck of cards, running Linux.
 * Linux - specifically, the Ubuntu distribution.
