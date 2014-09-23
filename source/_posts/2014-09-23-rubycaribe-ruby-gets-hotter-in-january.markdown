@@ -14,7 +14,7 @@ Intermediate and advanced software developers will find RubyCaribe valuable beca
 * The venue, Hilton Barbados Resort, sits right on the ocean. Need a stretch break? Take a walk on the beach!
 <!--more-->
 ###Bonus: OpenROV
-{% imgcap right /images/openrov_uw.jpg OpenROV. Linux and Node.js. %}
+{% imgcap right /images/openrov-uw.jpg OpenROV. Linux and Node.js. %}
 You and your RubyCaribe colleagues will hack together on [OpenROV](/blog/2014/06/16/citizen-science-with-openrov/), an open source underwater robot running Linux and Node.js. The best developers are polyglot, right? On Friday afternoon, we will grab a boat for live ocean testing with a few OpenROVs. If you ever wanted to experiment with Node.js and IoT, RubyCaribe offers a great opportunity.
 
 ###University Collaboration
