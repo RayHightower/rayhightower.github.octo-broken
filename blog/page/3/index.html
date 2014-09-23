@@ -9,9 +9,7 @@
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="To iterate is human, to recurse divine.
-&nbsp;
-~ L. Peter Deutsch Recursion is available in many high-level languages, including Ruby. Recursive &hellip;">
+  <meta name="description" content="Dotfiles, the configuration files used by Unix-like machines, can become disorganized over time. Entropy rules! This article describes my recent &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -90,6 +88,56 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2014/04/15/managing-dotfiles/">Managing Dotfiles</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-15T17:13:00-04:00" pubdate data-updated="true">Apr 15<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Dotfiles, the configuration files used by Unix-like machines, can become disorganized over time. Entropy rules! This article describes my recent attempt to bring order to dotfile chaos. The steps can be summarized as follows:</p>
+
+<ul>
+<li>Move the non-private dotfiles (dotfiles that will be viewed by others on Github) into a directory called <code>~/.dotfiles</code>.</li>
+<li>From the <code>home</code> directory, create a symbolic link to each dotfile in the <code>~/.dotfiles</code> directory.</li>
+<li>Use Git to manage the <code>~/.dotfiles</code> directory, and share it on GitHub.</li>
+</ul>
+
+
+<p>Dotfiles are normally hidden when you try to view them in the Mac OS X Finder. To view them from the command prompt, use <code>$ ls -al</code>.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/04/15/managing-dotfiles/">Continue reading &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2014/04/12/recursion-and-memoization/">Recursion and Memoization</a></h1>
     
     
@@ -106,7 +154,7 @@
   
 
 
-<time datetime="2014-04-12T10:48:00-05:00" pubdate data-updated="true">Apr 12<span>th</span>, 2014</time>
+<time datetime="2014-04-12T10:48:00-04:00" pubdate data-updated="true">Apr 12<span>th</span>, 2014</time>
         
       </p>
     
@@ -153,7 +201,7 @@
   
 
 
-<time datetime="2014-04-10T15:53:00-05:00" pubdate data-updated="true">Apr 10<span>th</span>, 2014</time>
+<time datetime="2014-04-10T15:53:00-04:00" pubdate data-updated="true">Apr 10<span>th</span>, 2014</time>
         
       </p>
     
@@ -231,7 +279,7 @@
   
 
 
-<time datetime="2014-04-05T00:40:00-05:00" pubdate data-updated="true">Apr 5<span>th</span>, 2014</time>
+<time datetime="2014-04-05T00:40:00-04:00" pubdate data-updated="true">Apr 5<span>th</span>, 2014</time>
         
       </p>
     
@@ -274,7 +322,7 @@
   
 
 
-<time datetime="2014-03-31T23:42:00-05:00" pubdate data-updated="true">Mar 31<span>st</span>, 2014</time>
+<time datetime="2014-03-31T23:42:00-04:00" pubdate data-updated="true">Mar 31<span>st</span>, 2014</time>
         
       </p>
     
@@ -317,7 +365,7 @@
   
 
 
-<time datetime="2014-03-25T18:20:00-05:00" pubdate data-updated="true">Mar 25<span>th</span>, 2014</time>
+<time datetime="2014-03-25T18:20:00-04:00" pubdate data-updated="true">Mar 25<span>th</span>, 2014</time>
         
       </p>
     
@@ -362,7 +410,7 @@
   
 
 
-<time datetime="2014-03-10T11:46:00-05:00" pubdate data-updated="true">Mar 10<span>th</span>, 2014</time>
+<time datetime="2014-03-10T11:46:00-04:00" pubdate data-updated="true">Mar 10<span>th</span>, 2014</time>
         
       </p>
     
@@ -411,7 +459,7 @@
   
 
 
-<time datetime="2014-03-04T14:48:00-06:00" pubdate data-updated="true">Mar 4<span>th</span>, 2014</time>
+<time datetime="2014-03-04T14:48:00-05:00" pubdate data-updated="true">Mar 4<span>th</span>, 2014</time>
         
       </p>
     
@@ -463,7 +511,7 @@
   
 
 
-<time datetime="2014-02-22T16:41:00-06:00" pubdate data-updated="true">Feb 22<span>nd</span>, 2014</time>
+<time datetime="2014-02-22T16:41:00-05:00" pubdate data-updated="true">Feb 22<span>nd</span>, 2014</time>
         
       </p>
     
@@ -518,7 +566,7 @@ Entrepreneurs, especially those outside of software development, may find this a
   
 
 
-<time datetime="2014-02-17T14:46:00-06:00" pubdate data-updated="true">Feb 17<span>th</span>, 2014</time>
+<time datetime="2014-02-17T14:46:00-05:00" pubdate data-updated="true">Feb 17<span>th</span>, 2014</time>
         
       </p>
     
@@ -537,64 +585,6 @@ Entrepreneurs, especially those outside of software development, may find this a
   
     <footer>
       <a rel="full-article" href="/blog/2014/02/17/sgi-and-big-data/">Continue reading &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/02/12/homebrew-fundamentals/">Homebrew Fundamentals</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-02-12T14:20:00-06:00" pubdate data-updated="true">Feb 12<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Spend enough time developing software on Mac OS X, and you will eventually need to install libraries that were written for Unix, but not specifically for OS X. Fortunately we have <a href="http://brew.sh/">Homebrew</a>, which makes it easier to install Unix libraries on the Mac.</p>
-
-<h3>Why Homebrew?</h3>
-
-<p>Before installing any new software, it is helpful to have a clear view of <em>why</em> we need it.</p>
-
-<p>Homebrew is a package manager. It differs from earlier package managers like <a href="http://www.finkproject.org/">Fink</a> and <a href="http://www.macports.org/">MacPorts</a> because it is written in Ruby and based on Git. The Ruby/Git foundation means that developers from around the planet can easily contribute to Homebrew&rsquo;s growth.</p>
-
-<p>Before package managers, developers who needed a particular library would have to:</p>
-
-<ul>
-<li>Manually download source code for the library.</li>
-<li>Manually compile using <code>gcc</code> or another compiler.</li>
-<li>Resolve dependencies manually.</li>
-</ul>
-
-
-<p>Manually, manually, manually&hellip; The old way was long and error-prone. <a href="https://twitter.com/mxcl">Max Howell</a> created Homebrew to download, compile, and resolve dependencies automatically. Now developers can focus more attention on solving problems that are directly related to their work.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2014/02/12/homebrew-fundamentals/">Continue reading &rarr;</a>
     </footer>
   
 
@@ -680,7 +670,7 @@ Entrepreneurs, especially those outside of software development, may find this a
     <li class='category'><a href='/blog/categories/arduino/'>Arduino (2)</a></li>
 <li class='category'><a href='/blog/categories/beaglebone-black/'>BeagleBone Black (8)</a></li>
 <li class='category'><a href='/blog/categories/business/'>Business (24)</a></li>
-<li class='category'><a href='/blog/categories/community/'>Community (19)</a></li>
+<li class='category'><a href='/blog/categories/community/'>Community (20)</a></li>
 <li class='category'><a href='/blog/categories/education/'>Education (43)</a></li>
 <li class='category'><a href='/blog/categories/git/'>Git (4)</a></li>
 <li class='category'><a href='/blog/categories/high-performance-computing/'>High Performance Computing (7)</a></li>
@@ -689,7 +679,7 @@ Entrepreneurs, especially those outside of software development, may find this a
 <li class='category'><a href='/blog/categories/linux/'>Linux (13)</a></li>
 <li class='category'><a href='/blog/categories/node/'>Node (3)</a></li>
 <li class='category'><a href='/blog/categories/objective-c/'>Objective-C (5)</a></li>
-<li class='category'><a href='/blog/categories/openrov/'>OpenROV (8)</a></li>
+<li class='category'><a href='/blog/categories/openrov/'>OpenROV (9)</a></li>
 <li class='category'><a href='/blog/categories/os-x/'>OS X (9)</a></li>
 <li class='category'><a href='/blog/categories/parallella/'>Parallella (5)</a></li>
 <li class='category'><a href='/blog/categories/rails/'>Rails (10)</a></li>

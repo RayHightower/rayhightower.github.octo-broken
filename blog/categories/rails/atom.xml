@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Rails | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/rails/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-09-17T15:17:53-05:00</updated>
+  <updated>2014-09-23T19:22:56-04:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Be Awesome. Tackle Big League Problems at WindyCityRails]]></title>
     <link href="http://RayHightower.com/blog/2014/08/05/be-awesome-tackle-big-league-problems-at-windycityrails/"/>
-    <updated>2014-08-05T16:21:00-05:00</updated>
+    <updated>2014-08-05T16:21:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/08/05/be-awesome-tackle-big-league-problems-at-windycityrails</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/big_league_problems_windycityrails.jpg' width='' height='' alt='Be awesome.' title='Be awesome.'><span class='caption-text'>Be awesome.</span></span>
 Do you see yourself in any of these scenarios?</p>
@@ -61,7 +61,7 @@ Do you see yourself in any of these scenarios?</p>
   <entry>
     <title type="html"><![CDATA[BeagleBone Black Running Ubuntu: Part2 (Plus Ruby on Rails)]]></title>
     <link href="http://RayHightower.com/blog/2014/01/06/beaglebone-black-ubuntu-ruby-rails-part-2/"/>
-    <updated>2014-01-06T02:31:00-06:00</updated>
+    <updated>2014-01-06T02:31:00-05:00</updated>
     <id>http://RayHightower.com/blog/2014/01/06/beaglebone-black-ubuntu-ruby-rails-part-2</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/ruby-rails-ubuntu-beaglebone-black.png' width='' height='' alt='Ruby. Rails. Ubuntu. BeagleBone Black.' title='Ruby. Rails. Ubuntu. BeagleBone Black.'><span class='caption-text'>Ruby. Rails. Ubuntu. BeagleBone Black.</span></span></p>
 
@@ -324,7 +324,7 @@ out <a href="http://openrov.com">OpenROV</a>.</p>
   <entry>
     <title type="html"><![CDATA[BeagleBone Black Running Ubuntu: Part1]]></title>
     <link href="http://RayHightower.com/blog/2014/01/02/beaglebone-black-ubuntu-part-1/"/>
-    <updated>2014-01-02T15:59:00-06:00</updated>
+    <updated>2014-01-02T15:59:00-05:00</updated>
     <id>http://RayHightower.com/blog/2014/01/02/beaglebone-black-ubuntu-part-1</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper center'><img class='caption' src='/images/beaglebone-black-ubuntu-ruby-rails.jpg' width='' height='' alt='BeagleBone Black running Ubuntu, Ruby, &amp; Rails.' title='BeagleBone Black running Ubuntu, Ruby, &amp; Rails.'><span class='caption-text'>BeagleBone Black running Ubuntu, Ruby, &amp; Rails.</span></span></p>
 
@@ -532,7 +532,7 @@ pw: ubuntu
   <entry>
     <title type="html"><![CDATA[Youth Program Recap]]></title>
     <link href="http://RayHightower.com/blog/2013/10/30/youth-program-recap-windycityrails-2013/"/>
-    <updated>2013-10-30T17:22:00-05:00</updated>
+    <updated>2013-10-30T17:22:00-04:00</updated>
     <id>http://RayHightower.com/blog/2013/10/30/youth-program-recap-windycityrails-2013</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/arduino-youth-program.png' width='' height='' alt='Arduino' title='Arduino'><span class='caption-text'>Arduino</span></span>
 Planet Earth is facing a shortage of people who make things. People like scientists, software developers, architects, and  engineers. People who use their brains and hands to make greatness happen.</p>
@@ -566,7 +566,7 @@ Planet Earth is facing a shortage of people who make things. People like scienti
   <entry>
     <title type="html"><![CDATA[BeagleBone Black, Up & Running]]></title>
     <link href="http://RayHightower.com/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/"/>
-    <updated>2013-05-22T22:13:00-05:00</updated>
+    <updated>2013-05-22T22:13:00-04:00</updated>
     <id>http://RayHightower.com/blog/2013/05/22/beaglebone-black-running-ruby-on-rails</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/BeagleBoneBlack.jpg" width="372" height="600" title="BeagleBone Black" alt="BeagleBone Black" align="right">
 <a href="http://beagleboard.org/Products/BeagleBone%20Black">BeagleBone Black</a>, like the <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a>, is a small, inexpensive computer that runs Linux. It&rsquo;s smaller than a deck of cards and you can buy one for about forty-five dollars ($45.00). The device is made by <a href="http://circuitco.com">CircuitCo</a> in Richardson, TX, USA.</p>

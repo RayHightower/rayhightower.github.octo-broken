@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-09-17T15:17:53-05:00</updated>
+  <updated>2014-09-23T19:22:56-04:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -14,9 +14,51 @@
 
   
   <entry>
+    <title type="html"><![CDATA[RubyCaribe: Ruby Gets Hotter in January]]></title>
+    <link href="http://RayHightower.com/blog/2014/09/23/rubycaribe-ruby-gets-hotter-in-january/"/>
+    <updated>2014-09-23T18:23:00-04:00</updated>
+    <id>http://RayHightower.com/blog/2014/09/23/rubycaribe-ruby-gets-hotter-in-january</id>
+    <content type="html"><![CDATA[<p><a href="http://rubycaribe.com">RubyCaribe</a> (pronounced ka-REEB) is the most exciting event ever created by WisdomGroup. The conference will be held January 27 &ndash; 31, 2015 in Barbados. January is a beautiful time to visit the Caribbean, especially if you’re coming from a colder part of the planet.</p>
+
+<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/barbados_caribbean_map.png' width='' height='' alt='Barbados. You could be here in January.' title='Barbados. You could be here in January.'><span class='caption-text'>Barbados. You could be here in January.</span></span>
+Intermediate and advanced software developers will find RubyCaribe valuable because&hellip;</p>
+
+<ul>
+<li>Each RubyCaribe session features a 30- to 45-minute presentation followed by a 2-hour deep-dive lab. Learning is reinforced throughout.</li>
+<li>The venue, <a href="http://www.hiltonbarbadosresort.com/">Hilton Barbados Resort</a>, sits right on the ocean. Need a stretch break? Take a walk on the beach!</li>
+</ul>
+
+
+<!--more-->
+
+
+<h3>Bonus: OpenROV</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/openrov_rubycaribe.jpg' width='' height='' alt='OpenROV. Linux and Node.js.' title='OpenROV. Linux and Node.js.'><span class='caption-text'>OpenROV. Linux and Node.js.</span></span>
+You and your RubyCaribe colleagues will hack together on <a href="http://RayHightower.com/blog/2014/06/16/citizen-science-with-openrov/">OpenROV</a>, an open source underwater robot running Linux and Node.js. The best developers are polyglot, right? On Friday afternoon, we will grab a boat for live ocean testing with a few OpenROVs. If you ever wanted to experiment with Node.js and IoT, RubyCaribe offers a great opportunity.</p>
+
+<h3>University Collaboration</h3>
+
+<p>On Saturday, the final day of RubyCaribe, we will visit the <a href="http://www.cavehill.uwi.edu/">University of the West Indies at Cave Hill</a>. Faculty and students from the UWI community will demo their work with solar energy and other areas touched by software. Who knows, maybe you’ll give a lightning talk about something you learned at RubyCaribe!</p>
+
+<h3>Make Your Brain Sweat</h3>
+
+<p>RubyCaribe will work you hard. RubyCaribe will make your brain sweat. So be sure to schedule a few days before or after the conference for sight seeing and relaxation. Rum was invented in Barbados.</p>
+
+<h3>Where Will You Be in January?</h3>
+
+<p>If you had to choose between the Caribbean and the cold regions of the northern hemisphere, where would you rather be? RubyCaribe will offers the chance to ramp up your skills and enjoy yourself at the same time. What an opportunity.</p>
+
+<h3>Only One Hundred Tickets</h3>
+
+<p>Only one hundred tickets will be sold. Be sure to get yours. <a href="http://www.eventbrite.com/e/rubycaribe-2015-registration-10051344843">Register now</a>. See you at RubyCaribe!</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Manage That OpenROV Tether, Or Else]]></title>
     <link href="http://RayHightower.com/blog/2014/09/10/manage-that-openrov-tether/"/>
-    <updated>2014-09-10T18:40:00-05:00</updated>
+    <updated>2014-09-10T18:40:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/09/10/manage-that-openrov-tether</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/openrov_tether_management_slip_ring.jpg' width='' height='' alt='Tether management, one way that works.' title='Tether management, one way that works.'><span class='caption-text'>Tether management, one way that works.</span></span>
 <em>Note: This article has been updated with more photos and details describing slip ring installation.</em></p>
@@ -88,7 +130,7 @@ What should we do with the slip ring&rsquo;s extra lines? I tied mine together f
   <entry>
     <title type="html"><![CDATA[Solar Powered Parallella]]></title>
     <link href="http://RayHightower.com/blog/2014/09/09/solar-powered-parallella/"/>
-    <updated>2014-09-09T09:18:00-05:00</updated>
+    <updated>2014-09-09T09:18:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/09/09/solar-powered-parallella</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/parallella_solar.jpg' width='' height='' alt='Give solar power to your Parallella with a few simple components.' title='Give solar power to your Parallella with a few simple components.'><span class='caption-text'>Give solar power to your Parallella with a few simple components.</span></span></p>
 
@@ -142,7 +184,7 @@ What should we do with the slip ring&rsquo;s extra lines? I tied mine together f
   <entry>
     <title type="html"><![CDATA[OpenROV Meets Chicago's Lake Michigan]]></title>
     <link href="http://RayHightower.com/blog/2014/08/22/openrov-meets-chicago-lake-michigan/"/>
-    <updated>2014-08-22T19:27:00-05:00</updated>
+    <updated>2014-08-22T19:27:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/08/22/openrov-meets-chicago-lake-michigan</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/openrov_chicago_lake_michigan.jpg' width='' height='' alt='OpenROV meets  Lake Michigan.' title='OpenROV meets  Lake Michigan.'><span class='caption-text'>OpenROV meets  Lake Michigan.</span></span>
 <a href="http://RayHightower.com/blog/2014/06/16/citizen-science-with-openrov/">OpenROV</a> #1227 went for a spin in Lake Michigan this week. Success! Here are a few first-voyage observations:</p>
@@ -167,7 +209,7 @@ build a way to manage the tether.</li>
   <entry>
     <title type="html"><![CDATA[ESC Programming and Calibration for OpenROV]]></title>
     <link href="http://RayHightower.com/blog/2014/08/21/esc-programming-and-calibration-for-openrov/"/>
-    <updated>2014-08-21T16:27:00-05:00</updated>
+    <updated>2014-08-21T16:27:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/08/21/esc-programming-and-calibration-for-openrov</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/openrov_esc.jpg' width='' height='' alt='Three ESCs, one for each motor. Each ESC has a switch and a power/signal connector.' title='Three ESCs, one for each motor. Each ESC has a switch and a power/signal connector.'><span class='caption-text'>Three ESCs, one for each motor. Each ESC has a switch and a power/signal connector.</span></span></p>
 
@@ -269,7 +311,7 @@ After calibration:</p>
   <entry>
     <title type="html"><![CDATA[OpenROV Assembly Challenges]]></title>
     <link href="http://RayHightower.com/blog/2014/08/19/openrov-assembly-challenges/"/>
-    <updated>2014-08-19T16:44:00-05:00</updated>
+    <updated>2014-08-19T16:44:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/08/19/openrov-assembly-challenges</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/openrov_rth.jpg' width='' height='' alt='OpenROV fully assembled.' title='OpenROV fully assembled.'><span class='caption-text'>OpenROV fully assembled.</span></span>
 I know this problem can be solved. I just haven’t figured it out yet, and I need help from the <a href="http://openrov.com/">OpenROV</a> community to do so.</p>
@@ -348,7 +390,7 @@ During troubleshooting, my first step was to double-check the electronic speed c
   <entry>
     <title type="html"><![CDATA[Be Awesome. Tackle Big League Problems at WindyCityRails]]></title>
     <link href="http://RayHightower.com/blog/2014/08/05/be-awesome-tackle-big-league-problems-at-windycityrails/"/>
-    <updated>2014-08-05T16:21:00-05:00</updated>
+    <updated>2014-08-05T16:21:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/08/05/be-awesome-tackle-big-league-problems-at-windycityrails</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/big_league_problems_windycityrails.jpg' width='' height='' alt='Be awesome.' title='Be awesome.'><span class='caption-text'>Be awesome.</span></span>
 Do you see yourself in any of these scenarios?</p>
@@ -393,7 +435,7 @@ Do you see yourself in any of these scenarios?</p>
   <entry>
     <title type="html"><![CDATA[Wanted: Community Manager]]></title>
     <link href="http://RayHightower.com/blog/2014/07/30/wanted-community-manager/"/>
-    <updated>2014-07-30T12:43:00-05:00</updated>
+    <updated>2014-07-30T12:43:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/07/30/wanted-community-manager</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/chicagoruby_community.png' width='' height='' alt='Jamming together. Growing together.' title='Jamming together. Growing together.'><span class='caption-text'>Jamming together. Growing together.</span></span>
 WisdomGroup is hiring a Community Manager (CM) to help run our user groups and conferences. This is a part-time independent contractor position, mostly remote, with some on-site work during meetings and conferences. The position could become full-time depending on results produced and community growth.</p>
@@ -454,7 +496,7 @@ WisdomGroup is hiring a Community Manager (CM) to help run our user groups and c
   <entry>
     <title type="html"><![CDATA[LinuxBarbados is Global]]></title>
     <link href="http://RayHightower.com/blog/2014/07/25/linuxbarbados-is-global/"/>
-    <updated>2014-07-25T15:36:00-05:00</updated>
+    <updated>2014-07-25T15:36:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/07/25/linuxbarbados-is-global</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/LinuxBarbados-tux-logo_300.png' width='' height='' alt='' title=''><span class='caption-text'></span></span>
 <a href="http://linuxbarbados.org">LinuxBarbados</a> is a user group for open source enthusiasts. The group meets monthly, offering solid knowledge for anyone who wants to ramp up their open source skills. For example, yesterday’s meeting featured a presentation on <a href="http://xbmc.org/">XBMC</a> by Michael Layne. The presenter dug deep into the tool, offering tips on how to write plugins in C++ or Python.</p>
@@ -477,7 +519,7 @@ WisdomGroup is hiring a Community Manager (CM) to help run our user groups and c
   <entry>
     <title type="html"><![CDATA[CloudCamp Chicago: Developer Night]]></title>
     <link href="http://RayHightower.com/blog/2014/07/25/cloudcamp-chicago-developer-night/"/>
-    <updated>2014-07-25T15:09:00-05:00</updated>
+    <updated>2014-07-25T15:09:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/07/25/cloudcamp-chicago-developer-night</id>
     <content type="html"><![CDATA[<p><a href="http://cohesiveft.com">CohesiveFT</a> hosted a CloudCamp Developer Night this week. Speakers were Philip Szalwinski of 8th Light, John Downey of Braintree, Marcy Capron of Polymathic, and me. My presentation, <a href="http://RayHightower.com/blog/2014/06/16/citizen-science-with-openrov/">Citizen Science With OpenROV</a>, was based on the blog post of the same name.</p>
 
@@ -496,7 +538,7 @@ WisdomGroup is hiring a Community Manager (CM) to help run our user groups and c
   <entry>
     <title type="html"><![CDATA[RVM and Parallella: What a Difference a Shell Makes]]></title>
     <link href="http://RayHightower.com/blog/2014/07/21/rvm-and-parallella-what-a-difference-a-shell-makes/"/>
-    <updated>2014-07-21T21:46:00-05:00</updated>
+    <updated>2014-07-21T21:46:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/07/21/rvm-and-parallella-what-a-difference-a-shell-makes</id>
     <content type="html"><![CDATA[<p><a href="http://RayHightower.com/blog/2013/05/16/upgrading-ruby-with-rvm/">RVM</a> is an effective way to manage Ruby versions on Linux or OS X. RVM was working well on my Ubuntu-based <a href="http://RayHightower.com/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella</a>, until one day it stopped:</p>
 
@@ -617,7 +659,7 @@ WisdomGroup is hiring a Community Manager (CM) to help run our user groups and c
   <entry>
     <title type="html"><![CDATA[Parallella Quick Start Guide (with gotchas)]]></title>
     <link href="http://RayHightower.com/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/"/>
-    <updated>2014-07-07T13:31:00-05:00</updated>
+    <updated>2014-07-07T13:31:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/07/07/parallella-quick-start-guide-with-gotchas</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper center'><img class='caption' src='http://RayHightower.com/images/parallella_screenshot.png' width='' height='' alt='Parallella screenshot, 1080p.' title='Parallella screenshot, 1080p.'><span class='caption-text'>Parallella screenshot, 1080p.</span></span>
 Parallella is a single-board supercomputer smaller than a deck of cards. While today’s fastest laptops contain four processor cores, Parallella has <em>eighteen</em> (2 <a href="http://arm.com/">ARM</a> cores plus an <a href="http://www.adapteva.com/epiphanyiii/">Epiphany</a> chip with 16 <a href="http://en.wikipedia.org/wiki/Reduced_instruction_set_computing">RISC</a> cores). The maker of Parallella, <a href="http://adapteva.com">Adapteva</a>, is on a mission to democratize parallel computing. The company&rsquo;s tag line is <em>Supercomputing for Everyone</em>.</p>
@@ -1020,7 +1062,7 @@ Waiting an hour for the <code>dd</code> command to run can be disconcerting beca
   <entry>
     <title type="html"><![CDATA[Node.js Prep for OpenROV]]></title>
     <link href="http://RayHightower.com/blog/2014/06/30/node-dot-js-prep-for-openrov/"/>
-    <updated>2014-06-30T14:06:00-05:00</updated>
+    <updated>2014-06-30T14:06:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/06/30/node-dot-js-prep-for-openrov</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/nodejs-white.png' width='' height='' alt='' title=''><span class='caption-text'></span></span>
 <a href="http://RayHightower.com/blog/2014/06/16/citizen-science-with-openrov/">OpenROV is an underwater robot</a> controlled through a web browser. The server-side of the web app is written in Node.js, running on a <a href="http://RayHightower.com/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/">BeagleBone Black</a> inside the OpenROV.</p>
@@ -1140,7 +1182,7 @@ Waiting an hour for the <code>dd</code> command to run can be disconcerting beca
   <entry>
     <title type="html"><![CDATA[Get Back to Making Things]]></title>
     <link href="http://RayHightower.com/blog/2014/06/28/get-back-to-making-things/"/>
-    <updated>2014-06-28T16:25:00-05:00</updated>
+    <updated>2014-06-28T16:25:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/06/28/get-back-to-making-things</id>
     <content type="html"><![CDATA[<blockquote><p>You know what the trouble is? We used to make things in this country, build things. Now we just put our hand in the next guy’s pocket.
 <br/>~Frank Sobatka</p></blockquote>
@@ -1178,7 +1220,7 @@ David Lang is a maker. After a stint with a struggling Silicon Valley startup, D
   <entry>
     <title type="html"><![CDATA[Internet of Things at ACM]]></title>
     <link href="http://RayHightower.com/blog/2014/06/27/internet-of-things-at-acm/"/>
-    <updated>2014-06-27T18:08:00-05:00</updated>
+    <updated>2014-06-27T18:08:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/06/27/internet-of-things-at-acm</id>
     <content type="html"><![CDATA[<p>How many motors are in the typical automobile? The knee-jerk response might be “one, the big metal thing under the hood”. Upon further reflection, we may recall the motors that operate many devices in today’s automobile: windshield wipers, power windows, door locks, sun roof, reclining seats, and so on. Power devices were once luxury equipment. Today, since motors have fallen in price, most cars include these <em>luxury</em> items as standard equipment.</p>
 
@@ -1250,7 +1292,7 @@ events:</p>
   <entry>
     <title type="html"><![CDATA[Citizen Science With OpenROV]]></title>
     <link href="http://RayHightower.com/blog/2014/06/16/citizen-science-with-openrov/"/>
-    <updated>2014-06-16T17:46:00-05:00</updated>
+    <updated>2014-06-16T17:46:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/06/16/citizen-science-with-openrov</id>
     <content type="html"><![CDATA[<blockquote><p>In the early days of robots people said, &lsquo;Oh, let&rsquo;s build a robot&rsquo; and what&rsquo;s the first thought? You make a robot look like a human and do human things. That&rsquo;s so 1950s. We are so past that.
 <br/>~Neil deGrasse Tyson</p></blockquote>
@@ -1339,7 +1381,7 @@ I offered to leave when the OpenROV team prepared to test some new components. A
   <entry>
     <title type="html"><![CDATA[GitHub Page Build Warning - New CDN]]></title>
     <link href="http://RayHightower.com/blog/2014/05/31/github-page-build-warning-new-cdn/"/>
-    <updated>2014-05-31T13:44:00-05:00</updated>
+    <updated>2014-05-31T13:44:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/05/31/github-page-build-warning-new-cdn</id>
     <content type="html"><![CDATA[<p>The <code>RayHightower.com</code> blog is built on <a href="http://octopress.org/">Octopress</a> and hosted on <a href="https://pages.github.com/">GitHub Pages</a>. Recently, after I deployed a site update, GitHub emailed me a <code>Page build warning</code> message. Since this was <em>just a warning</em>, I ignored it while I attacked more pressing tasks (not always a good idea).</p>
 
@@ -1365,7 +1407,7 @@ I offered to leave when the OpenROV team prepared to test some new components. A
 
 <blockquote><p>The page build completed successfully, but returned the following warning:</p>
 
-<p>GitHub Pages recently underwent some improvements (<a href="https://github.com/blog/1715-faster-more-awesome-github-pages">https://github.com/blog/1715-faster-more-awesome-github-pages</a>) to make your site faster and more awesome, but we&rsquo;ve noticed that rayhightower.com isn&rsquo;t properly configured to take advantage of these new features. While your site will continue to work just fine, updating your domain&rsquo;s configuration offers some additional speed and performance benefits. Instructions on updating your site&rsquo;s IP address can be found at <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,">https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,</a> and of course, you can always get in touch with a human at <a href="&#x6d;&#97;&#105;&#108;&#x74;&#x6f;&#x3a;&#115;&#117;&#x70;&#112;&#111;&#114;&#x74;&#64;&#x67;&#105;&#116;&#104;&#x75;&#x62;&#x2e;&#99;&#111;&#109;&#46;">&#115;&#117;&#112;&#112;&#x6f;&#114;&#116;&#x40;&#103;&#105;&#116;&#x68;&#117;&#98;&#46;&#99;&#x6f;&#x6d;&#x2e;</a> For the more technical minded folks who want to skip the help docs: your site&rsquo;s DNS records are pointed to a deprecated IP address.</p>
+<p>GitHub Pages recently underwent some improvements (<a href="https://github.com/blog/1715-faster-more-awesome-github-pages">https://github.com/blog/1715-faster-more-awesome-github-pages</a>) to make your site faster and more awesome, but we&rsquo;ve noticed that rayhightower.com isn&rsquo;t properly configured to take advantage of these new features. While your site will continue to work just fine, updating your domain&rsquo;s configuration offers some additional speed and performance benefits. Instructions on updating your site&rsquo;s IP address can be found at <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,">https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,</a> and of course, you can always get in touch with a human at <a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#111;&#x3a;&#x73;&#117;&#x70;&#112;&#111;&#114;&#116;&#x40;&#x67;&#105;&#116;&#x68;&#x75;&#x62;&#x2e;&#99;&#111;&#x6d;&#46;">&#x73;&#x75;&#x70;&#112;&#111;&#114;&#x74;&#x40;&#103;&#105;&#x74;&#x68;&#x75;&#98;&#x2e;&#99;&#111;&#x6d;&#46;</a> For the more technical minded folks who want to skip the help docs: your site&rsquo;s DNS records are pointed to a deprecated IP address.</p>
 
 <p>For information on troubleshooting Jekyll see:</p>
 
@@ -1415,7 +1457,7 @@ I offered to leave when the OpenROV team prepared to test some new components. A
   <entry>
     <title type="html"><![CDATA[How to Grow a User Group]]></title>
     <link href="http://RayHightower.com/blog/2014/05/30/how-to-grow-a-user-group/"/>
-    <updated>2014-05-30T17:34:00-05:00</updated>
+    <updated>2014-05-30T17:34:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/05/30/how-to-grow-a-user-group</id>
     <content type="html"><![CDATA[<p>The current team of <a href="http://chicagoruby.org">ChicagoRuby</a> organizers assumed leadership in August 2007. Back then, typical monthly attendance was about five people and the group&rsquo;s <a href="http://meetup.com/chicagoruby">Meetup.com</a> database contained 78 members. The previous organizer was swamped with work at his day job, so he handed the baton to a new crew.</p>
 
@@ -1557,7 +1599,7 @@ article.</li>
   <entry>
     <title type="html"><![CDATA[Upgrading to Git 2.0]]></title>
     <link href="http://RayHightower.com/blog/2014/05/30/upgrading-to-git-2-dot-0/"/>
-    <updated>2014-05-30T11:33:00-05:00</updated>
+    <updated>2014-05-30T11:33:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/05/30/upgrading-to-git-2-dot-0</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://RayHightower.com/images/git_200.png">
 Developers of Git are making a serious effort to improve intuitiveness for first-time users. Of course, all users benefit from intuitive tools. When our tools <em>just work</em>, we spend less time sifting through documentation and more time solving problems for our customers.</p>
@@ -1695,7 +1737,7 @@ Developers of Git are making a serious effort to improve intuitiveness for first
   <entry>
     <title type="html"><![CDATA[An Environment of Respect, 3rd Iteration]]></title>
     <link href="http://RayHightower.com/blog/2014/05/28/an-environment-of-respect-3rd-iteration/"/>
-    <updated>2014-05-28T06:42:00-05:00</updated>
+    <updated>2014-05-28T06:42:00-04:00</updated>
     <id>http://RayHightower.com/blog/2014/05/28/an-environment-of-respect-3rd-iteration</id>
     <content type="html"><![CDATA[<p>Last week, <a href="https://twitter.com/bantik">Coraline Ehmke</a> and <a href="https://twitter.com/feministy">Liz Abinante</a> met with three members of the WindyCityRails organizer team: <a href="https://twitter.com/zolk">Kevin Zolkiewicz</a>, <a href="https://twitter.com/themccreefiles">Alonda McCree</a>, and me. Good dialog. End result: The updated <a href="http://www.windycityrails.org/code-of-conduct/">WindyCityRails Code of Conduct</a>.</p>
 
@@ -1705,7 +1747,7 @@ Developers of Git are making a serious effort to improve intuitiveness for first
 <p>Harassment is a serious issue, and a 140-character tweet will not do the discussion justice. Therefore, the ChicagoRuby organizers have created multiple communication channels for this issue:</p>
 
 <ul>
-<li>Email: <a href="&#109;&#97;&#105;&#108;&#116;&#x6f;&#x3a;&#99;&#111;&#x64;&#101;&#111;&#102;&#99;&#x6f;&#110;&#x64;&#x75;&#x63;&#116;&#64;&#99;&#x68;&#x69;&#99;&#97;&#x67;&#x6f;&#114;&#117;&#x62;&#x79;&#46;&#x6f;&#x72;&#103;">&#99;&#111;&#x64;&#x65;&#x6f;&#x66;&#x63;&#x6f;&#x6e;&#100;&#x75;&#x63;&#x74;&#64;&#x63;&#104;&#x69;&#x63;&#x61;&#x67;&#x6f;&#x72;&#117;&#x62;&#x79;&#46;&#111;&#114;&#x67;</a></li>
+<li>Email: <a href="&#109;&#x61;&#x69;&#x6c;&#116;&#111;&#x3a;&#x63;&#x6f;&#100;&#101;&#111;&#x66;&#x63;&#x6f;&#110;&#100;&#117;&#99;&#x74;&#x40;&#x63;&#x68;&#105;&#x63;&#97;&#103;&#x6f;&#114;&#x75;&#x62;&#x79;&#46;&#111;&#114;&#103;">&#99;&#x6f;&#x64;&#x65;&#x6f;&#102;&#99;&#111;&#x6e;&#x64;&#x75;&#99;&#x74;&#x40;&#x63;&#x68;&#105;&#x63;&#x61;&#x67;&#x6f;&#x72;&#117;&#98;&#121;&#46;&#x6f;&#x72;&#103;</a></li>
 <li>Any of the contact names listed on the current code of conduct</li>
 <li>Phone number listed on the code of conduct</li>
 </ul>
@@ -1716,135 +1758,6 @@ Developers of Git are making a serious effort to improve intuitiveness for first
 <p>Thank you Coraline and Liz for your work in making this happen. And thank you <a href="https://twitter.com/lostghost">Ken Walters</a> of <a href="http://twitter.com/bradsdeals">Brad’s Deals</a> for facilitating the meeting.</p>
 
 <p>Now, let’s go write some code!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Managing Dotfiles]]></title>
-    <link href="http://RayHightower.com/blog/2014/04/15/managing-dotfiles/"/>
-    <updated>2014-04-15T17:13:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2014/04/15/managing-dotfiles</id>
-    <content type="html"><![CDATA[<p>Dotfiles, the configuration files used by Unix-like machines, can become disorganized over time. Entropy rules! This article describes my recent attempt to bring order to dotfile chaos. The steps can be summarized as follows:</p>
-
-<ul>
-<li>Move the non-private dotfiles (dotfiles that will be viewed by others on Github) into a directory called <code>~/.dotfiles</code>.</li>
-<li>From the <code>home</code> directory, create a symbolic link to each dotfile in the <code>~/.dotfiles</code> directory.</li>
-<li>Use Git to manage the <code>~/.dotfiles</code> directory, and share it on GitHub.</li>
-</ul>
-
-
-<p>Dotfiles are normally hidden when you try to view them in the Mac OS X Finder. To view them from the command prompt, use <code>$ ls -al</code>.</p>
-
-<!--more-->
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/.dotfiles<span class="o">[</span>master<span class="o">]</span><span class="nv">$ </span>ls -al
-</span><span class='line'>total 40
-</span><span class='line'>drwxr-xr-x   8 rth  staff   272 Apr 14 01:44 .
-</span><span class='line'>drwxr-xr-x+ 71 rth  staff  2414 Apr 14 02:12 ..
-</span><span class='line'>-rwxr-xr-x   1 rth  staff  3455 Apr 13 16:01 .bash_profile
-</span><span class='line'>drwxr-xr-x  14 rth  staff   476 Apr 14 02:25 .git
-</span><span class='line'>-rw-r--r--   1 rth  staff  1649 Apr 13 16:44 .gitk
-</span><span class='line'>-rw-r--r--   1 rth  staff  1760 Apr 13 16:10 .irbrc
-</span><span class='line'>-rw-r--r--   1 rth  staff   118 Aug 22  2013 .zprofile
-</span><span class='line'>-rw-r--r--   1 rth  staff   375 Apr 14 01:44 README.mdown
-</span><span class='line'>
-</span><span class='line'>~/.dotfiles<span class="o">[</span>master<span class="o">]</span><span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The <a href="https://github.com/RayHightower/.dotfiles/blob/master/.bash_profile">.bash_profile</a> in this example has grown to include aliases, path specifications, and a script that shows the current Git branch as part of the command prompt. The file also contains two aliases useful for showing or hiding dotfiles in the Finder: <code>showdots</code> and <code>hidedots</code>.</p>
-
-<h3>Putting Dotfiles in One Directory</h3>
-
-<p>Dotfiles are normally created in the user&rsquo;s home directory. For organization purposes, I moved my non-private dotfiles into a directory called <code>.dotfiles</code>, listed above. Unix makes this easy. First, move to the home directory and create <code>~/.dotfiles</code>.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span><span class="nb">cd</span> ~
-</span><span class='line'>
-</span><span class='line'>~<span class="nv">$ </span>mkdir .dotfiles
-</span><span class='line'>
-</span><span class='line'>~<span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><em>Note: Dotfiles can sometimes include private information. If you don&rsquo;t want to share information in a particular dotfile, don&rsquo;t put it on GitHub!</em></p>
-
-<p>In this example, we&rsquo;ll only move one file, <code>.bash_profile</code>.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span><span class="nb">cd</span> .dotfiles/
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>mv ../.bash_profile .
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Symbolic Links</h3>
-
-<p>Symbolic links ensure that executables can find our dotfiles as needed.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="nb">cd</span> ~
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>ln -s ~/.dotfiles/.bash_profile
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>ls -al
-</span><span class='line'>total 8
-</span><span class='line'>drwxr-xr-x   3 rth  staff   102 Apr 14 19:48 .
-</span><span class='line'>drwxr-xr-x+ 73 rth  staff  2482 Apr 14 19:47 ..
-</span><span class='line'>lrwxr-xr-x   1 rth  staff    34 Apr 14 19:48 .bash_profile -&gt; /Users/rth/.dotfiles/.bash_profile
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>In the above example, we created a symbolic link called <code>.bash_profile</code> to the real <code>~/.dotfiles/.bash_profile</code> located in the <code>.dotfiles</code> directory. That way, any program that&rsquo;s looking for the <code>.bash_profile</code> file in the home directory will find what it needs, even though the file is somewhere else.</p>
-
-<h3>Why Use Git to Manage Dotfiles?</h3>
-
-<p>Git is a great tool for managing files that change over time. Dotfiles can change as we install new software or tweak our development environment. If we make a mistake, or if an installation script makes a mistake, we can use Git to roll back in history to a pre-mistake version of the dotfile.</p>
-
-<h3>Don&rsquo;t Make All Dotfiles Public</h3>
-
-<p>There are some dotfiles that you don&rsquo;t want to share publicly. For example, <code>.bash_history</code> contains all of the commands that have been executed in the shell. Do you really want the world that you sometimes <code>$ ssh myuserid@[embarassingdomainname].com</code>? Probably not. If you think that a dotfile might contain personal or confidential information, no need to broadcast it.</p>
-
-<h3>Learning More About Dotfiles</h3>
-
-<p>Most of my dotfiles, like <code>.bash_profile</code>, don&rsquo;t contain anything private. In fact, most of what I know about dotfiles has come from other developers via books, user groups, blogs, and spelunking through GitHub. Dotfile collections by <a href="https://github.com/hashrocket/dotmatrix">Hashrocket</a> and <a href="https://github.com/thoughtbot/dotfiles">Thoughtbot</a> are  especially good. My <code>~/.dotfiles</code> directory is available for public viewing on <a href="https://github.com/RayHightower/.dotfiles">GitHub</a>.</p>
-
-<p>If you&rsquo;re doing something especially cool with your dotfiles, let&rsquo;s hear about it!</p>
 ]]></content>
   </entry>
   
