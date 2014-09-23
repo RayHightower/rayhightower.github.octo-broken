@@ -26,5 +26,5 @@ RubyCaribe will work you hard. RubyCaribe will make your brain sweat. So be sure
 Next January, you can be in the Caribbean or you can be in the freezing parts of the northern hemisphere. Your choice!
 
 ###Only One Hundred Tickets
-Only one hundred tickets will be sold. Be sure to get yours. [Register now](http://www.eventbrite.com/e/rubycaribe-2015-registration-10051344843). And see you at RubyCaribe!
+Only one hundred tickets will be sold. Be sure to get yours. [Register now](http://www.eventbrite.com/e/rubycaribe-2015-registration-10051344843). See you at RubyCaribe!
 
