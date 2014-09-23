@@ -12,10 +12,19 @@ Intermediate and advanced software developers will find RubyCaribe valuable beca
 <!--more-->
 * Each RubyCaribe session features a 30- to 45-minute presentation followed by a 2-hours deep-dive lab. Every presentation will be reinforced by the 2-hour lab.
 * The venue, Hilton Barbados Resort, sits right on the ocean. Need a stretch break during a lab? Then go walk on the beach.
-* For two nights we will hack together on OpenROV, an open source underwater robot running Linux and Node.js. The best developers are polyglot, right? On Friday afternoon, we will grab a boat for live ocean testing with a few OpenROVs. If you ever wanted to experiment with Node.js and IoT, RubyCaribe offers a great opportunity.
-* On Saturday, the final day of the conference, we will visit the University of the West Indies at Cave Hill. There we will interact with computer science faculty and students. Members of the UWI community will demo their work with solar energy and other areas touched by software. Who knows, maybe you’ll give a lightning talk about something you learned at RubyCaribe!
-* RubyCaribe will work you hard. RubyCaribe will make your brain sweat. So be sure to schedule a few days before or after the conference for sight seeing and relaxation. 
-* Next January, you can be in the Caribbean or you can be in the freezing areas of the northern hemisphere. Your choice!
 
+###Bonus: OpenROV
+For two nights we will hack together on [OpenROV](/blog/2014/06/16/citizen-science-with-openrov/), an open source underwater robot running Linux and Node.js. The best developers are polyglot, right? On Friday afternoon, we will grab a boat for live ocean testing with a few OpenROVs. If you ever wanted to experiment with Node.js and IoT, RubyCaribe offers a great opportunity.
+
+###University Collaboration
+On Saturday, the final day of RubyCaribe, we will visit the [University of the West Indies at Cave Hill](http://www.cavehill.uwi.edu/). There we will interact with computer science faculty and students. Members of the UWI community will demo their work with solar energy and other areas touched by software. Who knows, maybe you’ll give a lightning talk about something you learned at RubyCaribe!
+
+###Make Your Brain Sweat
+RubyCaribe will work you hard. RubyCaribe will make your brain sweat. So be sure to schedule a few days before or after the conference for sight seeing and relaxation. 
+
+###Where Will You Be in January?
+Next January, you can be in the Caribbean or you can be in the freezing areas of the northern hemisphere. Your choice!
+
+###Only One Hundred Tickets
 Only one hundred tickets will be sold. Be sure to get yours. [Register now](http://www.eventbrite.com/e/rubycaribe-2015-registration-10051344843).
 
