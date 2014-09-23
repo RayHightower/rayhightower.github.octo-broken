@@ -5,14 +5,14 @@ date: 2014-09-23 18:23
 comments: true
 categories: [ Community ]
 ---
-{% imgcap right /images/barbados_caribbean_map.png Barbados. You could be here in January. %}
 [RubyCaribe](http://rubycaribe.com) (pronounced ka-REEB) is the most exciting event ever created by WisdomGroup. The conference will be held January 27 - 31, 2015 in Barbados. January is a beautiful time to visit the Caribbean, especially if you’re coming from a colder part of the planet.
 
+{% imgcap right /images/barbados_caribbean_map.png Barbados. You could be here in January. %}
 Intermediate and advanced software developers will find RubyCaribe valuable because...
-<!--more-->
+
 * Each RubyCaribe session features a 30- to 45-minute presentation followed by a 2-hours deep-dive lab. Every presentation will be reinforced by the 2-hour lab.
 * The venue, Hilton Barbados Resort, sits right on the ocean. Need a stretch break during a lab? Then go walk on the beach.
-
+<!--more-->
 ###Bonus: OpenROV
 For two nights we will hack together on [OpenROV](/blog/2014/06/16/citizen-science-with-openrov/), an open source underwater robot running Linux and Node.js. The best developers are polyglot, right? On Friday afternoon, we will grab a boat for live ocean testing with a few OpenROVs. If you ever wanted to experiment with Node.js and IoT, RubyCaribe offers a great opportunity.
 
