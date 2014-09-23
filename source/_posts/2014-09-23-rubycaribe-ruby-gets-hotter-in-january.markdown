@@ -24,7 +24,7 @@ On Saturday, the final day of RubyCaribe, we will visit the [University of the W
 RubyCaribe will work you hard. RubyCaribe will make your brain sweat. So be sure to schedule a few days before or after the conference for sight seeing and relaxation. Rum was invented in Barbados.
 
 ###Where Will You Be in January?
-If you had to choose between the Caribbean and the cold regions of the northern hemisphere, where would you rather be? RubyCaribe will offers the chance to ramp up your skills and enjoy yourself at the same time. What an opportunity.
+If you had to choose between the Caribbean and the cold regions of the northern hemisphere, where would you rather be? RubyCaribe offers the chance to ramp up your skills and enjoy yourself at the same time. What an opportunity.
 
 ###Only One Hundred Tickets
 Only one hundred tickets will be sold. Be sure to get yours. [Register now](http://www.eventbrite.com/e/rubycaribe-2015-registration-10051344843). See you at RubyCaribe!
