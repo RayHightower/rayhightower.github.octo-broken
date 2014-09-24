@@ -31,4 +31,3 @@ If you had to choose between the Caribbean and the cold regions of the northern 
 
 ###Only One Hundred Tickets
 Only one hundred tickets will be sold. Be sure to get yours. [Register now](http://www.eventbrite.com/e/rubycaribe-2015-registration-10051344843). See you at RubyCaribe!
-
