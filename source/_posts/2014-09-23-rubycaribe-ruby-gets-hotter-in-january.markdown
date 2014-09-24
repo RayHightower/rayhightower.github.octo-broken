@@ -5,7 +5,7 @@ date: 2014-09-23 18:23
 comments: true
 categories: [ Community, OpenROV ]
 ---
-[RubyCaribe](http://rubycaribe.com) (pronounced ka-REEB) is the most exciting event ever created by WisdomGroup. The conference will be held January 27 - 31, 2015 in Barbados. January is a beautiful time to visit the Caribbean, especially if you’re coming from a colder part of the planet.
+[RubyCaribe](http://rubycaribe.com) (pronounced ka-REEB) is a conference for intermediate and advanced software developers who use Ruby. The conference will be held January 27 - 31, 2015 in Barbados. January is a beautiful time to visit the Caribbean, especially if you’re coming from a colder part of the planet.
 
 {% imgcap right /images/barbados_caribbean_map.png Barbados. You could be here in January. %}
 Intermediate and advanced software developers will find RubyCaribe valuable because...
@@ -13,6 +13,9 @@ Intermediate and advanced software developers will find RubyCaribe valuable beca
 * Each RubyCaribe session features a 30- to 45-minute presentation followed by a 2-hour deep-dive lab. Learning is reinforced throughout.
 * The venue, [Hilton Barbados Resort](http://www.hiltonbarbadosresort.com/), sits right on the ocean. Need a stretch break? Take a walk on the beach!
 <!--more-->
+###Ramp Up Your Ruby Skills
+Each RubyCaribe lab will be led by experts in machine learning, mobile app development (iOS and Android), web development, and functional programming. The inventor of RubyMotion, Laurent Sansonetti, will lead the RubyMotion lab. If you already have experience with Ruby or Rails, RubyCaribe will take your skills to the next level.
+
 ###Bonus: OpenROV
 {% imgcap right /images/openrov_rubycaribe.jpg OpenROV. Linux and Node.js. %}
 You and your RubyCaribe colleagues will hack together on [OpenROV](/blog/2014/06/16/citizen-science-with-openrov/), an open source underwater robot running Linux and Node.js. The best developers are polyglot, right? On Friday afternoon, we will grab a boat for live ocean testing with a few OpenROVs. If you ever wanted to experiment with Node.js and IoT, RubyCaribe offers a great opportunity.
