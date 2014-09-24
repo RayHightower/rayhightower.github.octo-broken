@@ -16,7 +16,7 @@ Intermediate and advanced software developers will find RubyCaribe valuable beca
 ###Ramp Up Your Ruby Skills
 Each RubyCaribe lab will be led by experts in machine learning, mobile app development (iOS and Android), web development, and functional programming. The inventor of [RubyMotion](http://rubymotion.com), [Laurent Sansonetti](https://twitter.com/lrz), will lead the RubyMotion lab. If you already have experience with Ruby or Rails, RubyCaribe will take your skills to the next level.
 
-###Bonus: OpenROV
+###Bonus: OpenROV and Node.js
 {% imgcap right /images/openrov_rubycaribe.jpg OpenROV. Linux and Node.js. %}
 [OpenROV](/blog/2014/06/16/citizen-science-with-openrov/) is an open source underwater robot running Linux and Node.js. During two evening sessions, you and your RubyCaribe colleagues will hack on OpenROV. The best developers are polyglot, right? On Friday afternoon, we will grab a boat for live ocean testing with a few OpenROV units. If you ever wanted to experiment with Node.js and IoT, RubyCaribe offers a great opportunity.
 
