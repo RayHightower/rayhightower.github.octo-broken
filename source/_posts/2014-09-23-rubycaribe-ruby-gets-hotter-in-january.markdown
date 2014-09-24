@@ -10,7 +10,7 @@ categories: [ Community, OpenROV ]
 {% imgcap right /images/barbados_caribbean_map.png Barbados. You could be here in January. %}
 Intermediate and advanced software developers will find RubyCaribe valuable because...
 
-* Each RubyCaribe session features a 30- to 45-minute presentation followed by a 2-hour deep-dive lab. Learning is reinforced throughout.
+* Each RubyCaribe session features a 30- to 45-minute presentation followed by a *2-hour deep-dive lab*. Learning is reinforced throughout.
 * The venue, [Hilton Barbados Resort](http://www.hiltonbarbadosresort.com/), sits right on the ocean. Need a stretch break? Take a walk on the beach!
 <!--more-->
 ###Ramp Up Your Ruby Skills
