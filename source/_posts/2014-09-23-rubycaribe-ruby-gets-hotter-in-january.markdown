@@ -18,7 +18,7 @@ Each RubyCaribe lab will be led by experts in machine learning, mobile app devel
 
 ###Bonus: OpenROV
 {% imgcap right /images/openrov_rubycaribe.jpg OpenROV. Linux and Node.js. %}
-You and your RubyCaribe colleagues will hack together on [OpenROV](/blog/2014/06/16/citizen-science-with-openrov/), an open source underwater robot running Linux and Node.js. The best developers are polyglot, right? On Friday afternoon, we will grab a boat for live ocean testing with a few OpenROVs. If you ever wanted to experiment with Node.js and IoT, RubyCaribe offers a great opportunity.
+[OpenROV](/blog/2014/06/16/citizen-science-with-openrov/) is an open source underwater robot running Linux and Node.js. During two evening sessions, you and your RubyCaribe colleagues will hack on and explore OpenROV. The best developers are polyglot, right? On Friday afternoon, we will grab a boat for live ocean testing with a few OpenROV units. If you ever wanted to experiment with Node.js and IoT, RubyCaribe offers a great opportunity in a fun way.
 
 ###University Collaboration
 On Saturday, the final day of RubyCaribe, we will visit the [University of the West Indies at Cave Hill](http://www.cavehill.uwi.edu/). Faculty and students from the UWI community will demo their work with solar energy and other areas touched by software. Who knows, maybe you’ll give a lightning talk about something you learned at RubyCaribe!
