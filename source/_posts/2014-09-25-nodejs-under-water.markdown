@@ -10,6 +10,8 @@ The [New York City Node JS Meetup](http://www.meetup.com/nodejs/events/206159562
 <center><script async class="speakerdeck-embed" data-id="25d9158026930132408f62c99fab29cb" data-ratio="1.29456384323641" src="//speakerdeck.com/assets/embed.js"></script></center>
 <!--more-->
 
+&nbsp;
+&nbsp;
 ###Presentation Video
 The following video is a rough draft, useful if you want to know the dialog that goes along with the slides. The question & answer period may also be interesting. The official video is scheduled for release next week.
 
