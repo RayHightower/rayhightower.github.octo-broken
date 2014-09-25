@@ -5,7 +5,7 @@ date: 2014-09-25 22:54
 comments: true
 categories: [ Node, OpenROV ]
 ---
-The [New York City Node JS Meetup](http://www.meetup.com/nodejs/events/206159562) asked me to speak about [OpenROV](http://rayhightower.com/blog/2014/06/16/citizen-science-with-openrov/) Wednesday evening. About fifty developers came out for the meeting. Thank you [Shutterstock](http://shutterstock.com), [Matt Walters](https://twitter.com/mateodelnorte) and the other Node JS organizers for making it happen. Slides from the presentation appear below.
+The [New York City Node JS Meetup](http://www.meetup.com/nodejs/events/206159562) asked me to speak about [OpenROV](http://rayhightower.com/blog/2014/06/16/citizen-science-with-openrov/) Wednesday evening. About fifty developers came out for the meeting. Thank you [Shutterstock](http://shutterstock.com), [Matt Walters](https://twitter.com/mateodelnorte), and all of the organizers for making it happen. Slides appear below.
 
 <center><script async class="speakerdeck-embed" data-id="25d9158026930132408f62c99fab29cb" data-ratio="1.29456384323641" src="//speakerdeck.com/assets/embed.js"></script></center>
 <!--more-->
@@ -13,7 +13,7 @@ The [New York City Node JS Meetup](http://www.meetup.com/nodejs/events/206159562
 &nbsp;
 &nbsp;
 ###Presentation Video
-The following video is a rough draft, useful if you want to hear the dialog that went along with the slides. The question & answer period may also be interesting. The official video is scheduled for release next week.
+The following video is a rough draft, useful if you want to hear the dialog that went along with the slides. Lots of good questions from the audience. The official video is scheduled for release next week.
 
 <center><iframe width="640" height="360" src="//www.youtube.com/embed/rpvWg77EvrM?rel=0" frameborder="0" allowfullscreen></iframe></center>
 
