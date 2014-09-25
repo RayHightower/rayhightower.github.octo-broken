@@ -9,7 +9,10 @@ The [New York City Node JS Meetup](http://www.meetup.com/nodejs/events/206159562
 
 <center><script async class="speakerdeck-embed" data-id="25d9158026930132408f62c99fab29cb" data-ratio="1.29456384323641" src="//speakerdeck.com/assets/embed.js"></script></center>
 <!--more-->
-Also, here's a rough draft video. The official video should be released
-next week.
+The following video is a rough draft, useful if you want to know the dialog that goes along with the slides. The question & answer period may also be interesting. The official video should be released next week.
+
+<center><iframe width="640" height="360" src="//www.youtube.com/embed/rpvWg77EvrM?rel=0" frameborder="0" allowfullscreen></iframe></center>
+
+Our work with OpenROV will climax at [RubyCaribe](http://rubycaribe.com) in January 2015. 
 
 
