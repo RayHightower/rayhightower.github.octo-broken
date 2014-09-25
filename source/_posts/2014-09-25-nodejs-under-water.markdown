@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NodeJS Under Water"
+title: "Node.js Under Water"
 date: 2014-09-25 22:54
 comments: true
 categories: [ Node, OpenROV ]
