@@ -17,6 +17,6 @@ The following video is a rough draft, useful if you want to hear the dialog that
 
 <center><iframe width="640" height="360" src="//www.youtube.com/embed/rpvWg77EvrM?rel=0" frameborder="0" allowfullscreen></iframe></center>
 
-Our work with OpenROV will climax at [RubyCaribe](http://rubycaribe.com) in January 2015. If you're an intermediate or advanced Ruby developer, and if you're interested in other languages (like Node.js) then RubyCaribe might be fore you.
+Our work with OpenROV will climax at [RubyCaribe](http://rubycaribe.com) in January 2015. If you're an intermediate or advanced Ruby developer, and if you're interested in other languages (like Node.js) then RubyCaribe might be for you.
 
 
