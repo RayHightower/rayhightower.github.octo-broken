@@ -12,7 +12,7 @@ The [New York City Node JS Meetup](http://www.meetup.com/nodejs/events/206159562
 &nbsp;
 &nbsp;
 ###Presentation Video
-The following video is a rough draft, useful if you want to hear the dialog that went along with the slides. Lots of good questions from the audience. The official video is scheduled for release next week.
+The following video is a rough draft, useful if you want to hear the dialog that went along with the slides. Lots of good questions from the audience. 
 
 <center><iframe width="560" height="315" src="//www.youtube.com/embed/rpvWg77EvrM?rel=0" frameborder="0" allowfullscreen></iframe></center>
 
