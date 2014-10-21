@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Fixing MacVim on OS X Mavericks - RayHightower.com</title>
+  <title>Geekfest &amp; OpenROV - RayHightower.com</title>
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="Experience told me to delay upgrading to OS X Mavericks for as long as possible because the upgrade would likely break my dev environment. Sure &hellip;">
+  <meta name="description" content="Geekfest: Tuesdays at Groupon.
+Geekfest is a weekly event hosted by Groupon&rsquo;s engineering team. Every Tuesday at lunchtime, the company invites &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://RayHightower.com/blog/2014/03/04/fixing-macvim-on-osx-mavericks">
+  <link rel="canonical" href="http://RayHightower.com/blog/2014/10/21/geekfest-and-openrov">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="RayHightower.com" type="application/atom+xml">
@@ -85,7 +86,7 @@
   
   <header>
     
-      <h1 class="entry-title">Fixing MacVim on OS X Mavericks</h1>
+      <h1 class="entry-title">Geekfest &amp; OpenROV</h1>
     
     
       <p class="meta">
@@ -101,85 +102,27 @@
   
 
 
-<time datetime="2014-03-04T14:48:00-06:00" pubdate data-updated="true">Mar 4<span>th</span>, 2014</time>
+<time datetime="2014-10-21T09:44:00-05:00" pubdate data-updated="true">Oct 21<span>st</span>, 2014</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>Experience told me to delay upgrading to OS X Mavericks for as long as possible because the upgrade would likely break my dev environment. Sure enough, the upgrade broke <a href="/blog/2013/01/12/why-i-use-vim/">MacVim</a>.</p>
+<div class="entry-content"><p><span class='caption-wrapper right'><img class='caption' src='/images/geekfest.png' width='' height='' alt='Geekfest: Tuesdays at Groupon.' title='Geekfest: Tuesdays at Groupon.'><span class='caption-text'>Geekfest: Tuesdays at Groupon.</span></span>
+<a href="http://www.meetup.com/Geekfest/events/207936312/">Geekfest</a> is a weekly event hosted by Groupon&rsquo;s engineering team. Every Tuesday at lunchtime, the company invites members of the tech community to present topics that are interesting to a technical audience.</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>which mvim
-</span><span class='line'>
-</span><span class='line'>~<span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The &lsquo;nix <code>which</code> command returned a null response when asked about MacVim. Not cool, Mavericks!</p>
+<p>I wish to express my thanks to Groupon for inviting me to present OpenROV at today&rsquo;s Geekfest.</p>
 
 <!--more-->
 
 
-<p>Fortunately, I’m running <a href="/blog/2014/02/12/homebrew-fundamentals/">Homebrew</a>. After the standard <code>brew doctor</code> and <code>brew update</code>, the following resolved the MacVim problem:</p>
+<p>Slides appear below. Video will be posted as soon as it becomes available.</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>brew uninstall macvim
-</span><span class='line'>Uninstalling /usr/local/Cellar/macvim/7.4-70...
-</span><span class='line'>
-</span><span class='line'>~<span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure>
+<center><script async class="speakerdeck-embed" data-id="e8ed21a03b5d013274bd1297e85160ca" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script></center>
 
 
-<p>followed by…</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>brew install <span class="nv">macvim</span>
-</span><span class='line'><span class="o">==</span>&gt; Downloading https://github.com/b4winckler/macvim/archive/snapshot-72.tar.gz
-</span><span class='line'><span class="c">######################################################################## 100.0%</span>
-</span><span class='line'><span class="o">==</span>&gt; ./configure --with-features<span class="o">=</span>huge --enable-multibyte --with-macarchs<span class="o">=</span>x86_64 --enable-perlinterp --enable-rubyinterp --enable-tcli
-</span><span class='line'><span class="o">==</span>&gt; <span class="nv">make</span>
-</span><span class='line'><span class="o">==</span>&gt; Caveats
-</span><span class='line'>.app bundles were installed.
-</span><span class='line'>Run <span class="sb">`</span>brew linkapps<span class="sb">`</span> to symlink these to /Applications.
-</span><span class='line'><span class="o">==</span>&gt; Summary
-</span><span class='line'>🍺  /usr/local/Cellar/macvim/7.4-72: 1799 files, 28M, built in 37 seconds
-</span><span class='line'>
-</span><span class='line'>~<span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>And now…</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>which mvim
-</span><span class='line'>/usr/local/bin/mvim
-</span><span class='line'>
-</span><span class='line'>~<span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Whew. Homebrew saves the day again!</p>
 </div>
 
 
@@ -202,12 +145,12 @@
   
 
 
-<time datetime="2014-03-04T14:48:00-06:00" pubdate data-updated="true">Mar 4<span>th</span>, 2014</time>
+<time datetime="2014-10-21T09:44:00-05:00" pubdate data-updated="true">Oct 21<span>st</span>, 2014</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/education/'>Education</a>, <a class='category' href='/blog/categories/os-x/'>OS X</a>, <a class='category' href='/blog/categories/vim/'>Vim</a>
+    <a class='category' href='/blog/categories/community/'>Community</a>, <a class='category' href='/blog/categories/openrov/'>OpenROV</a>
   
 </span>
 
@@ -216,7 +159,7 @@
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2014/03/04/fixing-macvim-on-osx-mavericks/" data-via="" data-counturl="http://RayHightower.com/blog/2014/03/04/fixing-macvim-on-osx-mavericks/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2014/10/21/geekfest-and-openrov/" data-via="" data-counturl="http://RayHightower.com/blog/2014/10/21/geekfest-and-openrov/" >Tweet</a>
   
   
   
@@ -225,10 +168,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2014/02/22/what-is-open-source/" title="Previous Post: What Is Open Source?">&laquo; What Is Open Source?</a>
+        <a class="basic-alignment left" href="/blog/2014/10/10/uwi-computer-science-club-and-linuxbarbados/" title="Previous Post: UWI Computer Science Club &amp; LinuxBarbados">&laquo; UWI Computer Science Club &amp; LinuxBarbados</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2014/03/10/cocoaconf-chicago-recap/" title="Next Post: CocoaConf Chicago Recap">CocoaConf Chicago Recap &raquo;</a>
       
     </p>
   </footer>
@@ -373,8 +314,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://RayHightower.com/blog/2014/03/04/fixing-macvim-on-osx-mavericks/';
-        var disqus_url = 'http://RayHightower.com/blog/2014/03/04/fixing-macvim-on-osx-mavericks/';
+        var disqus_identifier = 'http://RayHightower.com/blog/2014/10/21/geekfest-and-openrov/';
+        var disqus_url = 'http://RayHightower.com/blog/2014/10/21/geekfest-and-openrov/';
         var disqus_script = 'embed.js';
       
     (function () {
