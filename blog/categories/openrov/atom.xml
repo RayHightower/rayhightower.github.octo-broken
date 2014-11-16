@@ -4,7 +4,7 @@
   <title><![CDATA[Category: OpenROV | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/openrov/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-10-30T15:39:56-05:00</updated>
+  <updated>2014-11-16T15:21:52-08:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -14,9 +14,33 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Ignite RubyConf 2014]]></title>
+    <link href="http://RayHightower.com/blog/2014/11/16/ignite-rubyconf-2014/"/>
+    <updated>2014-11-16T15:01:00-08:00</updated>
+    <id>http://RayHightower.com/blog/2014/11/16/ignite-rubyconf-2014</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/ignite_logo_200.jpg' width='' height='' alt='Ignite. 15 seconds per slide.' title='Ignite. 15 seconds per slide.'><span class='caption-text'>Ignite. 15 seconds per slide.</span></span>
+<a href="http://igniteshow.com/">Ignite</a> is a presentation format where the slides advance automatically every 15 seconds whether the presenter is ready or not. Twenty slides, 15 seconds each, five minutes total. Presenters are challenged to present their ideas quickly and clearly before the time runs out.</p>
+
+<p>Ignite is similar to <a href="http://www.pechakucha.org">Pecha Kucha</a>. The two formats differ only in slide duration (20 seconds per slide with Pecha Kucha).</p>
+
+<!--more-->
+
+
+<p>Slides from my OpenROV presentation at Ignite RubyConf 2014 appear below.</p>
+
+<script async class="speakerdeck-embed" data-id="573c89704e88013264a612c8f4a94aec" data-ratio="1.77777777777778" src="http://RayHightower.com//speakerdeck.com/assets/embed.js"></script>
+
+
+<p>&nbsp;<br/>
+&nbsp;<br/>
+If you like the idea of hacking on Ruby <em>and</em> OpenROV, check out <a href="http://rubycaribe.com">RubyCaribe</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Geekfest &amp; OpenROV]]></title>
     <link href="http://RayHightower.com/blog/2014/10/21/geekfest-and-openrov/"/>
-    <updated>2014-10-21T09:44:00-05:00</updated>
+    <updated>2014-10-21T09:44:00-07:00</updated>
     <id>http://RayHightower.com/blog/2014/10/21/geekfest-and-openrov</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/geekfest.png' width='' height='' alt='Geekfest: Tuesdays at Groupon.' title='Geekfest: Tuesdays at Groupon.'><span class='caption-text'>Geekfest: Tuesdays at Groupon.</span></span>
 <a href="http://www.meetup.com/Geekfest/events/207936312/">Geekfest</a> is a weekly event hosted by Groupon&rsquo;s engineering team. Every Tuesday at lunchtime, the company invites members of the tech community to present topics that are interesting to a technical audience.</p>
@@ -38,7 +62,7 @@
   <entry>
     <title type="html"><![CDATA[Node.js Under Water]]></title>
     <link href="http://RayHightower.com/blog/2014/09/25/nodejs-under-water/"/>
-    <updated>2014-09-25T22:54:00-05:00</updated>
+    <updated>2014-09-25T22:54:00-07:00</updated>
     <id>http://RayHightower.com/blog/2014/09/25/nodejs-under-water</id>
     <content type="html"><![CDATA[<p>The <a href="http://www.meetup.com/nodejs/events/206159562">New York City Node JS Meetup</a> asked me to speak about <a href="http://rayhightower.com/blog/2014/06/16/citizen-science-with-openrov/">OpenROV</a> on September 24, 2014. About eighty developers came out for the meeting. Thank you <a href="http://shutterstock.com">Shutterstock</a>, <a href="https://twitter.com/mateodelnorte">Matt Walters</a>, and all of the organizers for making it happen. Slides appear below.</p>
 
@@ -72,7 +96,7 @@
   <entry>
     <title type="html"><![CDATA[RubyCaribe: Ruby Gets Hotter in January]]></title>
     <link href="http://RayHightower.com/blog/2014/09/23/rubycaribe-ruby-gets-hotter-in-january/"/>
-    <updated>2014-09-23T18:23:00-05:00</updated>
+    <updated>2014-09-23T18:23:00-07:00</updated>
     <id>http://RayHightower.com/blog/2014/09/23/rubycaribe-ruby-gets-hotter-in-january</id>
     <content type="html"><![CDATA[<p><a href="http://rubycaribe.com">RubyCaribe</a> (pronounced ka-REEB) is a conference for intermediate and advanced software developers who use Ruby. The conference will be held January 27 &ndash; 31, 2015 in Barbados. January is a beautiful time to visit the Caribbean, especially if you’re coming from a colder part of the planet.</p>
 
@@ -118,7 +142,7 @@ Intermediate and advanced software developers will find RubyCaribe valuable beca
   <entry>
     <title type="html"><![CDATA[Manage That OpenROV Tether, Or Else]]></title>
     <link href="http://RayHightower.com/blog/2014/09/10/manage-that-openrov-tether/"/>
-    <updated>2014-09-10T18:40:00-05:00</updated>
+    <updated>2014-09-10T18:40:00-07:00</updated>
     <id>http://RayHightower.com/blog/2014/09/10/manage-that-openrov-tether</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/openrov_tether_management_slip_ring.jpg' width='' height='' alt='OpenROV tether management, one way that works.' title='OpenROV tether management, one way that works.'><span class='caption-text'>OpenROV tether management, one way that works.</span></span>
 <em>Note: This article has been updated with more photos and details describing slip ring installation.</em></p>
@@ -184,31 +208,6 @@ What should we do with the slip ring&rsquo;s extra lines? I tied mine together f
 <p>Whip everything out and you&rsquo;re ready to explore.</p>
 
 <p><span class='caption-wrapper middle'><img class='caption' src='/images/openrov_tether_management_laptop.jpg' width='' height='' alt='Ready to explore Lake Michigan.' title='Ready to explore Lake Michigan.'><span class='caption-text'>Ready to explore Lake Michigan.</span></span></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[OpenROV Meets Chicago's Lake Michigan]]></title>
-    <link href="http://RayHightower.com/blog/2014/08/22/openrov-meets-chicago-lake-michigan/"/>
-    <updated>2014-08-22T19:27:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2014/08/22/openrov-meets-chicago-lake-michigan</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='/images/openrov_chicago_lake_michigan.jpg' width='' height='' alt='OpenROV meets  Lake Michigan.' title='OpenROV meets  Lake Michigan.'><span class='caption-text'>OpenROV meets  Lake Michigan.</span></span>
-<a href="/blog/2014/06/16/citizen-science-with-openrov/">OpenROV</a> #1227 went for a spin in Lake Michigan this week. Success! Here are a few first-voyage observations:</p>
-
-<!--more-->
-
-
-<ul>
-<li>The electronics chassis is truly waterproof. Same for the battery compartments. Waterproofing was my biggest concern during assembly. Hats off to the OpenROV team for an excellent set of assembly instructions.</li>
-<li>Condensation builds up in the electronics chassis during operation. A quick review of the OpenROV forum tells me that I should add a desiccant bag to the compartment. Or pack the unit in low humidity.</li>
-<li>The OpenROV is a little back-heavy. The back dips lower than the front during operation. I should add some weights to the front of the unit.</li>
-<li><a href="/blog/2014/09/10/manage-that-openrov-tether/">Tether management is a <em>must</em></a>. After one voyage (can you really call a
-simple dip in the lake a voyage?) my OpenROV tether is a mess. Time to
-build a way to manage the tether.</li>
-</ul>
-
-
-<p>What an exciting way to explore Node.js, BeagleBone Black, and the Maker Movement all at once.</p>
 ]]></content>
   </entry>
   
