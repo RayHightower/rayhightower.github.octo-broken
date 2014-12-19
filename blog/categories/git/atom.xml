@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Git | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/git/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-12-11T09:19:16-06:00</updated>
+  <updated>2014-12-18T19:40:50-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,103 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Git Vulnerability on Mac OS X and Windows]]></title>
+    <link href="http://RayHightower.com/blog/2014/12/18/git-vulnerability-on-mac-os-x/"/>
+    <updated>2014-12-18T17:00:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2014/12/18/git-vulnerability-on-mac-os-x</id>
+    <content type="html"><![CDATA[<p>Today the <a href="http://git-scm.com/">Git</a> core team announced a security vulnerability and a corresponding fix. Hats off to the <a href="http://mercurial.selenic.com/">Mercurial</a> team (yes, Mercurial!) for finding the problem. Hats off to the <code>Git</code> team for making the announcement, and for delivering a fix so quickly.</p>
+
+<h3>What’s the Problem?</h3>
+
+<p>If your Git installation remains un-patched, then a malicious person could over-write the <code>.git/config</code> directory in one of your repositories. This would allow them to alter your Git history and make changes in the repo without your knowledge. <a href="http://article.gmane.org/gmane.linux.kernel/1853266">Details</a>.</p>
+
+<!--more-->
+
+
+<p>Mac and Windows users are exposed because their file systems are not case-sensitive by default. Linux users who use a case-sensitive file system are protected. But Linux users might want to apply the patch anyway because (as stated by the Git core team)&hellip;</p>
+
+<blockquote><p>Even though the issue may not affect Linux users, if you are a hosting service whose users may fetch from your service to Windows or Mac OS X machines, you are strongly encouraged to update to protect such users who use existing versions of Git.
+~Git Core Team</p></blockquote>
+
+<h3>Is My Machine Vulnerable?</h3>
+
+<p>I know that my machine was vulnerable because I was running an an un-patched version of Git, as seen below.</p>
+
+<p>```bash
+~$ git &mdash;version
+git version 2.1.3</p>
+
+<p>~$
+```</p>
+
+<h3>How to Upgrade</h3>
+
+<p><a href="/blog/2014/02/12/homebrew-fundamentals/">Homebrew</a> makes it easy to install and maintain Git. First, update Homebrew&hellip;</p>
+
+<p>```bash
+$ brew update
+Updated Homebrew from d243310d to a6ab9f13.
+==> New Formulae
+abi-compliance-checker        deis                     glbinding
+asciinema             distribution                rbenv-bundle-exec
+ctunnel                  game-music-emu           restund
+==> Updated Formulae
+abcm2ps                         jags
+afl-fuzz                    jansson</p>
+
+<p>&hellip;</p>
+
+<p>$</p>
+
+<p>```</p>
+
+<p>Then, upgrade Git&hellip;</p>
+
+<p>```bash
+~$ brew upgrade git
+==> Upgrading 1 outdated package, with result:
+git 2.2.1
+==> Upgrading git
+==> Downloading <a href="https://downloads.sf.net/project/machomebrew/Bottles/git-2.2.1.y">https://downloads.sf.net/project/machomebrew/Bottles/git-2.2.1.y</a></p>
+
+<h6>################################################################## 100.0%</h6>
+
+<p>==> Pouring git-2.2.1.yosemite.bottle.tar.gz
+==> Caveats
+The OS X keychain credential helper has been installed to:
+  /usr/local/bin/git-credential-osxkeychain</p>
+
+<p>The &ldquo;contrib&rdquo; directory has been installed to:
+  /usr/local/share/git-core/contrib</p>
+
+<p>Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d</p>
+
+<p>zsh completion has been installed to:
+  /usr/local/share/zsh/site-functions
+==> Summary
+🍺  /usr/local/Cellar/git/2.2.1: 1356 files, 31M</p>
+
+<p>~$</p>
+
+<p>```</p>
+
+<p>&hellip; and finally, verify that the patched version is in use.</p>
+
+<p>```bash
+~$ git &mdash;version
+git version 2.2.1</p>
+
+<p>~$
+```</p>
+
+<h3>Open Source Rocks</h3>
+
+<p>Again, hats off to everyone in the open source community who pulled together to make this fix happen!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[GitHub Page Build Warning - New CDN]]></title>
@@ -42,7 +139,7 @@
 
 <blockquote><p>The page build completed successfully, but returned the following warning:</p>
 
-<p>GitHub Pages recently underwent some improvements (<a href="https://github.com/blog/1715-faster-more-awesome-github-pages">https://github.com/blog/1715-faster-more-awesome-github-pages</a>) to make your site faster and more awesome, but we&rsquo;ve noticed that rayhightower.com isn&rsquo;t properly configured to take advantage of these new features. While your site will continue to work just fine, updating your domain&rsquo;s configuration offers some additional speed and performance benefits. Instructions on updating your site&rsquo;s IP address can be found at <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,">https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,</a> and of course, you can always get in touch with a human at <a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#111;&#x3a;&#115;&#x75;&#x70;&#112;&#111;&#114;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#117;&#98;&#x2e;&#x63;&#111;&#109;&#x2e;">&#x73;&#x75;&#112;&#112;&#111;&#x72;&#x74;&#x40;&#103;&#x69;&#x74;&#104;&#x75;&#98;&#x2e;&#x63;&#x6f;&#109;&#x2e;</a> For the more technical minded folks who want to skip the help docs: your site&rsquo;s DNS records are pointed to a deprecated IP address.</p>
+<p>GitHub Pages recently underwent some improvements (<a href="https://github.com/blog/1715-faster-more-awesome-github-pages">https://github.com/blog/1715-faster-more-awesome-github-pages</a>) to make your site faster and more awesome, but we&rsquo;ve noticed that rayhightower.com isn&rsquo;t properly configured to take advantage of these new features. While your site will continue to work just fine, updating your domain&rsquo;s configuration offers some additional speed and performance benefits. Instructions on updating your site&rsquo;s IP address can be found at <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,">https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,</a> and of course, you can always get in touch with a human at <a href="&#109;&#97;&#105;&#x6c;&#x74;&#111;&#x3a;&#x73;&#117;&#x70;&#x70;&#111;&#114;&#116;&#64;&#x67;&#x69;&#116;&#104;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;&#x2e;">&#x73;&#117;&#x70;&#112;&#x6f;&#114;&#x74;&#x40;&#x67;&#105;&#x74;&#104;&#x75;&#98;&#46;&#99;&#111;&#109;&#46;</a> For the more technical minded folks who want to skip the help docs: your site&rsquo;s DNS records are pointed to a deprecated IP address.</p>
 
 <p>For information on troubleshooting Jekyll see:</p>
 

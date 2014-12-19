@@ -9,7 +9,7 @@
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="This week I enrolled in the iOS Accelerated course offered by the Mobile Makers Academy. If you would like to do the same, mention my name and we& &hellip;">
+  <meta name="description" content="It is gratifying to know that learning something tangentially related to Ruby will, in fact, teach me more about Ruby. Working With Unix Processes, &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -82,6 +82,69 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/12/24/unix-for-ruby-developers/">Unix for Ruby Developers</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-24T16:50:00-06:00" pubdate data-updated="true">Dec 24<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://workingwithunixprocesses.com/"><img src="/images/working-w-unix-processes.jpg" align="right" width="350" height="266"></a>
+It is gratifying to know that learning something tangentially related to Ruby will, in fact, teach me more about Ruby.</p>
+
+<p><a href="http://workingwithunixprocesses.com/"><em>Working With Unix Processes</em></a>, by Jesse Storimer, is ostensibly about Unix internals. However, in reading this book, I have become more aware of how executables run on my favorite family of operating systems, which in turn gives me more insight into Ruby.</p>
+
+<h3>Passing Arguments</h3>
+
+<p>For example, what happens when we pass arguments to a process, Ruby or otherwise? How do the arguments get there? Storimer offers a 1-line Ruby program called <code>argv.rb</code> that we can use to play with the ARGV array:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/Ruby/apps/sandbox<span class="nv">$ </span><span class="nb">echo</span> <span class="s1">&#39;p ARGV&#39;</span> &gt; argv.rb
+</span><span class='line'>
+</span><span class='line'>~/Code/Ruby/apps/sandbox<span class="nv">$ </span>ruby argv.rb what results can we expect here
+</span><span class='line'><span class="o">[</span><span class="s2">&quot;what&quot;</span>, <span class="s2">&quot;results&quot;</span>, <span class="s2">&quot;can&quot;</span>, <span class="s2">&quot;we&quot;</span>, <span class="s2">&quot;expect&quot;</span>, <span class="s2">&quot;here&quot;</span><span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'>~/Code/Ruby/apps/sandbox<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/12/24/unix-for-ruby-developers/">Continue reading &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -507,50 +570,6 @@ nor defeat.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/09/03/10000-hours-of-practice/">10,000 Hours of Practice</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-09-03T00:46:00-05:00" pubdate data-updated="true">Sep 3<span>rd</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img src="/images/outliers.jpg" width="200" height="302" align="right" alt="Outliers by Malcolm Gladwell" title="Outliers by Malcolm Gladwell">
-In the book <em>Outliers</em>, author Malcolm Gladwell observes that it takes roughly ten thousand hours of practice to achieve mastery in a field. How does Gladwell arrive at this conclusion? And, if the conclusion is true, how can we leverage this idea to achieve greatness in our professions?</p>
-
-<p>Gladwell studied the lives of extremely successful people to find out how they achieved success. This article will review a few examples from Gladwell’s research, and conclude with some thoughts for moving forward.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/09/03/10000-hours-of-practice/">Continue reading &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/11/">&larr; Older</a>
@@ -633,7 +652,7 @@ In the book <em>Outliers</em>, author Malcolm Gladwell observes that it takes ro
 <li class='category'><a href='/blog/categories/business/'>Business (24)</a></li>
 <li class='category'><a href='/blog/categories/community/'>Community (24)</a></li>
 <li class='category'><a href='/blog/categories/education/'>Education (43)</a></li>
-<li class='category'><a href='/blog/categories/git/'>Git (4)</a></li>
+<li class='category'><a href='/blog/categories/git/'>Git (5)</a></li>
 <li class='category'><a href='/blog/categories/high-performance-computing/'>High Performance Computing (7)</a></li>
 <li class='category'><a href='/blog/categories/ios/'>iOS (13)</a></li>
 <li class='category'><a href='/blog/categories/iot/'>IoT (10)</a></li>
@@ -641,7 +660,7 @@ In the book <em>Outliers</em>, author Malcolm Gladwell observes that it takes ro
 <li class='category'><a href='/blog/categories/node/'>Node (4)</a></li>
 <li class='category'><a href='/blog/categories/objective-c/'>Objective-C (5)</a></li>
 <li class='category'><a href='/blog/categories/openrov/'>OpenROV (12)</a></li>
-<li class='category'><a href='/blog/categories/os-x/'>OS X (9)</a></li>
+<li class='category'><a href='/blog/categories/os-x/'>OS X (10)</a></li>
 <li class='category'><a href='/blog/categories/parallella/'>Parallella (5)</a></li>
 <li class='category'><a href='/blog/categories/rails/'>Rails (10)</a></li>
 <li class='category'><a href='/blog/categories/raspberry-pi/'>Raspberry Pi (4)</a></li>
