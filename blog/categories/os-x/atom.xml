@@ -4,7 +4,7 @@
   <title><![CDATA[Category: OS X | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/os-x/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-12-18T21:58:32-06:00</updated>
+  <updated>2014-12-19T18:16:04-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -90,8 +90,10 @@ The OS X keychain credential helper has been installed to:
 
 <p>zsh completion has been installed to:
   /usr/local/share/zsh/site-functions
-==> Summary
-🍺  /usr/local/Cellar/git/2.2.1: 1356 files, 31M</p>
+==> Summary</p>
+
+<pre><code>/usr/local/Cellar/git/2.2.1: 1356 files, 31M
+</code></pre>
 
 <p>~$</p>
 
@@ -105,6 +107,36 @@ git version 2.2.1</p>
 
 <p>~$
 ```</p>
+
+<h3>Avoid Conflicts With Apple&rsquo;s Git</h3>
+
+<p>As Kristjan Cocev notes in the comments below, Mac OS X comes with its own Git installation. By the time you bought the machine, that pre-installed version is probably out of date. My pre-installed Git was:</p>
+
+<p>```bash
+~$ /usr/bin/git &mdash;version
+git version 1.9.3 (Apple Git-50)</p>
+
+<p>~$
+```</p>
+
+<p>Apple&rsquo;s pre-installed Git isn&rsquo;t bad, but here&rsquo;s the problem. Depending on how your <code>PATH</code> variable is setup, there might be a conflict between Apple-installed Git and the one you installed via Homebrew.</p>
+
+<p>Here are two alternatives for fixing the conflict before it causes problems.</p>
+
+<ol>
+<li>Change your <code>PATH</code> variable so that Homebrew-installed Git is executed long before Apple-installed Git gets reached, OR&hellip;</li>
+<li>Rename Apple-installed Git as follows:</li>
+</ol>
+
+
+<p>```bash
+~$ sudo mv /usr/bin/git /usr/bin/git-apple
+Password:</p>
+
+<p>~$
+```</p>
+
+<p>So now, if you want to use Apple&rsquo;s pre-installed Git (unlikely) you can simply navigate to <code>/usr/bin/git-apple</code>.</p>
 
 <h3>Open Source Rocks</h3>
 
