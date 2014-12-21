@@ -9,7 +9,7 @@
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="The Chicago RubyMotion User Group held its inaugural meeting this week. Thank you Dave Astels for organizing the group and for asking me to present. &hellip;">
+  <meta name="description" content="The Problem Let&rsquo;s say we&rsquo;re building a version of Atari&rsquo;s Pong in RubyMotion. We&rsquo;re debugging an issue with the paddles; they &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -82,6 +82,91 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/11/25/awesome-print-motion-for-rubymotion/">awesome_print_motion for RubyMotion</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-25T15:08:00-06:00" pubdate data-updated="true">Nov 25<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h3>The Problem</h3>
+
+<p>Let&rsquo;s say we&rsquo;re building a version of Atari&rsquo;s <a href="/blog/2013/02/26/atari-pong-rubymotion-objective-c/">Pong in RubyMotion</a>. We&rsquo;re debugging an issue with the paddles; they don&rsquo;t line up the way we want them to. Time to examine the playing field via the RubyMotion console.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>pong-rm <span class="nv">$ </span>rake
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Mouse over the playing field and <code>Command-click</code> to grab the entire playing field object in the RubyMotion console. Confirm that you grabbed the object by typing <code>self</code> at the console prompt.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="p">(</span><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0, [[0.0, 0.0], ...)&gt; self</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">=&gt;</span> <span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0, [[0.0, 0.0], [480.0, 320.0]]), child of UIView(#c876920)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And then, to see what objects are on the playing field, use
+<code>self.subviews</code> to show the subviews array of the current object.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="p">(</span><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0, [[0.0, 0.0], ...)&gt; self.subviews</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="o">[</span><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d82430, [[357.0, 175.0], [50.0, 50.0]]), child of</span>
+</span><span class='line'><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0), PaddleView(#9d82580, [[410.0, 190.0], [20.0, 100.0]]),</span>
+</span><span class='line'><span class="n">child</span> <span class="n">of</span> <span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0), PaddleView(#9d82970, [[10.0, 190.0], [20.0,</span>
+</span><span class='line'><span class="mi">100</span><span class="o">.</span><span class="mi">0</span><span class="o">]]</span><span class="p">),</span> <span class="n">child</span> <span class="n">of</span> <span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0), ScoreLabel(#9d82a80, [[110.0, 9.0],</span>
+</span><span class='line'><span class="o">[</span><span class="mi">20</span><span class="o">.</span><span class="mi">0</span><span class="p">,</span> <span class="mi">42</span><span class="o">.</span><span class="mi">0</span><span class="o">]]</span><span class="p">,</span> <span class="ss">text</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">),</span> <span class="n">child</span> <span class="n">of</span> <span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0),</span>
+</span><span class='line'><span class="no">ScoreLabel</span><span class="p">(</span><span class="c1">#9d83c90, [[350.0, 9.0], [20.0, 42.0]], text: &quot;0&quot;), child of</span>
+</span><span class='line'><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0)]</span>
+</span><span class='line'><span class="p">(</span><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0, [[0.0, 0.0], ...)&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This blob of text is difficult for the human brain to parse. Now, let&rsquo;s try it with the <code>awesome_print_motion</code> gem.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/11/25/awesome-print-motion-for-rubymotion/">Continue reading &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -495,47 +580,6 @@ Age has little to do with ability. Every profession has examples of people who a
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/07/29/why-we-need-stem/">Why We Need STEM</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-07-29T00:22:00-05:00" pubdate data-updated="true">Jul 29<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://ignitechi.org">Ignite Chicago</a> is an evening of 5-minute talks presented by speakers who want to inspire others. Each speaker is allowed twenty slides, and the slides advance automatically every fifteen seconds. The Ignite organizers asked me to present <em>Why We Need STEM</em> at <a href="http://1871.com">1871</a>. I&rsquo;ll post the video when it becomes available. For now, check out the slides&hellip;</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/07/29/why-we-need-stem/">Continue reading &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/7/">&larr; Older</a>
@@ -616,7 +660,7 @@ Age has little to do with ability. Every profession has examples of people who a
     <li class='category'><a href='/blog/categories/arduino/'>Arduino (2)</a></li>
 <li class='category'><a href='/blog/categories/beaglebone-black/'>BeagleBone Black (8)</a></li>
 <li class='category'><a href='/blog/categories/business/'>Business (24)</a></li>
-<li class='category'><a href='/blog/categories/community/'>Community (24)</a></li>
+<li class='category'><a href='/blog/categories/community/'>Community (25)</a></li>
 <li class='category'><a href='/blog/categories/education/'>Education (43)</a></li>
 <li class='category'><a href='/blog/categories/git/'>Git (5)</a></li>
 <li class='category'><a href='/blog/categories/high-performance-computing/'>High Performance Computing (7)</a></li>
