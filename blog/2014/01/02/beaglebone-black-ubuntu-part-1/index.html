@@ -63,13 +63,6 @@
   
 </ul>
   
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:RayHightower.com" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
 <ul class="main-navigation">
   <li><a href="/">Home</a></li>
   <li><a href="/blog/archives">Archives</a></li>
@@ -101,7 +94,7 @@
   
 
 
-<time datetime="2014-01-02T15:59:00-06:00" pubdate data-updated="true">Jan 2<span>nd</span>, 2014</time>
+<time datetime="2014-01-02T15:59:00-06:00" pubdate data-updated="true"></time>
         
       </p>
     
@@ -185,6 +178,8 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p></p>
+
 <h3>The xz Extraction Utility</h3>
 
 <p>Disk image files are downloaded in a compressed format. We need the <code>xz</code> utility in order to extract the files into something usable. If you already have Homebrew installed, this command will install <code>xz</code> for you.</p>
@@ -193,6 +188,8 @@
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>brew install xz
 </span></code></pre></td></tr></table></div></figure>
 
+
+<p></p>
 
 <h3>Test the BeagleBone Black First</h3>
 
@@ -222,6 +219,8 @@
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>xz ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img.xz
 </span></code></pre></td></tr></table></div></figure>
 
+
+<p></p>
 
 <p>The extracted image will have a <code>.img</code> file extension. We will use the <code>dd</code> utility to burn the disk image to the SD card. But first, we need to determine the designation of the SD card.</p>
 
@@ -254,6 +253,8 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p></p>
+
 <p>I happen to know that my SD Card is 8.0 GB in capacity, and my system also has a 500 GB SSD. The goal is to burn the SD card while leaving the 500 GB SSD (home of the Mac OS X operating system and all of my data) intact. From the <code>$ diskutil list</code> report, I can see that the SD card&rsquo;s designation <em>in my system</em> is <code>/dev/disk1</code>.</p>
 
 <p>Note the italicized words <em>in my system</em>. Your system is probably different, especially if you have a DVD drive or a second hard drive. I have neither of those. The SD card&rsquo;s designation will be different in each system where it is mounted depending on the number and location of the drives that are already there.</p>
@@ -267,6 +268,8 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p></p>
+
 <p>Looks like the SD card was unmounted successfully. Now we can write the
 Ubuntu image with the <code>dd</code> utility.</p>
 
@@ -279,6 +282,8 @@ card.</p>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo dd <span class="nv">bs</span><span class="o">=</span>1m <span class="k">if</span><span class="o">=</span>ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img <span class="nv">of</span><span class="o">=</span>/dev/disk1
 </span></code></pre></td></tr></table></div></figure>
 
+
+<p></p>
 
 <p>Note that it may take up to an hour for the image to be written.</p>
 
@@ -294,6 +299,8 @@ card.</p>
 </span><span class='line'>39+0 records out
 </span></code></pre></td></tr></table></div></figure>
 
+
+<p></p>
 
 <p>We can strike <code>control-T</code> again to receive additional updates. The numbers will tell us if we are making progress. Don&rsquo;t get carried away with <code>control-T</code>. A watched pot never boils :&ndash;)</p>
 
@@ -324,6 +331,8 @@ card.</p>
 </span><span class='line'>pw: ubuntu
 </span></code></pre></td></tr></table></div></figure>
 
+
+<p></p>
 
 <h3>End of Part One</h3>
 
@@ -361,12 +370,12 @@ card.</p>
   
 
 
-<time datetime="2014-01-02T15:59:00-06:00" pubdate data-updated="true">Jan 2<span>nd</span>, 2014</time>
+<time datetime="2014-01-02T15:59:00-06:00" pubdate data-updated="true"></time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/beaglebone-black/'>BeagleBone Black</a>, <a class='category' href='/blog/categories/linux/'>Linux</a>, <a class='category' href='/blog/categories/os-x/'>OS X</a>, <a class='category' href='/blog/categories/rails/'>Rails</a>, <a class='category' href='/blog/categories/ruby/'>Ruby</a>
+    <a class='category' href='/blog/categories/beaglebone-black/'>beaglebone black</a>, <a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/os-x/'>os x</a>, <a class='category' href='/blog/categories/rails/'>rails</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a>
   
 </span>
 
@@ -418,17 +427,17 @@ card.</p>
   <h1>Observations</h1>
   <ul>
     <li>Find a need and fulfill it. Successful businesses are founded on the needs of people.<br/>~A. G. Gaston</li>
-    <li>It's kind of fun to do the impossible.<br/>~Walt Disney</li>
+    <li>It&#8217;s kind of fun to do the impossible.<br/>~Walt Disney</li>
     <li>A person with a new idea is a crank until the idea succeeds.<br/> ~Mark Twain</li>
     <li>The best way to make dreams come true is to wake up.<br/> ~Mae C. Jemison</li>
     <li>Everybody told me no at first, including my wife. I turned the
     nos into yeses and the disadvantages into advantages.<br/>~John H.
     Johnson</li>
     <li>I would have been fired a hundred times at a company run by
-    MBAs. But I never went into business to make money. I went... so
-    that I could do interesting things that hadn't been done
+    MBAs. But I never went into business to make money. I went&#8230; so
+    that I could do interesting things that hadn&#8217;t been done
     before.<br/>~Amar Bose</li>
-    <li>Don't undertake a project unless it is manifestly important and nearly impossible.<br/>~Edwin Land</li>
+    <li>Don&#8217;t undertake a project unless it is manifestly important and nearly impossible.<br/>~Edwin Land</li>
   </ul>
 </section>
 <section>
@@ -468,28 +477,28 @@ card.</p>
 <section>
   <h1>Blog Categories</h1>
   <ul id="categories">
-    <li class='category'><a href='/blog/categories/arduino/'>Arduino (2)</a></li>
-<li class='category'><a href='/blog/categories/beaglebone-black/'>BeagleBone Black (8)</a></li>
-<li class='category'><a href='/blog/categories/business/'>Business (25)</a></li>
-<li class='category'><a href='/blog/categories/community/'>Community (25)</a></li>
-<li class='category'><a href='/blog/categories/education/'>Education (43)</a></li>
-<li class='category'><a href='/blog/categories/git/'>Git (5)</a></li>
-<li class='category'><a href='/blog/categories/high-performance-computing/'>High Performance Computing (7)</a></li>
-<li class='category'><a href='/blog/categories/ios/'>iOS (13)</a></li>
-<li class='category'><a href='/blog/categories/iot/'>IoT (10)</a></li>
-<li class='category'><a href='/blog/categories/linux/'>Linux (13)</a></li>
-<li class='category'><a href='/blog/categories/node/'>Node (4)</a></li>
-<li class='category'><a href='/blog/categories/objective-c/'>Objective-C (5)</a></li>
-<li class='category'><a href='/blog/categories/openrov/'>OpenROV (12)</a></li>
-<li class='category'><a href='/blog/categories/os-x/'>OS X (10)</a></li>
-<li class='category'><a href='/blog/categories/parallella/'>Parallella (5)</a></li>
-<li class='category'><a href='/blog/categories/rails/'>Rails (10)</a></li>
-<li class='category'><a href='/blog/categories/raspberry-pi/'>Raspberry Pi (4)</a></li>
-<li class='category'><a href='/blog/categories/ruby/'>Ruby (23)</a></li>
-<li class='category'><a href='/blog/categories/rubymotion/'>RubyMotion (13)</a></li>
-<li class='category'><a href='/blog/categories/ux/'>UX (2)</a></li>
-<li class='category'><a href='/blog/categories/vim/'>Vim (5)</a></li>
-<li class='category'><a href='/blog/categories/xcode/'>Xcode (5)</a></li>
+    <li class='category'><a href='/blog/categories/arduino/'>arduino (2)</a></li>
+<li class='category'><a href='/blog/categories/beaglebone-black/'>beaglebone black (8)</a></li>
+<li class='category'><a href='/blog/categories/business/'>business (25)</a></li>
+<li class='category'><a href='/blog/categories/community/'>community (25)</a></li>
+<li class='category'><a href='/blog/categories/education/'>education (43)</a></li>
+<li class='category'><a href='/blog/categories/git/'>git (5)</a></li>
+<li class='category'><a href='/blog/categories/high-performance-computing/'>high performance computing (7)</a></li>
+<li class='category'><a href='/blog/categories/ios/'>ios (13)</a></li>
+<li class='category'><a href='/blog/categories/iot/'>iot (10)</a></li>
+<li class='category'><a href='/blog/categories/linux/'>linux (13)</a></li>
+<li class='category'><a href='/blog/categories/node/'>node (4)</a></li>
+<li class='category'><a href='/blog/categories/objective-c/'>objective-c (5)</a></li>
+<li class='category'><a href='/blog/categories/openrov/'>openrov (12)</a></li>
+<li class='category'><a href='/blog/categories/os-x/'>os x (10)</a></li>
+<li class='category'><a href='/blog/categories/parallella/'>parallella (5)</a></li>
+<li class='category'><a href='/blog/categories/rails/'>rails (10)</a></li>
+<li class='category'><a href='/blog/categories/raspberry-pi/'>raspberry pi (4)</a></li>
+<li class='category'><a href='/blog/categories/ruby/'>ruby (24)</a></li>
+<li class='category'><a href='/blog/categories/rubymotion/'>rubymotion (13)</a></li>
+<li class='category'><a href='/blog/categories/ux/'>ux (2)</a></li>
+<li class='category'><a href='/blog/categories/vim/'>vim (5)</a></li>
+<li class='category'><a href='/blog/categories/xcode/'>xcode (5)</a></li>
 
   </ul>
 </section>
@@ -507,7 +516,7 @@ card.</p>
 </section>
 <section>
   <h1>Vim</h1>
-  <p>I don't always use a modal editor. But when I do, I use <a href="/blog/2013/01/12/why-i-use-vim/">Vim</a>.</p>
+  <p>I don&#8217;t always use a modal editor. But when I do, I use <a href="/blog/2013/01/12/why-i-use-vim/">Vim</a>.</p>
   <p>
   <a href="/blog/2013/01/12/why-i-use-vim/"><img src="/images/vim_editor.gif" width="125" height="60" alt="Vim, the editor" title="Vim, the editor"/></a>
   </p>

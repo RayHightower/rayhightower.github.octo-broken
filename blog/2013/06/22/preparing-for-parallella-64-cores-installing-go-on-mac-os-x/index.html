@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Prep for Parallella's 64 Cores: Installing Go on Mac OS X - RayHightower.com</title>
+  <title>Prep for Parallella&#8217;s 64 Cores: Installing Go on Mac OS X - RayHightower.com</title>
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
@@ -63,13 +63,6 @@
   
 </ul>
   
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:RayHightower.com" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
 <ul class="main-navigation">
   <li><a href="/">Home</a></li>
   <li><a href="/blog/archives">Archives</a></li>
@@ -85,7 +78,7 @@
   
   <header>
     
-      <h1 class="entry-title">Prep for Parallella's 64 Cores: Installing Go on Mac OS X</h1>
+      <h1 class="entry-title">Prep for Parallella&#8217;s 64 Cores: Installing Go on Mac OS X</h1>
     
     
       <p class="meta">
@@ -101,7 +94,7 @@
   
 
 
-<time datetime="2013-06-22T12:58:00-05:00" pubdate data-updated="true">Jun 22<span>nd</span>, 2013</time>
+<time datetime="2013-06-22T12:58:00-05:00" pubdate data-updated="true"></time>
         
       </p>
     
@@ -137,7 +130,7 @@ The idea of owning a 64-core parallel system for two hundred dollars (yes, $200.
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rm -rf /usr/local/go
-</span></code></pre></td></tr></table></div></figure>
+</span></code></pre></td></tr></table></div></figure> 
 
 <li>Define the <code>GOROOT</code> and <code>GOPATH</code> environmental variables. My system uses <code>~/.bash_profile</code> to define environmental variables, so I added the following lines to the end of that file:
 
@@ -147,14 +140,15 @@ The idea of owning a 64-core parallel system for two hundred dollars (yes, $200.
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">export </span><span class="nv">GOROOT</span><span class="o">=</span>/usr/local/go
 </span><span class='line'><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$GOROOT</span>/bin
 </span><span class='line'><span class="nb">export </span><span class="nv">GOPATH</span><span class="o">=</span>~/Code/gocode
-</span></code></pre></td></tr></table></div></figure>
+</span></code></pre></td></tr></table></div></figure> 
+
 Note: I&#8217;m using the default <code>GOROOT</code> variable, but your <code>GOPATH</code> may differ from mine. I store all of my source code in a subdirectory of home:<code>~/Code</code>. My complete Go directory structure is given below. By looking at my structure, you can adjust these steps to fit your system.</li>
 <br/>
 <li>Tell your terminal session to recognize the new environmental variables. You can either restart terminal, or if your environmental variables are in <code>~/.bash_profile</code> like mine, you can do the following:</li>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="nb">source</span> ~/.bash_profile
-</span></code></pre></td></tr></table></div></figure>
+</span></code></pre></td></tr></table></div></figure> 
 <li>Run the package installation program, <code>go1.1.1.darwin-amd64.pkg</code>, that was downloaded in Step 1.</li>
 </ol>
 
@@ -192,6 +186,8 @@ Note: I&#8217;m using the default <code>GOROOT</code> variable, but your <code>G
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p></p>
+
 <p>Here&rsquo;s a brief description of the directories:</p>
 
 <ul>
@@ -228,6 +224,8 @@ Note: I&#8217;m using the default <code>GOROOT</code> variable, but your <code>G
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p></p>
+
 <h3>Compiling and Running</h3>
 
 <p>We drop the code into a file called <code>hello.go</code> in the <code>hello</code> directory. To compile the program:</p>
@@ -240,6 +238,8 @@ Note: I&#8217;m using the default <code>GOROOT</code> variable, but your <code>G
 </span><span class='line'>~/Code/gocode/src/github.com/rayhightower/hello<span class="nv">$ </span>
 </span></code></pre></td></tr></table></div></figure>
 
+
+<p></p>
 
 <p>If the Go compiler responds with a blank prompt (like above) then the program compiled successfully and a <code>bin</code> directory has been created inside the Go workspace. Run the <code>tree</code> command from the <code>gocode</code> directory to see how the structure has changed:</p>
 
@@ -272,6 +272,8 @@ Note: I&#8217;m using the default <code>GOROOT</code> variable, but your <code>G
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p></p>
+
 <p>The newly created <code>bin/</code> directory contains our <code>hello</code> executable. And now, let&rsquo;s cut the suspense and <em>run the program</em>. To do so, change into the <code>bin/</code> directory and type <code>./hello</code>.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -290,6 +292,8 @@ Note: I&#8217;m using the default <code>GOROOT</code> variable, but your <code>G
 </span><span class='line'>~/Code/gocode/bin<span class="nv">$ </span>
 </span></code></pre></td></tr></table></div></figure>
 
+
+<p></p>
 
 <p>Success!</p>
 
@@ -335,12 +339,12 @@ Note: I&#8217;m using the default <code>GOROOT</code> variable, but your <code>G
   
 
 
-<time datetime="2013-06-22T12:58:00-05:00" pubdate data-updated="true">Jun 22<span>nd</span>, 2013</time>
+<time datetime="2013-06-22T12:58:00-05:00" pubdate data-updated="true"></time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/education/'>Education</a>, <a class='category' href='/blog/categories/high-performance-computing/'>High Performance Computing</a>, <a class='category' href='/blog/categories/os-x/'>OS X</a>, <a class='category' href='/blog/categories/parallella/'>Parallella</a>
+    <a class='category' href='/blog/categories/education/'>education</a>, <a class='category' href='/blog/categories/high-performance-computing/'>high performance computing</a>, <a class='category' href='/blog/categories/os-x/'>os x</a>, <a class='category' href='/blog/categories/parallella/'>parallella</a>
   
 </span>
 
@@ -392,17 +396,17 @@ Note: I&#8217;m using the default <code>GOROOT</code> variable, but your <code>G
   <h1>Observations</h1>
   <ul>
     <li>Find a need and fulfill it. Successful businesses are founded on the needs of people.<br/>~A. G. Gaston</li>
-    <li>It's kind of fun to do the impossible.<br/>~Walt Disney</li>
+    <li>It&#8217;s kind of fun to do the impossible.<br/>~Walt Disney</li>
     <li>A person with a new idea is a crank until the idea succeeds.<br/> ~Mark Twain</li>
     <li>The best way to make dreams come true is to wake up.<br/> ~Mae C. Jemison</li>
     <li>Everybody told me no at first, including my wife. I turned the
     nos into yeses and the disadvantages into advantages.<br/>~John H.
     Johnson</li>
     <li>I would have been fired a hundred times at a company run by
-    MBAs. But I never went into business to make money. I went... so
-    that I could do interesting things that hadn't been done
+    MBAs. But I never went into business to make money. I went&#8230; so
+    that I could do interesting things that hadn&#8217;t been done
     before.<br/>~Amar Bose</li>
-    <li>Don't undertake a project unless it is manifestly important and nearly impossible.<br/>~Edwin Land</li>
+    <li>Don&#8217;t undertake a project unless it is manifestly important and nearly impossible.<br/>~Edwin Land</li>
   </ul>
 </section>
 <section>
@@ -442,28 +446,28 @@ Note: I&#8217;m using the default <code>GOROOT</code> variable, but your <code>G
 <section>
   <h1>Blog Categories</h1>
   <ul id="categories">
-    <li class='category'><a href='/blog/categories/arduino/'>Arduino (2)</a></li>
-<li class='category'><a href='/blog/categories/beaglebone-black/'>BeagleBone Black (8)</a></li>
-<li class='category'><a href='/blog/categories/business/'>Business (25)</a></li>
-<li class='category'><a href='/blog/categories/community/'>Community (25)</a></li>
-<li class='category'><a href='/blog/categories/education/'>Education (43)</a></li>
-<li class='category'><a href='/blog/categories/git/'>Git (5)</a></li>
-<li class='category'><a href='/blog/categories/high-performance-computing/'>High Performance Computing (7)</a></li>
-<li class='category'><a href='/blog/categories/ios/'>iOS (13)</a></li>
-<li class='category'><a href='/blog/categories/iot/'>IoT (10)</a></li>
-<li class='category'><a href='/blog/categories/linux/'>Linux (13)</a></li>
-<li class='category'><a href='/blog/categories/node/'>Node (4)</a></li>
-<li class='category'><a href='/blog/categories/objective-c/'>Objective-C (5)</a></li>
-<li class='category'><a href='/blog/categories/openrov/'>OpenROV (12)</a></li>
-<li class='category'><a href='/blog/categories/os-x/'>OS X (10)</a></li>
-<li class='category'><a href='/blog/categories/parallella/'>Parallella (5)</a></li>
-<li class='category'><a href='/blog/categories/rails/'>Rails (10)</a></li>
-<li class='category'><a href='/blog/categories/raspberry-pi/'>Raspberry Pi (4)</a></li>
-<li class='category'><a href='/blog/categories/ruby/'>Ruby (23)</a></li>
-<li class='category'><a href='/blog/categories/rubymotion/'>RubyMotion (13)</a></li>
-<li class='category'><a href='/blog/categories/ux/'>UX (2)</a></li>
-<li class='category'><a href='/blog/categories/vim/'>Vim (5)</a></li>
-<li class='category'><a href='/blog/categories/xcode/'>Xcode (5)</a></li>
+    <li class='category'><a href='/blog/categories/arduino/'>arduino (2)</a></li>
+<li class='category'><a href='/blog/categories/beaglebone-black/'>beaglebone black (8)</a></li>
+<li class='category'><a href='/blog/categories/business/'>business (25)</a></li>
+<li class='category'><a href='/blog/categories/community/'>community (25)</a></li>
+<li class='category'><a href='/blog/categories/education/'>education (43)</a></li>
+<li class='category'><a href='/blog/categories/git/'>git (5)</a></li>
+<li class='category'><a href='/blog/categories/high-performance-computing/'>high performance computing (7)</a></li>
+<li class='category'><a href='/blog/categories/ios/'>ios (13)</a></li>
+<li class='category'><a href='/blog/categories/iot/'>iot (10)</a></li>
+<li class='category'><a href='/blog/categories/linux/'>linux (13)</a></li>
+<li class='category'><a href='/blog/categories/node/'>node (4)</a></li>
+<li class='category'><a href='/blog/categories/objective-c/'>objective-c (5)</a></li>
+<li class='category'><a href='/blog/categories/openrov/'>openrov (12)</a></li>
+<li class='category'><a href='/blog/categories/os-x/'>os x (10)</a></li>
+<li class='category'><a href='/blog/categories/parallella/'>parallella (5)</a></li>
+<li class='category'><a href='/blog/categories/rails/'>rails (10)</a></li>
+<li class='category'><a href='/blog/categories/raspberry-pi/'>raspberry pi (4)</a></li>
+<li class='category'><a href='/blog/categories/ruby/'>ruby (24)</a></li>
+<li class='category'><a href='/blog/categories/rubymotion/'>rubymotion (13)</a></li>
+<li class='category'><a href='/blog/categories/ux/'>ux (2)</a></li>
+<li class='category'><a href='/blog/categories/vim/'>vim (5)</a></li>
+<li class='category'><a href='/blog/categories/xcode/'>xcode (5)</a></li>
 
   </ul>
 </section>
@@ -481,7 +485,7 @@ Note: I&#8217;m using the default <code>GOROOT</code> variable, but your <code>G
 </section>
 <section>
   <h1>Vim</h1>
-  <p>I don't always use a modal editor. But when I do, I use <a href="/blog/2013/01/12/why-i-use-vim/">Vim</a>.</p>
+  <p>I don&#8217;t always use a modal editor. But when I do, I use <a href="/blog/2013/01/12/why-i-use-vim/">Vim</a>.</p>
   <p>
   <a href="/blog/2013/01/12/why-i-use-vim/"><img src="/images/vim_editor.gif" width="125" height="60" alt="Vim, the editor" title="Vim, the editor"/></a>
   </p>

@@ -63,13 +63,6 @@
   
 </ul>
   
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:RayHightower.com" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
 <ul class="main-navigation">
   <li><a href="/">Home</a></li>
   <li><a href="/blog/archives">Archives</a></li>
@@ -101,7 +94,7 @@
   
 
 
-<time datetime="2013-11-25T15:08:00-06:00" pubdate data-updated="true">Nov 25<span>th</span>, 2013</time>
+<time datetime="2013-11-25T15:08:00-06:00" pubdate data-updated="true"></time>
         
       </p>
     
@@ -117,6 +110,8 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p></p>
+
 <p>Mouse over the playing field and <code>Command-click</code> to grab the entire playing field object in the RubyMotion console. Confirm that you grabbed the object by typing <code>self</code> at the console prompt.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -128,8 +123,9 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>And then, to see what objects are on the playing field, use
-<code>self.subviews</code> to show the subviews array of the current object.</p>
+<p></p>
+
+<p>And then, to see what objects are on the playing field, use <code>self.subviews</code> to show the subviews array of the current object.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -151,6 +147,8 @@
 </span><span class='line'><span class="p">(</span><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0, [[0.0, 0.0], ...)&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
 
+
+<p></p>
 
 <p>This blob of text is difficult for the human brain to parse. Now, let&rsquo;s try it with the <code>awesome_print_motion</code> gem.</p>
 
@@ -180,6 +178,8 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p></p>
+
 <p>Much easier to read. The structure of the <code>subviews</code> array is clear. Each element of the array has an easy-to-read index. Debugging time is reduced.</p>
 
 <h3>How to Install awesome_print_motion</h3>
@@ -190,6 +190,8 @@
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">gem</span> <span class="s1">&#39;awesome_print_motion&#39;</span>
 </span></code></pre></td></tr></table></div></figure>
 
+
+<p></p>
 
 <p>In the app&rsquo;s <code>Rakefile</code>, there are two possible ways to proceed. The preferred way is to use the following lines to tell the app to require every gem mentioned in Bundler&rsquo;s Gemfile:</p>
 
@@ -206,6 +208,8 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p></p>
+
 <p>The older way is to manually add a <code>require</code> statement to the Rakefile.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -213,9 +217,9 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>Personally, I prefer the newer way because it automatically
-requires all of the gems mentioned in the <code>Gemfile</code>. The odds of a
-typo-induced error are reduced.</p>
+<p></p>
+
+<p>Personally, I prefer the newer way because it automatically requires all of the gems mentioned in the <code>Gemfile</code>. The odds of a typo-induced error are reduced.</p>
 
 <h3>How to Use awesome_print_motion</h3>
 
@@ -227,6 +231,8 @@ parameter to the <code>ap</code> method like so&hellip;</p>
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&gt;</span> <span class="n">ap</span><span class="p">(</span><span class="nb">self</span><span class="o">.</span><span class="n">subviews</span><span class="p">)</span>
 </span></code></pre></td></tr></table></div></figure>
 
+
+<p></p>
 
 <p>&hellip; and the output will be easier to read.</p>
 
@@ -255,12 +261,12 @@ parameter to the <code>ap</code> method like so&hellip;</p>
   
 
 
-<time datetime="2013-11-25T15:08:00-06:00" pubdate data-updated="true">Nov 25<span>th</span>, 2013</time>
+<time datetime="2013-11-25T15:08:00-06:00" pubdate data-updated="true"></time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/ruby/'>Ruby</a>, <a class='category' href='/blog/categories/rubymotion/'>RubyMotion</a>, <a class='category' href='/blog/categories/ios/'>iOS</a>
+    <a class='category' href='/blog/categories/ios/'>ios</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a>, <a class='category' href='/blog/categories/rubymotion/'>rubymotion</a>
   
 </span>
 
@@ -312,17 +318,17 @@ parameter to the <code>ap</code> method like so&hellip;</p>
   <h1>Observations</h1>
   <ul>
     <li>Find a need and fulfill it. Successful businesses are founded on the needs of people.<br/>~A. G. Gaston</li>
-    <li>It's kind of fun to do the impossible.<br/>~Walt Disney</li>
+    <li>It&#8217;s kind of fun to do the impossible.<br/>~Walt Disney</li>
     <li>A person with a new idea is a crank until the idea succeeds.<br/> ~Mark Twain</li>
     <li>The best way to make dreams come true is to wake up.<br/> ~Mae C. Jemison</li>
     <li>Everybody told me no at first, including my wife. I turned the
     nos into yeses and the disadvantages into advantages.<br/>~John H.
     Johnson</li>
     <li>I would have been fired a hundred times at a company run by
-    MBAs. But I never went into business to make money. I went... so
-    that I could do interesting things that hadn't been done
+    MBAs. But I never went into business to make money. I went&#8230; so
+    that I could do interesting things that hadn&#8217;t been done
     before.<br/>~Amar Bose</li>
-    <li>Don't undertake a project unless it is manifestly important and nearly impossible.<br/>~Edwin Land</li>
+    <li>Don&#8217;t undertake a project unless it is manifestly important and nearly impossible.<br/>~Edwin Land</li>
   </ul>
 </section>
 <section>
@@ -362,28 +368,28 @@ parameter to the <code>ap</code> method like so&hellip;</p>
 <section>
   <h1>Blog Categories</h1>
   <ul id="categories">
-    <li class='category'><a href='/blog/categories/arduino/'>Arduino (2)</a></li>
-<li class='category'><a href='/blog/categories/beaglebone-black/'>BeagleBone Black (8)</a></li>
-<li class='category'><a href='/blog/categories/business/'>Business (25)</a></li>
-<li class='category'><a href='/blog/categories/community/'>Community (25)</a></li>
-<li class='category'><a href='/blog/categories/education/'>Education (43)</a></li>
-<li class='category'><a href='/blog/categories/git/'>Git (5)</a></li>
-<li class='category'><a href='/blog/categories/high-performance-computing/'>High Performance Computing (7)</a></li>
-<li class='category'><a href='/blog/categories/ios/'>iOS (13)</a></li>
-<li class='category'><a href='/blog/categories/iot/'>IoT (10)</a></li>
-<li class='category'><a href='/blog/categories/linux/'>Linux (13)</a></li>
-<li class='category'><a href='/blog/categories/node/'>Node (4)</a></li>
-<li class='category'><a href='/blog/categories/objective-c/'>Objective-C (5)</a></li>
-<li class='category'><a href='/blog/categories/openrov/'>OpenROV (12)</a></li>
-<li class='category'><a href='/blog/categories/os-x/'>OS X (10)</a></li>
-<li class='category'><a href='/blog/categories/parallella/'>Parallella (5)</a></li>
-<li class='category'><a href='/blog/categories/rails/'>Rails (10)</a></li>
-<li class='category'><a href='/blog/categories/raspberry-pi/'>Raspberry Pi (4)</a></li>
-<li class='category'><a href='/blog/categories/ruby/'>Ruby (23)</a></li>
-<li class='category'><a href='/blog/categories/rubymotion/'>RubyMotion (13)</a></li>
-<li class='category'><a href='/blog/categories/ux/'>UX (2)</a></li>
-<li class='category'><a href='/blog/categories/vim/'>Vim (5)</a></li>
-<li class='category'><a href='/blog/categories/xcode/'>Xcode (5)</a></li>
+    <li class='category'><a href='/blog/categories/arduino/'>arduino (2)</a></li>
+<li class='category'><a href='/blog/categories/beaglebone-black/'>beaglebone black (8)</a></li>
+<li class='category'><a href='/blog/categories/business/'>business (25)</a></li>
+<li class='category'><a href='/blog/categories/community/'>community (25)</a></li>
+<li class='category'><a href='/blog/categories/education/'>education (43)</a></li>
+<li class='category'><a href='/blog/categories/git/'>git (5)</a></li>
+<li class='category'><a href='/blog/categories/high-performance-computing/'>high performance computing (7)</a></li>
+<li class='category'><a href='/blog/categories/ios/'>ios (13)</a></li>
+<li class='category'><a href='/blog/categories/iot/'>iot (10)</a></li>
+<li class='category'><a href='/blog/categories/linux/'>linux (13)</a></li>
+<li class='category'><a href='/blog/categories/node/'>node (4)</a></li>
+<li class='category'><a href='/blog/categories/objective-c/'>objective-c (5)</a></li>
+<li class='category'><a href='/blog/categories/openrov/'>openrov (12)</a></li>
+<li class='category'><a href='/blog/categories/os-x/'>os x (10)</a></li>
+<li class='category'><a href='/blog/categories/parallella/'>parallella (5)</a></li>
+<li class='category'><a href='/blog/categories/rails/'>rails (10)</a></li>
+<li class='category'><a href='/blog/categories/raspberry-pi/'>raspberry pi (4)</a></li>
+<li class='category'><a href='/blog/categories/ruby/'>ruby (24)</a></li>
+<li class='category'><a href='/blog/categories/rubymotion/'>rubymotion (13)</a></li>
+<li class='category'><a href='/blog/categories/ux/'>ux (2)</a></li>
+<li class='category'><a href='/blog/categories/vim/'>vim (5)</a></li>
+<li class='category'><a href='/blog/categories/xcode/'>xcode (5)</a></li>
 
   </ul>
 </section>
@@ -401,7 +407,7 @@ parameter to the <code>ap</code> method like so&hellip;</p>
 </section>
 <section>
   <h1>Vim</h1>
-  <p>I don't always use a modal editor. But when I do, I use <a href="/blog/2013/01/12/why-i-use-vim/">Vim</a>.</p>
+  <p>I don&#8217;t always use a modal editor. But when I do, I use <a href="/blog/2013/01/12/why-i-use-vim/">Vim</a>.</p>
   <p>
   <a href="/blog/2013/01/12/why-i-use-vim/"><img src="/images/vim_editor.gif" width="125" height="60" alt="Vim, the editor" title="Vim, the editor"/></a>
   </p>

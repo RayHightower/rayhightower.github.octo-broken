@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: OS X | RayHightower.com]]></title>
+  <title><![CDATA[Category: os x | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/os-x/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-12-30T18:40:42-06:00</updated>
+  <updated>2014-12-31T17:10:18-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -38,19 +38,22 @@
 
 <p>I know that my machine was vulnerable because I was running an un-patched version of Git, as seen below.</p>
 
-<p>```bash
-~$ git &mdash;version
+<p>&#8220;` bash</p>
+
+<p>~$ git &mdash;version
 git version 2.1.3</p>
 
-<p>~$
-```</p>
+<p>~$</p>
+
+<p>&#8220;`</p>
 
 <h3>How to Upgrade</h3>
 
 <p><a href="/blog/2014/02/12/homebrew-fundamentals/">Homebrew</a> makes it easy to install and maintain Git. First, update Homebrew&hellip;</p>
 
-<p>```bash
-~$ brew update
+<p>&#8220;` bash</p>
+
+<p>~$ brew update
 Updated Homebrew from d243310d to a6ab9f13.
 ==> New Formulae
 abi-compliance-checker        deis                     glbinding
@@ -64,12 +67,13 @@ afl-fuzz                    jansson</p>
 
 <p>~$</p>
 
-<p>```</p>
+<p>&#8220;`</p>
 
 <p>Then, upgrade Git&hellip;</p>
 
-<p>```bash
-~$ brew upgrade git
+<p>&#8220;` bash</p>
+
+<p>~$ brew upgrade git
 ==> Upgrading 1 outdated package, with result:
 git 2.2.1
 ==> Upgrading git
@@ -97,27 +101,31 @@ The OS X keychain credential helper has been installed to:
 
 <p>~$</p>
 
-<p>```</p>
+<p>&#8220;`</p>
 
 <p>&hellip; and finally, verify that the patched version is in use.</p>
 
-<p>```bash
-~$ git &mdash;version
+<p>&#8220;` bash</p>
+
+<p>~$ git &mdash;version
 git version 2.2.1</p>
 
-<p>~$
-```</p>
+<p>~$</p>
+
+<p>&#8220;`</p>
 
 <h3>Avoid Conflicts With Apple&rsquo;s Git</h3>
 
 <p>As <a href="https://twitter.com/kcocev">Kristjan Cocev</a> notes in the comments below, Mac OS X comes with its own Git installation. By the time you bought the machine, that pre-installed version is probably out of date. My pre-installed Git was:</p>
 
-<p>```bash
-~$ /usr/bin/git &mdash;version
+<p>&#8220;` bash</p>
+
+<p>~$ /usr/bin/git &mdash;version
 git version 1.9.3 (Apple Git-50)</p>
 
-<p>~$
-```</p>
+<p>~$</p>
+
+<p>&#8220;`</p>
 
 <p>Apple&rsquo;s pre-installed Git isn&rsquo;t bad, but here&rsquo;s the problem. Depending on how your <code>PATH</code> variable is setup, there might be a conflict between Apple-installed Git and the one you installed via Homebrew.</p>
 
@@ -129,12 +137,14 @@ git version 1.9.3 (Apple Git-50)</p>
 </ol>
 
 
-<p>```bash
-~$ sudo mv /usr/bin/git /usr/bin/git-apple
+<p>&#8220;` bash</p>
+
+<p>~$ sudo mv /usr/bin/git /usr/bin/git-apple
 Password:</p>
 
-<p>~$
-```</p>
+<p>~$</p>
+
+<p>&#8220;`</p>
 
 <p>So now, if you want to use Apple&rsquo;s pre-installed Git (unlikely) you can simply navigate to <code>/usr/bin/git-apple</code>.</p>
 
@@ -163,7 +173,7 @@ Password:</p>
 <!--more-->
 
 
-<p>```bash
+<p>&#8220;` bash
 ~/.dotfiles[master]$ ls -al
 total 40
 drwxr-xr-x   8 rth  staff   272 Apr 14 01:44 .
@@ -176,7 +186,7 @@ drwxr-xr-x  14 rth  staff   476 Apr 14 02:25 .git
 -rw-r&mdash;r&mdash;   1 rth  staff   375 Apr 14 01:44 README.mdown</p>
 
 <p>~/.dotfiles[master]$
-```</p>
+&#8220;`</p>
 
 <p>The <a href="https://github.com/RayHightower/.dotfiles/blob/master/.bash_profile">.bash_profile</a> in this example has grown to include aliases, path specifications, and a script that shows the current Git branch as part of the command prompt. The file also contains two aliases useful for showing or hiding dotfiles in the Finder: <code>showdots</code> and <code>hidedots</code>.</p>
 
@@ -184,20 +194,20 @@ drwxr-xr-x  14 rth  staff   476 Apr 14 02:25 .git
 
 <p>Dotfiles are normally created in the user&rsquo;s home directory. For organization purposes, I moved my non-private dotfiles into a directory called <code>.dotfiles</code>, listed above. Unix makes this easy. First, move to the home directory and create <code>~/.dotfiles</code>.</p>
 
-<p>```bash
+<p>&#8220;` bash
 ~$ cd ~</p>
 
 <p>~$ mkdir .dotfiles</p>
 
 <p>~$</p>
 
-<p>```</p>
+<p>&#8220;`</p>
 
 <p><em>Note: Dotfiles can sometimes include private information. If you don&rsquo;t want to share information in a particular dotfile, don&rsquo;t put it on GitHub!</em></p>
 
 <p>In this example, we&rsquo;ll only move one file, <code>.bash_profile</code>.</p>
 
-<p>```bash</p>
+<p>&#8220;` bash</p>
 
 <p>~$ cd .dotfiles/</p>
 
@@ -205,13 +215,13 @@ drwxr-xr-x  14 rth  staff   476 Apr 14 02:25 .git
 
 <p>$</p>
 
-<p>```</p>
+<p>&#8220;`</p>
 
 <h3>Symbolic Links</h3>
 
 <p>Symbolic links ensure that executables can find our dotfiles as needed.</p>
 
-<p>```bash</p>
+<p>&#8220;` bash</p>
 
 <p>$ cd ~</p>
 
@@ -225,7 +235,7 @@ lrwxr-xr-x   1 rth  staff    34 Apr 14 19:48 .bash_profile &ndash;> /Users/rth/.
 
 <p>$</p>
 
-<p>```</p>
+<p>&#8220;`</p>
 
 <p>In the above example, we created a symbolic link called <code>.bash_profile</code> to the real <code>~/.dotfiles/.bash_profile</code> located in the <code>.dotfiles</code> directory. That way, any program that&rsquo;s looking for the <code>.bash_profile</code> file in the home directory will find what it needs, even though the file is somewhere else.</p>
 
@@ -263,19 +273,23 @@ lrwxr-xr-x   1 rth  staff    34 Apr 14 19:48 .bash_profile &ndash;> /Users/rth/.
 
 <p>The root cause of my problem: Once Git has begun tracking a file or directory, adding it to <code>.gitignore</code> changes nothing. Git will continue to track the file unless we explicitly tell Git to stop tracking the file.</p>
 
-<p>```bash
-$ git rm &mdash;cached [filename]</p>
+<p>&#8220;` bash</p>
 
-<p>$
-```</p>
+<p>$ git rm &mdash;cached [filename]</p>
+
+<p>$</p>
+
+<p>&#8220;`</p>
 
 <p>Or, if you want to stop tracking an entire directory (like me in this case)&hellip;</p>
 
-<p>```bash
-$ git rm -r &mdash;cached [directoryname]</p>
+<p>&#8220;` bash</p>
 
-<p>$
-```</p>
+<p>$ git rm -r &mdash;cached [directoryname]</p>
+
+<p>$</p>
+
+<p>&#8220;`</p>
 
 <p>The <code>-r</code> flag will tell Git to stop tracking all of the sub-directories and files within <code>directoryname</code>, recursively.</p>
 
@@ -294,11 +308,13 @@ $ git rm -r &mdash;cached [directoryname]</p>
     <id>http://RayHightower.com/blog/2014/03/04/fixing-macvim-on-osx-mavericks</id>
     <content type="html"><![CDATA[<p>Experience told me to delay upgrading to OS X Mavericks for as long as possible because the upgrade would likely break my dev environment. Sure enough, the upgrade broke <a href="/blog/2013/01/12/why-i-use-vim/">MacVim</a>.</p>
 
-<p>```bash
-~$ which mvim</p>
+<p>&#8220;` bash</p>
 
-<p>~$
-```</p>
+<p>~$ which mvim</p>
+
+<p>~$</p>
+
+<p>&#8220;`</p>
 
 <p>The &lsquo;nix <code>which</code> command returned a null response when asked about MacVim. Not cool, Mavericks!</p>
 
@@ -307,17 +323,20 @@ $ git rm -r &mdash;cached [directoryname]</p>
 
 <p>Fortunately, I’m running <a href="/blog/2014/02/12/homebrew-fundamentals/">Homebrew</a>. After the standard <code>brew doctor</code> and <code>brew update</code>, the following resolved the MacVim problem:</p>
 
-<p>```bash
-~$ brew uninstall macvim
+<p>&#8220;` bash</p>
+
+<p>~$ brew uninstall macvim
 Uninstalling /usr/local/Cellar/macvim/7.4-70&hellip;</p>
 
-<p>~$
-```</p>
+<p>~$</p>
+
+<p>&#8220;`</p>
 
 <p>followed by…</p>
 
-<p>```bash
-~$ brew install macvim
+<p>&#8220;` bash</p>
+
+<p>~$ brew install macvim
 ==> Downloading <a href="https://github.com/b4winckler/macvim/archive/snapshot-72.tar.gz">https://github.com/b4winckler/macvim/archive/snapshot-72.tar.gz</a></p>
 
 <h6>################################################################## 100.0%</h6>
@@ -330,17 +349,20 @@ Run <code>brew linkapps</code> to symlink these to /Applications.
 ==> Summary
 🍺  /usr/local/Cellar/macvim/7.4-72: 1799 files, 28M, built in 37 seconds</p>
 
-<p>~$
-```</p>
+<p>~$</p>
+
+<p>&#8220;`</p>
 
 <p>And now…</p>
 
-<p>```bash
-~$ which mvim
+<p>&#8220;` bash</p>
+
+<p>~$ which mvim
 /usr/local/bin/mvim</p>
 
-<p>~$
-```</p>
+<p>~$</p>
+
+<p>&#8220;`</p>
 
 <p>Whew. Homebrew saves the day again!</p>
 ]]></content>
@@ -405,26 +427,30 @@ Run <code>brew linkapps</code> to symlink these to /Applications.
 
 <p>Each time we use Homebrew, we run <code>$ brew doctor</code> and <code>$ brew update</code> to make sure the packages are up-to-date.</p>
 
-<p><code>``bash
-$ brew doctor
+<p>&#8220;` bash</p>
+
+<p>$ brew doctor
 Warning: Your Homebrew is outdated.
-You haven't updated for at least 24 hours, this is a long time in brewland!
-To update Homebrew, run</code>brew update`.</p>
+You haven&rsquo;t updated for at least 24 hours, this is a long time in brewland!
+To update Homebrew, run <code>brew update</code>.</p>
 
 <p>$ brew update
 Updated Homebrew from a2e44659 to 4c7bc9ec.</p>
 
 <p>$ brew doctor
-Your system is ready to brew.
-```</p>
+Your system is ready to brew.</p>
+
+<p>&#8220;`</p>
 
 <h3>The xz Extraction Utility</h3>
 
 <p>Disk image files are downloaded in a compressed format. We need the <code>xz</code> utility in order to extract the files into something usable. If you already have Homebrew installed, this command will install <code>xz</code> for you.</p>
 
-<p><code>bash
-$ brew install xz
-</code></p>
+<p>&#8220;` bash</p>
+
+<p>$ brew install xz</p>
+
+<p>&#8220;`</p>
 
 <h3>Test the BeagleBone Black First</h3>
 
@@ -448,10 +474,13 @@ $ brew install xz
 
 <p>Next, download the Ubuntu 12.04 image from <a href="http://www.armhf.com/index.php/boards/beaglebone-black/#precise">http://armhf.com</a>.</p>
 
-<p>Extract the image using the <code>xz</code> utility.
-<code>bash
-$ xz ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img.xz
-</code></p>
+<p>Extract the image using the <code>xz</code> utility.</p>
+
+<p>&#8220;` bash</p>
+
+<p>$ xz ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img.xz</p>
+
+<p>&#8220;`</p>
 
 <p>The extracted image will have a <code>.img</code> file extension. We will use the <code>dd</code> utility to burn the disk image to the SD card. But first, we need to determine the designation of the SD card.</p>
 
@@ -461,28 +490,33 @@ $ xz ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img.xz
 
 <p><code>$ diskutil list</code> will show all of the partitions mounted on the system.</p>
 
-<p><code>bash
-$ diskutil list
+<p>&#8220;` bash</p>
+
+<p>$ diskutil list
 /dev/disk0
    #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      GUID_partition_scheme                        *500.3 GB   disk0
+   0:      GUID_partition_scheme                        <em>500.3 GB   disk0
    1:                        EFI                         209.7 MB   disk0s1
    2:                  Apple_HFS Macintosh HD            499.4 GB   disk0s2
    3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
 /dev/disk1
    #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:     FDisk_partition_scheme                        *8.0 GB     disk1
-</code>
-I happen to know that my SD Card is 8.0 GB in capacity, and my system also has a 500 GB SSD. The goal is to burn the SD card while leaving the 500 GB SSD (home of the Mac OS X operating system and all of my data) intact. From the <code>$ diskutil list</code> report, I can see that the SD card&rsquo;s designation <em>in my system</em> is <code>/dev/disk1</code>.</p>
+   0:     FDisk_partition_scheme                        </em>8.0 GB     disk1</p>
+
+<p>&#8220;`</p>
+
+<p>I happen to know that my SD Card is 8.0 GB in capacity, and my system also has a 500 GB SSD. The goal is to burn the SD card while leaving the 500 GB SSD (home of the Mac OS X operating system and all of my data) intact. From the <code>$ diskutil list</code> report, I can see that the SD card&rsquo;s designation <em>in my system</em> is <code>/dev/disk1</code>.</p>
 
 <p>Note the italicized words <em>in my system</em>. Your system is probably different, especially if you have a DVD drive or a second hard drive. I have neither of those. The SD card&rsquo;s designation will be different in each system where it is mounted depending on the number and location of the drives that are already there.</p>
 
 <p>Now that we know the SD card&rsquo;s designation, we can unmount it. We unmount the drive (but leave the card inserted in the reader) so that it can be written with the Ubuntu disk image.</p>
 
-<p><code>bash
-$ diskutil unmountDisk /dev/disk1
-Unmount of all volumes on disk1 was successful
-</code></p>
+<p>&#8220;` bash</p>
+
+<p>$ diskutil unmountDisk /dev/disk1
+Unmount of all volumes on disk1 was successful</p>
+
+<p>&#8220;`</p>
 
 <p>Looks like the SD card was unmounted successfully. Now we can write the
 Ubuntu image with the <code>dd</code> utility.</p>
@@ -492,10 +526,11 @@ Ubuntu image with the <code>dd</code> utility.</p>
 <p>The following command will write the decompressed Ubuntu image to the SD
 card.</p>
 
-<p>```bash
-$ sudo dd bs=1m if=ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img of=/dev/disk1</p>
+<p>&#8220;` bash</p>
 
-<p>```</p>
+<p>$ sudo dd bs=1m if=ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img of=/dev/disk1</p>
+
+<p>&#8220;`</p>
 
 <p>Note that it may take up to an hour for the image to be written.</p>
 
@@ -503,11 +538,13 @@ $ sudo dd bs=1m if=ubuntu-precise-12.04.3-armhf-3.8.13-bone30.img of=/dev/disk1<
 
 <p>Here&rsquo;s a report from the first time I struck <code>control-T</code> &hellip;</p>
 
-<p><code>bash
-load: 2.03  cmd: dd 75608 uninterruptible 0.00u 0.54s
+<p>&#8220;` bash</p>
+
+<p>load: 2.03  cmd: dd 75608 uninterruptible 0.00u 0.54s
 40+0 records in
-39+0 records out
-</code></p>
+39+0 records out</p>
+
+<p>&#8220;`</p>
 
 <p>We can strike <code>control-T</code> again to receive additional updates. The numbers will tell us if we are making progress. Don&rsquo;t get carried away with <code>control-T</code>. A watched pot never boils :&ndash;)</p>
 
@@ -532,10 +569,12 @@ load: 2.03  cmd: dd 75608 uninterruptible 0.00u 0.54s
 
 <p>Ubuntu&rsquo;s default BeagleBone Black login credentials are shown here because I always end up hunting for these when I need them. It&rsquo;s much easier to have information at one&rsquo;s fingertips.</p>
 
-<p><code>bash
-login: ubuntu
-pw: ubuntu
-</code></p>
+<p>&#8220;` bash</p>
+
+<p>login: ubuntu
+pw: ubuntu</p>
+
+<p>&#8220;`</p>
 
 <h3>End of Part One</h3>
 

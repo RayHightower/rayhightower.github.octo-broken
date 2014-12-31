@@ -64,13 +64,6 @@ Parallella is a single-board supercomputer smaller than a deck of cards. While t
   
 </ul>
   
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:RayHightower.com" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
 <ul class="main-navigation">
   <li><a href="/">Home</a></li>
   <li><a href="/blog/archives">Archives</a></li>
@@ -102,7 +95,7 @@ Parallella is a single-board supercomputer smaller than a deck of cards. While t
   
 
 
-<time datetime="2014-07-07T13:31:00-05:00" pubdate data-updated="true">Jul 7<span>th</span>, 2014</time>
+<time datetime="2014-07-07T13:31:00-05:00" pubdate data-updated="true"></time>
         
       </p>
     
@@ -198,6 +191,8 @@ How does the Parallella compare with other single-board computers, like the <a h
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p></p>
+
 <p>From this <code>diskutil</code> report, we can see that we want to burn the SD image to <code>/dev/disk1</code>. The other device is the hard drive for my primary machine. Burning the wrong device means destroying data.</p>
 
 <p>To burn the SD card&hellip;</p>
@@ -225,6 +220,8 @@ How does the Parallella compare with other single-board computers, like the <a h
 </span><span class='line'>Password:
 </span></code></pre></td></tr></table></div></figure>
 
+
+<p></p>
 
 <p>The <code>dd</code> command takes a <em>long</em> time to run, over 56 minutes on my machine. Here&rsquo;s a quick run-through of the command options:</p>
 
@@ -265,6 +262,8 @@ Waiting an hour for the <code>dd</code> command to run can be disconcerting beca
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p></p>
+
 <p>As you can see from the report, it took 3363.824531 seconds (just over 56 minutes) for <code>dd</code> to burn the Ubuntu image onto the SD card. That&rsquo;s a long time to wait with zero feedback. Activity Monitor will tell you what&rsquo;s going on.</p>
 
 <h3>Confirm Partitions</h3>
@@ -301,6 +300,8 @@ Waiting an hour for the <code>dd</code> command to run can be disconcerting beca
 </span><span class='line'><span class="nv">$ </span>
 </span></code></pre></td></tr></table></div></figure>
 
+
+<p></p>
 
 <p>As expected, <code>/dev/disk0</code> remains unchanged. We want it that way because that&rsquo;s where our primary machine&rsquo;s operating system resides. <code>/dev/disk1</code> (your actual SD card designation may be different) is the target disk we&rsquo;re after. Two new partitions are on the SD card, a FAT32 partition named <code>BOOT</code> and a Linux partition.</p>
 
@@ -345,6 +346,8 @@ Waiting an hour for the <code>dd</code> command to run can be disconcerting beca
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p></p>
+
 <h3>Gotcha #1: The FPGA Bitstream File</h3>
 
 <p>First, change into the directory where you stored the additional Parallella files, and copy the FPGA bitstream file to <code>/Volumes/BOOT</code>.</p>
@@ -366,6 +369,8 @@ Waiting an hour for the <code>dd</code> command to run can be disconcerting beca
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p></p>
+
 <p>First gotcha: I made the mistake of simply copying the <code>parallella_e16_hdmi_gpiose_7010.bit.bin</code> file without renaming it to <code>parallella.bit.bin</code>. Parallella will only boot when it sees a file with this filename on the SD card&rsquo;s <code>BOOT</code> partition. The original file name will probably change as the software gets updated. With each change, we will need to make sure that the file is renamed <code>parallella.bit.bin</code> on the Parallella.</p>
 
 <p>Obvious in hindsight, but it took me awhile to track that one down!</p>
@@ -386,6 +391,8 @@ Waiting an hour for the <code>dd</code> command to run can be disconcerting beca
 </span><span class='line'><span class="nv">$ </span>
 </span></code></pre></td></tr></table></div></figure>
 
+
+<p></p>
 
 <p>Here’s what the BOOT partition should look like when you’re done..</p>
 
@@ -423,6 +430,8 @@ Waiting an hour for the <code>dd</code> command to run can be disconcerting beca
 </span><span class='line'>/Volumes/BOOT<span class="nv">$ </span>
 </span></code></pre></td></tr></table></div></figure>
 
+
+<p></p>
 
 <p><span class='caption-wrapper right'><img class='caption' src='/images/eject_boot.png' width='' height='' alt='Eject the SD card.' title='Eject the SD card.'><span class='caption-text'>Eject the SD card.</span></span></p>
 
@@ -467,6 +476,8 @@ Waiting an hour for the <code>dd</code> command to run can be disconcerting beca
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p></p>
+
 <p>&hellip; Vim is operational&hellip;</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -482,6 +493,8 @@ Waiting an hour for the <code>dd</code> command to run can be disconcerting beca
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p></p>
+
 <p>&hellip; and Git works fine.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -496,6 +509,8 @@ Waiting an hour for the <code>dd</code> command to run can be disconcerting beca
 </span><span class='line'>linaro-nano:~&gt;
 </span></code></pre></td></tr></table></div></figure>
 
+
+<p></p>
 
 <h3>Scrot for Screenshots</h3>
 
@@ -526,12 +541,12 @@ Waiting an hour for the <code>dd</code> command to run can be disconcerting beca
   
 
 
-<time datetime="2014-07-07T13:31:00-05:00" pubdate data-updated="true">Jul 7<span>th</span>, 2014</time>
+<time datetime="2014-07-07T13:31:00-05:00" pubdate data-updated="true"></time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/high-performance-computing/'>High Performance Computing</a>, <a class='category' href='/blog/categories/iot/'>IoT</a>, <a class='category' href='/blog/categories/parallella/'>Parallella</a>
+    <a class='category' href='/blog/categories/high-performance-computing/'>high performance computing</a>, <a class='category' href='/blog/categories/iot/'>iot</a>, <a class='category' href='/blog/categories/parallella/'>parallella</a>
   
 </span>
 
@@ -583,17 +598,17 @@ Waiting an hour for the <code>dd</code> command to run can be disconcerting beca
   <h1>Observations</h1>
   <ul>
     <li>Find a need and fulfill it. Successful businesses are founded on the needs of people.<br/>~A. G. Gaston</li>
-    <li>It's kind of fun to do the impossible.<br/>~Walt Disney</li>
+    <li>It&#8217;s kind of fun to do the impossible.<br/>~Walt Disney</li>
     <li>A person with a new idea is a crank until the idea succeeds.<br/> ~Mark Twain</li>
     <li>The best way to make dreams come true is to wake up.<br/> ~Mae C. Jemison</li>
     <li>Everybody told me no at first, including my wife. I turned the
     nos into yeses and the disadvantages into advantages.<br/>~John H.
     Johnson</li>
     <li>I would have been fired a hundred times at a company run by
-    MBAs. But I never went into business to make money. I went... so
-    that I could do interesting things that hadn't been done
+    MBAs. But I never went into business to make money. I went&#8230; so
+    that I could do interesting things that hadn&#8217;t been done
     before.<br/>~Amar Bose</li>
-    <li>Don't undertake a project unless it is manifestly important and nearly impossible.<br/>~Edwin Land</li>
+    <li>Don&#8217;t undertake a project unless it is manifestly important and nearly impossible.<br/>~Edwin Land</li>
   </ul>
 </section>
 <section>
@@ -633,28 +648,28 @@ Waiting an hour for the <code>dd</code> command to run can be disconcerting beca
 <section>
   <h1>Blog Categories</h1>
   <ul id="categories">
-    <li class='category'><a href='/blog/categories/arduino/'>Arduino (2)</a></li>
-<li class='category'><a href='/blog/categories/beaglebone-black/'>BeagleBone Black (8)</a></li>
-<li class='category'><a href='/blog/categories/business/'>Business (25)</a></li>
-<li class='category'><a href='/blog/categories/community/'>Community (25)</a></li>
-<li class='category'><a href='/blog/categories/education/'>Education (43)</a></li>
-<li class='category'><a href='/blog/categories/git/'>Git (5)</a></li>
-<li class='category'><a href='/blog/categories/high-performance-computing/'>High Performance Computing (7)</a></li>
-<li class='category'><a href='/blog/categories/ios/'>iOS (13)</a></li>
-<li class='category'><a href='/blog/categories/iot/'>IoT (10)</a></li>
-<li class='category'><a href='/blog/categories/linux/'>Linux (13)</a></li>
-<li class='category'><a href='/blog/categories/node/'>Node (4)</a></li>
-<li class='category'><a href='/blog/categories/objective-c/'>Objective-C (5)</a></li>
-<li class='category'><a href='/blog/categories/openrov/'>OpenROV (12)</a></li>
-<li class='category'><a href='/blog/categories/os-x/'>OS X (10)</a></li>
-<li class='category'><a href='/blog/categories/parallella/'>Parallella (5)</a></li>
-<li class='category'><a href='/blog/categories/rails/'>Rails (10)</a></li>
-<li class='category'><a href='/blog/categories/raspberry-pi/'>Raspberry Pi (4)</a></li>
-<li class='category'><a href='/blog/categories/ruby/'>Ruby (23)</a></li>
-<li class='category'><a href='/blog/categories/rubymotion/'>RubyMotion (13)</a></li>
-<li class='category'><a href='/blog/categories/ux/'>UX (2)</a></li>
-<li class='category'><a href='/blog/categories/vim/'>Vim (5)</a></li>
-<li class='category'><a href='/blog/categories/xcode/'>Xcode (5)</a></li>
+    <li class='category'><a href='/blog/categories/arduino/'>arduino (2)</a></li>
+<li class='category'><a href='/blog/categories/beaglebone-black/'>beaglebone black (8)</a></li>
+<li class='category'><a href='/blog/categories/business/'>business (25)</a></li>
+<li class='category'><a href='/blog/categories/community/'>community (25)</a></li>
+<li class='category'><a href='/blog/categories/education/'>education (43)</a></li>
+<li class='category'><a href='/blog/categories/git/'>git (5)</a></li>
+<li class='category'><a href='/blog/categories/high-performance-computing/'>high performance computing (7)</a></li>
+<li class='category'><a href='/blog/categories/ios/'>ios (13)</a></li>
+<li class='category'><a href='/blog/categories/iot/'>iot (10)</a></li>
+<li class='category'><a href='/blog/categories/linux/'>linux (13)</a></li>
+<li class='category'><a href='/blog/categories/node/'>node (4)</a></li>
+<li class='category'><a href='/blog/categories/objective-c/'>objective-c (5)</a></li>
+<li class='category'><a href='/blog/categories/openrov/'>openrov (12)</a></li>
+<li class='category'><a href='/blog/categories/os-x/'>os x (10)</a></li>
+<li class='category'><a href='/blog/categories/parallella/'>parallella (5)</a></li>
+<li class='category'><a href='/blog/categories/rails/'>rails (10)</a></li>
+<li class='category'><a href='/blog/categories/raspberry-pi/'>raspberry pi (4)</a></li>
+<li class='category'><a href='/blog/categories/ruby/'>ruby (24)</a></li>
+<li class='category'><a href='/blog/categories/rubymotion/'>rubymotion (13)</a></li>
+<li class='category'><a href='/blog/categories/ux/'>ux (2)</a></li>
+<li class='category'><a href='/blog/categories/vim/'>vim (5)</a></li>
+<li class='category'><a href='/blog/categories/xcode/'>xcode (5)</a></li>
 
   </ul>
 </section>
@@ -672,7 +687,7 @@ Waiting an hour for the <code>dd</code> command to run can be disconcerting beca
 </section>
 <section>
   <h1>Vim</h1>
-  <p>I don't always use a modal editor. But when I do, I use <a href="/blog/2013/01/12/why-i-use-vim/">Vim</a>.</p>
+  <p>I don&#8217;t always use a modal editor. But when I do, I use <a href="/blog/2013/01/12/why-i-use-vim/">Vim</a>.</p>
   <p>
   <a href="/blog/2013/01/12/why-i-use-vim/"><img src="/images/vim_editor.gif" width="125" height="60" alt="Vim, the editor" title="Vim, the editor"/></a>
   </p>

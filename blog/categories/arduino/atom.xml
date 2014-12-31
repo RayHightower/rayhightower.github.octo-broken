@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Arduino | RayHightower.com]]></title>
+  <title><![CDATA[Category: arduino | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/arduino/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-12-30T18:40:42-06:00</updated>
+  <updated>2014-12-31T17:10:18-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -63,7 +63,7 @@ ROV is short for remotely operated vehicle, an underwater robot. Scientists use 
 
 <p>Professional scientists are good at analyzing data, because that&rsquo;s what they have trained themselves to do. But data gathering requires less training than analysis. Citizen science and crowdsourcing work when there&rsquo;s an overwhelming volume of data to gather. Or when the breakthrough is beyond the reach of current scientific knowledge.</p>
 
-<p>Citizen scientists may be constrained by money, but they tend to be unconstrained by expertise. Therefore they are likely to try solutions that experts would never consider. <a href="http://en.wikipedia.org/wiki/Wright_brothers">Orville and Wilbur Wright</a> were citizen scientists. Professional scientists pursued solutions for fixed-wing flight prior to the Wright brothers' success. But since the flight problem defied the known science of the day, new approaches were required.</p>
+<p>Citizen scientists may be constrained by money, but they tend to be unconstrained by expertise. Therefore they are likely to try solutions that experts would never consider. <a href="http://en.wikipedia.org/wiki/Wright_brothers">Orville and Wilbur Wright</a> were citizen scientists. Professional scientists pursued solutions for fixed-wing flight prior to the Wright brothers&#8217; success. But since the flight problem defied the known science of the day, new approaches were required.</p>
 
 <p>Amusingly, successful citizen scientists can be outwitted by their own expertise, just like the professionals. For example&hellip;</p>
 
@@ -119,7 +119,7 @@ Planet Earth is facing a shortage of people who make things. People like scienti
 
 <p>Here&rsquo;s the launch video:</p>
 
-<center><iframe src="http://RayHightower.com//player.vimeo.com/video/74022351" width="500" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
+<center><iframe src="//player.vimeo.com/video/74022351" width="500" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
 
 
 <h3>Results</h3>

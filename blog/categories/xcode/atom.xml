@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Xcode | RayHightower.com]]></title>
+  <title><![CDATA[Category: xcode | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/xcode/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-12-30T18:40:42-06:00</updated>
+  <updated>2014-12-31T17:10:18-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -22,7 +22,7 @@
 
 <p>Slides are embedded here:</p>
 
-<center><script async class="speakerdeck-embed" data-id="f0c21e7036e10131765f62eb06398856" data-ratio="1.29456384323641" src="http://RayHightower.com//speakerdeck.com/assets/embed.js"></script></center>
+<center><script async class="speakerdeck-embed" data-id="f0c21e7036e10131765f62eb06398856" data-ratio="1.29456384323641" src="//speakerdeck.com/assets/embed.js"></script></center>
 
 
 <!--more-->
@@ -221,7 +221,7 @@ you run the rake command to build the app.</p>
 interact with the IB file. Note that we specify the name of the IB file
 on the second line of the <code>loadView</code> method.</p>
 
-<p>``` ruby
+<p>&#8220;` ruby
   def loadView</p>
 
 <pre><code>views = NSBundle.mainBundle.loadNibNamed "fbib", owner:self, options:nil
@@ -231,14 +231,15 @@ self.view = views[0]
 </code></pre>
 
 <p>  end
-```</p>
+&#8220;`</p>
 
 <p>The <code>viewDidLoad</code> method is where we assign buttons to their corresponding
 methods, and we specify how the app should behave when each button is
 pressed.</p>
 
-<p>``` ruby
-  def viewDidLoad</p>
+<p>&#8220;` ruby</p>
+
+<p>  def viewDidLoad</p>
 
 <pre><code>@label = view.viewWithTag 1
 plus_button = view.viewWithTag 2
@@ -252,13 +253,15 @@ reset_button.addTarget(self, action:'resetTapped:', forControlEvents:UIControlEv
 # background_area.addTarget(self, action:'backgroundTapped:', forControlEvents:UIControlEventTouchUpInside)
 </code></pre>
 
-<p>  end
-```</p>
+<p>  end</p>
+
+<p>&#8220;`</p>
 
 <p>And finally, let&rsquo;s define a method for each button.</p>
 
-<p>``` ruby
-  def plusTapped(sender)</p>
+<p>&#8220;` ruby</p>
+
+<p>  def plusTapped(sender)</p>
 
 <pre><code>@counter += 1
 @label.text = FizzBuzzViewController.fbcalc(@counter).to_s
@@ -302,8 +305,9 @@ end
 @color_index = (@color_index +1) % 4
 </code></pre>
 
-<p>  end
-```</p>
+<p>  end</p>
+
+<p>&#8220;`</p>
 
 <h4>Rake</h4>
 

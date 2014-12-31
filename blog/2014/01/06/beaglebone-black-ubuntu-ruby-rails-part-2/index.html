@@ -63,13 +63,6 @@
   
 </ul>
   
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:RayHightower.com" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
 <ul class="main-navigation">
   <li><a href="/">Home</a></li>
   <li><a href="/blog/archives">Archives</a></li>
@@ -101,7 +94,7 @@
   
 
 
-<time datetime="2014-01-06T02:31:00-06:00" pubdate data-updated="true">Jan 6<span>th</span>, 2014</time>
+<time datetime="2014-01-06T02:31:00-06:00" pubdate data-updated="true"></time>
         
       </p>
     
@@ -172,8 +165,9 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p><code>ll</code> is one of the useful aliases built into Ubuntu&rsquo;s <code>.bashrc</code> file. We
-can use it to examine the partitions on the SD card.</p>
+<p></p>
+
+<p><code>ll</code> is one of the useful aliases built into Ubuntu&rsquo;s <code>.bashrc</code> file. We can use it to examine the partitions on the SD card.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -201,6 +195,8 @@ can use it to examine the partitions on the SD card.</p>
 </span><span class='line'>ubuntu@ubuntu-armhf:~<span class="nv">$ </span>
 </span></code></pre></td></tr></table></div></figure>
 
+
+<p></p>
 
 <p><code>fdisk</code> will resize the partition we&rsquo;re after. <code>root</code> priviledges are required to modify the partition table, so we&rsquo;ll use <code>sudo</code>. The standard <a href="/sudo-disclaimer">sudo disclaimer</a> applies.</p>
 
@@ -354,11 +350,11 @@ can use it to examine the partitions on the SD card.</p>
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p></p>
+
 <p>The warning/error message at the end just means that we need reboot the Bone before the partition table takes effect.</p>
 
-<p>Reboot the BeagleBone Black, holding down the boot switch (closest to
-the USB port) to ensure that we boot to the system on the SD card
-instead of the eMMC.</p>
+<p>Reboot the BeagleBone Black, holding down the boot switch (closest to the USB port) to ensure that we boot to the system on the SD card instead of the eMMC.</p>
 
 <p>After the Bone reboots, run <code>resize2fs</code> to expand the partition created above.</p>
 
@@ -373,13 +369,15 @@ instead of the eMMC.</p>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'>ubuntu@ubuntu-armhf:~<span class="nv">$ </span>sudo resize2fs /dev/mmcblk0p2
 </span><span class='line'><span class="o">[</span>sudo<span class="o">]</span> password <span class="k">for </span>ubuntu:
 </span><span class='line'>resize2fs 1.42.5 <span class="o">(</span>29-Jul-2012<span class="o">)</span>
-</span><span class='line'>Filesystem at /dev/mmcblk0p2 is mounted on /; on-line resizing required
+</span><span class='line'>Filesystem at /dev/mmcblk0p2 is mounted on /<span class="p">;</span> on-line resizing required
 </span><span class='line'><span class="nv">old_desc_blocks</span> <span class="o">=</span> 1, <span class="nv">new_desc_blocks</span> <span class="o">=</span> 1
 </span><span class='line'>The filesystem on /dev/mmcblk0p2 is now 951424 blocks long.
 </span><span class='line'>
 </span><span class='line'>ubuntu@ubuntu-armhf:~<span class="err">$</span>
 </span></code></pre></td></tr></table></div></figure>
 
+
+<p></p>
 
 <p>And now we have enough room to install the Ubuntu GUI.</p>
 
@@ -404,6 +402,8 @@ instead of the eMMC.</p>
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p></p>
+
 <p>After the partition on the SD card has been resized, this command will intall the GUI. The command is short, but the process takes about an hour:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -411,12 +411,16 @@ instead of the eMMC.</p>
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p></p>
+
 <p>When installation and compilation are complete, Ubuntu will return to the command prompt. Here&rsquo;s how to reboot:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo reboot
 </span></code></pre></td></tr></table></div></figure>
 
+
+<p></p>
 
 <p>Several minutes later, the Ubuntu 12 GUI will appear. Congratulations!  Login using the default credentials (login: ubuntu, pw: ubuntu) to get to the Ubuntu desktop.</p>
 
@@ -454,6 +458,8 @@ Rails needs a JavaScript runtime in order to function. Here are two ways to meet
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p></p>
+
 <p>Now that we have a JavaScript runtime, Rails runs successfully.</p>
 
 <p>Side note: If you want to see what a Node.js-equipped Bone can do, check
@@ -490,12 +496,12 @@ out <a href="http://openrov.com">OpenROV</a>.</p>
   
 
 
-<time datetime="2014-01-06T02:31:00-06:00" pubdate data-updated="true">Jan 6<span>th</span>, 2014</time>
+<time datetime="2014-01-06T02:31:00-06:00" pubdate data-updated="true"></time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/beaglebone-black/'>BeagleBone Black</a>, <a class='category' href='/blog/categories/linux/'>Linux</a>, <a class='category' href='/blog/categories/node/'>Node</a>, <a class='category' href='/blog/categories/rails/'>Rails</a>, <a class='category' href='/blog/categories/ruby/'>Ruby</a>
+    <a class='category' href='/blog/categories/beaglebone-black/'>beaglebone black</a>, <a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/node/'>node</a>, <a class='category' href='/blog/categories/rails/'>rails</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a>
   
 </span>
 
@@ -516,7 +522,7 @@ out <a href="http://openrov.com">OpenROV</a>.</p>
         <a class="basic-alignment left" href="/blog/2014/01/02/beaglebone-black-ubuntu-part-1/" title="Previous Post: BeagleBone Black Running Ubuntu: Part1">&laquo; BeagleBone Black Running Ubuntu: Part1</a>
       
       
-        <a class="basic-alignment right" href="/blog/2014/01/15/henry-ford-faster-horse/" title="Next Post: Henry Ford's Faster Horse">Henry Ford's Faster Horse &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2014/01/15/henry-ford-faster-horse/" title="Next Post: Henry Ford's Faster Horse">Henry Ford&#8217;s Faster Horse &raquo;</a>
       
     </p>
   </footer>
@@ -547,17 +553,17 @@ out <a href="http://openrov.com">OpenROV</a>.</p>
   <h1>Observations</h1>
   <ul>
     <li>Find a need and fulfill it. Successful businesses are founded on the needs of people.<br/>~A. G. Gaston</li>
-    <li>It's kind of fun to do the impossible.<br/>~Walt Disney</li>
+    <li>It&#8217;s kind of fun to do the impossible.<br/>~Walt Disney</li>
     <li>A person with a new idea is a crank until the idea succeeds.<br/> ~Mark Twain</li>
     <li>The best way to make dreams come true is to wake up.<br/> ~Mae C. Jemison</li>
     <li>Everybody told me no at first, including my wife. I turned the
     nos into yeses and the disadvantages into advantages.<br/>~John H.
     Johnson</li>
     <li>I would have been fired a hundred times at a company run by
-    MBAs. But I never went into business to make money. I went... so
-    that I could do interesting things that hadn't been done
+    MBAs. But I never went into business to make money. I went&#8230; so
+    that I could do interesting things that hadn&#8217;t been done
     before.<br/>~Amar Bose</li>
-    <li>Don't undertake a project unless it is manifestly important and nearly impossible.<br/>~Edwin Land</li>
+    <li>Don&#8217;t undertake a project unless it is manifestly important and nearly impossible.<br/>~Edwin Land</li>
   </ul>
 </section>
 <section>
@@ -597,28 +603,28 @@ out <a href="http://openrov.com">OpenROV</a>.</p>
 <section>
   <h1>Blog Categories</h1>
   <ul id="categories">
-    <li class='category'><a href='/blog/categories/arduino/'>Arduino (2)</a></li>
-<li class='category'><a href='/blog/categories/beaglebone-black/'>BeagleBone Black (8)</a></li>
-<li class='category'><a href='/blog/categories/business/'>Business (25)</a></li>
-<li class='category'><a href='/blog/categories/community/'>Community (25)</a></li>
-<li class='category'><a href='/blog/categories/education/'>Education (43)</a></li>
-<li class='category'><a href='/blog/categories/git/'>Git (5)</a></li>
-<li class='category'><a href='/blog/categories/high-performance-computing/'>High Performance Computing (7)</a></li>
-<li class='category'><a href='/blog/categories/ios/'>iOS (13)</a></li>
-<li class='category'><a href='/blog/categories/iot/'>IoT (10)</a></li>
-<li class='category'><a href='/blog/categories/linux/'>Linux (13)</a></li>
-<li class='category'><a href='/blog/categories/node/'>Node (4)</a></li>
-<li class='category'><a href='/blog/categories/objective-c/'>Objective-C (5)</a></li>
-<li class='category'><a href='/blog/categories/openrov/'>OpenROV (12)</a></li>
-<li class='category'><a href='/blog/categories/os-x/'>OS X (10)</a></li>
-<li class='category'><a href='/blog/categories/parallella/'>Parallella (5)</a></li>
-<li class='category'><a href='/blog/categories/rails/'>Rails (10)</a></li>
-<li class='category'><a href='/blog/categories/raspberry-pi/'>Raspberry Pi (4)</a></li>
-<li class='category'><a href='/blog/categories/ruby/'>Ruby (23)</a></li>
-<li class='category'><a href='/blog/categories/rubymotion/'>RubyMotion (13)</a></li>
-<li class='category'><a href='/blog/categories/ux/'>UX (2)</a></li>
-<li class='category'><a href='/blog/categories/vim/'>Vim (5)</a></li>
-<li class='category'><a href='/blog/categories/xcode/'>Xcode (5)</a></li>
+    <li class='category'><a href='/blog/categories/arduino/'>arduino (2)</a></li>
+<li class='category'><a href='/blog/categories/beaglebone-black/'>beaglebone black (8)</a></li>
+<li class='category'><a href='/blog/categories/business/'>business (25)</a></li>
+<li class='category'><a href='/blog/categories/community/'>community (25)</a></li>
+<li class='category'><a href='/blog/categories/education/'>education (43)</a></li>
+<li class='category'><a href='/blog/categories/git/'>git (5)</a></li>
+<li class='category'><a href='/blog/categories/high-performance-computing/'>high performance computing (7)</a></li>
+<li class='category'><a href='/blog/categories/ios/'>ios (13)</a></li>
+<li class='category'><a href='/blog/categories/iot/'>iot (10)</a></li>
+<li class='category'><a href='/blog/categories/linux/'>linux (13)</a></li>
+<li class='category'><a href='/blog/categories/node/'>node (4)</a></li>
+<li class='category'><a href='/blog/categories/objective-c/'>objective-c (5)</a></li>
+<li class='category'><a href='/blog/categories/openrov/'>openrov (12)</a></li>
+<li class='category'><a href='/blog/categories/os-x/'>os x (10)</a></li>
+<li class='category'><a href='/blog/categories/parallella/'>parallella (5)</a></li>
+<li class='category'><a href='/blog/categories/rails/'>rails (10)</a></li>
+<li class='category'><a href='/blog/categories/raspberry-pi/'>raspberry pi (4)</a></li>
+<li class='category'><a href='/blog/categories/ruby/'>ruby (24)</a></li>
+<li class='category'><a href='/blog/categories/rubymotion/'>rubymotion (13)</a></li>
+<li class='category'><a href='/blog/categories/ux/'>ux (2)</a></li>
+<li class='category'><a href='/blog/categories/vim/'>vim (5)</a></li>
+<li class='category'><a href='/blog/categories/xcode/'>xcode (5)</a></li>
 
   </ul>
 </section>
@@ -636,7 +642,7 @@ out <a href="http://openrov.com">OpenROV</a>.</p>
 </section>
 <section>
   <h1>Vim</h1>
-  <p>I don't always use a modal editor. But when I do, I use <a href="/blog/2013/01/12/why-i-use-vim/">Vim</a>.</p>
+  <p>I don&#8217;t always use a modal editor. But when I do, I use <a href="/blog/2013/01/12/why-i-use-vim/">Vim</a>.</p>
   <p>
   <a href="/blog/2013/01/12/why-i-use-vim/"><img src="/images/vim_editor.gif" width="125" height="60" alt="Vim, the editor" title="Vim, the editor"/></a>
   </p>

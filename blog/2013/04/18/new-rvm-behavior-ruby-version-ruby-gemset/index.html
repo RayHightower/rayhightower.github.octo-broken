@@ -9,7 +9,7 @@
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="I trust RVM to manage my Ruby versions and my gemsets. So when I saw an unexpected change in RVM&rsquo;s behavior, I was concerned about a possible &hellip;">
+  <meta name="description" content="I trust [RVM](http://rvm.io) to manage my Ruby versions and my gemsets. So when I saw an unexpected change in RVM's behavior, I was concerned about &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -63,13 +63,6 @@
   
 </ul>
   
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:RayHightower.com" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
 <ul class="main-navigation">
   <li><a href="/">Home</a></li>
   <li><a href="/blog/archives">Archives</a></li>
@@ -101,22 +94,18 @@
   
 
 
-<time datetime="2013-04-18T20:33:00-05:00" pubdate data-updated="true">Apr 18<span>th</span>, 2013</time>
+<time datetime="2013-04-18T20:33:00-05:00" pubdate data-updated="true"></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p><a href="/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset/"><img src="/images/rvm.png" height="98" width="89" align="right" alt="RVM .ruby-version .ruby-gemset" title="RVM .ruby-version .ruby-gemset"></a>
-I trust <a href="http://rvm.io">RVM</a> to manage my Ruby versions and my gemsets. So when I saw an unexpected change in RVM&rsquo;s behavior, I was concerned about a possible disruption in my workflow.</p>
-
+<div class="entry-content"><a href="/blog/2013/04/18/new-rvm-behavior-ruby-version-ruby-gemset/"><img src="/images/rvm.png" height="98" width="89" align="right" alt="RVM .ruby-version .ruby-gemset" title="RVM .ruby-version .ruby-gemset"></a>
+I trust [RVM](http://rvm.io) to manage my Ruby versions and my gemsets. So when I saw an unexpected change in RVM&#8217;s behavior, I was concerned about a possible disruption in my workflow. 
 <!--more-->
-
-
-<h4>A New RVM Message</h4>
-
-<p>Here&rsquo;s the message I received when I changed into <code>mydirectory/</code>:</p>
+####A New RVM Message
+Here&#8217;s the message I received when I changed into `mydirectory/`: 
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -140,18 +129,13 @@ I trust <a href="http://rvm.io">RVM</a> to manage my Ruby versions and my gemset
 </span><span class='line'>~/Code/Ruby/apps/mydirectory<span class="o">[</span>master<span class="o">]</span><span class="err">$</span>
 </span></code></pre></td></tr></table></div></figure>
 
-
-<h4>Decision: Do the Update</h4>
-
-<p>Ignoring a warning feels like sticking my head in the sand. It&rsquo;s better to face things head-on. So I decided to go with the update. If things don&rsquo;t work out, I can always remove RVM completely and start from scratch.</p>
+####Decision: Do the Update
+Ignoring a warning feels like sticking my head in the sand. It&#8217;s better to face things head-on. So I decided to go with the update. If things don&#8217;t work out, I can always remove RVM completely and start from scratch.
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Code/Ruby/apps/mydirectory<span class="o">[</span>master<span class="o">]</span><span class="nv">$ </span>rvm rvmrc to .ruby-version
 </span></code></pre></td></tr></table></div></figure>
-
-
-<p>My shell responded by repeating the <code>.rvmrc</code> vs <code>.ruby-version</code> notice. But when I examine the directory, everything looks good.</p>
-
+My shell responded by repeating the `.rvmrc` vs `.ruby-version` notice. But when I examine the directory, everything looks good.
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -172,37 +156,30 @@ I trust <a href="http://rvm.io">RVM</a> to manage my Ruby versions and my gemset
 </span><span class='line'>drwxr-xr-x   13 rth  wheel    442 Feb 24 17:29 AccordionUIView
 </span></code></pre></td></tr></table></div></figure>
 
+Instead of a single `.rvmrc` file, Ruby versions are managed by
+`.ruby-version` while gemsets are managed through `.ruby-gemset`.
 
-<p>Instead of a single <code>.rvmrc</code> file, Ruby versions are managed by
-<code>.ruby-version</code> while gemsets are managed through <code>.ruby-gemset</code>.</p>
-
-<h4>Bash Alias</h4>
-
-<p>Next, it&rsquo;s time to clean things up by adding an <code>alias</code> to
-<code>~/.bash_profile</code>.</p>
-
+####Bash Alias
+Next, it&#8217;s time to clean things up by adding an `alias` to
+`~/.bash_profile`.
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">alias </span><span class="nv">newrvm</span><span class="o">=</span><span class="s2">&quot;rvm rvmrc to .ruby-version&quot;</span>
 </span></code></pre></td></tr></table></div></figure>
 
-
-<p>Tell the terminal session to use the new <code>~/.bash_profile</code> with</p>
-
+Tell the terminal session to use the new `~/.bash_profile` with
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="nb">source</span> ~/.bash_profile
 </span></code></pre></td></tr></table></div></figure>
 
-
-<p>And now we can begin using <code>.ruby-version</code> and <code>.ruby-gemset</code> in any .rvmrc-equipped directory with a simple one-word command.</p>
-
+And now we can begin using `.ruby-version` and `.ruby-gemset` in any .rvmrc-equipped directory with a simple one-word command.
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>newrvm
 </span></code></pre></td></tr></table></div></figure>
 
+####Feedback Welcome
+If you notice any snags (including typos) in the above procedure, please reach out via the comments below or through [Twitter](http://twitter.com/rayhightower).
 
-<h4>Feedback Welcome</h4>
 
-<p>If you notice any snags (including typos) in the above procedure, please reach out via the comments below or through <a href="http://twitter.com/rayhightower">Twitter</a>.</p>
 </div>
 
 
@@ -225,12 +202,12 @@ I trust <a href="http://rvm.io">RVM</a> to manage my Ruby versions and my gemset
   
 
 
-<time datetime="2013-04-18T20:33:00-05:00" pubdate data-updated="true">Apr 18<span>th</span>, 2013</time>
+<time datetime="2013-04-18T20:33:00-05:00" pubdate data-updated="true"></time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/rails/'>Rails</a>, <a class='category' href='/blog/categories/ruby/'>Ruby</a>
+    <a class='category' href='/blog/categories/rails/'>rails</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a>
   
 </span>
 
@@ -282,17 +259,17 @@ I trust <a href="http://rvm.io">RVM</a> to manage my Ruby versions and my gemset
   <h1>Observations</h1>
   <ul>
     <li>Find a need and fulfill it. Successful businesses are founded on the needs of people.<br/>~A. G. Gaston</li>
-    <li>It's kind of fun to do the impossible.<br/>~Walt Disney</li>
+    <li>It&#8217;s kind of fun to do the impossible.<br/>~Walt Disney</li>
     <li>A person with a new idea is a crank until the idea succeeds.<br/> ~Mark Twain</li>
     <li>The best way to make dreams come true is to wake up.<br/> ~Mae C. Jemison</li>
     <li>Everybody told me no at first, including my wife. I turned the
     nos into yeses and the disadvantages into advantages.<br/>~John H.
     Johnson</li>
     <li>I would have been fired a hundred times at a company run by
-    MBAs. But I never went into business to make money. I went... so
-    that I could do interesting things that hadn't been done
+    MBAs. But I never went into business to make money. I went&#8230; so
+    that I could do interesting things that hadn&#8217;t been done
     before.<br/>~Amar Bose</li>
-    <li>Don't undertake a project unless it is manifestly important and nearly impossible.<br/>~Edwin Land</li>
+    <li>Don&#8217;t undertake a project unless it is manifestly important and nearly impossible.<br/>~Edwin Land</li>
   </ul>
 </section>
 <section>
@@ -332,28 +309,28 @@ I trust <a href="http://rvm.io">RVM</a> to manage my Ruby versions and my gemset
 <section>
   <h1>Blog Categories</h1>
   <ul id="categories">
-    <li class='category'><a href='/blog/categories/arduino/'>Arduino (2)</a></li>
-<li class='category'><a href='/blog/categories/beaglebone-black/'>BeagleBone Black (8)</a></li>
-<li class='category'><a href='/blog/categories/business/'>Business (25)</a></li>
-<li class='category'><a href='/blog/categories/community/'>Community (25)</a></li>
-<li class='category'><a href='/blog/categories/education/'>Education (43)</a></li>
-<li class='category'><a href='/blog/categories/git/'>Git (5)</a></li>
-<li class='category'><a href='/blog/categories/high-performance-computing/'>High Performance Computing (7)</a></li>
-<li class='category'><a href='/blog/categories/ios/'>iOS (13)</a></li>
-<li class='category'><a href='/blog/categories/iot/'>IoT (10)</a></li>
-<li class='category'><a href='/blog/categories/linux/'>Linux (13)</a></li>
-<li class='category'><a href='/blog/categories/node/'>Node (4)</a></li>
-<li class='category'><a href='/blog/categories/objective-c/'>Objective-C (5)</a></li>
-<li class='category'><a href='/blog/categories/openrov/'>OpenROV (12)</a></li>
-<li class='category'><a href='/blog/categories/os-x/'>OS X (10)</a></li>
-<li class='category'><a href='/blog/categories/parallella/'>Parallella (5)</a></li>
-<li class='category'><a href='/blog/categories/rails/'>Rails (10)</a></li>
-<li class='category'><a href='/blog/categories/raspberry-pi/'>Raspberry Pi (4)</a></li>
-<li class='category'><a href='/blog/categories/ruby/'>Ruby (23)</a></li>
-<li class='category'><a href='/blog/categories/rubymotion/'>RubyMotion (13)</a></li>
-<li class='category'><a href='/blog/categories/ux/'>UX (2)</a></li>
-<li class='category'><a href='/blog/categories/vim/'>Vim (5)</a></li>
-<li class='category'><a href='/blog/categories/xcode/'>Xcode (5)</a></li>
+    <li class='category'><a href='/blog/categories/arduino/'>arduino (2)</a></li>
+<li class='category'><a href='/blog/categories/beaglebone-black/'>beaglebone black (8)</a></li>
+<li class='category'><a href='/blog/categories/business/'>business (25)</a></li>
+<li class='category'><a href='/blog/categories/community/'>community (25)</a></li>
+<li class='category'><a href='/blog/categories/education/'>education (43)</a></li>
+<li class='category'><a href='/blog/categories/git/'>git (5)</a></li>
+<li class='category'><a href='/blog/categories/high-performance-computing/'>high performance computing (7)</a></li>
+<li class='category'><a href='/blog/categories/ios/'>ios (13)</a></li>
+<li class='category'><a href='/blog/categories/iot/'>iot (10)</a></li>
+<li class='category'><a href='/blog/categories/linux/'>linux (13)</a></li>
+<li class='category'><a href='/blog/categories/node/'>node (4)</a></li>
+<li class='category'><a href='/blog/categories/objective-c/'>objective-c (5)</a></li>
+<li class='category'><a href='/blog/categories/openrov/'>openrov (12)</a></li>
+<li class='category'><a href='/blog/categories/os-x/'>os x (10)</a></li>
+<li class='category'><a href='/blog/categories/parallella/'>parallella (5)</a></li>
+<li class='category'><a href='/blog/categories/rails/'>rails (10)</a></li>
+<li class='category'><a href='/blog/categories/raspberry-pi/'>raspberry pi (4)</a></li>
+<li class='category'><a href='/blog/categories/ruby/'>ruby (24)</a></li>
+<li class='category'><a href='/blog/categories/rubymotion/'>rubymotion (13)</a></li>
+<li class='category'><a href='/blog/categories/ux/'>ux (2)</a></li>
+<li class='category'><a href='/blog/categories/vim/'>vim (5)</a></li>
+<li class='category'><a href='/blog/categories/xcode/'>xcode (5)</a></li>
 
   </ul>
 </section>
@@ -371,7 +348,7 @@ I trust <a href="http://rvm.io">RVM</a> to manage my Ruby versions and my gemset
 </section>
 <section>
   <h1>Vim</h1>
-  <p>I don't always use a modal editor. But when I do, I use <a href="/blog/2013/01/12/why-i-use-vim/">Vim</a>.</p>
+  <p>I don&#8217;t always use a modal editor. But when I do, I use <a href="/blog/2013/01/12/why-i-use-vim/">Vim</a>.</p>
   <p>
   <a href="/blog/2013/01/12/why-i-use-vim/"><img src="/images/vim_editor.gif" width="125" height="60" alt="Vim, the editor" title="Vim, the editor"/></a>
   </p>
