@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-12-31T17:19:21-06:00</updated>
+  <updated>2014-12-31T17:22:43-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -93,20 +93,15 @@
 
 <h3>Observing the Results, Applying a Solution</h3>
 
-<p>Next step: Run <code>$ rake generate</code> and see what happens. Turns out that
-the lastest version of <code>pygments</code> halted for two reasons:</p>
+<p>Next step: Run <code>$ rake generate</code> and see what happens. Turns out that the lastest version of <code>pygments</code> halted for two reasons:</p>
 
 <ul>
-<li>Some of my older blog posts did not contain a space between the
-triple-backtick characters and the name of the language being
-highlighted.</li>
-<li><code>pygments</code> appears to want a blank line between any triple-backtick
-line and any other text in the blog post.</li>
+<li>Some of my older blog posts did not contain a space between the triple-backtick characters and the name of the language being highlighted. Earlier versions of <code>pygments</code> did not care, but the current version is a stickler.</li>
+<li><code>pygments</code> appears to want a blank line between any triple-backtick line and any other text in the blog post.</li>
 </ul>
 
 
-<p>Vim-fu allowed me to apply solutions with minimal manual work. And now
-<code>pygments</code> works well.</p>
+<p>Vim-fu allowed me to apply solutions with minimal manual work. And now <code>pygments</code> works well.</p>
 
 <p>On to search, to be discussed in a future blog post.</p>
 ]]></content>
