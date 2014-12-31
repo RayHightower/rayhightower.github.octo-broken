@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2014-12-30T18:03:24-06:00</updated>
+  <updated>2014-12-30T18:05:55-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -20,7 +20,7 @@
     <id>http://RayHightower.com/blog/2014/12/30/owc-thinks-ahead</id>
     <content type="html"><![CDATA[<p>Every computer user has to deal with this at some point. Your machine runs out of storage space: hard drive, SSD, or whatever mass storage you happen to use. In my case, the 512GB SSD in my early 2013 MacBook Pro was over 90% full. Time for an upgrade.</p>
 
-<p>Fortunately (and contrary to what the Apple literature says) it’s possible to upgrade the SSD in a MacBook Pro. RAM is different because the MBP&rsquo;s RAM is soldered to the logic board. But the SSD plugs into a socket. The SSD upgrade path is well worn and well-documented on YouTube and elsewhere.</p>
+<p>Fortunately (and contrary to what the Apple literature says) it is possible to upgrade the SSD in a MacBook Pro. RAM is different because the MBP&rsquo;s RAM is soldered to the logic board. But the SSD plugs into a socket. The SSD upgrade path is well worn and well-documented on YouTube and elsewhere.</p>
 
 <!--more-->
 
