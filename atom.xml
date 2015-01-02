@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-01-01T22:56:33-06:00</updated>
+  <updated>2015-01-02T09:32:46-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,41 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[No Windows. Stronger Planes.]]></title>
+    <link href="http://RayHightower.com/blog/2015/01/02/no-windows-stronger-planes/"/>
+    <updated>2015-01-02T23:34:04-06:00</updated>
+    <id>http://RayHightower.com/blog/2015/01/02/no-windows-stronger-planes</id>
+    <content type="html"><![CDATA[<p>It is always good to start the new year with something inspirational. <a href="http://www.technicondesign.com/">Technicon Design</a> created a 3-minute video to demonstrate their IXION Windowless Jet Concept. Worth watching full screen.</p>
+
+<center><iframe name="windowlessjet" src="//player.vimeo.com/video/78458486" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
+
+
+<p>How can a plane with no windows offer better views for passengers?</p>
+
+<!--more-->
+
+
+<h3>Windows vs Fuselage Strength</h3>
+
+<p>When we add a window to the fuselage of an airplane, we reduce the strength of the fuselage. Glass is weaker than aluminum. So aircraft engineers need to make up for the lost strength. The engineers might add a support structure, thicken the aluminum, or try a different alloy.</p>
+
+<p>But when windows are eliminated, structural integrity is maintained. And the weight of the plane can be reduced because we can eliminate the extra supports.</p>
+
+<h3>How Do We See Without Windows</h3>
+
+<p>As shown in the Technicon video, views can be better without windows!  Cameras are mounted at strategic points on the outside of the plane. And the inner surface of the plane, the part that passengers can see, is covered with a display material. Computers take the images captured by the external cameras, and they translate that into images for display on the inner walls of the plane.</p>
+
+<p>The result: Passengers feel like they&rsquo;re flying in a glass plane. That&rsquo;s an idea best communicated through the Technicon video.</p>
+
+<h3>Applying Tech Across Industries</h3>
+
+<p>Processing power continues to fall in price. Flat panel monitors get less expensive each day. The window-less plane shows us what can happen when advances in one industry are applied to another. Blend these advances with a high-speed internet connection delivered via satellite, and the Internet of Things (IoT) takes a great leap forward. Cross-discipline engineering is exciting.</p>
+
+<p>Happy New Year!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Looking Inside the Pygments Plugin]]></title>
@@ -1054,135 +1089,6 @@ WisdomGroup is hiring a Community Manager (CM) to help run our user groups and c
 
 
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[RVM and Parallella: What a Difference a Shell Makes]]></title>
-    <link href="http://RayHightower.com/blog/2014/07/21/rvm-and-parallella-what-a-difference-a-shell-makes/"/>
-    <updated>2014-07-21T21:46:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2014/07/21/rvm-and-parallella-what-a-difference-a-shell-makes</id>
-    <content type="html"><![CDATA[<p><a href="http://RayHightower.com/blog/2013/05/16/upgrading-ruby-with-rvm/">RVM</a> is an effective way to manage Ruby versions on Linux or OS X. RVM was working well on my Ubuntu-based <a href="http://RayHightower.com/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella</a>, until one day it stopped:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>linaro-nano:~&gt; rvm list
-</span><span class='line'>rvm: Command not found.
-</span><span class='line'>linaro-nano:~&gt;
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>
-<code>rvm: Command not found.</code> Fortunately, <a href="https://twitter.com/theotherzach">Zach Briggs</a> and I were pairing at a joint OpenHack &ndash; ChicagoRuby event when the problem occurred. Zach is an ideal pairing partner; troubleshooting was smooth because he was there. Time to investigate.</p>
-
-<!--more-->
-
-
-<h3>Explicit Path</h3>
-
-<p>After a few experiments, we discovered that we could run RVM by explicitly specifying the path to the executable:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>linaro-nano:~&gt; ~/.rvm/bin/rvm list
-</span><span class='line'>
-</span><span class='line'>rvm rubies
-</span><span class='line'>
-</span><span class='line'>   ruby-2.0.0-p481 <span class="o">[</span> armv7l <span class="o">]</span>
-</span><span class='line'>
-</span><span class='line'><span class="c"># Default ruby not set. Try &#39;rvm alias create default &lt;ruby&gt;&#39;.</span>
-</span><span class='line'>
-</span><span class='line'><span class="c"># =&gt; - current</span>
-</span><span class='line'><span class="c"># =* - current &amp;&amp; default</span>
-</span><span class='line'><span class="c">#  * - default</span>
-</span><span class='line'>
-</span><span class='line'>linaro-nano:~&gt;
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p></p>
-
-<p>Therefore, it appeared that the Ubuntu/Linux <code>$PATH</code> variable was being ignored. Google led us to consider the shell in use on the Parallella.</p>
-
-<h3>Which Shell Is In Use?</h3>
-
-<p>The shell is just a program that lets humans talk to the Linux operating system through a command line interface. Several shell programs exist. Linux users tend to prefer one shell or another. The <code>$SHELL</code> environmental variable points to the one in use.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>linaro-nano:~&gt; <span class="nb">echo</span> <span class="nv">$SHELL</span>
-</span><span class='line'>/bin/tcsh
-</span><span class='line'>linaro-nano:~&gt;
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p></p>
-
-<p>Very interesting. <code>tcsh</code> was the current Parallella shell. I&rsquo;m more accustomed to <code>bash</code>. Could RVM prefer <code>bash</code> too? We changed one line of <code>/etc/passwd</code> to tell the Parallella to start with <code>bash</code> instead of <code>tcsh</code> and rebooted the Parallella.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>linaro-nano:~&gt; <span class="nb">echo</span> <span class="nv">$SHELL</span>
-</span><span class='line'>/bin/bash
-</span><span class='line'>linaro-nano:~&gt;
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>
-&hellip;and now RVM works normally.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>linaro-nano:~&gt; rvm list
-</span><span class='line'>
-</span><span class='line'>rvm rubies
-</span><span class='line'>
-</span><span class='line'>   ruby-2.0.0-p481 <span class="o">[</span> armv7l <span class="o">]</span>
-</span><span class='line'>
-</span><span class='line'><span class="c"># Default ruby not set. Try &#39;rvm alias create default &lt;ruby&gt;&#39;.</span>
-</span><span class='line'>
-</span><span class='line'><span class="c"># =&gt; - current</span>
-</span><span class='line'><span class="c"># =* - current &amp;&amp; default</span>
-</span><span class='line'><span class="c">#  * - default</span>
-</span><span class='line'>
-</span><span class='line'>linaro-nano:~&gt;
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p></p>
-
-<h3>Consider Fish?</h3>
-
-<p>Right after this exercise, Zach and <a href="http://twitter.com/josh_cheek">Josh Cheek</a> had a Twitter conversation about a shell called <a href="http://fishshell.com/">fish</a>. Something new and shiny to explore!</p>
-
-<h3>Original Plan: Rubinius</h3>
-
-<p>Did I mention that we originally planned to install <a href="http://RayHightower.com/blog/2014/02/06/installing-rubinius-using-rvm/">Rubinius</a> on the Parallella? Where there are goals, there are yaks waiting to be shaved!</p>
 ]]></content>
   </entry>
   
