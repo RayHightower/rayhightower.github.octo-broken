@@ -1713,6 +1713,6 @@
     "id": 8,
     "title": "yaml-stuff",
     "url": "/yaml-stuff/index.html",
-    "content": "##Experimental Lines Below\n\n``` ruby\n# From the YAML front matter.\n---\nlayout: page\ntitle: \"yaml-stuff\"\ndate: 2015-01-06 16:13\ncomments: false\nsharing: false\nfooter: true\nrandomnewthing: \"Would you believe that this works?!\"\n---\n```\n\n\n\\{\\{ site.url \\}\\} = {{ site.url }}<br/>\n\\{\\{ site.baseurl \\}\\} = {{ site.baseurl }}<br/>\n\\{\\{ site.assets.baseurl \\}\\} = {{ site.assets.baseurl }}<br/>\n\\{\\{ page.url \\}\\} = {{ page.url }}<br/>\n\\{\\{ page.layout \\}\\} = {{ page.layout }}<br/>\n\\{\\{ page.randomnewthing \\}\\} = {{ page.randomnewthing }}<br/>\n\n\n\n"
+    "content": "##Experimental Lines Below\n\n``` ruby\n# From the YAML front matter.\n---\nlayout: page\ntitle: \"yaml-stuff\"\ndate: 2015-01-06 16:13\ncomments: false\nsharing: false\nfooter: true\nrandomnewthing: \"Would you believe that this works?!\"\n---\n```\n\n\n\\{\\{ site.url \\}\\} = {{ site.url }}<br/>\n\\{\\{ site.assets.baseurl \\}\\} = {{ site.assets.baseurl }}<br/>\n\\{\\{ page.url \\}\\} = {{ page.url }}<br/>\n\\{\\{ page.layout \\}\\} = {{ page.layout }}<br/>\n\\{\\{ page.randomnewthing \\}\\} = {{ page.randomnewthing }}<br/>\n\n\n\n"
   }
 ]
