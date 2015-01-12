@@ -19,6 +19,7 @@
 8
 9
 10
+11
 # From the YAML front matter.
 ---
 layout: page
@@ -136,6 +137,7 @@ title: &quot;yaml-stuff& &hellip;">
 <span class='line-number'>8</span>
 <span class='line-number'>9</span>
 <span class='line-number'>10</span>
+<span class='line-number'>11</span>
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1"># From the YAML front matter.</span>
 </span><span class='line'><span class="o">---</span>
 </span><span class='line'><span class="ss">layout</span><span class="p">:</span> <span class="n">page</span>
@@ -145,6 +147,7 @@ title: &quot;yaml-stuff& &hellip;">
 </span><span class='line'><span class="ss">sharing</span><span class="p">:</span> <span class="kp">false</span>
 </span><span class='line'><span class="ss">footer</span><span class="p">:</span> <span class="kp">true</span>
 </span><span class='line'><span class="ss">randomnewthing</span><span class="p">:</span> <span class="s2">&quot;Would you believe that this works?!&quot;</span>
+</span><span class='line'><span class="ss">categories</span><span class="p">:</span> <span class="o">[</span> <span class="no">Education</span><span class="p">,</span> <span class="no">Git</span><span class="p">,</span> <span class="no">Ruby</span><span class="p">,</span> <span class="no">RubyMotion</span> <span class="o">]</span>
 </span><span class='line'><span class="o">---</span>
 </span></code></pre></td></tr></table></div></figure>
 
@@ -154,6 +157,33 @@ title: &quot;yaml-stuff& &hellip;">
 {{ page.url }} = /yaml-stuff/index.html<br/>
 {{ page.layout }} = page<br/>
 {{ page.randomnewthing }} = Would you believe that this works?!<br/></p>
+
+<h3>Experimenting With Categories</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">variables</span> <span class="n">exposed</span><span class="o">.</span><span class="n">.</span><span class="o">.</span>
+</span><span class='line'>
+</span><span class='line'> <span class="p"></span><span class="o">&lt;</span><span class="n">br</span><span class="o">/&gt;</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="p"></span>  <span class="p"></span>  <span class="p"></span>  <span class="p"></span>  <span class="p"></span>  <span class="p"></span>
+</span><span class='line'>
+</span><span class='line'><span class="p"></span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>{{ page.categories }} = EducationGitRubyRubyMotion</p>
+
+<p>Education  Git  Ruby  RubyMotion</p>
+
+<p>yaml-stuff</p>
 
   
 </article>
