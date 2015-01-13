@@ -1,0 +1,6 @@
+<!--
+Search entries should appear below this line (in source/search/index.markdown).
+{% include custom/lunr-search/entries.html %}
+Search entries should appear above this line (in source/search/index.markdown).
+-->
+

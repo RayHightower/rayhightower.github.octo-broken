@@ -1719,6 +1719,6 @@
     "id": 10,
     "title": "Search Results",
     "url": "/search/index.html",
-    "content": "Search entries should appear below this line (in source/search/index.markdown).\n{% include custom/lunr-search/entries.html %}\nSearch entries should appear above this line (in source/search/index.markdown).\n\n"
+    "content": "Apologies... on-site search is not working properly right now.\n\n###Alternative Solution\nTo search for articles on RayHightower.com, please visit Google and\nfocus your search on this site alone. For example...\n\n<center><iframe width=\"560\" height=\"300\" src=\"//www.youtube.com/embed/0JXFtU74NNI?rel=0&amp;showinfo=0\" frameborder=\"0\" allowfullscreen></iframe></center>\n\nThanks!\n\n"
   }
 ]
