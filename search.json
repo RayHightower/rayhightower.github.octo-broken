@@ -1687,7 +1687,7 @@
 
     ],
     "url": "/blog/2015/01/20/chicago-node-dot-js/",
-    "content": "The [Chicago Node.js](http://www.meetup.com/Chicago-Nodejs/events/203711262/) user group invited me to present _Node.js Under Water_ this evening. Slides appear below.\n\nThank you organizers and members for having me!\n<!--more-->\n\n<center><script async class=\"speakerdeck-embed\" data-id=\"b51c86f083270132a7cc1ade27531f87\" data-ratio=\"1.77777777777778\" src=\"//speakerdeck.com/assets/embed.js\"></script></center>\n",
+    "content": "The [Chicago Node.js](http://www.meetup.com/Chicago-Nodejs/events/203711262/) user group invited me to present _Node.js Under Water_ this evening. Slides appear below.\n\nThis version of the talk spends more time with the hardware since this group certainly knows Node. More information has been added on tether management, plus there's a section on hardware gotchas.\n\nThank you organizers and members for having me!\n<!--more-->\n\n<center><script async class=\"speakerdeck-embed\" data-id=\"b51c86f083270132a7cc1ade27531f87\" data-ratio=\"1.77777777777778\" src=\"//speakerdeck.com/assets/embed.js\"></script></center>\n",
     "date": {
       "year": "2015",
       "month": "January",
