@@ -1695,6 +1695,21 @@
     }
   },
   {
+    "id": 113,
+    "title": "Context Changes Everything",
+    "category": "business",
+    "tags": [
+
+    ],
+    "url": "/blog/2015/01/22/context-changes-everything/",
+    "content": "There are some cases where time zone information is absolutely critical. For example: When scheduling a video conference that crosses national boundaries. \n\nA few hours ago, Google sent me a reminder about today's [LinuxBarbados](http://linuxbarbados.org) meeting. The group meets via video conferencing software over the web. Google's reminder was confusing because it showed the time without the time zone (screenshot below). LinuxBarbados is based in the Caribbean, and some of the members participate from other time zones.\n\n{% imgcap middle /images/GH_time_zone_arrow.png What time is it when the time zone is unknown? %}\n\nGoogle's automated reminder said `3pm - 4pm` with no time zone reference. How confusing! Members of the group received the same automated reminder with the same information, regardless of time zone. A small change, displaying the time as `3pm - 4pm (CST)` would solve the problem.\n<!--more-->\n### Other Context Examples\nWhen people speak with each other directly, context is implied. But when communication happens in printed form, it's helpful to have the context in print, too. For example:\n\n* Walking down the street, you see a poster advertising a concert on January 29th. No year is shown. Is this an old poster for a concert that happened last year on Jan 29th? Or is the event happening next week?\n* A restaurant menu offers delivery service. Just call the number, and order your food. The phone number is seven digits long, with no area code. Most customers would abandon the menu in favor of a restaurant with more complete information.\n* Following the train of thought in the previous example: Since phone service has fallen in price, many people call internationally on a more regular basis. A complete phone number should include the country code.\n\nContext changes everything. Something all of us need to remember.\n",
+    "date": {
+      "year": "2015",
+      "month": "January",
+      "day": "22"
+    }
+  },
+  {
     "id": 0,
     "title": "404 Error: Page not found.",
     "url": "/404.html",
@@ -1734,6 +1749,6 @@
     "id": 10,
     "title": "Search Results",
     "url": "/search/index.html",
-    "content": "<p>Apologies&hellip; on-site search is not working properly right now.</p>\n\n<h3>Alternative Solution</h3>\n\n<p>To search for articles on RayHightower.com, please visit Google and\nfocus your search on this site alone. For example&hellip;</p>\n\n<center><iframe width=\"560\" height=\"300\" src=\"//www.youtube.com/embed/0JXFtU74NNI?rel=0&amp;showinfo=0\" frameborder=\"0\" allowfullscreen></iframe></center>\n\n\n<p>Thanks!</p>\n\n"
+    "content": "Search entries should appear below this line (in source/search/index.markdown).\n{% include custom/lunr-search/entries.html %}\nSearch entries should appear above this line (in source/search/index.markdown).\n\n\n##Everything below is temporary.\n\n<p>Apologies&hellip; on-site search is not working properly right now.</p>\n\n<h3>Alternative Solution</h3>\n\n<p>To search for articles on RayHightower.com, please visit Google and\nfocus your search on this site alone. For example&hellip;</p>\n\n<center><iframe width=\"560\" height=\"300\" src=\"//www.youtube.com/embed/0JXFtU74NNI?rel=0&amp;showinfo=0\" frameborder=\"0\" allowfullscreen></iframe></center>\n\n\n<p>Thanks!</p>\n\n"
   }
 ]
