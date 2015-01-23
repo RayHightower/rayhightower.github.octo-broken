@@ -261,8 +261,9 @@ How does the Parallella compare with other single-board computers, like the <a h
 
 <h3>Checking dd Progress</h3>
 
-<p><span class='caption-wrapper center'><img class='caption' src='/images/dd_progress.png' width='' height='' alt='Activity Monitor' title='Activity Monitor'><span class='caption-text'>Activity Monitor</span></span>
-Waiting an hour for the <code>dd</code> command to run can be disconcerting because the machine does not give any feedback on progress. No gas gauge, spinning indicator, nothing. How do we know if the write process is working?</p>
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/dd_progress.png' width='' height='' alt='Activity Monitor' title='Activity Monitor'><span class='caption-text'>Activity Monitor</span></span></p>
+
+<p>Waiting an hour for the <code>dd</code> command to run can be disconcerting because the machine does not give any feedback on progress. No gas gauge, spinning indicator, nothing. How do we know if the write process is working?</p>
 
 <p>Here&rsquo;s how to check progress. Run Apple&rsquo;s <code>Activity Monitor</code>, and look for <code>dd</code> on the list of processes, as shown in the Activity Monitor screenshot. The number of bytes written will increase slowly while <code>dd</code> burns the Ubuntu image onto the SD card. With the current version of Ubuntu, roughly 7.4GB will be written to the SD. At completion, <code>dd</code> will disappear from the Activity Monitor list and you&rsquo;ll see the following at the command line.</p>
 
