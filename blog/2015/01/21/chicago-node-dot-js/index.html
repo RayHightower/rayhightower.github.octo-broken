@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Looking Inside the Pygments Plugin - RayHightower.com</title>
+  <title>Chicago Node.js - RayHightower.com</title>
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="This blog uses pygments.rb for syntax highlighting. Recently pygments.rb stopped working, so I had to dig inside to determine the problem and apply a &hellip;">
+  <meta name="description" content="OpenROV at Groupon. Photo by Michelle Waldorf.
+The Chicago Node.js user group invited me to present Node.js Under Water, an overview of the OpenROV &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://RayHightower.com/blog/2014/12/31/looking-inside-pygments">
+  <link rel="canonical" href="http://RayHightower.com/blog/2015/01/21/chicago-node-dot-js">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="RayHightower.com" type="application/atom+xml">
@@ -106,7 +107,7 @@
   
   <header>
     
-      <h1 class="entry-title">Looking Inside the Pygments Plugin</h1>
+      <h1 class="entry-title">Chicago Node.js</h1>
     
     
       <p class="meta">
@@ -115,99 +116,27 @@
 
 
 
-<time class='entry-date' datetime='2014-12-31T16:18:29-06:00'><span class='date'>December 31, 2014</span> <span class='time'></span></time>
+<time class='entry-date' datetime='2015-01-21T03:23:30+04:00'><span class='date'>January 21, 2015</span> <span class='time'></span></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>This blog uses <a href="https://rubygems.org/gems/pygments.rb">pygments.rb</a> for syntax highlighting. Recently <code>pygments.rb</code> stopped working, so I had to dig inside to determine the problem and apply a solution.</p>
+<div class="entry-content"><p><span class='caption-wrapper right'><img class='caption' src='/images/openrov_at_groupon.png' width='' height='' alt='OpenROV at Groupon. Photo by Michelle Waldorf.' title='OpenROV at Groupon. Photo by Michelle Waldorf.'><span class='caption-text'>OpenROV at Groupon. Photo by Michelle Waldorf.</span></span>
+The <a href="http://www.meetup.com/Chicago-Nodejs/events/203711262/">Chicago Node.js</a> user group invited me to present <em>Node.js Under Water</em>, an overview of the <a href="http://openrov.com">OpenROV</a> underwater robot, this evening. Slides appear below.</p>
 
-<p>Full disclosure: Pygments didn&rsquo;t simply stop working. I applied updates related to Octopress and Lunr.js, and then it stopped working. So the root cause is me! Rather than back-out the updates, I decided to push forward because Lunr.js will improve the search experience for visitors. Search options will be discussed in a future post.</p>
+<p>Every version of this talk is tailored to the audience. This version focuses on OpenROV hardware components since this group certainly knows Node.js. Information has been added on hardware gotchas and tether management.</p>
 
-<h3>Starting With the Error Message</h3>
-
-<p>As with all <a href="http://octopress.org/">Octopress</a> based blogs, the <code>$ rake generate</code> command creates a new set of static pages every time the command gets run. Normally the process is smooth. Here&rsquo;s the error message that resulted this morning.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>rake generate
-</span><span class='line'>
-</span><span class='line'>...
-</span><span class='line'>
-</span><span class='line'>jekyll 2.0.3 <span class="p">|</span> Error:  Pygments can<span class="err">&#39;</span>t parse unknown language: &lt;/p&gt;.
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>What unknown language? Something was fishy. Fortunately, <code>pygments</code> is an open source plugin. Solving the problem was non-trivial, but doable.</p>
+<p>Thank you Chicago Node.js organizers and members for having me.</p>
 
 <!--more-->
 
 
-<h3>Exploring Pygments Internals</h3>
-
-<p>Google, Stack Overflow, and the Octopress documentation gave clues on where to explore. Adding a few lines to <code>source/plugins/pygments_code.rb</code> provided insights on what <code>pygments</code> was &ldquo;thinking&rdquo;.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">require</span> <span class="s1">&#39;pygments&#39;</span>
-</span><span class='line'><span class="nb">require</span> <span class="s1">&#39;fileutils&#39;</span>
-</span><span class='line'><span class="nb">require</span> <span class="s1">&#39;digest/md5&#39;</span>
-</span><span class='line'>
-</span><span class='line'><span class="no">PYGMENTS_CACHE_DIR</span> <span class="o">=</span> <span class="no">File</span><span class="o">.</span><span class="n">expand_path</span><span class="p">(</span><span class="s1">&#39;../../.pygments-cache&#39;</span><span class="p">,</span> <span class="bp">__FILE__</span><span class="p">)</span>
-</span><span class='line'><span class="no">FileUtils</span><span class="o">.</span><span class="n">mkdir_p</span><span class="p">(</span><span class="no">PYGMENTS_CACHE_DIR</span><span class="p">)</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">module</span> <span class="nn">HighlightCode</span>
-</span><span class='line'>  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">highlight</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="n">lang</span><span class="p">)</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="c1"># Next three lines let us see what pygments &quot;thinks&quot;.</span>
-</span><span class='line'>    <span class="nb">print</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">rth_str = </span><span class="si">#{</span><span class="n">str</span><span class="si">}</span><span class="s2">&quot;</span>
-</span><span class='line'>    <span class="nb">print</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">rth_lang = </span><span class="si">#{</span><span class="n">lang</span><span class="si">}</span><span class="s2">&quot;</span>
-</span><span class='line'>    <span class="nb">print</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">rth_file = </span><span class="si">#{</span><span class="bp">__FILE__</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">&quot;</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="o">.</span><span class="n">.</span><span class="o">.</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
 
 
-<h3>Observing the Results, Applying a Solution</h3>
+<center><script async class="speakerdeck-embed" data-id="b51c86f083270132a7cc1ade27531f87" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script></center>
 
-<p>Next step: Run <code>$ rake generate</code> and see what happens. Turns out that the lastest version of <code>pygments</code> halted for two reasons:</p>
-
-<ul>
-<li>Some of my older blog posts did not contain a space between the triple-backtick characters and the name of the language being highlighted. Earlier versions of <code>pygments</code> did not care, but the current version is a stickler.</li>
-<li><code>pygments</code> appears to want a blank line between any triple-backtick line and any other text in the blog post.</li>
-</ul>
-
-
-<p>Vim-fu allowed me to apply solutions with minimal manual work. And now <code>pygments</code> works well.</p>
-
-<p>On to search, to be discussed in a future blog post.</p>
 </div>
 
 
@@ -223,12 +152,12 @@
 
 
 
-<time class='entry-date' datetime='2014-12-31T16:18:29-06:00'><span class='date'>December 31, 2014</span> <span class='time'></span></time>
+<time class='entry-date' datetime='2015-01-21T03:23:30+04:00'><span class='date'>January 21, 2015</span> <span class='time'></span></time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/ruby/'>ruby</a>
+    <a class='category' href='/blog/categories/community/'>community</a>, <a class='category' href='/blog/categories/openrov/'>openrov</a>
   
 </span>
 
@@ -237,7 +166,7 @@
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2014/12/31/looking-inside-pygments/" data-via="" data-counturl="http://RayHightower.com/blog/2014/12/31/looking-inside-pygments/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2015/01/21/chicago-node-dot-js/" data-via="" data-counturl="http://RayHightower.com/blog/2015/01/21/chicago-node-dot-js/" >Tweet</a>
   
   
   
@@ -246,10 +175,10 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2014/12/30/owc-thinks-ahead/" title="Previous Post: OWC Thinks Ahead">&laquo; OWC Thinks Ahead</a>
+        <a class="basic-alignment left" href="/blog/2015/01/03/no-windows-stronger-planes/" title="Previous Post: No Windows. Stronger Planes.">&laquo; No Windows. Stronger Planes.</a>
       
       
-        <a class="basic-alignment right" href="/blog/2015/01/02/no-windows-stronger-planes/" title="Next Post: No Windows. Stronger Planes.">No Windows. Stronger Planes. &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2015/01/23/context-changes-everything/" title="Next Post: Context Changes Everything">Context Changes Everything &raquo;</a>
       
     </p>
   </footer>
@@ -297,6 +226,9 @@
 <section>
   <h1>Speaking</h1>
   <ul>
+    <li><a href="http://in5.ae/">in5 hub Innovation Hub</a><br/>in Dubai, UAE</li>
+    <li><a href="https://www.eventbrite.com/e/devnights-robot-tickets-15433389684">DevNights at The Cribb</a><br/>in Dubai, UAE</li>
+    <li><a href="http://rubyfuza.org/">Ruby Fuza</a><br/>in Cape Town, South Africa</li>
     <li><a href="http://www.meetup.com/nodejs/events/206159562/">NYC Node JS Meetup</a><br/>in New York, NY</li>
     <li><a href="http://www.meetup.com/Chicago-Nodejs/events/177556202">Chicago Node.js</a><br/>in Chicago, IL</li>
     <li><a href="https://www.eventbrite.com/e/cloudcamp-chicago-developer-night-registration-11736697779">CloudCamp Chicago - Developer Night</a><br/>in Chicago, IL</li>
@@ -396,8 +328,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://RayHightower.com/blog/2014/12/31/looking-inside-pygments/';
-        var disqus_url = 'http://RayHightower.com/blog/2014/12/31/looking-inside-pygments/';
+        var disqus_identifier = 'http://RayHightower.com/blog/2015/01/21/chicago-node-dot-js/';
+        var disqus_url = 'http://RayHightower.com/blog/2015/01/21/chicago-node-dot-js/';
         var disqus_script = 'embed.js';
       
     (function () {
