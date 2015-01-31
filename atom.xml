@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-01-31T01:02:44+04:00</updated>
+  <updated>2015-01-31T16:27:51+04:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,32 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[WindyCityRails and You]]></title>
+    <link href="http://RayHightower.com/blog/2015/01/31/windycityrails-and-you/"/>
+    <updated>2015-01-31T16:11:06+04:00</updated>
+    <id>http://RayHightower.com/blog/2015/01/31/windycityrails-and-you</id>
+    <content type="html"><![CDATA[<p>If you have ever attended <a href="http://windycityrails.org">WindyCityRails</a>: Thank you for helping to make the event more exciting every year. Organizers strive to give developers actionable technical information in a conference format. So far, it&rsquo;s working :&ndash;)</p>
+
+<!--more-->
+
+
+<p>2015 marks our first year with a pre-conference survey. Length: Four questions. Answer as many as you like via the quick <a href="https://www.surveymonkey.com/r/XHF85YN">online form</a>.</p>
+
+<ol>
+<li>What web-related technologies are you most excited about this year?</li>
+<li>What web-related technology is giving you the biggest headaches right now?</li>
+<li>Are there any particular speakers you&rsquo;d like to see at WindyCityRails 2015?</li>
+<li>What social networks do you actively use?</li>
+</ol>
+
+
+<p>Please <a href="https://www.surveymonkey.com/r/XHF85YN">stop by and fill out the survey</a> when you can.</p>
+
+<p>We look forward to hearing from you. And we look forward to delivering another strong year at WindyCityRails!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Context Changes Everything]]></title>
@@ -1041,67 +1067,6 @@ Do you see yourself in any of these scenarios?</p>
 <p>Tickets are selling fast. Get yours now at <a href="http://www.windycityrails.org/register/">http://www.windycityrails.org/register/</a>. Use the promo code AWESOME to save $75.00 on the standard price.</p>
 
 <p>We look forward to seeing you at WindyCityRails!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Wanted: Community Manager]]></title>
-    <link href="http://RayHightower.com/blog/2014/07/30/wanted-community-manager/"/>
-    <updated>2014-07-30T12:43:00+04:00</updated>
-    <id>http://RayHightower.com/blog/2014/07/30/wanted-community-manager</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/chicagoruby_community.png' width='' height='' alt='Jamming together. Growing together.' title='Jamming together. Growing together.'><span class='caption-text'>Jamming together. Growing together.</span></span>
-WisdomGroup is hiring a Community Manager (CM) to help run our user groups and conferences. This is a part-time independent contractor position, mostly remote, with some on-site work during meetings and conferences. The position could become full-time depending on results produced and community growth.</p>
-
-<h3>Smart People, Growing Together</h3>
-
-<p>Our community philosophy:</p>
-
-<blockquote><p>When smart people challenge each other to grow, great things happen.</p></blockquote>
-
-<p>Our community track record is  covered in the article <a href="http://RayHightower.com/blog/2014/05/30/how-to-grow-a-user-group/">How to Grow a User Group</a>.</p>
-
-<!--more-->
-
-
-<h3>Responsibilities</h3>
-
-<p>The CM will be responsible for the following:</p>
-
-<ul>
-<li>Managing social media feeds (like Twitter) for our groups and events.</li>
-<li>Writing blog posts that promote our groups and events.</li>
-<li>Interacting with group members through multiple channels: Face-to-face, online video conference, social media, and email.</li>
-<li>Helping WisdomGroup to determine the best way to deliver value for group members.</li>
-</ul>
-
-
-<h3>Ideal Candidate</h3>
-
-<p>The ideal candidate will fit the following description:</p>
-
-<ul>
-<li><strong>Self Starter</strong> &ndash; Works remotely to produce outstanding results with minimal supervision. Runs through walls to get things done.</li>
-<li><strong>Team Player</strong> &ndash; Works well with other members of the WisdomGroup team. Shares information with team members via Basecamp and other collaboration tools.</li>
-<li><strong>Strategic Thinker</strong> &ndash; Understands how the CM position fits into WisdomGroup&rsquo;s big picture. Demonstrates understanding by personally taking action where needed.</li>
-<li><strong>Aggressive Learner</strong> &ndash; Currently uses social media tools like Twitter and Facebook. Learns and creates new ways to engage the community with social media tools.</li>
-</ul>
-
-
-<h3>About WisdomGroup</h3>
-
-<p>To learn more about WisdomGroup, visit:</p>
-
-<ul>
-<li><a href="http://WisdomGroup.com">WisdomGroup.com</a> &ndash; company website.</li>
-<li><a href="http://chicagoruby.org">ChicagoRuby.org</a> and <a href="http://linuxbarbados.org">LinuxBarbados.org</a> &ndash; user group sites.</li>
-<li><a href="http://windycityrails.org">WindyCityRails.org</a> and <a href="http://rubycaribe.com">RubyCaribe.com</a> &ndash; conference sites.</li>
-<li><a href="http://rayhightower.com">RayHightower.com</a> &ndash; president&rsquo;s personal blog.</li>
-</ul>
-
-
-<h3>To Apply</h3>
-
-<p>To apply for the position, email a PDF of your resume to careers@wisdomgroup.com, and include the words &ldquo;Community Manager&rdquo; in the subject line. We look forward to hearing from you.</p>
 ]]></content>
   </entry>
   
