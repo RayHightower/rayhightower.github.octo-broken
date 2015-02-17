@@ -1764,6 +1764,6 @@
     "id": 10,
     "title": "Search Results",
     "url": "/search/index.html",
-    "content": "Search entries should appear below this line (in source/search/index.markdown).\n{% include custom/lunr-search/entries.html %}\nSearch entries should appear above this line (in source/search/index.markdown).\n\n\n##Everything below is temporary.\n\n<p>Apologies&hellip; search is not working properly right now.</p>\n\n<h3>Alternative Solution</h3>\n\n<p>To search for articles on RayHightower.com, please visit Google and\nfocus your search on this site alone. For example&hellip;</p>\n\n<center><iframe width=\"560\" height=\"300\" src=\"//www.youtube.com/embed/0JXFtU74NNI?rel=0&amp;showinfo=0\" frameborder=\"0\" allowfullscreen></iframe></center>\n\n\n<p>Thanks!</p>\n\n"
+    "content": "<p>Apologies&hellip; search is not working properly right now.</p>\n\n<h3>Alternative Solution</h3>\n\n<p>To search for articles on RayHightower.com, please visit Google and\nfocus your search on this site alone. For example&hellip;</p>\n\n<center><iframe width=\"560\" height=\"300\" src=\"//www.youtube.com/embed/0JXFtU74NNI?rel=0&amp;showinfo=0\" frameborder=\"0\" allowfullscreen></iframe></center>\n\n\n<p>Thanks!</p>\n\n"
   }
 ]
