@@ -4,7 +4,7 @@
   <title><![CDATA[Category: community | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/community/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-02-17T13:27:34-06:00</updated>
+  <updated>2015-02-18T16:05:55-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,114 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[SICP Study Group]]></title>
+    <link href="http://RayHightower.com/blog/2015/02/18/sicp-study-group/"/>
+    <updated>2015-02-18T15:15:25-06:00</updated>
+    <id>http://RayHightower.com/blog/2015/02/18/sicp-study-group</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/sicp.jpg' width='' height='' alt='SICP' title='SICP'><span class='caption-text'>SICP</span></span>
+Veteran developer <a href="http://twitter.com/dastels">Dave Astels</a> is leading a <a href="https://www.eventbrite.com/e/sicp-chicago-w-dave-astels-tickets-15525870296">Structure and Interpretation of Computer Programs (SICP) study group</a> for the next several weeks. The Massachusetts Institute of Technology uses SICP as the text for one of its early computer science courses. Session one of Dave’s group starts today at 6pm. For any developer who wants to ramp up in skill, the SICP study group is an excellent opportunity to do so.</p>
+
+<p>MIT makes the <a href="http://mitpress.mit.edu/sicp/">entire text of SICP</a> available online for free. Or you can buy a paper version of the book at Amazon.</p>
+
+<p>Thank you <a href="http://www.bradsdeals.com/">Brad’s Deals</a> and <a href="https://twitter.com/lostghost">Ken Walters</a> for hosting the SICP group.</p>
+
+<!--more-->
+
+
+<h3>Installing Scheme on Mac OS X</h3>
+
+<p>Examples and exercises in SICP are written in Scheme, a dialect of the LISP programming language. As of this writing, installing <code>mit-scheme</code> via Homebrew <em>does not work</em>.</p>
+
+<p>&#8220;` bash
+~$ brew install mit-scheme
+Error: No available formula for mit-scheme
+Searching formulae&hellip;
+Searching taps&hellip;
+homebrew/x11/mit-scheme</p>
+
+<p>~$</p>
+
+<p>&#8220;`</p>
+
+<p>Alternative solution: Grab a pre-compiled binary from the <a href="http://www.gnu.org/software/mit-scheme/">MIT/GNU Scheme</a> site. The <code>mit-scheme-9.2-x86-64.dmg</code> disk image was the right one for my early 2013 MacBook Pro. Your system may be different.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/gnu_float.png' width='' height='' alt='Opening the MIT/GNU Scheme disk image.' title='Opening the MIT/GNU Scheme disk image.'><span class='caption-text'>Opening the MIT/GNU Scheme disk image.</span></span></p>
+
+<p>To install, drag the <code>MIT/GNU Scheme.app</code> icon into the Applications folder on the Mac.</p>
+
+<h3>Setting Up Symlinks</h3>
+
+<p>Scheme is run from the command line. In order to make that work, we need to setup two symbolic links.</p>
+
+<p>First, create a symbolic link called <code>mit-scheme-x86-64</code> in your home directory that links to the appropriate executable in the <code>/Applications</code> directory. In other words&hellip;</p>
+
+<p>&#8220;` bash
+$ sudo ln -s /Applications/MIT\:GNU\ Scheme.app/Contents/Resources /usr/local/lib/mit-scheme-x86-64
+Password:</p>
+
+<p>$</p>
+
+<p>&#8220;`</p>
+
+<p>Next, setup a symlink that will let us simply type <code>scheme</code> when we want to use this version of the language&hellip;</p>
+
+<p>&#8220;` bash
+$ sudo ln -s /usr/local/lib/mit-scheme-x86-64/mit-scheme /usr/bin/scheme</p>
+
+<p>$</p>
+
+<p>&#8220;`</p>
+
+<p>Confirm that the links are in place by checking the <code>scheme</code> version number.</p>
+
+<p>&#8220;` bash
+$ scheme &mdash;version
+MIT/GNU Scheme microcode 15.3
+Copyright &copy; 2014 Massachusetts Institute of Technology
+This is free software; see the source for copying conditions. There is NO warranty; not even for
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p>
+
+<p>Image saved on Saturday May 17, 2014 at 2:39:25 AM
+  Release 9.2 || Microcode 15.3 || Runtime 15.7 || SF 4.41 || LIAR/x86-64 4.118 || Edwin 3.116</p>
+
+<p>Moriturus te saluto.</p>
+
+<p>$</p>
+
+<p>&#8220;`</p>
+
+<p>If you are like me, you will laugh at the gladiator message at the end of the version info.</p>
+
+<h3>Better Way to Symlink?</h3>
+
+<p>Why not create a single symbolic link directly from the <code>Resources</code> directory to the <code>scheme</code> command in <code>/usr/bin</code>? I am not certain, but I suspect it has something to do with expectations within the Scheme interpreter. The interpreter may be expecting certain files to be in certain directories. I’ll update this article when I learn more.</p>
+
+<h3>Running Scheme</h3>
+
+<p>To start the Scheme read-evaluate-print-loop (REPL)&hellip;</p>
+
+<p><code>`` bash
+$ scheme
+MIT/GNU Scheme running under OS X
+Type</code>^C&#8217; (control-C) followed by `H&#8217; to obtain information about interrupts.</p>
+
+<p>Copyright &copy; 2014 Massachusetts Institute of Technology
+This is free software; see the source for copying conditions. There is NO warranty; not even for
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p>
+
+<p>Image saved on Saturday May 17, 2014 at 2:39:25 AM
+  Release 9.2 || Microcode 15.3 || Runtime 15.7 || SF 4.41 || LIAR/x86-64 4.118 || Edwin 3.116</p>
+
+<p>1 ]=></p>
+
+<p><code>``
+Exit the REPL by typing</code>CTRL-D`.</p>
+
+<p>Looking forward to SICP tonight!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[WindyCityRails and You]]></title>
@@ -142,32 +250,6 @@ The <a href="http://www.meetup.com/Chicago-Nodejs/events/203711262/">Chicago Nod
 <p>Anonymous feedback is fine. Just put dummy values in the appropriate fields.</p>
 
 <p>Thanks for listening. We look forward to seeing you at  <a href="http://chicagoruby.org">ChicagoRuby</a> and <a href="http://windycityrails.org">WindyCityRails</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Ignite RubyConf 2014]]></title>
-    <link href="http://RayHightower.com/blog/2014/11/16/ignite-rubyconf-2014/"/>
-    <updated>2014-11-16T15:01:00-06:00</updated>
-    <id>http://RayHightower.com/blog/2014/11/16/ignite-rubyconf-2014</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/ignite_logo_200.jpg' width='' height='' alt='Ignite. 15 seconds per slide.' title='Ignite. 15 seconds per slide.'><span class='caption-text'>Ignite. 15 seconds per slide.</span></span>
-<a href="http://igniteshow.com/">Ignite</a> is a presentation format where the slides advance automatically every 15 seconds whether the presenter is ready or not. Twenty slides, 15 seconds each, five minutes total. Presenters are challenged to present their ideas quickly and clearly before the time runs out.</p>
-
-<p>Ignite is similar to <a href="http://www.pechakucha.org">Pecha Kucha</a>. The two formats differ only in slide duration (20 seconds per slide with Pecha Kucha).</p>
-
-<!--more-->
-
-
-<p><a href="http://www.sdruby.org/">SDRuby</a> ran an Ignite event on the day before RubyConf 2014. Slides from my OpenROV presentation at Ignite RubyConf 2014 appear below.</p>
-
-<script async class="speakerdeck-embed" data-id="573c89704e88013264a612c8f4a94aec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-
-<p>&nbsp;<br/>
-&nbsp;<br/>
-Thanks SDRuby for hosting the Ignite event!</p>
-
-<p>If you like the idea of hacking on Ruby <em>and</em> OpenROV, check out <a href="http://rubycaribe.com">RubyCaribe</a>.</p>
 ]]></content>
   </entry>
   
