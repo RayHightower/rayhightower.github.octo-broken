@@ -4,7 +4,7 @@
   <title><![CDATA[Category: environment of respect | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/environment-of-respect/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-02-22T18:03:10-06:00</updated>
+  <updated>2015-02-25T20:19:45-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -20,25 +20,45 @@
     <id>http://RayHightower.com/blog/2014/05/28/an-environment-of-respect-3rd-iteration</id>
     <content type="html"><![CDATA[<p>Last week, <a href="https://twitter.com/bantik">Coraline Ehmke</a> and <a href="https://twitter.com/feministy">Liz Abinante</a> met with three members of the WindyCityRails organizer team: <a href="https://twitter.com/zolk">Kevin Zolkiewicz</a>, <a href="https://twitter.com/themccreefiles">Alonda McCree</a>, and me. Good dialog. End result: The updated <a href="http://www.windycityrails.org/code-of-conduct/">WindyCityRails Code of Conduct</a>.</p>
 
+
+
+
 <!--more-->
+
+
 
 
 <p>Harassment is a serious issue, and a 140-character tweet will not do the discussion justice. Therefore, the ChicagoRuby organizers have created multiple communication channels for this issue:</p>
 
+
+
+
 <ul>
-<li>Email: <a href="&#109;&#x61;&#105;&#108;&#116;&#111;&#58;&#x63;&#111;&#100;&#x65;&#x6f;&#x66;&#99;&#x6f;&#x6e;&#x64;&#x75;&#99;&#x74;&#64;&#x63;&#104;&#x69;&#x63;&#x61;&#103;&#x6f;&#114;&#117;&#x62;&#121;&#x2e;&#111;&#114;&#103;">&#99;&#111;&#x64;&#x65;&#x6f;&#x66;&#99;&#111;&#x6e;&#x64;&#x75;&#99;&#x74;&#64;&#x63;&#x68;&#x69;&#x63;&#97;&#103;&#x6f;&#114;&#x75;&#x62;&#121;&#x2e;&#111;&#114;&#x67;</a></li>
+<li>Email: <a href="&#109;&#x61;&#x69;&#108;&#x74;&#111;&#58;&#99;&#x6f;&#100;&#x65;&#x6f;&#102;&#x63;&#x6f;&#110;&#x64;&#117;&#x63;&#x74;&#x40;&#x63;&#104;&#x69;&#99;&#97;&#103;&#111;&#x72;&#117;&#98;&#x79;&#x2e;&#111;&#x72;&#x67;">&#99;&#x6f;&#x64;&#x65;&#x6f;&#102;&#99;&#x6f;&#x6e;&#100;&#x75;&#99;&#116;&#64;&#x63;&#x68;&#x69;&#x63;&#x61;&#x67;&#x6f;&#x72;&#117;&#98;&#121;&#46;&#x6f;&#x72;&#103;</a></li>
 <li>Any of the contact names listed on the current code of conduct</li>
 <li>Phone number listed on the code of conduct</li>
 </ul>
 
 
+
+
 <p>If you have concerns in this area, please feel free to use one of the channels. The contact list may change as responsibilities shift within ChicagoRuby. However, there will always be multiple people available to address harassment concerns.</p>
+
+
+
 
 <p>Thank you Coraline and Liz for your work in making this happen. And thank you <a href="https://twitter.com/lostghost">Ken Walters</a> of <a href="http://twitter.com/bradsdeals">Brad’s Deals</a> for facilitating the meeting.</p>
 
+
+
+
 <p>Now, let’s go write some code!</p>
 
-<p><em>More info on this topic can be found under the tag <a href="/blog/categories/environment-of-respect/">Environment of Respect</a>.</em></p>
+
+
+
+<p><em>More info on this topic can be found under the tag <a href="http://RayHightower.com/blog/categories/environment-of-respect/">Environment of Respect</a>.</em></p>
+
 ]]></content>
   </entry>
   
@@ -47,84 +67,198 @@
     <link href="http://RayHightower.com/blog/2014/01/28/an-environment-of-respect-2nd-iteration/"/>
     <updated>2014-01-28T07:08:00-06:00</updated>
     <id>http://RayHightower.com/blog/2014/01/28/an-environment-of-respect-2nd-iteration</id>
-    <content type="html"><![CDATA[<p>Thank you to everyone who offered feedback on <a href="/blog/2014/01/21/an-environment-of-respect/">An Environment of Respect</a>, which included an early draft of the WindyCityRails Code of Conduct.</p>
+    <content type="html"><![CDATA[<p>Thank you to everyone who offered feedback on <a href="http://RayHightower.com/blog/2014/01/21/an-environment-of-respect/">An Environment of Respect</a>, which included an early draft of the WindyCityRails Code of Conduct.</p>
+
+
+
 
 <p>The frank and earnest exchange of ideas was educational. Some of the feedback was positive, on the order of &ldquo;we&rsquo;re all colleagues, we treat each other with respect, that&rsquo;s good.&rdquo;</p>
 
+
+
+
 <p>However, I paid special attention to the negative feedback because it surprised me. Surprise happens when I face something that I do not understand. When I encounter something that I do not understand, there&rsquo;s an opportunity for learning.</p>
 
+
+
+
 <p>So I did what I always do when I need to learn more. I spoke with people who know more than me.</p>
+
+
+
 
 <!--more-->
 
 
+
+
 <h3>Wise Counsel</h3>
+
+
+
 
 <p>Several people in our industry were generous when I asked for advice. One technology veteran summed it up this way:</p>
 
+
+
+
 <blockquote><p>You wrote a code of conduct for an Environment of Respect. 99.9% of the people will know what that means, and they can even function well without a code. But a code of conduct needs to written for an Environment of Hostility&hellip; for the one fool who doesn&rsquo;t know how to act.</p></blockquote>
+
+
+
 
 <p>In a discussion about reducing bureaucracy, one developer offered this view:</p>
 
+
+
+
 <blockquote><p>Think of it less as bureaucracy and more along the lines of “In case of emergency, break glass and help is on the way.”</p></blockquote>
+
+
+
 
 <p>I am grateful to everyone who took the time to share their thoughts.</p>
 
+
+
+
 <h3>Verbose and Draconian? Not Here.</h3>
+
+
+
 
 <p>Some of the advice seemed to point toward a more verbose and draconian code of conduct, like the ones suggested by a few people last week. Not good. If we have a code, it&rsquo;s better to avoid the threatening tone. WindyCityRails is a community of colleagues who treat each other with respect.</p>
 
+
+
+
 <p>Fortunately, one member of our team found a code that works. Every member of the community is treated like an independent-thinking adult who respects the rights of others. Expectations are clear, and the threatening tone is gone.</p>
+
+
+
 
 <h3>Ruby DCamp: Thanks</h3>
 
+
+
+
 <p><a href="http://twitter.com/elight">Evan Light</a> wrote the original version of this code of conduct for <a href="http://rubydcamp.org/">Ruby DCamp</a>. When asked for permission to use his work for WindyCityRails, Evan responded with an enthusiastic <em>yes</em>. Thanks Evan!</p>
+
+
+
 
 <p>Here it is.</p>
 
+
+
+
 <h3>Draft: Code of Conduct</h3>
+
+
+
 
 <h4>Preface</h4>
 
+
+
+
 <p>WindyCityRails is and has been an event made up of welcoming, tolerant, compassionate, and loving participants. For several years now, WindyCityRails participants have been respectful of one another in our differences. We have employed those differences to elevate, educate, and celebrate one another at WindyCityRails.</p>
+
+
+
 
 <p>It is in that same spirit that we now adopt this Code of Conduct: Not as a punitive action, but as a measure to protect that which we already have and to signal to all that we are a tolerant and loving community.</p>
 
+
+
+
 <h4>WindyCityRails Code of Conduct</h4>
+
+
+
 
 <p>WindyCityRails is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity, sexual orientation, disability, physical appearance, body size, race, or religion. We do not tolerate harassment of participants in any form.</p>
 
+
+
+
 <p>If you think your conversation is making another community member uncomfortable, try to make amends and move forward.</p>
+
+
+
 
 <p>Participants asked to stop any harassing behavior are expected to comply immediately. WindyCityRails participants violating these rules may be sanctioned or expelled from the conference at the event organizers&#8217; discretion. This applies to all attendees, speakers, sponsors, and otherwise.</p>
 
+
+
+
 <p>That said, silliness, mockery, and general irreverence are welcome, expected, and even encouraged so long as they all come from a loving place.</p>
+
+
+
 
 <p>However, should another participant&rsquo;s behavior be injurious to you, we ask three things.</p>
 
+
+
+
 <h4>1) Give others the benefit of the doubt.</h4>
+
+
+
 
 <p>People are generally decent. It has been our experience, these past several years, that those who attend WindyCityRails are just a cut above in that respect.</p>
 
+
+
+
 <h4>2) Attempt to address the behavior with the other party immediately.</h4>
+
+
+
 
 <p>In the case of intractable situations, we are here to help you (see &ldquo;Ask for Help!&rdquo; below). However, this is where we ask participants to try to behave &ldquo;like grown ups.&rdquo; It is part of the WindyCityRails ethos: If you have a problem with something, don&rsquo;t wait for someone to fix it but instead try to fix it yourself.</p>
 
+
+
+
 <p>If you’re comfortable doing so, let the person know that you found what he or she said or did inappropriate. Attempt to resolve the situation amicably. When addressing it yourself, remember to continue to treat the other party with kindness and respect.</p>
+
+
+
 
 <p>If you&rsquo;re uncomfortable approaching the other person…</p>
 
+
+
+
 <h4>3) Ask for Help!</h4>
+
+
+
 
 <p>We&rsquo;re all human. While life, and WindyCityRails, expects a good deal of self-sufficiency, we are also a community. If you cannot manage a situation alone, we are here for you. Seek out any member of the conference organizer team. We can be identified with special &ldquo;Organizer&rdquo; lanyards.</p>
 
+
+
+
 <p>~WindyCityRails Organizers Team</p>
+
+
+
 
 <h3>Conclusion</h3>
 
+
+
+
 <p>Thanks for reading this through. See you at <a href="http://windycityrails.org">WindyCityRails</a>!</p>
 
-<p><em>More info on this topic can be found under the tag <a href="/blog/categories/environment-of-respect/">Environment of Respect</a>.</em></p>
+
+
+
+<p><em>More info on this topic can be found under the tag <a href="http://RayHightower.com/blog/categories/environment-of-respect/">Environment of Respect</a>.</em></p>
+
 ]]></content>
   </entry>
   
@@ -135,9 +269,18 @@
     <id>http://RayHightower.com/blog/2014/01/21/an-environment-of-respect</id>
     <content type="html"><![CDATA[<p>Here is an early draft of the <a href="http://windycityrails.org">WindyCityRails</a> Code of Conduct:</p>
 
+
+
+
 <blockquote><p>WindyCityRails strives to provide a healthy, harassment-free conference experience for all attendees. Our Code of Conduct, which has been practiced by members of our community for years, is as follows: Treat everyone at the conference as you would want yourself, a family member, or an esteemed colleague to be treated. Our community is stronger when every member contributes to the safety and learning of the other members. We are colleagues, and we treat each other with respect.</p></blockquote>
 
+
+
+
 <p>There may be some wordsmithing and typo-correction this week, but the final version will essentially read as it appears above. Key objectives achieved:</p>
+
+
+
 
 <ul>
 <li>Simplicity. The point is made with minimal words.</li>
@@ -146,56 +289,132 @@
 </ul>
 
 
+
+
 <p>You have already read the most important part of this post. The rest tells how the code came to be.</p>
+
+
+
 
 <!--more-->
 
 
+
+
 <h3>First Person Singular</h3>
+
+
+
 
 <p>Normally, when discussing WindyCityRails and ChicagoRuby, I shine the light on the organizers as a team (we) rather than on myself. WindyCityRails is blessed with a great team of organizers. We pool our talents to get things done.</p>
 
+
+
+
 <p>However, when concerns are raised, the buck stops with the team leader: me. Please forgive me for using first person pronouns throughout this post. Also, other members of the organizer team may have opinions that differ from mine. If I say anything here that disturbs you, please know that it comes from me directly. I am the only one at fault.</p>
+
+
+
 
 <h3>My Knee-Jerk Response</h3>
 
+
+
+
 <p>Last week a Twitter user asked if WindyCityRails had a code of conduct. I responded (through the @WindyCityRails handle) with a one-word answer: No.</p>
+
+
+
 
 <p>Why the terse response? Because I have a deep bias against bureaucracy. Initially, that&rsquo;s what a code of conduct sounded like to me. Do we have a problem with diversity in the tech community? Hell yes. But bureaucracy does not solve problems. We will only solve the diversity problem through active engagement and real work. We solve the diversity problem by ensuring that people from all groups feel welcome and engaged.</p>
 
+
+
+
 <p>One example of real work: The <a href="http://www.windycityrails.org/youth/">WindyCityRails Youth Program</a>, launched last year. A diverse group of college students taught a diverse group of high school students how to program the Arduino. These students from diverse backgrounds bonded via their common interest in technology.</p>
+
+
+
 
 <p>To summarize my knee-jerk response: A code of conduct makes us feel good about nice words written on a sheet of paper, while no real work gets done.</p>
 
+
+
+
 <h3>After My Initial Reaction</h3>
+
+
+
 
 <p>Kindergarten taught me that it is important for me to listen to others. A community thrives on interaction between people who see things differently. If everyone thinks the same way, we don&rsquo;t have diversity, do we?</p>
 
+
+
+
 <p>Other inquiries about a code of conduct followed via Twitter and email. All were helpful. Some people offered sample text from other events. Most of the sample text was good.</p>
+
+
+
 
 <p>Two of my fellow organizers (thank you <a href="https://twitter.com/ginnyhendry">Ginny Hendry</a> and <a href="https://twitter.com/wondible">Justin Love</a>) encouraged me to examine the question more closely. Clearly, I needed to study this. So that is how I have spent the last few days.</p>
 
+
+
+
 <h3>Simplicity</h3>
+
+
+
 
 <p>In drafting text for WindyCityRails (and, by extension, ChicagoRuby) I tried to create something that fits our culture. We are an inclusive group and we treat people well.</p>
 
+
+
+
 <p>At the same time, it is important to keep the word count low to limit bureaucracy.</p>
+
+
+
 
 <h3>Inclusiveness</h3>
 
+
+
+
 <p>The WindyCityRails and ChicagoRuby communities have always strived to be inclusive. We do that in several ways.</p>
+
+
+
 
 <p>Here&rsquo;s an example. Before I became an organizer of ChicagoRuby, I heard that a group of developers met for drinks after every meeting. I always heard about the gathering after the fact. I could have taken this personally, but I realized that the group was not intentionally excluding me. They just didn&rsquo;t know me. Further, they were so caught up in their discussions that it simply never occurred to them to invite people they didn&rsquo;t know.</p>
 
+
+
+
 <p>Things are different today. Today we announce the drink invitation at the beginning of each meeting, and we post it with every meeting announcement. Brand new people are made to feel welcome.</p>
+
+
+
 
 <p>Further, we make it clear that one does not have to drink alcohol to participate. Soft drinks and cranberry juice are in abundance.</p>
 
+
+
+
 <p>Another example of inclusiveness: All of ChicagoRuby&rsquo;s monthly events are free because we want to include aspiring developers regardless of income. Expenses for the monthly events are covered by monthly sponsors and revenue from WindyCityRails.</p>
+
+
+
 
 <h3>Excluding Others</h3>
 
+
+
+
 <p>I have more experience with racism than any other -ism, so that&rsquo;s what I&rsquo;ll talk about here. A mentor of mine raised two questions during a discussion about racism and oppression.</p>
+
+
+
 
 <ul>
 <li><p>Do you want to end all oppression, or just the oppression directed at you?</p></li>
@@ -203,33 +422,75 @@
 </ul>
 
 
+
+
 <p>Here&rsquo;s an experience that influences my thoughts on this subject. A few decades ago, when I was a young developer for a company in Colorado, I had a confrontation with senior developer, a White man. I was certain that this was a Black/White issue. I won&rsquo;t go into details, but I will admit that I treated that White man very badly in retaliation.</p>
+
+
+
 
 <p>Some days later, as I walked past my manager&rsquo;s desk, I noticed my &ldquo;nemesis&rdquo; interacting with my manager (a White man who also happened to be his manager) in the same manner that he had interacted with me. That&rsquo;s when I figured out that this guy wasn&rsquo;t a racist, he was just an asshole.</p>
 
+
+
+
 <p>And, because of the way I had treated him, I was the one guilty of racism.</p>
+
+
+
 
 <p>In drafting the WindyCityRails code of conduct, it was important to avoid showing favoritism toward any group. All groups must be treated with respect, not just my own.</p>
 
+
+
+
 <h3>Respect</h3>
+
+
+
 
 <p>I was disturbed by the language in some of the sample codes of conduct. It took me awhile to figure out what bothered me. Finally, it hit me: The tone was threatening. They seemed to say (paraphrased): &ldquo;Follow these rules or we will kick you out and take away your money.&rdquo;</p>
 
+
+
+
 <p>Colleagues don&rsquo;t threaten each other. Colleagues treat each other with respect.</p>
+
+
+
 
 <p>Some may point out that without a method of enforcement, the code has no teeth. They&rsquo;re right. There are no teeth. However, I don&rsquo;t believe that &ldquo;teeth&rdquo; or threats are needed amongst colleagues. Colleagues treat each other with respect.</p>
 
+
+
+
 <h3>Conclusion</h3>
+
+
+
 
 <p>There you have it&hellip; my opinion. Can my opinion change? Perhaps. I have many blind spots, and that is why I am sharing my thought process. I look forward to hearing your feedback in the comments below or over a cup of coffee.</p>
 
+
+
+
 <p>By the way, the <a href="http://www.windycityrails.org">WindyCityRails call for proposals</a> is still open, as of the date of this post. If you are doing something exciting with Ruby and/or Rails, please submit a proposal. Thanks.</p>
+
+
+
 
 <h3><em>Update (Jan 2014)</em></h3>
 
-<p><em>After this post, several colleagues introduced me to new information.  The result, an updated code of conduct, is covered in <a href="/blog/2014/01/28/an-environment-of-respect-2nd-iteration/">An Environment of Respect, 2nd Iteration</a>.</em></p>
 
-<p><em>More info on this topic can be found under the tag <a href="/blog/categories/environment-of-respect/">Environment of Respect</a>.</em></p>
+
+
+<p><em>After this post, several colleagues introduced me to new information.  The result, an updated code of conduct, is covered in <a href="http://RayHightower.com/blog/2014/01/28/an-environment-of-respect-2nd-iteration/">An Environment of Respect, 2nd Iteration</a>.</em></p>
+
+
+
+
+<p><em>More info on this topic can be found under the tag <a href="http://RayHightower.com/blog/categories/environment-of-respect/">Environment of Respect</a>.</em></p>
+
 ]]></content>
   </entry>
   
