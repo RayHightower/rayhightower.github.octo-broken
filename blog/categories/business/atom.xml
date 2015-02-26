@@ -4,7 +4,7 @@
   <title><![CDATA[Category: business | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/business/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-02-25T20:19:45-06:00</updated>
+  <updated>2015-02-26T12:13:36-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -20,38 +20,18 @@
     <id>http://RayHightower.com/blog/2015/01/22/context-changes-everything</id>
     <content type="html"><![CDATA[<p>There are some cases where time zone information is absolutely critical. For example: When scheduling a video conference that crosses national boundaries.</p>
 
-
-
-
 <p>A few hours ago, Google sent me a reminder about today&rsquo;s <a href="http://linuxbarbados.org">LinuxBarbados</a> meeting. The group meets via video conferencing software over the web. Google&rsquo;s reminder was confusing because it showed the time without the time zone (screenshot below). LinuxBarbados is based in the Caribbean, and some of the members participate from other time zones.</p>
 
-
-
-
-<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/GH_time_zone_arrow.png' width='' height='' alt='What time is it when the time zone is unknown?' title='What time is it when the time zone is unknown?'><span class='caption-text'>What time is it when the time zone is unknown?</span></span></p>
-
-
-
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/GH_time_zone_arrow.png' width='' height='' alt='What time is it when the time zone is unknown?' title='What time is it when the time zone is unknown?'><span class='caption-text'>What time is it when the time zone is unknown?</span></span></p>
 
 <p>Google&rsquo;s automated reminder said <code>3pm - 4pm</code> with no time zone reference. How confusing! Members of the group received the same automated reminder with the same information, regardless of time zone. A small change, displaying the time as <code>3pm - 4pm (CST)</code> would solve the problem.</p>
-
-
-
 
 <!--more-->
 
 
-
-
 <h3>Other Context Examples</h3>
 
-
-
-
 <p>When people speak with each other directly, context is implied. But when communication happens in printed form, it&rsquo;s helpful to have the context in print, too. For example:</p>
-
-
-
 
 <ul>
 <li>Walking down the street, you see a poster advertising a concert on January 29th. No year is shown. Is this an old poster for a concert that happened last year on Jan 29th? Or is the event happening next week?</li>
@@ -60,10 +40,7 @@
 </ul>
 
 
-
-
 <p>Context changes everything. Something all of us need to remember.</p>
-
 ]]></content>
   </entry>
   
@@ -74,66 +51,31 @@
     <id>http://RayHightower.com/blog/2015/01/02/no-windows-stronger-planes</id>
     <content type="html"><![CDATA[<p>It is always good to start the new year with something inspirational. <a href="http://www.technicondesign.com/">Technicon Design</a> created a 3-minute video to demonstrate their IXION Windowless Jet Concept. Worth watching full screen.</p>
 
-
-
-
 <center><iframe name="windowlessjet" src="//player.vimeo.com/video/78458486" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
-
-
 
 
 <p>How can a plane with no windows offer better views for passengers?</p>
 
-
-
-
 <!--more-->
-
-
 
 
 <h3>Windows vs Fuselage Strength</h3>
 
-
-
-
 <p>When we add a window to the fuselage of an airplane, we reduce the strength of the fuselage. Glass is weaker than aluminum. So aircraft engineers need to make up for the lost strength. The engineers might add a support structure, thicken the aluminum, or try a different alloy.</p>
-
-
-
 
 <p>But when windows are eliminated, structural integrity is maintained. And the weight of the plane can be reduced because we can eliminate the extra supports.</p>
 
-
-
-
 <h3>How Do We See Without Windows</h3>
-
-
-
 
 <p>As shown in the Technicon video, views can be better without windows!  Cameras are mounted at strategic points on the outside of the plane. And the inner surface of the plane, the part that passengers can see, is covered with a display material. Computers take the images captured by the external cameras, and they translate that into images for display on the inner walls of the plane.</p>
 
-
-
-
 <p>The result: Passengers feel like they&rsquo;re flying in a glass plane. That&rsquo;s an idea best communicated through the Technicon video.</p>
-
-
-
 
 <h3>Applying Tech Across Industries</h3>
 
-
-
-
 <p>Processing power continues to fall in price. Flat panel monitors get less expensive each day. The window-less plane shows us what can happen when advances in one industry are applied to another. Blend these advances with a high-speed internet connection delivered via satellite, and the Internet of Things (IoT) takes a great leap forward. Cross-discipline engineering is exciting.</p>
 
-
-
-
 <p>Happy New Year!</p>
-
 ]]></content>
   </entry>
   
@@ -142,69 +84,33 @@
     <link href="http://RayHightower.com/blog/2014/12/30/owc-thinks-ahead/"/>
     <updated>2014-12-30T17:44:00-06:00</updated>
     <id>http://RayHightower.com/blog/2014/12/30/owc-thinks-ahead</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/owc_ssd.jpg' width='' height='' alt='MacBook Pro SSD, next to a nickel.' title='MacBook Pro SSD, next to a nickel.'><span class='caption-text'>MacBook Pro SSD, next to a nickel.</span></span>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/owc_ssd.jpg' width='' height='' alt='MacBook Pro SSD, next to a nickel.' title='MacBook Pro SSD, next to a nickel.'><span class='caption-text'>MacBook Pro SSD, next to a nickel.</span></span>
 Every computer user has to deal with this at some point. Your machine runs out of storage space: hard drive, SSD, or whatever mass storage you happen to use. In my case, the 512GB SSD in my early 2013 MacBook Pro was over 90% full. Time for an upgrade.</p>
 
-
-
-
 <p>Fortunately (and contrary to what the Apple literature says) it is possible to upgrade the SSD in a MacBook Pro. RAM is different because the MBP&rsquo;s RAM is soldered to the logic board. But the SSD plugs into a socket. The SSD upgrade path is well-documented on YouTube and elsewhere.</p>
-
-
-
 
 <!--more-->
 
 
-
-
 <h3>Ordered from OWC</h3>
-
-
-
 
 <p>Ordering an SSD from Amazon would have saved a few bucks, but I chose <a href="https://www.macsales.com/">Other World Computing</a> instead. Past experience with OWC has been outstanding. The company consistently offers high-performance gear. It was all a matter of trust.</p>
 
-
-
-
 <p>On the day my 960GB SSD arrived, I smacked myself on the forehead. I realized (too late) that I forgot to order a screwdriver for the special pentalobe screws that hold the MacBook Pro together.</p>
-
-
-
 
 <h3>Screwdrivers Included</h3>
 
-
-
-
 <p>But&hellip; When I opened the SSD box from OWC, I was pleasantly surprised. A pentalobe screwdriver was included in the SSD kit, along with a six-point Torx screwdriver. Both screwdrivers are needed for the installation. Thanks to OWC’s forethought, my upgrade plans moved forward undisturbed.</p>
-
-
-
 
 <p>The hardest part of the SSD upgrade was waiting <em>patiently</em> for the Time Machine restoration to complete.</p>
 
-
-
-
 <p>OWC thinks ahead.</p>
-
-
-
 
 <h3>Lesson Learned</h3>
 
-
-
-
 <p><a href="http://wisdomgroup.com">WisdomGroup</a> turned twenty years old today. Whenever I experience outstanding service from a company, I pause to think about how to apply the lesson to WisdomGroup and all of our related ventures. The lesson in this case: Think ahead. Anticipate the needs of the customer. And fulfill those needs.</p>
 
-
-
-
 <p>Thanks OWC for making the SSD upgrade process as seamless as possible. And thanks for the business lesson, too!</p>
-
 ]]></content>
   </entry>
   
@@ -215,28 +121,15 @@ Every computer user has to deal with this at some point. Your machine runs out o
     <id>http://RayHightower.com/blog/2014/02/03/exploring-controversial-coding-topics-at-8th-light</id>
     <content type="html"><![CDATA[<p><a href="http://8thlight.com">8th Light</a> recently hosted a panel discussion on Controversial Coding Topics. I was honored to share the panel with two technology leaders whom I admire: <a href="http://twitter.com/markrickmeier">Mark Rickmeier</a> of <a href="http://tablexi.com">Table XI</a> and <a href="http://twitter.com/coreyhaines">Corey Haines</a> of <a href="http://wavetable.com">Wavetable</a>. <a href="http://twitter.com/little_fig">Rachel Feigenbaum</a> of 8th Light organized the event.</p>
 
-
-
-
 <!--more-->
-
-
 
 
 <center><iframe src="//player.vimeo.com/video/84793305" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
 
 
-
-
 <h3>Topics Covered</h3>
 
-
-
-
 <p>Some of the topics covered during the discussion:</p>
-
-
-
 
 <ul>
 <li>Hiring. What do you look for when building a team?</li>
@@ -246,15 +139,9 @@ days!</li>
 </ul>
 
 
-
-
 <h3>Gratitude</h3>
 
-
-
-
 <p>Thank you 8th Light for making this happen.</p>
-
 ]]></content>
   </entry>
   
@@ -263,60 +150,30 @@ days!</li>
     <link href="http://RayHightower.com/blog/2014/01/15/henry-ford-faster-horse/"/>
     <updated>2014-01-15T13:49:00-06:00</updated>
     <id>http://RayHightower.com/blog/2014/01/15/henry-ford-faster-horse</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/ford-model-t-1910.jpg' width='' height='' alt='1910 Ford Model T' title='1910 Ford Model T'><span class='caption-text'>1910 Ford Model T</span></span></p>
-
-
-
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/ford-model-t-1910.jpg' width='' height='' alt='1910 Ford Model T' title='1910 Ford Model T'><span class='caption-text'>1910 Ford Model T</span></span></p>
 
 <blockquote><p>If I had asked people what they wanted, they would have asked for a faster horse.</p>
 
 <p>~Henry Ford</p></blockquote>
 
-
-
-
 <p>The above Henry Ford quote is often cited in presentations about innovation. The point of the quote: An inventor who listens to customers too closely, without observing customer behavior, will reap tiny improvements at best. Ford ignored the request for &ldquo;a faster horse&rdquo;, and that is how the Ford Motor Company became a leader in the early auto industry.</p>
 
-
-
-
 <p>That&rsquo;s one way to interpret Ford&rsquo;s quote. Last night, I was introduced to another view.</p>
-
-
-
 
 <!--more-->
 
 
-
-
 <h3>Parse the Quote Differently, Don&rsquo;t Ignore it</h3>
-
-
-
 
 <p>Last night&rsquo;s <a href="http://www.ixdachicago.org">IxDA Chicago</a> meeting featured a presentation by <a href="http://chris-holmes.com">Chris Holmes</a>, who shared a different view of the Ford quote. If we focus on improving the speed of horses (perhaps through nutrition or better horse shoes) very little improvement can be achived.</p>
 
-
-
-
 <p>But something interesting happens when we parse the quote differently. The adjective <em>faster</em> reveals the customer&rsquo;s true need. The noun <em>horse</em> is the customer&rsquo;s &ldquo;solution&rdquo; based on what they currently know about the world. For the innovator, <em>faster</em> stands out. Focusing on <em>faster</em> leads to innovation.</p>
-
-
-
 
 <h3>Focus on Faster</h3>
 
-
-
-
 <p><em>Faster</em> tells us that we can stretch beyond our current thinking and consider other modes of transportation. Focusing on <em>faster</em> led to the beginning of the automobile industry.</p>
 
-
-
-
 <p>Customers are communicating their desires all the time. We need to listen carefully and parse well. Thanks IxDA Chicago and Chris Holmes for the lesson.</p>
-
 ]]></content>
   </entry>
   

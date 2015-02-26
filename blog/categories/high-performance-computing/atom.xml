@@ -4,7 +4,7 @@
   <title><![CDATA[Category: high performance computing | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/high-performance-computing/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-02-25T20:19:45-06:00</updated>
+  <updated>2015-02-26T12:13:36-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -18,40 +18,20 @@
     <link href="http://RayHightower.com/blog/2014/09/09/solar-powered-parallella/"/>
     <updated>2014-09-09T09:18:00-05:00</updated>
     <id>http://RayHightower.com/blog/2014/09/09/solar-powered-parallella</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/parallella_solar.jpg' width='' height='' alt='Give solar power to your Parallella with a few simple components.' title='Give solar power to your Parallella with a few simple components.'><span class='caption-text'>Give solar power to your Parallella with a few simple components.</span></span></p>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella_solar.jpg' width='' height='' alt='Give solar power to your Parallella with a few simple components.' title='Give solar power to your Parallella with a few simple components.'><span class='caption-text'>Give solar power to your Parallella with a few simple components.</span></span></p>
 
-
-
-
-<p>This article describes a simple hardware hack: Making the <a href="http://RayHightower.com/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella</a> run on solar energy.</p>
-
-
-
+<p>This article describes a simple hardware hack: Making the <a href="/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella</a> run on solar energy.</p>
 
 <p>Motivation: The fastest computers in the world gulp electricity at an alarming rate. For example, <a href="http://www.top500.org/system/177999">Tianhe-2</a> at the National Super Computer Center in Guangzhou, China uses 17.8 megawatts of energy per year. In dollars, that’s roughly $17 million spent on electricity spent each year, depending on how the electricity is sourced.</p>
 
-
-
-
 <p>Scientists at <a href="http://www.sandia.gov/">Sandia National Laboratories</a> estimate that the earth&rsquo;s surface absorbs enough solar energy in ninety minutes to power every electrical device on the planet for a full year. A year&rsquo;s worth of energy in ninety minutes! Surely we can use some of that energy to power our supercomputers.</p>
-
-
-
 
 <!--more-->
 
 
-
-
 <h3>Observations</h3>
 
-
-
-
 <p>The solar Parallella idea was driven by a few observations:</p>
-
-
-
 
 <ul>
 <li><p>Parallella only needs five watts of power, five volts at 1 ampere. The device might spike at startup or during heavy calculations, but not by much.</p></li>
@@ -60,27 +40,13 @@
 </ul>
 
 
-
-
 <p>Can a cell phone solar charger be hacked to power Parallella? Yes!</p>
-
-
-
 
 <h3>Building the Hybrid Cable</h3>
 
-
-
-
 <p>Here&rsquo;s how to get started&hellip;</p>
 
-
-
-
-<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/parallella_usb_solar.jpg' width='' height='' alt='Making the connections.' title='Making the connections.'><span class='caption-text'>Making the connections.</span></span></p>
-
-
-
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella_usb_solar.jpg' width='' height='' alt='Making the connections.' title='Making the connections.'><span class='caption-text'>Making the connections.</span></span></p>
 
 <ul>
 <li><p>First, get an off-the-shelf solar device capable of providing 5 volts at 2 amperes. Many cell phone solar chargers will do this, but some will only provide 1 ampere of current. You will need 2 amperes. As of this writing, Amazon sells solar cell phone chargers for about $35.00. Note that the model shown in this article combines a photovoltaic panel with a lithium ion battery. Energy provided by the sun can be stored by the battery for later use.</p></li>
@@ -91,25 +57,13 @@
 </ul>
 
 
-
-
 <p>You&rsquo;re done! Plug everything in and watch your Parallella boot up. Note that this configuration will also power the Parallella&rsquo;s cooling fan.</p>
 
-
-
-
-<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/parallella_solar_complete.jpg' width='' height='' alt='Parallella running on solar power.' title='Parallella running on solar power.'><span class='caption-text'>Parallella running on solar power.</span></span></p>
-
-
-
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella_solar_complete.jpg' width='' height='' alt='Parallella running on solar power.' title='Parallella running on solar power.'><span class='caption-text'>Parallella running on solar power.</span></span></p>
 
 <h3>Proof of Concept</h3>
 
-
-
-
 <p>It probably doesn’t make sense to call this a project. It&rsquo;s more of a proof of concept. Scaling up will cost money and time. But the benefits of solar energy, including cost savings and reduced carbon footprint, make this a worthwhile path to pursue.</p>
-
 ]]></content>
   </entry>
   
@@ -118,37 +72,20 @@
     <link href="http://RayHightower.com/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/"/>
     <updated>2014-07-07T13:31:00-05:00</updated>
     <id>http://RayHightower.com/blog/2014/07/07/parallella-quick-start-guide-with-gotchas</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper center'><img class='caption' src='http://RayHightower.com/images/parallella_screenshot.png' width='' height='' alt='Parallella screenshot, 1080p.' title='Parallella screenshot, 1080p.'><span class='caption-text'>Parallella screenshot, 1080p.</span></span>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper center'><img class='caption' src='/images/parallella_screenshot.png' width='' height='' alt='Parallella screenshot, 1080p.' title='Parallella screenshot, 1080p.'><span class='caption-text'>Parallella screenshot, 1080p.</span></span>
 Parallella is a single-board supercomputer smaller than a deck of cards. While today’s fastest laptops contain four processor cores, Parallella has <em>eighteen</em> (2 <a href="http://arm.com/">ARM</a> cores plus an <a href="http://www.adapteva.com/epiphanyiii/">Epiphany</a> chip with 16 <a href="http://en.wikipedia.org/wiki/Reduced_instruction_set_computing">RISC</a> cores). The maker of Parallella, <a href="http://adapteva.com">Adapteva</a>, is on a mission to democratize parallel computing. The company&rsquo;s tag line is <em>Supercomputing for Everyone</em>.</p>
-
-
-
 
 <!--more-->
 
 
-
-
 <p>Everything in this post is based on the <a href="http://www.parallella.org/quick-start/">official quick start guide created by the Parallella team</a>. These instructions are tailored for a Mac running OS X Mavericks (10.9.3) and a Parallella-16 equipped with the Zynq 7010 chip. I ran into some <em>gotchas</em> during my first Parallella experience. The snags (and solutions) are documented here.</p>
 
-
-
-
-<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/parallella.jpg' width='' height='' alt='Parallella. Tiny and powerful.' title='Parallella. Tiny and powerful.'><span class='caption-text'>Parallella. Tiny and powerful.</span></span></p>
-
-
-
+<p><span class='caption-wrapper right'><img class='caption' src='/images/parallella.jpg' width='' height='' alt='Parallella. Tiny and powerful.' title='Parallella. Tiny and powerful.'><span class='caption-text'>Parallella. Tiny and powerful.</span></span></p>
 
 <h3>Tools Required</h3>
 
-
-
-
 <p>You will need the following items in order to burn an SD card for your
 Parallella:</p>
-
-
-
 
 <ul>
 <li>Micro-SD card, 16GB or greater.</li>
@@ -161,53 +98,24 @@ image and related files.</li>
 </ul>
 
 
-
-
 <p>Adapteva sells an accessories kit containing an SD card, power adapter, micro-HDMI to HDMI cable, and USB-to-micro-USB adapter. Unless you already have these items, buying the kit may save you time.</p>
-
-
-
 
 <h3>These Steps Could Break Your Primary Machine</h3>
 
-
-
-
-<p>Since you&rsquo;re experimenting with Parallella, we can assume that you are an advanced user. Your computer is already backed up, or you&rsquo;re running these steps on a test machine. And you know <a href="http://RayHightower.com/sudo-disclaimer/">the power and pitfalls of sudo</a>. Technology evolves rapidly, and everything you read here could change by the time you read it.</p>
-
-
-
+<p>Since you&rsquo;re experimenting with Parallella, we can assume that you are an advanced user. Your computer is already backed up, or you&rsquo;re running these steps on a test machine. And you know <a href="/sudo-disclaimer/">the power and pitfalls of sudo</a>. Technology evolves rapidly, and everything you read here could change by the time you read it.</p>
 
 <h3>Comparison with Raspberry Pi or Beaglebone Black</h3>
 
+<p><span class='caption-wrapper right'><img class='caption' src='/images/parallella_fan.jpg' width='' height='' alt='Bits get hot. Use a fan.' title='Bits get hot. Use a fan.'><span class='caption-text'>Bits get hot. Use a fan.</span></span>
+How does the Parallella compare with other single-board computers, like the <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a> or <a href="/blog/2014/01/02/beaglebone-black-ubuntu-part-1/">Beaglebone Black</a>? The first difference noticed at boot-time: Parallella runs hot! So hot, in fact, that the unit comes with a heat sink and the recommendation to add a fan. I’ve never needed a fan with a Pi or a ‘Bone.</p>
 
-
-
-<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/parallella_fan.jpg' width='' height='' alt='Bits get hot. Use a fan.' title='Bits get hot. Use a fan.'><span class='caption-text'>Bits get hot. Use a fan.</span></span>
-How does the Parallella compare with other single-board computers, like the <a href="http://RayHightower.com/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a> or <a href="http://RayHightower.com/blog/2014/01/02/beaglebone-black-ubuntu-part-1/">Beaglebone Black</a>? The first difference noticed at boot-time: Parallella runs hot! So hot, in fact, that the unit comes with a heat sink and the recommendation to add a fan. I’ve never needed a fan with a Pi or a ‘Bone.</p>
-
-
-
-
-<p>Of course, the Parallella runs hotter because it has more processing power packed tightly together in limited space. Since Parallella is designed to run tasks in parallel, we can expect certain programs to perform faster than they would on the Pi or &lsquo;Bone. Future posts will explore Parallella&rsquo;s performance using languages designed for concurrency, languages like <a href="http://RayHightower.com/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/">Go</a> and <a href="http://RayHightower.com/blog/2014/02/06/installing-rubinius-using-rvm/">Rubinius</a>. Now, let’s get started with Parallella.</p>
-
-
-
+<p>Of course, the Parallella runs hotter because it has more processing power packed tightly together in limited space. Since Parallella is designed to run tasks in parallel, we can expect certain programs to perform faster than they would on the Pi or &lsquo;Bone. Future posts will explore Parallella&rsquo;s performance using languages designed for concurrency, languages like <a href="/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/">Go</a> and <a href="/blog/2014/02/06/installing-rubinius-using-rvm/">Rubinius</a>. Now, let’s get started with Parallella.</p>
 
 <h3>Getting the Parallella OS</h3>
 
-
-
-
 <p>Parallella runs a customized version of Ubuntu installed on a micro-SD card. Burning the SD card takes a long time, so it makes sense to start that process first.</p>
 
-
-
-
 <p>Download the files that you will need to burn onto the SD card. I&rsquo;m running Mac OS X on my primary machine, and I&rsquo;m configuring a Parallella-16 with a Zynq 7010 and an HDMI display. Therefore, the files needed for this configuration are:</p>
-
-
-
 
 <ul>
 <li><a href="http://downloads.parallella.org/ubuntu/dists/trusty/image/ubuntu-14.04-140611.img.gz">Ubuntu 14.04 for Parallella</a> (released June 11, 2014)</li>
@@ -216,73 +124,35 @@ How does the Parallella compare with other single-board computers, like the <a h
 </ul>
 
 
-
-
 <p>Unzip the files and place them in a directory that&rsquo;s handy. You&rsquo;ll need them for the next step. With Mac OS X, you can unzip the files by double-clicking them in <code>Finder</code>.</p>
-
-
-
 
 <p>Note: You might need different files depending on the current date (Parallella software is in a rapid state of flux) and your exact equipment. If your configuration is different, you can make the adjustments described in Parallella&rsquo;s official guide.</p>
 
-
-
-
 <h3>Burn the SD Card</h3>
-
-
-
 
 <p>Insert your SD card into your Mac&rsquo;s SD card reader, and use the Mac OS X <code>diskutil list</code> command to determine the designation of the SD card. If you use portable hard drives with your primary machine, the SD card designation could change from time to time, so it&rsquo;s important to perform this step each time you burn a card.</p>
 
+<p>&#8220;` bash</p>
 
+<p>$ diskutil list
+/dev/disk0
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        <em>500.3 GB   disk0
+   1:                        EFI EFI                     209.7 MB   disk0s1
+   2:                  Apple_HFS MacSSD                  499.4 GB   disk0s2
+   3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
+/dev/disk1
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     FDisk_partition_scheme                       </em>15.9 GB     disk1
+   1:               Windows_NTFS Untitled 1             15.9 GB     disk1s1</p>
 
+<p>$</p>
 
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>diskutil list
-</span><span class='line'>/dev/disk0
-</span><span class='line'>   <span class="c">#:                       TYPE NAME                    SIZE       IDENTIFIER</span>
-</span><span class='line'>   0:      GUID_partition_scheme                        *500.3 GB   disk0
-</span><span class='line'>   1:                        EFI EFI                     209.7 MB   disk0s1
-</span><span class='line'>   2:                  Apple_HFS MacSSD                  499.4 GB   disk0s2
-</span><span class='line'>   3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
-</span><span class='line'>/dev/disk1
-</span><span class='line'>   <span class="c">#:                       TYPE NAME                    SIZE       IDENTIFIER</span>
-</span><span class='line'>   0:     FDisk_partition_scheme                       *15.9 GB     disk1
-</span><span class='line'>   1:               Windows_NTFS Untitled 1             15.9 GB     disk1s1
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-
-
-
-<p></p>
-
-
-
+<p>&#8220;`</p>
 
 <p>From this <code>diskutil</code> report, we can see that we want to burn the SD image to <code>/dev/disk1</code>. The other device is the hard drive for my primary machine. Burning the wrong device means destroying data.</p>
 
-
-
-
 <p>To burn the SD card&hellip;</p>
-
-
-
 
 <ol>
 <li>Change into the directory where you downloaded the Ubuntu image.</li>
@@ -291,42 +161,23 @@ How does the Parallella compare with other single-board computers, like the <a h
 </ol>
 
 
-
-
 <p>To execute the above steps as <code>bash</code> commands, do the following:</p>
 
+<p>&#8220;` bash</p>
 
+<p>$ cd [directory containing the ubuntu image file]</p>
 
+<p>$ diskutil unmountDisk /dev/disk1</p>
 
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="nb">cd</span> <span class="o">[</span>directory containing the ubuntu image file<span class="o">]</span>
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>diskutil unmountDisk /dev/disk1
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>sudo dd <span class="k">if</span><span class="o">=</span>ubuntu-14.04-140611.img <span class="nv">of</span><span class="o">=</span>/dev/disk1 <span class="nv">bs</span><span class="o">=</span>64k
-</span><span class='line'>Password:
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>$ sudo dd if=ubuntu-14.04-140611.img of=/dev/disk1 bs=64k
+Password:</p>
 
-
-
-
-<p></p>
-
-
-
+<p>&#8220;`</p>
 
 <p>The <code>dd</code> command takes a <em>long</em> time to run, over 56 minutes on my machine. Here&rsquo;s a quick run-through of the command options:</p>
 
-
-
-
 <ul>
-<li><code>sudo</code> gives you <a href="http://RayHightower.com/sudo-disclaimer/">super powers</a>.</li>
+<li><code>sudo</code> gives you <a href="/sudo-disclaimer/">super powers</a>.</li>
 <li><code>dd</code> is the &ldquo;copy and convert&rdquo; command. The letters &ldquo;dd&rdquo; have nothing to do with what the tool actually does. It&rsquo;s just a command name. And like so many things in computer science, the name might be based on a pun.</li>
 <li><code>if=</code> specifies the input file. You can include the full path, or if the file is in your current directory, you can omit the path as shown in this example.</li>
 <li><code>of=</code> specifies the output file. We know that the SD card is located at <code>/dev/disk</code> so that&rsquo;s where the results of this command are headed.  Note that your destination directory may differ from this one.</li>
@@ -334,349 +185,160 @@ How does the Parallella compare with other single-board computers, like the <a h
 </ul>
 
 
-
-
 <h3>About Block Size</h3>
-
-
-
 
 <p>The Mac section of the official Parallella guide recommends a block size of size of 1 megabyte, while the Linux instructions recommend 64 kilobytes (the option <code>bs=64k</code> in the <code>dd</code> command). I initially used <code>bs=1m</code> on my Mac, and I ran into problems. When I used <code>bs=64k</code>, everything worked fine. Note that I eventually traced my problem to something other than block size (details below) but since the 64k setting still works, I&rsquo;ve left it intact. If I find out why Linux and OS X are using different block sizes, I&rsquo;ll post the information here.</p>
 
-
-
-
 <h3>Checking dd Progress</h3>
 
-
-
-
-<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/dd_progress.png' width='' height='' alt='Activity Monitor' title='Activity Monitor'><span class='caption-text'>Activity Monitor</span></span></p>
-
-
-
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/dd_progress.png' width='' height='' alt='Activity Monitor' title='Activity Monitor'><span class='caption-text'>Activity Monitor</span></span></p>
 
 <p>Waiting an hour for the <code>dd</code> command to run can be disconcerting because the machine does not give any feedback on progress. No gas gauge, spinning indicator, nothing. How do we know if the write process is working?</p>
 
-
-
-
 <p>Here&rsquo;s how to check progress. Run Apple&rsquo;s <code>Activity Monitor</code>, and look for <code>dd</code> on the list of processes, as shown in the Activity Monitor screenshot. The number of bytes written will increase slowly while <code>dd</code> burns the Ubuntu image onto the SD card. With the current version of Ubuntu, roughly 7.4GB will be written to the SD. At completion, <code>dd</code> will disappear from the Activity Monitor list and you&rsquo;ll see the following at the command line.</p>
 
+<p>&#8220;` bash</p>
 
+<p>$ sudo dd if=ubuntu-14.04-140611.img of=/dev/disk1 bs=64k
+Password:
+121280+0 records in
+121280+0 records out
+7948206080 bytes transferred in 3363.824531 secs (2362848 bytes/sec)</p>
 
+<p>$</p>
 
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo dd <span class="k">if</span><span class="o">=</span>ubuntu-14.04-140611.img <span class="nv">of</span><span class="o">=</span>/dev/disk1 <span class="nv">bs</span><span class="o">=</span>64k
-</span><span class='line'>Password:
-</span><span class='line'>121280+0 records in
-</span><span class='line'>121280+0 records out
-</span><span class='line'>7948206080 bytes transferred in 3363.824531 secs <span class="o">(</span>2362848 bytes/sec<span class="o">)</span>
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-
-
-
-<p></p>
-
-
-
+<p>&#8220;`</p>
 
 <p>As you can see from the report, it took 3363.824531 seconds (just over 56 minutes) for <code>dd</code> to burn the Ubuntu image onto the SD card. That&rsquo;s a long time to wait with zero feedback. Activity Monitor will tell you what&rsquo;s going on.</p>
 
-
-
-
 <h3>Confirm Partitions</h3>
-
-
-
 
 <p>To confirm that the partitions have been created and that Ubuntu has been written to the SD card, use <code>diskutil list</code> again.</p>
 
+<p>&#8220;` bash</p>
 
+<p>$ diskutil list
+/dev/disk0
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        <em>500.3 GB   disk0
+   1:                        EFI EFI                     209.7 MB   disk0s1
+   2:                  Apple_HFS MacSSD                  499.4 GB   disk0s2
+   3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
+/dev/disk1
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     FDisk_partition_scheme                        </em>15.9 GB    disk1
+   1:                 DOS_FAT_32 BOOT                    134.2 MB   disk1s1
+   2:                      Linux                         7.3 GB     disk1s2</p>
 
+<p>$</p>
 
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>diskutil list
-</span><span class='line'>/dev/disk0
-</span><span class='line'>   <span class="c">#:                       TYPE NAME                    SIZE       IDENTIFIER</span>
-</span><span class='line'>   0:      GUID_partition_scheme                        *500.3 GB   disk0
-</span><span class='line'>   1:                        EFI EFI                     209.7 MB   disk0s1
-</span><span class='line'>   2:                  Apple_HFS MacSSD                  499.4 GB   disk0s2
-</span><span class='line'>   3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
-</span><span class='line'>/dev/disk1
-</span><span class='line'>   <span class="c">#:                       TYPE NAME                    SIZE       IDENTIFIER</span>
-</span><span class='line'>   0:     FDisk_partition_scheme                        *15.9 GB    disk1
-</span><span class='line'>   1:                 DOS_FAT_32 BOOT                    134.2 MB   disk1s1
-</span><span class='line'>   2:                      Linux                         7.3 GB     disk1s2
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-
-
-
-<p></p>
-
-
-
+<p>&#8220;`</p>
 
 <p>As expected, <code>/dev/disk0</code> remains unchanged. We want it that way because that&rsquo;s where our primary machine&rsquo;s operating system resides. <code>/dev/disk1</code> (your actual SD card designation may be different) is the target disk we&rsquo;re after. Two new partitions are on the SD card, a FAT32 partition named <code>BOOT</code> and a Linux partition.</p>
 
-
-
-
 <p>Next we need to copy some supporting files to the new <code>BOOT</code> partition.</p>
-
-
-
 
 <h3>Copying Additional Files to the SD Card</h3>
 
-
-
-
 <p>Now that Ubuntu resides on the SD card, it&rsquo;s time to add the files that support HDMI video and the FPGAs. Here&rsquo;s how.</p>
-
-
-
 
 <p>The additional files will need to be copied to <code>/BOOT</code> on the SD card. While it might make sense to reach the <code>BOOT</code> partition as <code>/dev/disk1</code>, you will actually reach it via <code>/Volumes/BOOT</code>.</p>
 
-
-
-
 <p>We target <code>/dev/disk1</code> when burning the Ubuntu image, but to copy the supporting files we target <code>/Volumes/BOOT</code>. Both designations point to the same place, the SD card. Why the name switch?</p>
-
-
-
 
 <p>I don&rsquo;t know why two different designations are used for the same SD card. I only know that it works. You can expect to see an update posted here if I find an explanation. Or if you have an answer, feel free to post in the comments below.</p>
 
-
-
-
 <p>Before we copy over the files, let&rsquo;s see what&rsquo;s on the <code>BOOT</code> partition on the SD card.</p>
 
+<p>&#8220;` bash</p>
 
+<p>~$ cd /Volumes/BOOT/</p>
 
+<p>/Volumes/BOOT$ ls -al
+total 12
+drwxrwxrwx@ 1 rth   staff   512 Jul  5 23:44 .
+drwxrwxrwt@ 4 root  admin   136 Jul  5 23:44 ..
+drwxrwxrwx  1 rth   staff   512 Jul  5 23:44 .Spotlight-V100
+drwxrwxrwx@ 1 rth   staff   512 Jul  5 23:44 .Trashes
+-rwxrwxrwx  1 rth   staff  4096 Jul  5 23:44 ._.Trashes
+drwxrwxrwx  1 rth   staff   512 Jul  5 23:44 .fseventsd</p>
 
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span><span class="nb">cd</span> /Volumes/BOOT/
-</span><span class='line'>
-</span><span class='line'>/Volumes/BOOT<span class="nv">$ </span>ls -al
-</span><span class='line'>total 12
-</span><span class='line'>drwxrwxrwx@ 1 rth   staff   512 Jul  5 23:44 .
-</span><span class='line'>drwxrwxrwt@ 4 root  admin   136 Jul  5 23:44 ..
-</span><span class='line'>drwxrwxrwx  1 rth   staff   512 Jul  5 23:44 .Spotlight-V100
-</span><span class='line'>drwxrwxrwx@ 1 rth   staff   512 Jul  5 23:44 .Trashes
-</span><span class='line'>-rwxrwxrwx  1 rth   staff  4096 Jul  5 23:44 ._.Trashes
-</span><span class='line'>drwxrwxrwx  1 rth   staff   512 Jul  5 23:44 .fseventsd
-</span><span class='line'>
-</span><span class='line'>/Volumes/BOOT<span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>/Volumes/BOOT$</p>
 
-
-
-
-<p></p>
-
-
-
+<p>&#8220;`</p>
 
 <h3>Gotcha #1: The FPGA Bitstream File</h3>
 
-
-
-
 <p>First, change into the directory where you stored the additional Parallella files, and copy the FPGA bitstream file to <code>/Volumes/BOOT</code>.</p>
 
+<p>&#8220;` bash</p>
 
+<p>$ cp parallella_e16_hdmi_gpiose_7010.bit.bin /Volumes/BOOT/</p>
 
+<p>$ cd /Volumes/BOOT/</p>
 
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>cp parallella_e16_hdmi_gpiose_7010.bit.bin /Volumes/BOOT/
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span><span class="nb">cd</span> /Volumes/BOOT/
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>mv parallella_e16_hdmi_gpiose_7010.bit.bin parallella.bit.bin
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>$ mv parallella_e16_hdmi_gpiose_7010.bit.bin parallella.bit.bin</p>
 
+<p>$</p>
 
-
-
-<p></p>
-
-
-
+<p>&#8220;`</p>
 
 <p>First gotcha: I made the mistake of simply copying the <code>parallella_e16_hdmi_gpiose_7010.bit.bin</code> file without renaming it to <code>parallella.bit.bin</code>. Parallella will only boot when it sees a file with this filename on the SD card&rsquo;s <code>BOOT</code> partition. The original file name will probably change as the software gets updated. With each change, we will need to make sure that the file is renamed <code>parallella.bit.bin</code> on the Parallella.</p>
 
-
-
-
 <p>Obvious in hindsight, but it took me awhile to track that one down!</p>
-
-
-
 
 <h3>Copy the Last Two Files</h3>
 
-
-
-
 <p>Two files were decompressed from <code>kernel-hdmi-default.tgz</code>: <code>devicetree.dtb</code> and <code>uImage</code>. Change into the directory where the files were decompressed, and copy them to <code>/Volumes/BOOT</code>.</p>
 
+<p>&#8220;` bash</p>
 
+<p>$ cp devicetree.dtb /Volumes/BOOT/</p>
 
+<p>$ cp uImage /Volumes/BOOT/</p>
 
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>cp devicetree.dtb /Volumes/BOOT/
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>cp uImage /Volumes/BOOT/
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>$</p>
 
-
-
-
-<p></p>
-
-
-
+<p>&#8220;`</p>
 
 <p>Here’s what the BOOT partition should look like when you’re done..</p>
 
+<p>&#8220;` bash</p>
 
+<p>/Volumes/BOOT$ ls -al
+total 12853
+drwxrwxrwx@ 1 rth   staff     1024 Jul  6 12:14 .
+drwxrwxrwt@ 4 root  admin      136 Jul  6 12:11 ..
+drwxrwxrwx  1 rth   staff      512 Jul  6 12:11 .Spotlight-V100
+drwxrwxrwx@ 1 rth   staff      512 Jul  6 12:11 .Trashes
+-rwxrwxrwx  1 rth   staff     4096 Jul  6 12:11 .<em>.Trashes
+-rwxrwxrwx  1 rth   staff     4096 Jul  6 12:13 .</em>devicetree.dtb
+-rwxrwxrwx  1 rth   staff     4096 Jul  6 12:14 .<em>parallella.bit.bin
+-rwxrwxrwx  1 rth   staff     4096 Jul  6 12:13 .</em>uImage
+drwxrwxrwx  1 rth   staff      512 Jul  6 12:11 .fseventsd
+-rwxrwxrwx@ 1 rth   staff     8607 Jul  6 12:13 devicetree.dtb
+-rwxrwxrwx@ 1 rth   staff  2083744 Jul  6 12:14 parallella.bit.bin
+-rwxrwxrwx@ 1 rth   staff  4468792 Jul  6 12:13 uImage</p>
 
+<p>/Volumes/BOOT$</p>
 
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>/Volumes/BOOT<span class="nv">$ </span>ls -al
-</span><span class='line'>total 12853
-</span><span class='line'>drwxrwxrwx@ 1 rth   staff     1024 Jul  6 12:14 .
-</span><span class='line'>drwxrwxrwt@ 4 root  admin      136 Jul  6 12:11 ..
-</span><span class='line'>drwxrwxrwx  1 rth   staff      512 Jul  6 12:11 .Spotlight-V100
-</span><span class='line'>drwxrwxrwx@ 1 rth   staff      512 Jul  6 12:11 .Trashes
-</span><span class='line'>-rwxrwxrwx  1 rth   staff     4096 Jul  6 12:11 ._.Trashes
-</span><span class='line'>-rwxrwxrwx  1 rth   staff     4096 Jul  6 12:13 ._devicetree.dtb
-</span><span class='line'>-rwxrwxrwx  1 rth   staff     4096 Jul  6 12:14 ._parallella.bit.bin
-</span><span class='line'>-rwxrwxrwx  1 rth   staff     4096 Jul  6 12:13 ._uImage
-</span><span class='line'>drwxrwxrwx  1 rth   staff      512 Jul  6 12:11 .fseventsd
-</span><span class='line'>-rwxrwxrwx@ 1 rth   staff     8607 Jul  6 12:13 devicetree.dtb
-</span><span class='line'>-rwxrwxrwx@ 1 rth   staff  2083744 Jul  6 12:14 parallella.bit.bin
-</span><span class='line'>-rwxrwxrwx@ 1 rth   staff  4468792 Jul  6 12:13 uImage
-</span><span class='line'>
-</span><span class='line'>/Volumes/BOOT<span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>&#8220;`</p>
 
-
-
-
-<p></p>
-
-
-
-
-<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/eject_boot.png' width='' height='' alt='Eject the SD card.' title='Eject the SD card.'><span class='caption-text'>Eject the SD card.</span></span></p>
-
-
-
+<p><span class='caption-wrapper right'><img class='caption' src='/images/eject_boot.png' width='' height='' alt='Eject the SD card.' title='Eject the SD card.'><span class='caption-text'>Eject the SD card.</span></span></p>
 
 <h3>Eject the SD Card, Insert in Parallella</h3>
 
-
-
-
 <p>Now you&rsquo;re ready to eject the SD card from the Mac and insert it in the Parallella. Plug in the HDMI cable, keyboard, mouse, and Ethernet connection. Power up the Parallella, and welcome to the next <em>gotcha</em>.</p>
-
-
-
 
 <h3>Gotcha #2: Powered USB Required</h3>
 
-
-
-
 <p>Parallella booted to a beautiful GUI, but the system would not respond to the keyboard or mouse. After swapping a few keyboard/mouse combinations, I finally tried a powered USB hub. The powered hub worked.</p>
-
-
-
 
 <p>Through trial and error I learned that the Parallella can handle a single keyboard plugged into the micro-USB port. However, if two devices are plugged in via USB, a powered hub is required. A passive USB hub will not work. A combination keyboard, one with both a keyboard and a trackpad, will also need a powered USB hub.</p>
 
-
-
-
 <h3>Default Login Credentials</h3>
 
-
-
-
 <p>Default login credentials for Parallella are&hellip;</p>
-
-
-
 
 <ul>
 <li>username = linaro</li>
@@ -684,109 +346,56 @@ How does the Parallella compare with other single-board computers, like the <a h
 </ul>
 
 
-
-
 <h3>SSH, Vim, Git, etc.</h3>
-
-
-
 
 <p>You can SSH into the Parallella from the network&hellip;</p>
 
+<p>&#8220;` bash</p>
+
+<p>~$ ssh <a href="&#109;&#x61;&#x69;&#x6c;&#116;&#x6f;&#58;&#108;&#x69;&#x6e;&#x61;&#x72;&#111;&#64;&#x31;&#57;&#x32;&#46;&#x31;&#54;&#56;&#x2e;&#49;&#x31;&#46;&#x31;&#x33;&#51;">&#x6c;&#x69;&#110;&#x61;&#114;&#x6f;&#x40;&#x31;&#57;&#x32;&#x2e;&#x31;&#x36;&#56;&#46;&#x31;&#49;&#x2e;&#x31;&#x33;&#51;</a>
+<a href="&#x6d;&#97;&#105;&#108;&#116;&#x6f;&#x3a;&#x6c;&#105;&#x6e;&#97;&#x72;&#x6f;&#64;&#x31;&#57;&#x32;&#46;&#x31;&#54;&#x38;&#46;&#x31;&#49;&#x2e;&#49;&#51;&#51;">&#108;&#105;&#110;&#x61;&#114;&#111;&#x40;&#49;&#x39;&#50;&#x2e;&#x31;&#x36;&#x38;&#46;&#49;&#x31;&#46;&#x31;&#51;&#51;</a>&rsquo;s password:
+Welcome to Linaro 14.04 (GNU/Linux 3.12.0-g0bc9c3a-dirty armv7l)</p>
+
+<ul>
+<li>Documentation:  <a href="https://wiki.linaro.org/">https://wiki.linaro.org/</a>
+Last login: Sun Jul  6 17:34:17 2014 from wisdomgroup-mbp13
+linaro-nano:~></li>
+</ul>
 
 
-
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>ssh linaro@192.168.11.133
-</span><span class='line'>linaro@192.168.11.133<span class="err">&#39;</span>s password:
-</span><span class='line'>Welcome to Linaro 14.04 <span class="o">(</span>GNU/Linux 3.12.0-g0bc9c3a-dirty armv7l<span class="o">)</span>
-</span><span class='line'>
-</span><span class='line'> * Documentation:  https://wiki.linaro.org/
-</span><span class='line'>Last login: Sun Jul  6 17:34:17 2014 from wisdomgroup-mbp13
-</span><span class='line'>linaro-nano:~&gt;
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-
-
-
-<p></p>
-
-
-
+<p>&#8220;`</p>
 
 <p>&hellip; Vim is operational&hellip;</p>
 
+<p>&#8220;` bash</p>
 
+<p>linaro-nano:~> which vim
+/usr/bin/vim
+linaro-nano:~> vim &mdash;version
+VIM &ndash; Vi IMproved 7.4 (2013 Aug 10, compiled Jan  2 2014 19:49:14)
+linaro-nano:~></p>
 
-
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>linaro-nano:~&gt; which vim
-</span><span class='line'>/usr/bin/vim
-</span><span class='line'>linaro-nano:~&gt; vim --version
-</span><span class='line'>VIM - Vi IMproved 7.4 <span class="o">(</span>2013 Aug 10, compiled Jan  2 2014 19:49:14<span class="o">)</span>
-</span><span class='line'>linaro-nano:~&gt;
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-
-
-
-<p></p>
-
-
-
+<p>&#8220;`</p>
 
 <p>&hellip; and Git works fine.</p>
 
+<p>&#8220;` bash</p>
 
+<p>linaro-nano:~> which git
+/usr/bin/git
+linaro-nano:~> git &mdash;version
+git version 1.9.1
+linaro-nano:~></p>
 
-
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>linaro-nano:~&gt; which git
-</span><span class='line'>/usr/bin/git
-</span><span class='line'>linaro-nano:~&gt; git --version
-</span><span class='line'>git version 1.9.1
-</span><span class='line'>linaro-nano:~&gt;
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-
-
-
-<p></p>
-
-
-
+<p>&#8220;`</p>
 
 <h3>Scrot for Screenshots</h3>
 
-
-
-
 <p>If you want to take a screenshot of the Parallella display, use <code>scrot</code>.  It comes with the Ubuntu installation. Type <code>scrot</code> at the command line and hit enter. Five seconds later, the entire screen will be captured and stored in a file called <code>[time stamp]_1920x1080_scrot.png</code> in the current directory.</p>
-
-
-
 
 <h3>Conclusion</h3>
 
-
-
-
 <p>After waiting a year for Parallella to arrive, I&rsquo;m excited to have the device up and running. Future posts will explore the &ldquo;why?&rdquo; behind parallel computing. Thanks Adapteva for helping to democratize supercomputing. Awesome times are ahead!</p>
-
 ]]></content>
   </entry>
   
@@ -795,131 +404,59 @@ How does the Parallella compare with other single-board computers, like the <a h
     <link href="http://RayHightower.com/blog/2014/02/17/sgi-and-big-data/"/>
     <updated>2014-02-17T14:46:00-06:00</updated>
     <id>http://RayHightower.com/blog/2014/02/17/sgi-and-big-data</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/sgi-logo-1990s.png' width='' height='' alt='SGI's logo from the 1990s.' title='SGI's logo from the 1990s.'><span class='caption-text'>SGI&rsquo;s logo from the 1990s.</span></span>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/sgi-logo-1990s.png' width='' height='' alt='SGI&rsquo;s logo from the 1990s.' title='SGI&rsquo;s logo from the 1990s.'><span class='caption-text'>SGI&rsquo;s logo from the 1990s.</span></span>
 <a href="http://sgi.com">Silicon Graphics International Corporation (SGI)</a> computers rendered the special effects for the original <a href="http://en.wikipedia.org/wiki/Jurassic_Park">Jurassic Park</a> movie. Computer enthusiasts coveted SGI machines throughout the 1990s.</p>
-
-
-
 
 <p>But success in the computer industry is fleeting. A few years after Jurassic Park, a convergence of tech advances (Moore&rsquo;s Law, x86 architecture, and Linux) made it possible for commodity PCs to perform as well as SGI&rsquo;s premium workstations. Wall Street traders and other power users abandoned workstations in favor of Linux-based PCs. High-end makers like SGI fell on hard times.</p>
 
-
-
-
 <p>Today, SGI is fighting back. The company is blending x86, Linux, and (buzzword alert) big data to attack the high performance computing market. The vision was presented at this month&rsquo;s <a href="http://www.meetup.com/chicagoacm/events/163287562/">Chicago ACM</a> meeting by Brian Freed, VP of Strategy for SGI.</p>
-
-
-
 
 <!--more-->
 
 
-
-
 <h3>What is Big Data?</h3>
-
-
-
 
 <p>Freed shared a definition of big data from <a href="http://strata.oreilly.com/2012/01/what-is-big-data.html">Edd Dumbill&rsquo;s O&#8217;Reilly Radar article</a>. Big data is characterized by volume (lots of it), variety (it&rsquo;s unstructured), and velocity (the data changes quickly).</p>
 
-
-
-
 <p>In the words of the O&#8217;Reilly author&hellip;</p>
-
-
-
 
 <blockquote><p>Big data is data that exceeds the processing capacity of conventional database systems. The data is too big, moves too fast, or doesn’t fit the strictures of your database architectures. To gain value from this data, you must choose an alternative way to process it.</p>
 
 <p>~Edd Dumbill</p></blockquote>
 
-
-
-
 <p>Definitions are fine, but it&rsquo;s more important to understand <em>why</em> a company might care about big data. Here are a few examples that Freed shared during the ACM meeting.</p>
-
-
-
 
 <h3>Example: Fraud Detection with Big Data</h3>
 
-
-
-
 <p>Consider one challenge faced by credit card companies. When a credit card is presented for an online purchase, how does the authorizing body know if the charge is legitimate? Can legitimacy be determined in a timely fashion, before an impatient buyer abandons a slow seller for a quicker seller?</p>
-
-
-
 
 <p>Sellers who decide too quickly will suffer fraud. Sellers who decide too slowly will lose customers. The problem is amplified because millions of shoppers are clicking the &ldquo;buy now&rdquo; button simultaneously, and they all expect an answer <em>right now</em>.</p>
 
-
-
-
 <p>Traditional fraud detection systems could measure just a few potential fraud criteria within the allowed time window. SGI solves the problem with <a href="http://hadoop.apache.org/">Hadoop clusters</a> running on SGI hardware. This big data design is able to examine each transaction deeper, and render a yes/no decision faster. Buyers are happier because they can complete a purchase faster. Companies are happier because fraud is reduced.</p>
-
-
-
 
 <p>Big data helps credit card companies to make better authorization decisions in less time.</p>
 
-
-
-
 <h3>Example: Auto Manufacturing</h3>
-
-
-
 
 <p>Some problems, like credit authorization, require a quick response.  Other problems, like manufacturing, require the problem solver to crunch large volumes of data.</p>
 
-
-
-
 <p>Consider an auto manufacturer. Every system in the modern automobile is controlled by software on silicon. Where software runs, data can be collected. The data piles up rapidly over time.</p>
-
-
-
 
 <p>Manufacturers have discovered some unexpected benefits of collecting so much data. For example, they can identify trends like common failures among components, and use that data to improve future components. They can spot hidden trends, like geographic issues related to extreme cold or heat, and then design parts that are specially equipped for the target environment.</p>
 
-
-
-
 <p>For these particular manufacturing examples, handling huge volumes of data is more important than delivering a quick answer. Insights that lead to quality improvements can be delivered in hours, and that&rsquo;s fast enough for the designers. Before big data, many design decisions were driven by instinct and experience alone. Big data helps auto companies to make more informed decisions.</p>
-
-
-
 
 <h3>Pitfalls of Big Data</h3>
 
-
-
-
 <p>One big pitfall is trying to use the big data <em>hammer</em> for every <em>nail</em> in sight, whether the solution fits the problem or not. It&rsquo;s the same hazard we face with any new technology. We run the risk of using a sledgehammer when a fly swatter would do.</p>
-
-
-
 
 <p>A few ways to avoid the pitfalls: Start small. Have goals. And, like any good agile software developer, iterate. In Freed&rsquo;s words&hellip;</p>
 
-
-
-
 <blockquote><p>Successful implementation of big data is not an event. It is an iterative process where we continuously learn over time.</p></blockquote>
-
-
-
 
 <h3>About Chicago ACM</h3>
 
-
-
-
-<p><a href="http://www.meetup.com/chicagoacm/">The Chicago Chapter of the Association for Computing Machinery (Chicago ACM)</a> is on fire. December&rsquo;s meeting featured a supercomputing presentation by <a href="http://RayHightower.com/blog/2013/12/12/high-performance-computing-at-acm/">Sharan Kalwani of Fermilab</a>. The February meeting was all about SGI&rsquo;s push into big data, and next month will focus on the Internet of Things (IoT). The organizers are assembling an exciting combination of events. Looking forward to more!</p>
-
+<p><a href="http://www.meetup.com/chicagoacm/">The Chicago Chapter of the Association for Computing Machinery (Chicago ACM)</a> is on fire. December&rsquo;s meeting featured a supercomputing presentation by <a href="/blog/2013/12/12/high-performance-computing-at-acm/">Sharan Kalwani of Fermilab</a>. The February meeting was all about SGI&rsquo;s push into big data, and next month will focus on the Internet of Things (IoT). The organizers are assembling an exciting combination of events. Looking forward to more!</p>
 ]]></content>
   </entry>
   
@@ -928,82 +465,38 @@ How does the Parallella compare with other single-board computers, like the <a h
     <link href="http://RayHightower.com/blog/2013/12/12/high-performance-computing-at-acm/"/>
     <updated>2013-12-12T22:22:00-06:00</updated>
     <id>http://RayHightower.com/blog/2013/12/12/high-performance-computing-at-acm</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/cray-1.jpg' width='' height='' alt='Cray-1 at the Swiss Federal Institute of Technology.' title='Cray-1 at the Swiss Federal Institute of Technology.'><span class='caption-text'>Cray-1 at the Swiss Federal Institute of Technology.</span></span></p>
-
-
-
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/cray-1.jpg' width='' height='' alt='Cray-1 at the Swiss Federal Institute of Technology.' title='Cray-1 at the Swiss Federal Institute of Technology.'><span class='caption-text'>Cray-1 at the Swiss Federal Institute of Technology.</span></span></p>
 
 <blockquote><p>Anyone can build a fast CPU. The trick is to build a fast system.
 &nbsp;<br/>
 ~ Seymour Cray</p></blockquote>
 
-
-
-
 <p>The Chicago chapter of the Association for Computing Machinery (<a href="http://www.chicagoacm.org/">Chicago ACM</a>) hosted a lecture titled <em>Supercomputing and You</em> yesterday evening. The talk was delivered by <a href="http://www.linkedin.com/in/sharankalwani">Sharan Kalwani</a> of <a href="http://www.fnal.gov/">Fermilab</a>. Kalwani&rsquo;s background blends mechanical engineering and computer science with decades of high performance computing experience.</p>
-
-
-
 
 <h3>10x => High Performance Computing</h3>
 
-
-
-
 <p>Kalwani began his talk by drawing a distinction between <em>supercomputing</em> and <em>high performance computing (HPC)</em>. Supercomputing is the buzzword that everyone knows, but the word implies that the designers are focused only on improving CPU performance. Such narrow focus could cause us to ignore important subsystems. For example, if engineers focus strictly on CPU performance, applications that are CPU-bound will quickly encounter I/O bottlenecks. High performance computing takes the entire system into account: CPU, I/O, cache, memory&hellip; anything that can influence performance.</p>
-
-
-
 
 <!--more-->
 
 
-
-
 <p>This article will use the terms <em>supercomputing</em> and <em>high performance computing</em> interchangably because we are discussing the field in general. In an engineering document, the distinction would be more important.</p>
-
-
-
 
 <p>By definition, supercomputers perform at least ten times faster than the current state-of-the art. The definition is a moving target. The processor in today&rsquo;s smartphone would have been considered a high performance computer a decade ago.</p>
 
-
-
-
 <h3>The First Supercomputer</h3>
-
-
-
 
 <p><a href="http://www.cray.com/">Seymour Cray</a> is regarded as the father of the supercomputer. Cray cobbled together the first supercomputer using off-the-shelf components of the day and his unique ideas about computer architecture.</p>
 
-
-
-
 <p>For example, Cray observed that the speed of an electrical signal was one bottleneck in computer performance. Electrical signals travel at the speed of light. Light can travel roughly one foot in one nanosecond.  Therefore, Cray decided that all internal cables in his new system would be less than a foot in length. No input would need to wait more than a nanosecond for a signal.</p>
-
-
-
 
 <p>The 1972-era Cray supercomputer ran at a clock speed of 80MHz. It used a 64-bit word size. As a point of comparison, a 1972-era business mainframe ran at 4MHz with a 16-bit word size.</p>
 
-
-
-
 <h3>Supercomputers&hellip; So What?</h3>
-
-
-
 
 <p>Why do we need to spend time and money on high performance computers?  How does the general public benefit?</p>
 
-
-
-
 <p>HPC enables us to solve problems that elude typical computers. For example:</p>
-
-
-
 
 <ul>
 <li><em>Auto safety testing</em>. Kalwani spent several years using HPC to run simulated crash tests for General Motors. A physical crash test, one in which the car is destroyed, costs $500k per car. The same test can be run in a simulator for $5k. Engineers still need to test a physical car at the end of the testing cycle, but the number of cars destroyed is drastically reduced. The business advantage of HPC-simulated tests is clear.</li>
@@ -1014,67 +507,29 @@ How does the Parallella compare with other single-board computers, like the <a h
 </ul>
 
 
-
-
 <p>The bottom line: High performance computers deliver a return on investment that far outweighs their cost.</p>
-
-
-
 
 <h3>Trickle Down Technology</h3>
 
-
-
-
 <p>Many of the advances that we enjoy on today&rsquo;s laptops were invented by HPC architects. Kalwani shared one example: Cray invented the solid state disk (SSD) when mechanical disk drives proved to be a bottleneck. Can you imagine what an SSD must have cost in 1982 when it was invented? Today, SSDs are standard equipment on many laptops.</p>
-
-
-
 
 <h3>Who Has the Fastest Supercomputer?</h3>
 
-
-
-
 <p><a href="http://top500.org/">Top500.org</a> lists the fastest supercomputers on the planet, ordered by number of floating point operations per second (FLOPS). The race to be the fastest is highly competitive, so check the list for the latest champion.</p>
-
-
-
 
 <p>There are those who believe that the Top 500 list is missing a few names. Some governments or companies might not want to publicize their HPC skills.</p>
 
-
-
-
 <h3>Speed vs. Power</h3>
-
-
-
 
 <p>Supercomputers gulp electricity. Rule of thumb: One megawatt of electricity used over the course of one year costs $1 million. The fastest supercomputer in the world uses 17 megawatts of electricity, so its owners have an annual electric bill of $17 million dollars.</p>
 
-
-
-
 <p><a href="http://green500.org">The Green 500</a> list recognizes the most energy efficient supercomputers in the world.</p>
-
-
-
 
 <h3>The Fourth Paradigm</h3>
 
-
-
-
 <p>Kalwani closed the historical section of his talk with a discussion of <a href="http://research.microsoft.com/en-us/collaboration/fourthparadigm/">The Fourth Paradigm</a> of discovery. The concept comes from a collection of essays published by Microsoft Press. As of this writing, a free PDF of the book is available from <a href="http://research.microsoft.com/en-us/collaboration/fourthparadigm/">Microsoft Research</a>.</p>
 
-
-
-
 <p>The book&rsquo;s introduction posits that there have been four paradigms of human scientific discovery:</p>
-
-
-
 
 <ul>
 <li><em>Empirical</em>. Started a thousand years ago. Science was all about describing natural phenomena.</li>
@@ -1084,32 +539,15 @@ How does the Parallella compare with other single-board computers, like the <a h
 </ul>
 
 
-
-
 <p>One example of the Fourth Paradigm in action: Recent discoveries of sub-atomic particles were initiated by eScience. Software running on high performance computers identified trends, and the scientists followed up with deeper investigation. Discoveries followed after that.</p>
-
-
-
 
 <p>Businesses have led the way in extracting trends from mountains of data. This path offered limited results for scientists because computers were too slow to handle scientific data in a timely fashion. Partial differential equations eat many CPU cycles!</p>
 
-
-
-
 <p>High performance computing opens up a new universe of data insight for scientists and engineers.</p>
-
-
-
 
 <h3>The Future of HPC</h3>
 
-
-
-
 <p>Kalwani ended the talk by looking into his crystal ball and telling us about the future of HPC. A few trends on the horizon:</p>
-
-
-
 
 <ul>
 <li>Power consumption issues will dominate discussions. High performance computers are terribly inefficient. Either we need to find a free, unlimited supply of energy (unlikely) or we must design supercomputers that gulp less power.</li>
@@ -1120,25 +558,13 @@ How does the Parallella compare with other single-board computers, like the <a h
 </ul>
 
 
-
-
 <h3>Conclusion</h3>
-
-
-
 
 <p>Thank you Sharan Kalwani for presenting, and thank you <a href="http://www.chicagoacm.org/">Chicago ACM</a> for hosting.</p>
 
-
-
-
 <h3>Acknowledgements</h3>
 
-
-
-
 <p>The photo at the top of the article shows a Cray-1, the first supercomputer, on display at the <a href="http://www.epfl.ch/">Swiss Federal Institute of Technology (EPFL)</a> in Lausanne. Some of the original panels have been replaced with plexiglass.</p>
-
 ]]></content>
   </entry>
   
@@ -1147,36 +573,19 @@ How does the Parallella compare with other single-board computers, like the <a h
     <link href="http://RayHightower.com/blog/2013/11/10/a-portable-hack-for-parallella/"/>
     <updated>2013-11-10T23:05:00-06:00</updated>
     <id>http://RayHightower.com/blog/2013/11/10/a-portable-hack-for-parallella</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper left'><img class='caption' src='http://RayHightower.com/images/parallella-portable.png' width='' height='' alt='Portability for Parallella-sized devices.' title='Portability for Parallella-sized devices.'><span class='caption-text'>Portability for Parallella-sized devices.</span></span>
-<a href="http://RayHightower.com/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/">Beaglebone Black</a>, <a href="http://RayHightower.com/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a>, and <a href="http://RayHightower.com/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/">Parallella</a> are three small, powerful Linux-based computers. But in order to make these devices truly portable, we need a way to carry a monitor and keyboard along. This article describes one hack that works.</p>
-
-
-
+    <content type="html"><![CDATA[<p><span class='caption-wrapper left'><img class='caption' src='/images/parallella-portable.png' width='' height='' alt='Portability for Parallella-sized devices.' title='Portability for Parallella-sized devices.'><span class='caption-text'>Portability for Parallella-sized devices.</span></span>
+<a href="/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/">Beaglebone Black</a>, <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a>, and <a href="/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/">Parallella</a> are three small, powerful Linux-based computers. But in order to make these devices truly portable, we need a way to carry a monitor and keyboard along. This article describes one hack that works.</p>
 
 <h3>Inspiration in a Suitcase</h3>
 
-
-
-
 <p>The HP 5036 Microprocessor Lab gave me my first exposure to assembler language. I was eighteen, working my first software internship, and loving every minute of it. When I devised ways to complete my <em>regular work</em> faster than management expected, I had some time on my hands. So I spent time learning assembler with the HP 5036.</p>
-
-
-
 
 <!--more-->
 
 
-
-
-<p><span class='caption-wrapper'><img class='caption' src='http://RayHightower.com/images/hp-5036.png' width='' height='' alt='HP 5036 Microprocessor Lab' title='HP 5036 Microprocessor Lab'><span class='caption-text'>HP 5036 Microprocessor Lab</span></span></p>
-
-
-
+<p><span class='caption-wrapper'><img class='caption' src='/images/hp-5036.png' width='' height='' alt='HP 5036 Microprocessor Lab' title='HP 5036 Microprocessor Lab'><span class='caption-text'>HP 5036 Microprocessor Lab</span></span></p>
 
 <p>The entire 5036 fits in a suitcase&hellip; how cool is that! Here&rsquo;s how the 5036 works:</p>
-
-
-
 
 <ol>
 <li>Start by writing assembler-level code by hand on paper.</li>
@@ -1189,60 +598,28 @@ hexidecimal operation code.</li>
 </ol>
 
 
-
-
 <p>Working with the 5036 was addictive in a positive way. In a subsequent job, where I wrote assembler to drive hardware devices, I was ready.</p>
-
-
-
 
 <h3>Portability Needed</h3>
 
-
-
-
 <p>Fast forward a few decades. We now have the Raspberry Pi, BeagleBone Black, and Parallella. Wonderful devices with one flaw in common: No portability. That&rsquo;s when I had a flashback to my days with the 5036.</p>
-
-
-
 
 <p>I bought a $35 technician box from Home Depot and I ripped out the insides. Micro Center had 720p LCD monitors on sale for $90, so I bought one of those. I didn&rsquo;t want to spend the extra bucks for a 1080p LCD because you never know how something like this might work out! Finally, I topped everything off with a $25 keyboard/trackpad combo from Amazon.  The result appears in the photo at the top of this article. Special thanks to Ericka [last name unknown] from Home Depot who gave me tons of ideas on how to securely fasten the monitor to the case.</p>
 
-
-
-
 <h3>Why?</h3>
-
-
-
 
 <p>Why did I spend the time and money to assemble this kit? It&rsquo;s all about learning. Devs learn more when we interact with other devs &ndash; people who are learning some of the same things that we&rsquo;re wrestling with. And sometimes the things we need to learn are too new for books.</p>
 
-
-
-
 <p>By carrying my Raspberry Pi, BeagleBone Black, and Parallella with me in a portable unit, I can share my experiences with other devs and learn more in the process. Everybody wins when that happens.</p>
-
-
-
 
 <h3>Thanks SCNA!</h3>
 
-
-
-
 <p>The organizers of <a href="http://scna.softwarecraftsmanship.org/">Software Craftsmanship North America (SCNA)</a> gave me the opportunity to present this story as a lightning talk at the conference. Slides are here:</p>
-
-
-
 
 <center><script async class="speakerdeck-embed" data-id="b3558fd02cac0131cfc62a9baba32394" data-ratio="1.29456384323641" src="//speakerdeck.com/assets/embed.js"></script></center>
 
 
-
-
 <p>Thank you SCNA! As I shared with the other devs at SCNA, I will gladly post my mistakes and <em>gotchas</em> here for people who want to build a unit like this. Let&rsquo;s build!</p>
-
 ]]></content>
   </entry>
   
