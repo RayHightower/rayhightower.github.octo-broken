@@ -1755,6 +1755,21 @@
     }
   },
   {
+    "id": 117,
+    "title": "Raspberry Pi 2 Model B Quad Core",
+    "category": "linux",
+    "tags": [
+
+    ],
+    "url": "/blog/2015/02/27/raspberry-pi-2-model-b-quad-core/",
+    "content": "{% imgcap right /images/raspberry_pi_2_model_b.jpg Raspberry Pi 2 Model B %}\nThe [Raspberry Pi Foundation](http://www.raspberrypi.org/) has upped their entry in the single-board computer competition. Raspberry Pi 2 Model B boasts a quad core ARM CPU and 1GB of RAM. More important: Benchmarks show that the board is 6x faster than the previous model. And the performance bump has been achieved while the price remains low: Roughly $45.\n\nGetting the board up and running is easier, too. You can buy a pre-built Linux image on micro SD. Or you can [download the New Out Of the Box (NOOBS) image](http://www.raspberrypi.org/downloads/) yourself. Depending on the speed of your internet connection, you can be up in running in less than an hour.\n<!--more-->\n### Easier Than Before\nSpecial note about the NOOBS image: You don't need a special utility to burn an SD card like before. The steps are:\n\n* Download the [NOOBS image](http://www.raspberrypi.org/downloads/) and unzip it.\n* Format a micro SD card that's at lease 4GB in size.\n* Drag the unzipped NOOBS files to the micro SD card.\n* Insert the micro SD card into the Raspeberry Pi, apply power, and watch it boot.\n\nHaving done things [the old way](/blog/2012/12/03/ruby-on-raspberry-pi/), I was surprised that the process was so simple this time. Hats off to the Raspberry Pi Foundation for a great installation experience.\n\n### Login Information\nAfter the device boots, you will need login credentials. These have not changed from the previous version: \n\n``` bash\n\nraspberripi login: pi\nPassword: raspberry\n\n```\n\nNote that the cursor will not move while you type the password.\n\nNext, start the X Window environment.\n\n``` bash\n$ startx\n\n```\nAnd your desktop will look something like this.\n\n{% imgcap middle /images/raspberry_pi_2_model_b_ruby.jpg Screenshot: Raspberry Pi 2 Model B %}\n\n\n### Running Ruby, Rails\nThis incarnation of Raspberry Pi comes with Ruby 1.9.3 pre-installed. Of course, if you want to manage multiple versions of Ruby, [RVM is a great way to go](/blog/2013/05/16/upgrading-ruby-with-rvm/).\n\nTo install RVM, first run `gpg` to verify that you will get an uncorrupted (or un-tampored with) version of RVM.\n\n``` bash\n\n$ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3\n\n$ \n\n```\n\nNext, install RVM.\n\n``` bash\n$ \\curl -sSL https://get.rvm.io | bash -s stable\n\n$ \n\n```\n\nAnd finally, let the current terminal session know that RVM is installed\nby typing the following at the command line.\n\n``` bash\n\n$ source /home/pi/.rvm/scripts/rvm\n\n$ \n\n```\n\nYou can verify that RVM is installed by checking its version number like so...\n\n``` bash\n\n$ rvm --version\nrvm 1.26.10 (master) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]\n\n$ \n\n```\n\n### Installing Ruby Versions\nTo install the latest stable version of Ruby...\n\n``` bash\n\n$ rvm install ruby\n\n$ \n\n```\n\nRVM will download dependencies as part of the installation process. From there, you can `gem install rails` or any other libraries you may need.  Success!\n\n",
+    "date": {
+      "year": "2015",
+      "month": "February",
+      "day": "27"
+    }
+  },
+  {
     "id": 0,
     "title": "404 Error: Page not found.",
     "url": "/404.html",
