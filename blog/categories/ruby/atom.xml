@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-02-27T11:59:02-06:00</updated>
+  <updated>2015-03-03T15:05:06-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,73 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[JRuby 9000 on OS X]]></title>
+    <link href="http://RayHightower.com/blog/2015/03/03/jruby-9000-on-os-x/"/>
+    <updated>2015-03-03T14:42:57-06:00</updated>
+    <id>http://RayHightower.com/blog/2015/03/03/jruby-9000-on-os-x</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/jruby_on_jvm.png' width='' height='' alt='JRuby. Ruby on the JVM.' title='JRuby. Ruby on the JVM.'><span class='caption-text'>JRuby. Ruby on the JVM.</span></span>
+Moore’s Law is about to run into a wall. Therefore, anything that software developers can learn about concurrency will be critical in coming years. Enter <a href="http://www.jruby.org/">JRuby 9000</a>.</p>
+
+<h3>What is JRuby?</h3>
+
+<p>JRuby is an implementation of the Ruby programming language that runs on the Java virtual machine (JVM). Advantages of running on the JVM include:</p>
+
+<ul>
+<li>Reaping the performance benefits that come from decades of JVM tuning.</li>
+<li>The ability to call time-tested Java libraries from Ruby programs.</li>
+<li>The performance benefits that come from concurrency, built into the JVM.</li>
+</ul>
+
+
+<!-- more -->
+
+
+<h3>Installing JRuby 9000 on OS X</h3>
+
+<p>Grab the latest <code>.tar</code> file from <a href="http://jruby.org/download">JRuby Downloads</a> and extract it by double-clicking on it. As of this writing, the latest version was <code>jruby-bin-9.0.0.0.pre1.tar.gz</code>.</p>
+
+<p>Next, move the extracted files to <code>/opt/jruby/</code>. For example, if you downloaded the <code>.tar</code> file to your <code>~/Downloads</code> directory, this command will rename the extracted directory to <code>jruby/</code> in the process.</p>
+
+<p>&#8220;` bash
+$ sudo mv ~/Downloads/jruby-9.0.0.0.pre1/ ./jruby/
+Password:</p>
+
+<p>$</p>
+
+<p><code>``
+And finally, add the following line to</code>~/.bash_profile<code>(or where ever you choose to set your</code>$PATH` variable).</p>
+
+<p>&#8220;` bash
+export PATH=&ldquo;/opt/jruby/bin:$PATH&rdquo;</p>
+
+<p>&#8220;`</p>
+
+<h3>Testing the JRuby 9000 installation</h3>
+
+<p>To test the JRuby 9000 installation, re-start your terminal or use <code>$ source ~/.bash_profile</code>. And then</p>
+
+<p>&#8220;` bash
+$ jruby &mdash;version
+jruby 9.0.0.0.pre1 (2.2.0p0) 2015-01-20 d537cab Java HotSpot&trade; 64-Bit Server VM 25.25-b02 on 1.8.0_25-b17 +jit [darwin-x86_64]</p>
+
+<p>$ which jruby
+/opt/jruby/bin/jruby</p>
+
+<p>$</p>
+
+<p>&#8220;`</p>
+
+<h3>Why not RVM?</h3>
+
+<p>Given that <a href="/blog/2013/05/16/upgrading-ruby-with-rvm/">I like RVM</a>, why didin’t I simply use RVM to install JRuby 9000? Answer: The instructions for installing <em>a pre-release version</em> of JRuby via RVM were unclear to me. Extracting the executables and adding the directory to the <code>$PATH</code> was more grok-able. If your experience is different from mine, feel free to share in the comments below.</p>
+
+<h3>Next Steps</h3>
+
+<p>Next steps include experiments with concurrency. JRuby concurrency experiments with the <a href="/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">18-core Parallella</a> look especially interesting. More to come.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Looking Inside the Pygments Plugin]]></title>
@@ -375,141 +442,6 @@ Use &ldquo;Control-C&rdquo; to exit.</p>
 <h3>Conclusion</h3>
 
 <p>Enjoy Homebrew!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Installing Rubinius Using RVM]]></title>
-    <link href="http://RayHightower.com/blog/2014/02/06/installing-rubinius-using-rvm/"/>
-    <updated>2014-02-06T18:17:00-06:00</updated>
-    <id>http://RayHightower.com/blog/2014/02/06/installing-rubinius-using-rvm</id>
-    <content type="html"><![CDATA[<p><img class="right" src="/images/rubinius.png">
-<a href="http://rubini.us/">Rubinius</a> is an implementation of the Ruby language designed for concurrency. The lead developer of Rubinius, <a href="http://twitter.com/brixen">Brian Shirai</a>, will present Rubinius at ChicagoRuby on March 4, 2014. ChicagoRuby will follow-up with a Rubinius-themed hack night on March 12th. <a href="http://www.meetup.com/ChicagoRuby/events/114749352/">Details</a>.</p>
-
-<p>To prepare for the Rubinius events, some people may choose to install Rubinius locally. RVM makes the process smooth.</p>
-
-<!--more-->
-
-
-<h3>RVM Recap</h3>
-
-<p><a href="http://rayhightower.com/blog/2013/05/16/upgrading-ruby-with-rvm/">Ruby Version Manager (RVM)</a> is an awesome tool that enables developers to:</p>
-
-<ul>
-<li>install multiple versions of Ruby on one system,</li>
-<li>bounce between the different versions, and</li>
-<li>to do all of that with minimal headaches.</li>
-</ul>
-
-
-<p>Similar tools exist, but RVM is the one that has always worked for me.  If you don&rsquo;t have RVM installed, detailed installation instructions can be found at <a href="http://rvm.io">http://rvm.io</a>.</p>
-
-<h3>Get the Latest RVM</h3>
-
-<p>These instructions work on Mac OS X v10.8.5. The same steps will probably work on Linux, except for the references to Homebrew.</p>
-
-<p>First, make sure you&rsquo;re running the latest version of RVM.</p>
-
-<p>&#8220;` bash</p>
-
-<p>$ rvm get head
-Downloading <a href="https://get.rvm.io">https://get.rvm.io</a>
-Downloading <a href="https://github.com/wayneeseguin/rvm/archive/master.tar.gz">https://github.com/wayneeseguin/rvm/archive/master.tar.gz</a></p>
-
-<p>Upgrading the RVM installation in /Users/rth/.rvm/</p>
-
-<pre><code>RVM PATH line found in /Users/rth/.bashrc /Users/rth/.zshrc.
-RVM sourcing line found in /Users/rth/.bash_profile /Users/rth/.zprofile.
-Migrating environment ruby-1.9.2-p290 to use with 'gem-wrappers' gem.
-
- …
-
- Installing gem-wrappers gem in 3 gemsets.
-</code></pre>
-
-<p>Upgrade of RVM in /Users/rth/.rvm/ is complete.</p>
-
-<pre><code> …
-</code></pre>
-
-<p>In case of problems: <a href="http://rvm.io/help">http://rvm.io/help</a> and <a href="https://twitter.com/rvm_io">https://twitter.com/rvm_io</a></p>
-
-<p>RVM reloaded!</p>
-
-<p>$</p>
-
-<p>&#8220;`</p>
-
-<h3>Next, Install Rubinius</h3>
-
-<p>As of this writing, Rubinius can operate in 1.8 language mode (the default) or 1.9 language mode. Installing in 1.9 mode requires an additional command line flag, shown below.</p>
-
-<p>&#8220;` bash</p>
-
-<p>$ rvm install rbx &mdash;1.9</p>
-
-<p>&#8220;`</p>
-
-<h3>Testing the Rubinius Installation</h3>
-
-<p>First, let&rsquo;s make sure that RVM shows the new Rubinius (rbx) installation.</p>
-
-<p>&#8220;` bash</p>
-
-<p>$ rvm list</p>
-
-<p>rvm rubies</p>
-
-<p>=> rbx-2.2.4 [ x86_64 ]
-   ruby-1.9.2-p290 [ x86_64 ]
- * ruby-1.9.3-p484 [ x86_64 ]
-   ruby-2.0.0-p353 [ x86_64 ]</p>
-
-<h1>=> &ndash; current</h1>
-
-<h1>=* &ndash; current &amp;&amp; default</h1>
-
-<h1>* &ndash; default</h1>
-
-<p>$</p>
-
-<p>&#8220;`</p>
-
-<p>It&rsquo;s always good to have multiple ways to verify information.</p>
-
-<p>&#8220;` bash</p>
-
-<p>$ ruby &mdash;version
-rubinius 2.0.0.n37 (1.9.3 6d611c7a 2014-02-06 JI) [x86_64-darwin12.5.0]</p>
-
-<p>$</p>
-
-<p>&#8220;`</p>
-
-<p>And now, let&rsquo;s do a quick &ldquo;Hello World&rdquo; test drive using the Rubinius
-version of <code>irb</code>.</p>
-
-<p>&#8220;` bash</p>
-
-<p>$ irb
-rbx-2.2.4 :001 > p &lsquo;Hello World, from Rubinius&rsquo;
-&ldquo;Hello World, from Rubinius&rdquo;
- => &ldquo;Hello World, from Rubinius&rdquo;
-rbx-2.2.4 :002 > quit</p>
-
-<p>$</p>
-
-<p>&#8220;`</p>
-
-<h3>Post Installation Notes</h3>
-
-<p>The installation script found two outdated Homebrew-installed packages on my system: <code>automake</code> and <code>openssl</code>. It would have been better for me to upgrade Homebrew and related packages <em>before</em> installing Rubinius.</p>
-
-<p>Why install Rubinius? Why do we care about concurrency? These are two questions I expect to explore through my new Rubinius installation.</p>
-
-<h3>Come Hack With Rubinius</h3>
-
-<p>If March 2014 finds you in the Chicago area, you&rsquo;re invited to visit ChicagoRuby for some back-to-back Rubinius action. See <a href="http://www.meetup.com/ChicagoRuby/events/114749352/">http://meetup.com/chicagoruby</a> for details.</p>
 ]]></content>
   </entry>
   
