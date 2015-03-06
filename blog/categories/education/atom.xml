@@ -4,7 +4,7 @@
   <title><![CDATA[Category: education | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/education/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-03-05T23:21:51-06:00</updated>
+  <updated>2015-03-06T13:51:41-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,45 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[HTML5 & CSS3: The Complete Manual]]></title>
+    <link href="http://RayHightower.com/blog/2015/03/06/html5-and-css3-the-complete-manual/"/>
+    <updated>2015-03-06T13:02:53-06:00</updated>
+    <id>http://RayHightower.com/blog/2015/03/06/html5-and-css3-the-complete-manual</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/html5_css3_imagineshop.jpg' width='' height='' alt='HTML5 &amp; CSS3' title='HTML5 &amp; CSS3'><span class='caption-text'>HTML5 &amp; CSS3</span></span>
+The biggest challenge for a software developer: Absorbing the latest knowledge while simultaneously keeping clients happy. Where does the time go?</p>
+
+<p>Fortunately, when it comes to HTML5 and CSS3, a UK-based publisher has released a just-the-facts guide that may help. At 127 pages, the entire publication (they call it a <em>bookazine</em>) can be devoured in a single day. Imagine Publishing&rsquo;s <em>HTML5 &amp; CSS3: The Complete Manual</em> is well worth the time investment.</p>
+
+<p><em>Note: A version of this article also appears at <a href="http://www.chicagoruby.org/book-reviews/">ChicagoRuby Book Reviews</a></em>.</p>
+
+<!--more-->
+
+
+<h3>This Book&rsquo;s Best Feature</h3>
+
+<p>One thing I like most about this book: Nothing is assumed. All explanations are clearly presented from square one. The introduction even defines the terms <em>hypertext</em> and <em>responsive design</em> in words that could easily be hijacked for your next presentation to non-technical management.</p>
+
+<p>Personally, I appreciate the don&rsquo;t-assume-anything definitions. I completed all of my formal computer science training in the last century, before we knew how far this Internet thing might go. Books like this help to fill in the gaps. Well done, authors!</p>
+
+<h3>Working the Examples</h3>
+
+<p>If you’re already current on HTML &amp; CSS, the examples in the beginning of the book will be too easy for you. Skip ahead to the examples toward the end and work on those.</p>
+
+<h3>Spelling Differences</h3>
+
+<p>My British-speaking friends and I sometimes tease each other about variations in American vs UK spelling for certain words. &ldquo;Colour&rdquo; vs &ldquo;color&rdquo; and that sort of thing. This book uses UK conventions.</p>
+
+<p>I spotted a fair number of typos in the book&rsquo;s code examples. Typos in human-readable text are no big deal. But a missing <code>&gt;</code> or <code>=</code> in a book about HTML and CSS can make or break an example. Of course, we’re all human and typos are simply a fact of life.</p>
+
+<p>Suggestion for the publishers: Setup a <a href="http://github.com">GitHub</a> repo with the code samples. That way, if typos in code are discovered (always certain because we&rsquo;re human) the typos can be corrected and shared immediately.</p>
+
+<h3>Conclusion</h3>
+
+<p>The bottom line: <em>HTML5 &amp; CSS3: The Complete Manual</em> is worth reading, especially if you need a quick way to keep up with web trends.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Keep the Fun in Computing]]></title>
@@ -228,148 +267,6 @@ David Lang is a maker. After a stint with a struggling Silicon Valley startup, D
 <p>If you are a maker, or if you want to become a maker, this book is worth reading. And once you&rsquo;re done reading, go make something!</p>
 
 <p><em>Note: A version of this article is also posted at <a href="http://www.chicagoruby.org/book-reviews/">http://www.chicagoruby.org/book-reviews/</a>.</em></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How to Grow a User Group]]></title>
-    <link href="http://RayHightower.com/blog/2014/05/30/how-to-grow-a-user-group/"/>
-    <updated>2014-05-30T17:34:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2014/05/30/how-to-grow-a-user-group</id>
-    <content type="html"><![CDATA[<p>The current team of <a href="http://chicagoruby.org">ChicagoRuby</a> organizers assumed leadership in August 2007. Back then, typical monthly attendance was about five people and the group&rsquo;s <a href="http://meetup.com/chicagoruby">Meetup.com</a> database contained 78 members. The previous organizer was swamped with work at his day job, so he handed the baton to a new crew.</p>
-
-<p>Today, the <em>new crew</em> has grown ChicagoRuby to over 2,700 members. The group hosts three meetups every month, and the downtown meetings consistently max out the 100-person RSVP limit. Bonus: ChicagoRuby hosts two conferences, <a href="http://windycityrails.org">WindyCityRails</a> in Chicago and <a href="http://rubycaribe.com">RubyCaribe</a> on the Caribbean island of Barbados.</p>
-
-<p>How does ChicagoRuby do it? Through consistency, teamwork, iteration, and learning from mistakes.</p>
-
-<!--more-->
-
-
-<h3>Be Consistent With Meetings</h3>
-
-<p>Consistency is very difficult in the beginning, especially on that night when only three people show up for the meeting. I have hosted a 3-person ChicagoRuby meeting before. Consistency is hard, and it is also the most important factor in user group success.</p>
-
-<p>People trust consistency. Consistent meetings grow groups.</p>
-
-<p>Members of ChicagoRuby know that we meet on the first Tuesday of every month downtown, the third Saturday of every month in Elmhurst, and one evening per month for the hack night. Members can plan their schedules months in advance because the ChicagoRuby calendar is consistent. Consistency builds trust.</p>
-
-<p>ChicagoRuby cancelled one meeting in January 2011 due to a killer snow storm in Chicago. We were forced to cancel because the property manager shut the entire building down. We&rsquo;re a little bit stubborn about consistency. And that&rsquo;s how we build trust.</p>
-
-<p>Yes, there will be times when the organizer is too exhausted to run an upcoming meeting. That&rsquo;s why it&rsquo;s important to share the work by building a team.</p>
-
-<h3>Build the Team</h3>
-
-<p>ChicagoRuby believes in sharing the work amongst multiple organizers. The group is stronger with several brains at the helm. Today we have eight organizers. Working as a team enables us to benefit from each other’s strengths. Some organizers have strong design skills, others are strong developers. And some are good at asking members for help.</p>
-
-<h3>Ask for Help</h3>
-
-<blockquote><p>I guarantee you that any favor he asks of you, you will offer to do before he requests it.
-<br/>~Tom Hagen, Consigliere</p></blockquote>
-
-<p>One way to ask for help: Encourage members to help in their area of enthusiasm. For example, organizer <a href="https://twitter.com/ginnyhendry">Ginny Hendry</a> runs the ChicagoRuby hack nights every month. Ginny got started when she approached the organizers after a meeting and said, &ldquo;We should have hack nights.&rdquo; Clearly, she was enthused about hack nights, so we asked her to take the lead in that area.</p>
-
-<p>Today, Ginny’s hack nights are the highest rated of all ChicagoRuby events. In January, she will be a lab advisor at RubyCaribe.</p>
-
-<p>Before he moved to Florida, <a href="http://twitter.com/mattpolito">Matt Polito</a> was part of the ChicagoRuby organizer team. Matt wanted ChicagoRuby to have a logo. I was against it. We were planning the first WindyCityRails and I wanted everyone to focus on the conference. Matt went out and got the logo done anyway. Everybody likes it. Matt, thank you for ignoring me!</p>
-
-<p>Members who have ideas for improvement tend to be strong leaders. The whole group benefits when we get out of the way and let them lead.</p>
-
-<p>The current members of the ChicagoRuby organizer team are:</p>
-
-<ul>
-<li><a href="https://twitter.com/ginnyhendry">Ginny Hendry</a>, mentioned above.</li>
-<li><a href="http://twitter.com/wondible">Justin Love</a> is a developer and an organizer of the <a href="http://www.meetup.com/js-chi/">Chicago JavaScript Meetup Group (JS-Chi)</a>. Justin will also be a lab advisor for RubyCaribe in January 2015.</li>
-<li><a href="http://twitter.com/hugocorbucci">Hugo Corbucci</a>, <a href="http://www.meetup.com/ChicagoRuby/members/42800032/">Emily Rosengren</a>, and <a href="http://www.meetup.com/ChicagoRuby/members/135529442/">Sam Jacobs</a> are developers at <a href="http://thoughtworks.com">ThoughtWorks</a>. Since ThoughtWorkers travel often, ChicagoRuby always invites two or more to be on the organizer team.</li>
-<li><a href="http://twitter.com/themccreefiles">Alonda McCree</a> manages the downtown meetups, including logistics and video. Alonda is the conference manager for RubyCaribe.</li>
-<li><a href="http://www.meetup.com/ChicagoRuby/members/1345203/">Marty Lavin</a> manages ChicagoRuby&rsquo;s Elmhurst meetups, including logistics and scheduling. Marty is consistently active in Elmhurst, so we asked him to join the team.</li>
-<li><a href="http://twitter.com/rayhightower">Ray Hightower</a>, author of this
-article.</li>
-</ul>
-
-
-<p>In addition to the core group of ChicagoRuby organizers, one person deserves special mention. <a href="http://twitter.com/zolk">Kevin Zolkiewicz</a> has managed every WindyCityRails since the first one in 2008. Kevin&rsquo;s project management, design, and leadership skills are enjoyed by everyone who attends WindyCityRails.</p>
-
-<p>The <a href="http://www.chicagoruby.org/about/organizers/">ChicagoRuby Organizer Page</a> contains the list of current and past organizers. Many of the former organizers remain active in an emeritus role. Every mind helps to make the group stronger.</p>
-
-<h3>Automate Everything</h3>
-
-<p>Managing a database of 2,700+ members could be drudgery. Fortunately, <a href="http://meetup.com/chicagoruby">Meetup.com</a> makes the process easy. Meetup handles RSVPs, membership additions and deletions, and reminders. Sometimes, the 2-week automated reminder from Meetup.com reminds the organizers to get a speaker for the next meeting!</p>
-
-<p>Early in our history, someone suggested that ChicagoRuby should not use Meetup.com because it&rsquo;s written in PHP, and we&rsquo;re a Ruby group. We see things differently. ChicagoRuby is a Ruby group that uses the best tool for the job, regardless of language. Meetup.com has proven itself useful for eight years and counting.</p>
-
-<h3>Choose a Short Name</h3>
-
-<p>Growth is an ongoing priority for ChicagoRuby. In order to grow, a group has to attract new members. New members who are looking for a group to join are likely to start with a search engine, and search engines adore simplicity.</p>
-
-<p>Our group was originally called <em>The Chicago Area Ruby on Rails Meetup Group</em>. Accurate, and a mouthful. We discovered that a simple domain name, <a href="http://chicagoruby.org">ChicagoRuby.org</a>, was available. So we grabbed it, along with the <a href="http://twitter.com/chicagoruby">@ChicagoRuby</a> Twitter handle.</p>
-
-<h3>Be Easy to Find</h3>
-
-<p>To make the group even easier to find, every web site in the ChicagoRuby ecosystem points to all of the group&rsquo;s other web sites. For example, all of the conference sites point to the ChicagoRuby site, and vice versa. A new member who finds one part of the ecosystem will find the whole thing. People feel welcome when information is easy to find.</p>
-
-<p>Making future members feel welcome is key to growth. Free monthly events are another way to make people feel welcome.</p>
-
-<h3>Keep Monthly Events Free</h3>
-
-<p>I firmly believe that monthly user group meetings should be free. We never know what a member of our community is going through financially. Therefore, ChicagoRuby&rsquo;s monthly meetings have always been free.</p>
-
-<p>My personal history includes times when I was dead broke due to one entrepreneurial setback or another. So I have emotional reasons for keeping ChicagoRuby’s monthly events free of charge.</p>
-
-<p>Of course, the money to pay for the meetings has to come from somewhere. That’s where sponsors can help.</p>
-
-<h3>Cover Monthly Costs Through Sponsorships</h3>
-
-<p>Companies will gladly sponsor a group that gives them a return on their investment. Sponsorships don&rsquo;t always come in the form of money.</p>
-
-<p>For example, ChicagoRuby’s first sponsor was <a href="http://www.deforestgroup.com/">DeForest Group</a>. Owners <a href="https://www.linkedin.com/in/leedeforest">Lee DeForest</a> and <a href="http://www.linkedin.com/pub/james-deforest/40/57a/881">Jim DeForest</a> provide ChicagoRuby with free space and WiFi for our Saturday meetings. Lee was one of the five people in the room when the current organizers took over, and we will always be grateful for his early support.</p>
-
-<p>ChicagoRuby’s downtown sponsors are <a href="http://enova.com">Enova</a> and <a href="http://thoughtworks.com">ThoughtWorks</a>. Each company provides space, WiFi, pizza, and beverages on a monthly basis. Sponsors get to address the group at the beginning of the meeting. More important, by sponsoring ChicagoRuby over time, a company can build trust within the membership.</p>
-
-<p><a href="http://oreilly.com">O&#8217;Reilly Media</a> was our first publishing sponsor.  O&#8217;Reilly, <a href="http://www.informit.com/user_groups/">Pearson Education</a>, and <a href="http://pragprog.com/">The Pragmatic Programmers</a> provide books for ChicagoRuby members to <a href="http://www.chicagoruby.org/book-reviews/">review</a>.</p>
-
-<p>Sponsors get involved with user groups for two main reasons: To recruit developers, or to market products to developers. Everybody wins when sponsors get involved with user groups, financially or otherwise.</p>
-
-<h3>Vet Speakers</h3>
-
-<p>Members of ChicagoRuby trust the organizers to deliver quality events every month. I dropped the ball one month when I failed to properly vet a speaker. After that meeting, organizer <a href="https://twitter.com/dgiunta">Dave Giunta</a> wrote the first draft of the ChicagoRuby <a href="http://www.chicagoruby.org/about/speaker-guidelines/">speaker guidelines</a>. We&rsquo;ve word-smithed the guidelines over the years, but the most important parts were created by Dave.</p>
-
-<h3>Make Members Feel Awesome</h3>
-
-<p>We humans have a need to belong to something. The feeling of belonging (awesomeness) can be strengthened when we go out for drinks after an event. Drinks are not necessarily alcohol; when we go to a bar together, some members will have a soda, juice, or coffee. Informal camaraderie makes members feel like members.</p>
-
-<p>ChicagoRuby members gather together at a bar for an hour or so after our downtown meetings. In Elmhurst, the meetings end at noon, so we grab lunch together at a local restaurant. The conversation continues, and bonds are formed.</p>
-
-<h3>Maintain Focus, and Explore New Areas</h3>
-
-<p>Focus can lead to excellence. But if our focus is too tight, we might miss the Next Great Thing. How does a group balance between focus and exploration?</p>
-
-<p>Over the years, ChicagoRuby has struggled with focus. We&rsquo;ve experimented with other ventures. We ran a job board for awhile. We ran conferences related to NoSQL and mobile. We moved away from these because they drained our resources, and pulled us away from our core, which is Ruby.</p>
-
-<p>Here&rsquo;s how we balance between focus and exploration. The monthly user group meetings are for exploration. Monthly events take minimal resources, so they&rsquo;re ideal for experiments. For example, <a href="http://www.chicagoruby.org/videos/archives/2013/12/03/ployglot-night/">Polyglot Night</a> in Jan 2014 was very successful. Monthly meetings might explore NoSQL, mobile, or IoT. The Ruby community remains vibrant because we <em>borrow</em> ideas from other communities.</p>
-
-<p>Our conferences focus on Ruby. Conferences require more planning and resources than monthly meetups. So, to maximize efficiency, we build our conferences around our core strength: Ruby. RubyCaribe is the newest example of this focused approach.</p>
-
-<h3>Collaborate With Other Groups</h3>
-
-<p>Collaboration stretches our brains in unexpected and wonderful ways. For our newest ventures, ChicagoRuby is collaborating with developers in the Caribbean, in the island nation of Barbados.</p>
-
-<ul>
-<li><a href="http://linuxbarbados.org">LinuxBarbados</a> is a monthly user group for open source enthusiasts.</li>
-<li><a href="http://rubycaribe.com">RubyCaribe</a> is a brand new conference for intermediate and advanced Ruby developers.</li>
-</ul>
-
-
-<p>Through the new ventures, ChicagoRuby has been introduced to work done by the <a href="https://www.cavehill.uwi.edu/">University of the West Indies at Cave Hill (UWI)</a>.</p>
-
-<p><a href="http://www.cavehill.uwi.edu/fst/cmp/staff/colin-depradine.aspx">Dr. Colin Depradine</a>, Dean of the University’s Faculty of Science and Technology, is growing the next generation of scientists and engineers in the Caribbean. Under Dr. Depradine&rsquo;s leadership, UWI encourages collaboration between the sciences. For example, computer scientists are writing software to crunch data related to solar energy research. Looking even further into the future, the UWI team has introduced children as young as eight to programming.</p>
-
-<p>UWI also serves as host to LinuxBarbados. The group is organized by <a href="http://www.meetup.com/LinuxBarbados/members/143194822/">Maurice Beckles</a>, a Barbados-based open source enthusiast and IT technician at UWI. If you&rsquo;re in Barbados, be sure to ask him about his sink-or-swim introduction to Linux when he worked at a bank!</p>
-
-<p>Notice the pattern: The conference (RubyCaribe) focuses on ChicagoRuby&rsquo;s core strength, Ruby. The monthly user group, LinuxBarbados, is a vehicle for exploring a wide range of topics including Linux, Ruby, embedded devices, and anything related to open source.</p>
-
-<h3>Conclusion</h3>
-
-<p>A better title for this post might have been <em>One Way to Grow a User Group</em>. Every group will grow differently depending on its particular strengths and interests. Of course, groups that grow are likely to have a few things in common. When a group is built on the pillars of consistency and teamwork, they are likely to succeed in a big way.</p>
 ]]></content>
   </entry>
   
