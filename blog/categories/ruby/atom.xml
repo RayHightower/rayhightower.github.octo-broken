@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-03-06T14:28:32-06:00</updated>
+  <updated>2015-03-06T18:09:30-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -18,12 +18,21 @@
     <link href="http://RayHightower.com/blog/2015/03/03/jruby-9000-on-mac-os-x/"/>
     <updated>2015-03-03T14:42:57-06:00</updated>
     <id>http://RayHightower.com/blog/2015/03/03/jruby-9000-on-mac-os-x</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/jruby_on_jvm.png' width='' height='' alt='JRuby. Ruby on the JVM.' title='JRuby. Ruby on the JVM.'><span class='caption-text'>JRuby. Ruby on the JVM.</span></span>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/jruby_on_jvm.png' width='' height='' alt='JRuby. Ruby on the JVM.' title='JRuby. Ruby on the JVM.'><span class='caption-text'>JRuby. Ruby on the JVM.</span></span>
 Moore’s Law is about to run into a wall. Therefore, anything that software developers can learn about concurrency will be critical in coming years. Enter <a href="http://www.jruby.org/">JRuby 9000</a>.</p>
+
+
+
 
 <h3>What is JRuby?</h3>
 
+
+
+
 <p>JRuby is an implementation of the Ruby programming language that runs on the Java virtual machine (JVM). Advantages of running on the JVM include:</p>
+
+
+
 
 <ul>
 <li>Reaping the performance benefits that come from decades of JVM tuning.</li>
@@ -32,51 +41,99 @@ Moore’s Law is about to run into a wall. Therefore, anything that software dev
 </ul>
 
 
+
+
 <!-- more -->
+
+
 
 
 <h3>Installing JRuby 9000 on OS X</h3>
 
+
+
+
 <p>Grab the latest <code>.tar</code> file from <a href="http://jruby.org/download">JRuby Downloads</a> and extract it by double-clicking on it. As of this writing, the latest version was <code>jruby-bin-9.0.0.0.pre1.tar.gz</code>.</p>
+
+
+
 
 <p>Next, move the extracted files to <code>/opt/jruby/</code>. For example, if you downloaded the <code>.tar</code> file to your <code>~/Downloads</code> directory, this command will rename the extracted directory to <code>jruby/</code> in the process.</p>
 
-<p>&#8220;` bash
-$ sudo mv ~/Downloads/jruby-9.0.0.0.pre1/ /opt/jruby/
-Password:</p>
 
-<p>$</p>
 
-<p><code>``
-And finally, add the following line to</code>~/.bash_profile<code>(or where ever you choose to set your</code>$PATH` variable).</p>
 
-<p>&#8220;` bash
-export PATH=&ldquo;/opt/jruby/bin:$PATH&rdquo;</p>
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo mv ~/Downloads/jruby-9.0.0.0.pre1/ /opt/jruby/
+</span><span class='line'>Password:
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p>&#8220;`</p>
+
+
+
+<p>And finally, add the following line to <code>~/.bash_profile</code> (or where ever you choose to set your <code>$PATH</code> variable).</p>
+
+
+
+
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;/opt/jruby/bin:$PATH&quot;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+
+
 
 <h3>Testing the JRuby 9000 installation</h3>
 
+
+
+
 <p>To test the JRuby 9000 installation, re-start your terminal or use <code>$ source ~/.bash_profile</code>. And then</p>
 
-<p>&#8220;` bash
-$ jruby &mdash;version
-jruby 9.0.0.0.pre1 (2.2.0p0) 2015-01-20 d537cab Java HotSpot&trade; 64-Bit Server VM 25.25-b02 on 1.8.0_25-b17 +jit [darwin-x86_64]</p>
 
-<p>$ which jruby
-/opt/jruby/bin/jruby</p>
 
-<p>$</p>
 
-<p>&#8220;`</p>
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>jruby --version
+</span><span class='line'>jruby 9.0.0.0.pre1 <span class="o">(</span>2.2.0p0<span class="o">)</span> 2015-01-20 d537cab Java HotSpot<span class="o">(</span>TM<span class="o">)</span> 64-Bit Server VM 25.25-b02 on 1.8.0_25-b17 +jit <span class="o">[</span>darwin-x86_64<span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>which jruby
+</span><span class='line'>/opt/jruby/bin/jruby
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+
+
 
 <h3>Why not RVM?</h3>
 
-<p>Given that <a href="/blog/2013/05/16/upgrading-ruby-with-rvm/">I like RVM</a>, why didn’t I simply use RVM to install JRuby 9000? Answer: The instructions for installing <em>a pre-release version</em> of JRuby via RVM were unclear to me. Extracting the executables and adding the directory to the <code>$PATH</code> was more grok-able. If your experience is different from mine, feel free to share in the comments below.</p>
+
+
+
+<p>Given that <a href="http://RayHightower.com/blog/2013/05/16/upgrading-ruby-with-rvm/">I like RVM</a>, why didn’t I simply use RVM to install JRuby 9000? Answer: The instructions for installing <em>a pre-release version</em> of JRuby via RVM were unclear to me. Extracting the executables and adding the directory to the <code>$PATH</code> was more grok-able. If your experience is different from mine, feel free to share in the comments below.</p>
+
+
+
 
 <h3>Next Steps</h3>
 
-<p>Next steps include experiments with concurrency. JRuby concurrency experiments with the <a href="/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">18-core Parallella</a> look especially interesting. More to come.</p>
+
+
+
+<p>Next steps include experiments with concurrency. JRuby concurrency experiments with the <a href="http://RayHightower.com/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">18-core Parallella</a> look especially interesting. More to come.</p>
+
 ]]></content>
   </entry>
   
@@ -87,60 +144,113 @@ jruby 9.0.0.0.pre1 (2.2.0p0) 2015-01-20 d537cab Java HotSpot&trade; 64-Bit Serve
     <id>http://RayHightower.com/blog/2014/12/31/looking-inside-pygments</id>
     <content type="html"><![CDATA[<p>This blog uses <a href="https://rubygems.org/gems/pygments.rb">pygments.rb</a> for syntax highlighting. Recently <code>pygments.rb</code> stopped working, so I had to dig inside to determine the problem and apply a solution.</p>
 
+
+
+
 <p>Full disclosure: Pygments didn&rsquo;t simply stop working. I applied updates related to Octopress and Lunr.js, and then it stopped working. So the root cause is me! Rather than back-out the updates, I decided to push forward because Lunr.js will improve the search experience for visitors. Search options will be discussed in a future post.</p>
+
+
+
 
 <h3>Starting With the Error Message</h3>
 
+
+
+
 <p>As with all <a href="http://octopress.org/">Octopress</a> based blogs, the <code>$ rake generate</code> command creates a new set of static pages every time the command gets run. Normally the process is smooth. Here&rsquo;s the error message that resulted this morning.</p>
 
-<p>&#8220;` bash</p>
 
-<p>~$ rake generate</p>
 
-<p>&hellip;</p>
 
-<p>jekyll 2.0.3 | Error:  Pygments can&rsquo;t parse unknown language: </p>.</p>
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>rake generate
+</span><span class='line'>
+</span><span class='line'>...
+</span><span class='line'>
+</span><span class='line'>jekyll 2.0.3 <span class="p">|</span> Error:  Pygments can<span class="err">&#39;</span>t parse unknown language: &lt;/p&gt;.
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p>$</p>
 
-<p>&#8220;`</p>
+
 
 <p>What unknown language? Something was fishy. Fortunately, <code>pygments</code> is an open source plugin. Solving the problem was non-trivial, but doable.</p>
+
+
+
 
 <!--more-->
 
 
+
+
 <h3>Exploring Pygments Internals</h3>
+
+
+
 
 <p>Google, Stack Overflow, and the Octopress documentation gave clues on where to explore. Adding a few lines to <code>source/plugins/pygments_code.rb</code> provided insights on what <code>pygments</code> was &ldquo;thinking&rdquo;.</p>
 
-<p>&#8220;` ruby</p>
 
-<p>require &lsquo;pygments&rsquo;
-require &lsquo;fileutils&rsquo;
-require &lsquo;digest/md5&rsquo;</p>
 
-<p>PYGMENTS_CACHE_DIR = File.expand_path(&lsquo;../../.pygments-cache&rsquo;, <strong>FILE</strong>)
-FileUtils.mkdir_p(PYGMENTS_CACHE_DIR)</p>
 
-<p>module HighlightCode
-  def self.highlight(str, lang)</p>
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">require</span> <span class="s1">&#39;pygments&#39;</span>
+</span><span class='line'><span class="nb">require</span> <span class="s1">&#39;fileutils&#39;</span>
+</span><span class='line'><span class="nb">require</span> <span class="s1">&#39;digest/md5&#39;</span>
+</span><span class='line'>
+</span><span class='line'><span class="no">PYGMENTS_CACHE_DIR</span> <span class="o">=</span> <span class="no">File</span><span class="o">.</span><span class="n">expand_path</span><span class="p">(</span><span class="s1">&#39;../../.pygments-cache&#39;</span><span class="p">,</span> <span class="bp">__FILE__</span><span class="p">)</span>
+</span><span class='line'><span class="no">FileUtils</span><span class="o">.</span><span class="n">mkdir_p</span><span class="p">(</span><span class="no">PYGMENTS_CACHE_DIR</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">module</span> <span class="nn">HighlightCode</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">highlight</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="n">lang</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1"># Next three lines let us see what pygments &quot;thinks&quot;.</span>
+</span><span class='line'>    <span class="nb">print</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">rth_str = </span><span class="si">#{</span><span class="n">str</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'>    <span class="nb">print</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">rth_lang = </span><span class="si">#{</span><span class="n">lang</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'>    <span class="nb">print</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">rth_file = </span><span class="si">#{</span><span class="bp">__FILE__</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">&quot;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="o">.</span><span class="n">.</span><span class="o">.</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<pre><code># Next three lines let us see what pygments "thinks".
-print "\n\nrth_str = #{str}"
-print "\nrth_lang = #{lang}"
-print "\nrth_file = #{__FILE__}\n\n"
 
-...
-</code></pre>
 
-<p>end</p>
-
-<p>&#8220;`</p>
 
 <h3>Observing the Results, Applying a Solution</h3>
 
+
+
+
 <p>Next step: Run <code>$ rake generate</code> and see what happens. Turns out that the lastest version of <code>pygments</code> halted for two reasons:</p>
+
+
+
 
 <ul>
 <li>Some of my older blog posts did not contain a space between the triple-backtick characters and the name of the language being highlighted. Earlier versions of <code>pygments</code> did not care, but the current version is a stickler.</li>
@@ -148,9 +258,15 @@ print "\nrth_file = #{__FILE__}\n\n"
 </ul>
 
 
+
+
 <p>Vim-fu allowed me to apply solutions with minimal manual work. And now <code>pygments</code> works well.</p>
 
+
+
+
 <p>On to search, to be discussed in a future blog post.</p>
+
 ]]></content>
   </entry>
   
@@ -159,8 +275,11 @@ print "\nrth_file = #{__FILE__}\n\n"
     <link href="http://RayHightower.com/blog/2014/08/05/be-awesome-tackle-big-league-problems-at-windycityrails/"/>
     <updated>2014-08-05T16:21:00-05:00</updated>
     <id>http://RayHightower.com/blog/2014/08/05/be-awesome-tackle-big-league-problems-at-windycityrails</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/big_league_problems_windycityrails.jpg' width='' height='' alt='Be awesome.' title='Be awesome.'><span class='caption-text'>Be awesome.</span></span>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/big_league_problems_windycityrails.jpg' width='' height='' alt='Be awesome.' title='Be awesome.'><span class='caption-text'>Be awesome.</span></span>
 Do you see yourself in any of these scenarios?</p>
+
+
+
 
 <ul>
 <li><p>You have already built a successful Rails app. Now that you&rsquo;re &ldquo;done&rdquo;, you know you can make it better, but you&rsquo;re not sure how. You want to take your skills to the next level.</p></li>
@@ -170,32 +289,70 @@ Do you see yourself in any of these scenarios?</p>
 </ul>
 
 
+
+
 <p>Common thread: It&rsquo;s time to unleash the awesomeness in your bones. You want to take your skills to the next level, and you are ready to tackle <em>Big League Problems</em>. <a href="http://windycityrails.org">WindyCityRails</a> is for you.</p>
+
+
+
 
 <!--more-->
 
 
+
+
 <h3>What are Big League Problems?</h3>
+
+
+
 
 <p>You might think of a big league problem as a good problem. For example, the Rails app you built is pulling in customers, and you&rsquo;re bumping into the limits of your software architecture. Who knew that so many people would buy from you?</p>
 
+
+
+
 <p>Now&hellip; How do you scale? Do you buy more hardware, change your architecture, choose a new platform, or some combination of these? <a href="http://www.windycityrails.org/schedule/#williams">Dr. Nic Williams</a>, <a href="http://www.windycityrails.org/schedule/#shirai">Brian Shirai</a>, <a href="http://www.windycityrails.org/schedule/#light">Evan Light</a>, <a href="http://www.windycityrails.org/schedule/#menard">Mark Menard</a> deal with scaling problems. Learn from them.</p>
+
+
+
 
 <p>Maybe you built a gem to solve a problem for yourself, and now you want to release your gem to the world. What legal questions do you need to consider? Did Rails face similar challenges in the beginning? <a href="http://www.windycityrails.org/schedule/#saper">Daliah Saper</a> is an attorney who specializes in intellectual property and other open source software issues. Put her team to work for you.</p>
 
+
+
+
 <p>How about security? Have you outgrown the <code>Devise</code> gem? Or do you simply need to know more about <code>Devise</code> internals so that you can use it more effectively? Maybe it&rsquo;s time to abandon username/password logins altogether and go with SQRL. <a href="http://www.windycityrails.org/schedule/#love">Justin Love</a> and <a href="http://www.windycityrails.org/schedule/#mazza">Lucas Mazza</a> might have some ideas for you.</p>
+
+
+
 
 <h3>Awesome Speakers. Awesome Audience.</h3>
 
+
+
+
 <p>This year&rsquo;s WindyCityRails features the most powerful collection of speakers we&rsquo;ve ever assembled. Check out the <a href="http://www.windycityrails.org/schedule/">complete list of WindyCityRails speakers</a> and ask yourself what you can learn from each one.</p>
+
+
+
 
 <p>Even better: Only 300 WindyCityRails tickets will be sold. Our speakers enjoy interacting with audience members throughout the conference. As professionals, they are always learning, too! So if you want some face time with people who understand Big League Problems (and more importantly, Big League Solutions) WindyCityRails is the place for you to be.</p>
 
+
+
+
 <h3>Get Tickets Now</h3>
+
+
+
 
 <p>Tickets are selling fast. Get yours now at <a href="http://www.windycityrails.org/register/">http://www.windycityrails.org/register/</a>. Use the promo code AWESOME to save $75.00 on the standard price.</p>
 
+
+
+
 <p>We look forward to seeing you at WindyCityRails!</p>
+
 ]]></content>
   </entry>
   
@@ -208,53 +365,96 @@ Do you see yourself in any of these scenarios?</p>
 &nbsp;<br/>
 ~ L. Peter Deutsch</p></blockquote>
 
+
+
+
 <p>Recursion is available in many high-level languages, including Ruby. Recursive solutions can be joyfully elegant. At the same time, the pursuit of elegance can lead to unexpected performance pitfalls.</p>
 
+
+
+
 <p>Fortunately, we can use optimization techniques to address performance problems before they occur. Memoization is one technique in our arsenal.</p>
+
+
+
 
 <!--more-->
 
 
+
+
 <h3>Before Memoization</h3>
+
+
+
 
 <p>Memoization was designed to solve a particular kind of problem. Consider a method called <code>fibo(n)</code> that calculates the <em>nth</em> number of the <a href="http://en.wikipedia.org/wiki/Fibonacci_number">Fibonacci</a> sequence.</p>
 
-<p>&#8220;` ruby</p>
 
-<h1>Calculate the nth Fibonacci number, f(n).</h1>
 
-<p>def fibo (n)
-  if n &lt;= 1</p>
 
-<pre><code>return n
-</code></pre>
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1"># Calculate the nth Fibonacci number, f(n).</span>
+</span><span class='line'><span class="k">def</span> <span class="nf">fibo</span> <span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">n</span>
+</span><span class='line'>  <span class="k">else</span>
+</span><span class='line'>    <span class="n">value</span> <span class="o">=</span> <span class="n">fibo</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fibo</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">value</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Display the Fibonacci sequence.</span>
+</span><span class='line'><span class="p">(</span><span class="mi">1</span><span class="o">.</span><span class="n">.</span><span class="mi">40</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">number</span><span class="o">|</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;fibo(</span><span class="si">#{</span><span class="n">number</span><span class="si">}</span><span class="s2">) = </span><span class="si">#{</span><span class="n">fibo</span><span class="p">(</span><span class="n">number</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p>  else</p>
 
-<pre><code>value = fibo(n-1) + fibo(n-2)
-return value
-</code></pre>
 
-<p>  end
-end</p>
 
-<h1>Display the Fibonacci sequence.</h1>
+<p></p>
 
-<p>(1..40).each do |number|
-  puts &ldquo;fibo(#{number}) = #{fibo(number)}&rdquo;
-end</p>
 
-<p>&#8220;`</p>
+
 
 <p>The example runs, but performance slows down as <em>n</em> gets larger. Why? Because this method re-calculates all preceeding Fibonacci numbers every time it calculates a new <code>fibo(n)</code>. When we calculate Fibonacci numbers manually, we know better. Humans are smart enough to refer to earlier work. But the <code>fibo(n)</code> method does not manage time very well.</p>
 
+
+
+
 <p>Is it possible for the <code>fibo(n)</code> method to remember the results of earlier calculations so that it can avoid doing work that is already done? Yes, through <a href="http://en.wikipedia.org/wiki/Memoization">memoization</a>.</p>
+
+
+
 
 <h3>Memoization</h3>
 
+
+
+
 <p>Memoization means recording the results of earlier calculations so that we don&rsquo;t have to repeat the calculations later. If our code depends on the results of earlier calculations, and if the same calculations are performed over-and-over again, then it makes sense to store interim results (jot results down on a &lsquo;memo&rsquo; = memoization) so that we can avoid repeating the math.</p>
 
+
+
+
 <p>The Fibonacci example can be improved through memoization as follows.</p>
+
+
+
 
 <ul>
 <li>Create a place to store temporary results.</li>
@@ -265,71 +465,114 @@ the results for future use.</li>
 </ul>
 
 
+
+
 <p>Here&rsquo;s how memoization is implemented in the Fibonacci example:</p>
 
-<p>&#8220;` ruby</p>
 
-<h1>Fibonacci numbers WITH memoization.</h1>
 
-<h1>Initialize the memoization array.</h1>
 
-<p>@scratchpad = []
-@max_fibo_size = 50
-(1..@max_fibo_size).each do |i|
-  @scratchpad[i] = :notcalculated
-end</p>
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1"># Fibonacci numbers WITH memoization.</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Initialize the memoization array.</span>
+</span><span class='line'><span class="vi">@scratchpad</span> <span class="o">=</span> <span class="o">[]</span>
+</span><span class='line'><span class="vi">@max_fibo_size</span> <span class="o">=</span> <span class="mi">50</span>
+</span><span class='line'><span class="p">(</span><span class="mi">1</span><span class="o">.</span><span class="n">.</span><span class="vi">@max_fibo_size</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
+</span><span class='line'>  <span class="vi">@scratchpad</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="ss">:notcalculated</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Calculate the nth Fibonacci number, f(n).</span>
+</span><span class='line'><span class="k">def</span> <span class="nf">fibo</span> <span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="vi">@max_fibo_size</span>
+</span><span class='line'>    <span class="k">return</span> <span class="s2">&quot;n must be </span><span class="si">#{</span><span class="vi">@max_fibo_size</span><span class="si">}</span><span class="s2"> or less.&quot;</span>
+</span><span class='line'>  <span class="k">elsif</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">n</span>
+</span><span class='line'>  <span class="k">elsif</span> <span class="vi">@scratchpad</span><span class="o">[</span><span class="n">n</span><span class="o">]</span> <span class="o">!=</span> <span class="ss">:notcalculated</span>
+</span><span class='line'>    <span class="k">return</span> <span class="vi">@scratchpad</span><span class="o">[</span><span class="n">n</span><span class="o">]</span>
+</span><span class='line'>  <span class="k">else</span>
+</span><span class='line'>    <span class="vi">@scratchpad</span><span class="o">[</span><span class="n">n</span><span class="o">]</span> <span class="o">=</span> <span class="n">fibo</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fibo</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">return</span> <span class="vi">@scratchpad</span><span class="o">[</span><span class="n">n</span><span class="o">]</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Display the Fibonacci sequence.</span>
+</span><span class='line'><span class="p">(</span><span class="mi">1</span><span class="o">.</span><span class="n">.</span><span class="mi">50</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">number</span><span class="o">|</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;fibo(</span><span class="si">#{</span><span class="n">number</span><span class="si">}</span><span class="s2">) = </span><span class="si">#{</span><span class="n">fibo</span><span class="p">(</span><span class="n">number</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<h1>Calculate the nth Fibonacci number, f(n).</h1>
 
-<p>def fibo (n)
-  if n > @max_fibo_size</p>
 
-<pre><code>return "n must be #{@max_fibo_size} or less."
-</code></pre>
 
-<p>  elsif n &lt;= 1</p>
+<p></p>
 
-<pre><code>return n
-</code></pre>
 
-<p>  elsif @scratchpad[n] != :notcalculated</p>
 
-<pre><code>return @scratchpad[n]
-</code></pre>
-
-<p>  else</p>
-
-<pre><code>@scratchpad[n] = fibo(n-1) + fibo(n-2)
-return @scratchpad[n]
-</code></pre>
-
-<p>  end
-end</p>
-
-<h1>Display the Fibonacci sequence.</h1>
-
-<p>(1..50).each do |number|
-  puts &ldquo;fibo(#{number}) = #{fibo(number)}&rdquo;
-end</p>
-
-<p>&#8220;`</p>
 
 <p>Walking through the code&hellip; First we create a memoization array, a place to store the pre-calculated values. In this example, <code>@scratchpad[]</code> serves as our memoization array.</p>
 
+
+
+
 <p>The <code>fibo(n)</code> method is similar to the one in the earlier example, with a few subtle differences. First, we need to determine whether we&rsquo;ve already calculated a particular value. Since we initialized all elements of the <code>@scratchpad</code> array with the <code>:notcalculated</code> symbol, it&rsquo;s easy to figure out where work needs to be done. If a Fibonacci number <code>fibo(n)</code> has already been calculated, we return the value stored at <code>@scratchpad[n]</code>. Otherwise, we calculate the new <code>fibo(n)</code> and store that value at <code>@scratchpad[n]</code> for later use.</p>
+
+
+
 
 <h3>Performance Comparison</h3>
 
+
+
+
 <p>The performance of the two programs is compared in this 1-minute video.</p>
+
+
+
 
 <center><iframe src="//player.vimeo.com/video/91841948" width="500" height="313" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
 
 
+
+
 <p>As the video shows, memoization is a performance booster.</p>
+
+
+
 
 <h3>Sample Code</h3>
 
+
+
+
 <p>Sample code related to this article can be found on <a href="https://github.com/RayHightower/fibonacci">GitHub</a>.</p>
+
 ]]></content>
   </entry>
   
@@ -340,13 +583,28 @@ end</p>
     <id>http://RayHightower.com/blog/2014/02/12/homebrew-fundamentals</id>
     <content type="html"><![CDATA[<p>Spend enough time developing software on Mac OS X, and you will eventually need to install libraries that were written for Unix, but not specifically for OS X. Fortunately we have <a href="http://brew.sh/">Homebrew</a>, which makes it easier to install Unix libraries on the Mac.</p>
 
+
+
+
 <h3>Why Homebrew?</h3>
+
+
+
 
 <p>Before installing any new software, it is helpful to have a clear view of <em>why</em> we need it.</p>
 
+
+
+
 <p>Homebrew is a package manager. It differs from earlier package managers like <a href="http://www.finkproject.org/">Fink</a> and <a href="http://www.macports.org/">MacPorts</a> because it is written in Ruby and based on Git. The Ruby/Git foundation means that developers from around the planet can easily contribute to Homebrew&rsquo;s growth.</p>
 
+
+
+
 <p>Before package managers, developers who needed a particular library would have to:</p>
+
+
+
 
 <ul>
 <li>Manually download source code for the library.</li>
@@ -355,93 +613,210 @@ end</p>
 </ul>
 
 
+
+
 <p>Manually, manually, manually&hellip; The old way was long and error-prone. <a href="https://twitter.com/mxcl">Max Howell</a> created Homebrew to download, compile, and resolve dependencies automatically. Now developers can focus more attention on solving problems that are directly related to their work.</p>
+
+
+
 
 <!--more-->
 
 
+
+
 <h3>How to Install Homebrew</h3>
 
-<p><span class='caption-wrapper right'><img class='caption' src='/images/xcode-app-store.png' width='' height='' alt='Homebrew depends on Xcode.' title='Homebrew depends on Xcode.'><span class='caption-text'>Homebrew depends on Xcode.</span></span>
+
+
+
+<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/xcode-app-store.png' width='' height='' alt='Homebrew depends on Xcode.' title='Homebrew depends on Xcode.'><span class='caption-text'>Homebrew depends on Xcode.</span></span>
 Some parts of Homebrew require Xcode, Apple&rsquo;s environment for developing software on Mac OS X. Make sure you have Xcode installed on your Mac. Xcode is available for free in the Mac App Store.</p>
+
+
+
 
 <p>With Xcode installed, you can install Homebrew by pasting the following
 command into a terminal window.</p>
 
-<p>&#8220;` bash
-$ ruby -e &ldquo;$(curl -fsSL <a href="https://raw.github.com/Homebrew/homebrew/go/install">https://raw.github.com/Homebrew/homebrew/go/install</a>)&#8221;install</p>
 
-<p>&#8220;`
+
+
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>ruby -e <span class="s2">&quot;$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)&quot;</span>install
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+
+
+
+<p>
 The script will walk you through the installation process. If you would like to read the script before installation, you can visit the <a href="https://github.com/Homebrew/homebrew">Homebrew repo on Github</a>.</p>
+
+
+
 
 <h3>Installing Packages</h3>
 
+
+
+
 <p>A list of <a href="https://github.com/Homebrew/homebrew/tree/master/Library/Formula">available Homebrew packages</a> is maintained on GitHub.</p>
+
+
+
 
 <p>To install a package, say <code>imagemagick</code> for example&hellip;</p>
 
-<p><code>bash
-$ brew install imagemagick
-</code></p>
+
+
+
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>brew install imagemagick
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+
+
+
+<p></p>
+
+
+
 
 <p>Before Homebrew, installing <code>imagemagick</code> was long and arduous. With Homebrew, the installation and compilation steps still take awhile. But dependencies are resolved by Homebrew, and little user interaction is required after the first step.</p>
 
+
+
+
 <h3>Maintaining Homebrew</h3>
+
+
+
 
 <p>Developers from around the world contribute to Homebrew, so the tool gets improved often. To check the health of your Homebrew installation, use <code>brew doctor</code>.</p>
 
-<p><code>`` bash
-$ brew doctor
-Warning: Your Homebrew is outdated.
-You haven't updated for at least 24 hours, this is a long time in brewland!
-To update Homebrew, run</code>brew update`.</p>
 
-<p>$</p>
 
-<p>&#8220;`</p>
+
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>brew doctor
+</span><span class='line'>Warning: Your Homebrew is outdated.
+</span><span class='line'>You haven<span class="err">&#39;</span>t updated <span class="k">for </span>at least 24 hours, this is a long <span class="nb">time </span>in brewland!
+</span><span class='line'>To update Homebrew, run <span class="sb">`</span>brew update<span class="sb">`</span>.
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+
+
+
+<p></p>
+
+
+
 
 <p><code>brew update</code> will apply recent updates.</p>
 
-<p>&#8220;` bash
-$ brew update
-Updated Homebrew from f83642fc to cfad513e.
-==> New Formulae
-&hellip;
-==> Updated Formulae
-&hellip;
-==> Deleted Formulae
-&hellip;</p>
 
-<p>$</p>
 
-<p>&#8220;`</p>
+
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>brew update
+</span><span class='line'>Updated Homebrew from f83642fc to cfad513e.
+</span><span class='line'><span class="o">==</span>&gt; New Formulae
+</span><span class='line'>...
+</span><span class='line'><span class="o">==</span>&gt; Updated Formulae
+</span><span class='line'>...
+</span><span class='line'><span class="o">==</span>&gt; Deleted Formulae
+</span><span class='line'>...
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+
+
+
+<p></p>
+
+
+
 
 <h3>Looking at Packages</h3>
 
+
+
+
 <p>There are several ways to view the packages that have been installed on a system via Homebrew. Use <code>brew list</code> at the command prompt to get a quick view of what Homebrew has installed.</p>
+
+
+
 
 <p>Even better: <code>brew server</code> will launch a local <a href="http://www.sinatrarb.com/">Sinatra</a> app, and then you can point a browser to <code>http://localhost:4567</code> for a web-enabled view of the installed packages.</p>
 
-<p>&#8220;` bash
-$ brew server
-View our tasting menu at <a href="http://localhost:4567/">http://localhost:4567/</a>
-Use &ldquo;Control-C&rdquo; to exit.</p>
 
-<p>[2014-02-12 16:33:18] INFO  WEBrick 1.3.1
-[2014-02-12 16:33:18] INFO  ruby 1.8.7 (2012-02-08) [universal-darwin12.0]
-== Sinatra/1.3.3 has taken the stage on 4567 for development with backup from WEBrick
-[2014-02-12 16:33:18] INFO  WEBrick::HTTPServer#start: pid=96694 port=4567
-&#8220;`</p>
 
-<p><span class='caption-wrapper center'><img class='caption' src='/images/brew-server.png' width='' height='' alt='Browsing locally-installed Homebrew packages.' title='Browsing locally-installed Homebrew packages.'><span class='caption-text'>Browsing locally-installed Homebrew packages.</span></span></p>
+
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>brew server
+</span><span class='line'>View our tasting menu at http://localhost:4567/
+</span><span class='line'>Use <span class="s2">&quot;Control-C&quot;</span> to exit.
+</span><span class='line'>
+</span><span class='line'><span class="o">[</span>2014-02-12 16:33:18<span class="o">]</span> INFO  WEBrick 1.3.1
+</span><span class='line'><span class="o">[</span>2014-02-12 16:33:18<span class="o">]</span> INFO  ruby 1.8.7 <span class="o">(</span>2012-02-08<span class="o">)</span> <span class="o">[</span>universal-darwin12.0<span class="o">]</span>
+</span><span class='line'><span class="o">==</span> Sinatra/1.3.3 has taken the stage on 4567 <span class="k">for </span>development with backup from WEBrick
+</span><span class='line'><span class="o">[</span>2014-02-12 16:33:18<span class="o">]</span> INFO  WEBrick::HTTPServer#start: <span class="nv">pid</span><span class="o">=</span>96694 <span class="nv">port</span><span class="o">=</span>4567
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+
+
+
+<p></p>
+
+
+
+
+<p><span class='caption-wrapper center'><img class='caption' src='http://RayHightower.com/images/brew-server.png' width='' height='' alt='Browsing locally-installed Homebrew packages.' title='Browsing locally-installed Homebrew packages.'><span class='caption-text'>Browsing locally-installed Homebrew packages.</span></span></p>
+
+
+
 
 <h3>Making Your Own Packages</h3>
 
+
+
+
 <p>Homebrew is Ruby-based, so Rubyists can create their own packages.  Details can be found in the (continuously updated) <a href="https://github.com/Homebrew/">Homebrew repo on GitHub</a>.</p>
+
+
+
 
 <h3>Conclusion</h3>
 
+
+
+
 <p>Enjoy Homebrew!</p>
+
 ]]></content>
   </entry>
   

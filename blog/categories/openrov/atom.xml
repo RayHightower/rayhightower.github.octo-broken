@@ -4,7 +4,7 @@
   <title><![CDATA[Category: openrov | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/openrov/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-03-06T14:28:32-06:00</updated>
+  <updated>2015-03-06T18:09:30-06:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -18,12 +18,21 @@
     <link href="http://RayHightower.com/blog/2015/01/20/chicago-node-dot-js/"/>
     <updated>2015-01-20T17:23:30-06:00</updated>
     <id>http://RayHightower.com/blog/2015/01/20/chicago-node-dot-js</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/openrov_at_groupon.png' width='' height='' alt='OpenROV at Groupon. Photo by Michelle Waldorf.' title='OpenROV at Groupon. Photo by Michelle Waldorf.'><span class='caption-text'>OpenROV at Groupon. Photo by Michelle Waldorf.</span></span>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/openrov_at_groupon.png' width='' height='' alt='OpenROV at Groupon. Photo by Michelle Waldorf.' title='OpenROV at Groupon. Photo by Michelle Waldorf.'><span class='caption-text'>OpenROV at Groupon. Photo by Michelle Waldorf.</span></span>
 The <a href="http://www.meetup.com/Chicago-Nodejs/events/203711262/">Chicago Node.js</a> user group invited me to present <em>Node.js Under Water</em>, an overview of the <a href="http://openrov.com">OpenROV</a> underwater robot, this evening. Slides appear below.</p>
+
+
+
 
 <p>Every version of this talk is tailored to the audience. This version focuses on OpenROV hardware components since this group certainly knows Node.js. Information has been added on hardware gotchas and tether management.</p>
 
+
+
+
 <p>Thank you Chicago Node.js organizers and members for having me.</p>
+
+
+
 
 <!--more-->
 
@@ -31,6 +40,8 @@ The <a href="http://www.meetup.com/Chicago-Nodejs/events/203711262/">Chicago Nod
 
 
 <center><script async class="speakerdeck-embed" data-id="b51c86f083270132a7cc1ade27531f87" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script></center>
+
+
 
 ]]></content>
   </entry>
@@ -40,24 +51,41 @@ The <a href="http://www.meetup.com/Chicago-Nodejs/events/203711262/">Chicago Nod
     <link href="http://RayHightower.com/blog/2014/11/16/ignite-rubyconf-2014/"/>
     <updated>2014-11-16T15:01:00-06:00</updated>
     <id>http://RayHightower.com/blog/2014/11/16/ignite-rubyconf-2014</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/ignite_logo_200.jpg' width='' height='' alt='Ignite. 15 seconds per slide.' title='Ignite. 15 seconds per slide.'><span class='caption-text'>Ignite. 15 seconds per slide.</span></span>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/ignite_logo_200.jpg' width='' height='' alt='Ignite. 15 seconds per slide.' title='Ignite. 15 seconds per slide.'><span class='caption-text'>Ignite. 15 seconds per slide.</span></span>
 <a href="http://igniteshow.com/">Ignite</a> is a presentation format where the slides advance automatically every 15 seconds whether the presenter is ready or not. Twenty slides, 15 seconds each, five minutes total. Presenters are challenged to present their ideas quickly and clearly before the time runs out.</p>
 
+
+
+
 <p>Ignite is similar to <a href="http://www.pechakucha.org">Pecha Kucha</a>. The two formats differ only in slide duration (20 seconds per slide with Pecha Kucha).</p>
+
+
+
 
 <!--more-->
 
 
+
+
 <p><a href="http://www.sdruby.org/">SDRuby</a> ran an Ignite event on the day before RubyConf 2014. Slides from my OpenROV presentation at Ignite RubyConf 2014 appear below.</p>
 
+
+
+
 <script async class="speakerdeck-embed" data-id="573c89704e88013264a612c8f4a94aec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+
 
 
 <p>&nbsp;<br/>
 &nbsp;<br/>
 Thanks SDRuby for hosting the Ignite event!</p>
 
+
+
+
 <p>If you like the idea of hacking on Ruby <em>and</em> OpenROV, check out <a href="http://rubycaribe.com">RubyCaribe</a>.</p>
+
 ]]></content>
   </entry>
   
@@ -66,15 +94,26 @@ Thanks SDRuby for hosting the Ignite event!</p>
     <link href="http://RayHightower.com/blog/2014/10/21/geekfest-and-openrov/"/>
     <updated>2014-10-21T09:44:00-05:00</updated>
     <id>http://RayHightower.com/blog/2014/10/21/geekfest-and-openrov</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/geekfest.png' width='' height='' alt='Geekfest: Tuesdays at Groupon.' title='Geekfest: Tuesdays at Groupon.'><span class='caption-text'>Geekfest: Tuesdays at Groupon.</span></span>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/geekfest.png' width='' height='' alt='Geekfest: Tuesdays at Groupon.' title='Geekfest: Tuesdays at Groupon.'><span class='caption-text'>Geekfest: Tuesdays at Groupon.</span></span>
 <a href="http://www.meetup.com/Geekfest/events/207936312/">Geekfest</a> is a weekly event hosted by Groupon&rsquo;s engineering team. Every Tuesday at lunchtime, the company invites members of the tech community to present topics that are interesting to a technical audience.</p>
 
-<p>I wish to express my thanks to Groupon for inviting me to present <a href="/blog/2014/06/16/citizen-science-with-openrov/">OpenROV</a> at today&rsquo;s Geekfest.</p>
+
+
+
+<p>I wish to express my thanks to Groupon for inviting me to present <a href="http://RayHightower.com/blog/2014/06/16/citizen-science-with-openrov/">OpenROV</a> at today&rsquo;s Geekfest.</p>
+
+
+
 
 <!--more-->
 
 
+
+
 <p>Slides appear below. Video will be posted as soon as it becomes available. Special thanks to <a href="http://chelseatroy.com/2014/10/21/geekfest-ray-hightower-dumps-a-robot-into-lake-michigan/">Chelsea Troy</a> for creating a real-time blog post about the presentation.</p>
+
+
+
 
 <center><iframe src="//player.vimeo.com/video/112204897" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
 
@@ -95,30 +134,58 @@ Thanks SDRuby for hosting the Ignite event!</p>
     <id>http://RayHightower.com/blog/2014/09/25/nodejs-under-water</id>
     <content type="html"><![CDATA[<p>The <a href="http://www.meetup.com/nodejs/events/206159562">New York City Node JS Meetup</a> asked me to speak about <a href="http://rayhightower.com/blog/2014/06/16/citizen-science-with-openrov/">OpenROV</a> on September 24, 2014. About eighty developers came out for the meeting. Thank you <a href="http://shutterstock.com">Shutterstock</a>, <a href="https://twitter.com/mateodelnorte">Matt Walters</a>, and all of the organizers for making it happen. Slides appear below.</p>
 
+
+
+
 <!--more-->
+
+
 
 
 <center><script async class="speakerdeck-embed" data-id="25d9158026930132408f62c99fab29cb" data-ratio="1.7777778" src="//speakerdeck.com/assets/embed.js"></script></center>
 
 
+
+
 <p>&nbsp;
 &nbsp;</p>
 
+
+
+
 <h3>Presentation Video</h3>
 
+
+
+
 <p><del>The following video is a rough draft, useful if you want to hear the dialog that went along with the slides.</del> <em>Update: <a href="http://www.hakkalabs.co/articles/openrov-node-js-underwater">Hakka Labs</a> has published the official video from the event, embedded below.</em>  Lots of good questions from the audience.</p>
+
+
+
 
 <center><iframe width="560" height="315" src="//www.youtube.com/embed/7eUoGtPUKbw?rel=0" frameborder="0" allowfullscreen></iframe></center>
 
 
+
+
 <p><em>Correction: Maximum OpenROV depth = 100 meters. I gave an incorrect maximum depth figure in the video.</em></p>
+
+
+
 
 <p>&nbsp;
 &nbsp;</p>
 
+
+
+
 <h3>Next Step With OpenROV</h3>
 
+
+
+
 <p>Our work with OpenROV will climax at <a href="http://rubycaribe.com">RubyCaribe</a> in January 2015. If you&rsquo;re an intermediate or advanced software developer, and if you like to stretch your brain with Ruby and other languages (like Node.js) then RubyCaribe might be for you.</p>
+
 ]]></content>
   </entry>
   
@@ -129,8 +196,14 @@ Thanks SDRuby for hosting the Ignite event!</p>
     <id>http://RayHightower.com/blog/2014/09/23/rubycaribe-ruby-gets-hotter-in-january</id>
     <content type="html"><![CDATA[<p><a href="http://rubycaribe.com">RubyCaribe</a> (pronounced ka-REEB) is a conference for intermediate and advanced software developers who use Ruby. The conference will be held January 27 &ndash; 31, 2015 in Barbados. January is a beautiful time to visit the Caribbean, especially if you’re coming from a colder part of the planet.</p>
 
-<p><span class='caption-wrapper right'><img class='caption' src='/images/barbados_caribbean_map.png' width='' height='' alt='Barbados. You could be here in January.' title='Barbados. You could be here in January.'><span class='caption-text'>Barbados. You could be here in January.</span></span>
+
+
+
+<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/barbados_caribbean_map.png' width='' height='' alt='Barbados. You could be here in January.' title='Barbados. You could be here in January.'><span class='caption-text'>Barbados. You could be here in January.</span></span>
 Intermediate and advanced software developers will find RubyCaribe valuable because&hellip;</p>
+
+
+
 
 <ul>
 <li>Each RubyCaribe session features a 30- to 45-minute presentation followed by a <em>2-hour deep-dive lab</em>. Learning is reinforced throughout.</li>
@@ -138,33 +211,71 @@ Intermediate and advanced software developers will find RubyCaribe valuable beca
 </ul>
 
 
+
+
 <!--more-->
+
+
 
 
 <h3>Ramp Up Your Ruby Skills</h3>
 
+
+
+
 <p>Each RubyCaribe lab will be led by experts in machine learning, mobile app development (iOS and Android), web development, and functional programming. The inventor of <a href="http://rubymotion.com">RubyMotion</a>, <a href="https://twitter.com/lrz">Laurent Sansonetti</a>, will lead the RubyMotion lab. If you already have experience with Ruby or Rails, RubyCaribe will take your skills to the next level.</p>
+
+
+
 
 <h3>Bonus: OpenROV and Node.js</h3>
 
-<p><span class='caption-wrapper right'><img class='caption' src='/images/openrov_rubycaribe.jpg' width='' height='' alt='OpenROV. Linux and Node.js.' title='OpenROV. Linux and Node.js.'><span class='caption-text'>OpenROV. Linux and Node.js.</span></span>
-<a href="/blog/2014/06/16/citizen-science-with-openrov/">OpenROV</a> is an open source underwater robot running Linux and Node.js. During two evening sessions, you and your RubyCaribe colleagues will hack on OpenROV. The best developers are polyglot, right? On Friday afternoon, we will grab a boat for live ocean testing with a few OpenROV units. If you ever wanted to experiment with Node.js and IoT, RubyCaribe offers a great opportunity.</p>
+
+
+
+<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/openrov_rubycaribe.jpg' width='' height='' alt='OpenROV. Linux and Node.js.' title='OpenROV. Linux and Node.js.'><span class='caption-text'>OpenROV. Linux and Node.js.</span></span>
+<a href="http://RayHightower.com/blog/2014/06/16/citizen-science-with-openrov/">OpenROV</a> is an open source underwater robot running Linux and Node.js. During two evening sessions, you and your RubyCaribe colleagues will hack on OpenROV. The best developers are polyglot, right? On Friday afternoon, we will grab a boat for live ocean testing with a few OpenROV units. If you ever wanted to experiment with Node.js and IoT, RubyCaribe offers a great opportunity.</p>
+
+
+
 
 <h3>University Collaboration</h3>
 
+
+
+
 <p>On Saturday, the final day of RubyCaribe, we will visit the <a href="http://www.cavehill.uwi.edu/">University of the West Indies at Cave Hill</a>. Faculty and students from the UWI community will demo their work with solar energy and other areas touched by software. Who knows, maybe you’ll give a lightning talk about something you learned at RubyCaribe!</p>
+
+
+
 
 <h3>Make Your Brain Sweat</h3>
 
+
+
+
 <p>RubyCaribe will work you hard. RubyCaribe will make your brain sweat. So be sure to schedule a few days before or after the conference for sight seeing and relaxation. Rum was invented in Barbados.</p>
+
+
+
 
 <h3>Where Will You Be in January?</h3>
 
+
+
+
 <p>If you had to choose between the Caribbean and the cold regions of the northern hemisphere, where would you rather be? RubyCaribe offers the chance to ramp up your skills and enjoy yourself at the same time. What an opportunity.</p>
+
+
+
 
 <h3>Only One Hundred Tickets</h3>
 
+
+
+
 <p>Only one hundred tickets will be sold. Be sure to get yours. <a href="http://www.eventbrite.com/e/rubycaribe-2015-registration-10051344843">Register now</a>. See you at RubyCaribe!</p>
+
 ]]></content>
   </entry>
   
