@@ -4,7 +4,7 @@
   <title><![CDATA[Category: linux | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-03-06T18:09:30-06:00</updated>
+  <updated>2015-03-10T15:04:24-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -18,31 +18,17 @@
     <link href="http://RayHightower.com/blog/2015/02/27/raspberry-pi-2-model-b-quad-core/"/>
     <updated>2015-02-27T21:04:11-06:00</updated>
     <id>http://RayHightower.com/blog/2015/02/27/raspberry-pi-2-model-b-quad-core</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/raspberry_pi_2_model_b.jpg' width='' height='' alt='Raspberry Pi 2 Model B' title='Raspberry Pi 2 Model B'><span class='caption-text'>Raspberry Pi 2 Model B</span></span>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/raspberry_pi_2_model_b.jpg' width='' height='' alt='Raspberry Pi 2 Model B' title='Raspberry Pi 2 Model B'><span class='caption-text'>Raspberry Pi 2 Model B</span></span>
 The <a href="http://www.raspberrypi.org/">Raspberry Pi Foundation</a> has upped their entry in the single-board computer competition. Raspberry Pi 2 Model B boasts a quad core ARM CPU and 1GB of RAM. More important: Benchmarks show that the board is 6x faster than the previous model. And the performance bump has been achieved while the price remains low: Roughly $45.</p>
 
-
-
-
 <p>Getting the board up and running is easier, too. You can buy a pre-built Linux image on micro SD. Or you can <a href="http://www.raspberrypi.org/downloads/">download the New Out Of the Box (NOOBS) image</a> yourself. Depending on the speed of your internet connection, you can be up in running in less than an hour.</p>
-
-
-
 
 <!--more-->
 
 
-
-
 <h3>Easier Than Before</h3>
 
-
-
-
 <p>Special note about the NOOBS image: You don&rsquo;t need a special utility to burn an SD card like before. The steps are:</p>
-
-
-
 
 <ul>
 <li>Download the <a href="http://www.raspberrypi.org/downloads/">NOOBS image</a> and unzip it.</li>
@@ -52,159 +38,89 @@ The <a href="http://www.raspberrypi.org/">Raspberry Pi Foundation</a> has upped 
 </ul>
 
 
-
-
-<p>Having done things <a href="http://RayHightower.com/blog/2012/12/03/ruby-on-raspberry-pi/">the old way</a>, I was surprised that the process was so simple this time. Hats off to the Raspberry Pi Foundation for a great installation experience.</p>
-
-
-
+<p>Having done things <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">the old way</a>, I was surprised that the process was so simple this time. Hats off to the Raspberry Pi Foundation for a great installation experience.</p>
 
 <h3>Login Information</h3>
 
-
-
-
 <p>After the device boots, you will need login credentials. These have not changed from the previous version:</p>
 
+<p>&#8220;` bash</p>
 
+<p>raspberripi login: pi
+Password: raspberry</p>
 
-
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>raspberripi login: pi
-</span><span class='line'>Password: raspberry
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-
-
+<p>&#8220;`</p>
 
 <p>Note that the cursor will not move while you type the password.</p>
 
-
-
-
 <p>Next, start the X Window environment.</p>
 
+<p>&#8220;` bash
+$ startx</p>
 
+<p>&#8220;`
+And your desktop will look something like this.</p>
 
-
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>startx
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-
-
-
-<p>And your desktop will look something like this.</p>
-
-
-
-
-<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/raspberry_pi_2_model_b_ruby.jpg' width='' height='' alt='Screenshot: Raspberry Pi 2 Model B' title='Screenshot: Raspberry Pi 2 Model B'><span class='caption-text'>Screenshot: Raspberry Pi 2 Model B</span></span></p>
-
-
-
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/raspberry_pi_2_model_b_ruby.jpg' width='' height='' alt='Screenshot: Raspberry Pi 2 Model B' title='Screenshot: Raspberry Pi 2 Model B'><span class='caption-text'>Screenshot: Raspberry Pi 2 Model B</span></span></p>
 
 <h3>Running Ruby, Rails</h3>
 
-
-
-
-<p>This incarnation of Raspberry Pi comes with Ruby 1.9.3 pre-installed. Of course, if you want to manage multiple versions of Ruby, <a href="http://RayHightower.com/blog/2013/05/16/upgrading-ruby-with-rvm/">RVM is a great way to go</a>.</p>
-
-
-
+<p>This incarnation of Raspberry Pi comes with Ruby 1.9.3 pre-installed. Of course, if you want to manage multiple versions of Ruby, <a href="/blog/2013/05/16/upgrading-ruby-with-rvm/">RVM is a great way to go</a>.</p>
 
 <p>To install RVM, first run <code>gpg</code> to verify that you will get an uncorrupted (or un-tampored with) version of RVM.</p>
 
+<p>&#8220;` bash</p>
 
+<p>$ gpg &mdash;keyserver hkp://keys.gnupg.net &mdash;recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3</p>
 
+<p>$</p>
 
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-
-
+<p>&#8220;`</p>
 
 <p>Next, install RVM.</p>
 
+<p>&#8220;` bash
+$ \curl -sSL <a href="https://get.rvm.io">https://get.rvm.io</a> | bash -s stable</p>
 
+<p>$</p>
 
-
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="se">\c</span>url -sSL https://get.rvm.io <span class="p">|</span> bash -s stable
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-
-
+<p>&#8220;`</p>
 
 <p>And finally, let the current terminal session know that RVM is installed
 by typing the following at the command line.</p>
 
+<p>&#8220;` bash</p>
 
+<p>$ source /home/pi/.rvm/scripts/rvm</p>
 
+<p>$</p>
 
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="nb">source</span> /home/pi/.rvm/scripts/rvm
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-
-
+<p>&#8220;`</p>
 
 <p>You can verify that RVM is installed by checking its version number like so&hellip;</p>
 
+<p>&#8220;` bash</p>
 
+<p>$ rvm &mdash;version
+rvm 1.26.10 (master) by Wayne E. Seguin <a href="&#109;&#x61;&#105;&#108;&#x74;&#x6f;&#x3a;&#x77;&#x61;&#121;&#110;&#101;&#x65;&#x73;&#x65;&#x67;&#x75;&#105;&#110;&#x40;&#x67;&#109;&#97;&#105;&#x6c;&#46;&#99;&#111;&#109;">&#x77;&#x61;&#121;&#110;&#x65;&#101;&#x73;&#101;&#103;&#117;&#x69;&#110;&#64;&#103;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#111;&#x6d;</a>, Michal Papis <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#x3a;&#109;&#x70;&#97;&#x70;&#x69;&#115;&#x40;&#103;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#99;&#x6f;&#x6d;">&#x6d;&#x70;&#97;&#x70;&#x69;&#115;&#x40;&#x67;&#x6d;&#97;&#x69;&#108;&#x2e;&#x63;&#x6f;&#x6d;</a> [<a href="https://rvm.io/">https://rvm.io/</a>]</p>
 
+<p>$</p>
 
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rvm --version
-</span><span class='line'>rvm 1.26.10 <span class="o">(</span>master<span class="o">)</span> by Wayne E. Seguin &lt;wayneeseguin@gmail.com&gt;, Michal Papis &lt;mpapis@gmail.com&gt; <span class="o">[</span>https://rvm.io/<span class="o">]</span>
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-
-
+<p>&#8220;`</p>
 
 <h3>Installing Ruby Versions</h3>
 
-
-
-
 <p>To install the latest stable version of Ruby&hellip;</p>
 
+<p>&#8220;` bash</p>
 
+<p>$ rvm install ruby</p>
 
+<p>$</p>
 
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rvm install ruby
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-
-
+<p>&#8220;`</p>
 
 <p>RVM will download dependencies as part of the installation process. From there, you can create RVM gemsets and <code>gem install rails</code> or any other libraries you may need. More documentation can be found at <a href="http://rvm.io">http://rvm.io</a>.</p>
-
 ]]></content>
   </entry>
   
@@ -213,48 +129,25 @@ by typing the following at the command line.</p>
     <link href="http://RayHightower.com/blog/2014/08/19/openrov-assembly-challenges/"/>
     <updated>2014-08-19T16:44:00-05:00</updated>
     <id>http://RayHightower.com/blog/2014/08/19/openrov-assembly-challenges</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/openrov_rth.jpg' width='' height='' alt='OpenROV fully assembled.' title='OpenROV fully assembled.'><span class='caption-text'>OpenROV fully assembled.</span></span>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/openrov_rth.jpg' width='' height='' alt='OpenROV fully assembled.' title='OpenROV fully assembled.'><span class='caption-text'>OpenROV fully assembled.</span></span>
 I know this problem can be solved. I just haven’t figured it out yet, and I need help from the <a href="http://openrov.com/">OpenROV</a> community to do so.</p>
 
-
-
-
-<p><em>Update: The OpenROV community delivered. Solution: <a href="http://RayHightower.com/blog/2014/08/21/esc-programming-and-calibration-for-openrov/">ESC Programming and Calibration for OpenROV</a>.</em></p>
-
-
-
+<p><em>Update: The OpenROV community delivered. Solution: <a href="/blog/2014/08/21/esc-programming-and-calibration-for-openrov/">ESC Programming and Calibration for OpenROV</a>.</em></p>
 
 <h3>Parts That Work</h3>
 
-
-
-
 <p>Software image updates on the Beaglebone Black work flawlessly thanks to scripts written by <a href="https://github.com/BrianAdams">Brian Adams</a> and <a href="https://github.com/codewithpassion">Dominick Fretz</a>. The cockpit software shows a real-time image from the camera, the LED lights are super-bright, and the lasers hold steady at 10cm apart. My fully assembled OpenROV passes the water submersion test. Yes, it’s waterproof, thanks to O-rings and silicon-based lubricant!</p>
-
-
-
 
 <p>What about the motors? The motors work, almost. Could it be the
 electronic speed control (ESC) settings, calibration, or less than
 perfect soldering? That&rsquo;s where I need help.</p>
 
-
-
-
 <!--more-->
-
-
 
 
 <h3>Summary of Symptoms</h3>
 
-
-
-
 <p>With the cockpit software running and attached to the OpenROV:</p>
-
-
-
 
 <ul>
 <li>If I turn on any of the three ESCs, two of the motors (vertical and port) start running at full blast. The starboard motor remains stationary.</li>
@@ -264,12 +157,7 @@ perfect soldering? That&rsquo;s where I need help.</p>
 </ul>
 
 
-
-
 <p>When the cockpit software is not running (and the Google Chrome browser is completely closed):</p>
-
-
-
 
 <ul>
 <li>Turning on an ESC has no effect on the motors.</li>
@@ -277,53 +165,24 @@ perfect soldering? That&rsquo;s where I need help.</p>
 </ul>
 
 
-
-
 <p>Interesting behavior!</p>
-
-
-
 
 <h3>Double-Checking the ESC Settings</h3>
 
-
-
-
-<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/esc_program_card.jpg' width='' height='' alt='ESC Program Card' title='ESC Program Card'><span class='caption-text'>ESC Program Card</span></span>
+<p><span class='caption-wrapper right'><img class='caption' src='/images/esc_program_card.jpg' width='' height='' alt='ESC Program Card' title='ESC Program Card'><span class='caption-text'>ESC Program Card</span></span>
 During troubleshooting, my first step was to double-check the electronic speed controller (ESC) settings. Setting the ESCs with the beep-and-button-push method was time consuming. And I was concerned that I may have made a mistake in counting the beeps.</p>
-
-
-
 
 <p>Solution: I bought an ESC program card. Amazon sells them for less than fifteen dollars, well worth the price when you consider the peace of mind that the card brings. The program card shows each ESC setting with a clear 7-segment LED display, much easier than counting beeps!</p>
 
-
-
-
 <p>According to the program card, all of the ESC settings are correct.</p>
-
-
-
 
 <h3>Using a Power Supply Instead of Batteries</h3>
 
-
-
-
 <p>All of the time spent troubleshooting drained the OpenROV batteries. So I devised a way to apply power directly to the OpenROV without batteries.</p>
 
-
-
-
-<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/openrov_power_supply.jpg' width='' height='' alt='Directly connected to power supply.' title='Directly connected to power supply.'><span class='caption-text'>Directly connected to power supply.</span></span></p>
-
-
-
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/openrov_power_supply.jpg' width='' height='' alt='Directly connected to power supply.' title='Directly connected to power supply.'><span class='caption-text'>Directly connected to power supply.</span></span></p>
 
 <p>The photo reveals the random condition of my work surface, so here&rsquo;s a verbal description of this hack:</p>
-
-
-
 
 <ul>
 <li>In the background, a power supply set to 12 volts</li>
@@ -332,30 +191,15 @@ During troubleshooting, my first step was to double-check the electronic speed c
 </ul>
 
 
-
-
 <p>I find that this hack works best if I connect the 12 volt setup first while the Topside Adapter is powered off. Applying power (via USB) to the Topside Adapter turns the entire assembly on.</p>
-
-
-
 
 <p>If you&rsquo;re reading this section and you know a better way for me to connect the power supply, please advise in the comments section below.</p>
 
-
-
-
 <h3>Advice Welcome</h3>
-
-
-
 
 <p>I&rsquo;m not sure where to look next to solve the challenge with the motors. Maybe I skipped a step somewhere during assembly? Advice welcome!</p>
 
-
-
-
-<p><em>Update: As noted at the beginning of this article, this problem has been solved. Solution: <a href="http://RayHightower.com/blog/2014/08/21/esc-programming-and-calibration-for-openrov/">ESC Programming and Calibration for OpenROV</a>.</em></p>
-
+<p><em>Update: As noted at the beginning of this article, this problem has been solved. Solution: <a href="/blog/2014/08/21/esc-programming-and-calibration-for-openrov/">ESC Programming and Calibration for OpenROV</a>.</em></p>
 ]]></content>
   </entry>
   
@@ -364,39 +208,21 @@ During troubleshooting, my first step was to double-check the electronic speed c
     <link href="http://RayHightower.com/blog/2014/07/25/linuxbarbados-is-global/"/>
     <updated>2014-07-25T15:36:00-05:00</updated>
     <id>http://RayHightower.com/blog/2014/07/25/linuxbarbados-is-global</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/LinuxBarbados-tux-logo_300.png' width='' height='' alt='' title=''><span class='caption-text'></span></span>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/LinuxBarbados-tux-logo_300.png' width='' height='' alt='' title=''><span class='caption-text'></span></span>
 <a href="http://linuxbarbados.org">LinuxBarbados</a> is a user group for open source enthusiasts. The group meets monthly, offering solid knowledge for anyone who wants to ramp up their open source skills. For example, yesterday’s meeting featured a presentation on <a href="http://xbmc.org/">XBMC</a> by Michael Layne. The presenter dug deep into the tool, offering tips on how to write plugins in C++ or Python.</p>
-
-
-
 
 <!--more-->
 
 
-
-
 <h3>Global Reach</h3>
-
-
-
 
 <p>The group is based in Barbados on the campus of the <a href="http://www.cavehill.uwi.edu/">University of the West Indies (UWI) at Cave Hill</a>. Enthusiasts who don’t live in Barbados can participate <em>live</em> online. So far the group has used Google Hangout for video. Other video solutions will be considered as the group continues to grow.</p>
 
-
-
-
 <h3>Next Steps</h3>
-
-
-
 
 <p>Organizers <a href="http://www.meetup.com/LinuxBarbados/members/143194822/">Maurice Beckles</a> and <a href="http://www.meetup.com/LinuxBarbados/members/153574612/">Michael Layne</a> have exciting plans for the group. Take a look at the LinuxBarbados calendar, and join <a href="http://linuxbarbados.org">LinuxBarbados</a> online if you want to hear about future events.</p>
 
-
-
-
 <p>Whether you live in the Caribbean or in Antarctica, we look forward to seeing you!</p>
-
 ]]></content>
   </entry>
   
@@ -405,185 +231,91 @@ During troubleshooting, my first step was to double-check the electronic speed c
     <link href="http://RayHightower.com/blog/2014/07/21/rvm-and-parallella-what-a-difference-a-shell-makes/"/>
     <updated>2014-07-21T21:46:00-05:00</updated>
     <id>http://RayHightower.com/blog/2014/07/21/rvm-and-parallella-what-a-difference-a-shell-makes</id>
-    <content type="html"><![CDATA[<p><a href="http://RayHightower.com/blog/2013/05/16/upgrading-ruby-with-rvm/">RVM</a> is an effective way to manage Ruby versions on Linux or OS X. RVM was working well on my Ubuntu-based <a href="http://RayHightower.com/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella</a>, until one day it stopped:</p>
+    <content type="html"><![CDATA[<p><a href="/blog/2013/05/16/upgrading-ruby-with-rvm/">RVM</a> is an effective way to manage Ruby versions on Linux or OS X. RVM was working well on my Ubuntu-based <a href="/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella</a>, until one day it stopped:</p>
 
+<p>&#8220;` bash
+linaro-nano:~> rvm list
+rvm: Command not found.
+linaro-nano:~></p>
 
-
-
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>linaro-nano:~&gt; rvm list
-</span><span class='line'>rvm: Command not found.
-</span><span class='line'>linaro-nano:~&gt;
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-
-
-
-<p>
-<code>rvm: Command not found.</code> Fortunately, <a href="https://twitter.com/theotherzach">Zach Briggs</a> and I were pairing at a joint OpenHack &ndash; ChicagoRuby event when the problem occurred. Zach is an ideal pairing partner; troubleshooting was smooth because he was there. Time to investigate.</p>
-
-
-
+<p><code>``
+</code>rvm: Command not found.` Fortunately, <a href="https://twitter.com/theotherzach">Zach Briggs</a> and I were pairing at a joint OpenHack &ndash; ChicagoRuby event when the problem occurred. Zach is an ideal pairing partner; troubleshooting was smooth because he was there. Time to investigate.</p>
 
 <!--more-->
 
 
-
-
 <h3>Explicit Path</h3>
-
-
-
 
 <p>After a few experiments, we discovered that we could run RVM by explicitly specifying the path to the executable:</p>
 
+<p>&#8220;` bash
+linaro-nano:~> ~/.rvm/bin/rvm list</p>
 
+<p>rvm rubies</p>
 
+<p>   ruby-2.0.0-p481 [ armv7l ]</p>
 
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>linaro-nano:~&gt; ~/.rvm/bin/rvm list
-</span><span class='line'>
-</span><span class='line'>rvm rubies
-</span><span class='line'>
-</span><span class='line'>   ruby-2.0.0-p481 <span class="o">[</span> armv7l <span class="o">]</span>
-</span><span class='line'>
-</span><span class='line'><span class="c"># Default ruby not set. Try &#39;rvm alias create default &lt;ruby&gt;&#39;.</span>
-</span><span class='line'>
-</span><span class='line'><span class="c"># =&gt; - current</span>
-</span><span class='line'><span class="c"># =* - current &amp;&amp; default</span>
-</span><span class='line'><span class="c">#  * - default</span>
-</span><span class='line'>
-</span><span class='line'>linaro-nano:~&gt;
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+<h1>Default ruby not set. Try &lsquo;rvm alias create default <ruby>&rsquo;.</h1>
 
+<h1>=> &ndash; current</h1>
 
+<h1>=* &ndash; current &amp;&amp; default</h1>
 
+<h1>* &ndash; default</h1>
 
-<p></p>
+<p>linaro-nano:~></p>
 
-
-
+<p>&#8220;`</p>
 
 <p>Therefore, it appeared that the Ubuntu/Linux <code>$PATH</code> variable was being ignored. Google led us to consider the shell in use on the Parallella.</p>
 
-
-
-
 <h3>Which Shell Is In Use?</h3>
-
-
-
 
 <p>The shell is just a program that lets humans talk to the Linux operating system through a command line interface. Several shell programs exist. Linux users tend to prefer one shell or another. The <code>$SHELL</code> environmental variable points to the one in use.</p>
 
+<p>&#8220;` bash
+linaro-nano:~> echo $SHELL
+/bin/tcsh
+linaro-nano:~></p>
 
-
-
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>linaro-nano:~&gt; <span class="nb">echo</span> <span class="nv">$SHELL</span>
-</span><span class='line'>/bin/tcsh
-</span><span class='line'>linaro-nano:~&gt;
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-
-
-
-<p></p>
-
-
-
+<p>&#8220;`</p>
 
 <p>Very interesting. <code>tcsh</code> was the current Parallella shell. I&rsquo;m more accustomed to <code>bash</code>. Could RVM prefer <code>bash</code> too? We changed one line of <code>/etc/passwd</code> to tell the Parallella to start with <code>bash</code> instead of <code>tcsh</code> and rebooted the Parallella.</p>
 
+<p>&#8220;` bash
+linaro-nano:~> echo $SHELL
+/bin/bash
+linaro-nano:~></p>
 
-
-
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>linaro-nano:~&gt; <span class="nb">echo</span> <span class="nv">$SHELL</span>
-</span><span class='line'>/bin/bash
-</span><span class='line'>linaro-nano:~&gt;
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-
-
-
-<p>
+<p>&#8220;`
 &hellip;and now RVM works normally.</p>
 
+<p>&#8220;` bash
+linaro-nano:~> rvm list</p>
 
+<p>rvm rubies</p>
 
+<p>   ruby-2.0.0-p481 [ armv7l ]</p>
 
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>linaro-nano:~&gt; rvm list
-</span><span class='line'>
-</span><span class='line'>rvm rubies
-</span><span class='line'>
-</span><span class='line'>   ruby-2.0.0-p481 <span class="o">[</span> armv7l <span class="o">]</span>
-</span><span class='line'>
-</span><span class='line'><span class="c"># Default ruby not set. Try &#39;rvm alias create default &lt;ruby&gt;&#39;.</span>
-</span><span class='line'>
-</span><span class='line'><span class="c"># =&gt; - current</span>
-</span><span class='line'><span class="c"># =* - current &amp;&amp; default</span>
-</span><span class='line'><span class="c">#  * - default</span>
-</span><span class='line'>
-</span><span class='line'>linaro-nano:~&gt;
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+<h1>Default ruby not set. Try &lsquo;rvm alias create default <ruby>&rsquo;.</h1>
 
+<h1>=> &ndash; current</h1>
 
+<h1>=* &ndash; current &amp;&amp; default</h1>
 
+<h1>* &ndash; default</h1>
 
-<p></p>
+<p>linaro-nano:~></p>
 
-
-
+<p>&#8220;`</p>
 
 <h3>Consider Fish?</h3>
 
-
-
-
 <p>Right after this exercise, Zach and <a href="http://twitter.com/josh_cheek">Josh Cheek</a> had a Twitter conversation about a shell called <a href="http://fishshell.com/">fish</a>. Something new and shiny to explore!</p>
-
-
-
 
 <h3>Original Plan: Rubinius</h3>
 
-
-
-
-<p>Did I mention that we originally planned to install <a href="http://RayHightower.com/blog/2014/02/06/installing-rubinius-using-rvm/">Rubinius</a> on the Parallella? Where there are goals, there are yaks waiting to be shaved!</p>
-
+<p>Did I mention that we originally planned to install <a href="/blog/2014/02/06/installing-rubinius-using-rvm/">Rubinius</a> on the Parallella? Where there are goals, there are yaks waiting to be shaved!</p>
 ]]></content>
   </entry>
   
@@ -594,38 +326,18 @@ During troubleshooting, my first step was to double-check the electronic speed c
     <id>http://RayHightower.com/blog/2014/06/27/internet-of-things-at-acm</id>
     <content type="html"><![CDATA[<p>How many motors are in the typical automobile? The knee-jerk response might be “one, the big metal thing under the hood”. Upon further reflection, we may recall the motors that operate many devices in today’s automobile: windshield wipers, power windows, door locks, sun roof, reclining seats, and so on. Power devices were once luxury equipment. Today, since motors have fallen in price, most cars include these <em>luxury</em> items as standard equipment.</p>
 
-
-
-
 <p>We take motors for granted, therefore motors have disappeared. And now, as it becomes possible to add a computer and an IP address to almost anything electronic, we bring about the Internet of Things (IoT). Computers are disappearing too.</p>
-
-
-
 
 <!--more-->
 
 
-
-
 <h3>ACM Presents Disruptive IoT</h3>
-
-
-
 
 <p>Steven Loving is a director at <a href="http://www.arrayent.com/">Arrayent</a>. Arrayent makes a platform for companies that want their products to be IoT-aware. For example, a garage door company that wants to offer iPhone control to their customers can do so without re-inventing TCP/IP themselves. Arrayent handles the IoT portion so the maker can focus on their core business. Steven shared his vision of the IoT future at <a href="http://www.meetup.com/chicagoacm/events/184091062/">Tuesday&rsquo;s ACM meeting</a>. Some of his ideas are summarized here.</p>
 
-
-
-
 <h3>Don&rsquo;t Leave Home Without It</h3>
 
-
-
-
 <p><em>Don&rsquo;t leave home without it</em> was once the catch phrase of a major charge card. Today, many of us leave home with just three things in our pockets:</p>
-
-
-
 
 <ul>
 <li>Wallet</li>
@@ -634,75 +346,34 @@ During troubleshooting, my first step was to double-check the electronic speed c
 </ul>
 
 
-
-
 <p>As near-field communication (or one of its descendants) becomes prevalent, we may only need the smartphone.</p>
-
-
-
 
 <h3>Products Don&rsquo;t Matter Any More?</h3>
 
-
-
-
 <p>Products don&rsquo;t matter any more? I immediately wanted to argue against this idea. Everyone wants quality products, right? The point: As manufacturing techniques become common knowledge, companies need to come up with new ways to differentiate themselves from the competition.</p>
-
-
-
 
 <p>Connected products are special. For example, consider an ordinary sump pump. How does a buyer distinguish one from another? If one sump pump contains a tiny embedded Linux system with an IP address, it can alert the owner when water has approached a dangerous level, if there is a power outage, or if flood conditions are simply too strong for the pump to handle. Bad news does not get better with time, and if the sump pump can send bad news early, the owners can take corrective action while there&rsquo;s still time to do so.</p>
 
-
-
-
 <h3>Mobile First</h3>
 
-
-
-
 <p>A great quote from the presentation&hellip;</p>
-
-
-
 
 <blockquote><p>Do you know anybody building a product with an LCD on it? Shoot them.  I have an LCD in my pocket. It&rsquo;s called a phone.
 <br/>~Steven Loving</p></blockquote>
 
-
-
-
 <p>In other words, the mobile-first strategy that many developers apply to apps also applies to IoT.</p>
-
-
-
 
 <p>Side note: Clearly, Apple gets it. That&rsquo;s one reason why they released <a href="https://developer.apple.com/homekit/">HomeKit</a>.</p>
 
-
-
-
 <h3>Incumbent Companies Are Scrambling</h3>
-
-
-
 
 <p>Why are cable companies offering security services in addition to standard packages of television and movies? Because users are moving to Netflix and Amazon Prime. Cable companies that offer internet service must come up with other services if they expect to survive. IoT might offer a way. Self-installed home monitoring services will give customers a reason to stick with their old cable provider. Of course, this will force security companies like ADT to come up with something new, too.</p>
 
-
-
-
 <h3>IoT Progression</h3>
-
-
-
 
 <p>What opportunities will become available when every device has an IP
 address? Tuesday&rsquo;s presenter predicts the following sequence of
 events:</p>
-
-
-
 
 <ol>
 <li>Connected products.</li>
@@ -712,20 +383,11 @@ events:</p>
 </ol>
 
 
-
-
 <p>We&rsquo;re currently experiencing &#35;1 and &#35;2. What will happen as &#35;3 and &#35;4 begin to roll out? We cannot be sure. However, we can be certain that this will be an exciting time for software developers, electrical engineers, and entrepreneurs who build companies in those areas.</p>
-
-
-
 
 <h3>Thanks Chicago ACM</h3>
 
-
-
-
 <p>Thanks again Chicago ACM for putting on a great program.</p>
-
 ]]></content>
   </entry>
   

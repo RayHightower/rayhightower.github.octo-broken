@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ios | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/ios/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-03-06T18:09:30-06:00</updated>
+  <updated>2015-03-10T15:04:24-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -18,53 +18,27 @@
     <link href="http://RayHightower.com/blog/2014/03/10/cocoaconf-chicago-recap/"/>
     <updated>2014-03-10T11:46:00-05:00</updated>
     <id>http://RayHightower.com/blog/2014/03/10/cocoaconf-chicago-recap</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/cocoaconf-2014.jpg' width='' height='' alt='Cool stuff from CocoaConf.' title='Cool stuff from CocoaConf.'><span class='caption-text'>Cool stuff from CocoaConf.</span></span></p>
-
-
-
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/cocoaconf-2014.jpg' width='' height='' alt='Cool stuff from CocoaConf.' title='Cool stuff from CocoaConf.'><span class='caption-text'>Cool stuff from CocoaConf.</span></span></p>
 
 <blockquote><p>One purpose of a conference is to help you to spot trends while there&rsquo;s still time to reap the benefits of being an early adopter.
 &nbsp;<br/>
 ~Brian Marick at <a href="http://scna.softwarecraftsmanship.org/">SCNA 2013</a></p></blockquote>
 
-
-
-
 <p>Early adopters on Apple&rsquo;s Mac OS X and iOS platforms flock to <a href="http://cocoaconf.com/">CocoaConf</a>, a multi-city conference for developers. Tickets are slightly easier to get than <a href="http://en.wikipedia.org/wiki/Wwdc">WWDC</a>; CocoaConf consistently sells out.</p>
 
-
-
-
 <p>CocoaConf&rsquo;s presenters are practicing developers, actively building real software every day. They come to CocoaConf to share their experiences in a wonderful upward-spiral of technical learning. Here are a few highlights from the latest CocoaConf, held March 7-8 near Chicago.</p>
-
-
-
 
 <!--more-->
 
 
-
-
 <h3>Customers Will Pay for Services</h3>
-
-
-
 
 <p><a href="https://twitter.com/justin">Justin Williams</a> kicked things off with a keynote titled <em>10 Things I Think I Think</em>. Williams recently acquired <a href="http://glassboard.com/">Glassboard</a>, so his developer skills are blended with the insights of a business owner. His list of ten included one approach to making money from mobile apps: Forget about selling a million copies in the App Store. Instead, create a service, charge a monthly fee for the service, and give the app away for free so customers can engage with the service. Engaged customers will continue to pay the monthly fee. When customers are served well, they will pay.</p>
 
-
-
-
 <h3>Effective iOS 7 Networking</h3>
 
-
-
-
-<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/afnetworking-charles.png' width='' height='' alt='Charles shows network connections.' title='Charles shows network connections.'><span class='caption-text'>Charles shows network connections.</span></span>
+<p><span class='caption-wrapper right'><img class='caption' src='/images/afnetworking-charles.png' width='' height='' alt='Charles shows network connections.' title='Charles shows network connections.'><span class='caption-text'>Charles shows network connections.</span></span>
 Customer-focused mobile apps usually communicate with other software via the web. <a href="http://twitter.com/subdigital">Ben Scheirman</a> shared his experiences in building iOS apps that communicate with web services. Several questions are raised when we build apps like this, namely:</p>
-
-
-
 
 <ul>
 <li>How do we include communication capabilities without sacrificing performance?</li>
@@ -72,65 +46,30 @@ Customer-focused mobile apps usually communicate with other software via the web
 </ul>
 
 
-
-
 <p><code>NSURLSession</code>, introduced with iOS 7, lets us upload and download in the background. Users are kept happy because the app continues to function in the foreground. Scheirman&rsquo;s <a href="https://speakerdeck.com/subdigital/effective-network-programming-in-ios-7">slides</a> and <a href="https://github.com/subdigital/mods-2013">sample code</a> give more details.</p>
-
-
-
 
 <p>It is also interesting to note what tools the presenters use in their
 daily work. Scheirman uses <a href="http://www.charlesproxy.com/">Charles</a>
 to monitor network traffic between machines, and to track down hiccups.</p>
 
-
-
-
 <h3>Xcode Walkabout</h3>
 
-
-
-
-<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/xcode-git-commit.png' width='' height='' alt='Showing Git commit messages in Xcode.' title='Showing Git commit messages in Xcode.'><span class='caption-text'>Showing Git commit messages in Xcode.</span></span>
-Most of my iOS time is spent with <a href="http://RayHightower.com/blog/2013/01/12/why-i-use-vim/">Vim</a> and <a href="http://RayHightower.com/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a>. I use Xcode mainly to learn things that I can apply to RubyMotion. Still, <a href="http://twitter.com/savinola">Laura Savino</a>&rsquo;s exploration of Xcode proved valuable.</p>
-
-
-
+<p><span class='caption-wrapper right'><img class='caption' src='/images/xcode-git-commit.png' width='' height='' alt='Showing Git commit messages in Xcode.' title='Showing Git commit messages in Xcode.'><span class='caption-text'>Showing Git commit messages in Xcode.</span></span>
+Most of my iOS time is spent with <a href="/blog/2013/01/12/why-i-use-vim/">Vim</a> and <a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a>. I use Xcode mainly to learn things that I can apply to RubyMotion. Still, <a href="http://twitter.com/savinola">Laura Savino</a>&rsquo;s exploration of Xcode proved valuable.</p>
 
 <p>Like many developers on the Apple platforms, Savino has a love/hate relationship with Xcode. She almost titled her talk &ldquo;stupid little buttons that don&rsquo;t even look like buttons.&rdquo; Savino summarized several years of Xcode immersion and pair programming into 60 minutes of little-known tips and tricks. For example, Xcode plays nicely with Git (you can even show commit messages within the IDE). And it&rsquo;s possible to use Vim key bindings while editing files.</p>
 
-
-
-
 <h3>Sprite Kit</h3>
-
-
-
 
 <p><a href="http://twitter.com/kognate">Josh Smith</a>&rsquo;s Sprite Kit presentation was full of gotcha-eliminating information. For example, the coordinate systems for Sprite Kit and UIKit are inverted. I&rsquo;m sure this is documented somewhere, but I didn&rsquo;t know about it! The bottom line with Sprite Kit: We can add animation to our apps without doing all of the fundamental work. Saves time.</p>
 
-
-
-
 <p>Slides and code are posted in a single <a href="https://github.com/kognate/presentations">repo on GitHub</a>. Worth looking at.</p>
-
-
-
 
 <h3>Parallel Computing with OpenCL</h3>
 
-
-
-
 <p>The parallel computing talk by <a href="http://twitter.com/hyperjeff">Jeff Biggus</a> was the most mind-blowing session of CocoaConf, for me. The presentation was exciting because it tied our current set of tools (like <a href="https://developer.apple.com/library/ios/documentation/Performance/Reference/GCD_libdispatch_Ref/Reference/reference.html">GCD</a>) with high performance computing work currently underway at universities and at corporations like NVidia. When theory blends with application, great things can be achieved.</p>
 
-
-
-
 <p>Biggus shared some of the work of <a href="https://www.khronos.org/opencl/">OpenCL</a>, a standard designed for cross-platform parallel computing. We care about parallel computing because&hellip;</p>
-
-
-
 
 <ul>
 <li>Moore&rsquo;s Law has just about run its course.</li>
@@ -138,25 +77,13 @@ Most of my iOS time is spent with <a href="http://RayHightower.com/blog/2013/01/
 </ul>
 
 
-
-
 <p>Unless we can figure out how to <a href="http://en.wikipedia.org/wiki/Montgomery_Scott">rewrite the laws of physics</a>, the next advances in computing performance will come from making processors work together without stepping on each other&rsquo;s toes.</p>
-
-
-
 
 <h3>The Klein Family</h3>
 
-
-
-
 <p>2014 marks CocoaConf&rsquo;s third year in the Chicago area. The conference is run by Dave and Debbie Klein and their 14 children. <a href="http://cocoaconf.com/family">About The Family Behind CocoaConf</a> gives details.</p>
 
-
-
-
 <p>Thank you, Klein family, for another great CocoaConf!</p>
-
 ]]></content>
   </entry>
   
@@ -167,230 +94,114 @@ Most of my iOS time is spent with <a href="http://RayHightower.com/blog/2013/01/
     <id>http://RayHightower.com/blog/2013/11/25/awesome-print-motion-for-rubymotion</id>
     <content type="html"><![CDATA[<h3>The Problem</h3>
 
+<p>Let&rsquo;s say we&rsquo;re building a version of Atari&rsquo;s <a href="/blog/2013/02/26/atari-pong-rubymotion-objective-c/">Pong in RubyMotion</a>. We&rsquo;re debugging an issue with the paddles; they don&rsquo;t line up the way we want them to. Time to examine the playing field via the RubyMotion console.</p>
 
+<p>&#8220;` bash</p>
 
+<p>pong-rm $ rake</p>
 
-<p>Let&rsquo;s say we&rsquo;re building a version of Atari&rsquo;s <a href="http://RayHightower.com/blog/2013/02/26/atari-pong-rubymotion-objective-c/">Pong in RubyMotion</a>. We&rsquo;re debugging an issue with the paddles; they don&rsquo;t line up the way we want them to. Time to examine the playing field via the RubyMotion console.</p>
-
-
-
-
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>pong-rm <span class="nv">$ </span>rake
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-
-
-
-<p></p>
-
-
-
+<p>&#8220;`</p>
 
 <p>Mouse over the playing field and <code>Command-click</code> to grab the entire playing field object in the RubyMotion console. Confirm that you grabbed the object by typing <code>self</code> at the console prompt.</p>
 
+<p>&#8220;` ruby</p>
 
+<p>(UIView(#9d820c0, [[0.0, 0.0], &hellip;)> self</p>
 
+<p>=> UIView(#9d820c0, [[0.0, 0.0], [480.0, 320.0]]), child of UIView(#c876920)</p>
 
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="p">(</span><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0, [[0.0, 0.0], ...)&gt; self</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">=&gt;</span> <span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0, [[0.0, 0.0], [480.0, 320.0]]), child of UIView(#c876920)</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-
-
-
-<p></p>
-
-
-
+<p>&#8220;`</p>
 
 <p>And then, to see what objects are on the playing field, use <code>self.subviews</code> to show the subviews array of the current object.</p>
 
+<p>&#8220;` ruby</p>
 
+<p>(UIView(#9d820c0, [[0.0, 0.0], &hellip;)> self.subviews
+=> [UIView(#9d82430, [[357.0, 175.0], [50.0, 50.0]]), child of
+UIView(#9d820c0), PaddleView(#9d82580, [[410.0, 190.0], [20.0, 100.0]]),
+child of UIView(#9d820c0), PaddleView(#9d82970, [[10.0, 190.0], [20.0,
+100.0]]), child of UIView(#9d820c0), ScoreLabel(#9d82a80, [[110.0, 9.0],
+[20.0, 42.0]], text: &ldquo;1&rdquo;), child of UIView(#9d820c0),
+ScoreLabel(#9d83c90, [[350.0, 9.0], [20.0, 42.0]], text: &ldquo;0&rdquo;), child of
+UIView(#9d820c0)]
+(UIView(#9d820c0, [[0.0, 0.0], &hellip;)></p>
 
-
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="p">(</span><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0, [[0.0, 0.0], ...)&gt; self.subviews</span>
-</span><span class='line'><span class="o">=&gt;</span> <span class="o">[</span><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d82430, [[357.0, 175.0], [50.0, 50.0]]), child of</span>
-</span><span class='line'><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0), PaddleView(#9d82580, [[410.0, 190.0], [20.0, 100.0]]),</span>
-</span><span class='line'><span class="n">child</span> <span class="n">of</span> <span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0), PaddleView(#9d82970, [[10.0, 190.0], [20.0,</span>
-</span><span class='line'><span class="mi">100</span><span class="o">.</span><span class="mi">0</span><span class="o">]]</span><span class="p">),</span> <span class="n">child</span> <span class="n">of</span> <span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0), ScoreLabel(#9d82a80, [[110.0, 9.0],</span>
-</span><span class='line'><span class="o">[</span><span class="mi">20</span><span class="o">.</span><span class="mi">0</span><span class="p">,</span> <span class="mi">42</span><span class="o">.</span><span class="mi">0</span><span class="o">]]</span><span class="p">,</span> <span class="ss">text</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">),</span> <span class="n">child</span> <span class="n">of</span> <span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0),</span>
-</span><span class='line'><span class="no">ScoreLabel</span><span class="p">(</span><span class="c1">#9d83c90, [[350.0, 9.0], [20.0, 42.0]], text: &quot;0&quot;), child of</span>
-</span><span class='line'><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0)]</span>
-</span><span class='line'><span class="p">(</span><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0, [[0.0, 0.0], ...)&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-
-
-
-<p></p>
-
-
-
+<p>&#8220;`</p>
 
 <p>This blob of text is difficult for the human brain to parse. Now, let&rsquo;s try it with the <code>awesome_print_motion</code> gem.</p>
-
-
-
 
 <!--more-->
 
 
+<p>&#8220;` ruby</p>
 
+<p>(UIView(#9d820c0, [[0.0, 0.0], &hellip;)> ap(self.subviews)
+[</p>
 
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="p">(</span><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0, [[0.0, 0.0], ...)&gt; ap(self.subviews)</span>
-</span><span class='line'><span class="o">[</span>
-</span><span class='line'>    <span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="no">UIView</span><span class="p">(</span><span class="c1">#9d82430, [[308.0, 118.0], [50.0, 50.0]]), child of UIView(#9d820c0),</span>
-</span><span class='line'>    <span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="no">PaddleView</span><span class="p">(</span><span class="c1">#9d82580, [[410.0, 190.0], [20.0, 100.0]]), child of UIView(#9d820c0),</span>
-</span><span class='line'>    <span class="o">[</span><span class="mi">2</span><span class="o">]</span> <span class="no">PaddleView</span><span class="p">(</span><span class="c1">#9d82970, [[10.0, 190.0], [20.0, 100.0]]), child of UIView(#9d820c0),</span>
-</span><span class='line'>    <span class="o">[</span><span class="mi">3</span><span class="o">]</span> <span class="no">ScoreLabel</span><span class="p">(</span><span class="c1">#9d82a80, [[110.0, 9.0], [39.0, 42.0]], text: &quot;61&quot;), child of UIView(#9d820c0),</span>
-</span><span class='line'>    <span class="o">[</span><span class="mi">4</span><span class="o">]</span> <span class="no">ScoreLabel</span><span class="p">(</span><span class="c1">#9d83c90, [[350.0, 9.0], [20.0, 42.0]], text: &quot;0&quot;), child of UIView(#9d820c0)</span>
-</span><span class='line'><span class="o">]</span>
-</span><span class='line'><span class="o">=&gt;</span> <span class="kp">nil</span>
-</span><span class='line'><span class="p">(</span><span class="no">UIView</span><span class="p">(</span><span class="c1">#9d820c0, [[0.0, 0.0], ...)&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+<pre><code>[0] UIView(#9d82430, [[308.0, 118.0], [50.0, 50.0]]), child of UIView(#9d820c0),
+[1] PaddleView(#9d82580, [[410.0, 190.0], [20.0, 100.0]]), child of UIView(#9d820c0),
+[2] PaddleView(#9d82970, [[10.0, 190.0], [20.0, 100.0]]), child of UIView(#9d820c0),
+[3] ScoreLabel(#9d82a80, [[110.0, 9.0], [39.0, 42.0]], text: "61"), child of UIView(#9d820c0),
+[4] ScoreLabel(#9d83c90, [[350.0, 9.0], [20.0, 42.0]], text: "0"), child of UIView(#9d820c0)
+</code></pre>
 
+<p>]
+=> nil
+(UIView(#9d820c0, [[0.0, 0.0], &hellip;)></p>
 
-
-
-<p></p>
-
-
-
+<p>&#8220;`</p>
 
 <p>Much easier to read. The structure of the <code>subviews</code> array is clear. Each element of the array has an easy-to-read index. Debugging time is reduced.</p>
 
-
-
-
 <h3>How to Install awesome_print_motion</h3>
-
-
-
 
 <p>RubyMotion uses bundler. So we start by refering to <code>awesome_print_motion</code> in our gemfile.</p>
 
+<p>&#8220;` ruby</p>
 
+<p>gem &lsquo;awesome_print_motion&rsquo;</p>
 
-
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">gem</span> <span class="s1">&#39;awesome_print_motion&#39;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-
-
-
-<p></p>
-
-
-
+<p>&#8220;`</p>
 
 <p>In the app&rsquo;s <code>Rakefile</code>, there are two possible ways to proceed. The preferred way is to use the following lines to tell the app to require every gem mentioned in Bundler&rsquo;s Gemfile:</p>
 
+<p>&#8220;` ruby</p>
 
+<p>begin
+  require &lsquo;bundler&rsquo;
+  Bundler.require
+rescue LoadError
+end</p>
 
-
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">begin</span>
-</span><span class='line'>  <span class="nb">require</span> <span class="s1">&#39;bundler&#39;</span>
-</span><span class='line'>  <span class="no">Bundler</span><span class="o">.</span><span class="n">require</span>
-</span><span class='line'><span class="k">rescue</span> <span class="no">LoadError</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-
-
-
-<p></p>
-
-
-
+<p>&#8220;`</p>
 
 <p>The older way is to manually add a <code>require</code> statement to the Rakefile.</p>
 
+<p>&#8220;` ruby</p>
 
+<p>require &lsquo;ap&rsquo;</p>
 
-
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">require</span> <span class="s1">&#39;ap&#39;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-
-
-
-<p></p>
-
-
-
+<p>&#8220;`</p>
 
 <p>Personally, I prefer the newer way because it automatically requires all of the gems mentioned in the <code>Gemfile</code>. The odds of a typo-induced error are reduced.</p>
 
-
-
-
 <h3>How to Use awesome_print_motion</h3>
-
-
-
 
 <p>To use the new gem, start the app and explore away. Any time you want to
 run output through the <code>awesome_print_motion</code> gem, send the code as a
 parameter to the <code>ap</code> method like so&hellip;</p>
 
+<p>&#8220;` ruby</p>
 
+<blockquote><p>ap(self.subviews)</p></blockquote>
 
-
-<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&gt;</span> <span class="n">ap</span><span class="p">(</span><span class="nb">self</span><span class="o">.</span><span class="n">subviews</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-
-
-
-<p></p>
-
-
-
+<p>&#8220;`</p>
 
 <p>&hellip; and the output will be easier to read.</p>
 
-
-
-
 <h3>Acknowledgements</h3>
 
-
-
-
 <p>Thank you <a href="http://www.dvorkin.net/">Michael Dvorkin</a> for adding RubyMotion support to your <a href="http://rubygems.org/gems/awesome_print">awesome_print</a> gem.</p>
-
 ]]></content>
   </entry>
   
@@ -401,36 +212,19 @@ parameter to the <code>ap</code> method like so&hellip;</p>
     <id>http://RayHightower.com/blog/2013/11/23/using-rubymotion-to-build-something-useful</id>
     <content type="html"><![CDATA[<p>The <a href="http://www.meetup.com/Chicago-RubyMotion/">Chicago RubyMotion User Group</a> held its inaugural meeting this week. Thank you <a href="http://twitter.com/dastels">Dave Astels</a> for organizing the group and for asking me to present. Thanks also to <a href="http://devbootcamp.com">Dev Bootcamp</a> for hosting the event.</p>
 
-
-
-
 <p>Slides are embedded here:</p>
 
-
-
-
 <center><script async class="speakerdeck-embed" data-id="f0c21e7036e10131765f62eb06398856" data-ratio="1.29456384323641" src="//speakerdeck.com/assets/embed.js"></script></center>
-
-
 
 
 <!--more-->
 
 
-
-
 <h3>Doing RubyMotion in Chicago? Be There!</h3>
-
-
-
 
 <p>If you&rsquo;re using RubyMotion and you&rsquo;re located in the Chicago area, check out the <a href="http://www.meetup.com/Chicago-RubyMotion/">Chicago RubyMotion</a> group. The group attracts devs who are running into the same challenges as you. Devs who work with other devs tend to learn more over time.</p>
 
-
-
-
 <p>See you there!</p>
-
 ]]></content>
   </entry>
   
@@ -442,31 +236,16 @@ parameter to the <code>ap</code> method like so&hellip;</p>
     <content type="html"><![CDATA[<p><a href="http://RayHightower.com/images/rubymotion-sketchnotes.jpg"><img src="http://RayHightower.com/images/rubymotion-sketchnotes-sm.jpg" width="300" height="157" alt="RubyMotion Sketchnotes" title="RubyMotion Sketchnotes" align="right"></a>
 Alexis Finch (<a href="https://twitter.com/agentFin">@agentfin</a>) captured Sketchnotes for a <a href="http://rayhightower.com/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a> presentation that I gave for <a href="http://meetup.com/geekfest">Groupon&rsquo;s Geekfest</a>.</p>
 
-
-
-
 <p>Sketchnotes are typography and drawing and notes all mixed together.</p>
-
-
-
 
 <!--more-->
 
 
-
-
 <p>Alexis is remarkable. It&rsquo;s challenging enough to capture text notes during a presentation. But Alexis managed to turn the talk into meaningful graphics in real time. Something amazing is happening between the ears of Alexis!</p>
-
-
-
 
 <p>Mike Rohde (<a href="http://twitter.com/rohdesign">@rohdesign</a>) developed Sketchnotes when he became frustrated with note-taking. Mike is the go-to guy for anything related to Sketchnotes. He has published videos and a book <a href="http://rohdesign.com/sketchnotes/">describing the process</a>.</p>
 
-
-
-
 <p>Thank you Alexis and Mike for sharing your artistic insights, and thank you Groupon for having me at Geekfest.</p>
-
 ]]></content>
   </entry>
   
@@ -477,27 +256,13 @@ Alexis Finch (<a href="https://twitter.com/agentFin">@agentfin</a>) captured Ske
     <id>http://RayHightower.com/blog/2013/02/28/objective-c-programming-the-big-nerd-ranch-guide</id>
     <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/objective-c-big-nerd.png" align="right" width="250" height="357" alt="Objective-C Programming - The Big Nerd Ranch Guide" title="Objective-C Programming - The Big Nerd Ranch Guide"></p>
 
-
-
-
 <blockquote><p>You will be baffled from time to time… Stick with this book. I promise the bewilderment will cease before you get to the final page.<br/>~ Aaron Hillegass, Author</p></blockquote>
-
-
-
 
 <h4>Finding the Right Objective-C Book</h4>
 
-
-
-
-<p>I&rsquo;ve gone through several Objective-C books in my quest to master <a href="http://RayHightower.com/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a>. You read that right: I&rsquo;m learning Objective-C so that I can master RubyMotion. <em>Objective-C Programming: The Big Nerd Ranch Guide</em> is one book that clicks for me. Here&rsquo;s why.</p>
-
-
-
+<p>I&rsquo;ve gone through several Objective-C books in my quest to master <a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a>. You read that right: I&rsquo;m learning Objective-C so that I can master RubyMotion. <em>Objective-C Programming: The Big Nerd Ranch Guide</em> is one book that clicks for me. Here&rsquo;s why.</p>
 
 <!-- more -->
-
-
 
 
 <ul>
@@ -507,50 +272,23 @@ Alexis Finch (<a href="https://twitter.com/agentFin">@agentfin</a>) captured Ske
 </ul>
 
 
-
-
 <blockquote><p>Syntax is the set of rules that governs how your code must be written in a given programming language. These rules are extremely specific, and if you fail to follow them, your program won&rsquo;t work.</p></blockquote>
-
-
-
 
 <p>Clearly put!</p>
 
-
-
-
 <h4>Do I Really Need Objective-C?</h4>
-
-
-
 
 <p>Yes. If you want to be effective with RubyMotion, you must grow strong with Objective-C.</p>
 
-
-
-
 <p>The RubyMotion devs whom I admire most also know Objective-C. Devs like Matt Aimonetti (creator of BubbleWrap), Randall Thomas and Tammer Saleh (authors of <em>RubyMotion in the Cloud</em>), Jonathan Penn (instructor/speaker at CocoaConf) and Laurent Sansonetti (creator of RubyMotion) move seamlessly between the worlds of Ruby and Objective-C. Luke became a Jedi because he followed in the footsteps of Yoda.</p>
-
-
-
 
 <p>More important than following the masters: Learning from their triumphs and mistakes by reading their code. Developers in 2013 are fortunate to have tools like GitHub where code is shared on a massive scale. Most iOS code is written in Objective-C. If we want to learn from the iOS code that has been written before, we need to know Objective-C.</p>
 
-
-
-
 <h4>Highly Recommended</h4>
-
-
-
 
 <p>If you want to develop apps for iOS devices, start with <em>Objective-C Programming: The Big Nerd Ranch Guide</em>. The book is also helpful if you prefer RubyMotion over Objective-C.</p>
 
-
-
-
-<p>And don&rsquo;t forget your <a href="http://RayHightower.com/blog/2012/09/03/10000-hours-of-practice/">10,000 Hours of Practice</a>.</p>
-
+<p>And don&rsquo;t forget your <a href="/blog/2012/09/03/10000-hours-of-practice/">10,000 Hours of Practice</a>.</p>
 ]]></content>
   </entry>
   
