@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>HTML5 & CSS3: The Complete Manual - RayHightower.com</title>
+  <title>Using rlwrap with MIT&#8217;s Scheme REPL - RayHightower.com</title>
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="HTML5 &amp; CSS3
-The biggest challenge for a software developer: Absorbing the latest knowledge while simultaneously keeping clients happy. Where &hellip;">
+  <meta name="description" content="Users of the Linux or OS X command line know that they can hit the up arrow to view the previously executed command. However, this behavior is &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@ The biggest challenge for a software developer: Absorbing the latest knowledge w
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://RayHightower.com/blog/2015/03/06/html5-and-css3-the-complete-manual">
+  <link rel="canonical" href="http://RayHightower.com/blog/2015/03/19/using-rlwrap-with-mit-scheme-repl">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="RayHightower.com" type="application/atom+xml">
@@ -108,7 +107,7 @@ The biggest challenge for a software developer: Absorbing the latest knowledge w
   
   <header>
     
-      <h1 class="entry-title">HTML5 & CSS3: The Complete Manual</h1>
+      <h1 class="entry-title">Using rlwrap with MIT&#8217;s Scheme REPL</h1>
     
     
       <p class="meta">
@@ -117,44 +116,60 @@ The biggest challenge for a software developer: Absorbing the latest knowledge w
 
 
 
-<time class='entry-date' datetime='2015-03-06T13:02:53-06:00'><span class='date'>March 06, 2015</span> <span class='time'></span></time>
+<time class='entry-date' datetime='2015-03-19T17:02:11-05:00'><span class='date'>March 19, 2015</span> <span class='time'></span></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p><span class='caption-wrapper right'><img class='caption' src='/images/html5_css3_imagineshop.jpg' width='' height='' alt='HTML5 & CSS3' title='HTML5 & CSS3'><span class='caption-text'>HTML5 &amp; CSS3</span></span>
-The biggest challenge for a software developer: Absorbing the latest knowledge while simultaneously keeping clients happy. Where does the time go?</p>
+<div class="entry-content"><p>Users of the Linux or OS X command line know that they can hit the up arrow to view the previously executed command. However, this behavior is missing from the <code>mit-scheme</code> read-evaluate-print-loop (REPL). <code>mit-scheme</code> is the language used in <a href="/blog/2015/02/18/sicp-study-group/">SICP</a>.</p>
 
-<p>Fortunately, when it comes to HTML5 and CSS3, a UK-based publisher has released a just-the-facts guide that may help. At 127 pages, the entire publication (they call it a <em>bookazine</em>) can be devoured in a single day. Imagine Publishing&rsquo;s <em>HTML5 &amp; CSS3: The Complete Manual</em> is well worth the time investment.</p>
+<p>For example, hitting the up arrow in the Scheme REPL gives us this non-useful result: <code>^[[A</code>. The previous command is not repeated.</p>
 
-<p><em>Note: A version of this article also appears in the <a href="http://www.chicagoruby.org/book-reviews/archives/2015/03/06/html5-css3-the-complete-manual/">Book Reviews section of ChicagoRuby.org</a></em>.</p>
+<p>How do we add up-arrow functionality to the <code>mit-scheme</code> REPL? By using <code>rlwrap</code>.</p>
 
 <!--more-->
 
 
-<h3>This Book&rsquo;s Best Feature</h3>
+<h3>Installing rlwrap</h3>
 
-<p>One thing I like about this book: Nothing is assumed. All explanations are clearly presented from square one. The introduction even defines the terms <em>hypertext</em> and <em>responsive design</em> in words that could easily be hijacked for your next presentation to non-technical management.</p>
+<p>On Mac OS X with <a href="/blog/2014/02/12/homebrew-fundamentals/">Homebrew</a>, first update Homebrew with <code>$ brew update</code>.</p>
 
-<p>Personally, I appreciate the don&rsquo;t-assume-anything definitions. I completed all of my formal computer science training in the last century, before we knew how far this Internet thing might go. Books like this help to fill in the gaps. Well done, authors!</p>
+<p>Then install <code>rlwrap</code>.</p>
 
-<h3>Working the Examples</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>brew install <span class="nv">rlwrap</span>
+</span><span class='line'><span class="o">==</span>&gt; Downloading https://homebrew.bintray.com/bottles/rlwrap-0.42.yosemite.bottle.tar.gz
+</span><span class='line'><span class="c">######################################################################## 100.0%</span>
+</span><span class='line'><span class="o">==</span>&gt; Pouring rlwrap-0.42.yosemite.bottle.tar.gz
+</span><span class='line'>🍺  /usr/local/Cellar/rlwrap/0.42: 29 files, 312K
+</span></code></pre></td></tr></table></div></figure>
 
-<p>If you’re already current on HTML &amp; CSS, the examples in the beginning of the book will be too easy for you. Skip ahead to the examples toward the end and work on those. The sections on responsive design, <a href="http://getbootstrap.com/">Bootstrap</a>, and <a href="http://foundation.zurb.com/">Foundation</a> are especially useful.</p>
 
-<h3>Spelling Differences</h3>
+<p>You can verify the <code>rlwrap</code> installation as follows.</p>
 
-<p>My British-speaking friends and I sometimes tease each other about variations in American vs UK spelling for certain words. &ldquo;Colour&rdquo; vs &ldquo;color&rdquo; and that sort of thing. This book uses UK conventions.</p>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>which rlwrap
+</span><span class='line'>/usr/local/bin/rlwrap
+</span></code></pre></td></tr></table></div></figure>
 
-<p>I spotted a fair number of typos in the book&rsquo;s code examples. Typos in human-readable text are no big deal. But a missing <code>&gt;</code> or <code>=</code> in a book about HTML and CSS can make or break an example. Of course, we’re all human and typos are simply a fact of life.</p>
 
-<p>Suggestion for the publishers: Setup a <a href="http://github.com">GitHub</a> repo with the code samples. That way, if typos in code are discovered (always certain because we&rsquo;re human) the typos can be corrected and shared immediately.</p>
+<h3>Using rlwrap</h3>
 
-<h3>Conclusion</h3>
+<p>To use <code>rlwrap</code> with <code>scheme</code> do the following.</p>
 
-<p>The bottom line: <em>HTML5 &amp; CSS3: The Complete Manual</em> is worth reading, especially if you need a quick way to keep up with web trends.</p>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rlwrap scheme
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And now we have it. The up-arrow behavior that we’ve grown to appreciate at the command line has returned! Big time savings, and better for learning.</p>
 </div>
 
 
@@ -170,12 +185,12 @@ The biggest challenge for a software developer: Absorbing the latest knowledge w
 
 
 
-<time class='entry-date' datetime='2015-03-06T13:02:53-06:00'><span class='date'>March 06, 2015</span> <span class='time'></span></time>
+<time class='entry-date' datetime='2015-03-19T17:02:11-05:00'><span class='date'>March 19, 2015</span> <span class='time'></span></time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/education/'>education</a>
+    <a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/os-x/'>os x</a>
   
 </span>
 
@@ -184,7 +199,7 @@ The biggest challenge for a software developer: Absorbing the latest knowledge w
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2015/03/06/html5-and-css3-the-complete-manual/" data-via="" data-counturl="http://RayHightower.com/blog/2015/03/06/html5-and-css3-the-complete-manual/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2015/03/19/using-rlwrap-with-mit-scheme-repl/" data-via="" data-counturl="http://RayHightower.com/blog/2015/03/19/using-rlwrap-with-mit-scheme-repl/" >Tweet</a>
   
   
   
@@ -193,10 +208,8 @@ The biggest challenge for a software developer: Absorbing the latest knowledge w
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2015/03/03/jruby-9000-on-mac-os-x/" title="Previous Post: JRuby 9000 on Mac OS X">&laquo; JRuby 9000 on Mac OS X</a>
+        <a class="basic-alignment left" href="/blog/2015/03/12/apple-car-not-likely/" title="Previous Post: Apple Car? Not Likely.">&laquo; Apple Car? Not Likely.</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2015/03/12/apple-car-not-likely/" title="Next Post: Apple Car? Not Likely.">Apple Car? Not Likely. &raquo;</a>
       
     </p>
   </footer>
@@ -343,8 +356,8 @@ The biggest challenge for a software developer: Absorbing the latest knowledge w
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://RayHightower.com/blog/2015/03/06/html5-and-css3-the-complete-manual/';
-        var disqus_url = 'http://RayHightower.com/blog/2015/03/06/html5-and-css3-the-complete-manual/';
+        var disqus_identifier = 'http://RayHightower.com/blog/2015/03/19/using-rlwrap-with-mit-scheme-repl/';
+        var disqus_url = 'http://RayHightower.com/blog/2015/03/19/using-rlwrap-with-mit-scheme-repl/';
         var disqus_script = 'embed.js';
       
     (function () {
