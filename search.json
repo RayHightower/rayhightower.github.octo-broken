@@ -1815,21 +1815,6 @@
     }
   },
   {
-    "id": 121,
-    "title": "Blooms Taxonomy",
-    "category": null,
-    "tags": [
-
-    ],
-    "url": "/blog/2015/03/19/blooms-taxonomy/",
-    "content": "{% imgcap middle /images/blooms_taxonomy.png Bloom's Taxonomy for learning. %}\nAttribution note: I found the above graphic at through a web site at Oregon State University, but the original author was not cited. If you know who the original author is, please [share the info](/contact) so that the person can receive credit. Thanks!\n\nGoogle points to [tons of articles on Bloom's Taxonomy](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=bloom%27s%20taxonomy) so I will not attempt to re-create them here. This article will only summarize.\n\n### Summarizing Bloom's Taxonomy\nLearning can be divided into stages, from rote memorization to creating new knowledge.\n\n* Remembering. All learning starts with remembering some basic ideas.  For example, before we can learn how to read the English language, we need to memorize the English alphabet.\n\n* Understanding. After we memorize the alphabet, do we understand how the letters come together to form words? Do we understand how the words come together to form sentences and thoughts?\n\n* Applying. Can we use what we read in new ways? For example, \n\n* Analyziing. Spotting differences. Comparing and contrasting. For example, \n\n* Evaluating.\n\n* Creating. Having achieved at the previous levels (remembering through evaluating) can we now create new knoweledge, can we move the body of knowledge forward?\n\n\n",
-    "date": {
-      "year": "2015",
-      "month": "March",
-      "day": "19"
-    }
-  },
-  {
     "id": 0,
     "title": "404 Error: Page not found.",
     "url": "/404.html",

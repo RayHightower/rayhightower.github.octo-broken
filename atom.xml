@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-03-19T14:57:42-05:00</updated>
+  <updated>2015-03-19T15:00:31-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,32 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Blooms Taxonomy]]></title>
-    <link href="http://RayHightower.com/blog/2015/03/19/blooms-taxonomy/"/>
-    <updated>2015-03-19T14:36:28-05:00</updated>
-    <id>http://RayHightower.com/blog/2015/03/19/blooms-taxonomy</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/blooms_taxonomy.png' width='' height='' alt='Bloom's Taxonomy for learning.' title='Bloom's Taxonomy for learning.'><span class='caption-text'>Bloom&rsquo;s Taxonomy for learning.</span></span>
-Attribution note: I found the above graphic at through a web site at Oregon State University, but the original author was not cited. If you know who the original author is, please <a href="http://RayHightower.com/contact">share the info</a> so that the person can receive credit. Thanks!</p>
-
-<p>Google points to <a href="https://www.google.com/webhp?sourceid=chrome-instant&amp;ion=1&amp;espv=2&amp;ie=UTF-8#q=bloom%27s%20taxonomy">tons of articles on Bloom&rsquo;s Taxonomy</a> so I will not attempt to re-create them here. This article will only summarize.</p>
-
-<h3>Summarizing Bloom&rsquo;s Taxonomy</h3>
-
-<p>Learning can be divided into stages, from rote memorization to creating new knowledge.</p>
-
-<ul>
-<li><p>Remembering. All learning starts with remembering some basic ideas.  For example, before we can learn how to read the English language, we need to memorize the English alphabet.</p></li>
-<li><p>Understanding. After we memorize the alphabet, do we understand how the letters come together to form words? Do we understand how the words come together to form sentences and thoughts?</p></li>
-<li><p>Applying. Can we use what we read in new ways? For example,</p></li>
-<li><p>Analyziing. Spotting differences. Comparing and contrasting. For example,</p></li>
-<li><p>Evaluating.</p></li>
-<li><p>Creating. Having achieved at the previous levels (remembering through evaluating) can we now create new knoweledge, can we move the body of knowledge forward?</p></li>
-</ul>
-
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Apple Car? Not Likely.]]></title>
@@ -1125,6 +1099,52 @@ Thanks SDRuby for hosting the Ignite event!</p>
 <h3>Next Step With OpenROV</h3>
 
 <p>Our work with OpenROV will climax at <a href="http://rubycaribe.com">RubyCaribe</a> in January 2015. If you&rsquo;re an intermediate or advanced software developer, and if you like to stretch your brain with Ruby and other languages (like Node.js) then RubyCaribe might be for you.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[RubyCaribe: Ruby Gets Hotter in January]]></title>
+    <link href="http://RayHightower.com/blog/2014/09/23/rubycaribe-ruby-gets-hotter-in-january/"/>
+    <updated>2014-09-23T18:23:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/09/23/rubycaribe-ruby-gets-hotter-in-january</id>
+    <content type="html"><![CDATA[<p><a href="http://rubycaribe.com">RubyCaribe</a> (pronounced ka-REEB) is a conference for intermediate and advanced software developers who use Ruby. The conference will be held January 27 &ndash; 31, 2015 in Barbados. January is a beautiful time to visit the Caribbean, especially if you’re coming from a colder part of the planet.</p>
+
+<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/barbados_caribbean_map.png' width='' height='' alt='Barbados. You could be here in January.' title='Barbados. You could be here in January.'><span class='caption-text'>Barbados. You could be here in January.</span></span>
+Intermediate and advanced software developers will find RubyCaribe valuable because&hellip;</p>
+
+<ul>
+<li>Each RubyCaribe session features a 30- to 45-minute presentation followed by a <em>2-hour deep-dive lab</em>. Learning is reinforced throughout.</li>
+<li>The venue, <a href="http://www.hiltonbarbadosresort.com/">Hilton Barbados Resort</a>, sits right on the ocean. Need a stretch break? Take a walk on the beach!</li>
+</ul>
+
+
+<!--more-->
+
+
+<h3>Ramp Up Your Ruby Skills</h3>
+
+<p>Each RubyCaribe lab will be led by experts in machine learning, mobile app development (iOS and Android), web development, and functional programming. The inventor of <a href="http://rubymotion.com">RubyMotion</a>, <a href="https://twitter.com/lrz">Laurent Sansonetti</a>, will lead the RubyMotion lab. If you already have experience with Ruby or Rails, RubyCaribe will take your skills to the next level.</p>
+
+<h3>Bonus: OpenROV and Node.js</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/openrov_rubycaribe.jpg' width='' height='' alt='OpenROV. Linux and Node.js.' title='OpenROV. Linux and Node.js.'><span class='caption-text'>OpenROV. Linux and Node.js.</span></span>
+<a href="http://RayHightower.com/blog/2014/06/16/citizen-science-with-openrov/">OpenROV</a> is an open source underwater robot running Linux and Node.js. During two evening sessions, you and your RubyCaribe colleagues will hack on OpenROV. The best developers are polyglot, right? On Friday afternoon, we will grab a boat for live ocean testing with a few OpenROV units. If you ever wanted to experiment with Node.js and IoT, RubyCaribe offers a great opportunity.</p>
+
+<h3>University Collaboration</h3>
+
+<p>On Saturday, the final day of RubyCaribe, we will visit the <a href="http://www.cavehill.uwi.edu/">University of the West Indies at Cave Hill</a>. Faculty and students from the UWI community will demo their work with solar energy and other areas touched by software. Who knows, maybe you’ll give a lightning talk about something you learned at RubyCaribe!</p>
+
+<h3>Make Your Brain Sweat</h3>
+
+<p>RubyCaribe will work you hard. RubyCaribe will make your brain sweat. So be sure to schedule a few days before or after the conference for sight seeing and relaxation. Rum was invented in Barbados.</p>
+
+<h3>Where Will You Be in January?</h3>
+
+<p>If you had to choose between the Caribbean and the cold regions of the northern hemisphere, where would you rather be? RubyCaribe offers the chance to ramp up your skills and enjoy yourself at the same time. What an opportunity.</p>
+
+<h3>Only One Hundred Tickets</h3>
+
+<p>Only one hundred tickets will be sold. Be sure to get yours. <a href="http://www.eventbrite.com/e/rubycaribe-2015-registration-10051344843">Register now</a>. See you at RubyCaribe!</p>
 ]]></content>
   </entry>
   
