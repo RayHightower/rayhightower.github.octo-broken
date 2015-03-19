@@ -1816,13 +1816,13 @@
   },
   {
     "id": 121,
-    "title": "Using rlwrap with MIT's Scheme REPL",
-    "category": "linux",
+    "title": "Blooms Taxonomy",
+    "category": null,
     "tags": [
 
     ],
-    "url": "/blog/2015/03/19/using-rlwrap-with-mit-scheme-repl/",
-    "content": "Command line users of Linux and OS X know that they can hit the up arrow to view the previously executed command. However, this behavior is missing from the `mit-scheme` read-evaluate-print-loop (REPL). `mit-scheme` is the language used in [SICP](/blog/2015/02/18/sicp-study-group/). \n\nFor example, hitting the up arrow in the Scheme REPL gives us this non-useful result: `^[[A`. The previous command is not repeated.\n\nHow do we add up-arrow functionality to the `mit-scheme` REPL? By using `rlwrap`.\n<!--more-->\n### Installing rlwrap\nOn Mac OS X with [Homebrew](), first update Homebrew.\n\n``` bash\n\n$ \n\n```\n\nThen install `rlwrap`.\n\n``` bash\n\n$ brew install rlwrap\n==> Downloading https://homebrew.bintray.com/bottles/rlwrap-0.42.yosemite.bottle.tar.gz\n######################################################################## 100.0%\n==> Pouring rlwrap-0.42.yosemite.bottle.tar.gz\n🍺  /usr/local/Cellar/rlwrap/0.42: 29 files, 312K\n\n```\n\nAnd then verify installation.\n\n``` bash\n\n$ which rlwrap\n/usr/local/bin/rlwrap\n\n```\n\n### Using rlwrap\nTo use `rlwrap` with `scheme` do the following.\n\n``` bash\n\n$ \n\n```\n\nAnd now we have it. The up-arrow behavior that we’ve grown to appreciate at the command line has returned!\n\n\n\n\n\n\n### Before and After\nBefore using `rlwrap`, we would see this behavior if we hit the up arrow.\n\n``` bash\n\n$ \n\n```\n\nAfter installing `rlwrap`, we get this.\n\n``` bash\n\n$ \n\n```\n\nBig time savings, and better for learning.\n\n",
+    "url": "/blog/2015/03/19/blooms-taxonomy/",
+    "content": "{% imgcap middle /images/blooms_taxonomy.png Bloom's Taxonomy for learning. %}\nAttribution note: I found the above graphic at through a web site at Oregon State University, but the original author was not cited. If you know who the original author is, please [share the info](/contact) so that the person can receive credit. Thanks!\n\nGoogle points to [tons of articles on Bloom's Taxonomy](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=bloom%27s%20taxonomy) so I will not attempt to re-create them here. This article will only summarize.\n\n### Summarizing Bloom's Taxonomy\nLearning can be divided into stages, from rote memorization to creating new knowledge.\n\n* Remembering. All learning starts with remembering some basic ideas.  For example, before we can learn how to read the English language, we need to memorize the English alphabet.\n\n* Understanding. After we memorize the alphabet, do we understand how the letters come together to form words? Do we understand how the words come together to form sentences and thoughts?\n\n* Applying. Can we use what we read in new ways? For example, \n\n* Analyziing. Spotting differences. Comparing and contrasting. For example, \n\n* Evaluating.\n\n* Creating. Having achieved at the previous levels (remembering through evaluating) can we now create new knoweledge, can we move the body of knowledge forward?\n\n\n",
     "date": {
       "year": "2015",
       "month": "March",

@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Using rlwrap with MIT&#8217;s Scheme REPL - RayHightower.com</title>
+  <title>Blooms Taxonomy - RayHightower.com</title>
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="Command line users of Linux and OS X know that they can hit the up arrow to view the previously executed command. However, this behavior is missing &hellip;">
+  <meta name="description" content="Bloom&rsquo;s Taxonomy for learning.
+Attribution note: I found the above graphic at through a web site at Oregon State University, but the original &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://RayHightower.com/blog/2015/03/19/using-rlwrap-with-mit-scheme-repl">
+  <link rel="canonical" href="http://RayHightower.com/blog/2015/03/19/blooms-taxonomy">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="RayHightower.com" type="application/atom+xml">
@@ -107,7 +108,7 @@
   
   <header>
     
-      <h1 class="entry-title">Using rlwrap with MIT&#8217;s Scheme REPL</h1>
+      <h1 class="entry-title">Blooms Taxonomy</h1>
     
     
       <p class="meta">
@@ -116,83 +117,31 @@
 
 
 
-<time class='entry-date' datetime='2015-03-19T17:02:11-05:00'><span class='date'>March 19, 2015</span> <span class='time'></span></time>
+<time class='entry-date' datetime='2015-03-19T14:36:28-05:00'><span class='date'>March 19, 2015</span> <span class='time'></span></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>Command line users of Linux and OS X know that they can hit the up arrow to view the previously executed command. However, this behavior is missing from the <code>mit-scheme</code> read-evaluate-print-loop (REPL). <code>mit-scheme</code> is the language used in <a href="/blog/2015/02/18/sicp-study-group/">SICP</a>.</p>
+<div class="entry-content"><p><span class='caption-wrapper middle'><img class='caption' src='/images/blooms_taxonomy.png' width='' height='' alt='Bloom's Taxonomy for learning.' title='Bloom's Taxonomy for learning.'><span class='caption-text'>Bloom&rsquo;s Taxonomy for learning.</span></span>
+Attribution note: I found the above graphic at through a web site at Oregon State University, but the original author was not cited. If you know who the original author is, please <a href="/contact">share the info</a> so that the person can receive credit. Thanks!</p>
 
-<p>For example, hitting the up arrow in the Scheme REPL gives us this non-useful result: <code>^[[A</code>. The previous command is not repeated.</p>
+<p>Google points to <a href="https://www.google.com/webhp?sourceid=chrome-instant&amp;ion=1&amp;espv=2&amp;ie=UTF-8#q=bloom%27s%20taxonomy">tons of articles on Bloom&rsquo;s Taxonomy</a> so I will not attempt to re-create them here. This article will only summarize.</p>
 
-<p>How do we add up-arrow functionality to the <code>mit-scheme</code> REPL? By using <code>rlwrap</code>.</p>
+<h3>Summarizing Bloom&rsquo;s Taxonomy</h3>
 
-<!--more-->
+<p>Learning can be divided into stages, from rote memorization to creating new knowledge.</p>
 
+<ul>
+<li><p>Remembering. All learning starts with remembering some basic ideas.  For example, before we can learn how to read the English language, we need to memorize the English alphabet.</p></li>
+<li><p>Understanding. After we memorize the alphabet, do we understand how the letters come together to form words? Do we understand how the words come together to form sentences and thoughts?</p></li>
+<li><p>Applying. Can we use what we read in new ways? For example,</p></li>
+<li><p>Analyziing. Spotting differences. Comparing and contrasting. For example,</p></li>
+<li><p>Evaluating.</p></li>
+<li><p>Creating. Having achieved at the previous levels (remembering through evaluating) can we now create new knoweledge, can we move the body of knowledge forward?</p></li>
+</ul>
 
-<h3>Installing rlwrap</h3>
-
-<p>On Mac OS X with <a href="">Homebrew</a>, first update Homebrew.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Then install <code>rlwrap</code>.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>brew install <span class="nv">rlwrap</span>
-</span><span class='line'><span class="o">==</span>&gt; Downloading https://homebrew.bintray.com/bottles/rlwrap-0.42.yosemite.bottle.tar.gz
-</span><span class='line'><span class="c">######################################################################## 100.0%</span>
-</span><span class='line'><span class="o">==</span>&gt; Pouring rlwrap-0.42.yosemite.bottle.tar.gz
-</span><span class='line'>🍺  /usr/local/Cellar/rlwrap/0.42: 29 files, 312K
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>And then verify installation.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>which rlwrap
-</span><span class='line'>/usr/local/bin/rlwrap
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Using rlwrap</h3>
-
-<p>To use <code>rlwrap</code> with <code>scheme</code> do the following.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>And now we have it. The up-arrow behavior that we’ve grown to appreciate at the command line has returned!</p>
-
-<h3>Before and After</h3>
-
-<p>Before using <code>rlwrap</code>, we would see this behavior if we hit the up arrow.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>After installing <code>rlwrap</code>, we get this.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Big time savings, and better for learning.</p>
 </div>
 
 
@@ -208,21 +157,15 @@
 
 
 
-<time class='entry-date' datetime='2015-03-19T17:02:11-05:00'><span class='date'>March 19, 2015</span> <span class='time'></span></time>
+<time class='entry-date' datetime='2015-03-19T14:36:28-05:00'><span class='date'>March 19, 2015</span> <span class='time'></span></time>
       
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/os-x/'>os x</a>
-  
-</span>
 
 
     </p>
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2015/03/19/using-rlwrap-with-mit-scheme-repl/" data-via="" data-counturl="http://RayHightower.com/blog/2015/03/19/using-rlwrap-with-mit-scheme-repl/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2015/03/19/blooms-taxonomy/" data-via="" data-counturl="http://RayHightower.com/blog/2015/03/19/blooms-taxonomy/" >Tweet</a>
   
   
   
@@ -323,11 +266,11 @@
 <li class='category'><a href='/blog/categories/high-performance-computing/'>high performance computing (7)</a></li>
 <li class='category'><a href='/blog/categories/ios/'>ios (13)</a></li>
 <li class='category'><a href='/blog/categories/iot/'>iot (11)</a></li>
-<li class='category'><a href='/blog/categories/linux/'>linux (15)</a></li>
+<li class='category'><a href='/blog/categories/linux/'>linux (14)</a></li>
 <li class='category'><a href='/blog/categories/node/'>node (4)</a></li>
 <li class='category'><a href='/blog/categories/objective-c/'>objective-c (5)</a></li>
 <li class='category'><a href='/blog/categories/openrov/'>openrov (13)</a></li>
-<li class='category'><a href='/blog/categories/os-x/'>os x (11)</a></li>
+<li class='category'><a href='/blog/categories/os-x/'>os x (10)</a></li>
 <li class='category'><a href='/blog/categories/parallella/'>parallella (5)</a></li>
 <li class='category'><a href='/blog/categories/rails/'>rails (10)</a></li>
 <li class='category'><a href='/blog/categories/raspberri-pi/'>raspberri pi (1)</a></li>
@@ -379,8 +322,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://RayHightower.com/blog/2015/03/19/using-rlwrap-with-mit-scheme-repl/';
-        var disqus_url = 'http://RayHightower.com/blog/2015/03/19/using-rlwrap-with-mit-scheme-repl/';
+        var disqus_identifier = 'http://RayHightower.com/blog/2015/03/19/blooms-taxonomy/';
+        var disqus_url = 'http://RayHightower.com/blog/2015/03/19/blooms-taxonomy/';
         var disqus_script = 'embed.js';
       
     (function () {
