@@ -4,7 +4,7 @@
   <title><![CDATA[Category: raspberri pi | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/raspberri-pi/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-03-12T18:17:27-05:00</updated>
+  <updated>2015-03-19T14:07:20-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -18,7 +18,7 @@
     <link href="http://RayHightower.com/blog/2015/02/27/raspberry-pi-2-model-b-quad-core/"/>
     <updated>2015-02-27T21:04:11-06:00</updated>
     <id>http://RayHightower.com/blog/2015/02/27/raspberry-pi-2-model-b-quad-core</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/raspberry_pi_2_model_b.jpg' width='' height='' alt='Raspberry Pi 2 Model B' title='Raspberry Pi 2 Model B'><span class='caption-text'>Raspberry Pi 2 Model B</span></span>
+    <content type="html"><![CDATA[<p>{% imgcap right /images/raspberry_pi_2_model_b.jpg Raspberry Pi 2 Model B %}
 The <a href="http://www.raspberrypi.org/">Raspberry Pi Foundation</a> has upped their entry in the single-board computer competition. Raspberry Pi 2 Model B boasts a quad core ARM CPU and 1GB of RAM. More important: Benchmarks show that the board is 6x faster than the previous model. And the performance bump has been achieved while the price remains low: Roughly $45.</p>
 
 <p>Getting the board up and running is easier, too. You can buy a pre-built Linux image on micro SD. Or you can <a href="http://www.raspberrypi.org/downloads/">download the New Out Of the Box (NOOBS) image</a> yourself. Depending on the speed of your internet connection, you can be up in running in less than an hour.</p>
@@ -61,7 +61,7 @@ $ startx</p>
 <p>&#8220;`
 And your desktop will look something like this.</p>
 
-<p><span class='caption-wrapper middle'><img class='caption' src='/images/raspberry_pi_2_model_b_ruby.jpg' width='' height='' alt='Screenshot: Raspberry Pi 2 Model B' title='Screenshot: Raspberry Pi 2 Model B'><span class='caption-text'>Screenshot: Raspberry Pi 2 Model B</span></span></p>
+<p>{% imgcap middle /images/raspberry_pi_2_model_b_ruby.jpg Screenshot: Raspberry Pi 2 Model B %}</p>
 
 <h3>Running Ruby, Rails</h3>
 
@@ -102,7 +102,7 @@ by typing the following at the command line.</p>
 <p>&#8220;` bash</p>
 
 <p>$ rvm &mdash;version
-rvm 1.26.10 (master) by Wayne E. Seguin <a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#119;&#x61;&#x79;&#110;&#101;&#x65;&#x73;&#101;&#x67;&#x75;&#105;&#x6e;&#x40;&#x67;&#109;&#x61;&#x69;&#108;&#x2e;&#99;&#111;&#x6d;">&#x77;&#x61;&#121;&#x6e;&#101;&#101;&#x73;&#x65;&#x67;&#x75;&#105;&#x6e;&#x40;&#x67;&#109;&#97;&#x69;&#x6c;&#46;&#99;&#111;&#x6d;</a>, Michal Papis <a href="&#x6d;&#97;&#x69;&#108;&#116;&#111;&#58;&#109;&#112;&#x61;&#x70;&#105;&#115;&#64;&#103;&#x6d;&#x61;&#105;&#108;&#46;&#x63;&#111;&#x6d;">&#x6d;&#112;&#97;&#112;&#105;&#115;&#64;&#103;&#109;&#97;&#x69;&#108;&#46;&#x63;&#x6f;&#109;</a> [<a href="https://rvm.io/">https://rvm.io/</a>]</p>
+rvm 1.26.10 (master) by Wayne E. Seguin <a href="&#109;&#97;&#x69;&#x6c;&#116;&#111;&#58;&#x77;&#97;&#121;&#110;&#101;&#x65;&#115;&#x65;&#x67;&#117;&#105;&#x6e;&#64;&#x67;&#x6d;&#97;&#x69;&#x6c;&#46;&#99;&#x6f;&#x6d;">&#x77;&#x61;&#x79;&#x6e;&#x65;&#x65;&#x73;&#x65;&#x67;&#x75;&#x69;&#x6e;&#x40;&#x67;&#x6d;&#x61;&#x69;&#108;&#x2e;&#x63;&#x6f;&#x6d;</a>, Michal Papis <a href="&#109;&#97;&#x69;&#108;&#x74;&#111;&#58;&#x6d;&#x70;&#x61;&#112;&#105;&#115;&#x40;&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#99;&#x6f;&#109;">&#x6d;&#x70;&#x61;&#x70;&#105;&#115;&#64;&#103;&#x6d;&#x61;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;</a> [<a href="https://rvm.io/">https://rvm.io/</a>]</p>
 
 <p>$</p>
 

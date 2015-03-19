@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-03-12T18:17:27-05:00</updated>
+  <updated>2015-03-19T13:40:23-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,84 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Using rlwrap with MIT's Scheme REPL]]></title>
+    <link href="http://RayHightower.com/blog/2015/03/19/using-rlwrap-with-mit-scheme-repl/"/>
+    <updated>2015-03-19T17:02:11-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/03/19/using-rlwrap-with-mit-scheme-repl</id>
+    <content type="html"><![CDATA[<p>Command line users of Linux and OS X know that they can hit the up arrow to view the previously executed command. However, this behavior is missing from the <code>mit-scheme</code> read-evaluate-print-loop (REPL). <code>mit-scheme</code> is the language used in <a href="http://RayHightower.com/blog/2015/02/18/sicp-study-group/">SICP</a>.</p>
+
+<p>For example, hitting the up arrow in the Scheme REPL gives us this non-useful result: <code>^[[A</code>. The previous command is not repeated.</p>
+
+<p>How do we add up-arrow functionality to the <code>mit-scheme</code> REPL? By using <code>rlwrap</code>.</p>
+
+<!--more-->
+
+
+<h3>Before and After</h3>
+
+<p>Before using <code>rlwrap</code>, we would see this behavior if we hit the up arrow.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>After installing <code>rlwrap</code>, we get this.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Big time savings, and better for learning.</p>
+
+<h3>Installing rlwrap</h3>
+
+<p>On Mac OS X with <a href="">Homebrew</a>, first update Homebrew.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Then install <code>rlwrap</code>.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>brew install <span class="nv">rlwrap</span>
+</span><span class='line'><span class="o">==</span>&gt; Downloading https://homebrew.bintray.com/bottles/rlwrap-0.42.yosemite.bottle.tar.gz
+</span><span class='line'><span class="c">######################################################################## 100.0%</span>
+</span><span class='line'><span class="o">==</span>&gt; Pouring rlwrap-0.42.yosemite.bottle.tar.gz
+</span><span class='line'>🍺  /usr/local/Cellar/rlwrap/0.42: 29 files, 312K
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And then verify installation.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>which rlwrap
+</span><span class='line'>/usr/local/bin/rlwrap
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Using rlwrap</h3>
+
+<p>To use <code>rlwrap</code> with <code>scheme</code> do the following.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And now we have it. The up-arrow behavior that we’ve grown to appreciate at the command line has returned!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Apple Car? Not Likely.]]></title>
@@ -1099,52 +1177,6 @@ Thanks SDRuby for hosting the Ignite event!</p>
 <h3>Next Step With OpenROV</h3>
 
 <p>Our work with OpenROV will climax at <a href="http://rubycaribe.com">RubyCaribe</a> in January 2015. If you&rsquo;re an intermediate or advanced software developer, and if you like to stretch your brain with Ruby and other languages (like Node.js) then RubyCaribe might be for you.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[RubyCaribe: Ruby Gets Hotter in January]]></title>
-    <link href="http://RayHightower.com/blog/2014/09/23/rubycaribe-ruby-gets-hotter-in-january/"/>
-    <updated>2014-09-23T18:23:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2014/09/23/rubycaribe-ruby-gets-hotter-in-january</id>
-    <content type="html"><![CDATA[<p><a href="http://rubycaribe.com">RubyCaribe</a> (pronounced ka-REEB) is a conference for intermediate and advanced software developers who use Ruby. The conference will be held January 27 &ndash; 31, 2015 in Barbados. January is a beautiful time to visit the Caribbean, especially if you’re coming from a colder part of the planet.</p>
-
-<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/barbados_caribbean_map.png' width='' height='' alt='Barbados. You could be here in January.' title='Barbados. You could be here in January.'><span class='caption-text'>Barbados. You could be here in January.</span></span>
-Intermediate and advanced software developers will find RubyCaribe valuable because&hellip;</p>
-
-<ul>
-<li>Each RubyCaribe session features a 30- to 45-minute presentation followed by a <em>2-hour deep-dive lab</em>. Learning is reinforced throughout.</li>
-<li>The venue, <a href="http://www.hiltonbarbadosresort.com/">Hilton Barbados Resort</a>, sits right on the ocean. Need a stretch break? Take a walk on the beach!</li>
-</ul>
-
-
-<!--more-->
-
-
-<h3>Ramp Up Your Ruby Skills</h3>
-
-<p>Each RubyCaribe lab will be led by experts in machine learning, mobile app development (iOS and Android), web development, and functional programming. The inventor of <a href="http://rubymotion.com">RubyMotion</a>, <a href="https://twitter.com/lrz">Laurent Sansonetti</a>, will lead the RubyMotion lab. If you already have experience with Ruby or Rails, RubyCaribe will take your skills to the next level.</p>
-
-<h3>Bonus: OpenROV and Node.js</h3>
-
-<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/openrov_rubycaribe.jpg' width='' height='' alt='OpenROV. Linux and Node.js.' title='OpenROV. Linux and Node.js.'><span class='caption-text'>OpenROV. Linux and Node.js.</span></span>
-<a href="http://RayHightower.com/blog/2014/06/16/citizen-science-with-openrov/">OpenROV</a> is an open source underwater robot running Linux and Node.js. During two evening sessions, you and your RubyCaribe colleagues will hack on OpenROV. The best developers are polyglot, right? On Friday afternoon, we will grab a boat for live ocean testing with a few OpenROV units. If you ever wanted to experiment with Node.js and IoT, RubyCaribe offers a great opportunity.</p>
-
-<h3>University Collaboration</h3>
-
-<p>On Saturday, the final day of RubyCaribe, we will visit the <a href="http://www.cavehill.uwi.edu/">University of the West Indies at Cave Hill</a>. Faculty and students from the UWI community will demo their work with solar energy and other areas touched by software. Who knows, maybe you’ll give a lightning talk about something you learned at RubyCaribe!</p>
-
-<h3>Make Your Brain Sweat</h3>
-
-<p>RubyCaribe will work you hard. RubyCaribe will make your brain sweat. So be sure to schedule a few days before or after the conference for sight seeing and relaxation. Rum was invented in Barbados.</p>
-
-<h3>Where Will You Be in January?</h3>
-
-<p>If you had to choose between the Caribbean and the cold regions of the northern hemisphere, where would you rather be? RubyCaribe offers the chance to ramp up your skills and enjoy yourself at the same time. What an opportunity.</p>
-
-<h3>Only One Hundred Tickets</h3>
-
-<p>Only one hundred tickets will be sold. Be sure to get yours. <a href="http://www.eventbrite.com/e/rubycaribe-2015-registration-10051344843">Register now</a>. See you at RubyCaribe!</p>
 ]]></content>
   </entry>
   

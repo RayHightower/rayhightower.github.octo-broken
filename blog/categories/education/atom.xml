@@ -4,7 +4,7 @@
   <title><![CDATA[Category: education | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/education/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-03-12T18:17:27-05:00</updated>
+  <updated>2015-03-19T14:07:20-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -18,7 +18,7 @@
     <link href="http://RayHightower.com/blog/2015/03/06/html5-and-css3-the-complete-manual/"/>
     <updated>2015-03-06T13:02:53-06:00</updated>
     <id>http://RayHightower.com/blog/2015/03/06/html5-and-css3-the-complete-manual</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/html5_css3_imagineshop.jpg' width='' height='' alt='HTML5 &amp; CSS3' title='HTML5 &amp; CSS3'><span class='caption-text'>HTML5 &amp; CSS3</span></span>
+    <content type="html"><![CDATA[<p>{% imgcap right /images/html5_css3_imagineshop.jpg HTML5 &amp; CSS3 %}
 The biggest challenge for a software developer: Absorbing the latest knowledge while simultaneously keeping clients happy. Where does the time go?</p>
 
 <p>Fortunately, when it comes to HTML5 and CSS3, a UK-based publisher has released a just-the-facts guide that may help. At 127 pages, the entire publication (they call it a <em>bookazine</em>) can be devoured in a single day. Imagine Publishing&rsquo;s <em>HTML5 &amp; CSS3: The Complete Manual</em> is well worth the time investment.</p>
@@ -78,7 +78,7 @@ from the Dedication page in SICP</p></blockquote>
     <link href="http://RayHightower.com/blog/2015/02/18/sicp-study-group/"/>
     <updated>2015-02-18T15:15:25-06:00</updated>
     <id>http://RayHightower.com/blog/2015/02/18/sicp-study-group</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/sicp.jpg' width='' height='' alt='SICP' title='SICP'><span class='caption-text'>SICP</span></span>
+    <content type="html"><![CDATA[<p>{% imgcap right /images/sicp.jpg SICP %}
 Veteran developer <a href="http://twitter.com/dastels">Dave Astels</a> is leading a <a href="https://www.eventbrite.com/e/sicp-chicago-w-dave-astels-tickets-15525870296">Structure and Interpretation of Computer Programs (SICP) study group</a> for the next ten months. The Massachusetts Institute of Technology uses SICP as the text for one of its early computer science courses. Session one of Dave’s group starts today at 6pm. For any developer who wants to ramp up in skill, the SICP study group is an excellent opportunity to do so.</p>
 
 <p>MIT makes the <a href="http://mitpress.mit.edu/sicp/">entire text of SICP</a> available online for free. Or you can buy a paper version of the book at Amazon.</p>
@@ -107,7 +107,7 @@ homebrew/x11/mit-scheme</p>
 
 <p>Alternative solution: Grab a pre-compiled binary from the <a href="http://www.gnu.org/software/mit-scheme/">MIT/GNU Scheme</a> site. The <code>mit-scheme-9.2-x86-64.dmg</code> disk image was the right one for my early 2013 MacBook Pro. Your system may be different.</p>
 
-<p><span class='caption-wrapper middle'><img class='caption' src='/images/gnu_float.png' width='' height='' alt='Opening the MIT/GNU Scheme disk image.' title='Opening the MIT/GNU Scheme disk image.'><span class='caption-text'>Opening the MIT/GNU Scheme disk image.</span></span></p>
+<p>{% imgcap middle /images/gnu_float.png Opening the MIT/GNU Scheme disk image. %}</p>
 
 <p>To install, drag the <code>MIT/GNU Scheme.app</code> icon into the Applications folder on the Mac.</p>
 
@@ -192,7 +192,7 @@ Exit the REPL by typing</code>CTRL-D`.</p>
     <link href="http://RayHightower.com/blog/2014/08/05/be-awesome-tackle-big-league-problems-at-windycityrails/"/>
     <updated>2014-08-05T16:21:00-05:00</updated>
     <id>http://RayHightower.com/blog/2014/08/05/be-awesome-tackle-big-league-problems-at-windycityrails</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/big_league_problems_windycityrails.jpg' width='' height='' alt='Be awesome.' title='Be awesome.'><span class='caption-text'>Be awesome.</span></span>
+    <content type="html"><![CDATA[<p>{% imgcap right /images/big_league_problems_windycityrails.jpg Be awesome. %}
 Do you see yourself in any of these scenarios?</p>
 
 <ul>
@@ -240,7 +240,7 @@ Do you see yourself in any of these scenarios?</p>
     <content type="html"><![CDATA[<blockquote><p>You know what the trouble is? We used to make things in this country, build things. Now we just put our hand in the next guy’s pocket.
 <br/>~Frank Sobatka</p></blockquote>
 
-<p><span class='caption-wrapper right'><img class='caption' src='/images/zero-to-maker.gif' width='' height='' alt='' title=''><span class='caption-text'></span></span>
+<p>{% imgcap right /images/zero-to-maker.gif %}
 David Lang is a maker. After a stint with a struggling Silicon Valley startup, David teamed up with former NASA engineer <a href="http://openrov.com/profile/1gupl83kvnk8f">Eric Stackpole</a> to build an underwater robot called <a href="/blog/2014/06/16/citizen-science-with-openrov/">OpenROV</a>. That&rsquo;s a two-sentence oversimplification of David&rsquo;s maker journey, detailed in his book: <a href="http://shop.oreilly.com/product/0636920028284.do">Zero to Maker: Learn (Just Enough) to Make (Just About) Anything</a>.</p>
 
 <p>The book starts off like a novel, with the exploration of the mysterious Hall City Cave and an 1840s-era gold robbery. Fast-forward to the present day where a multi-disciplinary team of makers joins forces to create an inexpensive vehicle for underwater exploration.</p>
