@@ -4,7 +4,7 @@
   <title><![CDATA[Category: education | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/education/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-03-19T18:35:25-05:00</updated>
+  <updated>2015-03-20T17:45:47-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,54 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Bloom's Taxonomy for Learning]]></title>
+    <link href="http://RayHightower.com/blog/2015/03/20/blooms-taxonomy-for-learning/"/>
+    <updated>2015-03-20T00:00:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/03/20/blooms-taxonomy-for-learning</id>
+    <content type="html"><![CDATA[<p><a href="http://RayHightower.com/images/blooms_taxonomy_thumb.png" onclick="window.open('/images/blooms_taxonomy.png','popup','width=770,height=548,scrollbars=no,resizable=yes,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="http://RayHightower.com/images/blooms_taxonomy_thumb.png" border="0" alt="Bloom's Taxonomy" name="image" class="right" width="250" height="162" title="Bloom's Taxonomy" /></a></p>
+
+<p>Bloom&rsquo;s Taxonomy is a framework that breaks the learning process into stages. According to Bloom, learning begins with rote memorization and the process progresses upward until we can apply what we&rsquo;ve learned in creative new ways.</p>
+
+<h3>My Tunnel Vision</h3>
+
+<p>Most of my formal education was science or engineering oriented. I regarded science and engineering as the pinnacle of learning. And I thought that history, language arts, and other non-science areas were just memorization. Yes, I had tunnel vision!</p>
+
+<p>Here&rsquo;s why I was wrong.</p>
+
+<!--more-->
+
+
+<h3>Learning Only Starts With Memorization</h3>
+
+<p>All learning, at the very beginning, is memorization. For example, when we first learn mathematics, we start by memorizing the counting numbers (1, 2, 3, &hellip;) and we eventually figure out that we can&rsquo;t count to infinity. Later we learn the four basic math operations (addition, subtraction, multiplication, division) and we learn how to apply these operations to word problems. Fast forward a few years, and we learn to apply differential equations to a skydiver falling to earth via parachute. Or we may create a mathematical spreadsheet model to decide whether to invest in a business.</p>
+
+<p>Learning math starts with with memorization. As we advance, we eventually absorb enough to apply what we&rsquo;ve learned in creative ways.</p>
+
+<h3>Bloom&rsquo;s Taxonomy, Summarized</h3>
+
+<p>Bloom&rsquo;s Taxonomy can be summarized (from <em>lowest</em> level to <em>highest</em>) as follows:</p>
+
+<ul>
+<li><p><em>Lowest Level:</em> Remembering. All learning starts with memorization. For example, before we can learn how to read and write the English language, we need to memorize the English alphabet.</p></li>
+<li><p>Understanding. After we memorize the alphabet, we need to understand how the letters come together to form words.</p></li>
+<li><p>Applying. Can we combine words in different ways to form sentences and express thoughts?</p></li>
+<li><p>Analyzing. Spotting differences. Comparing and contrasting. For example, can we take something written by others and express it in our own words while maintaining accuracy?</p></li>
+<li><p>Evaluating. Arguing and appraising. Having completed an analysis, can we justify our conclusions?</p></li>
+<li><p><em>Highest Level:</em> Creating. Having achieved at the previous levels can we move the body of knowledge forward? Can we express entirely new points of view?</p></li>
+</ul>
+
+
+<h3>More Resources</h3>
+
+<p>Google lists <a href="https://www.google.com/webhp?sourceid=chrome-instant&amp;ion=1&amp;espv=2&amp;ie=UTF-8#q=bloom%27s%20taxonomy">tons of articles on Bloom&rsquo;s Taxonomy</a> if you would like to know more.</p>
+
+<h3>Attribution Note</h3>
+
+<p>I found the graphic at the top of this post on an Oregon State University web site. The original author was not cited. If you know who the original author is, please <a href="/contact">share the info</a> so that they can be cited in this article. Thanks!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[HTML5 & CSS3: The Complete Manual]]></title>
@@ -229,44 +277,6 @@ Do you see yourself in any of these scenarios?</p>
 <p>Tickets are selling fast. Get yours now at <a href="http://www.windycityrails.org/register/">http://www.windycityrails.org/register/</a>. Use the promo code AWESOME to save $75.00 on the standard price.</p>
 
 <p>We look forward to seeing you at WindyCityRails!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Get Back to Making Things]]></title>
-    <link href="http://RayHightower.com/blog/2014/06/28/get-back-to-making-things/"/>
-    <updated>2014-06-28T16:25:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2014/06/28/get-back-to-making-things</id>
-    <content type="html"><![CDATA[<blockquote><p>You know what the trouble is? We used to make things in this country, build things. Now we just put our hand in the next guy’s pocket.
-<br/>~Frank Sobatka</p></blockquote>
-
-<p><span class='caption-wrapper right'><img class='caption' src='/images/zero-to-maker.gif' width='' height='' alt='' title=''><span class='caption-text'></span></span>
-David Lang is a maker. After a stint with a struggling Silicon Valley startup, David teamed up with former NASA engineer <a href="http://openrov.com/profile/1gupl83kvnk8f">Eric Stackpole</a> to build an underwater robot called <a href="/blog/2014/06/16/citizen-science-with-openrov/">OpenROV</a>. That&rsquo;s a two-sentence oversimplification of David&rsquo;s maker journey, detailed in his book: <a href="http://shop.oreilly.com/product/0636920028284.do">Zero to Maker: Learn (Just Enough) to Make (Just About) Anything</a>.</p>
-
-<p>The book starts off like a novel, with the exploration of the mysterious Hall City Cave and an 1840s-era gold robbery. Fast-forward to the present day where a multi-disciplinary team of makers joins forces to create an inexpensive vehicle for underwater exploration.</p>
-
-<p>The author was not a born maker. But through force of will, discipline, and the right mentorship, he grew from non-maker to co-founder of the OpenROV company in roughly one year.</p>
-
-<!--more-->
-
-
-<h3>Making is a Team Sport</h3>
-
-<p><em>Zero to Maker</em> will not teach you how to use tools, what to make, or what manuals to read. But it will put you on the path to learning. For example, the author shares his first experience at a <a href="http://makerfaire.com/">Maker Faire</a>, a gathering for people who make things. Many of the exhibitors have spent decades honing their skills, while some are brand new and full of enthusiasm. Everyone shares knowledge in the Maker community. And as a result, everyone grows.</p>
-
-<p>Maker Spaces are places where tools and expertise are shared on a regular basis. <a href="https://www.noisebridge.net/">Noisebridge</a> is a maker space in San Francisco where the author got some of his early experience with specialized tools. <a href="http://pumpingstationone.org/">Pumping Station One</a> and <a href="http://www.sshchicago.org/">Southside Hackerspace Chicago</a> shoot for similar goals in Chicago.</p>
-
-<p>The author points out that no matter what you&rsquo;re trying to make, chances are that someone else has made something similar and they can share experience with you. Likewise, you have experience that other makers may find valuable, even on day one of your maker journey. Sometimes we don&rsquo;t know what we know. Maker communities remove the friction so that knowledge can be shared more freely.</p>
-
-<h3>The IKEA Effect</h3>
-
-<p>Why is the maker movement so powerful? The author explores this question in one very interesting section of the book. As it turns out, Researchers at the Harvard Business School think they have the answer. When we put our sweat and effort into building a project, we perceive the project to be more valuable. The researchers refer to this phenomenon as the IKEA effect. If we sweat to build something, it becomes valuable to us.</p>
-
-<h3>Recommendation</h3>
-
-<p>If you are a maker, or if you want to become a maker, this book is worth reading. And once you&rsquo;re done reading, go make something!</p>
-
-<p><em>Note: A version of this article is also posted at <a href="http://www.chicagoruby.org/book-reviews/">http://www.chicagoruby.org/book-reviews/</a>.</em></p>
 ]]></content>
   </entry>
   
