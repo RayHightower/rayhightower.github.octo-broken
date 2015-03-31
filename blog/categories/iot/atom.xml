@@ -4,7 +4,7 @@
   <title><![CDATA[Category: iot | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/iot/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-03-27T00:05:23-04:00</updated>
+  <updated>2015-03-31T17:04:38-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[No Windows. Stronger Planes.]]></title>
-    <link href="http://RayHightower.com/blog/2015/01/03/no-windows-stronger-planes/"/>
-    <updated>2015-01-03T00:34:04-05:00</updated>
-    <id>http://RayHightower.com/blog/2015/01/03/no-windows-stronger-planes</id>
+    <link href="http://RayHightower.com/blog/2015/01/02/no-windows-stronger-planes/"/>
+    <updated>2015-01-02T23:34:04-06:00</updated>
+    <id>http://RayHightower.com/blog/2015/01/02/no-windows-stronger-planes</id>
     <content type="html"><![CDATA[<p>It is always good to start the new year with something inspirational. <a href="http://www.technicondesign.com/">Technicon Design</a> created a 3-minute video to demonstrate their IXION Windowless Jet Concept. Worth watching full screen.</p>
 
 <center><iframe name="windowlessjet" src="//player.vimeo.com/video/78458486" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
@@ -51,7 +51,7 @@
   <entry>
     <title type="html"><![CDATA[Manage That OpenROV Tether, Or Else]]></title>
     <link href="http://RayHightower.com/blog/2014/09/10/manage-that-openrov-tether/"/>
-    <updated>2014-09-10T18:40:00-04:00</updated>
+    <updated>2014-09-10T18:40:00-05:00</updated>
     <id>http://RayHightower.com/blog/2014/09/10/manage-that-openrov-tether</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/openrov_tether_management_slip_ring.jpg' width='' height='' alt='OpenROV tether management, one way that works.' title='OpenROV tether management, one way that works.'><span class='caption-text'>OpenROV tether management, one way that works.</span></span>
 <em>Note: This article has been updated with more photos and details describing slip ring installation.</em></p>
@@ -123,7 +123,7 @@ What should we do with the slip ring&rsquo;s extra lines? I tied mine together f
   <entry>
     <title type="html"><![CDATA[Solar Powered Parallella]]></title>
     <link href="http://RayHightower.com/blog/2014/09/09/solar-powered-parallella/"/>
-    <updated>2014-09-09T09:18:00-04:00</updated>
+    <updated>2014-09-09T09:18:00-05:00</updated>
     <id>http://RayHightower.com/blog/2014/09/09/solar-powered-parallella</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella_solar.jpg' width='' height='' alt='Give solar power to your Parallella with a few simple components.' title='Give solar power to your Parallella with a few simple components.'><span class='caption-text'>Give solar power to your Parallella with a few simple components.</span></span></p>
 
@@ -177,7 +177,7 @@ What should we do with the slip ring&rsquo;s extra lines? I tied mine together f
   <entry>
     <title type="html"><![CDATA[OpenROV Meets Chicago's Lake Michigan]]></title>
     <link href="http://RayHightower.com/blog/2014/08/22/openrov-meets-chicago-lake-michigan/"/>
-    <updated>2014-08-22T19:27:00-04:00</updated>
+    <updated>2014-08-22T19:27:00-05:00</updated>
     <id>http://RayHightower.com/blog/2014/08/22/openrov-meets-chicago-lake-michigan</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='/images/openrov_chicago_lake_michigan.jpg' width='' height='' alt='OpenROV meets  Lake Michigan.' title='OpenROV meets  Lake Michigan.'><span class='caption-text'>OpenROV meets  Lake Michigan.</span></span>
 <a href="/blog/2014/06/16/citizen-science-with-openrov/">OpenROV</a> #1227 went for a spin in Lake Michigan this week. Success! Here are a few first-voyage observations:</p>
@@ -202,7 +202,7 @@ build a way to manage the tether.</li>
   <entry>
     <title type="html"><![CDATA[ESC Programming and Calibration for OpenROV]]></title>
     <link href="http://RayHightower.com/blog/2014/08/21/esc-programming-and-calibration-for-openrov/"/>
-    <updated>2014-08-21T16:27:00-04:00</updated>
+    <updated>2014-08-21T16:27:00-05:00</updated>
     <id>http://RayHightower.com/blog/2014/08/21/esc-programming-and-calibration-for-openrov</id>
     <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='/images/openrov_esc.jpg' width='' height='' alt='Three ESCs, one for each motor. Each ESC has a switch and a power/signal connector.' title='Three ESCs, one for each motor. Each ESC has a switch and a power/signal connector.'><span class='caption-text'>Three ESCs, one for each motor. Each ESC has a switch and a power/signal connector.</span></span></p>
 

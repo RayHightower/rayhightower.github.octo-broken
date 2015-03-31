@@ -1671,12 +1671,12 @@
     "tags": [
 
     ],
-    "url": "/blog/2015/01/03/no-windows-stronger-planes/",
+    "url": "/blog/2015/01/02/no-windows-stronger-planes/",
     "content": "It is always good to start the new year with something inspirational. [Technicon Design](http://www.technicondesign.com/) created a 3-minute video to demonstrate their IXION Windowless Jet Concept. Worth watching full screen.\n\n<center><iframe name=\"windowlessjet\" src=\"//player.vimeo.com/video/78458486\" width=\"500\" height=\"281\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>\n\nHow can a plane with no windows offer better views for passengers?\n<!--more-->\n###Windows vs Fuselage Strength\nWhen we add a window to the fuselage of an airplane, we reduce the strength of the fuselage. Glass is weaker than aluminum. So aircraft engineers need to make up for the lost strength. The engineers might add a support structure, thicken the aluminum, or try a different alloy.\n\nBut when windows are eliminated, structural integrity is maintained. And the weight of the plane can be reduced because we can eliminate the extra supports.\n\n###How Do We See Without Windows\nAs shown in the Technicon video, views can be better without windows!  Cameras are mounted at strategic points on the outside of the plane. And the inner surface of the plane, the part that passengers can see, is covered with a display material. Computers take the images captured by the external cameras, and they translate that into images for display on the inner walls of the plane.\n\nThe result: Passengers feel like they're flying in a glass plane. That's an idea best communicated through the Technicon video.\n\n###Applying Tech Across Industries\nProcessing power continues to fall in price. Flat panel monitors get less expensive each day. The window-less plane shows us what can happen when advances in one industry are applied to another. Blend these advances with a high-speed internet connection delivered via satellite, and the Internet of Things (IoT) takes a great leap forward. Cross-discipline engineering is exciting.\n\nHappy New Year!\n",
     "date": {
       "year": "2015",
       "month": "January",
-      "day": "03"
+      "day": "02"
     }
   },
   {
@@ -1842,6 +1842,21 @@
       "year": "2015",
       "month": "March",
       "day": "20"
+    }
+  },
+  {
+    "id": 123,
+    "title": "Amazon Dash and Instant Gratification",
+    "category": "business",
+    "tags": [
+
+    ],
+    "url": "/blog/2015/03/31/amazon-dash-and-instant-gratification/",
+    "content": "{% imgcap middle /images/amazon_dash_combo_cc_600.png Amazon Dash innovates by building on existing technologies. %}\nAmazon Dash is for customers who crave instant gratification. Dash is a brilliant blend of the Staples Easy Button, WiFi, and Amazon's existing database of credit card numbers.\n\nWhen a customer runs out of a consumable item, they press a button. The order is sent immediately via WiFi to Amazon, where the customer's credit card number is on file. Delivery can happen within 24 hours, depending on the item. No more standing in line at the store. In fact, no more walking a few feet to a computer to type in an order. Instant gratification, satisfied.\n<!--more-->\n### Video Summary\nThis 1-minute video explains the service with just a few words, and plenty of images.\n\n<center><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/NMacTuHPWFI?rel=0&amp;showinfo=0\" frameborder=\"0\" allowfullscreen></iframe></center>\n\n### Innovation for You\nKudos to Amazon for combining some existing pieces to create something new. Most inspiring for anyone who needs to innovate.\n",
+    "date": {
+      "year": "2015",
+      "month": "March",
+      "day": "31"
     }
   },
   {
