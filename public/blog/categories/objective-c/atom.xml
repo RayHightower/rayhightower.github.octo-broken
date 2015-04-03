@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: objective-c | RayHightower.com]]></title>
+  <link href="http://RayHightower.com/blog/categories/objective-c/atom.xml" rel="self"/>
+  <link href="http://RayHightower.com/"/>
+  <updated>2015-04-02T15:42:37-05:00</updated>
+  <id>http://RayHightower.com/</id>
+  <author>
+    <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Objective-C Programming: The Big Nerd Ranch Guide]]></title>
+    <link href="http://RayHightower.com/blog/2013/02/28/objective-c-programming-the-big-nerd-ranch-guide/"/>
+    <updated>2013-02-28T15:52:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2013/02/28/objective-c-programming-the-big-nerd-ranch-guide</id>
+    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/objective-c-big-nerd.png" align="right" width="250" height="357" alt="Objective-C Programming - The Big Nerd Ranch Guide" title="Objective-C Programming - The Big Nerd Ranch Guide"></p>
+
+<blockquote><p>You will be baffled from time to time… Stick with this book. I promise the bewilderment will cease before you get to the final page.<br/>~ Aaron Hillegass, Author</p></blockquote>
+
+<h4>Finding the Right Objective-C Book</h4>
+
+<p>I&rsquo;ve gone through several Objective-C books in my quest to master <a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a>. You read that right: I&rsquo;m learning Objective-C so that I can master RubyMotion. <em>Objective-C Programming: The Big Nerd Ranch Guide</em> is one book that clicks for me. Here&rsquo;s why.</p>
+
+<!-- more -->
+
+
+<ul>
+<li><p>Minimal fluff. Other Objective-C books start off with speeches about why a dev should write for iOS. What a waste of paper. The Big Nerd approach: Start with a few paragraphs about C, and then jump right in to Xcode installation followed by &ldquo;Hello World.&rdquo; Refreshingly direct.</p></li>
+<li><p>Clear examples. As I immerse myself deeper into the world of Objective-C, I am troubled by much of the documentation. It&rsquo;s okay to describe a method signature, but a description with an example is much better. While reading other Objective-C books, I found myself pausing to search Stack Overflow for alternate explanations. The Big Nerd book is better because everything is self-contained. Method descriptions are followed by clear examples.</p></li>
+<li><p>Zero Assumptions. Even though the book contains minimal fluff, readers will appreciate how the author defines terms throughout the text. For example, the book does not assume that the reader knows the classroom definition of the word <em>syntax</em>. It defines the word explicitly:</p></li>
+</ul>
+
+
+<blockquote><p>Syntax is the set of rules that governs how your code must be written in a given programming language. These rules are extremely specific, and if you fail to follow them, your program won&rsquo;t work.</p></blockquote>
+
+<p>Clearly put!</p>
+
+<h4>Do I Really Need Objective-C?</h4>
+
+<p>Yes. If you want to be effective with RubyMotion, you must grow strong with Objective-C.</p>
+
+<p>The RubyMotion devs whom I admire most also know Objective-C. Devs like Matt Aimonetti (creator of BubbleWrap), Randall Thomas and Tammer Saleh (authors of <em>RubyMotion in the Cloud</em>), Jonathan Penn (instructor/speaker at CocoaConf) and Laurent Sansonetti (creator of RubyMotion) move seamlessly between the worlds of Ruby and Objective-C. Luke became a Jedi because he followed in the footsteps of Yoda.</p>
+
+<p>More important than following the masters: Learning from their triumphs and mistakes by reading their code. Developers in 2013 are fortunate to have tools like GitHub where code is shared on a massive scale. Most iOS code is written in Objective-C. If we want to learn from the iOS code that has been written before, we need to know Objective-C.</p>
+
+<h4>Highly Recommended</h4>
+
+<p>If you want to develop apps for iOS devices, start with <em>Objective-C Programming: The Big Nerd Ranch Guide</em>. The book is also helpful if you prefer RubyMotion over Objective-C.</p>
+
+<p>And don&rsquo;t forget your <a href="/blog/2012/09/03/10000-hours-of-practice/">10,000 Hours of Practice</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Atari's Pong, Built With RubyMotion]]></title>
+    <link href="http://RayHightower.com/blog/2013/02/26/atari-pong-rubymotion-objective-c/"/>
+    <updated>2013-02-26T10:35:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2013/02/26/atari-pong-rubymotion-objective-c</id>
+    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/pong-rubymotion-objective-c.png" width="300" height="160" alt="Atari's Pong in RubyMotion and Objective-C" title="Atari's Pong in RubyMotion and Objective-C" align="right">
+<a href="http://en.wikipedia.org/wiki/Pong">Atari&rsquo;s Pong</a> is a classic video arcade game from the 1970s. Seeing Pong always gives me childhood flashbacks.</p>
+
+<h4>Pong in Objective-C</h4>
+
+<p>I recently completed the <a href="http://mobilemakers.co/ios-accelerated">iOS Accelerated</a> course at the <a href="http://mobilemakers.co/">Mobile Makers Academy</a>. For one of our homework assignments, we were asked to build a version of Pong that runs on iOS. Our instructor, <a href="http://twitter.com/dbora">Don Bora</a>, started us off with some skeleton code in Objective-C. Each student had to take Don&rsquo;s code and:</p>
+
+<ul>
+<li>Add paddles.</li>
+<li>Make the paddles move on their own.</li>
+<li>Make the ball bounce off the moving paddles.</li>
+<li>Keep score.</li>
+<li>Let one or two players control the paddles via touch.</li>
+</ul>
+
+
+<!-- more -->
+
+
+<h4>Questions to Consider</h4>
+
+<p>How do you determine whether the pixels of the ball have collided with the pixels of a paddle? What about wall collisions? When a collision occurs, where should the ball bounce next? As with any application, there are many details to consider.</p>
+
+<h4>Building Blocks</h4>
+
+<p>Of course, Don had already introduced the necessary skills in earlier lectures, labs, and homework. It was our job to put the pieces together.</p>
+
+<p>Members of the class paired with each other. We shared solutions and advice. In time, we each ended up with a working version of Pong in Objective-C. It&rsquo;s exciting to see a favorite childhood game running in the iOS simulator on your own machine, especially if you built the game yourself.</p>
+
+<h4>Pong in RubyMotion</h4>
+
+<p>Since my day job revolves around Ruby, it made sense to re-write the exercise in <a href="http://rayhightower.dev/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a>. Here are video clips of my two solutions. The first was written in Objective-C during the Mobile Makers course. The second was written in RubyMotion.</p>
+
+<center><iframe name="pong-oc" width="560" height="315" src="http://www.youtube.com/embed/9LETiMdi9jQ?rel=0" frameborder="0" allowfullscreen></iframe></iframe></center>
+
+
+
+
+<center><iframe name="pong-rm" width="560" height="315" src="http://www.youtube.com/embed/Lt-JKqiA_fg?rel=0" frameborder="0" allowfullscreen></iframe></center>
+
+
+<p>As expected, the two solutions look similar. Source code is on GitHub:</p>
+
+<ul>
+<li><a href="http://github.com/rayhightower/pong-oc">Pong in Objective-C</a></li>
+<li><a href="http://github.com/rayhightower/pong-rm">Pong in RubyMotion</a></li>
+</ul>
+
+
+<h4>RubyMotion Gotchas</h4>
+
+<p>I encountered a few RubyMotion snags during development:</p>
+
+<ul>
+<li><p><em>Mouseovers Ingored</em>. Normally, when running the simulator with RubyMotion, you can mouse over an object in the simulator, hit the command key, and grab a handle to the object.  This behavior was absent in landcape mode with version 1.31 of RubyMotion. The release notes for version 1.33 mention that the problem has been solved. However, that was not my experience.</p></li>
+<li><p><em>Touch Events Ignored on Part of Screen</em>. For some reason, the simulator ignored touch events on the right side of the screen. When I programatically moved the right paddle closer to the left side of the screen, both paddles responded to touch events. Searches of Google and Stack Overflow reveal that others have encounterd the same issue with touch events, especially in landcape mode.</p></li>
+</ul>
+
+
+<p><em>Update (3/13/2013): The issue with touch events has been resolved, thanks to advice from Turki Al-Qusaimi in the comments below. Updated code has been pushed to the <a href="https://github.com/RayHightower/pong-rm">master branch on GitHub</a>.</em></p>
+
+<p>Of course, I introduced a few bugs of my own while developing the Pong game. At one point, the velocity of the ball increased every time a player scored. It made the game exciting! But I didn&rsquo;t know the cause of the acceleration, and good developers strive to maintain better control over their projects.</p>
+
+<p>I eventually found the acceleration problem: When using an NSTimer object to control animation, you have to invalidate the timer at the beginning of each cycle, or the animation will accelerate. That&rsquo;s a useful thing to know.</p>
+
+<p>The rest of my work in RubyMotion went well, and I continue to enjoy the product. I plan to update the code once the touch event issues have been resolved.</p>
+
+<h4>Why Play Games?</h4>
+
+<p>Why should a serious developer spend time writing games? I can think of a few reasons:</p>
+
+<ul>
+<li><p>Writing a game challenges our skills on many levels. In the case of Pong, we have to dust off our old physics and geometry textbooks to ensure that the ball bounces like a real ball.</p></li>
+<li><p>Writing a game lets us break out of our constraints. Devs who write business apps are very familiar with constraints.</p></li>
+<li><p>Because writing a game is fun.</p></li>
+</ul>
+
+
+<p>Of course, the most important reason was given by a captain of the USS Enterprise NCC-1701:</p>
+
+<blockquote><p>The more advanced the mind, the greater the need for the simplicity of play.
+<br/>~James T. Kirk</p></blockquote>
+
+<h4>Room for Improvement</h4>
+
+<p>Building the Pong game was an interesting exercise in testing the capabilities of RubyMotion. Having done the work, I can look back and see some areas where I could improve the results. For example:</p>
+
+<ul>
+<li><p>Automated testing. These proof-of-concept exercises were done without automated testing. What is the best way to apply test driven development to a game? RubyMotion comes with a TDD framework, MacBacon. That would be a great subject for a future blog post.</p></li>
+<li><p>Better design. Each exercise looks like something from the 1970s! How would Pong function if it was created in 2013?</p></li>
+<li><p>Better collision detection. I&rsquo;m using a built-in iOS method to detect ball collisions. The built-in detection works fine with the stationary walls, but not as well with the moving paddles. If I write a future version of Pong, I should also write a custom collision detection method.</p></li>
+</ul>
+
+
+<h4>Comments and Pull Requests</h4>
+
+<p><a href="http://wisdomgroup.com">My team and I</a> build business apps. My gaming experience is limited. If you are a game developer, and if you see anything in my code that could be done better, your ideas are welcome. Feel free to submit a <a href="http://github.com/rayhightower/pong-rm">pull request via GitHub</a>, or you can drop a note in the comments below. Thanks!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Code Pilot for Xcode Navigation]]></title>
+    <link href="http://RayHightower.com/blog/2013/01/08/code-pilot-for-Xcode-navigation/"/>
+    <updated>2013-01-08T10:54:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2013/01/08/code-pilot-for-Xcode-navigation</id>
+    <content type="html"><![CDATA[<p><a href="http://codepilot.cc">Code Pilot</a> is a free tool that lets developers navigate quickly between files in Xcode. I was introduced to the tool yesterday by Don Bora, instructor of the Mobile Makers <a href="http://mobilemakers.co/">iOS Accelerated</a> course that I&rsquo;m currently taking.</p>
+
+<h4>Starting Code Pilot</h4>
+
+<p>After downloading and installing the product, launch Code Pilot by starting Xcode and using the SHIFT-COMMAND-X key sequence.</p>
+
+<p><img src="http://RayHightower.com/images/nine-days-left.png" align="center" height="494" width="630" alt="Code Pilot w/o License" title="Code Pilot w/o License"></p>
+
+<p>Code Pilot is free, but you still need to request and install the license file.</p>
+
+<!--more-->
+
+
+<h4>Installing the License</h4>
+
+<p>It wasn&rsquo;t immediately obvious to me where to put the license file. A quick email to Code Pilot&rsquo;s tech support team got me an answer. This post may save you some time if you decide to try Code Pilot for yourself.</p>
+
+<p>In Xcode, go into preferences (Xcode | Preferences). One section of the preference pane is devoted to Code Pilot. Go to that section, paste in the license, and you&rsquo;re all set.</p>
+
+<p><img src="http://RayHightower.com/images/paste-license.png" align="center" height="483" width="630" alt="Code Pilot preferences in Xcode" title="Code Pilot preferences in Xcode" ></p>
+
+<h4>First Impression of Code Pilot</h4>
+
+<p>I can see how the tool could make Xcode navigation faster. One drawback: As a Vim user, I&rsquo;m in the habit of navigating with h, j, k, and l. Code Pilot requires me to use the arrow keys. If Code Pilot came equipped with Vim key bindings, I would view that as a plus!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Mobile Makers, Objective-C, and RubyMotion]]></title>
+    <link href="http://RayHightower.com/blog/2012/12/14/mobile-makers-objective-c-rubymotion/"/>
+    <updated>2012-12-14T06:45:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2012/12/14/mobile-makers-objective-c-rubymotion</id>
+    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/ipad-iphone.jpg" width="256" height="250" alt="iPad iPhone" title="iPad iPhone" align="right">
+This week I enrolled in the iOS Accelerated course offered by the <a href="http://mobilemakers.co/ios-accelerated">Mobile Makers Academy</a>. If you would like to do the same, mention my name and we&rsquo;ll both receive a $300 discount on tuition.</p>
+
+<p>Class starts on Jan 7, 2013. The evening lectures are convenient for those who serve clients by day.</p>
+
+<p>Of course, a tuition discount and easy schedule are poor reasons to enroll in a course. This article will describe my reasons for enrolling. If your thirst for learning is anything like mine, you might like Mobile Makers too.</p>
+
+<!--more-->
+
+
+<h4>Background and Expectations</h4>
+
+<p>My background includes an undergrad degree in computer science. Over the years, I&rsquo;ve coded in C, Lisp, Fortran, Pascal, x86 assembler, and Ruby. I became a &ldquo;business guy&rdquo; when I launched WisdomGroup eighteen years ago. WisdomGroup is fortunate to have a team of strong technologists who keep our clients happy while teaching me more every day.</p>
+
+<p>In late 2011, I began to focus on sharpening my personal technical skills, and that led to my immersion in <a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a> this year. I expect the Mobile Makers experience to strengthen my grasp of Objective-C, OO theory, and iOS. Cross-training with Objective-C will boost my RubyMotion skills as well.</p>
+
+<h4>Instruction Format</h4>
+
+<p><a href="https://twitter.com/dbora">Don Bora</a> is the head instructor at Mobile Makers. Don is embarrassed when I say this, but he&rsquo;s the main reason why I chose to enroll. Don is a true polyglot programmer, with a background that includes Objective-C (of course!), C#, Java, Ruby, and Smalltalk among other languages. He currently builds Objective-C apps for his clients at <a href="http://eightbitstudios.com/">Eight Bit Studios</a>. Don holds degrees in computer science and linguistics.</p>
+
+<p>Mobile Makers offers a learning format that is relatively new to me. Beyond the traditional classroom lectures, students get plenty of time for lab immersion and interaction with mentors. I first witnessed this format when Neal Sales-Griffin and Mike McGee launched <a href="http://starterleague.com">The Starter League</a>.</p>
+
+<h4>More About Lab Time and Mentorship</h4>
+
+<p>Classroom sessions are fine, but they&rsquo;re not enough. Can you learn a musical instrument by listening to lectures and taking notes? Mastering a skill like software development requires deliberate practice with challenging exercises. Learning is accelerated when lectures, labs, and mentorship complement each other.</p>
+
+<h4>Learning Architecture</h4>
+
+<p>Behind the scenes, Adam Lupu is the learning architect who designed the Mobile Makers curriculum. In Don&rsquo;s words: &ldquo;I know how to explain things, but I don&rsquo;t know how to structure a course. That&rsquo;s where Adam comes in.&rdquo; Adam was the lead architect behind the Rails-based curriculum at the Starter League. Now he&rsquo;s building the mobile curriculum at Mobile Makers.</p>
+
+<h4>Excitement</h4>
+
+<p>The Mobile Makers <a href="http://mobilemakers.co/ios-accelerated">iOS Accelerated</a> class is only three weeks away. If you mention this blog post, you and I will both get a $300 tuition discount. More important, we will acquire skills that will serve us well as we solve problems for clients. What an exciting time to be a developer!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CocoaConf: Hey Nerd!]]></title>
+    <link href="http://RayHightower.com/blog/2012/03/16/cocoaconf-hey-nerd/"/>
+    <updated>2012-03-16T17:30:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2012/03/16/cocoaconf-hey-nerd</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/cocoaconf-mug.png' width='' height='' alt='Official Cocoaconf Mug' title='Official Cocoaconf Mug'><span class='caption-text'>Official Cocoaconf Mug</span></span>
+&ldquo;Hey Nerd!&rdquo;</p>
+
+<p>It was the night before <a href="http://cocoaconf.com">CocoaConf</a>. I had just walked into the hotel bar. A table full of wise guys (wise as in Stooges, not Sopranos) called out to someone named Nerd.</p>
+
+<p>&ldquo;Hey Nerd!&rdquo; they shouted again.</p>
+
+<p>This time I looked at their lanyards and badges. Same as mine. They <em>were</em> talking to me. Complete strangers, but not for long because they invited me to join their table. I was immediately comfortable when the discussion turned to midichlorian levels and LEGO&rsquo;s model of the Millenium Falcon. Camaraderie like this is why I go to conferences.</p>
+
+<!--more-->
+
+
+<p>
+Earlier that day I listened to the author of a popular iPad app as he described the challenges of writing 3D graphics code. The newest iPad was delivered during CocoaConf, so this room full of Mac devs was pumped! I go to conferences for discussions like this.</p>
+
+<p>It&rsquo;s a little after 5am as I type this blog entry. I&rsquo;m excited about the presentations scheduled for this morning, so excited that I had to get up a few hours early just to write about it. Excitement like this is why I go to conferences.</p>
+
+<p>I attend CocoConf because developers are part of a bigger community with a common goal: Getting better at what we do. Books and videos are a good start. Classes are helpful. But beyond the standard learning tools, sometimes a good one-on-one discussion with a fellow dev will help both people to look at a concept in a fresh way. To solve a knotty problem. To resolve a debate about midichlorian levels.</p>
+
+<p>Everybody learns when we share ideas. I look forward to the next <a href="http://cocoaconf.com">CocoaConf</a>.</p>
+
+<p><em>Note: The author originally posted this article at <a href="http://www.builtinchicago.org/">Built in Chicago</a> in March 2012.</em></p>
+]]></content>
+  </entry>
+  
+</feed>

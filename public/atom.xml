@@ -1,0 +1,1173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[RayHightower.com]]></title>
+  <link href="http://RayHightower.com/atom.xml" rel="self"/>
+  <link href="http://RayHightower.com/"/>
+  <updated>2015-04-02T15:42:37-05:00</updated>
+  <id>http://RayHightower.com/</id>
+  <author>
+    <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Amazon Dash and Instant Gratification]]></title>
+    <link href="http://RayHightower.com/blog/2015/03/31/amazon-dash-and-instant-gratification/"/>
+    <updated>2015-03-31T15:44:37-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/03/31/amazon-dash-and-instant-gratification</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/amazon_dash_combo_cc_600.png' width='' height='' alt='Amazon Dash innovates by building on existing technologies.' title='Amazon Dash innovates by building on existing technologies.'><span class='caption-text'>Amazon Dash innovates by building on existing technologies.</span></span></p>
+
+<p>The <a href="https://www.amazon.com/oc/dash-button">Amazon Dash Button</a> is for customers who crave instant gratification. We might think of Dash as a brilliant blend of the Staples Easy Button, WiFi, and Amazon&rsquo;s existing database of credit card numbers.</p>
+
+<!--more-->
+
+
+<p>When a customer runs out of a consumable item, they press a button. The order is sent immediately via WiFi to Amazon, where the customer&rsquo;s credit card number is on file. Delivery can happen within 24 hours, depending on the item. No more standing in line at the store. In fact, no more walking a few feet to a computer to type in an order. Instant gratification, satisfied.</p>
+
+<h3>Video Summary</h3>
+
+<p>This 1-minute video explains the service with just a few words, and plenty of images.</p>
+
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/NMacTuHPWFI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></center>
+
+
+<h3>Innovation for You</h3>
+
+<p>Kudos to Amazon for combining some existing pieces to create something new. Most inspiring for anyone who needs to innovate.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Bloom's Taxonomy for Learning]]></title>
+    <link href="http://RayHightower.com/blog/2015/03/20/blooms-taxonomy-for-learning/"/>
+    <updated>2015-03-20T00:00:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/03/20/blooms-taxonomy-for-learning</id>
+    <content type="html"><![CDATA[<p><a href="http://RayHightower.com/images/blooms_taxonomy_thumb.png" onclick="window.open('/images/blooms_taxonomy.png','popup','width=770,height=548,scrollbars=no,resizable=yes,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="http://RayHightower.com/images/blooms_taxonomy_thumb.png" border="0" alt="Bloom's Taxonomy" name="image" class="right" width="250" height="162" title="Bloom's Taxonomy" /></a></p>
+
+<p>Bloom&rsquo;s Taxonomy is a framework that breaks the learning process into stages. According to Bloom, learning begins with rote memorization and the process progresses upward until we can apply what we&rsquo;ve learned in creative new ways.</p>
+
+<h3>Youthful Bias</h3>
+
+<p>Most of my formal education was science or engineering oriented. I regarded science and engineering as the pinnacle of learning. The extreme position of my youth: All logic fell within math and science, while history, language arts, and other non-science areas were just memorization.</p>
+
+<p>Bloom&rsquo;s research pushed me beyond my original thinking. Memorization and creativity are vital to all areas of knowledge. Here&rsquo;s how.</p>
+
+<!--more-->
+
+
+<h3>Learning Only Starts With Memorization</h3>
+
+<p>All learning, at the very beginning, is memorization. For example, when we first learn mathematics, we start by memorizing the counting numbers (1, 2, 3, &hellip;) and we eventually figure out that we can&rsquo;t count to infinity. Later we learn the four basic math operations (addition, subtraction, multiplication, division) and we learn how to apply these operations to word problems. Fast forward a few years, and we learn to apply differential equations to a skydiver falling to earth via parachute. Or we may create a mathematical spreadsheet model to decide whether to invest in a business.</p>
+
+<p>Learning math starts with with memorization. As we advance, we eventually absorb enough to apply what we&rsquo;ve learned in creative ways.</p>
+
+<h3>Bloom&rsquo;s Taxonomy, Summarized</h3>
+
+<p>Bloom&rsquo;s Taxonomy can be summarized (from <em>lowest</em> level to <em>highest</em>) as follows:</p>
+
+<ul>
+<li><p><strong>Remembering</strong> (<em>Lowest Level</em>) &ndash; All learning starts with memorization. For example, before we can learn how to read and write the English language, we need to memorize the English alphabet.</p></li>
+<li><p><strong>Understanding</strong> &ndash;  After we memorize the alphabet, we need to understand how the letters come together to form words.</p></li>
+<li><p><strong>Applying</strong> &ndash;  Can we combine words in different ways to form sentences and express thoughts?</p></li>
+<li><p><strong>Analyzing</strong> &ndash;  Spotting differences. Comparing and contrasting. For example, can we take something written by others and express it in our own words while maintaining accuracy?</p></li>
+<li><p><strong>Evaluating</strong> &ndash;  Arguing and appraising. Having completed an analysis, can we justify our conclusions?</p></li>
+<li><p><strong>Creating</strong> (<em>Highest Level</em>) &ndash;  Having achieved at the previous levels, can we move the body of knowledge forward? Can we express entirely new points of view?</p></li>
+</ul>
+
+
+<h3>More Resources</h3>
+
+<p>Google lists <a href="https://www.google.com/webhp?sourceid=chrome-instant&amp;ion=1&amp;espv=2&amp;ie=UTF-8#q=bloom%27s%20taxonomy">tons of articles on Bloom&rsquo;s Taxonomy</a> if you would like to know more.</p>
+
+<h3>Attribution Note</h3>
+
+<p>The graphic at the top of this post is from an Oregon State University web site. The original author was not cited. If you know who the original author is, please <a href="http://RayHightower.com/contact">share the info</a> so that a proper citation can be included here. Thanks!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Using rlwrap with MIT's Scheme REPL]]></title>
+    <link href="http://RayHightower.com/blog/2015/03/19/using-rlwrap-with-mit-scheme-repl/"/>
+    <updated>2015-03-19T17:02:11-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/03/19/using-rlwrap-with-mit-scheme-repl</id>
+    <content type="html"><![CDATA[<p>Users of the Linux or OS X command line know that they can hit the up arrow to view the previously executed command. However, this behavior is missing from the <code>mit-scheme</code> read-evaluate-print-loop (REPL). <code>mit-scheme</code> is the language used in <a href="http://RayHightower.com/blog/2015/02/18/sicp-study-group/">SICP</a>.</p>
+
+<p>For example, hitting the up arrow in the Scheme REPL gives us this non-useful result: <code>^[[A</code>. The previous command is not repeated.</p>
+
+<p>How do we add up-arrow functionality to the <code>mit-scheme</code> REPL? By using <code>rlwrap</code>.</p>
+
+<!--more-->
+
+
+<h3>Installing rlwrap</h3>
+
+<p>On Mac OS X with <a href="http://RayHightower.com/blog/2014/02/12/homebrew-fundamentals/">Homebrew</a>, first update Homebrew with <code>$ brew update</code>.</p>
+
+<p>Then install <code>rlwrap</code>.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>brew install <span class="nv">rlwrap</span>
+</span><span class='line'><span class="o">==</span>&gt; Downloading https://homebrew.bintray.com/bottles/rlwrap-0.42.yosemite.bottle.tar.gz
+</span><span class='line'><span class="c">######################################################################## 100.0%</span>
+</span><span class='line'><span class="o">==</span>&gt; Pouring rlwrap-0.42.yosemite.bottle.tar.gz
+</span><span class='line'>🍺  /usr/local/Cellar/rlwrap/0.42: 29 files, 312K
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You can verify the <code>rlwrap</code> installation as follows.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>which rlwrap
+</span><span class='line'>/usr/local/bin/rlwrap
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Using rlwrap</h3>
+
+<p>To use <code>rlwrap</code> with <code>scheme</code> do the following.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rlwrap scheme
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And now we have it. The up-arrow behavior that we’ve grown to appreciate at the command line is now available in the Scheme REPL. Big time savings, and better for learning.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Apple Car? Not Likely.]]></title>
+    <link href="http://RayHightower.com/blog/2015/03/12/apple-car-not-likely/"/>
+    <updated>2015-03-12T16:42:49-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/03/12/apple-car-not-likely</id>
+    <content type="html"><![CDATA[<blockquote><p>You have to figure out what your own aptitudes are. If you play games where other people have the aptitudes and you don’t, you’re going to lose. And that’s as close to certain as any prediction that you can make. You have to figure out where you’ve got an edge. And you’ve got to play within your own circle of competence.
+<br/>~Charlie Munger, Vice Chairman, Berkshire Hathaway</p></blockquote>
+
+<p>Some journalists speculate that <a href="http://9to5mac.com/2015/02/19/apple-electric-car-team/">Apple is building a car</a> because they recently hired some automotive engineers away from Tesla. My prediction: Apple is <em>not</em> building a car. Apple might build a device that plays a major role in the automotive marketplace. But a fully assembled automobile is too far outside the company&rsquo;s <em>circle of competence</em>, as Charlie Munger might say. Apple succeeds because the company maintains disciplined focus within its circle of competence.</p>
+
+<!--more-->
+
+
+<h3>AppleTV as an Example</h3>
+
+<p>Case in point: AppleTV. Pundits predicted an AppleTV with a large LCD display, in a form factor that might be built by Samsung or Sony. But instead, Apple created a black set-top box about the size of a hockey puck. Apple focused on those parts of the television ecosystem that are most closely tied to their circle of competence:</p>
+
+<ul>
+<li>User experience</li>
+<li>Internet connectivity</li>
+<li>Content delivery</li>
+</ul>
+
+
+<p>Apple entered the television marketplace while remaining within its circle of competence. Even better: Content delivery is a cash flow engine that generates revenue for as long as Apple can push bits down the wire.</p>
+
+<h3>iPhone Example</h3>
+
+<p>When Apple entered the mobile phone market, they focused within their circle of competence.</p>
+
+<ul>
+<li>User experience for computing devices, using a subset of Mac OS X.</li>
+<li>Internet connectivity via WiFi.</li>
+<li>Content delivery (iTunes).</li>
+</ul>
+
+
+<p>In the area where Apple lacked experience, mobile network management, they partnered with an industry veteran (initially AT&amp;T). By focusing within its circle of competence, Apple was able to negotiate aggressive terms with AT&amp;T, terms which included <em>no carrier branding on the physical device</em>. Later, Verizon, T-Mobile, Sprint, and all of the other major players begged for the same deal as AT&amp;T.</p>
+
+<p>And, as with AppleTV, content delivery is an engine that prints money for as long as Apple can push bits over the radio waves.</p>
+
+<h3>Apple&rsquo;s Automotive Entry</h3>
+
+<p>Apple will not build a fully assembled automobile. They&rsquo;re more likely to create an auto-related device that leverages their existing circle of competence. Something that shows off their skills with user experience, Internet connectivity, and content delivery.</p>
+
+<p>Apple&rsquo;s automotive content delivery offering will be interesting. The company currently offers maps and directions. What&rsquo;s next&hellip; maintenance data? Entertainment? How about a &ldquo;find my car&rdquo; serivce for those of us who forget where we park at the shopping mall.</p>
+
+<p>Apple&rsquo;s automotive device will fit well within the company&rsquo;s circle of competence. And Apple fans will line up around the block to buy it.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[HTML5 & CSS3: The Complete Manual]]></title>
+    <link href="http://RayHightower.com/blog/2015/03/06/html5-and-css3-the-complete-manual/"/>
+    <updated>2015-03-06T13:02:53-06:00</updated>
+    <id>http://RayHightower.com/blog/2015/03/06/html5-and-css3-the-complete-manual</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/html5_css3_imagineshop.jpg' width='' height='' alt='HTML5 & CSS3' title='HTML5 & CSS3'><span class='caption-text'>HTML5 &amp; CSS3</span></span>
+The biggest challenge for a software developer: Absorbing the latest knowledge while simultaneously keeping clients happy. Where does the time go?</p>
+
+<p>Fortunately, when it comes to HTML5 and CSS3, a UK-based publisher has released a just-the-facts guide that may help. At 127 pages, the entire publication (they call it a <em>bookazine</em>) can be devoured in a single day. Imagine Publishing&rsquo;s <em>HTML5 &amp; CSS3: The Complete Manual</em> is well worth the time investment.</p>
+
+<p><em>Note: A version of this article also appears in the <a href="http://www.chicagoruby.org/book-reviews/archives/2015/03/06/html5-css3-the-complete-manual/">Book Reviews section of ChicagoRuby.org</a></em>.</p>
+
+<!--more-->
+
+
+<h3>This Book&rsquo;s Best Feature</h3>
+
+<p>One thing I like about this book: Nothing is assumed. All explanations are clearly presented from square one. The introduction even defines the terms <em>hypertext</em> and <em>responsive design</em> in words that could easily be hijacked for your next presentation to non-technical management.</p>
+
+<p>Personally, I appreciate the don&rsquo;t-assume-anything definitions. I completed all of my formal computer science training in the last century, before we knew how far this Internet thing might go. Books like this help to fill in the gaps. Well done, authors!</p>
+
+<h3>Working the Examples</h3>
+
+<p>If you’re already current on HTML &amp; CSS, the examples in the beginning of the book will be too easy for you. Skip ahead to the examples toward the end and work on those. The sections on responsive design, <a href="http://getbootstrap.com/">Bootstrap</a>, and <a href="http://foundation.zurb.com/">Foundation</a> are especially useful.</p>
+
+<h3>Spelling Differences</h3>
+
+<p>My British-speaking friends and I sometimes tease each other about variations in American vs UK spelling for certain words. &ldquo;Colour&rdquo; vs &ldquo;color&rdquo; and that sort of thing. This book uses UK conventions.</p>
+
+<p>I spotted a fair number of typos in the book&rsquo;s code examples. Typos in human-readable text are no big deal. But a missing <code>&gt;</code> or <code>=</code> in a book about HTML and CSS can make or break an example. Of course, we’re all human and typos are simply a fact of life.</p>
+
+<p>Suggestion for the publishers: Setup a <a href="http://github.com">GitHub</a> repo with the code samples. That way, if typos in code are discovered (always certain because we&rsquo;re human) the typos can be corrected and shared immediately.</p>
+
+<h3>Conclusion</h3>
+
+<p>The bottom line: <em>HTML5 &amp; CSS3: The Complete Manual</em> is worth reading, especially if you need a quick way to keep up with web trends.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[JRuby 9000 on Mac OS X]]></title>
+    <link href="http://RayHightower.com/blog/2015/03/03/jruby-9000-on-mac-os-x/"/>
+    <updated>2015-03-03T14:42:57-06:00</updated>
+    <id>http://RayHightower.com/blog/2015/03/03/jruby-9000-on-mac-os-x</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/jruby_on_jvm.png' width='' height='' alt='JRuby. Ruby on the JVM.' title='JRuby. Ruby on the JVM.'><span class='caption-text'>JRuby. Ruby on the JVM.</span></span>
+Moore’s Law is about to run into a wall. Therefore, anything that software developers can learn about concurrency will be critical in coming years. Enter <a href="http://www.jruby.org/">JRuby 9000</a>.</p>
+
+<h3>What is JRuby?</h3>
+
+<p>JRuby is an implementation of the Ruby programming language that runs on the Java virtual machine (JVM). Advantages of running on the JVM include:</p>
+
+<ul>
+<li>Reaping the performance benefits that come from decades of JVM tuning.</li>
+<li>The ability to call time-tested Java libraries from Ruby programs.</li>
+<li>The performance benefits that come from concurrency, built into the JVM.</li>
+</ul>
+
+
+<!-- more -->
+
+
+<h3>Installing JRuby 9000 on OS X</h3>
+
+<p>Grab the latest <code>.tar</code> file from <a href="http://jruby.org/download">JRuby Downloads</a> and extract it by double-clicking on it. As of this writing, the latest version was <code>jruby-bin-9.0.0.0.pre1.tar.gz</code>.</p>
+
+<p>Next, move the extracted files to <code>/opt/jruby/</code>. For example, if you downloaded the <code>.tar</code> file to your <code>~/Downloads</code> directory, this command will rename the extracted directory to <code>jruby/</code> in the process.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo mv ~/Downloads/jruby-9.0.0.0.pre1/ /opt/jruby/
+</span><span class='line'>Password:
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And finally, add the following line to <code>~/.bash_profile</code> (or where ever you choose to set your <code>$PATH</code> variable).</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;/opt/jruby/bin:$PATH&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Testing the JRuby 9000 installation</h3>
+
+<p>To test the JRuby 9000 installation, re-start your terminal or use <code>$ source ~/.bash_profile</code>. And then</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>jruby --version
+</span><span class='line'>jruby 9.0.0.0.pre1 <span class="o">(</span>2.2.0p0<span class="o">)</span> 2015-01-20 d537cab Java HotSpot<span class="o">(</span>TM<span class="o">)</span> 64-Bit Server VM 25.25-b02 on 1.8.0_25-b17 +jit <span class="o">[</span>darwin-x86_64<span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>which jruby
+</span><span class='line'>/opt/jruby/bin/jruby
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Why not RVM?</h3>
+
+<p>Given that <a href="http://RayHightower.com/blog/2013/05/16/upgrading-ruby-with-rvm/">I like RVM</a>, why didn’t I simply use RVM to install JRuby 9000? Answer: The instructions for installing <em>a pre-release version</em> of JRuby via RVM were unclear to me. Extracting the executables and adding the directory to the <code>$PATH</code> was more grok-able. If your experience is different from mine, feel free to share in the comments below.</p>
+
+<h3>Next Steps</h3>
+
+<p>Next steps include experiments with concurrency. JRuby concurrency experiments with the <a href="http://RayHightower.com/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">18-core Parallella</a> look especially interesting. More to come.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Raspberry Pi 2 Model B Quad Core]]></title>
+    <link href="http://RayHightower.com/blog/2015/02/27/raspberry-pi-2-model-b-quad-core/"/>
+    <updated>2015-02-27T21:04:11-06:00</updated>
+    <id>http://RayHightower.com/blog/2015/02/27/raspberry-pi-2-model-b-quad-core</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/raspberry_pi_2_model_b.jpg' width='' height='' alt='Raspberry Pi 2 Model B' title='Raspberry Pi 2 Model B'><span class='caption-text'>Raspberry Pi 2 Model B</span></span>
+The <a href="http://www.raspberrypi.org/">Raspberry Pi Foundation</a> has upped their entry in the single-board computer competition. Raspberry Pi 2 Model B boasts a quad core ARM CPU and 1GB of RAM. More important: Benchmarks show that the board is 6x faster than the previous model. And the performance bump has been achieved while the price remains low: Roughly $45.</p>
+
+<p>Getting the board up and running is easier, too. You can buy a pre-built Linux image on micro SD. Or you can <a href="http://www.raspberrypi.org/downloads/">download the New Out Of the Box (NOOBS) image</a> yourself. Depending on the speed of your internet connection, you can be up in running in less than an hour.</p>
+
+<!--more-->
+
+
+<h3>Easier Than Before</h3>
+
+<p>Special note about the NOOBS image: You don&rsquo;t need a special utility to burn an SD card like before. The steps are:</p>
+
+<ul>
+<li>Download the <a href="http://www.raspberrypi.org/downloads/">NOOBS image</a> and unzip it.</li>
+<li>Format a micro SD card that&rsquo;s at lease 4GB in size.</li>
+<li>Drag the unzipped NOOBS files to the micro SD card.</li>
+<li>Insert the micro SD card into the Raspeberry Pi, apply power, and watch it boot.</li>
+</ul>
+
+
+<p>Having done things <a href="http://RayHightower.com/blog/2012/12/03/ruby-on-raspberry-pi/">the old way</a>, I was surprised that the process was so simple this time. Hats off to the Raspberry Pi Foundation for a great installation experience.</p>
+
+<h3>Login Information</h3>
+
+<p>After the device boots, you will need login credentials. These have not changed from the previous version:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>raspberripi login: pi
+</span><span class='line'>Password: raspberry
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Note that the cursor will not move while you type the password.</p>
+
+<p>Next, start the X Window environment.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>startx
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And your desktop will look something like this.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/raspberry_pi_2_model_b_ruby.jpg' width='' height='' alt='Screenshot: Raspberry Pi 2 Model B' title='Screenshot: Raspberry Pi 2 Model B'><span class='caption-text'>Screenshot: Raspberry Pi 2 Model B</span></span></p>
+
+<h3>Running Ruby, Rails</h3>
+
+<p>This incarnation of Raspberry Pi comes with Ruby 1.9.3 pre-installed. Of course, if you want to manage multiple versions of Ruby, <a href="http://RayHightower.com/blog/2013/05/16/upgrading-ruby-with-rvm/">RVM is a great way to go</a>.</p>
+
+<p>To install RVM, first run <code>gpg</code> to verify that you will get an uncorrupted (or un-tampored with) version of RVM.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Next, install RVM.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="se">\c</span>url -sSL https://get.rvm.io <span class="p">|</span> bash -s stable
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And finally, let the current terminal session know that RVM is installed
+by typing the following at the command line.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="nb">source</span> /home/pi/.rvm/scripts/rvm
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You can verify that RVM is installed by checking its version number like so&hellip;</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rvm --version
+</span><span class='line'>rvm 1.26.10 <span class="o">(</span>master<span class="o">)</span> by Wayne E. Seguin &lt;wayneeseguin@gmail.com&gt;, Michal Papis &lt;mpapis@gmail.com&gt; <span class="o">[</span>https://rvm.io/<span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Installing Ruby Versions</h3>
+
+<p>To install the latest stable version of Ruby&hellip;</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rvm install ruby
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>RVM will download dependencies as part of the installation process. From there, you can create RVM gemsets and <code>gem install rails</code> or any other libraries you may need. More documentation can be found at <a href="http://rvm.io">http://rvm.io</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Keep the Fun in Computing]]></title>
+    <link href="http://RayHightower.com/blog/2015/02/25/keep-the-fun-in-computing/"/>
+    <updated>2015-02-25T20:12:17-06:00</updated>
+    <id>http://RayHightower.com/blog/2015/02/25/keep-the-fun-in-computing</id>
+    <content type="html"><![CDATA[<blockquote><p>&ldquo;I think that it’s extraordinarily important that we in computer science keep fun in computing&hellip; What’s in your hands, I think and hope, is intelligence: the ability to see the machine as more than when you were first led up to it, that you can make it more.&rdquo;
+<br/>&nbsp;
+~ Alan J. Perlis,
+from the Dedication page in SICP</p></blockquote>
+
+<p>Enrolling in the <a href="http://www.eventbrite.com/e/sicp-chicago-w-dave-astels-tickets-15525870296">Chicago SICP study group</a>, I expected to dive into Lisp. I expected to be challenged. What I didn’t expect: The fun, somewhat irreverent attitude of the SICP authors. And why not? Software development is one of our newest professions. Other professionals are made more effective through our work. Everybody benefits from the increase in productivity.</p>
+
+<!--more-->
+
+
+<p>If you are a software developer in the Chicago area, be sure to check out <a href="http://www.eventbrite.com/e/sicp-chicago-w-dave-astels-tickets-15525870296">the SICP group</a>. As the SICP authors say, you don’t need to know Lisp to embark on this path; you’ll learn Lisp as we travel along. And our brains will be stretched in new and interesting ways.</p>
+
+<p>What an exciting time to be alive!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SICP Study Group]]></title>
+    <link href="http://RayHightower.com/blog/2015/02/18/sicp-study-group/"/>
+    <updated>2015-02-18T15:15:25-06:00</updated>
+    <id>http://RayHightower.com/blog/2015/02/18/sicp-study-group</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/sicp.jpg' width='' height='' alt='SICP' title='SICP'><span class='caption-text'>SICP</span></span>
+Veteran developer <a href="http://twitter.com/dastels">Dave Astels</a> is leading a <a href="https://www.eventbrite.com/e/sicp-chicago-w-dave-astels-tickets-15525870296">Structure and Interpretation of Computer Programs (SICP) study group</a> for the next ten months. The Massachusetts Institute of Technology uses SICP as the text for one of its early computer science courses. Session one of Dave’s group starts today at 6pm. For any developer who wants to ramp up in skill, the SICP study group is an excellent opportunity to do so.</p>
+
+<p>MIT makes the <a href="http://mitpress.mit.edu/sicp/">entire text of SICP</a> available online for free. Or you can buy a paper version of the book at Amazon.</p>
+
+<p>Thank you <a href="http://www.bradsdeals.com/">Brad’s Deals</a> and <a href="https://twitter.com/lostghost">Ken Walters</a> for hosting the SICP group.</p>
+
+<!--more-->
+
+
+<h3>Installing Scheme on Mac OS X</h3>
+
+<p>Examples and exercises in SICP are written in Scheme, a dialect of the LISP programming language. As of this writing, installing <code>mit-scheme</code> via Homebrew <em>did not work for me</em>.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>brew install mit-scheme
+</span><span class='line'>Error: No available formula <span class="k">for </span>mit-scheme
+</span><span class='line'>Searching formulae...
+</span><span class='line'>Searching taps...
+</span><span class='line'>homebrew/x11/mit-scheme
+</span><span class='line'>
+</span><span class='line'>~<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><em>Update: Some members of the SICP study group had success installing <code>mit-scheme</code> with Homebrew, while others (like me) did not. We did not determine why some of the Homebrew installations were successful. However, the non-Homebrew method described in this article seems to work across-the-board.</em></p>
+
+<p>Alternative solution: Grab a pre-compiled binary from the <a href="http://www.gnu.org/software/mit-scheme/">MIT/GNU Scheme</a> site. The <code>mit-scheme-9.2-x86-64.dmg</code> disk image was the right one for my early 2013 MacBook Pro. Your system may be different.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/gnu_float.png' width='' height='' alt='Opening the MIT/GNU Scheme disk image.' title='Opening the MIT/GNU Scheme disk image.'><span class='caption-text'>Opening the MIT/GNU Scheme disk image.</span></span></p>
+
+<p>To install, drag the <code>MIT/GNU Scheme.app</code> icon into the Applications folder on the Mac.</p>
+
+<h3>Setting Up Symlinks</h3>
+
+<p>Scheme is run from the command line. In order to make that work, we need to setup two symbolic links.</p>
+
+<p>First, create a symbolic link called <code>mit-scheme-x86-64</code> in your home directory that links to the appropriate executable in the <code>/Applications</code> directory. In other words&hellip;</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo ln -s /Applications/MIT<span class="se">\:</span>GNU<span class="se">\ </span>Scheme.app/Contents/Resources /usr/local/lib/mit-scheme-x86-64
+</span><span class='line'>Password:
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Next, setup a symlink that will let us simply type <code>scheme</code> when we want to use this version of the language&hellip;</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo ln -s /usr/local/lib/mit-scheme-x86-64/mit-scheme /usr/bin/scheme
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Confirm that the links are in place by checking the <code>scheme</code> version number.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>scheme --version
+</span><span class='line'>MIT/GNU Scheme microcode 15.3
+</span><span class='line'>Copyright <span class="o">(</span>C<span class="o">)</span> 2014 Massachusetts Institute of Technology
+</span><span class='line'>This is free software<span class="p">;</span> see the <span class="nb">source </span><span class="k">for </span>copying conditions. There is NO warranty<span class="p">;</span> not even <span class="k">for</span>
+</span><span class='line'>MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+</span><span class='line'>
+</span><span class='line'>Image saved on Saturday May 17, 2014 at 2:39:25 AM
+</span><span class='line'>  Release 9.2 <span class="o">||</span> Microcode 15.3 <span class="o">||</span> Runtime 15.7 <span class="o">||</span> SF 4.41 <span class="o">||</span> LIAR/x86-64 4.118 <span class="o">||</span> Edwin 3.116
+</span><span class='line'>
+</span><span class='line'>Moriturus te saluto.
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If you are like me, you will laugh at the gladiator message at the end of the version info.</p>
+
+<h3>Better Way to Symlink?</h3>
+
+<p>Why not create a single symbolic link directly from the <code>Resources</code> directory to the <code>scheme</code> command in <code>/usr/bin</code>? I am not certain, but I suspect it has something to do with expectations within the Scheme interpreter. The interpreter may be expecting certain files to be in certain directories. I’ll update this article when I learn more.</p>
+
+<h3>Running Scheme</h3>
+
+<p>To start the Scheme read-evaluate-print-loop (REPL)&hellip;</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>scheme
+</span><span class='line'>MIT/GNU Scheme running under OS X
+</span><span class='line'>Type <span class="sb">`</span>^C<span class="s1">&#39; (control-C) followed by `H&#39;</span> to obtain information about interrupts.
+</span><span class='line'>
+</span><span class='line'>Copyright <span class="o">(</span>C<span class="o">)</span> 2014 Massachusetts Institute of Technology
+</span><span class='line'>This is free software<span class="p">;</span> see the <span class="nb">source </span><span class="k">for </span>copying conditions. There is NO warranty<span class="p">;</span> not even <span class="k">for</span>
+</span><span class='line'>MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+</span><span class='line'>
+</span><span class='line'>Image saved on Saturday May 17, 2014 at 2:39:25 AM
+</span><span class='line'>  Release 9.2 <span class="o">||</span> Microcode 15.3 <span class="o">||</span> Runtime 15.7 <span class="o">||</span> SF 4.41 <span class="o">||</span> LIAR/x86-64 4.118 <span class="o">||</span> Edwin 3.116
+</span><span class='line'>
+</span><span class='line'>1 <span class="o">]=</span>&gt;
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Exit the REPL by typing <code>CTRL-D</code>.</p>
+
+<p>Looking forward to SICP tonight!</p>
+
+<h3>Acknowledgement</h3>
+
+<p>Thanks <a href="https://jacksonisaac.wordpress.com/2014/03/25/installing-scheme-on-mac-os-x/">Jackson Isaac</a> for the information about symlinks as used with this version of scheme.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[WindyCityRails and You]]></title>
+    <link href="http://RayHightower.com/blog/2015/01/31/windycityrails-and-you/"/>
+    <updated>2015-01-31T06:11:06-06:00</updated>
+    <id>http://RayHightower.com/blog/2015/01/31/windycityrails-and-you</id>
+    <content type="html"><![CDATA[<p>If you have ever attended <a href="http://windycityrails.org">WindyCityRails</a>: Thank you for helping to make the event more exciting every year. Organizers strive to give developers actionable technical information in a conference format. So far, it&rsquo;s working!</p>
+
+<!--more-->
+
+
+<p>2015 marks our first year with a pre-conference survey. Length: Four questions. Answer as many as you like via the quick <a href="https://www.surveymonkey.com/r/XHF85YN">online form</a>.</p>
+
+<ol>
+<li>What web-related technologies are you most excited about this year?</li>
+<li>What web-related technology is giving you the biggest headaches right now?</li>
+<li>Are there any particular speakers you&rsquo;d like to see at WindyCityRails 2015?</li>
+<li>What social networks do you actively use?</li>
+</ol>
+
+
+<p>Please <a href="https://www.surveymonkey.com/r/XHF85YN">stop by and fill out the survey</a> when you can.</p>
+
+<p>We look forward to hearing from you. And we look forward to delivering another strong year at WindyCityRails!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Context Changes Everything]]></title>
+    <link href="http://RayHightower.com/blog/2015/01/22/context-changes-everything/"/>
+    <updated>2015-01-22T17:48:08-06:00</updated>
+    <id>http://RayHightower.com/blog/2015/01/22/context-changes-everything</id>
+    <content type="html"><![CDATA[<p>There are some cases where time zone information is absolutely critical. For example: When scheduling a video conference that crosses national boundaries.</p>
+
+<p>A few hours ago, Google sent me a reminder about today&rsquo;s <a href="http://linuxbarbados.org">LinuxBarbados</a> meeting. The group meets via video conferencing software over the web. Google&rsquo;s reminder was confusing because it showed the time without the time zone (screenshot below). LinuxBarbados is based in the Caribbean, and some of the members participate from other time zones.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/GH_time_zone_arrow.png' width='' height='' alt='What time is it when the time zone is unknown?' title='What time is it when the time zone is unknown?'><span class='caption-text'>What time is it when the time zone is unknown?</span></span></p>
+
+<p>Google&rsquo;s automated reminder said <code>3pm - 4pm</code> with no time zone reference. How confusing! Members of the group received the same automated reminder with the same information, regardless of time zone. A small change, displaying the time as <code>3pm - 4pm (CST)</code> would solve the problem.</p>
+
+<!--more-->
+
+
+<h3>Other Context Examples</h3>
+
+<p>When people speak with each other directly, context is implied. But when communication happens in printed form, it&rsquo;s helpful to have the context in print, too. For example:</p>
+
+<ul>
+<li>Walking down the street, you see a poster advertising a concert on January 29th. No year is shown. Is this an old poster for a concert that happened last year on Jan 29th? Or is the event happening next week?</li>
+<li>A restaurant menu offers delivery service. Just call the number, and order your food. The phone number is seven digits long, with no area code. Most customers would abandon the menu in favor of a restaurant with more complete information.</li>
+<li>Following the train of thought in the previous example: Since phone service has fallen in price, many people call internationally on a more regular basis. A complete phone number should include the country code.</li>
+</ul>
+
+
+<p>Context changes everything. Something all of us need to remember.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Chicago Node.js]]></title>
+    <link href="http://RayHightower.com/blog/2015/01/20/chicago-node-dot-js/"/>
+    <updated>2015-01-20T17:23:30-06:00</updated>
+    <id>http://RayHightower.com/blog/2015/01/20/chicago-node-dot-js</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/openrov_at_groupon.png' width='' height='' alt='OpenROV at Groupon. Photo by Michelle Waldorf.' title='OpenROV at Groupon. Photo by Michelle Waldorf.'><span class='caption-text'>OpenROV at Groupon. Photo by Michelle Waldorf.</span></span>
+The <a href="http://www.meetup.com/Chicago-Nodejs/events/203711262/">Chicago Node.js</a> user group invited me to present <em>Node.js Under Water</em>, an overview of the <a href="http://openrov.com">OpenROV</a> underwater robot, this evening. Slides appear below.</p>
+
+<p>Every version of this talk is tailored to the audience. This version focuses on OpenROV hardware components since this group certainly knows Node.js. Information has been added on hardware gotchas and tether management.</p>
+
+<p>Thank you Chicago Node.js organizers and members for having me.</p>
+
+<!--more-->
+
+
+
+
+<center><script async class="speakerdeck-embed" data-id="b51c86f083270132a7cc1ade27531f87" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script></center>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[No Windows. Stronger Planes.]]></title>
+    <link href="http://RayHightower.com/blog/2015/01/02/no-windows-stronger-planes/"/>
+    <updated>2015-01-02T23:34:04-06:00</updated>
+    <id>http://RayHightower.com/blog/2015/01/02/no-windows-stronger-planes</id>
+    <content type="html"><![CDATA[<p>It is always good to start the new year with something inspirational. <a href="http://www.technicondesign.com/">Technicon Design</a> created a 3-minute video to demonstrate their IXION Windowless Jet Concept. Worth watching full screen.</p>
+
+<center><iframe name="windowlessjet" src="//player.vimeo.com/video/78458486" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
+
+
+<p>How can a plane with no windows offer better views for passengers?</p>
+
+<!--more-->
+
+
+<h3>Windows vs Fuselage Strength</h3>
+
+<p>When we add a window to the fuselage of an airplane, we reduce the strength of the fuselage. Glass is weaker than aluminum. So aircraft engineers need to make up for the lost strength. The engineers might add a support structure, thicken the aluminum, or try a different alloy.</p>
+
+<p>But when windows are eliminated, structural integrity is maintained. And the weight of the plane can be reduced because we can eliminate the extra supports.</p>
+
+<h3>How Do We See Without Windows</h3>
+
+<p>As shown in the Technicon video, views can be better without windows!  Cameras are mounted at strategic points on the outside of the plane. And the inner surface of the plane, the part that passengers can see, is covered with a display material. Computers take the images captured by the external cameras, and they translate that into images for display on the inner walls of the plane.</p>
+
+<p>The result: Passengers feel like they&rsquo;re flying in a glass plane. That&rsquo;s an idea best communicated through the Technicon video.</p>
+
+<h3>Applying Tech Across Industries</h3>
+
+<p>Processing power continues to fall in price. Flat panel monitors get less expensive each day. The window-less plane shows us what can happen when advances in one industry are applied to another. Blend these advances with a high-speed internet connection delivered via satellite, and the Internet of Things (IoT) takes a great leap forward. Cross-discipline engineering is exciting.</p>
+
+<p>Happy New Year!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Looking Inside the Pygments Plugin]]></title>
+    <link href="http://RayHightower.com/blog/2014/12/31/looking-inside-pygments/"/>
+    <updated>2014-12-31T16:18:29-06:00</updated>
+    <id>http://RayHightower.com/blog/2014/12/31/looking-inside-pygments</id>
+    <content type="html"><![CDATA[<p>This blog uses <a href="https://rubygems.org/gems/pygments.rb">pygments.rb</a> for syntax highlighting. Recently <code>pygments.rb</code> stopped working, so I had to dig inside to determine the problem and apply a solution.</p>
+
+<p>Full disclosure: Pygments didn&rsquo;t simply stop working. I applied updates related to Octopress and Lunr.js, and then it stopped working. So the root cause is me! Rather than back-out the updates, I decided to push forward because Lunr.js will improve the search experience for visitors. Search options will be discussed in a future post.</p>
+
+<h3>Starting With the Error Message</h3>
+
+<p>As with all <a href="http://octopress.org/">Octopress</a> based blogs, the <code>$ rake generate</code> command creates a new set of static pages every time the command gets run. Normally the process is smooth. Here&rsquo;s the error message that resulted this morning.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>rake generate
+</span><span class='line'>
+</span><span class='line'>...
+</span><span class='line'>
+</span><span class='line'>jekyll 2.0.3 <span class="p">|</span> Error:  Pygments can<span class="err">&#39;</span>t parse unknown language: &lt;/p&gt;.
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>What unknown language? Something was fishy. Fortunately, <code>pygments</code> is an open source plugin. Solving the problem was non-trivial, but doable.</p>
+
+<!--more-->
+
+
+<h3>Exploring Pygments Internals</h3>
+
+<p>Google, Stack Overflow, and the Octopress documentation gave clues on where to explore. Adding a few lines to <code>source/plugins/pygments_code.rb</code> provided insights on what <code>pygments</code> was &ldquo;thinking&rdquo;.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">require</span> <span class="s1">&#39;pygments&#39;</span>
+</span><span class='line'><span class="nb">require</span> <span class="s1">&#39;fileutils&#39;</span>
+</span><span class='line'><span class="nb">require</span> <span class="s1">&#39;digest/md5&#39;</span>
+</span><span class='line'>
+</span><span class='line'><span class="no">PYGMENTS_CACHE_DIR</span> <span class="o">=</span> <span class="no">File</span><span class="o">.</span><span class="n">expand_path</span><span class="p">(</span><span class="s1">&#39;../../.pygments-cache&#39;</span><span class="p">,</span> <span class="bp">__FILE__</span><span class="p">)</span>
+</span><span class='line'><span class="no">FileUtils</span><span class="o">.</span><span class="n">mkdir_p</span><span class="p">(</span><span class="no">PYGMENTS_CACHE_DIR</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">module</span> <span class="nn">HighlightCode</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">highlight</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="n">lang</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1"># Next three lines let us see what pygments &quot;thinks&quot;.</span>
+</span><span class='line'>    <span class="nb">print</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">rth_str = </span><span class="si">#{</span><span class="n">str</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'>    <span class="nb">print</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">rth_lang = </span><span class="si">#{</span><span class="n">lang</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'>    <span class="nb">print</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">rth_file = </span><span class="si">#{</span><span class="bp">__FILE__</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">&quot;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="o">.</span><span class="n">.</span><span class="o">.</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Observing the Results, Applying a Solution</h3>
+
+<p>Next step: Run <code>$ rake generate</code> and see what happens. Turns out that the lastest version of <code>pygments</code> halted for two reasons:</p>
+
+<ul>
+<li>Some of my older blog posts did not contain a space between the triple-backtick characters and the name of the language being highlighted. Earlier versions of <code>pygments</code> did not care, but the current version is a stickler.</li>
+<li><code>pygments</code> appears to want a blank line between any triple-backtick line and any other text in the blog post.</li>
+</ul>
+
+
+<p>Vim-fu allowed me to apply solutions with minimal manual work. And now <code>pygments</code> works well.</p>
+
+<p>On to search, to be discussed in a future blog post.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[OWC Thinks Ahead]]></title>
+    <link href="http://RayHightower.com/blog/2014/12/30/owc-thinks-ahead/"/>
+    <updated>2014-12-30T17:44:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2014/12/30/owc-thinks-ahead</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/owc_ssd.jpg' width='' height='' alt='MacBook Pro SSD, next to a nickel.' title='MacBook Pro SSD, next to a nickel.'><span class='caption-text'>MacBook Pro SSD, next to a nickel.</span></span>
+Every computer user has to deal with this at some point. Your machine runs out of storage space: hard drive, SSD, or whatever mass storage you happen to use. In my case, the 512GB SSD in my early 2013 MacBook Pro was over 90% full. Time for an upgrade.</p>
+
+<p>Fortunately (and contrary to what the Apple literature says) it is possible to upgrade the SSD in a MacBook Pro. RAM is different because the MBP&rsquo;s RAM is soldered to the logic board. But the SSD plugs into a socket. The SSD upgrade path is well-documented on YouTube and elsewhere.</p>
+
+<!--more-->
+
+
+<h3>Ordered from OWC</h3>
+
+<p>Ordering an SSD from Amazon would have saved a few bucks, but I chose <a href="https://www.macsales.com/">Other World Computing</a> instead. Past experience with OWC has been outstanding. The company consistently offers high-performance gear. It was all a matter of trust.</p>
+
+<p>On the day my 960GB SSD arrived, I smacked myself on the forehead. I realized (too late) that I forgot to order a screwdriver for the special pentalobe screws that hold the MacBook Pro together.</p>
+
+<h3>Screwdrivers Included</h3>
+
+<p>But&hellip; When I opened the SSD box from OWC, I was pleasantly surprised. A pentalobe screwdriver was included in the SSD kit, along with a six-point Torx screwdriver. Both screwdrivers are needed for the installation. Thanks to OWC’s forethought, my upgrade plans moved forward undisturbed.</p>
+
+<p>The hardest part of the SSD upgrade was waiting <em>patiently</em> for the Time Machine restoration to complete.</p>
+
+<p>OWC thinks ahead.</p>
+
+<h3>Lesson Learned</h3>
+
+<p><a href="http://wisdomgroup.com">WisdomGroup</a> turned twenty years old today. Whenever I experience outstanding service from a company, I pause to think about how to apply the lesson to WisdomGroup and all of our related ventures. The lesson in this case: Think ahead. Anticipate the needs of the customer. And fulfill those needs.</p>
+
+<p>Thanks OWC for making the SSD upgrade process as seamless as possible. And thanks for the business lesson, too!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Too Soon for Alpha Centauri]]></title>
+    <link href="http://RayHightower.com/blog/2014/12/22/too-soon-for-alpha-centauri/"/>
+    <updated>2014-12-22T12:07:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2014/12/22/too-soon-for-alpha-centauri</id>
+    <content type="html"><![CDATA[<p>Bad news&#58; I have decided to cancel <a href="http://rubycaribe.com">RubyCaribe</a> for 2015. Ticket sales are insufficient to cover the cost of the event. <del>Every person who bought a ticket will receive a full refund.</del> All tickets sales have been refunded.</p>
+
+<p>Barbados is a beautiful island nation with welcoming people, a university that leads in multiple technical areas, and a thriving economy. The RubyCaribe (pronounced ka-REEB) organizers will make the event happen in some form at some point in the future. Just not now.</p>
+
+<!--more-->
+
+
+<p></p>
+
+<h3>Alpha Centauri</h3>
+
+<p>NASA has launched successful missions to the Moon, Mars, and other bodies in our solar system. NASA would like to visit Alpha Centauri, 4.4 light years away. But they will only launch an Alpha Centauri mission after key prerequisites (maybe the theoretical <a href="http://en.wikipedia.org/wiki/Alcubierre_drive">Alcubierre drive</a>) are in place.</p>
+
+<p>It’s too soon for Alpha Centauri, right now. But one day, humans will get there.</p>
+
+<p>The RubyCaribe team has achieved eight years of success with <a href="http://windycityrails.org">WindyCityRails</a>, <a href="http://chicagoruby.org">ChicagoRuby</a>, and events focused on NoSQL and mobile technologies. With that track record, I believed that we could make RubyCaribe work in 2015. But reality disagrees with me.</p>
+
+<p>It&rsquo;s too soon for RubyCaribe, right now. But we will get there.</p>
+
+<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/LinuxBarbados-tux-logo_300.png' width='' height='' alt='LinuxBarbados.org' title='LinuxBarbados.org'><span class='caption-text'>LinuxBarbados.org</span></span></p>
+
+<h3>Upside: LinuxBarbados</h3>
+
+<p>While planning RubyCaribe, our team began an amazing relationship with the University of the West Indies at Cave Hill (<a href="http://www.cavehill.uwi.edu/">UWI</a>). We collaborated with UWI to create <a href="http://linuxbarbados.org">LinuxBarbados</a>. The monthly LinuxBarbados meetings are an exciting way to grow your open source software and hardware skills. Discussions cover Linux, Parallella, Raspberry Pi, Ruby, Java&hellip; and more.</p>
+
+<p>If you&rsquo;re in Barbados, you can attend in person on the UWI campus. If you&rsquo;re not in Barbados, you can still participate because every LinuxBarbados meeting includes a live video conference. Sign up at <a href="http://linuxbarbados.org">LinuxBarbados.org</a> if you&rsquo;d like to know more.</p>
+
+<h3>Next Steps for RubyCaribe</h3>
+
+<p>Moving forward, our team will take an Alpha Centauri approach to RubyCaribe. We will get there. And we invite you to enjoy the journey with us.</p>
+
+<p>Do you have thoughts about RubyCaribe? If so, you&rsquo;re welcome to <a href="http://RayHightower.com/contact">share via the contact form</a>.</p>
+
+<ul>
+<li>What do you like or dislike about RubyCaribe?</li>
+<li>What do you think about the content?</li>
+<li>What do you think about the price?</li>
+<li>What do you think about the location?</li>
+<li>Is there anything else you would like to share?</li>
+</ul>
+
+
+<p>Anonymous feedback is fine. Just put dummy values in the appropriate fields.</p>
+
+<p>Thanks for listening. We look forward to seeing you at  <a href="http://chicagoruby.org">ChicagoRuby</a> and <a href="http://windycityrails.org">WindyCityRails</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Git Vulnerability on Mac OS X and Windows]]></title>
+    <link href="http://RayHightower.com/blog/2014/12/18/git-vulnerability-on-mac-os-x/"/>
+    <updated>2014-12-18T17:00:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2014/12/18/git-vulnerability-on-mac-os-x</id>
+    <content type="html"><![CDATA[<p>Today the <a href="http://git-scm.com/">Git</a> core team announced a security vulnerability and a corresponding fix. Hats off to the <a href="http://mercurial.selenic.com/">Mercurial</a> team (yes, Mercurial!) for finding the problem. Hats off to the <code>Git</code> team for making the announcement, and for delivering a fix so quickly.</p>
+
+<h3>What’s the Problem?</h3>
+
+<p>If your Git installation remains un-patched, then a malicious person could over-write the <code>.git/config</code> directory in one of your repositories. This would allow them to alter your Git history and make changes in the repo without your knowledge. <a href="http://article.gmane.org/gmane.linux.kernel/1853266">Details</a>.</p>
+
+<p>The vulnerability exists on Mac OS X and Microsoft Windows. This article will discuss solving the problem on Mac OS X only, since that is my primary development platform.</p>
+
+<!--more-->
+
+
+<p>Mac and Windows users are exposed because their file systems are not case-sensitive by default. Linux users who use a case-sensitive file system are protected. But Linux users might want to apply the patch anyway because (as stated by the Git core team):</p>
+
+<blockquote><p>Even though the issue may not affect Linux users, if you are a hosting service whose users may fetch from your service to Windows or Mac OS X machines, you are strongly encouraged to update to protect such users who use existing versions of Git.
+~Git Core Team</p></blockquote>
+
+<h3>Is My Machine Vulnerable?</h3>
+
+<p>I know that my machine was vulnerable because I was running an un-patched version of Git, as seen below.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>git --version
+</span><span class='line'>git version 2.1.3
+</span><span class='line'>
+</span><span class='line'>~<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<h3>How to Upgrade</h3>
+
+<p><a href="http://RayHightower.com/blog/2014/02/12/homebrew-fundamentals/">Homebrew</a> makes it easy to install and maintain Git. First, update Homebrew&hellip;</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>brew update
+</span><span class='line'>Updated Homebrew from d243310d to a6ab9f13.
+</span><span class='line'><span class="o">==</span>&gt; New Formulae
+</span><span class='line'>abi-compliance-checker        deis                     glbinding
+</span><span class='line'>asciinema             distribution                rbenv-bundle-exec
+</span><span class='line'>ctunnel                  game-music-emu           <span class="nv">restund</span>
+</span><span class='line'><span class="o">==</span>&gt; Updated Formulae
+</span><span class='line'>abcm2ps                         jags
+</span><span class='line'>afl-fuzz                    jansson
+</span><span class='line'>
+</span><span class='line'>...
+</span><span class='line'>
+</span><span class='line'>~<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>Then, upgrade Git&hellip;</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>brew upgrade <span class="nv">git</span>
+</span><span class='line'><span class="o">==</span>&gt; Upgrading 1 outdated package, with result:
+</span><span class='line'>git 2.2.1
+</span><span class='line'><span class="o">==</span>&gt; Upgrading <span class="nv">git</span>
+</span><span class='line'><span class="o">==</span>&gt; Downloading https://downloads.sf.net/project/machomebrew/Bottles/git-2.2.1.y
+</span><span class='line'><span class="c">######################################################################## 100.0%</span>
+</span><span class='line'><span class="o">==</span>&gt; Pouring git-2.2.1.yosemite.bottle.tar.gz
+</span><span class='line'><span class="o">==</span>&gt; Caveats
+</span><span class='line'>The OS X keychain credential helper has been installed to:
+</span><span class='line'>  /usr/local/bin/git-credential-osxkeychain
+</span><span class='line'>
+</span><span class='line'>The <span class="s2">&quot;contrib&quot;</span> directory has been installed to:
+</span><span class='line'>  /usr/local/share/git-core/contrib
+</span><span class='line'>
+</span><span class='line'>Bash completion has been installed to:
+</span><span class='line'>  /usr/local/etc/bash_completion.d
+</span><span class='line'>
+</span><span class='line'>zsh completion has been installed to:
+</span><span class='line'>  /usr/local/share/zsh/site-functions
+</span><span class='line'><span class="o">==</span>&gt; Summary
+</span><span class='line'>    /usr/local/Cellar/git/2.2.1: 1356 files, 31M
+</span><span class='line'>
+</span><span class='line'>~<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>&hellip; and finally, verify that the patched version is in use.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>git --version
+</span><span class='line'>git version 2.2.1
+</span><span class='line'>
+</span><span class='line'>~<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<h3>Avoid Conflicts With Apple&rsquo;s Git</h3>
+
+<p>As <a href="https://twitter.com/kcocev">Kristjan Cocev</a> notes in the comments below, Mac OS X comes with its own Git installation. By the time you bought the machine, that pre-installed version is probably out of date. My pre-installed Git was:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>/usr/bin/git --version
+</span><span class='line'>git version 1.9.3 <span class="o">(</span>Apple Git-50<span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'>~<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>Apple&rsquo;s pre-installed Git isn&rsquo;t bad, but here&rsquo;s the problem. Depending on how your <code>PATH</code> variable is setup, there might be a conflict between Apple-installed Git and the one you installed via Homebrew.</p>
+
+<p>Here are two alternatives for fixing the conflict before it causes problems.</p>
+
+<ol>
+<li>Change your <code>PATH</code> variable so that Homebrew-installed Git is executed long before Apple-installed Git gets reached, OR&hellip;</li>
+<li>Rename Apple-installed Git as follows:</li>
+</ol>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>sudo mv /usr/bin/git /usr/bin/git-apple
+</span><span class='line'>Password:
+</span><span class='line'>
+</span><span class='line'>~<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>So now, if you want to use Apple&rsquo;s pre-installed Git (unlikely) you can simply navigate to <code>/usr/bin/git-apple</code>.</p>
+
+<h3>Open Source Rocks</h3>
+
+<p>Again, hats off to everyone in the open source community who pulled together to make this fix happen!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ignite RubyConf 2014]]></title>
+    <link href="http://RayHightower.com/blog/2014/11/16/ignite-rubyconf-2014/"/>
+    <updated>2014-11-16T15:01:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2014/11/16/ignite-rubyconf-2014</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/ignite_logo_200.jpg' width='' height='' alt='Ignite. 15 seconds per slide.' title='Ignite. 15 seconds per slide.'><span class='caption-text'>Ignite. 15 seconds per slide.</span></span>
+<a href="http://igniteshow.com/">Ignite</a> is a presentation format where the slides advance automatically every 15 seconds whether the presenter is ready or not. Twenty slides, 15 seconds each, five minutes total. Presenters are challenged to present their ideas quickly and clearly before the time runs out.</p>
+
+<p>Ignite is similar to <a href="http://www.pechakucha.org">Pecha Kucha</a>. The two formats differ only in slide duration (20 seconds per slide with Pecha Kucha).</p>
+
+<!--more-->
+
+
+<p><a href="http://www.sdruby.org/">SDRuby</a> ran an Ignite event on the day before RubyConf 2014. Slides from my OpenROV presentation at Ignite RubyConf 2014 appear below.</p>
+
+<script async class="speakerdeck-embed" data-id="573c89704e88013264a612c8f4a94aec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+
+<p>&nbsp;<br/>
+&nbsp;<br/>
+Thanks SDRuby for hosting the Ignite event!</p>
+
+<p>If you like the idea of hacking on Ruby <em>and</em> OpenROV, check out <a href="http://rubycaribe.com">RubyCaribe</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[ChicagoRuby Expands to North Shore]]></title>
+    <link href="http://RayHightower.com/blog/2014/10/30/chicagoruby-expands-to-north-shore/"/>
+    <updated>2014-10-30T14:51:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/10/30/chicagoruby-expands-to-north-shore</id>
+    <content type="html"><![CDATA[<p>Long-time observers of ChicagoRuby know that the group is always striving to achieve more. Latest move: ChicagoRuby is now hosting a monthly meetup on Chicago’s North Shore. The first meeting of ChicagoRuby: North Shore will be held on Saturday, December 6, 2014 at 10:30am. Visit <a href="http://www.meetup.com/ChicagoRuby/events/216193202/">Meetup.com</a> for details and to RSVP.</p>
+
+<!--more-->
+
+
+<h3>Why the North Shore?</h3>
+
+<p>Why expand to Chicago’s North Shore? One reason: Several ChicagoRuby members live there, and travelling to meetings downtown and in Elmhurst can be quite a haul.</p>
+
+<p>The bigger reason: Two members have stepped up to manage the north shore operation. <a href="http://www.meetup.com/ChicagoRuby/members/61690512/">Doug Harman</a> and <a href="http://www.meetup.com/ChicagoRuby/members/13463131/">Stu Gerstein</a> have been active in Elmhurst for a long time. They were chosen as organizers because they are vocal and they have already done the preliminary leg work.</p>
+
+<p>That&rsquo;s how we roll in ChicagoRuby. Many years ago, <a href="https://twitter.com/ginnyhendry">Ginny Hendry</a> demonstrated that if you push for a new activity in ChicagoRuby (like hack nights) you might end up running it!</p>
+
+<h3>Exciting Year</h3>
+
+<p>2014 has proven to be an exciting year for ChicagoRuby. So far, the group has…</p>
+
+<ul>
+<li>Collaborated with the University of the West Indies at Cave Hill, Barbados to form <a href="http://linuxbarbados.org">LinuxBarbados</a>.</li>
+<li>Built alliances with top-notch developers in multiple countries to create <a href="http://rubycaribe.com">RubyCaribe</a>.</li>
+<li>Expanded the monthly Chicago-area activities to four per month.</li>
+<li>Grown the organizer team to ten (10) members.</li>
+</ul>
+
+
+<p>Looking forward to more!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Geekfest &amp; OpenROV]]></title>
+    <link href="http://RayHightower.com/blog/2014/10/21/geekfest-and-openrov/"/>
+    <updated>2014-10-21T09:44:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/10/21/geekfest-and-openrov</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/geekfest.png' width='' height='' alt='Geekfest: Tuesdays at Groupon.' title='Geekfest: Tuesdays at Groupon.'><span class='caption-text'>Geekfest: Tuesdays at Groupon.</span></span>
+<a href="http://www.meetup.com/Geekfest/events/207936312/">Geekfest</a> is a weekly event hosted by Groupon&rsquo;s engineering team. Every Tuesday at lunchtime, the company invites members of the tech community to present topics that are interesting to a technical audience.</p>
+
+<p>I wish to express my thanks to Groupon for inviting me to present <a href="http://RayHightower.com/blog/2014/06/16/citizen-science-with-openrov/">OpenROV</a> at today&rsquo;s Geekfest.</p>
+
+<!--more-->
+
+
+<p>Slides appear below. Video will be posted as soon as it becomes available. Special thanks to <a href="http://chelseatroy.com/2014/10/21/geekfest-ray-hightower-dumps-a-robot-into-lake-michigan/">Chelsea Troy</a> for creating a real-time blog post about the presentation.</p>
+
+<center><iframe src="https://player.vimeo.com/video/123900588" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
+
+
+
+
+<center><script async class="speakerdeck-embed" data-id="e8ed21a03b5d013274bd1297e85160ca" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script></center>
+
+
+
+]]></content>
+  </entry>
+  
+</feed>

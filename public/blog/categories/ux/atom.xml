@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ux | RayHightower.com]]></title>
+  <link href="http://RayHightower.com/blog/categories/ux/atom.xml" rel="self"/>
+  <link href="http://RayHightower.com/"/>
+  <updated>2015-04-02T15:42:37-05:00</updated>
+  <id>http://RayHightower.com/</id>
+  <author>
+    <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Context Changes Everything]]></title>
+    <link href="http://RayHightower.com/blog/2015/01/22/context-changes-everything/"/>
+    <updated>2015-01-22T17:48:08-06:00</updated>
+    <id>http://RayHightower.com/blog/2015/01/22/context-changes-everything</id>
+    <content type="html"><![CDATA[<p>There are some cases where time zone information is absolutely critical. For example: When scheduling a video conference that crosses national boundaries.</p>
+
+<p>A few hours ago, Google sent me a reminder about today&rsquo;s <a href="http://linuxbarbados.org">LinuxBarbados</a> meeting. The group meets via video conferencing software over the web. Google&rsquo;s reminder was confusing because it showed the time without the time zone (screenshot below). LinuxBarbados is based in the Caribbean, and some of the members participate from other time zones.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/GH_time_zone_arrow.png' width='' height='' alt='What time is it when the time zone is unknown?' title='What time is it when the time zone is unknown?'><span class='caption-text'>What time is it when the time zone is unknown?</span></span></p>
+
+<p>Google&rsquo;s automated reminder said <code>3pm - 4pm</code> with no time zone reference. How confusing! Members of the group received the same automated reminder with the same information, regardless of time zone. A small change, displaying the time as <code>3pm - 4pm (CST)</code> would solve the problem.</p>
+
+<!--more-->
+
+
+<h3>Other Context Examples</h3>
+
+<p>When people speak with each other directly, context is implied. But when communication happens in printed form, it&rsquo;s helpful to have the context in print, too. For example:</p>
+
+<ul>
+<li>Walking down the street, you see a poster advertising a concert on January 29th. No year is shown. Is this an old poster for a concert that happened last year on Jan 29th? Or is the event happening next week?</li>
+<li>A restaurant menu offers delivery service. Just call the number, and order your food. The phone number is seven digits long, with no area code. Most customers would abandon the menu in favor of a restaurant with more complete information.</li>
+<li>Following the train of thought in the previous example: Since phone service has fallen in price, many people call internationally on a more regular basis. A complete phone number should include the country code.</li>
+</ul>
+
+
+<p>Context changes everything. Something all of us need to remember.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Henry Ford's Faster Horse]]></title>
+    <link href="http://RayHightower.com/blog/2014/01/15/henry-ford-faster-horse/"/>
+    <updated>2014-01-15T13:49:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2014/01/15/henry-ford-faster-horse</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/ford-model-t-1910.jpg' width='' height='' alt='1910 Ford Model T' title='1910 Ford Model T'><span class='caption-text'>1910 Ford Model T</span></span></p>
+
+<blockquote><p>If I had asked people what they wanted, they would have asked for a faster horse.</p>
+
+<p>~Henry Ford</p></blockquote>
+
+<p>The above Henry Ford quote is often cited in presentations about innovation. The point of the quote: An inventor who listens to customers too closely, without observing customer behavior, will reap tiny improvements at best. Ford ignored the request for &ldquo;a faster horse&rdquo;, and that is how the Ford Motor Company became a leader in the early auto industry.</p>
+
+<p>That&rsquo;s one way to interpret Ford&rsquo;s quote. Last night, I was introduced to another view.</p>
+
+<!--more-->
+
+
+<h3>Parse the Quote Differently, Don&rsquo;t Ignore it</h3>
+
+<p>Last night&rsquo;s <a href="http://www.ixdachicago.org">IxDA Chicago</a> meeting featured a presentation by <a href="http://chris-holmes.com">Chris Holmes</a>, who shared a different view of the Ford quote. If we focus on improving the speed of horses (perhaps through nutrition or better horse shoes) very little improvement can be achived.</p>
+
+<p>But something interesting happens when we parse the quote differently. The adjective <em>faster</em> reveals the customer&rsquo;s true need. The noun <em>horse</em> is the customer&rsquo;s &ldquo;solution&rdquo; based on what they currently know about the world. For the innovator, <em>faster</em> stands out. Focusing on <em>faster</em> leads to innovation.</p>
+
+<h3>Focus on Faster</h3>
+
+<p><em>Faster</em> tells us that we can stretch beyond our current thinking and consider other modes of transportation. Focusing on <em>faster</em> led to the beginning of the automobile industry.</p>
+
+<p>Customers are communicating their desires all the time. We need to listen carefully and parse well. Thanks IxDA Chicago and Chris Holmes for the lesson.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Leap Motion: Advanced User Interface]]></title>
+    <link href="http://RayHightower.com/blog/2013/01/07/leap-motion-advanced-user-interface/"/>
+    <updated>2013-01-07T11:56:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2013/01/07/leap-motion-advanced-user-interface</id>
+    <content type="html"><![CDATA[<p><a href="https://leapmotion.com/">Leap Motion</a> is a small device that lets users control their computers with simple hand gestures. The Leap Motion controller senses individual hand and finger movements. This is not a touch interface, because your hands never touch anything.</p>
+
+<p>WisdomGroup is a member of the Leap Motion Developer Program. Check out this 1-minute video.</p>
+
+<center><iframe name="leapmotion" width="560" height="315" src="http://www.youtube.com/embed/_d6KuiuteIA?rel=0" frameborder="0" allowfullscreen></iframe></center>
+
+
+
+
+<!--more-->
+
+
+<h4>Why Leap Motion?</h4>
+
+<p>Computers became easier to use when the mouse grew popular in the 1980s. Touchscreens offer another solution for the interaction riddle. The Leap Motion controller looks like another solution.</p>
+
+<p>It&rsquo;s still very early for Leap Motion. New applications will be born through this device. Stay tuned!</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: vim | RayHightower.com]]></title>
+  <link href="http://RayHightower.com/blog/categories/vim/atom.xml" rel="self"/>
+  <link href="http://RayHightower.com/"/>
+  <updated>2015-04-02T15:42:37-05:00</updated>
+  <id>http://RayHightower.com/</id>
+  <author>
+    <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Fixing MacVim on OS X Mavericks]]></title>
+    <link href="http://RayHightower.com/blog/2014/03/04/fixing-macvim-on-osx-mavericks/"/>
+    <updated>2014-03-04T14:48:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2014/03/04/fixing-macvim-on-osx-mavericks</id>
+    <content type="html"><![CDATA[<p>Experience told me to delay upgrading to OS X Mavericks for as long as possible because the upgrade would likely break my dev environment. Sure enough, the upgrade broke <a href="/blog/2013/01/12/why-i-use-vim/">MacVim</a>.</p>
+
+<p>&#8220;` bash</p>
+
+<p>~$ which mvim</p>
+
+<p>~$</p>
+
+<p>&#8220;`</p>
+
+<p>The &lsquo;nix <code>which</code> command returned a null response when asked about MacVim. Not cool, Mavericks!</p>
+
+<!--more-->
+
+
+<p>Fortunately, I’m running <a href="/blog/2014/02/12/homebrew-fundamentals/">Homebrew</a>. After the standard <code>brew doctor</code> and <code>brew update</code>, the following resolved the MacVim problem:</p>
+
+<p>&#8220;` bash</p>
+
+<p>~$ brew uninstall macvim
+Uninstalling /usr/local/Cellar/macvim/7.4-70&hellip;</p>
+
+<p>~$</p>
+
+<p>&#8220;`</p>
+
+<p>followed by…</p>
+
+<p>&#8220;` bash</p>
+
+<p>~$ brew install macvim
+==> Downloading <a href="https://github.com/b4winckler/macvim/archive/snapshot-72.tar.gz">https://github.com/b4winckler/macvim/archive/snapshot-72.tar.gz</a></p>
+
+<h6>################################################################## 100.0%</h6>
+
+<p>==> ./configure &mdash;with-features=huge &mdash;enable-multibyte &mdash;with-macarchs=x86_64 &mdash;enable-perlinterp &mdash;enable-rubyinterp &mdash;enable-tcli
+==> make
+==> Caveats
+.app bundles were installed.
+Run <code>brew linkapps</code> to symlink these to /Applications.
+==> Summary
+🍺  /usr/local/Cellar/macvim/7.4-72: 1799 files, 28M, built in 37 seconds</p>
+
+<p>~$</p>
+
+<p>&#8220;`</p>
+
+<p>And now…</p>
+
+<p>&#8220;` bash</p>
+
+<p>~$ which mvim
+/usr/local/bin/mvim</p>
+
+<p>~$</p>
+
+<p>&#8220;`</p>
+
+<p>Whew. Homebrew saves the day again!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[:TOhtml - Using Vim Code Snippets in Keynote Presentations]]></title>
+    <link href="http://RayHightower.com/blog/2013/10/31/tohtml-using-vim-code-snippets-in-keynote-presentations/"/>
+    <updated>2013-10-31T16:13:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/10/31/tohtml-using-vim-code-snippets-in-keynote-presentations</id>
+    <content type="html"><![CDATA[<p>While finishing my presentation for the upcoming <a href="http://chippewavalleycodecamp.com/">Chippewa Valley Code Camp</a>, I decided to add some blocks of code to my slides. I forgot the name of the tool I used for my last slide deck, and it took several minutes of Google-fu to find it.</p>
+
+<p>Google led me back to <code>:TOhtml</code>. Whew! I&rsquo;m documenting <code>:TOhtml</code> here to avoid wasting time with a future search.</p>
+
+<!--more-->
+
+
+<h3>Start With a Block of Code</h3>
+
+<p>Fire up Vim and drop the block of code you want to convert into a new Vim buffer. In this example, I&rsquo;ve created a sample <a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a> OS X app, and I want to show the contents of the Rakefile.</p>
+
+<p>&#8220;` ruby</p>
+
+<h1>&ndash;<em>&ndash; coding: utf-8 &ndash;</em>&ndash;</h1>
+
+<p>$:.unshift(&ldquo;/Library/RubyMotion/lib&rdquo;)
+require &lsquo;motion/project/template/osx&rsquo;</p>
+
+<p>begin
+  require &lsquo;bundler&rsquo;
+  Bundler.require
+rescue LoadError
+end</p>
+
+<p>Motion::Project::App.setup do |app|
+  # Use `rake config&#8217; to see complete project settings.
+  app.name = &lsquo;EjectDisks&rsquo;
+  app.info_plist[&lsquo;LSUIElement&rsquo;] = true
+end
+&#8220;`</p>
+
+<p>Next, visually select the lines you want to convert. You can do this with shift-V, or with the (gasp!) mouse. Or if you want to convert the entire file, enter <code>:TOhtml</code> in the command area. Vim will convert the highlighted text into HTML in a new buffer. Here&rsquo;s the result:</p>
+
+<p>&#8220;` html
+&lt;!DOCTYPE HTML PUBLIC &ldquo;&ndash;//W3C//DTD HTML 4.01//EN&rdquo; &ldquo;<a href="http://www.w3.org/TR/html4/strict.dtd">http://www.w3.org/TR/html4/strict.dtd</a>&rdquo;>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>~/Code/Ruby/RubyMotion/EjectDisks/Rakefile.html</title>
+<meta name="Generator" content="Vim/7.4">
+<meta name="plugin-version" content="vim7.4_v1">
+<meta name="syntax" content="ruby">
+<meta name="settings" content="number_lines,use_css,no_foldcolumn,expand_tabs,line_ids,prevent_copy=">
+<meta name="colorscheme" content="darkspectrum"></p>
+
+
+
+
+
+<script type='text/javascript'>
+<!--
+
+/* function to open any folds containing a jumped-to line before jumping to it */
+function JumpToLine()
+{
+  var lineNum;
+  lineNum = window.location.hash;
+  lineNum = lineNum.substr(1); /* strip off '#' */
+
+  if (lineNum.indexOf('L') == -1) {
+    lineNum = 'L'+lineNum;
+  }
+  lineElem = document.getElementById(lineNum);
+  /* Always jump to new location even if the line was hidden inside a fold, or
+   * we corrected the raw number to a line ID.
+   */
+  if (lineElem) {
+    lineElem.scrollIntoView(true);
+  }
+  return true;
+}
+if ('onhashchange' in window) {
+  window.onhashchange = JumpToLine;
+}
+
+-->
+</script>
+
+
+<p></head>
+<body onload='JumpToLine();'></p>
+
+<pre id='vimCodeElement'>
+<span id="L1" class="LineNr"> 1 </span><span class="Comment"># -*- coding: utf-8 -*-</span>
+<span id="L2" class="LineNr"> 2 </span><span class="Identifier">$:</span>.unshift(<span class="Special">&quot;</span><span class="String">/Library/RubyMotion/lib</span><span class="Special">&quot;</span>)
+<span id="L3" class="LineNr"> 3 </span><span class="PreProc">require</span> <span class="Special">'</span><span class="String">motion/project/template/osx</span><span class="Special">'</span>
+<span id="L4" class="LineNr"> 4 </span>
+<span id="L5" class="LineNr"> 5 </span><span class="Statement">begin</span>
+<span id="L6" class="LineNr"> 6 </span>  <span class="PreProc">require</span> <span class="Special">'</span><span class="String">bundler</span><span class="Special">'</span>
+<span id="L7" class="LineNr"> 7 </span>  <span class="Type">Bundler</span>.require
+<span id="L8" class="LineNr"> 8 </span><span class="Statement">rescue</span> <span class="Type">LoadError</span>
+<span id="L9" class="LineNr"> 9 </span><span class="Statement">end</span>
+<span id="L10" class="LineNr">10 </span>
+<span id="L11" class="LineNr">11 </span><span class="Type">Motion</span>::<span class="Type">Project</span>::<span class="Type">App</span>.<span class="Statement">setup</span> <span class="Statement">do</span> |<span class="Identifier">app</span>|
+<span id="L12" class="LineNr">12 </span>  <span class="Comment"># Use `rake config' to see complete project settings.</span>
+<span id="L13" class="LineNr">13 </span>  app.name = <span class="Special">'</span><span class="String">EjectDisks</span><span class="Special">'</span>
+<span id="L14" class="LineNr">14 </span>  app.info_plist[<span class="Special">'</span><span class="String">LSUIElement</span><span class="Special">'</span>] = <span class="Constant">true</span>
+<span id="L15" class="LineNr">15 </span><span class="Statement">end</span>
+</pre>
+
+
+<p></body>
+</html></p>
+
+<!-- vim: set foldmethod=manual : -->
+
+
+<p>&#8220;`</p>
+
+<p>Save the new buffer as <code>~/Desktop/convertedstuff.html</code> or any other file name that you choose. In this case, I chose:</p>
+
+<p><code>
+:w ~/Desktop/convertedrakefile.html
+</code></p>
+
+<p>Open the converted file in a web browser.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/rakefile-browser.png' width='' height='' alt='Rakefile in Chrome.' title='Rakefile in Chrome.'><span class='caption-text'>Rakefile in Chrome.</span></span></p>
+
+<p>Copy and paste the text from the browser into Keynote.</p>
+
+<h3>Washed Out Code?</h3>
+
+<p>If the code looks washed out when you paste it into Keynote, you have a few alternatives:</p>
+
+<ul>
+<li>Start with a different theme in Vim at the beginning, or</li>
+<li>Darken/lighten the background in Keynote by using the Keynote inspector.</li>
+</ul>
+
+
+<h3>The Finished Slide</h3>
+
+<p>Here&rsquo;s what the finished product looks like. All the clarity of syntax-highlighted text. You can even adjust font size at will using the Keynote inspector. All set for the presentation.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/osxfinished.png' width='' height='' alt='The final snippet, in Keynote.' title='The final snippet, in Keynote.'><span class='caption-text'>The final snippet, in Keynote.</span></span></p>
+
+<h3>Easier Way?</h3>
+
+<p>Can this process be simplified? If you know the answer, feel free to mention it in the comments below. Thanks!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ack 2.0: Written in Perl, Useful With Ruby]]></title>
+    <link href="http://RayHightower.com/blog/2013/04/20/ack-written-in-perl-useful-with-ruby/"/>
+    <updated>2013-04-20T17:12:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/04/20/ack-written-in-perl-useful-with-ruby</id>
+    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/ack.png" align="right" height="237" width="230" alt="Ack Linux Mac OS X" title="Ack Linux Mac OS X"></p>
+
+<p><a href="http://beyondgrep.com/">Ack</a> is an open source command line tool that lets developers search large trees of source code very quickly. If you are looking for a method definition in a haystack of files, Ack will find that needle for you. Many devs regard Ack as a replacement for <a href="http://en.wikipedia.org/wiki/Grep">grep</a>.</p>
+
+<p>The Elmhurst <a href="http://chicagoruby.org">ChicagoRuby</a> meetings are always a source of unexpected learning. Today ChicagoRuby welcomed <a href="http://twitter.com/petdance">Andy Lester</a>, creator of Ack. Andy released Ack 2.0 two days ago. He shared some of the latest features in an impromptu demo.</p>
+
+<!--more-->
+
+
+<h4>Why Ack?</h4>
+
+<p>Have you ever been working on a project, only to be interrupted when you need to look for something? It could be a method name, a variable declaration, or a string of text in a comment. A minor distraction costs you the time it takes to search plus the time required to re-focus.</p>
+
+<p>All of us are more productive when we stay <em>in the zone</em>. Ack helps devs to maintain focus and thereby produce better results.</p>
+
+<h4>First, Install Perl</h4>
+
+<p>Ack requires the <a href="http://en.wikipedia.org/wiki/Perl">Perl</a> programming language. Perl comes pre-installed on Mac OS X and most Linux distros. If you&rsquo;re running on a &lsquo;nix platform, you probably have Perl already.</p>
+
+<p>Windows installations are beyond the scope of this article. If you&rsquo;re running Windows, you might consider a Linux VM for Ruby and Rails-related work.</p>
+
+<h4>Installing Ack on Mac OS X</h4>
+
+<p>Installing Ack is so easy that it almost feels wrong: Grab Ack in a single Perl file and drop it in your <code>~/bin/</code> directory. That&rsquo;s it.</p>
+
+<p>Ack can also be installed via <a href="http://mxcl.github.io/homebrew/">Homebrew</a>, but I prefer the <em>drop it in ~/bin</em> installation since everything is contained in one file. Here&rsquo;s a more detailed version of the steps:</p>
+
+<ol>
+<li>If you don&rsquo;t have one already, create <code>~/bin/</code> as a subdirectory of your home directory.</li>
+<li>Grab a the single-file copy of Ack from <a href="http://beyondgrep.com/">http://beyondgrep.com/ </a></li>
+<li>Drop the single-file copy of Ack into a file called <code>~/bin/ack</code></li>
+<li>Make sure that <code>$HOME/bin:</code> appears at the beginning of your <code>$PATH</code> environment variable.</li>
+</ol>
+
+
+<p>At this point you should be running Ack v2.0 or later. To verify:</p>
+
+<p>&#8220;` bash</p>
+
+<p>~/bin$ ack &mdash;version
+ack 2.02 (git commit f3c8827)
+Running under Perl 5.12.4 at /usr/bin/perl</p>
+
+<p>Copyright 2005-2013 Andy Lester.</p>
+
+<p>This program is free software.  You may modify or distribute it
+under the terms of the Artistic License v2.0.</p>
+
+<p>~/bin$</p>
+
+<p>&#8220;`</p>
+
+<p>Installation complete. Now, let&rsquo;s take Ack for a spin.</p>
+
+<h4>Using Ack at the Command Line</h4>
+
+<p>For a sample project, let&rsquo;s use <code>demo_app</code> from Michael Hartl&rsquo;s <a href="http://rubyonrailstutorial.com">Ruby on
+Rails Tutorial</a>. Imagine that you want
+to find every file in the project that references <code>user_id</code>. How would
+you do that?
+<img src="http://RayHightower.com/images/ack_user_id.png" align="center" height="650" width="887" alt="Ack command line demo" title="Ack command line demo"></p>
+
+<p>Fast, clear, and highlighted in color. Bonus: If you&rsquo;re a Vim user,
+try <a href="https://github.com/mileszs/ack.vim">ack.vim</a> if you want to run Ack
+without leaving your editor.</p>
+
+<h4>The Bottom Line</h4>
+
+<p>Ack helps devs to find things quicker without leaving the zone. Try it!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Automatic ctags with RubyMotion and Vim]]></title>
+    <link href="http://RayHightower.com/blog/2013/02/12/automatic-ctags-with-rubymotion-and-vim/"/>
+    <updated>2013-02-12T19:35:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2013/02/12/automatic-ctags-with-rubymotion-and-vim</id>
+    <content type="html"><![CDATA[<p><a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a> includes a <code>rake</code> task that generates <a href="http://ctags.sourceforge.net/whatis.html">Exuberant Ctags</a>. To generate tags, run the following in the root directory of a RubyMotion project.</p>
+
+<p>&#8220;` bash</p>
+
+<p>$ rake ctags</p>
+
+<p>&#8220;`</p>
+
+<h4>Make Ctags Better With Automation</h4>
+
+<p>Ctags make writing code more efficient. But we shouldn&rsquo;t have to type <code>$ rake ctags</code> every time we create a new RubyMotion project. This article shows how to use a shell script to generate ctags automatically every time you create a new RubyMotion app.</p>
+
+<!-- more -->
+
+
+<h4>How Ctags Save Time</h4>
+
+<p>Ctags can save you time. For example, when creating a new class called <code>HomeViewController</code> that inherits from <code>UIViewController</code>, typing the first view characters of the superclass will produce the drop-down shown below.
+<img src="http://RayHightower.com/images/uiviewcontroller.png" align="center" width="800" height="433" title="ctags RubyMotion Vim" alt="ctags RubyMotion Vim"></p>
+
+<p>RubyMotion&rsquo;s implementation of ctags includes support for built-in iOS classes like UIViewController. The code completion and drop-downs offered by ctags will reduce keystrokes and errors, freeing the developer to focus on solving harder problems.</p>
+
+<h4>Creating the Script</h4>
+
+<p>Here&rsquo;s the script. You can use any name that suits you. My script is called <code>mmotion.command</code> (with two m&rsquo;s at the beginning to distinguish it from the standard <code>motion</code> command) and it&rsquo;s in the <code>~/bin/</code> directory.</p>
+
+<p>&#8220;` bash</p>
+
+<h1>!/bin/bash</h1>
+
+<h1>Create a RubyMotion app, change into the app&rsquo;s directory, and run ctags.</h1>
+
+<h1>Written by Raymond T. Hightower on February 12, 2013</h1>
+
+<p>echo &ldquo;Creating a new RubyMotion app called:&rdquo; $1
+motion create $1
+cd $1
+echo &ldquo;Creating ctags for the new RubyMotion app&hellip;&rdquo;
+rake ctags
+echo &ldquo;Opening the new app in Vim&hellip;&rdquo;
+mvim .
+echo &ldquo;To use the RubyMotion console, cd into the new directory:&rdquo; $1</p>
+
+<p>&#8220;`
+All of the work is done by by four lines. The remaining lines are comments or &lsquo;echos&rsquo; that tell the user what&rsquo;s happening while the script is running.</p>
+
+<h4>Running the Script</h4>
+
+<p>If <code>~/bin/</code> is in the <code>$PATH</code>, you can run the script with the following line command:</p>
+
+<p>&#8220;` bash</p>
+
+<p>$ mmotion.command [app name]</p>
+
+<p>&#8220;`</p>
+
+<p>Of course, we can still do better by leveraging the power of aliases in <code>~/.bash_profile</code>.</p>
+
+<h4>Adding an Alias to ~/.bash_profile</h4>
+
+<p>Dropping an alias into <code>~/.bash_profile</code> streamlines the process even more. You can use any alias you want as long as it doesn&rsquo;t confilct with another command. Here&rsquo;s what my alias looks like:</p>
+
+<p>&#8220;` bash</p>
+
+<p>alias mmotion=&ldquo;mmotion.command&rdquo;</p>
+
+<p>&#8220;`</p>
+
+<h4>Taking the Script for a Spin</h4>
+
+<p>Now we can build a new RubyMotion app called <code>NewApp</code> with these results:</p>
+
+<p>&#8220;` bash</p>
+
+<p>~/Code/Ruby/RubyMotion$ mmotion NewApp
+Creating a new RubyMotion app called: NewApp</p>
+
+<pre><code>Create NewApp
+Create NewApp/.gitignore
+Create NewApp/Rakefile
+Create NewApp/app
+Create NewApp/app/app_delegate.rb
+Create NewApp/resources
+Create NewApp/spec
+Create NewApp/spec/main_spec.rb
+</code></pre>
+
+<p>Creating ctags for the new RubyMotion app&hellip;
+Opening the new app in Vim&hellip;
+To use the RubyMotion console, cd into the new directory: NewApp</p>
+
+<p>~/Code/Ruby/RubyMotion$</p>
+
+<p>&#8220;`</p>
+
+<p>After the bash script ends, it lands in the directory from which it was originally run, no matter what directories it changed to during execution. This script will open the new app in Vim when it&rsquo;s done.</p>
+
+<p>From here, you can <code>$ cd NewApp</code> and type <code>rake</code> to run the app in the iOS simulator.</p>
+
+<h4>Feedback Welcome</h4>
+
+<p>If you notice any glitches with this approach, feel free to send me a &ldquo;heads up&rdquo; via the <a href="/contact/">contact</a> form on this site or in the blog comments below.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Why I Use Vim]]></title>
+    <link href="http://RayHightower.com/blog/2013/01/12/why-i-use-vim/"/>
+    <updated>2013-01-12T11:07:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2013/01/12/why-i-use-vim</id>
+    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/vim-osx.png" width="300" height="257" alt="Vim on OSX" title="Vim on OSX" align="right"/>
+My primary code-writing tools are:</p>
+
+<ul>
+<li><a href="https://developer.apple.com/xcode/">Xcode</a> for Objective-C.</li>
+<li><a href="http://code.google.com/p/macvim/">Vim</a> for Ruby, <a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a>, and everything else.</li>
+</ul>
+
+
+<p>Here are my reasons for using Vim, in priority order:</p>
+
+<!--more-->
+
+
+<ol>
+<li><p>Vim is everywhere. I can find Vim on any &#39;nix-based machine: Unix, Linux, or OSX. I spend most of my time on OSX and the Ubuntu distribution of Linux. When I started experimenting with <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a>, it was pleasant to know that Vim was already there. Having a common editor on multiple platforms makes it easier to bounce between them.</p></li>
+<li><p>Vim has history. I tried TextMate when I first heard about Ruby. Questions about TextMate&rsquo;s future caused me to look for an alternative. Vim&rsquo;s 20-year history and the <a href="http://www.vim.org/community.php">Vim community</a> convinced me that the editor would be available for many years to come.</p></li>
+<li><p>Vim is fast. I laughed out loud the first time I saw<br/>
+<code>NERDTree: Refreshing the root node.</code><br/>
+<code>This could take a while… DONE</code><br/>
+because it happened so quickly.</p></li>
+<li><p>Vim can be customized. If I want to tailor Vim for myself, I can do that through plugins and <code>.vimrc</code>. If I don&rsquo;t want to configure it myself, I can use a tool like <a href="https://github.com/carlhuda/janus">Janus</a> by Carl Lerche and Yehuda Katz . You may choose a different course. Choices are powerful!</p></li>
+</ol>
+
+
+<p>The developers I admire are always learning. More important: They are strategic about what they learn because learning takes time. Being productive with a highly available editor like Vim means that I don&rsquo;t have to spend time learning a new editor. Instead, I can focus my education in areas that benefit clients directly. That&rsquo;s why I use Vim.</p>
+]]></content>
+  </entry>
+  
+</feed>

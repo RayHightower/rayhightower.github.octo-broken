@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: iot | RayHightower.com]]></title>
+  <link href="http://RayHightower.com/blog/categories/iot/atom.xml" rel="self"/>
+  <link href="http://RayHightower.com/"/>
+  <updated>2015-04-02T15:42:37-05:00</updated>
+  <id>http://RayHightower.com/</id>
+  <author>
+    <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[No Windows. Stronger Planes.]]></title>
+    <link href="http://RayHightower.com/blog/2015/01/02/no-windows-stronger-planes/"/>
+    <updated>2015-01-02T23:34:04-06:00</updated>
+    <id>http://RayHightower.com/blog/2015/01/02/no-windows-stronger-planes</id>
+    <content type="html"><![CDATA[<p>It is always good to start the new year with something inspirational. <a href="http://www.technicondesign.com/">Technicon Design</a> created a 3-minute video to demonstrate their IXION Windowless Jet Concept. Worth watching full screen.</p>
+
+<center><iframe name="windowlessjet" src="//player.vimeo.com/video/78458486" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
+
+
+<p>How can a plane with no windows offer better views for passengers?</p>
+
+<!--more-->
+
+
+<h3>Windows vs Fuselage Strength</h3>
+
+<p>When we add a window to the fuselage of an airplane, we reduce the strength of the fuselage. Glass is weaker than aluminum. So aircraft engineers need to make up for the lost strength. The engineers might add a support structure, thicken the aluminum, or try a different alloy.</p>
+
+<p>But when windows are eliminated, structural integrity is maintained. And the weight of the plane can be reduced because we can eliminate the extra supports.</p>
+
+<h3>How Do We See Without Windows</h3>
+
+<p>As shown in the Technicon video, views can be better without windows!  Cameras are mounted at strategic points on the outside of the plane. And the inner surface of the plane, the part that passengers can see, is covered with a display material. Computers take the images captured by the external cameras, and they translate that into images for display on the inner walls of the plane.</p>
+
+<p>The result: Passengers feel like they&rsquo;re flying in a glass plane. That&rsquo;s an idea best communicated through the Technicon video.</p>
+
+<h3>Applying Tech Across Industries</h3>
+
+<p>Processing power continues to fall in price. Flat panel monitors get less expensive each day. The window-less plane shows us what can happen when advances in one industry are applied to another. Blend these advances with a high-speed internet connection delivered via satellite, and the Internet of Things (IoT) takes a great leap forward. Cross-discipline engineering is exciting.</p>
+
+<p>Happy New Year!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Manage That OpenROV Tether, Or Else]]></title>
+    <link href="http://RayHightower.com/blog/2014/09/10/manage-that-openrov-tether/"/>
+    <updated>2014-09-10T18:40:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/09/10/manage-that-openrov-tether</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/openrov_tether_management_slip_ring.jpg' width='' height='' alt='OpenROV tether management, one way that works.' title='OpenROV tether management, one way that works.'><span class='caption-text'>OpenROV tether management, one way that works.</span></span>
+<em>Note: This article has been updated with more photos and details describing slip ring installation.</em></p>
+
+<p>Youthful exuberance drove me to pilot my <a href="/blog/2014/06/16/citizen-science-with-openrov/">OpenROV</a> before I built a good tether management system. Bad idea! It&rsquo;s better to have a tether management plan (any plan) before you pilot your OpenROV.</p>
+
+<p>This article describes a tether management system that works for me. Other OpenROVers have devices that work, too. Take a look at a few and eventually you will find one that fits you.</p>
+
+<h3>Off-the-Shelf Parts</h3>
+
+<p>This tether management system is constructed entirely from off-the-shelf parts. The main component is an <a href="http://www.homedepot.com/p/KAB-Enterprise-Co-Ltd-20-ft-16-3-Cord-Reel-with-4-Outlets-CR002/100661463">extension cord reel sold by Home Depot</a> for about $14.00. Buy it, gut it, add the slip ring using three screws (also from Home Depot) and you’re good to go.</p>
+
+<!--more-->
+
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/openrov_lake_michigan.png' width='' height='' alt='Exploring Lake Michigan with OpenROV.' title='Exploring Lake Michigan with OpenROV.'><span class='caption-text'>Exploring Lake Michigan with OpenROV.</span></span></p>
+
+<h3>Slip Ring</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/adafruit_slip_ring.jpg' width='' height='' alt='Adafruit slip ring.' title='Adafruit slip ring.'><span class='caption-text'>Adafruit slip ring.</span></span>
+The slip ring is central to this solution. A slip ring allows an electrical spool to spin while electrical contacts remain intact. This slip ring was purchased from <a href="https://www.adafruit.com/products/736?gclid=CJDMiPma1cACFQoEaQod1iwAFQ">Adafruit</a> for about $18.00.</p>
+
+<h3>How to Install the Slip Ring</h3>
+
+<p>First, pull the entire orange cable out of the extension cord reel. It would be great to keep the whole orange cable as part of the tether, but then we wouldn’t have room for the original tether (twisted pair). Cut the orange cable so that only one meter remains attached to the reel assembly.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/openrov_tether_management_internals.jpg' width='' height='' alt='Front view, back view, internal view.' title='Front view, back view, internal view.'><span class='caption-text'>Front view, back view, internal view.</span></span></p>
+
+<p>Next, take the extension cord reel apart. Two phillips-head screws hold the device together. Remove the two screws, and the two orange disks will fall apart.</p>
+
+<p>Now let’s focus on the disk without the electrical plugs. You will need to cut a hole in the exact center of this disk. The hole will need to be large enough to let the thicker part of the slip ring through, while allowing enough of an edge for the flange screws. The photos give a clearer picture than the words in this paragraph.</p>
+
+<p>After you insert the slip ring, drill holes for the three slip ring mounting screws. One way to do this: Drill one hole first, insert the screw, tighten the nut, and then measure/drill the remaining holes. You’re more likely to align all of the holes correctly this way.</p>
+
+<h3>Loctite Threadlocker</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/slip_ring_loctite.jpg' width='' height='' alt='Loctite oozing from the screws.' title='Loctite oozing from the screws.'><span class='caption-text'>Loctite oozing from the screws.</span></span>
+<a href="http://www.loctiteproducts.com/threadlockers.shtml">Loctite</a> makes a threadlocker, a gummy substance that keeps screws from jiggling loose. They also make super glue; that&rsquo;s not what you want for this project. If you use Loctite&rsquo;s threadlocker on the slip ring screws, they will remain tight until you remove them on purpose.</p>
+
+<h3>Connecting Inside the Reel</h3>
+
+<p>Take a look inside the reel. You’ll see black, green, and white cables inside. You won’t need to do anything with the black cable. Splice the green line from the slip ring to the green line inside the reel, and splice the white slip ring line with the white reel line. Your technique may vary, but I used a combination hook splice, solder, hot glue, and heat shrink tubing. If you wear a belt and suspenders your pants will never fall down!</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/openrov_extra_tab.jpg' width='' height='' alt='Extra tab inside the reel, before and after removal.' title='Extra tab inside the reel, before and after removal.'><span class='caption-text'>Extra tab inside the reel, before and after removal.</span></span></p>
+
+<h3>Gotcha: Removing the Extra Tab</h3>
+
+<p>After initial assembly, I noticed that there was an extra tab inside of the reel. I don’t know the original purpose for the tab, but since it appeared to interfere with tether operation, it had to go. Wire clippers and a dremel tool made quick work of the tab. The before &amp; after photos tell the story.</p>
+
+<h3>Attaching the Tether &amp; Topside Adapter</h3>
+
+<p>Now that you have a functioning reel with a slip ring, attach the twisted pair tether to the 1-meter orange extension cable. Hook splice, solder, hot glue, and heat shrink did the trick for me.</p>
+
+<p>The topside adapter can be attached to the top of the reel with Velcro, as shown in the photos throughout this article. Plug the green and white cables from the outer slip ring into the topside adapter, and you&rsquo;re ready to test the new tether management system.</p>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/nanuk_935_openrov.jpg' width='' height='' alt='Nanuk 935 with OpenROV.' title='Nanuk 935 with OpenROV.'><span class='caption-text'>Nanuk 935 with OpenROV.</span></span>
+What should we do with the slip ring&rsquo;s extra lines? I tied mine together for future use. I may cut them if I decide that they&rsquo;re not useful. If you have other ideas, feel free to post in the comments below.</p>
+
+<h3>Everything Fits</h3>
+
+<p>The new tether management system is small enough to share space with an OpenROV inside a <a href="http://nanukcase.com/productdetails.asp?node=205">Nanuk 935 case</a>. The Nanuk case has wheels, a foam interior, and it is rugged and small enough to fly as an airline carry-on.</p>
+
+<p>Whip everything out and you&rsquo;re ready to explore.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/openrov_tether_management_laptop.jpg' width='' height='' alt='Ready to explore Lake Michigan.' title='Ready to explore Lake Michigan.'><span class='caption-text'>Ready to explore Lake Michigan.</span></span></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Solar Powered Parallella]]></title>
+    <link href="http://RayHightower.com/blog/2014/09/09/solar-powered-parallella/"/>
+    <updated>2014-09-09T09:18:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/09/09/solar-powered-parallella</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella_solar.jpg' width='' height='' alt='Give solar power to your Parallella with a few simple components.' title='Give solar power to your Parallella with a few simple components.'><span class='caption-text'>Give solar power to your Parallella with a few simple components.</span></span></p>
+
+<p>This article describes a simple hardware hack: Making the <a href="/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella</a> run on solar energy.</p>
+
+<p>Motivation: The fastest computers in the world gulp electricity at an alarming rate. For example, <a href="http://www.top500.org/system/177999">Tianhe-2</a> at the National Super Computer Center in Guangzhou, China uses 17.8 megawatts of energy per year. In dollars, that’s roughly $17 million spent on electricity spent each year, depending on how the electricity is sourced.</p>
+
+<p>Scientists at <a href="http://www.sandia.gov/">Sandia National Laboratories</a> estimate that the earth&rsquo;s surface absorbs enough solar energy in ninety minutes to power every electrical device on the planet for a full year. A year&rsquo;s worth of energy in ninety minutes! Surely we can use some of that energy to power our supercomputers.</p>
+
+<!--more-->
+
+
+<h3>Observations</h3>
+
+<p>The solar Parallella idea was driven by a few observations:</p>
+
+<ul>
+<li><p>Parallella only needs five watts of power, five volts at 1 ampere. The device might spike at startup or during heavy calculations, but not by much.</p></li>
+<li><p>USB provides electrical power at five volts, typically less than 2 amperes.</p></li>
+<li><p>Cell phone solar chargers are easy to find. These pocket-sized chargers provide power over USB.</p></li>
+</ul>
+
+
+<p>Can a cell phone solar charger be hacked to power Parallella? Yes!</p>
+
+<h3>Building the Hybrid Cable</h3>
+
+<p>Here&rsquo;s how to get started&hellip;</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella_usb_solar.jpg' width='' height='' alt='Making the connections.' title='Making the connections.'><span class='caption-text'>Making the connections.</span></span></p>
+
+<ul>
+<li><p>First, get an off-the-shelf solar device capable of providing 5 volts at 2 amperes. Many cell phone solar chargers will do this, but some will only provide 1 ampere of current. You will need 2 amperes. As of this writing, Amazon sells solar cell phone chargers for about $35.00. Note that the model shown in this article combines a photovoltaic panel with a lithium ion battery. Energy provided by the sun can be stored by the battery for later use.</p></li>
+<li><p>Cut open a USB cable to expose power (red), ground (black), and signal cables (green and white) as shown in the photo.</p></li>
+<li><p>Find an old AC adapter cable that fits the Parallella power connection. Cut it open to expose the power and ground wires as shown in the photo.</p></li>
+<li><p>Solder the USB power to the old adapter power wire, and USB ground to the adapter&rsquo;s ground.</p></li>
+<li><p>Cover everything with heat shrink tubing or electrical tape. Heat shrink is preferred since it will last longer.</p></li>
+</ul>
+
+
+<p>You&rsquo;re done! Plug everything in and watch your Parallella boot up. Note that this configuration will also power the Parallella&rsquo;s cooling fan.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella_solar_complete.jpg' width='' height='' alt='Parallella running on solar power.' title='Parallella running on solar power.'><span class='caption-text'>Parallella running on solar power.</span></span></p>
+
+<h3>Proof of Concept</h3>
+
+<p>It probably doesn’t make sense to call this a project. It&rsquo;s more of a proof of concept. Scaling up will cost money and time. But the benefits of solar energy, including cost savings and reduced carbon footprint, make this a worthwhile path to pursue.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[OpenROV Meets Chicago's Lake Michigan]]></title>
+    <link href="http://RayHightower.com/blog/2014/08/22/openrov-meets-chicago-lake-michigan/"/>
+    <updated>2014-08-22T19:27:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/08/22/openrov-meets-chicago-lake-michigan</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='/images/openrov_chicago_lake_michigan.jpg' width='' height='' alt='OpenROV meets  Lake Michigan.' title='OpenROV meets  Lake Michigan.'><span class='caption-text'>OpenROV meets  Lake Michigan.</span></span>
+<a href="/blog/2014/06/16/citizen-science-with-openrov/">OpenROV</a> #1227 went for a spin in Lake Michigan this week. Success! Here are a few first-voyage observations:</p>
+
+<!--more-->
+
+
+<ul>
+<li>The electronics chassis is truly waterproof. Same for the battery compartments. Waterproofing was my biggest concern during assembly. Hats off to the OpenROV team for an excellent set of assembly instructions.</li>
+<li>Condensation builds up in the electronics chassis during operation. A quick review of the OpenROV forum tells me that I should add a desiccant bag to the compartment. Or pack the unit in low humidity.</li>
+<li>The OpenROV is a little back-heavy. The back dips lower than the front during operation. I should add some weights to the front of the unit.</li>
+<li><a href="/blog/2014/09/10/manage-that-openrov-tether/">Tether management is a <em>must</em></a>. After one voyage (can you really call a
+simple dip in the lake a voyage?) my OpenROV tether is a mess. Time to
+build a way to manage the tether.</li>
+</ul>
+
+
+<p>What an exciting way to explore Node.js, BeagleBone Black, and the Maker Movement all at once.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[ESC Programming and Calibration for OpenROV]]></title>
+    <link href="http://RayHightower.com/blog/2014/08/21/esc-programming-and-calibration-for-openrov/"/>
+    <updated>2014-08-21T16:27:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/08/21/esc-programming-and-calibration-for-openrov</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='/images/openrov_esc.jpg' width='' height='' alt='Three ESCs, one for each motor. Each ESC has a switch and a power/signal connector.' title='Three ESCs, one for each motor. Each ESC has a switch and a power/signal connector.'><span class='caption-text'>Three ESCs, one for each motor. Each ESC has a switch and a power/signal connector.</span></span></p>
+
+<h3>ESCs: New Experience for Me</h3>
+
+<p>Electronic speed controllers (ESCs) were completely new to me when I first assembled my <a href="/blog/2014/06/16/citizen-science-with-openrov/">OpenROV</a>. This article documents my initial misunderstanding (and eventual understanding) of ESCs so that future builders can move forward with fewer glitches.</p>
+
+<!--more-->
+
+
+<p>The photo at the top of this page shows an OpenROV controller board, a
+BeagleBone Black, and three ESCs. This article will focus on the ESCs.</p>
+
+<h3>Remember This About ESCs</h3>
+
+<p>Until all three ESCs are programmed <em>and</em> calibrated, the OpenROV might behave erratically. For example&hellip;</p>
+
+<ul>
+<li>The servo that moves the camera up and down will not respond to keyboard commands.</li>
+<li>When you turn one ESC switch on, an unrelated motor (or motors, plural) might start spinning. In my case, turning on one ESC (any of the three ESCs) caused two motors to spin.</li>
+</ul>
+
+
+<p>In my case, the programming was correct, but I <a href="/blog/2014/08/19/openrov-assembly-challenges/">dropped the ball on calibration</a>. And when the motors responded out-of-sync with the switches, I thought I had soldered some connections incorrectly. De-soldering and re-soldering connections would have been a ton of extra work, and that would not have solved the problem.</p>
+
+<p>I reached out to the <a href="http://openrov.com/forum">forum</a> where OpenROV engineer Brian Adams pointed me in the right direction. Brian&rsquo;s diplomatic response could be summarized as <em>RTFM</em>. So I re-RTFM&rsquo;d, and it worked!</p>
+
+<p>The bottom line: Do the ESC programming and calibration first. If the OpenROV misbehaves, re-check programming and calibration before considering other solutions.</p>
+
+<h3>Why Use ESCs?</h3>
+
+<p>Since ESCs require so many steps (programming and calibration) we might logically ask: <em>Why use ESCs at all?</em> Why not use simple analog motors without controllers and call it a day?</p>
+
+<p>We use ESCs because the benefits outweigh the work required to configure them. It&rsquo;s all about control. By using an ESC to control each motor, we can use software to specify the <em>exact</em> number of RPMs and direction for each motor. We can make any motor (or combination or motors) start, stop, or change direction on a dime. Even better: When we move a lever on our controller of choice (keyboard, game controller, etc.) software on the OpenROV controller board decides the exact number of RPMs for each motor at that instant. OpenROV pilots don&rsquo;t need to think about this process while it happens. It just works.</p>
+
+<p>The pilot&rsquo;s finger moves a controller lever. The lever position gets sent to software on the OpenROV controller board, and the controller board tells each ESC what its corresponding motor should do.</p>
+
+<p>In summary, we use ESCs so that OpenROV pilots can have greater control over movement.</p>
+
+<h3>How to Re-Check ESC Programming</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/esc_program_card.jpg' width='' height='' alt='ESC program card.' title='ESC program card.'><span class='caption-text'>ESC program card.</span></span>
+Those of you with ESC experience already know about ESC program cards. I first learned about the cards while researching this problem. Amazing devices! Yes, it is possible to program ESCs using the series of button pushes and beeps in the OpenROV instructions. That&rsquo;s what I did, and it works. But a program card is faster. Amazon sells ESC program cards for less than fifteen dollars each. Well worth the investment, especially if you&rsquo;re programming ESCs for several OpenROVs.</p>
+
+<h3>ESC Calibration Gotcha</h3>
+
+<p>ESC calibration was tricky for me because turning on any of the three ESC switches caused two of my motors to spin: vertical and port. Further, since my electronics chassis was (mostly) assembled by the time I got to the calibration step, it wasn&rsquo;t easy for me to trace each power switch to its corresponding ESC.</p>
+
+<p>So here&rsquo;s what I had to do.</p>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/openrov_esc_switch_labels.jpg' width='' height='' alt='ESC switch labels.' title='ESC switch labels.'><span class='caption-text'>ESC switch labels.</span></span></p>
+
+<ul>
+<li>First, I took everything apart, while keeping the electronic leads (those which had already been soldered) intact. I needed to do this so I could see where each wire was going.</li>
+<li>Next, I labeled the back of each ESC switch with its corresponding ESC number. I did not want to go through the disassembly step again! The Brother P-Touch label maker was perfect for this step.</li>
+<li>Finally, I followed the ESC calibration steps <em>while ignoring the behavior of the motors</em>. For example, turning on ESC1 caused the motors connected to ESC1 (port) <em>and</em> ESC2 (vertical) to spin. I ignored the motors while plowing through OpenROV&rsquo;s written calibration steps.</li>
+</ul>
+
+
+<h3>Modified Calibration Steps</h3>
+
+<p>Here are the OpenROV calibration steps, with slight tweaks based on my personal experience.</p>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/openrov_calibration_sliders.jpg' width='' height='' alt='Click &ldquo;Diagnostics&rdquo; from the OpenROV cockpit.' title='Click &ldquo;Diagnostics&rdquo; from the OpenROV cockpit.'><span class='caption-text'>Click &ldquo;Diagnostics&rdquo; from the OpenROV cockpit.</span></span></p>
+
+<ol>
+<li>Each ESC switch has a red reset button. To turn the ESC on, move its slider switch toward the red reset button. The off position is in the opposite direction.</li>
+<li>With all of the ESCs switched off, go ahead and power up the OpenROV. The motors should remain stationary at this point. Connect with the cockpit software and open the diagnostic pane.</li>
+<li>Grab one ESC switch, and hold down its red reset button while powering it on. (At this point, two of my motors began spinning, V and P. I ignored the spinning motors while plowing through the rest of the steps.) You will hear a beeping noise. Let go of the reset button. (It will keep beeping which is fine). While it’s beeping, the red LED inside the corresponding ESC will flash in rhythm with the beeps.</li>
+<li>Press reset once and you should hear a single beep. Move that motor&rsquo;s slider all the way to the right (or click the &ldquo;1&rdquo;) and then press the reset on the ESC again. You should get 2 beeps. The motor will not move during this step.</li>
+<li>Move that motor&rsquo;s slider all the way to the left (or click the &ldquo;-1&rdquo;) and then press the reset on the ESC again. You will hear three beeps.</li>
+<li>After a few seconds the motor will begin to spin. Switch off the ESC, and the motor will stop spinning.</li>
+<li>Move the slider back to the middle (or click the &ldquo;0&rdquo;).</li>
+<li>Repeat these steps with the next ESC until all three ESCs are done.</li>
+</ol>
+
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/openrov_lake_michigan_2.jpg' width='' height='' alt='OpenROV meets Lake Michigan.' title='OpenROV meets Lake Michigan.'><span class='caption-text'>OpenROV meets Lake Michigan.</span></span>
+After calibration:</p>
+
+<ul>
+<li>With all three ESCs powered on, the motors remained stationary, as expected.</li>
+<li>Each motor responded to the correct slider within the cockpit software&rsquo;s diagnostic pane.</li>
+<li>The up/down servo for the camera responded correctly to the Q, A, and Z commands.</li>
+<li>The motors responded to keyboard commands, as described within the cockpit&rsquo;s quick reference guide.</li>
+</ul>
+
+
+<p>In other words, calibration worked when I ignored the behavior of the motors while plowing through the steps.</p>
+
+<h3>Success</h3>
+
+<p>There is great satisfaction in solving an elusive problem. The OpenROV forum proved to be a powerful and useful resource. Next step: <a href="/blog/2014/08/22/openrov-meets-chicago-lake-michigan/">Piloting the OpenROV in Lake Michigan</a>.</p>
+
+<p><em>Photo acknowledgement: The original version of the ESC photo was published in the <a href="http://openrov.dozuki.com/Guide/How+to+Assemble+OpenROV+2.6/6">OpenROV assembly manual</a>. Thanks OpenROV team!</em></p>
+]]></content>
+  </entry>
+  
+</feed>

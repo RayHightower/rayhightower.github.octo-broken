@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: rubymotion | RayHightower.com]]></title>
+  <link href="http://RayHightower.com/blog/categories/rubymotion/atom.xml" rel="self"/>
+  <link href="http://RayHightower.com/"/>
+  <updated>2015-04-02T15:42:37-05:00</updated>
+  <id>http://RayHightower.com/</id>
+  <author>
+    <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[When in Doubt, Rake Clean]]></title>
+    <link href="http://RayHightower.com/blog/2014/04/10/when-in-doubt-rake-clean/"/>
+    <updated>2014-04-10T15:53:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/04/10/when-in-doubt-rake-clean</id>
+    <content type="html"><![CDATA[<p>Earlier today, I upgraded from RubyMotion <code>v 2.24</code> to <code>v 2.26</code>. Immediately after the upgrade, I attempted to run a RubyMotion app that I’m working on. The result?</p>
+
+<p>&#8220;` bash
+$ rake</p>
+
+<pre><code> Build ./build/iPhoneSimulator-7.1-Development
+</code></pre>
+
+<p>   Compile ./app/app_delegate.rb
+   Compile ./app/views/score_label.rb
+   Compile ./app/views/paddle_view.rb</p>
+
+<pre><code>  Link ./build/iPhoneSimulator-7.1-Development/pong-rm4.app/pong-rm4
+</code></pre>
+
+<p>Undefined symbols for architecture i386:</p>
+
+<p>&hellip;</p>
+
+<p>clang: error: linker command failed with exit code 1 (use -v to see invocation)
+rake aborted!</p>
+
+<p>$</p>
+
+<p>&#8220;`</p>
+
+<p>What happened? It just ran a few minutes ago, right before the upgrade! Was RubyMotion broken? Was it time to reach out to the Twitterverse or Stack Overflow for assistance?</p>
+
+<p>Not yet.</p>
+
+<!--more-->
+
+
+<h3>Cooler Heads</h3>
+
+<p>Every time RubyMotion build an app, it stores the results in the <code>./build</code> directory. Since I had just done an upgrade, it was possible that remnants from a <code>v 2.24</code> build were interfering with my new <code>v 2.26</code> build. The solution?</p>
+
+<p>&#8220;` bash
+$ rake clean</p>
+
+<pre><code>Delete ./build
+</code></pre>
+
+<p>$<br/>
+&#8220;`</p>
+
+<p>And now the app runs fine. Crisis averted. Back to work!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[awesome_print_motion for RubyMotion]]></title>
+    <link href="http://RayHightower.com/blog/2013/11/25/awesome-print-motion-for-rubymotion/"/>
+    <updated>2013-11-25T15:08:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2013/11/25/awesome-print-motion-for-rubymotion</id>
+    <content type="html"><![CDATA[<h3>The Problem</h3>
+
+<p>Let&rsquo;s say we&rsquo;re building a version of Atari&rsquo;s <a href="/blog/2013/02/26/atari-pong-rubymotion-objective-c/">Pong in RubyMotion</a>. We&rsquo;re debugging an issue with the paddles; they don&rsquo;t line up the way we want them to. Time to examine the playing field via the RubyMotion console.</p>
+
+<p>&#8220;` bash</p>
+
+<p>pong-rm $ rake</p>
+
+<p>&#8220;`</p>
+
+<p>Mouse over the playing field and <code>Command-click</code> to grab the entire playing field object in the RubyMotion console. Confirm that you grabbed the object by typing <code>self</code> at the console prompt.</p>
+
+<p>&#8220;` ruby</p>
+
+<p>(UIView(#9d820c0, [[0.0, 0.0], &hellip;)> self</p>
+
+<p>=> UIView(#9d820c0, [[0.0, 0.0], [480.0, 320.0]]), child of UIView(#c876920)</p>
+
+<p>&#8220;`</p>
+
+<p>And then, to see what objects are on the playing field, use <code>self.subviews</code> to show the subviews array of the current object.</p>
+
+<p>&#8220;` ruby</p>
+
+<p>(UIView(#9d820c0, [[0.0, 0.0], &hellip;)> self.subviews
+=> [UIView(#9d82430, [[357.0, 175.0], [50.0, 50.0]]), child of
+UIView(#9d820c0), PaddleView(#9d82580, [[410.0, 190.0], [20.0, 100.0]]),
+child of UIView(#9d820c0), PaddleView(#9d82970, [[10.0, 190.0], [20.0,
+100.0]]), child of UIView(#9d820c0), ScoreLabel(#9d82a80, [[110.0, 9.0],
+[20.0, 42.0]], text: &ldquo;1&rdquo;), child of UIView(#9d820c0),
+ScoreLabel(#9d83c90, [[350.0, 9.0], [20.0, 42.0]], text: &ldquo;0&rdquo;), child of
+UIView(#9d820c0)]
+(UIView(#9d820c0, [[0.0, 0.0], &hellip;)></p>
+
+<p>&#8220;`</p>
+
+<p>This blob of text is difficult for the human brain to parse. Now, let&rsquo;s try it with the <code>awesome_print_motion</code> gem.</p>
+
+<!--more-->
+
+
+<p>&#8220;` ruby</p>
+
+<p>(UIView(#9d820c0, [[0.0, 0.0], &hellip;)> ap(self.subviews)
+[</p>
+
+<pre><code>[0] UIView(#9d82430, [[308.0, 118.0], [50.0, 50.0]]), child of UIView(#9d820c0),
+[1] PaddleView(#9d82580, [[410.0, 190.0], [20.0, 100.0]]), child of UIView(#9d820c0),
+[2] PaddleView(#9d82970, [[10.0, 190.0], [20.0, 100.0]]), child of UIView(#9d820c0),
+[3] ScoreLabel(#9d82a80, [[110.0, 9.0], [39.0, 42.0]], text: "61"), child of UIView(#9d820c0),
+[4] ScoreLabel(#9d83c90, [[350.0, 9.0], [20.0, 42.0]], text: "0"), child of UIView(#9d820c0)
+</code></pre>
+
+<p>]
+=> nil
+(UIView(#9d820c0, [[0.0, 0.0], &hellip;)></p>
+
+<p>&#8220;`</p>
+
+<p>Much easier to read. The structure of the <code>subviews</code> array is clear. Each element of the array has an easy-to-read index. Debugging time is reduced.</p>
+
+<h3>How to Install awesome_print_motion</h3>
+
+<p>RubyMotion uses bundler. So we start by refering to <code>awesome_print_motion</code> in our gemfile.</p>
+
+<p>&#8220;` ruby</p>
+
+<p>gem &lsquo;awesome_print_motion&rsquo;</p>
+
+<p>&#8220;`</p>
+
+<p>In the app&rsquo;s <code>Rakefile</code>, there are two possible ways to proceed. The preferred way is to use the following lines to tell the app to require every gem mentioned in Bundler&rsquo;s Gemfile:</p>
+
+<p>&#8220;` ruby</p>
+
+<p>begin
+  require &lsquo;bundler&rsquo;
+  Bundler.require
+rescue LoadError
+end</p>
+
+<p>&#8220;`</p>
+
+<p>The older way is to manually add a <code>require</code> statement to the Rakefile.</p>
+
+<p>&#8220;` ruby</p>
+
+<p>require &lsquo;ap&rsquo;</p>
+
+<p>&#8220;`</p>
+
+<p>Personally, I prefer the newer way because it automatically requires all of the gems mentioned in the <code>Gemfile</code>. The odds of a typo-induced error are reduced.</p>
+
+<h3>How to Use awesome_print_motion</h3>
+
+<p>To use the new gem, start the app and explore away. Any time you want to
+run output through the <code>awesome_print_motion</code> gem, send the code as a
+parameter to the <code>ap</code> method like so&hellip;</p>
+
+<p>&#8220;` ruby</p>
+
+<blockquote><p>ap(self.subviews)</p></blockquote>
+
+<p>&#8220;`</p>
+
+<p>&hellip; and the output will be easier to read.</p>
+
+<h3>Acknowledgements</h3>
+
+<p>Thank you <a href="http://www.dvorkin.net/">Michael Dvorkin</a> for adding RubyMotion support to your <a href="http://rubygems.org/gems/awesome_print">awesome_print</a> gem.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Using RubyMotion to Build Something Useful]]></title>
+    <link href="http://RayHightower.com/blog/2013/11/23/using-rubymotion-to-build-something-useful/"/>
+    <updated>2013-11-23T14:11:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2013/11/23/using-rubymotion-to-build-something-useful</id>
+    <content type="html"><![CDATA[<p>The <a href="http://www.meetup.com/Chicago-RubyMotion/">Chicago RubyMotion User Group</a> held its inaugural meeting this week. Thank you <a href="http://twitter.com/dastels">Dave Astels</a> for organizing the group and for asking me to present. Thanks also to <a href="http://devbootcamp.com">Dev Bootcamp</a> for hosting the event.</p>
+
+<p>Slides are embedded here:</p>
+
+<center><script async class="speakerdeck-embed" data-id="f0c21e7036e10131765f62eb06398856" data-ratio="1.29456384323641" src="//speakerdeck.com/assets/embed.js"></script></center>
+
+
+<!--more-->
+
+
+<h3>Doing RubyMotion in Chicago? Be There!</h3>
+
+<p>If you&rsquo;re using RubyMotion and you&rsquo;re located in the Chicago area, check out the <a href="http://www.meetup.com/Chicago-RubyMotion/">Chicago RubyMotion</a> group. The group attracts devs who are running into the same challenges as you. Devs who work with other devs tend to learn more over time.</p>
+
+<p>See you there!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[OS X and RubyMotion, Finishing Up]]></title>
+    <link href="http://RayHightower.com/blog/2013/11/11/os-x-and-rubymotion-finishing-up/"/>
+    <updated>2013-11-11T19:03:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2013/11/11/os-x-and-rubymotion-finishing-up</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/show-package-contents.png' width='' height='' alt='' title=''><span class='caption-text'></span></span>
+There is something I neglected to cover in a previous blog post, <a href="/blog/2013/11/01/building-an-os-x-app-with-rubymotion/">Building an OS X App With RubyMotion</a>. Once you&rsquo;ve written the OS X app, where do you find the executable, and how do you add it to the <code>Applications</code> folder on the Mac?</p>
+
+<p>Long-time Mac enthusiasts may already know how to do this. The information is included here for completeness.</p>
+
+<h3>Find, Drag, and Drop</h3>
+
+<p>First thing to note: A Mac app named [random-app].app is actually a directory, even though it appears to be a file when viewed in the <code>Applications</code> folder. If you&rsquo;re curious, right-click on any app in the <code>Applications</code> folder and choose <code>Show Package Contents</code> from the speed menu.</p>
+
+<!--more-->
+
+
+<p>After compilation, RubyMotion puts all of the executables in the app&rsquo;s <code>build/</code> directory. Using Finder, drag the folder named <code>[your-app-name].app</code> into the <code>Applications</code> folder.</p>
+
+<p>Or, if you prefer the command line…</p>
+
+<p><code>bash
+$ cd [root-directory-of-your-app]
+$ cp build/MacOSX-10.8-Development/[your-app-name].app /Applications
+$
+</code></p>
+
+<p>It doesn&rsquo;t really matter whether we copy the file or move it.  RubyMotion creates a new one with every build, when we type <code>rake</code>.</p>
+
+<h3>Launch at Login</h3>
+
+<p>I want the EjectDisks utility to be always available, so it would be good to have it launch automatically at login. That behavior is managed in the <code>Users and Groups</code> preference pane, shown below:</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/launch-at-login.png' width='' height='' alt='' title=''><span class='caption-text'></span></span></p>
+
+<p>Click the <code>+</code> sign, navigate to the app you want to launch at login time (in this case, EjectDisks) and select it. Done.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Building an OS X App With RubyMotion]]></title>
+    <link href="http://RayHightower.com/blog/2013/11/01/building-an-os-x-app-with-rubymotion/"/>
+    <updated>2013-11-01T00:15:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2013/11/01/building-an-os-x-app-with-rubymotion</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/time-machine-backup-disks.png' width='' height='' alt='Redundancy rocks.' title='Redundancy rocks.'><span class='caption-text'>Redundancy rocks.</span></span>
+<a href="/blog/2012/10/29/building-ios-apps-with-ruby-motion/">RubyMotion</a>&rsquo;s OS X support enabled me to solve a small problem yesterday.  Here&rsquo;s the story.</p>
+
+<h3>Background on Backup</h3>
+
+<p>No matter how much money we spend on computers, the data we create is worth more. The best data protection employs several levels of redundancy.</p>
+
+<p>My backup system starts with Apple&rsquo;s <a href="http://www.apple.com/findouthow/mac/#timemachinebasics">Time Machine</a>, which handles first level backups painlessly in the background. Time machine is even more effective when multiple disks are used. I like to combine that with online solutions. Redundancy is a good thing.</p>
+
+<p>USB-attached drives work great with Time Machine. I found that Time Machine was inconsistent over WiFi, and when it failed, troubleshooting took too much time. That was a few years ago and things have probably improved since then. I&rsquo;ve never had to troubleshoot a USB-attached Time Machine drive. USB just works. Except when it doesn&rsquo;t. And that&rsquo;s where RubyMotion proved helpful.</p>
+
+<!--more-->
+
+
+<h3>Disconnecting USB in a Hurry</h3>
+
+<p>My only problem with USB-attached drives comes when I need to leave my desk in a hurry. You may have seen this message before:</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/disk-not-ejected-properly.png' width='' height='' alt='In a hurry to eject?' title='In a hurry to eject?'><span class='caption-text'>In a hurry to eject?</span></span></p>
+
+<p>All three of my USB drives are attached through a single USB hub. Yanking the cable while running for a meeting is… bad! Forgetting to eject even one of the USB drives is also bad.</p>
+
+<p>I solved the problem about a year ago by writing a command line tool that ejects all three drives with one double-click of an icon. Yesterday I deciced to improve my command line tool with RubyMotion.</p>
+
+<h3>Ejecting in a Hurry</h3>
+
+<p><code>EjectDisks</code> is a simple OS X program written with the RubyMotion toolchain for Mac OS X. It uses the <code>osx-status-bar-app-template</code> gem created by <a href="https://github.com/kickcode/osx-status-bar-app-template">Elliott Draper</a>. Here&rsquo;s a 10-second demo.</p>
+
+<center><iframe name="eject-disks-osx" src="//player.vimeo.com/video/78349497" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
+
+
+<h3>The Code</h3>
+
+<p>The latest version of the EjectDisk code is on <a href="https://github.com/RayHightower/EjectDisks">GitHub</a>. The <code>app_delegate.rb</code> file appears below.</p>
+
+<p>&#8220;` ruby</p>
+
+<p>class AppDelegate
+  attr_accessor :status_menu</p>
+
+<p>  def applicationDidFinishLaunching(notification)</p>
+
+<pre><code>@app_name = NSBundle.mainBundle.infoDictionary['CFBundleDisplayName']
+
+@status_menu = NSMenu.new
+
+@status_item = NSStatusBar.systemStatusBar.statusItemWithLength(NSVariableStatusItemLength).init
+@status_item.setMenu(@status_menu)
+@status_item.setHighlightMode(true)
+@status_item.setTitle(@app_name)
+
+@status_menu.addItem createMenuItem("About #{@app_name}", 'orderFrontStandardAboutPanel:')
+@status_menu.addItem createMenuItem("Custom Action", 'pressAction')
+@status_menu.addItem createMenuItem("Eject Three Disks", 'ejectThreeDisks')
+@status_menu.addItem createMenuItem("Say Something", 'sayDroid')
+@status_menu.addItem createMenuItem("Sing", 'singSomething')
+@status_menu.addItem createMenuItem("Greetings", 'greetings')
+@status_menu.addItem createMenuItem("Quit", 'terminate:')
+</code></pre>
+
+<p>  end</p>
+
+<p>  def createMenuItem(name, action)</p>
+
+<pre><code>NSMenuItem.alloc.initWithTitle(name, action: action, keyEquivalent: '')
+</code></pre>
+
+<p>  end</p>
+
+<p>  def pressAction</p>
+
+<pre><code>alert = NSAlert.alloc.init
+alert.setMessageText "Action triggered from status bar menu"
+alert.addButtonWithTitle "OK"
+alert.runModal
+</code></pre>
+
+<p>  end</p>
+
+<p>  def sayDroid</p>
+
+<pre><code>%x(say -v cello droid)
+</code></pre>
+
+<p>  end</p>
+
+<p>  def singSomething</p>
+
+<pre><code>%x(say -v cello da da da da da da da da da da da da da da da da da da da da da da da da da da)
+</code></pre>
+
+<p>  end</p>
+
+<p>  def greetings</p>
+
+<pre><code>%x(say -v cello Greetings to the members of Chippewa Valley Code Camp &amp;)
+alert = NSAlert.alloc.init
+alert.setMessageText "Greetings to the members of Chippewa Valley Code Camp!"
+alert.addButtonWithTitle "OK"
+alert.runModal
+</code></pre>
+
+<p>  end</p>
+
+<p>  def ejectThreeDisks</p>
+
+<pre><code>alert = NSAlert.alloc.init
+response = %x(/usr/sbin/diskutil eject SiiGBlack) + "\n"
+response += %x(/usr/sbin/diskutil eject Ultra3TB) + "\n"
+response += %x(/usr/sbin/diskutil eject WDSilver) + "\n"
+alert.setMessageText response
+alert.addButtonWithTitle "OK"
+alert.runModal
+</code></pre>
+
+<p>  end
+end</p>
+
+<p>&#8220;`</p>
+
+<h3>Next Steps</h3>
+
+<p>Not everything in the EjectDisks tool is business-related. Do we really need to include a greeting to the members of the <a href="http://chippewavalleycodecamp.com/">Chippewa Valley Code Camp</a>?  Yes, we do!</p>
+
+<p>On the serious side, the app should handle disk ejection as a background process. It&rsquo;s not good to tie up the system for a simple task. Look for a forked process in a future version of the app.</p>
+
+<p><em>Update: This article should have included instructions on how to run the executable on any Mac OS X system without having RubyMotion installed. The omission is corrected in a later blog post, <a href="/blog/2013/11/11/os-x-and-rubymotion-finishing-up/">OS X and RubyMotion, Finishing Up</a>.</em></p>
+]]></content>
+  </entry>
+  
+</feed>
