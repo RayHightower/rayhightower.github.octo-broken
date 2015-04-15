@@ -4,7 +4,7 @@
   <title><![CDATA[Category: os x | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/os-x/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-04-11T15:54:34-05:00</updated>
+  <updated>2015-04-15T14:18:34-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -64,7 +64,39 @@
 
 <p>&#8220;`</p>
 
-<p>And now we have it. The up-arrow behavior that we’ve grown to appreciate at the command line is now available in the Scheme REPL. Big time savings, and better for learning.</p>
+<h3>Add an Alias to ~/.bash_profile</h3>
+
+<p>To speed things up a bit, we can add an <code>alias</code> to <code>~/.bash_profile</code>.</p>
+
+<p>&#8220;` bash</p>
+
+<h1>for rlwrap &amp; scheme support. Details: <a href="http://rayhightower.com/blog/2015/03/19/using-rlwrap-with-mit-scheme-repl/">http://rayhightower.com/blog/2015/03/19/using-rlwrap-with-mit-scheme-repl/</a></h1>
+
+<p>alias sicp=&lsquo;rlwrap scheme&rsquo;</p>
+
+<p>&#8220;`</p>
+
+<p>So now when we type <code>sicp</code> at the command line&hellip;</p>
+
+<p><code>`` bash
+$ sicp
+MIT/GNU Scheme running under OS X
+Type</code>^C&#8217; (control-C) followed by `H&#8217; to obtain information about interrupts.</p>
+
+<p>Copyright &copy; 2014 Massachusetts Institute of Technology
+This is free software; see the source for copying conditions. There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p>
+
+<p>Image saved on Saturday May 17, 2014 at 2:39:25 AM
+  Release 9.2 || Microcode 15.3 || Runtime 15.7 || SF 4.41 || LIAR/x86-64 4.118 || Edwin 3.116</p>
+
+<p>1 ]=></p>
+
+<p>&#8220;`
+Exactly what we expect.</p>
+
+<h3>Conclusion</h3>
+
+<p>And now we have it. The up-arrow behavior that we enjoy at the command line is now in the Scheme REPL. Big savings in time, and better for learning.</p>
 ]]></content>
   </entry>
   
