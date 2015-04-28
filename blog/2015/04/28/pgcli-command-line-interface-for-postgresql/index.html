@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Delayed Registration - RayHightower.com</title>
+  <title>pgcli - Command Line Interface for PostgreSQL - RayHightower.com</title>
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="Delayed Registration March 25, 2015 To the Companies Registering for the TAMU SEC Fall Career Fair: I am sorry for the delay in delivering the &hellip;">
+  <meta name="description" content="Debugging is a fact of life when building apps with Rails or any other set of tools. All troubleshooting is easier when we can see what’s going on &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://RayHightower.com/delayed-registration">
+  <link rel="canonical" href="http://RayHightower.com/blog/2015/04/28/pgcli-command-line-interface-for-postgresql">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="RayHightower.com" type="application/atom+xml">
@@ -103,32 +103,206 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Delayed Registration</h1>
-    <p class="meta">
+    
+      <h1 class="entry-title">pgcli - Command Line Interface for PostgreSQL</h1>
+    
+    
+      <p class="meta">
+        
 
 
 
 
-<time class='entry-date' datetime='2015-03-25T08:22:00-05:00'><span class='date'>March 25, 2015</span> <span class='time'></span></time></p>
+<time class='entry-date' datetime='2015-04-28T11:59:44-05:00'><span class='date'>April 28, 2015</span> <span class='time'></span></time>
+        
+      </p>
+    
   </header>
+
+
+<div class="entry-content"><p>Debugging is a fact of life when building apps with Rails or any other set of tools. All troubleshooting is easier when we can see what’s going on inside.</p>
+
+<p><a href="http://pgcli.com/">pgcli</a> is a command line tool that lets devs examine PostgreSQL databases from the command line. <code>pgcli</code> offers more powerful features than <code>psql</code> (the default terminal front-end for PostgreSQL) such as:</p>
+
+<ul>
+<li>Autocompletion. In fact, <code>pgcli</code> autocompletion is smart enough to only show table names after <code>FROM</code> in a SQL statement.</li>
+<li>Syntax highlighting. Find gotchas quicker, just like you would in a text editor.</li>
+</ul>
+
+
+<p>Debugging is easier when you can look inside the black box.</p>
+
+<!--more-->
+
+
+<h3>Installation</h3>
+
+<p>To install <code>pgcli</code> on Mac OS X, use <a href="/blog/2014/02/12/homebrew-fundamentals/">Homebrew</a>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>brew install <span class="nv">pgcli</span>
+</span><span class='line'><span class="o">==</span>&gt; Installing dependencies <span class="k">for </span>pgcli: openssl, <span class="nv">postgresql</span>
+</span><span class='line'><span class="o">==</span>&gt; Installing pgcli dependency: <span class="nv">openssl</span>
+</span><span class='line'><span class="o">==</span>&gt; Downloading https://homebrew.bintray.com/bottles/openssl-1.0.2a-1.yosemite.b
+</span><span class='line'><span class="c">######################################################################## 100.0%</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># Homebrew installs dependencies as required...</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">==</span>&gt; Installing <span class="nv">pgcli</span>
+</span><span class='line'><span class="o">==</span>&gt; Downloading https://homebrew.bintray.com/bottles/pgcli-0.16.3.yosemite.bottl
+</span><span class='line'><span class="c">######################################################################## 100.0%</span>
+</span><span class='line'><span class="o">==</span>&gt; Pouring pgcli-0.16.3.yosemite.bottle.tar.gz
+</span><span class='line'>🍺  /usr/local/Cellar/pgcli/0.16.3: 423 files, 5.2M
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Verify installation as follows:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>which pgcli
+</span><span class='line'>/usr/local/bin/pgcli
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>pgcli --version
+</span><span class='line'>Version: 0.16.3
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Using pgcli</h3>
+
+<p>To view a list of available <code>pgcli</code> commands:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>pgcli --help
+</span><span class='line'>Usage: pgcli <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>DATABASE<span class="o">]</span> <span class="o">[</span>USERNAME<span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'>Options:
+</span><span class='line'>  -h, --host TEXT     Host address of the postgres database.
+</span><span class='line'>  -p, --port INTEGER  Port number at which the postgres instance is listening.
+</span><span class='line'>  -U, --user TEXT     User name to connect to the postgres database.
+</span><span class='line'>  -W, --password      Force password prompt.
+</span><span class='line'>  -w, --no-password   Never prompt <span class="k">for </span>password.
+</span><span class='line'>  -v, --version       Version of pgcli.
+</span><span class='line'>  -d, --dbname TEXT   database name to connect to.
+</span><span class='line'>  --help              Show this message and exit.
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>To use <code>pgcli</code>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>pgcli
+</span><span class='line'>Version: 0.16.3
+</span><span class='line'>Chat: https://gitter.im/amjith/pgcli
+</span><span class='line'>Mail: https://groups.google.com/forum/#!forum/pgcli
+</span><span class='line'>Home: http://pgcli.com
+</span><span class='line'>rth&gt; <span class="se">\l</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>\l</code> will list the databases available to this installation of PostgreSQL. Note that the <code>pgcli</code> command prompt shows the currently logged in username. To discover other commands, use <code>\?</code>.</p>
+
+<p>As you experiment with <code>pgcli</code>, notice the command completion and the syntax highlighting. Big time savers relative to <code>psql</code>.</p>
+
+<h3>Acknowledgements</h3>
+
+<p>Thanks <a href="https://twitter.com/adomokos">Attila Domokos</a> and <a href="https://twitter.com/lostghost">Ken Walters</a> for the tweets that led to this <code>pgcli</code> blog post.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
   
-  <p>To the Companies Registering for the TAMU SEC Fall Career Fair:</p>
 
-<p>I am sorry for the delay in delivering the registration software for the Career Fair.</p>
+<span class="byline author vcard">Posted by <span class="fn">Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer</span></span>
 
-<p>My company is building the software. Therefore, the fault for the delay lies with me, personally, and not with SEC.</p>
+      
 
-<p>Most of the features are working as designed. Final testing is happening right now. I will keep you informed.</p>
 
-<p>Sincerely,<br/>
-Raymond T. Hightower, President<br/>
-WisdomGroup<br/></p>
 
+
+<time class='entry-date' datetime='2015-04-28T11:59:44-05:00'><span class='date'>April 28, 2015</span> <span class='time'></span></time>
+      
+
+<span class="categories">
   
+    <a class='category' href='/blog/categories/os-x/'>os x</a>, <a class='category' href='/blog/categories/rails/'>rails</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2015/04/28/pgcli-command-line-interface-for-postgresql/" data-via="" data-counturl="http://RayHightower.com/blog/2015/04/28/pgcli-command-line-interface-for-postgresql/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2015/04/10/chicagoruby-blue1647-1871/" title="Previous Post: ChicagoRuby Expands to BLUE1647 and 1871">&laquo; ChicagoRuby Expands to BLUE1647 and 1871</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -259,6 +433,22 @@ WisdomGroup<br/></p>
 
 </footer>
   
+
+<script type="text/javascript">
+      var disqus_shortname = 'rayhightower';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://RayHightower.com/blog/2015/04/28/pgcli-command-line-interface-for-postgresql/';
+        var disqus_url = 'http://RayHightower.com/blog/2015/04/28/pgcli-command-line-interface-for-postgresql/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
 
 
 
