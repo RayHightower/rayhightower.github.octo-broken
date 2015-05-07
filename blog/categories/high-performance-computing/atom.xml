@@ -4,7 +4,7 @@
   <title><![CDATA[Category: high performance computing | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/high-performance-computing/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-04-28T16:16:37-05:00</updated>
+  <updated>2015-05-06T23:54:12-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -352,8 +352,8 @@ drwxrwxrwx  1 rth   staff      512 Jul  6 12:11 .fseventsd
 
 <p>&#8220;` bash</p>
 
-<p>~$ ssh <a href="&#109;&#97;&#x69;&#x6c;&#116;&#x6f;&#58;&#108;&#x69;&#110;&#x61;&#114;&#111;&#x40;&#x31;&#x39;&#50;&#46;&#49;&#x36;&#56;&#x2e;&#x31;&#49;&#46;&#49;&#51;&#51;">&#x6c;&#x69;&#110;&#x61;&#x72;&#x6f;&#x40;&#x31;&#57;&#x32;&#x2e;&#x31;&#54;&#x38;&#46;&#49;&#49;&#x2e;&#x31;&#51;&#51;</a>
-<a href="&#x6d;&#x61;&#105;&#108;&#x74;&#111;&#58;&#x6c;&#x69;&#110;&#x61;&#114;&#x6f;&#64;&#x31;&#57;&#x32;&#46;&#x31;&#x36;&#x38;&#46;&#x31;&#49;&#46;&#x31;&#x33;&#51;">&#108;&#x69;&#110;&#x61;&#x72;&#111;&#x40;&#49;&#x39;&#x32;&#x2e;&#49;&#x36;&#56;&#46;&#49;&#x31;&#x2e;&#x31;&#51;&#x33;</a>&rsquo;s password:
+<p>~$ ssh <a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#111;&#58;&#108;&#105;&#110;&#x61;&#114;&#111;&#64;&#49;&#x39;&#x32;&#46;&#x31;&#54;&#56;&#46;&#49;&#x31;&#46;&#x31;&#x33;&#x33;">&#x6c;&#105;&#110;&#97;&#x72;&#111;&#64;&#x31;&#57;&#50;&#46;&#49;&#x36;&#x38;&#x2e;&#x31;&#49;&#x2e;&#49;&#x33;&#x33;</a>
+<a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#x6f;&#58;&#108;&#105;&#x6e;&#x61;&#x72;&#111;&#64;&#49;&#57;&#50;&#46;&#49;&#54;&#56;&#46;&#x31;&#x31;&#x2e;&#x31;&#x33;&#51;">&#x6c;&#105;&#110;&#x61;&#x72;&#111;&#64;&#49;&#x39;&#50;&#46;&#x31;&#54;&#56;&#46;&#49;&#49;&#x2e;&#49;&#51;&#x33;</a>&rsquo;s password:
 Welcome to Linaro 14.04 (GNU/Linux 3.12.0-g0bc9c3a-dirty armv7l)</p>
 
 <ul>
