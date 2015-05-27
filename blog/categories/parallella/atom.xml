@@ -4,7 +4,7 @@
   <title><![CDATA[Category: parallella | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/parallella/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-05-26T03:49:33-05:00</updated>
+  <updated>2015-05-26T21:08:17-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,217 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Massively Parallel Parallella]]></title>
+    <link href="http://RayHightower.com/blog/2015/05/27/massively-parallel-parallella/"/>
+    <updated>2015-05-27T13:15:27-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/05/27/massively-parallel-parallella</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/supercomputer-dot-io-logo.png' width='' height='' alt='Resin.io &amp; Parallella' title='Resin.io &amp; Parallella'><span class='caption-text'>Resin.io &amp; Parallella</span></span>
+<a href="http://supercomputer.io/">Supercomputer.io</a> is the first technical conference for <a href="http://rayhightower.com/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella</a>, to be held May 30, 2015 in Tokyo, Japan.</p>
+
+<p>You can participate even if you’re not in Tokyo. Parallella owners around the world will connect their boards via the Internet to create the most efficient supercomputer on the planet. <a href="http://resin.io/">Resin.io</a> has built a special micro-SD-card image (using <a href="https://www.docker.com/">Docker</a>) so adding your Parallella to the mix is relatively quick.</p>
+
+<p>Detailed steps are given below, along with a few <em>gotchas</em>.</p>
+
+<h3>First: Why?</h3>
+
+<p>Some problems are too thorny for a typical computer to solve in a reasonable amount of time. Supercomputers might solve these problems quicker, but they&rsquo;re expensive. Solution: Link a bunch of Parallella computers together via the Internet to amplify our compute power while saving money. This shared computing technique has worked in the past:</p>
+
+<ul>
+<li><p>Through <a href="https://folding.stanford.edu/">Stanford Folding@home</a>, computer owners around the world are using excess CPU cycles to search for cures for diseases like Alzheimer’s, Huntington’s, and Parkinson&rsquo;s.</p></li>
+<li><p>The <a href="http://setiathome.ssl.berkeley.edu/">SETI@home</a> project uses computers around the world to download and analyze radio telescope data to help with the search for extraterrestrial intelligence.</p></li>
+</ul>
+
+
+<p>The benefits are clear. Let&rsquo;s get started.</p>
+
+<!--more-->
+
+
+<h3>Materials Required</h3>
+
+<p>Here&rsquo;s what you need to participate:</p>
+
+<ul>
+<li>Parallella board. You can buy one for about $100 at <a href="http://www.parallella.org/buy/">these retailers</a>.</li>
+<li>Ethernet connection to the Internet.</li>
+<li>4 GB (or larger) micro-SD card.</li>
+</ul>
+
+
+<h3><em>Gotcha:</em> Headless Parallella</h3>
+
+<p>Something that tripped me up until I learned more: A Parallella configured for Supercomputer.io will run headless. <em>There will be no HDMI output.</em> When my HDMI monitor showed <code>No Signal</code>, I thought that I had broken something. No worries. This is just a headless system.</p>
+
+<p>I don&rsquo;t know if that will change.</p>
+
+<h3>Download the Image</h3>
+
+<p><a href="http://supercomputer.io/">Download the Resion.io image</a> from the Supercomputer.io site. <a href="http://resin.io/">Resin.io</a> has created a special SD-card image (using Docker) for this project. As you can see below, I stored mine in a directory called <code>~/Downloads/Parallella$</code>.</p>
+
+<p>&#8220;` bash
+~/Downloads/Parallella$ ls -al
+total 2678784
+drwxr-xr-x   3 rth  staff         102 May 26 10:53 .
+drwx&mdash;-r-x+ 86 rth  staff        2924 May 26 11:00 ..
+-rw-r&mdash;&mdash;&ndash;@  1 rth  staff  1371537408 May 26 10:56 resin-supercomputer-0.1.0-0.0.14-Z7010-16.img</p>
+
+<p>~/Downloads/Parallella$</p>
+
+<p>&#8220;`</p>
+
+<h3>Prep for Burning the SD Card</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/micro_sd_plus_adapter.jpg' width='' height='' alt='Micro SD card and adapter.' title='Micro SD card and adapter.'><span class='caption-text'>Micro SD card and adapter.</span></span>
+Burning the SD card took about sixteen minutes (once I got the procedure right, as described below). Suggestion: Start the burn process, make sure it&rsquo;s progressing, and then go work on something else. A watched pot never boils.</p>
+
+<p>Insert your SD card into your Mac&rsquo;s SD card reader, and use the Mac OS X <code>diskutil list</code> command to determine the designation of the SD card. If you use portable hard drives with your primary machine, the SD card designation could change from time to time, so it&rsquo;s important to perform this step each time you burn an SD card.</p>
+
+<p>&#8220;` bash
+~/Downloads/Parallella$ diskutil list
+/dev/disk0
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        <em>960.2 GB   disk0
+   1:                        EFI EFI                     209.7 MB   disk0s1
+   2:                  Apple_HFS MacSSD                  959.3 GB   disk0s2
+   3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
+/dev/disk2
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     FDisk_partition_scheme                        </em>8.0 GB     disk2
+   1:               Windows_NTFS Parallella              8.0 GB     disk2s1</p>
+
+<p>~/Downloads/Parallella$</p>
+
+<p>&#8220;`</p>
+
+<p>From this <code>diskutil</code> report, we can see that we want to burn the SD image to <code>/dev/disk2</code>. The other device is the hard drive for my primary machine. Burning the wrong device will destroy data.</p>
+
+<h3>Burning the Card, Skipping the <em>Gotcha</em></h3>
+
+<p>To burn the SD card&hellip;</p>
+
+<ol>
+<li>Change into the directory where you downloaded the Ubuntu image.</li>
+<li>Unmount the destination partition on the SD card.</li>
+<li>Use the the <code>dd</code> command to copy the Ubuntu image to the SD card.</li>
+</ol>
+
+
+<p><em>Gotcha alert:</em> The first time I attempted to burn the image, I used a block size of 64k (<code>bs=64k</code>) for the <code>dd</code> operation. Big mistake on my part because the write operation took almost <em>four hours</em>. On my second attempt, I used a 1 megabyte block size (<code>bs=1m</code>) and the write operation finished in a speedy <em>16 minutes</em>. So, learn from my pain and use <code>bs=1m</code>.</p>
+
+<p>Burn your micro-SD card like so:</p>
+
+<p>&#8220;` bash
+$ cd [directory containing the resin.io image file]</p>
+
+<p>$ diskutil unmountDisk /dev/disk2</p>
+
+<p>$ sudo dd if=resin-supercomputer-0.1.0-0.0.14-Z7010-16.img of=/dev/disk2 bs=1m
+Password:
+1308+0 records in
+1308+0 records out
+1371537408 bytes transferred in 960.001945 secs (1428682 bytes/sec)</p>
+
+<p>$</p>
+
+<p>&#8220;`</p>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/activity_monitor_resin_image.png' width='' height='' alt='Burn progress.' title='Burn progress.'><span class='caption-text'>Burn progress.</span></span>
+If you want to make sure that <code>dd</code> is running properly, use OS X&rsquo;s <code>Activity Monitor</code> utility to monitor burn progress (see the &lsquo;burn progress&rsquo; diagram). Here&rsquo;s a quick run-through of the <code>dd</code> command options:</p>
+
+<ul>
+<li><code>sudo</code> gives you <a href="/sudo-disclaimer/">super powers</a>.</li>
+<li><code>dd</code> is the &ldquo;copy and convert&rdquo; command. The letters &ldquo;dd&rdquo; have nothing to do with what the tool actually does. It&rsquo;s just a command name. And like so many things in computer science, the name might be based on a pun.</li>
+<li><code>if=</code> specifies the input file. You can include the full path, or if the file is in your current directory, you can omit the path as shown in this example.</li>
+<li><code>of=</code> specifies the output file. We know that the SD card is located at <code>/dev/disk</code> so that&rsquo;s where the results of this command are headed.  Note that your destination directory may differ from this one.</li>
+<li><code>bs=1m</code> specifies the block size used for the destination file. 1 megabyte worked well on my machine.</li>
+</ul>
+
+
+<h3>About the New Resin.io Image</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/parallella_resin_image_files.png' width='' height='' alt='Image files.' title='Image files.'><span class='caption-text'>Image files.</span></span>
+The new image will be called <code>boot-parall</code> as shown in the diagram.  Depending on your particular image, your list of files may be the same as mine.</p>
+
+<h3>Boot Parallella with the Resin.io Image</h3>
+
+<p>Once the micro-SD card has been burned, eject it from the Mac and insert it into the Parallella. Then apply power to the Parallella.</p>
+
+<h3>Working Headless</h3>
+
+<p>As mentioned above, a Parallella configured this way will run headless, without HDMI output. So, how do you know if the Resin.io image is working?</p>
+
+<p>First, get a network scanner and use it to locate your Parallella on your local area network. I use an iPad app called <a href="https://itunes.apple.com/us/app/fing-network-scanner/id430921107?mt=8">Fing</a>, but any good network scanner will do. Your Parallella will appear as <code>parallella-hdmi-resin</code>, along with corresponding IP and MAC addresses.</p>
+
+<p>Ping the IP address given by your network scanning tool like so:</p>
+
+<p>&#8220;` bash
+~$ ping 192.168.11.132
+PING 192.168.11.132 (192.168.11.132): 56 data bytes
+64 bytes from 192.168.11.132: icmp_seq=0 ttl=64 time=4.767 ms
+64 bytes from 192.168.11.132: icmp_seq=1 ttl=64 time=3.694 ms
+64 bytes from 192.168.11.132: icmp_seq=2 ttl=64 time=4.057 ms
+64 bytes from 192.168.11.132: icmp_seq=3 ttl=64 time=3.969 ms
+^C
+&mdash;&ndash; 192.168.11.132 ping statistics &mdash;&ndash;
+4 packets transmitted, 4 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 3.694/4.122/4.767/0.396 ms</p>
+
+<p>~$</p>
+
+<p>&#8220;`</p>
+
+<p>If your Parallella is up, running, and attached to your network, your
+output will look similar to what you see above. But if <code>ping</code> can&rsquo;t find
+your Parallella, you&rsquo;ll get&hellip;</p>
+
+<p>&#8220;` bash</p>
+
+<p>~$ ping 192.168.11.199
+PING 192.168.11.199 (192.168.11.199): 56 data bytes
+Request timeout for icmp_seq 0
+Request timeout for icmp_seq 1
+Request timeout for icmp_seq 2
+^C
+&mdash;&ndash; 192.168.11.199 ping statistics &mdash;&ndash;
+4 packets transmitted, 0 packets received, 100.0% packet loss</p>
+
+<p>~$</p>
+
+<p>&#8220;`</p>
+
+<h3>Connect to Supercomputer.io</h3>
+
+<p>After you have successfully connected your Parallella to your LAN and the Internet, visit <a href="http://supercomputer.io/#/devices/">http://supercomputer.io/#/devices/</a> from a computer other than your Parallella (because the Parallella is headless). This page will tell you when your Parallella has connected to the Supercomputer.io mothership.</p>
+
+<p>To do this, you will need the media access control (MAC) address (also known as the hardward address) for your Parallella&rsquo;s network interface. I used my network scanning tool, Fing, to find the MAC address for the Parallella. You should be able to do the same with your network scanning tool.</p>
+
+<p>Enter your Parallella&rsquo;s MAC address as shown below, and click <code>search</code> to determine whether your device has connected.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella_no_device_yet.png' width='' height='' alt='Supercomputer.io searching for your Parallella.' title='Supercomputer.io searching for your Parallella.'><span class='caption-text'>Supercomputer.io searching for your Parallella.</span></span></p>
+
+<p>Your first connection attempt might not be successful. It takes awhile for the first connection to happen because the Parallella might need to download software updates first.</p>
+
+<p>It took about 30 minutes for Supercomputer.io to recognize my Parallella. The successful connection was cause for celebration:</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella_device_connected.png' width='' height='' alt='Parallella connected w/MAC address and city. Celebrate!' title='Parallella connected w/MAC address and city. Celebrate!'><span class='caption-text'>Parallella connected w/MAC address and city. Celebrate!</span></span></p>
+
+<h3>What&rsquo;s Next?</h3>
+
+<p>I&rsquo;m not sure what&rsquo;s next for Supercomputer.io and Parallella. I would imaging that <code>Status = idle</code> will be replaced by something more interesting, and <code>images processed</code> will eventually be greater than zero.</p>
+
+<p>Engineers at Parallella and Resin.io have done a great job so far. Now, since it&rsquo;s likely that they enjoy suggestions from the peanut gallery, here are a few ideas:</p>
+
+<ul>
+<li><p>Consider a version of the Resin.io image with HDMI support. Like many in the Parallella community, I&rsquo;m willing to share CPU cycles for the greater good. And I want to see what&rsquo;s running on my Parallella, too.</p></li>
+<li><p>Add more metrics to the Supercomputer.io site. It&rsquo;s nice to see the number of cores that have connected to Supercomputer.io. How about a map showing where the different Parallella devices are located? How about a dashboard that shows the number of cores currently in use?</p></li>
+</ul>
+
+
+<p>Hats off to the Parallella and Resin.io teams. Looking forward to more!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Solar Powered Parallella]]></title>
@@ -445,8 +656,8 @@ drwxrwxrwx  1 rth   staff      512 Jul  6 12:11 .fseventsd
 
 <p>&#8220;` bash</p>
 
-<p>~$ ssh <a href="&#x6d;&#97;&#105;&#108;&#116;&#x6f;&#58;&#108;&#105;&#110;&#x61;&#114;&#x6f;&#64;&#49;&#x39;&#x32;&#46;&#49;&#x36;&#56;&#46;&#49;&#49;&#46;&#x31;&#x33;&#51;">&#x6c;&#x69;&#x6e;&#97;&#x72;&#x6f;&#x40;&#x31;&#57;&#x32;&#46;&#49;&#x36;&#x38;&#46;&#49;&#x31;&#46;&#x31;&#51;&#51;</a>
-<a href="&#x6d;&#97;&#105;&#108;&#116;&#x6f;&#58;&#x6c;&#105;&#110;&#x61;&#114;&#x6f;&#x40;&#x31;&#57;&#50;&#x2e;&#49;&#x36;&#x38;&#46;&#49;&#49;&#46;&#49;&#x33;&#x33;">&#108;&#x69;&#x6e;&#x61;&#x72;&#111;&#x40;&#49;&#x39;&#50;&#x2e;&#x31;&#54;&#56;&#x2e;&#49;&#49;&#x2e;&#49;&#51;&#51;</a>&rsquo;s password:
+<p>~$ ssh <a href="&#109;&#97;&#105;&#x6c;&#x74;&#x6f;&#x3a;&#108;&#x69;&#110;&#97;&#114;&#x6f;&#64;&#49;&#x39;&#x32;&#46;&#x31;&#x36;&#x38;&#x2e;&#49;&#49;&#46;&#x31;&#51;&#x33;">&#108;&#105;&#x6e;&#97;&#x72;&#x6f;&#64;&#49;&#57;&#x32;&#46;&#x31;&#x36;&#56;&#x2e;&#x31;&#49;&#x2e;&#49;&#x33;&#x33;</a>
+<a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#108;&#x69;&#110;&#97;&#114;&#x6f;&#x40;&#x31;&#57;&#x32;&#x2e;&#49;&#54;&#x38;&#x2e;&#x31;&#x31;&#46;&#49;&#x33;&#x33;">&#108;&#x69;&#x6e;&#97;&#x72;&#111;&#x40;&#49;&#x39;&#50;&#x2e;&#49;&#54;&#x38;&#46;&#49;&#49;&#x2e;&#49;&#x33;&#51;</a>&rsquo;s password:
 Welcome to Linaro 14.04 (GNU/Linux 3.12.0-g0bc9c3a-dirty armv7l)</p>
 
 <ul>
@@ -544,196 +755,6 @@ hexidecimal operation code.</li>
 
 
 <p>Thank you SCNA! As I shared with the other devs at SCNA, I will gladly post my mistakes and <em>gotchas</em> here for people who want to build a unit like this. Let&rsquo;s build!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Prep for Parallella's 64 Cores: Installing Go on Mac OS X]]></title>
-    <link href="http://RayHightower.com/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/"/>
-    <updated>2013-06-22T12:58:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x</id>
-    <content type="html"><![CDATA[<p><img src="http://RayHightower.com/images/parallella.jpg" width="450" height="257" alt="Parallella 64-core supercomputer" title="Parallella 64-core supercomputer" align="right" imgcap="Parallella Board">
-The idea of owning a 64-core parallel system for two hundred dollars (yes, $200.00) is exciting. <a href="http://www.parallella.org/introduction/">Parallella</a> is working to make that happen, perhaps as early as August 2013. To prepare for that day, I&rsquo;ve decided to introduce myself to the Go language.</p>
-
-<!--more-->
-
-
-<h3>What is Go?</h3>
-
-<p><a href="http://golang.org">The Go language</a> is designed for parallel systems. Why does Go exist? One developer sums it up this way:</p>
-
-<blockquote><p>Go was created at Google, by Google, for Google-size problems.<br/>~Dave Astels</p></blockquote>
-
-<p>Google writes software that runs on thousands of machines in parallel. As the number of concurrent operations increases, new challenges are encountered. Google addressed those challenges by creating Go.</p>
-
-<h3>Why Does a Rubyist Learn Go?</h3>
-
-<p>The team at <a href="http://wisdomgroup.com">WisdomGroup</a> writes web and mobile apps, mainly in Ruby. So why am I learning Go?</p>
-
-<p>Because the best developers are polyglot. When we learn a new language, we cause ourselves to see old problems in new ways and we strengthen our ability to solve new problems. It&rsquo;s like cross-training for  athletes. In the end, we become better developers.</p>
-
-<h3>How to Install Go on Mac OS X</h3>
-
-<ol>
-<li><a href="https://code.google.com/p/go/downloads/list">Download the binary of Go that matches your system</a> <i>but don&#8217;t install it yet</i>. You will need to complete the rest of these steps before installation. For my 2010 i5-based 15-inch MacBook Pro, I chose <code>go1.1.1.darwin-amd64.pkg</code>. I was concerned about the reference to <code>amd64</code> in the name. But the description includes <code>Mac OS X (x86 64-bit)</code>, and the binary worked for me.</li>
-<br/>
-<li>If you are upgrading from a previous version of Go, you will need to remove the old Go directory. You can do this while the new binary is downloading in the background:</li>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rm -rf /usr/local/go
-</span></code></pre></td></tr></table></div></figure> 
-
-<li>Define the <code>GOROOT</code> and <code>GOPATH</code> environmental variables. My system uses <code>~/.bash_profile</code> to define environmental variables, so I added the following lines to the end of that file:
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">export </span><span class="nv">GOROOT</span><span class="o">=</span>/usr/local/go
-</span><span class='line'><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$GOROOT</span>/bin
-</span><span class='line'><span class="nb">export </span><span class="nv">GOPATH</span><span class="o">=</span>~/Code/gocode
-</span></code></pre></td></tr></table></div></figure> 
-
-Note: I&#8217;m using the default <code>GOROOT</code> variable, but your <code>GOPATH</code> may differ from mine. I store all of my source code in a subdirectory of home:<code>~/Code</code>. My complete Go directory structure is given below. By looking at my structure, you can adjust these steps to fit your system.</li>
-<br/>
-<li>Tell your terminal session to recognize the new environmental variables. You can either restart terminal, or if your environmental variables are in <code>~/.bash_profile</code> like mine, you can do the following:</li>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="nb">source</span> ~/.bash_profile
-</span></code></pre></td></tr></table></div></figure> 
-<li>Run the package installation program, <code>go1.1.1.darwin-amd64.pkg</code>, that was downloaded in Step 1.</li>
-</ol>
-
-
-<p>Now, let&rsquo;s Go for a test drive.</p>
-
-<h3>Creating a Go Workspace</h3>
-
-<p>Before you can run a Go program on your system, you have to create a Go workspace. A workspace is a directory structure that contains source code and binaries that a Go program needs in order to compile and execute.</p>
-
-<p>We can examine the Go Workspace on my system with the Unix <code>tree</code> command:</p>
-
-<p>&#8220;` bash</p>
-
-<p>~/Code/gocode$ tree
-.
-└── src</p>
-
-<pre><code>└── github.com
-    └── rayhightower
-        └── hello
-            └── hello.go
-</code></pre>
-
-<p>4 directories, 1 file</p>
-
-<p>~/Code/gocode$</p>
-
-<p>&#8220;`</p>
-
-<p>Here&rsquo;s a brief description of the directories:</p>
-
-<ul>
-<li>Code = root directory for all source code on my system. Yours may differ.</li>
-<li>gocode = where I store all of the Go code on my system. I&rsquo;m following the structure recommended by the Go documentation. I may alter this as I learn more about the language.</li>
-<li>src = source code</li>
-<li>github.com = directory named after the place where I store repos</li>
-<li>rayhightower = my GitHub profile name</li>
-<li>hello = directory named for our first Go application</li>
-<li>hello.go = the Go source file for our <code>Hello World</code> program</li>
-</ul>
-
-
-<p>All structure below the <code>gocode</code> directory is mandated by Go.</p>
-
-<h3>Writing &lsquo;Hello World!&rsquo; in Go</h3>
-
-<p>Google&rsquo;s official installation instructions include a simple &lsquo;Hello World&rsquo; program for testing the installation. A slightly modified version appears below:</p>
-
-<p>&#8220;` go</p>
-
-<p>package main</p>
-
-<p>import &ldquo;fmt&rdquo;</p>
-
-<p>func main() {</p>
-
-<pre><code>fmt.Printf("\n****** Hey Parallella enthusiasts: Learn Go! ******\n")
-</code></pre>
-
-<p>}</p>
-
-<p>&#8220;`</p>
-
-<h3>Compiling and Running</h3>
-
-<p>We drop the code into a file called <code>hello.go</code> in the <code>hello</code> directory. To compile the program:</p>
-
-<p>&#8220;` bash</p>
-
-<p>~/Code/gocode/src/github.com/rayhightower/hello$ go install</p>
-
-<p>~/Code/gocode/src/github.com/rayhightower/hello$</p>
-
-<p>&#8220;`</p>
-
-<p>If the Go compiler responds with a blank prompt (like above) then the program compiled successfully and a <code>bin</code> directory has been created inside the Go workspace. Run the <code>tree</code> command from the <code>gocode</code> directory to see how the structure has changed:</p>
-
-<p>&#8220;` bash</p>
-
-<p>~/Code/gocode$ tree
-.
-├── bin
-│   └── hello
-└── src</p>
-
-<pre><code>└── github.com
-    └── rayhightower
-        └── hello
-            └── hello.go
-</code></pre>
-
-<p>5 directories, 2 files</p>
-
-<p>~/Code/gocode$</p>
-
-<p>&#8220;`</p>
-
-<p>The newly created <code>bin/</code> directory contains our <code>hello</code> executable. And now, let&rsquo;s cut the suspense and <em>run the program</em>. To do so, change into the <code>bin/</code> directory and type <code>./hello</code>.</p>
-
-<p>&#8220;` bash</p>
-
-<p>~/Code/gocode/src/github.com/rayhightower/hello$ cd ~/Code/gocode/bin</p>
-
-<p>~/Code/gocode/bin$ ./hello</p>
-
-<p><strong><strong><strong> Hey Parallella enthusiasts: Learn Go! </strong></strong></strong></p>
-
-<p>~/Code/gocode/bin$</p>
-
-<p>&#8220;`</p>
-
-<p>Success!</p>
-
-<h3>It&rsquo;s Not Official, But It Makes Sense</h3>
-
-<p>As of this writing, Parallella does not officially support the Go language. So why go through all of this trouble? Because&hellip;</p>
-
-<ul>
-<li>A 64-core Parallella is just too cool to pass up. And it&rsquo;s open source.</li>
-<li>Go is designed for parallel systems. And it&rsquo;s open source.</li>
-<li>Open source devs are working on a Go compiler for Parallella right now. If you&rsquo;re reading this, and you&rsquo;re one of the devs, thank you!</li>
-</ul>
-
-
-<p>The Go-Parallella match makes sense. It&rsquo;s always good to skate where the puck is going.</p>
-
-<h3>Next Steps</h3>
-
-<p>Now it&rsquo;s time to explore the Go language. The real adventure begins when the 64-core Parallella arrives. Looking forward to it!</p>
-
-<h3>Acknowledgements</h3>
-
-<p>I was inspired to explore Go by <a href="https://twitter.com/blakesmith">Blake Smith&rsquo;s</a> presentation at <a href="http://www.meetup.com/ChicagoSC/events/120658422/">8th Light</a>. <a href="http://twitter.com/wondible">Justin Love</a> introduced me to Parallella last month at ChicagoRuby.</p>
 ]]></content>
   </entry>
   

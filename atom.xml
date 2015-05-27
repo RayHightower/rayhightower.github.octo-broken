@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-05-26T03:49:33-05:00</updated>
+  <updated>2015-05-26T21:08:17-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,266 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Massively Parallel Parallella]]></title>
+    <link href="http://RayHightower.com/blog/2015/05/27/massively-parallel-parallella/"/>
+    <updated>2015-05-27T13:15:27-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/05/27/massively-parallel-parallella</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/supercomputer-dot-io-logo.png' width='' height='' alt='Resin.io & Parallella' title='Resin.io & Parallella'><span class='caption-text'>Resin.io &amp; Parallella</span></span>
+<a href="http://supercomputer.io/">Supercomputer.io</a> is the first technical conference for <a href="http://rayhightower.com/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella</a>, to be held May 30, 2015 in Tokyo, Japan.</p>
+
+<p>You can participate even if you’re not in Tokyo. Parallella owners around the world will connect their boards via the Internet to create the most efficient supercomputer on the planet. <a href="http://resin.io/">Resin.io</a> has built a special micro-SD-card image (using <a href="https://www.docker.com/">Docker</a>) so adding your Parallella to the mix is relatively quick.</p>
+
+<p>Detailed steps are given below, along with a few <em>gotchas</em>.</p>
+
+<h3>First: Why?</h3>
+
+<p>Some problems are too thorny for a typical computer to solve in a reasonable amount of time. Supercomputers might solve these problems quicker, but they&rsquo;re expensive. Solution: Link a bunch of Parallella computers together via the Internet to amplify our compute power while saving money. This shared computing technique has worked in the past:</p>
+
+<ul>
+<li><p>Through <a href="https://folding.stanford.edu/">Stanford Folding@home</a>, computer owners around the world are using excess CPU cycles to search for cures for diseases like Alzheimer’s, Huntington’s, and Parkinson&rsquo;s.</p></li>
+<li><p>The <a href="http://setiathome.ssl.berkeley.edu/">SETI@home</a> project uses computers around the world to download and analyze radio telescope data to help with the search for extraterrestrial intelligence.</p></li>
+</ul>
+
+
+<p>The benefits are clear. Let&rsquo;s get started.</p>
+
+<!--more-->
+
+
+<h3>Materials Required</h3>
+
+<p>Here&rsquo;s what you need to participate:</p>
+
+<ul>
+<li>Parallella board. You can buy one for about $100 at <a href="http://www.parallella.org/buy/">these retailers</a>.</li>
+<li>Ethernet connection to the Internet.</li>
+<li>4 GB (or larger) micro-SD card.</li>
+</ul>
+
+
+<h3><em>Gotcha:</em> Headless Parallella</h3>
+
+<p>Something that tripped me up until I learned more: A Parallella configured for Supercomputer.io will run headless. <em>There will be no HDMI output.</em> When my HDMI monitor showed <code>No Signal</code>, I thought that I had broken something. No worries. This is just a headless system.</p>
+
+<p>I don&rsquo;t know if that will change.</p>
+
+<h3>Download the Image</h3>
+
+<p><a href="http://supercomputer.io/">Download the Resion.io image</a> from the Supercomputer.io site. <a href="http://resin.io/">Resin.io</a> has created a special SD-card image (using Docker) for this project. As you can see below, I stored mine in a directory called <code>~/Downloads/Parallella$</code>.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Downloads/Parallella<span class="nv">$ </span>ls -al
+</span><span class='line'>total 2678784
+</span><span class='line'>drwxr-xr-x   3 rth  staff         102 May 26 10:53 .
+</span><span class='line'>drwx---r-x+ 86 rth  staff        2924 May 26 11:00 ..
+</span><span class='line'>-rw-r-----@  1 rth  staff  1371537408 May 26 10:56 resin-supercomputer-0.1.0-0.0.14-Z7010-16.img
+</span><span class='line'>
+</span><span class='line'>~/Downloads/Parallella<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Prep for Burning the SD Card</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/micro_sd_plus_adapter.jpg' width='' height='' alt='Micro SD card and adapter.' title='Micro SD card and adapter.'><span class='caption-text'>Micro SD card and adapter.</span></span>
+Burning the SD card took about sixteen minutes (once I got the procedure right, as described below). Suggestion: Start the burn process, make sure it&rsquo;s progressing, and then go work on something else. A watched pot never boils.</p>
+
+<p>Insert your SD card into your Mac&rsquo;s SD card reader, and use the Mac OS X <code>diskutil list</code> command to determine the designation of the SD card. If you use portable hard drives with your primary machine, the SD card designation could change from time to time, so it&rsquo;s important to perform this step each time you burn an SD card.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Downloads/Parallella<span class="nv">$ </span>diskutil list
+</span><span class='line'>/dev/disk0
+</span><span class='line'>   <span class="c">#:                       TYPE NAME                    SIZE       IDENTIFIER</span>
+</span><span class='line'>   0:      GUID_partition_scheme                        *960.2 GB   disk0
+</span><span class='line'>   1:                        EFI EFI                     209.7 MB   disk0s1
+</span><span class='line'>   2:                  Apple_HFS MacSSD                  959.3 GB   disk0s2
+</span><span class='line'>   3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
+</span><span class='line'>/dev/disk2
+</span><span class='line'>   <span class="c">#:                       TYPE NAME                    SIZE       IDENTIFIER</span>
+</span><span class='line'>   0:     FDisk_partition_scheme                        *8.0 GB     disk2
+</span><span class='line'>   1:               Windows_NTFS Parallella              8.0 GB     disk2s1
+</span><span class='line'>
+</span><span class='line'>~/Downloads/Parallella<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>From this <code>diskutil</code> report, we can see that we want to burn the SD image to <code>/dev/disk2</code>. The other device is the hard drive for my primary machine. Burning the wrong device will destroy data.</p>
+
+<h3>Burning the Card, Skipping the <em>Gotcha</em></h3>
+
+<p>To burn the SD card&hellip;</p>
+
+<ol>
+<li>Change into the directory where you downloaded the Ubuntu image.</li>
+<li>Unmount the destination partition on the SD card.</li>
+<li>Use the the <code>dd</code> command to copy the Ubuntu image to the SD card.</li>
+</ol>
+
+
+<p><em>Gotcha alert:</em> The first time I attempted to burn the image, I used a block size of 64k (<code>bs=64k</code>) for the <code>dd</code> operation. Big mistake on my part because the write operation took almost <em>four hours</em>. On my second attempt, I used a 1 megabyte block size (<code>bs=1m</code>) and the write operation finished in a speedy <em>16 minutes</em>. So, learn from my pain and use <code>bs=1m</code>.</p>
+
+<p>Burn your micro-SD card like so:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="nb">cd</span> <span class="o">[</span>directory containing the resin.io image file<span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>diskutil unmountDisk /dev/disk2
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>sudo dd <span class="k">if</span><span class="o">=</span>resin-supercomputer-0.1.0-0.0.14-Z7010-16.img <span class="nv">of</span><span class="o">=</span>/dev/disk2 <span class="nv">bs</span><span class="o">=</span>1m
+</span><span class='line'>Password:
+</span><span class='line'>1308+0 records in
+</span><span class='line'>1308+0 records out
+</span><span class='line'>1371537408 bytes transferred in 960.001945 secs <span class="o">(</span>1428682 bytes/sec<span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/activity_monitor_resin_image.png' width='' height='' alt='Burn progress.' title='Burn progress.'><span class='caption-text'>Burn progress.</span></span>
+If you want to make sure that <code>dd</code> is running properly, use OS X&rsquo;s <code>Activity Monitor</code> utility to monitor burn progress (see the &lsquo;burn progress&rsquo; diagram). Here&rsquo;s a quick run-through of the <code>dd</code> command options:</p>
+
+<ul>
+<li><code>sudo</code> gives you <a href="http://RayHightower.com/sudo-disclaimer/">super powers</a>.</li>
+<li><code>dd</code> is the &ldquo;copy and convert&rdquo; command. The letters &ldquo;dd&rdquo; have nothing to do with what the tool actually does. It&rsquo;s just a command name. And like so many things in computer science, the name might be based on a pun.</li>
+<li><code>if=</code> specifies the input file. You can include the full path, or if the file is in your current directory, you can omit the path as shown in this example.</li>
+<li><code>of=</code> specifies the output file. We know that the SD card is located at <code>/dev/disk</code> so that&rsquo;s where the results of this command are headed.  Note that your destination directory may differ from this one.</li>
+<li><code>bs=1m</code> specifies the block size used for the destination file. 1 megabyte worked well on my machine.</li>
+</ul>
+
+
+<h3>About the New Resin.io Image</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/parallella_resin_image_files.png' width='' height='' alt='Image files.' title='Image files.'><span class='caption-text'>Image files.</span></span>
+The new image will be called <code>boot-parall</code> as shown in the diagram.  Depending on your particular image, your list of files may be the same as mine.</p>
+
+<h3>Boot Parallella with the Resin.io Image</h3>
+
+<p>Once the micro-SD card has been burned, eject it from the Mac and insert it into the Parallella. Then apply power to the Parallella.</p>
+
+<h3>Working Headless</h3>
+
+<p>As mentioned above, a Parallella configured this way will run headless, without HDMI output. So, how do you know if the Resin.io image is working?</p>
+
+<p>First, get a network scanner and use it to locate your Parallella on your local area network. I use an iPad app called <a href="https://itunes.apple.com/us/app/fing-network-scanner/id430921107?mt=8">Fing</a>, but any good network scanner will do. Your Parallella will appear as <code>parallella-hdmi-resin</code>, along with corresponding IP and MAC addresses.</p>
+
+<p>Ping the IP address given by your network scanning tool like so:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>ping 192.168.11.132
+</span><span class='line'>PING 192.168.11.132 <span class="o">(</span>192.168.11.132<span class="o">)</span>: 56 data bytes
+</span><span class='line'>64 bytes from 192.168.11.132: <span class="nv">icmp_seq</span><span class="o">=</span>0 <span class="nv">ttl</span><span class="o">=</span>64 <span class="nb">time</span><span class="o">=</span>4.767 ms
+</span><span class='line'>64 bytes from 192.168.11.132: <span class="nv">icmp_seq</span><span class="o">=</span>1 <span class="nv">ttl</span><span class="o">=</span>64 <span class="nb">time</span><span class="o">=</span>3.694 ms
+</span><span class='line'>64 bytes from 192.168.11.132: <span class="nv">icmp_seq</span><span class="o">=</span>2 <span class="nv">ttl</span><span class="o">=</span>64 <span class="nb">time</span><span class="o">=</span>4.057 ms
+</span><span class='line'>64 bytes from 192.168.11.132: <span class="nv">icmp_seq</span><span class="o">=</span>3 <span class="nv">ttl</span><span class="o">=</span>64 <span class="nb">time</span><span class="o">=</span>3.969 ms
+</span><span class='line'>^C
+</span><span class='line'>--- 192.168.11.132 ping statistics ---
+</span><span class='line'>4 packets transmitted, 4 packets received, 0.0% packet loss
+</span><span class='line'>round-trip min/avg/max/stddev <span class="o">=</span> 3.694/4.122/4.767/0.396 ms
+</span><span class='line'>
+</span><span class='line'>~<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If your Parallella is up, running, and attached to your network, your
+output will look similar to what you see above. But if <code>ping</code> can&rsquo;t find
+your Parallella, you&rsquo;ll get&hellip;</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>ping 192.168.11.199
+</span><span class='line'>PING 192.168.11.199 <span class="o">(</span>192.168.11.199<span class="o">)</span>: 56 data bytes
+</span><span class='line'>Request timeout <span class="k">for </span>icmp_seq 0
+</span><span class='line'>Request timeout <span class="k">for </span>icmp_seq 1
+</span><span class='line'>Request timeout <span class="k">for </span>icmp_seq 2
+</span><span class='line'>^C
+</span><span class='line'>--- 192.168.11.199 ping statistics ---
+</span><span class='line'>4 packets transmitted, 0 packets received, 100.0% packet loss
+</span><span class='line'>
+</span><span class='line'>~<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Connect to Supercomputer.io</h3>
+
+<p>After you have successfully connected your Parallella to your LAN and the Internet, visit <a href="http://supercomputer.io/#/devices/">http://supercomputer.io/#/devices/</a> from a computer other than your Parallella (because the Parallella is headless). This page will tell you when your Parallella has connected to the Supercomputer.io mothership.</p>
+
+<p>To do this, you will need the media access control (MAC) address (also known as the hardward address) for your Parallella&rsquo;s network interface. I used my network scanning tool, Fing, to find the MAC address for the Parallella. You should be able to do the same with your network scanning tool.</p>
+
+<p>Enter your Parallella&rsquo;s MAC address as shown below, and click <code>search</code> to determine whether your device has connected.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/parallella_no_device_yet.png' width='' height='' alt='Supercomputer.io searching for your Parallella.' title='Supercomputer.io searching for your Parallella.'><span class='caption-text'>Supercomputer.io searching for your Parallella.</span></span></p>
+
+<p>Your first connection attempt might not be successful. It takes awhile for the first connection to happen because the Parallella might need to download software updates first.</p>
+
+<p>It took about 30 minutes for Supercomputer.io to recognize my Parallella. The successful connection was cause for celebration:</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/parallella_device_connected.png' width='' height='' alt='Parallella connected w/MAC address and city. Celebrate!' title='Parallella connected w/MAC address and city. Celebrate!'><span class='caption-text'>Parallella connected w/MAC address and city. Celebrate!</span></span></p>
+
+<h3>What&rsquo;s Next?</h3>
+
+<p>I&rsquo;m not sure what&rsquo;s next for Supercomputer.io and Parallella. I would imaging that <code>Status = idle</code> will be replaced by something more interesting, and <code>images processed</code> will eventually be greater than zero.</p>
+
+<p>Engineers at Parallella and Resin.io have done a great job so far. Now, since it&rsquo;s likely that they enjoy suggestions from the peanut gallery, here are a few ideas:</p>
+
+<ul>
+<li><p>Consider a version of the Resin.io image with HDMI support. Like many in the Parallella community, I&rsquo;m willing to share CPU cycles for the greater good. And I want to see what&rsquo;s running on my Parallella, too.</p></li>
+<li><p>Add more metrics to the Supercomputer.io site. It&rsquo;s nice to see the number of cores that have connected to Supercomputer.io. How about a map showing where the different Parallella devices are located? How about a dashboard that shows the number of cores currently in use?</p></li>
+</ul>
+
+
+<p>Hats off to the Parallella and Resin.io teams. Looking forward to more!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Be Courageous About Your Ideas]]></title>
@@ -1204,41 +1464,6 @@ The <a href="http://www.meetup.com/Chicago-Nodejs/events/203711262/">Chicago Nod
 
 <center><script async class="speakerdeck-embed" data-id="b51c86f083270132a7cc1ade27531f87" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script></center>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[No Windows. Stronger Planes.]]></title>
-    <link href="http://RayHightower.com/blog/2015/01/02/no-windows-stronger-planes/"/>
-    <updated>2015-01-02T23:34:04-06:00</updated>
-    <id>http://RayHightower.com/blog/2015/01/02/no-windows-stronger-planes</id>
-    <content type="html"><![CDATA[<p>It is always good to start the new year with something inspirational. <a href="http://www.technicondesign.com/">Technicon Design</a> created a 3-minute video to demonstrate their IXION Windowless Jet Concept. Worth watching full screen.</p>
-
-<center><iframe name="windowlessjet" src="//player.vimeo.com/video/78458486" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
-
-
-<p>How can a plane with no windows offer better views for passengers?</p>
-
-<!--more-->
-
-
-<h3>Windows vs Fuselage Strength</h3>
-
-<p>When we add a window to the fuselage of an airplane, we reduce the strength of the fuselage. Glass is weaker than aluminum. So aircraft engineers need to make up for the lost strength. The engineers might add a support structure, thicken the aluminum, or try a different alloy.</p>
-
-<p>But when windows are eliminated, structural integrity is maintained. And the weight of the plane can be reduced because we can eliminate the extra supports.</p>
-
-<h3>How Do We See Without Windows</h3>
-
-<p>As shown in the Technicon video, views can be better without windows!  Cameras are mounted at strategic points on the outside of the plane. And the inner surface of the plane, the part that passengers can see, is covered with a display material. Computers take the images captured by the external cameras, and they translate that into images for display on the inner walls of the plane.</p>
-
-<p>The result: Passengers feel like they&rsquo;re flying in a glass plane. That&rsquo;s an idea best communicated through the Technicon video.</p>
-
-<h3>Applying Tech Across Industries</h3>
-
-<p>Processing power continues to fall in price. Flat panel monitors get less expensive each day. The window-less plane shows us what can happen when advances in one industry are applied to another. Blend these advances with a high-speed internet connection delivered via satellite, and the Internet of Things (IoT) takes a great leap forward. Cross-discipline engineering is exciting.</p>
-
-<p>Happy New Year!</p>
 ]]></content>
   </entry>
   
