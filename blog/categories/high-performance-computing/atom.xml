@@ -4,7 +4,7 @@
   <title><![CDATA[Category: high performance computing | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/high-performance-computing/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-05-26T23:18:23-05:00</updated>
+  <updated>2015-05-27T00:06:56-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -18,7 +18,7 @@
     <link href="http://RayHightower.com/blog/2015/05/27/massively-parallel-parallella/"/>
     <updated>2015-05-27T13:15:27-05:00</updated>
     <id>http://RayHightower.com/blog/2015/05/27/massively-parallel-parallella</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/supercomputer-dot-io-logo.png' width='' height='' alt='Resin.io &amp; Parallella' title='Resin.io &amp; Parallella'><span class='caption-text'>Resin.io &amp; Parallella</span></span>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella_perspective.jpg' width='' height='' alt='Parallella: 2 ARM + 16 RISC = 18 cores.' title='Parallella: 2 ARM + 16 RISC = 18 cores.'><span class='caption-text'>Parallella: 2 ARM + 16 RISC = 18 cores.</span></span>
 <a href="http://supercomputer.io/">Supercomputer.io</a> is the first technical conference for <a href="http://rayhightower.com/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella</a>, to be held May 30, 2015 in Tokyo, Japan.</p>
 
 <p>You can participate even if you’re not in Tokyo. Parallella owners around the world will connect their boards via the Internet to create the most efficient supercomputer on the planet. <a href="http://resin.io/">Resin.io</a> has built a special micro-SD-card image (using <a href="https://www.docker.com/">Docker</a>) so adding your Parallella to the mix is relatively quick.</p>
@@ -40,11 +40,10 @@
 <!--more-->
 
 
-<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella_perspective.jpg' width='' height='' alt='Parallella: 2 ARM + 16 RISC = 18 cores.' title='Parallella: 2 ARM + 16 RISC = 18 cores.'><span class='caption-text'>Parallella: 2 ARM + 16 RISC = 18 cores.</span></span></p>
-
 <h3>Materials Required</h3>
 
-<p>Here&rsquo;s what you need to participate:</p>
+<p><span class='caption-wrapper right'><img class='caption' src='/images/supercomputer-dot-io-logo.png' width='' height='' alt='Resin.io &amp; Parallella' title='Resin.io &amp; Parallella'><span class='caption-text'>Resin.io &amp; Parallella</span></span>
+Here&rsquo;s what you need to participate:</p>
 
 <ul>
 <li>Parallella board. You can buy one for about $100 at <a href="http://www.parallella.org/buy/">these retailers</a>.</li>
@@ -565,8 +564,8 @@ drwxrwxrwx  1 rth   staff      512 Jul  6 12:11 .fseventsd
 
 <p>&#8220;` bash</p>
 
-<p>~$ ssh <a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#x6f;&#58;&#x6c;&#105;&#110;&#x61;&#x72;&#x6f;&#x40;&#49;&#x39;&#x32;&#x2e;&#x31;&#54;&#56;&#46;&#49;&#49;&#x2e;&#x31;&#x33;&#x33;">&#108;&#105;&#x6e;&#x61;&#x72;&#x6f;&#x40;&#x31;&#57;&#x32;&#46;&#49;&#x36;&#x38;&#x2e;&#49;&#x31;&#x2e;&#x31;&#51;&#51;</a>
-<a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#x6f;&#58;&#108;&#105;&#x6e;&#x61;&#114;&#111;&#64;&#49;&#x39;&#x32;&#x2e;&#x31;&#54;&#x38;&#x2e;&#x31;&#x31;&#46;&#49;&#51;&#x33;">&#x6c;&#105;&#x6e;&#97;&#x72;&#111;&#x40;&#49;&#x39;&#x32;&#x2e;&#x31;&#54;&#56;&#46;&#49;&#49;&#46;&#x31;&#51;&#x33;</a>&rsquo;s password:
+<p>~$ ssh <a href="&#109;&#x61;&#105;&#x6c;&#x74;&#x6f;&#x3a;&#x6c;&#x69;&#x6e;&#97;&#114;&#111;&#x40;&#x31;&#x39;&#50;&#x2e;&#49;&#54;&#x38;&#46;&#49;&#x31;&#x2e;&#x31;&#x33;&#51;">&#108;&#x69;&#110;&#97;&#114;&#x6f;&#x40;&#x31;&#57;&#x32;&#46;&#x31;&#54;&#56;&#46;&#49;&#49;&#x2e;&#x31;&#51;&#x33;</a>
+<a href="&#109;&#x61;&#105;&#108;&#x74;&#111;&#x3a;&#x6c;&#x69;&#x6e;&#x61;&#114;&#111;&#x40;&#49;&#x39;&#50;&#x2e;&#x31;&#x36;&#x38;&#46;&#x31;&#x31;&#46;&#x31;&#x33;&#51;">&#x6c;&#105;&#x6e;&#x61;&#x72;&#x6f;&#x40;&#49;&#x39;&#x32;&#x2e;&#49;&#54;&#56;&#46;&#49;&#x31;&#46;&#x31;&#51;&#x33;</a>&rsquo;s password:
 Welcome to Linaro 14.04 (GNU/Linux 3.12.0-g0bc9c3a-dirty armv7l)</p>
 
 <ul>
