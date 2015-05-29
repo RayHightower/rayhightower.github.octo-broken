@@ -1980,6 +1980,21 @@
     }
   },
   {
+    "id": 132,
+    "title": "Trinity High School: Thank You",
+    "category": "community",
+    "tags": [
+
+    ],
+    "url": "/blog/2015/05/29/trinity-high-school-thank-you/",
+    "content": "{% imgcap right /images/trinity_high_school_river_forest.jpg Tinity High School %}\n>What is the toughest obstacle you have ever faced in business, and how did you deal with it?<br/>~Student at Trinity High School<br/>&nbsp;River Forest, IL, USA\n\n[Trinity High School](http://www.trinityhs.org/) invited me to speak to two of their student groups this morning. The first, _Information Technology in the Greater Society_ (ITGS) is a project-based class where students explore multiple facets of the information technology industry: Web development, digital editing, open source, and related areas. The second, _Students Working to Advance Trinity’s Technology_ (SWAT) lives up to its name by ensuring that students and faculty make full use of the technology given to them.\n<!--more-->\nThe students I met at Trinity High School are intelligent and ambitious. The “toughest obstacle” question was one that I could not answer off the cuff. In fact, the question has inspired me to write a blog article on the subject. Stay tuned!\n\n### Getting Started in Software Development\nFor those students who attended this morning's presentations, here are the links that I promised you:\n\n* [GitHub Sutdent Developer Pack](https://education.github.com/pack)\n* Animated map of [Internet attacks](http://map.ipviking.com/)\n* [w3schools.com](http://www.w3schools.com/)\n\nAnd here are the slides from the presentation.\n\n<center><script async class=\"speakerdeck-embed\" data-id=\"3c1eebc95b8f4eb4b81ae48826a8ab0e\" data-ratio=\"1.77777777777778\" src=\"//speakerdeck.com/assets/embed.js\"></script></center>\n\n### About the Experience\nStudents at Trinity are attentive and engaged. Their questions enable\nthe learning experience to flow both ways, and the presenter learns as\nmuch as the audience. Thank you Trinity High School for a great experience!\n",
+    "date": {
+      "year": "2015",
+      "month": "May",
+      "day": "29"
+    }
+  },
+  {
     "id": 0,
     "title": "404 Error: Page not found.",
     "url": "/404.html",
