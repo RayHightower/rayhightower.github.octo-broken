@@ -4,7 +4,7 @@
   <title><![CDATA[Category: parallella | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/parallella/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-06-24T16:26:12-05:00</updated>
+  <updated>2015-06-25T10:35:33-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,93 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[3D Printing at BLUE1647]]></title>
+    <link href="http://RayHightower.com/blog/2015/06/25/3d-printing-at-blue1647/"/>
+    <updated>2015-06-25T17:11:35-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/06/25/3d-printing-at-blue1647</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella_3d_print_blue1647.jpg' width='' height='' alt='Parallella with a 3D-printed case.' title='Parallella with a 3D-printed case.'><span class='caption-text'>Parallella with a 3D-printed case.</span></span></p>
+
+<p>Every visit to <a href="http://blue1647.com">BLUE1647</a> is full of pleasant surprises. There’s new equipment, a new opportunity to learn new technology, new people to learn from, or all of the above.</p>
+
+<p>I recently bought a second <a href="/blog/2015/05/27/massively-parallel-parallella/">Parallella</a> for a WisdomGroup project. Since it&rsquo;s important to protect the device with a case, this seemed like a good time to try one of the 3D printers at BLUE1647. The result is in the photo, above.</p>
+
+<!--more-->
+
+
+<h3>Why 3D Printing Matters</h3>
+
+<p>The current state of 3D printing feels like laser printing in the 1980s. Back then, laser printers were big and expensive. Sharing the printer among many users made the cost easier to justify. 3D printers are in a similar position in the year 2015. And, as with any new technology, prices for 3D printers are on a downward slope.</p>
+
+<p>The 3D printers at BLUE1647 are available to any member. Talk to <a href="http://www.rashadglover.com/">Rashad Glover</a> or <a href="http://imagine-it-tech.com/">Patrick Harris</a> to get started.</p>
+
+<h3>What to Know about 3D Printing</h3>
+
+<p>Printing any object in three dimensions takes a <em>long</em> time. The case in the photo took over four hours to print. The <a href="http://www.thingiverse.com/">MakerBot Thingiverse</a> has a wide variety of STL files to choose from. <a href="http://www.thingiverse.com/thing:273701/#files">This particular STL file</a> was created by Ben Reed, a maker in Calgary, Alberta, Canada.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/blue1647_glover_3d_printer.jpg' width='' height='' alt='Industrial engineer Rashad Glover prepares the STL files for the 3D printer.' title='Industrial engineer Rashad Glover prepares the STL files for the 3D printer.'><span class='caption-text'>Industrial engineer Rashad Glover prepares the STL files for the 3D printer.</span></span></p>
+
+<h3>STL File Internals</h3>
+
+<p>Instructions for 3D printing an object are stored in a <a href="https://en.wikipedia.org/wiki/STL_(file_format">STereoLithography (STL)</a>) file. Open an STL file in <a href="http://rayhightower.com/blog/2013/01/12/why-i-use-vim/">your favorite text editor</a> and you&rsquo;ll see something like this:</p>
+
+<p>&#8220;` bash
+solid OpenSCAD_Model
+  facet normal -0.998027 0 -0.0627913</p>
+
+<pre><code>outer loop
+  vertex 0 66.2 1.95
+  vertex 0 124 1.95
+  vertex 0.020502 66.2 1.62413
+endloop
+</code></pre>
+
+<p>  endfacet
+  facet normal -0.998027 0 -0.0627913</p>
+
+<pre><code>outer loop
+  vertex 0.020502 66.2 1.62413
+  vertex 0 124 1.95
+  vertex 0.020502 124 1.62413
+endloop
+</code></pre>
+
+<p>  endfacet</p>
+
+<p>  &hellip;Skip about 58,000 lines&hellip;</p>
+
+<p>  facet normal 0.803458 -0.261061 -0.535072</p>
+
+<pre><code>outer loop
+  vertex 91.7184 1.76127 0.69744
+  vertex 91.5557 1.82567 0.421758
+  vertex 91.6374 2.0769 0.421758
+endloop
+</code></pre>
+
+<p>  endfacet
+  facet normal 0.803459 -0.261059 -0.535071</p>
+
+<pre><code>outer loop
+  vertex 91.7184 1.76127 0.69744
+  vertex 91.6374 2.0769 0.421758
+  vertex 91.8068 2.03339 0.69744
+endloop
+</code></pre>
+
+<p>  endfacet
+endsolid OpenSCAD_Model</p>
+
+<p>&#8220;`</p>
+
+<p>The objects described in an STL file can be viewed through a free online tool like <a href="http://www.viewstl.com/">ViewSTL.com</a>.</p>
+
+<h3>Next Steps</h3>
+
+<p>3D printing is still in its infancy. Next time you visit BLUE1647, maybe for a <a href="/blog/2015/04/10/chicagoruby-blue1647-1871/">ChicagoRuby</a> meeting, check it out.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Massively Parallel Parallella]]></title>
@@ -660,8 +747,8 @@ drwxrwxrwx  1 rth   staff      512 Jul  6 12:11 .fseventsd
 
 <p>&#8220;` bash</p>
 
-<p>~$ ssh <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#x6f;&#x3a;&#x6c;&#x69;&#x6e;&#x61;&#114;&#111;&#x40;&#x31;&#57;&#50;&#46;&#x31;&#x36;&#56;&#46;&#49;&#x31;&#46;&#49;&#51;&#51;">&#108;&#105;&#x6e;&#97;&#x72;&#111;&#64;&#49;&#57;&#x32;&#x2e;&#x31;&#54;&#x38;&#46;&#49;&#49;&#x2e;&#49;&#51;&#x33;</a>
-<a href="&#109;&#x61;&#x69;&#108;&#116;&#x6f;&#58;&#108;&#x69;&#110;&#97;&#x72;&#x6f;&#64;&#49;&#57;&#x32;&#x2e;&#49;&#54;&#56;&#x2e;&#x31;&#x31;&#x2e;&#x31;&#51;&#51;">&#108;&#105;&#110;&#97;&#114;&#x6f;&#64;&#49;&#57;&#50;&#46;&#x31;&#54;&#56;&#x2e;&#x31;&#x31;&#x2e;&#x31;&#51;&#51;</a>&rsquo;s password:
+<p>~$ ssh <a href="&#109;&#97;&#105;&#108;&#x74;&#x6f;&#58;&#x6c;&#105;&#110;&#97;&#x72;&#111;&#x40;&#x31;&#x39;&#x32;&#46;&#x31;&#x36;&#56;&#46;&#x31;&#x31;&#46;&#49;&#x33;&#51;">&#108;&#x69;&#110;&#97;&#x72;&#111;&#x40;&#49;&#x39;&#x32;&#46;&#49;&#54;&#56;&#x2e;&#49;&#x31;&#46;&#x31;&#x33;&#51;</a>
+<a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#x6f;&#x3a;&#108;&#x69;&#x6e;&#97;&#114;&#x6f;&#64;&#49;&#x39;&#x32;&#46;&#x31;&#x36;&#56;&#x2e;&#x31;&#x31;&#46;&#x31;&#51;&#51;">&#x6c;&#x69;&#110;&#97;&#x72;&#x6f;&#x40;&#x31;&#57;&#50;&#x2e;&#x31;&#x36;&#x38;&#46;&#49;&#x31;&#46;&#x31;&#x33;&#51;</a>&rsquo;s password:
 Welcome to Linaro 14.04 (GNU/Linux 3.12.0-g0bc9c3a-dirty armv7l)</p>
 
 <ul>
@@ -704,61 +791,6 @@ linaro-nano:~></p>
 <h3>Conclusion</h3>
 
 <p>After waiting a year for Parallella to arrive, I&rsquo;m excited to have the device up and running. Future posts will explore the &ldquo;why?&rdquo; behind parallel computing. Thanks Adapteva for helping to democratize supercomputing. Awesome times are ahead!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[A Portable Hack for Parallella]]></title>
-    <link href="http://RayHightower.com/blog/2013/11/10/a-portable-hack-for-parallella/"/>
-    <updated>2013-11-10T23:05:00-06:00</updated>
-    <id>http://RayHightower.com/blog/2013/11/10/a-portable-hack-for-parallella</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper left'><img class='caption' src='/images/parallella-portable.png' width='' height='' alt='Portability for Parallella-sized devices.' title='Portability for Parallella-sized devices.'><span class='caption-text'>Portability for Parallella-sized devices.</span></span>
-<a href="/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/">Beaglebone Black</a>, <a href="/blog/2012/12/03/ruby-on-raspberry-pi/">Raspberry Pi</a>, and <a href="/blog/2013/06/22/preparing-for-parallella-64-cores-installing-go-on-mac-os-x/">Parallella</a> are three small, powerful Linux-based computers. But in order to make these devices truly portable, we need a way to carry a monitor and keyboard along. This article describes one hack that works.</p>
-
-<h3>Inspiration in a Suitcase</h3>
-
-<p>The HP 5036 Microprocessor Lab gave me my first exposure to assembler language. I was eighteen, working my first software internship, and loving every minute of it. When I devised ways to complete my <em>regular work</em> faster than management expected, I had some time on my hands. So I spent time learning assembler with the HP 5036.</p>
-
-<!--more-->
-
-
-<p><span class='caption-wrapper'><img class='caption' src='/images/hp-5036.png' width='' height='' alt='HP 5036 Microprocessor Lab' title='HP 5036 Microprocessor Lab'><span class='caption-text'>HP 5036 Microprocessor Lab</span></span></p>
-
-<p>The entire 5036 fits in a suitcase&hellip; how cool is that! Here&rsquo;s how the 5036 works:</p>
-
-<ol>
-<li>Start by writing assembler-level code by hand on paper.</li>
-<li>Grab the reference book for the microprocessor running on the
-board, Intel 8080.</li>
-<li>For each assembler-level command, find the corresponding 2-digit
-hexidecimal operation code.</li>
-<li>Key the op code into the 5036 by hand.</li>
-<li>Run the program.</li>
-</ol>
-
-
-<p>Working with the 5036 was addictive in a positive way. In a subsequent job, where I wrote assembler to drive hardware devices, I was ready.</p>
-
-<h3>Portability Needed</h3>
-
-<p>Fast forward a few decades. We now have the Raspberry Pi, BeagleBone Black, and Parallella. Wonderful devices with one flaw in common: No portability. That&rsquo;s when I had a flashback to my days with the 5036.</p>
-
-<p>I bought a $35 technician box from Home Depot and I ripped out the insides. Micro Center had 720p LCD monitors on sale for $90, so I bought one of those. I didn&rsquo;t want to spend the extra bucks for a 1080p LCD because you never know how something like this might work out! Finally, I topped everything off with a $25 keyboard/trackpad combo from Amazon.  The result appears in the photo at the top of this article. Special thanks to Ericka [last name unknown] from Home Depot who gave me tons of ideas on how to securely fasten the monitor to the case.</p>
-
-<h3>Why?</h3>
-
-<p>Why did I spend the time and money to assemble this kit? It&rsquo;s all about learning. Devs learn more when we interact with other devs &ndash; people who are learning some of the same things that we&rsquo;re wrestling with. And sometimes the things we need to learn are too new for books.</p>
-
-<p>By carrying my Raspberry Pi, BeagleBone Black, and Parallella with me in a portable unit, I can share my experiences with other devs and learn more in the process. Everybody wins when that happens.</p>
-
-<h3>Thanks SCNA!</h3>
-
-<p>The organizers of <a href="http://scna.softwarecraftsmanship.org/">Software Craftsmanship North America (SCNA)</a> gave me the opportunity to present this story as a lightning talk at the conference. Slides are here:</p>
-
-<center><script async class="speakerdeck-embed" data-id="b3558fd02cac0131cfc62a9baba32394" data-ratio="1.29456384323641" src="//speakerdeck.com/assets/embed.js"></script></center>
-
-
-<p>Thank you SCNA! As I shared with the other devs at SCNA, I will gladly post my mistakes and <em>gotchas</em> here for people who want to build a unit like this. Let&rsquo;s build!</p>
 ]]></content>
   </entry>
   

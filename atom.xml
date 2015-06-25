@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-06-24T16:26:12-05:00</updated>
+  <updated>2015-06-25T10:35:33-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,115 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[3D Printing at BLUE1647]]></title>
+    <link href="http://RayHightower.com/blog/2015/06/25/3d-printing-at-blue1647/"/>
+    <updated>2015-06-25T17:11:35-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/06/25/3d-printing-at-blue1647</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/parallella_3d_print_blue1647.jpg' width='' height='' alt='Parallella with a 3D-printed case.' title='Parallella with a 3D-printed case.'><span class='caption-text'>Parallella with a 3D-printed case.</span></span></p>
+
+<p>Every visit to <a href="http://blue1647.com">BLUE1647</a> is full of pleasant surprises. There’s new equipment, a new opportunity to learn new technology, new people to learn from, or all of the above.</p>
+
+<p>I recently bought a second <a href="http://RayHightower.com/blog/2015/05/27/massively-parallel-parallella/">Parallella</a> for a WisdomGroup project. Since it&rsquo;s important to protect the device with a case, this seemed like a good time to try one of the 3D printers at BLUE1647. The result is in the photo, above.</p>
+
+<!--more-->
+
+
+<h3>Why 3D Printing Matters</h3>
+
+<p>The current state of 3D printing feels like laser printing in the 1980s. Back then, laser printers were big and expensive. Sharing the printer among many users made the cost easier to justify. 3D printers are in a similar position in the year 2015. And, as with any new technology, prices for 3D printers are on a downward slope.</p>
+
+<p>The 3D printers at BLUE1647 are available to any member. Talk to <a href="http://www.rashadglover.com/">Rashad Glover</a> or <a href="http://imagine-it-tech.com/">Patrick Harris</a> to get started.</p>
+
+<h3>What to Know about 3D Printing</h3>
+
+<p>Printing any object in three dimensions takes a <em>long</em> time. The case in the photo took over four hours to print. The <a href="http://www.thingiverse.com/">MakerBot Thingiverse</a> has a wide variety of STL files to choose from. <a href="http://www.thingiverse.com/thing:273701/#files">This particular STL file</a> was created by Ben Reed, a maker in Calgary, Alberta, Canada.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/blue1647_glover_3d_printer.jpg' width='' height='' alt='Industrial engineer Rashad Glover prepares the STL files for the 3D printer.' title='Industrial engineer Rashad Glover prepares the STL files for the 3D printer.'><span class='caption-text'>Industrial engineer Rashad Glover prepares the STL files for the 3D printer.</span></span></p>
+
+<h3>STL File Internals</h3>
+
+<p>Instructions for 3D printing an object are stored in a <a href="https://en.wikipedia.org/wiki/STL_(file_format">STereoLithography (STL)</a>) file. Open an STL file in <a href="http://rayhightower.com/blog/2013/01/12/why-i-use-vim/">your favorite text editor</a> and you&rsquo;ll see something like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>solid OpenSCAD_Model
+</span><span class='line'>  facet normal -0.998027 0 -0.0627913
+</span><span class='line'>    outer loop
+</span><span class='line'>      vertex 0 66.2 1.95
+</span><span class='line'>      vertex 0 124 1.95
+</span><span class='line'>      vertex 0.020502 66.2 1.62413
+</span><span class='line'>    endloop
+</span><span class='line'>  endfacet
+</span><span class='line'>  facet normal -0.998027 0 -0.0627913
+</span><span class='line'>    outer loop
+</span><span class='line'>      vertex 0.020502 66.2 1.62413
+</span><span class='line'>      vertex 0 124 1.95
+</span><span class='line'>      vertex 0.020502 124 1.62413
+</span><span class='line'>    endloop
+</span><span class='line'>  endfacet
+</span><span class='line'>
+</span><span class='line'>  ...Skip about 58,000 lines...
+</span><span class='line'>
+</span><span class='line'>  facet normal 0.803458 -0.261061 -0.535072
+</span><span class='line'>    outer loop
+</span><span class='line'>      vertex 91.7184 1.76127 0.69744
+</span><span class='line'>      vertex 91.5557 1.82567 0.421758
+</span><span class='line'>      vertex 91.6374 2.0769 0.421758
+</span><span class='line'>    endloop
+</span><span class='line'>  endfacet
+</span><span class='line'>  facet normal 0.803459 -0.261059 -0.535071
+</span><span class='line'>    outer loop
+</span><span class='line'>      vertex 91.7184 1.76127 0.69744
+</span><span class='line'>      vertex 91.6374 2.0769 0.421758
+</span><span class='line'>      vertex 91.8068 2.03339 0.69744
+</span><span class='line'>    endloop
+</span><span class='line'>  endfacet
+</span><span class='line'>endsolid OpenSCAD_Model
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The objects described in an STL file can be viewed through a free online tool like <a href="http://www.viewstl.com/">ViewSTL.com</a>.</p>
+
+<h3>Next Steps</h3>
+
+<p>3D printing is still in its infancy. Next time you visit BLUE1647, maybe for a <a href="http://RayHightower.com/blog/2015/04/10/chicagoruby-blue1647-1871/">ChicagoRuby</a> meeting, check it out.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Getting Started With Jekyll]]></title>
@@ -1360,154 +1469,6 @@ from the Dedication page in SICP</p></blockquote>
 <p>If you are a software developer in the Chicago area, be sure to check out <a href="http://www.eventbrite.com/e/sicp-chicago-w-dave-astels-tickets-15525870296">the SICP group</a>. As the SICP authors say, you don’t need to know Lisp to embark on this path; you’ll learn Lisp as we travel along. And our brains will be stretched in new and interesting ways.</p>
 
 <p>What an exciting time to be alive!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[SICP Study Group]]></title>
-    <link href="http://RayHightower.com/blog/2015/02/18/sicp-study-group/"/>
-    <updated>2015-02-18T15:15:25-06:00</updated>
-    <id>http://RayHightower.com/blog/2015/02/18/sicp-study-group</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/sicp.jpg' width='' height='' alt='SICP' title='SICP'><span class='caption-text'>SICP</span></span>
-Veteran developer <a href="http://twitter.com/dastels">Dave Astels</a> is leading a <a href="https://www.eventbrite.com/e/sicp-chicago-w-dave-astels-tickets-15525870296">Structure and Interpretation of Computer Programs (SICP) study group</a> for the next ten months. The Massachusetts Institute of Technology uses SICP as the text for one of its early computer science courses. Session one of Dave’s group starts today at 6pm. For any developer who wants to ramp up in skill, the SICP study group is an excellent opportunity to do so.</p>
-
-<p>MIT makes the <a href="http://mitpress.mit.edu/sicp/">entire text of SICP</a> available online for free. Or you can buy a paper version of the book at Amazon.</p>
-
-<p>Thank you <a href="http://www.bradsdeals.com/">Brad’s Deals</a> and <a href="https://twitter.com/lostghost">Ken Walters</a> for hosting the SICP group.</p>
-
-<!--more-->
-
-
-<h3>Installing Scheme on Mac OS X</h3>
-
-<p>Examples and exercises in SICP are written in Scheme, a dialect of the LISP programming language. As of this writing, installing <code>mit-scheme</code> via Homebrew <em>did not work for me</em>.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>brew install mit-scheme
-</span><span class='line'>Error: No available formula <span class="k">for </span>mit-scheme
-</span><span class='line'>Searching formulae...
-</span><span class='line'>Searching taps...
-</span><span class='line'>homebrew/x11/mit-scheme
-</span><span class='line'>
-</span><span class='line'>~<span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><em>Update: Some members of the SICP study group had success installing <code>mit-scheme</code> with Homebrew, while others (like me) did not. We did not determine why some of the Homebrew installations were successful. However, the non-Homebrew method described in this article seems to work across-the-board.</em></p>
-
-<p>Alternative solution: Grab a pre-compiled binary from the <a href="http://www.gnu.org/software/mit-scheme/">MIT/GNU Scheme</a> site. The <code>mit-scheme-9.2-x86-64.dmg</code> disk image was the right one for my early 2013 MacBook Pro. Your system may be different.</p>
-
-<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/gnu_float.png' width='' height='' alt='Opening the MIT/GNU Scheme disk image.' title='Opening the MIT/GNU Scheme disk image.'><span class='caption-text'>Opening the MIT/GNU Scheme disk image.</span></span></p>
-
-<p>To install, drag the <code>MIT/GNU Scheme.app</code> icon into the Applications folder on the Mac.</p>
-
-<h3>Setting Up Symlinks</h3>
-
-<p>Scheme is run from the command line. In order to make that work, we need to setup two symbolic links.</p>
-
-<p>First, create a symbolic link called <code>mit-scheme-x86-64</code> in your home directory that links to the appropriate executable in the <code>/Applications</code> directory. In other words&hellip;</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo ln -s /Applications/MIT<span class="se">\:</span>GNU<span class="se">\ </span>Scheme.app/Contents/Resources /usr/local/lib/mit-scheme-x86-64
-</span><span class='line'>Password:
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Next, setup a symlink that will let us simply type <code>scheme</code> when we want to use this version of the language&hellip;</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo ln -s /usr/local/lib/mit-scheme-x86-64/mit-scheme /usr/bin/scheme
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Confirm that the links are in place by checking the <code>scheme</code> version number.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>scheme --version
-</span><span class='line'>MIT/GNU Scheme microcode 15.3
-</span><span class='line'>Copyright <span class="o">(</span>C<span class="o">)</span> 2014 Massachusetts Institute of Technology
-</span><span class='line'>This is free software<span class="p">;</span> see the <span class="nb">source </span><span class="k">for </span>copying conditions. There is NO warranty<span class="p">;</span> not even <span class="k">for</span>
-</span><span class='line'>MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-</span><span class='line'>
-</span><span class='line'>Image saved on Saturday May 17, 2014 at 2:39:25 AM
-</span><span class='line'>  Release 9.2 <span class="o">||</span> Microcode 15.3 <span class="o">||</span> Runtime 15.7 <span class="o">||</span> SF 4.41 <span class="o">||</span> LIAR/x86-64 4.118 <span class="o">||</span> Edwin 3.116
-</span><span class='line'>
-</span><span class='line'>Moriturus te saluto.
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>If you are like me, you will laugh at the gladiator message at the end of the version info.</p>
-
-<h3>Better Way to Symlink?</h3>
-
-<p>Why not create a single symbolic link directly from the <code>Resources</code> directory to the <code>scheme</code> command in <code>/usr/bin</code>? I am not certain, but I suspect it has something to do with expectations within the Scheme interpreter. The interpreter may be expecting certain files to be in certain directories. I’ll update this article when I learn more.</p>
-
-<h3>Running Scheme</h3>
-
-<p>To start the Scheme read-evaluate-print-loop (REPL)&hellip;</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>scheme
-</span><span class='line'>MIT/GNU Scheme running under OS X
-</span><span class='line'>Type <span class="sb">`</span>^C<span class="s1">&#39; (control-C) followed by `H&#39;</span> to obtain information about interrupts.
-</span><span class='line'>
-</span><span class='line'>Copyright <span class="o">(</span>C<span class="o">)</span> 2014 Massachusetts Institute of Technology
-</span><span class='line'>This is free software<span class="p">;</span> see the <span class="nb">source </span><span class="k">for </span>copying conditions. There is NO warranty<span class="p">;</span> not even <span class="k">for</span>
-</span><span class='line'>MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-</span><span class='line'>
-</span><span class='line'>Image saved on Saturday May 17, 2014 at 2:39:25 AM
-</span><span class='line'>  Release 9.2 <span class="o">||</span> Microcode 15.3 <span class="o">||</span> Runtime 15.7 <span class="o">||</span> SF 4.41 <span class="o">||</span> LIAR/x86-64 4.118 <span class="o">||</span> Edwin 3.116
-</span><span class='line'>
-</span><span class='line'>1 <span class="o">]=</span>&gt;
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Exit the REPL by typing <code>CTRL-D</code>.</p>
-
-<p>Looking forward to SICP tonight!</p>
-
-<h3>Acknowledgement</h3>
-
-<p>Thanks <a href="https://jacksonisaac.wordpress.com/2014/03/25/installing-scheme-on-mac-os-x/">Jackson Isaac</a> for the information about symlinks as used with this version of scheme.</p>
 ]]></content>
   </entry>
   

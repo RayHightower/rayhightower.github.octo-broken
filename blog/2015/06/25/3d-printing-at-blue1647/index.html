@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: linux - RayHightower.com</title>
+  <title>3D Printing at BLUE1647 - RayHightower.com</title>
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="Category: linux">
+  <meta name="description" content="Parallella with a 3D-printed case. Every visit to BLUE1647 is full of pleasant surprises. There’s new equipment, a new opportunity to learn new &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://RayHightower.com/blog/categories/linux">
+  <link rel="canonical" href="http://RayHightower.com/blog/2015/06/25/3d-printing-at-blue1647">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="RayHightower.com" type="application/atom+xml">
@@ -103,241 +103,177 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: linux</h1>
+    
+      <h1 class="entry-title">3D Printing at BLUE1647</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-06-25T17:11:35-05:00'><span class='date'>June 25, 2015</span> <span class='time'></span></time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella_3d_print_blue1647.jpg' width='' height='' alt='Parallella with a 3D-printed case.' title='Parallella with a 3D-printed case.'><span class='caption-text'>Parallella with a 3D-printed case.</span></span></p>
+
+<p>Every visit to <a href="http://blue1647.com">BLUE1647</a> is full of pleasant surprises. There’s new equipment, a new opportunity to learn new technology, new people to learn from, or all of the above.</p>
+
+<p>I recently bought a second <a href="/blog/2015/05/27/massively-parallel-parallella/">Parallella</a> for a WisdomGroup project. Since it&rsquo;s important to protect the device with a case, this seemed like a good time to try one of the 3D printers at BLUE1647. The result is in the photo, above.</p>
+
+<!--more-->
+
+
+<h3>Why 3D Printing Matters</h3>
+
+<p>The current state of 3D printing feels like laser printing in the 1980s. Back then, laser printers were big and expensive. Sharing the printer among many users made the cost easier to justify. 3D printers are in a similar position in the year 2015. And, as with any new technology, prices for 3D printers are on a downward slope.</p>
+
+<p>The 3D printers at BLUE1647 are available to any member. Talk to <a href="http://www.rashadglover.com/">Rashad Glover</a> or <a href="http://imagine-it-tech.com/">Patrick Harris</a> to get started.</p>
+
+<h3>What to Know about 3D Printing</h3>
+
+<p>Printing any object in three dimensions takes a <em>long</em> time. The case in the photo took over four hours to print. The <a href="http://www.thingiverse.com/">MakerBot Thingiverse</a> has a wide variety of STL files to choose from. <a href="http://www.thingiverse.com/thing:273701/#files">This particular STL file</a> was created by Ben Reed, a maker in Calgary, Alberta, Canada.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/blue1647_glover_3d_printer.jpg' width='' height='' alt='Industrial engineer Rashad Glover prepares the STL files for the 3D printer.' title='Industrial engineer Rashad Glover prepares the STL files for the 3D printer.'><span class='caption-text'>Industrial engineer Rashad Glover prepares the STL files for the 3D printer.</span></span></p>
+
+<h3>STL File Internals</h3>
+
+<p>Instructions for 3D printing an object are stored in a <a href="https://en.wikipedia.org/wiki/STL_(file_format">STereoLithography (STL)</a>) file. Open an STL file in <a href="http://rayhightower.com/blog/2013/01/12/why-i-use-vim/">your favorite text editor</a> and you&rsquo;ll see something like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>solid OpenSCAD_Model
+</span><span class='line'>  facet normal -0.998027 0 -0.0627913
+</span><span class='line'>    outer loop
+</span><span class='line'>      vertex 0 66.2 1.95
+</span><span class='line'>      vertex 0 124 1.95
+</span><span class='line'>      vertex 0.020502 66.2 1.62413
+</span><span class='line'>    endloop
+</span><span class='line'>  endfacet
+</span><span class='line'>  facet normal -0.998027 0 -0.0627913
+</span><span class='line'>    outer loop
+</span><span class='line'>      vertex 0.020502 66.2 1.62413
+</span><span class='line'>      vertex 0 124 1.95
+</span><span class='line'>      vertex 0.020502 124 1.62413
+</span><span class='line'>    endloop
+</span><span class='line'>  endfacet
+</span><span class='line'>
+</span><span class='line'>  ...Skip about 58,000 lines...
+</span><span class='line'>
+</span><span class='line'>  facet normal 0.803458 -0.261061 -0.535072
+</span><span class='line'>    outer loop
+</span><span class='line'>      vertex 91.7184 1.76127 0.69744
+</span><span class='line'>      vertex 91.5557 1.82567 0.421758
+</span><span class='line'>      vertex 91.6374 2.0769 0.421758
+</span><span class='line'>    endloop
+</span><span class='line'>  endfacet
+</span><span class='line'>  facet normal 0.803459 -0.261059 -0.535071
+</span><span class='line'>    outer loop
+</span><span class='line'>      vertex 91.7184 1.76127 0.69744
+</span><span class='line'>      vertex 91.6374 2.0769 0.421758
+</span><span class='line'>      vertex 91.8068 2.03339 0.69744
+</span><span class='line'>    endloop
+</span><span class='line'>  endfacet
+</span><span class='line'>endsolid OpenSCAD_Model
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The objects described in an STL file can be viewed through a free online tool like <a href="http://www.viewstl.com/">ViewSTL.com</a>.</p>
+
+<h3>Next Steps</h3>
 
-  
-  <h2>2015</h2>
-
-<article>
-  
-<h1><a href="/blog/2015/03/19/using-rlwrap-with-mit-scheme-repl/">Using rlwrap with MIT&#8217;s Scheme REPL</a></h1>
-<time datetime="2015-03-19T17:02:11-05:00" pubdate><span class='month'>Mar</span> <span class='day'>19</span> <span class='year'>2015</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/os-x/'>os x</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2015/02/27/raspberry-pi-2-model-b-quad-core/">Raspberry Pi 2 Model B Quad Core</a></h1>
-<time datetime="2015-02-27T21:04:11-06:00" pubdate><span class='month'>Feb</span> <span class='day'>27</span> <span class='year'>2015</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/raspberri-pi/'>raspberri pi</a></span>
-</footer>
-
-
-</article>
-
-
-
-  
-  <h2>2014</h2>
-
-<article>
-  
-<h1><a href="/blog/2014/08/19/openrov-assembly-challenges/">OpenROV Assembly Challenges</a></h1>
-<time datetime="2014-08-19T16:44:00-05:00" pubdate><span class='month'>Aug</span> <span class='day'>19</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/beaglebone-black/'>beaglebone black</a>, <a class='category' href='/blog/categories/community/'>community</a>, <a class='category' href='/blog/categories/iot/'>iot</a>, <a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/node/'>node</a>, <a class='category' href='/blog/categories/openrov/'>openrov</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/07/25/linuxbarbados-is-global/">LinuxBarbados is Global</a></h1>
-<time datetime="2014-07-25T15:36:00-05:00" pubdate><span class='month'>Jul</span> <span class='day'>25</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/community/'>community</a>, <a class='category' href='/blog/categories/linux/'>linux</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/07/21/rvm-and-parallella-what-a-difference-a-shell-makes/">RVM and Parallella: What a Difference a Shell Makes</a></h1>
-<time datetime="2014-07-21T21:46:00-05:00" pubdate><span class='month'>Jul</span> <span class='day'>21</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/parallella/'>parallella</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/06/27/internet-of-things-at-acm/">Internet of Things at ACM</a></h1>
-<time datetime="2014-06-27T18:08:00-05:00" pubdate><span class='month'>Jun</span> <span class='day'>27</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/community/'>community</a>, <a class='category' href='/blog/categories/iot/'>iot</a>, <a class='category' href='/blog/categories/linux/'>linux</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/06/16/citizen-science-with-openrov/">Citizen Science With OpenROV</a></h1>
-<time datetime="2014-06-16T17:46:00-05:00" pubdate><span class='month'>Jun</span> <span class='day'>16</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/arduino/'>arduino</a>, <a class='category' href='/blog/categories/beaglebone-black/'>beaglebone black</a>, <a class='category' href='/blog/categories/community/'>community</a>, <a class='category' href='/blog/categories/iot/'>iot</a>, <a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/openrov/'>openrov</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/04/15/managing-dotfiles/">Managing Dotfiles</a></h1>
-<time datetime="2014-04-15T17:13:00-05:00" pubdate><span class='month'>Apr</span> <span class='day'>15</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/community/'>community</a>, <a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/os-x/'>os x</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/01/06/beaglebone-black-ubuntu-ruby-rails-part-2/">BeagleBone Black Running Ubuntu: Part2 (Plus Ruby on Rails)</a></h1>
-<time datetime="2014-01-06T02:31:00-06:00" pubdate><span class='month'>Jan</span> <span class='day'>06</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/beaglebone-black/'>beaglebone black</a>, <a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/node/'>node</a>, <a class='category' href='/blog/categories/rails/'>rails</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/01/02/beaglebone-black-ubuntu-part-1/">BeagleBone Black Running Ubuntu: Part1</a></h1>
-<time datetime="2014-01-02T15:59:00-06:00" pubdate><span class='month'>Jan</span> <span class='day'>02</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/beaglebone-black/'>beaglebone black</a>, <a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/os-x/'>os x</a>, <a class='category' href='/blog/categories/rails/'>rails</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a></span>
-</footer>
-
-
-</article>
-
-
-
-  
-  <h2>2013</h2>
-
-<article>
-  
-<h1><a href="/blog/2013/05/31/kali-linux-pentesting/">Kali Linux for Pentesting</a></h1>
-<time datetime="2013-05-31T00:15:00-05:00" pubdate><span class='month'>May</span> <span class='day'>31</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/education/'>education</a>, <a class='category' href='/blog/categories/linux/'>linux</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/05/22/beaglebone-black-running-ruby-on-rails/">BeagleBone Black, Up & Running</a></h1>
-<time datetime="2013-05-22T22:13:00-05:00" pubdate><span class='month'>May</span> <span class='day'>22</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/beaglebone-black/'>beaglebone black</a>, <a class='category' href='/blog/categories/education/'>education</a>, <a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/rails/'>rails</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/04/20/ack-written-in-perl-useful-with-ruby/">Ack 2.0: Written in Perl, Useful With Ruby</a></h1>
-<time datetime="2013-04-20T17:12:00-05:00" pubdate><span class='month'>Apr</span> <span class='day'>20</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/education/'>education</a>, <a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/os-x/'>os x</a>, <a class='category' href='/blog/categories/rails/'>rails</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a>, <a class='category' href='/blog/categories/vim/'>vim</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2013/03/19/how-to-take-a-raspberry-pi-screenshot/">How to Take a Raspberry Pi Screenshot</a></h1>
-<time datetime="2013-03-19T20:43:00-05:00" pubdate><span class='month'>Mar</span> <span class='day'>19</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/raspberry-pi/'>raspberry pi</a></span>
-</footer>
-
-
-</article>
-
-
-
-  
-  <h2>2012</h2>
-
-<article>
-  
-<h1><a href="/blog/2012/12/24/unix-for-ruby-developers/">Unix for Ruby Developers</a></h1>
-<time datetime="2012-12-24T16:50:00-06:00" pubdate><span class='month'>Dec</span> <span class='day'>24</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/education/'>education</a>, <a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/os-x/'>os x</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a></span>
-</footer>
-
-
-</article>
-
+<p>3D printing is still in its infancy. Next time you visit BLUE1647, maybe for a <a href="/blog/2015/04/10/chicagoruby-blue1647-1871/">ChicagoRuby</a> meeting, check it out.</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2015-06-25T17:11:35-05:00'><span class='date'>June 25, 2015</span> <span class='time'></span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/iot/'>iot</a>, <a class='category' href='/blog/categories/parallella/'>parallella</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://RayHightower.com/blog/2015/06/25/3d-printing-at-blue1647/" data-via="" data-counturl="http://RayHightower.com/blog/2015/06/25/3d-printing-at-blue1647/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2015/06/24/getting-started-with-jekyll/" title="Previous Post: Getting Started With Jekyll">&laquo; Getting Started With Jekyll</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -474,7 +410,10 @@
       var disqus_shortname = 'rayhightower';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://RayHightower.com/blog/2015/06/25/3d-printing-at-blue1647/';
+        var disqus_url = 'http://RayHightower.com/blog/2015/06/25/3d-printing-at-blue1647/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
