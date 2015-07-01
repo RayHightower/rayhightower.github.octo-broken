@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-06-30T21:31:16-05:00</updated>
+  <updated>2015-07-01T14:44:55-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -18,7 +18,7 @@
     <link href="http://RayHightower.com/blog/2015/06/24/getting-started-with-jekyll/"/>
     <updated>2015-06-24T16:02:38-05:00</updated>
     <id>http://RayHightower.com/blog/2015/06/24/getting-started-with-jekyll</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='/images/jekyll-responsive.jpg' width='' height='' alt='Jekyll.' title='Jekyll.'><span class='caption-text'>Jekyll.</span></span></p>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='/images/jekyll-responsive.jpg' width='' height='' alt='Jekyll, the static HTML generator.' title='Jekyll, the static HTML generator.'><span class='caption-text'>Jekyll, the static HTML generator.</span></span></p>
 
 <p><a href="http://jekyllrb.com">Jekyll</a> is a static HTML generator for web sites that don&rsquo;t require a content management system (CMS). Jekyll sites load quickly, especially when combined with GitHub Pages. <a href="https://twitter.com/bobbyreys">Bobby Reyes</a> and I will present Jekyll at ChicagoRuby: 1871 on Thursday, June 25, 2015. Slides are below.</p>
 
