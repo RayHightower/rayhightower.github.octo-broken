@@ -4,7 +4,7 @@
   <title><![CDATA[Category: community | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/community/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-07-01T14:44:55-05:00</updated>
+  <updated>2015-07-20T11:35:20-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,53 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The Lambda Jam 2015 Experience]]></title>
+    <link href="http://RayHightower.com/blog/2015/07/20/the-lambdajam-2015-experience/"/>
+    <updated>2015-07-20T09:41:04-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/07/20/the-lambdajam-2015-experience</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/LambdaJam.png' width='' height='' alt='Lambda Jam 2015' title='Lambda Jam 2015'><span class='caption-text'>Lambda Jam 2015</span></span>
+Working in software development is like being the proverbial kid in candy store. Every new language is a shiny and delicious thing. <a href="http://lambdajam.com">Lambda Jam</a> (which bounces between Chicago and Melbourne) is a traveling candy store. And, like the kid in the candy store, I am sometimes distracted by tangential temptation.</p>
+
+<p>Most of my time is spent running <a href="http://wisdomgroup.com">WisdomGroup</a>, where we focus on Ruby and Swift. We&rsquo;re object-oriented all the way. Given that, why would I want to attend a functional programming conference like Lambda Jam? For the brain-stretching experience. If your background is anything like mine, you might enjoy it, too. Here’s why.</p>
+
+<!--more-->
+
+
+<h3>Motivation: Parallelism and Concurrency</h3>
+
+<p>One immediate reason to explore FP: The impending end of Moore&rsquo;s Law.  For over half a century we&rsquo;ve taken it for granted that we could double the number of transistors on a wafer every 18 months or so. But the laws of physics are catching up to us, and now we need to create new ways to boost computer performance. Two potential performance boosters: Parallelism and concurrency.</p>
+
+<p>And yes, as Rob Pike points out, <a href="https://www.youtube.com/watch?v=cN_DpYBzKso&amp;list=PLOnWKC1gI_OPU8SDIBnCLHsgzNLSbnPJQ&amp;index=8">Concurrency is Not Parallelism</a>. Concurrency enables parallelism.</p>
+
+<p>Certain features of FP reduce the pain of writing concurrent programs.  For example, data immutability will not allow two (or more) instances of the same process to over-write the same data. Developers trained to write serially-executing programs never have this concern. But if we want the benefits of concurrency, we need to acknowledge and attack a new set of challenges.</p>
+
+<p>Side note: <a href="/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella</a> offers one way to explore parallelism and concurrency in hardware. What a board!</p>
+
+<h3>FP, Physics, and Calculus</h3>
+
+<p><a href="https://twitter.com/conal">Conal Elliott</a> kicked off Lambda Jam by making connections between FP, physics, and calculus. He shared why concurrent models are difficult to reason about. And then he shared methods of abstraction that we can use to overcome the difficulty.</p>
+
+<p>One abstraction tool, mentioned by Elliott and shared by some of the other presenters: Types. Ruby is a dynamically typed language, employing &ldquo;duck typing&rdquo; as needed. The flexibility that comes from duck typing sometimes leads to unintended consequences. A strongly typed language, like Haskell or Clojure, can make certain programming errors obvious before we put our code into production.</p>
+
+<h3>Haskell Tutorial</h3>
+
+<p><a href="https://twitter.com/ranjitjhala">Ranjit Jhala</a>&rsquo;s Haskell tutorial offered a chance to put some FP ideas into practice. The idea of attending a Haskell tutorial was intimidating. But I went anyway, and I&rsquo;m glad that I did. Jhala made the material accessible. I left the Haskell tutorial with some hands-on experience and a new appreciation for FP (in general) and Haskell in particular.</p>
+
+<h3>Hallway Conversations</h3>
+
+<p>Serendipity is a huge benefit of any conference. I ran into a <a href="http://devmyndsoftware.com">DevMynd</a> developer, <a href="http://twitter.com/pushcx">Peter Harkins</a>, who uses FP principles to make his Ruby code more robust. To learn more about this approach, check out <a href="https://www.windycityrails.org/videos/2013/#2">Jessica Kerr</a>&rsquo;s FP presentation at WindyCityRails 2013.</p>
+
+<h3>The Venue: South Shore</h3>
+
+<p>Any recap of Lambda Jam 2015 would be incomplete without a description of the venue, <a href="http://www.chicagoparkdistrict.com/parks/South-Shore-Cultural-Center/">South Shore Cultural Center (SSCC)</a>. Some of you will remember SSCC as the venue for WindyCityRails 2012 and 2013. It&rsquo;s in the middle of a golf course, next to Lake Michigan. The retreat-type atmosphere is great for brain work. Hats off to the Lambda Jam organizers for the choice. I look forward to a return visit.</p>
+
+<h3>Conclusion</h3>
+
+<p>Much of the FP material at Lambda Jam was over my head. And yet a great deal was accessible to me. As developers, we must always stretch ourselves to learn more; that&rsquo;s how we grow. Lambda Jam is great for stretching, and great for growth.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Getting Started With Jekyll]]></title>
@@ -206,27 +253,6 @@ great things happen.<br/>
 
 
 <p>Exact dates and locations are on the <a href="http://www.meetup.com/ChicagoRuby/events/">ChicagoRuby calendar</a>. Come out and collaborate with your fellow learning enthusiasts. You&rsquo;ll be glad that you did.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Keep the Fun in Computing]]></title>
-    <link href="http://RayHightower.com/blog/2015/02/25/keep-the-fun-in-computing/"/>
-    <updated>2015-02-25T20:12:17-06:00</updated>
-    <id>http://RayHightower.com/blog/2015/02/25/keep-the-fun-in-computing</id>
-    <content type="html"><![CDATA[<blockquote><p>&ldquo;I think that it’s extraordinarily important that we in computer science keep fun in computing&hellip; What’s in your hands, I think and hope, is intelligence: the ability to see the machine as more than when you were first led up to it, that you can make it more.&rdquo;
-<br/>&nbsp;
-~ Alan J. Perlis,
-from the Dedication page in SICP</p></blockquote>
-
-<p>Enrolling in the <a href="http://www.eventbrite.com/e/sicp-chicago-w-dave-astels-tickets-15525870296">Chicago SICP study group</a>, I expected to dive into Lisp. I expected to be challenged. What I didn’t expect: The fun, somewhat irreverent attitude of the SICP authors. And why not? Software development is one of our newest professions. Other professionals are made more effective through our work. Everybody benefits from the increase in productivity.</p>
-
-<!--more-->
-
-
-<p>If you are a software developer in the Chicago area, be sure to check out <a href="http://www.eventbrite.com/e/sicp-chicago-w-dave-astels-tickets-15525870296">the SICP group</a>. As the SICP authors say, you don’t need to know Lisp to embark on this path; you’ll learn Lisp as we travel along. And our brains will be stretched in new and interesting ways.</p>
-
-<p>What an exciting time to be alive!</p>
 ]]></content>
   </entry>
   
