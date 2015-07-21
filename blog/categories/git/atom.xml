@@ -4,7 +4,7 @@
   <title><![CDATA[Category: git | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/git/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-07-21T16:24:11-05:00</updated>
+  <updated>2015-07-21T16:30:43-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -20,7 +20,7 @@
     <id>http://RayHightower.com/blog/2015/07/22/github-pages-quick-start-guide</id>
     <content type="html"><![CDATA[<p><a href="https://pages.github.com/">GitHub Pages</a> lets any holder of a GitHub account host static HTML pages at no cost. The bigger benefit: Pages hosted at GitHub automatically become part of GitHub’s <a href="https://en.wikipedia.org/wiki/Content_delivery_network">content delivery network (CDN)</a>. People who visit your site will get faster page loads because of the CDN.</p>
 
-<p>This article focuses on interacting with GitHub Pages at the command line. The automatic page generator is already well-documented. Another purpose of this post: To put useful information about GitHub Pages all in one post, so I won&rsquo;t have to go hunting around next time I forget this procedure!</p>
+<p>This article focuses on interacting with GitHub Pages via Git at the command line. The browser-based automatic page generator is already well-documented. Another purpose of this post: To put useful information about GitHub Pages all in one post, so I won&rsquo;t have to go hunting around next time I forget this procedure!</p>
 
 <!--more-->
 
@@ -81,7 +81,7 @@ Don&rsquo;t worry about the &ldquo;cloned an empty repository&rdquo; message. We
 <ul>
 <li><p>Use <code>$ git add .</code> to add <code>index.html</code> to Git&rsquo;s history.</p></li>
 <li><p>Use <code>$ git commit</code> to commit changes.</p></li>
-<li><p>Push the <code>gh-pages</code> branch to GitHub.</p></li>
+<li><p>Use <code>$ git push</code> to push the <code>gh-pages</code> branch to GitHub.</p></li>
 </ul>
 
 
@@ -107,11 +107,13 @@ Branch gh-pages set up to track remote branch gh-pages from origin.</p>
 <p>&#8220;`</p>
 
 <ul>
-<li>Open a web browser and navigate to <code>http://your-github-user-name.github.io/random-repo</code>. You should see the words &ldquo;Hello World&rdquo; in the browser window. Congrats on your success!</li>
+<li>Open a web browser and navigate to <code>http://your-github-user-name.github.io/random-repo</code>. For the example in this article, use <a href="http://rayhightower.github.io/random-repo">http://rayhightower.github.io/random-repo</a>. You should see the words &ldquo;Hello World&rdquo; in the browser window.</li>
 </ul>
 
 
 <p><img class="middle" src="/images/github-browser-random-repo.png"></p>
+
+<p>Congrats on your success!</p>
 
 <p>GitHubber <a href="https://www.youtube.com/watch?v=rRGrT0wsJxI&amp;index=7&amp;list=PLOnWKC1gI_ONnIjU_sQVsIGFWT06Kd3In">Alyson La</a> demonstrates these steps in a 4-minute video, with some creative variations.</p>
 
@@ -292,7 +294,7 @@ Password:</p>
 
 <blockquote><p>The page build completed successfully, but returned the following warning:</p>
 
-<p>GitHub Pages recently underwent some improvements (<a href="https://github.com/blog/1715-faster-more-awesome-github-pages">https://github.com/blog/1715-faster-more-awesome-github-pages</a>) to make your site faster and more awesome, but we&rsquo;ve noticed that rayhightower.com isn&rsquo;t properly configured to take advantage of these new features. While your site will continue to work just fine, updating your domain&rsquo;s configuration offers some additional speed and performance benefits. Instructions on updating your site&rsquo;s IP address can be found at <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,">https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,</a> and of course, you can always get in touch with a human at <a href="&#109;&#x61;&#x69;&#108;&#116;&#x6f;&#x3a;&#x73;&#x75;&#x70;&#x70;&#x6f;&#114;&#116;&#x40;&#x67;&#x69;&#x74;&#x68;&#x75;&#98;&#46;&#x63;&#x6f;&#x6d;&#46;">&#x73;&#x75;&#x70;&#x70;&#111;&#114;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#117;&#98;&#46;&#99;&#x6f;&#x6d;&#46;</a> For the more technical minded folks who want to skip the help docs: your site&rsquo;s DNS records are pointed to a deprecated IP address.</p>
+<p>GitHub Pages recently underwent some improvements (<a href="https://github.com/blog/1715-faster-more-awesome-github-pages">https://github.com/blog/1715-faster-more-awesome-github-pages</a>) to make your site faster and more awesome, but we&rsquo;ve noticed that rayhightower.com isn&rsquo;t properly configured to take advantage of these new features. While your site will continue to work just fine, updating your domain&rsquo;s configuration offers some additional speed and performance benefits. Instructions on updating your site&rsquo;s IP address can be found at <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,">https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,</a> and of course, you can always get in touch with a human at <a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#111;&#x3a;&#x73;&#117;&#112;&#x70;&#x6f;&#x72;&#x74;&#64;&#x67;&#105;&#116;&#x68;&#117;&#98;&#46;&#99;&#111;&#x6d;&#x2e;">&#115;&#117;&#x70;&#112;&#x6f;&#114;&#116;&#x40;&#x67;&#105;&#x74;&#x68;&#x75;&#98;&#x2e;&#x63;&#x6f;&#109;&#46;</a> For the more technical minded folks who want to skip the help docs: your site&rsquo;s DNS records are pointed to a deprecated IP address.</p>
 
 <p>For information on troubleshooting Jekyll see:</p>
 
