@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-07-20T11:35:20-05:00</updated>
+  <updated>2015-07-21T16:24:11-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,146 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[GitHub Pages: Quick Start Guide]]></title>
+    <link href="http://RayHightower.com/blog/2015/07/22/github-pages-quick-start-guide/"/>
+    <updated>2015-07-22T15:07:37-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/07/22/github-pages-quick-start-guide</id>
+    <content type="html"><![CDATA[<p><a href="https://pages.github.com/">GitHub Pages</a> lets any holder of a GitHub account host static HTML pages at no cost. The bigger benefit: Pages hosted at GitHub automatically become part of GitHub’s <a href="https://en.wikipedia.org/wiki/Content_delivery_network">content delivery network (CDN)</a>. People who visit your site will get faster page loads because of the CDN.</p>
+
+<p>This article focuses on interacting with GitHub Pages at the command line. The automatic page generator is already well-documented. Another purpose of this post: To put useful information about GitHub Pages all in one post, so I won&rsquo;t have to go hunting around next time I forget this procedure!</p>
+
+<!--more-->
+
+
+<h3>Quick Start</h3>
+
+<p>A quick way to launch a “Hello World!” page via GitHub Pages&hellip;</p>
+
+<ul>
+<li><p>Create a <a href="http://github.com">GitHub</a> account for yourself.</p></li>
+<li><p>Create the repo where you want to publish a GitHub page. For example, <code>random-repo</code>. Be sure to make the repo public, and don&rsquo;t initialize it with a README file.</p></li>
+</ul>
+
+
+<p><img class="middle" src="http://RayHightower.com/images/github-create-random-repo.png"></p>
+
+<ul>
+<li><p>Clone the repo on your local machine.</p></li>
+<li><p><code>cd</code> into the <code>random-repo</code> directory.</p></li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>git clone git@github.com:RayHightower/random-repo.git
+</span><span class='line'>Cloning into <span class="s1">&#39;random-repo&#39;</span>...
+</span><span class='line'>warning: You appear to have cloned an empty repository.
+</span><span class='line'>Checking connectivity... <span class="k">done</span>.
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span><span class="nb">cd </span>random-repo
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span><span class='line'>
+</span><span class='line'><span class="o">{</span>% img middle /images/github-clone-random-repo.png %<span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Don&rsquo;t worry about the &ldquo;cloned an empty repository&rdquo; message. We&rsquo;ll add something very soon!</p>
+
+<ul>
+<li><p>Create and checkout the <code>gh-pages</code> branch in the repo.</p></li>
+<li><p>Create a file called <code>index.html</code> in the <code>gh-pages</code> branch.</p></li>
+<li><p>Using a text editor (or the fancy shortcut shown below) add the line &ldquo;Hello World&rdquo; to the <code>index.html</code> file.</p></li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>git checkout -b gh-pages
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>touch index.html
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span><span class="nb">echo</span> <span class="s2">&quot;Hello World&quot;</span>&gt;index.html
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li><p>Use <code>$ git add .</code> to add <code>index.html</code> to Git&rsquo;s history.</p></li>
+<li><p>Use <code>$ git commit</code> to commit changes.</p></li>
+<li><p>Push the <code>gh-pages</code> branch to GitHub.</p></li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>git add .
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>git commit -am <span class="s1">&#39;initial commit&#39;</span>
+</span><span class='line'><span class="o">[</span>gh-pages <span class="o">(</span>root-commit<span class="o">)</span> 0d4a0ae<span class="o">]</span> initial commit
+</span><span class='line'> 1 file changed, 1 insertion<span class="o">(</span>+<span class="o">)</span>
+</span><span class='line'> create mode 100644 index.html
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>git push -u origin gh-pages
+</span><span class='line'>Counting objects: 3, <span class="k">done</span>.
+</span><span class='line'>Writing objects: 100% <span class="o">(</span>3/3<span class="o">)</span>, 236 bytes <span class="p">|</span> 0 bytes/s, <span class="k">done</span>.
+</span><span class='line'>Total 3 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
+</span><span class='line'>To git@github.com:RayHightower/random-repo.git
+</span><span class='line'> * <span class="o">[</span>new branch<span class="o">]</span>      gh-pages -&gt; gh-pages
+</span><span class='line'>Branch gh-pages <span class="nb">set </span>up to track remote branch gh-pages from origin.
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Open a web browser and navigate to <code>http://your-github-user-name.github.io/random-repo</code>. You should see the words &ldquo;Hello World&rdquo; in the browser window. Congrats on your success!</li>
+</ul>
+
+
+<p><img class="middle" src="http://RayHightower.com/images/github-browser-random-repo.png"></p>
+
+<p>GitHubber <a href="https://www.youtube.com/watch?v=rRGrT0wsJxI&amp;index=7&amp;list=PLOnWKC1gI_ONnIjU_sQVsIGFWT06Kd3In">Alyson La</a> demonstrates these steps in a 4-minute video, with some creative variations.</p>
+
+<h3>Hello World = Done. Enter Jekyll.</h3>
+
+<p>Now that <code>Hello World!</code> runs well, consider <a href="http://RayHightower.com/blog/2015/06/24/getting-started-with-jekyll/">Jekyll</a>. Jekyll will generate your static pages based on the rules you setup in the Jekyll templates.</p>
+
+<p>Enjoy GitHub Pages!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Lambda Jam 2015 Experience]]></title>
@@ -1405,83 +1545,6 @@ The biggest challenge for a software developer: Absorbing the latest knowledge w
 <h3>Conclusion</h3>
 
 <p>The bottom line: <em>HTML5 &amp; CSS3: The Complete Manual</em> is worth reading, especially if you need a quick way to keep up with web trends.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[JRuby 9000 on Mac OS X]]></title>
-    <link href="http://RayHightower.com/blog/2015/03/03/jruby-9000-on-mac-os-x/"/>
-    <updated>2015-03-03T14:42:57-06:00</updated>
-    <id>http://RayHightower.com/blog/2015/03/03/jruby-9000-on-mac-os-x</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/jruby_on_jvm.png' width='' height='' alt='JRuby. Ruby on the JVM.' title='JRuby. Ruby on the JVM.'><span class='caption-text'>JRuby. Ruby on the JVM.</span></span>
-Moore’s Law is about to run into a wall. Therefore, anything that software developers can learn about concurrency will be critical in coming years. Enter <a href="http://www.jruby.org/">JRuby 9000</a>.</p>
-
-<h3>What is JRuby?</h3>
-
-<p>JRuby is an implementation of the Ruby programming language that runs on the Java virtual machine (JVM). Advantages of running on the JVM include:</p>
-
-<ul>
-<li>Reaping the performance benefits that come from decades of JVM tuning.</li>
-<li>The ability to call time-tested Java libraries from Ruby programs.</li>
-<li>The performance benefits that come from concurrency, built into the JVM.</li>
-</ul>
-
-
-<!-- more -->
-
-
-<h3>Installing JRuby 9000 on OS X</h3>
-
-<p>Grab the latest <code>.tar</code> file from <a href="http://jruby.org/download">JRuby Downloads</a> and extract it by double-clicking on it. As of this writing, the latest version was <code>jruby-bin-9.0.0.0.pre1.tar.gz</code>.</p>
-
-<p>Next, move the extracted files to <code>/opt/jruby/</code>. For example, if you downloaded the <code>.tar</code> file to your <code>~/Downloads</code> directory, this command will rename the extracted directory to <code>jruby/</code> in the process.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>sudo mv ~/Downloads/jruby-9.0.0.0.pre1/ /opt/jruby/
-</span><span class='line'>Password:
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>And finally, add the following line to <code>~/.bash_profile</code> (or where ever you choose to set your <code>$PATH</code> variable).</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;/opt/jruby/bin:$PATH&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Testing the JRuby 9000 installation</h3>
-
-<p>To test the JRuby 9000 installation, re-start your terminal or use <code>$ source ~/.bash_profile</code>. And then</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>jruby --version
-</span><span class='line'>jruby 9.0.0.0.pre1 <span class="o">(</span>2.2.0p0<span class="o">)</span> 2015-01-20 d537cab Java HotSpot<span class="o">(</span>TM<span class="o">)</span> 64-Bit Server VM 25.25-b02 on 1.8.0_25-b17 +jit <span class="o">[</span>darwin-x86_64<span class="o">]</span>
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>which jruby
-</span><span class='line'>/opt/jruby/bin/jruby
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h3>Why not RVM?</h3>
-
-<p>Given that <a href="http://RayHightower.com/blog/2013/05/16/upgrading-ruby-with-rvm/">I like RVM</a>, why didn’t I simply use RVM to install JRuby 9000? Answer: The instructions for installing <em>a pre-release version</em> of JRuby via RVM were unclear to me. Extracting the executables and adding the directory to the <code>$PATH</code> was more grok-able. If your experience is different from mine, feel free to share in the comments below.</p>
-
-<h3>Next Steps</h3>
-
-<p>Next steps include experiments with concurrency. JRuby concurrency experiments with the <a href="http://RayHightower.com/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">18-core Parallella</a> look especially interesting. More to come.</p>
 ]]></content>
   </entry>
   
