@@ -9,7 +9,7 @@
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="As members of the open source community, we have internalized the benefits of open source. Sometimes, knowing a topic so well can hinder us from &hellip;">
+  <meta name="description" content="Earlier today, I upgraded from RubyMotion v 2.24 to v 2.26. Immediately after the upgrade, I attempted to run a RubyMotion app that I’m working on. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -104,6 +104,79 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/04/10/when-in-doubt-rake-clean/">When in Doubt, Rake Clean</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-04-10T15:53:00-05:00'><span class='date'>April 10, 2014</span> <span class='time'></span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Earlier today, I upgraded from RubyMotion <code>v 2.24</code> to <code>v 2.26</code>. Immediately after the upgrade, I attempted to run a RubyMotion app that I’m working on. The result?</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rake
+</span><span class='line'>
+</span><span class='line'>     Build ./build/iPhoneSimulator-7.1-Development
+</span><span class='line'>   Compile ./app/app_delegate.rb
+</span><span class='line'>   Compile ./app/views/score_label.rb
+</span><span class='line'>   Compile ./app/views/paddle_view.rb
+</span><span class='line'>      Link ./build/iPhoneSimulator-7.1-Development/pong-rm4.app/pong-rm4
+</span><span class='line'>Undefined symbols <span class="k">for </span>architecture i386:
+</span><span class='line'>
+</span><span class='line'>...
+</span><span class='line'>
+</span><span class='line'>clang: error: linker <span class="nb">command </span>failed with <span class="nb">exit </span>code 1 <span class="o">(</span>use -v to see invocation<span class="o">)</span>
+</span><span class='line'>rake aborted!
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>What happened? It just ran a few minutes ago, right before the upgrade! Was RubyMotion broken? Was it time to reach out to the Twitterverse or Stack Overflow for assistance?</p>
+
+<p>Not yet.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/04/10/when-in-doubt-rake-clean/">Continue reading &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -479,40 +552,6 @@ Entrepreneurs, especially those outside of software development, may find this a
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/02/03/exploring-controversial-coding-topics-at-8th-light/">Exploring Controversial Coding Topics at 8th Light</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-02-03T12:11:00-06:00'><span class='date'>February 03, 2014</span> <span class='time'></span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://8thlight.com">8th Light</a> recently hosted a panel discussion on Controversial Coding Topics. I was honored to share the panel with two technology leaders whom I admire: <a href="http://twitter.com/markrickmeier">Mark Rickmeier</a> of <a href="http://tablexi.com">Table XI</a> and <a href="http://twitter.com/coreyhaines">Corey Haines</a> of <a href="http://wavetable.com">Wavetable</a>. <a href="http://twitter.com/little_fig">Rachel Feigenbaum</a> of 8th Light organized the event.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2014/02/03/exploring-controversial-coding-topics-at-8th-light/">Continue reading &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/8">&larr; Older</a>
@@ -605,7 +644,7 @@ Entrepreneurs, especially those outside of software development, may find this a
 <li class='category'><a href='/blog/categories/node/'>node (4)</a></li>
 <li class='category'><a href='/blog/categories/objective-c/'>objective-c (5)</a></li>
 <li class='category'><a href='/blog/categories/openrov/'>openrov (13)</a></li>
-<li class='category'><a href='/blog/categories/os-x/'>os x (12)</a></li>
+<li class='category'><a href='/blog/categories/os-x/'>os x (13)</a></li>
 <li class='category'><a href='/blog/categories/parallella/'>parallella (8)</a></li>
 <li class='category'><a href='/blog/categories/rails/'>rails (11)</a></li>
 <li class='category'><a href='/blog/categories/raspberri-pi/'>raspberri pi (1)</a></li>
