@@ -2100,6 +2100,21 @@
     }
   },
   {
+    "id": 140,
+    "title": "Peter's Laws",
+    "category": "business",
+    "tags": [
+
+    ],
+    "url": "/blog/2015/07/31/peters-laws/",
+    "content": "Walking through Chicago’s [Museum of Science and Industry](http://msichicago.org), I ran across an inspiring list of rules titled \"Peter’s Laws\". Peter Diamandis is Chairman and CEO of the X PRIZE Foundation, best known for its $10 million Ansari X PRIZE for private spaceflight. \n\nThe Laws:\n\n<ol start=\"1\">\n<li>If anything can go wrong, Fix It!  (To hell with Murphy!)</li>\n<!--more-->\n<li>When given a choice-Take Both!</li>\n<li>Multiple projects lead to multiple successes.</li>\n<li>Start at the top then work your way up.</li>\n<li>Do it by the book....but be the author!</li>\n<li>When forced to compromise, ask for more.</li>\n<li>If you can't beat them, join them, then beat them.</li>\n<li>If it's worth doing, it's got to be done right now.</li>\n<li>If you can't win, change the rules.</li>\n<li>If you can't change the rules, then ignore them.</li>\n<li>Perfection is not optional.</li>\n<li>When faced without a challenge, make one.</li>\n<li>\"No\" simply means begin again at one level higher.</li>\n<li>Don't walk when you can run.</li>\n<li>Bureaucracy is a challenge to be conquered with a righteous attitude, a tolerance for stupidity, and a bulldozer when necessary.</li>\n<li>When in doubt: THINK!</li>\n<li>Patience is a virtue, but persistence to the point of success is a blessing.</li>\n<li>The squeaky wheel gets replaced.</li>\n<li>The faster you move, the slower time passes, the longer you\nlive.</li>\n</ol>\n\nTrue, some of the \"Laws\" are over-the-top! My favorite from the list: #1. An excellent way to deal with obstacles.\n",
+    "date": {
+      "year": "2015",
+      "month": "July",
+      "day": "31"
+    }
+  },
+  {
     "id": 0,
     "title": "404 Error: Page not found.",
     "url": "/404.html",

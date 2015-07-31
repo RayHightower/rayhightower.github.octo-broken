@@ -9,8 +9,7 @@
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="HTML5 &amp; CSS3
-The biggest challenge for a software developer: Absorbing the latest knowledge while simultaneously keeping clients happy. Where &hellip;">
+  <meta name="description" content="You have to figure out what your own aptitudes are. If you play games where other people have the aptitudes and you don’t, you’re going to lose. And &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -105,6 +104,43 @@ The biggest challenge for a software developer: Absorbing the latest knowledge w
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/03/12/apple-car-not-likely/">Apple Car? Not Likely.</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-03-12T16:42:49-05:00'><span class='date'>March 12, 2015</span> <span class='time'></span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><blockquote><p>You have to figure out what your own aptitudes are. If you play games where other people have the aptitudes and you don’t, you’re going to lose. And that’s as close to certain as any prediction that you can make. You have to figure out where you’ve got an edge. And you’ve got to play within your own circle of competence.
+<br/>~Charlie Munger, Vice Chairman, Berkshire Hathaway</p></blockquote>
+
+<p>Some journalists speculate that <a href="http://9to5mac.com/2015/02/19/apple-electric-car-team/">Apple is building a car</a> because they recently hired some automotive engineers away from Tesla. My prediction: Apple is <em>not</em> building a car. Apple might build a device that plays a major role in the automotive marketplace. But a fully assembled automobile is too far outside the company&rsquo;s <em>circle of competence</em>, as Charlie Munger might say. Apple succeeds because the company maintains disciplined focus within its circle of competence.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2015/03/12/apple-car-not-likely/">Continue reading &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -458,65 +494,6 @@ The <a href="http://www.meetup.com/Chicago-Nodejs/events/203711262/">Chicago Nod
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/12/31/looking-inside-pygments/">Looking Inside the Pygments Plugin</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-12-31T16:18:29-06:00'><span class='date'>December 31, 2014</span> <span class='time'></span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>This blog uses <a href="https://rubygems.org/gems/pygments.rb">pygments.rb</a> for syntax highlighting. Recently <code>pygments.rb</code> stopped working, so I had to dig inside to determine the problem and apply a solution.</p>
-
-<p>Full disclosure: Pygments didn&rsquo;t simply stop working. I applied updates related to Octopress and Lunr.js, and then it stopped working. So the root cause is me! Rather than back-out the updates, I decided to push forward because Lunr.js will improve the search experience for visitors. Search options will be discussed in a future post.</p>
-
-<h3>Starting With the Error Message</h3>
-
-<p>As with all <a href="http://octopress.org/">Octopress</a> based blogs, the <code>$ rake generate</code> command creates a new set of static pages every time the command gets run. Normally the process is smooth. Here&rsquo;s the error message that resulted this morning.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>rake generate
-</span><span class='line'>
-</span><span class='line'>...
-</span><span class='line'>
-</span><span class='line'>jekyll 2.0.3 <span class="p">|</span> Error:  Pygments can<span class="err">&#39;</span>t parse unknown language: &lt;/p&gt;.
-</span><span class='line'>
-</span><span class='line'><span class="nv">$ </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>What unknown language? Something was fishy. Fortunately, <code>pygments</code> is an open source plugin. Solving the problem was non-trivial, but doable.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2014/12/31/looking-inside-pygments/">Continue reading &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/4">&larr; Older</a>
@@ -531,7 +508,7 @@ The <a href="http://www.meetup.com/Chicago-Nodejs/events/203711262/">Chicago Nod
   
     <section>
   <h1>About</h1>
-  <p>Raymond T. Hightower is a software developer, founder of <a href="http://wisdomgroup.com">WisdomGroup</a>, organizer of <a href="http://chicagoruby.org">ChicagoRuby</a>, and producer of <a href="http://windycityrails.org">WindyCityRails</a> & <a href="http://rubycaribe.com">RubyCaribe</a>. He is currently exploring ways to improve computer performance, such as parallelism and concurrency.
+  <p>Raymond T. Hightower is a software developer, founder of <a href="http://wisdomgroup.com">WisdomGroup</a>, organizer of <a href="http://chicagoruby.org">ChicagoRuby</a>, and producer of <a href="http://windycityrails.org">WindyCityRails</a> & <a href="http://rubycaribe.com">RubyCaribe</a>. He is currently exploring parallelism and concurrency.
   </p>
   <p>
   <a href="http://windycityrails.org"><img src="/images/windycityrails.jpg" width="191" height="42" alt="WindyCityRails - Ruby on Rails Conference in Chicago, IL USA" title="WindyCityRails - Ruby on Rails Conference in Chicago, IL USA"/></a><br/>
@@ -596,7 +573,7 @@ The <a href="http://www.meetup.com/Chicago-Nodejs/events/203711262/">Chicago Nod
   <ul id="categories">
     <li class='category'><a href='/blog/categories/arduino/'>arduino (2)</a></li>
 <li class='category'><a href='/blog/categories/beaglebone-black/'>beaglebone black (8)</a></li>
-<li class='category'><a href='/blog/categories/business/'>business (34)</a></li>
+<li class='category'><a href='/blog/categories/business/'>business (35)</a></li>
 <li class='category'><a href='/blog/categories/community/'>community (35)</a></li>
 <li class='category'><a href='/blog/categories/education/'>education (48)</a></li>
 <li class='category'><a href='/blog/categories/environment-of-respect/'>environment of respect (3)</a></li>
