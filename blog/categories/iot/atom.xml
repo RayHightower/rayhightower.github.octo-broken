@@ -4,7 +4,7 @@
   <title><![CDATA[Category: iot | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/iot/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-08-02T23:26:31-05:00</updated>
+  <updated>2015-08-02T23:38:15-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -29,13 +29,13 @@
 
 <h3>Simple, Expandable Design</h3>
 
-<p>The West Point case only has three parts! You combine the three parts at will to accommodate multiple Parallella cluster configuration.</p>
+<p>The West Point case only has three parts! You combine the three parts at will to accommodate multiple Parallella cluster configurations.</p>
 
 <p><span class='caption-wrapper middle'><img class='caption' src='/images/westpoint_stacked_2.jpg' width='' height='' alt='Mix and match the parts. Stack at will.' title='Mix and match the parts. Stack at will.'><span class='caption-text'>Mix and match the parts. Stack at will.</span></span></p>
 
 <h3>Internal Honeycomb Structure</h3>
 
-<p>Engineering details make a big difference in project like this. While the flat portions of the case are printing, the internal honeycomb structure is visible. I suspect that the honeycomb gives the panels greater strength while reducing the material cost and shortening the print time. Clever engineering at work.</p>
+<p>Engineering details make a big difference in project like this. While the flat portions of the case are printing, the internal honeycomb structure is visible. I suspect that the honeycomb gives the panels greater strength while reducing costs and shortening the print time. Product engineering at work.</p>
 
 <p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella-case-honeycomb.jpg' width='' height='' alt='Internal honeycomb structure.' title='Internal honeycomb structure.'><span class='caption-text'>Internal honeycomb structure.</span></span></p>
 
