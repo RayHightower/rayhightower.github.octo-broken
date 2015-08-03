@@ -4,7 +4,7 @@
   <title><![CDATA[Category: parallella | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/parallella/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-08-01T16:32:58-05:00</updated>
+  <updated>2015-08-02T23:26:31-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,70 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Designed at West Point. 3D Printed at BLUE1647.]]></title>
+    <link href="http://RayHightower.com/blog/2015/08/03/designed-at-west-point-3d-printed-at-blue1647/"/>
+    <updated>2015-08-03T21:50:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/08/03/designed-at-west-point-3d-printed-at-blue1647</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='/images/westpoint-parallella-green.jpg' width='' height='' alt='Designed at West Point. 3D-printed at BLUE1647 in Chicago.' title='Designed at West Point. 3D-printed at BLUE1647 in Chicago.'><span class='caption-text'>Designed at West Point. 3D-printed at BLUE1647 in Chicago.</span></span></p>
+
+<p>Experimenting with <a href="/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella</a>? Then you might need a way to protect it. The original acrylic cases are no longer available. Fortunately, 3D printing offers a solid alternative.</p>
+
+<p>A highly-expandable 3D-printable case was designed by a team at the <a href="http://westpoint.edu">United States Military Academy at West Point</a>: Professor Suzanne J. Matthews and Master Machinist William (“Frank”) Blackmon. <a href="http://www.suzannejmatthews.com/teaching.html">Professor Matthews</a> uses Parallella in her high-performance computing courses West Point.</p>
+
+<!--more-->
+
+
+<h3>Simple, Expandable Design</h3>
+
+<p>The West Point case only has three parts! You combine the three parts at will to accommodate multiple Parallella cluster configuration.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/westpoint_stacked_2.jpg' width='' height='' alt='Mix and match the parts. Stack at will.' title='Mix and match the parts. Stack at will.'><span class='caption-text'>Mix and match the parts. Stack at will.</span></span></p>
+
+<h3>Internal Honeycomb Structure</h3>
+
+<p>Engineering details make a big difference in project like this. While the flat portions of the case are printing, the internal honeycomb structure is visible. I suspect that the honeycomb gives the panels greater strength while reducing the material cost and shortening the print time. Clever engineering at work.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella-case-honeycomb.jpg' width='' height='' alt='Internal honeycomb structure.' title='Internal honeycomb structure.'><span class='caption-text'>Internal honeycomb structure.</span></span></p>
+
+<h3>3D Printing Process (w/gotchas)</h3>
+
+<p>You can grab the STereoLithography (STL) files from <a href="http://www.thingiverse.com/thing:892684">Thingiverse</a>. I asked Patrick Harris of <a href="http://imagine-it-tech.com">iMagine-it-Tech</a> to guide me through the process. Here are a few things I learned from iMagine-it-Tech:</p>
+
+<ul>
+<li>If the build plate has room for multiple copies of your object, print them. Here’s why: 3D-printing is in its infancy and results are less than perfect. If a part does not come out as designed, and you’ve printed multiple copies, you might have an extra to fall back on.</li>
+</ul>
+
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/multiple_locks.jpg' width='' height='' alt='Print multiple copies when space allows.' title='Print multiple copies when space allows.'><span class='caption-text'>Print multiple copies when space allows.</span></span></p>
+
+<ul>
+<li><p>Keep the build plate absolutely level. The build plate is the platform where MakerBot deposits material to form the 3D-printed object. If the build plate is even slightly skewed, you could end up with spaghetti-fication, strings of filament all over the place. Not fun.</p></li>
+<li><p>Print with the flat-side of the object down against the build plate. 3D printing does not do well with overhangs.</p></li>
+<li><p>Whether you own your own 3D printer or not, you might want to grab a copy of the <a href="http://www.makerbot.com/desktop">MakerBot Desktop</a> software. Versions are available for Mac OS X, Windows, and Linux. The software will let you view and manipulate STL files at will.</p></li>
+</ul>
+
+
+<h3>After Printing</h3>
+
+<p>The Dremel Tool has become one of the most valuable tools in my maker kit. For this project, it was helpful to use the Dremel for edge-smoothing and screw-shortening.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/trim-rough-edges.jpg' width='' height='' alt='Trim rough edges with a Dremel and a razor blade.' title='Trim rough edges with a Dremel and a razor blade.'><span class='caption-text'>Trim rough edges with a Dremel and a razor blade.</span></span></p>
+
+<h3>Screws Required</h3>
+
+<p>You can secure the Parallella circuit board to the bottom side of the case with four sheet metal screws, size #4. The 3/8&#8221; screws extended beyond the bottom of the case, so I trimmed them a bit with a Dremel.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/shorten-screws.jpg' width='' height='' alt='Sheet metal screws (#4). Left screw was shortened with a Dremel.' title='Sheet metal screws (#4). Left screw was shortened with a Dremel.'><span class='caption-text'>Sheet metal screws (#4). Left screw was shortened with a Dremel.</span></span></p>
+
+<h3>Conclusion</h3>
+
+<p>This is the best 3D-printed case for Parallella that I have found so far, mainly because it is stackable and expandable.</p>
+
+<p>Even better: Professor Matthews is building a body of instructional materials that focus on parallel processing. I look forward to hearing more from this team.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Parallella Examples]]></title>
@@ -463,99 +527,6 @@ Request timeout for icmp_seq 2
 <h3>Proof of Concept</h3>
 
 <p>It probably doesn’t make sense to call this a project. It&rsquo;s more of a proof of concept. Scaling up will cost money and time. But the benefits of solar energy, including cost savings and reduced carbon footprint, make this a worthwhile path to pursue.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[RVM and Parallella: What a Difference a Shell Makes]]></title>
-    <link href="http://RayHightower.com/blog/2014/07/21/rvm-and-parallella-what-a-difference-a-shell-makes/"/>
-    <updated>2014-07-21T21:46:00-05:00</updated>
-    <id>http://RayHightower.com/blog/2014/07/21/rvm-and-parallella-what-a-difference-a-shell-makes</id>
-    <content type="html"><![CDATA[<p><a href="/blog/2013/05/16/upgrading-ruby-with-rvm/">RVM</a> is an effective way to manage Ruby versions on Linux or OS X. RVM was working well on my Ubuntu-based <a href="/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella</a>, until one day it stopped:</p>
-
-<p>&#8220;` bash
-linaro-nano:~> rvm list
-rvm: Command not found.
-linaro-nano:~></p>
-
-<p><code>``
-</code>rvm: Command not found.` Fortunately, <a href="https://twitter.com/theotherzach">Zach Briggs</a> and I were pairing at a joint OpenHack &ndash; ChicagoRuby event when the problem occurred. Zach is an ideal pairing partner; troubleshooting was smooth because he was there. Time to investigate.</p>
-
-<!--more-->
-
-
-<h3>Explicit Path</h3>
-
-<p>After a few experiments, we discovered that we could run RVM by explicitly specifying the path to the executable:</p>
-
-<p>&#8220;` bash
-linaro-nano:~> ~/.rvm/bin/rvm list</p>
-
-<p>rvm rubies</p>
-
-<p>   ruby-2.0.0-p481 [ armv7l ]</p>
-
-<h1>Default ruby not set. Try &lsquo;rvm alias create default <ruby>&rsquo;.</h1>
-
-<h1>=> &ndash; current</h1>
-
-<h1>=* &ndash; current &amp;&amp; default</h1>
-
-<h1>* &ndash; default</h1>
-
-<p>linaro-nano:~></p>
-
-<p>&#8220;`</p>
-
-<p>Therefore, it appeared that the Ubuntu/Linux <code>$PATH</code> variable was being ignored. Google led us to consider the shell in use on the Parallella.</p>
-
-<h3>Which Shell Is In Use?</h3>
-
-<p>The shell is just a program that lets humans talk to the Linux operating system through a command line interface. Several shell programs exist. Linux users tend to prefer one shell or another. The <code>$SHELL</code> environmental variable points to the one in use.</p>
-
-<p>&#8220;` bash
-linaro-nano:~> echo $SHELL
-/bin/tcsh
-linaro-nano:~></p>
-
-<p>&#8220;`</p>
-
-<p>Very interesting. <code>tcsh</code> was the current Parallella shell. I&rsquo;m more accustomed to <code>bash</code>. Could RVM prefer <code>bash</code> too? We changed one line of <code>/etc/passwd</code> to tell the Parallella to start with <code>bash</code> instead of <code>tcsh</code> and rebooted the Parallella.</p>
-
-<p>&#8220;` bash
-linaro-nano:~> echo $SHELL
-/bin/bash
-linaro-nano:~></p>
-
-<p>&#8220;`
-&hellip;and now RVM works normally.</p>
-
-<p>&#8220;` bash
-linaro-nano:~> rvm list</p>
-
-<p>rvm rubies</p>
-
-<p>   ruby-2.0.0-p481 [ armv7l ]</p>
-
-<h1>Default ruby not set. Try &lsquo;rvm alias create default <ruby>&rsquo;.</h1>
-
-<h1>=> &ndash; current</h1>
-
-<h1>=* &ndash; current &amp;&amp; default</h1>
-
-<h1>* &ndash; default</h1>
-
-<p>linaro-nano:~></p>
-
-<p>&#8220;`</p>
-
-<h3>Consider Fish?</h3>
-
-<p>Right after this exercise, Zach and <a href="http://twitter.com/josh_cheek">Josh Cheek</a> had a Twitter conversation about a shell called <a href="http://fishshell.com/">fish</a>. Something new and shiny to explore!</p>
-
-<h3>Original Plan: Rubinius</h3>
-
-<p>Did I mention that we originally planned to install <a href="/blog/2014/02/06/installing-rubinius-using-rvm/">Rubinius</a> on the Parallella? Where there are goals, there are yaks waiting to be shaved!</p>
 ]]></content>
   </entry>
   

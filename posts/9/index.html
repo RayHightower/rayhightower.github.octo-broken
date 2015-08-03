@@ -9,7 +9,7 @@
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="Last night&rsquo;s episode of 60 Minutes featured an interview with Jeff Bezos, CEO of Amazon. The timing was perfect for Amazon. Black Friday was a &hellip;">
+  <meta name="description" content="I encountered some interesting behavior between Homebrew and Ruby this afternoon. I can describe what happened, but I don&rsquo;t yet understand why &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -104,6 +104,75 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/12/06/homebrew-ruby-and-git/">Homebrew, Ruby, and Git</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2013-12-06T17:30:00-06:00'><span class='date'>December 06, 2013</span> <span class='time'></span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I encountered some interesting behavior between <a href="http://brew.sh/">Homebrew</a> and Ruby this afternoon. I can describe what happened, but I don&rsquo;t yet understand why. Perhaps another member of the dev community can shed some light.</p>
+
+<h3>Upgrading to Git 1.8.5</h3>
+
+<p>Earlier today I learned that Git 1.8.5 was available. So I decided to upgrade. Since I use Homebrew for package management, it was time for <code>$ brew doctor</code> and <code>$ brew update</code> as well.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>brew doctor
+</span><span class='line'>Error: Homebrew doesn<span class="s1">&#39;t know what compiler versions ship with your version</span>
+</span><span class='line'><span class="s1">of Xcode (5.0.2). Please `brew update` and if that doesn&#39;</span>t <span class="nb">help</span>, file
+</span><span class='line'>an issue with the output of <span class="sb">`</span>brew --config<span class="sb">`</span>:
+</span><span class='line'>  https://github.com/mxcl/homebrew/issues
+</span><span class='line'>
+</span><span class='line'>Thanks!
+</span><span class='line'>Warning: Your Homebrew is outdated.
+</span><span class='line'>You haven<span class="err">&#39;</span>t updated <span class="k">for </span>at least 24 hours, this is a long <span class="nb">time </span>in brewland!
+</span><span class='line'>To update Homebrew, run <span class="sb">`</span>brew update<span class="sb">`</span>.
+</span><span class='line'>
+</span><span class='line'>~/Code/Ruby/apps<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p><code>$ brew doctor</code> has spoken. Time to update Homebrew.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/12/06/homebrew-ruby-and-git/">Continue reading &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -501,42 +570,6 @@ Planet Earth is facing a shortage of people who make things. People like scienti
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/09/02/you-can-build-things/">You Can Build Things</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2013-09-02T20:24:00-05:00'><span class='date'>September 02, 2013</span> <span class='time'></span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>From a video interview with Steve Jobs:</p>
-
-<blockquote><p>When you grow up you tend to get told that the world is the way it is, and your life is just to live your life inside the world. Try not to bash into the walls too much. Try to have a nice family life. Have fun. Save a little money.</p>
-
-<p>That&rsquo;s a very limited life. Life can be much broader once you discover one simple fact.</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/09/02/you-can-build-things/">Continue reading &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/10">&larr; Older</a>
@@ -624,13 +657,13 @@ Planet Earth is facing a shortage of people who make things. People like scienti
 <li class='category'><a href='/blog/categories/git/'>git (6)</a></li>
 <li class='category'><a href='/blog/categories/high-performance-computing/'>high performance computing (8)</a></li>
 <li class='category'><a href='/blog/categories/ios/'>ios (13)</a></li>
-<li class='category'><a href='/blog/categories/iot/'>iot (12)</a></li>
+<li class='category'><a href='/blog/categories/iot/'>iot (13)</a></li>
 <li class='category'><a href='/blog/categories/linux/'>linux (15)</a></li>
 <li class='category'><a href='/blog/categories/node/'>node (4)</a></li>
 <li class='category'><a href='/blog/categories/objective-c/'>objective-c (5)</a></li>
 <li class='category'><a href='/blog/categories/openrov/'>openrov (13)</a></li>
 <li class='category'><a href='/blog/categories/os-x/'>os x (13)</a></li>
-<li class='category'><a href='/blog/categories/parallella/'>parallella (8)</a></li>
+<li class='category'><a href='/blog/categories/parallella/'>parallella (9)</a></li>
 <li class='category'><a href='/blog/categories/rails/'>rails (11)</a></li>
 <li class='category'><a href='/blog/categories/raspberri-pi/'>raspberri pi (1)</a></li>
 <li class='category'><a href='/blog/categories/raspberry-pi/'>raspberry pi (4)</a></li>

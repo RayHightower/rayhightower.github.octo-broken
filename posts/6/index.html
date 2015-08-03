@@ -9,8 +9,9 @@
   <meta name="author" content="Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer">
 
   
-  <meta name="description" content="Parallella screenshot, 1080p.
-Parallella is a single-board supercomputer smaller than a deck of cards. While today’s fastest laptops contain four &hellip;">
+  <meta name="description" content="RVM is an effective way to manage Ruby versions on Linux or OS X. RVM was working well on my Ubuntu-based Parallella, until one day it stopped: 1
+2
+3 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -105,6 +106,52 @@ Parallella is a single-board supercomputer smaller than a deck of cards. While t
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/07/21/rvm-and-parallella-what-a-difference-a-shell-makes/">RVM and Parallella: What a Difference a Shell Makes</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-07-21T21:46:00-05:00'><span class='date'>July 21, 2014</span> <span class='time'></span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="/blog/2013/05/16/upgrading-ruby-with-rvm/">RVM</a> is an effective way to manage Ruby versions on Linux or OS X. RVM was working well on my Ubuntu-based <a href="/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella</a>, until one day it stopped:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>linaro-nano:~&gt; rvm list
+</span><span class='line'>rvm: Command not found.
+</span><span class='line'>linaro-nano:~&gt;
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>
+<code>rvm: Command not found.</code> Fortunately, <a href="https://twitter.com/theotherzach">Zach Briggs</a> and I were pairing at a joint OpenHack &ndash; ChicagoRuby event when the problem occurred. Zach is an ideal pairing partner; troubleshooting was smooth because he was there. Time to investigate.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/07/21/rvm-and-parallella-what-a-difference-a-shell-makes/">Continue reading &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -452,49 +499,6 @@ Developers of Git are making a serious effort to improve intuitiveness for first
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/04/15/managing-dotfiles/">Managing Dotfiles</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-04-15T17:13:00-05:00'><span class='date'>April 15, 2014</span> <span class='time'></span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Dotfiles, the configuration files used by Unix-like machines, can become disorganized over time. Entropy rules! This article describes my recent attempt to bring order to dotfile chaos. The steps can be summarized as follows:</p>
-
-<ul>
-<li>Move the non-private dotfiles (dotfiles that will be viewed by others on Github) into a directory called <code>~/.dotfiles</code>.</li>
-<li>From the <code>home</code> directory, create a symbolic link to each dotfile in the <code>~/.dotfiles</code> directory.</li>
-<li>Use Git to manage the <code>~/.dotfiles</code> directory, and share it on GitHub.</li>
-</ul>
-
-
-<p>Dotfiles are normally hidden when you try to view them in the Mac OS X Finder. To view them from the command prompt, use <code>$ ls -al</code>.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2014/04/15/managing-dotfiles/">Continue reading &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/7">&larr; Older</a>
@@ -582,13 +586,13 @@ Developers of Git are making a serious effort to improve intuitiveness for first
 <li class='category'><a href='/blog/categories/git/'>git (6)</a></li>
 <li class='category'><a href='/blog/categories/high-performance-computing/'>high performance computing (8)</a></li>
 <li class='category'><a href='/blog/categories/ios/'>ios (13)</a></li>
-<li class='category'><a href='/blog/categories/iot/'>iot (12)</a></li>
+<li class='category'><a href='/blog/categories/iot/'>iot (13)</a></li>
 <li class='category'><a href='/blog/categories/linux/'>linux (15)</a></li>
 <li class='category'><a href='/blog/categories/node/'>node (4)</a></li>
 <li class='category'><a href='/blog/categories/objective-c/'>objective-c (5)</a></li>
 <li class='category'><a href='/blog/categories/openrov/'>openrov (13)</a></li>
 <li class='category'><a href='/blog/categories/os-x/'>os x (13)</a></li>
-<li class='category'><a href='/blog/categories/parallella/'>parallella (8)</a></li>
+<li class='category'><a href='/blog/categories/parallella/'>parallella (9)</a></li>
 <li class='category'><a href='/blog/categories/rails/'>rails (11)</a></li>
 <li class='category'><a href='/blog/categories/raspberri-pi/'>raspberri pi (1)</a></li>
 <li class='category'><a href='/blog/categories/raspberry-pi/'>raspberry pi (4)</a></li>
