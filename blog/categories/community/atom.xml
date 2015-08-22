@@ -4,7 +4,7 @@
   <title><![CDATA[Category: community | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/community/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-08-14T13:49:48-05:00</updated>
+  <updated>2015-08-22T10:01:55-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Madison Ruby and Parallella]]></title>
+    <link href="http://RayHightower.com/blog/2015/08/22/madison-ruby-and-parallella/"/>
+    <updated>2015-08-22T09:47:45-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/08/22/madison-ruby-and-parallella</id>
+    <content type="html"><![CDATA[<p>The <a href="http://madisonpl.us/ruby/">Madison+ Ruby</a> team of organizers invited me to present <a href="/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella</a> at the conference earlier today. Video will be posted here when it becomes available. In the meantime, here are the slides.</p>
+
+<center><script async class="speakerdeck-embed" data-id="cf2abfd4752a417ca7b399761af38e2a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script></center>
+
+
+<!--more-->
+
+
+<p><a href="/blog/2013/08/25/madison-ruby-2013/">Madison Ruby</a> has delivered a great experience for five years. Sadly, 2015 marks the last year for the conference. They will be missed.</p>
+
+<p>Thank you Jim and Jen Remsik for a great conference. I wish you well with everything you choose to do in coming years.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Lambda Jam 2015 Experience]]></title>
@@ -182,77 +201,6 @@ Are you driven to excel? Do you see yourself here?</p>
 <h3>About the Experience</h3>
 
 <p>Students at Trinity are attentive and engaged. Their questions enable the learning experience to flow both ways, and the presenter learns as much as the audience. Thank you Trinity High School for a great experience!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[ChicagoRuby Expands to BLUE1647 and 1871]]></title>
-    <link href="http://RayHightower.com/blog/2015/04/10/chicagoruby-blue1647-1871/"/>
-    <updated>2015-04-10T17:41:32-05:00</updated>
-    <id>http://RayHightower.com/blog/2015/04/10/chicagoruby-blue1647-1871</id>
-    <content type="html"><![CDATA[<blockquote><p>When smart people<br/>
-challenge each other to grow,<br/>
-great things happen.<br/>
-&nbsp;<br/>
-~The ChicagoRuby Motto</p></blockquote>
-
-<p>If you’re a developer itchin’ to ramp up your Ruby skills, Chicago is a great place to be. The local Ruby user group, <a href="http://www.chicagoruby.org">ChicagoRuby</a>, continues to expand in time, space, expertise, and numbers. The group is over 3,200 strong, with six events each month <em>plus</em> the annual <a href="http://windycityrails.org">WindyCityRails</a> conference.</p>
-
-<p>The newest locations on ChicagoRuby&rsquo;s monthly list are BLUE1647 and 1871.</p>
-
-<!--more-->
-
-
-<h3>ChicagoRuby: BLUE1647</h3>
-
-<p><span class='caption-wrapper right'><img class='caption' src='/images/blue1647.jpg' width='' height='' alt='BLUE1647' title='BLUE1647'><span class='caption-text'>BLUE1647</span></span>
-<a href="http://www.blue1647.com/">BLUE 1647</a> is an amazing maker space on Chicago’s South Side, in the Pilsen neighborhood. The leadership of BLUE1647 invited ChicagoRuby to host our first meeting in the space on March 19, 2015. The presenter, <a href="https://twitter.com/johnnycon">John Contreras</a> of <a href="http://matchup.io">Matchup</a>, took us through the nuances of Rails background processing.</p>
-
-<p><a href="https://twitter.com/rmillerwebster">Rebecca Miller-Webster</a> of <a href="http://thoughtbot.com">thoughtbot</a> will present at our next BLUE1647 meeting on April 17, 2015.</p>
-
-<p>Check the <a href="http://meetup.com/chicagoruby">ChicagoRuby calendar</a> for details and to RSVP.</p>
-
-<h3>ChicagoRuby: 1871</h3>
-
-<p><span class='caption-wrapper right'><img class='caption' src='/images/1871.jpg' width='' height='' alt='1871' title='1871'><span class='caption-text'>1871</span></span>
-<a href="http://www.1871.com">1871</a> was an early player in Chicago&rsquo;s startup incubator industry. Community leaders at 1871 invited ChicagoRuby to lead some Ruby-oriented sessions at the incubator. <a href="http://www.meetup.com/ChicagoRuby/members/1345203/">Marty Lavin</a> will lead our first 1871 event on April 30, 2015.</p>
-
-<h3>Organizer Team</h3>
-
-<p>Eleven (yes, eleven!) organizers work in concert to make ChicagoRuby run well. Current members of the organizer team are:</p>
-
-<ul>
-<li><a href="http://twitter.com/ginnyhendry">Ginny Hendry</a> &ndash; Started and co-organizes the ChicagoRuby Hack Nights.</li>
-<li><a href="http://twitter.com/wondible">Justin Love</a> &ndash; Started in Elmhurst, acts as our liaison with the JavaScript community.</li>
-<li><a href="http://twitter.com/themccreefiles">Alonda McCree</a> &ndash; Manages downtown video and logistics overall.</li>
-<li><a href="http://www.meetup.com/ChicagoRuby/members/1345203/">Marty Lavin</a> &ndash; Runs Elmhurst and leads intro sessions at 1871.</li>
-<li><a href="http://www.meetup.com/ChicagoRuby/members/13059934/">Sarah Cnota</a> &ndash; ThoughtWorker, manages the downtown meetups.</li>
-<li><a href="https://twitter.com/HashtagLaToya">LaToya Allen</a> &ndash; Co-organizes the ChicagoRuby Hack Nights.</li>
-<li><a href="http://www.meetup.com/ChicagoRuby/members/61690512/">Doug Harman</a> &ndash; Co-organizes ChicagoRuby: North Shore.</li>
-<li><a href="http://www.meetup.com/ChicagoRuby/members/13463131/">Stu Gerstein</a> &ndash; Co-organizes ChicagoRuby: North Shore.</li>
-<li><a href="https://twitter.com/bobbyreys">Bobby Reyes</a> &ndash; Driving force behind ChicagoRuby&rsquo;s activities at BLUE1647 and 1871.</li>
-<li><a href="http://www.meetup.com/ChicagoRuby/members/185776457/">Dexter Teng</a> &ndash; ThoughtWorker and newest member of the organizer team.</li>
-<li><a href="http://twitter.com/rayhightower">Ray Hightower</a> &ndash; author of this article.</li>
-</ul>
-
-
-<p>ChicagoRuby excels because the work is shared amongst many people. Hats off to our <a href="http://www.chicagoruby.org/about/organizers/">Organizer Alumni</a> too!</p>
-
-<h3>Something For You</h3>
-
-<p>As of this writing, ChicagoRuby manages six events per month. You are certain to find something that fits you.</p>
-
-<ul>
-<li><strong>ChicagoRuby: Elmhurst</strong> &ndash; The first ChicagoRuby location. Meeting space provided by one of our members, Lee DeForest of DeForest Group.</li>
-<li><strong>ChicagoRuby: Downtown</strong> &ndash; Currently at ThoughtWorks. Added when we merged with Chirb.</li>
-<li><strong>ChicagoRuby: Hack Night</strong> &ndash; Currently at Enova. Added when Ginny Hendry said &ldquo;we should have hack nights&rdquo;.</li>
-<li><strong>ChicagoRuby: North Shore</strong> &ndash; Added when Doug Harman and Stu Gerstein said &ldquo;we should be on the North Shore&rdquo;.</li>
-<li><strong>ChicagoRuby: BLUE1647</strong> &ndash; Added when Bobby Reyes formed relationships at the BLUE1647 maker space.</li>
-<li><strong>ChicagoRuby: 1871</strong> &ndash; Added when 1871 members asked ChicagoRuby to run some beginner-oriented sessions.</li>
-</ul>
-
-
-<p>Exact dates and locations are on the <a href="http://www.meetup.com/ChicagoRuby/events/">ChicagoRuby calendar</a>. Come out and collaborate with your fellow learning enthusiasts. You&rsquo;ll be glad that you did.</p>
 ]]></content>
   </entry>
   
