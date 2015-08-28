@@ -4,7 +4,7 @@
   <title><![CDATA[Category: community | RayHightower.com]]></title>
   <link href="http://RayHightower.com/blog/categories/community/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-08-24T15:49:50-05:00</updated>
+  <updated>2015-08-28T16:54:59-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,47 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[When "@" is a Tweet's First Character]]></title>
+    <link href="http://RayHightower.com/blog/2015/08/28/when-at-is-a-tweets-first-character/"/>
+    <updated>2015-08-28T15:59:01-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/08/28/when-at-is-a-tweets-first-character</id>
+    <content type="html"><![CDATA[<p><img class="right" src="/images/at_sign.png">
+Something we should know about putting an &ldquo;@&rdquo; in the first character position on Twitter&hellip;</p>
+
+<h3>Limited Visibility</h3>
+
+<p>When you start a tweet with a Twitter handle (with the &ldquo;@&rdquo; in the first character position) Twitter interprets that as a message to another twitter user. Only people who follow <em>both</em> the sender and receiver will see the message in their stream.</p>
+
+<!--more-->
+
+
+<p>For example, if this tweet is sent from the @ChicagoRuby handle, only people who follow both @ChicagoRuby and @WindyCityRails will see it in their streams:</p>
+
+<blockquote><p>@WindyCityRails speakers announced! SOLID, engines, Kubernetes, Capybara, performance. Check them out! <a href="http://ow.ly/NsP0k">http://ow.ly/NsP0k</a></p></blockquote>
+
+<p>Attendees who only follow @ChicagoRuby or @WindyCityRails (not both) will never see this tweet in their Twitter stream.</p>
+
+<h3>Sometimes You Want It That Way</h3>
+
+<p>Think of an &ldquo;@&rdquo; reply as a way to chat with another person, and you don&rsquo;t mind if other people overhear the conversation. In fact, sometimes an eavesdropper can add value to the conversation. Twitter is kind of like real life in that way.</p>
+
+<h3>Normal Visibility</h3>
+
+<p>For normal visibility, start the tweet with any character other than &ldquo;@&rdquo;. Some people will start with a &ldquo;.&rdquo; in the first position. For example:</p>
+
+<blockquote><p>.@WindyCityRails speakers announced! SOLID, engines, Kubernetes, Capybara, performance. Check them out! <a href="http://ow.ly/NsP0k">http://ow.ly/NsP0k</a></p></blockquote>
+
+<p>Or you can re-phrase the tweet entirely. Just be sure to keep the &ldquo;@&rdquo; out of the first character position. For example:</p>
+
+<blockquote><p>Speakers announced for @WindyCityRails! SOLID, engines, Kubernetes, Capybara, performance. Check them out! <a href="http://ow.ly/NsP0k">http://ow.ly/NsP0k</a></p></blockquote>
+
+<h3>Try It Out</h3>
+
+<p>If you have multiple Twitter accounts that you can experiment with, try out a few combinations and you&rsquo;ll see this behavior in action.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Madison Ruby and Parallella (with Video)]]></title>
@@ -178,49 +219,6 @@ Are you driven to excel? Do you see yourself here?</p>
 <h3>Get Tickets Now</h3>
 
 <p>Tickets for WindyCityRails always sell fast. <a href="http://www.windycityrails.org/register/">Get yours now</a>. We look forward to seeing you at WindyCityRails!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Trinity High School: Thank You!]]></title>
-    <link href="http://RayHightower.com/blog/2015/05/29/trinity-high-school-thank-you/"/>
-    <updated>2015-05-29T14:51:18-05:00</updated>
-    <id>http://RayHightower.com/blog/2015/05/29/trinity-high-school-thank-you</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/trinity_high_school_river_forest.jpg' width='' height='' alt='Tinity High School' title='Tinity High School'><span class='caption-text'>Tinity High School</span></span></p>
-
-<blockquote><p>What is the toughest obstacle you have ever faced in business, and how did you deal with it?<br/>~Student at Trinity High School<br/>&nbsp;River Forest, IL, USA</p></blockquote>
-
-<p><a href="http://www.trinityhs.org/">Trinity High School</a> invited me to speak to two of their student groups this morning. The first, <em>Information Technology in the Greater Society</em> (ITGS), is a project-based class where students explore multiple facets of the information technology industry: Web development, digital editing, open source, and related areas. The second group, <em>Students Working to Advance Trinity’s Technology</em> (SWAT), lives up to its name by ensuring that students and faculty make full use of the technology deployed by the school.</p>
-
-<!--more-->
-
-
-<p>The students I met at Trinity High School are intelligent and ambitious. The &ldquo;toughest obstacle&rdquo; question prompted a great deal of thought. My toughest challenge is realizing that WisdomGroup has too many projects for me to know every detail. Therefore, I need to let go and let members of the team handle their areas as expertly as they always do. (The answer sounds good, but this is indeed a struggle, possibly worthy of a blog article.)</p>
-
-<h3>Getting Started in Software Development</h3>
-
-<p>For those students who attended this morning&rsquo;s presentations, here are the links that I promised you:</p>
-
-<ul>
-<li><a href="https://education.github.com/pack">GitHub Student Developer Pack</a>.  Professional developer tools, offered for free to students.</li>
-<li><a href="http://map.ipviking.com/">Internet attacks</a>. An animated map showing cyber attacks in real time.</li>
-<li><a href="http://www.w3schools.com/">w3schools.com</a>. One place to start learning web development.</li>
-</ul>
-
-
-<p>And here are the slides from the presentation.</p>
-
-<center><script async class="speakerdeck-embed" data-id="3c1eebc95b8f4eb4b81ae48826a8ab0e" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script></center>
-
-
-
-
-<br/>
-
-
-<h3>About the Experience</h3>
-
-<p>Students at Trinity are attentive and engaged. Their questions enable the learning experience to flow both ways, and the presenter learns as much as the audience. Thank you Trinity High School for a great experience!</p>
 ]]></content>
   </entry>
   

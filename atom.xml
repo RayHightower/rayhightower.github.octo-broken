@@ -4,7 +4,7 @@
   <title><![CDATA[RayHightower.com]]></title>
   <link href="http://RayHightower.com/atom.xml" rel="self"/>
   <link href="http://RayHightower.com/"/>
-  <updated>2015-08-24T15:49:50-05:00</updated>
+  <updated>2015-08-28T16:54:59-05:00</updated>
   <id>http://RayHightower.com/</id>
   <author>
     <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
@@ -12,6 +12,47 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[When "@" is a Tweet's First Character]]></title>
+    <link href="http://RayHightower.com/blog/2015/08/28/when-at-is-a-tweets-first-character/"/>
+    <updated>2015-08-28T15:59:01-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/08/28/when-at-is-a-tweets-first-character</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://RayHightower.com/images/at_sign.png">
+Something we should know about putting an &ldquo;@&rdquo; in the first character position on Twitter&hellip;</p>
+
+<h3>Limited Visibility</h3>
+
+<p>When you start a tweet with a Twitter handle (with the &ldquo;@&rdquo; in the first character position) Twitter interprets that as a message to another twitter user. Only people who follow <em>both</em> the sender and receiver will see the message in their stream.</p>
+
+<!--more-->
+
+
+<p>For example, if this tweet is sent from the @ChicagoRuby handle, only people who follow both @ChicagoRuby and @WindyCityRails will see it in their streams:</p>
+
+<blockquote><p>@WindyCityRails speakers announced! SOLID, engines, Kubernetes, Capybara, performance. Check them out! <a href="http://ow.ly/NsP0k">http://ow.ly/NsP0k</a></p></blockquote>
+
+<p>Attendees who only follow @ChicagoRuby or @WindyCityRails (not both) will never see this tweet in their Twitter stream.</p>
+
+<h3>Sometimes You Want It That Way</h3>
+
+<p>Think of an &ldquo;@&rdquo; reply as a way to chat with another person, and you don&rsquo;t mind if other people overhear the conversation. In fact, sometimes an eavesdropper can add value to the conversation. Twitter is kind of like real life in that way.</p>
+
+<h3>Normal Visibility</h3>
+
+<p>For normal visibility, start the tweet with any character other than &ldquo;@&rdquo;. Some people will start with a &ldquo;.&rdquo; in the first position. For example:</p>
+
+<blockquote><p>.@WindyCityRails speakers announced! SOLID, engines, Kubernetes, Capybara, performance. Check them out! <a href="http://ow.ly/NsP0k">http://ow.ly/NsP0k</a></p></blockquote>
+
+<p>Or you can re-phrase the tweet entirely. Just be sure to keep the &ldquo;@&rdquo; out of the first character position. For example:</p>
+
+<blockquote><p>Speakers announced for @WindyCityRails! SOLID, engines, Kubernetes, Capybara, performance. Check them out! <a href="http://ow.ly/NsP0k">http://ow.ly/NsP0k</a></p></blockquote>
+
+<h3>Try It Out</h3>
+
+<p>If you have multiple Twitter accounts that you can experiment with, try out a few combinations and you&rsquo;ll see this behavior in action.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Madison Ruby and Parallella (with Video)]]></title>
@@ -1452,33 +1493,6 @@ great things happen.<br/>
 
 
 <p>Exact dates and locations are on the <a href="http://www.meetup.com/ChicagoRuby/events/">ChicagoRuby calendar</a>. Come out and collaborate with your fellow learning enthusiasts. You&rsquo;ll be glad that you did.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Amazon Dash and Instant Gratification]]></title>
-    <link href="http://RayHightower.com/blog/2015/03/31/amazon-dash-and-instant-gratification/"/>
-    <updated>2015-03-31T15:44:37-05:00</updated>
-    <id>http://RayHightower.com/blog/2015/03/31/amazon-dash-and-instant-gratification</id>
-    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/amazon_dash_combo_cc_600.png' width='' height='' alt='Amazon Dash innovates by building on existing technologies.' title='Amazon Dash innovates by building on existing technologies.'><span class='caption-text'>Amazon Dash innovates by building on existing technologies.</span></span></p>
-
-<p>The <a href="https://www.amazon.com/oc/dash-button">Amazon Dash Button</a> is for customers who crave instant gratification. We might think of Dash as a brilliant blend of the Staples Easy Button, WiFi, and Amazon&rsquo;s existing database of credit card numbers.</p>
-
-<!--more-->
-
-
-<p>When a customer runs out of a consumable item, they press a button. The order is sent immediately via WiFi to Amazon, where the customer&rsquo;s credit card number is on file. Delivery can happen within 24 hours, depending on the item. No more standing in line at the store. In fact, no more walking a few feet to a computer to type in an order. Instant gratification, satisfied.</p>
-
-<h3>Video Summary</h3>
-
-<p>This 1-minute video explains the service with just a few words, and plenty of images.</p>
-
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/NMacTuHPWFI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></center>
-
-
-<h3>Innovation for You</h3>
-
-<p>Kudos to Amazon for combining some existing pieces to create something new. Most inspiring for anyone who needs to innovate.</p>
 ]]></content>
   </entry>
   
