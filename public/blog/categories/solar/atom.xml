@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: solar | RayHightower.com]]></title>
+  <link href="http://RayHightower.com/blog/categories/solar/atom.xml" rel="self"/>
+  <link href="http://RayHightower.com/"/>
+  <updated>2015-10-05T12:37:44-05:00</updated>
+  <id>http://RayHightower.com/</id>
+  <author>
+    <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Solar and Tesla]]></title>
+    <link href="http://RayHightower.com/blog/2015/05/08/solar-and-tesla/"/>
+    <updated>2015-05-08T18:33:54-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/05/08/solar-and-tesla</id>
+    <content type="html"><![CDATA[<blockquote><p>We have this handy fusion reactor in the sky called the sun. We don’t have to do anything. It just works.
+<br/>&nbsp;
+~Elon Musk</p></blockquote>
+
+<p>Elon Musk shared some interesting thoughts during the April 30th announcement for <a href="http://www.teslamotors.com/powerwall">Tesla Energy</a>. Two charts stood out in particular.</p>
+
+<!--more-->
+
+
+<h3>Solar Panels Required</h3>
+
+<p>{% imgcap middle /images/tesla_blue_square_energy.png From the Tesla Energy announcement on 30Apr2015.%}</p>
+
+<p>Take a look at the map of the United States, above. A blue square has been drawn in the northwest corner of Texas. At map scale, solar panels with combined surface area equal to the blue square could meet all of the electricity needs of the USA. And we’re the most power hungry country on the planet!</p>
+
+<h3>Batteries Required</h3>
+
+<p>Solar panels are useless at night and on cloudy days. Fortunately, we can store excess energy on sunny days if we have the right kind of batteries. Tesla happens to make those batteries, hence the Tesla Energy announcement.</p>
+
+<p>{% imgcap middle /images/tesla_batteries.png From the Tesla Energy announcement on 30Apr2015. %}</p>
+
+<p>The second map is drawn at a larger scale than the first one. For reference, the blue square covers the same surface area as before. At map scale, all of the batteries required to store reserve solar energy would fit inside the red dot.</p>
+
+<p>What are we waiting for?</p>
+]]></content>
+  </entry>
+  
+</feed>
