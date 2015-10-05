@@ -1,0 +1,18 @@
+
+Search results should appear below this line.<br/>
+
+{% include custom/lunr-search/entries.html %}
+{% include custom/lunr-search/search-results-template.html %}
+
+Search entries should appear above this line.<br/>
+
+<p>Apologies&hellip; search is not working properly right now.</p>
+
+<h3>Alternative Solution</h3>
+
+<!--
+Search entries should appear below this line (in source/search/index.markdown).
+{% include custom/lunr-search/entries.html %}
+Search entries should appear above this line (in source/search/index.markdown).
+-->
+

@@ -1,0 +1,1484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[RayHightower.com]]></title>
+  <link href="http://RayHightower.com/atom.xml" rel="self"/>
+  <link href="http://RayHightower.com/"/>
+  <updated>2015-08-31T18:23:34-05:00</updated>
+  <id>http://RayHightower.com/</id>
+  <author>
+    <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Boost Your Skills, Boost Your Network at WindyCityRails]]></title>
+    <link href="http://RayHightower.com/blog/2015/08/31/boost-your-skills-and-network-windycityrails/"/>
+    <updated>2015-08-31T15:33:58-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/08/31/boost-your-skills-and-network-windycityrails</id>
+    <content type="html"><![CDATA[<p>WindyCityRails is on track to sell out this year. You could be part of the group that achieves the goal. Use discount code CHICAGORUBY for $50 off before 9/5/2015. <a href="https://www.windycityrails.org/register/">Register now</a>.</p>
+
+<!--more-->
+
+
+<h3>New to Rails?</h3>
+
+<p>What if you&rsquo;re new to Rails? Should you attend? Yes. WindyCityRails is one of the best ways to build your network of fellow professionals. Our skills get stronger when we challenge each other in positive ways.</p>
+
+<h3>Rails Veteran?</h3>
+
+<p>Should Rails veterans attend? Yes. Every presentation will address the problems we face as a Rails app grows. Every speaker has wrestled with scaling issues. You&rsquo;ll learn how to balance theoretical computer science against the urgent need to get things done. Refactoring, testing, performance, cloud management, the future of Rails&hellip; topics you need to know in order to grow to the next level.</p>
+
+<p>Further, WindyCityRails attracts the kind of speakers who mix and mingle with the audience. Want to dig deeper into a scalability problem? Grab a chair next to one of the speakers and have a conversation!</p>
+
+<h3>Entrepreneurs and Investors</h3>
+
+<p>Entrepreneurs should attend WindyCityRails if they&rsquo;re looking to build the next great technical team. Investors might discover the next Rails success story to invest in.</p>
+
+<h3>Rails Success Stories</h3>
+
+<p>What success stories are built with Rails? Start with the WindyCityRails sponsors: Financial powerhouses like <a href="http://avant.com">Avant</a>, <a href="http://braintreepayments.com">Braintree</a>, and <a href="http://enova.com">Enova</a> head the list. <a href="http://centro.net">Centro</a> uses Rails to revolutionize the advertising industry. <a href="http://reverb.com">Reverb</a> is a favorite of musicians, and <a href="http://hired.com">Hired</a> has clever ideas about building teams of talent.</p>
+
+<p>Skillcrush lists <a href="http://skillcrush.com/2015/02/02/37-rails-sites/">30+ succesful companies using Rails</a>. Yours could be next.</p>
+
+<p>Developers, designers, entrepreneurs, and investors all find value in WindyCityRails.</p>
+
+<h3>Hands On Learning w/Braintree</h3>
+
+<p>Open source is even more exciting when you give back to the community. Braintree is running an Open Source Lounge that will show you how.</p>
+
+<br/>&nbsp;
+
+
+<center><iframe src="https://player.vimeo.com/video/134859517" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
+
+
+<br/>&nbsp;
+
+
+<br/>&nbsp;
+
+
+<h3>Smart People. Learning Together.</h3>
+
+<p>When smart people challenge each other to grow, great things happen. Add your brain to the mix, and let&rsquo;s grow together. Use the promo code CHICAGORUBY to save $50 when you <a href="https://www.windycityrails.org/register/">register now</a>.</p>
+
+<p>See you on Sept 17th!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[When "@" is a Tweet's First Character]]></title>
+    <link href="http://RayHightower.com/blog/2015/08/28/when-at-is-a-tweets-first-character/"/>
+    <updated>2015-08-28T15:59:01-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/08/28/when-at-is-a-tweets-first-character</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://RayHightower.com/images/at_sign.png">
+Something we should know about putting an &ldquo;@&rdquo; in the first character position on Twitter&hellip;</p>
+
+<h3>Limited Visibility</h3>
+
+<p>When you start a tweet with a Twitter handle (with the &ldquo;@&rdquo; in the first character position) Twitter interprets that as a message to another Twitter user. Only people who follow <em>both</em> the sender and receiver will see the message in their stream.</p>
+
+<!--more-->
+
+
+<p>For example, if this tweet is sent from the @ChicagoRuby handle, only people who follow both @ChicagoRuby and @WindyCityRails will see it in their streams:</p>
+
+<blockquote><p>@WindyCityRails speakers announced! SOLID, engines, Kubernetes, Capybara, performance. Check them out! <a href="http://ow.ly/NsP0k">http://ow.ly/NsP0k</a></p></blockquote>
+
+<p>Attendees who only follow @ChicagoRuby or @WindyCityRails (not both) will never see this tweet in their Twitter stream.</p>
+
+<h3>Sometimes You Want It That Way</h3>
+
+<p>Think of an &ldquo;@&rdquo; reply as a way to chat with another person, and you don&rsquo;t mind if other people overhear the conversation. In fact, sometimes an eavesdropper can add value to the conversation. Twitter is kind of like real life in that way.</p>
+
+<h3>Normal Visibility</h3>
+
+<p>For normal visibility, start the tweet with any character other than &ldquo;@&rdquo;. Some people will start with a &ldquo;.&rdquo; in the first position. For example:</p>
+
+<blockquote><p>.@WindyCityRails speakers announced! SOLID, engines, Kubernetes, Capybara, performance. Check them out! <a href="http://ow.ly/NsP0k">http://ow.ly/NsP0k</a></p></blockquote>
+
+<p>Or you can re-phrase the tweet entirely. Just be sure to keep the &ldquo;@&rdquo; out of the first character position. For example:</p>
+
+<blockquote><p>Speakers announced for @WindyCityRails! SOLID, engines, Kubernetes, Capybara, performance. Check them out! <a href="http://ow.ly/NsP0k">http://ow.ly/NsP0k</a></p></blockquote>
+
+<h3>Try It Out</h3>
+
+<p>If you have multiple Twitter accounts that you can experiment with, try out a few combinations and you&rsquo;ll see this behavior in action.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Madison Ruby and Parallella (with Video)]]></title>
+    <link href="http://RayHightower.com/blog/2015/08/22/madison-ruby-and-parallella/"/>
+    <updated>2015-08-22T09:47:45-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/08/22/madison-ruby-and-parallella</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/parallella_perspective_250_bw.jpg' width='' height='' alt='Parallella.' title='Parallella.'><span class='caption-text'>Parallella.</span></span>
+<a href="http://RayHightower.com/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella</a> is a single-board computer roughly the size of a credit card or Raspberry Pi. It runs Linux. It has 18 processor cores, two ARM and sixteen RISC. You can buy this device online for about $150.00.</p>
+
+<p>The <a href="http://madisonpl.us/ruby/">Madison+ Ruby</a> organizers invited me to present Parallella at the conference earlier today. <del>Video will be posted here when it becomes available.</del> <em>Update: The Madison+ Ruby team has posted video in record time! Video and slides appear below.</em></p>
+
+<!--more-->
+
+
+<center><iframe width="640" height="360" src="https://www.youtube.com/embed/BHZCCUEzK0s" frameborder="0" allowfullscreen></iframe></center>
+
+
+<br/>&nbsp;
+
+
+<br/>&nbsp;
+
+
+<center><script async class="speakerdeck-embed" data-id="cf2abfd4752a417ca7b399761af38e2a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script></center>
+
+
+<br/>&nbsp;
+
+
+<br/>&nbsp;
+
+
+<h3>Thank You Madison+ Ruby</h3>
+
+<p><a href="http://RayHightower.com/blog/2013/08/25/madison-ruby-2013/">Madison+ Ruby</a> has delivered a great experience for five years. Sadly, 2015 marks the last year for the conference. They will be missed.</p>
+
+<p>Thank you Jim and Jen Remsik for a great conference. I wish you well with everything you choose to do in coming years.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Designed at West Point. 3D Printed at BLUE1647.]]></title>
+    <link href="http://RayHightower.com/blog/2015/08/03/designed-at-west-point-3d-printed-at-blue1647/"/>
+    <updated>2015-08-03T21:50:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/08/03/designed-at-west-point-3d-printed-at-blue1647</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/westpoint-parallella-green.jpg' width='' height='' alt='Designed at West Point. 3D-printed at BLUE1647 in Chicago.' title='Designed at West Point. 3D-printed at BLUE1647 in Chicago.'><span class='caption-text'>Designed at West Point. 3D-printed at BLUE1647 in Chicago.</span></span></p>
+
+<p>Experimenting with <a href="http://RayHightower.com/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella</a>? Then you might need a way to protect it. The original acrylic cases are no longer available. Fortunately, 3D printing offers a solid alternative.</p>
+
+<p>A highly-expandable 3D-printable case was designed by a team at the <a href="http://westpoint.edu">United States Military Academy at West Point</a>: Professor Suzanne J. Matthews and Master Machinist William (“Frank”) Blackmon. <a href="http://www.suzannejmatthews.com/teaching.html">Professor Matthews</a> uses Parallella when teaching high-performance computing courses.</p>
+
+<!--more-->
+
+
+<h3>Simple, Expandable Design</h3>
+
+<p>The West Point case only has three parts! You combine the three parts at will to accommodate multiple Parallella cluster configurations.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/westpoint-case-parts.jpg' width='' height='' alt='Three parts of the West Point case.' title='Three parts of the West Point case.'><span class='caption-text'>Three parts of the West Point case.</span></span></p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/westpoint_stacked_2.jpg' width='' height='' alt='Mix and match the parts. Stack at will.' title='Mix and match the parts. Stack at will.'><span class='caption-text'>Mix and match the parts. Stack at will.</span></span></p>
+
+<h3>Internal Honeycomb Structure</h3>
+
+<p>Engineering details make a big difference in project like this. While the flat portions of the case are printing, the internal honeycomb structure is visible. I suspect that the honeycomb gives the panels greater strength while reducing costs and shortening the print time. Product engineering considers factors that users never see at the surface.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/parallella-case-honeycomb.jpg' width='' height='' alt='Internal honeycomb structure.' title='Internal honeycomb structure.'><span class='caption-text'>Internal honeycomb structure.</span></span></p>
+
+<h3>3D Printing Process (w/gotchas)</h3>
+
+<p>I asked Patrick Harris, CEO of <a href="http://imagine-it-tech.com">iMagine-it-Tech</a>, to guide me through the process. iMagine-it-Tech is based at <a href="http://blue1647.com">BLUE1647</a>. Here are a few lessons (with <em>gotchas</em> to avoid):</p>
+
+<ul>
+<li><p><a href="http://www.thingiverse.com/thing:892684">Thingiverse</a> is a great resource for STereoLithography (STL) files.</p></li>
+<li><p>Whether you own your own 3D printer or not, grab a copy of the <a href="http://www.makerbot.com/desktop">MakerBot Desktop</a> software. The software will let you view and manipulate STL files at will. Versions are available for Mac OS X, Windows, and Linux.</p></li>
+<li><p>If the build plate has room for multiple copies of your object, print them. Here’s why: 3D-printing is in its infancy and results are less than perfect. If a part does not come out as designed, and you’ve printed multiple copies, you might have an extra to fall back on.</p></li>
+</ul>
+
+
+<p><span class='caption-wrapper'><img class='caption' src='http://RayHightower.com/images/multiple_locks.jpg' width='' height='' alt='Print multiple copies when space allows.' title='Print multiple copies when space allows.'><span class='caption-text'>Print multiple copies when space allows.</span></span></p>
+
+<ul>
+<li>Keep the build plate absolutely level. The build plate is the platform where MakerBot deposits material to form the 3D-printed object. If the build plate is even slightly skewed, you could end up with spaghettification, noodle-like strings of filament all over the place. Not fun.</li>
+</ul>
+
+
+<p><span class='caption-wrapper'><img class='caption' src='http://RayHightower.com/images/spaghettification.jpg' width='' height='' alt='Spaghettification (the noodle effect) is not fun.' title='Spaghettification (the noodle effect) is not fun.'><span class='caption-text'>Spaghettification (the noodle effect) is not fun.</span></span></p>
+
+<ul>
+<li>Print with the flat-side of the object down against the build plate. 3D printing does not do well with overhangs.</li>
+</ul>
+
+
+<h3>After Printing</h3>
+
+<p>The Dremel Tool has become one of the most valuable tools in my maker kit. For this project, it was helpful to use the Dremel for edge-smoothing and screw-shortening.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='http://RayHightower.com/images/trim-rough-edges.jpg' width='' height='' alt='Trim rough edges with a Dremel and a razor blade.' title='Trim rough edges with a Dremel and a razor blade.'><span class='caption-text'>Trim rough edges with a Dremel and a razor blade.</span></span></p>
+
+<h3>Screws Required</h3>
+
+<p>You can secure the Parallella circuit board to the bottom side of the case with four sheet metal screws, size #4. The 3/8&#8221; screws extended beyond the bottom of the case, so I trimmed them a bit with a Dremel.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/shorten-screws.jpg' width='' height='' alt='Sheet metal screws (#4). Left screw was shortened with a Dremel.' title='Sheet metal screws (#4). Left screw was shortened with a Dremel.'><span class='caption-text'>Sheet metal screws (#4). Left screw was shortened with a Dremel.</span></span></p>
+
+<h3>Conclusion</h3>
+
+<p>This is the best 3D-printed case for Parallella that I have found so far, mainly because it is stackable and expandable.</p>
+
+<p>Professor Matthews continues to author instructional materials that focus on parallel processing, with Parallella as the learning tool of choice. I look forward to reading more of the materials.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Peter's Laws]]></title>
+    <link href="http://RayHightower.com/blog/2015/07/31/peters-laws/"/>
+    <updated>2015-07-31T16:55:09-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/07/31/peters-laws</id>
+    <content type="html"><![CDATA[<p>Walking through Chicago’s <a href="http://msichicago.org">Museum of Science and Industry</a>, I ran across an inspiring list of rules titled &ldquo;Peter’s Laws&rdquo;. Peter Diamandis is Chairman and CEO of the X PRIZE Foundation, best known for its $10 million Ansari X PRIZE for private spaceflight.</p>
+
+<p>The Laws:</p>
+
+<ol start="1">
+<li>If anything can go wrong, Fix It!  (To hell with Murphy!)</li>
+<!--more-->
+<li>When given a choice-Take Both!</li>
+<li>Multiple projects lead to multiple successes.</li>
+<li>Start at the top then work your way up.</li>
+<li>Do it by the book&#8230;.but be the author!</li>
+<li>When forced to compromise, ask for more.</li>
+<li>If you can&#8217;t beat them, join them, then beat them.</li>
+<li>If it&#8217;s worth doing, it&#8217;s got to be done right now.</li>
+<li>If you can&#8217;t win, change the rules.</li>
+<li>If you can&#8217;t change the rules, then ignore them.</li>
+<li>Perfection is not optional.</li>
+<li>When faced without a challenge, make one.</li>
+<li>&#8220;No&#8221; simply means begin again at one level higher.</li>
+<li>Don&#8217;t walk when you can run.</li>
+<li>Bureaucracy is a challenge to be conquered with a righteous attitude, a tolerance for stupidity, and a bulldozer when necessary.</li>
+<li>When in doubt: THINK!</li>
+<li>Patience is a virtue, but persistence to the point of success is a blessing.</li>
+<li>The squeaky wheel gets replaced.</li>
+<li>The faster you move, the slower time passes, the longer you
+live.</li>
+</ol>
+
+
+<p>True, some of the &ldquo;Laws&rdquo; are over-the-top! My favorite from the list: #1. An excellent way to deal with obstacles.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to Pronounce OS X]]></title>
+    <link href="http://RayHightower.com/blog/2015/07/23/how-to-pronounce-os-x/"/>
+    <updated>2015-07-23T15:03:18-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/07/23/how-to-pronounce-os-x</id>
+    <content type="html"><![CDATA[<p>What&rsquo;s the correct way to pronounce the name of Apple&rsquo;s Macintosh operating system, OS X? You can find the answer by asking OS X directly from the command line, as shown in this 11-second video.</p>
+
+<!--more-->
+
+
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/sLKOXi9SZgQ?rel=0" frameborder="0" allowfullscreen></iframe></center>
+
+
+<p>Note the difference between &ldquo;OS X&rdquo; with an upper-case &ldquo;X&rdquo; vs &ldquo;OS x&rdquo; with a lower-case &ldquo;x&rdquo;.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[GitHub Pages: Quick Start Guide]]></title>
+    <link href="http://RayHightower.com/blog/2015/07/22/github-pages-quick-start-guide/"/>
+    <updated>2015-07-22T15:07:37-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/07/22/github-pages-quick-start-guide</id>
+    <content type="html"><![CDATA[<p><a href="https://pages.github.com/">GitHub Pages</a> lets any holder of a GitHub account host static HTML pages at no cost. The bigger benefit: Pages hosted at GitHub automatically become part of GitHub’s <a href="https://en.wikipedia.org/wiki/Content_delivery_network">content delivery network (CDN)</a>. People who visit your site will get faster page loads because of the CDN.</p>
+
+<p>This article focuses on interacting with GitHub Pages via Git at the command line. The browser-based automatic page generator is already well-documented. Another purpose of this post: To put useful information about GitHub Pages all in one post, so I won&rsquo;t have to go hunting around next time I forget this procedure!</p>
+
+<!--more-->
+
+
+<h3>Quick Start</h3>
+
+<p>A quick way to launch a “Hello World!” page via GitHub Pages&hellip;</p>
+
+<ul>
+<li><p>Create a <a href="http://github.com">GitHub</a> account for yourself.</p></li>
+<li><p>Create the repo where you want to publish a GitHub page. For example, <code>random-repo</code>. Be sure to make the repo public, and don&rsquo;t initialize it with a README file.</p></li>
+</ul>
+
+
+<p><img class="middle" src="http://RayHightower.com/images/github-create-random-repo.png"></p>
+
+<ul>
+<li><p>Clone the repo on your local machine.</p></li>
+<li><p><code>cd</code> into the <code>random-repo</code> directory.</p></li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>git clone git@github.com:RayHightower/random-repo.git
+</span><span class='line'>Cloning into <span class="s1">&#39;random-repo&#39;</span>...
+</span><span class='line'>warning: You appear to have cloned an empty repository.
+</span><span class='line'>Checking connectivity... <span class="k">done</span>.
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span><span class="nb">cd </span>random-repo
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span><span class='line'>
+</span><span class='line'><span class="o">{</span>% img middle /images/github-clone-random-repo.png %<span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Don&rsquo;t worry about the &ldquo;cloned an empty repository&rdquo; message. We&rsquo;ll add something very soon!</p>
+
+<ul>
+<li><p>Create and checkout the <code>gh-pages</code> branch in the repo.</p></li>
+<li><p>Create a file called <code>index.html</code> in the <code>gh-pages</code> branch.</p></li>
+<li><p>Using a text editor (or the fancy shortcut shown below) add the line &ldquo;Hello World&rdquo; to the <code>index.html</code> file.</p></li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>git checkout -b gh-pages
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>touch index.html
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span><span class="nb">echo</span> <span class="s2">&quot;Hello World&quot;</span>&gt;index.html
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li><p>Use <code>$ git add .</code> to add <code>index.html</code> to Git&rsquo;s history.</p></li>
+<li><p>Use <code>$ git commit</code> to commit changes.</p></li>
+<li><p>Use <code>$ git push</code> to push the <code>gh-pages</code> branch to GitHub.</p></li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>git add .
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>git commit -am <span class="s1">&#39;initial commit&#39;</span>
+</span><span class='line'><span class="o">[</span>gh-pages <span class="o">(</span>root-commit<span class="o">)</span> 0d4a0ae<span class="o">]</span> initial commit
+</span><span class='line'> 1 file changed, 1 insertion<span class="o">(</span>+<span class="o">)</span>
+</span><span class='line'> create mode 100644 index.html
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>git push -u origin gh-pages
+</span><span class='line'>Counting objects: 3, <span class="k">done</span>.
+</span><span class='line'>Writing objects: 100% <span class="o">(</span>3/3<span class="o">)</span>, 236 bytes <span class="p">|</span> 0 bytes/s, <span class="k">done</span>.
+</span><span class='line'>Total 3 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
+</span><span class='line'>To git@github.com:RayHightower/random-repo.git
+</span><span class='line'> * <span class="o">[</span>new branch<span class="o">]</span>      gh-pages -&gt; gh-pages
+</span><span class='line'>Branch gh-pages <span class="nb">set </span>up to track remote branch gh-pages from origin.
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Open a web browser and navigate to <code>http://your-github-user-name.github.io/random-repo</code>. For the example in this article, use <a href="http://rayhightower.github.io/random-repo">http://rayhightower.github.io/random-repo</a>. You should see the words &ldquo;Hello World&rdquo; in the browser window.</li>
+</ul>
+
+
+<p><img class="middle" src="http://RayHightower.com/images/github-browser-random-repo.png"></p>
+
+<p>Congrats on your success!</p>
+
+<p>GitHubber <a href="https://www.youtube.com/watch?v=rRGrT0wsJxI&amp;index=7&amp;list=PLOnWKC1gI_ONnIjU_sQVsIGFWT06Kd3In">Alyson La</a> demonstrates these steps in a 4-minute video, with some creative variations.</p>
+
+<h3>Hello World = Done. Enter Jekyll.</h3>
+
+<p>Now that <code>Hello World!</code> runs well, consider <a href="http://RayHightower.com/blog/2015/06/24/getting-started-with-jekyll/">Jekyll</a>. Jekyll will generate your static pages based on the rules you setup in the Jekyll templates.</p>
+
+<p>Enjoy GitHub Pages!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Lambda Jam 2015 Experience]]></title>
+    <link href="http://RayHightower.com/blog/2015/07/20/the-lambdajam-2015-experience/"/>
+    <updated>2015-07-20T09:41:04-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/07/20/the-lambdajam-2015-experience</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/LambdaJam.png' width='' height='' alt='Lambda Jam 2015' title='Lambda Jam 2015'><span class='caption-text'>Lambda Jam 2015</span></span>
+Working in software development is like being the proverbial kid in candy store. Every new language is a shiny and delicious thing. <a href="http://lambdajam.com">Lambda Jam</a> (which bounces between Chicago and Melbourne) is a traveling candy store. And, like the kid in the candy store, I am sometimes distracted by tangential temptation.</p>
+
+<p>Most of my time is spent running <a href="http://wisdomgroup.com">WisdomGroup</a>, where we focus on Ruby and Swift. We&rsquo;re object-oriented all the way. Given that, why would I want to attend a functional programming conference like Lambda Jam? For the brain-stretching experience. If your background is anything like mine, you might enjoy it, too. Here’s why.</p>
+
+<!--more-->
+
+
+<h3>Motivation: Parallelism and Concurrency</h3>
+
+<p>One immediate reason to explore FP: The impending end of Moore&rsquo;s Law.  For over half a century we&rsquo;ve taken it for granted that we could double the number of transistors on a wafer every 18 months or so. But the laws of physics are catching up to us, and now we need to create new ways to boost computer performance. Two potential performance boosters: Parallelism and concurrency.</p>
+
+<p>And yes, as Rob Pike points out, <a href="https://www.youtube.com/watch?v=cN_DpYBzKso&amp;list=PLOnWKC1gI_OPU8SDIBnCLHsgzNLSbnPJQ&amp;index=8">Concurrency is Not Parallelism</a>. Concurrency enables parallelism.</p>
+
+<p>Certain features of FP reduce the pain of writing concurrent programs.  For example, data immutability will not allow two (or more) instances of the same process to over-write the same data. Developers trained to write serially-executing programs never have this concern. But if we want the benefits of concurrency, we need to acknowledge and attack a new set of challenges.</p>
+
+<p>Side note: <a href="http://RayHightower.com/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella</a> offers one way to explore parallelism and concurrency in hardware. What a board!</p>
+
+<h3>FP, Physics, and Calculus</h3>
+
+<p><a href="https://twitter.com/conal">Conal Elliott</a> kicked off Lambda Jam by making connections between FP, physics, and calculus. He shared why concurrent models are difficult to reason about. And then he shared methods of abstraction that we can use to overcome the difficulty.</p>
+
+<p>One abstraction tool, mentioned by Elliott and shared by some of the other presenters: Types. Ruby is a dynamically typed language, employing &ldquo;duck typing&rdquo; as needed. The flexibility that comes from duck typing sometimes leads to unintended consequences. A strongly typed language, like Haskell or Clojure, can make certain programming errors obvious before we put our code into production.</p>
+
+<h3>Haskell Tutorial</h3>
+
+<p><a href="https://twitter.com/ranjitjhala">Ranjit Jhala</a>&rsquo;s Haskell tutorial offered a chance to put some FP ideas into practice. The idea of attending a Haskell tutorial was intimidating. But I went anyway, and I&rsquo;m glad that I did. Jhala made the material accessible. I left the Haskell tutorial with some hands-on experience and a new appreciation for FP (in general) and Haskell in particular.</p>
+
+<h3>Hallway Conversations</h3>
+
+<p>Serendipity is a huge benefit of any conference. I ran into a <a href="http://devmyndsoftware.com">DevMynd</a> developer, <a href="http://twitter.com/pushcx">Peter Harkins</a>, who uses FP principles to make his Ruby code more robust. To learn more about this approach, check out <a href="https://www.windycityrails.org/videos/2013/#2">Jessica Kerr</a>&rsquo;s FP presentation at WindyCityRails 2013.</p>
+
+<h3>The Venue: South Shore</h3>
+
+<p>Any recap of Lambda Jam 2015 would be incomplete without a description of the venue, <a href="http://www.chicagoparkdistrict.com/parks/South-Shore-Cultural-Center/">South Shore Cultural Center (SSCC)</a>. Some of you will remember SSCC as the venue for WindyCityRails 2012 and 2013. It&rsquo;s in the middle of a golf course, next to Lake Michigan. The retreat-type atmosphere is great for brain work. Hats off to the Lambda Jam organizers for the choice. I look forward to a return visit.</p>
+
+<h3>Conclusion</h3>
+
+<p>Much of the FP material at Lambda Jam was over my head. And yet a great deal was accessible to me. As developers, we must always stretch ourselves to learn more; that&rsquo;s how we grow. Lambda Jam is great for stretching, and great for growth.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Parallella Examples]]></title>
+    <link href="http://RayHightower.com/blog/2015/06/30/parallella-examples/"/>
+    <updated>2015-06-30T14:32:02-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/06/30/parallella-examples</id>
+    <content type="html"><![CDATA[<blockquote><p>Performance is of paramount importance in parallel programming. The reason we are in the game of writing parallel programs is either to solve a problem faster than on a serial computer, or to solve a larger problem than could previously be done.<br/>&nbsp;<br/>~D. Thiébaut, author<br/>&nbsp;Parallel Programming in C for the Transputer</p></blockquote>
+
+<p>Some developers buy a Parallella board because they already know parallel programming. They knew what to do with the device the moment they laid eyes on it. Others (like me) are relatively new to parallel programming. We see Parallella as an inexpensive tool for hands-on learning.</p>
+
+<!--more-->
+
+
+<h3>Starting Questions</h3>
+
+<p>A first-time Parallella user might ask questions like:</p>
+
+<ul>
+<li><p>How do you get Parallella up and running? Covered in the <a href="http://RayHightower.com/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella Quick Start Guide</a>. <em>Gotchas</em> are included to save us time.</p></li>
+<li><p>What’s next? What can I do with Parallella that I can&rsquo;t do with a single-core system?</p></li>
+</ul>
+
+
+<p>To help answer the second set of questions, <a href="http://adapteva.com">Adapteva</a> gathered some examples that you can run on your own Parallella.</p>
+
+<h3>Community Examples on GitHub</h3>
+
+<p>The <a href="https://github.com/parallella/parallella-examples">parallella-examples repo on GitHub</a> is a great place to start. As of this writing, the examples include matrix multiplication, <a href="https://en.wikipedia.org/wiki/Ray_tracing">ray tracing</a>, and <a href="http://mathworld.wolfram.com/MandelbrotSet.html">Mandelbrot sets</a>. Given the active nature of open source, more examples may appear by the time you read this. Future examples might be created by you!</p>
+
+<h3>Switching to TTY on Parallella</h3>
+
+<p>Some of the examples will not run on the Parallella&rsquo;s Linux X Window desktop. Instead, TTY (teletype) mode is required. I will update this article when I find out why we need TTY. In the meantime, here&rsquo;s how to switch to TTY mode and back on Parallella:</p>
+
+<ul>
+<li><p>Switch to TTY by pressing <code>Ctrl</code> + <code>Alt</code> + <code>F2</code>.</p></li>
+<li><p>The first time you switch to TTY, you will need to log in. Use the default Parallella credentials: login = linaro, password = linaro.</p></li>
+<li><p>Switch back to X Window by pressing <code>Ctrl</code> + <code>Alt</code> + <code>F7</code>.</p></li>
+</ul>
+
+
+<p>Interesting observation: On my Parallella, pressing <code>Ctrl</code> + <code>Alt</code> + <code>F[any number except 7]</code> shifts the device to TTY mode. Only <code>Ctrl</code> + <code>Alt</code> + <code>F7</code> switches it back to X Window.</p>
+
+<h3>Running the Mandelbrot Example</h3>
+
+<p>To run the Mandelbrot example, switch to TTY mode and then&hellip;</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="nb">cd </span>parallella-examples/mandelbrot
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>make     <span class="c"># You&#39;ll only need to run make once.</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>./run.sh
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You&rsquo;ll see an animated graphic showing the Mandelbrot calculations in real time.</p>
+
+<p>So, what&rsquo;s a Mandelbrot set and why do we care?</p>
+
+<h3>About Mandelbrot Sets</h3>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/mandelbrot-parallella.jpg' width='' height='' alt='Mandelbrot example calculated by Parallella.' title='Mandelbrot example calculated by Parallella.'><span class='caption-text'>Mandelbrot example calculated by Parallella.</span></span></p>
+
+<blockquote><p>Clouds are not spheres, mountains are not cones, coastlines are not circles, and bark is not smooth, nor does lightning travel in a straight line.<br/>&nbsp;<br/>~Benoit Mandelbrot</p></blockquote>
+
+<p>A Mandelbrot set is a group of numbers that displays a certain unusual property. Each member of the set is based on a calculation performed on the previous member, and an infinite number of members can be plotted within a finite area of a plane. Since humans are visual, we can easily recognize a Mandelbrot set that has been plotted on a graph, like the Mandelbrot diagram in this article.</p>
+
+<p>For a 15-minute explanation of the Mandelbrot set, check out <a href="https://www.youtube.com/watch?v=0YaYmyfy9Z4&amp;list=PLOnWKC1gI_OPU8SDIBnCLHsgzNLSbnPJQ&amp;index=2">The Amazing Mandelbrot Set Tutorial</a>. The video covers imaginary numbers, complex numbers, and iterative functions with just enough depth to explain how the Mandelbrot set gets generated.</p>
+
+<p>A Mandelbrot algorithm designed for and executed on a parallel system will run faster than a similar algorithm running in serial. The algorithm and the code must be tailored for a parallel system in order for the advantage to be realized.</p>
+
+<h3>Other Parallella Examples</h3>
+
+<p>As of this writing, the other graphical programs in the <a href="https://github.com/parallella/parallella-examples">parallella-examples repo</a> can be run in a similar fashion. <code>cd</code> into the directory, run <code>make</code>, and then <code>./run.sh</code>.</p>
+
+<h3>Next steps</h3>
+
+<p>Parallella is a learning tool. A learning lab. When we are learning, we ask questions like:</p>
+
+<ul>
+<li><p>How can we measure the difference in performance between serial and parallel versions of different algorithms?</p></li>
+<li><p>Why do the graphics-oriented examples require TTY mode?</p></li>
+<li><p>Scrot works on several single-board computers, including Parallella and Raspberry Pi. Why won&rsquo;t <a href="http://RayHightower.com/blog/2013/03/19/how-to-take-a-raspberry-pi-screenshot/">Scrot</a> work in TTY mode on Parallella?</p></li>
+<li><p>Once we get the graphics examples (like Mandelbrot and ray tracing) working in X Window, what&rsquo;s the best way to record the on-screen animation? Holding a camera in front of the monitor will work, but it seems archaic.</p></li>
+</ul>
+
+
+<p>And, the biggest questions of all:</p>
+
+<ul>
+<li><p>What can we do with Parallella that we cannot do with a single-core computer?</p></li>
+<li><p>How can we demonstrate the difference visually?</p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[3D Printing at BLUE1647]]></title>
+    <link href="http://RayHightower.com/blog/2015/06/25/3d-printing-at-blue1647/"/>
+    <updated>2015-06-25T17:11:35-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/06/25/3d-printing-at-blue1647</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/parallella_3d_print_blue1647.jpg' width='' height='' alt='Parallella with a 3D-printed case.' title='Parallella with a 3D-printed case.'><span class='caption-text'>Parallella with a 3D-printed case.</span></span></p>
+
+<p>Every visit to <a href="http://blue1647.com">BLUE1647</a> is full of pleasant surprises. There’s new equipment, a new opportunity to learn new technology, new people to learn from, or all of the above.</p>
+
+<p>I recently bought a second <a href="http://RayHightower.com/blog/2015/05/27/massively-parallel-parallella/">Parallella</a> for a WisdomGroup project. Since it&rsquo;s important to protect the device with a case, this seemed like a good time to try one of the 3D printers at BLUE1647. The result is in the photo, above.</p>
+
+<!--more-->
+
+
+<h3>Why 3D Printing Matters</h3>
+
+<p>The current state of 3D printing feels like laser printing in the 1980s. Back then, laser printers were big and expensive. Sharing the printer among many users made the cost easier to justify. 3D printers are in a similar position in the year 2015. And, as with most new technology, prices are on a downward slope.</p>
+
+<p>The 3D printers at BLUE1647 are available to any member. Talk to <a href="http://www.rashadglover.com/">Rashad Glover</a> or <a href="http://imagine-it-tech.com/">Patrick Harris</a> to get started.</p>
+
+<h3>What to Know about 3D Printing</h3>
+
+<p>Printing any object in three dimensions takes a <em>long</em> time. The case in the photo took over four hours to print. The <a href="http://www.thingiverse.com/">MakerBot Thingiverse</a> has a wide variety of STL files to choose from. <a href="http://www.thingiverse.com/thing:273701/">This particular STL file</a> was created by Ben Reed, a maker in Calgary, Alberta, Canada.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/blue1647_glover_3d_printer.jpg' width='' height='' alt='Industrial engineer Rashad Glover prepares the STL files for the 3D printer.' title='Industrial engineer Rashad Glover prepares the STL files for the 3D printer.'><span class='caption-text'>Industrial engineer Rashad Glover prepares the STL files for the 3D printer.</span></span></p>
+
+<h3>STL File Internals</h3>
+
+<p>Instructions for 3D printing an object are stored in a <a href="http://bit.ly/1FFzX20">STereoLithography (STL)</a> file. Open an STL file in <a href="http://rayhightower.com/blog/2013/01/12/why-i-use-vim/">your favorite text editor</a> and you&rsquo;ll see something like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>solid OpenSCAD_Model
+</span><span class='line'>  facet normal -0.998027 0 -0.0627913
+</span><span class='line'>    outer loop
+</span><span class='line'>      vertex 0 66.2 1.95
+</span><span class='line'>      vertex 0 124 1.95
+</span><span class='line'>      vertex 0.020502 66.2 1.62413
+</span><span class='line'>    endloop
+</span><span class='line'>  endfacet
+</span><span class='line'>  facet normal -0.998027 0 -0.0627913
+</span><span class='line'>    outer loop
+</span><span class='line'>      vertex 0.020502 66.2 1.62413
+</span><span class='line'>      vertex 0 124 1.95
+</span><span class='line'>      vertex 0.020502 124 1.62413
+</span><span class='line'>    endloop
+</span><span class='line'>  endfacet
+</span><span class='line'>
+</span><span class='line'>  ...Skip about 58,000 lines...
+</span><span class='line'>
+</span><span class='line'>  facet normal 0.803458 -0.261061 -0.535072
+</span><span class='line'>    outer loop
+</span><span class='line'>      vertex 91.7184 1.76127 0.69744
+</span><span class='line'>      vertex 91.5557 1.82567 0.421758
+</span><span class='line'>      vertex 91.6374 2.0769 0.421758
+</span><span class='line'>    endloop
+</span><span class='line'>  endfacet
+</span><span class='line'>  facet normal 0.803459 -0.261059 -0.535071
+</span><span class='line'>    outer loop
+</span><span class='line'>      vertex 91.7184 1.76127 0.69744
+</span><span class='line'>      vertex 91.6374 2.0769 0.421758
+</span><span class='line'>      vertex 91.8068 2.03339 0.69744
+</span><span class='line'>    endloop
+</span><span class='line'>  endfacet
+</span><span class='line'>endsolid OpenSCAD_Model
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The objects described in an STL file can be viewed through a free online tool like <a href="http://www.viewstl.com/">ViewSTL.com</a>.</p>
+
+<h3>Next Steps</h3>
+
+<p>3D printing is still in its infancy. Next time you visit BLUE1647, maybe for a <a href="http://RayHightower.com/blog/2015/04/10/chicagoruby-blue1647-1871/">ChicagoRuby</a> meeting, check it out.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Getting Started With Jekyll]]></title>
+    <link href="http://RayHightower.com/blog/2015/06/24/getting-started-with-jekyll/"/>
+    <updated>2015-06-24T16:02:38-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/06/24/getting-started-with-jekyll</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/jekyll-responsive.jpg' width='' height='' alt='Jekyll, the static HTML generator.' title='Jekyll, the static HTML generator.'><span class='caption-text'>Jekyll, the static HTML generator.</span></span></p>
+
+<p><a href="http://jekyllrb.com">Jekyll</a> is a static HTML generator for web sites that don&rsquo;t require a content management system (CMS). Jekyll sites load quickly, especially when combined with GitHub Pages. <a href="https://twitter.com/bobbyreys">Bobby Reyes</a> and I will present Jekyll at ChicagoRuby: 1871 on Thursday, June 25, 2015. Slides are below.</p>
+
+<!--more-->
+
+
+<h3>Why Jekyll?</h3>
+
+<p>You may already know that RayHightower.com is powered by <a href="http://octopress.org">Octopress</a> (as of the date of this article). Octopress sits on top of Jekyll. Recently, I discovered that Jekyll offers some advantages that will help this blog greatly, namely:</p>
+
+<ul>
+<li><p>A larger community than Octopress. As Linus Torvalds says: With many eyeballs, all bugs are shallow.</p></li>
+<li><p>Lots of templates. I am not a designer. Further, since this is a simple blog, an amazing design would be overkill. But the blog must look crisp and professional, right? Jekyll templates that meet my needs are widely available.</p></li>
+</ul>
+
+
+<h3>Migration Happening Now</h3>
+
+<p>This blog&rsquo;s migration from Octopress to Jekyll is underway. I’ll post when it’s done. In the meantime, take a look at the slides from the Jekyll presentation at ChicagoRuby.</p>
+
+<center><script async class="speakerdeck-embed" data-id="5d549813f5db469a974423257d1c734e" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script></center>
+
+
+<p>&nbsp;<br/>
+This 82-second video shows how to launch a Jekyll site with the default template.</p>
+
+<center><iframe width="665" height="420" src="https://www.youtube.com/embed/2KHQ3o9b2wk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></center>
+
+
+<p>&nbsp;<br/></p>
+
+<h3>Thanks, Octopress!</h3>
+
+<p>I am grateful to the Octopress community for introducing me to static page generators. Jekyll is the next logical step for me. And, since technology is always changing, it will be exciting to learn what&rsquo;s next.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Unleash Your Awesomeness at WindyCityRails]]></title>
+    <link href="http://RayHightower.com/blog/2015/06/02/unleash-your-awesomeness-at-windycityrails/"/>
+    <updated>2015-06-02T15:09:06-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/06/02/unleash-your-awesomeness-at-windycityrails</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/sphere_question.jpg' width='' height='' alt='Do you see yourself?' title='Do you see yourself?'><span class='caption-text'>Do you see yourself?</span></span>
+Are you driven to excel? Do you see yourself here?</p>
+
+<ul>
+<li><p><strong>You have already built a successful Rails app</strong>. Now that you&rsquo;re &ldquo;done&rdquo;, you know you can make it better, but you&rsquo;re not sure how. You want to take your skills to the next level.</p></li>
+<li><p><strong>You recently graduated</strong> from <a href="http://devbootcamp.com">Dev Bootcamp</a>, <a href="http://thestarterleague.com">Starter League</a>, <a href="http://www.mobilemakers.co/">Mobile Makers</a> or another school. You&rsquo;re ready to meet and interact with your next generation of mentors.</p></li>
+<li><p><strong>You are no longer a beginner</strong>. You have seen <em>advanced</em> developers in action, and you are determined to get there yourself.</p></li>
+<li><p><strong>You are a beginner who learns quickly</strong>. Maybe you&rsquo;re a seasoned professional with a track record in another field. You want to meet people (perhaps mentors?) who can help you accelerate through the beginner phase so you can launch something useful on the web.</p></li>
+</ul>
+
+
+<!--more-->
+
+
+<p>Common thread: It&rsquo;s time to unleash the awesomeness in your bones. You want to take your skills to the next level, and you are ready to tackle <em>Big League Problems</em>. <a href="http://windycityrails.org">WindyCityRails</a> is for you.</p>
+
+<h3>What is a Big League Problem?</h3>
+
+<p>Growth-oriented people view big league problems as <em>good</em> problems. For example, the Rails app you built is pulling in customers, and you&rsquo;re bumping into the limits of your software architecture. Who knew that so many people would buy from you!</p>
+
+<p>Now&hellip; How do you scale? Do you buy more hardware, change your architecture, choose a new platform, or some combination of these? The presenters at this year&rsquo;s WindyCityRails have dealt with scaling problems. Scaling an app, scaling a team, scaling a management structure&hellip; If you expect to encounter challenges, it makes sense to learn from the mistakes (and triumphs) of others. Put their experience to work for you.</p>
+
+<h3>Awesome Speakers. Awesome Audience.</h3>
+
+<p>Check out the <a href="http://www.windycityrails.org/schedule/">complete list of WindyCityRails speakers</a> and ask yourself what you can learn from each one.</p>
+
+<p>Remember that only 300 WindyCityRails tickets will be sold. Our speakers enjoy interacting with audience members throughout the conference. As professionals, they are always learning, too! So if you want some face time with people who understand Big League Problems (and more importantly, Big League <em>Solutions</em>) WindyCityRails is the place for you to be.</p>
+
+<h3>Get Tickets Now</h3>
+
+<p>Tickets for WindyCityRails always sell fast. <a href="http://www.windycityrails.org/register/">Get yours now</a>. We look forward to seeing you at WindyCityRails!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Trinity High School: Thank You!]]></title>
+    <link href="http://RayHightower.com/blog/2015/05/29/trinity-high-school-thank-you/"/>
+    <updated>2015-05-29T14:51:18-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/05/29/trinity-high-school-thank-you</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/trinity_high_school_river_forest.jpg' width='' height='' alt='Tinity High School' title='Tinity High School'><span class='caption-text'>Tinity High School</span></span></p>
+
+<blockquote><p>What is the toughest obstacle you have ever faced in business, and how did you deal with it?<br/>~Student at Trinity High School<br/>&nbsp;River Forest, IL, USA</p></blockquote>
+
+<p><a href="http://www.trinityhs.org/">Trinity High School</a> invited me to speak to two of their student groups this morning. The first, <em>Information Technology in the Greater Society</em> (ITGS), is a project-based class where students explore multiple facets of the information technology industry: Web development, digital editing, open source, and related areas. The second group, <em>Students Working to Advance Trinity’s Technology</em> (SWAT), lives up to its name by ensuring that students and faculty make full use of the technology deployed by the school.</p>
+
+<!--more-->
+
+
+<p>The students I met at Trinity High School are intelligent and ambitious. The &ldquo;toughest obstacle&rdquo; question prompted a great deal of thought. My toughest challenge is realizing that WisdomGroup has too many projects for me to know every detail. Therefore, I need to let go and let members of the team handle their areas as expertly as they always do. (The answer sounds good, but this is indeed a struggle, possibly worthy of a blog article.)</p>
+
+<h3>Getting Started in Software Development</h3>
+
+<p>For those students who attended this morning&rsquo;s presentations, here are the links that I promised you:</p>
+
+<ul>
+<li><a href="https://education.github.com/pack">GitHub Student Developer Pack</a>.  Professional developer tools, offered for free to students.</li>
+<li><a href="http://map.ipviking.com/">Internet attacks</a>. An animated map showing cyber attacks in real time.</li>
+<li><a href="http://www.w3schools.com/">w3schools.com</a>. One place to start learning web development.</li>
+</ul>
+
+
+<p>And here are the slides from the presentation.</p>
+
+<center><script async class="speakerdeck-embed" data-id="3c1eebc95b8f4eb4b81ae48826a8ab0e" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script></center>
+
+
+
+
+<br/>
+
+
+<h3>About the Experience</h3>
+
+<p>Students at Trinity are attentive and engaged. Their questions enable the learning experience to flow both ways, and the presenter learns as much as the audience. Thank you Trinity High School for a great experience!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Massively Parallel Parallella]]></title>
+    <link href="http://RayHightower.com/blog/2015/05/27/massively-parallel-parallella/"/>
+    <updated>2015-05-27T13:15:27-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/05/27/massively-parallel-parallella</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/parallella_perspective.jpg' width='' height='' alt='Parallella with 18 cores: 2 ARM + 16 RISC' title='Parallella with 18 cores: 2 ARM + 16 RISC'><span class='caption-text'>Parallella with 18 cores: 2 ARM + 16 RISC</span></span></p>
+
+<p><a href="http://supercomputer.io/">Supercomputer.io</a> is the first technical conference for <a href="http://rayhightower.com/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella</a>, to be held May 30, 2015 in Tokyo, Japan.</p>
+
+<p>You can participate even if you’re not in Tokyo. Parallella owners around the world will connect their boards via the Internet to create the most efficient supercomputer on the planet. <a href="http://resin.io/">Resin.io</a> has built a special micro-SD-card image (using <a href="https://www.docker.com/">Docker</a>) so adding your Parallella to the mix is relatively quick.</p>
+
+<p>This article includes detailed steps plus a few <em>gotchas</em>.</p>
+
+<!--more-->
+
+
+<h3>First: Why?</h3>
+
+<p>Some problems are too thorny for a typical computer to solve in a reasonable amount of time. Supercomputers might solve these problems quicker, but they cost <em>millions of dollars</em>. Solution: Link a bunch of $100, 18-core Parallella computers together via the Internet to amplify our compute power while saving money. This shared computing technique has worked in the past:</p>
+
+<ul>
+<li><p>Through <a href="https://folding.stanford.edu/">Stanford Folding@home</a>, computer owners around the world are using excess CPU cycles to search for cures for diseases like Alzheimer’s, Huntington’s, and Parkinson&rsquo;s.</p></li>
+<li><p>The <a href="http://setiathome.ssl.berkeley.edu/">SETI@home</a> project uses computers around the world to download and analyze radio telescope data to help with the search for extraterrestrial intelligence.</p></li>
+</ul>
+
+
+<p>The benefits are clear. Let&rsquo;s get started.</p>
+
+<h3>Materials Required</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/supercomputer-dot-io-logo.png' width='' height='' alt='Resin.io & Parallella' title='Resin.io & Parallella'><span class='caption-text'>Resin.io &amp; Parallella</span></span>
+Here&rsquo;s what you need to participate:</p>
+
+<ul>
+<li>Parallella board. You can buy one for about $100 at <a href="http://www.parallella.org/buy/">these retailers</a>.</li>
+<li>Ethernet connection to the Internet.</li>
+<li>4 GB (or larger) micro-SD card.</li>
+</ul>
+
+
+<p>This procedure is has been tested on Mac OS X Yosemite (10.10.3). Linux instructions are probably similar.</p>
+
+<h3><em>Gotcha:</em> Headless Parallella</h3>
+
+<p>Something that tripped me up until I learned more: A Parallella configured for Supercomputer.io will run headless. <em>There will be no HDMI output.</em> When my HDMI monitor showed <code>No Signal</code>, I thought that I had broken something. No worries. This is just a headless system.</p>
+
+<p>I don&rsquo;t know if that will change.</p>
+
+<h3>Download the Image</h3>
+
+<p><a href="http://supercomputer.io/">Download the Resin.io image</a> from the Supercomputer.io site. <a href="http://resin.io/">Resin.io</a> has created a special SD-card image (using Docker) for this project. As you can see below, I stored mine in a directory called <code>~/Downloads/Parallella$</code>.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Downloads/Parallella<span class="nv">$ </span>ls -al
+</span><span class='line'>total 2678784
+</span><span class='line'>drwxr-xr-x   3 rth  staff         102 May 26 10:53 .
+</span><span class='line'>drwx---r-x+ 86 rth  staff        2924 May 26 11:00 ..
+</span><span class='line'>-rw-r-----@  1 rth  staff  1371537408 May 26 10:56 resin-supercomputer-0.1.0-0.0.14-Z7010-16.img
+</span><span class='line'>
+</span><span class='line'>~/Downloads/Parallella<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Prep for Burning the SD Card</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/micro_sd_plus_adapter.jpg' width='' height='' alt='Micro SD card and adapter.' title='Micro SD card and adapter.'><span class='caption-text'>Micro SD card and adapter.</span></span>
+Burning the SD card took about sixteen minutes (once I got the procedure right, as described below). Suggestion: Start the burn process, make sure it&rsquo;s progressing, and then go work on something else. A watched pot never boils.</p>
+
+<p>Insert your SD card into your Mac&rsquo;s SD card reader, and use the Mac OS X <code>diskutil list</code> command to determine the designation of the SD card. If you use portable hard drives with your primary machine, the SD card designation could change from time to time, so it&rsquo;s important to perform this step each time you burn an SD card.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~/Downloads/Parallella<span class="nv">$ </span>diskutil list
+</span><span class='line'>/dev/disk0
+</span><span class='line'>   <span class="c">#:                       TYPE NAME                    SIZE       IDENTIFIER</span>
+</span><span class='line'>   0:      GUID_partition_scheme                        *960.2 GB   disk0
+</span><span class='line'>   1:                        EFI EFI                     209.7 MB   disk0s1
+</span><span class='line'>   2:                  Apple_HFS MacSSD                  959.3 GB   disk0s2
+</span><span class='line'>   3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
+</span><span class='line'>/dev/disk2
+</span><span class='line'>   <span class="c">#:                       TYPE NAME                    SIZE       IDENTIFIER</span>
+</span><span class='line'>   0:     FDisk_partition_scheme                        *8.0 GB     disk2
+</span><span class='line'>   1:               Windows_NTFS Parallella              8.0 GB     disk2s1
+</span><span class='line'>
+</span><span class='line'>~/Downloads/Parallella<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>From this <code>diskutil</code> report, we can see that we want to burn the SD image to <code>/dev/disk2</code>. The other device is the hard drive for my primary machine. Burning the wrong device will destroy data.</p>
+
+<h3>Burning the Card, Skipping the <em>Gotcha</em></h3>
+
+<p>To burn the SD card&hellip;</p>
+
+<ol>
+<li>Change into the directory where you downloaded the <code>resin.io</code> image.</li>
+<li>Unmount the destination partition on the SD card.</li>
+<li>Use the the <code>dd</code> command to copy the <code>resin.io</code> image to the SD card.</li>
+</ol>
+
+
+<p><em>Gotcha alert:</em> The first time I attempted to burn the image, I used a block size of 64k (<code>bs=64k</code>) for the <code>dd</code> operation. Big mistake on my part because the write operation took almost <em>four hours</em>. On my second attempt, I used a 1 megabyte block size (<code>bs=1m</code>) and the write operation finished in a speedy <em>16 minutes</em>. So, learn from my pain and use <code>bs=1m</code>.</p>
+
+<p>Burn your micro-SD card like so:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="nb">cd</span> <span class="o">[</span>directory containing the resin.io image file<span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>diskutil unmountDisk /dev/disk2
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>sudo dd <span class="k">if</span><span class="o">=</span>resin-supercomputer-0.1.0-0.0.14-Z7010-16.img <span class="nv">of</span><span class="o">=</span>/dev/disk2 <span class="nv">bs</span><span class="o">=</span>1m
+</span><span class='line'>Password:
+</span><span class='line'>1308+0 records in
+</span><span class='line'>1308+0 records out
+</span><span class='line'>1371537408 bytes transferred in 960.001945 secs <span class="o">(</span>1428682 bytes/sec<span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/activity_monitor_resin_image.png' width='' height='' alt='Burn progress.' title='Burn progress.'><span class='caption-text'>Burn progress.</span></span>
+If you want to make sure that <code>dd</code> is running properly, use OS X&rsquo;s <code>Activity Monitor</code> utility to monitor burn progress (see the &lsquo;burn progress&rsquo; diagram). Here&rsquo;s a quick run-through of the <code>dd</code> command options:</p>
+
+<ul>
+<li><code>sudo</code> gives you <a href="http://RayHightower.com/sudo-disclaimer/">super powers</a>.</li>
+<li><code>dd</code> is the &ldquo;copy and convert&rdquo; command. The letters &ldquo;dd&rdquo; have nothing to do with what the tool actually does. It&rsquo;s just a command name. And like so many things in computer science, the name might be based on a pun.</li>
+<li><code>if=</code> specifies the input file. You can include the full path, or if the file is in your current directory, you can omit the path as shown in this example.</li>
+<li><code>of=</code> specifies the output file. We know that the SD card is located at <code>/dev/disk</code> so that&rsquo;s where the results of this command are headed.  Note that your destination directory may differ from this one.</li>
+<li><code>bs=1m</code> specifies the block size used for the destination file. 1 megabyte worked well on my machine.</li>
+</ul>
+
+
+<h3>About the New Resin.io Image</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/parallella_resin_image_files.png' width='' height='' alt='Image files.' title='Image files.'><span class='caption-text'>Image files.</span></span>
+The new image will be called <code>boot-parall</code> as shown in the diagram.  Depending on your particular image, your list of files may be the same as mine.</p>
+
+<h3>Boot Parallella with the Resin.io Image</h3>
+
+<p>Once the micro-SD card has been burned, eject it from the Mac and insert it into the Parallella. Then apply power to the Parallella.</p>
+
+<h3>Working Headless</h3>
+
+<p>As mentioned above, a Parallella configured this way will run headless, without HDMI output. So, how do you know if the Resin.io image is working?</p>
+
+<p>First, get a network scanner and use it to locate your Parallella on your local area network. I use an iPad app called <a href="https://itunes.apple.com/us/app/fing-network-scanner/id430921107?mt=8">Fing</a>, but any good network scanner will do. Your Parallella will appear as <code>parallella-hdmi-resin</code>, along with its corresponding IP and MAC addresses.</p>
+
+<p>Ping the IP address given by your network scanning tool like so:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>ping 192.168.11.132
+</span><span class='line'>PING 192.168.11.132 <span class="o">(</span>192.168.11.132<span class="o">)</span>: 56 data bytes
+</span><span class='line'>64 bytes from 192.168.11.132: <span class="nv">icmp_seq</span><span class="o">=</span>0 <span class="nv">ttl</span><span class="o">=</span>64 <span class="nb">time</span><span class="o">=</span>4.767 ms
+</span><span class='line'>64 bytes from 192.168.11.132: <span class="nv">icmp_seq</span><span class="o">=</span>1 <span class="nv">ttl</span><span class="o">=</span>64 <span class="nb">time</span><span class="o">=</span>3.694 ms
+</span><span class='line'>64 bytes from 192.168.11.132: <span class="nv">icmp_seq</span><span class="o">=</span>2 <span class="nv">ttl</span><span class="o">=</span>64 <span class="nb">time</span><span class="o">=</span>4.057 ms
+</span><span class='line'>64 bytes from 192.168.11.132: <span class="nv">icmp_seq</span><span class="o">=</span>3 <span class="nv">ttl</span><span class="o">=</span>64 <span class="nb">time</span><span class="o">=</span>3.969 ms
+</span><span class='line'>^C
+</span><span class='line'>--- 192.168.11.132 ping statistics ---
+</span><span class='line'>4 packets transmitted, 4 packets received, 0.0% packet loss
+</span><span class='line'>round-trip min/avg/max/stddev <span class="o">=</span> 3.694/4.122/4.767/0.396 ms
+</span><span class='line'>
+</span><span class='line'>~<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If your Parallella is up, running, and attached to your network, your
+output will look similar to what you see above. But if <code>ping</code> can&rsquo;t find
+your Parallella, you&rsquo;ll get&hellip;</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>~<span class="nv">$ </span>ping 192.168.11.199
+</span><span class='line'>PING 192.168.11.199 <span class="o">(</span>192.168.11.199<span class="o">)</span>: 56 data bytes
+</span><span class='line'>Request timeout <span class="k">for </span>icmp_seq 0
+</span><span class='line'>Request timeout <span class="k">for </span>icmp_seq 1
+</span><span class='line'>Request timeout <span class="k">for </span>icmp_seq 2
+</span><span class='line'>^C
+</span><span class='line'>--- 192.168.11.199 ping statistics ---
+</span><span class='line'>4 packets transmitted, 0 packets received, 100.0% packet loss
+</span><span class='line'>
+</span><span class='line'>~<span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Connect to Supercomputer.io</h3>
+
+<p>After you have successfully connected your Parallella to your LAN and the Internet, visit <a href="http://supercomputer.io/#/devices/">http://supercomputer.io/#/devices/</a> from a computer other than your Parallella (because the Parallella is headless). This page will tell you when your Parallella has connected to the Supercomputer.io mothership.</p>
+
+<p>To do this, you will need the media access control (MAC) address (also known as the hardware address) for your Parallella&rsquo;s network interface. I used my network scanning tool, Fing, to find the MAC address for the Parallella. You should be able to do the same with your network scanning tool.</p>
+
+<p>Enter your Parallella&rsquo;s MAC address in the field on the form, and click <code>search</code> to determine whether your device has connected.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/parallella_no_device_yet.png' width='' height='' alt='Supercomputer.io searching for your Parallella.' title='Supercomputer.io searching for your Parallella.'><span class='caption-text'>Supercomputer.io searching for your Parallella.</span></span></p>
+
+<p>Your first connection attempt might not be successful. It takes awhile for the first connection to happen because the Parallella might need to download software updates first.</p>
+
+<p>It took about 30 minutes for Supercomputer.io to recognize my Parallella. The successful connection was cause for celebration:</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/parallella_device_connected.png' width='' height='' alt='Parallella connected w/MAC address and city. Celebrate!' title='Parallella connected w/MAC address and city. Celebrate!'><span class='caption-text'>Parallella connected w/MAC address and city. Celebrate!</span></span></p>
+
+<h3>What&rsquo;s Next?</h3>
+
+<p>I&rsquo;m not sure what&rsquo;s next for Supercomputer.io and Parallella. I would imagine that <code>Status = idle</code> will be replaced by something more interesting, and <code>images processed</code> will eventually be greater than zero.</p>
+
+<p>Engineers at Parallella and Resin.io have done a great job so far. Now, since it&rsquo;s likely that they enjoy ideas from the peanut gallery, here are a few suggestions for them:</p>
+
+<ul>
+<li><p>Consider a version of the Resin.io image with HDMI support. Like many in the Parallella community, I&rsquo;m willing to share CPU cycles for the greater good. And I want to see what&rsquo;s running on my Parallella, too.</p></li>
+<li><p>Add more metrics to the Supercomputer.io site. It&rsquo;s nice to see the number of cores that have connected to Supercomputer.io. How about a map showing where the different Parallella devices are located? How about a dashboard that shows the number of cores currently in use?</p></li>
+</ul>
+
+
+<p>Hats off to the Parallella and Resin.io teams. Looking forward to more!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Be Courageous About Your Ideas]]></title>
+    <link href="http://RayHightower.com/blog/2015/05/26/be-courageous-about-your-ideas/"/>
+    <updated>2015-05-26T19:54:21-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/05/26/be-courageous-about-your-ideas</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/godfather_pacino_coppola.jpg' width='' height='' alt='Godfather: Pacino and Coppola' title='Godfather: Pacino and Coppola'><span class='caption-text'>Godfather: Pacino and Coppola</span></span></p>
+
+<blockquote><p>Things that get you fired when you’re young are the same things you win awards for when you’re old. You have to be courageous about your ideas. When you come up with something good, that means it’s different from what they expect so they’re likely to fire you. Years later (if you survive) they’ll bring it out as one of the great things that you did. <br/>~Francis Ford Coppola, Director<br/>&nbsp;The Godfather</p></blockquote>
+
+<!--more-->
+
+
+<h3>Quote Context</h3>
+
+<p><a href="http://www.imdb.com/name/nm0000338/">Francis Ford Coppola</a> was reflecting on his experience as director of <em>The Godfather</em> when he spoke these words. When Coppola was selected to direct the picture, he was young and untested. He wanted to use the young, unknown Al Pacino for one of the major roles, Michael Corleone. The suits at Paramount wanted Coppola to fire Pacino. Coppola defied the suits and stuck with his first choice.</p>
+
+<p>And today, film historians regard Coppola&rsquo;s decision as a genius move.</p>
+
+<h3>Question for Today</h3>
+
+<p>Where do we need to express courage right now?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Building a Great Company]]></title>
+    <link href="http://RayHightower.com/blog/2015/05/22/building-a-great-company/"/>
+    <updated>2015-05-22T11:34:16-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/05/22/building-a-great-company</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper center'><img class='caption' src='http://RayHightower.com/images/good_to_great_blackbox.png' width='' height='' alt='What happens inside the black box?' title='What happens inside the black box?'><span class='caption-text'>What happens inside the black box?</span></span></p>
+
+<p>Good is the enemy of great. If a company faces dire circumstances, managers must change because the alternative is death. But if circumstances are good (or even <em>okay</em>) managers can coast along indefinitely. A good company can be lulled into a state of complacency instead of achieving greatness.</p>
+
+<p>So how does a good company become great?</p>
+
+<!--more-->
+
+
+<h3>Greatness Defined</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/good_to_great.jpg' width='' height='' alt='' title=''><span class='caption-text'></span></span>
+A team led by author <a href="http://www.jimcollins.com/">Jim Collins</a> spent five years examining publicly traded companies to determine why some companies make the leap to greatness while others remain simply good. Collins and his team published their findings in the book <a href="http://www.amazon.com/Good-Great-Social-Sectors-Monograph-ebook/dp/B0058DRTGC/">Good to Great</a>.</p>
+
+<p>The study only focused on publicly traded companies since their financial data is readily available. The team defined great companies as those that beat the general stock market by an average of seven times (7x) over fifteen years. This is better than double the results delivered by some of the world’s greatest companies, including Intel, Coca-Cola, and General Electric.</p>
+
+<p>Special attention was paid to companies that delivered average or poor results for fifteen years, followed by a sudden shift to great results. The team’s driving question: What are the universal distinguishing characteristics that cause a company to go from good to great? Or, in the diagram at the top of this article: What’s inside the black box?</p>
+
+<h3>￼What Great Companies Do</h3>
+
+<p>Collins and his team observed that great companies are great because of the way they think and act. This article will discuss two findings from the study:</p>
+
+<ul>
+<li>The Hedgehog Concept</li>
+<li>The Stockdale Paradox</li>
+</ul>
+
+
+<h3>The Fox and the Hedgehog</h3>
+
+<p>The hedgehog concept comes from an ancient fable about a fox and a hedgehog. The fox is hungry for a hedgehog dinner. Cunning and skillful, the fox has several clever attack plans to choose from.</p>
+
+<p>The hedgehog is less clever. It has one (and only one) very effective plan: To roll itself into a ball, exposing its needles and forcing the fox to find food somewhere else.</p>
+
+<p>The fox has many plans. The hedgehog has one plan. In the fable, simplicity triumphs over cleverness. The hedgehog wins.</p>
+
+<h3>Hedgehogs and Business</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/hedgehog_concept.png' width='' height='' alt='' title=''><span class='caption-text'></span></span>
+The Good to Great team discovered that great companies are like the hedgehog. Great companies focus on the one thing that they are good at. Further, great companies only fix their focus after an honest and serious examination of their strengths &amp; weaknesses. The best focal point lies at the intersection of three interlocking rings:</p>
+
+<ul>
+<li><strong>Deep Passion</strong>. What does the company feel deeply passionate about? What gives them that “I can’t believe I get paid to do this” feeling?</li>
+<li><strong>Sound Economics</strong>. What will customers pay the company to do or provide? What drives the economic engine?</li>
+<li><strong>Best in the World</strong>. What can the company do better than any other company in the world?</li>
+</ul>
+
+
+<h3>Deep Passion</h3>
+
+<p>Gillette was cited as a great company where employees were excited about the advanced technology in their razors. They decided on advanced-technology razors largely because they couldn’t get excited about competing in the price-sensitive disposable market.</p>
+
+<p>Employees of the Federal National Mortgage Association (Fannie Mae) could never get excited about crunching numbers, but the idea of helping people buy homes proved exciting. Fannie Mae employees are on a heroic quest to democratize home ownership.</p>
+
+<p>The Good to Great team observed that passion cannot be forced, it can only be discovered. Forcing your company to be passionate about an idea is like forcing yourself to like a particular flavor of ice cream. You either like it or you don’t.</p>
+
+<h3>Sound Economics</h3>
+
+<p>What will customers pay for? And what is the best way to measure progress toward greatness? The great companies found one metric (like profit per store or profit per employee) that every person in the company could focus on during the march to greatness.</p>
+
+<p>One great company, Walgreens, chose profit per customer visit as the best economic measuring stick for their business. The decision was driven by their discovery that customers will pay for convenience, and the most convenient store locations are also the most expensive to lease &amp; maintain. The only way to justify expensive locations: Make every customer visit as profitable as possible.</p>
+
+<h3>Best in the World</h3>
+
+<p>Investor Warren Buffett says this about Wells Fargo: &ldquo;They stick with what they understand and let their abilities, not their egos, determine what they attempt.&rdquo; At one point the bank decided to shut down its international operations and focus on the Western United States. Other banks, notably Bank of America, pursued every possible opportunity regardless of its fit with their skill set. The result: Wells Fargo outperformed and outgrew the much larger competitor. Wells Fargo played hedgehog to the BofA fox.</p>
+
+<h3>The Stockdale Paradox</h3>
+
+<p>Admiral Jim Stockdale was the highest ranking U.S. military officer captured during the Vietnam War. During eight years of imprisonment, he and his fellow soldiers were tortured repeatedly and forced to participate in propaganda films as “well treated” prisoners. The prisoners had no idea whether they would survive to see their families again. Stockdale survived, and after his release, the Admiral and his wife co-authored an account of his ordeal in the book <a href="http://www.amazon.com/Love-War-Familys-Sacrifice-Vietnam/dp/0060153180/">In Love and War</a>.</p>
+
+<p><span class='caption-wrapper center'><img class='caption' src='http://RayHightower.com/images/stockdale_paradox.png' width='' height='' alt='' title=''><span class='caption-text'></span></span></p>
+
+<h3>Optimism and Discouragement</h3>
+
+<p>Imprisonment is far more serious than anything most business execs will ever face. Still, the Good to Great team and Admiral Stockdale were able to draw parallels between growing a company and surviving life as a POW. For example, the Admiral observed that optimists had the hardest time in prison. Optimistic prisoners always believed “we’ll be released next Christmas” only to be let down year after year. Many optimists eventually died heartbroken in prison.</p>
+
+<p>Stockdale’s policy was to be brutally honest about the situation he was facing and to deal with it directly day to day. At the same time, he maintained faith that he would prevail in the end. During the pain of the ordeal, he decided to turn the experience into the defining event of his life. Thus the paradox: He brutally confronted his reality, yet he maintained faith that he would prevail in the end.</p>
+
+<h3>Great Companies Respond Differently to Adversity</h3>
+
+<p>Collins and his team observed that companies, being made up of people, behave like people. What separates the good from the great is not whether they have difficulties, but how they deal with those difficulties. Every company faces obstacles of one type or another. But the great companies face those obstacles directly, recognizing them for what they are, while at the same time maintaining faith that they will prevail.</p>
+
+<h3>Stockdale Paradox Example</h3>
+
+<p>The banking industry became commoditized during the 1980s period of deregulation. Some banks left the industry (voluntarily or otherwise). Wells Fargo, however, thrived and grew during the upheaval. They confronted the brutal reality of deregulation and commoditization by focusing on one region of the United States and moving more of their operations to small branches and ATMs. Result: Higher profit per employee. Other banks, that did not confront changing reality, were either dissolved or acquired.</p>
+
+<h3>Does Technology Matter?</h3>
+
+<p>What about technology? Great companies are not necessarily those that spent the most on technology. This makes sense when you consider that technology is only a tool; only a bus that a company chooses to ride. If the bus is headed in the wrong direction, a faster bus will only make things worse. But if the bus is headed in the right direction, then a faster bus might accelerate the move to greatness.</p>
+
+<p><em>Note: A version of this article was originally posted at <a href="http://wisdomgroup.com">WisdomGroup.com</a>.</em></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Muhammad Ali and the Hightower Brothers]]></title>
+    <link href="http://RayHightower.com/blog/2015/05/20/muhammad-ali-and-the-hightower-brothers/"/>
+    <updated>2015-05-20T12:40:23-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/05/20/muhammad-ali-and-the-hightower-brothers</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/muhammad_ali_hightower_brothers.jpg' width='' height='' alt='Muhammad Ali and the Hightower Brothers, circa 1972.' title='Muhammad Ali and the Hightower Brothers, circa 1972.'><span class='caption-text'>Muhammad Ali and the Hightower Brothers, circa 1972.</span></span></p>
+
+<p>These photos were taken in 1972 or &lsquo;73 with an old Polaroid camera. During a family road trip, my parents arranged a visit to <a href="http://muhammadali.com/">Muhammad Ali</a>’s training camp in Deer Lake, Pennsylvania. Dad was a big boxing fan. Mom&hellip; tolerated the three males in our household.</p>
+
+<p>How fast was Ali in his prime? Very fast. One photo shows him evading a punch from my brother, Edward, who was about seven at the time. I distracted the Champ with a handshake. Hightowers always work together.</p>
+
+<!--more-->
+
+
+<p>Our family didn’t receive any special treatment from the Champ. As I recall (through the eyes of my eight-year-old self) Ali interacted with everyone in the training camp that day. And I hear that he enjoys people just as much today.</p>
+
+<p>There are many reasons to admire Ali. Among them are his discipline, courage, and effective marketing.</p>
+
+<h3>Discipline</h3>
+
+<blockquote><p>The fight is won or lost far away from witnesses, long before I dance under those lights.<br/>~Muhammad Ali</p></blockquote>
+
+<p>A professional athlete cannot fake preparation. Sometimes the training feels endless. Road work, weights, sparring, and drills are designed to condition the mind and body for combat. Fakers are eliminated early; they never make it to the national stage. Champions have the discipline to train even when they don&rsquo;t feel like it.</p>
+
+<p>Every profession has the equivalent of athletic training. For example, software developers are constantly reading blogs, experimenting with algorithms, and practicing kata. The best entrepreneurs are those who observe human behavior, and they build products and a team to meet customer needs. Sometimes the work feels endless. But champions do it anyway.</p>
+
+<p>Champions, in athletics and in business, have the discipline to do what needs to be done even when they don&rsquo;t feel like doing it.</p>
+
+<h3>Courage</h3>
+
+<blockquote><p>I ain’t got no quarrel with those Vietcong.<br/>~Muhammad Ali</p></blockquote>
+
+<p>Ali was stripped of his boxing title when he refused to fight in the Vietnam war. He was a conscientious objector. He was arrested and found guilty of draft evasion. Four years after the title was taken, the Supreme Court of the United States overturned the conviction. Ali stuck with his values in spite of the professional cost. His view of the war in Vietnam was ahead of its time.</p>
+
+<p>As professionals, how often are we asked to take a stand in the face of personal cost?</p>
+
+<p>Ali currently suffers from Parkinson&rsquo;s disease. It would have been easy for him to lock himself in a room full of money and never interact with people again. However, he chose a different path. Through the <a href="http://www.thebarrow.org/Neurological_Services/Muhammad_Ali_Parkinson_Center/index.htm">Muhammad Ali Parkinson Center</a> he fights for a cure for himself and others. Ali continues to fight.</p>
+
+<h3>Effective Marketing</h3>
+
+<p>Ali talked trash before and after every fight, taunting his opponents with ridicule and poetry.</p>
+
+<blockquote><p>Float like a butterfly, sting like a bee.<br/>
+The hands can’t hit what the eyes can’t see.<br/>~Muhammad Ali</p></blockquote>
+
+<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/ali_eth_2011.jpg' width='' height='' alt='Muhammad Ali with Edward Hightower in 2011.' title='Muhammad Ali with Edward Hightower in 2011.'><span class='caption-text'>Muhammad Ali with Edward Hightower in 2011.</span></span>
+Ali’s boasting was all about marketing. My father used to say “people like to see a braggart get whupped.” The more Ali boasted, the more tickets the fight promoters could sell and the more Ali could justify big fees for boxing. Privately, Ali shared that he would never let his boasting interfere with his training.</p>
+
+<p>In 2011, Ali and my brother met again at the <a href="https://alicenter.org/">Muhammad Ali Center</a> in Louisville, KY. Edward keeps copies of the 1972 photos on his phone; the Champ enjoyed seeing himself from long ago. Check out Ali’s t-shirt and the photos on the conference room walls. Ali is always marketing and he loves to interact with people. What a remarkable role model.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Solar and Tesla]]></title>
+    <link href="http://RayHightower.com/blog/2015/05/08/solar-and-tesla/"/>
+    <updated>2015-05-08T18:33:54-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/05/08/solar-and-tesla</id>
+    <content type="html"><![CDATA[<blockquote><p>We have this handy fusion reactor in the sky called the sun. We don’t have to do anything. It just works.
+<br/>&nbsp;
+~Elon Musk</p></blockquote>
+
+<p>Elon Musk shared some interesting thoughts during the April 30th announcement for <a href="http://www.teslamotors.com/powerwall">Tesla Energy</a>. Two charts stood out in particular.</p>
+
+<!--more-->
+
+
+<h3>Solar Panels Required</h3>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/tesla_blue_square_energy.png' width='' height='' alt='From the Tesla Energy announcement on 30Apr2015.' title='From the Tesla Energy announcement on 30Apr2015.'><span class='caption-text'>From the Tesla Energy announcement on 30Apr2015.</span></span></p>
+
+<p>Take a look at the map of the United States, above. A blue square has been drawn in the northwest corner of Texas. At map scale, solar panels with combined surface area equal to the blue square could meet all of the electricity needs of the USA. And we’re the most power hungry country on the planet!</p>
+
+<h3>Batteries Required</h3>
+
+<p>Solar panels are useless at night and on cloudy days. Fortunately, we can store excess energy on sunny days if we have the right kind of batteries. Tesla happens to make those batteries, hence the Tesla Energy announcement.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='http://RayHightower.com/images/tesla_batteries.png' width='' height='' alt='From the Tesla Energy announcement on 30Apr2015.' title='From the Tesla Energy announcement on 30Apr2015.'><span class='caption-text'>From the Tesla Energy announcement on 30Apr2015.</span></span></p>
+
+<p>The second map is drawn at a larger scale than the first one. For reference, the blue square covers the same surface area as before. At map scale, all of the batteries required to store reserve solar energy would fit inside the red dot.</p>
+
+<p>What are we waiting for?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Berkshire Hathaway's 50th]]></title>
+    <link href="http://RayHightower.com/blog/2015/05/06/berkshire-hathaway-50th/"/>
+    <updated>2015-05-06T18:41:03-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/05/06/berkshire-hathaway-50th</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='http://RayHightower.com/images/berkshire_hathaway_50th.jpg' width='' height='' alt='40,000 shareholders in Omaha.' title='40,000 shareholders in Omaha.'><span class='caption-text'>40,000 shareholders in Omaha.</span></span></p>
+
+<blockquote><p>Hi, I&rsquo;m Warren. He&rsquo;s Charlie. He can hear, I can see. We work well together.
+<br/>&nbsp;<br/>
+~Warren Buffett,<br/>at the start of the 2015<br/>Berkshire Hathaway annual meeting</p></blockquote>
+
+<p><a href="http://berkshirehathaway.com">Berkshire Hathaway</a> held its 50th annual shareholder meeting on May 2, 2015. The company is a lesson in successful capitalism. Chairman Warren Buffett and vice chairman Charlie Munger have built the most successful investment partnership in human history. The list of wholly-owned Berkshire subsidiaries includes GEICO, Fruit of the Loom, Brooks Shoes, and See&rsquo;s Candies. The company also owns large percentages of Coca Cola (9.16%), American Express (14.9%), IBM (7.82%), and Wells Fargo (9.01%).</p>
+
+<p>Over 40,000 shareholders attended Saturday&rsquo;s annual meeting. What draws so many shareholders to Omaha every year? The opportunity to learn.</p>
+
+<!--more-->
+
+
+<h3>The Meeting, In a Nutshell</h3>
+
+<p>The formal shareholders meeting only lasts fifteen minutes, from 3:30pm to 3:45pm. For the rest of the day (excluding an hour for lunch) Buffett (age 84) and Munger (age 91) answer questions from journalists, financial analysts, and randomly selected members of the audience.</p>
+
+<p>The day starts at 8:30am with a movie.</p>
+
+<h3>Morning Movie</h3>
+
+<p>Each Berkshire meeting starts with a short movie. One year, the movie included information about a recent acquisition, a deal that had been completed just hours before the meeting. This year&rsquo;s movie was a humorous montage of skits worthy of Saturday Night Live, woven with ads for Berkshire products. Berkshire brought in Hollywood director John Landis to direct this year&rsquo;s opening movie. One skit included a boxing match between Buffett and Floyd Mayweather. Charlie Rose interviewed the pugilists before their bout. Mayweather and Rose played themselves in the skit.</p>
+
+<h3>Questions and Answers</h3>
+
+<p>Buffest and Munger answer questions from the stage while sipping Coke and munching See&rsquo;s candy. Their answers tend to be short and direct, laced with wit. Snippets of wisdom from the Q &amp; A session:</p>
+
+<ul>
+<li><p>Buffett: Investing is easy if you can control your emotions.</p></li>
+<li><p>Munger: I quit practicing law. Law firms are like a pie eating contest where if you win, you get to eat a lot more pie.</p></li>
+<li><p>Buffett: When it comes to investing, I prefer to be 100x too cautious, rather than 1x un-cautious.</p></li>
+<li><p>Munger: Both of us hate the idea of losing someone else&rsquo;s money. It drives our caution.</p></li>
+<li><p>Munger: People want value when they buy something. But when they invest, they go for the quick fix. I don&rsquo;t understand that.</p></li>
+<li><p>Munger (When asked if he would have preferred to be born in 2015 instead of 1924): I don&rsquo;t like these overly theoretical questions. I&rsquo;d rather answer questions where I can actively help somebody.</p></li>
+<li><p>Buffett (summarizing capitalism): Do what you&rsquo;re best at. Let other people do what they&rsquo;re best at.</p></li>
+<li><p>Buffett (on his long term perspective): I get monthly reports from all our companies and I read them with great interest. We don&rsquo;t ignore monthly or yearly results. We just don&rsquo;t live by them.</p></li>
+<li><p>Munger (When asked about Berkshire&rsquo;s interest in investing in Germany): Germans work fewer hours and produce a lot more. We&rsquo;d like to invest in Germany, but it&rsquo;s difficult to penetrate family company ownership structure.</p></li>
+<li><p>Buffett (When asked about the NetJets pilots picketing outside the annual meeting): We have hundreds of labor unions in BRK. Three strikes in fifty years. Employees and employers sometimes disagree regarding pay. That&rsquo;s human nature. We will resolve this disagreement.</p></li>
+<li><p>Munger (Predicting why the Euro will eventually fail): You can&rsquo;t form a business partnership with your thriftless, drunken brother in law.</p></li>
+<li><p>Munger (On BRK borrowing money): We haven&rsquo;t felt cash constrained in a long time. We would love to have an acquisition large enough to require us to borrow.</p></li>
+<li><p>Buffett (On giving up his private jet vs quitting the Internet): If I had to give up my plane or the Internet, I&rsquo;d give up the plane.</p></li>
+<li><p>Munger (On why he and Buffett are so successful): We owe a considerable amount to the families we were raised in. We had great role models.</p></li>
+</ul>
+
+
+<h3>Giving Credit for Success</h3>
+
+<p>Throughout the Q &amp; A period, Buffett praised several of the Berkshire managers by name. When a questioner said something good about American Express, Buffett praised Ken Chenault. When someone had positive words about Berkshire&rsquo;s insurance holdings, Buffett credited Ajit Jain. Buffett and Munger share the credit for Berkshire&rsquo;s performance. That&rsquo;s a big reason why the companies perform so well.</p>
+
+<h3>Meeting People</h3>
+
+<p>When 40,000 investment-minded people gather, rich conversations will happen. After the meeting, I ended up having dinner with an asset manager from Brazil. Both of us arrived solo at Gorat&rsquo;s, Buffett&rsquo;s favorite steakhouse in Omaha. We decided to share a table when we realized that Gorat&rsquo;s would seat a table for two faster than two tables for one. Capitalism, properly practiced, is about cooperation.</p>
+
+<h3>5k Run</h3>
+
+<p>About 1,000 people gathered for the 5k <em>Invest in Yourself</em> run on Sunday morning. The weather was perfect.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='http://RayHightower.com/images/berkshire_hathaway_5k.jpg' width='' height='' alt='5k runners gather at the start.' title='5k runners gather at the start.'><span class='caption-text'>5k runners gather at the start.</span></span></p>
+
+<p><span class='caption-wrapper'><img class='caption' src='http://RayHightower.com/images/berkshire_hathaway_5k_finishers.jpg' width='' height='' alt='5k finishers queue up for swag.' title='5k finishers queue up for swag.'><span class='caption-text'>5k finishers queue up for swag.</span></span></p>
+
+<h3>Looking Forward to the Next One</h3>
+
+<p>The Berkshire Hathaway annual meeting offers an inspiring, powerful learning experience each year. I look forward to the next one.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[pgcli - Command Line Interface for PostgreSQL]]></title>
+    <link href="http://RayHightower.com/blog/2015/04/28/pgcli-command-line-interface-for-postgresql/"/>
+    <updated>2015-04-28T11:59:44-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/04/28/pgcli-command-line-interface-for-postgresql</id>
+    <content type="html"><![CDATA[<p>Debugging is a fact of life when building apps with Rails or any other set of tools. All troubleshooting is easier when we can see what’s going on inside.</p>
+
+<p><a href="http://pgcli.com/">pgcli</a> is a command line tool that lets devs examine PostgreSQL databases from the command line. <code>pgcli</code> offers more powerful features than <code>psql</code> (the default terminal front-end for PostgreSQL) such as:</p>
+
+<ul>
+<li>Autocompletion. In fact, <code>pgcli</code> autocompletion is smart enough to only show table names after <code>FROM</code> in a SQL statement.</li>
+<li>Syntax highlighting. Find gotchas quicker, just like you would in a text editor.</li>
+</ul>
+
+
+<p>Debugging is easier when you can look inside the black box.</p>
+
+<!--more-->
+
+
+<h3>Installation</h3>
+
+<p>To install <code>pgcli</code> on Mac OS X, use <a href="http://RayHightower.com/blog/2014/02/12/homebrew-fundamentals/">Homebrew</a>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>brew install <span class="nv">pgcli</span>
+</span><span class='line'><span class="o">==</span>&gt; Installing dependencies <span class="k">for </span>pgcli: openssl, <span class="nv">postgresql</span>
+</span><span class='line'><span class="o">==</span>&gt; Installing pgcli dependency: <span class="nv">openssl</span>
+</span><span class='line'><span class="o">==</span>&gt; Downloading https://homebrew.bintray.com/bottles/openssl-1.0.2a-1.yosemite.b
+</span><span class='line'><span class="c">######################################################################## 100.0%</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># Homebrew installs dependencies as required...</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">==</span>&gt; Installing <span class="nv">pgcli</span>
+</span><span class='line'><span class="o">==</span>&gt; Downloading https://homebrew.bintray.com/bottles/pgcli-0.16.3.yosemite.bottl
+</span><span class='line'><span class="c">######################################################################## 100.0%</span>
+</span><span class='line'><span class="o">==</span>&gt; Pouring pgcli-0.16.3.yosemite.bottle.tar.gz
+</span><span class='line'>🍺  /usr/local/Cellar/pgcli/0.16.3: 423 files, 5.2M
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Verify installation as follows:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>which pgcli
+</span><span class='line'>/usr/local/bin/pgcli
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>pgcli --version
+</span><span class='line'>Version: 0.16.3
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Using pgcli</h3>
+
+<p>To view a list of available <code>pgcli</code> commands:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>pgcli --help
+</span><span class='line'>Usage: pgcli <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>DATABASE<span class="o">]</span> <span class="o">[</span>USERNAME<span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'>Options:
+</span><span class='line'>  -h, --host TEXT     Host address of the postgres database.
+</span><span class='line'>  -p, --port INTEGER  Port number at which the postgres instance is listening.
+</span><span class='line'>  -U, --user TEXT     User name to connect to the postgres database.
+</span><span class='line'>  -W, --password      Force password prompt.
+</span><span class='line'>  -w, --no-password   Never prompt <span class="k">for </span>password.
+</span><span class='line'>  -v, --version       Version of pgcli.
+</span><span class='line'>  -d, --dbname TEXT   database name to connect to.
+</span><span class='line'>  --help              Show this message and exit.
+</span><span class='line'>
+</span><span class='line'><span class="nv">$ </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>To use <code>pgcli</code>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>pgcli
+</span><span class='line'>Version: 0.16.3
+</span><span class='line'>Chat: https://gitter.im/amjith/pgcli
+</span><span class='line'>Mail: https://groups.google.com/forum/#!forum/pgcli
+</span><span class='line'>Home: http://pgcli.com
+</span><span class='line'>rth&gt; <span class="se">\l</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>\l</code> will list the databases available to this installation of PostgreSQL. Note that the <code>pgcli</code> command prompt shows the currently logged in username. To discover other commands, use <code>\?</code>.</p>
+
+<p>As you experiment with <code>pgcli</code>, notice the command completion and the syntax highlighting. Big time savers relative to <code>psql</code>.</p>
+
+<h3>Acknowledgements</h3>
+
+<p>Thanks <a href="https://twitter.com/adomokos">Attila Domokos</a> and <a href="https://twitter.com/lostghost">Ken Walters</a> for the tweets that led to this <code>pgcli</code> blog post.</p>
+]]></content>
+  </entry>
+  
+</feed>

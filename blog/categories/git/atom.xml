@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: git | RayHightower.com]]></title>
+  <link href="http://RayHightower.com/blog/categories/git/atom.xml" rel="self"/>
+  <link href="http://RayHightower.com/"/>
+  <updated>2015-08-31T18:23:34-05:00</updated>
+  <id>http://RayHightower.com/</id>
+  <author>
+    <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[GitHub Pages: Quick Start Guide]]></title>
+    <link href="http://RayHightower.com/blog/2015/07/22/github-pages-quick-start-guide/"/>
+    <updated>2015-07-22T15:07:37-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/07/22/github-pages-quick-start-guide</id>
+    <content type="html"><![CDATA[<p><a href="https://pages.github.com/">GitHub Pages</a> lets any holder of a GitHub account host static HTML pages at no cost. The bigger benefit: Pages hosted at GitHub automatically become part of GitHub’s <a href="https://en.wikipedia.org/wiki/Content_delivery_network">content delivery network (CDN)</a>. People who visit your site will get faster page loads because of the CDN.</p>
+
+<p>This article focuses on interacting with GitHub Pages via Git at the command line. The browser-based automatic page generator is already well-documented. Another purpose of this post: To put useful information about GitHub Pages all in one post, so I won&rsquo;t have to go hunting around next time I forget this procedure!</p>
+
+<!--more-->
+
+
+<h3>Quick Start</h3>
+
+<p>A quick way to launch a “Hello World!” page via GitHub Pages&hellip;</p>
+
+<ul>
+<li><p>Create a <a href="http://github.com">GitHub</a> account for yourself.</p></li>
+<li><p>Create the repo where you want to publish a GitHub page. For example, <code>random-repo</code>. Be sure to make the repo public, and don&rsquo;t initialize it with a README file.</p></li>
+</ul>
+
+
+<p><img class="middle" src="/images/github-create-random-repo.png"></p>
+
+<ul>
+<li><p>Clone the repo on your local machine.</p></li>
+<li><p><code>cd</code> into the <code>random-repo</code> directory.</p></li>
+</ul>
+
+
+<p>&#8220;` bash</p>
+
+<p>$ git clone git@github.com:RayHightower/random-repo.git
+Cloning into &lsquo;random-repo&rsquo;&hellip;
+warning: You appear to have cloned an empty repository.
+Checking connectivity&hellip; done.</p>
+
+<p>$ cd random-repo</p>
+
+<p>$</p>
+
+<p><img class="middle" src="/images/github-clone-random-repo.png"></p>
+
+<p>&#8220;`
+Don&rsquo;t worry about the &ldquo;cloned an empty repository&rdquo; message. We&rsquo;ll add something very soon!</p>
+
+<ul>
+<li><p>Create and checkout the <code>gh-pages</code> branch in the repo.</p></li>
+<li><p>Create a file called <code>index.html</code> in the <code>gh-pages</code> branch.</p></li>
+<li><p>Using a text editor (or the fancy shortcut shown below) add the line &ldquo;Hello World&rdquo; to the <code>index.html</code> file.</p></li>
+</ul>
+
+
+<p>&#8220;` bash</p>
+
+<p>$ git checkout -b gh-pages</p>
+
+<p>$ touch index.html</p>
+
+<p>$ echo &ldquo;Hello World&rdquo;>index.html</p>
+
+<p>$</p>
+
+<p>&#8220;`</p>
+
+<ul>
+<li><p>Use <code>$ git add .</code> to add <code>index.html</code> to Git&rsquo;s history.</p></li>
+<li><p>Use <code>$ git commit</code> to commit changes.</p></li>
+<li><p>Use <code>$ git push</code> to push the <code>gh-pages</code> branch to GitHub.</p></li>
+</ul>
+
+
+<p>&#8220;` bash</p>
+
+<p>$ git add .</p>
+
+<p>$ git commit -am &lsquo;initial commit&rsquo;
+[gh-pages (root-commit) 0d4a0ae] initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html</p>
+
+<p>$ git push -u origin gh-pages
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 236 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@github.com:RayHightower/random-repo.git
+ * [new branch]      gh-pages &ndash;> gh-pages
+Branch gh-pages set up to track remote branch gh-pages from origin.</p>
+
+<p>$</p>
+
+<p>&#8220;`</p>
+
+<ul>
+<li>Open a web browser and navigate to <code>http://your-github-user-name.github.io/random-repo</code>. For the example in this article, use <a href="http://rayhightower.github.io/random-repo">http://rayhightower.github.io/random-repo</a>. You should see the words &ldquo;Hello World&rdquo; in the browser window.</li>
+</ul>
+
+
+<p><img class="middle" src="/images/github-browser-random-repo.png"></p>
+
+<p>Congrats on your success!</p>
+
+<p>GitHubber <a href="https://www.youtube.com/watch?v=rRGrT0wsJxI&amp;index=7&amp;list=PLOnWKC1gI_ONnIjU_sQVsIGFWT06Kd3In">Alyson La</a> demonstrates these steps in a 4-minute video, with some creative variations.</p>
+
+<h3>Hello World = Done. Enter Jekyll.</h3>
+
+<p>Now that <code>Hello World!</code> runs well, consider <a href="/blog/2015/06/24/getting-started-with-jekyll/">Jekyll</a>. Jekyll will generate your static pages based on the rules you setup in the Jekyll templates.</p>
+
+<p>Enjoy GitHub Pages!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Git Vulnerability on Mac OS X and Windows]]></title>
+    <link href="http://RayHightower.com/blog/2014/12/18/git-vulnerability-on-mac-os-x/"/>
+    <updated>2014-12-18T17:00:00-06:00</updated>
+    <id>http://RayHightower.com/blog/2014/12/18/git-vulnerability-on-mac-os-x</id>
+    <content type="html"><![CDATA[<p>Today the <a href="http://git-scm.com/">Git</a> core team announced a security vulnerability and a corresponding fix. Hats off to the <a href="http://mercurial.selenic.com/">Mercurial</a> team (yes, Mercurial!) for finding the problem. Hats off to the <code>Git</code> team for making the announcement, and for delivering a fix so quickly.</p>
+
+<h3>What’s the Problem?</h3>
+
+<p>If your Git installation remains un-patched, then a malicious person could over-write the <code>.git/config</code> directory in one of your repositories. This would allow them to alter your Git history and make changes in the repo without your knowledge. <a href="http://article.gmane.org/gmane.linux.kernel/1853266">Details</a>.</p>
+
+<p>The vulnerability exists on Mac OS X and Microsoft Windows. This article will discuss solving the problem on Mac OS X only, since that is my primary development platform.</p>
+
+<!--more-->
+
+
+<p>Mac and Windows users are exposed because their file systems are not case-sensitive by default. Linux users who use a case-sensitive file system are protected. But Linux users might want to apply the patch anyway because (as stated by the Git core team):</p>
+
+<blockquote><p>Even though the issue may not affect Linux users, if you are a hosting service whose users may fetch from your service to Windows or Mac OS X machines, you are strongly encouraged to update to protect such users who use existing versions of Git.<br/>~Git Core Team</p></blockquote>
+
+<h3>Is My Machine Vulnerable?</h3>
+
+<p>I know that my machine was vulnerable because I was running an un-patched version of Git, as seen below.</p>
+
+<p>&#8220;` bash</p>
+
+<p>~$ git &mdash;version
+git version 2.1.3</p>
+
+<p>~$</p>
+
+<p>&#8220;`</p>
+
+<h3>How to Upgrade</h3>
+
+<p><a href="/blog/2014/02/12/homebrew-fundamentals/">Homebrew</a> makes it easy to install and maintain Git. First, update Homebrew&hellip;</p>
+
+<p>&#8220;` bash</p>
+
+<p>~$ brew update
+Updated Homebrew from d243310d to a6ab9f13.
+==> New Formulae
+abi-compliance-checker        deis                     glbinding
+asciinema             distribution                rbenv-bundle-exec
+ctunnel                  game-music-emu           restund
+==> Updated Formulae
+abcm2ps                         jags
+afl-fuzz                    jansson</p>
+
+<p>&hellip;</p>
+
+<p>~$</p>
+
+<p>&#8220;`</p>
+
+<p>Then, upgrade Git&hellip;</p>
+
+<p>&#8220;` bash</p>
+
+<p>~$ brew upgrade git
+==> Upgrading 1 outdated package, with result:
+git 2.2.1
+==> Upgrading git
+==> Downloading <a href="https://downloads.sf.net/project/machomebrew/Bottles/git-2.2.1.y">https://downloads.sf.net/project/machomebrew/Bottles/git-2.2.1.y</a></p>
+
+<h6>################################################################## 100.0%</h6>
+
+<p>==> Pouring git-2.2.1.yosemite.bottle.tar.gz
+==> Caveats
+The OS X keychain credential helper has been installed to:
+  /usr/local/bin/git-credential-osxkeychain</p>
+
+<p>The &ldquo;contrib&rdquo; directory has been installed to:
+  /usr/local/share/git-core/contrib</p>
+
+<p>Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d</p>
+
+<p>zsh completion has been installed to:
+  /usr/local/share/zsh/site-functions
+==> Summary</p>
+
+<pre><code>/usr/local/Cellar/git/2.2.1: 1356 files, 31M
+</code></pre>
+
+<p>~$</p>
+
+<p>&#8220;`</p>
+
+<p>&hellip; and finally, verify that the patched version is in use.</p>
+
+<p>&#8220;` bash</p>
+
+<p>~$ git &mdash;version
+git version 2.2.1</p>
+
+<p>~$</p>
+
+<p>&#8220;`</p>
+
+<h3>Avoid Conflicts With Apple&rsquo;s Git</h3>
+
+<p>As <a href="https://twitter.com/kcocev">Kristjan Cocev</a> notes in the comments below, Mac OS X comes with its own Git installation. By the time you bought the machine, that pre-installed version is probably out of date. My pre-installed Git was:</p>
+
+<p>&#8220;` bash</p>
+
+<p>~$ /usr/bin/git &mdash;version
+git version 1.9.3 (Apple Git-50)</p>
+
+<p>~$</p>
+
+<p>&#8220;`</p>
+
+<p>Apple&rsquo;s pre-installed Git isn&rsquo;t bad, but here&rsquo;s the problem. Depending on how your <code>PATH</code> variable is setup, there might be a conflict between Apple-installed Git and the one you installed via Homebrew.</p>
+
+<p>Here are two alternatives for fixing the conflict before it causes problems.</p>
+
+<ol>
+<li>Change your <code>PATH</code> variable so that Homebrew-installed Git is executed long before Apple-installed Git gets reached, OR&hellip;</li>
+<li>Rename Apple-installed Git as follows:</li>
+</ol>
+
+
+<p>&#8220;` bash</p>
+
+<p>~$ sudo mv /usr/bin/git /usr/bin/git-apple
+Password:</p>
+
+<p>~$</p>
+
+<p>&#8220;`</p>
+
+<p>So now, if you want to use Apple&rsquo;s pre-installed Git (unlikely) you can simply navigate to <code>/usr/bin/git-apple</code>.</p>
+
+<h3>Open Source Rocks</h3>
+
+<p>Again, hats off to everyone in the open source community who pulled together to make this fix happen!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[GitHub Page Build Warning - New CDN]]></title>
+    <link href="http://RayHightower.com/blog/2014/05/31/github-page-build-warning-new-cdn/"/>
+    <updated>2014-05-31T13:44:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/05/31/github-page-build-warning-new-cdn</id>
+    <content type="html"><![CDATA[<p>The <code>RayHightower.com</code> blog is built on <a href="http://octopress.org/">Octopress</a> and hosted on <a href="https://pages.github.com/">GitHub Pages</a>. Recently, after I deployed a site update, GitHub emailed me a <code>Page build warning</code> message. Since this was <em>just a warning</em>, I ignored it while I attacked more pressing tasks (not always a good idea).</p>
+
+<p>Today I finally took the time to research the topic so I could figure out what to do next. This article is the result of that research.</p>
+
+<!--more-->
+
+
+<h2>What the Message Means</h2>
+
+<p>Here are the important points of the of the <code>Page build warning</code> message:</p>
+
+<ul>
+<li>GitHub introduced a <a href="http://en.wikipedia.org/wiki/Content_delivery_network">content delivery network (CDN)</a> for faster page loads and protection against <a href="http://en.wikipedia.org/wiki/Denial-of-service_attack">denial of sevice (DOS)</a> attacks.</li>
+<li>If you do nothing to your GitHub Pages site, your pages will continue to load normally. People who visit your site will see no difference.</li>
+<li>If you want the benefits of the CDN, follow the instructions given in GitHub&rsquo;s blog articles.</li>
+</ul>
+
+
+<h3>The Original Message</h3>
+
+<p>Here’s the original message. If you’re satisfied with the above translation, you can skip this section.</p>
+
+<blockquote><p>The page build completed successfully, but returned the following warning:</p>
+
+<p>GitHub Pages recently underwent some improvements (<a href="https://github.com/blog/1715-faster-more-awesome-github-pages">https://github.com/blog/1715-faster-more-awesome-github-pages</a>) to make your site faster and more awesome, but we&rsquo;ve noticed that rayhightower.com isn&rsquo;t properly configured to take advantage of these new features. While your site will continue to work just fine, updating your domain&rsquo;s configuration offers some additional speed and performance benefits. Instructions on updating your site&rsquo;s IP address can be found at <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,">https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records,</a> and of course, you can always get in touch with a human at <a href="&#109;&#x61;&#105;&#108;&#x74;&#x6f;&#58;&#x73;&#117;&#112;&#112;&#x6f;&#x72;&#x74;&#x40;&#103;&#105;&#116;&#104;&#117;&#x62;&#46;&#99;&#x6f;&#109;&#x2e;">&#115;&#117;&#112;&#112;&#111;&#114;&#x74;&#64;&#103;&#105;&#116;&#104;&#117;&#98;&#46;&#99;&#x6f;&#x6d;&#x2e;</a> For the more technical minded folks who want to skip the help docs: your site&rsquo;s DNS records are pointed to a deprecated IP address.</p>
+
+<p>For information on troubleshooting Jekyll see:</p>
+
+<p> <a href="https://help.github.com/articles/using-jekyll-with-pages#troubleshooting">https://help.github.com/articles/using-jekyll-with-pages#troubleshooting</a></p>
+
+<p>If you have any questions please contact us at <a href="https://github.com/contact.">https://github.com/contact.</a></p></blockquote>
+
+<h3>First: Check the CNAME File</h3>
+
+<p>Since <code>RayHightower.com</code> was configured for Octopress a few years ago, it already had a <code>source/CNAME</code> file. To check the contents:</p>
+
+<p>&#8220;` bash
+$ cat source/CNAME
+rayhightower.com</p>
+
+<p>$</p>
+
+<p><code>``
+The</code>CNAME` file looks fine, according to the GitHub&rsquo;s blog. Time for the next step.</p>
+
+<h3>Next: Domain Records</h3>
+
+<p>The domain is registered with <a href="http://dnsimple.com">DNSimple</a>, so the process was relatively quick.</p>
+
+<ol>
+<li>Go into DNSimple&rsquo;s advanced editor for the domain.</li>
+<li>Click <code>Add a Record</code> and select <code>ALIAS</code>.</li>
+<li>Leave <code>Name</code> blank.</li>
+<li>Next to <code>Alias for</code> enter the GitHub Pages endpoint. In my case, the endpoint is <code>rayhightower.github.io</code>.</li>
+</ol>
+
+
+<p>More information on <a href="http://support.dnsimple.com/articles/github-pages/">GitHub Pages and DNSimple</a>.</p>
+
+<p>I set TTL to 1 minute to encourage the changes to propagate quickly. If you know of a better configuration choice for TTL, please let me know in the comments below.</p>
+
+<h3>Expect Propagation Delays</h3>
+
+<p>DNS changes can take up to a day to propagate. Delays tend to be shorter with DNSimple because time-to-live (TTL) can be set as low as one minute for some records. Updates will be posted here as I learn more.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Upgrading to Git 2.0]]></title>
+    <link href="http://RayHightower.com/blog/2014/05/30/upgrading-to-git-2-dot-0/"/>
+    <updated>2014-05-30T11:33:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/05/30/upgrading-to-git-2-dot-0</id>
+    <content type="html"><![CDATA[<p><img class="right" src="/images/git_200.png">
+Developers of Git are making a serious effort to improve intuitiveness for first-time users. Of course, all users benefit from intuitive tools. When our tools <em>just work</em>, we spend less time sifting through documentation and more time solving problems for our customers.</p>
+
+<!--more-->
+
+
+<h3>How to Upgrade</h3>
+
+<p>If you’re on Mac OS X, make sure you’re using <a href="/blog/2014/02/12/homebrew-fundamentals/">Homebrew</a>. It’s the easiest way to install and manage Unix libraries on the Mac.</p>
+
+<p>It’s a good idea to check your current version before upgrading.</p>
+
+<p>&#8220;` bash
+$ git &mdash;version
+git version 1.9.2</p>
+
+<p>$</p>
+
+<p>&#8220;`
+Next, make sure that Homebrew is current.</p>
+
+<p>&#8220;` bash
+$ brew doctor</p>
+
+<p>Warning: Your Homebrew is outdated.
+You haven&rsquo;t updated for at least 24 hours, this is a long time in brewland!
+To update Homebrew, run <code>brew update</code>.</p>
+
+<p>$</p>
+
+<p>&#8220;`</p>
+
+<p>My Homebrew was outdated, so I used <code>brew update</code> to grab the new packages.</p>
+
+<p>&#8220;` bash
+$ brew update
+Updated Homebrew from b46160b8 to afff2b23.
+==> New Formulae
+aces_container                    git-number                      picolisp
+apache-spark                    homebrew/versions/mongodb24       probatron4j</p>
+
+<p>&hellip;</p>
+
+<p>$</p>
+
+<p>&#8220;`</p>
+
+<p>Next, use Homebrew to upgrade Git.</p>
+
+<p>&#8220;` bash
+$ brew upgrade git
+==> Upgrading 1 outdated package, with result:
+git 2.0.0
+==> Upgrading git
+==> Downloading <a href="https://downloads.sf.net/project/machomebrew/Bottles/git-2.0.0.mavericks.bottle.tar.gz">https://downloads.sf.net/project/machomebrew/Bottles/git-2.0.0.mavericks.bottle.tar.gz</a></p>
+
+<h6>################################################################## 100.0%</h6>
+
+<p>==> Pouring git-2.0.0.mavericks.bottle.tar.gz
+==> Caveats
+The OS X keychain credential helper has been installed to:
+  /usr/local/bin/git-credential-osxkeychain</p>
+
+<p>The &lsquo;contrib&rsquo; directory has been installed to:
+  /usr/local/share/git-core/contrib</p>
+
+<p>Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d</p>
+
+<p>zsh completion has been installed to:
+  /usr/local/share/zsh/site-functions
+==> Summary
+🍺  /usr/local/Cellar/git/2.0.0: 1324 files, 31M</p>
+
+<p>$
+&#8220;`</p>
+
+<p>Finished. Let&rsquo;s check the Git version to confirm that the upgrade went properly.</p>
+
+<p>&#8220;` bash
+$ git &mdash;version
+git version 2.0.0</p>
+
+<p>$</p>
+
+<p>&#8220;`</p>
+
+<p>Future articles will examine the this latest version of Git in detail. For now, enjoy!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How .gitignore Works]]></title>
+    <link href="http://RayHightower.com/blog/2014/03/25/how-gitignore-works/"/>
+    <updated>2014-03-25T18:20:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/03/25/how-gitignore-works</id>
+    <content type="html"><![CDATA[<p>Earlier today I ran into a Git issue within a RubyMotion project. I added a directory to the project&rsquo;s <code>.gitignore</code> file, but Git seemed to ignore my ignore. Expressed more clearly, Git continued to track a directory that I explicitly told it to ignore.</p>
+
+<p>What?</p>
+
+<p>Either there was a bug in Git, or my understanding of <code>.gitignore</code> was incomplete. It was time for me to dig in and learn more about <code>.gitignore</code>.</p>
+
+<!--more-->
+
+
+<h3>What I Learned About .gitignore</h3>
+
+<p>The root cause of my problem: Once Git has begun tracking a file or directory, adding it to <code>.gitignore</code> changes nothing. Git will continue to track the file unless we explicitly tell Git to stop tracking the file.</p>
+
+<p>&#8220;` bash</p>
+
+<p>$ git rm &mdash;cached [filename]</p>
+
+<p>$</p>
+
+<p>&#8220;`</p>
+
+<p>Or, if you want to stop tracking an entire directory (like me in this case)&hellip;</p>
+
+<p>&#8220;` bash</p>
+
+<p>$ git rm -r &mdash;cached [directoryname]</p>
+
+<p>$</p>
+
+<p>&#8220;`</p>
+
+<p>The <code>-r</code> flag will tell Git to stop tracking all of the sub-directories and files within <code>directoryname</code>, recursively.</p>
+
+<p>Git was behaving exactly as designed.</p>
+
+<h3>Penalty</h3>
+
+<p>I should have known this a long time ago. My penalty: A public admission :&ndash;)</p>
+]]></content>
+  </entry>
+  
+</feed>

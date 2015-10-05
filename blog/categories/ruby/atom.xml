@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ruby | RayHightower.com]]></title>
+  <link href="http://RayHightower.com/blog/categories/ruby/atom.xml" rel="self"/>
+  <link href="http://RayHightower.com/"/>
+  <updated>2015-08-31T18:23:34-05:00</updated>
+  <id>http://RayHightower.com/</id>
+  <author>
+    <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Getting Started With Jekyll]]></title>
+    <link href="http://RayHightower.com/blog/2015/06/24/getting-started-with-jekyll/"/>
+    <updated>2015-06-24T16:02:38-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/06/24/getting-started-with-jekyll</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='/images/jekyll-responsive.jpg' width='' height='' alt='Jekyll, the static HTML generator.' title='Jekyll, the static HTML generator.'><span class='caption-text'>Jekyll, the static HTML generator.</span></span></p>
+
+<p><a href="http://jekyllrb.com">Jekyll</a> is a static HTML generator for web sites that don&rsquo;t require a content management system (CMS). Jekyll sites load quickly, especially when combined with GitHub Pages. <a href="https://twitter.com/bobbyreys">Bobby Reyes</a> and I will present Jekyll at ChicagoRuby: 1871 on Thursday, June 25, 2015. Slides are below.</p>
+
+<!--more-->
+
+
+<h3>Why Jekyll?</h3>
+
+<p>You may already know that RayHightower.com is powered by <a href="http://octopress.org">Octopress</a> (as of the date of this article). Octopress sits on top of Jekyll. Recently, I discovered that Jekyll offers some advantages that will help this blog greatly, namely:</p>
+
+<ul>
+<li><p>A larger community than Octopress. As Linus Torvalds says: With many eyeballs, all bugs are shallow.</p></li>
+<li><p>Lots of templates. I am not a designer. Further, since this is a simple blog, an amazing design would be overkill. But the blog must look crisp and professional, right? Jekyll templates that meet my needs are widely available.</p></li>
+</ul>
+
+
+<h3>Migration Happening Now</h3>
+
+<p>This blog&rsquo;s migration from Octopress to Jekyll is underway. I’ll post when it’s done. In the meantime, take a look at the slides from the Jekyll presentation at ChicagoRuby.</p>
+
+<center><script async class="speakerdeck-embed" data-id="5d549813f5db469a974423257d1c734e" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script></center>
+
+
+<p>&nbsp;<br/>
+This 82-second video shows how to launch a Jekyll site with the default template.</p>
+
+<center><iframe width="665" height="420" src="https://www.youtube.com/embed/2KHQ3o9b2wk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></center>
+
+
+<p>&nbsp;<br/></p>
+
+<h3>Thanks, Octopress!</h3>
+
+<p>I am grateful to the Octopress community for introducing me to static page generators. Jekyll is the next logical step for me. And, since technology is always changing, it will be exciting to learn what&rsquo;s next.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[pgcli - Command Line Interface for PostgreSQL]]></title>
+    <link href="http://RayHightower.com/blog/2015/04/28/pgcli-command-line-interface-for-postgresql/"/>
+    <updated>2015-04-28T11:59:44-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/04/28/pgcli-command-line-interface-for-postgresql</id>
+    <content type="html"><![CDATA[<p>Debugging is a fact of life when building apps with Rails or any other set of tools. All troubleshooting is easier when we can see what’s going on inside.</p>
+
+<p><a href="http://pgcli.com/">pgcli</a> is a command line tool that lets devs examine PostgreSQL databases from the command line. <code>pgcli</code> offers more powerful features than <code>psql</code> (the default terminal front-end for PostgreSQL) such as:</p>
+
+<ul>
+<li>Autocompletion. In fact, <code>pgcli</code> autocompletion is smart enough to only show table names after <code>FROM</code> in a SQL statement.</li>
+<li>Syntax highlighting. Find gotchas quicker, just like you would in a text editor.</li>
+</ul>
+
+
+<p>Debugging is easier when you can look inside the black box.</p>
+
+<!--more-->
+
+
+<h3>Installation</h3>
+
+<p>To install <code>pgcli</code> on Mac OS X, use <a href="/blog/2014/02/12/homebrew-fundamentals/">Homebrew</a>:</p>
+
+<p>&#8220;` bash
+$ brew install pgcli
+==> Installing dependencies for pgcli: openssl, postgresql
+==> Installing pgcli dependency: openssl
+==> Downloading <a href="https://homebrew.bintray.com/bottles/openssl-1.0.2a-1.yosemite.b">https://homebrew.bintray.com/bottles/openssl-1.0.2a-1.yosemite.b</a></p>
+
+<h6>################################################################## 100.0%</h6>
+
+<h1>Homebrew installs dependencies as required&hellip;</h1>
+
+<p>==> Installing pgcli
+==> Downloading <a href="https://homebrew.bintray.com/bottles/pgcli-0.16.3.yosemite.bottl">https://homebrew.bintray.com/bottles/pgcli-0.16.3.yosemite.bottl</a></p>
+
+<h6>################################################################## 100.0%</h6>
+
+<p>==> Pouring pgcli-0.16.3.yosemite.bottle.tar.gz
+🍺  /usr/local/Cellar/pgcli/0.16.3: 423 files, 5.2M</p>
+
+<p>$</p>
+
+<p>&#8220;`</p>
+
+<p>Verify installation as follows:</p>
+
+<p>&#8220;` bash
+$ which pgcli
+/usr/local/bin/pgcli</p>
+
+<p>$ pgcli &mdash;version
+Version: 0.16.3</p>
+
+<p>$</p>
+
+<p>&#8220;`</p>
+
+<h3>Using pgcli</h3>
+
+<p>To view a list of available <code>pgcli</code> commands:</p>
+
+<p>&#8220;` bash</p>
+
+<p>$ pgcli &mdash;help
+Usage: pgcli [OPTIONS] [DATABASE] [USERNAME]</p>
+
+<p>Options:
+  -h, &mdash;host TEXT     Host address of the postgres database.
+  -p, &mdash;port INTEGER  Port number at which the postgres instance is listening.
+  -U, &mdash;user TEXT     User name to connect to the postgres database.
+  -W, &mdash;password      Force password prompt.
+  -w, &mdash;no-password   Never prompt for password.
+  -v, &mdash;version       Version of pgcli.
+  -d, &mdash;dbname TEXT   database name to connect to.
+  &mdash;help              Show this message and exit.</p>
+
+<p>$</p>
+
+<p>&#8220;`</p>
+
+<p>To use <code>pgcli</code>:</p>
+
+<p>&#8220;` bash</p>
+
+<p>$ pgcli
+Version: 0.16.3
+Chat: <a href="https://gitter.im/amjith/pgcli">https://gitter.im/amjith/pgcli</a>
+Mail: <a href="https://groups.google.com/forum/#!forum/pgcli">https://groups.google.com/forum/#!forum/pgcli</a>
+Home: <a href="http://pgcli.com">http://pgcli.com</a>
+rth> \l</p>
+
+<p>&#8220;`</p>
+
+<p><code>\l</code> will list the databases available to this installation of PostgreSQL. Note that the <code>pgcli</code> command prompt shows the currently logged in username. To discover other commands, use <code>\?</code>.</p>
+
+<p>As you experiment with <code>pgcli</code>, notice the command completion and the syntax highlighting. Big time savers relative to <code>psql</code>.</p>
+
+<h3>Acknowledgements</h3>
+
+<p>Thanks <a href="https://twitter.com/adomokos">Attila Domokos</a> and <a href="https://twitter.com/lostghost">Ken Walters</a> for the tweets that led to this <code>pgcli</code> blog post.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[JRuby 9000 on Mac OS X]]></title>
+    <link href="http://RayHightower.com/blog/2015/03/03/jruby-9000-on-mac-os-x/"/>
+    <updated>2015-03-03T14:42:57-06:00</updated>
+    <id>http://RayHightower.com/blog/2015/03/03/jruby-9000-on-mac-os-x</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/jruby_on_jvm.png' width='' height='' alt='JRuby. Ruby on the JVM.' title='JRuby. Ruby on the JVM.'><span class='caption-text'>JRuby. Ruby on the JVM.</span></span>
+Moore’s Law is about to run into a wall. Therefore, anything that software developers can learn about concurrency will be critical in coming years. Enter <a href="http://www.jruby.org/">JRuby 9000</a>.</p>
+
+<h3>What is JRuby?</h3>
+
+<p>JRuby is an implementation of the Ruby programming language that runs on the Java virtual machine (JVM). Advantages of running on the JVM include:</p>
+
+<ul>
+<li>Reaping the performance benefits that come from decades of JVM tuning.</li>
+<li>The ability to call time-tested Java libraries from Ruby programs.</li>
+<li>The performance benefits that come from concurrency, built into the JVM.</li>
+</ul>
+
+
+<!-- more -->
+
+
+<h3>Installing JRuby 9000 on OS X</h3>
+
+<p>Grab the latest <code>.tar</code> file from <a href="http://jruby.org/download">JRuby Downloads</a> and extract it by double-clicking on it. As of this writing, the latest version was <code>jruby-bin-9.0.0.0.pre1.tar.gz</code>.</p>
+
+<p>Next, move the extracted files to <code>/opt/jruby/</code>. For example, if you downloaded the <code>.tar</code> file to your <code>~/Downloads</code> directory, this command will rename the extracted directory to <code>jruby/</code> in the process.</p>
+
+<p>&#8220;` bash
+$ sudo mv ~/Downloads/jruby-9.0.0.0.pre1/ /opt/jruby/
+Password:</p>
+
+<p>$</p>
+
+<p><code>``
+And finally, add the following line to</code>~/.bash_profile<code>(or where ever you choose to set your</code>$PATH` variable).</p>
+
+<p>&#8220;` bash
+export PATH=&ldquo;/opt/jruby/bin:$PATH&rdquo;</p>
+
+<p>&#8220;`</p>
+
+<h3>Testing the JRuby 9000 installation</h3>
+
+<p>To test the JRuby 9000 installation, re-start your terminal or use <code>$ source ~/.bash_profile</code>. And then</p>
+
+<p>&#8220;` bash
+$ jruby &mdash;version
+jruby 9.0.0.0.pre1 (2.2.0p0) 2015-01-20 d537cab Java HotSpot&trade; 64-Bit Server VM 25.25-b02 on 1.8.0_25-b17 +jit [darwin-x86_64]</p>
+
+<p>$ which jruby
+/opt/jruby/bin/jruby</p>
+
+<p>$</p>
+
+<p>&#8220;`</p>
+
+<h3>Why not RVM?</h3>
+
+<p>Given that <a href="/blog/2013/05/16/upgrading-ruby-with-rvm/">I like RVM</a>, why didn’t I simply use RVM to install JRuby 9000? Answer: The instructions for installing <em>a pre-release version</em> of JRuby via RVM were unclear to me. Extracting the executables and adding the directory to the <code>$PATH</code> was more grok-able. If your experience is different from mine, feel free to share in the comments below.</p>
+
+<h3>Next Steps</h3>
+
+<p>Next steps include experiments with concurrency. JRuby concurrency experiments with the <a href="/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">18-core Parallella</a> look especially interesting. More to come.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Looking Inside the Pygments Plugin]]></title>
+    <link href="http://RayHightower.com/blog/2014/12/31/looking-inside-pygments/"/>
+    <updated>2014-12-31T16:18:29-06:00</updated>
+    <id>http://RayHightower.com/blog/2014/12/31/looking-inside-pygments</id>
+    <content type="html"><![CDATA[<p>This blog uses <a href="https://rubygems.org/gems/pygments.rb">pygments.rb</a> for syntax highlighting. Recently <code>pygments.rb</code> stopped working, so I had to dig inside to determine the problem and apply a solution.</p>
+
+<p>Full disclosure: Pygments didn&rsquo;t simply stop working. I applied updates related to Octopress and Lunr.js, and then it stopped working. So the root cause is me! Rather than back-out the updates, I decided to push forward because Lunr.js will improve the search experience for visitors. Search options will be discussed in a future post.</p>
+
+<h3>Starting With the Error Message</h3>
+
+<p>As with all <a href="http://octopress.org/">Octopress</a> based blogs, the <code>$ rake generate</code> command creates a new set of static pages every time the command gets run. Normally the process is smooth. Here&rsquo;s the error message that resulted this morning.</p>
+
+<p>&#8220;` bash</p>
+
+<p>~$ rake generate</p>
+
+<p>&hellip;</p>
+
+<p>jekyll 2.0.3 | Error:  Pygments can&rsquo;t parse unknown language: </p>.</p>
+
+<p>$</p>
+
+<p>&#8220;`</p>
+
+<p>What unknown language? Something was fishy. Fortunately, <code>pygments</code> is an open source plugin. Solving the problem was non-trivial, but doable.</p>
+
+<!--more-->
+
+
+<h3>Exploring Pygments Internals</h3>
+
+<p>Google, Stack Overflow, and the Octopress documentation gave clues on where to explore. Adding a few lines to <code>source/plugins/pygments_code.rb</code> provided insights on what <code>pygments</code> was &ldquo;thinking&rdquo;.</p>
+
+<p>&#8220;` ruby</p>
+
+<p>require &lsquo;pygments&rsquo;
+require &lsquo;fileutils&rsquo;
+require &lsquo;digest/md5&rsquo;</p>
+
+<p>PYGMENTS_CACHE_DIR = File.expand_path(&lsquo;../../.pygments-cache&rsquo;, <strong>FILE</strong>)
+FileUtils.mkdir_p(PYGMENTS_CACHE_DIR)</p>
+
+<p>module HighlightCode
+  def self.highlight(str, lang)</p>
+
+<pre><code># Next three lines let us see what pygments "thinks".
+print "\n\nrth_str = #{str}"
+print "\nrth_lang = #{lang}"
+print "\nrth_file = #{__FILE__}\n\n"
+
+...
+</code></pre>
+
+<p>end</p>
+
+<p>&#8220;`</p>
+
+<h3>Observing the Results, Applying a Solution</h3>
+
+<p>Next step: Run <code>$ rake generate</code> and see what happens. Turns out that the lastest version of <code>pygments</code> halted for two reasons:</p>
+
+<ul>
+<li>Some of my older blog posts did not contain a space between the triple-backtick characters and the name of the language being highlighted. Earlier versions of <code>pygments</code> did not care, but the current version is a stickler.</li>
+<li><code>pygments</code> appears to want a blank line between any triple-backtick line and any other text in the blog post.</li>
+</ul>
+
+
+<p>Vim-fu allowed me to apply solutions with minimal manual work. And now <code>pygments</code> works well.</p>
+
+<p>On to search, to be discussed in a future blog post.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Be Awesome. Tackle Big League Problems at WindyCityRails]]></title>
+    <link href="http://RayHightower.com/blog/2014/08/05/be-awesome-tackle-big-league-problems-at-windycityrails/"/>
+    <updated>2014-08-05T16:21:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/08/05/be-awesome-tackle-big-league-problems-at-windycityrails</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/big_league_problems_windycityrails.jpg' width='' height='' alt='Be awesome.' title='Be awesome.'><span class='caption-text'>Be awesome.</span></span>
+Do you see yourself in any of these scenarios?</p>
+
+<ul>
+<li><p>You have already built a successful Rails app. Now that you&rsquo;re &ldquo;done&rdquo;, you know you can make it better, but you&rsquo;re not sure how. You want to take your skills to the next level.</p></li>
+<li><p>You recently graduated from <a href="http://devbootcamp.com">Dev Bootcamp</a>, <a href="http://thestarterleague.com">Starter League</a>, <a href="http://www.mobilemakers.co/">Mobile Makers</a> or another school. You&rsquo;re ready to meet and interact with your next generation of mentors.</p></li>
+<li><p>You are no longer a beginner. You have seen <em>advanced</em> developers in action, and you are determined to get there yourself.</p></li>
+<li><p>Software development is relatively new to you, and you built a successful track record in another profession. You want to meet people who can help you accelerate through the beginner phase so you can launch something useful.</p></li>
+</ul>
+
+
+<p>Common thread: It&rsquo;s time to unleash the awesomeness in your bones. You want to take your skills to the next level, and you are ready to tackle <em>Big League Problems</em>. <a href="http://windycityrails.org">WindyCityRails</a> is for you.</p>
+
+<!--more-->
+
+
+<h3>What are Big League Problems?</h3>
+
+<p>You might think of a big league problem as a good problem. For example, the Rails app you built is pulling in customers, and you&rsquo;re bumping into the limits of your software architecture. Who knew that so many people would buy from you?</p>
+
+<p>Now&hellip; How do you scale? Do you buy more hardware, change your architecture, choose a new platform, or some combination of these? <a href="http://www.windycityrails.org/schedule/#williams">Dr. Nic Williams</a>, <a href="http://www.windycityrails.org/schedule/#shirai">Brian Shirai</a>, <a href="http://www.windycityrails.org/schedule/#light">Evan Light</a>, <a href="http://www.windycityrails.org/schedule/#menard">Mark Menard</a> deal with scaling problems. Learn from them.</p>
+
+<p>Maybe you built a gem to solve a problem for yourself, and now you want to release your gem to the world. What legal questions do you need to consider? Did Rails face similar challenges in the beginning? <a href="http://www.windycityrails.org/schedule/#saper">Daliah Saper</a> is an attorney who specializes in intellectual property and other open source software issues. Put her team to work for you.</p>
+
+<p>How about security? Have you outgrown the <code>Devise</code> gem? Or do you simply need to know more about <code>Devise</code> internals so that you can use it more effectively? Maybe it&rsquo;s time to abandon username/password logins altogether and go with SQRL. <a href="http://www.windycityrails.org/schedule/#love">Justin Love</a> and <a href="http://www.windycityrails.org/schedule/#mazza">Lucas Mazza</a> might have some ideas for you.</p>
+
+<h3>Awesome Speakers. Awesome Audience.</h3>
+
+<p>This year&rsquo;s WindyCityRails features the most powerful collection of speakers we&rsquo;ve ever assembled. Check out the <a href="http://www.windycityrails.org/schedule/">complete list of WindyCityRails speakers</a> and ask yourself what you can learn from each one.</p>
+
+<p>Even better: Only 300 WindyCityRails tickets will be sold. Our speakers enjoy interacting with audience members throughout the conference. As professionals, they are always learning, too! So if you want some face time with people who understand Big League Problems (and more importantly, Big League Solutions) WindyCityRails is the place for you to be.</p>
+
+<h3>Get Tickets Now</h3>
+
+<p>Tickets are selling fast. Get yours now at <a href="http://www.windycityrails.org/register/">http://www.windycityrails.org/register/</a>. Use the promo code AWESOME to save $75.00 on the standard price.</p>
+
+<p>We look forward to seeing you at WindyCityRails!</p>
+]]></content>
+  </entry>
+  
+</feed>

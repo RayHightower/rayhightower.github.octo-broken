@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: parallella | RayHightower.com]]></title>
+  <link href="http://RayHightower.com/blog/categories/parallella/atom.xml" rel="self"/>
+  <link href="http://RayHightower.com/"/>
+  <updated>2015-08-31T18:23:34-05:00</updated>
+  <id>http://RayHightower.com/</id>
+  <author>
+    <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Madison Ruby and Parallella (with Video)]]></title>
+    <link href="http://RayHightower.com/blog/2015/08/22/madison-ruby-and-parallella/"/>
+    <updated>2015-08-22T09:47:45-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/08/22/madison-ruby-and-parallella</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/parallella_perspective_250_bw.jpg' width='' height='' alt='Parallella.' title='Parallella.'><span class='caption-text'>Parallella.</span></span>
+<a href="/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella</a> is a single-board computer roughly the size of a credit card or Raspberry Pi. It runs Linux. It has 18 processor cores, two ARM and sixteen RISC. You can buy this device online for about $150.00.</p>
+
+<p>The <a href="http://madisonpl.us/ruby/">Madison+ Ruby</a> organizers invited me to present Parallella at the conference earlier today. <del>Video will be posted here when it becomes available.</del> <em>Update: The Madison+ Ruby team has posted video in record time! Video and slides appear below.</em></p>
+
+<!--more-->
+
+
+<center><iframe width="640" height="360" src="https://www.youtube.com/embed/BHZCCUEzK0s" frameborder="0" allowfullscreen></iframe></center>
+
+
+<br/>&nbsp;
+
+
+<br/>&nbsp;
+
+
+<center><script async class="speakerdeck-embed" data-id="cf2abfd4752a417ca7b399761af38e2a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script></center>
+
+
+<br/>&nbsp;
+
+
+<br/>&nbsp;
+
+
+<h3>Thank You Madison+ Ruby</h3>
+
+<p><a href="/blog/2013/08/25/madison-ruby-2013/">Madison+ Ruby</a> has delivered a great experience for five years. Sadly, 2015 marks the last year for the conference. They will be missed.</p>
+
+<p>Thank you Jim and Jen Remsik for a great conference. I wish you well with everything you choose to do in coming years.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Designed at West Point. 3D Printed at BLUE1647.]]></title>
+    <link href="http://RayHightower.com/blog/2015/08/03/designed-at-west-point-3d-printed-at-blue1647/"/>
+    <updated>2015-08-03T21:50:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/08/03/designed-at-west-point-3d-printed-at-blue1647</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='/images/westpoint-parallella-green.jpg' width='' height='' alt='Designed at West Point. 3D-printed at BLUE1647 in Chicago.' title='Designed at West Point. 3D-printed at BLUE1647 in Chicago.'><span class='caption-text'>Designed at West Point. 3D-printed at BLUE1647 in Chicago.</span></span></p>
+
+<p>Experimenting with <a href="/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella</a>? Then you might need a way to protect it. The original acrylic cases are no longer available. Fortunately, 3D printing offers a solid alternative.</p>
+
+<p>A highly-expandable 3D-printable case was designed by a team at the <a href="http://westpoint.edu">United States Military Academy at West Point</a>: Professor Suzanne J. Matthews and Master Machinist William (“Frank”) Blackmon. <a href="http://www.suzannejmatthews.com/teaching.html">Professor Matthews</a> uses Parallella when teaching high-performance computing courses.</p>
+
+<!--more-->
+
+
+<h3>Simple, Expandable Design</h3>
+
+<p>The West Point case only has three parts! You combine the three parts at will to accommodate multiple Parallella cluster configurations.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/westpoint-case-parts.jpg' width='' height='' alt='Three parts of the West Point case.' title='Three parts of the West Point case.'><span class='caption-text'>Three parts of the West Point case.</span></span></p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/westpoint_stacked_2.jpg' width='' height='' alt='Mix and match the parts. Stack at will.' title='Mix and match the parts. Stack at will.'><span class='caption-text'>Mix and match the parts. Stack at will.</span></span></p>
+
+<h3>Internal Honeycomb Structure</h3>
+
+<p>Engineering details make a big difference in project like this. While the flat portions of the case are printing, the internal honeycomb structure is visible. I suspect that the honeycomb gives the panels greater strength while reducing costs and shortening the print time. Product engineering considers factors that users never see at the surface.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella-case-honeycomb.jpg' width='' height='' alt='Internal honeycomb structure.' title='Internal honeycomb structure.'><span class='caption-text'>Internal honeycomb structure.</span></span></p>
+
+<h3>3D Printing Process (w/gotchas)</h3>
+
+<p>I asked Patrick Harris, CEO of <a href="http://imagine-it-tech.com">iMagine-it-Tech</a>, to guide me through the process. iMagine-it-Tech is based at <a href="http://blue1647.com">BLUE1647</a>. Here are a few lessons (with <em>gotchas</em> to avoid):</p>
+
+<ul>
+<li><p><a href="http://www.thingiverse.com/thing:892684">Thingiverse</a> is a great resource for STereoLithography (STL) files.</p></li>
+<li><p>Whether you own your own 3D printer or not, grab a copy of the <a href="http://www.makerbot.com/desktop">MakerBot Desktop</a> software. The software will let you view and manipulate STL files at will. Versions are available for Mac OS X, Windows, and Linux.</p></li>
+<li><p>If the build plate has room for multiple copies of your object, print them. Here’s why: 3D-printing is in its infancy and results are less than perfect. If a part does not come out as designed, and you’ve printed multiple copies, you might have an extra to fall back on.</p></li>
+</ul>
+
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/multiple_locks.jpg' width='' height='' alt='Print multiple copies when space allows.' title='Print multiple copies when space allows.'><span class='caption-text'>Print multiple copies when space allows.</span></span></p>
+
+<ul>
+<li>Keep the build plate absolutely level. The build plate is the platform where MakerBot deposits material to form the 3D-printed object. If the build plate is even slightly skewed, you could end up with spaghettification, noodle-like strings of filament all over the place. Not fun.</li>
+</ul>
+
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/spaghettification.jpg' width='' height='' alt='Spaghettification (the noodle effect) is not fun.' title='Spaghettification (the noodle effect) is not fun.'><span class='caption-text'>Spaghettification (the noodle effect) is not fun.</span></span></p>
+
+<ul>
+<li>Print with the flat-side of the object down against the build plate. 3D printing does not do well with overhangs.</li>
+</ul>
+
+
+<h3>After Printing</h3>
+
+<p>The Dremel Tool has become one of the most valuable tools in my maker kit. For this project, it was helpful to use the Dremel for edge-smoothing and screw-shortening.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/trim-rough-edges.jpg' width='' height='' alt='Trim rough edges with a Dremel and a razor blade.' title='Trim rough edges with a Dremel and a razor blade.'><span class='caption-text'>Trim rough edges with a Dremel and a razor blade.</span></span></p>
+
+<h3>Screws Required</h3>
+
+<p>You can secure the Parallella circuit board to the bottom side of the case with four sheet metal screws, size #4. The 3/8&#8221; screws extended beyond the bottom of the case, so I trimmed them a bit with a Dremel.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/shorten-screws.jpg' width='' height='' alt='Sheet metal screws (#4). Left screw was shortened with a Dremel.' title='Sheet metal screws (#4). Left screw was shortened with a Dremel.'><span class='caption-text'>Sheet metal screws (#4). Left screw was shortened with a Dremel.</span></span></p>
+
+<h3>Conclusion</h3>
+
+<p>This is the best 3D-printed case for Parallella that I have found so far, mainly because it is stackable and expandable.</p>
+
+<p>Professor Matthews continues to author instructional materials that focus on parallel processing, with Parallella as the learning tool of choice. I look forward to reading more of the materials.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Parallella Examples]]></title>
+    <link href="http://RayHightower.com/blog/2015/06/30/parallella-examples/"/>
+    <updated>2015-06-30T14:32:02-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/06/30/parallella-examples</id>
+    <content type="html"><![CDATA[<blockquote><p>Performance is of paramount importance in parallel programming. The reason we are in the game of writing parallel programs is either to solve a problem faster than on a serial computer, or to solve a larger problem than could previously be done.<br/>&nbsp;<br/>~D. Thiébaut, author<br/>&nbsp;Parallel Programming in C for the Transputer</p></blockquote>
+
+<p>Some developers buy a Parallella board because they already know parallel programming. They knew what to do with the device the moment they laid eyes on it. Others (like me) are relatively new to parallel programming. We see Parallella as an inexpensive tool for hands-on learning.</p>
+
+<!--more-->
+
+
+<h3>Starting Questions</h3>
+
+<p>A first-time Parallella user might ask questions like:</p>
+
+<ul>
+<li><p>How do you get Parallella up and running? Covered in the <a href="/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella Quick Start Guide</a>. <em>Gotchas</em> are included to save us time.</p></li>
+<li><p>What’s next? What can I do with Parallella that I can&rsquo;t do with a single-core system?</p></li>
+</ul>
+
+
+<p>To help answer the second set of questions, <a href="http://adapteva.com">Adapteva</a> gathered some examples that you can run on your own Parallella.</p>
+
+<h3>Community Examples on GitHub</h3>
+
+<p>The <a href="https://github.com/parallella/parallella-examples">parallella-examples repo on GitHub</a> is a great place to start. As of this writing, the examples include matrix multiplication, <a href="https://en.wikipedia.org/wiki/Ray_tracing">ray tracing</a>, and <a href="http://mathworld.wolfram.com/MandelbrotSet.html">Mandelbrot sets</a>. Given the active nature of open source, more examples may appear by the time you read this. Future examples might be created by you!</p>
+
+<h3>Switching to TTY on Parallella</h3>
+
+<p>Some of the examples will not run on the Parallella&rsquo;s Linux X Window desktop. Instead, TTY (teletype) mode is required. I will update this article when I find out why we need TTY. In the meantime, here&rsquo;s how to switch to TTY mode and back on Parallella:</p>
+
+<ul>
+<li><p>Switch to TTY by pressing <code>Ctrl</code> + <code>Alt</code> + <code>F2</code>.</p></li>
+<li><p>The first time you switch to TTY, you will need to log in. Use the default Parallella credentials: login = linaro, password = linaro.</p></li>
+<li><p>Switch back to X Window by pressing <code>Ctrl</code> + <code>Alt</code> + <code>F7</code>.</p></li>
+</ul>
+
+
+<p>Interesting observation: On my Parallella, pressing <code>Ctrl</code> + <code>Alt</code> + <code>F[any number except 7]</code> shifts the device to TTY mode. Only <code>Ctrl</code> + <code>Alt</code> + <code>F7</code> switches it back to X Window.</p>
+
+<h3>Running the Mandelbrot Example</h3>
+
+<p>To run the Mandelbrot example, switch to TTY mode and then&hellip;</p>
+
+<p>&#8220;`bash</p>
+
+<p>$ cd parallella-examples/mandelbrot</p>
+
+<p>$ make     # You&rsquo;ll only need to run make once.</p>
+
+<p>$ ./run.sh</p>
+
+<p>&#8220;`</p>
+
+<p>You&rsquo;ll see an animated graphic showing the Mandelbrot calculations in real time.</p>
+
+<p>So, what&rsquo;s a Mandelbrot set and why do we care?</p>
+
+<h3>About Mandelbrot Sets</h3>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/mandelbrot-parallella.jpg' width='' height='' alt='Mandelbrot example calculated by Parallella.' title='Mandelbrot example calculated by Parallella.'><span class='caption-text'>Mandelbrot example calculated by Parallella.</span></span></p>
+
+<blockquote><p>Clouds are not spheres, mountains are not cones, coastlines are not circles, and bark is not smooth, nor does lightning travel in a straight line.<br/>&nbsp;<br/>~Benoit Mandelbrot</p></blockquote>
+
+<p>A Mandelbrot set is a group of numbers that displays a certain unusual property. Each member of the set is based on a calculation performed on the previous member, and an infinite number of members can be plotted within a finite area of a plane. Since humans are visual, we can easily recognize a Mandelbrot set that has been plotted on a graph, like the Mandelbrot diagram in this article.</p>
+
+<p>For a 15-minute explanation of the Mandelbrot set, check out <a href="https://www.youtube.com/watch?v=0YaYmyfy9Z4&amp;list=PLOnWKC1gI_OPU8SDIBnCLHsgzNLSbnPJQ&amp;index=2">The Amazing Mandelbrot Set Tutorial</a>. The video covers imaginary numbers, complex numbers, and iterative functions with just enough depth to explain how the Mandelbrot set gets generated.</p>
+
+<p>A Mandelbrot algorithm designed for and executed on a parallel system will run faster than a similar algorithm running in serial. The algorithm and the code must be tailored for a parallel system in order for the advantage to be realized.</p>
+
+<h3>Other Parallella Examples</h3>
+
+<p>As of this writing, the other graphical programs in the <a href="https://github.com/parallella/parallella-examples">parallella-examples repo</a> can be run in a similar fashion. <code>cd</code> into the directory, run <code>make</code>, and then <code>./run.sh</code>.</p>
+
+<h3>Next steps</h3>
+
+<p>Parallella is a learning tool. A learning lab. When we are learning, we ask questions like:</p>
+
+<ul>
+<li><p>How can we measure the difference in performance between serial and parallel versions of different algorithms?</p></li>
+<li><p>Why do the graphics-oriented examples require TTY mode?</p></li>
+<li><p>Scrot works on several single-board computers, including Parallella and Raspberry Pi. Why won&rsquo;t <a href="/blog/2013/03/19/how-to-take-a-raspberry-pi-screenshot/">Scrot</a> work in TTY mode on Parallella?</p></li>
+<li><p>Once we get the graphics examples (like Mandelbrot and ray tracing) working in X Window, what&rsquo;s the best way to record the on-screen animation? Holding a camera in front of the monitor will work, but it seems archaic.</p></li>
+</ul>
+
+
+<p>And, the biggest questions of all:</p>
+
+<ul>
+<li><p>What can we do with Parallella that we cannot do with a single-core computer?</p></li>
+<li><p>How can we demonstrate the difference visually?</p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[3D Printing at BLUE1647]]></title>
+    <link href="http://RayHightower.com/blog/2015/06/25/3d-printing-at-blue1647/"/>
+    <updated>2015-06-25T17:11:35-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/06/25/3d-printing-at-blue1647</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella_3d_print_blue1647.jpg' width='' height='' alt='Parallella with a 3D-printed case.' title='Parallella with a 3D-printed case.'><span class='caption-text'>Parallella with a 3D-printed case.</span></span></p>
+
+<p>Every visit to <a href="http://blue1647.com">BLUE1647</a> is full of pleasant surprises. There’s new equipment, a new opportunity to learn new technology, new people to learn from, or all of the above.</p>
+
+<p>I recently bought a second <a href="/blog/2015/05/27/massively-parallel-parallella/">Parallella</a> for a WisdomGroup project. Since it&rsquo;s important to protect the device with a case, this seemed like a good time to try one of the 3D printers at BLUE1647. The result is in the photo, above.</p>
+
+<!--more-->
+
+
+<h3>Why 3D Printing Matters</h3>
+
+<p>The current state of 3D printing feels like laser printing in the 1980s. Back then, laser printers were big and expensive. Sharing the printer among many users made the cost easier to justify. 3D printers are in a similar position in the year 2015. And, as with most new technology, prices are on a downward slope.</p>
+
+<p>The 3D printers at BLUE1647 are available to any member. Talk to <a href="http://www.rashadglover.com/">Rashad Glover</a> or <a href="http://imagine-it-tech.com/">Patrick Harris</a> to get started.</p>
+
+<h3>What to Know about 3D Printing</h3>
+
+<p>Printing any object in three dimensions takes a <em>long</em> time. The case in the photo took over four hours to print. The <a href="http://www.thingiverse.com/">MakerBot Thingiverse</a> has a wide variety of STL files to choose from. <a href="http://www.thingiverse.com/thing:273701/">This particular STL file</a> was created by Ben Reed, a maker in Calgary, Alberta, Canada.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/blue1647_glover_3d_printer.jpg' width='' height='' alt='Industrial engineer Rashad Glover prepares the STL files for the 3D printer.' title='Industrial engineer Rashad Glover prepares the STL files for the 3D printer.'><span class='caption-text'>Industrial engineer Rashad Glover prepares the STL files for the 3D printer.</span></span></p>
+
+<h3>STL File Internals</h3>
+
+<p>Instructions for 3D printing an object are stored in a <a href="http://bit.ly/1FFzX20">STereoLithography (STL)</a> file. Open an STL file in <a href="http://rayhightower.com/blog/2013/01/12/why-i-use-vim/">your favorite text editor</a> and you&rsquo;ll see something like this:</p>
+
+<p>&#8220;` bash
+solid OpenSCAD_Model
+  facet normal -0.998027 0 -0.0627913</p>
+
+<pre><code>outer loop
+  vertex 0 66.2 1.95
+  vertex 0 124 1.95
+  vertex 0.020502 66.2 1.62413
+endloop
+</code></pre>
+
+<p>  endfacet
+  facet normal -0.998027 0 -0.0627913</p>
+
+<pre><code>outer loop
+  vertex 0.020502 66.2 1.62413
+  vertex 0 124 1.95
+  vertex 0.020502 124 1.62413
+endloop
+</code></pre>
+
+<p>  endfacet</p>
+
+<p>  &hellip;Skip about 58,000 lines&hellip;</p>
+
+<p>  facet normal 0.803458 -0.261061 -0.535072</p>
+
+<pre><code>outer loop
+  vertex 91.7184 1.76127 0.69744
+  vertex 91.5557 1.82567 0.421758
+  vertex 91.6374 2.0769 0.421758
+endloop
+</code></pre>
+
+<p>  endfacet
+  facet normal 0.803459 -0.261059 -0.535071</p>
+
+<pre><code>outer loop
+  vertex 91.7184 1.76127 0.69744
+  vertex 91.6374 2.0769 0.421758
+  vertex 91.8068 2.03339 0.69744
+endloop
+</code></pre>
+
+<p>  endfacet
+endsolid OpenSCAD_Model</p>
+
+<p>&#8220;`</p>
+
+<p>The objects described in an STL file can be viewed through a free online tool like <a href="http://www.viewstl.com/">ViewSTL.com</a>.</p>
+
+<h3>Next Steps</h3>
+
+<p>3D printing is still in its infancy. Next time you visit BLUE1647, maybe for a <a href="/blog/2015/04/10/chicagoruby-blue1647-1871/">ChicagoRuby</a> meeting, check it out.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Massively Parallel Parallella]]></title>
+    <link href="http://RayHightower.com/blog/2015/05/27/massively-parallel-parallella/"/>
+    <updated>2015-05-27T13:15:27-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/05/27/massively-parallel-parallella</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella_perspective.jpg' width='' height='' alt='Parallella with 18 cores: 2 ARM + 16 RISC' title='Parallella with 18 cores: 2 ARM + 16 RISC'><span class='caption-text'>Parallella with 18 cores: 2 ARM + 16 RISC</span></span></p>
+
+<p><a href="http://supercomputer.io/">Supercomputer.io</a> is the first technical conference for <a href="http://rayhightower.com/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella</a>, to be held May 30, 2015 in Tokyo, Japan.</p>
+
+<p>You can participate even if you’re not in Tokyo. Parallella owners around the world will connect their boards via the Internet to create the most efficient supercomputer on the planet. <a href="http://resin.io/">Resin.io</a> has built a special micro-SD-card image (using <a href="https://www.docker.com/">Docker</a>) so adding your Parallella to the mix is relatively quick.</p>
+
+<p>This article includes detailed steps plus a few <em>gotchas</em>.</p>
+
+<!--more-->
+
+
+<h3>First: Why?</h3>
+
+<p>Some problems are too thorny for a typical computer to solve in a reasonable amount of time. Supercomputers might solve these problems quicker, but they cost <em>millions of dollars</em>. Solution: Link a bunch of $100, 18-core Parallella computers together via the Internet to amplify our compute power while saving money. This shared computing technique has worked in the past:</p>
+
+<ul>
+<li><p>Through <a href="https://folding.stanford.edu/">Stanford Folding@home</a>, computer owners around the world are using excess CPU cycles to search for cures for diseases like Alzheimer’s, Huntington’s, and Parkinson&rsquo;s.</p></li>
+<li><p>The <a href="http://setiathome.ssl.berkeley.edu/">SETI@home</a> project uses computers around the world to download and analyze radio telescope data to help with the search for extraterrestrial intelligence.</p></li>
+</ul>
+
+
+<p>The benefits are clear. Let&rsquo;s get started.</p>
+
+<h3>Materials Required</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/supercomputer-dot-io-logo.png' width='' height='' alt='Resin.io &amp; Parallella' title='Resin.io &amp; Parallella'><span class='caption-text'>Resin.io &amp; Parallella</span></span>
+Here&rsquo;s what you need to participate:</p>
+
+<ul>
+<li>Parallella board. You can buy one for about $100 at <a href="http://www.parallella.org/buy/">these retailers</a>.</li>
+<li>Ethernet connection to the Internet.</li>
+<li>4 GB (or larger) micro-SD card.</li>
+</ul>
+
+
+<p>This procedure is has been tested on Mac OS X Yosemite (10.10.3). Linux instructions are probably similar.</p>
+
+<h3><em>Gotcha:</em> Headless Parallella</h3>
+
+<p>Something that tripped me up until I learned more: A Parallella configured for Supercomputer.io will run headless. <em>There will be no HDMI output.</em> When my HDMI monitor showed <code>No Signal</code>, I thought that I had broken something. No worries. This is just a headless system.</p>
+
+<p>I don&rsquo;t know if that will change.</p>
+
+<h3>Download the Image</h3>
+
+<p><a href="http://supercomputer.io/">Download the Resin.io image</a> from the Supercomputer.io site. <a href="http://resin.io/">Resin.io</a> has created a special SD-card image (using Docker) for this project. As you can see below, I stored mine in a directory called <code>~/Downloads/Parallella$</code>.</p>
+
+<p>&#8220;` bash
+~/Downloads/Parallella$ ls -al
+total 2678784
+drwxr-xr-x   3 rth  staff         102 May 26 10:53 .
+drwx&mdash;-r-x+ 86 rth  staff        2924 May 26 11:00 ..
+-rw-r&mdash;&mdash;&ndash;@  1 rth  staff  1371537408 May 26 10:56 resin-supercomputer-0.1.0-0.0.14-Z7010-16.img</p>
+
+<p>~/Downloads/Parallella$</p>
+
+<p>&#8220;`</p>
+
+<h3>Prep for Burning the SD Card</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/micro_sd_plus_adapter.jpg' width='' height='' alt='Micro SD card and adapter.' title='Micro SD card and adapter.'><span class='caption-text'>Micro SD card and adapter.</span></span>
+Burning the SD card took about sixteen minutes (once I got the procedure right, as described below). Suggestion: Start the burn process, make sure it&rsquo;s progressing, and then go work on something else. A watched pot never boils.</p>
+
+<p>Insert your SD card into your Mac&rsquo;s SD card reader, and use the Mac OS X <code>diskutil list</code> command to determine the designation of the SD card. If you use portable hard drives with your primary machine, the SD card designation could change from time to time, so it&rsquo;s important to perform this step each time you burn an SD card.</p>
+
+<p>&#8220;` bash
+~/Downloads/Parallella$ diskutil list
+/dev/disk0
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        <em>960.2 GB   disk0
+   1:                        EFI EFI                     209.7 MB   disk0s1
+   2:                  Apple_HFS MacSSD                  959.3 GB   disk0s2
+   3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
+/dev/disk2
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     FDisk_partition_scheme                        </em>8.0 GB     disk2
+   1:               Windows_NTFS Parallella              8.0 GB     disk2s1</p>
+
+<p>~/Downloads/Parallella$</p>
+
+<p>&#8220;`</p>
+
+<p>From this <code>diskutil</code> report, we can see that we want to burn the SD image to <code>/dev/disk2</code>. The other device is the hard drive for my primary machine. Burning the wrong device will destroy data.</p>
+
+<h3>Burning the Card, Skipping the <em>Gotcha</em></h3>
+
+<p>To burn the SD card&hellip;</p>
+
+<ol>
+<li>Change into the directory where you downloaded the <code>resin.io</code> image.</li>
+<li>Unmount the destination partition on the SD card.</li>
+<li>Use the the <code>dd</code> command to copy the <code>resin.io</code> image to the SD card.</li>
+</ol>
+
+
+<p><em>Gotcha alert:</em> The first time I attempted to burn the image, I used a block size of 64k (<code>bs=64k</code>) for the <code>dd</code> operation. Big mistake on my part because the write operation took almost <em>four hours</em>. On my second attempt, I used a 1 megabyte block size (<code>bs=1m</code>) and the write operation finished in a speedy <em>16 minutes</em>. So, learn from my pain and use <code>bs=1m</code>.</p>
+
+<p>Burn your micro-SD card like so:</p>
+
+<p>&#8220;` bash
+$ cd [directory containing the resin.io image file]</p>
+
+<p>$ diskutil unmountDisk /dev/disk2</p>
+
+<p>$ sudo dd if=resin-supercomputer-0.1.0-0.0.14-Z7010-16.img of=/dev/disk2 bs=1m
+Password:
+1308+0 records in
+1308+0 records out
+1371537408 bytes transferred in 960.001945 secs (1428682 bytes/sec)</p>
+
+<p>$</p>
+
+<p>&#8220;`</p>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/activity_monitor_resin_image.png' width='' height='' alt='Burn progress.' title='Burn progress.'><span class='caption-text'>Burn progress.</span></span>
+If you want to make sure that <code>dd</code> is running properly, use OS X&rsquo;s <code>Activity Monitor</code> utility to monitor burn progress (see the &lsquo;burn progress&rsquo; diagram). Here&rsquo;s a quick run-through of the <code>dd</code> command options:</p>
+
+<ul>
+<li><code>sudo</code> gives you <a href="/sudo-disclaimer/">super powers</a>.</li>
+<li><code>dd</code> is the &ldquo;copy and convert&rdquo; command. The letters &ldquo;dd&rdquo; have nothing to do with what the tool actually does. It&rsquo;s just a command name. And like so many things in computer science, the name might be based on a pun.</li>
+<li><code>if=</code> specifies the input file. You can include the full path, or if the file is in your current directory, you can omit the path as shown in this example.</li>
+<li><code>of=</code> specifies the output file. We know that the SD card is located at <code>/dev/disk</code> so that&rsquo;s where the results of this command are headed.  Note that your destination directory may differ from this one.</li>
+<li><code>bs=1m</code> specifies the block size used for the destination file. 1 megabyte worked well on my machine.</li>
+</ul>
+
+
+<h3>About the New Resin.io Image</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/parallella_resin_image_files.png' width='' height='' alt='Image files.' title='Image files.'><span class='caption-text'>Image files.</span></span>
+The new image will be called <code>boot-parall</code> as shown in the diagram.  Depending on your particular image, your list of files may be the same as mine.</p>
+
+<h3>Boot Parallella with the Resin.io Image</h3>
+
+<p>Once the micro-SD card has been burned, eject it from the Mac and insert it into the Parallella. Then apply power to the Parallella.</p>
+
+<h3>Working Headless</h3>
+
+<p>As mentioned above, a Parallella configured this way will run headless, without HDMI output. So, how do you know if the Resin.io image is working?</p>
+
+<p>First, get a network scanner and use it to locate your Parallella on your local area network. I use an iPad app called <a href="https://itunes.apple.com/us/app/fing-network-scanner/id430921107?mt=8">Fing</a>, but any good network scanner will do. Your Parallella will appear as <code>parallella-hdmi-resin</code>, along with its corresponding IP and MAC addresses.</p>
+
+<p>Ping the IP address given by your network scanning tool like so:</p>
+
+<p>&#8220;` bash
+~$ ping 192.168.11.132
+PING 192.168.11.132 (192.168.11.132): 56 data bytes
+64 bytes from 192.168.11.132: icmp_seq=0 ttl=64 time=4.767 ms
+64 bytes from 192.168.11.132: icmp_seq=1 ttl=64 time=3.694 ms
+64 bytes from 192.168.11.132: icmp_seq=2 ttl=64 time=4.057 ms
+64 bytes from 192.168.11.132: icmp_seq=3 ttl=64 time=3.969 ms
+^C
+&mdash;&ndash; 192.168.11.132 ping statistics &mdash;&ndash;
+4 packets transmitted, 4 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 3.694/4.122/4.767/0.396 ms</p>
+
+<p>~$</p>
+
+<p>&#8220;`</p>
+
+<p>If your Parallella is up, running, and attached to your network, your
+output will look similar to what you see above. But if <code>ping</code> can&rsquo;t find
+your Parallella, you&rsquo;ll get&hellip;</p>
+
+<p>&#8220;` bash</p>
+
+<p>~$ ping 192.168.11.199
+PING 192.168.11.199 (192.168.11.199): 56 data bytes
+Request timeout for icmp_seq 0
+Request timeout for icmp_seq 1
+Request timeout for icmp_seq 2
+^C
+&mdash;&ndash; 192.168.11.199 ping statistics &mdash;&ndash;
+4 packets transmitted, 0 packets received, 100.0% packet loss</p>
+
+<p>~$</p>
+
+<p>&#8220;`</p>
+
+<h3>Connect to Supercomputer.io</h3>
+
+<p>After you have successfully connected your Parallella to your LAN and the Internet, visit <a href="http://supercomputer.io/#/devices/">http://supercomputer.io/#/devices/</a> from a computer other than your Parallella (because the Parallella is headless). This page will tell you when your Parallella has connected to the Supercomputer.io mothership.</p>
+
+<p>To do this, you will need the media access control (MAC) address (also known as the hardware address) for your Parallella&rsquo;s network interface. I used my network scanning tool, Fing, to find the MAC address for the Parallella. You should be able to do the same with your network scanning tool.</p>
+
+<p>Enter your Parallella&rsquo;s MAC address in the field on the form, and click <code>search</code> to determine whether your device has connected.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella_no_device_yet.png' width='' height='' alt='Supercomputer.io searching for your Parallella.' title='Supercomputer.io searching for your Parallella.'><span class='caption-text'>Supercomputer.io searching for your Parallella.</span></span></p>
+
+<p>Your first connection attempt might not be successful. It takes awhile for the first connection to happen because the Parallella might need to download software updates first.</p>
+
+<p>It took about 30 minutes for Supercomputer.io to recognize my Parallella. The successful connection was cause for celebration:</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella_device_connected.png' width='' height='' alt='Parallella connected w/MAC address and city. Celebrate!' title='Parallella connected w/MAC address and city. Celebrate!'><span class='caption-text'>Parallella connected w/MAC address and city. Celebrate!</span></span></p>
+
+<h3>What&rsquo;s Next?</h3>
+
+<p>I&rsquo;m not sure what&rsquo;s next for Supercomputer.io and Parallella. I would imagine that <code>Status = idle</code> will be replaced by something more interesting, and <code>images processed</code> will eventually be greater than zero.</p>
+
+<p>Engineers at Parallella and Resin.io have done a great job so far. Now, since it&rsquo;s likely that they enjoy ideas from the peanut gallery, here are a few suggestions for them:</p>
+
+<ul>
+<li><p>Consider a version of the Resin.io image with HDMI support. Like many in the Parallella community, I&rsquo;m willing to share CPU cycles for the greater good. And I want to see what&rsquo;s running on my Parallella, too.</p></li>
+<li><p>Add more metrics to the Supercomputer.io site. It&rsquo;s nice to see the number of cores that have connected to Supercomputer.io. How about a map showing where the different Parallella devices are located? How about a dashboard that shows the number of cores currently in use?</p></li>
+</ul>
+
+
+<p>Hats off to the Parallella and Resin.io teams. Looking forward to more!</p>
+]]></content>
+  </entry>
+  
+</feed>

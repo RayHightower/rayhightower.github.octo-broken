@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: iot | RayHightower.com]]></title>
+  <link href="http://RayHightower.com/blog/categories/iot/atom.xml" rel="self"/>
+  <link href="http://RayHightower.com/"/>
+  <updated>2015-08-31T18:23:34-05:00</updated>
+  <id>http://RayHightower.com/</id>
+  <author>
+    <name><![CDATA[Raymond T. Hightower - Chicago Ruby on Rails & iOS Developer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Designed at West Point. 3D Printed at BLUE1647.]]></title>
+    <link href="http://RayHightower.com/blog/2015/08/03/designed-at-west-point-3d-printed-at-blue1647/"/>
+    <updated>2015-08-03T21:50:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/08/03/designed-at-west-point-3d-printed-at-blue1647</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='/images/westpoint-parallella-green.jpg' width='' height='' alt='Designed at West Point. 3D-printed at BLUE1647 in Chicago.' title='Designed at West Point. 3D-printed at BLUE1647 in Chicago.'><span class='caption-text'>Designed at West Point. 3D-printed at BLUE1647 in Chicago.</span></span></p>
+
+<p>Experimenting with <a href="/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella</a>? Then you might need a way to protect it. The original acrylic cases are no longer available. Fortunately, 3D printing offers a solid alternative.</p>
+
+<p>A highly-expandable 3D-printable case was designed by a team at the <a href="http://westpoint.edu">United States Military Academy at West Point</a>: Professor Suzanne J. Matthews and Master Machinist William (“Frank”) Blackmon. <a href="http://www.suzannejmatthews.com/teaching.html">Professor Matthews</a> uses Parallella when teaching high-performance computing courses.</p>
+
+<!--more-->
+
+
+<h3>Simple, Expandable Design</h3>
+
+<p>The West Point case only has three parts! You combine the three parts at will to accommodate multiple Parallella cluster configurations.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/westpoint-case-parts.jpg' width='' height='' alt='Three parts of the West Point case.' title='Three parts of the West Point case.'><span class='caption-text'>Three parts of the West Point case.</span></span></p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/westpoint_stacked_2.jpg' width='' height='' alt='Mix and match the parts. Stack at will.' title='Mix and match the parts. Stack at will.'><span class='caption-text'>Mix and match the parts. Stack at will.</span></span></p>
+
+<h3>Internal Honeycomb Structure</h3>
+
+<p>Engineering details make a big difference in project like this. While the flat portions of the case are printing, the internal honeycomb structure is visible. I suspect that the honeycomb gives the panels greater strength while reducing costs and shortening the print time. Product engineering considers factors that users never see at the surface.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella-case-honeycomb.jpg' width='' height='' alt='Internal honeycomb structure.' title='Internal honeycomb structure.'><span class='caption-text'>Internal honeycomb structure.</span></span></p>
+
+<h3>3D Printing Process (w/gotchas)</h3>
+
+<p>I asked Patrick Harris, CEO of <a href="http://imagine-it-tech.com">iMagine-it-Tech</a>, to guide me through the process. iMagine-it-Tech is based at <a href="http://blue1647.com">BLUE1647</a>. Here are a few lessons (with <em>gotchas</em> to avoid):</p>
+
+<ul>
+<li><p><a href="http://www.thingiverse.com/thing:892684">Thingiverse</a> is a great resource for STereoLithography (STL) files.</p></li>
+<li><p>Whether you own your own 3D printer or not, grab a copy of the <a href="http://www.makerbot.com/desktop">MakerBot Desktop</a> software. The software will let you view and manipulate STL files at will. Versions are available for Mac OS X, Windows, and Linux.</p></li>
+<li><p>If the build plate has room for multiple copies of your object, print them. Here’s why: 3D-printing is in its infancy and results are less than perfect. If a part does not come out as designed, and you’ve printed multiple copies, you might have an extra to fall back on.</p></li>
+</ul>
+
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/multiple_locks.jpg' width='' height='' alt='Print multiple copies when space allows.' title='Print multiple copies when space allows.'><span class='caption-text'>Print multiple copies when space allows.</span></span></p>
+
+<ul>
+<li>Keep the build plate absolutely level. The build plate is the platform where MakerBot deposits material to form the 3D-printed object. If the build plate is even slightly skewed, you could end up with spaghettification, noodle-like strings of filament all over the place. Not fun.</li>
+</ul>
+
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/spaghettification.jpg' width='' height='' alt='Spaghettification (the noodle effect) is not fun.' title='Spaghettification (the noodle effect) is not fun.'><span class='caption-text'>Spaghettification (the noodle effect) is not fun.</span></span></p>
+
+<ul>
+<li>Print with the flat-side of the object down against the build plate. 3D printing does not do well with overhangs.</li>
+</ul>
+
+
+<h3>After Printing</h3>
+
+<p>The Dremel Tool has become one of the most valuable tools in my maker kit. For this project, it was helpful to use the Dremel for edge-smoothing and screw-shortening.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/trim-rough-edges.jpg' width='' height='' alt='Trim rough edges with a Dremel and a razor blade.' title='Trim rough edges with a Dremel and a razor blade.'><span class='caption-text'>Trim rough edges with a Dremel and a razor blade.</span></span></p>
+
+<h3>Screws Required</h3>
+
+<p>You can secure the Parallella circuit board to the bottom side of the case with four sheet metal screws, size #4. The 3/8&#8221; screws extended beyond the bottom of the case, so I trimmed them a bit with a Dremel.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/shorten-screws.jpg' width='' height='' alt='Sheet metal screws (#4). Left screw was shortened with a Dremel.' title='Sheet metal screws (#4). Left screw was shortened with a Dremel.'><span class='caption-text'>Sheet metal screws (#4). Left screw was shortened with a Dremel.</span></span></p>
+
+<h3>Conclusion</h3>
+
+<p>This is the best 3D-printed case for Parallella that I have found so far, mainly because it is stackable and expandable.</p>
+
+<p>Professor Matthews continues to author instructional materials that focus on parallel processing, with Parallella as the learning tool of choice. I look forward to reading more of the materials.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[3D Printing at BLUE1647]]></title>
+    <link href="http://RayHightower.com/blog/2015/06/25/3d-printing-at-blue1647/"/>
+    <updated>2015-06-25T17:11:35-05:00</updated>
+    <id>http://RayHightower.com/blog/2015/06/25/3d-printing-at-blue1647</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella_3d_print_blue1647.jpg' width='' height='' alt='Parallella with a 3D-printed case.' title='Parallella with a 3D-printed case.'><span class='caption-text'>Parallella with a 3D-printed case.</span></span></p>
+
+<p>Every visit to <a href="http://blue1647.com">BLUE1647</a> is full of pleasant surprises. There’s new equipment, a new opportunity to learn new technology, new people to learn from, or all of the above.</p>
+
+<p>I recently bought a second <a href="/blog/2015/05/27/massively-parallel-parallella/">Parallella</a> for a WisdomGroup project. Since it&rsquo;s important to protect the device with a case, this seemed like a good time to try one of the 3D printers at BLUE1647. The result is in the photo, above.</p>
+
+<!--more-->
+
+
+<h3>Why 3D Printing Matters</h3>
+
+<p>The current state of 3D printing feels like laser printing in the 1980s. Back then, laser printers were big and expensive. Sharing the printer among many users made the cost easier to justify. 3D printers are in a similar position in the year 2015. And, as with most new technology, prices are on a downward slope.</p>
+
+<p>The 3D printers at BLUE1647 are available to any member. Talk to <a href="http://www.rashadglover.com/">Rashad Glover</a> or <a href="http://imagine-it-tech.com/">Patrick Harris</a> to get started.</p>
+
+<h3>What to Know about 3D Printing</h3>
+
+<p>Printing any object in three dimensions takes a <em>long</em> time. The case in the photo took over four hours to print. The <a href="http://www.thingiverse.com/">MakerBot Thingiverse</a> has a wide variety of STL files to choose from. <a href="http://www.thingiverse.com/thing:273701/">This particular STL file</a> was created by Ben Reed, a maker in Calgary, Alberta, Canada.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/blue1647_glover_3d_printer.jpg' width='' height='' alt='Industrial engineer Rashad Glover prepares the STL files for the 3D printer.' title='Industrial engineer Rashad Glover prepares the STL files for the 3D printer.'><span class='caption-text'>Industrial engineer Rashad Glover prepares the STL files for the 3D printer.</span></span></p>
+
+<h3>STL File Internals</h3>
+
+<p>Instructions for 3D printing an object are stored in a <a href="http://bit.ly/1FFzX20">STereoLithography (STL)</a> file. Open an STL file in <a href="http://rayhightower.com/blog/2013/01/12/why-i-use-vim/">your favorite text editor</a> and you&rsquo;ll see something like this:</p>
+
+<p>&#8220;` bash
+solid OpenSCAD_Model
+  facet normal -0.998027 0 -0.0627913</p>
+
+<pre><code>outer loop
+  vertex 0 66.2 1.95
+  vertex 0 124 1.95
+  vertex 0.020502 66.2 1.62413
+endloop
+</code></pre>
+
+<p>  endfacet
+  facet normal -0.998027 0 -0.0627913</p>
+
+<pre><code>outer loop
+  vertex 0.020502 66.2 1.62413
+  vertex 0 124 1.95
+  vertex 0.020502 124 1.62413
+endloop
+</code></pre>
+
+<p>  endfacet</p>
+
+<p>  &hellip;Skip about 58,000 lines&hellip;</p>
+
+<p>  facet normal 0.803458 -0.261061 -0.535072</p>
+
+<pre><code>outer loop
+  vertex 91.7184 1.76127 0.69744
+  vertex 91.5557 1.82567 0.421758
+  vertex 91.6374 2.0769 0.421758
+endloop
+</code></pre>
+
+<p>  endfacet
+  facet normal 0.803459 -0.261059 -0.535071</p>
+
+<pre><code>outer loop
+  vertex 91.7184 1.76127 0.69744
+  vertex 91.6374 2.0769 0.421758
+  vertex 91.8068 2.03339 0.69744
+endloop
+</code></pre>
+
+<p>  endfacet
+endsolid OpenSCAD_Model</p>
+
+<p>&#8220;`</p>
+
+<p>The objects described in an STL file can be viewed through a free online tool like <a href="http://www.viewstl.com/">ViewSTL.com</a>.</p>
+
+<h3>Next Steps</h3>
+
+<p>3D printing is still in its infancy. Next time you visit BLUE1647, maybe for a <a href="/blog/2015/04/10/chicagoruby-blue1647-1871/">ChicagoRuby</a> meeting, check it out.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[No Windows. Stronger Planes.]]></title>
+    <link href="http://RayHightower.com/blog/2015/01/02/no-windows-stronger-planes/"/>
+    <updated>2015-01-02T23:34:04-06:00</updated>
+    <id>http://RayHightower.com/blog/2015/01/02/no-windows-stronger-planes</id>
+    <content type="html"><![CDATA[<p>It is always good to start the new year with something inspirational. <a href="http://www.technicondesign.com/">Technicon Design</a> created a 3-minute video to demonstrate their IXION Windowless Jet Concept. Worth watching full screen.</p>
+
+<center><iframe name="windowlessjet" src="//player.vimeo.com/video/78458486" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
+
+
+<p>How can a plane with no windows offer better views for passengers?</p>
+
+<!--more-->
+
+
+<h3>Windows vs Fuselage Strength</h3>
+
+<p>When we add a window to the fuselage of an airplane, we reduce the strength of the fuselage. Glass is weaker than aluminum. So aircraft engineers need to make up for the lost strength. The engineers might add a support structure, thicken the aluminum, or try a different alloy.</p>
+
+<p>But when windows are eliminated, structural integrity is maintained. And the weight of the plane can be reduced because we can eliminate the extra supports.</p>
+
+<h3>How Do We See Without Windows</h3>
+
+<p>As shown in the Technicon video, views can be better without windows!  Cameras are mounted at strategic points on the outside of the plane. And the inner surface of the plane, the part that passengers can see, is covered with a display material. Computers take the images captured by the external cameras, and they translate that into images for display on the inner walls of the plane.</p>
+
+<p>The result: Passengers feel like they&rsquo;re flying in a glass plane. That&rsquo;s an idea best communicated through the Technicon video.</p>
+
+<h3>Applying Tech Across Industries</h3>
+
+<p>Processing power continues to fall in price. Flat panel monitors get less expensive each day. The window-less plane shows us what can happen when advances in one industry are applied to another. Blend these advances with a high-speed internet connection delivered via satellite, and the Internet of Things (IoT) takes a great leap forward. Cross-discipline engineering is exciting.</p>
+
+<p>Happy New Year!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Manage That OpenROV Tether, Or Else]]></title>
+    <link href="http://RayHightower.com/blog/2014/09/10/manage-that-openrov-tether/"/>
+    <updated>2014-09-10T18:40:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/09/10/manage-that-openrov-tether</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper right'><img class='caption' src='/images/openrov_tether_management_slip_ring.jpg' width='' height='' alt='OpenROV tether management, one way that works.' title='OpenROV tether management, one way that works.'><span class='caption-text'>OpenROV tether management, one way that works.</span></span>
+<em>Note: This article has been updated with more photos and details describing slip ring installation.</em></p>
+
+<p>Youthful exuberance drove me to pilot my <a href="/blog/2014/06/16/citizen-science-with-openrov/">OpenROV</a> before I built a good tether management system. Bad idea! It&rsquo;s better to have a tether management plan (any plan) before you pilot your OpenROV.</p>
+
+<p>This article describes a tether management system that works for me. Other OpenROVers have devices that work, too. Take a look at a few and eventually you will find one that fits you.</p>
+
+<h3>Off-the-Shelf Parts</h3>
+
+<p>This tether management system is constructed entirely from off-the-shelf parts. The main component is an <a href="http://www.homedepot.com/p/KAB-Enterprise-Co-Ltd-20-ft-16-3-Cord-Reel-with-4-Outlets-CR002/100661463">extension cord reel sold by Home Depot</a> for about $14.00. Buy it, gut it, add the slip ring using three screws (also from Home Depot) and you’re good to go.</p>
+
+<!--more-->
+
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/openrov_lake_michigan.png' width='' height='' alt='Exploring Lake Michigan with OpenROV.' title='Exploring Lake Michigan with OpenROV.'><span class='caption-text'>Exploring Lake Michigan with OpenROV.</span></span></p>
+
+<h3>Slip Ring</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/adafruit_slip_ring.jpg' width='' height='' alt='Adafruit slip ring.' title='Adafruit slip ring.'><span class='caption-text'>Adafruit slip ring.</span></span>
+The slip ring is central to this solution. A slip ring allows an electrical spool to spin while electrical contacts remain intact. This slip ring was purchased from <a href="https://www.adafruit.com/products/736?gclid=CJDMiPma1cACFQoEaQod1iwAFQ">Adafruit</a> for about $18.00.</p>
+
+<h3>How to Install the Slip Ring</h3>
+
+<p>First, pull the entire orange cable out of the extension cord reel. It would be great to keep the whole orange cable as part of the tether, but then we wouldn’t have room for the original tether (twisted pair). Cut the orange cable so that only one meter remains attached to the reel assembly.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/openrov_tether_management_internals.jpg' width='' height='' alt='Front view, back view, internal view.' title='Front view, back view, internal view.'><span class='caption-text'>Front view, back view, internal view.</span></span></p>
+
+<p>Next, take the extension cord reel apart. Two phillips-head screws hold the device together. Remove the two screws, and the two orange disks will fall apart.</p>
+
+<p>Now let’s focus on the disk without the electrical plugs. You will need to cut a hole in the exact center of this disk. The hole will need to be large enough to let the thicker part of the slip ring through, while allowing enough of an edge for the flange screws. The photos give a clearer picture than the words in this paragraph.</p>
+
+<p>After you insert the slip ring, drill holes for the three slip ring mounting screws. One way to do this: Drill one hole first, insert the screw, tighten the nut, and then measure/drill the remaining holes. You’re more likely to align all of the holes correctly this way.</p>
+
+<h3>Loctite Threadlocker</h3>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/slip_ring_loctite.jpg' width='' height='' alt='Loctite oozing from the screws.' title='Loctite oozing from the screws.'><span class='caption-text'>Loctite oozing from the screws.</span></span>
+<a href="http://www.loctiteproducts.com/threadlockers.shtml">Loctite</a> makes a threadlocker, a gummy substance that keeps screws from jiggling loose. They also make super glue; that&rsquo;s not what you want for this project. If you use Loctite&rsquo;s threadlocker on the slip ring screws, they will remain tight until you remove them on purpose.</p>
+
+<h3>Connecting Inside the Reel</h3>
+
+<p>Take a look inside the reel. You’ll see black, green, and white cables inside. You won’t need to do anything with the black cable. Splice the green line from the slip ring to the green line inside the reel, and splice the white slip ring line with the white reel line. Your technique may vary, but I used a combination hook splice, solder, hot glue, and heat shrink tubing. If you wear a belt and suspenders your pants will never fall down!</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/openrov_extra_tab.jpg' width='' height='' alt='Extra tab inside the reel, before and after removal.' title='Extra tab inside the reel, before and after removal.'><span class='caption-text'>Extra tab inside the reel, before and after removal.</span></span></p>
+
+<h3>Gotcha: Removing the Extra Tab</h3>
+
+<p>After initial assembly, I noticed that there was an extra tab inside of the reel. I don’t know the original purpose for the tab, but since it appeared to interfere with tether operation, it had to go. Wire clippers and a dremel tool made quick work of the tab. The before &amp; after photos tell the story.</p>
+
+<h3>Attaching the Tether &amp; Topside Adapter</h3>
+
+<p>Now that you have a functioning reel with a slip ring, attach the twisted pair tether to the 1-meter orange extension cable. Hook splice, solder, hot glue, and heat shrink did the trick for me.</p>
+
+<p>The topside adapter can be attached to the top of the reel with Velcro, as shown in the photos throughout this article. Plug the green and white cables from the outer slip ring into the topside adapter, and you&rsquo;re ready to test the new tether management system.</p>
+
+<p><span class='caption-wrapper right'><img class='caption' src='/images/nanuk_935_openrov.jpg' width='' height='' alt='Nanuk 935 with OpenROV.' title='Nanuk 935 with OpenROV.'><span class='caption-text'>Nanuk 935 with OpenROV.</span></span>
+What should we do with the slip ring&rsquo;s extra lines? I tied mine together for future use. I may cut them if I decide that they&rsquo;re not useful. If you have other ideas, feel free to post in the comments below.</p>
+
+<h3>Everything Fits</h3>
+
+<p>The new tether management system is small enough to share space with an OpenROV inside a <a href="http://nanukcase.com/productdetails.asp?node=205">Nanuk 935 case</a>. The Nanuk case has wheels, a foam interior, and it is rugged and small enough to fly as an airline carry-on.</p>
+
+<p>Whip everything out and you&rsquo;re ready to explore.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/openrov_tether_management_laptop.jpg' width='' height='' alt='Ready to explore Lake Michigan.' title='Ready to explore Lake Michigan.'><span class='caption-text'>Ready to explore Lake Michigan.</span></span></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Solar Powered Parallella]]></title>
+    <link href="http://RayHightower.com/blog/2014/09/09/solar-powered-parallella/"/>
+    <updated>2014-09-09T09:18:00-05:00</updated>
+    <id>http://RayHightower.com/blog/2014/09/09/solar-powered-parallella</id>
+    <content type="html"><![CDATA[<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella_solar.jpg' width='' height='' alt='Give solar power to your Parallella with a few simple components.' title='Give solar power to your Parallella with a few simple components.'><span class='caption-text'>Give solar power to your Parallella with a few simple components.</span></span></p>
+
+<p>This article describes a simple hardware hack: Making the <a href="/blog/2014/07/07/parallella-quick-start-guide-with-gotchas/">Parallella</a> run on solar energy.</p>
+
+<p>Motivation: The fastest computers in the world gulp electricity at an alarming rate. For example, <a href="http://www.top500.org/system/177999">Tianhe-2</a> at the National Super Computer Center in Guangzhou, China uses 17.8 megawatts of energy per year. In dollars, that’s roughly $17 million spent on electricity spent each year, depending on how the electricity is sourced.</p>
+
+<p>Scientists at <a href="http://www.sandia.gov/">Sandia National Laboratories</a> estimate that the earth&rsquo;s surface absorbs enough solar energy in ninety minutes to power every electrical device on the planet for a full year. A year&rsquo;s worth of energy in ninety minutes! Surely we can use some of that energy to power our supercomputers.</p>
+
+<!--more-->
+
+
+<h3>Observations</h3>
+
+<p>The solar Parallella idea was driven by a few observations:</p>
+
+<ul>
+<li><p>Parallella only needs five watts of power, five volts at 1 ampere. The device might spike at startup or during heavy calculations, but not by much.</p></li>
+<li><p>USB provides electrical power at five volts, typically less than 2 amperes.</p></li>
+<li><p>Cell phone solar chargers are easy to find. These pocket-sized chargers provide power over USB.</p></li>
+</ul>
+
+
+<p>Can a cell phone solar charger be hacked to power Parallella? Yes!</p>
+
+<h3>Building the Hybrid Cable</h3>
+
+<p>Here&rsquo;s how to get started&hellip;</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella_usb_solar.jpg' width='' height='' alt='Making the connections.' title='Making the connections.'><span class='caption-text'>Making the connections.</span></span></p>
+
+<ul>
+<li><p>First, get an off-the-shelf solar device capable of providing 5 volts at 2 amperes. Many cell phone solar chargers will do this, but some will only provide 1 ampere of current. You will need 2 amperes. As of this writing, Amazon sells solar cell phone chargers for about $35.00. Note that the model shown in this article combines a photovoltaic panel with a lithium ion battery. Energy provided by the sun can be stored by the battery for later use.</p></li>
+<li><p>Cut open a USB cable to expose power (red), ground (black), and signal cables (green and white) as shown in the photo.</p></li>
+<li><p>Find an old AC adapter cable that fits the Parallella power connection. Cut it open to expose the power and ground wires as shown in the photo.</p></li>
+<li><p>Solder the USB power to the old adapter power wire, and USB ground to the adapter&rsquo;s ground.</p></li>
+<li><p>Cover everything with heat shrink tubing or electrical tape. Heat shrink is preferred since it will last longer.</p></li>
+</ul>
+
+
+<p>You&rsquo;re done! Plug everything in and watch your Parallella boot up. Note that this configuration will also power the Parallella&rsquo;s cooling fan.</p>
+
+<p><span class='caption-wrapper middle'><img class='caption' src='/images/parallella_solar_complete.jpg' width='' height='' alt='Parallella running on solar power.' title='Parallella running on solar power.'><span class='caption-text'>Parallella running on solar power.</span></span></p>
+
+<h3>Proof of Concept</h3>
+
+<p>It probably doesn’t make sense to call this a project. It&rsquo;s more of a proof of concept. Scaling up will cost money and time. But the benefits of solar energy, including cost savings and reduced carbon footprint, make this a worthwhile path to pursue.</p>
+]]></content>
+  </entry>
+  
+</feed>
